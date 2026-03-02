@@ -15,7 +15,41 @@ Observation:
 - The pdf to json is on the datasource branch, I find that i didn't replace all the math formular into [formular], if i am embedding all the chunks these could hurt the similarity check.
 - If in the next run i success in expand the vocabulary to filter the related chunks, will it also work on the other years's conferecne? Maybe i should try the 2024 papers too. 
 - This is an unmature pipeline everything is in a draft. 
-
+Issue:
+Every single one of the 38 papers that passes keyword filtering gets assigned all 5 L1 categories and all 17 L2 methods in semantic matching. The similarity scores cluster in the 0.78–0.94 range, all far above the 0.5 threshold. 
+Root causes
+1. Max-pooling over many paragraphs guarantees high similarity to everything
+In semantic_matcher.py:35-38, each method is scored by max(cosine_similarity) across all of a paper's filtered chunks. A 20-page paper can easily have 50–100+ paragraphs. SPECTER2 embeddings of academic economics text already live in a high-similarity neighborhood (baseline ~0.80+). Taking the max over dozens of chunks ensures at least one chunk will score high against any method description. More chunks = higher max = everything matches.
+This is the core "naive indexing" problem. The pipeline treats paragraphs as independent probes and takes the best one — which statistically guarantees a match.
+2. The 0.5 threshold is meaningless for SPECTER2
+In predefine/config.py:1-2, both thresholds are 0.5. But SPECTER2 embeddings of academic text never produce cosine similarities near 0.5 — the floor for any two economics paragraphs is already ~0.75-0.80. The threshold would need to be somewhere in the 0.90–0.95 range to be discriminative, and even then max-pooling makes it fragile.
+3. Keyword filtering is simultaneously too aggressive (drops 75% of papers) and too loose (lets noise through)
+In keyword_matcher.py:4-6:
+Case-sensitive exact substring match — keyword in text has no word boundary checking. "Staggered" will match inside "unStaggered" or any compound. Conversely, "staggered" (lowercase) in body text won't match the keyword "Staggered".
+Compound keywords never match — Keywords like "Heterogeneity-Robust DiD (e.g., Callaway & Sant'Anna, Sun & Abraham)" are 70+ character strings including parenthetical descriptions. No paper text will contain this exact substring. These are dead keywords.
+No stemming or fuzzy matching — "Instrumental Variable" won't match the keyword "Instrumental Variables (IV)". "difference-in-differences" won't match "Difference-in-Differences (DiD)".
+Result: 112/150 papers are silently discarded, likely including many that genuinely use methods from the taxonomy.
+4. No structural awareness — all paragraphs are treated equally
+The data includes section_name (e.g., "4. Empirical strategy and results", "Introduction", "References") but the pipeline ignores it entirely. A paragraph from the references section, a literature review ("Prior work used DiD..."), or a figure caption gets the same weight as the actual methodology section. This is a major source of false positives — a paper that cites a method is not the same as a paper that uses it.
+5. No filtering of junk chunks
+Looking at sample papers, many chunks are:
+Author affiliations: "Robert Akerlof, UNSW Business School..."
+Figure captions: "(a) Most people do not see all five horses immediately."
+JEL codes: "JEL Classification: D01, D80, D90."
+Single keywords lines: "Keywords: Cognition, reasoning, perception, narratives."
+These all get embedded and participate in max-pooling, adding noise.
+6. The L1→L2 scoping provides no constraint
+The design in semantic_matcher.py:46-47 scopes L2 matches to only L2 methods whose parent L1 matched. But since every L1 always matches (see point 1), this scoping does nothing.
+What would actually improve this
+Here are concrete architectural changes, roughly ordered by impact:
+Replace max-pooling with mean or weighted aggregation — Average the cosine similarity across chunks rather than taking the max. Or use top-k averaging (e.g., top 3 chunks). This penalizes methods that only weakly appear once.
+Section-aware filtering — Only embed paragraphs from methodology-relevant sections (filter on section_name containing patterns like "method", "empirical", "strategy", "data", "estimation", "identification", "experiment", "model"). Exclude references, acknowledgments, appendix, and abstract sections from the matching pool.
+Minimum chunk length threshold — Skip chunks shorter than, say, 50 characters. This removes figure captions, author lines, and JEL codes.
+Fix keyword matching — Normalize both keywords and text to lowercase. Strip parenthetical annotations from keywords before matching (e.g., "Instrumental Variables (IV)" → search for both "instrumental variables" and "iv" independently). Add word-boundary awareness.
+Raise or dynamically calibrate the threshold — Either set it empirically (look at the similarity distribution and pick a threshold that separates known positives from negatives, likely 0.88–0.92), or use a relative approach (rank methods by similarity and take only those significantly above the mean).
+Embed at the section level, not paragraph level — Concatenate paragraphs within the same section and embed the section as a whole. This gives SPECTER2 more context to work with and naturally reduces the max-pooling problem by having fewer, more meaningful vectors.
+Embed all 150 papers, not just keyword-filtered ones — The keyword gate discards too many papers. If the semantic stage worked properly, it could classify papers independently without needing the keyword pre-filter.
+The fundamental issue is that this pipeline was designed as "keyword filter first, then refine with embeddings," but the refinement step has no teeth. It needs either a much stronger aggregation strategy, section-level awareness, or both.
 
 
 ## Project Structure
