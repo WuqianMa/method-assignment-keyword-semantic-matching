@@ -1,0 +1,92 @@
+[
+    {
+        "paper_id": 1238,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Artificial Intelligence (AI) foundation models—such as GPT-4, Gemini, and Claude Sonnet—are driving a new wave of automation, enabling machines to undertake sophisticated knowledge work such as coding, research, and problem-solving. 1 While the potential of this technology to reshape the landscape of work is undeniable, its precise implications remain the subject of growing controversy ( Meserole , 2018 ; Brynjolfsson , 2022 ; Johnson and Acemoglu , 2023 ; Autor , 2024 ; Acemoglu , 2024 ). This controversy arises from two factors. First, it is unclear whether lessons from previous waves of automation—primarily aimed at repetitive tasks—can inform our understanding of AI’s effects ( Muro et al. , 2019 ; Agrawal et al. , 2019 ). Second, because AI is still in its infancy and individuals and firms are experimenting with its use ( McElheran et al. , 2023 ; Humlum and Vestergaard , 2024 ), current empirical evidence cannot yet capture its full equilibrium effects. In this paper, we provide a new framework for studying the equilibrium effects of AI on the future of work. The novelty of our approach lies in focusing on a specific type of automation to understand AI’s distinctive impact: the automation of knowledge work. This is an important part of the economy where production is constrained primarily by time and knowledge, making firms central to organizing and optimizing the use of available knowledge ( Garicano and Rossi-Hansberg , 2015 ). 2 From this perspective, AI stands apart from previous automation technologies in its ability to alleviate both time and knowledge constraints, potentially leading to a fundamental reorganization of production. More precisely, we embed AI in a canonical model of a knowledge economy: The knowledge hierarchies first introduced by Garicano ( 2000 ). Using this framework, we describe the equilibrium effects of AI on organizational and labor outcomes, including (i) occupational choice, (ii) firm productivity, size, and decentralization, and (iii) the distribution of labor income. Our analysis highlights how the impact of AI crucially depends on its problem-solving capabilities and its degree of autonomy. Our starting point—the pre-AI economy—is the baseline model of Garicano and Rossi-Hansberg ( 2004 ), Antr`as, Garicano, and Rossi-Hansberg ( 2006 ), and Fuchs, Garicano, and Rayo ( 2015 ). Labor and knowledge are the sole inputs in production. Humans are endowed with one unit of time and are heterogeneous in terms of knowledge. Individuals use their time to pursue production opportunities but encounter problems of varying difficulty during the production process. Output is produced when an individual can successfully solve the problem she confronts, which occurs when her knowledge exceeds the problem’s difficulty. If a human cannot solve a problem on her own, she may seek help from another human. Help, however, is costly in terms of time.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1238,
+        "section_id": 3,
+        "section_name": "Three Key Properties of Modern AI",
+        "paragraph_id": 4,
+        "text": "2. The Advent of Foundation Models .— Foundation models represent a transformative shift in AI. These are models characterized by their ability to handle a wide variety of tasks through training on large-scale datasets using self-supervised learning techniques ( Bommasani et al. , 2022 ; Council of Economic Advisers , 2024 ). Models like GPT-4, Gemini, and Claude Sonnet exemplify this approach, serving as flexible, general-purpose platforms that can be adapted to diverse downstream tasks with minimal additional training. This adaptability enables firms to leverage shared AI models, removing the necessity for the costly development of proprietary, domain-specific systems. 9 As a result, a small number of powerful AI models can function across multiple domains, driving significant economic and industry-wide impact. 10 Foundation models have demonstrated their versatility across various industries, from customer service automation to legal research and financial analysis. For instance, Klarna, a fintech company, automated over 700 customer service roles using a version of OpenAI’s models. In the legal field, Harvey leverages OpenAI’s technology to automate research and document analysis. Similarly, Claude Sonnet powers applications at Lonely Planet for itinerary creation and at Bridgewater Associates for tasks like research, coding, and data visualization. 11 Moreover, evidence suggests that general-purpose models often outperform specialized AI sys9 For instance, Andreessen Horowitz, a venture capital firm, surveyed 100 Fortune 500 companies across industries such as technology, telecom, banking, healthcare, and energy. The survey found that 94% of these firms were customizing existing foundation models, while only 6% were creating their own specialized models ( Wang and Xu , 2024 ). 10 Using the language of computer scientists, foundation models exhibit emergence —the ability to develop unexpected capabilities that enable them to perform tasks beyond their explicit training. Combined with scalability, emergence then leads to homogenization , defined as the growing reliance on a few powerful models across multiple domains ( Bommasani et al. , 2022 ). 11 For more details on these applications—and to explore additional examples—visit OpenAI’s customer stories ( https://openai.com/news/stories/ ), Anthropic’s customer page ( https://www.anthropic.com/customers ), Amazon AI Customer Stories ( https://aws.amazon.com/ai/generative-ai/customers ), and Google Cloud’s Gemini AI blog ( https://cloud.google.com/blog/products/ai-machine-learning/bringing-gemini-to-organizations-everywhere ) (accessed October 7, 2024).",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1238,
+        "section_id": 3,
+        "section_name": "Three Key Properties of Modern AI",
+        "paragraph_id": 5,
+        "text": "tems. For instance, ChatGPT—a fine-tuned version of GPT-4—has demonstrated superior performance to BloombergGPT—a Large Language Model (LLM) trained specifically on financial data—in various finance-related tasks ( Li et al. , 2023 ). Similarly, Nori et al. ( 2023 ) demonstrate that GPT-4 surpasses specialist models across medical benchmarks and argue that this advantage extends to other domains, including accounting, law, nursing, and clinical psychology. This shows that even in fields that traditionally relied on highly specialized models, general-purpose foundation models offer better performance, increased flexibility, and lower costs.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1238,
+        "section_id": 5,
+        "section_name": "The Model",
+        "paragraph_id": 42,
+        "text": "18 For instance, as of October 2024, OpenAI charged USD 2.50 per 1 million input tokens and USD 10 per 1 million output tokens for their flagship foundation model, GPT-4o. Source: https://openai.com/api/pricing/ (accessed October 17, 2024). 19 Regarding the conversion of inference tokens into FLOPs, a commonly used approximation for transformer-based LLMs is FLOPs ≈ 2 × N × tokens, where N represents the model’s number of parameters ( Appenzeller et al. , 2023 ; Kaplan et al. , 2020 ). While the parameter count in most well-known LLMs is proprietary, GPT-3 is publicly known to have 175 billion parameters ( Brown et al. , 2020 ). 20 Developing more effective and cost-efficient techniques for customizing foundation models is an especially active area in the computer science literature. Techniques such as RAG, LoRA, QLoRA, and PETF, or variations thereof, are being proposed at an accelerated pace. For an overview of the most commonly used methods, see Shah and Patel ( 2023 ).",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1238,
+        "section_id": 7,
+        "section_name": "The Impact of Autonomous AI",
+        "paragraph_id": 48,
+        "text": "Regarding the workers who are not occupationally displaced, the match of the worst workers improves with AI’s introduction because post-AI, they are assisted by AI, while pre-AI, they are assisted by humans who are less knowledgeable than AI. However, the match of the best workers worsens with AI’s introduction because post-AI, the best solvers assist the production work of the newly appointed workers (humans and possibly AI) who are more knowledgeable than the best preAI workers. Together, Propositions 4 and 5 show that even when AI destroys the most decentralized firms (i.e., when z AI ∈ int W ), a fraction of the non-occupationally displaced solvers are reallocated to more decentralized firms. Similarly, even when AI destroys the least productive firms (i.e., when z AI ∈ int S ), a fraction of the non-occupationally displaced workers are reallocated to less productive firms.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Propositions"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1238,
+        "section_id": 9,
+        "section_name": "Discussion and Final Remarks",
+        "paragraph_id": 17,
+        "text": "very knowledgeable human workers. However, as discussed in Section 3.2 , the utility of AI extends beyond automating knowledge work. Thus, firms may adopt AI technologies for purposes unrelated to automation, such as reducing communication costs or lowering the cost of acquiring knowledge. As noted in the same section, the effects of such technologies have been extensively studied (see, e.g., Garicano and Rossi-Hansberg , 2006 ; Antr`as et al. , 2008 ; Bloom et al. , 2014 ; Garicano and Rossi-Hansberg , 2015 ). These effects are fundamentally different from the ones of AI as an automation technology. For instance, better communication technologies—modeled as a reduction in the communication cost h —always displace humans from specialized problem-solving towards routine work as the very best solvers can now supervise larger teams. In contrast, the displacement generated by AI as an automation technology depends on its autonomy and its problem-solving capabilities (see Propositions 3 and 8 ).",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Propositions"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    }
+]

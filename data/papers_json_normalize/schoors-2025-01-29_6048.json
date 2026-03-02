@@ -1,0 +1,1074 @@
+[
+    {
+        "paper_id": 1533,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Crisis? What Crisis? Bank Stability, Financial Development, and State Propaganda ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Ruben Enikolopov † Karolin Kirschenmann ‡ Koen Schoors § Konstantin Sonin ¶",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "How does government control over mass media affect banking system? Our theoretical model predicts that if the media are biased, depositors are less likely to run on their bank, but also less likely to deposit their money in the banking system in the first place. Empirically, we show that countries with more media freedom experience both more frequent banking crises and higher levels of financial development. We pin down the underlying mechanism with a case study from Russia’s 1998 banking crisis. Banks in areas with more access to an independent TV channel saw their depositors return faster in the aftermath of the crisis, in line with the reasoning that the crisis revealed differences in media bias across TV channels and induced differences in financial development at the bank level. Keywords: bank runs, systemic stability, media freedom, information manipulation. JEL: G01, G21, G51, H12, L82, O16.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "∗ We thank seminar participants at ZEW Mannheim and BOFIT as well as participants at the 28th Annual SIOE Conference in Chicago for valuable comments and suggestions. † Universitat Pompeu Fabra, C/ Ramon Trias Fargas, 25-27, Edif. Merc`e Rodoreda 24.434, 08005 Barcelona, Spain. Email: Ruben.Enikolopov@upf.edu . ‡ Leibniz Centre for European Economic Research (ZEW), L7, 1, Mannheim, Germany. Email: karolin.kirschenmann@zew.de . § Department of economics, Ghent University, Tweekerkenstraat 2, 9000 Gent, Belgium. Email: Koen.Schoors@UGent.be . ¶ Harris School of Public Policy, University of Chicago, 1307 East 60th Street, Chicago, IL 60637, USA. Email: ksonin@uchicago.edu .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Historically, democracies have been much more prone to banking crises than autocracies – in both the 19 the and 20 the centuries, before and after World War II, and before and after the collapse of the Bretton Woods System ( Lipscy , 2018 ). Potential reasons include the neglect of long-term costs of policies that promote short-term speculative booms, excessive financial liberalization, and economic openness, which may expose countries to global contagion. At the same time, financial development tends to accelerate after democratization ( Huang , 2010b ) and there is little doubt that financial development helps growth ( King and Levine , 1993 ; Demirg ̈u ̧c-Kunt and Singer , 2017 ). Thus, puzzlingly, democracies at the same time have both a higher incidence of banking crises with their negative consequences and higher levels of financial development with the associated benefits.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "In this paper, we study media freedom as a mechanism that connects banking sector stability and financial development with the functioning of political regimes. Specifically, we focus on the ability of authoritarian regimes to manipulate public information to affect depositors’ perception of the probability of a bank run. We start with a simple theoretical model of media bias in an environment characterized by at least partial government control of the media and by uncertainty about the state of the economy. Naturally, the government that controls the media chooses to positively bias the signal depositors receive about the economic outlook; in this situation, even the fully rational depositors might be fooled to keep their money in place even if it would be optimal to withdraw it. As a result, depositors are less likely to run on the bank but also less eager to make deposits in the first place, when media bias is more pronounced. And after a crisis, depositors in a low-bias environment are more likely to return to the bank than depositors in a high-bias environment. Thus, a higher state control over the media is associated with both less frequent crises and less financial development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "We take our model to the data in two steps. First, we use data on a large cross-section of countries for the years 1988 to 2016. Our measure of media freedom comes from Freedom House , which is available from 1988 onwards. We obtain the incidences of systemic banking crises from the database in Laeven and Valencia ( 2020 ), which ends in 2016, and the index measuring financial development from the IMF’s Financial Development Index Database. In this cross-country setting tailored to testing the predictions of our theory, we demonstrate that a lower degree of government control over the media is highly correlated with a higher likelihood of financial crises and more financial development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "In the second step of our empirical analysis, we aim to provide causal evidence of the relationship between media freedom and financial fragility and financial development, respectively. In other words, we pin down the media freedom channel as the underlying mechanism that explains why democracies are more prone to banking crises, yet are more financially developed at the same time. We test the media bias mechanism implied by our theoretical model with a dataset of monthly Russian bank balances of 520 small regional household deposit-taking banks around the 1998 Russian crisis, exploiting bank-level differences in the access to unbiased information (free media) for identification purposes. Depositors of some banks mainly had access to state television which mollified the apocalyptic state of the Russian economy until the moment of collapse, while depositors of other banks also had access to the independent television channel NTV that was much less evasive about the state of the economy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "Although we do not have depositor-level data at hand, during our observation period, the large majority of Russian deposit banks were small, had no branches, and thus collected household deposits only from nearby households. For most banks, therefore, the availability of NTV at the bank’s address is a good proxy for the availability of NTV to its average household depositor. We construct the predicted probability that NTV was available using data on the location of NTV transmitters, geographic variation in signal propagation, and survey evidence on NTV availability as in Enikolopov et al. ( 2011 ). This gives us a measure of access to unbiased news at the bank level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "We find that banks are equally likely to suffer a bank run at the height of Russia’s financial crisis between August and November 1998, but also that banks whose depositors have access to less biased media ( NTV ) are much more likely to see their depositors return in the months after the acute crisis period. This is in line with the interpretation that the 1998 crisis revealed the media bias of the government-controlled channels, making depositors in this environment less willing to deposit their money in banks in the first place and, in this way, likely curbing further financial and economic development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "We employ the timeline of events during the Russian crisis together with the varying NTV availability at the bank branch level in our identification strategy. The identification of the differences-indifferences effects crucially depends on the parallel trend assumption which implies that the change in deposits would have been the same in banks with varying NTV availability in the absence of the crisis events. Enikolopov et al. ( 2011 ) provide evidence that the availability of NTV was idiosyncratic conditional on observables, since it depended on the location of NTV transmitters—the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "vast majority of which were built for the Soviet educational channel before NTV was formed. In addition, all the banks in our sample were registered before 1996, when NTV was granted the nation-wide network of transmitters. It is therefore not plausible that certain banks chose their location because they wanted to be in an area with(out) access to independent television. Finally, we provide more formal evidence in favor of parallel trends in our pre-crisis period and against a systematic relationship between the NTV transmitter network and depositor behavior.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "Our study improves our understanding of the relationship between autocracy, media bias, financial stability, and financial development. In particular, we document a new motivation for developed strategic autocracies to limit their extent of media bias, lest not to dent their opportunities for future financial and economic development. This newly uncovered constraint limits the possibilities for modern electoral autocracies to rely on media bias as opposed to repression and violence to sustain their regime.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "Our study contributes to several strands of the literature. First, it connects to the vast literatures on the drivers of financial crises and financial development. Several papers have established drivers of banking crises such as macroeconomic factors accounting for excessive capital inflows ( Reinhart and Rogoff , 2011 ; Kaminsky and Reinhart , 1999 ), financial liberalization ( Kaminsky and Reinhart , 1999 ), macroeconomic mismanagement and shocks ( Beck et al. , 2006 ; Demirg ̈u ̧c-Kunt and Detragiache , 2005 , 1997 ), monetary policy ( Smith , 2002 ), and private credit bubbles ( Jord`a et al. , 2016 , 2015 ; Schularick and Taylor , 2012 ). Other studies highlight the institutional causes of macroeconomic volatility and banking crisis. For instance, Anginer and Demirg ̈u ̧c-Kunt ( 2019 ) conclude that deposit insurance increases bank risk and systemic instability, while D’Erasmo et al. ( 2024 ) show how regulation that assigns domestic government debt zero risk even if it is risky induces banks to invest in these bonds leading to banking crises when sovereigns default. Consistent evidence is provided in Drechsler et al. ( 2016 ) and Acharya and Steffen ( 2015 ). Calomiris and Haber ( 2014 ) provide related case-study evidence of the role of political institutions in supporting banking crises, e.g., through looser banking regulation. Lipscy ( 2018 ) shows that democracies have a higher likelihood of banking crises but do not analyze the role of media bias as an underlying mechanism for this relationship. Acemoglu et al. ( 2003 ) find for the period 1970-1997 that large cross-country differences in macroeconomic instability have deeper institutional causes. They argue that these institutional causes lead to poor macroeconomic outcomes via a variety of mediating channels, but stop short of pinpointing the precise mechanism through which institutional weaknesses produce",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "economic instability and crises 1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "In addition, many drivers of financial development have been explored in the related literature (see Voghouei et al. , 2011 and Huang , 2010a , for an overview). These are, for example, legal institutions ( La Porta et al. , 1998 , 1997 ), trade openness (e.g., Chinn and Ito , 2006 ), financial liberalization (e.g., Baltagi et al. , 2009 ), and macroeconomic factors (e.g., Jaffee and Levonian , 2001 ). Other studies highlight the political drivers of financial development. In general, the political economy literature posits the basic idea that incumbent elites may want to postpone liberalization because the current status allows them to maintain their grip on power and the related rents. Relatedly, Huang ( 2010b ) shows that financial development tends to be low before democratization and that a period of democratization is usually followed by higher financial development. Girma and Shortland ( 2008 ) provide evidence that both democracy and the stability of the political system promote financial development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "We contribute to these literatures by establishing the lack of media freedom (government control of the media) as a specific mechanism of institutional weakness. Related empirical evidence by Djankov et al. ( 2003 ) supports the notion that government ownership of media undermines political and economic freedom. We show both theoretically and empirically how the resulting media bias generates more financial instability but also higher financial development. Thus, we reconcile the seemingly contradictory findings of the effects of democracy on financial stability and financial development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "Second, our paper contributes to the literature on propaganda and Bayesian persuasion models. Basic Bayesian persuasion models show how the provision of information can influence behavior (e.g., Bergemann and Morris , 2019 ; Kamenica , 2019 ). Guriev and Treisman ( 2019 ), Little ( 2017 ), and Gehlbach and Sonin ( 2014 ) add propaganda, i.e., that the government manipulates the information that is provided to citizens, to these basic models. We contribute to this literature by using a Bayesian persuasion model to establish the effect of propaganda in the form of endogenous media bias on depositor behavior. To the best of our knowledge, we thereby provide the first consistent general theory of financial stability, financial development and endogenous propaganda.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "Third, our paper relates to the literature on media and finance. The media coverage of firms has received widespread attention in a multitude of academic disciplines relying on a wide array of theoretical frameworks and contextual settings. Graf-Vlachy et al. ( 2020 ) provide an excellent 1 More broadly, also political factors such as government popularity may lead to credit booms which then increase the likelihood of banking crises ( Herrera et al. , 2020 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "overview of this growing literature and suggest avenues and opportunities for further research. The role of media in finance-related contexts was recently surveyed by Raimondo ( 2019 ). Closest to our setting is Ding et al. ( 2018 ), who empirically show that the censorship of negative news and promotion of positive news in Chinese media biases the signal investors receive on the value of cross-listed Chinese companies and leads to a premium on the exclusively Chinese market for Ashares relative to the market for B-shares which is accessible to foreign investors. We contribute to this literature by studying the effect of media bias on depositor behavior during crisis times. 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "The rest of the paper is organized as follows: Section 2 proposes a model that reconciles the paradoxical observations that democracies suffer more banking crises, yet enjoy higher financial development. In section 3 , we lay out the stylized country-level empirical facts in line with the theory. In section 4 , we then provide causal proof for the underlying media bias mechanism. Section 5 provides concluding remarks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "We provide a stylized model of information manipulation by the government that is interested in both expansion of the deposit base in the banking system and financial stability in the face of an economic crisis. There is a bank in a country where the government has a degree of control over the media. Depositors can choose to deposit their money with the bank and choose to keep or withdraw their money when there are reasons to suspect that the crisis is looming. Making these decisions, depositors take into account the extent of the government’s manipulation of media and the signal about the true state of the economy that they receive after depositing money in the bank. As the government is interested in presenting a rosier picture when the external shock strikes to persuade depositors not to withdraw their money, thereby increasing bank stability, the depositors are less willing to go to the bank in the first place. Thus, the government has to balance two opposing effects – more financial stability vs. less financial development – in its decision about the extent of information manipulation. 2 As such, our paper also relates to papers drawing conclusions on the role of information for depositor behavior in banking crises (see, i.g., Iyer et al. , 2016 ; Iyer and Puri , 2012 ) and to the literature studying the effects of media freedom on other economic and social outcomes (for surveyed see Anderson et al. , 2015 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "There is a continuum of citizens [0 , 1] who consider depositing [FORMULA] 1 back with no interest. The payoffs u i ( a, s ) of agent i are therefore",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 19,
+        "text": "u i ( k, d ) = δ, u i ( k, n ) = 1 + r, u i ( w, d ) = 1 , u i ( w, n ) = 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 20,
+        "text": "Agents maximize their expected returns. The government maximizes the utility function that is increasing in the number of depositors, D , and decreasing in the probability of money withdrawal, P ( Run ), so that u G = u G ( D ) =",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 21,
+        "text": "αD − P ( Run ) D. This formula assumes that the government’s loss in the case that depositors run is proportional to the amount of deposits that they have in the bank; we omit the proportionality coefficient as the function is linear in D, which means that α, the weight that the government puts on increasing the number of deposits, subsumes the coefficient. The government (who controls the media) and (potential) depositors share the common prior about the probability of default, θ = P ( s = d ) . The timing of the model is as follows. 1. The media, either a private owner or the government, determines its bias β . 2. Observing the media environment characterized by β, people decide whether or not to deposit money in the bank. 3. The media receives information about the true state of the world and reports it according to the set mechanism. 4. Based on the signal they receive from the media, each depositor i decides whether or not to withdraw her deposits. 5. The state of the world is revealed; everyone receives their rewards.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 22,
+        "text": "2.2 Depositors’ Behavior",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 23,
+        "text": "We solve the model by backward induction, i.e., starting each depositor i ’s incentive compatibility constraint at the withdrawal stage. Upon receiving the signal S = n, i.e., that there is no imminent default, the agent i ’s posterior is, by the Bayes formula,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 24,
+        "text": "P ( s = d | S = n ) = θ θ + β (1 − θ ) . (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 25,
+        "text": "Thus, depositor i keeps her deposit if and only if",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 26,
+        "text": "E ( u i ( k ) | S = n ) ≥ E ( u i ( w ) | S = n ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 27,
+        "text": "Using ( 1 ), one gets (1 + r ) θ θ + β (1 − θ ) + δ β (1 − θ ) θ + β (1 − θ ) ≥ 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 28,
+        "text": "which is equivalent to β ≤ rθ (1 − δ ) (1 − θ ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 29,
+        "text": "As long as the amount of bias in the news, β, does not exceed the threshold amount",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 30,
+        "text": "β = rθ (1 − δ ) (1 − θ ) , (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 31,
+        "text": "any depositor would keep her money if the news are S = n (normal) and withdraw if S = d (default). Naturally, this threshold amount of bias β increases with the returns on the deposit if there is no default, r, the amount that can be recovered in default, δ, and the prior probability that there is no looming crisis, θ.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 32,
+        "text": "2.3 Optimal Media Bias",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 33,
+        "text": "If those who choose the bias of the media (e.g., the government) are interested in maximizing the probability that depositors do not withdraw, β is the optimal bias. Indeed, it maximizes the probability that depositors stay, θ + β (1 − θ ), subject to the incentive compatibility constraint to follow the signal. If the bias of the media exceeds β, then the depositors ignore the information from the media and withdraw the deposits regardless of the signal.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 34,
+        "text": "Critically for the government’s choice of media bias, the potential depositors’ incentives to make a deposit depend on the quality of the media they have access to. Taking a step back, consider a decision of agent i with the opportunity costs r i to make a deposit when the media that she has access to has bias β. The ex ante expected returns are",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 35,
+        "text": "Eu i ( β ) = P ( S = n ) ( u i ( k, n ) P ( s = n | S = n ) + u i ( k, d ) P ( s = d | S = n )) + P ( S = d ) ( u i ( w, d ) P ( s = d | S = d ) + u i ( w, n ) P ( s = n | S = d )) = 1 + rθ − β (1 − δ ) (1 − θ )) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 36,
+        "text": "That is, given the media bias β, agent i makes a deposit if and only if",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 37,
+        "text": "Eu i ( β ) = 1 + rθ − β (1 − δ ) (1 − θ )) ≥ r i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 38,
+        "text": "Given our assumption about the distribution of opportunity costs r i , the total number of deposits is equal to D ( β ) = 1 + rθ − β (1 − δ ) (1 − θ ) . (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 39,
+        "text": "Equation ( 3 ) demonstrates that the higher the media bias β, the lower the depositor base in the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 40,
+        "text": "banking system. As depositors do not expect to be properly warned when the situation deteriorates, they do not go to banks in the first place. The lower the bias in the media outlet that potential depositors have access to, β, the more willing they are to keep their money in the bank. The total number of deposits is maximized when the depositors have access to full (unbiased) information β = 0 . If the media is owned by a private business whose only interest is, say, circulation, then the optimal choice of bias is β = 0 . Indeed, making the media fully informative maximizes the number of depositors who are, naturally, the interested consumers of the media. (We do not model the cost of consuming media, but it is the depositors who increase their payoff by having access to the informative media and so are willing to bear the cost.) For the government, the optimal choice of β is different. The government has to trade off the amount of depositors the banks attract, D ( β ) , which is a decreasing function of β, and the probability that the depositors get the signal to keep the money in banks, S = n, which is an increasing function of β. β ∗ = arg max β u G ( D ) = αD ( β ) − P ( S = d ) D ( β ) . Solving the first-order conditions yields the optimal bias that the government imposes:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 41,
+        "text": "β ∗ = 1+ rθ 1 − θ − α 1 − δ − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 42,
+        "text": "Naturally, the government chooses a lower bias when it is more concerned about financial development (a higher number of deposits) than financial stability, i.e., when the value of α, the weight on the deposits, is higher. Now let us consider a situation, in which a customer has access to two media outlets, with biases β G and β NTV . This is the situation, in which NTV viewers find themselves in our empirical exercise: they have access to both NTV and the state media. In such a situation, rational agents will use both sources to update their priors on the perspectives of the crisis. Fix β NTV and solve the persuasion-optimization problem for the other outlet. Repeating the analysis above, we find that the optimal persuasion problem requires the government to maximize θ + β G β NTV (1 − θ ) subject to β G ≤ 1 β NT V θ 1 − θ . This implies that the smaller the independent media bias, β NTV , the lower the government’s persuasion effect. In the limit case, when the independent media reports information truthfully, β NTV = 0 , the government cannot manipulate the information at all.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 43,
+        "text": "2.4 Empirical Implications",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 44,
+        "text": "Our model provides the following implications for empirical analysis:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 45,
+        "text": "(1) A higher level of media bias results in an equilibrium with a lower level of financial development (less deposits) and a higher level of financial stability (the probability of a bank run following the media report is lower).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 46,
+        "text": "(2) People are more eager to make deposits with banks when the quality (the absence of bias) of media is higher. People who have access to freer media thus deposit more.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 47,
+        "text": "(3) In terms of comparative statics, people are more likely to make deposits when the probability of default is lower ( θ is higher), returns are higher ( r is higher) and the recovery rate is higher ( δ is higher).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 48,
+        "text": "(4) In the presence of an independent media, the optimal bias of the state media is constrained by that of the independent one. The lower the independent media bias, the lower the optimal state media bias.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 49,
+        "text": "Our model is perhaps the simplest possible model that allows to illustrate the trade-off between financial development and financial stability that a government with some level of media control faces. A straightforward extension of the model would be adding the moral hazard component: if the bank knows that the government manipulates information to prevent a bank run it has incentives to do less to avoid the crisis. In other words, information manipulation by the government incentivizes inefficient risk-taking by banks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 50,
+        "text": "Our model could serve as a foundation for a model of long-term financial development, in which equilibria with more information manipulation by the government result in a banking system with lower likelihood of banking crises despite the higher financial risks on bank balances. It is the initial advantage of autocracies before their first big financial crisis (e.g., China). They can take more risk and grow faster, while still have more stability (at least initially). But that advantage melts away after the first meltdown (revelation of the bias), resulting in loss of trust in the financial system, less financial development and lower growth over the longer run.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 51,
+        "text": "Note that (2) further implies that those who have access to freer (less biased) media are more likely to return after a banking crisis - as they now know that they are more likely to be warned about future problems and endogenize this knowledge in their decision to deposit with the bank. We will put this empirical implication of the mechanism in our model to the test in section 4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 0,
+        "text": "We start our empirical analysis with testing the model’s implications in a broad cross-country sample. This setting allows us to establish several stylized facts about the relationship between media bias, financial stability, and financial development before pinning down the mechanism at work using micro-level data for better identification of the effects. Appendix A1 provides definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 1,
+        "text": "3.1 Econometric Approach and Data",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 2,
+        "text": "At the country level, the model implies that countries with more bias in the signal about the state of nature will tend to have fewer financial crises because people are less likely to withdraw provided a given state of nature. However, depositors in these countries are also less likely to deposit money in their banks in the first place, contributing to lower financial development, ceteris paribus. In short, more bias is correlated with lower crisis incidence, fewer bank deposits, and lower financial development. 3",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 3,
+        "text": "We therefore estimate the following set of equations:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 4,
+        "text": "Banking crisis c,t = α 1 Media Freedom c,t + θ 1 ∆ c,t + ε c,t Financial development c,t = α 2 Media Freedom c,t + θ 2 Γ c,t + ε c,t (4) Deposits c,t = α 3 Media Freedom c,t + θ 3 Γ c,t + ε c,t ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 5,
+        "text": "where subscripts c and t stand for country and year, respectively. Media Freedom c,t is the media bias in country c in year t , and ∆ c,t and Γ c,t are a battery of time-varying country-specific characteristics associated with banking crisis incidence, financial development and the amount of bank deposits. Note that in our analysis of financial development and bank deposits, two very slowly moving variables, we include all explanatory variables as 5 year rolling averages. In our analysis of the banking crises, we do so in one specification as a robustness check. We also add region fixed effects 3 Another explanation for the relation between media freedom and financial development could run through bank lending corruption. Houston et al. ( 2011 ) show empirically that state ownership of media and media concentration is associated with higher levels of bank corruption. This finding would also imply that media freedom is associated with more banking crises (corruption scandals are more likely to be revealed) and higher ultimate financial development (overall less corrupt lending improves credit allocation which, in turn, induces higher economic and financial development). While this mechanism runs through bank lending, our mechanism, in contrast, runs through depositing and the behavior of depositors during banking crisis. Thus, both mechanisms are complementary.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 6,
+        "text": "to some of our specifications. 4 Our observation period starts in 1988 with the first availability of the data on media freedom and ends in 2016 when the data on systemic banking crises ends. Standard errors are clustered at the country level to take into account autocorrelation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 7,
+        "text": "Banking crisis c,t comes from the 2020 version of the systemic banking crises database of Laeven and Valencia ( 2020 ) and is a dummy variable that equals 1 in the first year t in which country c is subject to a banking crisis, and zero otherwise. Following Demirg ̈u ̧c-Kunt and Detragiache ( 1997 ) and Demirg ̈u ̧c-Kunt and Detragiache ( 2005 ) we drop all crisis years that follow the first crisis year from the regression sample to avoid that feed-back effects muddle the estimated relationships when some of the explanatory variables may themselves be affected by the crisis and estimate the Banking crisis equation as a multivariate logit model. Financial development c,t comes from the IMF’s Financial Development Index Database and is an index (between 0 and 1) summarizing how developed financial institutions and financial markets are in terms of their depth, access, and efficiency, with larger values indicating more development. Deposits c,t comes from the World Bank’s World Development Indicators and is defined as bank deposits as a share of GDP. We trim both variables at the 1st and 99th percentiles to make sure that our results are not driven by outliers and estimate multivariate OLS models. 5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 8,
+        "text": "Our explanatory variable of interest concerns media bias. We use the Media freedom index from Freedom House as our measure of media bias β c,t at the country level. It takes on values from 1 to 3, with higher values indicating more media freedom, i.e. less bias. Our model predicts that more bias will lead to a lower likelihood of financial crisis, but also a lower level of deposits and financial development. Since our measure of bias ( Media freedom ) is inversely related to the level of bias, the testable hypotheses implied by our model are α 1 , α 2 , α 3 > 0.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 9,
+        "text": "As control variables, ∆ c,t contains standard predictors of banking crisis that have been shown to be associated with financial sector health ( D’Erasmo et al. , 2024 ; Jord`a et al. , 2016 , 2015 ; Schularick and Taylor , 2012 ; Beck et al. , 2006 ; Smith , 2002 ; Kaminsky and Reinhart , 1999 ; Demirg ̈u ̧c-Kunt and Detragiache , 1997 ). These are sovereign debt and spending dynamics ( Change government debt/GDP and Change government expenditure ), balance of payments crises ( Change current account balance ), economic growth ( Change GDP per capita ), the change in the money multiplier ( change broad money/total assets ), inflation ( Log(Inflation) , the Real interest rate , consumption 4 We cannot estimate panel fixed effects regressions at the country level because media freedom varies much less within countries over time than between countries and its effect is thus largely absorbed by the country fixed effects. 5 Since Financial development is a fractional variable with outcomes between 0 and 1, we also estimate fractional logit and probit models. The results are qualitatively and quantitatively very similar and available upon request.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 10,
+        "text": "growth ( Change consumption ), and private credit bubbles ( Change credit to private sector/GDP ). Γ c,t includes a number of macroeconomic factors that have been used in the previous literature to explain financial development (for extensive overviews of this literature see Voghouei et al. ( 2011 ) and Huang ( 2010a )). These are economic growth ( Change GDP per capita ), inflation ( Log(Inflation) ), the change in the terms of trade, i.e. a country’s capacity to import less its exports of goods and services ( Change terms of trade ), population growth ( Change population ), consumption growth ( Change consumption ), the growth in listed domestic firms ( Change nr. listed firms ), and the growth in the number of bank branches ( Change nr. bank branches ). We do not include direct governance variables such as, e.g., the Rule of Law Index, or political regime indicators because they are highly correlated with Media freedom (see, e.g., Girma and Shortland ( 2007 )). All control variables come from the World Bank’s World Development Indicators and the IMF’s World Economic Outlook.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 11,
+        "text": "Given that our model works through rational depositors optimally deciding not to deposit in banks, because of media bias about the state of the banking system, the currency in which people deposit their money should be unaffected. Holding deposits in dollars rather than the national currency only protects depositors against devaluations of the local currency, but not against an unexpected bank crisis that depositors were unaware of because of media bias. We therefore use the dollarization of deposits as a placebo outcome variable and estimate the following regression:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 12,
+        "text": "Dollarization c,t = α 4 β c,t + θ 4 Γ c,t + ε c,t , (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 2,
+        "section_name": "Country-level Evidence",
+        "paragraph_id": 13,
+        "text": "where, as before, β c,t is the media bias in country c at time t , Γ c,t is a battery of country and time specific predictors as defined above. Again, we include all explanatory variables as 5 year rolling averages. The dollarization data is the 2010 updated data set from Yeyati ( 2006 ). Dollarization is the share of deposits that is denominated in foreign currency per country in a given year. We trim the dependent variable at the 1st and 99th percentiles to make sure that our results are not driven by outliers and estimate a multivariate OLS model. 6 Since, in our model, media bias should not affect the currency in which people deposit their money, our empirical hypothesis is α 4 = 0. 6 Since Dollarization is a fractional variable with outcomes between 0 and 1, we also estimate fractional logit and probit models. The results are qualitatively and quantitatively similar and available upon request.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "We report the results for the Banking crisis regressions in Table 1 . We find that media bias (media freedom) is associated with a lower (higher) incidence of banking crises. In our theory, media freedom alters depositors’ choice to withdraw their money from the bank, controlling for the true state of the banking system. By itself, media freedom is not related to the incidence of banking crises, as shown in column (1). But once the macroeconomic variables that are generally associated with banking system health are taken into account, Media freedom becomes a strong and significant predictor of banking crises (column (2)). This finding remains true when we add region fixed effects in column (3) and include all explanatory variables as 5-year rolling averages in column (4). While current theories of banking crises either omit media freedom altogether, or suggest there may be a positive relation through increased transparency and the consequent improved market discipline, our results point to the opposite conclusion. We can reject α 1 ≤ 0: More transparency about bank health in the media does not lead to fewer but to more bank crises.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "We then turn to the results for the relationship between media bias and financial development, deposits, and dollarization in Table 2 . We find that countries with more media freedom tend to have higher financial development (columns 1-3) and more bank deposits relative to their GDP (columns 4-6), while the evidence for a relation between media freedom and the dollarization of deposits is very weak at best (columns 10-12). These results hold without and with controlling for the standard determinants of financial development from the previous literature. These results imply that we can solidly reject α 2 , α 3 ≤ 0. Less bias, that is, is related to higher financial development and more bank deposits. Yet we can reject this hypothesis for dollarization, our placebo measure of depositor behavior, suggesting that the results are not so much driven by variation in the preference for the currency in which to make these deposits. Such behavior would be related to differences in exchange rate expectations and thus perceptions about the broader state of the economy. Our results rather seem to be driven by variation in the desire to deposit money in the banking sector per se.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "In sum, the analyses in this section show that the predictions of our model are corroborated in a large cross-country sample. We demonstrate that more media bias is associated with a lower probability of a banking crisis, but also with lower financial development and fewer deposits.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "Table 1. Media freedom and banking crises",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "This table displays marginal effects from Logit regressions regressions where the dependent variable is Banking crisis . Column (3) contains region fixed effects, while column (4) includes all explanatory variables as 5-year rolling averages. Standard errors clustered at the country level are reported in parentheses. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level. The observation period is 1988 to 2016. See Appendix A1 for definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 5,
+        "text": "Media freedom 0.091 1.243[FORMULA] 1.102[FORMULA] 1.122[FORMULA] (0.098) (0.373) (0.366) (0.296) Change government debt/GDP 0.025[FORMULA] 0.024[FORMULA] 0.015** (0.007) (0.007) (0.007) Change government expenditure -0.020 -0.023 -0.028 (0.013) (0.015) (0.037) Change current account balance -0.001* -0.001* -0.001 (0.000) (0.001) (0.001) Change GDP per capita 0.121** 0.108** 0.141* (0.051) (0.052) (0.072) Change broad money/total reserves 0.010** 0.011[FORMULA] 0.013 (0.004) (0.004) (0.010) Log(Inflation) 1.310[FORMULA] 1.557[FORMULA] 0.999** (0.379) (0.400) (0.461) Real interest rate -0.003 0.011 -0.018 (0.019) (0.019) (0.045) Change consumption 0.002 0.002 -0.094 (0.013) (0.016) (0.065) Change credit to private sector/GDP 0.003 -0.003 0.032[FORMULA] (0.009) (0.009) (0.009) Constant -3.889[FORMULA] -9.605[FORMULA] -9.026[FORMULA] -8.564[FORMULA] (0.214) (1.432) (1.490) (1.113) Region fixed effects no no yes no All explanatory variables as 5-year rolling averages no no no yes Observations 4,821 1,370 1,247 1,688 Countries 194 104 94 105 R 2 (pseudo) 0.001 0.208 0.243 0.115",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "Table 2. Media freedom and financial development This table shows how Media freedom is related to different characteristics of a country’s financial system. It displays the results from OLS regressions where the dependent variable is Financial development in columns (1-3), Deposits in columns (4-6) and Dollarization in columns (7-10). Columns (3), (6) and (9) contain region fixed effects. All explanatory variables are 5-year rolling averages. Standard errors clustered at the country level are reported in parentheses. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level. The observation period is 1988 to 2016. See Appendix A1 for definitions and sources of all variables. (1) (2) (3) (4) (5) (6) (7) (8) (9) Financial development Deposits Dollarization Media freedom 0.132[FORMULA] 0.120[FORMULA] 0.066[FORMULA] 14.663[FORMULA] 12.525[FORMULA] 10.704** -0.009 -0.017 0.053 (0.018) (0.019) (0.024) (2.971) (3.194) (4.277) (0.024) (0.027) (0.049) Change GDP per capita -0.004 -0.014[FORMULA] -0.873* -1.529** -0.001 0.002 (0.003) (0.004) (0.516) (0.662) (0.007) (0.009) Log(Inflation) -0.084[FORMULA] -0.076[FORMULA] -13.969[FORMULA] -10.276** 0.073[FORMULA] 0.034 (0.014) (0.022) (2.848) (4.565) (0.018) (0.044) Change terms of trade 0.000[FORMULA] 0.000 0.000[FORMULA] -0.000 0.000 -0.000[FORMULA] (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Change population 0.822 0.338 159.986 -13.509 -0.067 -0.234 (0.811) (0.671) (116.603) (87.683) (1.891) (3.149) Change consumption -0.001 0.002 -0.375 -0.099 -0.002 -0.008 (0.004) (0.003) (0.351) (0.450) (0.003) (0.005) Change nr. listed firms -0.029 -3.047 0.025 (0.018) (3.363) (0.016) Change nr. bank branches 0.204 -22.390 0.118 (0.149) (24.622) (0.273) Constant 0.028 0.210[FORMULA] 0.471[FORMULA] 10.132* 38.400[FORMULA] 77.477[FORMULA] 0.241[FORMULA] 0.169* -0.045 (0.032) (0.066) (0.114) (5.614) (11.355) (22.106) (0.046) (0.093) (0.195) Region fixed effects no no yes no no yes no no yes Observations 4,180 1,382 438 3,954 1,353 428 1,172 520 111 Countries 155 128 93 151 126 91 83 66 32 R 2 (adjusted) 0.250 0.418 0.672 0.122 0.347 0.517 0.000 0.123 0.336",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 4,
+        "section_name": "Testing the Mechanism at the Bank-level",
+        "paragraph_id": 0,
+        "text": "The media bias mechanism in our model implies that individuals with access to freer (less biased) media are more likely to return after a banking crisis, relative to those without such access. This follows from the fact that the crisis has revealed to them that they are more likely to be warned about future problems (they are subjected to less media bias) and they endogenize this knowledge in their future decision to deposit with the bank. In the second step of our empirical analysis, we test this empirical implication of our theory with a dataset of monthly Russian bank balances around the 1998 Russian crisis, exploiting bank-level differences in the access to freer media (less bias) for identification purposes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 0,
+        "text": "In August 1998, the Russian economy was hit by a severe macroeconomic crisis, characterized by a steep devaluation of the rouble, a default on both foreign debt and domestic debt and a banking crisis. Because of their exposure to hard currency liabilities and rouble-denominated assets, including government securities, a large number of banks were driven into insolvency, and most banks with household deposits suffered some form of banking panic. Many of the largest players on the retail banking market failed to meet their obligations to depositors, leading to severe losses for depositors who withdrew too late ( Radaev , 2000 ; Schoors , 2001 ; Perotti , 2002 ; Spicer and Pyle , 2000 ). The immediate crisis was over in December 1998, even though it took until well into 1999 for normality to be restored.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 1,
+        "text": "At the time of the 1998 crisis, the Russian media landscape was still characterized by competition at the national level. Almost all Russians had access to the two state television channels ORT (aka Channel One) and RTR (aka Channel Two), which were generally trying to quell any uncertainties of the broader public about the health of their banks. Part of the Russian population also had access to NTV , which was at the time still a privately owned television channel, founded in 1993 with the ambition to become a major nation-wide channel. NTV was much more adamant in providing information about the economic difficulties ahead and the likelihood of an economic crisis. In a national survey by the Public Opinion Foundation of urban (including very small communities) Russians, conducted during June 1-10, 1998, - less than two months before the August default - 59% of subjects responded that the best journalists work at NTV , whereas 29% gave ORT as an answer and only 12% said RTR ( Mickiewicz , 1999a ). In a content analysis study of daily news",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 2,
+        "text": "coverage in 1998, bias was found in roughly one-fifth of Channel One’s coverage and in almost two-thirds of Channel Two’s coverage, while NTV ’s coverage did not display apparent bias on either daily news or weekend news analysis programs ( Mickiewicz , 1999a , p. 29). We are therefore confident to use access to NTV as a measure for receiving a signal with less bias in our following analysis. 7",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 3,
+        "text": "The Russian context is ideal to analyze the effect of media bias on depositor behavior during a crisis because access to NTV at the bank-level can be seen as exogenous. Access to NTV was mainly determined by the location of its transmitters which were those of the former state education channel Channel 4 Ostankino and transferred to NTV in 1996 by order of Yeltsin. The location of the transmitters had been decided by Soviet central planners. Some of the infrastructure was obsolete so that NTV expanded its network over the following years mostly by repairing the inherited transmitters. Accordingly, NTV viewership increased considerably from less than 6% in 1995 to more than 70% in August 1998. The transmitters were dispersed throughout the country, although the network density was lower in areas with low population in Siberia and higher in larger cities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 4,
+        "text": "In and around the larger cities, such as Moscow and St. Petersburg, depositors also had other independent sources of information available. For instance, there were independent local TV channels with a limited reach and there was also some diversity of opinions on the radio and in print media. However, radio and print played only a minor role as sources of political information compared to TV ( Enikolopov et al. ( 2011 )). For the vast majority of Russians, located far enough from Moscow’s and St. Petersburg’s TV and radio transmitters, NTV was the only source of alternative information about national politics and economics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 5,
+        "text": "To study the effect of access to free, i.e. less biased, media on depositor behavior during the Russian crisis, we use monthly information from bank balance sheets and profit and loss accounts provided by the private information agency Mobile for the years 1998 and 1999. Ideally, we would like to know the availability of NTV to the average depositor of each bank, but we do not have information at the depositor level. Yet, during our observation period, the large majority of Russian deposit banks were small, had no branches, and thus collected household deposits only from nearby households. 7 Ideally, we would want to conduct content analysis of the news of different TV channels during 1998 to focus specifically on the news related to the banking crisis but unfortunately this is not feasible.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 6,
+        "text": "For most banks, therefore, the availability of NTV at the bank’s address is a good proxy for the availability of NTV to its average household depositor. We collect the headquarter addresses of all Russian banks in August 1998 from data provided by the information agency Mobile.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 7,
+        "text": "Then we construct the predicted probability that NTV was available, NTV availability , at the headquarter address of the bank by using data on the location of NTV transmitters, geographical variation in signal propagation and survey evidence on NTV availability as in Enikolopov et al. ( 2011 ). This gives us a measure of access to unbiased news at the bank level. We exclude Moscow and St. Petersburg from our bank sample as there is no variation in NTV availability across banks in these two regions, while our regressions include regional fixed effects. We also exclude Chechnya, Dagestan, and Ingushetia because of the then ongoing armed conflict in Chechnya and the potential confounding effects on its closest neighbors.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 8,
+        "text": "To improve the identification of the effect of NTV availability on depositor behavior, we exclude from the estimation sample all large and multi-branch banks which may collect deposits from households that are not located in the vicinity of the banks. Banks that do not take household deposits are also excluded, as well as banks with missing variables that we employ in the regression analysis. This leaves us with 520 small regional household deposit-taking banks and 6,452 bankmonth observations in our main estimation sample. In some of our empirical specifications we also control for 1998 socio-demographic characteristics which are available at the subregion-year level from the Russian statistical agency Rosstat. These data are missing for some subregions so that the number of observations drops in the respective specifications.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 9,
+        "text": "Figure 1 plots the evolution of total household deposits over our observation period for banks in subregions with high NTV availability (dashed line) and low NTV availability (solid line). High (low) NTV availability means that banks are located in subregions with at least median (below-median) NTV availability . In line with the predictions from our model and the countrylevel evidence, banks in subregions with high NTV availability have more deposits in general. Depositors at all banks withdraw massively after the Russian default in August 1998, given the total meltdown of the financial system. Beginning in December 1998 when the immediate crisis was over, in contrast, depositors at high NTV availability banks stop their deposit withdrawals, while depositors at low NTV availability banks continue withdrawing until the end of our sample period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 10,
+        "text": "Figure 1. Household deposits in high vs. low NTV probability banks over time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 11,
+        "text": "Notes: This figure shows the evolution of log total household deposits of banks located in areas with high (dashed line) vs. low (solid line) NTV probability over time. Banks with low (high) NTV probability have an NTV probability below (at or higher than) the median NTV probability. NTV probability is the likelihood that the private TV station NTV is available at a specific bank branch location. See Appendix A1 for definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 12,
+        "text": "4.3 Identification and Empirical Specification",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 13,
+        "text": "We employ the timeline of events during the Russian crisis together with the varying NTV availability at the bank branch level in our identification strategy. Essentially, we are extending crosssectional identification strategy from Enikolopov et al. ( 2011 ) to panel setting. The identification of the differences-in-differences effects crucially depends on the parallel trend assumption which implies that the change in deposits would have been the same in banks with varying NTV availability in the absence of the default and recovery events. Put differently, our identification strategy relies on the premise that depositors in locations with varying access to NTV are similar in all unobserved characteristics that may drive their depositing behavior once we control for observable differences between these locations. We describe the observable characteristics that we control for and provide some evidence on the parallel trends in the pre-crisis period below. At the same time, arguably, NTV availability is largely random to the banks, and thus their depositors, in our sample. Firstly, NTV ’s broadcasting infrastructure was established in Soviet times, so it was not driven by strategic decisions of NTV and conditional population size, average wage, and urban status NTV availability it is not correlated with other regional socioeconomic characteristics ( Enikolopov et al. , 2011 ). Secondly, all banks in our sample were registered before 1996, when NTV was granted the nation-wide network of transmitters of the former state education channel. It is therefore not plausible that certain banks chose their location because they wanted to be in an area with(out)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 14,
+        "text": "access to independent television.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 15,
+        "text": "To assuage any lingering concerns about the potential endogeneity of NTV availability to depositor behavior, we regress NTV availability on the change in household deposits and region fixed effects alone and then with an increasing number of bank and subregional controls, clustering standard errors at the bank-level. A significant (at the five percent-level) relationship between NTV availability and change in household deposits only appears in one out of four regression specifications. We therefore conclude that the transmitter network is not systematically related to depositor behavior. Results are available on request.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 16,
+        "text": "We use a differences-in-differences estimator to evaluate the impact of NTV availability on depositor behavior during the Russian crisis. The dependent variable is the monthly change in the natural logarithm of household deposits ∆ ln ( Deposits ):",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 17,
+        "text": "∆ln(Deposits i , t )= β 1 NTV availability i + β 2 Default t + β 3 Default t · NTV availability i + β 4 Recovery t + β 5 Recovery t · NTV availability i + α Θ i , t + γζ sr + μ r + μ i + ε i , t , (6)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 18,
+        "text": "where subscripts i , t , sr and r stand for bank, time (i.e., year:month), subregion and region, respectively. Θ i,t contains a battery of time-varying bank-specific controls and ζ sr contains subregionspecific controls 8 . All regressions include region fixed effects μ r , while we add bank fixed effects μ i to some of the regressions. We cluster all standard errors at the bank-level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 19,
+        "text": "We compare deposit growth rates at banks with varying NTV availabiliy during three periods. Based on the timeline of events during the 1998 crisis, we create two dummy variables. Default is one during the crisis period from August to November 1998 and zero otherwise. Recovery is one during the period December 1998 to March 1999, when the immediate crisis was over, and zero otherwise. The pre-crisis period lasts from January to July 1998. In the pre-crisis period from January to July 1998, the state channels reported in a biased way about the country’s economic situation and the imminent default, essentially denying the latter. Although NTV was less biased and more openly discussed the economic difficulties, the TV station still had only existed for two 8 These data are only available at the yearly frequency so that we use their 1998 values.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 20,
+        "text": "years by August 1998 and many viewers had only known it for an even shorter period, given the increase in NTV viewership over its first years. This relative inexperience with NTV implies that depositors did not have much information about the amount of bias in the economic news of the different TV channels before the 1998 meltdown. However, the actual meltdown revealed the superior quality of the NTV news signal to depositors - just like the content analysis of Mickiewicz ( 1999a , b ) does ex post.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 21,
+        "text": "The above reasoning implies that we should not find significant differences in household deposit behavior before and immediately after the default between banks with varying NTV availability as information on the actual media bias was missing before the default. We therefore expect no differences in deposit growth rates between banks with varying NTV availability in the pre-crisis period, or β 1 = 0. In the Default period between August and November 1998, β 2 captures changes in deposit growth rates at banks with no NTV availability, while β 3 accounts for the additional change in deposit growth for banks with higher availability. According to our model and reasoning above, we expect a significant and negative coefficient β 2 and an insignificant coefficient β 3 , i.e. a run on all banks immediately after the comprehensive August meltdown and in the following weeks, regardless of access to the unbiased NTV signal.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 22,
+        "text": "In the recovery period between December 1998 and March 1999, household depositors update their beliefs about the bias of the respective TV channels, as depositors without NTV access learn that the state television signals were largely incorrect about the true state of the economy, while depositors with NTV availability learn that the NTV signal was actually not that removed from reality. Households that watched state and NTV channels could even directly compare the signal quality and infer the respective bias. β 4 then captures changes in deposit growth rates in the Recovery period at banks with no NTV availability and β 5 accounts for the additional change in deposit growth at banks with NTV availability. Our model entails that depositors are more eager to make deposits when there is less bias, so banks with higher NTV availability are expected to experience higher deposit growth in the recovery period, i.e. that β 5 > 0.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 23,
+        "text": "To mitigate concerns about missing variables that might drive the change in deposits and are correlated with the availability of the NTV signal, we include four sets of control variables. First, Θ i,t includes several time-varying standard bank characteristics. Equity/Total assets is a measure of bank capitalization and Liquid assets/Total assets of bank liquidity. NPL/Total assets captures bank risk and Monthly profit/Total assets bank profitability. Total assets is an indicator of bank size. State is a dummy that is one if the bank is at least 50% state-owned, and zero otherwise. A",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 24,
+        "text": "bank’s exposure to the government in terms of assets is measured by Government securities/Total assets . Second, ζ r,t encompasses several time-varying subregional characteristics that may be correlated with depositor behavior and the actual viewership of NTV . For all variables, we include the 1998 values as these are only available at the yearly frequency. To account for the size of a subregion’s population and average wage, we include fifth-order polynomials of log population ( Population polynomial ) and log average wage ( Wage polynomial ). As further socioeconomic characteristics, we control for the number of Doctors and Nurses per 10,000 inhabitants, the percentage of Retired , Unemployed and Farmers in each subregion as well as the Migration rate (in percent) and the Crime rate (number of crimes per 10,000 inhabitants). The Average pension is measured in thousands of rubles. Third, we include region fixed effects μ r to account for any observable and unobservable time-invariant characteristics of regions that may influence deposit changes. Fourth, we include bank fixed effects in some regressions to focus the analysis on within-bank changes in deposit growth rates over time. In that way we control for all observable and unobservable time-invariant bank characteristics that could influence deposit growth.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 5,
+        "section_name": "Background",
+        "paragraph_id": 25,
+        "text": "Table 3 reports summary statistics of all bank variables used in our regression analysis. Panel A reports statistics for all banks over the full observation period. Banks in our sample lose around 6 percent of deposits, on average, between January 1998 and March 1999, albeit with a relatively large standard deviation. On average, the banks have relatively large equity ratios and low NPL ratios, are small, and only 5 percent are government-owned. NTV availability is comparably high with 70 percent on average, but ranges from 37 percent to 83 percent. Panel B splits the sample in banks located in areas with high vs. low NTV availability and provides the differences in means. Banks with low (high) NTV availability have an NTV availability below (at or higher than) the median NTV availability. The table shows that banks in areas with low NTV availability have significantly higher NPL ratios, are significantly smaller and less likely to be government-owned. While we control for these bank characteristics in our main regression analysis, we will also repeat our analysis for a matched sample of high and low NTV availability banks to make sure that our results are not driven by outliers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "In Table 4 we report the main results from our bank-level analysis. Column (1) shows the baseline specification with bank controls and region FEs. We add the population and wage polynomials in column (2), the further subregion-specific controls in column (3), interactions of all bank controls",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "Table 3. Summary statistics of individual banks",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "This table provides summary statistics of all bank variables used in the regression analyses. We additionally provide the statistics for the variables Household deposits/Total assets and Total assets. Panel A reports statistics for all banks over the full observation period, while Panel B uses data from January 1998, splits the sample in banks located in areas with high vs. low NTV probability and provides the difference in means. Banks with low (high) NTV probability have an NTV probability below (at or higher than) the median NTV probability. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level from a t-test on the equality of means in the two subsamples. See Appendix A1 for definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "Panel A. Full sample mean sd min max N ∆ ln ( Deposits ) -0.06 0.22 -1.55 1.51 6,452 Household deposits/Total assets 0.12 0.09 0.00 0.51 6,452 Equity/Total assets 0.26 0.18 -0.33 0.91 6,452 Liquid assets/Total assets 0.15 0.13 0.00 0.82 6,452 NPL/Total assets 0.04 0.05 0.00 0.26 6,452 Monthly profit/Total assets 0.00 0.01 -0.07 0.08 6,452 Log(Total assets) 3.44 1.47 -1.27 8.23 6,452 Total assets 95.15 223.38 0.28 3762.27 6,452 State 0.05 0.22 0.00 1.00 6,452 Government securities/Total assets 0.04 0.08 0.00 0.58 6,452 NTV probability 0.70 0.10 0.37 0.83 6,452",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "Panel B. Banks with high NTV probability vs. banks with low NTV probability, Januray 1998 Low NTV probability High NTV probability Difference ∆ ln ( Deposits ) -0.01 0.01 -0.01 Household deposits/Total assets 0.11 0.11 0.00 Equity/Total assets 0.26 0.26 -0.00 Liquid assets/Total assets 0.16 0.17 -0.01 NPL/Total assets 0.05 0.04 0.01** Monthly profit/Total assets 0.00 0.00 -0.00 Log(Total assets) 3.30 3.87 -0.57[FORMULA] Total assets 82.91 132.14 -49.23** State 0.02 0.07 -0.05[FORMULA] Government securities/Total assets 0.04 0.05 -0.01",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 5,
+        "text": "Table 4. Effect of NTV availability on depositor behavior during the Russian crisis",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "This table displays the results from OLS (columns (1)-(4)) and fixed effects (column (5)) regressions where the dependent variable is ∆ ln ( Deposits ). Columns (2) to (4) contain fifth-order polynomials of log population and log wage. Columns (3) and (4) also control for socio-demographic characteristics at the sub-region level, while column (4) additionally controls for interactions between all bank characteristics and NTV probability . Standard errors clustered at the bank level are reported in parentheses. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level. See Appendix A1 for definitions and sources of all variables. (1) (2) (3) (4) (5) Baseline Population and wage controls All sociodemographic controls Bank chars × NTV prob Bank FE",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "Default*NTV probability 0.037 0.036 -0.004 -0.002 0.015 (0.069) (0.072) (0.075) (0.074) (0.068) Recovery*NTV probability 0.188[FORMULA] 0.171[FORMULA] 0.167[FORMULA] 0.166** 0.176[FORMULA] (0.057) (0.058) (0.063) (0.065) (0.061) Default -0.204[FORMULA] -0.202[FORMULA] -0.172[FORMULA] -0.173[FORMULA] -0.222[FORMULA] (0.048) (0.050) (0.052) (0.051) (0.047) Recovery -0.156[FORMULA] -0.146[FORMULA] -0.143[FORMULA] -0.141[FORMULA] -0.206[FORMULA] (0.039) (0.040) (0.044) (0.045) (0.043) NTV probability -0.027 0.050 0.030 -0.285 (0.045) (0.051) (0.056) (0.189) Equity/Total assets 0.031 0.028 0.041* -0.183 -0.082 (0.021) (0.021) (0.022) (0.204) (0.052) Liquid assets/Total assets 0.091[FORMULA] 0.091[FORMULA] 0.089[FORMULA] -0.096 0.150[FORMULA] (0.024) (0.025) (0.025) (0.177) (0.048) NPL/Total assets -0.301[FORMULA] -0.279[FORMULA] -0.267[FORMULA] -0.849 -0.459[FORMULA] (0.070) (0.073) (0.076) (0.539) (0.162) Monthly profit/ Total assets 0.528** 0.585** 0.681[FORMULA] -0.060 0.341 (0.222) (0.238) (0.247) (1.235) (0.230) Log(Total assets) 0.006** 0.006** 0.007** -0.031 -0.100[FORMULA] (0.002) (0.003) (0.003) (0.025) (0.021) State 0.010 0.009 0.007 0.089 (0.010) (0.011) (0.011) (0.060) Government securities/Total assets -0.057 -0.033 -0.026 -0.008 0.044 (0.041) (0.042) (0.044) (0.325) (0.090) Constant -0.060 0.076 -0.077 0.116 0.374[FORMULA] (0.048) (0.186) (0.237) (0.267) (0.081) Region FE yes yes yes yes no Bank FE no no no no yes Population and wage polynomials no yes yes yes no Socia-demographic controls no no yes yes no Bank chars × NTV probability no no no yes no Observations 6,452 5,963 5,492 5,492 6,452 R 2 (adjusted / within) 0.140 0.141 0.137 0.137 0.152",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "with NTV availability in column (4) and bank FEs in column (5). The main results are qualitatively and quantitatively very similar across all five specifications.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "The results are in line with our model and the reasoning above. In the pre-crisis period, we do not find any significant difference in depositor behavior between banks with varying NTV availability . The significantly negative coefficients of Default and Recovery mean that depositors of banks with no NTV availability withdraw their deposits in both periods, albeit withdrawals were larger in the Default period at the height of the crisis. The effects are also economically sizable with deposit growth rates 17-22% lower in the Default period and 14-20% lower in the Recovery period than in the pre-period, depending on the empirical specification. Having better access to the independent TV channel NTV does not affect depositors’ behavior at the height of the crisis as Default * NTV availability is economically and statistically insignificant. This result is consistent with depositors being unaware of differences in media bias before the crisis hit and being equally affected by the crisis at its hight. Yet the crisis events revealed to depositorsthat the NTV signal contained less bias than the state media signal. Therefore, we find, in line with our model, that depositors are more willing to hold deposits with banks with NTV availability in the Recovery period. The estimated coefficient of the interaction term Default * NTV availability is significantly positive and economically larger than the base effect of Recovery . This implies that in the Recovery period banks with only access to state media keep leaking deposits, while household deposits start to return to banks with NTV availability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 10,
+        "text": "To visualize the temporal pattern of NTV availability on changes in deposit growth rates, we run an OLS regression of ∆ ln ( Deposits ) on NTV availability *month dummies, bank characteristics, sociodemographics and region FEs. Figure 2 depicts the average marginal effects of NTV availability and the respective 95% confidence intervals. The graph shows that the average marginal effects of NTV availability are close to zero in the pre-crisis period. This result provides reassurance that our findings on depositor behavior during the Default and Recovery periods are not driven by diverging trends before these events. Besides, the graph confirms our results from Table 4 that NTV availability influences depositor behavior significantly in the Recovery period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 11,
+        "text": "Figure 2. Average marginal effect of NTV probability over time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 12,
+        "text": "Notes: This figure shows average marginal effects of NTV probability over our observation period from January 1998 to March 1999. The solid lines indicate 95% confidence intervals. The red vertical lines indicate the beginning of the Default (1998m8) and Recovery (1998m12) periods, respectively. Estimates are from an OLS regression of ∆ ln ( Deposits ) on NTV probability*month dummies, bank characteristics, sociodemographics and region fixed effects. ∆ ln ( Deposits ) is the one-month change in ln(total household deposits) at the bank branch-level. NTV probability is the likelihood that the private TV station NTV is available at a specific bank branch location. See Appendix A1 for definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 13,
+        "text": "We conduct several robustness tests to assess the sensitivity of our main findings and report the results in Table 5 . For each robustness check, we report results from a regression with bank controls, socioeconomic controls and region FEs as well as from the specification with bank FEs. Our first set of robustness tests is concerned with the bank controls. In our main regressions, we control for contemporaneous bank characteristics. However, it is likely that depositors need some time to react to changes in bank characteristics, if they do so at all. We therefore use bank controls lagged by one month in columns (1-2), bank controls lagged by two months in columns (3-4) and bank controls measured at the beginning of our observation period in January 1998 in columns (5-6) of Table 5 . All results regarding the effect of NTV availability , Default and Recovery and their interactions are qualitatively and quantitatively very similar to our main results. Next, we exclude banks with relatively few deposits, i.e. those with a January 1998-share of deposits to total liabilities in the bottom quartile of the distribution, from our sample. The results in columns (7-8) of Table 5 confirm our main findings, even though the economic magnitude of the effects are somewhat smaller. Lastly, in columns (9-10) we aggregate the monthly data into one observation for each bank in each of the three periods to ensure that standard errors are calculated correctly given the possible serial correlation in the monthly deposits data ( Bertrand et al. , 2004 ). Again, our main results hold.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 14,
+        "text": "Table 5. Robustness tests This table displays the results from OLS (columns (1), (3), (5), (7) and (9)) and fixed effects (column (2), (4), (6), (8) and (10)) regressions where the dependent variable is ∆ ln ( Deposits ). In columns (1-2) bank variables are lagged by one month, in columns (3-4) by two months and columns (5-6) include bank variables measured in January 1998. In columns (7-8) banks with very few deposits, i.e. those with deposits as a share of total assets in the bottom quartile, are dropped from the analysis. In columns (9-10) all variables are averaged over the three time periods (pre-crisis, default, recovery) to account for potential serial correlation in the monthly data (Bertrand et al. 2004). Standard errors clustered at the bank level are reported in parentheses. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level. See Table A1 for definitions and sources of all variables. (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) VARIABLES Bank variables lagged one month Bank variables lagged two months Beginning-of-1998 bank variables Without banks with beginning-of-1998 deposits as share of liabilities in bottom quartile All variables averaged over time periods Default*NTV probability -0.007 0.013 0.021 0.041 0.004 0.026 -0.059 -0.046 -0.013 0.027 (0.076) (0.065) (0.080) (0.069) (0.075) (0.067) (0.070) (0.064) (0.082) (0.073) Recovery*NTV probability 0.192[FORMULA] 0.203[FORMULA] 0.177** 0.193[FORMULA] 0.166[FORMULA] 0.168[FORMULA] 0.161[FORMULA] 0.146** 0.179** 0.162** (0.068) (0.062) (0.071) (0.064) (0.064) (0.058) (0.061) (0.061) (0.073) (0.064) Default -0.170[FORMULA] -0.208[FORMULA] -0.181[FORMULA] -0.212[FORMULA] -0.181[FORMULA] -0.204[FORMULA] -0.134[FORMULA] -0.179[FORMULA] -0.167[FORMULA] -0.192[FORMULA] (0.053) (0.045) (0.055) (0.047) (0.052) (0.046) (0.049) (0.046) (0.055) (0.049) Recovery -0.156[FORMULA] -0.213[FORMULA] -0.136[FORMULA] -0.189[FORMULA] -0.142[FORMULA] -0.150[FORMULA] -0.134[FORMULA] -0.181[FORMULA] -0.156[FORMULA] -0.130[FORMULA] (0.047) (0.043) (0.050) (0.046) (0.045) (0.039) (0.043) (0.044) (0.050) (0.044) NTV probability 0.013 0.010 0.044 -0.081 0.016 (0.055) (0.057) (0.058) (0.062) (0.065) Constant -0.054 0.349[FORMULA] -0.146 0.273[FORMULA] -0.071 -0.007** -0.288 0.392[FORMULA] 0.135 -0.110 (0.261) (0.073) (0.291) (0.090) (0.247) (0.003) (0.300) (0.091) (0.268) (0.118) Region FE yes no yes no yes no yes no yes no Bank characteristics yes yes yes yes yes yes yes yes yes yes Bank FE no yes no yes no yes no yes no yes Population and wage polynomials yes no yes no yes no yes no yes no Socio-demographic controls yes no yes no yes no yes no yes no Observations 4,964 5,838 4,546 5,348 5,492 6,452 4,488 5,215 1,156 1,356 R 2 (adjusted / within) 0.144 0.155 0.135 0.147 0.129 0.142 0.184 0.199 0.286 0.416",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 15,
+        "text": "Overall, our robustness tests confirm that having access to independent media does not affect depositor behavior in the pre-crisis period and immediately after the default. However, depositors of banks in areas with a higher NTV availability start re-depositing money with their banks earlier or at least slow down their withdrawals much more than depositors of banks in areas with lower access to the independent TV channel NTV . As reasoned above, an explanation for this pattern is that depositors were not aware of the media bias before the default. However, once the default happened the bias was revealed and depositors updated their beliefs. Depositors who recognized they had received more accurate information were more inclined to believe in the news that the worst of the crisis was over after November 1998.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 16,
+        "text": "4.5 Matched Sample Results",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 17,
+        "text": "Although the availability of NTV , i.e. its transmitter network, is arguably as good as random with respect to the banks and thus their depositors in our sample, Panel B of Table 3 shows that there are significant differences in some characteristics of banks in areas with high vs. low NTV availability . In our main regressions, we control for these bank characteristics. In the following, we take a different approach and match banks in areas with a high availability of NTV to their similar counterparts in areas with low NTV availability. For our matching procedure, we use a nearestneighbor matching of propensity scores (originally developed by Rosenbaum and Rubin ( 1983 )). Specifically, we first run a probit regression with a dummy variable indicating whether a bank is located in an area with high NTV availability (”high NTV banks” heneceforth) or in an area with low NTV availability (”low NTV banks” henceforth) as the dependent variable. Low (high) NTV banks have an NTV availability below (at or higher than) the median NTV availability. As explanatory variables, we include all bank characteristics from our main analysis but at the beginning of 1998 and region FEs. We then use the propensity scores from the probit estimation and match every high NTV bank to its three nearest low NTV bank neighbors. 9 As some banks have missings in their January 1998 balance sheet and profit and loss account data, only 402 banks are included in the probit regression.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 18,
+        "text": "Table 6 shows that after matching there are no statistically significant observable differences in bank characteristics between high and low NTV banks. We then repeat our analysis on the effect of NTV availability on depositor behavior during the default and recovery periods. For this analysis, we drop banks that are not on the common support area, which is the case for 13 banks. This 9 Matching on any number of one to five nearest neighbors has very little effect on the estimated results.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 19,
+        "text": "leaves us with a sample of 389 banks and 4,840 bank-month observations for our matched sample analysis. We still include the bank characteristics as control variables because we do the matching on the beginning-of-1998 values, whereas the regressions include all monthly observations between January 1998 and March 1999. The results in Table 7 fully confirm our full sample results. We again find that there is no statistically significant difference in depositor behavior at banks with varying degrees of NTV availability in the pre-crisis and default periods. In the recovery period, however, depositors at banks in areas with no NTV availability keep on withdrawing their money, while depositors at banks in areas with NTV availability start bringing back their money (columns 1-4) or at least slow down their withdrawals almost completely (column (5)). These findings can be inferred from the significantly negative coefficient on Recovery and the significantly positive and larger, or equal, coefficient on the interaction term Recovery * NTV availability .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 20,
+        "text": "Table 6. Summary statistics of matched sample (January 1998)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 21,
+        "text": "This table reports summary statistics (means) of the bank variables used in the regression analyses at the beginning of our observation period (January 1998) for the matched sample. Results are derived after propensity score matching with three nearest neighbors. In the matched sample banks with low NTV probability are matched with their three nearest-neighbor banks with high NTV probability based on the propensity score. Banks with low (high) NTV probability have an NTV probability below (at or higher than) the median NTV probability. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level from a t-test on the equality of means in the two subsamples. See Appendix A1 for definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 22,
+        "text": "Low NTV probability High NTV probability t-test Mean propensity score 0.59 0.59 0.08 Equity/Total assets 0.26 0.25 0.83 Liquid assets/Total assets 0.17 0.17 0.13 NPL/Total assets 0.04 0.04 0.16 Monthly profit/Total assets 0.01 0.00 1.19 Log(Total assets) 3.79 4.01 -1.44 State 0.04 0.06 -0.70 Government securities/Total assets 0.05 0.05 -0.38",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 23,
+        "text": "Table 7. Effect of NTV availability on depositor behavior, matched sample",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 24,
+        "text": "This table displays the results from OLS (columns (1)-(4)) and fixed effects (column (5)) regressions where the dependent variable is ∆ ln ( Deposits ). Results are derived after propensity score matching with three nearest neighbors. The sample only contains observations that are on the common support. Columns (2) to (4) contain fifth-order polynomials of log population and log wage and report results from F-statistics on their joint significance in brackets Columns (3) and (4) also control for the sociodemographics Doctors, Nurses, Retired, Umenployed, Farmers, Migration rate, Crime rate and Average pension, while Column (4) addionally controls for interactions between all bank characteristics and NTV probability. Standard errors clustered at the bank level are reported in parentheses. [FORMULA] , **, * denote significance at the 0.01-, 0.05and 0.1-level. See Appendix A1 for definitions and sources of all variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 25,
+        "text": "(1) (2) (3) (4) (5) baseline Population and wage controls All sociodemographics Bank chars × NTV prob Bank FE",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 26,
+        "text": "Default*NTV probability -0.011 -0.003 -0.040 -0.022 -0.003 (0.080) (0.086) (0.086) (0.087) (0.083) Recovery*NTV probability 0.207[FORMULA] 0.200** 0.208** 0.219** 0.203** (0.074) (0.077) (0.082) (0.086) (0.079) Default -0.163[FORMULA] -0.167[FORMULA] -0.139** -0.152** -0.198[FORMULA] (0.056) (0.059) (0.059) (0.060) (0.058) Recovery -0.161[FORMULA] -0.157[FORMULA] -0.162[FORMULA] -0.171[FORMULA] -0.207[FORMULA] (0.050) (0.053) (0.056) (0.059) (0.055) NTV probability -0.069 0.041 -0.001 -0.261 (0.050) (0.058) (0.061) (0.213) Equity/Total assets 0.043* 0.044* 0.065[FORMULA] 0.058 -0.090 (0.024) (0.024) (0.024) (0.179) (0.058) Liquid assets/Total assets 0.087[FORMULA] 0.080[FORMULA] 0.081[FORMULA] -0.157 0.130** (0.028) (0.030) (0.030) (0.218) (0.057) NPL/Total assets -0.346[FORMULA] -0.328[FORMULA] -0.315[FORMULA] -0.421 -0.354* (0.083) (0.086) (0.092) (0.613) (0.200) Monthly profit/ Total assets 0.620** 0.687** 0.728** -0.743 0.491* (0.268) (0.292) (0.301) (1.331) (0.276) Log(Total assets) 0.007** 0.009[FORMULA] 0.010[FORMULA] -0.039 -0.082[FORMULA] (0.003) (0.003) (0.003) (0.031) (0.023) State 0.004 -0.005 -0.006 0.107* (0.012) (0.013) (0.012) (0.058) Government securities/Total assets -0.070 -0.042 -0.025 0.064 0.087 (0.048) (0.048) (0.048) (0.439) (0.104) Constant -0.037 0.103 -0.022 0.107 0.298[FORMULA] (0.050) (0.244) (0.281) (0.312) (0.086) Region FE yes yes yes yes no Bank FE no no no no yes Population and wage polynomials no yes yes yes no Socio-demographic controls no no yes yes no Bank chars × NTV probability no no no yes no Observations 4,840 4,401 4,047 4,047 4,840 R 2 (adjusted / within) 0.130 0.133 0.130 0.131 0.138",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 7,
+        "section_name": "Conclusion and Discussion",
+        "paragraph_id": 0,
+        "text": "Democracies have been associated with a higher incidence of banking crises and higher financial development. Our paper offers a potential explanation for these paradoxical observations: democracies have more media freedom, which makes it harder for rational governments to bias the signal depositors receive about the health of the banking sector. This access to more truthful information in democracies makes depositors more likely to withdraw in times of crisis, hence the higher incidence of banking crises. But it also makes depositors more likely to entrust their deposits with the banking system, inducing higher financial development. This leads to more investment and more productivity growth, explaining the superior growth performance of democracies.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 7,
+        "section_name": "Conclusion and Discussion",
+        "paragraph_id": 1,
+        "text": "We show theoretically that a suchlike equilibrium arises even if the government and the depositors are fully rational and have a common prior about the health of the banking system. We show empirically that media freedom is indeed related to a higher incidence of banking crises and higher financial development in a large panel of countries. We pin down the mechanism of Bayesian updating by depositors about the media bias in a sample of Russian banks with variation in media bias at the bank level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1533,
+        "section_id": 7,
+        "section_name": "Conclusion and Discussion",
+        "paragraph_id": 2,
+        "text": "These findings not only contribute to our understanding of banking crises and financial development, but also help us understand why democracies tend to do better over the longer run, despite having more bank instability. Media freedom, that is, has unexpected and unexplored positive long-run effects. On a more philosophical note, our results also qualify the all too easy interpretation of financial instability as unequivocally bad. As such, attempts to maintain financial stability by obfuscating bank problems to depositors may backfire in the form of subsequent lower financial development and the implied negative consequences for investment, productivity growth and even inequality.",
+        "extraction_warnings": ""
+    }
+]

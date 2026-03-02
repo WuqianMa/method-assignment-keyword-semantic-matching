@@ -1,0 +1,962 @@
+[
+    {
+        "paper_id": 1606,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "An Economic Model of Acculturation under Strategic Complements and Substitutes ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Sebastiano Della Lena † Pietro Dindo ‡",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Abstract We propose a cultural transmission model based on the co-evolution of cultural traits, behaviors, and socialization levels. Cultural traits affect agents’ behavior during their interaction in a strategic environment. In turn, behaviors affect both how much parents directly socialize their children and the traits they decide to transmit. The co-evolution of cultural traits and behaviors across two cultural groups microfounds well-established acculturation processes: assimilation , integration , marginalization , and separation . We characterize how the occurrence of each process depends on the nature of the strategic environment (complements or substitutes), whether the material payoffs are stochastic or not, and the on costs of transmitting a trait.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "Journal of Economic Literature Classification Numbers: C7, D9, I20, J15, Z1 Keywords : Cultural Transmission, Endogenous preferences, Cultural Diversity, Acculturation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "∗ We thank Alberto Bisin, Antonio Cabrales, Sergio Currarini, Weijia Li, Moti Michaeli, Ignacio Monzon, Antonio Nicol ́o, Fabrizio Panebianco, Simon Weidenholzer, Thierry Verdier, Yves Zenou and seminars and conferences participants at Antwerp Univeristy, Groningen University, for helpful comments and stimulating discussions. Sebastiano Della Lena gratefully acknowledges fund from FWO-foundation for the project “Diffusion of Misinformation in Social Networks” (id. 42933) and Australian Research Council (ARC) for grant DP200102547 and DP240100158. † Corresponding Author : Monash University and Antwerp University. E-mail: sebastiano.dellalena@monash.edu ‡ Department of Economics, Ca’ Foscari University of Venice. E-mail: pietro.dindo@unive.it",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "A change of environment may require [...] a change in the order of the group and therefore in the rules of conduct of the individuals. [Hayek 1967: 71]",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "When groups with different cultures interact, culture and behaviors co-evolve in response to economic and social incentives ( Redfield et al. , 1936 ). 1 Some groups assimilate rapidly, while others retain cultural diversity for generations: European immigrants to the U.S. in the early 20th century largely abandoned their native languages, whereas contemporary Spanish-speaking communities maintain higher bilingualism ( Alba , 2004 ). Even within the same group, cultural trajectories diverge: Turkish immigrants in Germany and the Netherlands follow distinct paths of assimilation and cultural retention ( Crul and Vermeulen , 2003 ), as do North-African immigrants in France and Canada ( Reitz et al. , 2022 ). These changes are known as acculturation , and key patterns have been identified ( Berry , 1997 ): assimilation , characterized by the highest level of cultural homogeneity and frequent inter-group interaction; separation , marked by the greatest cultural diversity and minimal inter-group contact; integration , which combines cultural homogeneity with frequent inter-group interaction while preserving some diversity; and marginalization , where neither a strong cultural identity nor frequent inter-group interaction is present. Understanding acculturation is essential in an era of migration, cultural tensions, and globalization, as it shapes economic performance, social cohesion, and institutional stability. 2 Yet, we still lack a clear understanding of the economic forces that determine whether cultural groups assimilate or preserve diversity. This paper fills this gap by developing a theoretical model that formally links economic incentives, strategic behavior, and intergenerational transmission, providing the first formal analysis of the economic forces that shape acculturation outcomes. 3 Our model provides a unified explanation for several observed empirical patterns, including the lower bilingualism of smaller minorities, the role of strategic substitutes in driving cultural innovation, subcultures, and specialization, the selective assimilation of 1 Culture significantly shapes behaviors and economic outcomes (e.g., Akerlof and Kranton , 2000 ; Guiso et al. , 2006 ). At the same time, economic and institutional conditions influence the evolution of cultural traits. For example, institutions such as private property ( Alesina and Fuchs-Sch ̈undeln , 2007 ), empires ( Becker et al. , 2016 ), and centralized governance ( Lowes et al. , 2017 ), as well as exogenous shocks like natural disasters ( Sinding Bentzen , 2019 ), have been shown to shape cultural dynamics. 2 Assimilation or integration can reduce miscoordination and enhance productivity ( Fredrickson , 1999 ), while preserving diversity (separation or marginalization) may foster innovation but introduce social and political tensions ( Desmet et al. , 2017 ; Arbatlı et al. , 2020 ; Tabellini , 2020 ; Della Lena et al. , 2024a ). 3 To the best of our knowledge, Verdier and Zenou ( 2017 ) is the only economic paper on acculturation. Their approach is complementary to ours, focusing on social networks and peer effects rather than strategic incentives.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "immigrants across cultural dimensions, and the divergence of cultural trajectories for the same group across different national contexts. We show that in environments with strategic complements, cultural homogenization (integration or assimilation) arises. In environments with strategic substitutes, cultural diversity (marginalization or separation) emerges unless parental socialization costs are high. Furthermore, when material payoffs vary across interactions, complements always lead to assimilation, while substitutes to cultural diversity, with parental socialization costs determining its degree. We consider two cultural groups (e.g., natives and immigrants) interacting within a socio-economic environment, where cultural traits are transmitted and evolve across generations. Economic environments are modeled as strategic interactions in which material payoffs determine whether actions are complements or substitutes . We focus on games with two possible actions, such as speaking the majority or minority language, engaging in traditional or religious activities, exerting high or low effort in the workplace, or specializing in creative versus labor-intensive jobs. Furthermore, we analyze both simple environments—where material payoffs remain fixed—and complex environments—where material payoffs are stochastic and vary within each round of interaction. Cultural traits make agents more or less identified with each action (as in Akerlof and Kranton , 2000 ). Under rather mild assumptions about the influence of cultural traits on total payoffs, we show the existence of thresholds on the strength of traits above which agents choose always an action over the other, that is, that action becomes dominant. The cultural dynamics is induced by the intergenerational transmission of traits, along the lines of the seminal contribution of Bisin and Verdier ( 2001 ). Children acquire their cultural traits both by interacting with parents— vertical socialization —and by observing the average behavior in the society— oblique socialization . Differently from the previous literature, parents optimally choose both the socialization effort and the role model to display to children. Parents are moved by altruism toward the future payoffs of children. In doing so, we internalize the role of the strategic environment in the transmission processes. Parents face costs to socialize their children and to teach a role model different from their own trait. If there are no transmission costs, parents fully socialize their children and transmit a trait equal to the average action played during their adult life. Under positive transmission costs, oblique socialization plays a role and the acquired traits are convex combinations of the average behavior of the two groups in the previous generation. When the environment in which agents interact displays strategic substitutes, parental effort is always decreasing in own population share—that is, cultural substitution . Conversely, in environments with strategic complements, the parental effort of the group with weak trait has a inverted U-shaped relationship with own population shares—that is,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "cultural complementarity for low population shares and cultural substitutability for high population shares. This result aligns with empirical findings on the cultural transmission of religious traits ( Bisin et al. ( 2004b ), Cohen-Zada ( 2006 )). Specifically, when the religious trait is relatively weak, participation in a religious community is primarily motivated by coordination incentives. In such cases, minority members have a stronger incentive to align with the prevailing behavior in society. Consequently, the smaller the minority, the greater the advantage of allowing children to be socialized into the majority’s religious traits, as this facilitates better coordination and integration. To characterize the cultural dynamics and their steady states, we propose a novel and simple taxonomy of acculturation that considers both cultural traits and behaviors. Specifically, we define two groups as assimilated or integrated when their traits are strongly or weakly biased toward the same action. Conversely, we classify two groups as separated or marginalized when their traits are strongly or weakly biased toward opposite actions. Notably, given our definitions, in each acculturation outcome the steady-state levels of socialization and distance between the role model and the average action in the society are endogenously consistent with the original definitions of Berry ( 1997 ). We first characterize acculturation in strategic environment where payoffs remain fixed across interactions. Starting from a benchmark without transmission costs, initial traits play a decisive role. Strong cultural homogeneity (assimilated societies) and strong cultural diversity (separated societies) are always preserved, regardless of whether the environment exhibits strategic complements or substitutes. In contrast, when one group has strong traits and the other has weak traits, strategic complements lead to either assimilation or integration, whereas strategic substitutes result in either marginalization or separation. The larger the majority group, the more likely we observe assimilation or separation instead of marginalization or integration. This provides an explanation for the lower degree of bilingualism observed in small immigrant communities. When positive parental costs are introduced, the results remain qualitatively consistent for low costs. However, when the cost of direct socialization becomes very high, the influence of oblique socialization can outweigh vertical socialization, eliminating the possibility of cultural diversity (separated and marginalized societies) at the steady state. We conclude the analysis by considering the case where the strategic environment is complex—that is, material payoffs vary within each generation and are uniformly distributed. In this setting, the number of possible acculturation processes shrinks, cultural dynamics are primarily driven by the nature of the strategic environment, and initial conditions play a minor role. Under strategic complements, assimilation to homogeneous extreme traits always occurs. In contrast, with strategic substitutes, traits either become heterogeneous or become neutral, depending on the cost of socialization and the initial",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "level of diversity. Specifically, when socialization costs are negligible, the process leads to separation with heterogeneous extreme traits, whereas when socialization costs are high, identity erosion occurs, with traits converging to neutrality. In the last part of the paper, we link the prediction of our model to the empirical observation of the acculturation literature. The paper contributes to the theoretical literature on cultural transmission (see Bisin and Verdier , 2011 , 2023a , and references therein), particularly on the transmission of continuous cultural traits ( Vaughan , 2013 ; Panebianco , 2014 ; Buechel et al. , 2014 ; Cheung and Wu , 2018 ; Spiro , 2020 ; Michaeli and Wu , 2022 ) and the interaction between cultural traits and strategic environments ( Hauk and Saez-Marti , 2002 ; Bisin et al. , 2004a ; Tabellini , 2008 ; Della Lena et al. , 2023 , 2024b ). 4 As a novelty, we study the transmission of continuous traits in strategic environments and consider both complements and substitutes, as well as stochastic and non-stochastic payoffs. Additionally, in their effort to maximize their children’s expected payoffs, we allow parents to choose both the level of socialization effort and the role model for transmission. 5 These innovations enable a comprehensive analysis of how the strategic environments affect, through parental transmission, the intergenerational dynamics of behavior and traits. 6 Moreover, the nature of the strategic environment affects the relationship between direct socialization and population share and, under complement, leads to an inverted U-shaped relationship, as documented in empirical studies on cultural transmission ( Bisin et al. , 2004b ; Cohen-Zada , 2006 ). The paper also speaks to the literature that studies the interaction among different ethnic or cultural groups such as immigrants and natives. In particular to the recent empirical papers that show the importance of economic incentives, interaction within and across groups, and intergenerational stability of the environment for the transmission of cultural traits and diversity ( Algan et al. , 2022 ; Giuliano and Nunn , 2021 ; Desmet and Wacziarg , 2021 ). We depart from previous literature by distinguishing between cultural traits, role models, behaviors, and socialization levels, and by modeling their co-evolution. 4 A recent body of literature, reviewed by Doepke et al. ( 2019 ), models the interplay between parents’ socialization efforts and their children’s choices. This research has primarily focused on various parenting styles and has developed models estimating how children’s cognitive and non-cognitive skills accumulate in response to parental inputs ( Doepke and Zilibotti , 2017 ; Agostinelli et al. , 2024 ; Seror , 2022 ). 5 While Bisin and Verdier ( 2001 ) allow a similar choice, that model assumes imperfect empathy and dichotomous traits, where parents always select a role model matching their own trait and do not explicitly account for the strategic environment. 6 In contrast to the literature on the indirect evolution of preferences ( G ̈uth and Yaari , 1992 ; Dekel et al. , 2007 ), in our framework, the evolution of traits does not result from a mechanical biological process but rather from purposeful parental transmission. This approach enables the possibility of long-run configurations where cultural traits and associated behaviors are neither payoff-maximizing nor efficient— a phenomenon observable empirically—even in settings with complete information and uniform random matching. See also Alger and Weibull ( 2019 ) and the references therein.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "This allows us to microfound well-known acculturation processes—such as assimilation , integration , separation , and marginalization —based on the strength of cultural traits and their intergenerational transmission. In doing so, we also bridge the literature on cultural transmission and acculturation, providing the first comprehensive model that explicitly incorporates intergenerational transmission and strategic environment. The implications for socialization efforts and role models are consistent with Berry ( 1997 ) and Verdier and Zenou ( 2017 ). We explain the occurrence of each acculturation processes depending on characteristics of the strategic environment and the (opportunity) costs of parental transmission, without introducing cultural leaders or geographical/network segregation. 7",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "The paper is organized as follows. Section 2 introduces the model, analyzing the interaction between cultural traits and the strategic environment (Section 2.1 ) and the intergenerational transmission of traits (Section 2.2 ). Section 3 examines cultural dynamics and characterizes long-run acculturation in simple (Section 3.1 ) and complex environments (Section 3.2 ). Section 4 situates our analysis of acculturation within seminal contributions in the social sciences. Section 5 presents case studies that illustrate how our model provides a unified explanation of empirical evidence. Section 6 concludes. Appendix A discusses the robustness of our model to alternative assumptions. Appendix B provides a specific example of material and cultural payoffs, while Appendix C contains the proofs.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 0,
+        "text": "We consider an overlapping generations model where, in each period t ∈ N 0 , a continuum of agents I = [0 , 1] is divided into two communities: a majority, the L arge group L = [0 , η ] with η ∈ \u0002 1 2 , 1 \u0001 , and a minority, the S mall group S = ( η, 1]. Within each generation t , agents are active in two different sub-periods, as young and adult. Each agent is characterized by a cultural trait that affects strategic decisions when adult and is transmitted from adults of one generation to the young of the next one. As illustrated in Section 2.1 , when generation t is adult, each agent i ∈ I is randomly matched to play an infinite number of symmetric 2 × 2 games, choosing between two actions, a i ∈{ 0 , 1 } . Each game payoffhas both a material and a cultural component. Material payoffs can vary within each period and its realizations γ are drawn according 7 Previous literature has shown that the assimilation and integration of immigrants depend on groups’ cultural identity and cultural transmission ( Bisin et al. , 2011 ; Panebianco , 2014 ; Bisin et al. , 2016 ) on religious and cultural uses ( Carvalho , 2013 ), cultural leaders ( Hauk and Mueller , 2015 ; Prummer and Siedlarek , 2017 ; Verdier and Zenou , 2018 ), networks and geographical locations ( Kuran and Sandholm , 2008 ; Verdier and Zenou , 2017 ), the role of the majority ( Itoh et al. , 2024 ), the marriage market ( Hiller et al. , 2023 ), and educational institutions ( Carvalho et al. , 2024 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 1,
+        "text": "to a given probability distribution μ that restricts them to exhibiting either strategic complementarity or substitutability. The cultural payoffs for each agent i depends on a continuous cultural traits x i,t ∈ [0 , 1] that represents the relative preference for playing action 1 with respect to action 0. At the end of the adulthood, each agent reproduces asexually, giving birth to one child of the next generation. The young of the new generation overlap with the adults of the previous one, allowing for the transmission of cultural traits as described in Section 2.2 . In particular, each parent optimally chooses both the direct socialization effort τ i,t ∈ [0 , 1] and the role model θ i,t ∈ [0 , 1] to transmit to their own child so as to maximize child’s expected future welfare, while being subject to costs for direct socialization and for choosing a role model that differs from their own cultural trait. The offspring of each parent i acquires the cultural trait x o i,t ≡ x i,t +1 as a combination of the role model θ i,t (vertical socialization) and the average behavior in the previous generation, ̄ a t (oblique socialization) with the weight of each component depending on the socialization effort. Homogeneity of traits within each community is assumed in t = 0 and, given the model, remains valid for all t as do actions, role models, and socialization levels. The evolution of cultural traits from generation t to generation t + 1 can thus be represented at the community level. The following table, where i = l , s is each community representative agent, summarizes the dynamics of cultural traits x t := ( x l ,t , x s ,t ), as dependent on average actions ̄ a t := ( ̄ a l ,t , ̄ a s ,t ), role models θ t := ( θ l ,t , θ s ,t ), and socialization effort τ t := ( τ l ,t , τ s ,t ), when material payoffs γ are distributed according to μ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 2,
+        "text": "young t adults t young t + 1 gen. t x t μ −→ ̄ a t  y Cult. Transm. with θ t , τ t gen. t + 1 x o t ≡ x t +1 μ −→",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 0,
+        "text": "In this section, we model how cultural traits affect agents’ payoffs and thus influence their behavior. As this phenomenon occurs when agents are adult, we drop the time index. During their adulthood, agents are randomly matched to play an infinite number of symmetric 2 × 2 games. In each game, agents belonging to each community can play either as row player, r , or column player, c ; the set of players of each game is thus J = { r, c } .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 1,
+        "text": "The cultural trait of the community of player j ∈ J is denoted by x j . Each player j can choose between two actions, a j ∈{ 0 , 1 } —e.g. engaging in traditional/religious activities or not, exerting a low versus a high work effort at the workplace, speaking the majority versus the minority language, eating traditional versus ethnic food, specializing in creative versus labor-intensive jobs etc. The cultural trait x j represents a measure of j ’s relative identification with action 1 rather than with 0 and, thus, it belongs to the convex hull of action space [0 , 1]. We assume that the payoff π γ of each player j depends on a material component γ ( a j , a − j ) drawn from a distribution μ ( γ ) and on a cultural component, ψ ( a j , x j ). The latter reflects the consistency between actions and cultural traits. The overall payoff function for player j when adult evaluated at ( a j , a − j ), given the trait x j , is 8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 2,
+        "text": "π γ \u0000 a j , a − j ; x j \u0001 := γ ( a j , a − j ) | {z } material + ψ ( a j , x j ) | {z } cultural . (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 3,
+        "text": "The material payoff γ ( a j , a − j ) represents the utility that agents would obtain without the cultural component (or, as we define below, when the trait is neutral). We are interested in the role of cultural traits when material payoffs alone imply multiple equilibria, so we restrict them to exhibit either strategic complementarity —as in coordination games (e.g., Stag Hunt)—or strategic substitutability —as in anti-coordination games (e.g., Chicken Game). 9 The cultural component ψ ( a j , x j ) represents an evaluation of action a j given the cultural trait x j . For each agent, we assume that the more (less) their action is in line with their cultural trait, the higher (lower) their cultural payoff. 10 Overall, the cultural component ψ is assumed to satisfy the following properties.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 4,
+        "text": "A1 Smoothness : For each a j ∈{ 0 , 1 } , ψ ( a j , x j ) is smooth and thus continuous in x j ∈ [0 , 1] . The assumption of continuity is quite natural due to the continuous nature of the cultural trait. Smoothness will prove useful only when characterizing optimal parental choices during cultural transmission. 8 To simplify the analysis in the main body of the paper, we employ separability of the two components. However, in the Appendix C , we prove the result of this section, for a general aggregating function π ( γ, ψ ). The subscript γ highlights that the total payoffdepends on the specification of its material component as drawn from μ ( γ ). 9 A 2 × 2 game displays strategic complementarity if each action is a best reply to itself. Conversely, it displays strategic substitutability if each action is the best reply to the other one. In Appendix B , we extend the analysis to all symmetric games. 10 In Appendix B.2 we discuss the conditions for which the payofffunction ( 1 ) generalizes, among others, Bisin et al. ( 2004a ), Akerlof and Kranton ( 2005 ), Tabellini ( 2008 ), Kimbrough and Vostroknutov ( 2016 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 5,
+        "text": "A2 Neutrality : ψ (1 , 1 2 ) = ψ (0 , 1 2 ). The cultural trait x j = 1 2 is said to be neutral , implying that j ’s culture is equally identified with both actions and thus leads to equal cultural payoff. With a neutral trait, the payofffunction coincides with γ ( a j , a − j ) up to a constant so that behavior depends only on the material component. Traits different from 1 2 it can be biased either toward action 1, if x j > 1 2 , or toward action 0, if x j < 1 2 . A3 Monotonicity : For each a j ∈{ 0 , 1 } , ψ ( a j , x j ) is strictly decreasing in d j := ( x j − a j ) 2 . Monotonicity implies the more j ’s culture is identified with action 1 (0)—that is, that the closer a cultural trait x j is to 1 (0)—the higher the benefit for playing action 1 (0) and the penalty for playing action 0 (1).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 6,
+        "text": "A4 Extremism : For all material components γ in the support of μ ( γ ) , the cultural component implies that π γ \u0000 1 , a − j ; 1 \u0001 > π γ \u0000 0 , a − j ; 1 \u0001 and π γ \u0000 1 , a − j ; 0 \u0001 < π γ \u0000 0 , a − j ; 0 \u0001 , for all a − j ∈{ 0 , 1 } . Under extremism, when the trait is 1 (0), action 1 (0) is strictly dominant for all possible material components γ . The cultural trait 1 (0), with which the culture is fully identified with corresponding action 1 (0), is said to be extreme because by A 4 it leads to a dominant strategy, independently of the material component. An example of extreme traits are strong religious norms that lead agents to behave accordingly. 11",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 7,
+        "text": "We turn to the implications of having a cultural component for the equilibrium analysis. Before characterizing Nash equilibria in Figure 1 , the next proposition shows that under continuity, neutrality, monotonicity, and extremism ( A 1A 4), there always exist thresholds of cultural traits implying that action 1 or 0 is strictly dominant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 8,
+        "text": "Proposition 1 Consider a game with payoffs described by equation ( 1 ) and γ exhibiting strategic complementarity or substitutability. If A1-A4 hold, then for each γ there exists a ˆ x 1 ,γ := ˆ x 1 ( π γ ) ∈ \u0000 1 2 , 1 \u0001 such that for all x j > ˆ x 1 ,γ action 1 is strictly dominant for j and an ˆ x 0 ,γ := ˆ x 0 ( π γ ) ∈ \u0000 0 , 1 \u0001 such that for all x j < ˆ x 0 ,γ action 0 is strictly dominant for j .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 9,
+        "text": "Proposition 1 shows that the relative position of a trait with respect to the thresholds ˆ x 0 ,γ and ˆ x 1 ,γ determines whether actions 0 or 1, respectively, are dominant. These thresholds depend on the material component γ and reflect the relative strengths of the material 11 E.g. veiling, see Carvalho ( 2016 ) for an analysis of how veiling might affect integration dynamics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 10,
+        "text": "and cultural components. When the thresholds are closer to 1 2 , the cultural component is stronger because even a weak identification with an action can make it dominant. The thresholds are generally not symmetric around the neutral value of 1 2 , as each depends on the material incentives to best respond to action 0 (ˆ x 1 ,γ ) or action 1 (ˆ x 0 ,γ ). Moreover, both thresholds depend on the relative strengths of the material and cultural components in equation ( 1 ). When the cultural component ψ dominates the material component π γ , the thresholds ˆ x 0 ,γ and ˆ x 1 ,γ approach 1 2 . Conversely, when the material component dominates, the thresholds approach the extremes 0 and 1. A trait x j = 1 2 is considered neutral because it does not affect agents’ payoffs for any specification of γ , as implied by A 1. Traits different from 1 2 are said to be biased: they are biased toward action 1 if x j > 1 2 , and toward action 0 if x j < 1 2 . When a cultural trait implies that an action is strictly dominant, the trait is called strong . Specifically, a trait x j is strongly biased toward action 1 if x j > ˆ x 1 ,γ and strongly biased toward action 0 if x j < ˆ x 0 ,γ . As each threshold depends on the material payoff π γ , the strength of a trait is defined relative to a specific material payoff. Traits x j = 1 and x j = 0 are considered extreme because they are strong for all specifications of γ . In contrast, when ˆ x 0 ,γ < x j < ˆ x 1 ,γ , the player does not have a dominant strategy. In such cases, the cultural traits are referred to as weak relative to that material payoff. The implications of Proposition 1 on Nash equilibria are rather straightforward. In Figure 1 , we depict the (pure strategy) Nash equilibria as depending on the relative strength of cultural traits and material incentives. Material payoffs, γ , exhibit strategic complementarity in panel (a) and strategic substitutability in panel (b).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 11,
+        "text": "(a) (b) Figure 1: Nash equilibria as a function of cultural traits ( x r , x c ) in strategic environments with strategic (a) complements and (b) substitutes, given ˆ x 0 ,γ , ˆ x 1 ,γ . The star “ ∗ ” denotes that the strategy is dominant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 12,
+        "text": "Average Behavior During their adulthood, agents are matched randomly—with frequency η against a player of community L and 1 − η against a player of community S —to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 13,
+        "text": "play different games, all exhibiting either strategic complementarity or substitutability, according to a distribution μ ( γ ) and independent of the drawn player. When μ ( γ ) has a degenerate support on one material payoff, we say that the environment is simple (see Section 3.1 ). When μ ( γ ) is such that the thresholds ˆ x 0 ,γ , ˆ x 1 ,γ are uniformly distributed in the space (0 , 1 2 ) × ( 1 2 , 1), we say that the environment is complex (see Section 3.2 ). 12 We further assume that whenever there are multiple equilibria, the two actions are played with the same frequency, as if agents are coordinating half the time on each equilibrium. As we see in trait transmission process, this implies that whenever the trait does not help select an action, there is a push toward neutrality. 13 At the end of their life, for each realization of the material payoff γ , each agent i has played a sequence of actions { a ij,γ } j ∈ I , where a ij,γ represents the Nash equilibrium action that agent i played against agent j , given the material payoffdraw γ . Since there is homogeneity in action within each group, the vector of average actions is ̄ a := ( ̄ a l , ̄ a s ) = ( E η,γ [ a l ] , E η,γ [ a s ]). The average behavior of the whole society is ̄ a = η ̄ a l + (1 − η ) ̄ a s . Figure 2 illustrates the average equilibrium behavior given the realization of material payoffs γ and the resulting thresholds ˆ x 0 ,γ and ˆ x 1 ,γ . To compute these averages, we account for the fact that, in each region, agents from both communities interact η times with agents from the majority and (1 − η ) times with agents from the minority, either as row or column players. By integrating the equilibrium actions from Figure 1 over the distribution of the two groups, we derive the average behavior in the different regions of the space [0 , 1] 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 14,
+        "text": "(a) (b) Figure 2: Average actions ̄ a l , ̄ a s , in the space ( x s , x l ) for a specific choice of the material component π γ . In (a) the environment has strategic complements in (b) the environment has strategic substitutes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 15,
+        "text": "12 The analysis with more general distributions of γ proceeds along the same lines. Here, we focus on thresholds uniformly distributed in (0 , 1 2 ) × ( 1 2 , 1) because, together with the case of simple environments, it captures the main insights of the model. See Appendix A for further discussion. 13 This assumption is employed to provide clear-cut results but can be easily relaxed. See Appendix A .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 3,
+        "section_name": "Cultural Traits and Strategic Environments",
+        "paragraph_id": 16,
+        "text": "Prescriptive and descriptive norms Having differentiated between cultural traits and actions allows us to distinguish between prescriptive and descriptive norms. Traits in x represent the prescriptive norms of the two groups—that is, cultural/moral values prescribing the action that an agent should do—whereas the average actions in ̄ a represent the descriptive norms —that is, the frequency with which each given behavior occur and thus what agents actually do. We refer to Bell et al. ( 1988 ) for further discussion about prescriptive and descriptive norms in decision making. In the following section, we examine the transmission of prescriptive norms—i.e., cultural traits—from one generation to another and analyze how their formation is influenced by both prescriptive and descriptive norms (e.g., Bicchieri et al. , 2014 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 0,
+        "text": "During the cultural transmission process, each parent i ∈ I directly socializes their child by choosing a role model θ i ∈ [0 , 1] and exerting a costly vertical socialization effort τ i ∈ [0 , 1]. The role model θ i can be thought as a displayed prescriptive norm that parents use to educate their children. The offspring of i acquires their cultural trait, x o i ∈ [0 , 1], as a result of both receiving the parental role model, θ i —i.e., vertical socialization —and observing the average behavior in the previous generation, ̄ a —i.e., oblique socialization : 14",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 1,
+        "text": "x o i = τ i θ i |{z} vertical soc. + (1 − τ i ) ̄ a | {z } oblique soc. . (2) Parents’ optimal decisions about the role model to transmit and the socialization effort to exert are moved by: altruism toward their offspring; costly directly socialization effort; and cultural resilience. Each parent i ∈ I is assumed to maximize the subjective expectation of their offspring’s future utility, anticipating the child’s trait x o i as in ( 2 ) and given their expectations about actions played in the society (altruism). Moreover, parents are subject to a quadratic cost of direct socialization, which depends on a parameter c ≥ 0 (socialization cost), and a cost of displaying a trait different from x i , which depends on a parameter λ ≥ 0 (cultural resilience). Formally, each parent i solves the following problem",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 2,
+        "text": "max ( θ i ,τ i ) ∈ [0 , 1] 2 E i \u0014Z γ \u0014Z j ∈ I/ { i } π γ \u0000 a o i , a o j ; x o i \u0001 dj \u0015 μ ( γ ) dγ \u0015 | {z } altruism/child ′ s welfare − c ( τ i ) 2 | {z } socialization cost − λ ( θ i − x i ) 2 | {z } cultural resilience . (3) 14 See Appendix A for a discussion on introducing assortativity in oblique socialization.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 3,
+        "text": "To capture the limited farsightedness that parents have in anticipating behaviors in future strategic interactions, we assume adaptive expectations about the actions played in the new generation—i.e., for each parent i ∈ I , Pr i [ a o jk,γ = a jk,γ ] = 1, for all games γ and all children j and k ∈ I . 15 For tractability, we also assume a specific choice of cultural payoff(quadratic): π γ ( a i , a − i ; x i ) = γ ( a i , a − i ) − ψ ( a i − x i ) 2 , where ψ ∈ R + measures the strength of the cultural component. 16 Defining ̃ λ := λ ψ , ̃ c := c ψ , and \u0002 y \u0003 1 0 := min { max { 0 , y } , 1 } , the next proposition characterizes the cultural transmission choices.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 4,
+        "text": "Proposition 2 For each i ∈ I , consider the cultural transmission mechanism described by equations ( 2 ) and ( 3 ) and assume adaptive expectations. ( i ) The optimal parental choice of role model and direct socialization ( θ ∗ i , τ ∗ i ) satisfies    θ ∗ i = F θ i ( τ ∗ i ) τ ∗ i = F τ i ( θ ∗ i ) , (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 5,
+        "text": "with F θ i ( τ ) := \" τ 2 ̃ λ + τ 2 ̄ a i + ̃ λ ̃ λ + τ 2 x i + τ (1 − τ ) ̃ λ + τ 2 ( ̄ a i − ̄ a ) # 1 0 ; (5) and F τ i ( θ ) := \u0014 ( ̄ a i − ̄ a )( θ − ̄ a ) ̃ c + ( θ − ̄ a ) 2 \u0015 1 0 . (6) ( ii ) Given the optimal choices in ( 5 ) and ( 6 ) , there exists a ρ i ∈ [0 , 1] such that the trait acquired by i ’s offspring can be written as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 6,
+        "text": "x o i = ρ i ̄ a i + (1 − ρ i ) ̄ a. (7)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 7,
+        "text": "Moreover, if λ = c = 0 , then ρ i = 1 . ( iii ) Assume, without loss of generality, that ̄ a i ≥ ̄ a . Then, (a) if x i ≥ ̄ a , then ( θ ∗ i ≥ x i , τ ∗ i > 0 ) and x o i > ̄ a ; (b) if x i ≤ ̄ a , then either ( θ ∗ i > ̄ a , τ ∗ i > 0 ) and x o i > ̄ a or ( θ ∗ i , τ ∗ i ) = ( x i , 0) and x o i = ̄ a . 15 As we shall see, at the steady state of the cultural dynamics, adaptive expectations coincide with rational expectations and thus correct forecasts. Under rational expectations, parents would have to anticipate not only the behavior of all children but also the optimal transmission choices of all parents. In doing so, they would need to incorporate the strategic uncertainty of the environment in which their children act, implying multiple equilibria of transmission choices. While we acknowledge the possibility of such sophisticated reasoning, we believe that, on average, most parents lack such foresight and coordination in playing this transmission game. See Appendix A for further discussion. 16 Although, in Appendix C , the cultural transmission is characterized for general payoffs, as in ( 1 ), we concentrate here on a simplified version that retains all the relevant features.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 8,
+        "text": "To properly understand Proposition 2 , recall that parental utility depends on three forces: altruism, cost of direct socialization, and cultural resilience. When the cost of socialization and cultural resilience are zero ( ̃ λ = ̃ c = 0) parental decisions are driven solely by the objective of maximizing children’s adult-age expected utility. In such a case, parents are always successful in transmitting a trait equal to the average optimal action they play during their adult life, ̄ a i . Indeed, the latter maximizes the cultural utility ψ , given that parents expect their children to display the same behaviour. Conversely, when the costs of socialization and cultural resilience are positive ( ̃ λ > 0 and ̃ c > 0) parents face trade-offs between transmitting the optimal altruistic trait, ̄ a i , and minimizing the cost of socialization and cultural resilience. Proposition 2 ( i ) characterizes this trade-offand gives the optimal combination of role model θ ∗ i and socialization effort τ ∗ i chosen by each parent to educate their offspring. The role model θ ∗ i , when interior, positively depends on the weighted average of the expected action ̄ a i , the parental trait x i , and the distance between the average action and the overall average action in the society ( ̄ a i − ̄ a ). The first effect is due to altruism: parents want to transmit a trait in line with the average action ̄ a i to maximize the cultural utility ψ , given the expectations about future actions. The second effect is due to cultural resilience, anchoring the role model to their own trait to minimize the cost of departing from it. The third effect depends on the fact that parents try to contrast the effect of oblique socialization through a more extreme role model whenever that is not in line with their objective. For sufficiently low ̃ λ , the need to contrast the oblique socialization is responsible for an extreme role model that can go to 1 or 0, depending on the sign of ( ̄ a i − ̄ a ). The socialization effort τ ∗ i , when interior, positively depends on the distance between own average action ̄ a i and the average behavior in society ̄ a . Notably, when all the agents in a society play the same action—so that ̄ a i = ̄ a —and when the optimal role model does not help to contrast the effect of oblique socialization—that is, sign ( ̄ a i − ̄ a ) ̸ = sign ( θ i − ̄ a )— parents do not exert any socialization effort and let children be socialized by society leading to τ ∗ i = 0, a border solution. Proposition 2 ( ii ) shows that the trait acquired by the offspring is always a convex combination of their parent’s average action and the average behavior in society. In particular, if parental costs are null ( λ = 0 and c = 0), each parent i can always find a combination of θ ∗ i and τ ∗ i such that the oblique socialization effect is crowded out and x o i = ̄ a i . In such a case, each parent can freely substitute a higher level of direct socialization with a more extreme role model in the space [0 , 1] 2 . If transmission costs are instead positive, parents are not generically able to avoid the effect of oblique socialization in children’s traits formation. A child’s trait x o i will be closer to either parental action ̄ a i or",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 9,
+        "text": "the average behavior in society ̄ a , depending on the intensity of the cultural resilience and the cost of direct socialization. For example, if the parenting costs ̃ λ and/or ̃ c are small enough, parent i may choose extreme role model θ ∗ i = 1 (if ̄ a i > ̄ a ) and/or full vertical socialization τ i = 1 to have the trait of the offspring of parent i be close to ̄ a i . The larger the parenting costs, the closer the new generation’s traits to the average behavior ̄ a . Figure 3 shows how the optimal role model θ ∗ (in red) and offspring acquired traits x o i (in blue) depend on the ordering of parental traits, x i , parental average action ̄ a i , and average behavior in society, ̄ a . Proposition 2 ( iii ) implies that, if the parental trait x i is far enough from ̄ a on the opposite side of ̄ a i (see Figure 3 ( b ′′ )), parents might find it optimal to not socialize their offspring, choosing τ ∗ i = 0 and taking advantage of oblique socialization, so that x o i = ̄ a . In such a case, the cost of directly socializing the child is not justified by the success of the transmission, and parents prefer to let their offspring acquire traits only by observing the average behavior in the society. Otherwise, parents always exert positive socialization effort, and the offspring trait is a convex combination of average parental action and average society behavior, as discussed in equation ( 7 ) (see Figure 3 ( a ′ ), ( a ′′ ), and ( b ′ )).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 10,
+        "text": "0 x i ̄ a ̄ a i θ ∗ i x o i ( a ′ ) τ i > 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 11,
+        "text": "0 x i ̄ a ̄ a i θ ∗ i x o i ( a ′′ ) τ i > 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 12,
+        "text": "0 τ i > 0 x i ̄ a ̄ a i θ ∗ i x o i ( b ′ )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 13,
+        "text": "0 τ i = 0 x i ̄ a ̄ a i θ ∗ i x o i ( b ′′ )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 14,
+        "text": "Figure 3: The space of the optimal role model θ ∗ i (red) and offspring cultural trait x o i (blue), depending on parental trait x i , when ̄ a i > ̄ a and transmission costs are positive.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 15,
+        "text": "Effect of group size A common result in the previous literature (e.g. Bisin and Verdier , 2011 , 2023a ) is that socialization efforts are decreasing in the population share of parent’s type, due to a substitution effect between vertical and oblique socialization. In our model, the strategic environment affects parental incentives to socialize their children and may",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 16,
+        "text": "lead to cultural complementarity in environments with strategic complementarity. 17 Defining η i ∈ [0 , 1] the population share parent i ’s type, we say that a socialization effort τ i displays cultural substitution if ∂τ ∗ i ∂η i < 0, whereas it displays cultural complementarity if ∂τ ∗ i ∂η i > 0. In general, both the socialization effort and the role model are affected by the population shares. To provide clear-cut results, we first concentrate on the variation of socialization levels by setting the cost for setting a role model to zero, λ = 0, so that the optimal role model θ ∗ i is set at an extreme level and does not change with respect to the population shares. Proposition 3 Fix a material payoff γ and consider no costs for setting the role models, λ = 0 . For each i ∈ [0 , η i ] , if x i is strong, then τ ∗ i displays cultural substitution. If x i is weak and, for all j ∈ [ η i , 1] , x j is strong then • under strategic substitutes, τ ∗ i displays cultural substitution; • under strategic complements, τ ∗ i displays cultural substitution when η i is large and it displays cultural complementarity when η i is small.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 17,
+        "text": "Proposition 3 shows that the effect of population shares on socialization effort depends crucially on the strategic environment and the strength of cultural traits. When the role model is given, the strength of the optimal socialization level in ( 6 ) is proportional to the difference between its own average action and the societal average. This difference | ̄ a i − ̄ a | can be rewritten as (1 − η i ) | ̄ a i − ̄ a j ̸ = i | , which means it depends on population size η i both directly (as increasing η i decreases the gap between own group average behavior and the societal average behavior) and indirectly (as ̄ a i and ̄ a j ̸ = i may shift due to changes in group size). The first effect always contributes to cultural substitution (as in Bisin and Verdier , 2001 ). The second effect emerges only when one group has a weak trait and the other has a strong one because, only in this case, the size of the strong group affects how frequently the weak group coordinates or anti-coordinates with it. 18 In an environment with strategic substitutes, a small population share η i for a weak group means that its members frequently differentiate from the strong group’s preferred behavior. As η i increases, both ̄ a i and ̄ a j ̸ = i move closer together, reducing the incentive for parents in i to socialize their children. This reinforces cultural substitution: larger groups rely less on direct socialization. Conversely, when η i decreases, the weak group increasingly differentiates from the strong group, increasing the need for vertical socialization. 17 If the strategic environment does not play a role, cultural complementarity is possible when the transmission technology depends on the own group share—see, e.g., Bisin and Verdier ( 2001 ) and Della Lena and Panebianco ( 2021 ). We refer to Della Lena et al. ( 2023 ) for an analysis of how cultural complementarity and substitution depend on the strategic environment in a dichotomous traits setting. 18 If traits of both groups are weak, then average actions are equal, and all agents decide to not exert any socialization effort and let their children be socialized by society.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 18,
+        "text": "With strategic complements, the effect is reversed. As η i increases, a weak group i interacts less frequently with the strong group, making its average action, ̄ a i , diverge from ̄ a j ̸ = i . This generates cultural complementarity: parents in group i socialize their children more to maintain cohesion. However, when η i is large enough, the direct effect dominates, reducing socialization incentives and leading back to cultural substitution. This produces an inverted U-shaped relationship between socialization effort τ i and population share η i . This pattern is consistent with empirical findings. Bisin et al. ( 2004b ) and CohenZada ( 2006 ) document a similar inverted U-shape in religious transmission: religious minorities invest more in socialization when small but weaken their efforts as they grow larger. A similar cultural complementarity effect appears in Bazzi et al. ( 2023 ), where white migration from the postbellum South diffused and entrenched Confederate identity across the U.S.. These dynamics remain robust even when introducing role model costs ( λ > 0), as illustrated in Figure 4 . The figure shows socialization efforts τ ∗ i and τ ∗ j as functions of η i when group i has a weak trait and group j has a strong one. We observe that τ ∗ j (orange) always increases with η i , meaning that it declines in its own population share ( η j = 1 − η i ), displaying consistent cultural substitution. Meanwhile, τ ∗ i (blue) follows an inverted U-shape in environments with strategic complements (Panel (a)) and is always decreasing in environments with strategic substitutes (Panel (b)).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 4,
+        "section_name": "Cultural Transmission",
+        "paragraph_id": 19,
+        "text": "(a) Socialization effort under complements. (b) Socialization effort under substitutes. Figure 4: Optimal socialization efforts for generic groups i (weak trait, x i = 0 . 6) and j (strong trait, x j = 0 . 1, so ̄ a j = 0) depending on η i , the share of i agents in society, under costs ̃ c = 0 . 1, ̃ λ = 0 . 5. The action ̄ a i of the group i (weak trait) depends on the strategic environment: ̄ a i = 1 2 η i with complements (Panel ( a )) and ̄ a i = 1 − 1 2 η i , with substitutes (Panel ( b )).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 0,
+        "text": "Having explicitly described the cultural transmission process, we can now study its longrun cultural dynamics. Since for each group i = l , s , agent i born in t + 1 is the offspring",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 1,
+        "text": "of agent i born in time t , so that x i,t +1 ≡ x o i,t , the dynamics of cultural traits is described by equation ( 7 ); that is, x i,t +1 = ρ i,t ̄ a i,t +(1 − ρ i,t ) ̄ a t , where the weight ρ i,t and the average actions depend on the parent traits of both groups ( x l ,t , x s ,t ). Making this dependence explicit, we can define ρ ( x t ) := ( ρ l ( x t ) , ρ s ( x t )) and write the cultural dynamics as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 2,
+        "text": "x t +1 ≡ x o t = ρ ( x t ) · ̄ a ( x t ) + (1 − ρ ( x t )) · ̄ a ( x t ) . (8) In the next section, we study the dynamics in ( 8 ) and provide a taxonomy of traits trajectories and steady states in terms of acculturation processes and outcomes, respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 3,
+        "text": "When two cultural groups interact, the process of change in cultural traits, behavior, and socialization is known as acculturation . 19 In this paper, we adopt a new taxonomy to classify acculturation outcomes—i.e., cultural steady states—and acculturation processes—i.e., cultural dynamics—based on the impact of cultural traits on preferences for actions. In Section 4 we compare this taxonomy with the framework provided by Berry ( 1997 ). We focus our discussion of long-run cultural dynamics on cases where the majority, in expectation, has a strong cultural trait—implying that the majority plays the same action, w.l.o.g. action 1, as a dominant strategy for most material payoffs. 20 This case captures the key theoretical insights and is more relevant from an applied perspective. The definitions we propose are payoff-dependent: cultural traits that lead to a particular acculturation outcome in a strategic environment characterized by a distribution μ ( γ ) may produce different results for another distribution. This reflects empirical evidence showing that similar cultural starting points can lead to different behaviors depending on the external environment, as well as to varying long-run cultural dynamics (e.g., Algan et al. , 2010 ; D’Amuri et al. , 2010 ; D’Amuri and Peri , 2014 ). While we emphasize strategic environments characterized by either complements or substitutes, our definitions extend to any strategic setting.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 4,
+        "text": "Definition 1 (Strong homogeneity) A minority is assimilated if, in expectation, it has a trait strongly biased toward the same action as the majority’s. 19 As defined by Redfield et al. ( 1936 ), “acculturation comprehends those phenomena which result when groups of individuals having different cultures come into continuous first-hand contact, with subsequent changes in the original cultural patterns of either or both groups.” 20 Nevertheless, the general results are fully characterized in the appendix.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 5,
+        "text": "Definition 2 (Weak homogeneity) A minority is integrated if, in expectation, it has a trait weakly biased toward the same action as the majority.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 6,
+        "text": "Definition 3 (Weak diversity) A minority is marginalized if, in expectation, it has a trait weakly biased toward the opposite action as the majority.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 7,
+        "text": "Definition 4 (Strong diversity) A minority is separated if, in expectation, it has a trait strongly biased toward the opposite action as the majority’s.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 8,
+        "text": "When the majority is strongly biased toward action 1, which means that x l ,t > E γ [ˆ x 1 ,γ ], then a minority is: assimilated if x s ,t > E γ [ˆ x 1 ,γ ]; integrated if x s ,t ∈ [ 1 2 , E γ [ˆ x 1 ,γ ]], marginalized if x s ,t ∈ [ E γ [ˆ x 0 ,γ ] , 1 2 ]; and separated if x s ,t < E γ [ˆ x 0 ,γ ]. In simple environments it holds that, E γ [ˆ x 1 ,γ ] = ˆ x 1 ,γ and E γ [ˆ x 0 ,γ ] = ˆ x 0 ,γ , which implies that if one group is strongly biased toward a specific action, the agents in that group will always choose that action. Note that in our framework, since the distribution is either a Dirac measure or uniform, the expectation coincides with the median. Thus, a trait that is strong in expectation is a trait that implies an action as a dominant strategy for the majority of payoffrealizations. The processes of acculturation , separation , integration , and marginalization correspond to the cultural dynamics leading to a minority being assimilated, separated, integrated, or marginalized, respectively. The figures in the next section present results across the entire space of cultural traits ( x l ,t , x s ,t ) ∈ [0 , 1] 2 including cases where the majority has a weak trait. In such cases, the definitions apply symmetrically to the majority. Additionally, when both the majority and the minority have weak traits, cultural identity erodes over time, a process referred to as erosion of cultural traits. Figure 5 provides a complete partition of the space ( x l ,t , x s ,t ) ∈ [0 , 1] 2 based to the acculturation outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 9,
+        "text": "1 / 2 ˆ x 0 ,γ ˆ x 1 ,γ 1 / 2 ˆ x 0 ,γ ˆ x 1 ,γ",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 10,
+        "text": "0 x s x l Assimilation Integration Marginalization Separation Erosion",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 11,
+        "text": "Figure 5: Regions in the sapace ( x l , x s ) ∈ [0 , 1] 2 relative to different acculturation outcomes, as depending on ˆ x 0 ,γ and ˆ x 1 ,γ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 5,
+        "section_name": "Long-run cultural dynamics",
+        "paragraph_id": 12,
+        "text": "We proceed with the characterization of acculturation process dependent on the strategic environment for cases when material incentives are fixed in every period in Section 3.1 (simple environment), or when they are randomly drawn from μ ( γ ) within each period in Section 3.2 (complex environment).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 0,
+        "text": "We now present the results regarding acculturation as implied by our cultural dynamics when the environment in which agents interact is simple; that is, the material payoffs γ and thus thresholds ˆ x 0 ,γ and ˆ x 1 ,γ are fixed and we can suppress the subscript γ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 1,
+        "text": "3.1.1 No parental transmission costs λ = c = 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 2,
+        "text": "As a benchmark, we first consider the case where parents face no cost of direct socialization ( c = 0) and no cost of transmitting a role model different from their own trait ( λ = 0). In this scenario, altruism fully drives cultural transmission, and parents can completely neutralize the effects of oblique socialization at no cost. Specifically, each parent i can freely choose a combination of θ i and τ i to ensure that their child acquires the trait that maximizes expected future welfare—namely, the average action played by the group (see Proposition 2 ). As a result, in steady state, cultural traits always align with group behavior, meaning that x i = ̄ a i for both groups i = l , s . This implies that if at a given t the minority is either assimilated ( x s ,t > ˆ x 1 ) or separated ( x s ,t < ˆ x 0 ) —i.e. if its trait is strongly biased toward the same (or opposite) action played by the majority—, then it remains in that state regardless of the strategic environment. When the minority’s trait does not always induce an action as a dominant strategy, cultural dynamics depend on the nature of the strategic environment. The following proposition characterizes the acculturation process when the minority has a weak trait at t (ˆ x 0 < x s ,t < ˆ x 1 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 3,
+        "text": "Proposition 4 Consider the cultural dynamics ( 8 ) in a simple environment, with no parental transmission costs, c = 0 and λ = 0 , and x s ,t ∈ [ˆ x 0 , ˆ x 1 ] . Then, ( i ) integration and assimilation can be observed only with strategic complements; ( ii ) marginalization and separation can be observed only with strategic substitutes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 4,
+        "text": "When there are no costs associated with parental transmission, parents always succeed in socializing their children to align with their group’s average behavior. As discussed above, if the minority’s cultural trait prescribes an action as a dominant strategy, this",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 5,
+        "text": "trait reinforces itself over time, leading to an extreme outcome. Consequently, assimilation (white dots in Figure 6 (a) and (b)) and separation (black dots in Figure 6 (a) and (b)) emerge as stable outcomes, regardless of whether strategic interactions exhibit complementarity or substitutability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 6,
+        "text": "(a) Strategic Complements (b) Strategic Substitutes Figure 6: Cultural dynamics with no parental costs ( c = λ = 0) in the space x s , x l and fixed material payoff π inducing ˆ x 0 and ˆ x 1 . Material payoffs are assumed to be strong enough to ensure the existence of acculturation outcomes with integration and marginalization (i.e., ˆ x 0 < 1 2 η or ˆ x 1 > 1 − 1 2 η ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 7,
+        "text": "Conversely, when a trait does not prescribe an action as a dominant strategy, behavior is influenced by the traits of the other group through the strategic nature of the environment. Under strategic complements (Proposition 4 ( i )), the minority has material incentives to coordinate with the majority’s behavior. This leads to a process of cultural homogenization, where traits gradually align with those of the majority, resulting in either integration (red dots in Figure 6 (a)) or assimilation (white dots in Figure 6 (a) and (b))). In contrast, under strategic substitutes (Proposition 4 ( ii )), the minority has material incentives to anti-coordinate with the majority, leading traits to undergo a process of cultural divergence. This process results in the minority becoming either marginalized (blue dots in Figure 6 (b)) or separated (black dots in Figure 6 (a) and (b))). These theoretical predictions align with empirical observations in multicultural societies. Linguistic assimilation among immigrant communities often follows patterns consistent with strategic complements, where economic incentives and the widespread use of a dominant language drive linguistic integration or full assimilation. Notably, our model allows for integration while preserving a degree of linguistic and cultural diversity (i.e., bilingualism)—a feature absent in frameworks where traits and behaviors necessarily align at steady state (e.g., Kuran and Sandholm , 2008 ), making full assimilation the only possible outcome. Conversely, marginalized communities, particularly in economically segregated environments, tend to preserve distinct cultural traits, as seen in persistent ethnic enclaves and cases of cultural divergence. See Section 5 for further discussion.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 8,
+        "text": "The occurrence of assimilation or integration under strategic complements, and separation or marginalization under strategic substitutes, depends on the strength of material payoffs, as represented by the thresholds ˆ x 0 and ˆ x 1 . When ˆ x 0 and ˆ x 1 are closer to 1 2 —which occurs when the relative strength of the material component in ( 1 ) is small—processes of assimilation and separation are more likely. Conversely, when ˆ x 0 and ˆ x 1 are closer to the extremes of 0 and 1—which occurs when the relative strength of the material component in ( 1 ) is high—processes of integration and marginalization are more likely. Figure 6 shows the case where the incentives set by the strategic environment are sufficiently strong for integrated and marginalized outcomes to exist within their respective strategic environments. 21 Conversely, Figure 7 shows how cultural dynamics may change if the thresholds ˆ x 0 and/or ˆ x 1 move closer to 1 2 due to either a higher salience of the cultural component in ( 1 ) or the implementation of policies that alter material incentives.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 9,
+        "text": "0 ( a ) Complements and ˆ x 1 > ̄ a l = 1 − 1 2 η x l",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 10,
+        "text": "ˆ x 0 ˆ x 1 ˆ x ′ x s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 11,
+        "text": "0 ( b ) Complements and ˆ x 1 , < ̄ a l = 1 − 1 2 η",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 12,
+        "text": "̄ a l ˆ x 0 ˆ x 1 x s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 13,
+        "text": "0 ( c ) Substitutes and ˆ x 0 < ̄ a l = 1 2 η x l",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 14,
+        "text": "̄ a l ˆ x 0 ˆ x ′ 0 ˆ x 1 x s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 15,
+        "text": "0 ( d ) Substitutes and ˆ x 0 < ̄ a l = 1 2 η",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 16,
+        "text": "Figure 7: Dynamics of cultural traits and behavior starting from society where agents in group l or s have weak and strong traits, respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 17,
+        "text": "Lastly, the same reasoning applies when population shares change while the thresholds ˆ x 0 and ˆ x 1 remain fixed. Specifically, as the size of the majority increases, the frequency with which minority agents either coordinate—–with strategic complements—or anticoordinate—with strategic substitutes—with the majority’s behavior also increases. This 21 The gray dots in Figure 6 represent a scenario where the initial cultural traits of both groups do not prescribe any action as a dominant strategy. In this case, traits are eroded and converge to neutrality in the long run (see Appendix for further details).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 18,
+        "text": "dynamic pushes the system toward assimilation or separation, respectively. Notably, this mechanism explains the empirical evidence that small communities of immigrants tend to preserve a lower degree of bilingualism compared to larger communities (e.g., Lieberson , 1965 ; Lazear , 1999 ). See also Section 5.1 . The following remark summarizes this effect.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 19,
+        "text": "Remark 1 The larger the size of the majority η , the more likely is to observe processes of assimilation or separation as opposed to marginalization or integration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 20,
+        "text": "3.1.2 Positive parental transmission costs: λ > 0 , c > 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 21,
+        "text": "Let us now consider the case where parents incur an opportunity cost for direct socialization ( c > 0) and a psychological cost for transmitting a role model different from their own trait ( λ > 0). 22 Under positive costs, parents are generally unable to fully transmit the optimal altruistic trait. Specifically, children in both groups are also influenced by the average behavior in society through oblique socialization, which has a coordinating effect. As a result, in equation ( 8 ), for both i = l , s , we have ρ i ( x t ) < 1. Although the dynamics is affected, with traits adapting more slowly, most of the results in Section 3.1.1 remain qualitatively unchanged. The next proposition focuses on how parental costs affect the cultural dynamics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 22,
+        "text": "Proposition 5 Consider the cultural dynamics ( 8 ) in a simple environment and positive parental transmission costs, c > 0 and λ > 0 . If the parental socialization cost c is high enough, then we can observe integration and assimilation even with strategic substitutes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 23,
+        "text": "Introducing positive parental costs creates a coordinating force through the effect of oblique socialization . In environments with strategic complements, this force aligns with the coordination incentives arising from agents’ interactions, reinforcing processes of cultural homogenization such as integration and assimilation. By contrast, in environments with strategic substitutes, oblique socialization works against the anti-coordination incentives of the environment. When parents face positive transmission costs, oblique socialization prevents traits from becoming extreme and biased toward different actions. As a result, with sufficiently high transmission costs, steady states characterized by cultural diversity—as in separation or marginalization—no longer exist, regardless of the strategic environment. However, the 22 Factors that increase socialization (opportunity) cost include parental engagement in full-time employment, expanded initiatives supporting the establishment of kindergartens and after-school programs, and subsidies for hiring babysitters. Similarly, factors that increase the (psychological) cultural resilience cost are peer pressure or religious dogmas.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 24,
+        "text": "threshold on c above which diversity vanishes is higher in environments with substitutes than in those with complements. Empirical evidence supports the model’s prediction that higher opportunity costs of direct socialization can facilitate integration and assimilation. Studies on universal childcare programs in Sweden, Norway, and Germany show that subsidized early education improves immigrant children’s language acquisition and social adaptation, reducing cultural gaps ( Havnes and Mogstad , 2011 ; Felfe and Lalive , 2018 ). Similarly, Quebec’s universal childcare policy increased exposure to the majority language, fostering integration ( Baker et al. , 2008 ). By shifting early socialization from parents to institutional settings, these policies reinforce the role of oblique socialization in shaping cultural convergence. Figure 8 shows how in both environments with complements and substitutes with high parental costs starting from a separated society, the absence of extreme traits can lead to processes of integration (Panel (a)), assimilation (Panel (b)), and identity erosion (Panel (c)), depending on the material incentives—that is, thresholds ˆ x 0 and ˆ x 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 6,
+        "section_name": "Acculturation in Simple Environments",
+        "paragraph_id": 25,
+        "text": "(a) Integration (b) Assimilation (c) Identity Erosion Figure 8: Cultural dynamics starting from a separated society, with positive parental costs ( c > 0 and λ > 0) in a simple environment, and converging to different acculturation outcomes, depending on the thresholds ˆ x 0 and ˆ x 1 induced by different fixed material payoffs.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 0,
+        "text": "In this section, we relax the assumption that the material payoffs agents face when adult are fixed and allow them, as well as the thresholds ˆ x 0 ,γ and ˆ x 1 ,γ , to vary. In particular, we assume the distribution μ ( γ ) is such that thresholds (ˆ x 0 ,γ , ˆ x 1 ,γ ) are uniformly distributed in (0 , 1 2 ) × ( 1 2 , 1). 23 In a complex environment, a trait may be either strong or weak depending on the realization of payoffs drawn from μ ( γ ). In expectation, a trait is strong (or weak) if it 23 The extrema 0 and 1 are not included to allow a strong enough cultural trait to satisfy the assumption of extremism, A 4; in addition, 1 2 is not included to allow the strategic environment to have an effect. There is no conceptual difficulty in characterization of the long-run dynamics for other distributions. We take the uniform as a benchmark. See Appendix A for further discussions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 1,
+        "text": "falls below (above) 1 / 4 or above (below) 3 / 4, as these values correspond to both the mean and the median of the intervals (0 , 1 2 ) and ( 1 2 , 1), respectively. Since (ˆ x 0 ,γ , ˆ x 1 ,γ ) are distributed over (0 , 1 2 ) × ( 1 2 , 1), he only traits that are always strong or weak are extreme traits and neutral traits, respectively. As we show below, these traits play a prominent role in the long-run dynamics. The next proposition characterizes the cultural dynamics in an environment with strategic complements.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 2,
+        "text": "Proposition 6 Consider the cultural dynamics in ( 8 ) in a complex environment with strategic complementarity. If material payoffs are such that (ˆ x 0 ,γ , ˆ x 1 ,γ ) is uniformly distributed in (0 , 1 2 ) × ( 1 2 , 1) we always observe assimilation and traits converge to be extreme, either to (0 , 0) or to (1 , 1) , depending on the initial conditions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 3,
+        "text": "Proposition 6 shows that when thresholds are uniformly randomly distributed, the traits always converge to extreme homogeneous traits. The only stable steady states of the cultural dynamics ( 8 ) are those where the traits become extreme. If the initial conditions are such that traits are different, this corresponds to an assimilation process. With strategic complements, the material incentives and the effect of oblique socialization go in the same direction, driving toward homogeneity. In this process, a crucial role is played by the fact that when the realized payoffs of a game result in one group having a weak trait, the material incentives drive agents to coordinate their actions with the other group, even if their traits are initially biased toward different actions. This, coupled with the uniform distribution of payoffs, ensures that when traits are different, the distance between the average actions played is always smaller than the distance between the traits, preventing the existence of steady states with traits biased toward different actions. Similarly, when traits are biased toward the same action, they reinforce each other and converge toward extremity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 4,
+        "text": "Let us now consider environments with strategic substitutes. In such cases, the effects of oblique socialization and material incentives work in opposite directions, making the cultural dynamics more complex and dependent on their relative strengths.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 5,
+        "text": "Proposition 7 Consider the cultural dynamics in ( 8 ) in a complex environment with strategic substitutes. If material payoffs are such that (ˆ x 0 ,γ , ˆ x 1 ,γ ) is uniformly distributed in (0 , 1 2 ) × ( 1 2 , 1) , then it is not possible to observe any stable cultural homogeneity other than neutral traits. Moreover, (i) if c = 0 and λ = 0 , then we always observe separation and traits converge to be extreme either to (1 , 0) or to (0 , 1) , depending on initial conditions;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 6,
+        "text": "(ii) if c → + ∞ , then, for any λ , traits converge to be neutral.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 7,
+        "text": "Proposition 7 shows that complex environments with uniformly distributed payoffs prevent traits from being biased toward the same action in environments with strategic substitutes. This contrasts with the case of simple payoffs (Section 3.1 ), where, if the socialization cost is sufficiently high, the cultural dynamics in environments with strategic substitutes behave similarly to those in environments with strategic complements. The extent of cultural heterogeneity at the steady state depends on transmission costs. When parenting costs are null, as in ( i ), parents can fully transmit the desired traits, making oblique socialization ineffective and leading to traits becoming separated and extreme. Conversely, when direct socialization costs are sufficiently high, as in ( ii ), parents are unable to transmit their own traits effectively. In this case, the imitative effect of oblique socialization dominates, eroding cultural differences and driving traits toward neutrality. Overall, this section shows that in a complex environment, cultural dynamics are primarily driven by the strategic nature of material incentives (as discussed in the following remark), while initial conditions play only a marginal (or negligible) role. This contrasts with simple environments, where our model predicts greater cultural persistence. This result complements Giuliano and Nunn ( 2021 ), who examine changes in payoffs across generations and find that such changes lead to less persistent cultural traits—contrasting with the stronger cultural persistence observed when payoffs remain stable over time. Figure 9 qualitatively shows the dynamics of traits described in Propositions 6 and 7 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 8,
+        "text": "Remark 3 In a complex environment, in the long run, cultural homogeneity can be observed only with strategic complements while cultural diversity can be observed only with strategic substitutes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 7,
+        "section_name": "Acculturation in Complex Environments",
+        "paragraph_id": 9,
+        "text": "(a) Strategic complements (b) Strategic substitutes and c = 0 (c) Strategic substitutes and c = ∞ Figure 9: Cultural dynamics for (ˆ x 0 ,γ , ˆ x 1 ,γ ) uniformly distributed in the space \u0000 0 , 1 \u0001 × \u0000 1 2 , 1 \u0001 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 8,
+        "section_name": "Discussion about acculturation",
+        "paragraph_id": 0,
+        "text": "In this section we relate our definitions and results about acculturation to previous definitions and analysis. In the definitions of Berry ( 1997 ) the possible acculturation processes differ over two dimensions: cultural maintenance and contact between groups. Their levels defines the four acculturation processes: assimilation (high contact, null maintenance), integration (normal contact, low maintenance), marginalization (low contact, normal maintenance), and separation (null contact, high maintenance). Cultural maintenance, the first dimension considered by Berry ( 1997 ), can be captured by the distance from the role models to the average action played in society, ∆ i := | θ i − ̄ a | for i = l , s . Contact, the second dimension, can be captured by the socialization efforts τ = ( τ l , τ s ). Indeed, the greater the effort a given parent i exerts in directly socializing their child, the lower the child’s inter-group interactions. We shall acknowledge that inter-group contact is a broad concept, encompassing not only parental socialization efforts—which shape a child’s inter-group interactions during childhood—but also adults’ choices regarding the frequency of interactions with other groups during adulthood. However, our focus is specifically on parental choices to emphasize the intergenerational dimension, a crucial yet understudied factor in understanding acculturation dynamics. In this regard, our analysis complements Verdier and Zenou ( 2017 ), who examine network formation choices as a measure of inter-group contact and the strength of identification with the two cultures. The next proposition provides sufficient conditions—namely, either zero or sufficiently high costs—under which the ordering of distances in transmitted role models and parental socialization efforts across different acculturation outcomes aligns with the definitions in Berry ( 1997 ). We define τ y i and ∆ y i as the parental effort and the distance between role models and the average action in society, respectively, for a parent in group i = L, S at a steady state characterized by an acculturation process denoted by y .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 8,
+        "section_name": "Discussion about acculturation",
+        "paragraph_id": 1,
+        "text": "Proposition 8 Consider the steady state of the cultural dynamics in ( 8 ) . If ̃ c and ̃ λ are higher than 1 , or if either λ or c are equal to zero, then for each group i = l , s , it holds that 0 = τ ass. i = τ no id. i ≤ τ int. i ≤ τ mar. i ≤ τ sep. i and 0 = ∆ ass. i = ∆ no id. i ≤ ∆ int. i ≤ ∆ mar. i ≤ ∆ sep. i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 8,
+        "section_name": "Discussion about acculturation",
+        "paragraph_id": 2,
+        "text": "Consistent with Berry ( 1997 ), when two groups are assimilated, agents actively seek interactions with the other group. In this case, cultural substitution effects induced by cultural distance are null, and the strength of vertical socialization under assimilation is minimal—i.e., τ ass. = (0 , 0). Moreover, at the steady state, the two role models coincide— implying ∆ ass. i = 0—and both groups fully identify with the same action and culture.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 8,
+        "section_name": "Discussion about acculturation",
+        "paragraph_id": 3,
+        "text": "In contrast, when groups are separated, agents tend to transmit highly distinct role models and minimize cross-cultural interactions. As a result, both the strength of vertical socialization, τ sep. , and the role model distance, ∆ sep. i , reach their maximum levels. Finally, in both integrated and marginalized societies, the distances between role models—∆ int. i and ∆ mar. i , respectively—as well as the strength of oblique socialization— τ int. and τ mar. , respectively—are lower than in separated societies but higher than in assimilated ones. Integrated societies exhibit lower horizontal socialization levels and role models closer to the population’s descriptive norm than marginalized ones. Overall, Proposition 8 demonstrates an increasing pattern of inter-group contact and a decreasing pattern of cultural maintenance, progressing from separation to marginalization, integration, and ultimately assimilation. This result arises because, as the actions of the two groups become more similar, parents have less incentive to bear the costs of transmitting distinct role models or directly socializing their children. This, along with the findings of previous sections, further explains why segregated communities tend to persist: stronger cultural differences reduce incentives for intergroup contact, reinforcing separation or marginalization. While we do not explicitly model assortative matching, incorporating it would amplify these effects, as individuals would increasingly self-select into adult-age interactions that reinforce existing cultural divides or, conversely, facilitate homogeneity when economic incentives favor it. Finally, to further clarify the link between cultural transmission and acculturation, we can rearrange equation ( 2 ) to write the trait acquired by offspring as x o i = ̄ a + τ i ∆ i (if θ i > ̄ a ) or x o i = ̄ a − τ i ∆ i (if θ i < ̄ a ). This formulation highlights how traits in the new generation deviate from the average action played in society, depending on the two forces that shape acculturation: contact and cultural maintenance. Specifically, the greater the cultural maintenance and the lower the contact between groups, the larger the deviation of the new generation’s traits from the average action in society.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 9,
+        "section_name": "Case Studies",
+        "paragraph_id": 0,
+        "text": "In this section, we discuss how our model explains several empirical patterns in cultural evolution and social interactions. By examining specific case studies, we illustrate how the strategic environment plays a crucial role in shaping cultural outcomes. Our theoretical predictions align with real-world observations, offering insights into bilingualism in minority groups, cultural innovation, selective assimilation, and divergent cultural trajectories. These examples highlight the model’s ability to capture complex cultural dynamics and the role of economic and social incentives in acculturation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 10,
+        "section_name": "Bilingualism in Minority Groups",
+        "paragraph_id": 0,
+        "text": "Language is one cultural dimension for which there is a strong coordination incentive, and thus we mostly observe trajectories of homogenization. As our model predicts, two main patterns emerge among minorities: full assimilation into the dominant language, leading to the loss of their native language, and bilingual integration, where minorities adopt the dominant language while preserving the use of their native language in intragroup interactions. 24 As shown by results in Section 3.1 and Section 3.2 , these patterns depend on three key factors: group size, material incentives to adopt the dominant language, and economic conditions (random of fixed payoffs). Group size plays a crucial role in the survival of bilingualism, as smaller communities face greater challenges in intergenerational transmission and often lack the critical mass needed for regular language use. Limited population size reduces opportunities for social reinforcement and makes it more difficult to sustain bilingual practices across generations ( Lazear , 1999 ; Grenoble and Whaley , 1998 ; Crystal , 2002 ). For example, the Heiltsuk language in western Canada, with only seven fluent speakers remaining, illustrates how the lack of a critical mass can lead to near extinction ( Cecco , 2025 ). In contrast, the Cherokee Nation, benefiting from a larger population, has developed structured language revitalization efforts, such as immersion schools and cultural programs ( MontgomeryAnderson , 2015 ). A similar effect is seen among Chinese immigrants. In Argentina, where they form a small share of the population, rapid linguistic assimilation has occurred due to social integration pressures and discrimination, leading to widespread adoption of Spanish (e.g., Ho et al. , 2010 ). By contrast, in the U.S., large Chinese communities have established strong linguistic enclaves in cities like New York, Los Angeles, and San Francisco, supported by cultural institutions, bilingual education programs, and media outlets that facilitate heritage language preservation. Material incentives to adopt a dominant language (captured by the threshold ˆ x 0 or ˆ x 1 ) promote linguistic assimilation, as economic and social rewards for speaking the dominant language outweigh the benefits of maintaining a minority language. When fluency in the dominant language provides better access to jobs, education, and political participation, communities more easily shift toward monolingualism. This pattern is evident in historical cases. Among Plains tribes in North America, English proficiency became essential for economic and political advancement, leading to the abandonment of native languages ( Lazear , 1999 ; Crystal , 2002 ). Similarly, during British colonial rule in New Zealand, 24 While coordination incentives typically drive linguistic homogenization, our model predicts that separation can persist with low material incentives and high enough initial linguistic distance. For instance, the North Sentinelese remain monolingual, having never adopted an Indian language due to their isolation and lack of contact, which limits incentives for language adoption ( Pandya , 2009 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 10,
+        "section_name": "Bilingualism in Minority Groups",
+        "paragraph_id": 1,
+        "text": "M ̄aori speakers faced strong incentives to shift to English for economic mobility ( King , 2009 ). However, when institutional support counterbalances these material incentives, bilingualism can persist. Policies like New Zealand’s M ̄aori Language Act (1987) provided legal recognition and institutional backing, facilitating the coexistence of M ̄aori alongside English and increasing bilingualism rates ( Chrisp , 2005 ). Economic instability, represented by stochastic payoffs, presents an additional threat to bilingualism, as when communities face unstable economic conditions, investing in the maintenance of a minority language may be seen as less important than acquiring the dominant language for economic survival. This dynamic is evident among smaller S ́amispeaking communities in the Nordic countries, where economic instability has hindered efforts to sustain linguistic competence ( Aikio-Puoskari , 2009 ). By contrast, Northern S ́ami, spoken by a larger and more economically stable group, has demonstrated greater resilience. Similarly, the Basque language in Europe illustrates how stability and group size influence language survival. Despite historical pressures, the Basque community has leveraged its larger population and cohesive identity, supported by policies like the Basque Language Normalization Act, to preserve its linguistic heritage ( Cenoz , 2009 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 11,
+        "section_name": "Cultural Innovation with Strategic Substitutes",
+        "paragraph_id": 0,
+        "text": "Our model predicts that when the economic environment is characterized by strategic substitutes, even a homogeneous society can exhibit divergent cultural dynamics, such as marginalization or separation, due to agents’ incentives to anti-coordinate with others’ behavior. This mechanism explains the development of distinct skill-based roles in labor markets, the segmentation of industries into specialized niches, and the emergence of subcultures that define themselves in opposition or as alternative to the mainstream. A clear example is work specialization, where individuals differentiate their skill sets based on labor market conditions. When a sector becomes saturated, workers have incentives to specialize in complementary occupations rather than compete directly. In industrial economies, this process has led to a division between manual, intensive labor and knowledge-based professions that emphasize creativity and innovation ( Goos et al. , 2009 ; Autor and Dorn , 2013 ). A similar pattern is evident in the gig economy, where workers anti-coordinate by selecting niche specializations. As traditional full-time employment markets become oversaturated, many professionals move toward freelance creative roles (e.g., design, digital marketing, content creation) or highly specialized technical fields (e.g., AI development, blockchain consulting). Instead of competing in crowded labor markets, workers position themselves in distinct skill domains, maximizing opportunities through horizontal differentiation ( Abraham et al. , 2017 ; Katz and Krueger , 2019 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 11,
+        "section_name": "Cultural Innovation with Strategic Substitutes",
+        "paragraph_id": 1,
+        "text": "A similar anti-coordination process shapes subcultural differentiation, where cultural groups reject mainstream norms to establish distinct identities. Youth subcultures— e.g., rockers, punks, mods, and hipsters—have historically positioned themselves against dominant societal trends by developing unique styles, consumption patterns, and artistic expressions Hebdige ( 1979 ). This mechanism also explains cultural segmentation in music and fashion, where individuals seek alternatives to mainstream trends. Indie music attracts audiences who value originality and underground status, but as certain styles become widely adopted, demand shifts toward more experimental or niche subgenres Thornton ( 1996 ). Similarly, in the early 20th century, jazz and classical music evolved in opposite directions—jazz emphasizing improvisation and expressive freedom, while classical music maintained formal structure and notation-based precision—allowing both to serve distinct audiences and avoid direct competition Berliner ( 2009 ). Fashion follows a similar logic. As certain aesthetics become mainstream, individuals seeking distinction turn to new or niche styles, reinforcing cycles of differentiation. High fashion and streetwear, for instance, initially catered to distinct groups—one emphasizing exclusivity, the other accessibility and urban culture. However, as preferences shift, elements from both styles are reinterpreted in new ways, reflecting the ongoing search for cultural differentiation Crane ( 2000 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 12,
+        "section_name": "Selective Assimilation and Divergent Cultural Trajectories",
+        "paragraph_id": 0,
+        "text": "The model illustrates how cultural traits evolve based on the strategic environment in which they operate. Since different traits exist in contexts with varying incentives to coordinate or anti-coordinate, immigrants selectively assimilate in some dimensions while maintaining separation in others. Additionally, the strategic environment differs across countries, leading to divergent cultural trajectories for the same immigrant group depending on the host society. Cultural traits with strong coordination incentives, such as language and naming conventions, tend to assimilate over time, particularly in professional and educational settings. Immigrants adopt the dominant language to improve economic opportunities and social mobility, while modifying names to minimize discrimination and facilitate integration ( Abramitzky et al. , 2020 ). In contrast, religious practices, family structures, and cultural norms often persist across generations, as they involve weaker coordination incentives and greater initial diversity. Traditional religious observances and family customs continue even after economic or linguistic integration/assimilation, showing that participation in the social life or labor market does not necessarily lead to full cultural integration/assimilation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 12,
+        "section_name": "Selective Assimilation and Divergent Cultural Trajectories",
+        "paragraph_id": 1,
+        "text": "Differences in economic environments explain cross-country variations in acculturation dynamics. Indian immigrants in the U.S. have integrated into STEM industries, where technical expertise aligns with economic success ( Khadria , 2006 ). In contrast, in the U.K., Indian immigrants historically specialized in manufacturing and small business ownership, reflecting labor demand at the time of migration ( Jones et al. , 2012 ; Clark et al. , 2017 ). Similar patterns emerge among Turkish immigrants in Germany and the Netherlands. In Germany, the Gastarbeiter program discouraged long-term integration, reinforcing ethnic and religious enclaves, whereas Dutch policies actively promoted linguistic and economic assimilation, leading to higher integration in the Netherlands ( Crul and Vermeulen , 2003 ). Likewise, North African immigrants faced slower integration in France due to labor market barriers and restrictive policies compared to Canada, where a skill-based immigration system fostered stronger professional and social assimilation ( Reitz et al. , 2022 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 0,
+        "text": "In this paper, we develop a unified theoretical framework to analyze how different acculturation patterns emerge when two cultural groups interact, linking these dynamics to economic incentives and social forces. We consider two cultural groups interacting in strategic environments, where agents’ behavior is shaped by both material payoffs and intergenerationally transmitted cultural traits. When payoffs are fixed (simple environments), initial cultural diversity plays a central role, and both strong homogeneity and strong diversity can persist, regardless of strategic interactions. Overall, strategic complements foster cultural convergence—leading to either assimilation or integration—while strategic substitutes sustain diversity—supporting separation or marginalization. When payoffs are stochastic within a generation (complex environments), material incentives dominate, diminishing the role of initial conditions and making cultural outcomes more dependent on strategic interactions. In both settings, higher parental transmission costs reduce cultural diversity in a society. Table 1 and Table 2 summarize the predictions of our model depending on the strategic environment and parental costs. Table 1 refers to the case in which the environment is simple, whereas Table 2 refers to the case in which the environment is complex. Our framework provides a rationale for several well-documented patterns of acculturation. It explains why bilingualism persists in larger minority groups but declines as their size shrinks, as stronger economic incentives push individuals toward full linguistic assimilation. Similarly, it shows that parental investment in cultural transmission follows a non-monotonic pattern when coordination incentives are present, as observed in reli-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 1,
+        "text": "Simple No parental costs High parental costs Complements Assimilation, Integration Assimilation, Integration Separation ∗ Substitutes Separation, Marginalization Assimilation, Integration Assimilation ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 2,
+        "text": "Table 1: Possible long-run cultural outcomes in simple environments, when there is at least one strong trait at t = 0. Outcomes with ∗ are preserved but cannot be reached starting from other configurations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 3,
+        "text": "Complex No parental costs High parental costs Complements Assimilation Assimilation Substitutes Separation Marginalization, Erosion",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 4,
+        "text": "Table 2: Possible long-run cultural outcomes in complex environments.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 5,
+        "text": "gious transmission, where religious minorities invest more in socialization when small but weaken their efforts as they grow larger (e.g., Bisin et al. , 2004b ; Cohen-Zada , 2006 ). The model also sheds light on selective assimilation and divergent cultural trajectories. Immigrants often adopt traits that improve economic opportunities while retaining others, as seen in second-generation immigrants, who integrate into economic and educational systems while maintaining cultural practices in private life. At the same time, the same immigrant group can follow different acculturation paths across host countries due to variations in economic incentives. Differences in labor market structures, education systems, and integration policies shape assimilation patterns, with greater cultural retention where economic specialization reinforces ethnic clustering. Finally, our results provide insights into the emergence of subcultures and occupational specialization. When strategic interactions favor differentiation, cultural identities persist within specialized professions, ethnic enclaves, and artistic movements, as documented in studies on ethnic entrepreneurship, labor market segmentation, and creative industries. As to future work, the analysis can be extended along several dimensions. we believe that a greater effort should be exerted to incorporate political motives into the analysis, either by extending the analysis in the direction of Bisin and Verdier ( 2023b ) and Bisin et al. ( 2024 ), who study the joint evolution of culture and political institutions, or by including the political dimension and its interaction with economic and social forces— such as, the impact of different degrees of cultural diversity on economic production and thus on payoffs, together with the probability of having conflicts and clashes. Lastly,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 13,
+        "section_name": "Final Discussions",
+        "paragraph_id": 6,
+        "text": "another potentially interesting extension would involve analyzing how the interaction of more than two groups affects acculturation dynamics. For example, Fouka et al. ( 2022 ) empirically show that the arrival of a new minority group may induce greater assimilation of existing minorities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1606,
+        "section_id": 14,
+        "section_name": "Policy Implications",
+        "paragraph_id": 0,
+        "text": "Our approach does not presume that one acculturation process is more desirable than another one. Indeed, their desirability depends on how welfare is measured—e.g., considering either only material or the whole payoff—and on features not included in the model, such as the objective function of the policymaker. However, our work sheds light on the conditions under which different acculturation processes arise and thus does inform the policymaker about how to act on them. Long-run cultural outcomes depend on three key factors: ( i ) the nature of strategic interactions (complements vs. substitutes), ( ii ) whether payoffs are fixed or stochastic, and ( iii ) the costs of parental transmission. More specifically, dimension ( i ) refers to whether agents possess economic incentives to align their efforts in similar activities or if there are incentives for specialization in distinct areas. Notably, certain economic interactions exhibit synergies and positive network externalities, promoting coordination—e.g., using the same language, adopting the same technology, or adopting similar social norms—while others manifest congestion effects, encouraging specialization—e.g., the division of labor, heterogeneous educational choices, or the consumption of differentiated products. In all these situations, we show how the policymaker can shape the incentives to promote the desired level of coordination—e.g., by decreasing the barriers of learning a language/technology through the offering accessible/free courses—or anti-coordination—e.g., by incentivizing labour division and different educational choices through the offer of effective vocational schools. In the context of dimension ( ii ), the stability of the economic environment is contingent on several factors. For instance, it may depend on frequent changes in policies related to taxation and/or subsidies and on things not fully under the control of the policymaker, such as the high price and wage volatility characterizing periods of financial instability and crisis or frequent technological shocks and innovations. In these cases, the policymaker cannot directly intervene but should consider the impact on cultural dynamics. Finally, dimension ( iii ) can refer to all those policies that affect the opportunity cost of direct socialization for parents. Policies that increase the opportunity cost of direct socialization include promoting parental engagement in full-time employment, initiatives that support the establishment of kindergartens and after-school programs, and subsidies aimed at hiring babysitters.",
+        "extraction_warnings": ""
+    }
+]

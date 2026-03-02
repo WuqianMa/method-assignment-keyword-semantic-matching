@@ -1,0 +1,32 @@
+[
+    {
+        "paper_id": 1318,
+        "section_id": 11,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "mining keywords are classified as “unknown.” Next, I use OpenAI’s large language model GPT-4 to answer five questions based on the passages extracted in the previous step to determine a candidate’s sentiment toward formal mining. Note that a candidate’s being classified as anti-mining does not require the candidate to oppose formal mining entirely; a focus on constraining current mining practices or on the negative environmental impacts of mining suffices. If the answers exhibit any inconsistencies, e.g., if the GPT-4 answers indicate a focus on both the positive and negative impacts of mining, I feed the text back to GPT-4 with a verification question to resolve the conflict. 25 Appendix Section A.2 provides a detailed discussion on the classification process. Data on corruption is drawn from two sources. First, I use information from the Encuesta Nacional de Hogares (ENAHO) survey on local governance carried out yearly by Peru’s national statistical agency since 2002. In particular, I make use of a consistently asked question to create a binary indicator on whether any member of the surveyed household was requested to, felt obligated to or voluntarily gave a bribe to a public official in the last 12 months, and zero otherwise. 26 Subsequently, I calculate for each year during a mayor’s term the share of respondents in a municipality that experienced a bribery episode. Second, I retrieve data on the prosecution of corruption offenses in office by mayors (e.g., abuse of power, embezzlement, collusion, etc.) from the PPEDC’s 2022 report on corruption in regional and local governments (Pacheco Palacios et al., 2022). 27 The report lists both, cases for which a former mayor has been sentenced and cases still at the investigative stage. The latter is of importance in light of the historically long judicial process associated with these crimes (Pacheco Palacios et al., 2022). The listed corruption cases are matched to elected mayors based on the accused mayor’s name and the region where the crime took place in using the procedure described in Enamorado et al. (2019) and implemented in the R package fastLink . 25 If the classification procedure returns an error at any of the stages, I resort to manual labeling of the government plan. 26 For the baseline estimates, I exclude responses recorded in first year after the election, since any bribery related instances could be related to the former or current local administration. Results are, however, robust to the inclusion of this first year. 27 In particular, I obtain information on the procedural stage of the case, the region where the (alleged) crime happened, the name of the accused, and the category of the crimes committed against public administration from Section 7 p. 209–613.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 15,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "To test this channel, I again implement a continuity-based Regression Discontinuity Design (RDD). In secific, I comparing differences in the reelection outcomes in t + 1 of the top two candidates in the municipal election at time t ::",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    }
+]

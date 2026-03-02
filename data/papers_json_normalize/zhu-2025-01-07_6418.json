@@ -1,0 +1,666 @@
+[
+    {
+        "paper_id": 1257,
+        "section_id": 0,
+        "section_name": "The Fall of the Patron Saint of Justice:",
+        "paragraph_id": 0,
+        "text": "How Judge Movement affects Court Rulings in China",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 0,
+        "section_name": "The Fall of the Patron Saint of Justice:",
+        "paragraph_id": 1,
+        "text": "leonardozjt@gmail.com",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 0,
+        "section_name": "The Fall of the Patron Saint of Justice:",
+        "paragraph_id": 2,
+        "text": "Abstract This paper provides empirical evidence that challenges the doctrine of “judicial exceptionalism” - the presumption that courts are much more resistant to patronage networks due to professional training and formal institutional constraints. I develop a theoretical framework that models strategic interactions between judges across court hierarchies and demonstrate how personnel rotation policies can create opportunities for patronage relationships between appellate and trial court judges. Using 133 million court verdict data from China’s judicial system, I exploit quasi-random variation in judge transfers between court levels to identify patronage effects. My difference-in-differences estimates reveal that when judges transfer from intermediary to basic courts, the reverse-or-remand rate of the basic court declines by 8.4 percentage point. Through placebo and robustness tests that account for alternative mechanisms, I establish that these patterns reflect welfare-reducing patronage rather than efficiency-enhancing mentorship. The findings demonstrate that formal institutional safeguards may be insufficient to prevent patronage networks from influencing judicial outcomes - instead, they may inadvertently facilitate judicial malfeasance through relationship-building across court hierarchies. These results provide novel insights into how informal networks can penetrate formal institutions and have important implications for the design of personnel policies in judicial systems.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Patronage networks represent a fundamental mechanism of institutional interaction, characterized by reciprocal relationships between actors of unequal status through ties of interest and friendship (Weingrod, 1968; Scott, 1972). While extensively documented across governmental sectors, the judiciary has traditionally been viewed as an institutional bastion resistant to such networks—a perspective rooted in the concept of judicial exceptionalism . Theoretical arguments for judicial exceptionalism are prima facie compelling. Legal professionals are distinguished by rigorous training and a professional ethos that ostensibly prioritizes institutional integrity (Hilbink, 2008; de S.-O.-L’E. Lasser, 2004). Courts derive legitimacy through performance-based impartiality, a distinguishing feature that separates them from more politically responsive governmental branches (Ginsburg and Moustafa, 2008). Institutional characteristics such as minimal peer cooperation, merit-based",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "recruitment (Tate and Vallinder, 1997), and codified decision-making protocols (Shapiro, 1986) create multiple layers of presumptive protection against patronage networks. Paradoxically, the actual prevalence and impact of patronage within the judiciary remain empirically unresolved. This study systematically investigates these competing hypotheses by providing a comprehensive examination of patronage mechanisms and consequences within a judicial system. Our research leverages an unprecedented empirical opportunity: the Chinese judiciary, made accessible through China Judgements Online (CJO). By August 2020, CJO had published over 100 million court ruling verdicts, with nearly 48 billion total visits (Bo, 2020). This extensive dataset enables a granular, multivariate analysis of judicial behavior across different institutional levels and regional contexts. Our central finding reveals a stark institutional paradox: contrary to expectations of judicial exceptionalism, patronage is not merely present but systematically embedded in the judiciary through policies governing judicial movement. The appellate judge—traditionally conceived as the patron saint of justice responsible for overseeing and correcting trial court decisions—becomes paradoxically entangled in a patronage system when reallocated downward to trial courts. The welfare implications are profound. By tracing how personal and institutional connections reshape judicial decision-making, we demonstrate how seemingly administrative policies can generate significant institutional distortions. Our results not only illuminate institutional dynamics within the Chinese context but also offer broader insights into the fundamental fragility of judicial independence. The paper makes significant contributions to strands of literature on institutional dynamics and judicial governance. First, our work addresses a critical gap in the literature on patronage formation. Existing scholarship has predominantly emphasized structural determinants of patronage networks—including historical legacies (Scott, 1972), sociopolitical contexts (Lemarchand, 1972), social and cultural influences (Eisenstadt and Roniger, 1984), economic conditions (Bates, 2014), and institutional frameworks (Grzymala-Busse, 2008). Notably, there remains inadequate scholarly attention to the mechanisms through which patronage relationships emerge and evolve 1 . By elucidating how specific policy choices systematically facilitate network development, this paper extends beyond predominant structuralist explanations, offering a nuanced mechanism of patronage network formation. Second, our research contributes substantively to the ongoing scholarly debate about the institutional consequences of patronage. The literature presents competing perspectives: one strand argues that patronage networks can serve as adaptive governance mechanisms, particularly in contexts with inefficient or weak formal institutions (Schneider, 1992; Khan and Sundaram, 2000; Ang, 2016; Jiang, 2018). Conversely, 1 This aligns with broader observations that the formation of political connections often receives limited scholarly focus (Wang, 2017).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "an alternative perspective highlights patronage’s corrosive effects, demonstrating how political loyalty can systematically undermine meritocratic principles (Rose-Ackerman, 1999a; Geddes, 1994; Stokes, 2005; Goldsmith, 1999; Ilkhamov, 2007). Recent scholarship has further emphasized the contextual contingency of patronage’s effects (Voth and Xu, 2020). Through our empirical analysis of the Chinese judicial system, we provide compelling evidence that such networks can generate substantial negative institutional consequences, leading to multifaceted welfare losses. Third, our paper makes a significant contribution to the literature on judicial malfeasance. Existing research has predominantly focused on judicial capture—scenarios where judicial actors face overwhelming external pressures that compromise institutional independence (Popova, 2012; Ng and He, 2017; Liu et al., 2022). These studies have illuminated how administrative, social, political, and economic capture can fundamentally distort judicial decision-making. In contrast, our research explores a less-examined manifestation of judicial malfeasance: patronage. Unlike capture, patronage exhibits a more transactional and voluntary character. While prior studies have explored patronage relationships between judicial actors and external special interest groups (Wang, 2018), our research provides novel empirical evidence of patronage dynamics among judges themselves—a phenomenon previously overlooked in academic discourse. Fourth, our work deepens the scholarship on preventing judicial malfeasance. Building on foundational contributions from Landes and Posner (1975), Ferejohn and Kramer (2002), and Rose-Ackerman (1999b), scholars have offered critical insights into the delicate balance between judicial autonomy and accountability. Existing reform strategies predominantly emphasize institutional design—advocating for mechanisms incorporating effective checks and balances, transparency, and judicial review (Rose-Ackerman, 1999b; Hammergren, 2007; Tiede, 2020; Stephenson, 2003; Besley and Coate, 2003; Djankov et al., 2003). Our research, however, underscores the limitations of such institutional reforms by revealing systemic dysfunctions within appellate mechanisms nominally designed to address judicial misconduct, thus highlighting the profound complexity of potential solutions. The remainder of the paper is structured as follows: Section 2 provides an overview of the Chinese judicial system; Section 3 presents a formal model explaining patronage formation; Section 4 offers an empirical investigation of patronage manifestation; and Section 5 concludes by discussing welfare and policy implications.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 2,
+        "section_name": "Background: Chinese Judicial System",
+        "paragraph_id": 0,
+        "text": "This section offers background information on China’s judicial system, focusing specifically on aspects relevant to our subsequent discussion rather than presenting a comprehensive overview of the entire system.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 3,
+        "section_name": "The judicial hierarchy",
+        "paragraph_id": 0,
+        "text": "As illustrated in Figure 1, China operates a four-level court system aligned with administrative divisions 2 . At the national level is the Supreme People’s Court (SPC); at the provincial level, there are 32 High People’s Courts; at the city level, 404 Intermediate People’s Courts; and at the county level, 3,111 Basic People’s Courts (Wang, 2018). The court of first instance is determined by the importance 3 of a case. Basic People’s Courts handle first trials for cases with lower importance, whereas High People’s Courts conduct first trials for the most significant cases. The Supreme People’s Court does not conduct first-instance trials.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 3,
+        "section_name": "The judicial hierarchy",
+        "paragraph_id": 1,
+        "text": "Supreme People’s Court",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 3,
+        "section_name": "The judicial hierarchy",
+        "paragraph_id": 2,
+        "text": "High People’s Courts",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 3,
+        "section_name": "The judicial hierarchy",
+        "paragraph_id": 3,
+        "text": "Intermediate People’s Courts",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 3,
+        "section_name": "The judicial hierarchy",
+        "paragraph_id": 4,
+        "text": "Basic People’s Courts",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 3,
+        "section_name": "The judicial hierarchy",
+        "paragraph_id": 5,
+        "text": "Figure 1: Chinese Judicial Hierarchy",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 4,
+        "section_name": "The Appeal System",
+        "paragraph_id": 0,
+        "text": "The Chinese judicial appeal system operates under a second-instance is the last-instance model. If a litigant disagrees with the ruling of a first-instance court, they may file an appeal to the next higher-level court for an appellate ruling. The appellate court has the discretion to either uphold, reverse, or remand the decision of the first-instance court. If the case is upheld or reversed, the appellate ruling is final, and no further appeals are allowed. In the case of a remand, the case is sent back to the first-instance court for retrial. If a litigant is dissatisfied with the retrial ruling, they may file a second appeal, which will result in another appellate ruling. At this point, remanding the case is no longer an option, and the appellate ruling is final. Figure 2 provides a visual summary of this entire appeal process. The Chinese judicial appeal system has two distinctive features. First, there is no strict separation of 2 In addition, there are Specialized Courts dedicated to cases in specific fields, such as transportation, military, mining, and maritime law. 3 Importance can be gauged through factors such as social influence or monetary stakes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 4,
+        "section_name": "The Appeal System",
+        "paragraph_id": 1,
+        "text": "judicial authority between trial and appellate courts. Both Intermediate People’s Courts and High People’s Courts handle first-instance cases (depending on their significance) as well as second-instance cases (from affiliated lower-level courts). Second, the principle of comprehensive review is applied in appeals and retrials, meaning that both factual and legal issues are examined. This stands in contrast to the U.S. appellate system, where the appellate court typically examines only legal questions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 4,
+        "section_name": "The Appeal System",
+        "paragraph_id": 2,
+        "text": "First instance Ruling File an Appeal Appellate Ruling Uphold",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 4,
+        "section_name": "The Appeal System",
+        "paragraph_id": 3,
+        "text": "Reverse Back to first instance court for retrial Satisfied with retrial ruling",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 4,
+        "section_name": "The Appeal System",
+        "paragraph_id": 4,
+        "text": "File an appeal Appellate ruling Uphold",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 4,
+        "section_name": "The Appeal System",
+        "paragraph_id": 5,
+        "text": "Figure 2: Judicial Appeal Process",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 5,
+        "section_name": "Promotion of Judges",
+        "paragraph_id": 0,
+        "text": "There are two types of judge promotions in the Chinese judicial system. The first type is court-level promotion, where a judge moves from a lower-level court to a higher-level court, while retaining their role as a regular judge. The procedure for becoming a judge at a higher-level court is relatively straightforward. When a vacancy arises at the higher-level court, the position is publicly announced, and candidates are selected through a process that includes written and oral examinations. Interested candidates may nominate themselves, though they must have previously served as judges in lower-level courts for a specified number of years (National People’s Congress of China, 2020). This paper focuses on the second type of promotion, leadership promotion 4 : a judge transitions from a regular judge to the President or Vice President of a court at the same level. The process for selecting court leadership is less transparent. The People’s Congress holds the official power to select leadership. At each level of local people’s courts, the President is elected by the People’s Congress at the same level (National People’s Congress of China, 2020). The Vice President is appointed upon the request of the court President to the standing committee of the People’s Congress at that level 5 . Although the selection process is not fully transparent, there are discernible patterns. One of these is downward reallocation. If a judge is temporarily bypassed for a leadership position, they are often reassigned 4 However, for the empirical analysis, I will also use court-level promotion as a placebo test. 5 Higher-level court endorsement is also required. The appointment of the president of local courts is subject to the consent of the higher-level court’s Party Leadership Group. The vice president’s appointment requires the opinion of the higher people’s court.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 5,
+        "section_name": "Promotion of Judges",
+        "paragraph_id": 1,
+        "text": "to a lower-level court 6 , gaining grassroots experience and undergoing further evaluation before securing the actual leadership promotion. Since the 1990s, both the Party and the government have emphasized the importance of grassroots experience in cadre promotion. The 1991 decision On Strengthening the Training and Education of Young Cadres (Central Committee of the Communist Party of China, 1991) stipulated that cadres promoted to department-level positions in Party and state organs at the prefectural level and above must have at least three years of grassroots work experience. The 1993 Interim Regulations on Civil Servants of the State (State Council of the People’s Republic of China, 1993) established downward reallocation as a form of civil servant exchange, emphasizing that cadres should gain experience at the grassroots level 7 Given that the president and vice president of a court are also the Secretary and Deputy Secretary of the Party Leadership Group of that court, respectively, the cadre downward reallocation policy naturally applies to the judicial system.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 0,
+        "text": "The practice of downward reallocation prior to leadership promotion, combined with the structure of the appeal system, fosters the development of patronage relationships. Specifically, when an appellate judge is reassigned to a directly affiliated lower-level trial court, it creates a patronage-driven connection between the reallocated judge and her former colleague (i.e., the appellate judges who remain in the same higher-level court). Both parties involved have both the incentive and capacity for patronage. The downward reallocation serves as a strong signal, indicating that the judge has a significant chance for promotion. This becomes common knowledge. The reallocated judge, with a genuine opportunity for advancement, seeks to perform well in the new court to secure this opportunity 8 . One key performance indicator is the quality of rulings, often measured by the reverse-or-remand rate for appealed cases (i.e., the percentage of appeal cases that are either remanded or reversed by the appellate court). It is clear that the reallocated judge’s performance evaluation will improve if they can persuade the appellate judge to overlook certain first-instance mistakes. On the other hand, the unmoved appellate judges have both forward-looking and backward-looking incentives to favor the reallocated judge. From a forward-looking perspective, helping a rising star could 6 Based on our data, such judges typically serve as leaders in these lower-level courts 7 The 2010-2020 Outline of the Plan for Deepening the Reform of the Cadre Personnel System (Central Committee of the Communist Party of China, 2010) advocated for sending young cadres to difficult regions, complex environments, and key positions for training, and for standardizing and improving the secondment system. The March 2019 revision of the Regulations on the Selection and Appointment of Party and Government Leading Cadres (Central Committee of the Communist Party of China, 2019) emphasized that young cadres with singular or insufficient grassroots experience should be systematically assigned to grassroots positions, remote and challenging areas, and complex environments to be trained, assessed, and selected. 8 It is worth noting that most reallocated judges are usually assigned as court leaders in the trial court. This responsibility makes them accountable for the performance of the entire trial court. Additionally, it provides them with administrative authority and the ability to mobilize and oversee all judges within the court.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 1,
+        "text": "provide future protection and opportunities for promotion for the appellate judge. From a backward-looking perspective, supporting a former colleague strengthens the connection and friendship, which may prove valuable in the future. The remainder of the section introduces a formal model to demonstrate the mechanism through which this policy-induced patronage operates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 2,
+        "text": "Players: There are two players in this game: the reallocated judge (RJ) and the representative unmoved appellate judge (AJ). The reallocated judge determines the optimal effort level e to maximize her chance of getting promoted. Her utility can be expressed as follows, after normalizing the unit cost of exerting effort to 1. max e V RJ ( e, F ) = π ( e, F ) − e",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 3,
+        "text": "π ( e, F ) is the post-intervention probability of promotion. It is an increasing function of both the reallocated judge’s own effort level e and the appellate judge’s level of favour F . The following expression is one simple function of π ( e, F ) this paper will use.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 4,
+        "text": "π ( e, F ) = p ( e ) + [1 − p ( e )] F",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 5,
+        "text": "In this function, p ( e ) is the pre-intervention probability of promotion. Given a higher effort level generates a higher chance of promotion with a diminishing marginal return, we treat p ( e ) as an increasing concave function of e . [1 − p ( e )] F implies that the appellate judge’s potential favouritism can further increases the chance of promotion. For simplicity, we treat F as a binary value, F ∈{ 0 , f } . The appellate judge chooses between providing a fixed, exogenous amount of favoritism to the reallocated judge, or not giving favor at all. The appellate judge determines the optimal level of F to maximize its utility.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 6,
+        "text": "max F U AJ =        if F = 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 7,
+        "text": "(1 − k )[1 + π ( e, f ) B ] if F = f",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 8,
+        "text": "If the judge does not practice favouritism, she gains the basic utility, which is normalized to 1. If she practices favouritism and gets caught with the fixed probability of k ∈ (0 , 1), she gets fired and loses everything. However, If she never gets caught, and the favored judge gets promoted, she receives extra utility of B , in addition to her basic utility. B refers to the appellate judge’s expected future gains for favoring the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 6,
+        "section_name": "Model: Formation of Patronage",
+        "paragraph_id": 9,
+        "text": "reallocated judge, conditioning on the reallocated judge successfully gets promoted. Timing: First, the reallocated judge at the trial court selects the optimal effort level, e ∗ . Second, the appellate judge, having observed the reallocated judge’s effort through the review of appeal cases, decides whether to engage in favoritism, denoted as F ∗ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 7,
+        "section_name": "Analysis and Result",
+        "paragraph_id": 0,
+        "text": "We employ backward induction to determine the subgame perfect Nash equilibrium. The results include three lemmas and one proposition, with detailed derivations provided in Appendix A. Lemma 1 (Minimum Condition for Patronage) : A minimum level of effort e ≥ ˆ e by the reallocated judge is needed for the appellate judge to practice favouritism. Lemma 2 (Moral Hazard): Given p ( e ) is an increasing function, p ′ ( e ) > 0. We know f > 0, so 0 < f < 1 and p ′ ( e f ) > 1. As p ( e ) is increasing and concave, p ′ ( e f ) > 1 = p ′ ( e 0 ) implies e f < e 0 . Without considering any constraint, the reallocated judge will choose a higher effort level when it expects favouritism from the appellate judge. Lemma 3 (Equilibrium Outcomes) : Different relative position of ˆ e with e f and e 0 implies different Subgame-Perfect Nash Equilibria.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 7,
+        "section_name": "Analysis and Result",
+        "paragraph_id": 1,
+        "text": "• When ˆ e is very small, more specifically, ˆ e < e f < e 0 , the appellate judge practices favouritism F = f and the reallocated judge exerts e = e f , where e f > ˆ e and p ′ ( e f ) = 1 − f .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 7,
+        "section_name": "Analysis and Result",
+        "paragraph_id": 2,
+        "text": "• When ˆ e is very large, more specifically, e f < e 0 < ˆ e , the appellate judge does not practice favouritism F = 0 and the reallocated judge exerts e = e 0 , where e 0 < ˆ e and p ′ ( e f ) = 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 7,
+        "section_name": "Analysis and Result",
+        "paragraph_id": 3,
+        "text": "• When ˆ e is moderate, more specifically, e f < ˆ e < e 0 , the appellate judge practice favouritism F = f but the reallocated judge exerts e = ˆ e where e 0 > ˆ e > e f and p ′ (ˆ e ) = k (1 − k ) B − f 1 − f .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 7,
+        "section_name": "Analysis and Result",
+        "paragraph_id": 4,
+        "text": "Proposition 1 (Conditional Patronage) : Based on Lemma 3, the model predicts F = f when ˆ e > e 0 . The condition can be modified as k (1 − k ) B < 1. This implies F = f when k is small and B is large. In other words, if the risk of being caught is low and the expected gain for helping the reallocated judge is high, the appellate judge will practice favoritism when she reviews appeal cases from the reallocated judge, colluding with the latter in patronage.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 8,
+        "section_name": "Empirical Evidence: Manifestation of Patronage",
+        "paragraph_id": 0,
+        "text": "The theoretical framework predicts patronage relationships under specific institutional conditions, and the available data allows for a direct empirical investigation of whether appellate judges show favoritism towards reallocated trial court judges. Using a difference-in-differences approach, the empirical analysis reveals a significant decline in the reverse-or-remand rate when judges are transferred from intermediate to primary courts. This result holds across various sensitivity and placebo tests, confirming its robustness. Building upon this initial observation, the study further examines verdicts at both the trial and appellate levels. The data reveals lower-quality appellate decisions but no significant improvements in first-instance rulings. This asymmetric pattern suggests that the reduced reverse-or-remand rate does not reflect better judicial performance, but rather the negative effects of patronage networks, indicating compromised judicial integrity rather than enhanced competence or fairness.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 9,
+        "section_name": "Empirical Model",
+        "paragraph_id": 0,
+        "text": "Our empirical strategy employs an event study design implemented through a staggered difference-indifferences framework following Sun and Abraham (2021). This methodology enables us to identify the dynamic effects of judicial transfers on appellate court decision-making while accounting for treatment timing heterogeneity across jurisdictions. The identification strategy exploits variation in the timing of judge movements between court hierarchies. We compare appellate court decisions for cases originating from trial courts that experience inward judicial mobility from their directly superior appellate court (treated units) with those from trial courts that never experience any inward or outward judge mobility (control units). This research design allows us to causally estimate how downward judicial mobility affects appellate court decision-making through a quasi-experimental approach. To enhance identification and maintain institutional consistency, we restrict our analysis to directly affiliated basic-intermediary court pairs and focus exclusively on civil litigation. We exclude criminal cases due to the limited judicial discretion in criminal sentencing, which could confound our estimates. Our sample spans 2014-2020, and we consider only the first instance of judge movement within each court pair to avoid potential contamination from subsequent transfers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 9,
+        "section_name": "Empirical Model",
+        "paragraph_id": 1,
+        "text": "We estimate the following event study specification:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 9,
+        "section_name": "Empirical Model",
+        "paragraph_id": 2,
+        "text": "Y ct = T X k = − T β k · devent k,ct + γ c + δ t + ε ct (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 9,
+        "section_name": "Empirical Model",
+        "paragraph_id": 3,
+        "text": "where Y ct represents the reversal-or-remand rate for trial court c in time period t , devent k,ct are indicators for k periods relative to the judge movement, γ c and δ t denote trial court and time fixed effects respectively, and standard errors are clustered at the trial court level to account for within-court error correlation. The coefficient vector β k captures the causal effect of downward judicial mobility relative to never-treated courts, with each β k measuring the difference in appellate court decision-making k periods before or after the movement event. The inclusion of trial court fixed effects ( γ c ) absorbs time-invariant heterogeneity across jurisdictions, while year fixed effects ( δ t ) control for any temporal shocks common to all courts. Under the parallel trends assumption, this specification identifies the dynamic treatment effects of judicial transfers on appellate court behavior, absent any confounding from court-specific or time-varying factors.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "Our analysis draws on data from China Judgement Online (CJO), a comprehensive repository of court decisions spanning China’s judicial hierarchy. The database provides detailed records of judicial rulings from 2014 to 2021, offering unprecedented granularity in examining judicial decision-making patterns. While Chen et al. (2022) document potential limitations including reporting heterogeneity and selection concerns, we implement several methodological refinements to address these challenges and ensure robust inference. We construct two primary analytical datasets from this source: Appeal Case Ruling Decision The main outcome variable derives from appellate court rulings, specifically focusing on the binary decision to either uphold or overturn (reverse or remand) the lower court’s judgment. We extract this information directly from the text of appellate verdicts, employing natural language processing techniques to ensure consistent classification. To validate the representativeness of our sample, we conduct extensive comparisons with official judicial statistics. Figure 3a demonstrates that the ratio of civil cases in our dataset to the official aggregate maintains remarkable stability throughout the 2014-2020 period. Similarly, Figure 3b shows that the distribution of appellate outcomes exhibits minimal temporal variation, suggesting no systematic changes in case reporting. We further examine the subset of reversed or remanded decisions. Figure 3c reveals close alignment between CJO-sourced and official statistics on absolute numbers of overturned cases. However, as illustrated in Figure 3d, the reversal rates computed from CJO exceed official aggregates. Through consultations with judicial officials, we attribute this divergence to a selection mechanism whereby appellate courts preferentially",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "upload more complex cases to the CJO platform. While this generates upward bias in unconditional reversal rates, it should not confound our estimates since case publication decisions rest with appellate courts rather than trial courts 9 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "(a) Civil Case Volume (Official vs CJO) (b) Appeal Case Outcome Distribution",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "(c) Reverse-or-Remand Volume (Official vs CJO) (d) Reverse-or-Remand Rate (Official vs CJO)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "Figure 3: Civil Case Analysis",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "Judge Movement – We captures the movement of judges and legal assistants between directly affiliated basic and intermediary courts between 2014 to 2020 (Table 1). Each ruling verdict contains both the court identifier and the presiding judges’ names. We track each judge’s judicial activity by observing their first and last cases in a given court. A movement is identified when a judge’s case records cease in one court and subsequently appear in another directly affiliated basic or intermediary court. The movement date is approximated as the midpoint between the judge’s last case in the previous court and first case in the new court. Two measurement issues warrant discussion. First, judges with identical names could potentially generate spurious movements. This concern is limited because we only match names between directly affiliated basic and intermediary courts, significantly reducing the likelihood of false matches 10 . Second, our approach may 9 Even if appellate courts systematically vary in their propensity to publish reversals across trial courts, such selective disclosure would manifest as another form of differential treatment and would be captured by our empirical strategy. 10 A further improvement is to exclude the most common names from the analysis.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "Role Judge Legal Assistant Direction Downward 2397 448 Upward 2024 1087",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "Table 1: Judge Movement",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 10,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "miss intermediate moves when judges temporarily serve in non-adjudicative positions. For example, if a judge moves from Court A to Court B and then to Court C, but serves in an administrative role in Court B, we would observe this as a direct move from A to C. To address this issue, we exclude movements where the gap between the last case in the previous court and the first case in the new court exceeds a specified threshold 11 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 0,
+        "text": "4.4.1 Baseline Model",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 1,
+        "text": "The baseline specification examines how downward judicial mobility—movements from appellate courts to directly affiliated trial courts—affects judicial decision-making. To ensure precise identification, I impose several sample restrictions. First, I exclude movements where the gap between court assignments exceeds 360 days. Second, I require judges to have adjudicated at least 5 cases in both their previous and new courts. I conduct year-by-year comparisons to maintain consistent temporal evaluation. Figure 4 presents event study estimates of the impact of judge movements on case reversal rates. The pre-treatment coefficients (Y-4 to Y-2) are economically small and statistically indistinguishable from zero, supporting the parallel trends assumption 12 . At the time of movement (Y0), I observe a statistically significant reduction in the reversal rate, with the relatively small standard errors lending credibility to this estimate. The negative effect persists throughout the post-movement period (Y+1 to Y+4), though the magnitude remains modest. While the sustained negative coefficients suggest a lasting impact of judicial reassignment, the gradual attenuation in statistical significance indicates that the effect may weaken over time. Coefficient values are in Table 2.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 2,
+        "text": "4.4.2 Robustness Tests",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 3,
+        "text": "I conduct a comprehensive set of robustness tests using alternative specifications, all of which confirm the baseline results. First, Figures 5a and 5b demonstrate that the results remain stable when using either 11 Our difference-in-differences empirical strategy is robust to any remaining classical measurement error in movement identification 12 Y-1 is omitted from the estimation but included in the figure for clarity of presentation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 4,
+        "text": "Figure 4: Baseline Model",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 5,
+        "text": "the earliest or latest possible movement dates, indicating that the findings are not driven by the specific date approximation method. Second, Figures 5c and 5d show consistent results when analyzing the data at quarterly and semi-annual frequencies, suggesting the temporal aggregation level does not affect the main conclusions. Further validation comes from Figure 5e, which confirms that the results are robust to alternative specifications of the maximum allowable movement window. In a particularly demanding test shown in Figure 5f, I exclude all cases adjudicated by the moving judge. The persistence of the negative effect suggests that other trial judges in the receiving court also experience reduced reversal rates following the arrival of the appellate judge, indicating potential spillover effects within the courthouse. Table 2 presents a comprehensive summary of coefficients and robust standard errors across all specifications.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 6,
+        "text": "I conduct two placebo tests to further validate the baseline findings. These tests examine settings where the theoretical patronage mechanism should be absent, and accordingly, both tests yield null results. The first placebo test analyzes upward judicial movements from basic trial courts to intermediary appellate courts. The patronage incentives in this context should be substantially weaker. While some backwardlooking incentives persist, forward-looking incentives are largely absent since it is improbable that the promoted judge’s former colleagues at the basic court would eventually attain positions senior to the promoted judge. Moreover, unlike administrative bureaucracies where lower-level cooperation is crucial, judicial work is inherently more independent. Additionally, newly promoted judges typically approach their elevated responsibilities with heightened caution. Consistent with these predictions, Figure 6a shows no significant",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 7,
+        "text": "Dependent Variable: Remand or Reverse Rate Base-line Earliest Latest No Move No Date Date Cap Moved Judge Panel A: Pre-Event Period",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 8,
+        "text": "Y-4 0.0014 0.0063 0.0012 -0.0050 0.0014 (0.0083) (0.0075) (0.0074) (0.0071) (0.0097) Y-3 -0.0095 ∗ 0.0002 0.0063 -0.0105 ∗ -0.0125 ∗ (0.0058) (0.0062) (0.0058) (0.0049) (0.0079) Y-2 -0.0064 -0.0054 -0.0031 -0.0054 -0.0132 ∗ (0.0049) (0.0044) (0.0047) (0.0043) (0.0065)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 9,
+        "text": "Y-1 (omitted) 0.000 0.000 0.000 0.000 0.000 — — — — —",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 10,
+        "text": "Panel B: Post-Event Period Y0 -0.0196 [FORMULA] -0.0051 -0.0161 ∗∗ -0.0187 [FORMULA] -0.0266 [FORMULA] (0.0052) (0.0046) (0.0054) (0.0042) (0.0066) Y1 -0.0207 [FORMULA] -0.0178 [FORMULA] -0.0154 ∗∗ -0.0171 [FORMULA] -0.0284 [FORMULA] (0.0058) (0.0055) (0.0061) (0.0049) (0.0076) Y2 -0.0203 ∗∗ -0.0161 ∗∗ -0.0146 ∗ -0.0138 ∗ -0.0313 [FORMULA] (0.0064) (0.0059) (0.0064) (0.0053) (0.0090) Y3 -0.0239 [FORMULA] -0.0257 [FORMULA] -0.0176 [FORMULA] -0.0200 [FORMULA] -0.0356 [FORMULA] (0.0067) (0.0058) (0.0064) (0.0055) (0.0103) Y4 -0.0108 ∗ -0.0156 ∗∗ 0.0000 -0.0132 ∗ -0.0313 [FORMULA] (0.0062) (0.0055) (0.0068) (0.0055) (0.0099)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 11,
+        "text": "Observations 23,564 23,564 23,564 23,564 29,434 Adjusted R 2 0.3406 0.3409 0.3410 0.3409 0.3020 Notes: Robust standard errors are reported in parentheses. Significance levels are indicated by asterisks: [FORMULA] p < 0.01, ∗∗ p < 0.05, ∗ p < 0.1. Standard errors are clustered at the trial court level to account for within-court correlations. The event time variable, labeled ’Y0’, represents the event period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 12,
+        "text": "Table 2: Regression Table for the Baseline Model and Robustness Tests",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 11,
+        "section_name": "Result: Fall in the Reverse-or-remand rate",
+        "paragraph_id": 13,
+        "text": "change in reversal rates following upward judicial movements 13 . The second placebo test examines downward movements of legal assistants rather than judges. Legal assistants hardly has any prospect for promotion to leadership positions and thus cannot become future superiors of appellate judges. Consequently, appellate judges lack the forward-looking incentives that might motivate favorable treatment of the trial courts receiving these legal assistants. As expected, Figure 6b shows no significant changes in reversal rates following these movements.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 0,
+        "text": "Having established the robustness of the decline in reversal rates, I now examine three competing hypotheses to explain this pattern and investigate the underlying mechanism. The first hypothesis (H1) proposes detrimental patronage , where appellate judges systematically lower their scrutiny threshold for cases from specific trial courts. This mechanism suggests preferential treatment that potentially undermines judicial integrity without improving the quality of trial court decisions. The second hypothesis (H2) suggests beneficial patronage , characterized by informal mentorship between appellate judges and trial courts. This explanation aligns with research documenting how patronage networks can enhance institutional performance through improved communication channels and knowledge transfer. Under this scenario, reduced reversal rates would reflect genuine improvements in trial court decision-making facilitated by unofficial consultation. The third hypothesis (H3) offers a non-patronage explanation, attributing the changes to direct contributions of reallocated judges through superior effort and expertise diffusion. This mechanism suggests improvements stem from individual judicial competence rather than patronage relationships. To differentiate among these hypotheses, I analyze ruling verdicts at both trial and appellate levels. The empirical predictions are distinct: Under beneficial patronage (H2) or judicial excellence (H3), the data should show substantial improvements in first-instance ruling quality concurrent with declining reversal rates, while appellate court decisions remain stable. Conversely, under detrimental patronage (H1), first-instance ruling quality should show minimal change, while systematic patterns may emerge in appellate court rulings, potentially indicating relaxed review standards for certain trial courts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 1,
+        "text": "4.5.1 Biased Appellate Ruling",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 2,
+        "text": "To differentiate among the competing hypotheses, I first examine appellate court rulings, focusing on the average reasoning length in upheld appeal cases as a key proxy. 13 This null result for upward movements provides additional evidence that backward-looking incentives alone are insufficient to generate patronage behavior, highlighting the importance of forward-looking incentives.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 3,
+        "text": "Under detrimental patronage, appellate judges would consciously uphold cases that they would otherwise reverse or remand. These wrongly upheld cases 14 should feature shorter reasoning sections, as judges would struggle to justify decisions that conflict with their professional judgment. While theoretically possible to pad these sections with irrelevant content, this strategy carries significant risk: published verdicts create permanent records that could expose poor judicial reasoning or potential corruption. Figure 7a confirms this prediction, showing a statistically significant decrease in the average reasoning length for upheld appeal cases, though the pattern is less pronounced than the decline in reversal rates, achieving statistical significance only in Y+2. Additional evidence supports this interpretation. First, upheld case verdicts cite more legal articles postmovement (Figure 7b). This pattern is noteworthy because reasoning length and legal citations typically exhibit positive correlation 15 . The unusual combination of increased citations with decreased reasoning length aligns with strategic behavior: judges struggling to justify questionable decisions may compensate by citing additional, tangentially relevant legal articles. This approach offers a relatively safe way to mask weak justifications, as legal articles’ abstract nature makes citation of marginally relevant provisions difficult to challenge. As a placebo check, I analyze reversed or remanded cases. Figure 7a shows no significant change in reasoning length for these cases, and Figure 7b indicates stable citation patterns. These null results suggest the observed changes in upheld cases reflect targeted behavior rather than general shifts in verdict-writing style.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 4,
+        "text": "4.5.2 No Evidence of Improved First-Instance Ruling Quality",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 5,
+        "text": "To further differentiate the competing hypotheses, I test for signs of improved first-instance ruling quality, which would be consistent with the beneficial patronage (H2) and judicial excellence (H3) explanations. I examine several proxies for ruling quality, but find no strong evidence of substantial improvements. First, Figure Figure 8b shows no decline in the raw number of appeal cases, which could have signaled better first-instance decisions 16 . Second, Figure 8c indicates no increase in the average reasoning length of first-instance rulings, a quality indicator identified in prior literature (Liu, 2018). Third, Figure 8d reveals no decrease in the use of highly discretionary legal citations, which can signal careless judicial reasoning. Collectively, these null results cast doubt on the hypothesis that reduced reversal rates stem from genuine 14 The term wrongly refers to the judge’s subjective assessment rather than an objective standard. 15 This positive correlation stems from two factors. First, existing research identifies a positive relationship between case complexity and legal citations, with more complex cases typically involving more articles and requiring lengthier reasoning. Second, citations mechanically increase word count in the reasoning section. 16 A better proxy would be the published appeal rate (appeals / first-instance cases), but interpreting this composite measure is complicated by the fact that the two caseloads are not reported by the same party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 6,
+        "text": "improvements in first-instance decision-making. Instead, the evidence is more consistent with the detrimental patronage (H1) mechanism, where appellate judges selectively relax scrutiny of certain trial courts without corresponding advancements in their underlying ruling quality.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 7,
+        "text": "4.5.3 Dominant Mechanism: Detrimental Patronage",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 12,
+        "section_name": "Mechanism Testing",
+        "paragraph_id": 8,
+        "text": "In summary, the empirical analysis reveals no substantial evidence of improved first-instance ruling quality, while documenting a decline in the rigor of appellate court decisions. These findings lend stronger support to the detrimental patronage hypothesis (H1) relative to the alternatives of beneficial patronage (H2) or judicial excellence (H3). The results thus confirm the presence of patronage within the judicial hierarchy and suggest that such informal relationships have adversely affected judicial decision-making quality. Specifically, the data indicates that appellate judges selectively relax their scrutiny of trial court rulings from certain courts, without corresponding advancements in the underlying quality of those first-instance decisions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 13,
+        "section_name": "Implications: Welfare Loss and Policy Recommendations",
+        "paragraph_id": 0,
+        "text": "The findings of detrimental patronage within the judiciary carry significant implications for both welfare considerations and policy adjustments.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 14,
+        "section_name": "Multifaceted Welfare Loss",
+        "paragraph_id": 0,
+        "text": "From a welfare standpoint, the empirical evidence of favoritism in appellate rulings, as reflected in the parameter F = f in the model, represents a direct source of loss. The findings indicate that appellate judges systematically exercise preferential treatment when reviewing cases from certain trial courts, undermining the impartiality of the judicial process. This favoritism in the appellate review process directly diminishes social welfare by compromising the integrity of court rulings. Beyond the empirically verified favoritism, the study’s theoretical framework points to additional welfare losses that accompany the presence of such patronage relationships. As outlined in Lemma 2 of the model, the expectation of favoritism in appellate rulings incentivizes reallocated judges to exert less effort (lower e ) in their decision-making. This moral hazard effect further compounds the welfare consequences, as diminished judicial effort translates to lower-quality trial court rulings. Additionally, the model’s equilibrium conditions, as described in Proposition 1, indicate that the presence of patronage is accompanied by large benefits-in-return for the practiced favoritism (large B). This suggests that the patronage relationships may incentivize future malfeasance, potentially through promotion based",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 14,
+        "section_name": "Multifaceted Welfare Loss",
+        "paragraph_id": 1,
+        "text": "on connections rather than merit - a further source of welfare diminution beyond the direct impacts of favoritism. Furthermore, Proposition 1 points to a low possibility of capturing bad judgments (small k ) in the presence of patronage. This weakness in the malfeasance-finding mechanism means that the system lacks effective safeguards to identify and address wrongdoing within the judiciary. The inability to reliably detect and sanction improper practices represents an additional structural flaw that compounds the welfare losses. Most critically, the combination of these factors - favoritism in appellate rulings, reduced judicial effort, low wrongdoing detection rate, and the expectation of future returning favors - implies the fundamental breakdown of the appeals process as an effective quality control mechanism. This structural weakness has far-reaching implications, particularly concerning in judicial systems such as China’s, where the appellate court ruling is final. The failure of this critical check on trial court decisions can have severe and lasting consequences for the overall integrity and effectiveness of the legal system.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 15,
+        "section_name": "Policy Recommendations",
+        "paragraph_id": 0,
+        "text": "The insights from the theoretical model suggest two main directions for policy recommendations to address the issue of judicial patronage.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 15,
+        "section_name": "Policy Recommendations",
+        "paragraph_id": 1,
+        "text": "5.2.1 Changing the Incentives of Appellate Judges",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 15,
+        "section_name": "Policy Recommendations",
+        "paragraph_id": 2,
+        "text": "One approach focuses on modifying the incentives faced by appellate judges. Improving Monitoring and Detection Mechanisms : This involves increasing the likelihood (parameter k) of capturing malfeasance, such as through more targeted audits and consultations with expert panels. However, this may have limited long-term effectiveness, as it could incentivize actors to conceal improper practices more adeptly. Making Future Rewards Less Credible : Another approach is to address the expected returning favors (parameter B) that appellate judges anticipate from reallocated judges. Implementing a more transparent and merit-based promotion system could diminish the perceived credibility of these future rewards. This could involve greater oversight and accountability in the advancement process, making it more difficult for appellate judges to reliably expect outsized benefits through patronage networks. However, completely eliminating all potential avenues for return-in-favor arrangements may be challenging given the complexities of judicial career progression and the persistence of informal relationships.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 15,
+        "section_name": "Policy Recommendations",
+        "paragraph_id": 3,
+        "text": "5.2.2 Reforming the Judge Movement Policy",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 15,
+        "section_name": "Policy Recommendations",
+        "paragraph_id": 4,
+        "text": "The second direction involves addressing the root causes by reforming the policies governing the movement of judges within the judicial system. Reducing the Strong Signal of Future Promotion : Instead of reserving such downward movements only for a select few candidates immediately prior to promotion, the policy could be expanded to a broader group of judges at earlier career stages. This would diminish the perception of a clear pathway to advancement, weakening the incentives for patronage. Minimizing Unnecessary Interactions Between Affiliated Courts :The context for patronage formation is created by the assignment of judges to courts with which they have direct affiliations. Reforming the judge movement policy to prioritize placements in non-affiliated trial courts could help disrupt the opportunities for such patronage relationships to develop. By addressing these structural issues at the root of the problem, policymakers can pursue more effective and sustainable solutions to mitigate the corrosive impacts of judicial patronage, ultimately strengthening the integrity and effectiveness of the legal system.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 16,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper makes three main contributions to our understanding of patronage within the judicial system. First, it proposes and theoretically models a novel mechanism through which judge movement policies can generate patronage relationships in the Chinese judiciary. Second, through rigorous empirical analysis of court verdicts, it provides evidence for both the existence of such patronage and the welfare losses it engenders. The findings challenge the notion of ”judicial exceptionalism” and demonstrate how institutional arrangements intended to enhance judicial capacity can inadvertently create opportunities for favoritism. Finally, the paper offers concrete policy recommendations for addressing judicial patronage, emphasizing the importance of both incentive-based solutions and structural reforms to judge movement policies. These findings have important implications for institutional design in judicial systems, particularly in contexts where maintaining the integrity of appellate review is crucial for ensuring judicial quality and fairness. Looking ahead, an important avenue for future research lies in the comprehensive quantification of welfare losses stemming from judicial patronage. While the paper empirically measures the extent of favoritism in appellate rulings ( F ), it has not been able to quantify two other crucial parameters: the reduction in judicial effort (e) and the magnitude of benefits-in-return ( B ). The measurement of reduced effort ( e ) faces the fundamental challenge of establishing an appropriate counterfactual - we cannot observe how judges would",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1257,
+        "section_id": 16,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "behave under downward movement without patronage incentives. The quantification of benefits-in-return ( B ) encounters both methodological and data constraints. Benefits often take inconspicuous forms that are difficult to detect, and the limited time span of available data (2014-2021) prevents the observation of complete career trajectories necessary to capture instances of return favors. Future research employing innovative empirical strategies to overcome these measurement challenges would significantly advance our understanding of the full welfare implications of judicial patronage.",
+        "extraction_warnings": ""
+    }
+]

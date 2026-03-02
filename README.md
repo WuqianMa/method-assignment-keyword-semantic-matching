@@ -1,0 +1,212 @@
+# Method Classification Pipeline
+
+Classifies academic papers from the SIOE conference by research methodology using a two-stage pipeline: **keyword matching** followed by **SPECTER2 semantic similarity**.
+
+## Project Structure
+
+```
+method/
+├── main.py                            # Pipeline entry point
+├── app.py                             # Streamlit viewer (run separately)
+├── requirements.txt                   # Streamlit dependency for app.py
+│
+├── predefine/                         # Method taxonomy & config
+│   ├── l1_methods.json                # 5 L1 categories with keywords
+│   ├── l2_methods.json                # 17 L2 sub-methods (linked to L1 via level_1_label)
+│   ├── json_describe.md               # Schema docs for the above
+│   └── config.py                      # Thresholds & model name
+│
+├── data/                              # Input data (read-only)
+│   ├── metadata/meta_data.json        # 150 papers: paper_id, title, author, etc.
+│   ├── papers_json_normalize/*.json   # 150 files, paragraph-level chunks per paper
+│   └── data_describe.md
+│
+├── src/                               # Pipeline modules
+│   ├── keyword_loader.py              # Load L1/L2 method definitions
+│   ├── paper_loader.py                # Load paper JSONs and metadata
+│   ├── keyword_matcher.py             # Case-sensitive keyword matching
+│   ├── chunk_filter.py                # Save filtered chunks to disk
+│   ├── csv_writer.py                  # Write assignment CSVs
+│   ├── embedder.py                    # SPECTER2 embedding
+│   └── semantic_matcher.py            # Cosine similarity matching
+│
+├── filter_chunk/                      # Output: keyword-filtered chunks
+│   └── {paper_id}.json
+├── embedded_chunk/                    # Output: SPECTER2 embeddings of filtered chunks
+│   └── {paper_id}.json
+├── embedded_method_description/       # Output: SPECTER2 embeddings of method descriptions
+│   ├── l1_embeddings.json
+│   └── l2_embeddings.json
+│
+└── assignments/                       # Output: classification results
+    ├── keyword_match.csv              # Keyword-based L1/L2 assignments
+    ├── semantic_matching.csv          # Semantic-based L1/L2 with similarity scores
+    ├── NotebookLM.csv                 # Baseline: NotebookLM RAG assignments
+    └── assignment.md
+```
+
+## Pipeline Logic
+
+The pipeline runs in two stages with a strict hierarchical filtering order: **all chunks -> L1 keyword filter -> filtered chunks -> L2 keyword match (scoped to matched L1) -> SPECTER2 embed filtered chunks only -> L1 semantic match -> L2 semantic match (scoped to matched L1)**.
+
+### Stage 1: Keyword Matching
+
+```
+150 papers (all paragraph chunks)
+        │
+        ▼
+   ┌─────────────────────────────────┐
+   │  L1 Keyword Match               │
+   │  Case-sensitive substring scan  │
+   │  against l1_methods.json        │
+   │  keywords (5 categories,        │
+   │  ~135 keywords total)           │
+   └─────────────┬───────────────────┘
+                 │
+        Only chunks containing        Papers with zero
+        at least one L1 keyword        L1 matches are
+        are kept                       discarded entirely
+                 │
+                 ▼
+   ┌─────────────────────────────────┐
+   │  Save to filter_chunk/          │
+   │  {paper_id}.json                │
+   │  (same schema + matched_keywords│
+   │   matched_l1_methods fields)    │
+   └─────────────┬───────────────────┘
+                 │
+                 ▼
+   ┌─────────────────────────────────┐
+   │  L2 Keyword Match               │
+   │  Only L2 methods whose          │
+   │  level_1_label is in the        │
+   │  paper's matched L1 set         │
+   │  are considered.                │
+   │  Scans filtered chunks only.    │
+   └─────────────┬───────────────────┘
+                 │
+                 ▼
+   ┌─────────────────────────────────┐
+   │  Write keyword_match.csv        │
+   │  Columns: paper_id, l1_method,  │
+   │  l2_method                      │
+   │  Multiple methods joined by "; "│
+   └─────────────────────────────────┘
+```
+
+**Key rules:**
+- All keyword matching is **case-sensitive** (these are formal academic terms like "DiD", "2SLS", "RDD")
+- A chunk must contain at least one L1 keyword to be kept
+- L2 matching is **scoped**: only L2 methods belonging to a matched L1 category are checked
+- A paper can match multiple L1 and L2 methods
+
+### Stage 2: SPECTER2 Semantic Matching
+
+This stage operates **only on filtered chunks** from Stage 1.
+
+```
+   filter_chunk/{paper_id}.json          predefine/l1_methods.json
+   (keyword-filtered chunks)             predefine/l2_methods.json
+                │                                    │
+                ▼                                    ▼
+   ┌────────────────────────┐       ┌────────────────────────────┐
+   │  SPECTER2 Embed Chunks │       │  SPECTER2 Embed            │
+   │  Each chunk's text     │       │  semantic_meaning field     │
+   │  → 768-dim vector      │       │  of each L1 and L2 method  │
+   │  Saved to              │       │  Saved to                  │
+   │  embedded_chunk/       │       │  embedded_method_description│
+   └──────────┬─────────────┘       └──────────┬─────────────────┘
+              │                                │
+              └───────────┬────────────────────┘
+                          ▼
+   ┌──────────────────────────────────────────┐
+   │  L1 Cosine Similarity                    │
+   │  For each paper:                         │
+   │    max(cosine(chunk_i, L1_j))            │
+   │    across all chunks, for each L1        │
+   │  Assign L1 if max_sim >= L1_threshold    │
+   └────────────────┬─────────────────────────┘
+                    │
+                    ▼
+   ┌──────────────────────────────────────────┐
+   │  L2 Cosine Similarity (scoped to L1)     │
+   │  Only compare against L2 methods whose   │
+   │  level_1_label matches an assigned L1     │
+   │  Assign L2 if max_sim >= L2_threshold     │
+   └────────────────┬─────────────────────────┘
+                    │
+                    ▼
+   ┌──────────────────────────────────────────┐
+   │  Write semantic_matching.csv             │
+   │  Columns: paper_id, l1_method, l2_method,│
+   │  l1_similarity, l2_similarity            │
+   └──────────────────────────────────────────┘
+```
+
+**Key rules:**
+- SPECTER2 base model (`allenai/specter2_base`) is used without task-specific adapters
+- Each chunk is embedded individually (chunks are within the 512-token window)
+- Similarity is the **max** cosine similarity of any chunk against each method description
+- L2 semantic matching is **scoped to L1**: only L2 methods under an assigned L1 are compared
+- Thresholds are configured in `predefine/config.py` (default: 0.5 for CSV generation)
+
+## Method Taxonomy
+
+### L1 Categories (5), L2 Sub-methods (17)
+
+| # | Category | L2 Sub-methods |
+| --- | --- | --- |
+| 1 | Empirical and Econometric Methods | [Panel Data and Fixed Effects, Difference-in-Differences (DiD) & Event Studies, Instrumental Variables (IV) & Shift-Share Designs, Regression Discontinuity Design (RDD), Structural & Advanced Econometrics] |
+| 2 | Computational, Data Science, and Machine Learning | [Natural Language Processing (NLP) & Text Analysis, Machine Learning Predictors & Regularization, Network & Spatial Analysis] |
+| 3 | Theoretical and Formal Modeling | [Game Theory & Mechanism Design, Behavioral & Cognitive Modeling, Macroeconomic & Spatial Equilibrium] |
+| 4 | Experimental Methods | [Field Experiments / RCTs, Laboratory & Online Experiments, Survey & Conjoint Experiments] |
+| 5 | Qualitative, Descriptive, and Mixed Methods | [Archival Research & Case Studies, Interviews, Literature Reviews & Aggregation] |
+
+---
+## Results
+
+With case-sensitive keyword matching on 150 papers:
+- **38 papers** had at least one L1 keyword match (25.3%)
+- **112 papers** had no keyword matches and were excluded from further processing
+- Filtered chunks, embeddings, and semantic similarity scores were computed for the 38 matched papers
+
+Output files:
+- `assignments/keyword_match.csv` — 38 rows with L1/L2 keyword assignments
+- `assignments/semantic_matching.csv` — 38 rows with L1/L2 semantic assignments and similarity scores
+- `assignments/NotebookLM.csv` — 149 rows (baseline, generated separately via NotebookLM RAG)
+
+## Usage
+
+### Run the pipeline
+
+```bash
+cd method
+python main.py
+```
+
+Requires: `transformers`, `torch`, `numpy`
+
+### Launch the viewer
+
+```bash
+cd method
+streamlit run app.py
+```
+
+Requires: `streamlit` (see `requirements.txt`)
+
+The viewer provides:
+- **Prev/Next navigation** between papers with filtered chunks
+- **Filtered chunk display** with matched keywords highlighted in orange
+- **Three assignment columns**: NotebookLM (baseline), Keyword Match, Semantic Match
+- **L1/L2 threshold sliders** in the sidebar that dynamically show/hide semantic labels
+- L2 methods grouped under their parent L1 in both keyword and semantic displays
+
+### Configuration
+
+Edit `predefine/config.py` to change:
+- `L1_SIMILARITY_THRESHOLD` — minimum cosine similarity to assign an L1 method (default: 0.5)
+- `L2_SIMILARITY_THRESHOLD` — minimum cosine similarity to assign an L2 method (default: 0.5)
+- `SPECTER2_MODEL_NAME` — HuggingFace model identifier (default: `allenai/specter2_base`)
+
+The Streamlit app's sidebar sliders override these thresholds for display purposes without re-running the pipeline.

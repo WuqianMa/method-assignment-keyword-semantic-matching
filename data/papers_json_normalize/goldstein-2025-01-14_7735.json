@@ -1,0 +1,618 @@
+[
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Testing Formal Models of Political Competition",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "with Candidate-Choice Experiments",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Daniel A. N. Goldstein ∗ and and Milan W. Svolik †‡",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "First draft: February 2021; Current: June 2023",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "(Preliminary draft, please do not share)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "Formal models of political competition have faced persistent skepticism about their assumptions and predictions. This study addresses these criticisms using data from candidate-choice conjoint experiments, which uniquely allow candidates to adopt a full range of policy positions, including match-ups rarely observed in real-world elections. Using over 20,000 candidate-choice responses, we estimate the “empirical best response function” of political candidates in response to how respondents vote across the full range of positions on social and economic policy dimensions. Our results reveal conditional support for the convergence prediction of the median voter theorem. We also find that voters often, though not always, have single-peaked preferences and vote according to those preferences. We also empirically test key features of formal models, including valence advantages, multidimensional politics, and turnout effects, shedding new light on their validity. By demonstrating how conjoint experiments can overcome the limitations of observational data, this study underscores the value of experimental approaches in advancing formal theory and bridging the gap between theoretical predictions and empirical realities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 6,
+        "text": "∗ Max Weber Postdoctoral Fellow, European University Institute, daniel.goldstein@eui.eu . † Professor, Yale University, milan.svolik@yale.edu . ‡ We would like to thank Maggie Penn, Justin Buchler, and audiences at MPSA, EPSA, and the Virtual Formal Theory Workshop.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 7,
+        "text": "Few theoretical insights derived from rational choice theory have been subjected to serious empirical scrutiny and survived.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 8,
+        "text": "- Green and Shapiro ( 1994 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 9,
+        "text": "At present, the use of formal modeling to study voting behavior is controversial...The political opinions and behaviors of the general public are often thought not to conform very closely to the assumptions found in many formal models.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 10,
+        "text": "- Aldrich and Lupia ( 2010 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 11,
+        "text": "Since its introduction, the Downs-Hotelling model of political competition has served as the backbone of countless political science theories ( Hotelling , 1990 ; Downs , 1957 ). The model considers a unidimensional policy space, often ordered with a liberal position on the left and a more conservative position on the right. Two political candidates take positions along the policy space in order to maximize their chance of winning a one-shot election, and if elected, the candidates commit to enacting the policy they support. Voters’ preferences are ordered along the policy space and can be distributed in essentially any manner. 1 Critically, voters are assumed to have single-peaked preferences over the policy space. This means that there is a policy that each voter uniquely prefers, i.e., their bliss point. Voters strictly prefer policy positions that are closer to their bliss point compared to policies that are spatially farther away. 2 Finally, the Downs-Hotelling model produces the familiar result that politicians position themselves at the median voter’s bliss point. That is, neither candidate may deviate from a platform of this position and still win the election. The assumption that voters favor the candidate closest to their bliss point is central to the Downs-Hotelling model, which is at the heart of countless political science findings. However, this assumption can be difficult to test empirically. This 1 It is assumed that politicians know with certainty which voters will turn out for the election. That is, all abstentions are common knowledge. 2 Voters are assumed to vote sincerely, meaning that they support the candidate whose position is closest to their bliss point ( Roemer , 2009 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 12,
+        "text": "Table 1: Summary of Tests and Results Assumptions Component Description Result Single-peaked Preferences Individuals hold a unique preferred policy where utility is monotonically decreasing from the peak Mixed",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 13,
+        "text": "Rationality Voters supported the candidate closest to their ideal point Mixed Predictions Convergence It is optimal for candidates to converge median policy position Mostly",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 14,
+        "text": "Uniqueness Median is unique best response for politicians Mostly Valence Advantage Valence attributes trump identical policies & and no equilibrium in pure strategies (with certainty) Holds",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 15,
+        "text": "Multi-dimensional Voting Voters have cyclical preferences and non-unique equilibrium TBD Turn out Voters more likely to turnout when they care about the policies at issue TBD",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 16,
+        "text": "is because it assumes an outcome from out-of-equilibrium play, in which political candidates will adjust their platform if they take a position that will cause them to lose an election with certainty. To test this assumption, we would have to examine an election in which, for example, a candidate with a far-right platform ran against a candidate with a moderate position. However, due to equilibrium play (and empirical regularity), researchers will rarely see such a match-up in reality. One virtue of formal theory is that it allows researchers to analyze and make predictions about such rare counterfactuals. However, this also means that these predictions and the underlying assumptions may be difficult to verify empirically. This challenge constitutes what we term the ‘fundamental empirical problem of formal models’: we do not, in expectation, observe out-of-equilibrium behavior. As Aldrich and Lupia ( 2010 ) summarize, this difficulty has led to skepticism regarding the accuracy and usefulness of formal models, e.g., Green and Shapiro ( 1994 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 17,
+        "text": "To attempt to address this concern in the context of spatial models of political competition, empirical researchers would want to know how citizens vote in elections when political candidates adopt platforms that are out-of-equilibrium. And, given the empirical distribution of how citizens would actually vote over the full mapping of political match-ups, what is the best response of politicians? Moreover, do citizens vote “rationally,” that is, according to their stated preferences? This study aims to address these questions and critiques of formal theory using data uniquely available from conjoint candidate-choice survey experiments. Such data allow us to test the fundamental assumptions of models of political competition. Candidate-choice experiments compare two hypothetical candidates for political office and randomize a number of their attributes, such as political party, gender, prior experience, age, and positions on various policy issues ( Bansak et al. , 2021 ). For each random combination, respondents indicate which of two candidates they would support in an election. The key advantage of such experiments is that, by design, candidates adopt the full range of positions, including those that we rarely observe in real-world contests. This allows researchers to identify equilibrium behavior, since we can map candidates’ best responses to the full range of their opponents’ positions. Moreover, because variation is induced by randomization, we can attribute any systematic variation in outcomes to the policy dimension being manipulated. The study uses data from more than 20,000 candidate choices made by online survey respondents. Candidates hold policy platforms that are designed to be uniquely ordered from left to right on both an economic and social policy dimension. Valence attributes are also considered. The survey design balances causal identification with the embedding of policies with real-world relevance. In doing so, the approach is able to capture many of the benefits of experiments while avoiding the complete abstraction that can be common in the literature, e.g., Tomz and Van Houweling ( 2008 );",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 18,
+        "text": "Battaglini, Morton and Palfrey ( 2010 ). For example, the subjects are a representative sample of the U.S. electorate rather than a convenience sample, e.g., college students in a lab experiment. The study first formally defines an ‘empirical best response’ in the context of spatial models of political competition. Moreover, we define how one might ‘rationalize’ data-based best responses to test whether strategic actors adhere to their stated preferences. We then use conjoint data to derive the empirical best response function of political candidates. That is, given the respondents’ candidate choices, we determine the best responses of hypothetical candidates given full support on citizens’ voting choices. Next, we consider the empirical best response function when valence attributes are included. We then examine respondents’ preferences to see if we can rationalize their responses by testing the single-peakedness assumption. This assumption is examined both for individuals and aggregated across individuals according to their bliss point. We find that, in general, respondents’ most common preference orders are single-peaked. Finally, we highlight several future directions for the study. Overall, the study demonstrates that many of the core assumptions underlying formal models of political competition can be supported using empirical evidence from candidate-choice conjoint experiments. Moreover, we highlight the possibilities of using candidate-choice experiments to empirically test the foundations and predictions of formal theory more broadly.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 19,
+        "text": "Before turning to the analysis, we briefly review related literature that has sought to empirically test the foundations of formal models of political competition. We also discuss recent developments in the political science literature on conjoint analysis.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 20,
+        "text": "Niemi ( 1969 ) began an empirical literature related to testing the median voter theorem and the existence of single-peaked preferences. The predictions of such models have been empirically tested both in experimental settings ( McKelvey and Ordeshook , 1985 ) and using data from elections ( Ordeshook and Zeng , 1997 ). In particular, the pivotality of the median voter or decision-maker has been examined in the contexts of: US courts ( Grofman and Brazill , 2002 ; Lauderdale and Clark , 2012 ; Bonneau et al. , 2007 ), media ( Ho, Quinn et al. , 2008 ), positions of politicians ( Gerber and Lewis , 2004 ; Tausanovitch and Warshaw , 2013 ; Bonica , 2014 ), and redistributive policies ( Milanovic , 2000 ). Policies related to public finance seem to conform particularly well to the logic of the median voter theorem ( Mathis and Zech , 1986 ; Congleton , 2004 ). There is also a literature in ‘empirical game theory’ concerning players’ learning in games that examines how behavior adapts to best responses, which has largely been followed in the computer science literature, e.g., Wellman ( 2006 ). Moreover, related concepts such as ‘quantal response equilibrium’ ( McKelvey and Palfrey , 1995 ), which introduces noise into payoffs, has been shown to rationalize a number of results from experimental games ( Haile, Horta ̧csu and Kosenok , 2008 ). While related to the current study, this concept differs in that it extends baseline game theoretic methods to rationalize empirical results. Instead, we focus on using empirical results to impute behavioral values and then test whether standard game theory methods yield the same results as explicitly theoretical approaches. Moreover, to the best of our knowledge, the notion of “empirical best response” that we introduce has not previously been defined in a manner similar to the approach we detail in the next section. There have also been long-standing criticisms of the median voter theory, notably that it excludes the importance of institutions ( Romer and Rosenthal , 1979 ) and the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 21,
+        "text": "complications associated with multidimensional voting ( Congleton , 2004 ). Moreover, it has been argued that the underlying assumption of single-peaked preferences may not hold for all policy domains ( Egan , 2014 ). One possible solution is to measure how well individual preferences conform to being single-peaked ( Niemi , 1969 ). If preferences are more often single-peaked, this increases the likelihood that there is a Condorcet winning policy. List et al. ( 2013 ) contend that deliberation can increase the likelihood that individuals hold single-peaked preferences. In addition, we make use of candidate-choice conjoint experiments, which have have grown in popularity in political science because they allow researchers to separate the influence of individual candidate attributes on voting ( Hainmueller, Hopkins and Yamamoto , 2014 ). This methodology has been used to examine how a wide range of factors affect voters’ support for politicians, such as female candidates, as well as policies on immigration, climate change, and democracy ( Teele, Kalla and Rosenbluth , 2018 ; Bechtel and Scheve , 2013 ; Hainmueller and Hopkins , 2014 ; Graham and Svolik , 2020 ). Moreover, conjoint experiments have been found to closely match the results of actual voting behavior ( Hainmueller, Hangartner and Yamamoto , 2015 ). As the methodology has grown in popularity, so have the criticisms. For example, Abramson, Ko ̧cak and Magazinnik ( 2019 ) have argued that the most common estimator used to analyze conjoint experiments, the Average Marginal Component Effect, is not always able to measure what researchers claim. That is, a positive coefficient of the AMCE for a particular attribute, such as gender, does not guarantee that this attribute will result in a majority of voters preferring candidates who have this attribute. This is because the AMCE averages out the effect, and individuals for whom the attribute has a stronger effect can swamp even a majority of individuals. As Hainmueller and co-authors have replied ( Bansak et al. , 2021 ), this is no different than other common estimators, such as the Average Treatment Effect, and the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 22,
+        "text": "AMCE remains a useful tool for measuring the impact of individual attributes. Our approach largely avoids the complications of the evolving methodology by focusing on descriptive analysis of candidate-choice data. In addition, we draw our analysis from multiple waves of the survey, providing us with a large and robust sample.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 1,
+        "section_name": "Defining the Empirical Best Response Function",
+        "paragraph_id": 0,
+        "text": "As discussed, we will employ conjoint data to characterize the ‘empirical best responses’ of politicians in models of political competition. This will allow us to characterize what we call the ‘empirical equilibrium’ among politicians. Finally, we examine whether voters, whom we treat as ‘empirical players’, behave ‘rationally’. We next provide formal definitions of these terms. Beginning with the empirical best response, we first define a typical best response function using the definition from von Stengel ( 2021 ). Let there be N players i ∈ 1 , ..., N who hold the strategy set S i . Given the strategy profile s = ( s 1 , ..., s N ) in S 1 × S 2 ... × S N , we can define a utility function u i ( s ). Let s − i be all strategies of players who are not i . Hence, we can rewrite a strategy profile as s = ( s i , s − i ). Then s i is a best response to s − i if:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 1,
+        "section_name": "Defining the Empirical Best Response Function",
+        "paragraph_id": 1,
+        "text": "u i ( s ) = u i ( s i , s − i ) ≥ u i ( s ′ i , s − i ) for ∀ s ′ i ∈ S i (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 1,
+        "section_name": "Defining the Empirical Best Response Function",
+        "paragraph_id": 2,
+        "text": "Moving beyond purely theoretical players, we introduce a set of ‘empirical’ players whose strategies are fixed and dictated by exogenous data. They are contrasted with ‘strategic’ players, who are rational and whose strategies are set endogenously according to maximizing their vNM utility. Thus, we define an empirical best response function as follows. Among players N , there is a set of empirical players M ( < N ) whose strategies",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 1,
+        "section_name": "Defining the Empirical Best Response Function",
+        "paragraph_id": 3,
+        "text": "are fixed and exogenously set. That is, empirical players have fixed strategies that are exogenously determined (by data): s e = ( s e 1 , ..., s e M ). Hence, a partial empirical strategy profile is fixed as s e = ( s e 1 , ..., s e M ). There are also strategic players who are rational and whose strategies are set by maximizing vNM utility. That is, given the set of strategies s i , define s − i as the strategy of all ‘strategic’ players not i . Then a complete strategy profile is given by s = ( s i , s − i ; s e ), where s − i is the strategy of all ‘strategic’ players j ̸ = i in N − M , while s e are the strategies of the remaining M empirical players (the semicolon indicates that these strategies are set exogenously). Definition: The strategy s i is called an empirical best response to ( s − i ; s e ) if:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 1,
+        "section_name": "Defining the Empirical Best Response Function",
+        "paragraph_id": 4,
+        "text": "u i ( s ) = u i ( s i , s − i ; s e ) ≥ u i ( s ′ i , s − i ; s e ) for ∀ s ′ i ∈ S i (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 1,
+        "section_name": "Defining the Empirical Best Response Function",
+        "paragraph_id": 5,
+        "text": "Then, we consider when all strategic players are playing empirical best responses. Definition: There exists an empirical equilibrium if all strategic players are playing empirical best responses. In addition, we define an empirical agent as behaving ‘rationally’ if their exogenous strategy is consistent with their strategic best response (given a utility function and a strategy set). In models of political competition, this will be the case for voters who hold single-peaked preferences and, moreover, actually vote according to those preferences.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 0,
+        "text": "The Downs-Hotelling model results in the well-known outcome of the politicians positioning themselves at the bliss point of the median voter. Neither candidate may deviate from a platform of this position and still win the election. 3 This ‘convergence’",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 1,
+        "text": "3 Note that a mechanism to address ties must be specified, with a coin flip often used to determine the outcome.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 2,
+        "text": "result aligns with the Median Voter Theorem, which is attributed to Duncan Black ( Black , 1948 ). Focusing on voting within committees, Black found that when an odd number of actors vote sincerely, have single-peaked preferences, and use majority rule, the preferred policy of the median voter is a unique Condorcet winner. This entails that the median voter’s preferred policy beats all other policies in any pairwise comparison. Thus, the Downs-Hotelling model essentially applies Black’s Median Voter Theorem to predict that political candidates will locate their platforms at the bliss point of the median voter because it is a Condorcet winner that cannot lose to a different policy position. Subsequent theoretical analysis has raised and addressed limitations in the DownsHotelling model. For example, limitations include: voters cannot express their intensity of policy preferences and cannot choose to abstain in response to the politicians’ positions. Moreover, it is assumed candidates may credibly take any position, which may not be the case due to party constraints. Candidates are also assumed to be committed to their policy platform after the election, and it is assumed that voters are fully informed of the candidates’ positions ( Roemer , 2009 ). Moreover, there may be other policy dimensions or valence characteristics that may impact voter preferences over candidates. We start by examining support for the classic, single-dimensional Downs-Hotelling model of candidate competition ( Hotelling , 1990 ; Downs , 1957 ). 4",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 3,
+        "text": "A representative sample of survey respondents in the United States in 2018 participated in an online candidate-choice survey experiment on Lucid, with a structure corresponding to Figure 1 . Each candidate match-up presented two issue areas per",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 4,
+        "text": "4 See Austen-Smith and Banks ( 2009 ) and Gehlbach ( 2021 ) for a modern presentation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 5,
+        "text": "candidate (with the issue areas being identical for both candidates). In this section, the total number of candidate choices was 20,891, with approximately 10,000 choices per issue area. Because the policy positions in each of the two issue areas were randomly assigned, we can analyze each issue in isolation and treat the candidates’ positions on the other issue as random noise. That is, noise that is balanced across the two candidates by design. As a result, the only systematic difference between the two candidates is their position on the issue under consideration. If we want to potentially model the data-generating process, note that our assumption has similarities to probabilistic voting models ( Persson and Tabellini , 2002 ), where there is an error term with mean zero that can capture the idiosyncratic preferences of citizens. Thus, the choice of citizens over the politicians could be represented in the following sense:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 6,
+        "text": "u i ( d 1 ) > u i ( d 2 ) + ε i (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 7,
+        "text": "Where the utility for empirical citizen i for the policy dimension d p compares the utility over that dimension for candidate 1 versus candidate 2. There is also an error term that is symmetric, identically and independently distributed with mean zero ε i ∼ F ( − π, π ) where positive draws of π favor candidate 2. This error term captures randomization across the other policy domains and candidate attributes. To determine the empirical best response of politicians, we examine the descriptive choice densities of respondents. Moreover, to characterize the empirical best response, we need to consider their utility function. That is, in models of political competition, candidates may maximize their probability of winning (i.e., if they win/tie/lose ) or their vote-share, where the best response for each may not always coincide. We consider both approaches below. Finally, the statistical implementation is important. For example, we would",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 8,
+        "text": "Figure 1: Example of Candidate-Choice",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 9,
+        "text": "expect more noise in a rarely observed match-up between candidates than in a frequently observed match-up in the data. Therefore, when considering the probability of victory, we treat match-ups as ties unless the hypothesis of equal vote shares can be rejected at the .05 confidence level. We explain this procedure in more detail next. To account for the statistical uncertainty in these outcomes, we first tallied the votes received by the two candidates under each policy profile (candidate 1’s vote share is listed in blue and candidate 2’s vote share is listed in red) and then used the binomial test for proportions to test whether the two candidates’ vote counts are statistically distinguishable from a tie at the 0.05 significance level. 5 However, a drawback to using the binomial is that it relies on the independence of observations, which fails in the case of a conjoint study as respondents make multiples choices including each policy domain (and may see the same policy twice). Hence, we also include a specification using bootstrapped standard errors.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 2,
+        "section_name": "Empirical Exercises with Conjoint Experiments",
+        "paragraph_id": 10,
+        "text": "5 For the exact binomial test for proportions, see Hollander, Wolfe and Chicken ( 2014 , Chapter 2).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 0,
+        "text": "Figure 2 plots the two candidates’ empirical best response functions for immigration policy. In this figure, we assume that the candidates care only about the outcome of the election (a win, a tie, or a loss); they do not maximize their vote-share. If vote counts are statistically distinguishable from a tie, we categorized the outcome as a win or loss for the corresponding candidate (labeled in Figure 2 with circles and crosses, respectively); otherwise, we categorized the outcome as a tie (labeled with diamonds). The best responses are marked with an asterisk. The results in Figure 2 are consistent with the predictions and logic of the DownsHotelling model in several ways. For example, to find the best response, consider the perspective of Candidate 1 while holding the position of Candidate 2 fixed at LL. In this case, Candidate 1’s best response is to play L, which gives them a victory (and a vote-share of 58%). As predicted by the model, the unique Nash equilibrium ( L, L ), where the best response functions overlap, coincides with the electoral median on immigration policy. 6 Thus, we observe “convergence to the median” by the two candidates. The best response functions also exhibit several features consistent with the logic of the Downs-Hotelling model: if candidate 1’s policy is held at the electoral median L , candidate 2’s vote share declines the further her policy deviates from L ; the further candidate 2’s policy deviates from L , the larger the set of best responses for candidate 1, with LL , L , and R all being a best response when candidate 2 adopts RR – the least popular policy. 7 In addition, Figure 3 plots the two candidates’ empirical best response functions under the alternative assumption that the candidates maximize their vote-shares. In",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 1,
+        "text": "6 Throughout, we consider only Nash equilibria in pure strategies. 7 If both candidates adopt an identical policy, the result is a tie by design. Again, any deviation from a perfect tie is entirely due to the random variability introduced by the arbitrary assignment of candidate labels.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 2,
+        "text": "0.48 0.58 0.51 0.45 0.42 0.53 0.44 0.39 0.49 0.56 0.49 0.42 0.55 0.61 0.58 0.5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 3,
+        "text": "0.52 0.42 0.49 0.55 0.58 0.47 0.56 0.61 0.51 0.44 0.51 0.58 0.45 0.39 0.42 0.5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 4,
+        "text": "LL L R RR Candidate 1 Candidate 2 G loss tie win The MEDIAN policy is L Immigration",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 5,
+        "text": "* marks best responses, candidate 1 in blue (first row), candidate 2 in red (second row) Figure 2: The single-dimensional Downs-Hotelling model: empirical best response functions for immigration policy; candidates only care about the outcome of the election",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 6,
+        "text": "this case, we accounted for statistical uncertainty by first identifying the policy that maximized one candidate’s vote-share (holding the other candidate’s position fixed) and then testing whether that vote share was statistically distinguishable at the 0.05 significance level from the vote shares the candidate obtained under alternative policies. 8 If not, these alternative policies were also counted as the best response. We see that, as before, the unique Nash equilibrium ( L, L ) coincides with the electoral median, although the set of best responses is now somewhat different. Finally, the appendix performs the same exercises for the three additional policy areas. In these cases, a multiplicity of equilibria can be found, and they are always placed next to each other. For example, for education, if a respondent ranked L as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 7,
+        "text": "8 This was done using the test for equality of two independent proportions, see Hollander, Wolfe and Chicken ( 2014 , Chapter 10).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 8,
+        "text": "0.48 0.58 0.51 0.45 0.42 0.53 0.44 0.39 0.49 0.56 0.49 0.42 0.55 0.61 0.58 0.5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 9,
+        "text": "0.52 0.42 0.49 0.55 0.58 0.47 0.56 0.61 0.51 0.44 0.51 0.58 0.45 0.39 0.42 0.5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 10,
+        "text": "LL L R RR Candidate 1 Candidate 2 loss tie win The MEDIAN policy is L Immigration",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 11,
+        "text": "* marks best responses, candidate 1 in blue (first row), candidate 2 in red (second row) Figure 3: The single-dimensional Downs-Hotelling model: empirical best response functions for immigration policy; candidates maximize vote shares",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 12,
+        "text": "their most preferred policy, they almost always ranked LL as their second preferred policy, and vice versa. Therefore, both ( LL, LL ) and ( L, L ) are Nash equilibria.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 13,
+        "text": "Spatial Competition with a Valence Advantage",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 14,
+        "text": "Valence factors, e.g., a politician’s level of competence ( Stokes , 1963 ), can alter the logic of the Downs-Hotelling model by leading to policy divergence. All else being equal, if one candidate has a non-policy-based electoral advantage, the usual convergence result at the location of the median voter would simply lead to a deterministic victory by the candidate with the valence advantage. However, assuming uncertainty about the distribution of voter preferences allows for a more nuanced equilibrium: the valence-advantaged politician generally locates at moderate positions close to where the median voter is expected. In contrast, the disadvantaged candidate takes",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 15,
+        "text": "more extreme positions in the hope of realizing voter preferences such that the median voter’s location gives them an unlikely victory. Hence, the solution exists in mixed strategies where the valence candidate aims to match their opponent’s position while the disadvantaged candidate aims to avoid their opponent while hoping to end up with a surprisingly popular position ( Bernhardt and Ingerman , 1985 ; Groseclose , 2001 ; Aragones and Palfrey , 2002 ). Recent studies have built upon this framework by considering endogenous development of a valence advantage ( Ashworth and De Mesquita , 2009 ) as well as the interaction of a valence advantage with polarization ( Buisseret and Van Weelden , 2021 ). Moreover, a valence advantage can allow for characterization of a pure strategy equilibrium in a multidimensional policy space ( Ansolabehere and Snyder , 2000 ). Furthermore, observational evidence provides support for the prediction that valenceadvantaged candidates take more moderate positions with regards to their electoral district while their opponents take more extreme positions ( Stone and Simas , 2010 ). Observational evidence further suggests that a valence disadvantage – in this case, corruption – can be overcome by partisan preferences ( Eggers et al. , 2014 ). Experimental evidence also suggests that a valence disadvantage with respect to antidemocratic behavior may be overlooked to support a candidate with preferred policies ( Graham and Svolik , 2020 ). We test the empirical prediction that a valence-advantaged candidate holds a best response to locate at a moderate position close to the median voter and will win an election if their opponent takes the same position. Furthermore, the valencedisadvantaged candidate has a best response to pursue the median voter’s position but avoid overlap with their opponent. Therefore, the disadvantaged candidate may sometimes take extreme positions. In Figures 4a - 4d , candidate 1 has a valence-disadvantage, which means that can-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 16,
+        "text": "didate 2 is the valence-advantaged politician. As predicted, the valence-advantaged candidate wins easily when the politicians take the same policy position. Moreover, the valence-disadvantaged candidate is generally best off in terms of vote-share (occasionally tying) when they are located at L, which is the overall location of the median voter. While the spatial model predicts that the disadvantaged candidate will locate at extreme positions, this is because they are attempting to maximize their vote-share by following the median voter (under uncertainty). Thus, the disadvantaged candidate locating at L can be seen as consistent with the predictions of the model. In terms of equilibria, convergence can exist as a Nash equilibrium if one assumes that politicians care only about winning, losing, or tying (rather than vote-share). In this case, candidate 1 is indifferent among losing positions, so convergent action profiles, e.g. ( L, L ), are often an equilibrium (this particular action profile is not an equilibrium for tax policy). However, when politicians care about vote-share, convergence may no longer be an equilibrium. Consider the case where the valenceadvantaged candidate plays L. Candidate 1 is then better off moving to the left or right of L for immigration and marijuana policy (Figures 4b - 4c ). For tax policy (Figure 4d ), moving to the right helps candidate 1’s vote-share. Finally, for education policy (Figure 4a ), locating at L remains best for candidate 1. In fact, the only action profile where candidate 1 can ever win according to vote-share (even though it remains a statistical tie) occurs for the education policy scenario. This happens when candidate 2 plays the most right-wing policy (RR) and candidate 1 plays the most popular policy L. However, given this action profile, candidate 2 is not best responding and would, thereforem deviate to any left-wing policy. Overall, the model is consistent with the theoretical prediction that the valenceadvantaged candidate will easily win when positions converge. In fact, perhaps",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 17,
+        "text": "surprisingly, the valence-advantaged candidate is often able to win when they take positions next to the overall median position of L. Moreover, it appears that the valence-disadvantaged politician is best-off chasing the median voter, except when the advantaged candidate locates at that position.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 18,
+        "text": "(a) Education (b) Immigration",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 19,
+        "text": "(c) Marijuana (d) Tax Figure 4: Best Responses with Valence",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 20,
+        "text": "Further Features of Spatial Competition",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 3,
+        "section_name": "Empirical Best Response",
+        "paragraph_id": 21,
+        "text": "We are currently working on extensions to multidimensional voting and turnout.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 4,
+        "section_name": "Rationalizing Empirical Best Responses",
+        "paragraph_id": 0,
+        "text": "A key assumption of the Median Voter Theorem is that voters have single-peaked preferences along a unidimensional policy space. 9 Technically, this means that the voter’s utility function is strictly quasi-concave, which ensures a strictly monotonic relationship toward and away from the voter’s unique bliss point. Assuming singlepeaked preferences is useful because it ensures that the aggregated preferences of voters are rational, i.e., complete and transitive. Transitivity ensures that there is a policy that wins in pairwise voting, i.e., a Condorcet winner. If collective preferences are not transitive, then there may be ‘Condorcet cycles’ in which any policy can be beaten by any other policy in pairwise voting. Such cycles are relatively common. For example, allowing for indifference among four choices, cycles can occur about 17% of the time when considering large numbers of voters ( Riker ( 1982 ), p. 122). Ehlers and Storcken ( 2008 ) find that when there is an odd number of voters, majority voting is transitive if and only if preferences are strictly quasi-concave. However, quasi-transitivity allowing for indifference can also ensure that there is a Condorcet winner, but it may not be unique (i.e., there may be ties in pairwise comparisons). To rationalize the empirical players/voters in the conjoint experiment, we now consider the frequency with which respondents hold single-peaked preferences. Prior to the candidate-choice conjoint experiment, respondents reported their preferences in four policy areas: immigration, education financing, tax rates, and marijuana regulation. For each policy area, respondents rated four positions ranging from liberal to conservative on a scale from 0 (strongly oppose) to 100 (strongly support). 9 For a multidimensional policy space, preferences must be symmetrically single-peaked for the Median Voter Theorem to hold and, thus, for a Condorcet winning policy to exist.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 4,
+        "section_name": "Rationalizing Empirical Best Responses",
+        "paragraph_id": 1,
+        "text": "This preference scale allowed respondents to be indifferent between the four policy positions ranging from most liberal (“LL”) to most conservative (“RR”). As a result, there are 75 possible ways to rank the four policy positions, 24 of which are strict orders and the rest of which allow indifference between two or more policy positions. 10 Figures 5 and 6 show the preference ordering of all respondents when aggregated across policy areas (6,376 orders). The Figure 5 displays the twenty most common preference orders, and Figure 6 lists all 75 possible orders. The frequency of a given preference order is given in the panel title of an order. In the appendix, the empirical rankings are broken down by policy area. It is clear from the figures that respondents generally prefer liberal policies the most. Despite its advantages, the assumption of single-peaked preferences is rather restrictive. Of the 75 possible preference orders shown in Figure 6 , only 12 are singlepeaked. Thus, Black’s Median Voter Theorem would restrict voters to these 12 preferences. Note, however, that as Figure 5 shows, 7 of the 20 most common preferences in the survey are single-peaked. Besides single-peakedness, there are a number of other proposed preference restrictions ( Puppe , 2018 ). Preferences can allow for ‘plateaus’, where the voter is indifferent between policy positions that are adjacent. One definition is ‘singleplateaud’ preferences, which allow for indifference among the bliss points for neighboring policies. However, preferences must be strictly monotonic below the bliss plateau ( Bossert and Peters , 2013 ). There are also ”weakly single-peaked” preferences, which allow plateaus to exist anywhere along the policy space, which is the same as allowing weakly quasi-concave utility functions. Returning to the figures, the preferences in blue are weakly single-peaked. Of the 75 possible preference orders, 34 are weakly single-peaked. The appendix shows",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 4,
+        "section_name": "Rationalizing Empirical Best Responses",
+        "paragraph_id": 2,
+        "text": "10 The number of ways to order a ranking of elements while allowing indifference is known as the Ordered Bell Number.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 4,
+        "section_name": "Rationalizing Empirical Best Responses",
+        "paragraph_id": 3,
+        "text": "that social policies (immigration and marijuana) generally have weakly single-peaked preferences as their most common orderings, while economic policies (taxes and education) have more frequent violations of this preference restriction. There is a drawback to moving away from single-peaked preferences, as weaker preference restrictions may not have a Condorcet winning policy at the median preference, i.e., the Median Voter Theorem may no longer hold. Austen-Smith and Banks ( 2000 ) show that weak single-peaked preferences are acyclical when considering majority rule voting, which means that there exists a Condorcet winning policy. However, it is not necessarily uniquely defined, nor at the median position. Duggan ( 2016 ) extends this result. Note, however, that the more restricted single-plateaued preferences have fewer of these drawbacks ( Moulin , 1984 ). In addition, beyond single-peaked preferences, there are two closely related preference restrictions that can still produce the results of the Median Voter Theorem. First, there is the ‘order restriction’ assumption in majority voting proposed by Rothstein ( 1990 ). Instead of focusing on preferences, individuals are sorted along the policy space. Then, the median individual is decisive, and his bliss point dictates the winning policy. Moreover, this assumption has been generalized and shown to be equivalent to the ‘single crossing’ condition on utility functions ( Gans and Smart , 1996 ). This states that if two voters both prefer one policy over another, then all voters between the two voters have the same preference ( Puppe , 2018 ). This assumption allows individuals to have non-single-peaked preferences and still have a Condorcet winning policy at the position of the median voter ( Austen-Smith and Banks , 2000 ; Persson and Tabellini , 2002 ). Moreover, second, Sen proposed a ‘value restriction’ assumption to avoid cycling without single-peaked preferences, but this restriction is limited to orders over three choices ( Grofman , 2004 ). Finally, we consider whether preferences are single-peaked when aggregated across",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 4,
+        "section_name": "Rationalizing Empirical Best Responses",
+        "paragraph_id": 4,
+        "text": "Figure 5: Top Twenty Empirical Preference Orderings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 4,
+        "section_name": "Rationalizing Empirical Best Responses",
+        "paragraph_id": 5,
+        "text": "respondents. Figure 7 shows the distribution of respondents’ ideal policies on immigration (left) and the respondents’ mean ranking of non-ideal policies, conditional on their ideal policy (right). In the latter case, the bars represent the 95% confidence interval for the mean. We see that regardless of the voter’s ideal policy, the policy rankings are singlepeaked in expectation – even though we have shown that some respondents’ policy rankings violate single-peakness. Thus, the average rankings are single-peaked.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 0,
+        "text": "Figure 8 shows the percentage of respondents with single-peaked stated preferences by policy area, the percentage of times that respondents voted according to their",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 1,
+        "text": "Figure 6: Full Empirical Preference Orderings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 2,
+        "text": "LL L R RR Policy Fraction",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 3,
+        "text": "LL L R RR Policy Mean Rank Ideal Policy LL L R RR",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 4,
+        "text": "Figure 7: The distribution of respondents’ ideal policies on immigration (left) and the respondents’ ranking of non-ideal policies, conditional on their ideal point (right)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 5,
+        "text": "Figure 8: Uniqueness of PSNE, Single-peaked Preferences, and Rationality",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 5,
+        "section_name": "Bringing Preferences to Empirical Best Response",
+        "paragraph_id": 6,
+        "text": "stated preferences (i.e., they supported the candidate who most closely matched their preferences on a single policy dimension), and the number of pure strategy Nash equilibria (by the win/lose/tie or vote-share formulation). While the relationship warrants more rigorous examination, there appears to be a correlation between violations of single-peaked preferences with respect to tax policy and the existence of many more equilibria. This may be related to the existence of a policy cycle.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This article represents a sample of the empirical tests of key formal models in political science that are possible using the data available from candidate-choice conjoint experiments. We introduce a formalization of the empirical best response function and then employ this concept to provide support for several of the core assumptions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1355,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "and findings of formal models of political competition. In particular, we uncover that empirical best response functions to examine with data out-of-equilibrium behavior and found that it still led to convergence to the median voter’s preferences. Moreover, consistent with models of spatial competition where one candidate enjoys a valence advantage, we report that the valence-disadvantaged candidate loses with certainty. Finally, extending the results to examine the rationality of our empirical players, we found that individual respondents generally hold single-peaked preferences, which were consistently single-peaked when grouped by their top bliss point. In future iterations of the project, we intend to investigate whether individuals vote according to their stated preferences, and whether within-subject preference intensity affects vote choice. In addition, we are investigating multidimensional voting to provide empirical evidence in an area where prevailing models yield competing predictions. We also plan to examine empirical mixed strategies and turnout. In addition, we plan to use further conjoint experiments conducted in consolidated democracies to examine whether results vary across countries and electoral systems. Despite the incomplete analysis, the results support many of the underlying assumptions and predictions of spatial models. Therefore, we hope that the results provide an answer to skeptics of formal theory and, in particular, to critics of spatial models of political competition. Finally, we hope that this study will encourage other researchers to consider the potential of conjoint experiments to provide empirical tests of the predictions made by theoretical models.",
+        "extraction_warnings": ""
+    }
+]

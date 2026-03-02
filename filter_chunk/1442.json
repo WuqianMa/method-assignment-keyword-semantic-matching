@@ -1,0 +1,17 @@
+[
+    {
+        "paper_id": 1442,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "uncertainty of the economy and financial markets, as well as the broader limitations of knowledge. This measure, described in detail below, is primarily derived from the results of a topic modeling exercise using Latent Dirichlet Allocation (LDA)(Blei, Ng, and Jordan 2003). LDA identifies a predefined number of topics within a textual corpus by analyzing patterns of word frequencies and co-occurrences, enabling a structured examination of thematic content across the speeches. Given the breadth of themes addressed in the speeches over the extended period from 1996 to 2024, I have chosen to set the number of topics at twenty. The topic modeling exercise produces a matrix of topics by speeches, where each speech is assigned a weight for each topic, with the weights summing to one. This allows each speech to be quantitatively represented as a distribution of topic weights. The model also generates a list of words associated with each topic (see Appendix A for word lists corresponding to each bank). To enhance interpretability, I used a large language model to assign titles to each topic, leveraging",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Latent Dirichlet Allocation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    }
+]

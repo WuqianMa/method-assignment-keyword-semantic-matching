@@ -1,0 +1,62 @@
+[
+    {
+        "paper_id": 1528,
+        "section_id": 8,
+        "section_name": "Machine Learning",
+        "paragraph_id": 0,
+        "text": "Following recent advances in natural language processing and machine learning, we use a mixture of general-purpose and task-specific machine learning to assign a measure of slant to each news article in our universe. The general purpose component consists of the generative pre-trained transformer model GPT-4o by OpenAI. The task-specific component involves fine-tuning GPT-4o, using our expert labels as training data, for the specific task of assigning a measure of slant to a given news article based on its text. For the fine-tuning component, we provided GPT-4o with the same set of instructions as our expert raters, as well as with 2,955 articles from our training set containing the average of our two experts’ labels. The remaining 1,476 labeled articles were held out for validation. We only provided GPT-4o with each article’s headline and text; we did not provide any additional information, such as the URL of the article or the outlet it came from.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 8,
+        "section_name": "Machine Learning",
+        "paragraph_id": 1,
+        "text": "Fine-tuning GPT-4o yielded substantial improvements in the model’s ability to predict the average of our two experts’ labels. The Pearson correlation between the model’s predictions and the average of our two experts’ ratings in the hold-out portion of our training dataset is 0.72 when the model is not fine-tuned and 0.83 when the model is fine-tuned. Thus, the increase in precision due to fine-tuning is around 20%.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 0,
+        "text": "Next, we analyze how slant varies by news category and topic. This analysis compares opinion versus non-opinion pieces, local versus national versus international news, and slant differences across various topics. We use GPT-4o to extract these characteristics—see Appendix C for details.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 6,
+        "text": "Slant across News Topics Our last piece of analysis in this section investigates the distribution of slant across news topics. Appendix C provides a list of the news topics and descriptions thereof that we used when prompting GPT-4o to classify our articles into topics.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "GPT-4"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    }
+]

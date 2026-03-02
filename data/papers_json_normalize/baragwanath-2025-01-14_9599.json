@@ -1,0 +1,586 @@
+[
+    {
+        "paper_id": 1327,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Beyond the Canopy: How Satellite Data Resolution Influences Policy Evaluation and Deforestation Behavior ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Kathryn Baragwanath † University of Melbourne Nilesh Shinde ‡ University of Massachusetts Amherst",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Preliminary draft. Please do not cite or circulate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "Abstract Satellite data is essential for monitoring deforestation and informing environmental policy, but the resolution of these data can significantly influence both policy implementation and evaluation. This study examines the impact of Brazil’s 2008 Blacklisting policy in the Amazon, using multiple satellite datasets. We find that the dataset traditionally used for both monitoring and evaluation systematically overestimates the policy’s effectiveness due to its inability to detect small deforestation patches. We argue that its dual role as both the monitoring tool for enforcement and the source of data for policy assessment, together with its coarse resolution, leads to additional issues caused by strategic adaptation. By analyzing over 180 billion Landsat pixels, we identify significant discrepancies in deforestation patterns captured by varying resolutions of satellite data. Our analysis reveals that deforesting agents strategically adapt their behavior in response to stricter monitoring, creating smaller patches that evade detection by coarser datasets. These findings highlight the importance of high-resolution data for evaluating the true effects of deforestation policies and addressing strategic adaptations that challenge enforcement efforts. Keywords: Deforestation, Satellite Data, Policy evaluation, Brazilian Amazon",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "JEL classification: O2, Q58, Q18, Q23, Q28",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "∗ Author order is alphabetical, and both K.B. and N.S. contributed equally to this work. This paper benefited from generous comments from participants at Camp Resources XXX 2024, Data, Information, and the Environment Workshop 2024, Land, Environment, Economics and Policy Institute 2024, and UMass ResEcon Seminar 2023. † University of Melbourne. Email: kathryn.baragwanath@unimelb.edu.au ‡ University of Massachusetts Amherst. Email: nshinde@umass.edu",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Deforestation in the Brazilian Amazon has long been recognized as a critical driver of climate change, contributing significantly to global carbon emissions and the loss of biodiversity. The intricate balance between the Earth’s ecosystems is dependent on the stability of these forests, making the implementation of effective policies to combat deforestation an urgent priority. In order to design and assess the efficacy of these policies, accurate measurement of deforestation rates is fundamental. As satellite data becomes increasingly crucial for measuring and monitoring deforestation (Fuller, 2006), the choice of data source—particularly its resolution—emerges as a key factor in both policy evaluation and implementation (Ferraro, 2009; Avelino et al., 2016; Jain, 2020; Auffhammer et al., 2020; Alix-Garcia and Millimet, 2023; Proctor et al., 2023; Garcia and Heilmayr, 2024a). High-resolution satellite data can detect smaller deforestation patches that are often missed by coarser datasets, which have traditionally been used for monitoring and enforcing deforestation policies. The implications of this data choice are profound: it affects how we measure the success of conservation policies and how agents on the ground adapt their behavior to avoid detection. In this paper, we examine two critical issues which arise from the choice of satellite data resolution for deforestation policy evaluation and implementation: the measurement issue and strategic adaptation. The measurement issue refers to the fact that different resolution datasets might capture different amounts of deforestation, underscoring the importance of satellite data resolution on policy evaluation. Coarser datasets may miss deforestation from smaller patches, thus under-estimating overall deforestation. This has significant implications for how we evaluate policy outcomes as these data sources fail to capture smaller patches, they may also over-estimate the effectiveness of deforestation reducing policies. Furthermore, this may lead to strategic adaptation, which corresponds to a behavioral response to policy implementation when some illegal activity is imperceptible by the monitoring technology. When faced with stricter monitoring and harsher penalties, agents may adapt by engaging in smaller-scale deforestation that goes undetected by coarser satellite datasets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "This in turn compounds the measurement error, since agents in places which are being more closely monitored (or harshly penalized) have more incentives to evade detection. Thus, strategic evasion challenges the enforcement of deforestation policies and complicates efforts to accurately assess their impact. We study this in the context of the Brazilian Amazon, where deforestation reduction policies have historically been implemented and evaluated using the government produced dataset. The Program for the Calculation of Deforestation in the Legal Amazon (Projeto de Monitoramento do Desmatamento na Amazˆonia Legal por Sat ́elite–PRODES) dataset, developed by the Brazilian government, is the primary tool used to monitor deforestation in the Amazon. While it provides comprehensive coverage, it only captures deforestation patches larger than 6.25 hectares. This minimum patch size means that smaller-scale deforestation activities, which may still have significant ecological and environmental impacts, are often missed. To address this issue, we compare PRODES with higher-resolution datasets like MapBiomas, which are capable of detecting smaller deforestation patches up to 0.09 hectares ( ≈ 30m resolution) that fall below the PRODES threshold. This strategic adaptation to satellite-based monitoring is not merely theoretical. In a recent interview, the former Director of Environmental Protection at Brazilian Institute of Environment and Renewable Natural Resources (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renov ́aveis–IBAMA) describes how in 2014, an illegal deforestation operation in the Amazon had developed sophisticated methods to evade detection. According to Evaristo (2023), the leader of this operation “had created a new deforestation model specifically designed to deceive the DETER satellite.” The operation organized dozens of small camps, each employing eight chainsaw operators who would clear precisely 2.72 hectares per day—intentionally staying below DETER’s 6.25-hectare detection threshold. The sophistication of this evasion strategy extended to hiring GIS specialists to monitor satellite detection and relocate operations if discovered. This example illustrates how deforestation agents actively adapt their behavior in response to known limitations of satellite monitoring",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "systems, underscoring the importance of understanding both the technological constraints of different datasets and how these constraints might influence agent behavior. We first show that PRODES data systematically reports lower rates of deforestation than the higher resolution datasets. We find that on average, PRODES under-estimates average annual deforestation rates by about half of the total deforestation captured by MapBiomas. We then assess the effects of satellite data choice on both the implementation and evaluation of deforestation policies, focusing on the Blacklisting of municipalities. The Blacklisting policy, or Priority Municipalities (Munic ́ıpios Priorit ́arios–MPs), initiated in 2008 under Brazil’s Action Plan for the Prevention and Control of Deforestation in the Legal Amazon (Plano de A ̧c ̃ao para a Preven ̧c ̃ao e Controle do Desmatamento na Amazˆonia Legal–PPCDAm), targets municipalities with high deforestation rates by imposing stricter environmental monitoring, agricultural credit restrictions, and sanctions. The goal of the policy is to incentivize municipalities to reduce deforestation rates by increasing the costs of deforestation and enhancing monitoring efforts. The Blacklisting policy serves as an ideal case study because it not only relied on the PRODES dataset for both implementation—through monitoring deforestation—and evaluation, but it also involved stricter monitoring and higher penalties for “blacklisted” municipalities. This combination of increased scrutiny and harsher consequences makes Blacklisting a prime example of a policy where agents on the ground are highly incentivized to adapt their behavior to evade detection, particularly in contexts where deforestation is more closely monitored. To analyze these effects, we exploit the staggered entry of municipalities into the blacklist, employing synthetic difference-in-differences regressions to account for issues of selection into treatment and non-parallel pre-trends. Our findings indicate that PRODES data consistently overestimates the effects of blacklisting, with estimated effects about one third larger than those obtained using the higher resolution dataset, Mapbiomas. Using PRODES data, we find that blacklisting reduced annual deforestation by 0.466 percentage points, representing a 43.1% reduction from baseline deforestation rates in treated municipalities. However,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "when using the higher-resolution MapBiomas data, we estimate a more modest reduction of 0.313 percentage points, or 24.1% from baseline. This substantial difference in estimated effects—with PRODES showing impacts nearly twice as large as MapBiomas—suggests that relying solely on coarser resolution data may lead to overestimation of policy effectiveness. Our analysis points to strategic behavior modification by deforesting agents as a likely explanation for these discrepancies. We exploit the fact that MapBiopmas is able to capture significantly smaller patches of deforestation than PRODES, which allows us to see changes in deforestation patterns in time which may not have been captured by government agencies at the time of enforcement. Mapbiomas’ higher-resolution dataset does in fact detect much smaller patches than PRODES, revealing significant behavioral shifts over time. We document that the average deforestation patch size decreases notably following the enactment of PPCDAm in 2004, and even more so post-Blacklisting, emphasizing the influence of policy enforcement on deforestation practices. Following blacklisting, we document a significant decrease in the mean patch area of deforested land, with a reduction of 0.262 hectares (28.9%) relative to pre-treatment levels. This shift toward smaller clearing patterns is particularly pronounced in patches below PRODES’s detection threshold of 6.25 hectares. When analyzing deforestation by patch size categories, we find significant increases in the proportion of deforestation occurring in patches smaller than 6.25 hectares, and smaller than 25 hectares, after blacklisting, coupled with substantial decreases in larger patch categories, particularly in the 50-100 hectare and 200-1000 hectare ranges.This indicates not only that policy enforcement changed on the ground behavior, which inherently means that dataset selection for enforcement profoundly impacts the ground-level reality of deforestation, but also that dataset selection for policy evaluation may significantly over-estimate policy effects if it fails to account for such adaptive behavior by agents. Recognizing the potential ramifications of inaccuracies in satellite data on policy evaluation and implementation is critical. Inaccurate estimations can result in either the con-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "tinuation of ineffective policies or the premature discontinuation of what may be successful ones. Furthermore, there is a risk of policymakers or stakeholders selectively using datasets to portray their policies more favorably, leading to potentially biased evaluations. Our paper makes several key contributions to the literature on deforestation policy evaluation, environmental economics, and the use of remote sensing data. First, Our paper expands on the literature examining strategic adaptation to policy and regulation by focusing on how deforestation agents modify their behavior in response to increased monitoring. Similar to the findings of Olken and Barron (2009), who documented how Indonesian truck drivers adapted to avoid extortion, we show that deforestation agents in Brazil strategically reduce the size of deforestation patches to evade detection. This behavior mirrors the dynamics in Duflo et al. (2013), where firms manipulated environmental reports in response to audits. In our context, intensified monitoring in blacklisted municipalities leads to smaller, harder-to-detect deforestation patches, complicating enforcement. This underscores the broader theme that policy interventions, while well-intentioned, can produce unintended strategic behaviors that weaken their effectiveness. This aligns with findings that environmental offsets can sometimes encourage harmful behaviors (Kotchen, 2006, 2009). In the case of Brazil’s Blacklisting policy, we demonstrate that stricter enforcement prompts strategic deforestation evasion, paralleling unintended effects observed in policies such as residential energy consumption (Jacobsen et al., 2012) and building energy codes (Kotchen and Grant, 2011). These findings underscore the importance of anticipating behavioral responses when designing environmental policies. Second, we add to the literature on the impact of data resolution on policy effectiveness. Prior work by Weiss et al. (2020), Proctor et al. (2023), and Alix-Garcia and Millimet (2023) has demonstrated how varying resolutions can lead to different assessments of policy impact. In the Brazilian Amazon context, Kalamandeen et al. (2018) document a pervasive rise in small-scale deforestation using Global Forest Change (GFC) data, showing that small clearings (¡1 ha) increased by 34% between 2001-2007 and 2008-2014 and accounted for about",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "39% of total Amazonian forest loss. While their analysis reveals these important patterns, it is descriptive in nature and does not identify the underlying causes of these changes nor connect them to policy-relevant thresholds like PRODES’s 6.25 ha or DETER’s 25 ha cutoffs. Moreover, as Garcia and Heilmayr (2024b) highlight, their use of GFC data has important limitations: it provides only binary, non-repeatable outcomes, meaning deforestation can be captured just once within each pixel. Our paper addresses these challenges by using PRODES alongside Mapbiomas data, which allows us to resolve many of the concerns around binary non-repeatable outcomes 1 . Using the Blacklisting program as a significant shock to enforcement, we demonstrate not only how the choice of satellite data affects perceptions of policy success, but also that the rise in small-scale deforestation reflects strategic behavior by regulated agents. We go beyond issues of measurement error to examine how agents respond when monitoring systems are ”blind” to smaller deforestation patches. Thus, our paper adds to the growing body of work on satellite data use by incorporating both behavioral responses and technical considerations around resolution and classification. Third, our study advances the application of remote sensing data within environmental economics by implementing a highly scalable framework for analyzing deforestation at the pixel level across the Legal Amazon. The integration of Google Earth Engine (GEE) and the Landsat satellite archives has transformed the study of land-use change, as noted by Donaldson and Storeygard (2016), Straub et al. (2019), and Wulder et al. (2022). Building on these technological advancements, our analysis employs GEE in conjunction with Python and R-based landscape metric tools to process approximately 180 billion pixels, covering the full spatial extent of the Brazilian Amazon. We further adapt the FragStats methodology (McGarigal, 1995; Hesselbarth et al., 2019; Nowosad and Stepinski, 2019) within this big-data framework, allowing the computation of detailed patch-level statistics. This adaptation allows us to assess the size, distribution, and spatial characteristics of deforested areas before and after policy interventions with exceptional granularity. Our approach not only 1 Mapbiomas allows us to track both deforestation and reforestation within the same pixel over time, ensuring that the non-repeatability issue is not present in our data",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "reveals deforestation patterns but also uncovers strategies of evasion by deforesting agents, demonstrating the significant policy insights gained from such data-intensive analysis. By tailoring our framework to process deforestation data from both MapBiomas and PRODES datasets, we provide a robust and replicable method for analyzing land-use changes across vast geographies. Finally, we contribute to the growing body of work evaluating deforestation programs (Gibbs et al., 2015; Assun ̧c ̃ao et al., 2015, 2023; Cisneros et al., 2015) by providing a comprehensive analysis of Brazil’s Blacklisting program. Building on prior evaluations by Assun ̧c ̃ao and Rocha (2019), Assun ̧c ̃ao et al. (2023) and Cisneros et al. (2015), we offer new insights into how this program influences deforestation outcomes across municipalities. By leveraging high-resolution satellite data and advanced econometric techniques, our study deepens the understanding of the policy’s effectiveness, while highlighting the importance of satellite data resolution in policy evaluation. The rest of the paper is organized as follows. Section 2 gives an overview of the main deforestation data sources used in Brazil, focusing on PRODES and MapBiomas. Section 3 explains the background of blacklisting policy. Section 4 describes our approach, including staggered difference-in-differences and generalized synthetic controls. Section 5 shows our main findings on the impact of blacklisting municipalities, comparing results across datasets and looking at how deforestation agents adapt. Section 6 discusses the results related to the social cost of carbon. Finally, Section 7 wraps up with policy implications and recommendations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 2,
+        "section_name": "Satellite Data and Deforestation Policy in Brazil",
+        "paragraph_id": 0,
+        "text": "Forest governance and monitoring initiatives have significantly benefited from recent advancements in estimating fine-scale temporal and spatial deforestation rates using remotely sensed data (Fuller, 2006). Platforms like Google Earth Engine (GEE) have revolutionized",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 2,
+        "section_name": "Satellite Data and Deforestation Policy in Brazil",
+        "paragraph_id": 1,
+        "text": "large-scale computing by co-locating data catalogs and processing capabilities, making remotely sensed data widely accessible (Gorelick et al., 2017). This has enabled consistent deforestation monitoring and estimates with global coverage, as demonstrated by initiatives like the Global Forest Watch (GFW) (Hansen et al., 2013; GFW, 2022). In the case of Brazil, the Mapbiomas project has leveraged the entire Landsat archive to construct annual land-use classification maps (Souza Jr et al., 2020). Remotely sensed data offers several advantages for applied economics research, providing consistent, high-resolution, and long-term observations of phenomena (Donaldson and Storeygard, 2016). This data can facilitate the identification of causal relationships by providing quasi-experimental variation in exposure to environmental or policy changes (Jayachandran et al., 2017). However, establishing causality using satellite data can be challenging, as observational data may not provide sufficient control over confounding factors (Ferraro, 2009; Andam et al., 2008). Careful attention must be paid to the choice of data sources and methodological approaches to avoid biased policy evaluation results (Jain, 2020; Alix-Garcia and Millimet, 2023; Proctor et al., 2023; Garcia and Heilmayr, 2024a). Satellite data has played a crucial role in monitoring and enforcing deforestation policies in Brazil. The country’s Action Plan for the Prevention and Control of Deforestation in the Legal Amazon (PPCDAm), implemented in 2004, relied heavily on satellite data to track deforestation rates (Assun ̧c ̃ao and Rocha, 2019; Assun ̧c ̃ao et al., 2015). The Program for the Calculation of Deforestation in the Legal Amazon (PRODES) dataset, developed by the Brazilian government, is the primary tool used to monitor deforestation in the Amazon (Assun ̧c ̃ao and Rocha, 2019). We begin by presenting two widely used sources of deforestation data in Brazil: PRODES and MapBiomas, and comparing their capacity to detect deforestation given their different resolutions. While PRODES is the primary government-used dataset, it only captures deforestation patches larger than 6.25 hectares. In contrast, MapBiomas relies on higherresolution 30-meter satellite imagery, allowing them to detect smaller deforestation patches",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 2,
+        "section_name": "Satellite Data and Deforestation Policy in Brazil",
+        "paragraph_id": 2,
+        "text": "that fall below the PRODES threshold. We compile a municipality-year panel dataset for 773 municipalities in the Brazilian Amazon from 2000 to 2019, measuring annual deforestation using all three of these satellite-based datasets. We then go on to analyze how the choice of deforestation data can impact the measurement of deforestation, as well as the evaluation and implementation of policies aimed at reducing deforestation in the region.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 3,
+        "section_name": "Different Sources of Deforestation Data",
+        "paragraph_id": 0,
+        "text": "PRODES: PRODES, maintained by Brazil’s National Institute for Space Research (Instituto Nacional de Pesquisas Espaciais–INPE), is the official monitoring system for deforestation in the Brazilian Amazon. It focuses on clear-cut deforestation, utilizing satellite imagery from Landsat and other sensors to detect forest losses greater than 6.25 hectares in primary forest areas (Brazilian National Institute for Space Research (INPE), 2021). PRODES reports annual deforestation rates across Brazilian municipalities since 1988 and has been used to generate the official government statistics on annual deforestation rates in the Brazilian Legal Amazon (Almeida et al., 2013). The PRODES system identifies clear-cut deforestation of only the old-growth forests, and once an area is identified as deforested, it is not revisited in subsequent years. This means that the deforestation rate captured by PRODES is the annual increment of previous years. The mapping year (reference year) comprises August 1 of the prior year to July 31 of the reported year. PRODES uses a combination of medium spatial resolution images (20 to 30-m) to minimize cloud cover interference and ensure interoperability, but this also means that deforestation patches smaller than 6.25 hectares cannot be captured by this system. Mapbiomas: Mapbiomas is a non-governmental initiative that uses a combination of highresolution satellite images and machine-learning algorithms to map land use and land-cover changes in Brazil, including deforestation (Souza Jr et al., 2020). MapBiomas Collections (1-8) map Brazil’s annual land cover and land use at a 30-meter resolution (based on Landsat data), with improved accuracy in biomes and new agriculture classes (Souza Jr et al., 2020).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 3,
+        "section_name": "Different Sources of Deforestation Data",
+        "paragraph_id": 1,
+        "text": "Mapbiomas uses the new maps of biome limits produced by IBGE on a scale of 1:250,000 and is one of the most extensive land use classification projects available, estimating forest cover, secondary forest growth, and primary forest growth, as well as many other land-use classifications calibrated to the Brazilian reality.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 0,
+        "text": "estation and evaluating deforestation policy",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 1,
+        "text": "The PRODES and Mapbiomas datasets employ distinct methodologies for measuring deforestation, which can result in varying deforestation estimates. PRODES specifically targets clear-cut deforestation of old-growth primary forest, while Mapbiomas includes other types of land-cover changes, such as selective logging and secondary forest loss. Furthermore, the spatial and temporal resolutions of the satellite images used by each dataset can impact the detection of deforestation events, particularly when considering small-scale or fragmented forest loss. These differences in measurement approaches can have important implications for evaluating the effectiveness of deforestation policies in Brazil through two main channels. First, coarser datasets might systematically underestimate deforestation, by missing deforestation that occurs in smaller patches which it can’t detect. We call this the measurement issue. Second, and more pervasive, when illegal deforesters know they are being monitored by technologies which have these “blind spots”, they may adjust their deforestation behavior in order to avoid detection, thus deforesting in smaller patches. We call this strategic adaptation. To illustrate the measurement issue, consider Figure 1. The image on the far left in Panel (a) displays the landuse grid, where dark blue grids represent real forest loss. In reality, there has been a total of 16 hectares of deforestation, and the mean area of the deforestation patches is 8 hectares. When we observe this landuse grid using a high resolution dataset like Mapbiomas, we are able to capture the full 16 hectares of deforestation, and identify a mean",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 2,
+        "text": "patch are of 8 hectares as shown in Panel (b). However, if we use a dataset with a coarser resolution like PRODES, which has a minimum detectable area of 6.25 hectares, we will only be able to capture a total deforestation area of 12 hectares, while only identifying one patch (the larger patch which is 12 hectares), as in Panel (c). This leads to two key measurement issues: PRODES underestimates the total deforestation and also overestimates the mean patch size.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 3,
+        "text": "((a)) Landuse Grid Total Deforestation: 16h Mean Patch Area: 8h ((b)) MapBiomas Total Deforestation: 16h Mean Patch Area: 8h ((c)) PRODES Total Deforestation: 12h Mean Patch Area: 12h Figure 1: Measurement Issues",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 4,
+        "text": "((a)) Landuse Grid Total Deforestation: 16h Mean Patch Area: 3.5h ((b)) MapBiomas Total Deforestation: 16h Mean Patch Area: 3.5h ((c)) PRODES Total Deforestation: 0h Mean Patch Area: 0h Figure 2: Strategic Adaptation Issues",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 5,
+        "text": "Figure 2 illustrates an extreme case of strategic adaptation, where agents deliberately",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 4,
+        "section_name": "Why these datasets might lead to issues in measuring defor-",
+        "paragraph_id": 6,
+        "text": "fragment their deforestation activities to avoid detection. The figure shows the same total area of deforestation (16 hectares) as in Figure 1, but now distributed across smaller patches with a mean area of only 3.5 hectares. While Mapbiomas can still detect the full extent of deforestation due to its higher resolution, PRODES fails to identify any deforestation at all because every single patch falls below its 6.25-hectare detection threshold. This scenario represents a complete adaptation to monitoring technology: agents who are aware of PRODES’s limitations can strategically deforest in smaller patches to entirely evade detection in the official monitoring system. This type of strategic behavior not only leads to measurement error but could also result in severely biased estimates of policy effectiveness, particularly in areas where enforcement and monitoring are more stringent and thus where agents have stronger incentives to adapt their behavior to avoid detection.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 5,
+        "section_name": "Comparison of the Datasets",
+        "paragraph_id": 0,
+        "text": "Using these sources of satellite data, we construct comparable deforestation measures for annual deforestation. First, we collect Brazil’s official estimates from INPE’s PRODES for municipalities in the Brazilian Amazon 2 . Second, we collect non-governmental estimates within Brazil from the Mapbiomas collection 8 3 . Figure 3 shows the variation in deforestation estimates across the two datasets over the period from 2001 to 2019. We observe that PRODES and Mapbiomas exhibit similar trends, with peaks around 2004 and a decline in deforestation until 2011, followed by a slight rise after 2012 when the new Forest Code was implemented and there were many changes to deforestation policy in Brazil. Importantly, the higher-resolution datasets, Mapbiomas, consistently identify more hectares 2 These estimates are available from Brazil’s official INPE portal, named TerraBrasilis. This web portal, developed by INPE, provides access, query, analysis, and dissemination of spatial data generated by government environment monitoring programs such as PRODES and DETER. For a detailed illustration of official forest monitoring in Brazil, please refer to (Almeida et al., 2013) 3 Mapbiomas collection 8 was the latest at the time of the study in 2022. Since then, the Mapbiomas collection has released new series under collection 7. These new series regularly update the latest year, maintaining the foundational objective and method (and therefore estimates) intact. Please refer to (Souza Jr et al., 2020) for the objective, method, and data information.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 5,
+        "section_name": "Comparison of the Datasets",
+        "paragraph_id": 1,
+        "text": "Figure 3: Deforestation Time Series measured by PRODES and Mapbiomas",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 5,
+        "section_name": "Comparison of the Datasets",
+        "paragraph_id": 2,
+        "text": "of deforestation compared to PRODES, and this difference appears to accentuate after the implementation of the PPCDAm program and the Blacklisting policy in particular. For instance in 2007, the year before blacklisting, PRODES identified a total deforestation of 11478 km 2 , while Mapbiomas captured a total deforestation of 18778 km 2 . In Figure 3, we calculate deforestation based on Mapbiomas data but imposing the “artificial” limitation that it can only capture deforestation patches over 6.25 hectares. This is presented in the dark orange line, which is very similar to the PRODES data. This exercise shows all the deforestation that is occurring which PRODES data is missing due to the minimum mapping threshold and coarser resolution. When we look at the data in space, Figure 4 further illustrates these differences. In Figure 4, we see maps presenting total deforestation within each municipality in 2007, the year before the blacklisting began. While PRODES identifies dozens of municipalities with annual deforestation greater than 100 km 2 , the Mapbiomas dataset reveals a broader pattern of high deforestation, with more municipalities along the outskirts of the deforestation arc exceeding this threshold especially in the North-Eastern and South-Western parts of the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 5,
+        "section_name": "Comparison of the Datasets",
+        "paragraph_id": 3,
+        "text": "Legal Amazon. We can clearly see that using Mapbiomas, more municipalities appear to have problematically high levels of deforestation, an issue which may be missed if relying only on PRODES data.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 5,
+        "section_name": "Comparison of the Datasets",
+        "paragraph_id": 4,
+        "text": "Figure 4: The figure illustrates the municipal normalized deforestation from two sources of data, PRODES (a) and Mapbiomas (b). Cooler tones (blues) indicate lower levels of deforestation, while warmer tones (yellows) indicate higher levels of deforestation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 5,
+        "section_name": "Comparison of the Datasets",
+        "paragraph_id": 5,
+        "text": "These patterns in the data provide compelling evidence for both the measurement issue and strategic adaptation. First, the fact that high-resolution datasets consistently identify approximately twice the deforestation captured by PRODES (20 km 2 versus 10 km 2 per municipality annually) points to a significant measurement issue inherent in using coarser resolution data. Second, the divergence between PRODES and high-resolution measurements becomes particularly pronounced after 2009, coinciding with the implementation of the Blacklisting policy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 6,
+        "section_name": "Blacklisting of Brazilian Municipalities (Munic´ıpios",
+        "paragraph_id": 0,
+        "text": "The Blacklisting of Municipalities program, also known as the “A Listagem de Munic ́ıpios Priorit ́arios” or “Priority Municipalities List,” is a Brazilian government initiative implemented in 2008 to combat deforestation in the Amazon region (Arima et al., 2014). The program was established under the federal Action Plan for the Prevention and Control of Deforestation in the Legal Amazon (PPCDAm), which aimed to reduce deforestation rates by 80% by 2020 compared to the 1996-2005 baseline. Under the Blacklisting program, municipalities with high deforestation rates and environmental crimes were designated as “priority municipalities” and subjected to a series of strict environmental regulations and enforcement actions. The criteria used to determine whether a municipality would be added to the blacklist were established in Decree 6.321/2007: (i) the total area of deforested forest, (ii) the total area deforested in the last three years, and (iii) an increase in the deforestation rate in at least three of the last five years. These criteria were measured using PRODES data, which means that the policy’s implementation relied on a dataset that could only detect deforestation patches larger than 6.25 hectares. The blacklisted municipalities faced a series of consequences, including (i) increased enforcement of environmental regulations, where the Brazilian Institute of Environment and Renewable Natural Resources (IBAMA) intensified monitoring and enforcement actions in these areas, resulting in increased fines and penalties for illegal deforestation activities (B ̈orner et al., 2015); (ii) restrictions on agricultural credit, as the Central Bank of Brazil implemented measures to restrict access to agricultural credit for landowners in blacklisted municipalities who did not comply with environmental regulations (Arima et al., 2014); and (iii) suspension of rural property registration, where the government suspended the registration of new rural properties in these municipalities, hindering landowners from obtaining legal documentation for their land and restricting their access to credit and other resources",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 6,
+        "section_name": "Blacklisting of Brazilian Municipalities (Munic´ıpios",
+        "paragraph_id": 1,
+        "text": "Figure 5: Blacklisting by Year of Designation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 6,
+        "section_name": "Blacklisting of Brazilian Municipalities (Munic´ıpios",
+        "paragraph_id": 2,
+        "text": "(Assun ̧c ̃ao and Rocha, 2019). Figure 5 shows the staggered designation of municipalities into the blacklist, with a large number of them designated at in 2008, the initial year of the program, where we see 21 municipalities designated, followed by 7 in 2009, 3 in 2011, 3 in 2012. Following strong political opposition and the passing of the Forest Code in 2012, there was a pause in the program, and no municipalities were designated until 2017, when 8 municipalities were designated followed by 2 more in 2018. As we will discuss below, we will focus our analysis on the period between 2004 and 2012, when the blacklisting program was active under its initial design, and we expect most of its effects to have taken place.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 7,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "To analyze the effects of Blacklisting, we employ synthetic differences-in-differences (Arkhangelsky et al., 2021) in order to account for the fact that municipalities are selected into treatment based on observed past deforestation. Below, we present our data and empirical method.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 8,
+        "section_name": "Dependent variables",
+        "paragraph_id": 0,
+        "text": "PRODES deforestation rate variable (%) represents the deforestation rate detected by Brazil’s official monitoring system, calculated as the ratio between the deforested area identified by PRODES and the total forest coverage in the baseline year 2000, ranging from 0 to 100 percent. This metric specifically captures clear-cut deforestation events larger than 6.25 hectares in primary forest areas, following PRODES’ methodology discussed above and recording each deforested patch only once in the year it is first detected. Table 1 shows the values for PRODES total deforestation in km 2 , as well as our main dependent variable in percentage points. We can see clearly that treated municipalities have significantly higher values of deforestation in 2007 (the year before most municipalities get treated), with an average deforestation rate of 150 km 2 . MapBiomas deforestation rate variable (%) measures the deforestation rate identified through MapBiomas computed as the percentage of deforested area relative to the total forest extent in 2000, with values between 0 and 100 percent. Unlike PRODES, this variable captures a broader spectrum of forest changes due to MapBiomas’ ability to detect smallerscale deforestation events and its comprehensive land-use classification system that accounts for both primary and secondary forest dynamics at 30-meter resolution. Table 1 shows the values for Mapbiomas total deforestation in km 2 , as well as our main dependent variable in percentage points. We can see clearly that treated municipalities have significantly higher values of deforestation in 2007 (the year before most municipalities get treated), with an average deforestation rate of 175 km 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 9,
+        "section_name": "Treatment",
+        "paragraph_id": 0,
+        "text": "We consider a municipality as treated if it is included in the blacklist. The treatment variable is assigned a value of 1 in the year that a municipality is enters into the blacklist and remains 1 for subsequent years that the municipality remains blacklisted. For years when a municipality is not blacklisted or removed from the blacklist, the treatment variable is assigned a value of 0. During 2008 to 2018, in total, 60 municipalities entered the blacklist, out of which 21 eventually exited, while 39 remained blacklisted. These municipalities are shown in Figure 5, where lighter colors represent earlier blacklisted municipalities while darker ones represent later entrants into the blacklist. In our analysis, we are focusing on 2004-2012, which contains 34 municipalities which entered the blacklist (considered switchers in the analysis) during this period. Once a municipality enters, we consider it treated for the remaining years in the sample 4 . We decide to focus on this subset of years because 2004 marks a significant change in deforestation policies in Brazil with the implementation of PPCDAm. This makes it more difficult to compare these pre-periods with post treatment periods. We decide to stop our analysis in 2012 because this marks the year that the Forest Code was passed in Brazil, significantly changing the laws around deforestation and land use, and also leading to a relaxation in environmental monitoring, which could have led to the blacklisting program loosing efficacy. We provide a set of evidence below showing how deforestation trends change at these important year markers, with 2004, 2008 and 2012 representing important years.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 10,
+        "section_name": "Covariates",
+        "paragraph_id": 0,
+        "text": "The list of covariates that we include in our models comprise climatic, economic, and policy enforcement variables. Climatic factors are considered a primary driver of forest loss and recovery (Zeng et al., 2019). Earlier research has discussed the local impact of precipitation 4 Assun ̧c ̃ao and Rocha (2019); Assun ̧c ̃ao et al. (2023) both use a similar strategy. Note that 2 municipalities were removed from the blacklist by 2012 and a further 4 were removed in 2012.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 10,
+        "section_name": "Covariates",
+        "paragraph_id": 1,
+        "text": "Table 1: Summary statistics by group",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 10,
+        "section_name": "Covariates",
+        "paragraph_id": 2,
+        "text": "Total Sample Treated Sample Untreated Sample ( N = 6822) ( N = 306) ( N = 6516) Variable Mean SD Mean SD Mean SD Panel A: 2004-2012 Averages Deforested area-PRODES 15.95 53.48 143.87 178.56 9.95 26.41 Deforested area-MapBiomas 24.53 59.62 176.95 179.24 17.37 32.79 Deforested (%)-PRODES 0.62 1.59 1.06 1.09 0.60 1.61 Deforested (%)-MapBiomas 1.65 2.61 1.35 1.14 1.67 2.66 Forested area 4884.09 13154.01 20188.03 28265.34 4165.40 11499.38 Rainfall 5.06 0.27 5.10 0.18 5.06 0.28 Temperature 5.76 0.03 5.77 0.02 5.76 0.03 Protected area 1563.76 6402.84 6920.62 14632.82 1312.19 5611.31 Population density 23.38 126.61 2.82 3.23 24.35 129.47 Population 30592.88 97928.46 45370.02 71977.76 29898.92 98929.94 GDP per capita 8090.95 9140.99 9597.99 7366.38 8020.17 9210.34 Panel B: 2007 Cross-Section Deforested area-PRODES 15.14 50.29 150.26 170.36 8.80 20.61 Deforested area-MapBiomas 24.83 57.40 174.82 174.58 17.79 30.84 Deforested (%)-PRODES 0.47 0.96 1.05 0.81 0.44 0.96 Deforested (%)-MapBiomas 1.77 3.14 1.30 1.01 1.80 3.20 Forested area 4884.09 13161.73 20188.03 28643.49 4165.40 11506.45 Rainfall 4.97 0.31 5.03 0.21 4.96 0.31 Temperature 5.76 0.03 5.77 0.03 5.76 0.03 Protected area 1563.38 6406.68 6920.62 14828.59 1311.80 5614.84 Population density 22.61 124.54 2.70 3.00 23.54 127.36 Population 29408.51 94714.12 43332.77 67181.24 28754.61 95797.07 GDP per capita 6537.18 6086.65 7351.37 3788.37 6498.94 6172.67 NOTE: This table reports municipality-level means and standard deviations (SD) for variables used in the analysis across treated, untreated, and full samples based on ‘blacklisting’ between 2004 to 2012. MapBiomas values corrsponds to > 09ha estimates, while PRODES are by default at > 6.25ha. Deforested Area ( km 2 ) indicates annual deforestation, while Forest Area ( km 2 ) is the total forest area at the start of the year. Deforested Share (%) is the annual deforested area as a percentage of the initial forested area. Protected Area ( km 2 ) represents land under legal protection (indigenous lands or conservation units). GDP is expressed in December 2019 Reais. Rainfall is in millimeters, and temperature in degrees Celsius.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 10,
+        "section_name": "Covariates",
+        "paragraph_id": 3,
+        "text": "and temperature variation on deforestation (Anderson et al., 2018). Moreover, climatic factors are widely understood as primary drivers to affect secondary forest recovery (Zeng et al., 2019). To account for the effect of precipitation and temperature variation in our analysis, we include municipality-level yearly mean annual precipitation (mm), and temperature (K) constructed using GEE from the TerraClimate database (Abatzoglou et al., 2018). To effectively control for local economic activity at the municipal level, we include measures of municipal gross domestic product (GDP). This measure reflects the total value of all goods and services produced within the local economy. We obtain GDP measures by aggregating the gross value added (GVA) of all agriculture, industries, and services operating within a municipality from IBGE 5 . Furthermore, population density is a critical factor both for economic outcomes and forest outcomes (Mullan et al., 2018; Gori Maia and Schons, 2020). Population density can significantly influence deforestation pressure, migration patterns, as well as urban growth. We measure population density by dividing number of inhabitants by area of municipality. Lastly, the area of protected land (under Protected Areas, National Parks or Indigenous Territories) within a given municipality also plays a crucial role in assessing the forest protection policy enforcement. This variable serves a dual purpose: it indicates the availability of land for protection and also signals the level of monitoring within the municipality, as multiple agencies may be involved in forest protection. These variables, collected from various sources and databases, capture different dimensions of the socio-economic, environmental, and policy contexts relevant to the analysis. By incorporating these variables into the empirical framework, we aim to better understand the factors influencing deforestation outcomes and evaluate the effectiveness of the policy interventions considered in this study. Table 1 provides a detailed summary of municipality-level characteristics, including deforestation rates, forested areas, climate variables, and socioeconomic indicators for treated 5 For more detailed information on these estimates, please refer to (Instituto Brasileiro de Geografia e Estat ́ıstica (IBGE), 2021).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 10,
+        "section_name": "Covariates",
+        "paragraph_id": 4,
+        "text": "and untreated samples. The treated municipalities, which were added to Blacklist between 2004 to 2012, display significantly higher average deforested areas across both PRODES and MapBiomas sources, with mean values of 143.87 km 2 and 176.95 km 2 , respectively. In contrast, untreated municipalities exhibit much lower deforestation levels, averaging 9.95 km 2 (PRODES) and 17.37 km 2 (MapBiomas). Forested areas and protected regions also differ markedly between groups, with treated municipalities possessing larger forested and protected areas on average. These differences across treated and untreated samples are statistically supported, underscoring the distinctive characteristics of municipalities subject to MP policy. Using this data, our empirical analysis is divided into two main parts. First, in section 4, we revisit the evaluation of the effects of Blacklisting on deforestation outcomes using the three different deforestation datasets. Then, in section 5.2 we employ class level metrics at the municipality by year scale using patch data which we obtain from deforestation rasters of each of the three datasets. We then proceed to test whether blacklisting led to differential patterns of deforestation as measured by these patch derived class-metrics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 11,
+        "section_name": "Methods: Synthetic Difference-in-difference",
+        "paragraph_id": 0,
+        "text": "To evaluate the causal effect of blacklisting on deforestation, we employ the synthetic difference-in-differences (SDID) estimator developed by Arkhangelsky et al. (2021). This approach combines features of both synthetic control and difference-in-differences methods to address potential violations of the parallel trends assumption while allowing for multiple treated units and time periods. The SDID estimator constructs synthetic control groups by reweighting non-blacklisted municipalities to match the pre-treatment trends of blacklisted municipalities, while simultaneously reweighting pre-treatment time periods to better predict post-treatment outcomes. This double-reweighting approach helps control for both observed and unobserved confounders that may vary across both municipalities and time. Formally, for municipality i in year t , let Y it denote our outcome measures of deforestation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 11,
+        "section_name": "Methods: Synthetic Difference-in-difference",
+        "paragraph_id": 1,
+        "text": "(from MapBiomas, PRODES, or GFW), let T it indicate blacklist status, and let X it represent our vector of time-varying covariates including rainfall, temperature, protected areas, population density, and GDP. The SDID estimator solves:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 11,
+        "section_name": "Methods: Synthetic Difference-in-difference",
+        "paragraph_id": 2,
+        "text": "(ˆ τ, ˆ μ, ˆ α, ˆ β ) = τ,μ,α,β N X i =1 T X t =1 ( Y it − μ − α i − β t − T it τ ) 2 ˆ ω i ˆ λ t (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 11,
+        "section_name": "Methods: Synthetic Difference-in-difference",
+        "paragraph_id": 3,
+        "text": "where ˆ ω i and ˆ λ t are municipality and time weights chosen to minimize pre-treatment prediction error while maintaining interpretable scale. The parameter τ captures the average treatment effect of blacklisting on deforestation. We estimate standard errors using a municipality-clustered bootstrap procedure with 1,000 replications to account for serial correlation in outcomes within municipalities over time. This approach follows Arkhangelsky et al. (2021) and is particularly appropriate given the panel structure of our data. The key identifying assumption is that, after reweighting both municipalities and time periods, any remaining differences in deforestation trends between blacklisted and nonblacklisted municipalities can be attributed to the causal effect of blacklisting. While this assumption is not directly testable, we provide evidence for its plausibility through extensive pre-trend analyses and placebo tests in the appendix. This methodology improves upon traditional difference-in-differences by relaxing the parallel trends assumption and upon synthetic control methods by accommodating multiple treated units and time periods while maintaining transparent inference procedures. The approach is particularly well-suited to our setting where treatment timing varies across municipalities and selection into treatment likely depends on past deforestation outcomes. In section F, we report all results using the staggered difference in difference approach proposed by de Chaisemartin et al. (2024). All of the signs and magnitudes remain similar, however we fail to pass the parallel trends test for all of these regressions, indicating that synthetic difference in difference is a more appropriate method for our setting.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 13,
+        "section_name": "Do coarser resolution datasets over-estimate the effects of",
+        "paragraph_id": 0,
+        "text": "Table 2, shows the results of our main empirical exercise where we assess the impact of the blacklisting, using different deforestation measures as dependent variables. We employ a synthetic Difference-in-Differences approach (Arkhangelsky et al., 2021). Each column in the table represents estimates based on different sources of deforestation data: PRODES, Mapbiomas (MB), and the dependent variables are measured as a percent deforestation ranging from 0 to 100. The estimates are consistent in showing a negative impact on deforestation across both data sources, implying that blacklisting leads to a significant reduction in deforestation. However, the magnitudes using different sources vary significantly. We find that blacklisting reduced annual deforestation by 0.466 percentage points according to PRODES data, representing a 43.1% reduction relative to treated municipalities’ pre-treatment deforestation rate of 1.07%. This effect is almost identical to the 43% reduction estimated by Assun ̧c ̃ao et al. (2023), where they use PRODES data and a changes-in-changes approach proposed by Athey and Imbens (2006) to test the effects of blacklisting on deforestation. 6 . Effects measured using MapBiomas data show a reduction of 0.31 percentage points, which corresponds to a 24% reduction relative to their respective pre-treatment baselines of 1.29% deforestation. These substantial reductions suggest the policy was effective at curbing deforestation, though the magnitude of the effect varies across measurement systems. 7 6 Other studies which use PRODES and matching find slightly smaller effects, although they are focusing on significantly shorter time frames after the policy (2008-2011). Cisneros et al. (2015) find a 24.1% decrease in deforestation in blacklisted municipalities each subsequent year after treatment, while Assun ̧c ̃ao et al. (2019) find that the policy prevented 11,218 km 2 of deforestation between 2008 and 2011, representing a 35% reduction in deforestation. 7 We also estimate the effects using the GFW dataset and find a non-significant 0.04 percentage point reduction. We decide to drop GFW from the analysis due to the issues with the data which stem from changes in the methodology that make the data spike during some years (see Figure B.1 in Appendix B for a time series plot including GFW).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 13,
+        "section_name": "Do coarser resolution datasets over-estimate the effects of",
+        "paragraph_id": 1,
+        "text": "Table 2: Effects of Blacklisting on Deforestation (SDID)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 13,
+        "section_name": "Do coarser resolution datasets over-estimate the effects of",
+        "paragraph_id": 2,
+        "text": "Blacklisting (2004-2012) (1) (2) PRODES MapBiomas ATT -0.466[FORMULA] -0.313[FORMULA] (0.069) (0.074) Mean DV Treated Baseline 1.08 1.30 Effect Relative Baseline -43.1% -24.1% Observations 6,064 6,064 Switchers Municipalities 758 758 Years Control variables Y Y Clustered SEs Munic Munic NOTE: This table presents the results of running synthetic difference-in-difference regressions using Blacklisting (Panel A) as the treatment variable, and PRODES (column 1) and MapBiomas (column 2) as the measures of deforestation. All regressions include the list of control variables presented in the Covariates section. All regressions include municipality and year fixed effects. Standard errors in parentheses. * p < 0.05, ** p < 0.01, [FORMULA] p < 0.001. All dependent variables are log-transformed.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 13,
+        "section_name": "Do coarser resolution datasets over-estimate the effects of",
+        "paragraph_id": 3,
+        "text": "Figure 6: Event Study Plots (SDID) on Effects of Blacklisting on Deforestation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 13,
+        "section_name": "Do coarser resolution datasets over-estimate the effects of",
+        "paragraph_id": 4,
+        "text": "((a)) PRODES ((b)) Mapbiomas NOTE: This figure shows the effects of blacklisting on deforestation rates using the synthetic differencein-differences methodology. The plots show point estimates (dots) and 95% confidence intervals (vertical bars) for the effect of blacklisting in each period relative to the year of treatment. The vertical line at zero marks the year a municipality was blacklisted. The left panel uses PRODES data while the right panel uses MapBiomas data to measure deforestation. Both measures show similar patterns of effects, with significant reductions in deforestation after blacklisting, although the overall effect using MapBiomas is slightly smaller, resulting in an ATT which is smaller than PRODES.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 13,
+        "section_name": "Do coarser resolution datasets over-estimate the effects of",
+        "paragraph_id": 5,
+        "text": "In Section E of the Appendix, we show all of the synthetic difference in difference plots, including the placebo tests run in order to discard random treatment effects. The systematic variation in effect sizes across different data sources underscores a critical finding: PRODES overestimates the impact of blacklisting on deforestation compared to higher-resolution datasets. For this systematic overestimation to occur, the deforestation ”missed” by PRODES must be correlated with treatment status - that is, PRODES must be failing to detect more deforestation in treated municipalities relative to untreated ones. This pattern aligns with our strategic adaptation hypothesis: municipalities subject to stricter monitoring and enforcement through blacklisting may respond by shifting toward smaller-scale deforestation that falls below PRODES’s detection threshold. This behavioral response would lead PRODES to overstate the policy’s effectiveness, as apparent reductions in deforestation may partially reflect a shift toward harder-to-detect clearing rather than actual conservation. In the next section, we investigate whether there is evidence of strategic adaptation using changes in the geospatial patterns of deforestation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 0,
+        "text": "Deforestation Using Deforestation Patches",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 1,
+        "text": "In order to identify the differing dynamics in deforestation behavior, we rely on an approach that uses deforestation patches as the main source of information. To do so, we introduce a new method to estimate class-level metrics at the municipality-by-year scale within the Brazilian Legal Amazon using patch data from deforestation rasters. Our approach, depicted in Figure H.21, is builds on the FragStats software package (McGarigal, 1995), which is commonly used in landscape ecology to analyze spatial patterns and landscape structure. We focus on quantifying landscape fragmentation, which occurs when habitats break up into smaller, disconnected patches due to human activities. We make use of FragStats principles and PyLandStats, a Python-based tool that integrates FragStats, to compute class-level metrics(Bosch, 2019). 8 By applying PyLandStats, we compute class-level metrics such as the number of patches within a municipality, the mean patch size within a municipality, the proportion of landscape occupied by different land cover classes, edge density, fractal dimension, and landscape shape index, indicating landscape configuration. In our workflow, depicted in Figure H.21, we start by leveraging Google Earth Engine to access and recode landuse classification from MapBiomas Collection 8, focusing on distinguishing forested from non-forested areas. This initial step is crucial as it lays the foundation for accurately estimating annual deforestation extents. After recoding, we estimate deforestation, creating binary raster data that highlights deforested versus non-deforested areas based on the different sources of satellite data (PRODES and Mapbiomas). Note that PRODES data has already undertaken the first step of identifying deforestation, so we simply begin with binary rasters produced by these entities. Once we have our deforestation classifications, we export the binary raster data for fur8 We also use popular big-data libraries like Pandas, NumPy, Dask, and Geopandas to manipulate, process, and analyze data. To handle the computational load efficiently, we employ parallel processing techniques using Joblib.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 2,
+        "text": "Figure 8: Mean Patch Area Mapbiomas from 2001 to 2019",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 3,
+        "text": "((a)) 2001 ((b)) 2003 ((c)) 2005",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 4,
+        "text": "((d)) 2007 ((e)) 2009 ((f)) 2011",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 5,
+        "text": "((g)) 2013 ((h)) 2015 ((i)) 2017 NOTE: This figure shows the Mean Deforestation Patch Area calculated with Mapbiomas data in each municipality across the years. Darker shades represent larger mean patch areas. You can see a clear decrease in the mean patch area first starting post 2005 with the implementation of PPCDAm and especially markets post 2009 after the implementation of the Blacklisting program. Mean patch area begins to grow again in 2013, in line with weaker environmental enforcement following the 2012 Forest Code and the financial crisis, which meant a disinvestment in IBAMA.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 6,
+        "text": "Table 3: Effects of Blacklisting on Patch Characteristics (SDID)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 7,
+        "text": "Blacklisting (2004-2012) (1) (2) (3) Mean Patch Area Median Patch Area Number of Patches ATT -0.262[FORMULA] -0.008** -899.55 (0.0619) (0.0049) (554.89) Mean DV Treated Baseline 0.907 0.100 17,336 Effect Relative Baseline 28.88% 7.7% -5.19% Observations 6,064 6,064 6,064 Switchers Municipalities 758 758 758 Years Control variables Y Y Y Clustered SEs Munic Munic Munic NOTE: This table presents the results of running synthetic difference-in-difference regressions using Blacklisting (Panel A) as the treatment variable, and Mean Patch Area (column 1), Median Patch Area (column 2), and Number of Patches (column 3) as the outcomes. All regressions include the list of control variables presented in the Covariates section. All regressions include municipality and year fixed effects. Standard errors in parentheses. * p < 0.05, ** p < 0.01, [FORMULA] p < 0.001.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 14,
+        "section_name": "Strategic Adaptation Measurement: Measuring Patterns of Deforestation Using Deforestation Patches",
+        "paragraph_id": 8,
+        "text": "ther analysis. Shifting to Python, we load the exported data and dive into detailed analysis using tools like PyLandStats. This phase allows us to explore deforestation patterns, understanding not just the where and when of deforestation, but also the geographic distribution of deforestation through various class metrics. Using these spatial metrics, we can examine whether agents strategically respond to increased enforcement efforts. Given that agents know the government relies on PRODES data for monitoring and enforcement, we expect rational actors to adapt their deforestation practices when monitoring intensifies. Specifically, after policies like municipal blacklisting are implemented, agents may shift from large-scale clearing that PRODES can detect to smaller, fragmented patches that fall below its detection threshold. Interestingly, when we look at Figure C.2, we can see that patches computed using PRODES data do not capture much of the variation in mean patch area, something which only becomes apparent when using higher resolution Mapbiomas data since this will capture the newly created smaller patches.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 15,
+        "section_name": "Strategic Adaptation Estimates: Does Increased Monitoring",
+        "paragraph_id": 0,
+        "text": "and Enforcement Lead to Strategic Changes in Deforestation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 15,
+        "section_name": "Strategic Adaptation Estimates: Does Increased Monitoring",
+        "paragraph_id": 1,
+        "text": "In order to test whether agents strategically respond to stronger monitoring and enforcement to avoid detection, we rely on blacklisting as an exogenous shift in monitoring and enforcement activity. We first estimate the effects of being included in the blacklist on the mean patch area and median patch area. Importantly, we expect the average area of the deforestation patches to become smaller especially in places that were in the blacklisted treatment group, in an effort to avoid detection by the satellites used by government officials which can only capture deforestation patches larger than 6.25 hectares.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 15,
+        "section_name": "Strategic Adaptation Estimates: Does Increased Monitoring",
+        "paragraph_id": 2,
+        "text": "((a)) Mean Patch Area ((b)) Median Patch Area ((c)) Number of Patches Figure 10: Event Study Plots (SDiD) of Patch Area Metrics from 2004 to 2012: Mean, Median, and Number of Patches",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 15,
+        "section_name": "Strategic Adaptation Estimates: Does Increased Monitoring",
+        "paragraph_id": 3,
+        "text": "Table 3 shows the effects of blacklisting on the mean patch area, median patch area and the total number of patches. We find that blacklisting significantly reduces deforestation patch characteristics. Specifically, the Mean Patch Area shows an ATT of -0.262, translating to a 28.9% reduction in mean patch area relative to the average patch size in the treated group during the pre-treatment period (baseline mean of 0.907). The Median Patch Area has an ATT of -0.0077, equating to a 7.7% reduction from the baseline of 0.100, reinforcing the shift toward smaller deforestation patches. The Number of Patches has an ATT of -899.55, indicating a 5.2% reduction from a baseline of 17,336, though this effect is not statistically significant, suggesting that blacklisting primarily impacts patch size rather than",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 15,
+        "section_name": "Strategic Adaptation Estimates: Does Increased Monitoring",
+        "paragraph_id": 4,
+        "text": "the frequency of deforestation events. Figure 10 shows the event study plots for the synthetic difference in difference regressions reflecting these results. The patch level data allows us to dive deep into the dynamics of deforestation, and thus uncover whether agents on the ground are deforesting more in patches of deforestation that can be captured by the official DETER (25Ha) and PRODES (6.25Ha) data. Recall the quotes from the former Director of Environmental Protection at IBAMA. In his interview, he emphasized the fact that deforesters were organized and intentionally staying below the 6.25 hectare threshold in order to avoid capture. He went on to even mention that these agents had hired GIS specialists to monitor their deforestation patches and the publication of the official DETER data, which used to be made public in real-time and has since been delayed by a few weeks in order to avoid this issue (all of this occurred after 2014 when Evaristo was at IBAMA and this case took place). In order to explore whether agents are, in fact, deforesting more in patches which are undetectable by the government’s satellites, we break up the patches into seven categories based on their size: 0-6.25 ha, 6.25-25 ha, 25-50 ha, 50-100 ha, 100-200 ha, 200-1000 ha, and above 1000 ha. Figure D.4 shows the evolution of deforestation patterns across these different patch sizes over time, revealing a clear shift in deforestation strategies after blacklisting. While before the policy, larger patches (above 100 ha) accounted for a substantial portion of deforestation, there is a noticeable decline in these larger clearings after treatment. Simultaneously, we observe an increase in small-scale deforestation, particularly in patches below 6.25 ha, which is below PRODES’s detection threshold. This strategic adaptation is further confirmed by the SDiD results in Figure E.10, which shows positive and significant treatment effects for patches smaller than 6.25 ha, indicating an increase in small-scale deforestation after blacklisting. Interestingly, the positive effect is also present in patches between 6.25 ha and 25 ha, which are patches that will be detected by PRODES but not by DETER, the near-real time alert system used by IBAMA to deploy its officers to the field. Although this shift is important for actual punishment of the illegal",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 15,
+        "section_name": "Strategic Adaptation Estimates: Does Increased Monitoring",
+        "paragraph_id": 5,
+        "text": "activity, these patches are actually captured by PRODES and so shouldn’t present an issue for measuring policy effect sizes using PRODES data. The strategic shift is, nonetheless, interesting, and in line with expectations of rational actors on the ground responding to heightened enforcement. On the other hand, we observe negative treatment effects for larger patches (particularly visible in the 50-100 ha and 200-1000 ha categories), suggesting that blacklisting effectively deterred large-scale deforestation while potentially pushing agents toward smaller, harder-to-detect clearing practices.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 16,
+        "section_name": "Avoided Deforestation and Avoided Carbon Emis-",
+        "paragraph_id": 0,
+        "text": "In this section, we evaluate the economic benefits of the Blacklisting in Legal Amazon. This program aims to reduce deforestation and promote the recovery of forests. We measure the amount of CO2 emissions avoided and CO2 that is absorbed due to the Blacklisting, and then we convert these figures into monetary values using a social cost of carbon (SCC). We use data on deforestation, forest recovery, CO2 emissions, and CO2 removal from sources like MapBiomas (Mapbiomas, 2020), PRODES, and SEEG (De Azevedo et al., 2018). We take the average treatment effects from the Synthetic difference in difference method. These estimates help us see how the Blacklisting impacts both avoided deforestation and forest recovery, which allows us to identify the benefits from each outcome. We then calculate the CO2 emissions and removals, along with their monetary benefits, using a range of SCC values. We consider a conservative estimate from 20 and 50 USD (cf., Rennert et al. (2022)). Our back-of-envelope estimates show that avoided emissions of With an SCC of [FORMULA] 1 billion USD. By increasing the SCC to [FORMULA] 2.5 billion USD, assuming the reduction in deforestation and emissions remains the same.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 16,
+        "section_name": "Avoided Deforestation and Avoided Carbon Emis-",
+        "paragraph_id": 1,
+        "text": "((a)) 0-6.25 ha patches ((b)) 6.25-25 ha patches",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 16,
+        "section_name": "Avoided Deforestation and Avoided Carbon Emis-",
+        "paragraph_id": 2,
+        "text": "((c)) 25-50 ha patches ((d)) 50-100 ha patches",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 16,
+        "section_name": "Avoided Deforestation and Avoided Carbon Emis-",
+        "paragraph_id": 3,
+        "text": "((e)) 100-200 ha patches ((f)) 200-1000 ha patches",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 16,
+        "section_name": "Avoided Deforestation and Avoided Carbon Emis-",
+        "paragraph_id": 4,
+        "text": "((g)) Above 1000 ha patches Figure 11: SDID results for different patch size categories",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1327,
+        "section_id": 17,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper emphasizes the important implications of satellite data selection in policy implementation and evaluation, particularly within the context of Brazil’s Blacklisting policy. Our analysis, utilizing two datasets—PRODES and MapBiomas—demonstrates that reliance on coarser satellite data such as PRODES can lead to significant overestimation of policy effectiveness. The measurement issue is a central concern: PRODES’s inability to detect smaller deforestation patches results in underreported deforestation rates, which skews the evaluation of policy outcomes. High-resolution datasets like MapBiomas, which detect smaller-scale deforestation activities, provide a more accurate representation of deforestation dynamics and reveal the limitations of traditional monitoring systems. In addition to measurement issues, our study highlights the strategic adaptation of deforestation agents in response to increased enforcement. The Blacklisting policy, which intensifies monitoring and imposes harsher penalties on high-deforestation municipalities, inadvertently encourages deforesters to adjust their behavior by creating smaller, less detectable patches of deforestation. This adaptive behavior complicates both policy implementation and evaluation, as it decreases efficacy by allowing evasion and conceals the true impact of interventions aimed at reducing deforestation. Our findings underscore the need for policymakers to consider both the measurement error inherent in coarse-resolution satellite data and the strategic responses of deforesters when designing and evaluating conservation policies. By acknowledging these challenges, more effective and nuanced approaches to forest conservation can be developed. Future policies should prioritize the use of high-resolution satellite data to improve monitoring and enforcement, while also anticipating and mitigating the strategic adaptations that can undermine policy success. In the context of climate change and biodiversity loss, these considerations are crucial for ensuring that deforestation policies achieve their intended goals.",
+        "extraction_warnings": ""
+    }
+]

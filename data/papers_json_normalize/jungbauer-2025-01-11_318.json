@@ -1,0 +1,1634 @@
+[
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Poaching, Raids, and Managerial Compensation ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Yi Chen † Fabiano Dal-Ri ‡",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Thomas Jungbauer § Daniela Scur ¶",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "Abstract . This paper presents a model of employee poaching with asymmetric employer learning. Firms poach managers not only due to their track record but also for their personnel-specific information about workers. In equilibrium, more productive firms poach managers, whose compensation increases in the quality of their information about workers. While poaching reassigns more able workers to more productive firms, efficiency does not obtain due to information frictions. Drawing on the universe of contracts in Brazil’s formal labor market, we test implications of our model and show they are consistent with manager and worker movements and their compensation histories. ( JEL codes: C78, D21, J24, J30, M51)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "Keywords: Poaching, asymmetric learning, managerial compensation, Brazil",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "∗ We would like to thank Heski Bar-Isaac, Dan Bernhardt, Raphael Boleslavsky, Nicholas Bloom, Laura Boudreau, Serguey Braguinsky, Andrew Butters, Vitor Costa, Bo Cowgill, Theo Durandard, Benjamin Friedrich, Takuma Habu, Mitchell Hoffman, Maarten Janssen, Justin Johnson, Philipp Kircher, Aaron Kolb, Stefan Krasa, Kevin Lang, Fabian Lange, Chenyang Li, Jorge Lemus, Erik Madsen, Anita McGahan, Volker Nocke, Bobby Pakzad-Hurson, Eleonora Patacchini, Megha Patnaik, Thomas Pfeiffer, Giorgio Presidente, Stanislav Rabinovich, Raffaela Sadun, Stephan Sagl, Steven Schwab, Jason Sockin, Christopher Stanton, Steve Tadelis, Silvia Vannutelli, Michael Waldman, and Mu-Jeung Yang for valuable discussions and comments. We are also grateful to unnamed participants of Organization@Cornell24, the 94th Annual Meeting of the Southern Economic Association (SEA) in Washington, D.C., 2024, the 10th Empirical Management Conference (EMC) at Harvard Business School 2024, and seminars at the University of Vienna, the University of Illinois Urbana-Champaign (UIUC), and the Kelley School of Business at Indiana University (UI). All remaining errors are our own. † SC Johnson College of Business, Cornell University: yi.chen@cornell.edu ; ‡ SC Johnson College of Business, Cornell University: fd237@cornell.edu ; § SC Johnson College of Business, Cornell University: jungbauer@cornell.edu ; ¶ SC Johnson College of Business, Cornell University: dscur@cornell.edu ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 6,
+        "text": "Managers in charge of supervising and evaluating workers have detailed information about their abilities and aptitudes ( Becker , 1993 ; Lazear , 2000 ; Bandiera et al. , 2020 ; Friedrich , 2023 ). This personnel-specific information is likely to be valuable and play a role in the movement of managers and workers across firms and their compensation. Despite its potentially far-reaching consequences for human resources management and labor market regulation, this relationship has not been examined systematically. Specifically, it is unclear whether and how managerial information about workers meaningfully affects the rate at which firms poach managers, who may then raid their former employers for high-ability workers. Managerial poaching and subsequent worker raids are common business practices. 1 While there are prominent studies about hiring through worker referrals (e.g., Montgomery , 1991 ; Burks et al. , 2015 ; Brown et al. , 2016 ; Friebel et al. , 2023 ), managerial incentives to recommend workers differ from those of workers to refer others in two substantive ways: first, managers hold an information advantage regarding worker ability due to their involvement in both supervision and evaluation ( information ). Second, future promotion opportunities and the compensation of managers themselves depend on worker performance ( accountability ). As a result, we expect managers to be more selective in their recommendations than workers. In this paper, we present a novel analysis of how personnel-specific information held by managers affects the labor market outcomes of these managers and the workers they supervise. We introduce a stylized model of managerial poaching and worker raids with asymmetric employer learning and test its implications using the universe of contracts in Brazil’s formal labor market from 2003 to 2017. 2 Firms hire managers for different reasons, such as their managerial skill set ( Lazear et al. , 2015 ) including the ability to evaluate talent ( Friebel and Raith , 2023 ). As poaching firms are generally unaware of a manager’s competence in assessing workers, 1 So common, in fact, that firms would get into “no-poaching” agreements so often that regulatory bodies such as the European Union (see Article 101(1) EU ( 2016 )) and Federal Trade Commission ( NYT , 2024 ) issued guidelines against it. Only recently, six of the leading Silicon Valley tech companies settled a lawsuit alleging wage depression through mutual no-poaching agreements for $ 415 million after more than 10 years of litigation ( WSJ , 2014 ; CNET , 2024 ). 2 There is a comprehensive empirical literature building on Gibbons and Katz ( 1991 ) providing support for the asymmetric employer learning hypothesis.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 7,
+        "text": "2 we simplify in order to highlight the effects of their personnel-specific information. In fact, we explicitly assume in our theoretical model that managers differ only in their knowledge of workers but not in their managerial abilities. Implicitly, however, more able managers may know more about their workers. Therefore, we empirically control for managerial ability using “AKM” worker fixed effects ( Abowd et al. , 1999 ). Equilibrium behavior in our model is characterized by more productive firms poaching managers for the option value of raiding a competitor for high-ability workers. Firms that raid workers pay twice for additional output: once indirectly for the relevant personnel-specific information through the manager’s salary , and once directly through the worker’s wage . 3 The driving force behind these results is robust: a firm whose manager receives an outside offer, considers a competing firm raiding its highability workers when submitting a counter-offer to retain its manager. In our base model, two firms, each endowed with one manager and one worker, decide whether to attempt poaching their competitor’s manager to learn about their worker’s ability. When poaching a manager or raiding a worker, an auction reflecting an offer and counter-offer process takes place (see Lazear , 1986 ), and the winner obtains the manager or worker at the highest compensation the loser is willing to pay. The more productive firm poaches if its own worker’s ability falls short of a cutoff. It then decides whether to raid its competitor’s worker, retain its own, or replace them with a junior worker of unknown ability, with each alternative arising in equilibrium. As a result, more productive firms poach some managers only to learn that their personnel-specific information is not valuable to them. At the same time, they fail to hire other managers whose knowledge may translate into raids of high-ability workers. This novel second effect is driven by the information advantage of the manager’s current employer and thus related to the literature on adverse selection in the labor market ( Greenwald , 1986 ). The ensuing inefficient retainment of high-ability workers by less productive firms is reminiscent of Ferreira and Nikolowa ( 2023 ). Their result, however, is driven by a trade-offbetween poaching and talent development by firms. 4 3 For simplicity, we refer to both a ‘raided firm’ and ‘raided workers’ throughout. Note that there is no distinction between wage and salary in the compensation sense; we use different words to more easily distinguish between manager and worker compensation. Empirically, both managers and workers are paid monthly salaries in Brazil. 4 Waldman and Yin ( 2024 ) provide an excellent overview of the labor market literature on adverse selection.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 8,
+        "text": "3 Further, our paper is supportive of recent studies of talent hoarding ( Friebel and Raith , 2023 ; He and Waldman , 2024 ) that describe inefficient information sharing by managers within firms to retain high-ability workers within their division. Our model generates important testable predictions: 1. Managers are poached by more productive firms. 2. When a firm poaches a manager from another firm, the firm is more likely to raid their workers. 3. Poached managers earn higher salaries. 4. The salary of a poached manager increases in the demand for information (when poached by a larger firm), and 5. in the supply of information (when poached from a larger firm). 6. The salary of a poached manager increases in the raided workers’ abilities. 7. Raided workers are of higher ability than non-raided workers. Our theory also suggests that the rate of poaching itself increases in the number of worker positions at the poaching firm (demand for information) and at the poached (supply of information) firm. Poaching, in expectation, also benefits the poaching firm and increases welfare by reassigning more able workers to more productive firms. While poached managers and raided workers always benefit, the poached firm suffers a loss. The manager’s information rent, however, induces adverse selection preventing poaching from taking place at an efficient rate, as discussed above. 5 Using rich administrative data from Brazil, we find empirical support for the key implications of our model. We define a poaching event as a direct move of a manager or worker from one firm to another, with no unemployment period in between job spells. Between 2010 and 2017, we identify 5722 managerial poaching events among Brazil’s largest firms (those with more than 50 employees). 6 For each managerial poaching event, we trace the job transitions of all workers who worked in the same firm as the poached manager (the “origin firm”) and classify those who moved to the same firm as the manager (the “destination firm”) as raided workers. Consistent with our model, firms that poach managers are more productive on average, and pay higher wages. Following a managerial poaching event, we find that 5 In Appendix D , we show that our main results are robust to dynamic considerations by analyzing an infinite horizon version with overlapping generations of managers and workers as well as arbitrary numbers of worker slots. This dynamic model produces complementary results: While manager poaching is not always successful, it always increases the manager’s salary. Also, poaching is self-propelling. Poaching today increases the likelihood of poaching tomorrow. Finally, while we focus on two firms throughout, we briefly discuss in Section 3 why competition among more poachers should strengthen our theoretical results. 6 We focus on events between 2010 and 2017 using 2003 to 2009 to estimate worker ability and firm premia.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 9,
+        "text": "4 the share of new hires that come from the same origin firm jumps to about 5 percentage points higher in the month the poached manager moves, and stays at a sustained higher level for the next 9 months. This is equivalent to managers bringing, on average, about 2 workers along with them, and at least one more within the next few months. We repeat the exercise with a random sample of employee poaching events, and, while there is co-movement, it is significantly weaker and slightly delayed, more consistent with worker referrals. This suggests that managerial poaching and employee raids are fundamentally different from employee poaching and subsequent referral moves. Furthermore, we find evidence that poached managers’ salaries are systematically correlated with the expected supply of good workers in the origin firm, and the expected need of workers in the destination firm. We find that poached managers who are from larger firms and, notably, those from larger firms with higher ability workers command higher salaries in their destination firms. This relationship does not hold for workers hired into managerial positions (lack of information), nor for poached managers who are hired as workers at the destination firm (lack of accountability). 7 Destination firms that are larger and growing also pay their poached managers relatively higher salaries, and again we find evidence that the ability of the workers they are able to bring with them, rather than just the raw number, is linked with a higher starting salary for the poached manager. In fact, the distribution over the ability of raided workers stochastically dominates the respective distribution for non-poached new hires into comparable positions. Likewise, the same is true for poached managers’ salaries. These empirical facts provide strong support to our theoretical model. The information channel we describe in this paper remains relevant when firms poach teams, but the nature of personnel-specific information differs. It is well known that 7 Our proxy for ability is the worker fixed effect from the Abowd et al. ( 1999 ) two-way fixed effect model. There is an active debate in this literature on whether the metric measures “ability.” For example, there is an argument that because the relationship between AKM worker effects and productive traits is theoretically unclear ( Eeckhout and Kircher , 2011 ), the term “quality” may be a more accurate description of the metric ( Cornwell et al. , 2021 ). Since no term is without contention, we use ability reflecting that workers with higher worker fixed effects are better paid, thus assuming that well-functioning private sector markets lead firms to pay higher wages to higher ability workers. As higher ability workers are likely to make firms more productive, the positive correlation between higher worker AKM fixed effects and firm productivity lends credibility to this assumption (see Figure 1 in Cornwell et al. ( 2021 ) and Figure 3 in Bender et al. ( 2018 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 10,
+        "text": "5 an important determinant of a worker’s output under a specific manager is production complementarities – it depends on their fit with the manager (and potentially other workers) – and the literature on hiring teams is well established (see Marx and Timmermans , 2017 ; Herkenhoffet al. , 2024 ). When a firm poaches a manager in the presence of complementarities, it learns about workers’ conditional abilities as part of a team, which may affect both firms’ wage offers. Nevertheless, the information acquisition stage, i.e., manager poaching, will closely resemble poaching in our model. As such, the poaching firm pays for additional team output through the manager’s salary, reflecting the information loss of the poached firm. A worker’s wage increase, on the other hand, may be limited as the poached firm’s value of retaining the worker diminishes when losing its manager. In order to simplify the exposition of our analysis, we abstract from complementarities throughout but postulate that our qualitative results are robust to team production. The literature provides two alternative potential explanations for the stylized fact that workers seem to follow managers across firms. First, managerial recommendations may resemble worker referrals, which are known to convey some information about the output of workers at the hiring firm: workers referred by others tend to lead to lower recruiting costs as workers are, for example, more likely to be hired and stay longer with the firm ( Montgomery , 1991 ; Granovetter , 1995 ; Dustmann et al. , 2016 ; Barr et al. , 2019 ). Second, managers may exert favoritism towards a group of workers ( Bramoulle and Goyal , 2016 ), and facilitate their hiring in the new firm independent of their abilities ( Bandiera et al. , 2009 ; Patacchini and Mocanu , 2024 ). Ultimately we cannot measure the rationale behind poaching decisions, but Section 8 presents additional evidence supporting our interpretation that our results are neither consistent with worker referrals nor non-performance-based favoritism. Among other factors, our data suggests workers who follow managers tend to be of higher ability relative to comparable new hires. This is inconsistent with the referrals and nonperformance-based favoritism literature that find these workers are typically no more productive than other workers hired into comparable positions ( Burks et al. , 2015 ; Brown et al. , 2016 ; Prendergast and Topel , 1996 ) As such, our findings suggest worker raids are different from regular referrals and not a consequence of favoritism.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 11,
+        "text": "6 Moreover, considering the differences between poached managers who were hired as managers relative to those hired as non-managers can be instructive. For events with at least one raided worker, we find that the ability and quantity of raided workers are correlated with a higher salary at the destination firm, but poached managers who are hired as managers incur a penalty for additional hires unless they are of high ability. The same is not true for poached managers who are hired as non-managers and thus do not have direct accountability to the workers they refer. this suggests that the weight of our results is likely driven by managers looking to bring high-ability workers along into their new firm. Finally, we do find limited evidence for both worker referrals and favoritism, which we distinguish from poaching for personnel-specific information. More broadly, our model and supporting evidence are even more relevant in light of recent rulings banning the majority of non-compete agreements (NCAs) at the federal level. 8 In April 2024, the Federal Trade Commission (FTC) issued a rule to ban the majority of NCAs in the US ( NYT , 2024 ), suggesting an increase in the labor market value of personnel-specific managerial information. 9 This is consistent with the optimal regulation perspective supporting NCA bans in almost all instances. 10",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 12,
+        "text": "In this section, we present a stylized game highlighting the role of personnel-specific information held by managers in poaching and raids, before analyzing the model and variations thereof in the following sections. In Appendix D , we discuss an infinite 8 NCAs ban parting employees from competing with their former employer for business, while non-solicitation of employees agreements (NSEAs) avoid parting employees from soliciting other employees to leave with them. NCAs sometimes do limit worker mobility ( Cowgill et al. , 2024 ), but NSEAs are rarely taken into account by courts, are often challenged as illegal and prosecuted by government authorities themselves ( DoJ , 2010 ), and lack enforceability. This is because “... the solicited party can always indicate that it was its choice to follow the former executive, meaning that there was no solicitation” ( Azevedo , 2020 ). 9 While the ruling has been suspended as of August 2024, a modified version is expected to go into effect. Even prior to the FTC’s ruling, the scope of NCAs had been limited. For example, NCAs have been outlawed in California, the largest regional US job market and central to the global tech industry, for more than 80 years. California Business and Professions Code § 16600—established in 1941—states that except a very narrow set of conditions is met “... every contract by which anyone is restrained from engaging in a lawful profession, trade, or business of any kind is to that extent void.” In 2023, California’s Senate Bill 699 extended § 16600 to contracts signed outside of the state, even retroactively. In other countries with labor laws that are more protective of employees, such as Brazil, worker NCAs have rarely been enforced by the courts ( Coslovsky et al. , 2017 ). 10 For more details, see in particular Shi ( 2023 ) as well as Lipsitz and Starr ( 2022 ) focusing on low-wage workers and Balasubramanian et al. ( 2022 ) on the high-tech industry. For an excellent overview of the regulation perspective, see Starr ( 2023 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 13,
+        "text": "7 horizon version of our model with overlapping generations of managers and workers, indicating that our main results persist when dynamic considerations matter. There is an industry with two firms, A and B . 11 Each firm requires two types of employees to produce. In fact, each firm i , i ∈{ A, B } , has a single position for a manager and a single slot for a worker . 12 Whereas managers are homogeneous in their skill, the ability of a worker, a , takes on values in [ a, a ] ⊂ R + according to a differentiable distribution function F ( · ). When both its positions are filled, firm i ’s output is y i = ρ i a i , 13 with ρ i denoting firm i ’s productivity. 14 If either one of the two positions remains vacant, the firm’s output is zero. Without loss of generality we stipulate that ρ A ⩾ ρ B , i.e., A is weakly more productive than B . 15 At the beginning of the game, firm i , i ∈{ A, B } , is endowed with its present manager m i and worker a i . Over the course of the game, firms decide whether to retain their employees, hire its competitor’s or outside replacements. We refer to a manager (worker) who is retained or poached (raided) as a senior manager (worker). A senior manager’s (worker’s) outside option is s e ( w e ). Firms also have access to a pool of junior managers and workers, whose outside options are s and w , respectively. When hiring a new manager (worker), a firm incurs training cost t m ( t w ). 16 Firm i ’s cost then equals the sum of its manager’s salary , its worker’s wage , and potentially training costs, i.e., c τ i = ( s i + 1 m i t m ) + ( w i + 1 w i t w ) , where 1 m i ( 1 w i ) equals 1 if firm i hires a new manager (worker) and 0 otherwise. 11 For simplicity, when unambiguous, we refer to firm A ( B ) simply as A ( B ). 12 For tractability reasons, we assume throughout this paper that managers and workers are not substitutes. This assumption specifically rules out the possibility of promotion which is not our focus. The subsequent analysis is thus orthogonal to the promotion (see Gibbons and Waldman , 1999 ) and promotion signaling literature (see Waldman , 1984 ; Ricart i Costa , 1988 ) with Friedrich ( 2023 ) a more recent representative. 13 Note that the qualitative results presented in this paper are independent of the functional form of the firm’s production function. 14 Throughout a i ( m i ) refers for simplicity also to the worker (manager) themselves. 15 See Syverson ( 2004 ) and Foster et al. ( 2008 ) for arguments that firms differ persistently in their respective productivities, including in their marginal product of labor. 16 We imagine this training cost to subsume all costs specific to newly hired employees that are not transfers from the firm to the employee. Examples for such costs are moving costs, on-boarding, training, on-the-job learning, social and cultural integration, etc.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 14,
+        "text": "8 A and B then engage in a poaching game to maximize their respective profits",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 15,
+        "text": "i ∈{ A, B } . The time line of events is as follows:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 16,
+        "text": "(1) Firms decide whether to attempt to poach the other firm’s manager. (2) Firms decide whether to attempt to raid the other firm’s worker. 17 (3) Firms decide whether to retain their manager, replace them with a junior manager, or with a previously laid offone. 18 (4) Firms decide whether to retain their worker, replace them with a junior worker or with a previously laid-offone. 19 (5) Production takes place, firms accrue output and pay managers/workers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 17,
+        "text": "We assume firms to act simultaneously at each step of the timeline. In order to simplify, we assume that (i) lay-offs are free of cost, (ii) ρ B E [ a ] − s − t m − w − t w > 0 , (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 18,
+        "text": "so that both firms always produce, (iii) s e − s < t m and w e − w < t w such that no firm fires senior managers (workers) only to save on salary (wage), and (iv) firms do not attempt to poach (raid) if they are indifferent. When a firm attempts to poach a manager (or raid a worker), we stipulate—similar to Lazear ( 1986 )—an offer and counteroffer process ending when one firm ceases to offer. When offers are free of cost, this gives rise to a subgame perfect equilibrium in which the firm with the larger value of hiring/retaining the manager (worker) does so at a salary (wage) that equals the other’ firm’s value for hiring/retaining. 20,21 17 Firm i , i ∈{ A, B } , can only attempt to raid its competitor’s worker if it poached its manager. 18 Note that the option to retain one’s manager is only available if they were not poached by the other firm. 19 Retaining one’s worker is only feasible if they were not hired by the other firm. Hiring a recently laid-off worker is only an option if the firm hired their manager before. 20 This offer and counteroffer process can be modeled as an ascending clock auction (see Milgrom and Weber , 1982 ). In an ascending clock auction, an auctioneer continuously raises the bid, i.e., salary (wage), until one firm is unwilling to pay the bid for the manager (worker) in question. 21 If both firms simultaneously attempt poaching each other’s managers (and potentially raiding each other’s workers), we assume that a fair lottery determines which competition takes place first, and that offers are",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 19,
+        "text": "9 Also, suppose when a firm hires a junior worker, it initially does not know their ability, but privately learns it after production has occurred. Crucially, not only does the firm (e.g., the owner, board of directors, etc.) learn the worker’s ability, but so does its manager. As a consequence, if A poaches m B , it learns a B (and vice versa). Finally, we stipulate learning to be asymmetric, i.e., a firm is not aware of the ability (and identity) of the other firm’s worker unless it poaches its manager. 22 Therefore, the poaching game described in this section is one of incomplete information. As such, our focus is Perfect Bayesian Equilibrium (PBE) throughout. To pin down a unique PBE, we assume that whenever firms are engaged in a competition for a manager/worker, a sequential equilibrium (SE) ( Kreps and Wilson , 1982 ) arises. 23",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 20,
+        "text": "3. Equilibrium Analysis",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 21,
+        "text": "We now establish the equilibrium outcome of the model described above and highlight results about manager and worker movements, their respective compensation, firm profits, and welfare. All the results presented remain valid in the infinite horizon model in Appendix D unless explicitly noted otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 22,
+        "text": "3.1. Equilibrium behavior. At the beginning of the poaching game, A faces three choices: (i) attempt to poach B ’s manager in order to potentially raid its worker, (ii) retain its current manager and worker, and (iii) retain its manager and replace its worker with a junior one. We first observe that firm i , i ∈{ A, B } , never opts to retain a worker of very low ability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 23,
+        "text": "Lemma 1 ( Firing ) . There is a cutoff a F i ≡ E [ a ] − t w − ( w e − w ) ρ i , i ∈{ A, B } , such that firm i prefers replacing its worker a i with a junior worker when a i < a F i . irrevocable. That is, if say, A makes higher offers to both managers, A retains its manager and poaches B ’s. As a consequence, it obtains B ’s manager’s information about B ’s worker and keeps B from obtaining information about its own worker. A second manager, however, does not increase production but is paid the offered salary nevertheless. While this assumption contributes to fully specifying the game between A and B, we will show in the next section that B never attempts to poach A ’s worker in equilibrium. 22 In our base model we assume that A ( B ) can only make offers to a B ( a A ) if it hires m B ( m A ) first, thereby learning a B ’s ( a A ’s) identity. This prevents firm A ( B ) to sufficiently learn about a B ( a A ) simply from engaging in a bidding contest with B ( A ). While this assumption is likely satisfied in many industries, it becomes irrelevant in the more realistic case of firms commanding many worker slots (see Appendix D ). 23 Technically, we assume when firms engage in offers and counteroffers, each firm believes at every instance with probability ε > 0 that its competitor ceases to bid. We then characterize the unique PBE as ε → 0.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 24,
+        "text": "10 Lemma 1 implies a F B < a F A , and as a result, A prefers replacing a worker a ∈ [ a F B , a F A ] with a junior worker while B would opt to retain. This is because the expected value of a junior worker is higher for the more productive firm at which every worker exhibits a higher marginal product of labor while both firms incur training costs. In order to characterize equilibrium behavior, we proceed by backward induction and first establish the consequences of poaching. Suppose that A has poached B ’s manager and therefore learned B ’s worker’s ability a B . At this point, the maximum wage B is willing to pay to retain a B over replacing them with a junior worker is w R ( a B ) = w + t w + ρ B ( a B − E [ a ]) , (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 25,
+        "text": "which follows from equating B ’s profit when retaining its worker with the expected profit of a junior worker replacement, ρ B a B − w R ( a B ) = ρ B E [ a ] − w − t w . If a B < a F B , B is not willing to pay a wage that exceeds the worker’s outside option w e , and therefore does not plan to retain its worker. As a result, A can raid a B at max { w e , w R ( a B ) } . Note that if A hires a B , their wage is independent of A ’s productivity but depends on the worker’s ability as well as on B ’s productivity. If B poached m A to potentially raid B for a A , B ’s outside option would change, affecting w R ( · ). It turns out, however, that B never attempts to poach A ’s manager in equilibrium. This is because B can always hire A ’s laid-offmanager and (possibly its) worker at the end of the recruitment process. As such, B never gains from poaching but may, in fact, lose if A poaches m B with a higher likelihood since B ’s outside option improves, lowering its own retention wage when poaching A ’s manager. 24 Note whether A poaches in equilibrium with positive probability depends on whether it is productive enough to warrant paying for information—i.e., the option value of B ’s worker a B being highly productive—through m B ’s salary. Proposition 1 below describes equilibrium behavior in an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ). Proposition 1 ( Equilibrium behavior ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) . In equilibrium, firm B never poaches firm A ’s manager m A . There are ρ ′ A and ρ ′′ A with ρ B < ρ ′ A < ρ ′′ A such that 24 We flesh out the entire argument in the proof of Proposition 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 26,
+        "text": "11 (1) if ρ A ⩽ ρ ′ A , a no-poaching equilibrium materializes: firm A does not poach firm B ’s manager. Firm i , i ∈{ A, B } , retains its manager m i , and retains its worker if a i ⩾ a F i and replaces them with a junior worker otherwise. (2) If ρ A > ρ ′ A , a poaching equilibrium materializes: there is a ∗ P , and a strictly increasing function α : A → A : a 7→ α ( a ) such that firm A poaches firm B ’s manager if and only if a A < a ∗ P . It then (a) replaces its worker with a junior worker if a A < a F A and a B ⩽ α ( a F A ) , (b) retains its worker if a A ∈ [ a F A , a ∗ P ] and a B ⩽ α ( a A ) , and (c) raids firm B ’s worker if a B > max { α ( a F A ) , α ( a A ) } . (3) When firm A raids firm B ’s worker, firm B hires a junior manager and worker if ρ A ∈ ( ρ ′ A , ρ ′′ A ] , but may hire firm A ’s laid offmanager if ρ A > ρ ′′ A . 25",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 27,
+        "text": "Proposition 1 establishes that if A and B are sufficiently similar in terms of productivity, i.e., ρ A ⩽ ρ ′ A , there is no poaching in equilibrium. Recall that the wage at which A can hire B ’s worker is independent of A ’s productivity but reflects B ’s profit loss when replacing a B with a junior worker. In addition, the salary A has to pay in order to poach m B reflects B ’s profit loss from A learning its worker’s ability a B . If A hires a B , A essentially pays twice for hiring B ’s worker, once for the information through the manager’s salary and once for the additional production through the worker’s wage. If the firms are similarly productive, A ’s gain from hiring a B is sufficiently similar to B ’s loss. As a consequence, A is not willing to pay twice for the additional output, even in the absence of training costs. In other words, there is an information friction to poaching due to asymmetric employer learning. If A is sufficiently more productive than B , however, A poaches m B in equilibrium if a A is sufficiently small, i.e., a A < a ∗ P . This scenario is illustrated by the gray-shaded area in Figure 1 . If A is highly productive, it is more than willing to pay for B ’s profit loss through the poached manager’s salary and the worker’s wage. Fix A ’s productivity ρ A . For very high values of a A , i.e., a A > a ∗ P , A never poaches m B . This 25 If poaching occurs in equilibrium, firm B ’s detailed behavior is as follows: when firm A does not hire firm B ’s worker, firm B hires a junior manager and replaces its worker with a junior worker if and only a B < a F B . There is an increasing cutofffunction a C B ( · ) : A → A : a 7→ a C B ( a ) such that when firm A hires firm B ’s worker, firm B hires a junior manager and replaces its worker with a junior worker if ρ A ⩽ ρ ′′ A or ρ A > ρ ′′ A and a B ⩽ a C B ( ρ A ). If ρ A > ρ ′′ A and a B ⩽ a C B ( ρ A ), firm B hires firm A ’s laid offmanager m A , replaces its worker with firm A ’s laid offworker if a A > E [ a ] + w e − w ρ B and replaces its worker with a junior worker otherwise. Note that for some industries ρ ′′ A = ∞ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 28,
+        "text": "a F A a ∗ P a a F B α \u0000 a F A \u0001 α ( a ∗ P ) a",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 29,
+        "text": "Figure 1. Equilibrium poaching behavior",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 30,
+        "text": "is because the likelihood that a B sufficiently exceeds a A to justify raiding at a higher wage is too small to warrant poaching of m B at a higher salary in the first place. Note whenever A attempts to poach m B in equilibrium, it does so successfully. Since A ’s expectation of a B warranted the poaching attempt in the first place, A ’s expectation of a B increases as long as B does not cease to offer. 26 This allows us to establish that whenever A is poaching B ’s manager if a A = a ′ , then it also poaches them for every a A , a A < a ′ . To see why this is the case, note that—after successfully poaching m B and treating their salary as sunk cost— A faces three options: (a) replace a A with a junior worker at w + t w , (b) retain a A at w e or (c) raid a B at a wage that reflects B ’s profit loss. Note that A ’s profit only increases in a A locally under option ( b ). Thus, A ’s profit from poaching increases in a A with probability F ( a ∗ P ) − F ( a F A ), whereas its profit when not poaching increases with probability 1 − F ( a F A ) by the same amount. Also note that the cutoffvalue for a B , α ( a F A ), above which A raids a B , is constant for a A < a F A but strictly increases for a A ∈ [ a F A , a ∗ P ], as depicted in Figure 1 which illustrates when A chooses (a), (b) or (c). This is because A never retains if a A < a F A . 26 This is not the case in the dynamic model in Appendix D , in which firms are unaware of the number of highrespectively low-ability workers at their competitor. As a consequence, a poaching attempt may not be successful but increase the manager’s salary nevertheless.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 31,
+        "text": "13 3.2. Compensation. Understanding when A poaches m B allows us to solve for equilibrium salaries of managers and workers’ wages. As B hiring A ’s laid-offmanager and/or worker does not qualitatively affect our main results, we focus on the parameter space in which B always replaces its worker with a junior worker if A raids a B , i.e., ρ A ∈ ( ρ ′ A , ρ ′′ A ]. Following the above logic, we first establish equilibrium wages. Lemma 2 ( Wages ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) with ρ A ⩽ ρ ′′ A . (1) In a no-poaching equilibrium, junior workers earn w and senior workers w e . (2) In a poaching equilibrium, likewise (a) junior workers earn w and (b) retained workers earn w e , while (c) raided workers with ability a earn w + t w + ρ B ( a − E [ a ]) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 32,
+        "text": "As B never poaches m A , replacing a B with a junior worker is B ’s outside option when losing its worker to A if ρ A < ρ ′′ A . Henceforth, Equation ( 2 ) gives the equilibrium wage of workers raided by firm A . This allows us to derive equilibrium salaries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 33,
+        "text": "Proposition 2 ( Salaries ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) with ρ A ⩽ ρ ′′ A . (1) In a no-poaching equilibrium, junior managers earn s and senior managers s e . (2) In a poaching equilibrium, likewise (a) junior managers earn s , while (b) poached managers earn s ∗ P ranging from s P = s + t m to s P = s + t m − ( w e − w )+ t w + ρ B ( a − E [ a ]) and increasing in the quality of the manager’s information, i.e., in a B .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 34,
+        "text": "Figure 2 below depicts the equilibrium salary of a poached manager as a function of a B . Note that A never hires B ’s worker if a B ⩽ α ( a F A ). In this case, the poached manager’s salary simply reflects the managerial training cost t m incurred by B when replacing its manager. On the other hand, if a B > α ( a F A ), s P ( a B ) reflects B ’s loss of profits from A obtaining information about a B , i.e., managerial training cost t m , worker training cost t w , expected output loss ρ B ( a B − E [ a ]), and the savings from not retaining a senior worker, all weighted by the probability of A hiring a B . When this probability is 1, i.e., if a B > α ( a P ), the slope of s P ( · ) is linear. If a B ∈ [ α ( a F A ) , α ( a ∗ P )], this is not the case and the slope of s P ( · ) is increasing but depends on F ( · ). Proposition 2 (and Figure 2 ), however, describes ex-post salaries. When A decides whether to poach, it is not aware of B ’s worker’s ability a B . Instead, it weighs the expected benefits of poaching m B against its direct and opportunity costs. m B ’s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 35,
+        "text": "α \u0000 a F A \u0001 α ( a P ) Figure 2. The salary of a poached manager",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 36,
+        "text": "expected salary when poached, ˆ s P , is A ’s expectation of the highest salary at which B retains its manager. Note that ˆ s P ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 37,
+        "text": "ˆ s P ( a P ) = s + t m + α ( a P ) Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 38,
+        "text": "α ( a F A ) F ( α − 1 ( a )) F ( a P ) ( w R ( a ) − w e ) dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 39,
+        "text": "α ( a P ) ( w R ( a ) − w e ) dF ( a ) , (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 40,
+        "text": "is necessarily independent of a A as it is unknown to B . ˆ s P reflects B ’s salary for a junior replacement manager m , their training cost t m and B ’s expected loss of profit when A obtains information about a B and potentially proceeds to hire them. ˆ s P contributes to determine the equilibrium cutoff a ∗ P . Lemma 3 ( Poaching ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) with ρ A ⩽ ρ ′′ A . In a poaching equilibrium, P = F ( a ∗ P ) denotes the likelihood of poaching where a ∗ P solves a Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 41,
+        "text": "α ( a ∗ P ) [ ρ A ( a − a ∗ P ) − ( w R ( a ) − w e ) − t w ] dF ( a ) = (ˆ s P ( a ∗ P ) − s e ) + t m . 27 (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 42,
+        "text": "27 For simplicity, we refer below to ˆ s ∗ P ≡ ˆ s P ( a ∗ P ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 43,
+        "text": "15 Equation ( 4 ) pits A ’s gain from poaching B ’s manager instead of retaining its manager and worker when a A = a P against the additional managerial salary it expects to pay when poaching. Below we provide a numerical example of an industry in which A poaches B ’s manager with positive probability for illustration. Numerical example. Consider the industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) = ( U [0 , 10] , . 5 , . 1 , . 2 , . 25 , . 075 , . 1 , . 125 , . 03) with U denoting the uniform distribution. In equilibrium, A poaches if a A < a ∗ P = 6 . 238. It then replaces a A with a junior worker if a A < a F A = 4 . 99 and a B < α ( a F A ) = 5 . 075, retains its worker if a A ∈ [ a F A , a P ] and a B ⩽ 1 . 25 a A − 1 . 163, and raids a B otherwise. Junior workers earn w = . 1, retained workers w e = 0 . 125, while the wages of raided workers range from . 1375 to . 63. Junior managers earn s = . 2, retained managers s e = . 25, and the salaries of poached managers range from . 325 to . 83. The expected salary of a poached manager in equilibrium is ˆ s ∗ P = 0 . 401 and the probability of poaching P = a ∗ P 10 = . 624.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 44,
+        "text": "3.3. Welfare. We now consider the welfare implications of poaching. In a poaching equilibrium, A does not always gain when poaching. It does not if it poaches m B but elects not to raid a B , or raids a B for whom it would not have wanted to poach m B . Nevertheless, A ’s willingness to poach when a A exceeds a P signals that, in expectation, A benefits from poaching. Naturally, B ’s profits decline while poached managers and raided workers benefit from the increased salaries and wages.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 45,
+        "text": "Proposition 3 ( Welfare considerations ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) with ρ A ⩽ ρ ′′ A . Poaching, in expectation (i) increases firm A ’s profits, (ii) decreases firm B ’s profits, (iii) always benefits poached managers and raided workers, and (iv) increases social welfare, but (v) not to the efficient level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 46,
+        "text": "Since A benefits despite the fact that it has to pay for all social costs that arise due to poaching in order to raid a B , the same is true for social welfare. Social costs of poaching comprise B ’s lost production value, the managerial training cost incurred by both A and B , as well as the worker training costs incurred by the firms as a result of raids (i.e., if the firms would not have replaced their workers otherwise). Note that when A poaches, it pays for these costs either directly (training cost) or indirectly (through the manager’s salary and the worker’s wage) and still expects an increase in profits. As a result, social welfare increases in expectation as poaching facilitates",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 47,
+        "text": "16 assortative matching, i.e., increases the likelihood that more able workers work for more productive firms. The information friction, however, causes A not always poach if it is efficient to do so. This is because A pays for additional output twice, resulting in adverse selection in the sense of Greenwald ( 1986 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 48,
+        "text": "3.4. Competition. Finally, consider an extension of the model presented in Section 2 in which multiple firms vie to poach a firm’s manager to learn about their worker(s). In such a generalized model, we expect poaching salaries to depend on the second most productive firm that decides to attempt poaching a manager from another firm. While poaching in this scenario possibly leads to a reassignment of workers, increasing efficiency in the market, firms need to be sufficiently more productive than their most similar competitors in order to make poaching worthwhile. This suggests that the information friction (and thus welfare loss) due to asymmetric employer learning may increase from competition for managers (and workers).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 49,
+        "text": "In this section, we explore how the number of worker slots per firm affects the outcome of the poaching game introduced in Section 2 , specifically the likelihood of poaching and managerial compensation. We analyze a 2 × 1 model, i.e., A has two worker slots while B has one, and a 1 × 2 model, i.e., A has one worker slot while B has two. In both these settings, B never poaches A ’s manager. This allows us to compare results directly to Section 3 , shedding light on the effects of additional worker slots at either firm. 28 In particular, we lay out why and how an additional worker slot at either firm increases the probability of poaching as well as the poached manager’s expected salary. We focus on poaching equilibria in which B does not hire A ’s laid-offmanager.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 50,
+        "text": "4.1. A 2 × 1 model. In this setting, B continues to have a single worker slot. Thus, its profit loss when losing its single worker—having to replace them with a junior worker—remains the same as in the base model analyzed in Section 3 , and so does w R ( a B ), the highest wage at which B is willing to retain a B , and therefore the wage of a raided worker in equilibrium. Likewise, the range of poached managers’ salaries 28 See Proposition 6 in Appendix D reaffirming the results presented in this section in a dynamic model in which firms command arbitrary numbers of worker slots.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 51,
+        "text": "17 remains the same. 29 Poached managers with intermediate quality information, i.e., a B ∈ ( α ( a F A ) , α ( a P )], however, command higher salaries as the likelihood that A raids a B in this range increases in the number of A ’s worker slots. These insights allow us to state the following results comparing the 2 × 1 with the base model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 52,
+        "text": "Proposition 4 ( A 2 × 1 model ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) with ρ A ∈ ( ρ ′ A , ρ ′′ A ] ∩ ( ρ ′ A (2 × 1) , ρ ′′ A (2 × 1) ] . 30 In the poaching equilibrium, (1) ˆ s ∗ P (2 × 1) > ˆ s ∗ P , (2) a ∗ P (2 × 1) < a ∗ P , and (3) P (2 × 1) > P .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 53,
+        "text": "Proposition 4 (1) follows from the discussion above. Suppose a ∗ P = a ∗ P (2 × 1) . By (1), the highest salary B is willing to pay in to retain m B in expectation, ˆ s ∗ P (2 × 1) , exceeds ˆ s ∗ P (since A is more likely to raid B ’s worker when poaching). This is illustrated in Figure 3 . As a consequence, poaching becomes less attractive, causing A to adjust its poaching cutoff a ∗ P (2 × 1) downwards. This makes poaching less likely. Nevertheless, in equilibrium, P (2 × 1) = h 1 − F \u0010 a ∗ P (1 × 2) \u0011i 2 always exceeds P = F ( a ∗ P ). Otherwise, ˆ s ∗ P (2 × 1) ⩽ ˆ s ∗ P . Numerical example (cont.). Re-consider the industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) = ( U [0 , 10] , . 5 , . 1 , . 2 , . 25 , . 075 , . 1 , . 125 , . 03). In equilibrium, A poaches if",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 54,
+        "text": "min { a A, 1 , a A, 2 } < a ∗ P (2 × 1) = 6 . 236 , where a i,j , i ∈{ A, B } , j ∈ N , denote the worker in firm i ’s j -th slot in period 1. Just as in the base model, it then replaces min { a A, 1 , a A, 2 } with a junior worker if a A < a F A = 4 . 99 and a B < α ( a F A ) = 5 . 075, retains its worker if min { a A, 1 , a A, 2 } ∈ [ a F A , a ∗ P (2 × 1) ] and a B ⩽ 1 . 25 a A − 1 . 163, and raids a B otherwise. Junior workers earn w = . 1, retained workers w e = 0 . 125, while the wages of raided workers range from . 1375 to . 63. Junior managers earn s = . 2, retained managers s e = . 25, and the salaries of poached managers range from . 325 to . 83. The expected salary of a poached manager 29 This is because conditional on manager poaching, A never raids B ’s worker if a B = a but always if a B = a . 30 Throughout this section, we add ( n A × n B ) as a subscript to indicate values for an industry in which A has n A and B n B worker slots.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 55,
+        "text": "a F A a ∗ P ˆ s ∗ P ˆ s ∗ P (2 × 1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 56,
+        "text": "a ∗ P (2 × 1) ˆ s P (2 × 1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 57,
+        "text": "ˆ s P ∆ π A = ∆ π A (2 × 1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 58,
+        "text": "Figure 3. The effect of an additional worker at firm A",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 59,
+        "text": "is ˆ s P (2 × 1) = 0 . 402 and the probability of poaching P (2 × 1) = 2 a ∗ P (2 × 1) 10 − \u0010 a ∗ P (2 × 1) 10 \u0011 2 = . 858. This illustrates Proposition 4 (1), (2) and (3).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 60,
+        "text": "4.2. A 1 × 2 model. Assume now that the less productive firm B has an additional worker slot. Just as in the 2 × 1 model, B ’s profit ramifications of losing a worker— conditional on their ability—are the same as in the base model. As a consequence, the highest wage at which B is willing to retain a worker with ability a remains w R ( a ). It follows that the upper and lower bounds of poached manager salaries, s P and s P , respectively, remain the same as well. Once A poaches m B , however, its chance to learn about a highly able worker increases.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 61,
+        "text": "Proposition 5 ( A 1 × 2 model ) . Fix an industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) with ρ A ∈ ( ρ ′ A , ρ ′′ A ] ∩ ( ρ ′ A (1 × 2) , ρ ′′ A (1 × 2) ] . In the poaching equilibrium, (1) ˆ s ∗ P (1 × 2) > ˆ s ∗ P , (2) a ∗ P (1 × 2) > a ∗ P , and (3) P (1 × 2) > P .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 62,
+        "text": "To understand Proposition 5 , suppose that a ∗ P (1 × 2) = a ∗ P . In this case, the probability of poaching in the 1 × 2 model and the base model is the same, F ( a ∗ P ). A ’s benefit from poaching, however, is larger since it raids one of B ’s workers more often than",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 63,
+        "text": "19 in the base model as it is more likely that one of B ’s workers exceeds its thresholds α ( a F A ) and α ( a ∗ P ). This implies that ˆ s ∗ P (1 × 2) must exceed ˆ s ∗ P reducing A ’s benefit from poaching. However, the profit loss incurred by B falls short of A ’s additional gain from poaching. As such, A poaches more often than in the base model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 64,
+        "text": "a F A a ∗ P ˆ s ∗ P ˆ s ∗ P (1 × 2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 65,
+        "text": "a ∗ P (1 × 2) a ∗ P (1 × 2) ˆ s P (1 × 2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 66,
+        "text": "Figure 4. The effect of an additional worker at firm B",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 67,
+        "text": "Figure 4 illustrates the effect of an additional worker slot at B . The additional profit from poaching at a P (1 × 2) , ∆ π A (1 × 2) , increases everywhere (shifts to the right) as A is more likely to learn about a highly able worker at B . At the same time, B ’s expected profit loss—conditional on poaching— s P (1 × ) increases for every a P (1 × 2) for the same reason. Thus, ˆ s ∗ P (1 × 2) > ˆ s ∗ P , and since A ’s gain necessarily dominates B ’s loss if ρ A is large enough, a ∗ P (1 × 2) > a ∗ P . Numerical example (cont.). Re-consider the industry ( F, ρ A , ρ B , s, s e , t m , w, w e , t w ) = ( U [0 , 10] , . 5 , . 1 , . 2 , . 25 , . 075 , . 1 , . 125 , . 03). In equilibrium, A poaches if a A < a ∗ P (1 × 2) = 6 . 516. Just as in the base model, it then replaces a A with a junior worker if a A < a F A = 4 . 99 and max { a B, 1 , a B, 2 } < α ( a F A ) = 5 . 075, retains its worker if a A ∈ [ a F A , a P (1 × 2) ] and max { a B, 1 , a B, 2 } ⩽ 1 . 25 a A − 1 . 163, and raids max { a B, 1 , a B, 2 } otherwise. Junior workers earn w = . 1, retained workers w e = 0 . 125, while the wages of raided workers range from . 1375 to . 63. Junior managers earn s = . 2, retained managers s e = . 25, and the salaries of poached managers range from . 325 to . 83. The expected salary of a poached",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 68,
+        "text": "20 manager is ˆ s ∗ P (1 × 2) = 0 . 486 and the probability of poaching P (1 × 2) = a ∗ P (1 × 2) 10 = . 652. This illustrates Proposition 5 (1), (2) and (3). In this section, we have shown an additional slot at either firm increases the expected salary of a poached manager since A is more likely to raid B ’s worker(s). As A ’s additional benefit of poaching exceeds B ’s additional profit loss, the probability of poaching increases in both cases. However, the mechanisms of action are different. In case the more productive firm has an additional worker slot, its additional profits from poaching remain the same (as it is indifferent between poaching and retaining at a A, 1 = a ∗ P (2 × 1) if a A, 2 ⩾ a ∗ P (2 × 1) ), but it is more likely to poach in the first place. If the less productive firm has an additional worker slot, A ’s additional profit from poaching increases as A is more likely to learn about a highly able worker at B .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 69,
+        "text": "5. Testable Implications",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 70,
+        "text": "There are seven key testable implications derived from our equilibrium and comparative statics analyses in Sections 3 and 4 , respectively. We briefly summarize them here as they guide our empirical analysis in subsequent sections. Prediction 1. Managers are poached by more productive firms. Prediction 1 directly follows from Proposition 1 . A firm poaches a manager for personnel-specific information in equilibrium only if is sufficiently more productive than the manager’s current employer, i.e., ρ A > ρ ′ A . Intuitively, the poaching firm’s productivity has to exceed a level that makes paying for the manager’s information rent attractive. Prediction 2. When a firm poaches a manager from another firm, the poaching firm is more likely to also raid their workers. Proposition 1 establishes that more productive firms poach managers for the option value of identifying high-ability workers the manager supervises at their current employer. It follows that a firm that successfully poaches another firm’s manager may raid the manager’s current workers. Prediction 3. Poached managers earn higher salaries. This prediction follows from Propositions 1 and 2 and is illustrated by Figure 1 . A firm only raids a worker if their ability exceeds its own worker’s ability and a junior worker’s ability non-trivially. Proposition 6 in Appendix D extends the statement for arbitrarily many workers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 71,
+        "text": "21 Prediction 4. The salary of a poached manager, on average, increases in the demand for information, i.e., when poached by a larger firm. By Proposition 4 , the expected salary of a poached manager increases if the poaching firm has an additional worker slot. This follows because a firm with more slots for workers is more likely to raid a worker, increasing the expected value of personnel-specific information, and making the manager more valuable to retain for the poached firm. This result is illustrated by Figure 3 . Proposition 6 generalizes this result to arbitrarily many worker slots. Prediction 5. The salary of a poached manager, on average, increases in the supply of information, i.e., when poached from a larger firm. By Proposition 5 , the expected salary of a poached manager is larger if the poached firm has an additional worker slot. This result is illustrated by Figure 4 . Proposition 6 in Appendix D generalizes this result to arbitrary numbers of worker slots in a dynamic setting. The intuition behind Prediction 5 is that losing a manager with information about more workers increases the probability of a raid, again because the expected value of information increases. As a result, the manager is therefore more valuable to retain for the poached firm. Prediction 6. The salary of a poached manager increases in the raided workers’ abilities. Proposition 2 establishes that the salary of a poached manager weakly increases in their worker’s ability. Moreover, their salary strictly increases if the firm that poached the manager raids the worker. This is because the poached firm is about to lose higher ability workers. This result is illustrated by Figure 2 . The generalization to multiple workers follows from the proof of Proposition 6 in Appendix D . Prediction 7. Raided workers are, on average, of higher ability than non-raided workers. This prediction follows from Proposition 1 and is illustrated by Figure 1 . A firm only raids a worker if their ability exceeds the firm own worker’s ability and a junior worker’s expected ability non-trivially. Proposition 6 in Appendix D extends the statement for arbitrarily many workers, as firms only raid high-ability workers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 72,
+        "text": "The dataset we use is the Rela ̧c ̃ao Anual de Informa ̧c ̃oes Sociais (RAIS, 2003-2017), a linked employer-employee dataset derived from administrative records covering all formal sector employment contracts in Brazil. This is a Ministry of Labor dataset",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 73,
+        "text": "22 that serves the purpose of administering social security programs and the data is submitted (by law) by all firms employing formal workers in the country. The records include a worker’s tax identifier, average monthly earnings, start and end date of their contract, cause of separation (including whether they were fired, quit, or were transferred between subsidiaries of the same firm), number of contracted weekly hours, occupation code (6-digit) and education level. We deflate earnings using the Consumer Price Index for 2008. The data also records information on the contracting establishment, including its unique tax identifier, the primary industry in which it operates, and the municipality where it is located. Brazil is a large country with a formal sector workforce of over 60 million people. We use the data for three purposes: (1) construct a proxy measure of “worker ability” using employment histories; (2) identify events where a firm “poached” a manager (or worker) from another firm (that is, hired them away with no unemployment spell in-between jobs); (3) identify all co-workers of poached manager (or worker) in the origin firm, and track their trajectory into the same destination firm, or other firms.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 74,
+        "text": "6.1. Measuring worker ability and firm wage premium. We measure worker ability following the Abowd et al. ( 1999 ) two-way fixed effect decomposition (the AKM model ). 31 This model decomposes the firm-specific and worker-specific “wage premia,” such that a higher firm fixed effect indicates that a particular firm tends to pay higher wages relative to other firms. Correspondingly, a higher worker fixed effect indicates that a particular worker tends to earn higher wages relative to other workers in the firms they work at. As such, this worker fixed effect can be interpreted as the value of portable skills workers take with them; or, as a proxy of worker ability. To estimate this, we run the following model",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 75,
+        "text": "ln w it = α + x it β + η Y ( i,t ) + θ i + ε it , (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 76,
+        "text": "with dependent variable w it , the real log wage of worker i in year t . Y ( i, t ) captures the place of employment for worker i at time t . η Y ( i,t ) captures the establishment 31 As noted above, the worker fixed effect from this estimation is sometimes referred to as worker “ability”, though the theoretical basis for the correlation between this fixed effect and worker productivity is not clear ( Eeckhout and Kircher ( 2011 )). We assume better-paid workers tend to be of better ability and rely on the positive correlations between average worker AKM fixed effects and firm productivity found in Brazil ( Cornwell et al. ( 2021 )) and Germany ( Bender et al. ( 2018 )) as corroborating evidence.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 77,
+        "text": "23 “wage premium.” The θ i captures worker ability, as described above. This estimation controls for a normalized cubic in age interacted with race and gender, and year effects in x it . 32 For this estimation, we use data from 2003 to 2008 to build a proxy of ability that pre-dates the poaching and raid events we study in the next section.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 78,
+        "text": "6.2. Identifying poached workers. We focus on a specific set of job-to-job transitions since we are interested in managers and workers who were likely poached from the origin firm by the destination firm rather than workers who were hired at the destination firm following an unemployment spell. We focus on job-to-job transitions between 2010 and 2016 that fit our classification criteria to avoid contamination. For this period, there are 5,722 manager-to-manager transitions and 95,580 such transitions for non-managers to non-managers. We also identify 6,813 manager to non-manager transitions, and 3,143 non-manager to manager transitions. Out of the 5,722 manager-to-manager transitions, 2,864 transitions include at least one raided worker by the destination firm. The equivalent for manager to non-manager is 2,603 and for non-manager to manager is 1,260. To classify a poaching event, we focus on employees that (1) are employed in private firms with an average of at least about 50 employees in the sample months, (2) were employed in the origin firm for at least one year prior to the poaching event, (3) were hired by a different destination firm (not just different establishment) at time t = 0, and (4) were formally separated from their origin firm (i.e. cannot be holding both origin firm and destination firm contracts in the same month). For all workers satisfying these movement criteria, we further define a manager poaching event when the leaving worker was a manager in the origin firm and is hired as a manager in the destination firm. 33 The Brazilian Occupation Codes (CBO) include a classification for middle managers (the third digit in the occupation code is a “0”) as well as for directors (those starting with a “1”). 34 Our primary analysis will focus on middle manager movements, but include the top-level executives in our battery 32 We normalize the experience profile to be flat at 20 years of experience, as per Card et al. ( 2018 ). 33 We discuss manager to non-manager and non-manager to manager transitions in Section 8 . 34 Occupation codes are usually reported by HR or other senior managers and are generally accurate, though not completely immune to misclassification ( Cornwell et al. , 2021 ). To mitigate this, we include in our manager classification employees who are classified as managers in either the origin or destination firm and are within the top decile of earnings in the other, non-managerial classification.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 79,
+        "text": "24 of robustness checks in the Appendix. 35 To avoid overlapping events where multiple managers may be poached at the same time, we restrict our analysis to only those that are at least 25 months apart. As a comparison group, we randomly select a set of non-manager poaching events following the same criteria. Table 1. Summary statistics",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 80,
+        "text": "Origin firm Destination firm Mean 10th pct Median 90th pct Mean 10th pct Median 90th pct Firm variables Productivity proxy 0.07 -0.23 0.06 0.38 0.09 -0.23 0.09 0.42 Firm size (# workers) 960 73 328 2399 565 63 230 1353 Raided workers wage (2008 R [FORMULA] . Industry categories show the share of firms within each type of major industry group. Manager salary is the poached manager salary in 2008 R $ . Age is the manager’s age in years at the time of poaching, and experience is the poached manager’s total years of experience in the labor force. Ability is the poached manager’s worker fixed effect from Abowd et al. ( 1999 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 81,
+        "text": "6.3. Identifying raided workers. For all poaching events, we then identify all the co-workers of the poached managers in the origin firm at t = − 12, and track their trajectories for the year following the poaching event. We define those workers who 35 We focus on middle managers because they are generally in charge of hiring and supervising employees in the establishment. We run a robustness test where we define the event as poaching of directors rather than middle managers and track the co-movement of workers. We find that the co-movement exists but is much more subdued, not too distinct from the referrals share but with slightly different timing. This is consistent with our theory, as middle managers have information about workers as their direct reports, whereas directors have middle managers as their direct reports. Results available in Appendix Figure C.1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 82,
+        "text": "25 worked with the poached employee in the origin firm and moved to the same destination firm as raided co-workers. We choose the more restrictive set of workers who were in the same firm at least a year prior to the poaching event to allow enough co-working time (and at least one round of potential annual review evaluations) to take place and build information on the workers’ ability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 83,
+        "text": "7. Empirical results",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 84,
+        "text": "Below we document empirical evidence consistent with the implications of our model laid out in Section 5 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 85,
+        "text": "7.1. Summary statistics and key variables. We focus on establishments that had at least one poaching event in our time period. Table 1 shows the summary statistics of origin and destination establishments in our sample. Origin establishments tend to be larger, with about 960 employees on average (328 at the median) to destination establishments’ 565 average (and 230 median). Origin establishments tend to pay about 6% less, but are in broadly similar industries to the destination establishments.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 86,
+        "text": "7.2. Worker movements following a poaching event. To explore the movement of workers between the firms of interest, we proceed as follows: (i) for all destination firms, we classify new hires as raided if a worker is from the same firm as the poached worker and was hired after the poaching event; (ii) we calculate the share of workers hired from the same firm as the poached manager from 9 months prior to the poaching event to 12 months after the event; (iii) we run the following specification:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 87,
+        "text": "Raided et = α + t =12 X t = − 9 δ t · D et + γ e + ε et (6) where Raided et is either the share or the number of raided workers for poaching event e in relative period t , and γ e are event fixed effects. δ t are the coefficients of interest: each coefficient estimates the difference in the share (number) of raided workers in the set of new hires between time t and the baseline period t = − 3. We do this for two types of poaching events: manager to manager, and non-manager to non-manager.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 88,
+        "text": "26 7.3. Empirical support to theoretical predictions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 89,
+        "text": "7.3.1. Prediction 1: Managers are poached by more productive firms. Figure 5 reports a cumulative distribution of our firm productivity proxy (the AKM wage premium), and the distribution for the destination (i.e. poaching) establishments stochastically dominates the distribution for the origin firms. 36 Further, Figure 6 shows that origin firms are growing in terms of employee counts, and have a spike around the time when they poach a manager.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 90,
+        "text": "Figure 5. Prediction 1: Cumulative distribution of firm productivity 0 .2 .4 .6 .8 1 Cumulative probability -.5 0 .5 1 Firm productivity proxy (wage premium) Origin Destination",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 91,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. This figure plots the cumulative distribution of the Abowd et al. ( 1999 ) firm fixed effects (wage premia) for destination firms (i.e. poaching firms) in the solid line and origin firms in the dashed line. The distributions are significantly different at the 1% level based on a Kolmogorov-Smirnov test of equality of the distributions. As the RAIS data does not have a direct measure of firm productivity, we use the estimated wage premium as a proxy based on the strong correlation between these reported in Cornwell et al. ( 2021 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 92,
+        "text": "7.3.2. Prediction 2: When a firm poaches a manager from another firm, the poaching firm is more likely to also raid their workers. The referrals literature suggests workers co-move between similar establishments even when there is no connection between them, but that workers who are more likely to know each other (that is, have overlapped in the same original workplace for longer periods) are more likely to move to 36 See Appendix Figure C.2 for the probability distribution function.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 93,
+        "text": "Figure 6. Prediction 1: Destination firm growth Poaching event 4 8 12 16 Number of hires (monthly) 150 175 200 225 250 275 Number of employees (monthly) -12 -9 -6 -3 0 3 6 9 12 Relative month (manager poached at t=-1, starts at t=0) Firm size (left axis) New hires (right axis)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 94,
+        "text": "Note: Data from RAIS. This figure plots the median firm size of destination firms 12 months prior and 12 months following the poaching events. The left y axis shows the monthly median number of employees in these firms, shown in the graph as circles. The right y axis shows the median number of monthly new hires, shown in the graph as the gray bars.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 95,
+        "text": "the same firm. This co-movement is attributed to referrals (see Miller and Schmutte ( 2021 ) for Brazil). As we detail below, however, workers are substantially more likely to follow a manager than a non-manager. Figure 7 shows the co-movement of new hires following a poaching event for the share of raided workers relative to all new hires within each of the 9 months preceding and 12 months following the poaching event. Around 1% of new hires at the destination are from the same origin as the poached manager in the months prior to the poaching event, but at t = 0, concurrent with the poaching of the manager, the share of new hires from the same origin establishment jumps to 8% higher and, though it reduces in the following months, the share of new hires that come from the same origin firm stays at a significantly higher relative rate for the next 6 to 12 months. Figure 8 repeats the exercise with the average number of workers hired from the same origin firm. The pattern and spike are similar and show the number of workers that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 96,
+        "text": "28 co-move is substantial. For the alternative poaching events of non-managers these patterns are much less pronounced in both share and number of subsequently raided workers. There is a slight increase in the share of newly hired workers from the same origin, but the increase when a manager is poached is much larger and sustains longer.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 97,
+        "text": "Figure 7. Prediction 2: Co-movement of workers following a poaching event (share of new hires) -.02 0 .02 .04 .06 .08 Share of new hires from the same firm as poached worker -9 -6 -3 0 3 6 9 12 Months relative to poaching event Manager poached Non-manager poached",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 98,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. This figure plots the coefficients from Equation 6 with the outcome variable as the share of raided workers relative to new hires in the destination firm. The event marked with triangles depicts when a manager was poached from the origin firm and hired as a manager in the destination firm. The event marked with an X depicts when a non-manager was poached from the origin firm and hired as a non-manager in the destination firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 99,
+        "text": "7.3.3. Prediction 3: Poached managers earn higher salaries. Almost by design, managers who are poached will have higher overall earnings in the destination firm relative to the origin firm. 37 We show that the salary distribution of poached managers 37 We do not impose that the manager must earn a strictly higher salary at the destination firm because “earnings” here can include on-the-job amenities or bonuses that might not be recorded in administrative filings. In our data, 56% of the poached managers earn a strictly higher salary in their next job. If we restrict the analysis to only those managers, our empirical results are stronger throughout.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 100,
+        "text": "Figure 8. Prediction 2: Co-movement of workers following a poaching event (number of new hires)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 101,
+        "text": "0 1 2 Average number of raided hires",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 102,
+        "text": "-9 -6 -3 0 3 6 9 12 Months relative to poaching event Manager poached Non-manager poached",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 103,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. This figure plots the coefficients from Equation 6 . The outcome variable is the number of raided workers in each month. The event marked with triangles depicts when a manager was poached from the origin firm and hired as a manager in the destination firm. The event marked with an X depicts when a non-manager was poached from the origin firm and hired as a non-manager in the destination firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 104,
+        "text": "stochastically dominates the distributions of non-poached new managers at destination firms (Figure 9 ). 38,39",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 105,
+        "text": "7.3.4. Prediction 4. The salary of a poached manager, on average, increases in the demand for information. If the destination firm has a greater need for information, this information should be more valuable to them. We construct a set of proxies to measure how much information a firm is likely to need and value: destination firm size (number of employees) and employment growth rate. We explore these relationships by running the following regression: 38 See Appendix Figure C.3 for the probability distribution function. 39 The pattern is similar for poached managers’ ability. See Appendix Figure C.4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 106,
+        "text": "Figure 9. Prediction 3: Cumulative distribution of manager starting salary at destination firm 0 .2 .4 .6 .8 1 Cumulative probability 5 6 7 8 9 10 Ln salary (2008 R$) Non-poached new managers Poached managers",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 107,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. Includes only new hires at destination firms following the poaching of a manager. Poached managers refer to managers who are poached based on the definition in Section 6.2 (solid line), and non-poached managers are all other managers hired who did not meet the poaching definition (dashed line). Manager starting salary deflated to R $ 2008. The distributions are significantly different at the 1% level based on a Kolmogorov-Smirnov test of equality of the distributions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 108,
+        "text": "lnSalary ide = α + β 1 ln Size de + β 2 GrowthRate de + ζ 1 M ioe + ε ide (7)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 109,
+        "text": "with lnSalary ide being the natural log of the starting salary of poached manager i in destination firm d in event e . lnSize de is the natural log of the number of employees in the destination firm d at the time of the poaching event e . GrowthRate de is the annual growth rate of employment of the destination firm. M ioe is the set of controls for the poached manager: the natural log of poached manager i ’s salary in origin firm o at the time of the poaching event e . ε ide is an idiosyncratic error term. β 1 and β 2 are the coefficients of interest. Table 2 reports the results. We focus on only the events in which there was at least one raided worker. Columns (1) to (3) iteratively add manager-specific controls, which do not explain much of the variation. The fully specified model in Column (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 110,
+        "text": "31 suggests that both measures of destination firm information demand are significantly correlated with poached manager salary. Table 2. Prediction 4: Demand for information and poached manager destination salary",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 111,
+        "text": "Outcome: ln(salary) at destination (1) (2) (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 112,
+        "text": "Destination firm size (ln) 0.016[FORMULA] 0.015** 0.013** (0.006) (0.006) (0.006) Destination firm empl. growth rate 0.014** 0.017** 0.023[FORMULA] (0.007) (0.007) (0.007)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 113,
+        "text": "Manager controls Manager salary at origin \u0013 \u0013 \u0013 Manager experience \u0013 \u0013 Manager ability \u0013",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 114,
+        "text": "Obs 2864 2864 2864 R-Squared 0.692 0.694 0.715",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 115,
+        "text": "Note: Standard errors in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01. Data from RAIS. Poached manager refers to an event defined as the manager engaging in a direct job-to-job transfer between two different private firms with no unemployment period in between. Origin firm refers to the firm the manager was originally employed in, and was poached from. Destination firm refers to the firm the manager moved to, relative to the firm they were previously employed in. Data used in the regressions are from event cohorts between 2010 and 2016. Worker ability and firm wage premia (AKM fixed effects, a proxy of “ability”) are estimated using data from 2003-2008 to avoid measure contamination. Firm size is the natural log of the number of employees. Manager controls include: poached manager origin firm salary, experience, and ability. Raided workers refers to workers from the same origin firm as the poached manager, who also moved to the same destination firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 116,
+        "text": "7.3.5. Prediction 5. The salary of a poached manager, on average, increases in the supply of information. We explore this prediction through the following regression: lnSalary ide = α + β 1 ln Size oe + β 2 WorkerAbility oe + β 3 (ln Size oe × WorkerAbility oe ) + ζ 1 M ioe + ζ 2 D de + ε ide (8)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 117,
+        "text": "32 with lnSalary ie denoting the natural log of the starting salary of poached manager i in destination firm d event e . lnSize oe is the natural log of the number of employees in origin firm o at the time of poaching event e . WorkerAbility oe is the average of the worker ability, measured by the AKM fixed effects in origin firm o at the time of the poaching event e , and their interaction. M ioe is the set of controls for the poached manager: the natural log of poached manager i ’s salary in origin firm o at the time of the poaching event e . D de is a set of controls for the destination firm: the natural log of the destination firm size and destination firm AKM fixed effect (wage premium). ε ide is an idiosyncratic error term. β 1 to β 3 are the coefficients of interest. In principle, managers who have more and better information should command higher salaries at their destination firms. We measure the amount of information in the origin firm using size (number of employees) as well as the average ability of the workers. Table 3 shows the correlation between the poached manager’s destination salary and these variables. All columns control for the managers’ origin firm salary, so the coefficients capture the salary differential as managers move firms. Column (1) includes firm size and worker quality linearly, while Column (2) accounts more flexibly for these by interacting the two, as a larger firm may have a larger number of high-ability workers. In both columns, there is a positive and significant correlation between origin firm size and destination manager salary, conditional on origin firm average worker quality. The interaction term is significant and positive, suggesting average worker ability in a firm does not “matter” (in the correlational, not causal sense) for the poached manager’s salary unless there are also more of them. The relationship between firm size and salary is most robust to the inclusion of additional controls, including manager characteristics and destination firm characteristics, while worker ability alone is no longer significant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 118,
+        "text": "7.3.6. Prediction 6. The salary of a poached manager increases in the raided workers’ abilities. We explore these relationships by running the following regression:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 119,
+        "text": "lnSal ide = α + β 1 RaidAbility de + β 2 RaidN de + β 3 ( RaidAbility de × RaidN de ) + ζ 1 M ioe + ζ 2 D de + ε ide (9)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 120,
+        "text": "33 Table 3. Predictions 5: supply of information and poached manager destination salary",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 121,
+        "text": "Outcome: Manager ln(salary) at destination (1) (2) (3) (4) (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 122,
+        "text": "Orig. firm size (ln) 0.013** 0.022[FORMULA] 0.020[FORMULA] 0.021[FORMULA] 0.017** (0.005) (0.007) (0.007) (0.007) (0.007) Orig. firm avg worker ability 0.355[FORMULA] 0.170* 0.184* 0.072 0.064 (0.030) (0.102) (0.101) (0.099) (0.099) Orig. firm size (ln) 0.031* 0.029* 0.039** 0.041[FORMULA] × Orig. firm avg worker ability (0.016) (0.016) (0.016) (0.016)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 123,
+        "text": "Manager controls Manager salary at origin \u0013 \u0013 \u0013 \u0013 \u0013 Manager experience \u0013 \u0013 \u0013 Manager quality \u0013 \u0013",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 124,
+        "text": "Destination firm Destination firm size (ln) \u0013 Destination firm growth \u0013",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 125,
+        "text": "Obs 2864 2864 2864 2864 2864 R-Squared 0.709 0.710 0.712 0.728 0.730 Note: Standard errors in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01. Data from RAIS. Poached manager refers to an event defined as the manager engaging in a direct job-to-job transfer between two different private firms with no unemployment period in between. Origin firm refers to the firm the manager was originally employed in, and was poached from. Destination firm refers to the firm the manager moved to, relative to the firm they were previously employed in. Data used in the regressions are from event cohorts between 2010 and 2016. Worker and firm wage premia (AKM fixed effects, a proxy of “ability”) are estimated using data from 2003-2008 to avoid measure contamination. Firm size is the natural log of the number of employees. Controls include: poached manager origin firm salary, experience, and ability, destination firm size (natural log of the number of employees) and wage premium.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 126,
+        "text": "with lnSalary ide denoting the natural log of the starting salary of poached manager i in destination firm d in event e . RaidAbility de is the average quality of raided workers measured by their average AKM fixed effect at the time of poaching. RaidN de is the natural log of the number of raided workers. We also include the interaction of these two terms. M ioe is the set of controls for the poached manager: the natural log of poached manager i ’s salary in origin firm o at the time of the poaching event e . D de",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 127,
+        "text": "34 is a set of controls for the destination firm: the natural log of the destination firm size and destination firm AKM fixed effect (wage premium). ε ide is an idiosyncratic error term. β 1 to β 3 are the coefficients of interest. We report the results in Table 4 . The prior set of results showed that the information on potential raiding targets was valuable, but the realization of this information is also important: there is a strong and positive correlation between the average quality of raided workers and the manager’s salary. We include destination firm controls as we showed in Prediction 4 that they were correlated with manager salary. Column (1) shows a strong positive correlation between the average quality of raided workers and the poached manager’s salary. Columns (1) to (3) then iteratively include manager characteristic controls, and the magnitude and strength of the correlation are robust. Column (4) includes an interaction of average quality and the log of the number of raided workers, and the level variable of the number is significantly negative, while the interaction is positive. This suggests it is not simply how many workers, but how many higher quality workers that drive the higher salary—suggestive of a manager with valuable information.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 128,
+        "text": "7.3.7. Prediction 7. Raided workers are, on average, of higher ability than non-raided workers. Finally, we show that the ability of raided workers is igher than the ability of other hires within the same time period for the destination firm in Figure 10 . 40 ,41",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 129,
+        "text": "8. Alternative Explanations",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 130,
+        "text": "In this paper, we provide a theory of the role personnel-specific information held by managers plays in the labor market. There are two potential alternative explanations for the co-movement of workers with their poached managers as predicted by our model and observed in Brazil’s formal sector. First, manager recommendations may resemble worker referrals, i.e., the co-movement is driven by managers who refer workers in their network, neither drawing on detailed worker information nor being accountable for their future performance. Second, the co-movement is a result of managerial favoritism towards a group of workers for non-performance-based reasons. 40 See Appendix Figure C.5 for the probability distribution function. 41 The pattern is similar for raided workers’ wages. See Appendix Figure C.6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 131,
+        "text": "35 Table 4. Predictions 6: Raided workers’ ability and poached manager destination salary",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 132,
+        "text": "Outcome: ln(salary) at destination (1) (2) (3) (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 133,
+        "text": "Ability of raided workers 0.145[FORMULA] 0.149[FORMULA] 0.122[FORMULA] 0.098[FORMULA] (0.016) (0.016) (0.015) (0.019) # raided workers (ln) -0.033[FORMULA] (0.006) Ability of raided workers 0.018* × # raided workers (ln) (0.011)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 134,
+        "text": "Manager controls Manager salary at origin \u0013 \u0013 \u0013 \u0013 Manager experience \u0013 \u0013 \u0013 Manager ability \u0013 \u0013",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 135,
+        "text": "Destination firm controls Destination firm size (ln) \u0013 \u0013 \u0013 \u0013 Destination firm growth \u0013 \u0013 \u0013 \u0013",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 136,
+        "text": "Obs 2864 2864 2864 2864 R-Squared 0.702 0.705 0.722 0.728 Note: Standard errors in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01. Data from RAIS. Poached manager refers to an event defined as the manager engaging in a direct job-to-job transfer between two different private firms with no unemployment period in between. Origin firm refers to the firm the manager was originally employed in, and was poached from. Destination firm refers to the firm the manager moved to, relative to the firm they were previously employed in. Data used in the regressions are from event cohorts between 2010 and 2016. Worker and firm wage premia (AKM fixed effects, a proxy of “ability”) are estimated using data from 2003-2008 to avoid measure contamination. Firm size is the natural log of the number of employees. Controls include: poached manager origin firm salary, experience, and ability, destination firm size (natural log of the number of employees) and wage premium.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 137,
+        "text": "Below, we discuss that we, in fact, find evidence for both these phenomena in Brazil’s formal sector but that neither is consistent with the patterns we present here. The weight of the evidence of our empirical findings presented in Section 7 suggests that worker referrals and favoritism co-exist with, but are distinctly different from, managerial poaching to obtain personnel-specific information to fuel worker raids.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 138,
+        "text": "Figure 10. Prediction 7: Worker ability 0 .2 .4 .6 .8 1 Cumulative probability -2 -1 0 1 2 3 Worker ability Non-raided new hires Raided new hires",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 139,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. Includes only new hires at destination firms following the poaching of a manager. Raided hires refer to nonmanagerial workers hired from the same origin firm as the poached manager (solid line). Non-raided new hires refer to all other workers hired at the same time but from different firms (dashed line). This graph plots the cumulative distribution of the worker fixed effect from an AKM decomposition ( Abowd et al. ( 1999 )), a proxy of worker ability. The distributions are significantly different at the 1% level based on a Kolmogorov-Smirnov test of equality of the distributions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 140,
+        "text": "In exploring these potential alternatives, we repeat the specifications in our core analysis but for transitions where the poached manager was hired as a non-manager, and vice versa. We report these results in Table 5 . Conceptually, if the poached manager was hired as a non-manager, they have the same level of information but lack accountability . Poached non-managers hired as managers, in turn, may have accountability but lack a manager’s information. Our empirical results suggest these moves are, indeed, fundamentally different. For ease of comparison, Columns (1) to (3) in Table 5 repeat the preferred specifications for the manager to manager events that lend support to Predictions 4 to 6.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 141,
+        "text": "8.1. Worker referrals. Worker referrals are common and often encouraged or implemented by firms ( Friebel et al. , 2023 ). Figures 7 and 8 provide evidence that there is, in fact, co-movement between workers across firms in Brazil’s formal sector. Its magnitude, however, is strikingly smaller than the co-movement of workers with their",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 142,
+        "text": "37 manager. We postulate that this difference results from workers’ lack of information and accountability when compared to managers. 42 In terms of demand for information (Prediction 4), Column (4) repeats the specification in Column (1) for manager to non-manager events and Column (7) for nonmanager to manager events. Except for the coefficient on destination firm size, all other coefficients in these regressions are not statistically significant. This suggests that without accountability (manager to non-manager), the firm’s demand for information as measured by employee growth rate no longer explains the variation in the (now) non-manager’s salary. For the non-manager to manager event, in turn, the lack of information seems to be reflected in the near-zero coefficients in the correlation between our measures of information demand and the new manager’s salary. In terms of the supply of information (Prediction 5), when the poached employee lacks accountability (Column (5)) or information (Column (8)), the supply of information at the origin firm is not significantly correlated with the poached employee’s compensation. As such, an explanation of simple worker referrals — lacking information and accountability — would not be consistent with our results about managerial compensation. Specifically, worker referrals convey valuable information about the match quality between a firm and worker (see, e.g., Montgomery , 1991 ; Granovetter , 1995 ; Miller and Schmutte , 2021 ). This information often results in productivity gains due to lower recruitment costs or lower attrition rates ( Dustmann et al. , 2016 ; Barr et al. , 2019 ; Friebel et al. , 2023 ) rather than superior worker ability ( Burks et al. , 2015 ; Brown et al. , 2016 ). As a result, a theory of poaching for personnel-specific information better explains why managerial compensation increases in the ability of raided workers (Table 4 ), and why these are on average of superior ability (Figure 10 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 143,
+        "text": "8.2. Non-performance based favoritism. Another phenomenon that is consistent with worker raids is non-performance-based favoritism, i.e., hiring for reasons other than ability. Surplus diversion by means of favoritism may lead to distorted task assignments and hiring decisions ( Bramoulle and Goyal , 2016 ). The ability to make idiosyncratic decisions, however, satisfies managers demanding authority and can be interpreted as a type of non-pecuniary remuneration ( Prendergast and Topel , 1996 ). 42 It is well documented that increasing accountability for workers through positive ( Beaman and Magruder , 2012 ) or negative rewards ( Heath , 2018 ) increases referral quality.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 144,
+        "text": "Table 5. Alternative explanations Event type : Manager to Manager Manager to Non-Manager Non-Manager to Manager Outcome: ln(salary) at destination (1) (2) (3) (4) (5) (6) (7) (8) (9) Destination Firm Size (ln employment) 0.013** 0.015** 0.027[FORMULA] 0.014** 0.012** 0.023[FORMULA] 0.001 0.005 0.011 (0.006) (0.006) (0.006) (0.006) (0.006) (0.006) (0.009) (0.009) (0.009) Employment growth rate 0.023[FORMULA] 0.027[FORMULA] 0.031[FORMULA] 0.012 0.019** 0.017** 0.003 0.011 0.009 (0.007) (0.007) (0.007) (0.009) (0.009) (0.009) (0.009) (0.009) (0.009) Origin firm Size (ln employment) 0.017** 0.014 0.009 (0.007) (0.009) (0.014) Avg worker ability (AKM FE) 0.064 0.070 -0.036 (0.099) (0.129) (0.202) Size (ln employment) 0.041[FORMULA] 0.030 0.042 × Avg worker ability (0.016) (0.021) (0.033) Raided workers Avg ability (AKM FE) 0.098[FORMULA] 0.046** 0.018 (0.019) (0.020) (0.028) Quantity (ln # raided workers) -0.033[FORMULA] 0.000 -0.024** (0.006) (0.007) (0.012) Avg ability 0.018* 0.052[FORMULA] 0.019 × quantity (0.011) (0.011) (0.021) Manager controls Manager salary at origin \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 Manager experience \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 Manager ability \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 \u0013 Obs 2864 2864 2864 2603 2603 2603 1260 1260 1260 R-Squared 0.715 0.730 0.728 0.624 0.635 0.634 0.671 0.681 0.677 Reference prediction 4 5 6 4 5 6 4 5 6 Note: Standard errors in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01. Data from RAIS. Poached manager refers to an event defined as the manager engaging in a direct job-to-job transfer between two different private firms with no unemployment period in between. Origin firm refers to the firm the manager was originally employed in, and was poached from. Destination firm refers to the firm the manager moved to, relative to the firm they were previously employed in. Data used in the regressions are from event cohorts between 2010 and 2016. Worker and firm wage premia (AKM fixed effects, a proxy of “ability”) are estimated using data from 2003-2008 to avoid measure contamination. Firm size is the natural log of the number of employees. Controls include: poached manager origin firm salary, experience, and ability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 145,
+        "text": "39 Column (3) of Table 5 again repeat the preferred specification (Column 4) from Table 4 , while Columns (6) and (9) describe non-manager to manager and manager to non-manager events. Considering events where the destination firm hires a manager (Columns (1)-(3) and (7)-(9))—controlling for raided worker ability—raiding additional workers yields a negative correlation, or, a salary penalty for their newly hired manager. In the non-manager to manager events, the ability of raided workers and the interaction term are not significant. This is consistent with the interpretation of favoritism as non-monetary compensation. However, in manager to manager events (Column 3), the interaction coefficient is positive and significant, suggesting that managerial salary is positively correlated with the number of raided workers if these are of higher ability, consistent with our theory of poaching and raids. The literature suggests that, in the case of favoritism, raided workers are of lower rather than higher ability. Patacchini and Mocanu ( 2024 ), for example, present evidence of how personal connections influence recruitment in Brazil’s public sector. They find that a reform diminishing the recruiting discretion of government employees led to the hiring of higher ability employees who were more likely to be promoted later on. As a consequence, our strong empirical results about the superior ability of raided workers (Figure 10 ), when compared to non-raided hires, are inconsistent with favoritism. Instead, it takes a theory of information acquisition, such as through managerial poaching, to explain the superior ability of raided workers. Finally, the presence of both favoritism and managerial poaching for personnel-specific information conforms with Bandiera et al. ( 2009 ) who find that managers with fixed salaries are prone to hire among their social connections while performance bonuses discipline managers to hire high-ability workers. This logic is also consistent with favoritism being the driving force behind worker co-movements in the typically fixed salaried public sector ( Patacchini and Mocanu , 2024 ), whereas in this paper information acquisition through poaching—as evidenced by managerial compensation highly sensitive to additional worker ability—is the dominant force in the private sector. 43 43 For an alternative setting in which managerial information and favoritism co-exist see Ho and Huang ( 2024 ) who investigate which workers managers recommend for promotion.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 146,
+        "text": "We analyze the labor market effects of personnel-specific information obtained by managers through supervision and evaluation of their workers. In a model of managerial poaching and worker raids with asymmetric employer learning, we find sufficiently more productive firms poach managers to potentially raid high-ability workers. These firms, however, pay for their additional output twice, once for the information through the manager’s salary and once through the worker’s wage. The reason the market does not facilitate poaching—and thus re-sorting of workers across firms— at an efficient rate, is adverse selection mediated by the information advantage of the manager’s current employer. This phenomenon results in information rents for managers as firms want to protect themselves from raids. Drawing on data from Brazil’s formal sector, we find that managerial poaching with subsequent worker raids is a common phenomenon. We conduct an empirical analysis of managers and workers moving across firms and find that both their movements and compensation patterns strongly support our key theoretical implications. Our data also allows us to distinguish the effects of personnel-specific information held by managers from other potential explanations for manager-related worker movements, such as referrals of workers by workers and non-performance-based favoritism. This study is not only instructive for professional search firms identifying hiring targets, but more generally for firms when making decisions about promotion rules or investment in human capital. Also, our findings are potentially relevant for the optimal design of organizations, especially as it pertains to the division and flow of information. Finally, our results may have consequences for the regulation of labor markets when it comes to non-compete or non-solicitation agreements for employees. The analysis presented in this paper can be extended in several ways. In this first paper we abstract from, for example, how managerial skill in evaluating worker talent and how complementarities among managers and their employees affect managerial poaching. Both of these extensions are interesting avenues of future research. Another fruitful area lies in analyzing how the effects of personnel-specific information held by managers vary with labor market characteristics (enforceability of non-compete agreements, level of hierarchy and authority, unemployment rates, etc.).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 147,
+        "text": "Abowd, J. M., F. Kramarz, and D. N. Margolis (1999). High Wage Workers and High Wage Firms. Econometrica 67 (2), 251–333. Azevedo, F. M. (2020). In review: employment law for executives in Brazil. Veirano Advogados . https://www . lexology . com/library/detail . aspx?g= 114a7826-7054-4f7c-ac01-c6d4bbe5192e . Balasubramanian, N., J. W. Chang, M. Sakakibara, J. Sivadasan, and E. Starr (2022). Locked In? The Enforceability of Covenants Not to Compete and the Careers of High-Tech Workers. Journal of Human Resources 57 (7), S349–S396. Bandiera, O., I. Barankay, and I. Rasul (2009). Social Connections and Incentives in the Workplace: Evidence from Personnel Data. Econometrica 77 (4), 1047–1097. Bandiera, O., A. Prat, and T. Valletti (2020). Active Learning: Theory and Evidence from a Study of Managerial Talent. The Quarterly Journal of Economics 135 (4), 1707–1753. Barr, T., R. Bojilov, and L. Munasinghe (2019). Referrals and Search Efficiency. Journal of Labor Economics 37 (4), 1267–1300. Beaman, L. and J. Magruder (2012). Who Gets the Job Referral? Evidence from a Social Networks Experiment. American Economic Review 102 (7), 3574–3593. Becker, G. S. (1993). Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education . University of Chicago Press. Bender, S., N. Bloom, D. Card, J. Van Reenen, and S. Wolter (2018). Management Practices, Workforce Selection, and Productivity. Journal of Labor Economics 36 (S1), S371–S409. Bramoulle, Y. and S. Goyal (2016). Favoritism. Journal of Development Economics 122 , 16–27. Brown, M., E. Setren, and G. Topa (2016). Do Informal Referrals Lead to Better Matches? Evidence from a Firm’s Employee Referral System. Journal of Labor Economics 34 (1), 161–209. Burks, S., B. Cowgill, M. Hoffman, and M. Housman (2015). The Value of Hiring through Employee Referrals. Quarterly Journal of Economics 130 (2), 805–839.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 148,
+        "text": "42 Card, D., A. R. Cardoso, J. Heining, and P. Kline (2018). Firms and Labor Market Inequality: Evidence and Some Theory. Journal of Labor Economics 36 (S1), S13– S70. CNET (2024). Apple, Google, others settle antipoaching lawsuit for $ 415 million. CNET.com , April 30. https://www . cnet . com/tech/tech-industry/applegoogle-others-settle-anti-poaching-lawsuit-for-415-million/ . Cornwell, C., I. Schmutte, and D. Scur (2021). Building a Productive Workforce: The Role of Structured Management Practices. Management Science 67 (12), 7308– 7321. Coslovsky, S., R. Pires, and R. Bignami (2017). Resilience and Renewal: The Enforcement of Labor Laws in Brazil. Latin American Politics and Society 59 (2), 77–102. Cowgill, B., B. Freiberg, and E. Starr (2024). Clause and Effect: Theory and Field Experimental Evidence on Noncompete Clauses. SSRN Working Paper , 5012370. DoJ (2010). Justice Department Requires Six High Tech Companies to Stop Entering into Anticompetitive Employee Solicitation Agreements. Office of Public Affairs, U.S. Department of Justic . https://www . justice . gov/opa/pr/ justice-department-requires-six-high-tech-companies-stop-enteringanticompetitive-employee . Dustmann, C., A. Glitz, U. Sch ̈onberg, and H. Br ̈ucker (2016). Referral-based Job Search Networks. Review of Economic Studies 83 (2), 514–546. Eeckhout, J. and P. Kircher (2011). Identifying Sorting—In Theory. Review of Economic Studies 78 (3), 872–906. EU (2016). Treaty on the Functioning of the European Union. Official Journal of the European Union C202/1 , 101(1). https://eur-lex . europa . eu/legal-content/ EN/TXT/?uri=CELEX%3A12016E101 . Ferreira, D. and R. Nikolowa (2023). Talent Discovery and Poaching Under Asymmetric Information. Economic Journal 133 (649), 201–234. Foster, L., J. Haltiwanger, and C. Syverson (2008). Reallocation, Firm Turnover, and Efficiency: Selection on Productivity or Profitability? American Economic Review 98 (1), 394–425.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 149,
+        "text": "43 Friebel, G., M. Heinz, M. Hoffman, , and N. Zubanov (2023). What Do Employee Referral Programs Do? Measuring the Direct and Overall Effects of a Management Practice. American Economic Review 131 (3), 633–686. Friebel, G. and M. Raith (2023). Talent Management: The Role of Bosses. SSRN Working Paper , 4162631. Friedrich, B. (2023). Information Frictions in the Market for Managerial Talent: Theory and Evidence. Northwestern University , Unpublished manuscript. Gibbons, R. and L. Katz (1991). Layoffs and Lemons. Journal of Labor Economics 9 (4), 351–380. Gibbons, R. and M. Waldman (1999). A Theory of Wage and Promotion Dynamics inside Firms. Quarterly Journal of Economics 114 (4), 1321–1358. Granovetter, M. S. (1995). Getting a Job: A Study of Contacts and Careers (2 ed.). Chicago: University of Chicago Press. Greenwald, B. C. (1986). Adverse Selection in the Labour Market. Review of Economic Studies 53 (3), 325–347. He, Q. and M. Waldman (2024). Intra-firm Employer Learning, Talent Hoarding and Managerial Practices. Cornell University , Unpublished mansucript. Heath, R. (2018). Why Do Firms Hire Using Referrals? Evidence from Bangladeshi Garment Factories. Journal of Political Economy 126 (4), 1691–1746. Herkenhoff, K., J. Lise, G. Menzio, and G. Phillips (2024). Production and Learning in Teams. Econometrica 92 (2), 467–504. Ho, Y. and Y. Huang (2024). Selection and Sorting when Supervisors have Discretion: Experimental Evidence from a Tanzanian Factory. UC Berkeley , Unpublished mansucript. Kreps, D. M. and R. Wilson (1982). Sequential Equilibria. Econometrica 50 (4), 863–894. Lazear, E. P. (1986). Raids and Offer-Matching. In R. Ehrenberg (Ed.), Research in Labor Economics , Volume 8, pp. 141–165. Greenwich, CT: JAI Press. Lazear, E. P. (2000). Performance Pay and Productivity. American Economic Review 90 (5), 1346–1361. Lazear, E. P., K. L. Shaw, and C. T. Stanton (2015). The Value of Bosses. Journal of Labor Economics 33 (4), 823–861.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 150,
+        "text": "44 Lipsitz, M. and E. Starr (2022). Low-Wage Workers and the Enforceability of Noncompete Agreements. Management Science 68 (1), 143–170. Marx, M. and B. Timmermans (2017). Hiring Molecules, Not Atoms: Comobility and Wages. Organization Science 28 (6), 1115–1133. Milgrom, P. and R. J. Weber (1982). A Theory of Auctions and Competitive Bidding. Econometrica 50 (5), 1089–1122. Miller, C. and I. M. Schmutte (2021). The Dynamics of Referral Hiring and Racial Inequality: Evidence from Brazil. NBER Working Paper , 29246. Montgomery, J. D. (1991). Social Networks and Labor-Market Outcomes: Toward and Economic Analysis. American Economic Review 81 (5), 1408–1418. NYT (2024). F.T.C. Issues Ban on Worker Noncompete Clauses. New York Times , April 23. Patacchini, E. and T. Mocanu (2024). Personal Connections and Hiring Decisions in the Public Sector. Cornell University , Unpublished manuscript. Prendergast, C. and R. H. Topel (1996). Favoritism in Organization. Journal of Political Economy 104 (5), 958–978. Ricart i Costa, J. E. (1988). Managerial Task Assignment and Promotions. Econometrica 56 (2), 449–466. Shi, L. (2023). Optimal Regulation of Non-Compete Contracts. Econometrica 91 (2), 425–463. Starr, E. (2023). Noncompete Clauses: A Policymaker’s Guide throught the Key Questions and Evidence. Economic Innovation Group . https://eig . org/ noncompetes-research-brief/ . Syverson, C. (2004). Market Structure and Productivity: A Concrete Example. Journal of Political Economy 112 (6), 1181–1222. Waldman, M. (1984). Job assignments, signalling, and efficiency. RAND Journal of Economics 15 (2), 255–267. Waldman, M. and Z. Yin (2024). Promotions, Adverse Selection, and Efficiency. Journal of Labor Economics (forthcoming). WSJ (2014). Tech Companies Agree to Settle Wage Suit. Wall Street Journal , April 24.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 0,
+        "text": "Note that in all proofs here and in Appendix D we invoke the sequential equilibrium refinement discussed in footnote 23 in Section 2 . When, say, firm A decides to poach firm B ’s manager (or raids a worker), consider the highest salaries (wages) firms A and B are willing to pay, w A and w B , and assume w A > w B . 44 In a sequential equilibrium, B cannot cease to bid at any w < w B as it beliefs A may stop bidding with a small but positive probability. In this case, B strictly prefers to raise its bid. Proof of Lemma 1 : When retaining a i , firm i ’s payoff π i cannot exceed ρ i a i − w − s . Hiring a junior manager and worker accrues expected profits of ρ i E [ a ] − w − s − t w . The claim follows. ■ Proof of Proposition 1 : We first establish that B never poaches A ’s manager in equilibrium. Suppose first that A never poaches, but B poached m A . Then B can raid a A , a A ⩽ a F A for w e since A prefers a junior replacement over a A . Thus, from an ex ante perspective B ’s benefit of raiding a A = a F A is \u0000 ρ A a F A − w e − t w − s − t m \u0001 − ( ρ A E [ a ] − w − t w − s e ) (10) simplifying to ρ B ρ A ( w e − w − t w ) + ( s e − s − t m ) − ( w e − w ) < 0 . (11) For a A > a F A , the additional wage A is willing to pay to retain a A exceeds B ’s additional benefit. As a result, B does not poach if A does not. Now assume A poaches with positive probability. Then there must be an a P such that A , unaware of a B , poaches if a A < a P . Note that a P ⩾ a F A as otherwise A always prefers hiring a junior worker over poaching m B to potentially raid a B . By the analysis above, B never wants to poach if a A ⩾ a P . Now consider a A < a P , i.e., A attempts to poach. If B attempts to poach as well, in the best case scenario in which it poaches successfully, it obtains m A for s e (as A goes for m B anyway). Suppose both firms poached each other’s manager. Then both firms are aware of a A and a B , and A hires a B under 44 This is always the case when firm A decides to poach/raid in Section 2 but not in the dynamic model in Appendix D . If it is not the case, the reverse argument applies.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 1,
+        "text": "46 the same conditions as if A had poached and B did not. As such, B can always do equally well by hiring m A and potentially a A after they were laid off. Moreover, when poaching B ’s outside option improves if a A > E [ a ] relative to a junior worker replacement, causing it to charge a lower retention wage than w R ( a B ). As a consequence, A increases a P as it poaches more often. As a result, B does not poach if A does. (1) Now suppose that ρ A > ρ B and that A has poached m B . A ’s benefit from raiding a B then maximally amounts to ρ A a B − t w − w R ( a B ) − ρ A E [ a ] + t w + w = ( ρ A − ρ B ) ( a B − E [ a ]) − t w , (12) which is negative for ρ A just exceeding ρ B . The remainder of (1) follows trivially. (2) The highest salary at which B would retain m B is independent of ρ A , whereas A ’s benefit of raiding a B > max { a A , α \u0000 a F A \u0001 } increases unboundedly in ρ A . This implies that there must be an a ∗ P and ρ ′ A such that A poaches if a A < a ∗ P and ρ A > ρ ′ A . (2a) Suppose that a A < a F A . Then raiding a B is beneficial for A if ρ A E [ a ] − w − t w ⩾ ρ A a B − w R ( a B ) − t w ⇔ a B ⩽ E [ a ] + t w ρ A − ρ B . (13) (2b) Observe that ρ A a A − w e = ρ A α ( a A ) − w R ( α ( a A )) − t w ⇔ α ( a A ) = 1 ρ A − ρ B [( ρ A a − ρ B E [ a ]) − ( w e − w ) + 2 t w ] . (14) (2c) follows from (2a) and (2b) above. (3) Finally, suppose that ρ A →∞ . It is straightforward that, as a result, a ∗ P → a . This is because A ’s benefit from gaining worker ability becomes arbitrarily large while its cost is fixed. As such, if ρ A and a B are ‘large’ ( ρ A > ρ ′′ A and a B > a C B ( ρ A )), and A hired a B , this implies that a A ∈ [ a, α − 1 ( a B )) and B prefers to hire A ’s laid offmanager m A to learn about a A —the differential cost of hiring m A and a junior manager is s e − s —and hires a A if a A > E [ a ] + w e − w ρ B . Otherwise B hires a junior manager and junior worker if A poached m B and raided a B . ■",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 2,
+        "text": "47 Proof of Lemma 2 : Equation ( 2 ) establishes the highest retention wage B is willing to pay over replacing its worker with a junior one. As Proposition 1 establishes, B never poaches A ’s manager, and if ρ A ⩽ ρ ′′ A , never hires A ’s laid offemployees. ■ Proof of Proposition 2 : (1) In the absence of poaching junior replacement managers earn m while retained managers earn w e . (2a) Again, junior replacement managers earn m , while (2b) the highest salary B is willing to pay a manager if it knows A will not raid a A is the cost of its replacement s + t m , while the value of the loss of information if a B = a accrues to ( w e − w ) + t w + ρ B ( a − E [ a ]). Moreover, B again has to replace its manager. ■ Proof of Lemma 3 : Observe that A always poaches successfully. As such, P = F ( a ∗ P ). Equation 3 provides the salary A expects to pay m B when poaching if a A < a ∗ P , ˆ s P ( a ∗ P ). If A poaches, it further does not incur the salary for a senior manager s e but is subject to the managerial training cost t m . In equilibrium, this cost of poaching m B has to necessarily equal its benefit when a A = a ∗ P . The LHS of Equation ( 4 ) provides the benefit of poaching vs. not to when a A = a ∗ P . ■ Proof of Proposition 3 : (i) to (iv) follow from the discussion above and below the statement, Lemma 2 and Proposition 2 . (v) Let ̃ a P denote the efficient cutoffbelow which A poaches. Recall that in equilibrium A poaches if a A < a ∗ P . Suppose that A was able to always poach m A at s e + t m . Then, (a) worker poaching would still reassign workers increasing efficiency as A ’s rule when to poach workers would remain unchanged, and (b) A would choose a new cutoff a P such that it is still optimal for A to poach if a A < a P . It follows that ̃ a P ⩾ a P > a ∗ P , which establishes the claim. ■ Proof of Proposition 4 : (1) This claim follows from the argument just above the statement of the Proposition. (2) and (3) follow from the discussion below the Proposition. ■ Proof of Proposition 5 : (1), (2) and (3) follow from the discussion just below the Proposition. ■",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 3,
+        "text": "B.1. Equilibrium characterization in Section 4.1 . ˆ s p (2 × 1) = s + t m",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 4,
+        "text": "+ 2 F ( a P ) [1 − F ( a P )] P (2 × 1) α ( a P ) Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 5,
+        "text": "α ( a F A ) F ( α − 1 ( a )) F ( a P ) ( w R ( a ) − w e ) dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 6,
+        "text": "+ F ( a P ) 2 P (2 × 1) α ( a P ) Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 7,
+        "text": "α ( a F A ) \" 1 − \u0012 F ( a P ) − F ( α − 1 ( a )) F ( a P ) \u0013 2 # ( w R ( a ) − w e ) dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 8,
+        "text": "α ( a P ) ( w R ( a ) − w e ) dF ( a ) ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 9,
+        "text": "(B.15) where P (2 × 1) = 2 F ( a P (2 × 1)) [1 − F ( a P (2 × 1))] + F ( a P (2 × 1)) 2 = 2 F ( a P (2 × 1)) − F ( a P (2 × 1)) 2 . (B.16)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 10,
+        "text": "Then, a P (2 × 1) is determined by a Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 11,
+        "text": "α ( a P (2 × 1)) [ ρ A ( a − a P (2 × 1)) − ( w R ( a ) − w e ) − t w ] dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 12,
+        "text": "= (ˆ s P (2 × 1) − s e ) + t m . (B.17)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 13,
+        "text": "49 B.2. Equilibrium characterization in Section 4.2 . ˆ s P (1 × 2) = s + t m",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 14,
+        "text": "+ 2 F ( α ( a F A )) \u0000 F ( α ( a P )) − F ( α ( a F A )) \u0001 F ( α ( a P )) − F ( α ( a F A )) α ( a P ) Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 15,
+        "text": "α ( a F A ) F ( α − 1 ( a )) F ( a P ) ( w R ( a ) − w e ) dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 16,
+        "text": "+ \u0000 F ( α ( a P )) − F ( α ( a F A )) \u0001 2 F ( α ( a P )) 2 − F ( α ( a F A )) 2 α ( a P ) Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 17,
+        "text": "α ( a F A ) F ( α − 1 ( a )) F ( a P ) ( w R ( a ) − w e ) dF ( a ) 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 18,
+        "text": "+ 2 F ( α ( a P )) (1 − F ( α ( a P ))) 1 − F ( α ( a P )) a Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 19,
+        "text": "α ( a P ) ( w R ( a ) − w e ) dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 20,
+        "text": "+ (1 − F ( α ( a P ))) 2 1 − F ( α ( a P )) 2 a Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 21,
+        "text": "α ( a P ) ( w R ( a ) − w e ) dF ( a ) 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 22,
+        "text": "Then, a P (1 × 2) is determined by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 23,
+        "text": "(1 − F ( α ( a P ))) 2 1 − F ( α ( a P )) 2 a Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 24,
+        "text": "α ( a P (1 × 2)) [ ρ A ( a − a P (1 × 2)) − ( w R ( a ) − w e ) − t w ] dF ( a ) 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 25,
+        "text": "+ 2 F ( α ( a P )) a Z",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 26,
+        "text": "α ( a P (1 × 2)) [ ρ A ( a − a P (1 × 2)) − ( w R ( a ) − w e ) − t w ] dF ( a )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 27,
+        "text": "= (ˆ s P (1 × 2) − s e ) + t m . (B.19)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 28,
+        "text": "50 C. Additional Empirical Results",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 29,
+        "text": "Figure C.1. Co-movement of workers following a director poaching event: share of new hires -.02 0 .02 .04 .06 Share of new hires from the same firm as poached worker -9 -6 -3 0 3 6 9 12 Months relative to poaching event Director is poached Employee is poached",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 30,
+        "text": "Note: Data from RAIS, poached director cohorts 2010-2016. The poaching event in this graph is when a director is poached, not a middle manager. This figure plots the coefficients from Equation 6 with the outcome variable as the share of raided workers relative to new hires in the destination firm. The event marked with triangles depicts when a manager was poached from the origin firm and hired as a manager in the destination firm. The event marked with an X depicts when a non-manager was poached from the origin firm and hired as a non-manager in the destination firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 31,
+        "text": "Figure C.2. Probability distribution of firm productivity 0 .5 1 1.5 Density -.5 0 .5 1 Firm productivity proxy (wage premium) Origin Destination",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 32,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. This figure plots the cumulative distribution of the Abowd et al. ( 1999 ) firm fixed effects (wage premia) for destination firms (i.e. poaching firms) in the solid line and origin firms in the dashed line. The distributions are significantly different at the 1% level based on a Kolmogorov-Smirnov test of equality of the distributions. As the RAIS data does not have a direct measure of firm productivity, we use the estimated wage premium is a proxy based on the strong correlation between these reported in Cornwell et al. ( 2021 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 33,
+        "text": "Figure C.3. Probability distribution of manager starting salary at destination firm 0 .1 .2 .3 .4 .5 Cumulative probability 5 6 7 8 9 10 Ln salary (2008 R$) Non-poached new managers Poached managers",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 34,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. Includes only new hires at destination firms following the poaching of a manager. Poached managers refer to managers who are poached based on the definition in Section 6.2 (solid line), and non-poached managers are all other managers hired who did not meet the poaching definition (dashed line). Manager starting salary deflated to R $ 2008. The distributions are significantly different at the 1% level based on a Kolmogorov-Smirnov test of equality of the distributions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 35,
+        "text": "Figure C.4. Cumulative distribution of manager ability 0 .2 .4 .6 .8 1 Cumulative probability -1 0 1 2 Manager ability Poached managers Non-poached new managers",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 36,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. Includes only new hires at destination firms following the poaching of a manager. Poached managers refer to managers who are poached based on the definition in Section 6.2 , and non-poached managers are all other managers hired who did not meet the poaching definition (i.e. were hired from unemployment or from firms smaller than 50 employees). The figure plots the cumulative distribution of the worker fixed effect from an AKM decomposition ( Abowd et al. ( 1999 )), a proxy of ability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 37,
+        "text": "Figure C.5. Probability distribution of worker ability 0 .2 .4 .6 .8 1 Cumulative probability -2 -1 0 1 2 3 Worker ability Raided new hires Non-raided new hires",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 38,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. Includes only new hires at destination firms following the poaching of a manager. Raided hires refers to nonmanagerial workers hired from the same origin firm as the poached manager (solid line). Non-raided new hires refer to all other workers hired at the same time, but from different firms (dashed line). This graph plots the cumulative distribution of the worker fixed effect from an AKM decomposition ( Abowd et al. ( 1999 )), a proxy of worker ability. The distributions are significantly different at the 1% level based on a Kolmogorov-Smirnov test of equality of the distributions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 39,
+        "text": "Figure C.6. Cumulative distribution of worker wage 0 .2 .4 .6 .8 1 Cumulative probability 6 7 8 9 Ln wage (2008 R$) Raided new hires Non-raided new hires",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 40,
+        "text": "Note: Data from RAIS, poached manager cohorts 2010-2016. Includes only new hires at destination firms following the poaching of a manager. Raided hires refers to nonmanagerial workers hired from the same origin firm as the poached manager. Nonraided new hires refer to all other workers hired at the same time, but from different firms. The figure plots the cumulative distribution of worker starting wages (deflated to R $ 2008) at the destination firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 41,
+        "text": "56 D. A Dynamic Model",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 42,
+        "text": "In this section we present and analyze a dynamic version of the model in Section 2 with (i) overlapping generations of managers and workers, (ii) arbitrary numbers of workers, and (iii) binary worker abilities, strengthening and refining our main results from Sections 3 and 4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 43,
+        "text": "D.1. Model setup. Consider an infinitely repeated version of the model in Section 2 in which both firms have fixed but arbitrary numbers of worker slots, n A and n B respectively, and with managers and workers that live for 2 periods each. At the beginning of each period τ ∈ Z , events take place according to the time line from Section 2 . To simplify, we additionally assume throughout this section that (i) F ( · ) is degenerate and a worker’s ability can take on two values, a L and a H , with a H > a L and p ( a H ) = p H , and (ii) that ρ B p H ( a H − a L ) > t w − ( w e − w ) , (D.20) which ensures that both firms prefer replacing a low ability worker with a junior worker even for a single period. 45 Finally, we introduce some additional notation for the analysis below. Let h τ i , i ∈ { A, B } , denote the number of firm i ’s high ability budding senior workers at the very beginning of period τ , r τ the number of workers hired away from B by A (the ’raid’) in period τ , and ∆ π τ i firm i ’s change in profits if A poaches m τ − 1 B . Moreover, we denote firm i ’s ex ante expectation—the expectation when A is making its initial offer for m τ − 1 B —as E i ( · ), and its interim expectation—the expectation right after one firm ceases to offer—as E I i ( · ). Ex post realized values simply drop the expectation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 44,
+        "text": "D.2. Equilibrium analysis. Below we present a characterization of equilibrium behavior in the infinite horizon managerial poaching game. The presented results strengthen the analyses in Sections 3 and 4 . In the 2-period model, firm A when poaching pays twice for its additional production value, once through the poached manager’s salary and once through the poached worker’s wage. In addition it pays for 45 Assuming (ii) equates to ρ B being sufficiently large. If this is not the case, no poaching equilibrium may exist. If, however, there is a poaching equilibrium the qualitative results below are unaltered.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 45,
+        "text": "57 the necessary training cost of all workers, either directly or through salaries/wages. In the infinite horizon model, this intuition persists. Since B is not aware of the number of A ’s openings, n A − h τ A , the highest retention salary B is willing to pay depends on its expectation thereof. As n A − h τ A is the realization of a random process A may in fact pay more or less than twice, but strictly more than once, for additional production value weighted by B ’s productivity when attempting to poach m τ − 1 B . As a result, there is δ > 0 such that A never attempts to poach if ρ A − ρ B < δ . As ρ A increases, however, and the cost of poaching B ’s manager and raiding B ’s workers remains independent of ρ A , there must be a value ρ ′ A such that A attempts to poach if it expects that poaching its manager leads to raiding some high ability workers from B . In fact, as ρ A increases further, A always attempts to poach if n A − h τ A ⩾ 1 due to the enormous option value of recruiting a high ability worker. However, as long as ρ A is moderately larger than ρ B , A does not always succeed when it attempts to poach a budding senior manager m τ − 1 B at the beginning of period τ . This is because B may overestimate the number of A ’s openings for high ability workers and/or have a large number of budding senior high ability workers at B . Since these quantities are unknown to its competitor before a poaching attempt takes place, B may be willing to retain its manager at a higher salary than A is willing to pay. It follows that even an unsuccessful poaching attempt raises managerial salary. It further should be noted that additional worker slots at both firms, i.e., larger values for n A and/or n B , increase the expected frequency of poaching as well as the expected salary paid to poached managers. This is because an additional slot at firm A makes poaching more attractive in expectation as it causes A to have more openings. This in turn increases the expected production value lost by B in the case of poaching. Due to the differences in productivities, however, A ’s additional profit exceeds B ’s loss in expectation, causing a higher probability of poaching in a given arbitrary period. Poaching itself, however, is also reaffirming as more frequent poaching makes poaching more attractive in the future as B has to replace its workers with junior ones. Similarly, if n B increases, A expects more high ability workers at B and the parallel argument applies. Also note that A always hires as many high ability workers as possible once it successfully poached B ’s manager as the cost per hired worker effectively declines (because managerial training cost is split more ways).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 46,
+        "text": "58 Finally, when attempting to poach, A is more than willing to pay for all social costs ( B ’s lost production value, additional managerial training cost, additional worker training cost) establishing that it expects its additional production value to exceed these costs. As a consequence, poaching in expectation increases social welfare as it makes the sorting of workers across firms more assortative, i.e., more able workers are employed at more productive firms. Not only does social welfare increase in expectation, but so does A ’s profit. B , on the other always suffers if A attempts to poach, either through higher paid salaries or lost production value. The employees poached and raided by A , on the other hand, always benefit from poaching. Nevertheless, managerial poaching does not occur at the efficient rate, as evidenced by the discussion above implying that A may not successfully poach firm B ’s manager even if it does have openings and firm B high ability workers. Proposition 6 below formalizes these results. Proposition 6 ( Infinite horizon ) . Fix an industry ( A, F, ρ A , n A , ρ B , n B , s, s e , t m , w, w e , t w ) . 46 In equilibrium, firm B never poaches firm A ’s manager m τ − 1 A , τ ∈ Z . There is ρ ′ A , ρ ′ A > ρ B , such that (1) if ρ A ⩽ ρ ′ A , a no-poaching equilibrium materializes: firm A never attempts to poach firm B ’s manager. Firm i , i ∈{ A, B } , always retains its senior manager, and retains a senior worker in period τ if and only a τ − 1 i = a H , and replaces them with a junior worker otherwise. (2) If ρ A > ρ ′ A , a poaching equilibrium materializes: there is r ∗ ∈ [0 , p H · min { n A , n B } ] such that (a) firm A attempts to poach firm B ’s manager in period τ if m τ − 1 B is a junior manager and E A ( r τ ) > r ∗ . (b) Firm A does not always succeed when attempting to poach m τ − 1 B . (c) If firm A poaches m τ − 1 B , it raids min { n A − h τ A , h τ B } of firm B ’s workers. (d) The average frequency of poaching increases in n A and n B . (e) The expected salary of a poached manager increases in n A and n B , and (f) the expected salary of a retained senior manager increases in n A and n B . (g) Poaching, on average, increases social welfare, but not to the efficient level. 46 Note that we augmented the description of an industry with the numbers of worker slots n A and n B .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 47,
+        "text": "59 (h) Poaching, on average, benefits firm A . It always benefits poached managers and raided workers, and harms firm B .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 48,
+        "text": "Proof of Proposition 6 : First suppose B has poached A ’s manager and therefore knows the ability of A ’s workers. Assume ρ A = ρ B . Since retaining a worker is more valuable than raiding a worker due to t w , B never raids a worker with ability a H from A . Thus, B never poaches A ’s manager for ρ A ⩾ ρ B . The same argument, if ρ A − ρ B is sufficiently small, i.e., ρ A < ρ ′ A , establishes (1). Now assume that A has poached budding senior manager m τ − 1 B in period τ . Thus, A learns a τ − 1 B, 1 to a τ − 1 B,n B and the workers’ age. It can then raid B ’s budding senior workers with ability a H at w R . w R represents the wage of a junior replacement, their training cost, the production value lost in τ , and dynamic costs (if a worker is poached, B hires a junior worker who then may be raided in τ + 1). As all workers are equally expensive at this interim stage, A raids as many workers as it needs, n A − h τ A , or as it can get, h τ B , if h τ B < n A − h τ A . For if not, it would never attempt to poach m τ − 1 B in the first place, establishing (2) (c). A ’s additional production value from raiding a high ability worker over a junior replacement for one period is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 49,
+        "text": "ρ A (1 − p H ) ( a H − a L ) ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 50,
+        "text": "which is strictly increasing in ρ A . From A ’s period τ perspective, if it raids a high ability worker, it can match the τ + 1 production value from a junior worker hired in τ by hiring a junior worker in τ + 1 incurring additional cost of t w − ( w e − w ), which is constant in ρ A . Moreover, the interim cost of obtaining this additional production value is w R − w , which is independent of ρ A . The salary A has to pay when poaching m τ − 1 B is s P = s + t m − E I B (∆ π τ B ). Note that, in general, E B (∆ π τ B ) ̸ = E I B (∆ π τ B ) because ∆ π τ B is a function of r τ , with B ’s expectation of the latter potentially affected by A ’s offers for m τ − 1 B . Thus, A pays twice for the additional production value from raiding a high ability worker, once through their wage w R and once in expectation through the poached manager’s salary s P . Nevertheless, crucially observe that both w R and s P are independent of ρ A .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 51,
+        "text": "60 As ∆ π τ A , on the other hand, strictly increases in ρ A , there must be a smallest ρ A at which A attempts to poach if E A ( r τ ) = p H min { n A , n B } . Note that p H min { n A , n B } is the maximal value E A ( r τ ) can take on. This occurs when A is aware that min { n A , n B } of B ’s period τ workers are junior workers, and n A − h τ A ⩾ min { n A , n B } . 47 It is immediate to see that if A attempts to poach when E A ( r τ ) = r , then it attempts to poach whenever E A ( r τ ) < r and that r ∗ decreases in ρ A . This establishes the existence of ρ ′ A together with (2)(a). Suppose now that in period τ , r ∗ < E A ( r τ ) < E B ( r τ ) and that E B ( r τ ) − E A ( r τ ) is large. This may be the case because n A − h τ A is small while h τ B is large. Then, A may cease to offer before B does, and B retains m τ − 1 B , proving (2) (b). Consider ˆ s P , the expected salary of a poached manager, E ( s P ) = s + t m − E \u0002 ( E I B (∆ π τ B ) \u0003 , (D.21) with E denoting the expectation over all τ ∈ Z . Note that E I B (∆ π τ B ) directly decreases in n A because E I B ( n A − h τ A ) increases B ’s expected profit loss, but by less than it increases A ’s expected profit gain due to ρ A > ρ ′ A . As such, the probability of poaching in a given period increases. A higher probability of poaching then decreases, in expectation h τ +1 A and increases h τ +1 B . As a result, both the direct and indirect effects of n A on ˆ s P and the likelihood of poaching are positive. A similar argument establishes the same for n B . (2) (d) and (e) follow. Also, if A attempts to poach m τ − 1 B unsuccessfully, then s ( m τ B ) > s e and (2) (f) follows. The social cost of poaching comprises four components. (i) If A poaches, both firms incur a managerial training cost t m , and (ii) both firms incur a worker training cost t w per raided worker instead of only firm A when replacing its worker with a junior one. (iii) B expects to lose production value in τ by replacing a high ability with a junior worker. (iv) If A poaches in period τ , B has a budding senior manager again in the beginning of period τ + 1. As such, poaching makes future poaching more likely increasing the frequency of costs (i), (ii) and (iii) to arise. However, when A attempts to poach, it expects its additional profit from poaching to exceed 2 t m + r τ t w as it transfers t m + r τ t w to m τ − 1 B , t w to each worker, and chooses to poach over retaining m τ − 1 A (if applicable) and hiring a junior worker incurring another t m . In addition 47 This is the case if A raided enough high ability workers from B in period τ − 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1286,
+        "section_id": 1,
+        "section_name": "Appendix",
+        "paragraph_id": 52,
+        "text": "61 it transfers B ’s production value loss to the workers it raids. As a consequence, A expects its additional profit from poaching to exceed the sum of (i), (ii) and (iii) when poaching. Finally, (iv) if the frequency of these poaching costs increases, so does the frequency of the benefits at the same rate. Poached managers and raided workers earn more than their retained counterparts but poaching does not always occur if it is efficient. This establishes (2) (g) and (h). ■",
+        "extraction_warnings": ""
+    }
+]

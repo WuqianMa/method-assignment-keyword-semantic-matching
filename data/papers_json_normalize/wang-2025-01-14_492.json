@@ -1,0 +1,1434 @@
+[
+    {
+        "paper_id": 1344,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Inequality and Efficiency of Fiscal Rules",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Laura Karpuska Insper Business School Xiaohan Wang Shanghai University of Finance and Economics",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Tis study investigates the impacts of fiscal rules on inequality and efficiency within a political economy framework that considers parties negotiating resource allocation towards private transfers, public goods, and the possibility of debt issuance. Our main results show that debt ceilings, while mitigating inequality by limiting future expropriation, leads to efficiency losses. Conversely, the impact of spending limits on efficiency and inequality varies with the nature of the spending – mandatory or discretionary – that is capped. We also find that political bargaining increases debt levels, but only when part of the spending is not mandatory. Tese results underscore the pronounced trade-offbetween equity and efficiency can become more pronounced in the presence of fiscal rules.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "JEL codes : C70, D63, D72, E62, H2, H6",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "Keywords : inequality, government debt, legislative bargaining, endogenous status quo, fiscal rules, political economy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Politicians are ofen biased towards present spending, leading governments to impose fiscal rules to restrain overspending and debt accumulation ( Alesina and Passalacqua ( 2016 ), Yared ( 2019 )). Tese rules create limits, reducing politicians’ flexibility in allocating fiscal resources. Te prevalence of such rules has surged globally. In 2021, 105 countries had some type of fiscal rule in place, a significant increase from only 7 countries in the early 90s. Out of those, 90 countries have at least one type of rule in place, as depicted in Figure 1 . 1 1 We are grateful to Bernardo Guimar ̃aes, Hans Gersbach, H ̈ulya Eraslan, participants of the 23rd Annual SAET Conference Society for the Advancement of Economic Teory, the 2023 December RIDGE Forum on International Macro, the 34th Stony Brook International Conference on Game Teory, and of the Symposium on Public Sector Economics in Brazil LabPub. 1 Te number of countries changed only slightly since fiscal rules started to be adopted, which was during the mid-90s. Te IMF sample consists of 106 countries that consider the most current list of countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "Countries have a variety of fiscal rules at their disposal. Te most common among these are balanced budget rules, which establish targets for the government balance. Debt rules are the second most prevalent, defining a maximum level for debt, ofen as a percentage of GDP, or as in the US, with the debt ceiling, in nominal terms. Spending rules, which have gained popularity since the Great Recession, impose maximum levels of spending – or a maximum level of growth on spending.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "1985 1990 1995 2000 2005 2010 2015 2020 Spending Rules Revenue Rules Balanced Budget Rules Debt Rules",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "Figure 1: Number of countries adopting fiscal rules. Source: IMF Fiscal Rules DataBase.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "While the efficacy of fiscal rules has gained increasing atention ( Halac and Yared ( 2014 ), Halac and Yared ( 2022a ), Azzimonti, Bataglini and Coate ( 2016 ), and Gersbach and Gul ( 2023 )), their potential impact on inequality has received relatively litle consideration. 2 In this paper, we focus on debt ceilings and spending limits and their impact on inequality. We choose these two rules for two reasons. First, they are the most prevalent rules, as indicated in Figure 1 . 3 Second, these two rules influence politicians’ trade-offs in different ways. Debt rules restrict government debt issuance and affect politicians’ ability to allocate resources across different goods. 4 Spending rules directly impose limits on fiscal instruments, which are choice variables for the government and are differently distorted by political bargaining over the budget. 5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "We build a two-period political economy model to study the impact of debt ceilings and spending limits in inequality and efficiency. Te key ingredients of our model are as follows. In the two periods, the political parties that represent the two groups in society, the A or the B, will propose private allocations, public good provision, and debt issuance. 6 Te proposed fiscal policy can only be implemented if the opposition party agrees to it. Te opposition party agrees if the proposal is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "2 Ulloa-Su ́arez ( 2021 ) shows empirically statistically insignificant effects of rule implementation on inequality for Latin America countries. Combes, Minea, Vinturis and Sawadogo ( 2019 ) show that while debt ceiling and balanced budget rules are correlated with lower income inequality, spending rules are correlated with higher ex-post income inequality. To the best of our knowledge, no theoretical model has thoroughly studied the relationship between fiscal rules and inequality. 3 In our model, since the level of debt does not impact the level of activity, i.e., there is Ricardian equivalence, the study of debt ceilings is analogous to balanced budget rules. Troughout the paper, we refer to it as debt ceilings. 4 Herrera, Mac ́e and N ́unez ( 2023 ) study the strategic use of the US debt ceiling in the US. 5 Halac and Yared ( 2022b ) discuss when instrument-based rules are superior to target-based rules in the case of monetary policy. 6 Instead of choosing allocations, the parties could have also been choosing proportional taxes and transfers that are individual specific. Our choice to focus on allocations is to simplify the notation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "at least as good as the status quo, which is endogenously determined by past choices, mimicking the legislative procedure on the government budget and providing some insurance level against expropriation ( Baron and Ferejohn ( 1989 ), Diermeier, Egorov and Sonin ( 2017 ), Bowen, Chen and Eraslan ( 2014 ), Azzimonti, Karpuska and Mihalache ( 2022 ), and Eraslan and Piazza ( 2020 )). 7 We define three levels of insurance. We say there is no insurance when the proposer can act as a dictator. If there is partial insurance , the respondent is insured against expropriation of only private consumption. 8 If there is full insurance , the respondent will be insured against expropriation of both the private and the public good.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "We add this component to the model because, in most countries, a significant part of the government budget is insured, meaning it is related to mandatory spending ( Bowen, Chen and Eraslan ( 2014 ), Bowen, Chen, Eraslan and Z ́apal ( 2017 ), Azzimonti, Karpuska and Mihalache ( 2022 )). Tese mandatory spending programs provide insurance against expropriation that is usual in political economy models where no institutions are available to curb such behavior. More technically, we define insurance levels as which goods will be mapped as the endogenous status quo. 9",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "Our first contribution is to show we can rank different types of fiscal rules in terms of equity and welfare. In a numerical analysis, we show that spending limits on goods that are not insured do not significantly alter welfare or equity. However, spending limits on insured goods result in notable efficiency losses, although accompanied by a reduction in inequality due to a first-mover advantage in a model with political turnover. Te degree of efficiency losses is more pronounced when the opposition possesses lower bargaining power (see Figure 6 ). In contrast, debt ceilings incur the highest efficiency losses, yet they concurrently bring about the most substantial reduction in inequality, as they eliminate the first-mover’s ability to expropriate in the future. Tis result underscores that, in our model, the trade-offbetween equity and efficiency becomes more apparent in the presence of fiscal rules and it is discussed in more detail in Section 6.3 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "Te above results consider an environment in which parties have to bargain to allocate resources. Te fact that different fiscal rules impact politicians’ trade-offs in various ways is particularly significant when politicians bargain over a government budget that is not entirely flexible. 10 If a politician acts as a dictator, debt can only increase inequality because it enhances the expropriation power of the dictator. However, if an elected politician has to negotiate to implement a policy, she may issue debt as bargaining chip – debt issuance may then help to reduce inequality, while a debt ceiling can only exacerbate it.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "Te case of spending limits is more nuanced. If a politician acts as a dictator, spending limits",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "7 For a survey on the recent literature on dynamic legislative bargaining, see Eraslan, Evdokimov and Z ́apal ( 2022 ). 8 Tis case is the similar to what the literature defines as entitlement programs. 9 Te literature has three usual definitions to what we refer as the level of insurance: mandatory spending, entitlement programs, which are mandatory spending focused on private transfers to an eligible group of people, or simply as the endogenous status quo. For our environment the definition of insurance seems more appropriated. 10 Tere has been a long discussion on the “reactivation” of fiscal rules in Europe amid sluggish growth, inequality concerns exacerbated by the Covid crisis, and lack of trust in fiscal austerity. For more details: https://www. ecb.europa.eu/press/key/date/2023/html/ecb.sp230920c21e96e03f.en.html",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "can only reduce distortions arising from excessive expropriation by creating limits on how much the dictator can over-provide to herself. However, if a politician must negotiate to implement an allocation, the impact of fiscal rules on inequality will depend on the underlying institution governing this negotiation. Tese institutions is what we define as how much insurance there is against expropriation in this political bargaining process, as discussed in details on Section 5.6 , where we highlight the importance of studying fiscal rules in a model with insurance against expropriation because of its impact on debt issuance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "Our second contribution is to fully characterize the unique subgame perfect equilibrium of this game for a general seting of utility functions and for different levels of insurance that can exist in a political bargaining model. We show that when there is full insurance, meaning all allocations are mapped as an endogenous status quo, the optimal equilibrium level of debt is zero (Proposition 1 ). In contrast, under partial insurance, meaning only private transfers are mapped as an endogenous status quo, debt levels are not only positive (Proposition 2 ) but are higher than those in the typical Alesina-Tabelini political economy model of debt, where there is no insurance against political expropriation (Proposition 3 ). 11",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "We also prove that debt levels will always be greater when a spending limit is placed on the good that is insured and lower when the limit is on the good that is not insured (Proposition 4 ). Tis result underscores that spending limits can backfire in terms of disciplining debt levels. It highlights the importance of designing spending limits considering the type of good they are targeting and its role in the political economy, whether it provides insurance or not.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "Te political economy literature discusses the reasons why debt emerges in political economy models. 12 In political economy environments where there is some insurance against expropriation – such as mandatory spending or entitlement programs, debt and entitlements can serve as insurance tools. Te former insures against future expropriation, while the later allows for future resources to be brought forward. As pointed out by Bouton, Lizzeri and Persico ( 2020 ), debt and entitlements are usually strategic substitutes. In their environment, the coexistence between these two instruments relies on a high intertemporal elasticity of substitution. Debt is only used as a means for an incumbent to expropriate whoever is in power in the future. 13",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "A third contribution of our work is to show that political bargaining and insurance against expropriation can make debt and entitlements become strategic complements – differently from Bouton, Lizzeri and Persico ( 2020 ), as illustrated in figure 4 . Tis occurs because we consider a politician who must negotiate to implement an allocation. In this bargaining process, debt serves as a crucial bargaining chip for the first-period proposer. Debt issuance is strategically employed",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "11 For work on inequality as a reason for high levels of debt, see Azzimonti, De Francisco and Qadrini ( 2014 ), Arawatari and Ono ( 2017 ), and Bartak, Jabło ́nski and Tomkiewicz ( 2022 ) for an empirical study. 12 We refer to Yared ( 2019 ) for a detailed discussion on the macroeconomic and political economy reasons for the emergence of debt. 13 Moreover, for debt and entitlements to co-move, they require a relatively low level of redistributive conflict. In their model, conflict has two dimensions. One is measured by the intertemporal elasticity of substitution, which captures conflict generated by power fluctuation. Te other is captured by the relative taste of public goods vis- `a-vis private consumption, which directly captures redistributive conflict. A higher taste for public goods reduces redistributive conflict because it implies a lower taste for private goods that are excludable and rival.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 19,
+        "text": "so the first-period proposer can persuade the respondent to accept an allocation with higher levels of private transfers for the proposer. Debt thus becomes the instrument that allows the proposer to effectively smooth the respondent’s consumption, leading to a beter-offrespondent. Terefore, in our context, debt and entitlements are strategic complements, as the proposer, not acting as a dictator, must consider consumption smoothing motives from the respondent.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 20,
+        "text": "In a related work, Piguillem and Riboni ( 2021b ) demonstrate that the coexistence of debt and some form of insurance against expropriation, which they also define as entitlements, hinges on the possibility of sequestration when this insurance is not excessive. Te level of rigidity is externally defined. Te concept of sequestration in Piguillem and Riboni ( 2021b ) and the extent of insurance in our model share a conceptual similarity: both entail an absence of insurance stemming from shifs in political turnover. In our model, given a budgetary institution, the level of insurance is endogenously determined as a result of bargaining between the two political groups in the political economy. Besides the endogenous determination of the provided insurance level, a critical difference between our model and Piguillem and Riboni ( 2021b ) lies in the interpretation of what leads to this lack of insurance. While they explore the idea that insurance may be undermined by potential resource sequestration, leading to the emergence of debt to counteract this insurance deficiency, our focus lies in the selection of insurance levels within a political economy. Furthermore, Piguillem and Riboni ( 2021b ) are not concerned with the implications of fiscal rules on inequality. Teir focus is on the consequences of sequestration per se for equilibrium outcomes. We differ both in terms of the interpretation of what causes the lack of insurance and in the focus on the implications of this lack of insurance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 21,
+        "text": "Te significance of insurance in determining levels of inequality is also highlighted in Azzimonti, Karpuska and Mihalache ( 2022 ). Tey model private consumption as an endogenous status quo (with public goods excluded), focusing on explaining the increasing share of entitlements as a function of growing inequality in recent decades. In contrast, our paper introduces a novel fiscal instrument – debt issuance, identifies sufficient conditions for a positive level of debt to emerge in equilibrium, and focuses on exploring how inequality is impacted by different types of fiscal rules. Additionally, we show that when debt is permited, it leads to the overprovision not only of the good being insured under the status quo (as in Azzimonti, Karpuska and Mihalache ( 2022 ) and Bowen, Chen and Eraslan ( 2014 )), but also of both private goods for the proposer, for the respondent, as well as public goods.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 22,
+        "text": "A final contribution of our work is to discuss the role of debt in models of legislative bargaining with an endogenous status quo, which is the source of this more generalized overprovision in our environment, compared to others where no debt is allowed. Tis happens because when debt can be issued amid legislative bargaining with an endogenous status quo, debt is utilized both as a means of insurance and as a bargaining chip to persuade the group not in power to accept the proposer’s allocations. A numerical exercise illustrating this is presented in Figure 2 . 14",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 23,
+        "text": "14 Piguillem and Riboni ( 2021a ) demonstrate that some fiscal rules will be used as bargaining chips during negotiations over the government budget, mitigating the need for debt issuance. In our environment, this never happens with the fiscal rules studied – debt ceiling and spending limits. In fact, debt itself becomes a bargaining chip that helps the proposer to provide consumption smoothing to the respondent.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 24,
+        "text": "Te paper is structured as follows. Section 2 delineates the model, while Section 3 defines the equilibrium. Section 4 presents the first-best problem, the static and dynamic dictator problems, and also the typical Alesina-Tabelini model of power alternation. Section 5 establishes that debt only emerges in political economy models when there is partial insurance. Section 5.6 illustrates how debt is over-issued in political economy models that consider legislative bargaining with an endogenous status quo because debt is also used as a bargaining chip. Section 6 demonstrates that debt issuance is greatest when there are spending limits on goods that are insured and lowest when they are on goods that are not insured. Finally, Section 6.3 delineates the equity and welfare implications of fiscal rules and of considering partial insurance in political economy models of debt. Te conclusion follows.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 0,
+        "text": "Tere are two groups of people in society: A and B. Tere are two periods of time. In each period t , t = 1 , 2 , individuals inelastically supply labor that produces output y , which we will normalize to 1 in the numerical exercise. 15",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 1,
+        "text": "Government spending consists of private transfers for each group and public goods enjoyed by both groups. Te government directly choose allocations in each period. We can think as if this spending is financed via individual-specific and non-distortionary taxes. Te government can issue non-defaultable debt b in the first period while the initial level of debt b 0 is set to zero. Terefore, the government’s budget constraint in period t = 1 and t = 2 are given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 2,
+        "text": "c A, 1 + c B, 1 + g 1 = y + b (1) c A, 2 + c B, 2 + g 2 = y − Rb (2) where c A,t is the amount of private consumption for group A at time t , c B,t is the private consumption for group B, g t is the amount of public goods provided, and R is the gross interest rate paid for debt. We assume that R = 1 β , where β is the discount factor. Since βR = 1 and total resource is constant across time, debt will only be issued for political reasons, not macroeconomic ones in our model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 3,
+        "text": "Government decisions are made by parties that represent the two groups in society, denoted by A and B respectively. We focus on the case with power alternation, meaning decisions are made by different parties in each of the two periods. In the first period, the incumbent party chooses z 1 = ( c A, 1 , c B, 1 , g 1 ) as well as debt issuance b . Te opposition party accepts the proposal only if it is at least as beneficial as the status quo policies s 1 . Given that this is a finite game, the initial status quo s 1 is exogenous. Denote e 1 the implemented allocation in period 1 , which could be either the proposed allocation or the (exogenous) initial status quo allocation. If the 15 Tis is not without loss of generality. If labor supply was elastic, tax choices would impact the overall productivity and therefore distort trade-offs between taxing today and tomorrow. We abstract from this to focus mainly on the political economy reasons that explain debt emergence and the impact of fiscal rules on inequality. Our benchmark model, therefore, shows an extreme case.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 4,
+        "text": "respondent accepts, the proposal z 1 is implemented. Otherwise, the status quo s 1 prevails. In the second period, the opposition party from the first period assumes the role of proposer. Given a status quo s 2 and debt level b , the new proposer proposes z 2 = ( c A, 2 , c B, 2 , g 2 ) . Te second-period opposition party will accept the proposal if it yields at least the same welfare as under the status quo s 2 . Te status quo s 2 is a mapping from past policies. Specifically, we have s 2 = Ψ( e 1 , κ ) where κ ∈{ 0 , 1 , 2 , 3 } is an index indicating which elements in the vector e 1 will be guaranteed under the status quo. When κ = 2 , there is partial insurance in private transfers, meaning only private transfers are ensured. Specifically, individuals will retain their previous levels of private transfers if the negotiation fails, whereas public good consumption will assume an exogenously defined (low) level of ̄ g compared to the total economy’s output y . For example, suppose the implemented allocation in the first period were e 1 = (0 . 6 , 0 . 2 , 0 . 4) , comprising 0 . 6 as the private consumption of A, 0 . 2 as the private consumption of B, and 0 . 4 as public good provision. With ̄ g = 0 . 1 , we have s 2 = Ψ( e 1 , 2) = (0 . 6 , 0 . 2 , 0 . 1) . In our framework, total insurance implies that both private transfers and public goods consumption are insured, denoted by κ = 3 in our notation. Using the numerical example provided earlier, if e 1 = (0 . 6 , 0 . 2 , 0 . 4) , then s 2 = Ψ( e 1 , 3) = (0 . 6 , 0 . 2 , 0 . 4) . We choose the case where κ = 2 as our benchmark for two main reasons. Firstly, this setting reflects the prevailing scenario where entitlement programs typically cover private transfers, while public goods spending is subject to discretionary allocation. 16 Secondly, since the paper focuses on comparing how debt ceilings and spending limits affect political bargaining over the budget and their consequences on inequality, our benchmark case needs to generate a positive level of debt issued in equilibrium. As demonstrated in Section 5 , in the total insurance case, the optimal level of debt is always zero. With partial insurance in private transfers, however, the equilibrium level of debt is strictly positive. Terefore, selecting partial insurance as the baseline model is essential, reflecting both the reality of entitlement programs ofen covering private transfers and the necessity of positive issuance of debt in equilibrium. Tis contrast between fiscal policy rigidity and flexibility is crucial for understanding the impact of different fiscal rules on existing political bargaining over the budget and subsequent inequality, as discussed in subsequent sections. We refer to the Ψ rule with κ = 3 as the full insurance case and κ = 2 as the partial insurance case.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 5,
+        "text": "Finally, each type of agents enjoy both private and public goods and have the same per-period utility function, denote as u ( c i,t , g t ) , where i ∈{ A, B } . We impose the following assumptions on the utility function: Assumption 1. Te utility function u ( · , · ) is strictly increasing and concave, twice differentiable, additively separable in c and g , and satisfies the Inada conditions. Moreover, it satisfies that u (0 , · ) = u ( · , 0) = −∞ . 17 16 For a more detailed discussion on the subject, please refer to Azzimonti, Karpuska and Mihalache ( 2022 ) 17 Tis condition is very general for most cases of the CRRA utility function such that the parameter that is the inverse of the intertemporal elasticity of substitution is greater or equal to 1 – which most of the empirical literature finds the relevant space for this parameter.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 6,
+        "text": "Given that we are working with a two-person two-period complete information extensive form game, we can focus on its unique subgame perfect equilibrium (SPE). Te second-period strategies do not depend on histories except for the status quo. Terefore, we do not have to write strategies as a function of history, but only as a function of the status quo.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 7,
+        "text": "We focus on the deterministic example of power fluctuation where party A starts and then party B follows. Tis is without loss of generality as the two groups are symmetric. Te game follows the following timeline:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 8,
+        "text": "• Party A chooses fiscal policies that determine allocations for period t = 1 ; • If party B accepts the proposal, the proposed allocation is implemented and becomes the basis for the next status quo. If party B rejects the proposal, the (exogenous) initial status quo allocation is implemented and serves as the status quo for the next period; • At t = 2 , party B chooses fiscal policies that determine allocations for this period; • If party A accepts the proposal, the proposed allocation is implemented. Otherwise, the endogenous status quo allocation for this period is implemented.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 9,
+        "text": "A pure strategy for party A can be defined as a pair of functions Π 1 = ( y 1 , r 2 ) where y 1 is a proposal strategy for party A when she is the proposer in the first period and r 2 is an acceptance strategy when party A is the respondent in the second period. For any acceptance strategy, we have 1 indicate acceptance and 0 rejection of the proposed allocation. More explicitly, y 1 = ( C A, 1 , C B, 1 , G 1 , B ) is a collection of functions that define the best-reply functions of proposer A in the first period. Tis proposal strategy maps each status quo s 1 and initial level of debt b 0 = 0 into private transfers for both groups, c A, 1 and c B, 1 , public good provision g 1 and new debt issuance b . A pure strategy for party B can be defined as a pair of functions Π 2 = ( y 2 , r 1 ) where y 2 is a proposal strategy for party B when she is the proposer in the second period and r 1 is an acceptance strategy when party B is the respondent in the first period. y 2 = ( C A, 2 , C B, 2 , G 2 ) is a collection of functions that define the best-reply functions of proposer B in the second period. Tis proposal strategy maps each status quo s 2 and outstanding debt b into private transfers for both groups, c A, 2 and c B, 2 , and public good provision g 2 . Te tie-breaking rule favors any proposed allocation, i.e., in case the respondent is indifferent between the status quo and a new proposed policy, the respondent accepts. Recall that we have s 2 = Ψ( e 1 , 2) = ( c A, 1 , c B, 1 , ̄ g ) under partial insurance and s 2 = Ψ( e 1 , 3) = ( c A, 1 , c B, 1 , g 1 ) under full insurance where e 1 is the implemented allocation in the first period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 10,
+        "text": "A strategy profile is a SPE if and only if:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 11,
+        "text": "• [E1] For any endogenous status quo s 2 and level of debt b , the acceptance strategy r 2 ( s 2 , b ) = 1 given a proposal strategy y 2 if and only if: u ( C A, 2 ( s 2 , b ) , G 2 ( s 2 , b )) ≥ u ( c A, 1 , g 2 ( κ ))",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 12,
+        "text": "where g 2 ( κ = 2) = ̄ g and g 2 ( κ = 3) = g 1 . • [E2] For any endogenous status quo s 2 and a debt level b , the proposed strategy y 2 ( s 2 , b ) when r 2 = 1 is such that: y 2 ( s 2 , b ) ∈ argmax x 2 ∈ Γ 2 ( b ) u ( c B, 2 , g 2 ) s.t. u ( c A, 2 , g 2 ) ≥ u ( c A, 1 , g 2 ( κ )) where Γ 2 ( b ) = { c A, 2 , c B, 2 , g 2 ≥ 0 | c A, 2 + c B, 2 + g 2 = y − Rb } . • [E3] Given initial debt level b 0 = 0 and an exogenous status quo s 1 = Ψ(( c A, 0 , c B, 0 , g 0 ) , κ ) , the acceptance strategy r 1 ( s 1 , b 0 = 0) = 1 given proposal strategies y 1 and y 2 if and only if:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 13,
+        "text": "u ( C B, 1 ( s 1 , b 0 = 0) , G 1 ( s 1 , b 0 = 0))+ βu ( C B, 2 (Ψ( z 1 , κ ) , B ( s 1 , b 0 = 0)) , G 2 (Ψ( z 1 , κ ) , B ( s 1 , b 0 = 0))) ≥ K ( s 1 , b 0 = 0) where",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 14,
+        "text": "z 1 = \u0000 C A, 1 ( s 1 , b 0 = 0) , C B, 1 ( s 1 , b 0 = 0) , G 1 ( s 1 , b 0 = 0) \u0001 K ( s 1 , b 0 = 0) = u ( c B, 0 , g 1 ( κ )) + βu ( C B, 2 (Ψ( s 1 , κ ) , b 0 = 0) , G 2 (Ψ( s 1 , κ ) , b 0 = 0)) Similarly g 1 ( κ = 2) = ̄ g and g 1 ( κ = 3) = g 0 . • [E4] Given b 0 = 0 and an exogenous status quo s 1 = Ψ(( c A, 0 , c B, 0 , g 0 ) , κ ) , a proposed strategy y 1 ( s 1 , b 0 = 0) given r 1 = 1 and proposal strategy y 2 is such that y 1 ( s 1 , b 0 = 0) ∈ argmax 0 ≤ b<a/R, x 1 ∈ Γ 1 ( b,b 0 =0) u ( c A, 1 , g 1 ) + βu ( C A, 2 (Ψ( x 1 , κ ) , b ) , G 2 (Ψ( x 1 , κ ) , b )) s.t. u ( c B, 1 , g 1 ) + βu ( C B, 2 (Ψ( x 1 , κ ) , b ) , G 2 (Ψ( x 1 , κ ) , b )) ≥ K ( s 1 , b 0 = 0) where Γ 1 ( b, b 0 = 0) = { c A, 1 , c B, 1 , g 1 ≥ 0 | c A, 1 + c B, 1 + g 1 = y + b } and K ( s 1 , b 0 = 0) is defined in [E3] .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 15,
+        "text": "We begin our analysis by first examining three relevant benchmarks with private transfers, public goods consumption and debt, but no political bargaining. Te first one is the Pareto optimal firstbest problem, the second one is a dictator’s problem, and the third one is the power alternation problem with no entitlement programs so that the budget is completely flexible. We call the third one the model with no insurance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 16,
+        "text": "Te social planner’s problem can be given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 17,
+        "text": "max b, { c A,t ,c B,t ,g t } 2 t =1 u ( c A, 1 , g 1 ) + βu ( c A, 2 , g 2 ) s.t. c A, 1 + c B, 1 + g 1 = y + b c A, 2 + c B, 2 + g 2 = y − Rb u ( c B, 1 , g 1 ) + βu ( c B, 2 , g 2 ) ≥ K B, 1 c A, 1 , c B, 1 , g 1 ≥ 0 , 0 ≤ b < ̄ b where K B, 1 is a minimum level of utility reserved for group B, and ̄ b = y R is the natural borrowing limit. 18 Our first result shows the planner can perfectly equate the social marginal utilities of consumption across goods without using debt: Lemma 1. ( Pareto optimal .) Consider the utility function u ( · , · ) satisfying Assumption 1 . Ten the social planner’s optimal choices satisfy b SP = 0 , c SP A, 1 = c SP A, 2 , c SP B, 1 = c SP B, 2 , g SP 1 = g SP Moreover, define c A, 1 = c A, 2 ≡ c SP A , c B, 1 = c B, 2 ≡ c SP B , g 1 = g 2 ≡ g SP , the optimal allocation solves u c SP A + 1 u c SP B − u g SP = 0 (3) c SP A + c SP B + g SP = y (4) (1 + β ) u ( c SP B , g SP ) = K B, 1 (5) where u x is the partial derivative of u with respect to x . 19",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 18,
+        "text": "Proof. See Appendix A.1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 19,
+        "text": "Te intuition for the result is simple: since resources are constant through time, the social planner can equate the social marginal utility of private consumption with the social marginal utility of public consumption without the need of debt.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 20,
+        "text": "18 Note that there is a mapping from this problem into a problem in which the planner chooses allocations for given weights of the two groups. Our decision to write the problem in this way is because it is easier to establish the connection with the political equilibrium model. 19 Troughout the paper, u x has the same meaning.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 21,
+        "text": "We first consider the static problem of a dictator. Suppose party i is a dictator. Her maximization problem is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 22,
+        "text": "max c i ,c j ,g u ( c i , g ) s.t. c i + c j + g = Y c i , c j , g ≥ 0 where j ̸ = i , i, j ∈{ A, B } and Y > 0 denotes the total resource. It is easy to get the following result: Lemma 2. ( Static. ) Consider the utility function u ( · , · ) satisfying Assumption 1 . Ten the dictator i ’s optimal choice delivers c D j = 0 with c D i and g D solving u c D i = u g D (6) c i + g = Y (7) where i, j ∈{ A, B } and i ̸ = j .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 23,
+        "text": "Proof. See Appendix A.2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 24,
+        "text": "For convenience, we denote C D ( Y ) and G D ( Y ) as a dictator’s choice of her own private consumption and public consumption given a level of total resource Y . Note that whoever is the dictator, the choice is the same.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 25,
+        "text": "Next we move to the analysis of a dictatorship in two periods. Given that the same party will make decision in the second period, her maximization problem in the first period is given by max { c i, 1 ,c j, 1 ,g 1 ,b } u ( c i, 1 , g 1 ) + βu ( C D ( y − Rb ) , G D ( y − Rb )) s.t. c i, 1 + c j, 1 + g 1 = y + b c i, 1 , c j, 1 , g 1 ≥ 0 , 0 ≤ b < ̄ b where i ∈{ A, B } is the dictator. Note that i knows the allocation will be c i, 2 = C D ( y − Rb ) , c j, 2 = 0 and g 2 = G D ( y − Rb )) in the next period because she will sustain the power. Te dictator’s optimal decision is characterized in the following lemma. Lemma 3. ( Two-period. ) Consider the utility function u ( · , · ) satisfying Assumption 1 . Ten the dictator i ’s optimal choice delivers b D = 0 , c D j, 1 = c D j, 2 = 0 , c D i, 1 = c D i, 2 = C D ( y ) , g D 1 = g D 2 = G D ( y ) where j ̸ = i and i, j ∈{ A, B } .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 26,
+        "text": "Proof. See Appendix A.2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 2,
+        "section_name": "Model",
+        "paragraph_id": 27,
+        "text": "Te problem of the dictator is the same as of a social planner that can ignore the constraint on the other group. In other words, the dictator is a planner that gives total weight to one group in the society. She can equate the marginal utility of private consumption with the marginal utility of public consumption. Since resources are constant through time, the optimal level of debt issuance for the dictator is zero as well. However, we will see in the following section that when there is power alternation, debt issuance will not be zero as the proposer in the first period will use debt to tie the hands of the other party who will take power in the second period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 3,
+        "section_name": "Emergence of debt in a political economy",
+        "paragraph_id": 0,
+        "text": "Before delving into the impact of fiscal rules on inequality and efficiency, we will first discuss the emergence of debt in political economy models. In the seminal paper by Alesina and Tabellini ( 1990 ), debt arises as an expropriation tool: if a politician loses power, it creates an incentive for intertemporal expropriation. However, in models where there is insurance against expropriation, debt has proven to be unnecessary: if a politician can guarantee resources in the future, there is no need to issue debt and distort allocations intertemporally. Bouton, Lizzeri and Persico ( 2020 ) demonstrates that debt and insurance over private allocations, modeled in their framework as a minimum amount of private consumption determined by the past decision, are strategic substitutes. Teir results indicate that the optimal level of debt should also depends on the degree of insurance in the political economy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 3,
+        "section_name": "Emergence of debt in a political economy",
+        "paragraph_id": 1,
+        "text": "We start by defining the usual Alesina-Tabeilini model of debt in a political economy. Ten we define levels of insurance we will examine in the political bargaining game with an endogenous status quo. Subsequently, we comprehensively characterize allocations and optimal debt issuance under these distinct levels of insurance. Finally, we conclude by presenting two primary findings. Firstly, under what we term full insurance, wherein parties are insured both on their private and public good consumption against expropriation, the optimal debt level is zero. Secondly, we demonstrate that under partial insurance, where parties are insured solely on their private consumption, the optimal debt level is positive. Te reason for us to start our analysis with the sufficient conditions for debt to be positive is simple: if we want to compare the effects of debt ceilings and spending limits on inequality and efficiency we need to have a positive optimal level of debt in our political bargaining model, otherwise the analysis is empty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 0,
+        "text": "We follow the timeline proposed in Section 3 , in which party A initiates the process and is followed by party B. Te problem we solve is the one defined in the equilibrium except for the status quo constraint, which is equivalent to solving an alternating dictator problem with debt. We do this for two reasons. First, we have already shown in a dictator’s problem that there is no need",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 1,
+        "text": "for parties to issue debt, since in the absence of fluctuations over y a dictator can smooth out consumption like a planner without using this instrument.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 2,
+        "text": "When there is power alternation as in Alesina and Tabellini ( 1990 ), politicians will issue debt for political economy reasons – to expropriate resources from the other party. However, the level of debt is different in the partial insurance model in the next section. Terefore, we need this model as a benchmark to highlight the role of political bargaining with partial insurance in debt issuance. Second, in this power alternation model with debt but no insurance – which technically means there is no status quo constraint, budget rules provide litle distributional effect, as we will see in Section 6.3 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 3,
+        "text": "We can solve the model by backward induction. In the second period, for a given level of debt b , party B solves the following problem: max c A, 2 ,c B, 2 ,g 2 u ( c B, 2 , g 2 ) s.t. c A, 2 + c B, 2 + g 2 = y − Rb c A, 2 , c B, 2 , g 2 ≥ 0 which is exactly the same as the static dictator problem except that total resources are y − Rb . Terefore, the second-period best-replies can be presented by c A, 2 = 0 , c B, 2 = C D ( y − Rb ) and g 2 = G D ( y − Rb ) from Lemma 2 . In the first period, party A takes into account the best-replies of party B in the second period to decide how much private and public consumption to allocate and how much debt to issue. Given the best-replies we just characterized, party A solves the following maximization problem: 20 max c A, 1 ,c B, 1 ,g 1 ,b u ( c A, 1 , g 1 ) + βu (0 , G D ( y − Rb )) s.t. c A, 1 + c B, 1 + g 1 = y + b c A, 1 , c B, 1 , g 1 ≥ 0 , 0 ≤ b < ̄ b",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 4,
+        "text": "Te optimal allocation is characterized in the lemma below. Lemma 4. ( Power alternation with no insurance .) Consider the utility function u ( · , · ) satisfying Assumption 1 . If party i starts and is followed by party j in the second period, then the power alternation game delivers allocation such that b PA > 0 , c PA i, 1 = C D ( y + b PA ) , c PA j, 1 = 0 , g PA = G D ( y + b PA ) c PA i, 2 = 0 , c PA j, 1 = C D ( y − Rb PA ) , g PA = G D ( y − Rb PA ) where j ̸ = i , i,j ∈{ A, B } . 20 Note that technically this problem is not well identified since u (0 , . ) = −∞ . For the sake of the argument, we can impose a constraint such that allocations have to be greater or equal to a small value ̄ x such that ̄ x → 0 . Tis will only change the problem in the sense that the total amount of resources available in the economy will be y − Rb − ̄ x and not y − Rb . Terefore, it is immaterial to the intuition we are trying to provide. We will define the problem of party A in this case considering as if A receives “almost” zero in the second period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 5,
+        "text": "Proof. See Appendix A.3 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 4,
+        "section_name": "Power alternation with no insurance",
+        "paragraph_id": 6,
+        "text": "It is straightforward to see that party A will perform as a dictator and set c B, 1 = 0 in equilibrium. In other words, she will equate the the marginal utility of her own private transfers and public consumption given the level of resources y + b . Debt issuance is strictly positive for the following reason. In the first period, the proposer knows she will lose power in the second period and her private consumption will be set to zero whatever the amount of resources will be. As a consequence, she has an incentive to issue debt to leave less resources for the second-period proposer. Te optimal level of debt will be chosen such that the marginal benefit from increases in both party A’s private transfers and public consumption in the first period equates the marginal cost from lower public consumption in the second period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 5,
+        "section_name": "Insurance against expropriation: the endogenous status quo",
+        "paragraph_id": 0,
+        "text": "Before we proceed with the analysis, it is important to make it explicit how insurance is modelled. Specifically, insurance plays a pivotal role in the bargaining process through establishing the minimum acceptable welfare level for the respondent. Since party A is the respondent in the second period following the timeline in Section 3 , her endogenous reservation value, denoted by K A, 2 ( s 2 ) , can be defined as follows:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 5,
+        "section_name": "Insurance against expropriation: the endogenous status quo",
+        "paragraph_id": 1,
+        "text": "K A, 2 ( s 2 ) = ( u ( c A, 1 , g 1 ) , full insurance u ( c A, 1 , ̄ g ) , partial insurance (8)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 5,
+        "section_name": "Insurance against expropriation: the endogenous status quo",
+        "paragraph_id": 2,
+        "text": "where ̄ g is exogenously given. Recall that s 2 are different with full and partial insurance as defined in Section 2 . In the first period, party B is the respondent and her promised level utility K B, 1 ( s 1 , b 0 = 0) is defined as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 5,
+        "section_name": "Insurance against expropriation: the endogenous status quo",
+        "paragraph_id": 3,
+        "text": "K B, 1 ( s 1 , b 0 = 0) = ( u ( c B, 0 , g 0 ) + βu ( C B, 2 ( c A, 0 , g 0 , b 0 = 0) , G 2 ( c A, 0 , g 0 , b 0 = 0)) , full insurance u ( c B, 0 , ̄ g ) + βu ( C B, 2 ( c A, 0 , ̄ g, b 0 = 0) , G 2 ( c A, 0 , ̄ g, b 0 = 0)) , partial insurance (9)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 5,
+        "section_name": "Insurance against expropriation: the endogenous status quo",
+        "paragraph_id": 4,
+        "text": "where ( c A, 0 , c B, 0 , g 0 ) is exogenously given. It is clear to see that the only difference in reservation values between the two models is that the exogenous ̄ g is used in the partial insurance model, while the status quo of g enters the full insurance model. Also note that party B’s optimal choice in the second period maters to determine her first-period reservation value since agents are farsighted and can anticipate what would take place if the offer is rejected.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 6,
+        "section_name": "Second-period problem",
+        "paragraph_id": 0,
+        "text": "We start with the characterization of the second-period problem. It turns out that the form of the second-period problem is the same across full and partial insurance model. Formally, party B",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 6,
+        "section_name": "Second-period problem",
+        "paragraph_id": 1,
+        "text": "solves the following maximization problem given s 2 and b : max c A, 2 ,c B, 2 ,g 2 u ( c B, 2 , g 2 ) s.t. c A, 2 + c B, 2 + g 2 = y − Rb u ( c A, 2 , g 2 ) ≥ K A, 2 ( s 2 ) c A, 2 , c B, 2 , g 2 ≥ 0 where K A, 2 ( s 2 ) is defined in ( 8 ). We can then derive the following result: Lemma 5. ( Second-period characterization .) Consider the utility function u ( · , · ) satisfying Assumption 1 . Te optimal allocation can be characterized as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 6,
+        "section_name": "Second-period problem",
+        "paragraph_id": 2,
+        "text": "1. If K A, 2 ( s 2 ) = −∞ , we have c ∗ A, 2 = 0 , c ∗ B, 2 = C D ( y − Rb ) , g ∗ 2 = G D ( y − Rb ) 2. If −∞ < K A, 2 ( s 2 ) < u ( C D ( y − Rb ) , G D ( y − Rb )) , the optimal allocations solve u c A, 2 + u c B, 2 − 1 u g 2 = 0 (10) c A, 2 + c B, 2 + g 2 = y − Rb (11) u ( c A, 2 , g 2 ) = K A, 2 ( s 2 ) (12)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 6,
+        "section_name": "Second-period problem",
+        "paragraph_id": 3,
+        "text": "3. If K A, 2 ( s 2 ) = u ( C D ( y − Rb ) , G D ( y − Rb )) , we have c ∗ A, 2 = C D ( y − Rb ) , c ∗ B, 2 = 0 , g ∗ 2 = G D ( y − Rb ) 4. If K A, 2 ( s 2 ) > u ( C D ( y − Rb ) , G D ( y − Rb )) , there is no solution.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 6,
+        "section_name": "Second-period problem",
+        "paragraph_id": 4,
+        "text": "Proof. See Appendix A.4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 6,
+        "section_name": "Second-period problem",
+        "paragraph_id": 5,
+        "text": "Te optimal allocation is conditional on the reservation value of party A and dictator’s static utility derived from the level of resource y − Rb . If party A’s reservation value is low and leave more resource to party B in the second period, then party B can perform as a social planner and keep some private transfers as characterized by ( 10 )-( 12 ). However, if party A had borrowed a lot in the first period, then her reservation value would be high while leaving party B few resources to allocate. To satisfy the status quo constraint, party B has to receive zero private transfer and provides dictator’s allocation to party A. Note that this lemma shows that in the second period, the characterizations are the same whatever the level of insurance in the economy is. Nonetheless, the sets of allocations in the first period vary given the difference in the reservation utility promised to the respondent K A, 2 ( s 2 ) as defined in equation ( 8 ). Tis can be explained more clearly when we characterize the first-period problems in the next two sections. To simplify the problem, we assume the proposer in the first period makes decision such that K A, 2 ( s 2 ) ≤ u ( C D ( y − Rb ) , G D ( y − Rb )) to ensure the existence of solution.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 0,
+        "text": "Te important dynamics of the model take place in the first-period problem. We follow our analysis with the full insurance case first. Given the best replies of party B in the second period, the first-period proposer A is solving the following maximization problem:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 1,
+        "text": "max c A, 1 ,c B, 1 ,g 1 ,b u ( c A, 1 , g 1 ) + βu ( C A, 2 ( c A, 1 , g 1 , b ) , G 2 ( c A, 1 , g 1 , b )) s.t. c A, 1 + c B, 1 + g 1 = y + b u ( c B, 1 , g 1 ) + βu ( C B, 2 ( c A, 1 , g 1 , b ) , G 2 ( c A, 1 , g 1 , b )) ≥ K B, 1 ( s 1 , b 0 = 0) c A, 1 , c B, 1 , g 1 ≥ 0 , 0 ≤ b < ̄ b",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 2,
+        "text": "where K B, 1 ( s 1 , b 0 = 0) is the promised level of utility for group B defined in ( 9 ), C A, 2 ( c A, 1 , g 1 , b ) , C B, 2 ( c A, 1 , g 1 , b ) and G 2 ( c A, 1 , g 1 , b ) are the best replies from the second-period problem as stated in Lemma 5 . Note that as shown in the lemma, under full insurance we must have",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 3,
+        "text": "u ( C A, 2 ( c A, 1 , g 1 , b ) , G 2 ( c A, 1 , g 1 , b )) = u ( c A, 1 , g 1 ) in the second period. Terefore, the objective function can be rewriten as (1 + β ) u ( c A, 1 , g 1 ) . Using this objective function will make it easier to solve the problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 4,
+        "text": "Te optimal decision is summarized as follows: Proposition 1. ( No debt under full insurance .) Consider the utility function u ( · , · ) satisfying Assumption 1 . In addition, assume the exogenous status quo s 1 = ( c A, 0 , c B, 0 , g 0 ) satisfies −∞ < K B, 1 ( s 1 , b 0 = 0) < K max where K max = (1 + β ) u ( C D ( y ) , G D ( y )) . Ten the optimal solution to the problem delivers b ∗ = 0 , c ∗ A, 1 = c ∗ A, 2 , c ∗ B, 1 = c ∗ B, 2 , g ∗ 1 = g ∗ Moreover, c ∗ A,t , c ∗ B,t and g ∗ t solve u c ∗ A,t + u c ∗ B,t − 1 u g ∗ t = 0 (13) c ∗ A,t + c ∗ B,t + g ∗ t = y (14) (1 + β ) u ( c ∗ B,t , g ∗ t ) = K B, 1 ( s 1 , b 0 = 0) (15) where t = 1 , 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 5,
+        "text": "Proof. See Appendix A.5 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 6,
+        "text": "It turns out that the optimal decision made by party A as the first-period proposer is to expropriate party B to the point where party B’s private consumption is smoothed out, as it respects the individual rationality constraint given by equation ( 15 ). As a risk-averse agent, party B would accept such offer with less in total but smoother private consumption across the two periods. Tis",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 7,
+        "text": "allocation is indeed more favorable to party A as it increases her lifetime utility. Moreover, party A can achieve this allocation without issuing any debt. Intuitively, since both private transfers and public goods consumption will be mapped as endogenous status quo, party A can sustain her level of utility even if party B proposes in the second period. Issuing debt will increase party A’s utility in the first period, but makes the status quo constraint impossible to hold in the second period. We will provide more intuition afer we characterize the first-period problem with partial insurance by comparing the first-order conditions of the two models.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 7,
+        "section_name": "Full insurance",
+        "paragraph_id": 8,
+        "text": "Another point to notice is that the allocations of the full insurance model is Pareto efficient as b ∗ = 0 and the first-order conditions ( 13 )-( 15 ) are exactly the same as condition ( 3 )-( 5 ), which are satisfied by the first-best allocations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 0,
+        "text": "We now turn our atention to the partial insurance case, where only private transfers are insured against expropriation. Tis configuration serves as our baseline scenario, given that the predominant form of government-provided social insurance involves private transfers targeting specific groups, akin to an entitlement program. Formally, the first-period problem for proposer A is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 1,
+        "text": "max c A, 1 ,c B, 1 ,g 1 ,b u ( c A, 1 , g 1 ) + βu ( C A, 2 ( c A, 1 , ̄ g, b ) , G 2 ( c A, 1 , ̄ g, b )) s.t. c A, 1 + c B, 1 + g 1 = y + b u ( c B, 1 , g 1 ) + βu ( C B, 2 ( c A, 1 , ̄ g, b ) , G 2 ( c A, 1 , ̄ g, b )) ≥ K B, 1 ( s 1 , b 0 = 0) c A, 1 , c B, 1 , g 1 ≥ 0 , 0 ≤ b < ̄ b",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 2,
+        "text": "where K B, 1 ( s 1 , b 0 = 0) is defined in ( 9 ) with the partial insurance case. Note that the most remarkable difference with the full insurance model is that the exogenous status quo ̄ g enters into the second-period best replies instead of g 1 . As characterized in Proposition 1 , under full insurance the first-period proposer A can perfectly smooth out her consumption because the secondperiod proposer B will make decisions subject to u ( C A, 2 ( c A, 1 , g 1 , b ) , G 2 ( c A, 1 , g 1 , b )) = u ( c A, 1 , g 1 ) . Under partial insurance, however, the lack of insurance for the second-period public goods sets that u ( C A, 2 ( c A, 1 , ̄ g, b ) , G 2 ( c A, 1 , ̄ g, b )) = u ( c A, 1 , ̄ g ) . Since ̄ g is fixed but not a choice variable, the first-order condition with respect to g 1 alters and results in different optimal allocations. It is worth noting that the value of ̄ g is not immaterial. Te smaller is ̄ g , the more important is the role of the entitlement programs which are insured – if ̄ g is “too large”, the political bargaining process will be the same as the full insurance model. In order to distinguish from the full insurance model, we set the value of ̄ g to be sufficiently small such that proposer A can only be insured from private goods entitlement, not public goods spending. Specifically, we assume",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 3,
+        "text": "0 < ̄ g < g min ( y ) (16)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 4,
+        "text": "where g min ( y ) is the smallest value of g to solve the following conditions together u c A + 1 u c B − 1 u g = 0 c A + c B + g = y c A , c B , g ≥ 0 It is easy to check that under our assumptions for the utility function u , g min ( y ) exists with g min ( y ) > 0 . 21 Te characterization of the maximization problem is summarized in the following proposition: Proposition 2. ( Positive debt under partial insurance. ) Consider the utility function u ( · , · ) satisfying Assumption 1 . In addition, assume the exogenous status quo s 1 = ( c A, 0 , c B, 0 , ̄ g ) satisfies −∞ < K B, 1 ( s 1 , b 0 = 0) < K max where K max = (1 + β ) u ( C D ( y ) , G D ( y )) , and ( 16 ) holds. Ten the optimal solution to the problem delivers b ∗ > 0 , c ∗ A, 1 > c ∗ A, 2 , c ∗ B, 1 = c ∗ B, 2 , g ∗ 1 > g ∗ Specifically, they solve u ( c ∗ A, 2 , g ∗ 2 ) = u ( c ∗ A, 1 , ̄ g ) (17) c ∗ B, 2 = c ∗ B, 1 (18) c ∗ A, 1 + c ∗ B, 1 + g ∗ 1 = y + b ∗ (19) c ∗ A, 2 + c ∗ B, 2 + g ∗ 2 = y − Rb ∗ (20) u c ∗ A, 1 + u c ∗ B, 1 − 1 u g ∗ = β \u0014 1 u g ∗ − 1 u g ∗ \u0015 (21)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 5,
+        "text": "u c ∗ A, 2 + u c ∗ B, 2 − 1 u g ∗ = 0 (22) u ( c ∗ B, 1 , g ∗ 1 ) + βu ( c ∗ B, 2 , g ∗ 2 ) = K B, 1 ( s 1 , b 0 = 0) (23)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 6,
+        "text": "Proof. Te details of the proof are shown in Appendix A.6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 7,
+        "text": "Te most important result from the characterization is that the level of debt is strictly positive in the partial insurance model. To beter illustrate why the level of debt is strictly positive in the partial insurance model, we compare the following two equations \u0002 Full insurance \u0003 \u0014 u c A, 1 − u c A, 2 \u0015 − \u0014 1 u g 1 − 1 u g 2 \u0015 = 0 (24)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 8,
+        "text": "\u0002 Partial insurance \u0003 \u0014 u c A, 1 − u c A, 2 \u0015 − \u0014 1 u g 1 − 1 u g 2 \u0015 = β 1 + β \u0014 u c A, 1 − u c A, 2 \u0015",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 9,
+        "text": "21 See Appendix A.6 for detail.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 10,
+        "text": "where equation ( 24 ) is derived from ( 13 ) and equation ( 25 ) is derived from ( 21 ) and ( 22 ). Note that to derive the two equations, the shared equilibrium condition c ∗ B, 1 = c ∗ B, 2 is used as well. With full insurance, the binding status quo constraint u ( c ∗ A, 2 , g ∗ 2 ) = u ( c ∗ A, 1 , g ∗ 1 ) in the second period allows equation ( 24 ) to hold with constant private and public consumption. With partial insurance, however, the second-period status quo constraint ( 17 ) implies that c ∗ A, 1 > c ∗ A, 2 must hold given our assumption for ̄ g . As a result, there is a positive wedge in equation ( 25 ) so that choosing constant private and public consumption is not optimal. Instead, borrowing is needed to support the wedge and keeps c A, 1 and g 1 at a higher level in the first period. To beter show the difference between the full and partial insurance model, we solve them numerically. Te results are ploted in Figure 2 . We assume the utility function takes a logarithm form u ( c, g ) = ln c + θ ln g with θ = 1 . We normalize the total endowment to unity so y = 1 , and the value of ̄ g is set to 0 . 05 implying 5 percent of the total endowment must be used as public goods consumption. For simplicity, we also set β = R = 1 . Te solid blue lines represent the optimal allocation for the partial insurance model and the dash-doted green lines for the full insurance model. Dictator’s allocation is also depicted as a reference. Te horizontal axis of the figure is c B, 0 which is used to capture the level of promised utility for party B. We consider the positive allocation at period 0 are subject to c A, 0 + c B, 0 + g 0 = y . Given a value of c B, 0 , we can derive K B, 1 ( s 1 , b 0 = 0) from ( 9 ) and get the optimal allocation with the characterizations. When c B, 0 is larger, it implies that the initial status quo constraint is tighter for the proposer A in the first period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 11,
+        "text": "As shown in the top right panel of Figure 2 , debt issuance is zero in the dictator model. Te reason is that borrowing can only distort resources across time when there is no endowment fluctuation, so there is no need to issue debt. Te level of debt is zero as well in the full insurance model, but for different reasons. Although party A knows that she will lose power in the second period, the endogenous status quo constraint including both private and public consumption ensures that she can sustain her first-period utility. With such full insurance, debt is a redundant tool to use. In contrast, the level of debt in the partial insurance model is strictly positive. It serves the primary purpose of boosting the private consumption of the first-period proposer A, as illustrated in the top lef plot. Te reason is as follows. Knowing that only her private transfer can be insured through the endogenous status quo constraint in the second period, party A has an incentive to manipulate her private allocation across time, resulting in excessive spending on private consumption in the first period. Put differently, there is an insurance motive of party A to directing resources towards c A, 1 , leading to an over-provision of private transfers relative to the optimal levels of the dictator’s problem and the full insurance model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 12,
+        "text": "In such model where party A and party B must agree upon, debt issuance must benefit the firstperiod respondent B to get accepted. As shown in the botom lef panel, party B also receives a higher level of private transfers in the first period where there is only partial insurance. It demonstrates that debt issuance serves as a bargaining chip by facilitating private consumption of party B to reach an agreement. Meanwhile, as in the botom right panel, public consumption g 1 is higher as well in the partial insurance model than in the others, which matches party A’s higher private consumption and benefits party B at the same time.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 13,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 14,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 15,
+        "text": "Private transfers to B",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 16,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 17,
+        "text": "c B,1 Public goods allocation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 18,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 8,
+        "section_name": "Partial insurance: entitlement programs",
+        "paragraph_id": 19,
+        "text": "Figure 2: Private transfers for group A and B, public goods allocation, and debt issuance for full (green dash-doted lines), partial (blue solid lines) insurance models, and the dictator model (yellow dashed lines) in the first period against the exogenous initial status quo represented by c B, 0 . Te yellow dashed lines represent A’s choice when she has dictatorship in both periods. Te allocations are the solution for the numerical problem that considers u ( c i , g ) = ln( c i ) + ln( g ) , with y = 1 , β = 1 and ̄ g = 0 . 05 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 0,
+        "text": "To beter understand the role of debt in our model with political bargaining, we will compare the results in the partial insurance model and in the power alternation model with no insurance. Tis is crucial because the dynamics of political bargaining will alter the motives behind debt issuance, and consequently influence the welfare and inequality implications of fiscal rules, as we will explore in Section 6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 1,
+        "text": "Te solid blue lines represent the optimal allocation and debt issuance for the partial insurance model in Figure 3 . Te lines are exactly the same as those in Figure 2 . Te red dash-doted lines are for the power alternation model with no insurance. Note that the red lines are flat because the optimal allocation is independent of the exogenous c B, 0 due to lack of status quo constraint. As shown in the top right panel, the level of debt is higher in the partial insurance model",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 2,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 3,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 4,
+        "text": "Private transfers to B",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 5,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 6,
+        "text": "c B,1 Public goods allocation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 7,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 8,
+        "text": "Figure 3: Private transfers for group A and B, public goods allocation, and debt issuance for power alternation model with no insurance (red dash-doted lines), for dictator (yellow dashed line), and for partial insurance model (blue solid lines) in the first period as a function of the exogenous initial status quo represented by c B, 0 . Te allocations are the solution for the numerical problem that considers u ( c i , g ) = ln( c i ) + ln( g ) , with y = 1 , β = 1 and ̄ g = 0 . 05 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 9,
+        "text": "than in the no insurance model. In the no insurance model, debt is only used to expropriate the opponent party. On top of that, debt plays other roles when private transfers can provide insurance. On one hand, the proposer A in the first period borrows to get herself more private consumption and strengthen her status quo in the next period, as confirmed in the top lef panel. On the other hand, she borrows to provide transfers to the respondent B to get the allocation accepted as in the botom lef plot. When c B, 0 is small, i.e. the initial promised value for party B is low, the first motive to issue debt dominates and private transfers to A is high. When c B, 0 is high, however, the later motive is more important in debt issuance. Party B will get more transfers while party A only gets less transfer than in the no insurance case. Nonetheless, the total effect is more debt issuance in the partial insurance model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 10,
+        "text": "In terms of public goods consumption, it remains over-provided compared to the dictator model but less pronounced than the no insurance model, as shown in the botom right panel. Te main reason is that party A shifs some demands for public goods to private consumption as only the later can provide insurance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 11,
+        "text": "In summary, in a political bargaining scenario with partial insurance (but not full insurance as the optimal level of debt would be zero), debt has dual purposes: a tool to expropriate the opponent when lose power and a bargaining chip to provide insurance in the political negotiation process. As a consequence, debt issuance is higher under political bargaining with partial insurance compared to the conventional power alternation model where debt is solely used for expropriation. Proposition 3 formalizes this result. 22 Proposition 3. ( Political bargaining increases debt levels. ) Consider the utility function u ( · , · ) satisfying Assumption 1 . In addition, assume that ∂ 2 G D ( Y ) ∂Y 2 ≤ 0 where G D ( Y ) is dictator’s choice of public consumption defined in section 4.2 . Ten for c B, 0 → 0 , we have b PA < b ∗ where b PA is the optimal choice of debt in the power alternation model without entitlements and b ∗ is the one in the partial insurance model with initial status quo c B, 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 9,
+        "section_name": "Debt and Political Bargaining",
+        "paragraph_id": 12,
+        "text": "Proof. See Appendix A.7 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 0,
+        "text": "In Proposition 3 , we established that debt levels are consistently higher under bargaining with partial insurance compared to power alternation model with no insurance. Te proposition was proven under the assumption that u ( ., 0) = u (0 ., ) = −∞ , which holds true when ρ ≥ 1 for CRRA utility functions of the form c 1 − ρ − 1 1 − ρ + g 1 − ρ − 1 1 − ρ . However, when ρ < 1 , it’s possible that debt levels under power alternation with no insurance exceed those under bargaining with partial insurance, as illustrated in Figure 4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 1,
+        "text": "In the plot, the solid blue line and the dash-doted red line represent the optimal level of debt and private transfers to party A in the partial insurance model against values of ρ , respectively. Te dashed blue line represents the level of debt in the no insurance model. Recall that in the partial insurance model the proposer A in the first period wants to borrow and have more private transfers, but is required to provide the promised utility for the respondent B at the same time. When ρ is large, there is a high demand for consumption smoothing. Terefore, through aids in smoothing party B’s private consumption ( c ∗ B, 1 = c ∗ B, 2 ), party A is able to issue debt to a high level but is still acceptable to party B. However, as ρ approaches 0, the consumption smoothing motive for the respondent diminishes due to the larger elasticity of substitution and the level of debt gets lower. Tis relationship is depicted by the increasing solid blue line in Figure 4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 2,
+        "text": "22 Te result is proved under sufficient conditions in Proposition 3 . One condition is that c B, 0 is small so the initial status quo constraint is not very tight. Te second condition is imposed on the utility function: When total endowment increases, the agent will allocate no less resource increment to private consumption instead of the public consumption. Tis condition ensures that agents’ preference do not conflict with the role of private transfers as an insurance device. Note that the log utility function in our numerical exercise satisfies this condition.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 3,
+        "text": "0 0.5 1.5 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 4,
+        "text": "Figure 4: Debt and entitlements ( c A, 1 ) in the partial insurance model against the value of ρ . Te allocations are the solution for the numerical problem that considers u ( c, g ) = c 1 − ρ − 1 1 − ρ + g 1 − ρ − 1 1 − ρ , with y = 1 , β = 1 , ̄ g = 0 . 05 , and c B, 0 = 0 . 165 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 5,
+        "text": "When there is lack of insurance, debt serves solely as a means for party A to expropriate party B. As ρ → 0 , party A places less emphasis on consumption smoothing because utility is geting more linear, so she has more incentives to borrow. Meanwhile, there is no counterbalance from party B since she has no bargaining power in this model. Consequently, as illustrated by the dashed blue line, debt decreases with the value of ρ in the no insurance model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 6,
+        "text": "Another important result we get from the figure is that entitlements and debt co-move when ρ is large (greater than 0 . 5 ). Tis stands in stark contrast to existing literature, where a higher ρ typically diminishes the value of debt due to consumption smoothing motives, as observed in the power alternational model with no insurance. 23 Te difference underscores the fundamental distinction in our modeling approach for addressing insurance against expropriation, particularly in comparison to Bouton, Lizzeri and Persico ( 2020 ). We implement insurance through the endogenous status quo, as elucidated in Section 5.5 . In our framework, the endogeneity of the status quo renders debt and entitlements (the private good insured against expropriation) strategic complements. Tis complementarity effect intensifies with the level of ρ , as it amplifies the desirability of consumption smoothing for the respondent.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 7,
+        "text": "Te political bargaining structure mitigates the potential welfare losses arising from expropriation due to political turnover. In a model of political turnover akin to Alesina and Tabellini ( 1990 ), debt can exacerbate inequality by enabling the first-period proposer to expropriate future proposers. However, this is not necessarily the case in a model of partial insurance. Here, debt not only enhances welfare but also has the potential to promote equity. In the subsequent section, we introduce three types of fiscal rules and analyze their implications for inequality and efficiency within our partial insurance framework.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 10,
+        "section_name": "Debt issuance and consumption smoothing: the status quo eﬀect",
+        "paragraph_id": 8,
+        "text": "23 Figure 4 can be juxtaposed with Figures 1 and 2 in Bouton, Lizzeri and Persico ( 2020 ), highlighting the divergent effects of consumption smoothing motives on debt issuance in our model, which accounts for the endogeneity of the status quo, compared to their model, where insurance is provided under a minimum level of consumption.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 11,
+        "section_name": "Fiscal Rules",
+        "paragraph_id": 0,
+        "text": "Fiscal rules, designed to regulate government borrowing and spending behaviors, aim to foster fiscal discipline and curb the adverse effects in economy. In this section, we take the widely used debt ceilings and spending limits and delve into the nuances of their impacts on welfare and inequality in our partial insurance model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 11,
+        "section_name": "Fiscal Rules",
+        "paragraph_id": 1,
+        "text": "Te decision to focus on the partial insurance model is threefold. First, the usual power alternation model with no political bargaining do not provide meaningful insight for spending limits, because they only affect the first-period proposer. Second, legislative bargaining over the government budget has mechanisms against expropriation in the form of mandatory spending and entitlement programs so we need to take it into account. A more detailed discussion of this is available in Bowen, Chen and Eraslan ( 2014 ), Bouton, Lizzeri and Persico ( 2020 ) and Azzimonti, Karpuska and Mihalache ( 2022 ). Tird, as we have proved in Proposition 1 , debt issuance is zero under the full insurance model. Consequently, an analysis of debt ceilings would be inconsequential. In addition, spending limits have minimal distributional effects in this model because they would need to be exceptionally low to have a significant impact.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 11,
+        "section_name": "Fiscal Rules",
+        "paragraph_id": 2,
+        "text": "Hence, we conclude that the partial insurance model, with its incorporation of political bargaining structure and budgetary rigidity, provides a more appropriate framework for examining fiscal rules. Tis model facilitates exploration of nuanced trade-offs between various allocations, considers a fact that is most countries do have some mechanism of insurance against expropriation, and entails a positive optimal level of debt issuance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 11,
+        "section_name": "Fiscal Rules",
+        "paragraph_id": 3,
+        "text": "To be more precise, we will explore three types of fiscal rules within this context: spending limits on the insured private transfers (referred to as the “c-rule”), spending limits on the uninsured public consumption (referred to as the “g-rule”), and an extreme debt ceiling that precludes any debt issuance. Given that we are interested in the impact of fiscal rules stemming from political bargaining, we will consider spending limits at the optimal levels of dictator’s choice because spending above these values can be regarded as emerged due to political reasons.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 0,
+        "text": "Te following proposition shows how debt issuance will change under spending limits. In fact, we will be able to rank debt issuance in three main scenarios: under partial insurance and no spending limit, under what we call the c-rule, which limits private transfers, and under the grule, that limits public good consumption.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 1,
+        "text": "Proposition 4. ( Positive debt under partial insurance with spending limit. ) Consider the utility function u ( · , · ) satisfying Assumption 1 . Moreover, assume that u c is convex in c . Denote ̄ g as exogenous lowest level of public consumption satisfying ̄ g < g min ( y ) . Consider the following two types of spending rules:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 2,
+        "text": "1. g spending rule in which g ≤ g D 2. c spending rule in which c ≤ c D",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 3,
+        "text": "where c D = C D ( y ) and g D = G D ( y ) are the choice of a dictator with total resource of y . Denote b g-rule and b c-rule the optimal choice of debt with the two rules, respectively. Ten we have 0 < b g-rule ≤ b ∗ ≤ b c-rule where b ∗ is the optimal choice of the partial insurance model without spending limit.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 4,
+        "text": "Proof. See Appendix A.8 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 5,
+        "text": "Te proposition shows that the optimal level of debt is lower with g-rule but higher with crule. Te reason for this ranking of debt issuance is simple. With partial insurance, allocating resources towards c A, 1 benefits A both statically and dynamically, as it guarantees reservation utility in the future. If this dynamic channel is limited, party A will seek to expropriate future resources and benefit herself with current public consumption instead, leading to increased debt issuance. Tis phenomenon is illustrated in the top right plot of Figure 5 . Under the c-rule (dashed yellow line), debt issuance is higher than in the partial insurance model (solid blue line). Since A cannot receive private transfers c A, 1 to the extent she desires, under the c-rule, she resorts to overspending in public spending (dashed yellow line), as compared to the partial insurance model with no spending limit (solid blue line), as evident in the botom right plot of the same figure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 6,
+        "text": "Te g-rule model induces the least distortions compared to the partial insurance model when there is no spending limit. Allocations exhibit marginal differences, with slightly reduced public spending compensated by slightly increased private spending for both A and B, as illustrated in Figure 5 . Tis discrepancy arises because public spending is not insured in the partial insurance model. Consequently, public spending is not significantly distorted by the dynamic political bargaining, and imposing limits on public spending is unlikely to produce substantial changes in outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 12,
+        "section_name": "Debt and spending limits",
+        "paragraph_id": 7,
+        "text": "Finally, debt ceilings are expected to reduce overall allocations. Tis outcome is unsurprising because debt is utilized not only for A’s benefit to augment c A, 1 but also as bargaining chips to enhance c B, 1 and g 1 . Consequently, the most significant impact in terms of welfare is anticipated to arise from debt ceilings, as they prevent A from fulfilling her demand for insurance by issuing debt. Further discussion on this topic will be provided in Section 6.3 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 0,
+        "text": "In Section 5.6 , we emphasized the importance of analyzing fiscal rules within a model that incorporates some level of insurance over government budget allocations. Using the conventional power alternation model for this purpose is not ideal, because debt serves primarily as a tool to exacerbate inequality by allowing the first-period proposer to extract more resources from the future proposer. Furthermore, the imposition of spending limits would have minimal impact",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 1,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 2,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 3,
+        "text": "Private transfers to B",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 4,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 5,
+        "text": "c B,1 Public goods allocation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 6,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 0 0.2 0.4 0.6 0.8",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 7,
+        "text": "Figure 5: Private transfers for group A and B, public goods allocation, and debt issuance for partial (blue solid lines) insurance model, model with g spending limit (red doted lines), model with c spending limit (yellow dashed lines) and model with zero debt ceiling (green dash-doted lines) in the first period against the exogenous initial status quo represented by c B, 0 . Te allocations are the solution for the numerical problem that considers u ( c i , g ) = ln( c i ) + ln( g ) , with y = 1 , β = 1 and ̄ g = 0 . 05 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 8,
+        "text": "on welfare and equity since they would only affect the first-period proposer A. Consequently, the results obtained from such analysis would be trivial and inconsequential. We illustrate this discussion in Figure 6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 9,
+        "text": "Te welfare results of the power alternation model are indicated in red. In this numerical exercise, the red square represents the model in which the first-period proposer A can issue debt, while the red circle represents the model in which debt issuance is not allowed. It is evident that the outcomes are trivial: debt only exacerbates inequality by enabling the first-period proposer to “starve the beast” as discussed in Alesina and Tabellini ( 1990 ). Additionally, due to the risk aversion of our agents, there are significant efficiency losses resulting from political turnover, which leads to a lack of consumption smoothing. Tis is illustrated by the distance between the red circle and square from the Pareto frontier, marked in black in the lef plot of Figure 6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 10,
+        "text": "When we consider that party B must accept party A’s offer, by introducing a political bargaining structure, and recognize that this structure has dynamic implications as private alloca-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 11,
+        "text": "tions also provide insurance against future expropriation, two immediate effects become apparent. Firstly, welfare losses stemming from political turnover are mitigated. Tis is illustrated in the lef plot of Figure 6 , which depicts the range of potential welfare outcomes resulting from the partial insurance model in the absence of a debt ceiling (solid blue) and when an extreme debt ceiling is imposed (dash-doted green). 24",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 12,
+        "text": "Imposing a debt ceiling results in a reduction of all first-period allocations, as illustrated in Figure 5 . Consequently, welfare is lower under a debt ceiling for any level of the initial status quo c B, 0 , as evidenced by the dash-doted green line being below the solid blue line in Figure 6 . Terefore, there exists a significant distinction between the impact of a debt ceiling in the power alternation model and in the partial insurance model: the inability to issue debt carries clear efficiency considerations when considering the political bargaining structure present in the partial insurance model, but not in the power alternation model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 13,
+        "text": "Pareto frontier and welfare",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 14,
+        "text": "-16 -14 -12 -10 -8 -6 -4 Lifetime utility of A -16 -14 -12 -10 -8 -6 -4 Lifetime utility of B Partial",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 15,
+        "text": "Power alternation with no debt Power alternation with debt Debt ceiling",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 16,
+        "text": "Equity line Pareto frontier Inequality",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 17,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 -1 0 Difference in lifetime utility Partial",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 18,
+        "text": "Power alternation with no debt Power alternation with debt Debt ceiling",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 19,
+        "text": "Figure 6: Te effect of debt in the power alternation and in the partial insurance models. Welfare is the solution for the numerical problem that considers u ( c i , g ) = ln( c i ) + ln( g ) , with y = 1 , β = 1 and ̄ g = 0 . 05 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 20,
+        "text": "Additionally, while a debt ceiling reduces inequality in both the partial insurance model and the simple power alternation model, the extent of reduction depends on the initial status quo c B, 0 . When c B, 0 is small, the difference in inequality between the partial insurance model with and without debt (the distance between the blue and green lines) is much more pronounced than the difference in inequality between the power alternation model with and without debt (the distance between the red square and red circle points). Tis distinction is illustrated in the right panel of Figure 6 . It is important to note that inequality here is calculated as the difference between the dynamic payoffof party A and party B.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 13,
+        "section_name": "Revisiting the role of debt and political bargaining",
+        "paragraph_id": 21,
+        "text": "24 Te outcome of the partial insurance model is contingent on the initial level of the exogenous status quo c B, 0 . When c B, 0 is low (represented by the magenta diamond point), indicating that B has limited bargaining power, the results tend towards the lower extremes of the lines. Conversely, when c B, 0 is high (depicted by the magenta triangle point), indicating significant bargaining power for B, the results tend towards the upper extremes of the lines.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 0,
+        "text": "Now we move to our primary analysis, examining how different fiscal rules yield varied implications in terms of welfare and equity. Figure 7 illustrates that the g-rule exhibits no discernible difference in welfare or equity compared to the partial insurance model with no spending limit or debt ceiling imposed. Tis is because imposing a spending limit on a good that is not significantly overprovided, as it lacks a dynamic benefit (since it is not insured in the partial insurance model), won’t substantially alter allocations or redistribute resources. As depicted in the lef plot of Figure 7 , we observe that the partial insurance model (blue solid line) yields almost identical outcomes to the g-rule model (red doted line).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 1,
+        "text": "When the c-rule is imposed, significant losses are incurred. Firstly, in terms of efficiency, the c-rule (yellow dashed line) consistently falls below or aligns with the partial insurance model without a fiscal rule (blue line). Efficiency losses decrease as the initial status quo promised to B increases. Tis relationship is evident in the lef plot of Figure 7 , where the distance between the c-rule yellow line and the partial insurance blue line decreases as they approach the equity line. However, when an extreme debt ceiling is enforced (green dash-doted line), efficiency losses are maximized.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 2,
+        "text": "Pareto frontier and welfare",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 3,
+        "text": "-16 -14 -12 -10 -8 -6 -4 Lifetime utility of A -16 -14 -12 -10 -8 -6 -4 Lifetime utility of B Partial",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 4,
+        "text": "Debt ceiling c-rule g-rule Equity line Pareto frontier Inequality",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 5,
+        "text": "0.2 0.4 0.6 0.8 Initial status quo c B,0 -1 0 Difference in lifetime utility Partial",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 6,
+        "text": "Figure 7: Te effect of debt in the power alternation and in the partial insurance models. Welfare is the solution for the numerical problem that considers u ( c i , g ) = ln( c i ) + ln( g ) , with y = 1 , β = 1 and ̄ g = 0 . 05 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 7,
+        "text": "Te impact of fiscal rules on inequality highlights the trade-offbetween equity and efficiency. While debt-ceilings are the worst in terms of efficiency losses, they are the ones that bring a lower inequality on average, as depicted in the right plot of Figure 7 . We say it on average because the impact depends on the level of the exogenous status quo c B, 0 , For high levels of c B, 0 , we can see that inequality is overall smaller for all types of fiscal rules, being almost the same for the c-rule (yellow line), g-rule (green line) and the benchmark model with no fiscal rule, the partial insurance model (blue line). Tese are points that are closer to the equity line in the lef-hand plot of Figure 7 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 8,
+        "text": "We can rank fiscal rules both in terms of efficiency losses and inequality. In terms of efficiency,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 14,
+        "section_name": "Welfare and inequality",
+        "paragraph_id": 9,
+        "text": "debt ceilings (green line, lef plot) result in no efficiency losses, c-rules’ (yellow line, lef plot) efficiency losses decrease with c B, 0 but never exceed welfare losses from the debt ceiling – the green line consistently remains below all other lines for any level of the initial status quo c B, 0 . Te g-rule (red line) has no impact in efficiency when compared to the partial insurance benchmark model (blue line). In terms of equity, debt ceilings (green line, right plot) result in the lowest inequality levels, c-rules’ (yellow line, right plot) in the second greatest average inequality levels and the g-rule (red line) has also no impacts on inequality.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 15,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In this study, we present a political economy model examining the impacts of fiscal rules on inequality and efficiency, focusing on debt ceilings and spending limits. Our model accounts for alternating parties bargaining over resource allocation when the status quo is endogenously determined. We characterize a unique equilibrium under relatively general conditions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 15,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "We show that different fiscal rules have different impacts on inequality and efficiency. Debt ceilings, despite inducing considerable efficiency losses, significantly mitigate inequality by curtailing the first-mover’s capacity for future expropriation. Conversely, spending limits on insurable goods inadvertently provoke increased debt issuance, whereas limits on non-insurable budgetary items prove inconsequential. From an efficiency standpoint, fiscal rules can be hierarchically ordered, with the spending limit on goods that are not insured (g-rule) emerging as most favorable, followed by the rule that limits spending on goods that are insured (c-rule), and debt ceilings as least efficient. Tis underscores a pivotal trade-offbetween equity and efficiency inherent in fiscal policy design. Our results underscore that the trade-offbetween equity and efficiency may become more apparent in the presence of fiscal rules.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 15,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "We also find that the emergence and levels of government debt are critically influenced by insurance against power alternation. Specifically, in contexts where private transfers are insured against shifs in power, debt not only arises but also surpasses levels observed in models lacking such insurance mechanisms. Tis underscores the strategic utility of debt as both an insurance mechanism and a bargaining tool for incumbent parties.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 15,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "Moreover, our analysis delves into the interplay between debt and entitlements, revealing them to be strategic complements within our framework. Contrary to previous models that treat debt and entitlements as substitutes, our analysis reveals them to be strategic complements within our framework. Here, debt issuance is leveraged not only as a safeguard against potential expropriation but also as a crucial negotiating tool that incumbents can use to gain opposition support for their allocation proposals. Tis insight stems from our adoption of a legislative bargaining model, characterized by an endogenously determined status quo, as our analytical approach.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 15,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "Our study highlights the critical importance of integrating political dynamics and insurance mechanisms into the analysis of fiscal rules. It demonstrates how the interplay between debt and insurance against expropriation – like entitlements programs, the strategic utilization of",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1344,
+        "section_id": 15,
+        "section_name": "Conclusion",
+        "paragraph_id": 5,
+        "text": "debt, and the differentiated effects of various fiscal rules are all crucial considerations for refining economic policy design. An intriguing avenue for future research, as suggested by our work, involves the incorporation of ex-ante inequality. In our current framework, where parties directly choose allocations – akin to the effect of non-distortionary taxation in a decentralized model – ex-ante inequality is neutralized by the reallocation of resources without any economic costs. However, the introduction of distortionary taxation, where higher taxes carry efficiency costs, could profoundly influence the interplay between fiscal rules, inequality, and efficiency. Additionally, exploring the dynamics of fiscal policy in the context of productivity shocks represents another valuable direction for further investigation. Tese are pivotal discussions we aim to pursue in future research, recognizing their potential to deepen our understanding of fiscal policy’s nuanced impacts.",
+        "extraction_warnings": ""
+    }
+]

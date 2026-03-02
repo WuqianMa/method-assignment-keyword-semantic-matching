@@ -1,0 +1,458 @@
+[
+    {
+        "paper_id": 1555,
+        "section_id": 0,
+        "section_name": "Investment and Governance: Through the Lens of Sustainability ∗",
+        "paragraph_id": 0,
+        "text": "Through the Lens of Sustainability ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 0,
+        "section_name": "Investment and Governance: Through the Lens of Sustainability ∗",
+        "paragraph_id": 1,
+        "text": "Jitendra Aswani Roberto Rigobon",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 0,
+        "section_name": "Investment and Governance: Through the Lens of Sustainability ∗",
+        "paragraph_id": 2,
+        "text": "Abstract Does investment inspire better governance? Using a global sample of 3,944 sustainable bonds, issued by public firms from 2013 to 2022, the causal generalized method of moments (GMM) estimates suggest that 1% increase in sustainable debt to total debt ratio improves the sustainable governance practices by 9%. To address potential simultaneity bias, we employ a method that utilizes the heteroskedasticity of structural shocks. Our findings also confirm that the standard panel regressions, even with fixed effects, may exaggerate effects due to simultaneity. Our findings remain consistent across different measures of sustainable governance using different databases and battery of other checks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 0,
+        "section_name": "Investment and Governance: Through the Lens of Sustainability ∗",
+        "paragraph_id": 3,
+        "text": "KEYWORDS : Sustainable Debt, ESG Committee, Heteroskedasticity. JEL Codes : D21, D22, G30, G40, J71",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 0,
+        "section_name": "Investment and Governance: Through the Lens of Sustainability ∗",
+        "paragraph_id": 4,
+        "text": "Kindly do not cite without the authors’ permission.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 0,
+        "section_name": "Investment and Governance: Through the Lens of Sustainability ∗",
+        "paragraph_id": 5,
+        "text": "∗ Aswani can be reached at jitendraaswani5@gmail.com ( jaswani@mit.edu ) and Rigobon can be reached at rigobon@mit.edu . We are grateful to Florian Heeb, Florian Berg, Yu Cao, Jose Gutierrez, and other participants for comments and feedback at 2024 MIT Sloan Sustainability Initiative seminar series and 2024 European Winter Meeting of Econometric Society.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 1,
+        "section_name": "INTRODUCTION",
+        "paragraph_id": 0,
+        "text": "Achieving global climate objectives necessitates targeted financial commitments. According to one estimate, a monumental investment exceeding [FORMULA] 9.4 trillion. 1 The global fixed income market stands as a pivotal pillar for marshalling the requisite capital for this climate transition. In the year 2022 alone, this market reached an unprecedented total of [FORMULA] 3.7 trillion USD, with corporate sustainable debt notably constituting approximately half of this amount, or about [FORMULA] 40 trillion USD by 2030, largely driven by ESG funds and sustainable debt mechanisms. 3 See Kreps and Sobel () for the literature review, we have discussed it further in the next section",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 1,
+        "section_name": "INTRODUCTION",
+        "paragraph_id": 1,
+        "text": "database, with sustainability governance metrics extracted from the BoardEx database. Additionally, we gather data on firm fundamentals from Worldscope and Global Compustat for the controls. Our dataset encompasses 3,944 sustainable bonds issued between 2013 and 2022. For evaluating sustainable debt at the firm level, we consider two indicators: the natural logarithm of the annual total number of sustainable bonds issued, and the ratio of cumulative sustainable debt to the firm’s total debt. We define sustainable governance using a binary variable that assigns a value of 1 to firms appointing a sustainability officer or establishing a sustainability committee within the year, and 0 otherwise. To enhance the validity of our governance metrics, we supplement our analysis with data from the Refinitiv ESG database. The final dataset includes 6,925 firms, resulting in 59,019 firm-year observations. Of these, 30% (or 3,053 firms) have implemented significant organizational changes to promote sustainability during the observed period. These firms are primarily from the financial, industrial, healthcare, materials, and consumer discretionary sectors. Geographically, a significant portion of these sustainable firms are located in the United States, United Kingdom, France, Germany, Canada, and Australia. This geographical spread closely mirrors the distribution of issuers of sustainable debt, which is predominantly from the United States, France, Germany, United Kingdom, and China, suggesting a correlation between organizational sustainability changes and the issuance of sustainable debt. Corporations engage in sustainable debt financing through two principal methods: they either commit to dedicating the funds solely to environmentally friendly projects or opt to associate the cost of borrowing with future environmental risks. The market segment characterized by the restriction on the use of proceeds typically features participation from large, financially robust firms with superior credit ratings (Aswani and Rajgopal [2022]). Green bonds, social bonds, and sustainability bonds comes under this category. On the contrary, sustainable debt (such as sustainability-linked bonds) that integrates environmental risk into bond features sees a more diverse participation across various industry sectors. Our sample covers 3,944 issuances of sustainable bonds from which 3,056 are green bonds and rest are others. Issuers of these bonds adhere to restrict the use of funds to specific categories - Energy, Energy Efficiency, Green Building and Infrastructure, Agriculture, Forestry, Climate Change Adaptation/Mitigation, Waste Management, Clean Water, Pollution Control, and Circular Economy, as delineated in the sustainable bond principles. For empirics, we conduct panel regression with country, year, and industry fixed effects. Our main dependent variables are amount of sustainable debt issued (scaled by total debt)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 1,
+        "section_name": "INTRODUCTION",
+        "paragraph_id": 2,
+        "text": "and the number of issuances of sustainable bond. For measuring the sustainable governance, we use indicator variable which takes value 1 if a firm have sustainability officer or have a sustainable (or ESG) committee in that year; otherwise 0. This measures the organizational change towards sustainability. As Aswani and Rajgopal [2022] point out about the issuer-level concentration in green bonds market. To avoid the skewness in the issuance’s distribution, we use a natural logarithm of it. We find that 1% increase in amount of sustainable debt (in total debt issued) improves the sustainable governance by 9 %. Results suggest that sustainable debt issuances inspire the firms to introduce organizational change for sustainability paving the way for sustainable governance. We are aware that there are concerns of endogeneity issues especially reverse causality. Because a firm which opt for organizational change for sustainability can increase the issuance of sustainable debt rather than issuance of sustainable debt trigger the firm to introduce the organizational change. We confirm the endogeneity problem by conducting the regression of sustainable debt on organizational change, we find that the latter increases the amount of sustainable debt (scaled) by 4.1%. To mitigate endogenity concerns, we use identification through heteroskedasticity (see, Rigobon [2003] and Rigobon and Sack [2003]) and generate the causal generalized method of moments (GMM) estimates. The literature on identification through heteroskedasticity suggests that system of simultaneous equations can be resolved due to change in variance of one variable with respect to other even if there are more unknowns than knowns. The simplest intuition can be gained by a special case: splitting the sample in two regimes and assume that in the second regime the sustainable governance is more volatile than in the first, whereas the variance in sustainable debt issuances remain constant across the two regimes. This increase in the variance of sustainable governance implies that the cloud of realizations enlarges through the sustainable debt schedule. The residuals are distributed over an ellipse and the shift in the variance implies a tilting toward the sustainable debt curve. From the instrumental variables point of view, this is equivalent to having a probailistic instrument. In sum, if both variances shift by the same amount, the system is not identified. On the other hand, system can be identified due to difference in relative variance in two regimes for sustainable debt issuances and sustainable governance. For a robust exogenous analysis on regime shifts and stability of the parameters, we leverage the unforeseen emergence of the novel coronavirus and the ensuing economic downturn commencing in February 2020. We divide our dataset into three periods surrounding this event: 2013-2018, 2019-2020, and 2021-2022. From a methodological standpoint, this",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 1,
+        "section_name": "INTRODUCTION",
+        "paragraph_id": 3,
+        "text": "division acts as a form of probabilistic instrument; in the first regime, we cannot definitively assert that there is a shift in the pattern of organizational changes. However, in the second regime, the dynamics of organizational change is noticeably altered as a result of the shock, allowing us to more accurately discern the relationship between organizational changes and sustainable debt issuances. The third regime helps us to test the stability of the structural parameters and we show that our results are robust to any combination of regimes and close to an all-regime model. On generating the causal Generalized Method of Moments (GMM) estimates, we find that an 1% increase in the amount of sustainable debt issuance increases the possibility of adoption of sustainable governance by 9.2%. These findings are statistically significant at the 1% level. We confirm these results using number of sustainable bond issuances as alternate proxy for sustainale debt measure. Additionally,we also observe that superior governance tends to attract increased investment which is well documented in the prior literature. It indicates that, particularly when addressing the endogenous nature of investment and governance, investment also drives governance improvements, not just the reverse. Our methodology causally prove this. Beyond addressing endogeneity concerns, we expand our analysis through a series of additional tests. Aswani and Rajgopal [2022] suggest that the market shows a preference for sustainable bonds issued by firms in the financial sector, as evidenced by a positive shareholder reaction and the presence of a greenium in the secondary market. Therefore, we specifically examine the impact within financial and high-pollution sectors. Our findings indicate a more pronounced effect among financial sector firms compared to those in polluting sectors. Considering that shareholder rights differ across jurisdictions (see, Porta et al. [1998], we further dissect our results based on the legal framework of the firms’ home countries, distinguishing between common law and civil law systems. Our analysis demonstrates that our findings hold particularly strong in civil law countries, which typically feature weak corporate governance systems compared to their common law counterparts. We show that, in such countries, investment inspire governance strongly than in common law countries where investors are protected by law. Our research draws parallels with the study by Wintoki et al. [2012], which revisits the relationship between board structure and firm performance using the Generalized Method of Moments (GMM) estimator, concluding that there is no causal link between board structure and contemporaneous firm performance. This study importantly highlights the biases inher-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 1,
+        "section_name": "INTRODUCTION",
+        "paragraph_id": 4,
+        "text": "ent in traditional estimators that neglect the dynamic interplay between current governance structures and historical firm performance. In a vein similar to Wintoki et al. [2012], our application of the GMM model, particularly identified through heteroskedasticity, demonstrates that investment significantly fosters enhanced governance practices, and not just governance-enticing investment. Additionally, our findings corroborate the notion that standard panel regressions, even when adjusted with fixed effects, tend to bias the magnitude of effects owing to simultaneity concerns. This reinforcement of the dynamics between investment and governance adds a nuanced layer to the discourse on corporate governance effectiveness. Contribution : Our paper broadly contributes toward literature on association between investment and corporate governance. Past literature either focused on role of corporate governance for future investment by impacting information asymmetry (see, La Porta et al. [2000], Gugler et al. [2004]) or the role of debt holders or institutional investors in corporate governance ( see, McCahery et al. [2016],Lewellen and Lewellen [2022]). Rather than determining jointly, these relationships were seen orthogonal to each other. As corporate governance and firm value are endogenous, so does corporate governance and investment as firm value is important determinant of the latter. Our paper jointly estimate these relationships and find that, impact of investment on governance is stronger and than the role of governance in attracting the investment. Our work also contributes toward emerging literature on sustainable governance. Iliev and Roth [2023] posit that boards with sustainability expertise not only enhance a firm’s overall sustainability performance but also increase the likelihood of forming a sustainability committee. Similarly, Dyck et al. [2023] argue that board renewal mechanisms are essential for aligning investor preferences with actual environmental sustainability practices within firms. Their research, which examines the adoption of majority voting for directors and the inclusion of female directors as governance mechanisms, finds a significant positive correlation with future environmental performance. Extending that literature, we show that how issuance of sustainable bonds inspire a firm to introduce the organizational changes such as hiring of sustainable officer or formation of ESG/CSR committee which aligns with their transition towards sustainability in the long-run. Finally and most importantly, our work also extends the literature on identification through heteroskdasticity. In the past, this methodology has been used mainly in the macroeconomics literature to understand the impact of monetary policy on asset prices (see, Rigobon and Sack [2003]). We use this methodology in corporate finance to provide",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 1,
+        "section_name": "INTRODUCTION",
+        "paragraph_id": 5,
+        "text": "the causal effect of investment on governance. This methodology has advantage over other identification designs, especially where either instrument is weak or exogenity of shock is questionable. Our findings show that the standard panel regressions, even with fixed effects, may exaggerate effects due to simultaneity. Section 2 provides a description of the data used for the analysis. Section 3 explains the specification of the empirical model. Section 4 discusses the endogenity problem and identification design. Section 5 discusses the results. Section 6 concludes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 2,
+        "section_name": "DATA",
+        "paragraph_id": 0,
+        "text": "Our main sample is constructed using the Bloomberg Fixed Income, Worldscope, Global Compustat, BoardEx, and Refinitiv ESG databases. Data for corporate green bonds are obtained from Bloomberg’s fixed-income database. Only issues labeled as “green bonds”, ”sustainability bonds”, ”sustainability-linked bonds”, and ”social bonds” are retained. As shown in Table 1, 5,188 green bonds were issued between January 1, 2013 and December 31, 2022. Following Flammer (2021), we excluded government-issued and other idiosyncratic green bonds with Bloomberg Industry Classification System (BICS) codes such as “Sovereigns,” “Government Agencies,” “Government Regionals,” “Supernationals,” “Government Development Banks,” “Winding up Agencies,” “Central Bank”, and “Government local.” We also exclude observations related to (i) bonds issued from tax havens; and (ii) cases where only one bond was found from a particular country or a specific BICS level 2 industry. Following this filter, the sample of comprises a total of 5,179 green bonds. Given the somewhat ambiguous difference between green bonds and so-called “alternative” green bonds (e.g., sustainability bonds, sustainability-linked bonds, and social bonds), we also examined the issuance of such alternative bonds. Compared to green bonds, the issuance of alternative bonds is a relatively recent phenomenon. The first corporate sustainability bond was issued in 2014 and by then, companies had issued 680 such bonds by 2022. We identified 613 sustainability-linked bonds issued in 2018–22. Although the first social bond was issued in 2015, a total of 372 social bonds were issued between 2015 and 2022. All categories of sustainable debt witnessed the peak in 2021 in number of issuances. We append the sample of green bonds with alternative green bonds which increase the issuances to 6,844. We did this because firms can issue different type of sustainable debt in the same year and our analysis is focus on firm-year level. For instance, BAKS bank issue 5 green and 2 social bonds in the same year. Furthermore, due to availability firm characteristics, we focus on the sustainable debt issued by public firms or subsidiaries of public firms. This",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 2,
+        "section_name": "DATA",
+        "paragraph_id": 1,
+        "text": "limits our sample to 3,944. Our sample comprises roughly 77% of green bonds, 3-4% of social bonds, 10-11% of sustainability bonds, and 10-11% of sustainability-linked bonds. The proceeds of these bonds are mainly earmarked for green loans, green projects, refinancing existing green bonds, or for financing working capital needs. Among the different taxonomies use for identifying the green projects, green bonds principles (GBP) is the most common. The GBP requires that proceeds should be invested in projects related to one of the 13 categories - clean transportation, climate change adaptation, terrestrial and aquatic biodiversity, sustainable water and wastewater management, renewable energy, energy efficiency, pollution prevention and control, green buildings, circular-economy-adapted products and services, and sustainable management of living natural resources and land use. For example, financial institutions such as banks issue green bonds to cover green loans provided to support LEED-certified buildings, solar panels, and other similar sustainable products or activities. As our main analysis is at firm-year level, the final dataset includes 10,970 firms, resulting in 67,818 firm-year observations. For the final sample, we keep only those firms which have information available for at least three years. This reduced our sample to 6,925 firms (59,019 firm-year observations). Of these, 30% (or 3,053 firms) have implemented significant organizational changes to promote sustainability during the observed period. These firms are primarily from the financial, industrial, healthcare, materials, and consumer discretionary sectors. Geographically, a significant portion of these sustainable firms are located in the United States, United Kingdom, France, Germany, Canada, and Australia. This geographical spread closely mirrors the distribution of sustainable debt issuers, which is predominantly from the United States, France, Germany, the United Kingdom, and China, suggesting a correlation between organizational sustainability changes and the issuance of sustainable debt. For evaluating sustainable debt ( SD ) at the firm level, we consider two indicators: the natural logarithm of the annual total number of sustainable bonds issued, and the ratio of cumulative sustainable debt to the firm’s total debt. We define sustainable governance ( SG ) using a binary variable that assigns a value of 1 if a firm has the sustainability officer or CSR/ESG committee in that year and 0 otherwise. To enhance the validity of our governance metrics, we supplement our analysis with data from the Refinitiv ESG database.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 2,
+        "section_name": "DATA",
+        "paragraph_id": 2,
+        "text": "4. EVENT STUDY AND REGRESSION SPECIFICATION",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 0,
+        "text": "To check whether sustainable debt changes around the adoption of sustainable governance, we conduct an event study. The event year is the year of sustainable governance adoption. We evaluate the amount issued (scaled) and number of sustainable bonds in two years before the event to two years after. 4 We conducted the event study in two ways. In the first, to compute the counterfactual trend post-adoption, we run the ordinary least square (OLS) regression of sustainable debt on year using the sample before the sustainable governance adoption. Using these parameters, we forcast the post-adoption trend of sustainable debt in the absence of sustainable governance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 1,
+        "text": "Post-adoption SD =        SD , Acutal SD ( FittedV alue ) = λ 1 + λ 2 ∗ Y ear , Counterfactual",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 2,
+        "text": "For the amount issued (scaled), λ 1 and λ 2 are 0.011 and 0.003. The graphs of event study are provided in Figure III. Figure (III. a) compares the trend for the amount issued (scaled) on the adoption of sustainable governance and in the absence of sustainable governance. We show the same trends using the number of sustainable bonds issued (log), the Figure (a) in Table A3 in Appendix A show this trend. The solid black line shows the pre-adoption trend, black dotted line shows the counterfactual post-adoption trend, and the maroon dashed line shows the actual post-adoption trend. Graph shows that the actual trend steeped more due to post-adoption of sustainable governance. For the second, we compare the trend with the matched control group based on country, year, and firm fundamentals such as leverage, size, and profitability. 5 The firms in the control group comprise those that never adopted sustainable governance. Figure (III.b) compares the graphs of amount issued (scaled) on adoption of sustainable governance for the treatment and the control group. Like in Figure (III.a), we find that the trend in the treatment group steeped more than the control group. We externally validate these results 4 For robustness, we also check the trends in different event windows. 5 We use nearest-neighbor algorithm to find the matched firms.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 3,
+        "text": "using the number of sustainable bonds issued (log); Figure (b) in Table A3 in Appendix A shows the same. Overall, the event study confirms that the trend in the sustainable debt sloped higher in the presence of adoption of sustainable governance than in the absence of sustainable governance. To understand how sustainable debt issuance influences the sustainable governance practices, we use the following linear probability specification.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 4,
+        "text": "P \u0012 SG t = 1 SD t − 1 \u0013 = α + β 1 SD t + β 2 SD t − 1 + γ SG t − 1 + λ industry + λ year + λ country + ε t (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 5,
+        "text": "Here, SG t is an indicator variable for sustainable governance for a firm in year t and SD t is amount issued of sustainable debt (scaled) or a natural logarithm of number of sustainable bonds issued by a firm in a year t . We control for industry, year, and country level unobservables using the fixed effects. λ industry is industry fixed effects, λ year is year fixed effects, and λ country is country fixed effects. The coefficient of interest here are β 1 andβ 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 6,
+        "text": "ε t is i.i.d and follows a normal distribution i.e., ε ∼ N (0 , ζ 2 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 7,
+        "text": "As there is a possibility of simultaneousity, we also examine whether the improvement in sustainable governance impacts the sustainable debt issuance in year t . To test it, we use the following ordinary least square (OLS) specification. The coefficient of interest here is φ 1 andφ 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 8,
+        "text": "SD t = φ + φ 1 SG t + φ 2 SG t − 1 + ω SD t − 1 + θ industry + θ year + θ country + η t (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 9,
+        "text": "Here, θ industry is industry fixed effects, θ year is year fixed effects, and θ country is country fixed effects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 10,
+        "text": "η t is i.i.d and follows a normal distribution i.e., η ∼ N (0 , Φ 2 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 3,
+        "section_name": "4.1. Event Study",
+        "paragraph_id": 11,
+        "text": "5. ENDOGENEITY PROBLEM AND IDENTIFICATION DESIGN",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 0,
+        "text": "5.1.1. Without Common Shocks",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 1,
+        "text": "The question of identifying when the model includes endogenous variables has been studied for several decades. The problem arises when the structural form cannot be directly estimated and the parameters must be recovered from the reduced form, which has fewer equations than unknowns. Thus, to solve for the original parameters, more information is required. For instance, in this case, reduced form solution to understand whether sustainable debt inspire the sustainable governance practices is biased due to simultaneity. This can be resolved using exogenous shock such as firm’s exposure to regulatory change which affects the sustainable debt issuances but not the sustainable governance. However, it is complicated and hard to verify whether the shock is really exogenous. Two such papers which attempted it are Iliev and Roth [2023] and Dyck et al. [2023]. Iliev and Roth [2023] explores the whether sustainable governance (measured as formation of ESG committee) improves the sustainability performance of the firms. The paper uses the directors’ exposure to mandatory ESG regulation in foreign country as identification design. Dyck et al. [2023] uses mandatory change in voting rights at the board and mandatory gender diversity at the board as a exogenous shock. Although these shocks seems exogenous but one can argue instances where these shocks affect both dependent and main independent variables. To mitigate such concerns, we use identification through heteroskedasticity (Rigobon [2003];Rigobon and Sack [2003]). This methodology addresses concerns regarding the exogeneity of shocks and the strength of instruments by deriving a probabilistic instrument directly from the data, ensuring more reliable and intrinsic analytical robustness. The simplest intuition can be gained by a special case: splitting the sample in two and assume that in the second subsample the sustainable governance is more volatile than in the first subsample, whereas the variance in sustainable debt issuances remain constant across the two subsamples. This increase in the variance of sustainable governance implies that the cloud of realizations enlarges through the sustainable debt schedule.The residuals are distributed over an ellipse and the shift in the variance implies a tilting toward the sustainable debt curve. From the instrumental variables point of view, this is equivalent to having a probailistic instrument, we cannot assure that the sustainable governance curve shifts but in the second sample, shocks to the sustainable governance are more likely to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 2,
+        "text": "occur. In sum, if both variances shift by the same amount, the system is not identified. On the other hand, system can be identified due to difference in relative variance in two sub-samples for sustainable debt issuances and sustainable governance. We further explain this through a model in Rigobon (2003). The simulataneous equations set as in (1) and (2) can be simplified as,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 3,
+        "text": "Sus Gov t = β Sus Debt t + ε t Sus Debt t = φ Sus Gov t + η t",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 4,
+        "text": "Here ∆ Sus Gov t and ∆ Sus Debt t are country, industry, and year fixed effects adjusted changes in sustainable governance and sustainable debt. It is well known that if β and φ are different from 0, it is not possible to estimate this set of equations without further information. One can only estimate the covariance matrix of the reduced form Ω, given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 5,
+        "text": "Ω= 1 (1 − βφ ) 2 & β 2 σ 2 η + σ 2 ε βσ 2 η + φσ 2 ε · φ 2 σ 2 ε + σ 2 η '",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 6,
+        "text": "The problem of identification is that the covariance matrix provides only three moments - variance of SD t , SG t , and the covariance between SD t and SG t , whereas there are four unknowns - β , φ , σ 2 ε and σ 2 η . Rather than using the exclusion restrictions such as β or φ as 0, sign restrictions, or putting restriction on ratio of variances ( σ η σ 2 ε ) as constant or infinity, we use the relative difference in variances of SD t and SG t for the identification and divide the sample in two regimes. The key here is that the variance of SG t is higher in second regime than in first. It can be seen in data moments showed in Figure 1 that variance of SG t is higher in regime from 2020-2022 than from 2013-2019. The assumptions we took here is that the β and φ are stable across the two regimes and the structural shocks are not correlated. However, we relax this assumption to check the stability of the parameters by dividing the sample in three regimes - 2013-2018, 2019-2020, and 2021-2022. Under these assumptions, the two reduced-form covariance matrices have the same structure as before:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 7,
+        "text": "Ω s = & ω 11 ,s ω 12 ,s · ω 22 ,s '",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 8,
+        "text": "The regime is denoted as s ∈ 1 , 2.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 9,
+        "text": "The same can be rewritten as,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 10,
+        "text": "Ω s = 1 (1 − βφ ) 2 & β 2 σ 2 η,s + σ 2 ε,s βσ 2 η,s + φσ 2 ε,s · φ 2 σ 2 ε,s + σ 2 η,s '",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 11,
+        "text": "In this new set of systems, there are six unknowns - β , φ , σ η, 1 , σ η, 2 , σ ε, 1 , σ ε, 2 and two covariance matrices, which provide six equations. If all these equations are independent, the identification problem is solved. Following two equations would provide the β and φ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 12,
+        "text": "σ 2 SG,SD, 1 σ 2 SG,SD, 2 = φσ 2 SG, 1 − βσ 2 SD, 1 φσ 2 SG, 2 − βσ 2 SD, 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 13,
+        "text": "σ 2 SG,SD, 2 σ 2 SG,SD, 3 = φσ 2 SG, 2 − βσ 2 SD, 2 φσ 2 SG, 3 − βσ 2 SD, 3",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 14,
+        "text": "Here 1, 2, and 3 are regimes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 15,
+        "text": "5.1.2. With Common Shocks",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 16,
+        "text": "There is a possibility that common shocks such as regulatory change, improvement in monitoring by institutional investors, or similar others can simultaneously impact sustainable debt as well as adoption of sustainable governance. Although such exogenous shocks are not the concern if it only affect the first moment i.e., mean, however, if the common shock affect the variance of both variables it can affect the results of identification through heteroskedasticity. This extension of Rigobon (2003) model explains the same.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 17,
+        "text": "Sus Gov t = β Sus Debt t + γZ + ε t Sus Debt t = φ Sus Gov t + Z + η t",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 18,
+        "text": "Here, Z is vector of common shocks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 19,
+        "text": "Similar to the model explained above, one can only estimate the covariance matrix of the reduced form Ω, given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 20,
+        "text": "Ω= 1 (1 − βφ ) 2 & ( β + γ ) 2 σ 2 Z + σ 2 ε + β 2 σ 2 η ( β + γ )(1 + φγ ) σ 2 Z + φσ 2 ε + βσ 2 η · ( φ + γ ) 2 σ 2 Z + σ 2 η + φ 2 σ 2 ε '",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 21,
+        "text": "6. RESULTS AND DISCUSSION",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 22,
+        "text": "Figure I illustrates the trends in the mean ( μ ) and variance ( σ 2 ) of Sustainable Governance (SG) and Sustainable Debt (SD) over time. Figure I.a highlights that the issuance of sustainable bonds has seen a consistent increase since 2013, with a particularly sharp rise from 2019 and reaching its peak in 2021. This trend is similarly reflected in the variance of SD, as depicted in Figure I.b, indicating a growing diversity in the amount of sustainable debt issued. Figure 1.c presents the evolution of the average sustainable governance ( μ SG ), demonstrating that the integration of organizational changes for sustainability is a relatively recent phenomenon. Initially, larger and more profitable firms were the early adopters. The push for sustainable governance, exemplified by the appointment of chief sustainability officers or the formation of ESG/CSR committees, started gaining momentum from 2016 and surged significantly after 2018. In line with the trends observed in SD, the variance in SG ( σ 2 SG ) also begins to increase noticeably from 2018, with a pronounced rise post-2019. Importantly, from 2018 onwards, σ 2 SG surpasses σ 2 SD , and this disparity widens further post-2020. This may be attributed to the heightened organizational focus on sustainability prompted by the COVID-19 pandemic, which necessitated firms to adapt to more sustainable practices. We leverage this period as an exogenous shock for regime change in our structural estimation, offering a unique perspective on how external events influence corporate sustainability initiatives. Figure II.a shows the trend in covariance between sustainable governance ( SG ) and sustainable debt ( SD ). It follows the trend close to σ 2 SG but sharp jump at 2020 but from 2021, σ 2 SD dominates this curve and we see dip in the covariance for the year 2021-2022. Figure II.b shows how coefficient ( β ) of SG on SD changes with the lags of SD . This captures the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 23,
+        "text": "persistant impact of sustainable debt on sustainable governance. Although after an one lag, significance level drops and widens further for lags from 4-6 but the positive relation of lag SD with SG maintains. This gives strength to our hypothesis that investment inspire the firm to make changes in the governance. Table I Panel A shows the distribution of observations (firm-year) between sustainable firm and the issuer which issued sustainable debt. Sustainable Firms are those which adopt the sustainable governance at some point of time in the sample period. From total 67,818 observations (10,907 firms globally), there are 29,416 firm-year observations for such firms and 38,402 observations for firms which never adopt sustainable governance in this period. Regarding sustainable debt issuer, there are 4,009 firm-year observations from such issuers and 63,809 firm-year obervations for non-issuers. The latter distribution is skewed because sustainable bond issuance market is skewed as discussed in Aswani and Rajgopal [2022], few issuers issue multiple bond. Sustainable bond market is concentrated in financial sector firms and polluting sector firms. There are 2,543 observations when sustainable firm is also the issuer of sustainable debt. There are 1,466 firm-year observations when non-sustainable firm issues sustainable debt. Table I Panel B shows the industry-level distribution of firms engaging in sustainable governance across various sectors for the period 2013 to 2022. This analysis categorizes the sample into three primary groups: the entire sample, firms identified as sustainable, and those classified as non-sustainable. The distinction between sustainable and non-sustainable firms is based on their adoption of sustainable governance measures during the sample period. Sectoral distribution follows Global Industry Classification Standard (GICS) classification. The implementation of sustainable governance practices, marked by the appointment of sustainability officers or the formation of ESG/CSR committees, is primarily observed among larger and potentially more profitable firms, particularly noted in the Industrials, Financials, and Health Care sectors. In the energy sector, our sample includes 3,574 firm-year observations across 422 firms. Of these, 241 firms are deemed sustainable, accounting for 2,213 firm-year observations, whereas the remaining 181 firms, leading to 1,361 firm-year observations, are classified as non-sustainable.The materials sector shows substantial engagement, with 715 firms contributing to 5,799 firm-year observations. Within this, 370 firms are recognized as sustainable, representing 3,309 firm-year observations, highlighting a strong move towards sustainable governance within the sector. Industrials exhibit the most significant participation, with 1,692 firms making up 10,736",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 24,
+        "text": "firm-year observations. Among these, 595 firms are identified as sustainable, contributing to nearly half of the sector’s total observations, underscoring a significant commitment to sustainable governance practices.Significantly, the financial sector, essential for mobilizing sustainable debt, includes 9,309 firm-year observations from 1,057 firms. Out of these, 409 are classified as sustainable, encompassing 3,823 firm-year observations, emphasizing the sector’s pivotal role in driving sustainable governance practices. Our sample also have 166 utility firms with 1,506 firm-year observations, out of which 124 firms (1,142 firm-year) have adopted sustainable governance and 42 firms (333 observations) didn’t. Our analysis illustrates a pronounced trend towards adopting sustainable governance measures across various sectors, notably intensified post-2019. This can also reflects the global shift towards environmental awareness and the regulatory adjustments precipitated by the COVID-19 pandemic. This table reveals the diverse adoption of sustainable governance practices across different industry sectors, signifying a broader move towards sustainability that surpasses conventional environmental concerns to encompass wider corporate governance frameworks. This evolving landscape is pivotal in propelling the global sustainable finance agenda, evidenced by the substantial sustainable debt issued by proactive firms within these sectors. Table II displays the regression outcomes examining the relationship between sustainable debt ( SD ) and sustainable governance ( SG ). In Panel A, we present results from regressions that do not account for the potential simultaneity between these variables. In this analysis, SD is quantified as the ratio of the amount issued to total debt. Specifically, Column (1) illustrates the results from a linear probability model assessing the impact of SD on SG , incorporating fixed effects for country, industry, and year. The coefficient of interest, β , is estimated to be 0.055, suggesting that an increase 1% in sustainable debt is associated with a 5.5% higher probability of adopting sustainable governance initiatives. This supports the hypothesis that financial investments can indeed spur changes in corporate governance. Nevertheless, considering the extensive literature documenting the reciprocal relationship—where stronger governance frameworks may attract additional investment—it becomes imperative to examine this dynamic further. Accordingly, in our OLS regression analysis of SD on SG , we obtain a coefficient ( φ ) of 0.007, indicating that firms with established sustainable governance frameworks tend to issue 0.7% more sustainable debt than firms without such frameworks. In Panel B, we turn to the structural estimations derived via the Generalized Method of Moments (GMM), employing the heteroskedasticity-based identification strategy proposed",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 25,
+        "text": "by Rigobon (2003). Following the methodological approach outlined in Section 5, we segment the GMM analysis into two distinct scenarios: one encompassing all observed regimes and the other confined to the two specific regimes, thereby enabling an assessment of parameter robustness across different regimes. The three regimes are from 2013-2018, 2019-2020, and 2021-2022. The GMM estimates spanning all regimes are reported in Columns (1)-(2), while the findings from the analysis limited to the selected regimes are presented in Columns (3)-(4). Remarkably, the coefficient β remains consistent at 0.092 across both the comprehensive and restricted regime analyses, implying that each 1% increment in SD in total debt correlates with the 9.2% increase in the probability of adopting sustainable governance—a result significant at the 5% level. This outcome highlights that the initial linear probability model estimates may underestimate the impact of sustainable debt on governance due to the inherent bias introduced by simultaneity. Specifically, the GMM-derived φ coefficient stands at 0.002, closely aligning with the estimates from the fixed-effects OLS model. Suprisingly, the sustainable governance increase sustainble governance by a lag. The GMM estimate of lag sustainable governance on sustainable debt (i.e, φ (lag) is 0.042 and it is significant at 1%. This suggests that on adopting sustainable governance today can increase the sustainable debt tomorrow by 4.2%. For the restricted regime, we found the same results. The β and φ (lag) are 0.097 (9.7%) and 0.045 (4.5%). Panel C presents regression results that, similar to those in Panel A, do not consider the potential simultaneity between sustainable debt ( SD ) and sustainable governance ( SG ). In this analysis, SD is quantified as the natural logarithm of number of sustainable bonds issued. Specifically, column (1) provides the results of a linear probability model that evaluates the influence of SD on SG , incorporating fixed effects for country, industry and year. The coefficient of interest, β , is valued at 0.037, indicating that an increase 1% in the proportion of amount issued correlates with a 3.7% increase in the likelihood of a firm adopting sustainable governance practices. These findings echo the insights from Panel A, Column (1), reinforcing the notion that financial investments can serve as a catalyst for enhanced corporate governance frameworks. Furthermore, our OLS regression of SG on SD yields a coefficient ( φ ) of 0.010, signifying that firms with robust sustainable governance structures are associated with a marginal increase of 1.0% in the number of sustainable debt issued, compared to firms without such governance mechanisms. It is significant at 1%. For the amount issued (scaled), both contemporaneous and lagged coefficients are highly significant. This supports the findings from Panel A that the sustainable debt issunaces inspire the firm",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 26,
+        "text": "to improve the sustainable governance practices. In Panel D, we delve into the causal Generalized Method of Moments (GMM) estimates, maintaining the measure of SD as the amount issued relative to total debt. Results from this comprehensive assessment are catalogued in Columns (1)-(2) for all observed regimes and in Columns (3)-(4) for the regime-restricted analyses. Consistently, the coefficient β is 0.063 for all observed regimes and 0.091 for restricted regime model. It suggests that every 1% increase in SD (measured by amount issued) is linked with nearly a 6.3-9.1% uptick in sustainable governance engagement, with this effect statistically significant at the 1% level. This confirms the findings of Panel B and shows that our causal estimates are also robust. Similar patterns of overestimation are discerned for φ , with nuanced deviations in significance. The GMM-adjusted φ coefficient, calculated at 0.001, aligns with prior OLS model outcomes. However, after rectifying for simultaneity, the GMM t-values—0.555 in the allregime framework and 0.483 in the restricted-regime approach—suggest that SG ’s impact on SD lacks statistical significance. However, as we find earlier, the sustainable governance increase sustainble governance by a lag. The GMM estimate of lag sustainable governance on sustainable debt (i.e, φ (lag) is 0.047 (4.7%) for all regime model and and 0.023 (2.3%) for restricted model. Both coefficients are significant at 1%. This confirms the findings of past literature that governance improves the investment. Figure IV compares the estimates between models with all regimes and restricted regimes. These Figures exhibits the stability of parameters by showing that distribution of parameters are similar in all regime model and restricted regime model. Figure IV (a) and Figure IV (b) compares the β and φ estimates between all regime model and various restricted regime models. Figure IV (c) and Figure IV (d) shows the estimates of lag governance on debt (i.e., beta (lag)) and the estimates of lag debt on governance (i.e., phi (lag)). The coefficient of interest, β , which captures the impact of sustainable governance on sustainable debt is positive and significant in all regimes. Surprisingly, the impact of sustainable debt on sustainable governance is positive and significant but by lag. This confirms the results of literature on governance which suggests better governance reduces information asymmetry and increases the investment on the firm. Next, we conduct the same analysis as in Panel A and Panel B of Table I for financial sector firms and polluting sector firms. We find that our results are stronger for financial sectors firms than for polluting sector firms. The causal β is 0.031 and 0.075 for financial and polluting sector firms, which suggests 1 % increase in SD increases propability of adoption of sustainable governance by 3.1 % for financial sector firms and 7.5% for polluting sector",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 4,
+        "section_name": "5.1. Identification using Heteroskedasticity",
+        "paragraph_id": 27,
+        "text": "firms. We found that φ is 0.047 and 0.034 for financial sector firms and for polluting sector firms, but both coefficient are statistically insignificant. Results are provided in Table III. The influence of sustainable investment on corporate governance could be modulated by the legal environment of the jurisdiction, particularly in terms of shareholder protection rights. In environments governed by common law, where investor protections are typically robust, the impetus provided by investment to enhance governance practices appears to be attenuated. Conversely, in civil law countries, characterized by weaker shareholder protections, investment may emerges as a stronger motivator for governance improvement. This empirical observation aligns with our theoretical expectations. Our findings, derived from causal Generalized Method of Moments (GMM) analysis, indicate significant variations: a 1% increment in sustainable debt issuance is associated with a 10.4% increase in the likelihood of enhanced governance practices in civil law countries, compared to a more modest 4.4% in common law countries, only former result is significant at 10% level. Additionally, the causal φ coefficients—reflecting governance’s influence on investment—are notably subdued across both legal frameworks, yet they achieve statistical significance exclusively within common law environments. This distinction underscores the nuanced interplay between legal structures, sustainable investment, and sustainable governance dynamics. Results are reported in Table IV.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 5,
+        "section_name": "CONCLUSION",
+        "paragraph_id": 0,
+        "text": "This paper explore the dynamics of how sustainable investment motivates the firm to change the governance structure towards sustainability. Using the large global sample of 10,970 firms, from which 30 % adopt the sustainable governance in some point of the time in the sample period, and merging it with 3,944 sustainable debt issuance between 2013-2022, we find that 1% increase in sustainable debt issuance increases the likelihood of adoption of sustainable governance by 3.7 %. As past literature have showed that better corporate governance attracts investment, we also test the same and found that improving the sustainable governance practices either by hiring chief sustainable officer or forming a ESG/CSR committee, increases the amount of sustainable debt issuance by 1%. These results are roboust whether we measur sustainable debt as number of issuances or amount issued by total debt. Similarly these results are also robust to measuring sustainable debt using alternative ESG databases. Nevertheless, due to simultaneity issue, these estimates are biased. To address this issue, we apply Generalized Method of Moments (GMM) model and use the probalistic instrument based on heteroskedasticity to address endogeneity and simultaneity biases. Our findings reveal that a 1% increase in amount of sustainable debt (in total debt) issuance improves the sustainable governance by a 9.2%. We show that on using OLS regression, even with fixed effects, underestimate the coefficients. This core relationship underscores the catalytic role of financial investment in driving corporate governance reforms. Our analysis builds upon and diverges from existing literature, such as the study by Wintoki et al. [2012], which explores the dynamic relationship between board structure and firm performance but finds no causal linkage. In contrast, our results suggest that sustainable investment actively promotes better governance, countering the notion of a noncausal relationship and highlighting the importance of examining these variables within the context of sustainability. To enhance the robustness of our findings, we conduct sub-sample analyses based on the legal framework (comparing common and civil law countries) and sector (contrasting financial with pollution-heavy industries). While these analyses serve to deepen our understanding, they reveal that the fundamental relationship between investment and governance remains significant across different legal and sectoral contexts, albeit with varying magnitudes. The conclusion of this paper reaffirms the significant impact of sustainable debt on governance improvements across diverse global settings. However, it acknowledges that the transformative power of such investments can be modulated by the legal environment and",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1555,
+        "section_id": 5,
+        "section_name": "CONCLUSION",
+        "paragraph_id": 1,
+        "text": "the operational sector of the firm. Notably, while the core relationship is universal, the extent of governance enhancement is more pronounced in civil law countries, potentially due to weaker pre-existing shareholder protections compared to their common law counterparts. Furthermore, the impact of sustainable debt on governance is more discernible within the financial sector, likely reflecting the sector’s pivotal role in the transition towards sustainability. These nuanced findings, derived from our comprehensive and methodologically sound analysis, contribute to the ongoing discourse on sustainable finance and corporate governance, providing valuable insights for policymakers, investors, and corporations striving towards a sustainable future. Through addressing critical gaps in the literature and offering a nuanced understanding of the mechanisms at play, this research paves the way for future inquiries into the synergistic relationship between financial mechanisms and governance reforms in the era of sustainability.",
+        "extraction_warnings": ""
+    }
+]

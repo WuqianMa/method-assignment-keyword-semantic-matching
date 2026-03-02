@@ -1,0 +1,182 @@
+[
+    {
+        "paper_id": 1545,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "subsample of answers that are posted for questions registered before the system changes but still open after those changes took effect. This enables us to compare answers within the same threads before and after the design updates while keeping the question content constant. This ensures that any observed changes in toxicity are driven by respondents’ behavior rather than by differences in the questions themselves. We quantify the toxicity by focusing on linguistic nuances and emergent internet slang. Specifically, we use FastText, a word-embedding model that accommodates subword units, allowing us to identify evolving patterns of harmful language in Japanese. First, we train the FastText model on a unique dataset that includes both regular posts and those removed by moderators due to ethical violation. Second, using these removed toxic posts as a semantic anchor, we produce a “toxicity score” for each word, reflecting its relative proximity to this semantic anchor (i.e., a reference of harmful language) within the embedding space. This allows us to define a toxic–nontoxic continuum, projecting words onto a scale that captures subtle variations in language use. Finally, we aggregate these word-level scores at the document level to generate our primary outcome variable. We obtain two main findings. First, in the first natural experiment, which introduces a like-button system that makes social approval visible to all, we find a rapid escalation in toxic content among users who value public recognition. More precisely, our estimates indicate that approval-seeking users increase their toxicity by approximately 0.22 standard deviations after the platform redesign. It suggests that displaying social approval encourages certain individuals to shift towards more ethically problematic discourse, amplifying the intensity of harmful expressions. Second, turning to another natural experiment, where the platform ties user ratings to monetary incentives, we observe an even more pronounced increase in toxicity: approval-seeking users intensify their toxicity by about 0.49 standard deviations relative to non-approval-seeking users. This substantial effect demonstrates the role of monetary incentives in fueling extreme and harmful viewpoints: individuals who are inclined to seek approval push the boundaries of acceptable communication even further. We address threats to internal validity based on three approaches. First, we implement event-study analysis and confirm that the parallel trends assumption hold in our context. Second, we examine spillover effects to test the validity of the Stable Unit Treatment Value Assumption (SUTVA). The results show no spillovers: control users do not become more toxic even when exposed to higher shares of treated users or their toxic content. This ensures that our comparison group remains a valid counterfactual. Finally, we verify that the observed changes are not driven by shifts in user composition. We find no posttreatment selection effects: the proportion and characteristics of treated versus control",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 7,
+        "section_name": "Measuring Toxicity of User Posts",
+        "paragraph_id": 0,
+        "text": "To investigate the impact of introducing the like button and rating-based monetary incentives on toxicity within the Q&A platform, it is crucial to accurately quantify the toxicity of each post using textual data. We employ a machine learning-based word embedding approach called FastText to achieve this task. In this section, we provide a detailed explanation of this method and elaborate on how we construct our target outcomes.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 0,
+        "text": "larity To measure the similarity between posts, we rely on the word embedding method. Word embedding is a technique that represents words as dense, continuous vectors in a highdimensional space, where the distance between vectors reflects the semantic similarity between the words. This allows words with similar meanings to be positioned closer together, enabling meaningful comparisons based on their contextual relationships. We adopt the recently developed algorithm, i.e., FastText ( Bojanowski et al. , 2017 ; Joulin et al. , 2017 ; Grave et al. , 2018 ). FastText extends the traditional Word2Vec model by incorporating subword information through character n-grams. Unlike models that treat words as indivisible units, FastText represents each word as a collection of its characterlevel components. This approach enables the model to capture morphological nuances and effectively handle out-of-vocabulary words, which is particularly beneficial for languages with rich morphological structures or when dealing with rare or misspelled words.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 1,
+        "text": "3.3.1 The Skip-Gram Model with Negative Sampling One of the key components that make up FastText is a technique called Skip-Gram with Negative Sampling (SGNS). SGNS is a method used to train word embeddings by predicting the context words surrounding a target word within a defined window size. Instead of using a computationally expensive full softmax for all possible words in the vocabulary, SGNS simplifies the process by employing negative sampling, where only a small subset of negative examples (words not in the context) is used during training. This approach significantly reduces the computational burden and serves as the foundational architecture upon which FastText builds its extended capabilities, such as subword representations.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 10,
+        "text": "3.3.2 Incorporating Subword Information in FastText Word Representation with Subword Units FastText enhances the Skip-Gram model by incorporating subword information, which means it breaks each word down into smaller units, such as prefixes, suffixes, or overlapping sequences of characters called n-grams. By representing words as collections of subword units, FastText captures internal structures and shared patterns among related words. For example, when the word “economics” is enclosed by boundary symbols as ⟨ economics ⟩ , the model extracts various n-grams (for instance, ⟨ ec , eco , con , and ics ), each of which has its own vector representation. Words that share many of these n-grams, like “economy” or “economic,” end up with similar vector representations. This design also helps when encountering rare or misspelled words, since unfamiliar words often still share certain subword units with known words.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 11,
+        "text": "Modified Objective Function The input vector for a word w i in FastText is formed by summing the vector representations of its n-grams, as shown in the equation",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 18,
+        "text": "The notation ( w i , w o ) ∈ D indicates that for each target word w i , there is an associated context word w o in the corpus. By summing the loss terms across all observed pairs, FastText learns vectors for both n-grams and whole words that align well with the patterns present in actual text.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 19,
+        "text": "3.3.3 Application to Measuring Toxicity Model Training FastText embeddings can be leveraged to detect toxicity in usergenerated content by exploiting the morphological nuances captured by subword repre-",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 27,
+        "text": "3.3.4 Advantages of Using FastText FastText offers several advantages by integrating character n-grams into its architecture, enabling it to capture both the semantic and morphological aspects of language. This",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 28,
+        "text": "feature is particularly beneficial when working with Japanese, a language characterized by a complex writing system that includes kanji, hiragana, and katakana scripts. Japanese words often consist of intricate combinations of these scripts, along with prefixes, suffixes, and root words, making traditional word-level representations less effective. In the context of a Japanese QA site, where unique words and new internet slang are prevalent, FastText excels by learning patterns within subword components. Online communities frequently generate neologisms and community-specific terminology that may not appear in standard vocabularies. Traditional models struggle with these out-of-vocabulary words, leading to gaps in understanding and representation. By utilizing subword information through character n-grams, FastText can produce meaningful embeddings for rare or unseen words, including newly coined internet terms. This capability mitigates the problem of limited vocabulary and enhances the model’s ability to comprehend and process user-generated content rich in unique expressions. Consequently, FastText is well-suited for applications involving dynamic and evolving language use, such as that found on Japanese QA platforms.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 10,
+        "section_name": "The Machine Learning Model for Measuring Semantic Simi-",
+        "paragraph_id": 29,
+        "text": "Distribution of Toxicity Scores We analyze the distribution of the toxicity scores to understand the prevalence and intensity of toxic content on the platform. Figure A.1 plots individual words according to two dimensions: their “toxicity” score (on the x-axis) and their frequency (on the y-axis, represented in log scale). Each word’s toxicity score is derived by comparing its vector representation—in this case, obtained using FastText embeddings—against a reference “toxic” vector. Thus, words positioned farther to the right have higher cosine similarity to this reference, indicating greater alignment with toxic or hateful language. The color coding of words reflects their thematic categories. For instance, political terms (green), economic terms (blue), and repair/maintenance-related terms (purple) cluster toward the left side of the figure. These are typically neutral words with low toxicity scores. On the other hand, known hateful or offensive words (marked in red) appear toward the right side, where toxicity scores are higher. This clear spatial separation—neutral words to the left and hateful words to the right—suggests that the FastText-based toxicity estimation is effective. The embedding model successfully distinguishes between ordinary language and toxic language, placing more harmful or offensive terms closer to the reference toxic vector. This outcome supports the validity of the chosen methodology for identifying and quantifying the degree of toxicity in textual data.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1545,
+        "section_id": 17,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 16,
+        "text": "Who Responds to System Design Changes? Potentially Harmful, but Previously Hidden Users Become More Toxic A natural follow-up question is: Which users are most responsive to the introduction of new system designs? We identify two mutually exclusive possibilities. First, some users may have a latent inclination toward toxic behavior yet have never violated the platform’s rules. Before the new designs, these individuals remained within acceptable boundaries, making them indistinguishable from the wider user base (thus, they are potentially harmful but previously hidden). However, once driven by the new incentives and a heightened desire for social approval, they may now cross the line into toxicity. Second, users who have already committed rule violations may escalate further, adopting even more extreme or aggressive language. We again use a machine learning approach, based on FastText word embeddings, to identify “potentially harmful” users. First, we create a reference subsample consisting of non-removed posts from users who had at least one post forcibly removed for toxic content in the pre-treatment period. Next, we measure the language similarity between these reference posts and each target post. Finally, we classify as “potentially harmful” those users whose posts have never been removed by the platform before the first intervention but whose average language similarity is above the median. Although these users are never toxic themselves, they display language patterns similar to those used by already-toxic users. We split our sample into three sub-samples: (i) Answers posted by users whose posts had never been removed by the platform before the first intervention and are identified as “potentially harmful” by the ML algorithm, (ii) answers posted by users whose posts had never been removed by the platform before the first intervention and are not identified as",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "FastText"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    }
+]

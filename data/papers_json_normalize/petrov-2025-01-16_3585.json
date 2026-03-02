@@ -1,0 +1,2418 @@
+[
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "A Framework for Evaluating Border Configurations: Applications to Africa",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Updated frequently: [Click here for the most recent version]",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "National border configurations significantly affect welfare: they govern trading opportunities and eligibility for public services. Empirical evidence suggests that postcolonial border design has harmed African long-term development through these two channels. This paper offers a spatial model of borders that evaluates welfare consequences through trade and public goods provision. This model features four key forces: the benefits of economic and fiscal integration, the costs of preference heterogeneity and span of control. To evaluate the inefficiencies of border configurations, I set up an optimal borders problem to balance the trade-off between these forces and then develop a decomposition method to solve the problem. I calibrate the parameters of the spatial model and use the proposed decomposition method to solve the optimal borders problem in the African context. With optimal borders, Africa could gain at least 28% in welfare. The primary shortcoming of current borders is their geographic position, not the number of countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "† The University of Chicago; email: alexpetrov@uchicago.edu . I am grateful for the advice and support of my advisors Jonathan I. Dingel, James Robinson, St ́ephane Bonhomme, and Esteban Rossi-Hansberg. This project also benefited greatly from conversations with Thomas Bourany, Tom ́as Domingues-Iino, Omkar Katta, Olivier Kooi, Hugo Lhuillier, Hugo Lopez, Tom Hierons, Shanon Hsu, Jordan Rosenthal-Kay, Camilla Schneier, Jeanne Sorin, and from the feedback of participants of International Trade Working Group, Public/Labor Advising Group, Development Lunch Workshop, Computational Working Group, Student Applied Micro Lunch, Mansueto Urban Doctoral Fellows meetings.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "National border configurations have fundamental welfare implications. Border configurations determine the number and sizes of countries, as well as the socioeconomic features of their populations. These country characteristics significantly impact two economic outcomes: trade and the provision of public goods. Trading is easier within countries than across them, while within-country gains from trade depend on the degree of dissimilarity in technologies across subnational regions. National governments of bigger countries typically can produce more public goods, but a higher degree of population heterogeneity reduces the average enjoyment of the kind of the provided public good. Given the complex interactions of these various forces, how does the spatial distribution of welfare respond to changes in the border configuration? Which border configuration would be optimal in terms of aggregate welfare?",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "These questions have particular relevance to the African continent. A unique feature of the contemporary African political landscape is that the national borders are still inherited mainly from the European colonial area and were established without representation of African people. Empirical micro-level evidence suggests that these postcolonial national borders have negatively affected African long-term development (e.g., Michalopoulos and Papaioannou 2016 ; Thomas 2018 ). The tension between country and ethnic borders is evident, for example, in the pervasiveness of territorial disputes. The involvement of international organizations also speaks to the urgency of border issues in Africa. For example, the International Court of Justice has received 13 cases concerning boundary disputes in Africa, and the African Union maintains a dedicated Border Programme ( Oduntan , 2015 ). National borders are also an important factor of trade in Africa. Lebrand ( 2021 ) estimates that crossing certain country borders impedes trade on the African continent. Thus, considering the impact on trade is essential in analyzing alternative border configurations in Africa.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 6,
+        "text": "In this paper, I propose a framework for evaluating the welfare consequences of border configurations and the sub-optimality of any given border configuration in spatial general equilibrium. In this framework, national borders govern bilateral trade costs and socioeconomic compositions of countries. I set up and solve an optimal borders problem that searches over all possible partitions into countries. I apply this framework to African national borders and consider counterfactual border configurations better than the postocolonial border design.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 7,
+        "text": "The analysis starts with building a spatial general-equilibrium model that micro-founds the well-established key forces in border formation ( Alesina and Spolaore , 1997 ; Alesina et al. , 2005a ): economic benefits of market and fiscal integration and costs of large and heterogeneous countries. These forces are reflected through two components of the model, which characterize trade and the provision of public goods, respectively. The model’s environment consists of a network of locations, a realistic geography, and an exogenous partition of locations into countries. Geography characterizes features of routes between all pairs of locations. Every",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 8,
+        "text": "location has a representative worker and a continuum of firms producing traded private goods varieties. Every country has a national government that provides a public good.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 9,
+        "text": "Workers are characterized by the Cobb-Douglas utility over private and public goods and the preferences over horizontal types of public goods. The characterization of the private goods sector of the economy relies on the workhorse Ricardian trade model ( Eaton and Kortum , 2002 ). Producers of varieties draw productivity fundamentals from the Fr ́echet distribution with the location-specific shifter and use linear technology with the labor input. Then, the produced varieties are traded between locations subject to trade costs determined by the availability of transportation infrastructure and the need to cross national borders. The CES aggregator characterizes workers’ preferences over bundles of varieties.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 10,
+        "text": "I embed public goods production into the trade model in the following way. National governments collect taxes using the exogenous and uniform proportional income tax rate. Then, the governments endogenously choose the quantity and the horizontal type of the public good to provide. Technologically, the public good is the CES aggregator of inputs that are the same varieties as those used for private consumption. The governments can procure these inputs from any location under their jurisdiction. Thus, the government’s problem has a spatial dimension, as different locations can offer the same variety at different prices. In this framework, increased sizes of countries lead to higher tax bases and more locations. Both of these effects increase the quantity of the public good that the government can provide. Governments also choose the horizontal type of the public good, facing the heterogeneity in preferences between the locations. The resulting provided type maximizes the aggregate utility from public good consumption in the country.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 11,
+        "text": "In addition, the public good that locations enjoy is subject to two exogenous factors: the degree of rivalry in consumption and the amount of leakage in delivery due to the span-of-control cost. The rivalry in consumption puts a welfare cost on the country’s population size. Conditional on the quantity of the produced public good, a bigger population implies higher congestion. For example, if the schooling infrastructure is provided nationally, a sufficient increase in the number of children requires new school buildings to accommodate everyone in classrooms. The span-of-control cost punishes the average geographic remoteness of locations in a country. The further away a location is from the capital of its country, assumed to be at the centroid of the country, the less effective provision of the public good is to that location.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 12,
+        "text": "After characterizing the equilibrium outcomes under exogenous borders, the next step is to analyze what happens if the border configuration changes. Changes in border configurations affect welfare through a) trade costs between locations, b) geographic sizes of countries, c) tax revenues of national governments, and d) distributions of fundamentals (productivity shifters and preferences over types of public goods) within countries. For example, under suitable values of parameters and fundamentals, the integration of two countries increases aggregate gains from trade and tax revenues, but decreases the average utility from public good con-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 13,
+        "text": "sumption due to increases in the average remoteness of locations and the level of preference heterogeneity. Although this case scenario helps with intuition about the trade-off forces in the framework, there is a multitude of scenarios whose welfare consequences are ambiguous. For example, changes in country sizes are less important when one country’s location is annexed by a neighboring country. The aggregate effect on welfare then crucially depends on the changes in the compositions of the affected countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 14,
+        "text": "Relying on the developed framework, I set up an optimal borders problem to search for a border configuration that maximizes the utilitarian welfare of the entire territory under consideration. A crucial methodological choice is to represent a partition of the geography into countries as a set of bilateral integration-status variables. This approach allows me to rely on well-developed discrete optimization approaches while maintaining the richness of the economic framework. In contrast to existing border formation models, the problem’s objective function here is a microfounded welfare function rather than a linear heuristic. I follow the Mathematical Programming with Equilibrium Constraints approach and add the equilibrium conditions as constraints to the optimization problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 15,
+        "text": "The practical feasibility of the set-up problem is delivered by warm-starting with a mixedinteger linear approximation, an instance of the canonical Maxk -Cut problem. Economically, this approach relates to the network-based representation of coalitional games ( Chalkiadakis et al. , 2012 ). Maxk -Cut programs are widely applied in settings where clustering of agents is pursued (e.g., communications network design; see Saad et al. 2009 for a review), which has facilitated the continued development of fast solution algorithms for them. Given the network representation of the geography, a partition into jurisdictions is equivalent to a clustering of locations. This approach has seen applications in political science in the context of gerrymandering ( Validi et al. , 2022 ; Validi and Buchanan , 2022 ). Although the set-up Maxk -Cut approximation in my case is not equivalent to the full optimal borders problem, it is guaranteed to deliver a feasible border configuration that is weakly welfare-improving compared to the point of approximation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 16,
+        "text": "I apply the developed framework and optimization method to national borders in Africa. For the trade costs, I employ the same calibration strategy as in Desmet et al. ( 2018 ) (based on the methodology from Allen and Arkolakis 2014 ) by using granular geospatial information on available transportation modes and finding the fastest paths between all pairs of locations. I take the value of the border effect on trade costs from Conte ( 2022 ), which estimates it specifically in the African context. Given the calibrated trade costs, I invert the equilibrium conditions of the framework to calibrate the technology fundamentals of all spatial units. To quantify public goods preference heterogeneity, I use the typical approach in the literature on ethnic heterogeneity, which parametrizes individual utility loss for public goods as a function of the country’s ethnic composition (e.g., the ethnolinguistic fractionalization index).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 17,
+        "text": "The computational results point to a counterfactual border configuration that yields an almost",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 18,
+        "text": "30% welfare gain compared to the status quo. I use the calibrated values of fundamentals as inputs to the optimal borders problem to explore the counterfactual with a better border configuration. The comparison between the solution and the status quo reveals several important patterns. First, aggregate welfare gains are approximately 28% in the counterfactual, with the main margin of status quo sub-optimality being the geographic position of borders, not the number of countries. Second, the optimal border configuration leads to significant redistributive consequences consistent with partial welfare convergence, benefiting inland territories at the cost of richer coastal areas. Nevertheless, around 85% of the African population benefits from better borders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 19,
+        "text": "Most importantly, this paper makes a novel contribution to the literature on the economics of jurisdictional borders (going as far back as Friedman 1977 ). While the seminal papers (for an overview, see Alesina et al. 2005b ) have successfully exposed the main forces in border formation, this paper presents a quantitative framework that micro-founds those forces and allows for arbitrary geographies. Recent papers ( Allen 2023 ; Weese 2015 ; Gancia et al. 2022 ; Fern ́andez-Villaverde et al. 2023 ) have also moved away from the theoretical stylized approach. However, their border characterizations still rely on notions that deliver crucial linearity in the objective function. For example, Allen ( 2023 ) characterizes country borders that minimize the sum of transportation costs from the locations to the capitals of countries. This paper builds upon the general equilibrium and welfare notions that retain the interactive nature of choices made across space at the cost of introducing non-linearities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 20,
+        "text": "The computational results in this paper speak directly to the literature on the prominent interplay of national and ethnic borders in Africa. This empirical literature is limited recovering underlying mechanisms and considering counterfactuals in general equilibrium. The structural approach enables me to move away from the restriction of the partial equilibrium analysis and highlight the general equilibrium repercussions of border effects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 21,
+        "text": "The spatial framework developed in this paper contributes twofold to the trade literature that studies border effects on the spatial distribution of economic outcomes. Existing papers that introduced public goods provision in a spatial framework (e.g., Fajgelbaum et al. 2019 ; Jannin and Sotura 2020 ) impose equivalence between the spatial unit and the jurisdiction, while a key feature of this paper’s framework is that multiple spatial units can form one jurisdiction. Fajgelbaum et al. ( 2023 ) consider voting by agents residing in different locations, although the policy alternative is only binary. The typical focus on determining the equilibrium level of public spending is redirected in this paper to the problem of variability in types of public goods.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 22,
+        "text": "This paper’s focus on optimization extends the literature on the effects of economic unions by moving from the exogeneity of borders to introducing them into the choice set. In this sense, my approach finds a new balance between the analytical appeal of stylized theoretical models of border formation and the quantitative relevance of modern spatial models used in the welfare",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 23,
+        "text": "analysis of trade and economic unions. Caliendo and Parro ( 2015 ) and Caliendo et al. ( 2021 ) develop and estimate a flexible spatial framework for evaluating the welfare effects of specific integration initiatives in NAFTA and the EU, respectively. Similarly to previously mentioned papers, they model locations and jurisdictions as identical units. The optimization challenge in this paper is in line with Fajgelbaum and Schaal ( 2020 ) that optimizes over possible road networks, with the link-level choice variables being continuous.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 24,
+        "text": "The rest of the paper is structured as follows. Section 2 develops the general equilibrium framework under exogenous borders that characterizes trade patterns and the provision of public goods. Section 3 sets up the optimal borders problem and explains the strategy to solve it computationally. Section 4 describes the calibration of the parameters and fundamentals of the framework. Section 5 applies the developed tools to the African context and discuss the results. The last section concludes with a discussion of a research agenda that this paper opens.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 25,
+        "text": "This section develops a spatial quantitative framework that captures national border effects on welfare through trade and public goods provision. National borders impose additional trade costs for transporting goods and define for each location the government that is providing public goods. This framework enables welfare assessment of border configurations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 26,
+        "text": "G J 1 G J 2 jurisdictional border taxes and input supplies public goods and procurement orders trade routes",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 27,
+        "text": "C (1) = C (2) = C (3) = C (6) = J 1 C (4) = C (5) = J 2 d 12 = d 13 = d 16 = d 23 = d 26 = d 36 = 1 d 45 = 1 d 14 = d 15 = d 24 = d 25 = d 34 = d 35 = d 64 = d 65 = 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 28,
+        "text": "Figure 1: Illustration of agents in the model in a simple environment, in which there are 6 locations (circles) and 2 jurisdictions (bold boxes). Different arrows represent different types of flows, and dashed lines – trade routes through which goods can be transported.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 29,
+        "text": "There is a mass of workers L l in each location l ∈ L , who are immobile and inelastically",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 30,
+        "text": "supply labor to firms in their location. Countries partition the space into mutually exclusive subsets:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 31,
+        "text": "L = ∪ y C y , y ∈{ 1 , . . . , Y} .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 32,
+        "text": "Each location l belongs to some country C ( l ) . Throughout this section, the assignment of locations to countries is fixed. Thus, the objective of this section is to deliver the indirect utility function that maps arbitrary border configurations to welfare levels of all locations. With an eye to considering alternative border configurations in the following sections, location outcomes whose values can change depending on the border configuration will have a country subscript C ( l ) besides a location superscript l .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 33,
+        "text": "I model border configurations using binary variables d = { d ll ′ } l,l ′ that represent whether locations l and l ′ are in the same country or not:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 34,
+        "text": "d ll ′ = 1 {∃C s.t. { l, l ′ } ⊆C} . (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 35,
+        "text": "C (1) = C (2) = C (3) = C (6) = J 1 C (4) = C (5) = J 2 d 12 = d 13 = d 16 = d 23 = d 26 = d 36 = 1 d 45 = 1 d 14 = d 15 = d 24 = d 25 = d 34 = d 35 = d 64 = d 65 = 0 Figure 2: Illustration of how dyadic variables d ll ′ reflect border configurations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 36,
+        "text": "Workers in location l that is in country C ( l ) are characterized by the Cobb-Douglas utility over private consumption C and public goods G :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 37,
+        "text": "U l C ( l ) ( C ) = \u0000 G l C ( l ) \u0001 α C 1 − α ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 38,
+        "text": "where G l C ( l ) is the composite, location-specific value of the nationally provided public good; and C is the measure of the CES consumption bundle comprised of traded varieties ν ∈ [0 , 1] :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 39,
+        "text": "C l = \u0012Z 1 \u0000 c l ( ν ) \u0001 σ − 1 σ dν \u0013 σ σ − 1 , (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 40,
+        "text": "where σ is the elasticity of substituion between varieties. After paying the proportional income tax at rate t , households spend the remaining income on the consumption bundle whose unit",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 41,
+        "text": "C l = [1 − t ] w l P l . (3) The composite value of the national public good G l C ( l ) has four components: the quantity of the produced public good and three location-specific factors that discount locations’ utility from it. I model them in the following way:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 42,
+        "text": "G l C ( l ) = G C ( l ) \u0000 L C ( l ) \u0001 ξ × δ l C ( l ) × μ l C ( l ) , (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 43,
+        "text": "where G C ( l ) is the quantity of public goods produced by the government, L C ( l ) is the population size of country C ( l ) , ξ is the degree of rivalry in the consumption of public goods, δ l C ( l ) ∈ [0; 1] is the utility discount due to the preference heterogeneity over horizontally differentiated types of the public good, and μ l C ( l ) ∈ [0; 1] represents the cost from span of control. Firstly, the model allows for an arbitrary degree of rivalry in consumption of the public good, captured by the parameter ξ ∈ [0 , 1] . Notice that when ξ = 0 everyone has same access to the provided quantity, while ξ = 1 amounts to per capita transfers of the total tax revenue. Thus, ξ is a key parameter determining the benefit from fiscal integration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 44,
+        "text": "Secondly, the public good is characterized by horizontally differentiated types. Preferences of locations over types are represented in an indrect way following Esteban and Ray ( 2011 ): Each location prefers some type and does not like any other location’s ideal type to a certain extent. This is captured in a cardinal way through location-pair fundamentals δ ll ′ ∈ [0 , 1] :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 45,
+        "text": "δ l C ( l ) \u0000 a C ( l ) \u0001 =   X l ′ ∈C ( l ) a l ′ C ( l ) ( δ ll ′ ) ζ 0   ζ 1 , ζ 0 , ζ 1 ≥ 0 , a l ′ C ( l ) ∈ [0 , 1] , X l ′ ∈C ( l ) a l ′ C ( l ) = 1 . (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 46,
+        "text": "As an assumption, δ ll = 1 , implying that locations fully enjoy the provided public good if it is of their ideal type. In case locations do not gain any utility from public goods that are ideal for any other location, we would have δ ll ′ = 0 ∀ l ′ ̸ = l . In general, different locations are allowed to have same ideal types or share some similarity in them. The government can choose to provide any convex combination of ideal types of locations under its jurisdiction, reflected by a l ′ C ( l ) . Parameters ζ 0 , ζ 1 control the marginal effect of heterogeneity on the disuility from the provided public good. A useful benchmark is the case of ζ 0 = ζ 1 = 1 together with a l ′ = L l ′ L C ( l ) and δ ll ′ = 0 ∀ l ′ ̸ = l , because then, δ l C ( l ) is directly related to location’s population share in the country:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 47,
+        "text": "δ l C ( l ) = L l L C ( l ) . (6) Maintaining these assumptions on a l ′ and δ ll ′ , higher values of ζ 1 introduce decreasing marginal",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 48,
+        "text": "effect when moving from perfect homogeneity to the minority status. Overall, this part of the public good utility is a key mechanism in how border configurations affect welfare not only through country sizes but also country compositions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 49,
+        "text": "Lastly, the span-of-control cost μ l C ( l ) represents potential leakage in the delivery of public goods to geographically remote locations of the country. Similarly to the heterogeneity cost, it is a function of bilateral characteristics, in this case distance measures γ ll ′ :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 50,
+        "text": "μ l C ( l ) \u0000 b C ( l ) \u0001 =   X l ′ ∈C ( l ) b l ′ C ( l ) ( γ ll ′ ) κ 0   − κ 1 , κ 0 , κ 1 ≥ 0 , b l ′ C ( l ) ∈ [0 , 1] , X l ′ ∈C ( l ) b l ′ C ( l ) = 1 . (7) The distance measure γ ll ′ reflects availability of transport infrastructure between l to l ′ (it will also be part of trade costs for transporting private goods). b l ′ C ( l ) can be interpreted as the position of the country’s capital. For example, if the country’s capital is set in l ′ , then b l ′ C ( l ) = 1 and the span-of-control cost for l will be a function of only γ ll ′ . In general, the capital’s position can be more favorable to any of the locations in the country. Parameters κ 0 , κ 1 control the marginal effect of geographic remoteness and, thus, are related to the scale of γ ll ′ . When either κ 0 = 0 or κ 1 = 0 , there is no effect to being more or less remote. Conditional on the value of κ 0 and the scale of γ ll ′ , as κ 1 gets high enough, the effect becomes negligible and the utility from public goods is driven closer to 0 . Conditional on the value of κ 1 , as κ 0 gets closer to 0 , the effect of remoteness increases. Overall, the span-of-control cost directly penalizes the geographic area of a country.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 51,
+        "text": "There is a continuum of firms in every location that produce varieties ν ∈ [0 , 1] using the Cobb-Douglas production function with labor L l ( ν ) and intermediate input Q l ( ν ) :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 52,
+        "text": "q l ( ν ) = z l ( ν ) \u0000 L l ( ν ) \u0001 ρ \u0000 Q l ( ν ) \u0001 1 − ρ , ρ ∈ [0 , 1] ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 53,
+        "text": "where ρ is the share of labor in firms’ costs, and z ( ν ) is a variety-specific productivity shifter that is drawn from an extreme value distribution:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 54,
+        "text": "z l ( ν ) ∼ Fr ́echet \u0000 A l , θ \u0001 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 55,
+        "text": "Location-specific scale parameter A l reflects the level of productivity, and the dispersion parameter θ governs the variability of productivity shifters. The intermediate input Q l ( ν ) is the same CES bundle of traded varieties as the consumption bundle ( 2 ):",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 56,
+        "text": "Q l ( ν ) = \u0012Z 1 \u0000 q l ( ν ′ ) \u0001 σ − 1 σ dν ′ \u0013 σ σ − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 57,
+        "text": "Given Hicks-neutrality of the productivity shifter, all firms in l face the same unit cost of the factor and input bundle:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 58,
+        "text": "c l = \u0000 w l \u0001 ρ \u0000 P l \u0001 1 − ρ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 59,
+        "text": "Firms in l can sell their output to any location l ′ in the economy but they face the iceberg trade cost τ ll ′ . Therefore, a producer of variety ν in l sets the following price for location j :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 60,
+        "text": "p ll ′ ( ν ) = c l z l ( ν ) τ ll ′ . (8)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 61,
+        "text": "I model trade costs as depending on two components – the availability of transportation infrastructure γ ll ′ and the border-induced institutional factor:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 62,
+        "text": "τ ll ′ = γ ll ′ (1 − βd ll ′ ) . (9)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 63,
+        "text": "If locations l and l ′ are in the same country, trade between them is not affected by having to cross customs, dealing with differences in legal frameworks and quality standards. This is captured by the discount factor β . 1 As a result, border configurations affect the spatial structure of trade costs by determining which locations can trade more easily with each other. Because gains from trade for locations increase if trade costs with relatively more productive trading partners decrease, this is another way in which border configurations affect welfare through country compositions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 64,
+        "text": "Buyers of varieties in any location choose to import from locations that offer the lowest price. Following Eaton and Kortum ( 2002 ) which relies on properties of the Fr ́echet distribution, I obtain a closed-form characterization of the price index:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 65,
+        "text": "P l = γ X l ′ \u0014 A l ′ \u0010 c l ′ τ l ′ l \u0011 − θ \u0015 − 1 /θ , (10)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 66,
+        "text": "where the scaling factor γ depends on the elasticity of substitution between varieties σ and the dispersion of productivities θ : γ = Γ (( θ + 1 − σ ) /θ ) 1 / (1 − σ ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 67,
+        "text": "Another useful consequence of the Fr ́echet distribution assumption is the closed form characterization of the share of expenditures by workers and firms in l on imports from l ′ , denoted π ll ′ : π ll ′ = A l ′ \u0000 c l ′ τ l ′ l \u0001 − θ ( γ − 1 P l ) − θ . (11)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 68,
+        "text": "1 Notice that this formulation is equivalent to a more common parametrization of the border effect as a tariff-like premium on the trade cost τ b : τ ll ′ = γ ll ′ (1 + τ b ) \u0010 1 − τ b 1+ τ b d ll ′ \u0011 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 69,
+        "text": "Each country has its own government that provides a public good to locations under its jurisdiction. Its objective is to maximize the utility of the citizens derived from the public good. The government makes two decisions: How much of the public good to provide and what horizontally differentiated type to assign to it. A useful running example to keep in mind is national provision of schools. To build schools, governments need to procure inputs such as cement and bricks. They also decide on the curricula that might disfavor certain population groups, for example, by making learning one language mandatory.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 70,
+        "text": "Geographic remoteness To focus on the consequences of preference heterogeneity on welfare effects of border configurations, I exclude the choice of the capital’s locations from government’s problem. Guided by the principle that capitals tend to be located at the populationweighted centroids of countries ( Allen , 2023 ), I assume that locations experience leakage in the delivery of public good according to their population-weighted geographic remoteness in the country.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 71,
+        "text": "Assumption 1 The capital of country C favors locations under its jurisdiction proportionally to their population share:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 72,
+        "text": "b l C ( l ) = L l L C ( l ) . (12)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 73,
+        "text": "Effectively, this introduces a mechanical penalty on the geographic area of a country by imposing welfare losses for locations on the country’s outskirts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 74,
+        "text": "Choosing quantity The government of country C assembles the public good with a CES technology, using varieties procured from locations within its jurisdiction:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 75,
+        "text": "G C =   Z 1 X l ∈C g l ( v ) ! σ − 1 σ dv   σ σ − 1 . (13)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 76,
+        "text": "Firms set prices to the government according to:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 77,
+        "text": "p lg ( ν ) = c l z l ( ν ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 78,
+        "text": "Similarly to price indices of locations ( 10 ), properties of the Fre ́chet distribution imply the following expression for the unit cost P C of the input bundle for the government:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 79,
+        "text": "P C = γ \"X l ∈C A l \u0000 c l \u0001 − θ # − 1 /θ . (14)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 80,
+        "text": "The amount that the government can spend on procurement is determined by the tax revenues coming from the income tax collected at the exogenous and uniform-across-countries rate t :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 81,
+        "text": "P C G C ≤ X l ∈C tw l L l . (15)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 82,
+        "text": "Choosing type The approach to model the effect of heterogeneous preferences on the type of provided public good follows in nature Esteban and Ray ( 2011 ). As previewed in the discussion of the heterogeneity cost ( 5 ), the government can choose any convex combination of the ideal types of locations under its jurisdiction. Formally, this amounts to choosing values of the coefficients a C = { a l } l ∈C that lie in the unit simplex of dimension |C| − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 83,
+        "text": "max G,a C X l ∈C L l L C ( l ) G \u0000 L C ( l ) \u0001 ξ δ l C ( l ) ( a C ) ! α",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 84,
+        "text": "s.t. ( 13 ) , ( 14 ) , ( 15 ) , ( 5 ) X l ∈C a l = 1 , a l ∈ [0 , 1] ∀ l.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 85,
+        "text": "Because the government is procuring varieties from the cheapest sources and due to properties of the Fr ́echet distribution, the share of the tax revenue that the government spends on procurement from location l ∈C is:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 86,
+        "text": "π lG = A l \u0000 c l \u0001 − θ P l ′ ∈C ( l ) A l ′ ( c l ′ ) − θ . (16)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 87,
+        "text": "Proposition 1 If ζ 0 = 1 , then the government of country C picks coefficients \b ̄ a l C l ∈C according to:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 88,
+        "text": "̄ a l C ( l ) = X l ′ \u0012 L l ′ L C ( l ) \u0013 αζ 1 δ ll ′ , X ̃ l, ̃ l ′ L ̃ l L C ( ̃ l ) ! αζ 1 δ ̃ l ̃ l ′ ∀ l ∈C . (17)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 89,
+        "text": "Notice that in the simplified scenario of complete incompatibility between types of locations (i.e., δ ll ′ = 0 ∀ l ′ ̸ = l ), the solution implies equivalence between location’s disutility from heterogeneity and its population share in the country (as in 6 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 90,
+        "text": "2.5 Trade flows and procurement",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 1,
+        "section_name": "Trade flows and procurement",
+        "paragraph_id": 0,
+        "text": "A crucial feature of the framework is that the provision of public goods interacts with the equilibrium determination of wages and prices. This is because the sales of any location l comprise not only exports to all other locations but also supplies to the national government:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 1,
+        "section_name": "Trade flows and procurement",
+        "paragraph_id": 1,
+        "text": "X l = X l ′ π ll ′ \" (1 − t ) w l ′ L l ′ | {z } Private demand + 1 − ρ ρ w l ′ L l ′ | {z } Firms’ demand for intermediate inputs # + π lG t X l ′ ∈C ( l ) w l ′ L l ′ | {z } Government’s procurement demand . (18)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 1,
+        "section_name": "Trade flows and procurement",
+        "paragraph_id": 2,
+        "text": "Importantly, tax payments of any location l are not bound to match exactly the procurement payment from the governmnet. As a result, trade flows are not necessarily balanced at the location level:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 1,
+        "section_name": "Trade flows and procurement",
+        "paragraph_id": 3,
+        "text": "Expenditures l − Sales l = P l C l − X l ′ π ll ′ \u0010 P l ′ C l ′ + P l ′ Q l ′ \u0011 | {z } Private market imbalance − X l G C ( l ) | {z } Procurement order . (19)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 0,
+        "text": "Definition 1 (General equilibrium) Given a border configuration d , parameter values Θ = { α, σ, ρ, ξ, ζ, κ, θ, β, t } , values of fundamentals F = { L, γ, δ, A } , the equilibrium consists of outcomes x = { C l , G l , P l , P C ( l ) , w l , δ l , μ l } l such that:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 1,
+        "text": "• workers spend their post-tax income on private consumption;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 2,
+        "text": "• firms set prices in all locations according to ( 8 ) ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 3,
+        "text": "• price indices follow ( 10 ) ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 4,
+        "text": "• government budget constraint ( 15 ) holds;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 5,
+        "text": "• government’s unit cost of procurement is ( 14 ) ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 6,
+        "text": "• government makes procurement decisions according to ( 16 ) ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 7,
+        "text": "• utility discounts due to geographic remoteness are set according to ( 12 ) ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 8,
+        "text": "• utility discounts due to preference heterogeneity are determined by ( 17 ) ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 9,
+        "text": "• wages in every location equate aggregate labor demand in the location and exogenous labor supply according to ( 18 ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 2,
+        "section_name": "General equilibrium",
+        "paragraph_id": 10,
+        "text": "2.7 Welfare effects of border changes 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 0,
+        "text": "To summarize the mechanisms through which changes in a given border configuration affect welfare of location l , I decompose the log welfare change in ( 20 ). For this expression, an outcome is written as a function of a border configuration d if it is subject to general equilibrium forces involving the network of all locations (for example, wage w l ( d ) ). If an outcome depends only on the set of fundamentals of locations in the same country as l , it is reflected in the country subscript C ( l ; d ) , which is conditioned on the border configuration. Notice that tax revenues and the unit cost of public good are affected by both of these factors: they depend on equilibrium wages and on the set of locations in the country.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 1,
+        "text": "∆ln W l = α   ln X l ′ ∈C ( l ; d ′ ) w l ′ ( d ′ ) − ln X l ′ ∈C ( l ; d ) w l ′ ( d )   − \u0002 ln P C ( l ; d ′ ) ( d ′ ) − ln P C ( l ; d ) ( d ) \u0003",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 2,
+        "text": "− ξ \u0002 ln L C ( l ; d ′ ) − ln L C ( l ; d ) \u0003 + \u0002 ln δ l C ( l ; d ′ ) − ln δ l C ( l ; d ) \u0003 + \u0002 ln μ l C ( l ; d ′ ) − ln μ l C ( l ; d ) \u0003 !",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 3,
+        "text": "+ (1 − α ) \u0002 ln w l ( d ′ ) − ln w l ( d ) \u0003 − \u0002 ln P l ( d ′ ) − ln P l ( d ) \u0003 ! . (20)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 4,
+        "text": "The direction of causes and effects is summarized in the diagram in Figure 3 . It highlights the main fundamentals through which border changes operate in the framework: structure of trade costs and sizes and compositions of countries. It also shows the predicted effects on outcomes due to a particular type of border change: integration of 2 countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 5,
+        "text": "The only two outcomes whose direction of change is ambiguous are wages and costs from heterogeneity. Still, it is guaranteed that the real wage of all locations increases for all locations even if the relative nominal wage goes down for some of them. The same is not true for the cost of heterogeneity, as any location can turn out to be either a winner or a loser depending on how the distribution of preferences changes after integration. For example, if no location in either of the integrated countries has the same type as any of the locations in the other country, then everyone’s disutility will increase after integration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 6,
+        "text": "Given that, the scenario considered in Figure 3 illustrates one type of trade-off that border changes can introduce. On the positive side, integration brings a) economic benefits by reducing trade costs and increasing private consumption, and b) fiscal benefits by increasing the quantity of public goods that the government can provide. On the negative side, bigger countries are harder to govern, especially hurting remote locations, and potential higher heterogeneity makes the type of the provided public good less favorable on average.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 7,
+        "text": "Importantly, the effects of border changes differ in terms of whether they depend on the whole compositions of countries or just certain simple statistics of them. The economy-of-scale benefit",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 8,
+        "text": "is driven purely by the total population size of a country, irrespective of the distribution of locations’ population sizes. In contrast, the trade effects depend crucially on the distribution of productivity fundamentals within a country. Integrating a higly productive location into a country consisting of similarly unproductive locations, leads to a relatively homogeneous and big welfare response. At the same time, if productivities are highly heterogeneous in the target country, then the welfare response is less pronounced and also highly heterogeneous.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 9,
+        "text": "Figure 3: Mechanisms of how a country expansion affects welfare of its locations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 10,
+        "text": "Population and area size ↑",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 11,
+        "text": "Prices P ↓ Tax revenues ↑",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 12,
+        "text": "Cost of public goods P J ↓ Heterogeneity level δ ? Span of control cost μ ↑",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 13,
+        "text": "2 countries integrate τ ↓",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 14,
+        "text": "Consumption C ↑ Public goods G ?",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 15,
+        "text": "To assess costs of border configurations, I set up an Optimal Borders problem whose solution provides a benchmark. Optimal borders maximize utilitarian welfare of all countries subject to equilibrium conditions of the framework from the previous section. I achieve tractability of the problem by employing a Max-k-Cut approximation as a warm-start to the full non-linear problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 16,
+        "text": "The crucial choice for the optimization strategy is modelling border configurations as sets of location-pair binary variables d ll ′ . This enables a network perspective on the analysis of border configurations, as country partitions of the geography are equivalent to clusterings of the network of locations. As a result, the problem of finding a border configuration that satisfies certain criteria is akin to problems of finding appropriate clusterings of networks. The computational solving strategy largely builds upon relating the canonical problem of splitting",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 17,
+        "text": "a given network into k clusters (Maxk -Cut) under the linear objective to the optimal borders problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 18,
+        "text": "C (1) = C (2) = C (3) = C (6) = J 1 C (4) = C (5) = J 2 d 12 = d 13 = d 16 = d 23 = d 26 = d 36 = 1 d 45 = 1 d 14 = d 15 = d 24 = d 25 = d 34 = d 35 = d 64 = d 65 = 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 19,
+        "text": "C (1) = C (2) = C (6) = J 1 C (3) = C (4) = C (5) = J 2 d 12 = d 16 = d 26 = 1 d 34 = d 35 = d 45 = 1 d 13 = d 14 = d 15 = d 23 = d 24 = d 25 = d 63 = d 64 = d 65 = 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 20,
+        "text": "Figure 4: Illustration of how dyadic variables d ll ′ reflect border configurations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 21,
+        "text": "Denote x the set of endogenous outcomes in the developed framework, and Θ – the set of parameters. Partition the set of equilibrium conditions into two subsets: one for partial equilibrium equations ̃g , another for general equilibrium equations ̄g that describe the feedback effects. This separation will facilitate the decomposition strategy, explained further in this section. In case of the developed framework, only the condition pinning down wages ( 18 ) is of general equilibrium type, as it does not let express wages as an explicit function of d . Finally, define the indirect welfare function that maps border configurations d to equilibrium welfare levels in all locations W l ( d ) , and the indirect function for aggregate welfare W ( d ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 22,
+        "text": "The Optimal Borders problem is an instance of MPEC. The social planner knows the fundamentals of the economy and values of all parameters. But it only optimizes over border configurations d , being constrained by equilibrium conditions of the economic framework (Definition 1 ). Because in the set-up framework agents consider the border configuration as given, the approach here does not facilitate analysis in terms of correcting externalities, as is typical in studies of optimal policy design. In this case, the purpose of solving the Optimal Borders problem is to provide a benchmark against which any given border configuration can be assessed, providing an understanding of why it is sub-optimal.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 23,
+        "text": "3.2 Maxk -Cut Approximation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 24,
+        "text": "Definition 2 (Optimal Borders problem)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 25,
+        "text": "max d X l L l W l (21) s.t. W l = U l ( x ; d, Θ) (22) ̃g ( x , d ; Θ) = 0 (23) ̄g ( x , d ; Θ) = 0 (24) d represents a partition . (25)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 26,
+        "text": "There are 3 groups of reasons for hardness of this problem. Firstly, the space of all feasible country partitions is both discrete and large, making the problem inherit some common challenges of integer programming. Even if all of the equilibrium constraints are linear, the problem is NP -complete, which implies that generally, the Optimal Borders problem is NP -complete as well.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 27,
+        "text": "Two other challenges are posed by the economic nature of the problem. Firstly, equilibrium conditions can be non-linear in d . For example, the price index of any location ( 10 ) as a function of d is a composition of multiple functions, two of which are power functions. On top of that, they are non-convex, making it hard to ensure that any computed solution is the unique global maximum. Another manifestation of non-linearity is interactive nature of the effect of changing d ll ′ for multiple pairs of ( l, l ′ ) . Again, for the price index ( 10 ), it is clear that the positive effect of integrating l and l ′ on prices in l is dampened if at the same time some l ′′ is integrated with it.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 28,
+        "text": "Secondly, the general equilibrium nature of the framework implies that certain outcomes can only be defined as an implicit function of d . This means that it is necessary to solve a system of non-linear equations for the social planner to evaluate the objective function for any d . In the context of the framework, such a system is formed by ( 11 ), ( 16 ), and ( 18 ), which jointly determine wages, prices, and costs of public goods.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 3,
+        "section_name": "Welfare effects of border changes",
+        "paragraph_id": 29,
+        "text": "The strategy for computationally solving the problem can be thought of as a decomposition of it in a way that tackles these challenges one at a time, rather than simultaneously. 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 0,
+        "text": "The first step in the approximation is to split the full vector of outcomes x into two subcomponents x = { ̃x , ̄x } that I will call “partial equilibrium outcomes” and “general equilibrium outcomes” respectively. The purpose of this splitting is to separate out outcomes that can be explicitly defined as a function of d , conditional on values of the ̄x . In the case of the framework 2 Decomposition of mixed-integer problems into continuous and integer sub-problems has a long tradition in integer programming (e.g., see a textbook exposition of Benders decomposition in Conforti et al. 2014 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 1,
+        "text": "3.2 Maxk -Cut Approximation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 2,
+        "text": "outlined in the previous section, only wages satisfy the defintion of a “general equilibrium outcome”: ̄x = \b w l l . The nature of the approximation is to consider 1 -step deviations from the baseline border configuration. Denote d ll ′ a L × L matrix with all zeros except for 1 in ( l, l ′ ) and ( l ′ , l ) . The key object is the location-pair variable W + ll ′ that reflects the change in aggregate welfare due to setting to 1 the integration status just between l and l ′ , keeping the rest of values of d 0 intact. It is defined to be non-zero only if the integration status between these locations is 0 in the baseline border configuration. W − ll ′ is defined symmetrically. Thus, the social planner in this problem is searching for the set of these 1 -step deviations from the baseline border configuration that leads to the highest increase in aggregate welfare. It is clear that an arbitrary set of such deviations might lead to a logically infeasible border configuration. The last constraint on d imposes that such cases cannot be the solution of the problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 3,
+        "text": "Intuitively, this approach can be thought of as an analogue of the first-order Taylor approximation to the full non-linear problem, where infinitesimal marginal changes considered in continuous cases are replaced with discrete 1 -step deviations. Similarly to continuous cases, this leads to ignoring interactive effects of border changes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 4,
+        "text": "Definition 3 (Maxk -Cut approximation) Given a feasible border configuration d 0 and an equilibrium generated by it x 0 ∈{ x : g ( x , d 0 ; Θ ) = 0 } , the Maxk -Cut approximation to the Optimal Borders problem around d 0 is defined by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 5,
+        "text": "W ∗ \u0000 d 0 \u0001 ≡ max d X l,l ′ ≥ l (1 − d ll ′ ) \u0002 W − ll ′ −W + ll ′ \u0003 (26) s.t. W + ll ′ = \u0000 1 − d 0 ll ′ \u0001   X ̃ l L ̃ l U ̃ l \u0000 ̃x + ll ′ , ̄x 0 | d 0 + d ll ′ , Θ \u0001  ",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 6,
+        "text": "W − ll ′ = d 0 ll ′   X ̃ l L ̃ l U ̃ l \u0000 ̃x − ll ′ , ̄x 0 | d 0 − d ll ′ , Θ \u0001   ̃g \u0000 ̃x + ll ′ , ̄x 0 , d 0 + d ll ′ | Θ \u0001 = 0 ̃g \u0000 ̃x − ll ′ , ̄x 0 , d 0 − d ll ′ | Θ \u0001 = 0 d represents a partition . (27)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 7,
+        "text": "Proposition 2 The solution to the Maxk -Cut approximation problem around d 0 yields a border configuration that is welfare-improving relative to d 0 . Formally:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 8,
+        "text": "W ( d ′∗ ) ≥W \u0000 d 0 \u0001 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 9,
+        "text": "where d ′∗ is a solution to the Maxk -Cut approximation around d 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 10,
+        "text": "3.3 Characterizing optimal borders in special cases",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 11,
+        "text": "Algorithm 1: Algorithm to solve the Optimal Borders problem Data: Θ , F Result: d ∗ ∈ arg max d W ( d ) s.t. ( 22 ) − ( 25 ) Choose d 0 ; Solve for x 0 : g ( x 0 , d 0 | Θ ) = 0 ; i ← 0 ; Choose i max , ε ≥ 0 ; Solve for d i +1 ∈ arg max d W ∗ ( d ; d 0 ) s.t. ( 27 ); Solve for x i +1 : g ( x i +1 , d i +1 | Θ ) = 0 ; while ||W ( d i +1 ) −W ( d i ) || ≥ ε and i ≤ i max do i ← i + 1 ; Solve for d i +1 ∈ arg max d W ∗ ( d ; d i ) s.t. ( 27 ); Solve for x i +1 : g ( x i +1 , d i +1 | Θ ) = 0 ; end d ∗ ← d i +1 ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 12,
+        "text": "As neither uniqueness of the global maximum nor convergence of Algorithm 1 to it are guaranteed, I resort to a robustness strategy. Relying on the need to specify an initial d 0 , I simulate a set of them and report how variable the outputs are.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 13,
+        "text": "Definition of the Optimal Borders problem in the context of the framework:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 4,
+        "section_name": "Max- k -Cut Approximation",
+        "paragraph_id": 14,
+        "text": "max d max x X l L l W l s.t. W l = \u0000 G l \u0001 α \u0000 C l \u0001 1 − α ( 3 ) , ( 4 ) , ( 9 ) − ( 11 ) , ( 12 ) , ( 14 ) − ( 18 ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 5,
+        "section_name": "Characterizing optimal borders in special cases",
+        "paragraph_id": 0,
+        "text": "3.3.1 Maximizing gains from trade",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 5,
+        "section_name": "Characterizing optimal borders in special cases",
+        "paragraph_id": 1,
+        "text": "This subsection sheds light on patterns of country compositions in terms of fundamentals that are characteristic of optimal border configurations. To that end, I consider a simplified setting with no trade costs and set up a problem, in which the social planner is maximizing aggregate gains from trade through choosing the whole set of producitivities of all locations. Notice that this problem omits any consideration of border configurations. This way, the exercise can be intuitively thought of as learning what an optimal country looks like in terms of its composition.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 5,
+        "section_name": "Characterizing optimal borders in special cases",
+        "paragraph_id": 2,
+        "text": "sup A W ( A ) ≡− X l θ ln π ll s.t. X l π ll = 1 π ll = A l \u0000 w l \u0001 − θ P l ′ A l ′ ( w l ′ ) − θ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 5,
+        "section_name": "Characterizing optimal borders in special cases",
+        "paragraph_id": 3,
+        "text": "Proposition 3 W ( A ) is monotonically increasing in \u0002 max l A l − min l A l \u0003 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 5,
+        "section_name": "Characterizing optimal borders in special cases",
+        "paragraph_id": 4,
+        "text": "This section brings the developed framework and optimization method to the African context. I calibrate framework parameters using either external calibration or the inversion of the equilibrium conditions given observed outcomes. Solving the Optimal Borders problem with calibrated values reveals significant a opportunity cost of the postcolonial borders and the relative importance of the position of borders compared to the number of countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "To calibrate the parameters Θ and fundamentals F of the model, I need both granular data on socio-economic and geographic variables, and the spatial distribution of ethnic groups. For economic and population data, I turn to the G-ECON dataset that measures gross output and population size at the level of 1 ◦ -by1 ◦ cells. 3 , 4 For spatial data on ethnic groups, I rely on the widely used Murdock map ( Murdock , 1959 ). Due to a high level of detail in its classification of ethnic groups, the Murdock map features more than 800 groups, which contributes to the intractability of the search for optimal borders over such large territory. Therefore, I combine the Murdock map with the more aggregate classification in the Ethnic Power Relations (EPR) dataset that documents ethnic conflicts ( Vogt et al. , 2015 ; Wucherpfennig et al. , 2012 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "As the number of spatial units is a significant factor of the tractability of the Optimal Borders problem, it is infeasible to use one degree grid cells as units of analysis, given the available 3 The website of the G-ECON project: https://gecon.yale.edu . 4 As measuring economic activity at such a granular level in the developing-country context can be challenging, two countries that are large geographically and population-wise are missing in the sample: Libya and Zimbabwe.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "solvers. Therefore, I take two aggregation steps to form a sample of units that finds a balance between achieving tractability of the Optimal Borders problem and preserving the relevance of feasible border configurations. Firstly, I aggregate sets of neighboring grid cells into one unit if they are inhabited by the same ethnic group according to the Murdock map. However, as mentioned before, the resulting number of ethnic groups (around 800 ) is still intractable.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "To aggregate ethnicity polygons in the Murdock map into larger spatial units that still reflect some notion of shared ethnic identity, I rely on the matching from the Murdock map to the EPR classification done by Michalopoulos and Papaioannou ( 2016 ). It provides a correspondence between names of ethnic groups in the Murdock map and the ones in the EPR dataset according to various, manually checked criteria. Thus, I merge sets of polygons in the Murdock map into one if they are matched to the same EPR group by Michalopoulos and Papaioannou ( 2016 ). In contrast to other commonly used ethnicity classifications (such as the Ethnologue), this approach identifies ethnic groups as entities that have shown united political interests. This matches an intuitive notion of political actors that could be relevant for real-world changes in border configurations. I later exploit this feature of the unit definition to match outputs of my model to historical secessionist attempts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "In order to keep the current border configuration as a feasible solution for the Optimal Borders problem, I define spatial units at the ethnic group by country level. That is, if an ethnic group is split by a current national border (for example, the Mbundu people live in both Angola and the Democratic Republic of the Congo), it leads to two spatial units in my sample. As a result, there are 363 units, which are displayed in Figure 5 . Notice that although it seems from the map that there is a big dispersion in sizes of ethnic groups, that is not the case in terms of population sizes, as certain ethnic groups are spread out in areas with low population density.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "A c t ual natio n a l b o rde r s E PR e t h n i c g r ou p s S p a t i a l u n it s ac co r d i n g to EPR",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "Figure 5: Spatial units of analysis in the sample. Different colors represent different ethnic groups as classified by the EPR database.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "4.1.2 Graph definition",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "Every spatial unit is represented by a node in the constructed graph. This graph is fully connected, with edges being potentially cut to represent the integration relation. While in theory it is possible to map jurisdictional partitionings onto planar graphs, the used algorithm to solve the Optimal Border problem mechanically delivers non-contiguous countries in that case. In the Maxk -Cut approximation of the problem, weights of the graph edges correspond to marginal effect values of changing the integration status between the according end locations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 9,
+        "text": "Following Desmet et al. ( 2018 ), the calibration of trade costs is an application of the framework of Allen and Arkolakis ( 2014 ), in which goods are shipped through the least costly transportation routes. In order to conform with the theoretical set-up of Allen and Arkolakis ( 2014 ), I represent the geography in a granular way by the grid of 1 ◦ -by1 ◦ cells, indexed by r ∈R . Importantly, I discretize the whole planet, rather than just the African continent, to allow for possibilities like traders from Lagos using maritime routes to ship goods to Cape Town. Using data from Natural Earth, I characterize each cell by a set of available transportation modes. 5 They include railorads, two types of roads (major and other), and water. These transportation modes have different costs, reflected by parameters estimated in Allen and Arkolakis ( 2014 ). As a result, each grid cell r has a cost value γ ( r ) of trespassing it along a transportation route, parametrized by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 10,
+        "text": "log γ ( r ) = X m X s ∈S m log γ s m m s ( r ) + X m log ̄ γ m [1 − m ( r )] ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 11,
+        "text": "where m indexes transportation modes, s indexes possible sub-types of the considered mode, γ s m is the mode-sub-type-specific cost parameter, ̄ γ m is the cost parameter for the case when m is not present, and m ( r ) is the indicator function that takes value 1 if transportation mode m is available in grid cell r . A transportation route between cells r o and r d is an ordered sequence of cells, where every next cell is neighboring the previous one. The resulting trade cost between r o and r d denoted Γ ( r o , r d ) is a cumulative function of costs of trespassing grid cells that lie on the least costly path between r o and r d . The continuous version of this problem is captured by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 12,
+        "text": "Γ ( r o , r d ) = \u0014 inf u ( r o ,r d ) Z u ( r o ,r d ) γ ( r ) dr \u0015 υ ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 13,
+        "text": "5 The website of the Natural Earth project: https://www.naturalearthdata.com .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 14,
+        "text": "where υ is the elasticity of converting transportation costs into trade costs, and u ( r o , r d ) is some route between r 0 and r d .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 15,
+        "text": "The cell-level cost of transporting γ ( r ) is calibrated using the data that is more granular than the cell size. It is set equal to the average bilateral transporting cost across all pairs of sub-cells.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 16,
+        "text": "In order to aggregate bilateral cell-level trade costs into bilateral location-level trade costs, I follow a similar strategy as in the case of cell-level transportation cost by averaging trade costs between all pairs of cells from the two considered locations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 17,
+        "text": "4.2.2 Productivity fundamentals",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 18,
+        "text": "Values of productivity fundamentals A l are set such that, given the observed income levels w l , calibrated trade costs ˆ γ , and the calibrated values of the parameters ˆ Θ , the general equilibrium conditions that depend on A l hold. Such conditions include ( 18 ) together with ( 10 ), ( 11 ), ( 14 ), ( 16 ). Formulating these conditions as a function of A , the inversion problem amounts to solving the following system:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 19,
+        "text": "G \u0010 A ; w, L, ˆ τ, ˆ Θ \u0011 = 0 . (28)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 20,
+        "text": "The important data variation for recovering productivity fundamentals comes from income levels w l . However, they are not necessarily correlated as the incomes of locations are determined not only by their technologies but also by their market access.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 21,
+        "text": "Results of inverting the general equilibrium conditions to obtain values of productivity fundamentals A l are displayed in Figure 6b , alongside observed income levels.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 22,
+        "text": "4.2.3 Preference heterogeneity",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 23,
+        "text": "To calculate utility discounts due to heterogeneity δ l C ( l ) as a function of arbitrary border configurations, it is necessary to quantify bilateral preference distance fundamentals δ ll ′ . Following the literature that associates ethnic heterogeneity with preference heterogeneity when explaining low quality of provided public goods (e.g., Alesina and Zhuravskaya 2011 ), I conceptualize δ ll ′ as a measure of ‘distance’ between ethnic groups in l and l ′ . 6 This is another way in which associating locations with ethnic groups facilitates the calibration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 24,
+        "text": "As a baseline, I impose a simple parametrization in which every ethnic group only enjoys their ideal type of public good and completely distastes ideal types of other ethnic groups: δ ll ′ = 0 ∀ l ̸ = l ′ . On its own, the strength of this assumption is reduced by how aggregated the chosen level of ethnicity classification is. For example, it is more reasonable to believe that 6 The term ‘distance‘ is a slight abuse of terminology as δ ll ′ takes value 1 if l does not experience any disutility discount from the ideal public good of l ′ and, thus, is similar to l ′ in this sense.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 25,
+        "text": "L o g ( In co me s )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 26,
+        "text": "(a) Observed income levels. L o g ( C a l i b rate d pr odu c t ivit y f u n da m e nt al s )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 27,
+        "text": "(b) Calibrated productivity values. Figure 6: Results of inverting the general equilibrium conditions to obtain productivity fundamentals A .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 28,
+        "text": "the Muslim Arabs and the Christian Copts have bigger disagreements over the preferred public good than, say, the Tuareg and the Beydan, who are both recognized by EPR to be in the same group as the Muslim Arabs. In other words, I set δ ll ′ between the Tuareg and the Beydan to 1 , but the one between the Muslim Arabs and the Christian Copts to 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 29,
+        "text": "As discussed in subsection 2.4 , such parametrization leads to δ l C ( l ) being equal to the population share of l in C ( l ) . Then, the population-weighted average level of ethnic remoteness in country C ( l ) becomes exactly the ethnic fractionalization index, widely used in the literature studying ethnic heterogeneity (e.g., Alesina and Ferrara 2005 ; Alesina et al. 2019 ; Montalvo and Reynal-Querol 2021 ). Therefore, one can think of the calibration approach taken here as an implementation of the endogenous ethnic fractionalization index whose value can be computed for an arbitrary composition of countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 30,
+        "text": "If, alternatively, δ ll ′ took values strictly between 0 and 1 , we would expect a spatial gradient in the values of δ ll ′ as l ′ gets geographically more distant from l . The reason for such gradient is that ethnic groups which are closer to each other in terms of identity and cultural traits are likelier to reside in relatively closer geographic areas. The effect of this gradient on the optimal sizes of countries is ambiguous. Directly, integrating with neighboring, albeit different, ethnic groups leads to a smaller increase in the disutility discount for the public goods, which strengthens the force to make countries larger. At the same time, this gradient would dampen the economic integration motif to make countries larger. With a higher potential to exploit gains from fiscal integration, the social planner cares less about increasing technological heterogeneity within countries, which sometimes can only be achieved by bigger country sizes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 31,
+        "text": "Table 1: Summary of sources for calibrated parameters.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 6,
+        "section_name": "Data",
+        "paragraph_id": 32,
+        "text": "Parameter Description Source Value α Utility Desmet et al. ( 2022 ) . 3 Trade β Border effect Conte ( 2022 ) . 2 γ lj Non-institutional component Allen and Arkolakis ( 2014 ) υ Elasticity of trade costs wrt transportation cost Desmet et al. ( 2018 ) . 363 θ Trade elasticity Conte ( 2022 ) 6 . 63 Public good t Tax rate National income accounts . 2 ξ Degree of rivalry Jannin and Sotura ( 2020 ) 1 . 7 δ Ethnic distances EPR classification N Number of units EPR groups ∩ Countries 363 1 Jannin and Sotura ( 2020 ) do not settle on the most preferred value of this parameter (denoted κ in their case), as their estimates are not robust across specifications. At the same time, the literature does not offer alternative estimates of this parameter. For example, Fajgelbaum et al. ( 2019 ) altogether avoid the issue by only considering the extreme cases of no rivalry and full rivalry.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 0,
+        "text": "As the first application of the developed framework, I turn to the question of secessionist movements and test whether the my calibrated framework can speak to the historically observed secessionist behaviors. I use EPR dataset’s records of rebellious actions taken by ethnic groups as an indicator of discontent with their position in the country and, thus, a step towards potential secession from the country. I encode the existence of such a record for an ethnic group as a binary variable, as EPR does not provide a quantification of the degree to which the rebellious activity was prominent. Because this indicator variable on secessionist attempts was not used in the calibration of the model, this analysis can be also seen as an external validity test of my calibration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 1,
+        "text": "Employing the calibration of my framework, I construct variables dubbed “secession outcomes” to associate with secessionist attempts. It varies at the level of the spatial unit (i.e., ethnicityby-country unit) and results from computing particular counterfactuals within the framework. For every spatial unit l , I consider the counterfactual in which it secedes from its current country and forms a new, separate one. As a result, a new set of national boundaries arise that surround the considered ethnic group. Formally, this amounts to setting d ll ′ = 0 ∀ l ′ ̸ = l . Thus, I construct 363 counterfactual border configurations – one for every secession scenario.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 2,
+        "text": "For each such scenario, I recompute the general equilibrium outcomes of the framework using the calibrated values of parameters and fundamentals. I interpret these as predictions of what would happen in case any considered ethnic group decided to secede from its current country",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 3,
+        "text": "5.1 Analysis of secessionist attempts",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 4,
+        "text": "(for example, what would happen if the Tutsi people seceded from Ethiopia?) I particularly focus on the change in the overall welfare of the ethnic group in case it decides to secede:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 5,
+        "text": "∆ W l = W l ( l secedes from C ( l )) −W l ( status quo ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 6,
+        "text": "This change comprehends both the trade and the public goods motifs behind secessions and, thus, should reflect the trade-off between gaining full control over the provision of public goods and losing easier trade access with the rest of the status quo country. Figure 7: Effects of counterfactual secessions for all ethnic groups.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 7,
+        "text": "Log Ef fe ct − 0 . 5 0. 0 0 .5 1 .0 1.5 0 .0 0 .5 1 . 0 1 .5 S ec e s sion ef f e c t on w e l f a r e",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 8,
+        "text": "(a) Marginal distribution of secession values relative to the baseline. Effect −1.0×1 0 9 1. 0 ×10 9 2. 0× 10 9 2 00 5 U S Dol l ars e qu i va l e n t",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 9,
+        "text": "(b) Marginal distribution of secession values in US Dollars.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 10,
+        "text": "Lo g ( Ef f e c t ) − 0 . 5 0 . 0 0 . 5 1 . 0 1.5 0 .0 0 .5 1 . 0 1 . 5 S ec e s sion ef f e c t on w e l f a r e Se ceder s N on - Seceder s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 11,
+        "text": "(c) Conditional distributions of secession effects relative to the baseline. Effect −1 . 0×1 0 9 1. 0 ×10 9 2 . 0×1 0 9 2 00 5 U S Do l l a r e q u i v al e nt Se ceder s N on - Seceder s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 12,
+        "text": "(d) Conditional distributions of secession effects in US Dollars.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 13,
+        "text": "The marginal distribution of the welfare change in case of seceding is plotted in Figures 7a (relative change compared to status quo) and 7b (2005 US Dollars equivalent of the welfare change). One immediate pattern of this distribution is that most of the welfare effects from seceding are positive, with the average of around $500 mln in 2005 US Dollars equivalent. Under the assumption of credibility of the calibrated framework, it evokes two important conclusions. Firstly, it suggests the sub-optimality of the post-colonial national borders. If most ethnic groups would prefer to exit their current countries, European colonial powers did not settle on the border configuration that maximizes integration synergies between ethnic groups in the same country. Note that this does not imply that the configuration with only ethnic states",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 14,
+        "text": "5.1 Analysis of secessionist attempts",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 15,
+        "text": "would be Pareto-improving or even increase aggregate welfare. Due to the general equilibrium nature of the framework, it is crucial for the obtained positive numbers that the rest of the status quo border configuration stays intact.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 16,
+        "text": "Secondly, reconciling these positive values with the fact that secessionist attempts are quite rare in practice suggests that attempting a secession is very costly to the seceder. Staging a rebellion requires a significant amount of arms that most likely needs to be imported from outside the country. Sufficient production or financial resources are hard to acquire for a subnational ethnic region. Also, civil wars almost inevitably lead to human losses. Therefore, the rarity of secessions might speak to the value of life by potential participants and victims of war.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 17,
+        "text": "Still, there have been historical cases of ethnic secessionism in Africa, and they can be related to the predicted welfare gains from seceding in my framework. Figures 7c and 7d compare conditional distribution of secession effects on welfare for those who attempted a secession (seceders) and for those who did not. Clearly the conditional density for seceders is shifted to the right compared to the conditional density for non-seceders, which speaks in favor of the relevance of my calibrated framework. The ethnic groups that tried to secede had sufficiently higher prospective gains compared to the non-seceders to outweigh the costs of seceding.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 18,
+        "text": "Table 2: Comparisons of outcomes of counterfactual secessions between actual seceders and non-seceders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 19,
+        "text": "Means Test p -values Outcome Seceders NonSeceders Diff ANOVA KolmogorovSmirnov test MannWhitney U test KruskalWallis test",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 20,
+        "text": "Log welfare change for seceder 0 . 351 0 . 296 0 . 055 0 . 078 0 . 054 0 . 126 0 . 125 Log change in real income − 0 . 035 − 0 . 046 0 . 011 0 . 036 0 . 255 0 . 564 0 . 564 Welfare change for seceder in 2005 US dollars equivalent (millions) 888 . 953 446 . 781 442 . 172 0 . 026 0 . 0 0 . 0 0 . 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 21,
+        "text": "Technically speaking, it is not straightforward to characterize the statistical nature of these distributions of outcomes that are obtained through counterfactual analysis within a general equilibrium structural framework. Still, as a way to verify that the difference in the obtained conditional distributions is not only visual, I apply a series of statistical tests designed for cases when the available sample is not drawn from the joint distribution of two compared outcomes. The p -values for these tests are reported in Table 2 . For the US-dollars-equivalent measure of the secession effect, the differences are strongly significant according to these tests.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 22,
+        "text": "5.2.1 Welfare implications",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 23,
+        "text": "To understand whether and why post-colonial borders are bad, I consider the counterfactual obtained as the solution to the Optimal Borders problem with calibrated parameter values, and compare it to the status quo. The optimal borders for Africa differ substantially from the status quo ones. Here, I mainly focus on the differences in aggregate welfare measures and the associated changes in fundamentals, leaving an overview of all outcomes to the Appendix.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 24,
+        "text": "Aggregate welfare as a function of the number of countries First, I examine the relative importance of the number of countries compared to the compositions of countries. To that end, I solve the Optimal Borders problem with an additional constraint on the number of countries. Specifically, I sequentially set the allowed number of countries from 2 to 60 and obtain 59 solutions. In Figure 8a , I use blue dots to report the aggregate welfare under the optimal country composition for each considered number of countries (on the x -axis) and fit a quadratic curve (red line) to these values. Aggregate welfare levels only have a relative meaning, with the reference point being the status quo configuration represented by the orange dot.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 25,
+        "text": "N u m be r o f c o u nt ries M 1 0 2 0 40 5 0 60 1 2 1 3 Global wel far e Q ua d r a t i c f it S t a t us q u o",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 26,
+        "text": "(a) Global welfare under optimal borders, conditional on the pre-set number of countries. Num b e r o f c o u n tr ies 40 L o g( O utc o me )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 27,
+        "text": "−1 W e lf a r e r e l ati v e to t h e b a s eli n e W W 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 28,
+        "text": "(b) Distributive impact of optimal borders, conditional on the pre-set number of countries. Figure 8: Aggregate welfare as a function of the number of countries, conditional on the optimal geographic position of borders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 29,
+        "text": "The inverseU shape of the indirect utility curve is consistent with existing theoretical frameworks that posit the trade-off between the cost of social tension and the benefit of heterogeneity. As the number of countries increases, the benefits of fewer tensions are nullified by lost economic opportunities that arise due to gains from trade and economies of scale in public goods provision. To further emphasize the importance of the composition of countries, I plot distributive consequences of re-arranging borders in Figure 8b as a function of the number of countries. Comparing boxplots across numbers of countries shows that even though the aggregate welfare varies significantly with the number of countries, most of the locations would gain",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 30,
+        "text": "from the re-arrangement of borders regardless of the number of countries. That is, relative to the status quo, moving to almost any counterfactual number of countries would benefit most of the locations as long as the geographic position of borders is optimal.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 31,
+        "text": "(a) Spatial distribution of welfare (status quo) log ( W W 0 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 32,
+        "text": "(b) Spatial distribution of welfare gains compared to status quo Figure 9: The effect of the optimal border configuration on the spatial distribution of welfare",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 33,
+        "text": "Quantitatively, in the counterfactual with optimal borders and the current number of countries, the aggregate welfare is 28% higher than in the status quo. Although this counterfactual does not lead to a Pareto improvement, at least 75% of regions (85% of African population) gain from transitioning to the optimal borders. This aggregate welfare gain is massive. To compare with another continent-wide counterfactual reform, Graff ( 2024 ) calculates that the optimal re-ogranization of the African road network country-by-country would yield a 1 . 8% aggregate welfare gain.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 34,
+        "text": "Besides the statistical uncertainty not accounted for in the analysis here, two economic reasons can explain such stark difference. First, the workers in Graff ( 2024 ) derive utility only from the consumption of private goods, while my framework includes the consumption of public goods. Due to this utility component, changes in the country’s composition can have drastic discontinuous effects on welfare. For example, when some poor location gets integrated with a much richer location, the quantity of the provided public good in that location can increase dramatically due to non-complete rivalry in public goods consumption. 7",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 35,
+        "text": "Second, in terms of the trade forces, the marginal effect of improving roads on the trade costs is not high enough to compare with the discrete jump in trade costs due to a country border. Given the moderate level of baseline infrastructure in Africa, it is hard for the optimal re-organization to achieve a high increase in aggregate gains from trade. At the same time, 7 Using the framework’s notation, due to ξ being less than 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 36,
+        "text": "as discussed later in this section, the optimal borders ensure that locations with a higher potential for gains from trade due to a big difference in productivities are less likely to have a country border between them. The spatial distribution of productivity fundamentals in Africa is dispersed enough to allow the social planner to significantly increase within-country differences in productivities through re-organizing borders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 37,
+        "text": "Strikingly, the actual number of countries (45) is close to the number that yields the maximum aggregate welfare (50), with a minor difference in the welfare value. 8 This speaks to a longstanding discussion in the literature on the political economy of Africa around the number of countries inherited from the colonial era.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 38,
+        "text": "Op t i ma l Spl i t t i n g i nt o 4 5 C oun t r i es",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 39,
+        "text": "Figure 10: The solution to the approximation to the partial equilibrium Optimal Borders problem",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 40,
+        "text": "Spatial redistributive implications of the optimal borders Figure 11 plots the welfare change at the location level against the status quo level of welfare. The negative association between these two variables indicates that the optimal borders lead to the partial convergence of welfare levels across space. In particular, regions at extremes of the status quo welfare distribution experience the most impact in the counterfactual with the optimal border configuration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 41,
+        "text": "Figure 9 shows significant spatial heterogeneity in welfare impacts of optimal borders. There 8 See Data Appendix for the explanation of why the number of countries in the sample is lower than the actual one.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 42,
+        "text": "Log( S tat u s quo w e lfa re) 1 0 L o g(w e lf a re ga i n s )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 43,
+        "text": "−1 Wel f a r e gain s a g ai n s t s t a t us q uo w e l f a r e",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 44,
+        "text": "EPR unit Linea r fit",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 45,
+        "text": "Figure 11: Redistributive consequences of optimal borders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 7,
+        "section_name": "Analysis of secessionist attempts",
+        "paragraph_id": 46,
+        "text": "are both areas that significantly gain and areas that significantly lose in the considered counterfactual. A good predictor of the predicted welfare change is the status quo welfare (see Figure 11 ), suggesting that the social planner is trying to reduce spatial inequality. Similarly, one can observe that inland areas are more likely to gain, at the cost of initially richer coastal regions. From this perspective, the social planner is re-configuring borders so that the high gains from trade associated with access to ports trickle down to remote regions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 0,
+        "text": "In terms of the mechanisms, optimal borders lead to patterns of fundamentals that are consistent with the logic formally derived in Section 3 . Firstly, it is evident that countries in the optimal configuration are on average less ethnically diverse (see Figure 12 ). This matches the common perception that post-colonial border design was negligent of the historical distribution of ethnic groups in Africa.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 1,
+        "text": "Ethnic he t er o g e n eit y 0 . 0 0. 2 0 . 4 0. 6 0 .8 C ros s - c o u n t ry d i s tr i b u ti on o f e t h n i c h e t er oge n e i t y ( S t atu s quo)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 2,
+        "text": "Ethnic he t er o g e n eit y 0 . 0 0 . 2 0 . 4 0 . 6 0 .8 C ros s - cou nt r y d i s tr i b ut ion o f et hn i c h e t e r oge n e i t y (O pt i m a l b o rders)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 3,
+        "text": "Figure 12: Social planner is reducing ethnic heterogeneity across countries, making the distribution of fractionalization indices have higher frequency around 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 4,
+        "text": "On top of that, the pattern of spatial correlation between ethnic and technological heterogeneity in the optimal borders case is consistent with the logic that the cost of higher ethnic heterogeneity should be compensated with higher gains from trade. The latter follow higher technological heterogeneity, and the social planner strengthens the association between ethnic and technological heterogeneity (see Figure 13 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 5,
+        "text": "Eth n ic h e te r o g ene i ty 0 . 0 0. 2 0 . 4 0. 6 0. 8 Tech n ol o gi c a l h e t e ro ge n e i t y 1 0 1 5 Stat u s q uo",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 6,
+        "text": "Countr y Eth n ic h e te r o g ene i ty 0 . 0 0 .2 0 . 4 0 . 6 0. 8 Tech n ol o gi c a l h e t e ro ge n e i t y 1 0 1 5 Optima l b o r de r s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 7,
+        "text": "Figure 13: Social planner is improving the trade-off between economic and public goods forces: With optimal borders, ethnically heterogeneous countries are likelier to have higher technological heterogeneity – a positive factor for higher gains from trade.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 8,
+        "text": "5.2.2 The Case of South Africa",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 9,
+        "text": "To understand why particular border stretches are different under the optimal configuration, I zoom into the region comprising South Africa and its neighboring countries, and decompose how individual spatial units are affected by a counterfactual change in borders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 10,
+        "text": "Optimal Spl i t t in g i n t o 4 5 Co u nt r ies: Z o om i n g i nt o t he S o u t h e r n r eg i o n",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 11,
+        "text": "Figure 14: Optimal border configuration for the Southern Region. In this sub-section I define as South the following set of countries: South Africa, Namibia, Mauritius, Lesotho, and Botswana; the rest of African countries in my sample are denoted as North. To explain why social planner is splitting the South into ethnically homogenous countries (see Figure 14 ), I explore differences in fundamentals between the North and the South (see Figure 15 ) and tie their patterns to the logic of my framework.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 12,
+        "text": "Firstly, it is important to notice that the social planner makes more people live in large countries (see Figure 15a ). This leads to the question of why the North is getting large countries at the cost of small countries in the South under optimal borders. Differences in ethnic heterogeneity and spatial productivity patterns indicate that benefits to larger country sizes are higher in the North than in the South.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 13,
+        "text": "Southern regions are less ethnically heterogeneous that the Northern region (see Figure 15b ), which technically yields room for making countries more homogeneous in the South. On the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 14,
+        "text": "Figure 15: Patterns of differences in fundamentals between the North and the South.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 15,
+        "text": "L og( C o u ntr y p op ul a t i o n si ze) 1 0 2 0 0 .00 0 .05 0 .10 0 .15 0 .20 Cro s s - c ou n t ry dis t rib ut io n o f p o p u l a ti o n s i z es O pt i m a l b or d ers S t a t u s q u o",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 16,
+        "text": "(a) Optimal borders make more people live in larger countries. L og(Et h n i c g r o u p p o pul at i on ) 1 0 1 5 0 .0 0 .1 0 .2 C o mp arin g e t h n i c h ete r ogene i t y in t h e N or t h a nd i n the S out h",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 17,
+        "text": "H e t e rogene i ty: N o r th: 0 . 08 8 South: 0 . 02 8 N o r t h S o u t h",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 18,
+        "text": "(b) Ethnic heterogeneity is higher in the North.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 19,
+        "text": "U t il i ty d i s c ou n t due t o et hni c rem ot e n es s δ 0 . 0 0 .5 1. 0 D i s t ri b u t i o ns o f u t ility discount s du e to e t h ni c r e m oten es s Nort h S o uth",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 20,
+        "text": "(c) Baseline disutility from ethnic heterogeneity is higher in the North. L o g ( Pr o duc t iv it y A ) −10 0 .00 0 .02 0 . 04 0 .06 0 .08 Dis t rib u tio n s of p r o d uc t ivit i e s Nort h S o uth",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 21,
+        "text": "(d) Distribution of productivities is more dispersed in the North.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 22,
+        "text": "contrary, due to higher ethnic diversity in the North, it is technically harder to find a border configuration that makes an average country more homogenous without losing out significantly on other margins of welfare. The margin for increasing the utility from public goods has high potential in the South. This is reinforced by the fact that the distribution of real income is more uniform in the South.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 23,
+        "text": "In status quo, locations in the South have less disutility from heterogeneity in consumption from public goods (see Figure 15c ). This implies that the margin for increasing the utility from public goods has high potential in the South. Furhermore, the fact that the distribution of real income is more uniform in the South ensures that the loss in the economy of scale in public goods production is less signficant there. The opposite picture is true for the North. The baseline level of disutility due to ethnic heterogeneity is high, making marginal improvements on this dimensions not significant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 24,
+        "text": "Another force in driving higher benefits from larger country sizes in the Northern regions is higher dispersion in productivities (see Figure 15d ). Consistent with a key feature of the theoretical framework, integration of locations with big differences in productivities leads to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 8,
+        "section_name": "Mechanisms",
+        "paragraph_id": 25,
+        "text": "higher aggregate gains from trade. Thus, it is expected that optimal borders seek to exploit this potential by expanding sizes of countries in the North.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper developed a new theoretical framework to analyze jurisdictional borders. Moving beyond stylized models that offer abstract characterizations of border configurations, this paper’s framework quantitatively assesses the welfare effects of an arbitrary change in border configuration in general equilibrium with a realistic geography. It still reflects the main forces that the theoretical literature has explored. The bigger population size of a country introduces fiscal savings in environments with non-fully-rival national public goods. It also implies a larger private market unaffected by the need to cross national borders. At the same time, geographically larger countries are harder to govern, differentially affecting regions on the country’s outskirts. Alongside the size, the composition of a country is crucial for its welfare. Higher heterogeneity in terms of preferences over horizontal types of public goods introduces tension and makes it likelier that, on average, everyone is not content with the provided type of the public good. However, high heterogeneity in productivity fundamentals induces higher gains from trade, as the terms-of-trade effect for locations with lower productivities outweighs the losses from reallocating production to locations with higher productivities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "Keeping track of this multitude of forces, especially given that the space of theoretically feasible border configurations is huge and cannot be ordered in any obvious way, complicates the analytical characterization of welfare-maximizing borders. In this paper, I make a step in this direction by developing a feasible way to computationally obtain a welfare-optimizing border configuration despite the richness of the general equilibrium structure. It hinges on recasting the optimal borders problem as a network optimization problem in which border configurations are equated with clusterings of the network of locations. Then, decomposing the problem into two sub-problems, integer and non-linear, makes the computational solution feasible with a modern-class solver.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "Multiple natural and exciting avenues for further research can build upon this paper’s contribution. Firstly, this paper does not attempt to characterize any notion of the decentralized border configuration. As much as an analytical solution to the Optimal Borders problem is hard to get because of the integer nature of the optimized outcome, there is no obvious way to approach a characterization of an equilibrium border configuration formally. One promising direction draws on the coalitional game theory, which offers formal notions of stable partitions of a given set of agents. Although it has been mainly developed for settings with linear utilities and superadditive characteristic functions, there is growing literature studying coalitional games in settings that match the general equilibrium structure of this paper’s framework.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "One important component missing from this paper’s framework seems to be the endogenous choice to engage in a military conflict. This extension is particularly relevant for the question of border formation as many wars are fought to annex new territories or secede from an oppressive federal government. Thus, it would be a step in micro-founding the decentralized determination of border configurations. Crucially, a framework with endogenous conflict would enable a quantitative assessment of realistic border changes. Adding an evaluation of the cost of war can substantially enhance the analysis of secessions offered in this paper. Such a framework would be able to predict whether a region will secede, not just whether it is more likely to secede, as it would quantify both the benefits and costs of seceding. More generally, the framework offered in this paper lends itself to feasible incorporations of forces developed in other frameworks with networks of agents. However, it will be challenging to establish whether the tractable solution strategy in this paper performs as well in extended frameworks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "Alesina, A., Angeloni, I., and Etro, F. (2005a). International Unions. American Economic Review , 95(3):602–615.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 5,
+        "text": "Alesina, A. and Ferrara, E. L. (2005). Ethnic Diversity and Economic Performance. Journal of Economic Literature , 43(3):762–800.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 6,
+        "text": "Alesina, A., Gennaioli, C., and Lovo, S. (2019). Public Goods and Ethnic Diversity: Evidence from Deforestation in Indonesia. Economica , 86(341):32–66.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 7,
+        "text": "Alesina, A. and Spolaore, E. (1997). On the Number and Size of Nations. The Quarterly Journal of Economics , 112(4):1027–1056.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 8,
+        "text": "Alesina, A., Spolaore, E., and Wacziarg, R. (2005b). Chapter 23 - Trade, Growth and the Size of Countries. In Aghion, P. and Durlauf, S. N., editors, Handbook of Economic Growth , volume 1, pages 1499–1542. Elsevier.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 9,
+        "text": "Alesina, A. and Zhuravskaya, E. (2011). Segregation and the Quality of Government in a Cross Section of Countries. American Economic Review , 101(5):1872–1911.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 10,
+        "text": "Allen, T. (2023). The Topography of Nations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 11,
+        "text": "Allen, T. and Arkolakis, C. (2014). Trade and the Topography of the Spatial Economy. The Quarterly Journal of Economics , 129(3):1085–1140.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 12,
+        "text": "Caliendo, L., Opromolla, L. D., Parro, F., and Sforza, A. (2021). Goods and Factor Market Integration: A Quantitative Assessment of the EU Enlargement. Journal of Political Economy , 129(12):3491–3545.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 13,
+        "text": "Caliendo, L. and Parro, F. (2015). Estimates of the trade and welfare effects of NAFTA. Review of Economic Studies , 82:1–44.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 14,
+        "text": "Chalkiadakis, G., Elkind, E., and Wooldridge, M. (2012). Computational Aspects of Cooperative Game Theory . Synthesis Lectures on Artificial Intelligence and Machine Learning. Springer International Publishing, Cham.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 15,
+        "text": "Conforti, M., Cornu ́ejols, G., and Zambelli, G. (2014). Integer Programming , volume 271 of Graduate Texts in Mathematics . Springer International Publishing, Cham.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 16,
+        "text": "Conte, B. (2022). Climate Change and Migration: The Case of Africa. SSRN Electronic Journal .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 17,
+        "text": "Desmet, K., Nagy, D. K., and Rossi-Hansberg, E. (2018). The Geography of Development. Journal of Political Economy , 126(3):903–983.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 18,
+        "text": "Desmet, K., Ortu ̃no-Ort ́ in, I., and ̈ Ozak, ̈ O. (2022). Is Secessionism Mostly About Income or Identity? A Global Analysis of 3,003 Subnational Regions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 19,
+        "text": "Eaton, J. and Kortum, S. (2002). Technology, Geography, and Trade. Econometrica , 70(5):1741–1779.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 20,
+        "text": "Esteban, J. and Ray, D. (2011). Linking Conflict to Inequality and Polarization. American Economic Review , 101(4):1345–1374.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 21,
+        "text": "Fajgelbaum, P., Gaubert, C., Gorton, N., Morales, E., and Schaal, E. (2023). Political Preferences and Transport Infrastructure: Evidence from California’s High-Speed Rail. Technical Report w31438, National Bureau of Economic Research, Cambridge, MA.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 22,
+        "text": "Fajgelbaum, P. D., Morales, E., Su ́arez Serrato, J. C., and Zidar, O. (2019). State Taxes and Spatial Misallocation. The Review of Economic Studies , 86(1):333–376.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 23,
+        "text": "Fajgelbaum, P. D. and Schaal, E. (2020). Optimal Transport Networks in Spatial Equilibrium. Econometrica , 88(4):1411–1452.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 24,
+        "text": "Fern ́andez-Villaverde, J., Koyama, M., Lin, Y., and Sng, T.-H. (2023). The Fractured-Land Hypothesis. The Quarterly Journal of Economics , 138(2):1173–1231.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 25,
+        "text": "Friedman, D. (1977). A Theory of the Size and Shape of Nations. Journal of Political Economy , 85(1):59–77.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 26,
+        "text": "Gancia, G., Ponzetto, G. A. M., and Ventura, J. (2022). Globalization and Political Structure. Journal of the European Economic Association , 20(3):1276–1310.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 27,
+        "text": "Graff, T. (2024). Spatial inefficiencies in Africa’s trade network. Journal of Development Economics , 171:103319. Jannin, N. and Sotura, ˆ A. (2020). This Town Ain’t Big Enough? Quantifying Public Good Spillovers. SSRN Electronic Journal .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 28,
+        "text": "Lebrand, M. (2021). Corridors without Borders in West Africa. Policy Research Working Paper , 9855.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 29,
+        "text": "Michalopoulos, S. and Papaioannou, E. (2016). The Long-Run Effects of the Scramble for Africa. American Economic Review , 106(7):1802–1848.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 30,
+        "text": "Montalvo, J. G. and Reynal-Querol, M. (2021). Ethnic diversity and growth: Revisiting the evidence. Review of Economics and Statistics , 103(3):521–532.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 31,
+        "text": "Murdock, G. P. (1959). Africa: Its Peoples and Their Culture History . McGraw-Hill.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 32,
+        "text": "Oduntan, G. (2015). Africa’s border disputes are set to rise – but there are ways to stop them. http://theconversation.com/africas-border-disputes-are-set-to-rise-but-thereare-ways-to-stop-them-44264.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 33,
+        "text": "Saad, W., Han, Z., Debbah, M., Hjorungnes, A., and Basar, T. (2009). Coalitional game theory for communication networks. IEEE Signal Processing Magazine , 26(5):77–97.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 34,
+        "text": "Thomas, C. G. (2018). Secession and Separatism in Modern Africa. In Shanguhyia, M. S. and Falola, T., editors, The Palgrave Handbook of African Colonial and Postcolonial History , pages 729–757. Palgrave Macmillan US, New York.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 35,
+        "text": "Validi, H. and Buchanan, A. (2022). Political districting to minimize cut edges. Mathematical Programming Computation , 14(4):623–672.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 36,
+        "text": "Validi, H., Buchanan, A., and Lykhovyd, E. (2022). Imposing Contiguity Constraints in Political Districting Models. Operations Research , 70(2):867–892.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 37,
+        "text": "Vogt, M., Bormann, N.-C., R ̈uegger, S., Cederman, L.-E., Hunziker, P., and Girardin, L. (2015). Integrating Data on Ethnicity, Geography, and Conflict: The Ethnic Power Relations Data Set Family. Journal of Conflict Resolution , 59(7):1327–1342.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 38,
+        "text": "Weese, E. (2015). Political mergers as coalition formation: An analysis of the Heisei municipal amalgamations. Quantitative Economics , 6(2):257–307.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1462,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 39,
+        "text": "Wucherpfennig, J., Metternich, N. W., Cederman, L.-E., and Gleditsch, K. S. (2012). Ethnicity, the State, and the Duration of Civil War. World Politics , 64(1):79–115.",
+        "extraction_warnings": ""
+    }
+]

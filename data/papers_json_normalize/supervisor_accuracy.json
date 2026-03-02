@@ -1,0 +1,570 @@
+[
+    {
+        "paper_id": 1411,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Supervisor Accuracy in Subjective Evaluations and Employee Careers ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Hayato Kanayama † Yuji Kawata ‡ Ritsu Kitagawa §",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Abstract We investigate how the accuracy of supervisors’ performance evaluations affects employee careers. We develop a simple model in which a supervisor receives a noisy signal of an employee’s performance and submits a subjective rating based on that signal. The model predicts that more accurate supervisors produce greater dispersion in their rating scores across subordinates and induce more promotions. Using personnel records from a large manufacturing firm, we identify supervisors with higher rating dispersion as accurate raters and estimate the effects of being assigned to such supervisors. We find that employees assigned to accurate raters are promoted at higher rates. We also show that supervisors who drink alcohol and those hired more recently tend to be more accurate raters. Keywords: subjective evaluation, promotion, supervisor JEL Codes: M5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "∗ This study is conducted as a part of the Project “Human Capital Investment, Role of Management, and Productivity” undertaken at the Research Institute of Economy, Trade and Industry (RIETI). The draft of this paper was presented at the DP seminar of the Research Institute of Economy, Trade and Industry (RIETI). We would like to thank participants of the RIETI DP Seminar for their helpful comments. We are indebted to Guido Friebel for inspiring conversations that motivated this study. We are grateful to St ́ephane Bonhomme, Laura Caron, Haoge Chang, Zo ̈e Cullen, Ryosuke Fujitani, Jumpei Hamamura, Takuma Kamada, Munechika Katayama, Takao Kato, Ray Kluender, Daiki Nagata, Shawn Park, Shintaro Yamaguchi, and participants at AASLE 2023 Conference, JEA 2024 Spring Meeting, CTW, COPE 2025, AEM Workshop, and NBER Japan Project Meeting 2025 for their valuable feedback. We also thank Hideo Owan for granting data access and supporting our project at the Institute for Empirical Research in Organizational Economics (EOE), Waseda University. We are especially grateful to the anonymous company that provided the data. The views expressed are those of the authors and do not necessarily reflect those of RIETI, EOE, the company providing the data, or any other affiliated organizations. All results have been reviewed to ensure that no confidential information is disclosed. Kitagawa acknowledges financial support from the Sylff Association (SRG #2456). † Graduate School of Economics, Waseda University. (email: ha13yato@toki.waseda.jp ) ‡ Graduate School of Economics, Waseda University. § Department of Economics, Columbia University and Economics Division, Columbia Business School.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Supervisors play various instrumental roles in organizations, and one of them is employee evaluation. They are often responsible for assessing subordinates’ performance, which can have lasting effects on their career trajectories. From the firm’s perspective, accurate evaluations are essential for allocating talent efficiently and reinforcing incentive systems ( Frederiksen et al. , 2017 ). However, because evaluations are often subjective and shaped by supervisors’ own perceptions, experiences, and interpersonal interactions, they can vary in accuracy. Understanding what accounts for variation in evaluation accuracy across supervisors is therefore critical for improving organizational outcomes. Subjective evaluations are widely used in modern workplaces. This is because employee performance is often difficult to objectively measure, as jobs typically involve complex, multidimensional, and team-based tasks that do not lend themselves to simple metrics ( Baker et al. , 1994 ). In such settings, supervisors’ subjective assessments serve as a key input for personnel decisions, including promotions, bonuses, and role assignments ( Frederiksen et al. , 2017 ). While subjective evaluations can incorporate valuable contextual information, they are also prone to substantial heterogeneity across supervisors, much of which remains unexplained and may reflect differences in accuracy, bias, or managerial ability. In this study, we focus on the accuracy of supervisors’ evaluations and examine how variation in this accuracy affects employee promotion outcomes. We begin by developing a simple model in which supervisors receive noisy signals of subordinate performance and predict that more accurate supervisors generate greater dispersion in assessment scores. Guided by this prediction, we identify accurate raters as those with higher rating dispersion. Using personnel records from a large manufacturing company, we show that employees assigned to accurate raters are promoted at higher rates than those reporting to less accurate ones. We also provide supporting evidence for additional model predictions and examine the characteristics associated with accurate raters. Our model is one in which a supervisor receives a noisy signal of her subordinate’s performance or ability. We assume that the supervisor minimizes the expected squared difference between the true performance and her assessment given the signal she receives. The model predicts that supervisors who receive accurate signals exhibit more dispersed assessment scores across subordinates. The intuition is that when signals are more precise, supervisors rely more heavily on them, whereas when signals are less precise, they tend to base their assessments on the prior mean of the subordinate performance distribution. If the firm’s promotion policy can be approximated as a threshold rule, the model further predicts that employees reporting to more accurate raters are promoted at higher rates. The",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "model also predicts that accurate raters assess high-performing employees more favorably and low-performing employees more critically than less accurate raters. As a result, employees promoted by accurate raters are, on average, of higher quality than those promoted by less accurate raters. To test our predictions, we use personnel records from a large manufacturing company. We restrict our sample to male employees, who account for over 80 percent of the firm’s workforce, as female employees typically follow different career trajectories. The data spans 2006 to 2019, and the main estimation sample includes 6,512 employee-year observations. The firm’s assessment records provide annual evaluation scores and identify each employee’s direct supervisor. We compute the variance of annual subjective assessment scores across subordinates for each supervisor. To isolate variation attributable to supervisors’ ability to differentiate among subordinates, we first residualize assessment scores by partialing out employee, division, supervisor, and year fixed effects. This procedure controls for individual ability, organizational context, leniency differences, and time trends. We use the square root of this variance as a proxy for supervisor accuracy in subjective evaluations and find substantial heterogeneity: switching from a supervisor at the 10th percentile to one at the 90th percentile is associated with an approximately 7.2 percentage-point increase in promotion probability. We estimate an event-study model and find consistent results. In our event-study estimation, we define the event as being assigned a supervisor whose accuracy is above the median and also control for the effect of supervisor switches per se. The event-study estimates indicate that employees are 10.0 percentage points more likely to be promoted three years after being assigned to an accurate rater. By running a quantile regression, we also show that high-performing employees receive more favorable assessments, and low-performing employees more critical ones, when evaluated by accurate raters compared to less accurate raters. We also find that employees promoted under accurate raters are of higher quality than those promoted under less accurate raters, as measured by the number of subsequent promotions they receive after the focal supervisor. These empirical results are consistent with the model predictions. We also examine the characteristics associated with accurate raters. We find that supervisors identified as accurate raters are more likely to be frequent/heavy drinkers, which may proxy for greater social skills or extraversion. Interestingly, however, we do not find a significant advantage for employees who drink when assigned to a supervisor who also drinks, which contrasts with the findings of Cullen and Perez-Truglia ( 2023 ). Supervisors who consistently give higher ratings are less likely to be accurate, plausibly because they fail to differentiate employee performance when scores are shifted toward the upper limit.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Notably, supervisors’ own competence, measured by their promotion speed as used in Minni ( 2023 ), does not explain variation in evaluation accuracy. This paper contributes to several key strands of literature in personnel and organizational economics. First of all, it builds on the classical work that examines subjective evaluations as a response to incomplete performance measurement in modern, multidimensional jobs ( Baker et al. , 1994 ; Holmstrom and Milgrom , 1991 ; Levin , 2003 ). When some tasks are essential but difficult to measure, employees may underprovide effort unless incentives are designed to account for them. Subjective evaluations offer one solution by incorporating harder-tomeasure tasks into incentive schemes, a point supported by both theoretical and empirical studies ( Baker et al. , 1994 ; Bushman et al. , 1996 ; Hayes and Schaefer , 2000 ; Gibbs et al. , 2004 ; Fuchs , 2007 ; Frederiksen et al. , 2017 ; Takahashi et al. , 2021 ). At the same time, the use of subjective evaluations can introduce distortions that undermine organizational effectiveness. Because such assessments rely on individual judgment rather than objective metrics, they are vulnerable to biases such as favoritism, centrality bias, leniency, or discrimination ( Medoff and Abraham , 1980 ; Prendergast and Topel , 1993 , 1996 ; Elvira and Town , 2001 ; Levin , 2003 ; MacLeod , 2003 ; Thiele , 2013 ; Frederiksen et al. , 2020 ). These distortions can weaken the link between performance and rewards, potentially reducing employee motivation and misallocating talent. Our study contributes to this strand of literature by documenting how evaluation accuracy translates to employee career outcomes. Second, we also contribute to the emerging literature that sheds light on supervisor heterogeneity and behavior in employee evaluation. Although performance evaluation plays a central role in incentive contracts, relatively little attention has been paid to the delegation of employee ratings to supervisors and the implications of heterogeneity across supervisors. An important early contribution is Frederiksen et al. ( 2020 ), who document substantial heterogeneity across supervisors in subjective employee evaluations. While their focus is on differences in supervisors’ average rating levels, which they refer to as “leniency bias,” our analysis centers on heterogeneity in rating accuracy, measured by the dispersion in rating scores across supervisors. Other notable contributions to this literature include Kawaguchi et al. ( 2016 ), who document supervisor bias in subjective performance evaluations at a large manufacturing firm, Takahashi et al. ( 2021 ), who show by using data from a carsales company that workers’ reactions to unexpectedly low evaluations vary with supervisor experience, and Haegele ( 2024 ), who finds that managers incentivized to hoard talent rate subordinates lower than deserved. Our findings complement the literature by highlighting the substantial impact of supervisor rating accuracy on employee career outcomes. Third, our findings are also relevant to the more broadly defined literature on delegated assessments by managers. For example, Hoffman et al. ( 2018 ) show that hiring managers",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "who override algorithmic recommendations often select candidates who subsequently leave their jobs early, suggesting inefficiencies in managerial discretion. Similarly, Shukla ( 2025 ) documents that hiring managers systematically discriminate against candidates from lower social classes in the informal screening stage, which is supposed to assess softer information such as candidates’ fit. In contrast, Wu and Liu ( 2020 ) find that delegating hiring authority to local managers improves the average productivity of new hires and enhances store-level performance. Relatedly, Friebel et al. ( 2024 ) show that regional managers possess valuable private information that helps both researchers and the firm predict which stores will benefit most from a new HR policy. Taken together, these studies underscore both the promise and the risk of relying on subjective managerial assessments. Our study extends this literature by quantifying supervisor accuracy in internal performance evaluations and showing its impact on employee career outcomes, thereby highlighting the consequences of delegated discretion in employee performance evaluation. Fourth, we contribute to the growing literature on the role of middle managers and firstline supervisors. Lazear et al. ( 2015 ) show that supervisor quality, measured by value-added to subordinate productivity, can vary substantially even within the same firm. Subsequent studies complement their findings by documenting the importance of specific managerial skills and abilities, such as technical competence, communication, evaluation, interpersonal skills, energy efficiency control, and talent allocation, in shaping managerial quality ( Artz et al. , 2017 ; Kuroda and Yamamoto , 2018 ; Frederiksen et al. , 2020 ; Hoffman and Tadelis , 2021 ; Metcalfe et al. , 2023 ; Minni , 2023 ; Asuyama and Owan , 2024 ). Our work aligns with this direction by emphasizing evaluation accuracy as an important and measurable dimension of managerial quality that affects subordinate outcomes. The rest of the paper is structured as follows: Section 2 explains our conceptual framework. Section 3 describes the data and organizational context of the company. Section 4 presents our empirical strategy and results. Section 5 concludes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 0,
+        "text": "To formalize our idea about supervisors’ evaluation decisions, we present a simple conceptual framework, inspired by Kawaguchi et al. ( 2016 ) and Frederiksen et al. ( 2020 ). We consider a model in which a supervisor evaluates the performance of her subordinate. 1 Assume that subordinate performance is normally distributed, q ∼N ( q, σ 2 q ). The supervisor receives a noisy signal about the subordinate’s ability, b q = q + ε, where ε ∼N (0 , σ 2 s ). Assume q and 1 In this section, we keep the discussion as simple as possible and refer the reader to Appendix A for a more formal treatment.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 1,
+        "text": "ε are independent. Based on this signal b q , the supervisor submits a rating score r . Assume that submitting an assessment deviating from the true ability is costly for the supervisor. Her utility is given by the expected negative value of the squared error of her evaluation, conditional on the signal: E \u0002 − ( r − q ) 2 | b q \u0003 . The intuition behind this assumption is that overestimating a subordinate may harm the supervisor’s reputation if the promoted employee performs poorly in a role he did not merit. On the other hand, underestimating a subordinate can also damage the supervisor’s reputation, as the employee may complain to the HR department about unfair treatment. The supervisor’s problem is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 2,
+        "text": "max r E \u0002 − ( r − q ) 2 | b q \u0003 . (1) By the standard signal extraction exercise, we can show that the supervisor’s optimal assessment r ∗ is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 3,
+        "text": "r ∗ = σ 2 s σ 2 q + σ 2 s q + σ 2 q σ 2 q + σ 2 s b q. (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 4,
+        "text": "We introduce two types of supervisors, indexed by s ∈{ A, N } . Here, A stands for accurate-rating supervisors and N stands for non-accurate-rating supervisors. Accordingly, assume σ 2 A < σ 2 N . The intuition of our specification is that accurate-rating supervisors are more effective in exerting effort to gather accurate information about employees. Assume that the firm’s promotion policy can be approximated by a threshold rule such that the subordinate is promoted when r ≥ t for some given t ≥ q . 2 The assumption t ≥ q is empirically plausible because, in most organizations, fewer than half of employees are promoted to the next level in any given cycle. Note that b q ∼N ( q, σ 2 q + σ 2 s ). Since r ∗ ∼N \u0010 q, σ 4 q σ 2 q + σ 2 s \u0011 , the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 5,
+        "text": "2 Since subjective evaluation is a comprehensive measure of performance, it should capture most of the relevant information used to predict promotion outcomes. If other factors also influence promotion, we can incorporate them into the decision rule as a residual component, and write the promotion threshold rule as r + η ≥ t , where η represents the unobserved residual. As long as r and η are independent, this threshold approximation remains valid. Another concern would be the case where the firm is aware of heterogeneity in supervisors’ evaluation accuracy, reflected in differences in σ 2 s . In this case, it may optimally adjust the promotion threshold to supervisor type, denoted t s . In Appendix B , we show that as long as the firm only noisily observes supervisor types, all subsequent predictions continue to hold, and also that even in the case where the firm perfectly observes each supervisor’s type, all subsequent predictions hold with slight modifications of the statements.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 6,
+        "text": "probability that the subordinate is promoted is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 7,
+        "text": "Pr ( r ∗ ≥ t ) = 1 − Φ p σ 2 q + σ 2 s σ 2 q ( t − q ) ! , (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 8,
+        "text": "where Φ is the normal cumulative distribution function. Let r ∗ A and r ∗ N denote r ∗ under s = A and s = N , respectively. We can derive the following predictions. All proofs are deferred to Appendix D .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 9,
+        "text": "Prediction 1 (Dispersed assessments) Accurate raters receive more precise signals and therefore rely more heavily on those signals, producing more dispersed evaluations. Less accurate raters rely more on priors, leading to compressed scores around the mean. Namely, Var [ r ∗ A ] > Var [ r ∗ N ] .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 10,
+        "text": "Prediction 2 (Higher promotion rate) Since accurate raters produce a wider distribution of scores centered around the same mean, more employees surpass the promotion threshold at the upper tail and get promoted. Namely, Pr ( r ∗ A ≥ t ) > Pr ( r ∗ N ≥ t ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 11,
+        "text": "Prediction 3 (Accuracy and amplified differentials) Accurate raters adjust their evaluations more sharply in response to differences in true performance. This leads to greater separation in scores between highand low-performing employees compared to less accurate raters. Namely, for q ′ > q , E [ r ∗ A | q ′ ] − E [ r ∗ N | q ′ ] > E [ r ∗ A | q ] − E [ r ∗ N | q ] .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 12,
+        "text": "Prediction 4 (Higher quality among promotees) Because accurate raters’ scores better reflect true ability, the set of employees they promote includes fewer false positives and thus has higher average ability than the set promoted by less accurate raters. Namely, E [ q | r ∗ A ≥ t ] > E [ q | r ∗ N ≥ t ] .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 13,
+        "text": "We treat the first prediction as a premise that guides our empirical strategy for identifying accurate raters. In our empirical analysis, supervisors with greater dispersion in assessment scores are identified as accurate raters. The remaining predictions provide testable implications based on this definition of accurate raters. If dispersion captures evaluation accuracy, employees reporting to accurate raters should be promoted more often. This is not because of greater leniency but because precise signals allow stronger performers to stand out and surpass the promotion threshold. At the same time, because all supervisors share the same prior and truthfully report their signals, average scores should remain similar across supervisor types. The model also predicts that accurate raters respond more strongly to differences in true performance, generating sharper score differentials between highand low-ability subordinates. As a result, the set of employees promoted by accurate raters should have higher",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 2,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 14,
+        "text": "average ability than those promoted by less accurate raters. These implications form the basis for our empirical analysis.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 4,
+        "section_name": "General Background",
+        "paragraph_id": 0,
+        "text": "We use unique personnel records provided by a listed manufacturing company in Japan, which remains unnamed. The company’s recent disclosure shows it comprises approximately 7,900 employees on a consolidated basis. Among them, we focus on domestic employees who engage in the company’s core businesses. We further restrict our sample to male employees in the lower pay ranks with no managerial duties, which results in 19,425 employee-year observations of 1,977 unique male employees and their 849 unique bosses from 2006 to 2019. We focus on male employees because male and female employees typically exhibit different career trajectories and the male employees represent the majority of the firm’s workforce. Our dataset combines several primary sources of personnel records from the firm. First, we use annual evaluation records that identify each employee’s direct supervisor and include performance assessments provided by that supervisor. Second, we use pay-grade records. Third, we use annual engagement survey responses, which capture employees’ self-reported attitudes toward their work and workplace environment. Finally, we also utilize annual health check records, which include biometric indicators and lifestyle information. Because employers in Japan are legally required to offer health examinations, coverage is nearly universal. These records also include questions on drinking, smoking, and exercise habits, which we use as potential predictors of supervisor accuracy. We restrict our sample to non-managerial male permanent employees in the lowest paygrade range, which comprises five grades. We define a promotion as any upward movement in an employee’s pay grade. The average annual promotion rate in this group is 13 percent, meaning that approximately 13 out of every 100 employees are promoted each year. Our focus is on frontline supervisors who are in charge of directly supervising the non-managerial workforce. 3 At the study company, frontline supervisors are the ones who submit annual performance evaluations of their direct reports. Employees take their annual evaluations seriously because they are a crucial determinant of their bonuses and promotions. We can identify the supervisor for each employee in December, when annual evaluations are submitted to the company’s human resource management system. The firm periodically rotates employees across different divisions, which enables us to 3 Most supervisors in this company have managerial titles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 4,
+        "section_name": "General Background",
+        "paragraph_id": 1,
+        "text": "observe a sufficient number of supervisor transitions driven by both supervisor and employee transfers. Personnel decisions are centralized to a great extent, and employees do not have a voice in where and with whom to work. An average employee in our sample reported to 3.87 different supervisors over the observation periods. The average span of control ranges from 2.8 to 4.4 employees across years, and the average supervisor-subordinate tenure is 26.3 months. Our sample includes both white-collar and blue-collar workers. More specifically, it includes those with administrative, sales, R&D, and production workers. Employees with administrative roles are those who work in such as accounting, human resource, and public relations divisions. Those with sales and R&D roles are those who are assigned to sales and R&D divisions, respectively. Those with production roles are those who work in the factories and directly engage in the manufacturing process. We observe this job-functional information for each employee-year observation up to the fiscal year 2018. Unfortunately, this information is not available for the fiscal year 2019. From 2006 to 2018, administrative, sales, R&D, and production roles account for 17.9 percent, 22.2 percent, 28.0 percent, and 31.9 percent of our employee-year observations, respectively. Approximately 70 percent of the unique employees in our sample never experienced a change in their job functions, and, in estimation, most variations will be absorbed by the two-way fixed effects. The attrition rate in this company is quite low, ranging from 1.5 percent to 5 percent depending on the year. The average age and tenure are 40.9 years old and 17.1 years, respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 5,
+        "section_name": "Pay Grades",
+        "paragraph_id": 0,
+        "text": "There are five pay grades for non-managerial employees, labeled from the lowest to highest as G1 through G5. Employees who advance beyond G5 transition into managerial roles and become exempt from hourly wage regulations. Pay grades determine both base salary and the applicable range for performance-based bonuses. Each pay grade is associated with a schedule of bonus points, which determine bonus amounts in combination with evaluation results. Figure 1 shows the distribution of bonus points by evaluation grade, with colors indicating employees’ pay grades. Bonus points increase monotonically with evaluation grade. Within each evaluation grade, employees at higher pay grades tend to receive slightly more bonus points, reflecting the firm’s policy of linking rewards to both performance and position. Figure 2 shows how employee pay grades evolve with tenure. At the beginning of their careers, nearly all employees start at grade G1. Within the first five years, most transition quickly to G2, reflecting the firm’s almost automatic promotion practices. After that point, the pace of promotion slows and becomes more varied across individuals. As tenure",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 5,
+        "section_name": "Pay Grades",
+        "paragraph_id": 1,
+        "text": "increases, employees gradually move into higher grades such as G3, G4, G5, and eventually into positions above G5. By around 15 years of tenure, a large share have reached G5 or higher, but some remain in lower grades even after longer careers. This pattern suggests that early promotions are common and largely tenure-based, while later promotions appear more dependent on performance or other criteria. For our main empirical exercise, we define promotions as any increase in one’s pay grade from the preceding year. This definition captures both routine grade progressions and performance-based advancements. Since pay grade is a key determinant of base salary and bonus eligibility, upward movement reflects meaningful career progression within the firm. We focus on transitions within the non-managerial grade range (G1 to G5), where most employees spend the bulk of their early to mid-careers. Demotions are negligibly rare in our sample, with only a few observed cases over the entire period. As a result, we focus exclusively on upward grade transitions when analyzing promotion patterns. We exclude employees who appear in the data for the first time, as we cannot define their promotion outcome without information from the preceding year.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 6,
+        "section_name": "Performance Evaluation",
+        "paragraph_id": 0,
+        "text": "The firm administers annual subjective performance evaluations through a structured process. At the beginning of each fiscal year, the employee and their direct supervisor jointly set performance targets. At the end of the year, the employee discusses their achievements with the supervisor, who then provides an official evaluation. The performance evaluation system remained broadly consistent throughout the observation period, employing a seven-point rating scale in all years. However, the labeling of the scale changed in 2011. Before 2011, ratings ranged from highest to lowest as follows: S, A1, A2, B1, B2, C, and D. From 2011 onward, the labels were revised to SS, S, AA, A, B, C, and D, again in descending order. In both periods, the fourth level from the top (B1 before 2011 and A after 2011) serves as the baseline specified by the firm as the standard for satisfactory performance. Figure 3 compares the distribution of ratings before and after the labeling change. The two distributions are very similar, suggesting the label change did not affect rating behaviors. For the empirical analysis, we use a standardized score for each employee-year rating. Specifically, each score is normalized by subtracting the fiscal-year mean and dividing by the fiscal-year standard deviation. Figure 4 shows the distribution of these standardized scores. The performance ratings used in our analysis are those employed by the firm in determining employee bonuses, making them a consequential and salient component of the personnel system. These evaluations are submitted annually by each employee’s direct supervisor,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 6,
+        "section_name": "Performance Evaluation",
+        "paragraph_id": 1,
+        "text": "typically a frontline manager within the same work unit who observes the employee’s dayto-day activities. Because the evaluations are directly tied to financial rewards and are used to inform promotion decisions, supervisors are expected to take them seriously and provide assessments that reflect actual job performance. Given their institutional role and practical consequences, these scores are well suited for our empirical analysis. They represent the key channel through which supervisors influence career outcomes, and they are available consistently across employees, supervisors, and years. Moreover, the structured and repeated nature of the evaluation process allows us to construct supervisor-specific measures of evaluation behavior such as rating dispersion while controlling for confounding factors like employee ability and organizational context. This makes the evaluation score a credible object of study for examining how variation in supervisor accuracy affects employee careers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 8,
+        "section_name": "Measuring Supervisor Accuracy",
+        "paragraph_id": 0,
+        "text": "Our measurement of supervisors’ accuracy in subjective evaluations is guided by the conceptual framework presented in Section 2 . According to Prediction 1 , supervisors who receive more precise signals about employee performance, that is, more accurate raters, place greater weight on those signals when forming evaluations. As a result, their assessment scores exhibit greater dispersion. In contrast, less accurate raters tend to rely more heavily on prior beliefs, producing compressed scores clustered around the mean. We use this predicted variation in rating dispersion as the basis for identifying evaluation accuracy. Following the model’s prediction, we use the variance of each supervisor’s empirical distribution of assessment scores as a proxy for their evaluation accuracy. Supervisors whose scores exhibit greater dispersion are interpreted as relying more on informative signals and are therefore classified as more accurate raters. Let i index employees and t denote the year of observation. Define d to be the mapping from employee i to his or her division d ( i, t ) in year t and s ( i, t ) to be the mapping from employee i to his supervisor s in t , respectively. Now, we estimate the following regression equation to isolate supervisor-specific variation in assessment scores: y i,t = α i + δ d ( i,t ) + γ s ( i,t ) + τ t + η i,t , (4) where y i,t denotes the subjective performance score received by employee i in year t . The term α i is employee fixed effects capturing time-invariant differences in employee competence. We also control for division fixed effects, represented by δ d ( i,t ) , that absorb differences across",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 8,
+        "section_name": "Measuring Supervisor Accuracy",
+        "paragraph_id": 1,
+        "text": "organizational units. In addition, we include γ s ( i,t ) , which represents supervisor fixed effects, which capture systematic differences in the levels such as leniency, and τ t indicates year fixed effects accounting for time trends in scoring practices or firm-level policies. To exclude variation driven by subordinate competence, supervisor fixed effects, and divisions, we residualize assessment scores using the estimates from equation ( 4 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 8,
+        "section_name": "Measuring Supervisor Accuracy",
+        "paragraph_id": 2,
+        "text": "b η i,t = y i,t − b α i − b δ d ( i,t ) − b γ s ( i,t ) − b τ t . (5) Let S s,t denote the set of employees supervised by supervisor s in year t , that is, S s,t = { i : s ( i, t ) = s } . We use the following quantity as a proxy for supervisor s ’s accuracy in employee performance assessment:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 8,
+        "section_name": "Measuring Supervisor Accuracy",
+        "paragraph_id": 3,
+        "text": "\\ Var [ r ∗ s ] = P T t =1 | S s,t | T X t =1 X i ∈ S s,t ( b η i,t ) 2 , (6)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 8,
+        "section_name": "Measuring Supervisor Accuracy",
+        "paragraph_id": 4,
+        "text": "where b η i,t is the residual from Equation ( 4 ). This expression captures the within-supervisor variance in residualized assessment scores, consistent with the prediction from our model that more accurate supervisors produce more dispersed evaluations. 4 Figure 5 displays the distribution of evaluation variance across supervisors using two different measures. The red bars represent the naive variance, calculated directly from raw assessment scores. The blue bars represent the estimated variance based on residualized scores, which remove variation associated with employee, supervisor, division, and year fixed effects. Compared to the naive measure, the estimated variance is more tightly concentrated, suggesting that some of the variation in raw scores may reflect systematic factors unrelated to evaluation accuracy, such as differences in leniency or subordinate composition. The estimated measure provides a more refined indicator of the degree to which supervisors differentiate among their subordinates. The summary statistics of estimated supervisor accuracy in subjective evaluations is reported in Table 1 . Figure 6 plots the distribution of evaluation scores, standardized within year, separately for employees reporting to accurate and non-accurate raters. Accurate raters are defined as those whose estimated evaluation variance is above the median. Standardization removes year-specific shifts in evaluation levels and spreads due the system reform, allowing comparison across years. While both distributions are roughly centered around zero, evaluations from accurate supervisors exhibit greater dispersion. This pattern is consistent with the model’s prediction that higher variance in scores reflects greater accuracy in performance 4 We also calculate the variance using the leave-one-out approach. The main result with this alternative proxy is reported in Appendix G .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 8,
+        "section_name": "Measuring Supervisor Accuracy",
+        "paragraph_id": 5,
+        "text": "evaluation. To summarize, we use within-supervisor variance in residualized evaluation scores as a proxy for evaluation accuracy, based on the model’s prediction that more accurate raters produce more dispersed assessments. This measure accounts for heterogeneity in employee ability, supervisor leniency, and structural differences across divisions and years. Our empirical analyses that follow will use this proxy to examine whether supervisors who provide more differentiated evaluations also promote higher-quality employees and whether evaluation accuracy is systematically associated with observable supervisor characteristics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 0,
+        "text": "4.2.1 Event-Study Estimation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 1,
+        "text": "We now test Prediction 2 , which states that employees are promoted at higher rates under accurate raters, by regressing promotion outcomes on supervisor evaluation accuracy. We begin by estimating the following event-study model that exploits quasi-random variation in supervisor-employee assignments. Let T i,t be the indicator function that takes 1 if employee i experiences a supervisor transition in year t . We define D i,t to be the treatment variable that takes 1 if employee i starts reporting to an accurate-rating supervisor in year t defined. Accurate-rating supervisors are defined as those whose estimated accuracy is above the median. When an employee experiences more than one supervisor transition over the observation periods, we focus on the first one. We also restrict the sample to employees observed within three years of their first supervisor switch and who continued working under the same supervisor afterward. This ensures that we capture the immediate effects of supervisor changes while avoiding confounding influences from repeated or staggered switches. Limiting to employees who remained with the new supervisor allows us to isolate the effect of supervisor accuracy without additional variation in reporting relationships. This restriction leaves us with 8,141 employee-year observations. Because the first observations are omitted for the reasons explained in Section 3.2 , the promotion analyses use 6,512 observations. We use this estimation sample for the empirical exercises that follow. 5 The event-study model we estimate is:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 2,
+        "text": "y i,t = X k ∈K β D k D i,t − k + X k ∈K β T k T i,t − k + α i + τ t + ε i,t , (7)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 3,
+        "text": "where the fixed effects of employees ( α i ), and years ( τ t ) are controlled. On the left-hand side, 5 We present and discuss the estimates obtained from the full sample in Appendix F .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 4,
+        "text": "y i,t is the dummy variable indicating whether employee i is promoted in year t . We also control for the squares of age and tenure. We set the window within three years from the event, i.e., K = {− 3 , . . . , − 2 , 0 , 1 , 2 , . . . , 3 } . The parameter β D k captures the effect of being assigned to an accurate-rating supervisor among employees who experience a supervisor transition. Our identification relies on the parallel trends assumption, which we assess indirectly using event-study graphs. Substantively, the plausibility of this assumption is supported by the centralized nature of personnel transfers. Neither employees nor supervisors have much discretion in determining their assignment, reducing concerns about endogenous matching. We can also indirectly corroborate our assumption by showing the parallel trends before the event. We cluster our standard errors at the employee and supervisor levels. Figure 7 presents event-study estimates of the effect of being assigned to an accuraterating supervisor on the probability of promotion. The horizontal axis shows years relative to the supervisor switch. The estimates before the switch (years –3 to –1) are close to zero and statistically insignificant, supporting the parallel trends assumption. In the three years following the switch, promotion probability rises by approximately 10.0 percentage points and the estimate is statistically significant, providing evidence of a positive causal effect of accurate-rating supervisors on employee promotions. One possible interpretation of the estimates being significant only in period 3 is that even supervisors with high rating accuracy need time to form confident assessments of their subordinates. Alternatively, it may also simply reflect a lag between accurate performance evaluations and their incorporation into formal organizational decisions, such as promotions. The results are similar when we employ the leave-one-out specification of the supervisor accuracy measure discussed in Section 4.1 . Although cohort-specific effects are less of a concern in our setting, we apply the estimation procedure of Sun and Abraham ( 2021 ) to address the potential staggered nature of supervisor transitions. We also estimate the effects by distinguishing transitions from a non-accurate rater to an accurate raters and transitions from accurate raters to non-accurate raters, with an econometric model similar to Cullen and Perez-Truglia ( 2023 ) and Minni ( 2023 ). For the last two robustness check exercises, though they become less precise and lose statistical significance, the point estimates remain similar. The above three robustness checks are discussed in detail in Appendix G .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 5,
+        "text": "4.2.2 Two-Way Fixed-Effects Estimation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 6,
+        "text": "The event-study estimation shows that promotion rates rise only after employees start reporting to accurate raters. Next, we estimate a simpler regression equation with two-way fixed effects to facilitate interpretation and exploit the full variation in supervisor accuracy rather than dichotomize it by treating accuracy as a continuous measure. Specifically, we",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 7,
+        "text": "estimate the following simple regression equation:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 9,
+        "section_name": "Supervisor Accuracy and Promotions",
+        "paragraph_id": 8,
+        "text": "y i,t = ρ b σ s ( i,t ) + α i + τ t + ε i,t , (8) where y i,t , α i , and τ t denote promotion, employee fixed effects, and time fixed effects, respectively. Here, we use supervisor accuracy as a continuous variable and b σ s ( i,t ) is defined such that b σ s ( i,t ) = \u0010 \\ Var [ r ∗ s ( i,t ) ] \u0011 1 / 2 . We cluster our standard errors at the employee and supervisor levels. Table 2 presents regression results examining the relationship between supervisor evaluation accuracy and employee promotions. The estimates are positive and statistically significant, suggesting that employees evaluated by more accurate raters are more likely to be promoted. From Table 1 , the difference in supervisor accuracy between the 10th and 90th percentiles is 0.90. Multiplying this by the coefficient from Column (4) of Table 2 , we find that this variation is associated with a 7.2 percentage-point increase in promotion probability (0 . 90 × 0 . 0808 = 0 . 072). Taken together with the event-study regression result in Section 4.2.1 , our results are consistent with Prediction 2 , which states that employees assigned to accurate-rating supervisors are more likely to be promoted.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 10,
+        "section_name": "Heterogeneity Across Evaluation Quantiles",
+        "paragraph_id": 0,
+        "text": "Next, we test Prediction 3 , which states that accurate-rating supervisors better differentiate between highand low-performing subordinates by assigning systematically higher ratings to more capable employees and lower ratings to less capable ones than less accurate raters would. To examine this, we investigate whether the effect of supervisor accuracy on employee evaluations is heterogeneous across the distribution of subordinate performance. Specifically, we estimate the following equation:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 10,
+        "section_name": "Heterogeneity Across Evaluation Quantiles",
+        "paragraph_id": 1,
+        "text": "y i,t = ρ q b σ s ( i,t ) + X ′ i,t β + ξ i,t , (9) with the restriction that Q q [ ξ i,t | b σ s ( i,t ) , X i,t ] = 0 , where subscript q denotes quantiles, Q q [ Y ] is defined such that Q q [ Y ≤ Q q [ Y ] ] = q , y i,t indicates the evaluation score of employee i at year t as evaluated by his supervisor, and X i,t is a vector of controls that include employee i ’s job function, employee i ’s age, tenure, boss age, and their squares in year t , and a constant. Prediction 3 in our conceptual framework suggests that ρ q ′ > ρ q for q ′ > q .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 10,
+        "section_name": "Heterogeneity Across Evaluation Quantiles",
+        "paragraph_id": 2,
+        "text": "Figure 8 presents the results from a quantile regression of performance evaluations on supervisor accuracy, allowing the relationship to vary across quantiles of employee performance. The horizontal axis represents employee performance quantiles (for example, the 15th, 30th, up to the 90th percentile), and the vertical axis shows the estimated association between supervisor accuracy and evaluation scores at each quantile. The results are consistent with Prediction 3 , as the estimated coefficients are negative in the lower tail and positive in the upper tail of the performance distribution. Compared to less accurate raters, accurate-rating supervisors tend to assign lower evaluations to lowperforming employees and higher evaluations to high performers. This indicates that accurate raters differentiate employee performances more sharply. Notably, the pattern is asymmetric. The positive coefficients in the upper quantiles are larger in magnitude than the negative coefficients in the lower quantiles. One possible explanation is that supervisors may be more reluctant to give very low evaluations, due to concerns about discouraging subordinates or harming team morale. 6 As a result, accurate-rating supervisors may still hesitate to give harsh feedback, even when performance is poor, while being more willing to reward strong performance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 11,
+        "section_name": "Quality of Promoted Employees",
+        "paragraph_id": 0,
+        "text": "Finally, we test Prediction 4 , which states that employees promoted under accurate-rating supervisors are of higher quality than those promoted under less accurate raters. We examine employee performance after the termination of the focal supervisor-subordinate relationship. Specifically, we compare employees who were promoted under accurate-rating supervisors to those promoted under less accurate raters, focusing on their performance under a new supervisor. If promotions by accurate raters reflect favoritism or non-performance-related factors, we would expect these employees to perform no better or even worse than those promoted by less accurate raters. In contrast, if accurate raters are better informed about employee ability, then employees they promote should outperform those promoted by less accurate raters. We first restrict the sample to employees who experienced at least one supervisor change during the observation period. Next, we focus on those who were promoted while reporting to the supervisor they received in their first boss switch. We then track the number of subsequent promotions these employees receive after they begin reporting to a new supervisor, that is, following a second boss switch. We use promotion as our outcome measure because it 6 Morita ( 2025 ) studies how supervisors balance the developmental benefits of negative feedback against the risk of lowering worker confidence, and shows that those with higher evaluation ability are more likely to suppress negative feedback.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 11,
+        "section_name": "Quality of Promoted Employees",
+        "paragraph_id": 1,
+        "text": "serves as a holistic indicator of employee performance, as used by Minni ( 2023 ) for the same reason. This procedure yields a cross section of employees promoted under accurate-rating supervisors and those promoted under less accurate raters. Using this cross-section sample, we estimate the following quasi-Poisson count model:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 11,
+        "section_name": "Quality of Promoted Employees",
+        "paragraph_id": 2,
+        "text": "ln E [ (# of promotions) i | D i , X i ] = ρD i + X ′ i β , (10) where D i indicates whether employee i was assigned an accurate rater for the first supervisor switch and X i is a vector of controls that include age, tenure, and their squares, when they were promoted. If accurate-rating supervisors effectively differentiate subordinates with high ability from others, then employees promoted under accurate raters should perform better than those promoted under less accurate raters. Accordingly, we predict the coefficient ρ to be positive. Table 3 presents the estimation result. The key independent variable is an indicator for whether the employee was promoted under a supervisor with high evaluation accuracy. The coefficient on this variable is positive with the average marginal effect being 0.052, suggesting that employees promoted by accurate raters tend to receive slightly more promotions under subsequent supervisors. The direction of the effect is consistent with Prediction 4 , which argues that employees promoted under accurate raters are of higher quality. 7",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "We have examined how variation in supervisor evaluation accuracy shapes employee careers, focusing on promotions and performance assessments. Building on a simple theoretical model in which a supervisor receives a noisy signal about her subordinate’s performance, we have derived several predictions. Our empirical findings are broadly consistent with the model’s predictions. First, we have shown that employees assigned to accurate-rating supervisors have been promoted at higher rates following supervisor transitions, even after accounting for potential confounders through an event-study design that leverages quasi-random assignment. This supports the idea that the accuracy of subjective evaluations plays a meaningful role in career advancement. Notably, this result is aligned with the empirical findings of Kampk ̈otter and Sliwka ( 2018 ), who show that more dispersed evaluations are associated with higher bonuses. Second, we have investigated the relationship between supervisor accuracy and the content of evaluations across the performance distribution. Using quantile regression, we have 7 This theoretical prediction and its empirical result resonate with Lazear ( 2004 ), who shows that the Peter Principle is more pronounced when the measurement error of ability is large.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "found that accurate-rating supervisors tend to assign lower scores to low performers and higher scores to top performers, relative to less accurate supervisors. These findings suggest that accuracy is associated with sharper differentiation, rather than uniformly more favorable ratings. The positive associations in the upper tail have been stronger than the negative associations in the lower tail. This pattern is consistent with the idea that supervisors may be more reluctant to issue harsh evaluations, possibly due to concerns about discouraging subordinates or undermining team morale. Third, we have examined the career outcomes of employees who were promoted under accurate-rating supervisors by estimating a quasi-Poisson model of subsequent promotion counts. Among employees who received a promotion while working under a newly assigned supervisor, those promoted by accurate raters experienced higher rates of promotion in the following years, relative to those promoted by less accurate supervisors. Although the result is not statistically significant, it is suggestive that promotions made under accurate-rating supervisors are more predictive of continued career advancement. A natural question to ask next is who these accurate raters are and what characteristics predict their evaluation accuracy. Understanding the sources of this supervisor heterogeneity can help organizations identify which supervisors are more or less capable of making accurate performance assessments and use this information to guide management practices and decision-making. It is also important to disentangle this heterogeneity into observable characteristics, as our understanding of what drives the value of non-top managers and supervisors remains limited. By doing so, we contribute to the growing literature on the role and effectiveness of middle management. (e.g., Lazear et al. ( 2015 ); Hoffman and Tadelis ( 2021 ); Friebel et al. ( 2022 ); Metcalfe et al. ( 2023 ); Friebel et al. ( 2024 )). 8 In the next section, we explore which observable supervisor characteristics are systematically associated with higher evaluation accuracy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "4.5.1 Characteristics of Accurate Raters",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "Having documented substantial heterogeneity in evaluation accuracy across supervisors, we now turn to examining which observable characteristics are associated with this variation. Identifying predictors of evaluation accuracy can provide insights into the types of supervisors who are more effective at assessing performance and can help organizations make more informed managerial appointments. To this end, we regress our measure of supervisor accuracy on several supervisor characteristics. While the choice of variables is partly constrained by data availability, it is also based on our educated guess as to plausible factors that may 8 See Roberts and Shaw ( 2022 ) for a comprehensive review.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "influence evaluation accuracy. Those independent variables require explanation in terms of their definitions and the reasons we include them. First, entry year refers to the year the supervisor joined the company, so higher values indicate more recent hires. It is possible that supervisors find it easier to evaluate subordinates with similar tenure, as they may share comparable experiences or viewpoints. On the other hand, having greater experience may help supervisors better distinguish differences in performance, especially when evaluating less experienced subordinates. Since our sample consists of lower-ranked employees, who tend to be relatively early in their careers, the supervisor’s entry year may influence evaluation accuracy in both ways. A similar idea appears in the findings of Kawata and Owan ( 2022 ), who show that workers may be influenced differently by their senior colleagues depending on their own age. This suggests the possibility that proximity in tenure or age could play a role in how supervisors relate to and evaluate their subordinates. For ease of presentation, we refer to supervisors who joined the firm more recently (above the median year of entry) as younger . Second, we define high-flyers as supervisors who were promoted to a managerial position or to grade G4–G5 by the age of 35, which conceivably indicates that the firm regarded them as high-potential employees. 9 This definition follows Minni ( 2023 ), who finds that high-flyers tend to be more effective managers. Specifically, she shows that employees reporting to high-flyers advance more quickly in their careers because these supervisors help guide subordinates to roles with better match quality. Her findings suggest that high-flyers may possess stronger ability to observe and assess their subordinates, which motivates the inclusion of this variable. A dummy variable indicating whether the supervisor is a high-flyer is included in the regression. Third, we include three health-related variables, which come from the mandatory employee annual health check results. First, We include smoking habits as a variable, motivated by Cullen and Perez-Truglia ( 2023 ), who find that shared smoking breaks with managers improve subordinates’ career outcomes. 10 Their study suggests that smoking may serve as a channel for informal interaction, which can in turn influence the accuracy of supervisors’ employee assessments. Second, we include drinking habits for a similar reason, drawing on Wang et al. ( 2023 ), who study drinking as a means of business socializing and examine a policy that bans government officials from attending business banquets. 11 Lastly, we also 9 The average tenure for 35-year-old employees is 10.6 years. As shown in Figure 2 , approximately 25 percent of employees aged 35 and over meet our definition of high-flyers. This share is comparable to the 29 percent reported by Minni ( 2023 ), who define high-flyers as workers promoted by the age of 30. 10 Smoking status is recorded as yes or no in the health check questionnaire. 11 Drinking status is assessed in two ways in the health check questionnaire: one item asks about the frequency of alcohol consumption, and another asks about the amount consumed on drinking days. We construct a binary indicator for drinking status based on these responses. The definition of drinkers is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "include exercise habits, again, motivated by a similar logic. Like smoking and drinking, exercise may also serve as a socializing tool, as several studies have shown that golfing can provide networking opportunities and contribute to business success ( Agarwal et al. , 2016 ; Biggerstaff et al. , 2024 ; Izumi et al. , 2024 ). 12 In addition, these three variables may also capture underlying personality traits or forms of human capital, such as extraversion or social skills, which have been shown to be important attributes for managers ( Hansen et al. , 2021 ). These underlying traits may in turn influence how supervisors interact with others and form accurate performance evaluations. Fourth, we include the supervisor fixed effects estimated from equation ( 4 ) that show how high or low the supervisor tends to rate employees overall. As documented by Frederiksen et al. ( 2017 ), subjective evaluations are often prone to centrality bias and leniency bias. While our conceptual framework well accounts for centrality bias, which less accurate raters should exhibit, we abstract away from leniency bias. Nonetheless, it is conceivable that supervisors’ leniency bias is empirically related to their evaluation accuracy. If supervisors tend to be uniformly lenient, they may have weaker incentives or preference for evaluating subordinates accurately in the first place. Also, more mechanically, when supervisors uniformly give higher ratings, the scores may cluster at the upper end of the scale, leading to lower dispersion due to truncation in the discrete rating system. Last of all, we use the average supervisor satisfaction score based on the firm’s annual employee engagement survey, which reflects how satisfied subordinates are with their supervisor. The survey includes three questions covering different aspects of supervisory behavior: (1) “Do you receive appropriate instructions from your supervisor based on sound judgment?” (2) “Does your supervisor provide you with growth opportunities that match your abilities and personality?” and (3) “Were you satisfied with the beginning-of-year discussion with your supervisor last year?”. Responses are recorded on a threeto six-point Likert scales. We standardize these responses by fiscal year and then compute the average score across all subordinates for each supervisor. 13 As prior studies have documented that managerial skills measured through employee surveys predict various aspects of managerial performance ( Hoffman and Tadelis , 2021 ; Asuyama and Owan , 2024 ), our measure of supervisor satisfaction may similarly provide insight into how supervisors evaluate their subordinates. Table 4 shows the regression result. We find that supervisors who entered the firm more recently tend to be significantly more accurate evaluators. While this may reflect improved provided in Appendix Appendix H . 12 The health check questionnaire asks whether the employee “has engaged in light exercise that works up a slight sweat for 30 minutes or more per session, at least twice a week, for over a year”. Responses are coded as yes or no. 13 See Appendix Appendix I for more detail of the Employee Engagement Survey.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 6,
+        "text": "training or evaluation practices for newer cohorts, it is also conceivable that age proximity between supervisors and subordinates facilitates better understanding and communication, particularly given that our analysis focuses on lower-ranked and generally younger employees. Drinking habit is also positively associated with evaluation accuracy, and the estimate is statistically significant. This result may reflect that supervisors who participate in after-work socializing have more informal opportunities to learn about their subordinates’ performance. It may also capture broader social skills, such as extroversion or interpersonal engagement, which could help supervisors form more nuanced impressions of employee contributions. The coefficient on the estimated supervisor fixed effect is negative and statistically significant. One plausible interpretation is that supervisors who consistently give high evaluation scores have less room to distinguish between employees, because ratings are capped at the top of the scale. In such cases, the low dispersion in scores may result from mechanical limitations rather than an actual inability to assess performance differences, leading to lower measured accuracy. The other characteristics, such as gender, high-flyer status, smoking and exercise habits, and average boss satisfaction score, are not significantly associated with evaluation accuracy. Overall, the result shows that some supervisor traits are associated with differences in evaluation accuracy. In particular, supervisors who joined the company more recently and those who report drinking habits tend to be more accurate. However, the other characteristics show no clear relationship, and a large part of the variation in accuracy remains unexplained. This suggests that there are likely other important factors not captured in our data that contribute to how accurately supervisors evaluate their subordinates. The difficulty of explaining the supervisor-specific accuracy with observable covariates echoes the findings of Metcalfe et al. ( 2023 ), who similarly document that much of the variation in managerial quality is hard to be explained by the available observables in their data. Next, we turn to examining whether employees are more likely to be promoted when they report to supervisors who possess these characteristics. Namely, we investigate whether the correlations between supervisor accuracy and characteristics translate into employee promotions. We use the same specification as in Equation ( 7 ) but with D i,t indicating a transition to a supervisor who possesses the characteristics under consideration. We separately estimate the model for each characteristic. Figure 9 presents the effect of reporting to a supervisor who possesses a given characteristic on promotion probability over time. We examine three traits: being a drinker (panel (a)), being younger (panel (b)), and being lenient in evaluations (panel (c)). The estimates are reported relative to the year before the supervisor switch, which serves as the omitted baseline. The results suggest that drinking and being young may translate to more employee",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 7,
+        "text": "promotions. Reporting to a drinking supervisor is linked to a statistically significant increase in promotion probability in period 3. Also, employees who transition to a younger supervisor experience a marginally significant boost in promotion probability in period 2. While the overall patterns are not uniformly strong across all traits and time periods, these findings indicate that supervisor characteristics can matter for career advancement in specific contexts and time horizons.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 8,
+        "text": "4.5.2 Proximity Advantage in Promotions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 9,
+        "text": "The previous sections have documented substantial heterogeneity in supervisor evaluation accuracy and explored how this variation relates to observable characteristics such as entry cohort, fixed rater tendencies, and managerial trajectories. While some factors like recent entry and drinking have shown significant associations, other potential indicators of managerial quality, such as promotion speed or subordinate satisfaction, are not predictive of evaluation accuracy. This suggests that conventional professional attributes alone may not fully account for differences in supervisors’ ability to assess subordinates accurately. These findings raise the possibility that less formal, interpersonal dynamics may also shape evaluation accuracy. In particular, certain types of proximity or shared traits between supervisors and subordinates, such as age, tenure, or personal habits, may facilitate better mutual understanding and observation. For example, supervisors who are closer in age or tenure to their subordinates or who share behavioral patterns like smoking or drinking may have more opportunities for informal interaction. These interactions can provide deeper insight into employees’ day-to-day effort and contributions. While such settings may not reflect formal managerial skill, they can nonetheless enhance evaluative accuracy by improving supervisors’ exposure to and interpretation of employee performance. Motivated by this possibility, we now consider three types of proximity advantage between supervisors and subordinates in terms of subordinate careers: drinker-to-drinker, youngerto-younger , and smoker-to-smoker advantages . 14 The idea is that when employees report to a supervisor who shares a particular trait or habit, they may get a leg up in promotions due to a stronger relationship or better mutual understanding, which may lead to more accurate evaluations. Building on the empirical framework proposed by Cullen and Perez-Truglia ( 2023 ), we 14 Due to the very limited number of female supervisors in our data, we are unable to examine genderbased proximity effects such as male-to-male or female-to-female matching. Prior studies such as Cullen and Perez-Truglia ( 2023 ) and Fortin et al. ( 2022 ) document that male-to-male advantages are substantial in terms of employee promotions and pay.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 10,
+        "text": "estimate the following event-study model:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 11,
+        "text": "y i,t = X k ∈K β D k D i,t − k + X k ∈K β T k T i,t − k ! × (1 − B i )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 12,
+        "text": "+ X k ∈K θ D k D i,t − k + X k ∈K θ T k T i,t − k ! × B i (11)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 13,
+        "text": "+ α i + τ t + ε i,t .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 14,
+        "text": "Here, y i,t is an indicator for whether employee i is promoted in year t . The event-study variable T i,t − k is defined as in Equation ( 7 ), while D i,t − k now indicates the timing when employee i is assigned to a supervisor with a specific characteristic: smoking, drinking, exercising, or being younger. The key extension in Equation ( 11 ) is the interaction with B i , a dummy variable that equals one if subordinate i shares the characteristic in question with the supervisor. We consider each characteristic separately. A subordinate is coded as “younger” if their entry year is later than the median among all subordinates. This specification allows the dynamic treatment effects to vary based on whether the subordinate and supervisor share the same characteristic, enabling us to test for proximity advantages in promotion outcomes. We estimate the model separately for each characteristic. Figure 10 presents event-study estimates of promotion probabilities around the time of supervisor switches, disaggregated by whether the subordinate shares a given characteristic with the incoming supervisor. Each panel corresponds to a different potential dimension of proximity: smoking (panel (a)), drinking (panel (b)), exercising (panel (c)), and being younger (pangel (d)). In each panel, the purple points represent subordinates who share the characteristic with the new supervisor, while the orange points show those who do not. Across all four dimensions, we do not observe consistent or statistically meaningful differences in promotion patterns between the proximity group and the control group. The estimates tend to overlap substantially, and no systematic divergence emerges before or after the supervisor switch. These null results suggest that proximity along these behavioral or demographic dimensions does not lead to detectable differences in promotion outcomes. This finding contrasts with the results of Cullen and Perez-Truglia ( 2023 ), who document evidence of male-to-male proximity advantage in promotions. In our setting, however, we do not find clear support for similar proximity-based advantages along the observed characteristics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 15,
+        "text": "4.5.3 Employee Survey",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 16,
+        "text": "Rather exploratorily, we examine whether supervisor accuracy is associated with various outcomes by regressing each item from the company’s annual employee engagement survey",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 17,
+        "text": "on supervisor accuracy. The questionnaire items are provided in Appendix I . The regression equation is the same as Equation ( 8 ). Figure 11 shows estimates from each regression. 15 Although most estimates are not statistically significant, there is a general tendency for higher supervisor accuracy to be associated with more favorable employee responses. In particular, the estimate on role-grade match is statistically significant, which may suggest that accurate-rating supervisors are more effective at assigning roles that align with employees’ abilities. It is also notable that the estimate on supervisor guidance is marginally significant, which suggests that these supervisors may be better at providing clear and appropriate instructions, thereby enabling employees to perform their roles more effectively. This pattern may suggest that employees tend to be more satisfied when their supervisors evaluate them accurately. Accurate evaluations may foster greater trust, a sense of fairness, and clearer expectations, which in turn can contribute to more positive perceptions of the work environment. Alternatively, it may reflect that supervisor accuracy is correlated with a particular managerial style that independently contributes to more positive employee perceptions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 0,
+        "text": "This paper has shown that variation in supervisors’ ability to translate noisy signals into performance ratings has first-order implications for employee careers. We developed a simple model in which a supervisor receives a signal of her subordinate’s performance and translate them into assessment scores. The model predicts that more accurate supervisors generate greater dispersion in ratings across subordinates. Using rich personnel records from a large Japanese manufacturing firm, we confirm this prediction empirically: supervisors with higher within-rater variance are more likely to promote their subordinates. We also find evidence consistent with other predictions of the model: accurate raters are more effective at distinguishing performance levels among subordinates and may contribute to the long-run success of the employees they promote, even after they move on to new supervisors. Overall, these results demonstrate that supervisor accuracy, although difficult to observe directly, plays a critical role in shaping internal labor market outcomes. These findings have practical implications for how firms design and monitor their evaluation systems. Because accuracy shows up as greater variation in scores across subordinates, organizations can use this measure to identify supervisors who give overly similar or uniformly high ratings, which reduces the usefulness of evaluations. Simple diagnostic tools, 15 We omit two survey items from the figure due to the large confidence intervals, which makes the figure difficult to interpret visually.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 1,
+        "text": "built into existing HR dashboards, could help flag these cases and support better performance management. In addition, calibration sessions, targeted feedback, and rater training may help promote more thoughtful and accurate assessments. For example, Demer ́e et al. ( 2019 ) and Grabner et al. ( 2020 ) show that calibration committees can reduce evaluation bias among supervisors. It is also notable that Manthei and Sliwka ( 2019 ) and Bernstein and Li ( 2025 ) find that making performance data available to supervisors or employees can increase employee effort, further underscoring the value of performance transparency in shaping behavior. 16 We also find suggestive evidence that supervisors who appear to have more opportunities to socialize or stronger social skills, as indicated by their drinking habits, tend to be more accurate in their evaluations. This may reflect that interpersonal engagement or social skills help supervisors observe and understand employee performance more clearly. Firms may benefit from encouraging structured opportunities for interaction that support better evaluation, while still avoiding favoritism or unfair bias. This view aligns with prior research suggesting that social or interpersonal skills are important traits of effective managers and supervisors ( Artz et al. , 2017 ; Kuroda and Yamamoto , 2018 ; Hansen et al. , 2021 ; Hoffman and Tadelis , 2021 ; Asuyama and Owan , 2024 ). At the same time, caution is warranted. Other studies have shown that social ties can foster favoritism, undermining merit-based decisionmaking and potentially leading to inefficient allocation of resources ( Bandiera et al. , 2009 ; Cullen and Perez-Truglia , 2023 ; Wang et al. , 2023 ). Several limitations point to promising directions for future research. As is typical of any insider econometric work, our analysis focuses on a single firm in one national context, so applying the framework to other sectors, countries, or organizational structures would help assess its external validity. Although we use quasi-random variation in supervisor assignment, stronger causal designs such as experimental interventions or institutional changes could more clearly identify the effect of supervisor accuracy. It would also be valuable to examine how digital tools, algorithmic rating systems, or peer evaluations interact with or substitute for supervisor judgment. A particularly promising direction is to trace the longterm organizational consequences of improved evaluation accuracy, including its effects on talent retention, promotion equity, productivity growth, and innovation. This would provide a deeper understanding of how frontline evaluation practices shape organizational outcomes beyond any single rating cycle.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1411,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 2,
+        "text": "16 There is also experimental evidence from lab and online settings on how to design supervisor incentives or assessment structures to enhance the effectiveness of subjective employee evaluations ( Ockenfels et al. , 2024 ; Kusterer and Sliwka , 2025 ).",
+        "extraction_warnings": ""
+    }
+]

@@ -1,0 +1,810 @@
+[
+    {
+        "paper_id": 1268,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "From the Death of God to the Rise of Hitler ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Sascha O. Becker † Hans-Joachim Voth ‡",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "First draft: October 2022 This version: January 2025",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "Abstract Can weakened religiosity lead to the rise of totalitarianism? The Nazi Party set itself up as a political religion, emphasizing redemption, sacrifice, rituals, and communal spirit. This had a major impact on its success: Where the Christian Church only had shallow roots, the Nazis received higher electoral support and saw more party entry. “Shallow Christianity” reflects the geography of medieval Christianization and the strength of pagan practices, which we use as sources of exogenous variation. We also find predictive power at the individual level: Within each municipality, the likelihood of joining the Nazi Party was higher for those with less Christian first names.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "Keywords: Political Religion; Behavioral Political Economy; Voting; Nazi Party; Protestantism; Shallow Christianity; Political Religion; Paganism. JEL Classification Numbers: N13, N14, N44, P16, Z12, Z18",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "∗ Detailed comments from seminar participants at ANU, ASREC Australasia, Australasian Public Choice Conference Perth, Bonn, Brown, Berlin Applied Micro Seminar, Deakin, George Mason, Ifo, Luxembourg, Stanford (SIEPR), UBC, UPF, UKPOL, UNSW, and UWA Perth, are gratefully acknowledged. Jeanet Bentzen, Mara Squicciarini, J ̈urgen Falter, Mathias Thoenig, Gianluca Russo, Leander Heldring, and Ludger Woessmann provided insightful criticisms and advice. We are particularly grateful to Andreas Stegmann who participated in the early stages of this project. We thank Gabriel Br ̈uster, Florentine Friedrich, Lukas Leucht, Lara von Oertzen, Jens Oehlen, and Piotr Wojcik for research assistance. † Department of Economics, University of Warwick and Monash University; s.o.becker@ warwick.ac.uk . Becker is also affiliated with CAGE, CESifo, CEH@ANU, CReAM, CEPR, Ifo, IZA, ROA, RF Berlin, and SoDa Labs. ‡ Department of Economics, University of Zurich; voth@econ.uzh.ch . Voth is also affiliated with the UBS Center for Economics in Society, CAGE and CEPR.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "“Once religious faith ... had gone, people desperately searched for a new system of beliefs and general principles around which to regroup themselves... they thus created an endless number of new “churches”...”",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "As the role of religion in public life declined from the late 19 th century onwards, new ideologies and totalitarian world views spread. The modern psychology literature emphasizes that humans in general have important spiritual needs from an early age ( Papaleontiou-Louca, Esmailnia and Thoma 2023 ); religious thinking comes natural to children ( Bloom 2007 ). Accordingly, weakness of organized religion may create room for quasi-religious substitutes ( Sheldrake 2012 ). The English writer and theologian C.S. Lewis famously observed: “... spiritual nature, like bodily nature, will be served; deny it food and it will gobble poison.” Along these lines, research in political science has viewed secularization as a key driver of the ideological upheavals of the 20 th century ( Arendt 1951 , Fulton 1987 ). One school of thought argues that support of fascism, communism, and the Nazi movement were a direct consequence of a rising wave of nihilism – Nietzsche‘s “Death of God” ( Gentile 1990 , Voegelin 1939 ). In this perspective, “political religion” can help to resolve the seeming paradox of popular support for transitions from democracy to autocracy. 1 Testing this hypothesis empirically is inherently difficult. Secularization is slowmoving, and may reflect numerous economic, social, and cultural forces. Formal affiliation with churches and religious institutions declined only gradually, and is often not a strong indicator of religiosity. Many trends are national, but cross-country variation is potentially contaminated by a myriad of additional factors. Some examinations of cross-sectional data have tended to reject a direct link between totalitarian movements and (declining) religiosity ( Evans 2007 , Steigmann-Gall 2000 ). In this paper, we show that Shallow Christianity – a lack of deep-rooted Christian beliefs – was an important driving force behind the rise of the Nazi Party in interwar Germany. We exploit quasi-experimental variation in the susceptibility to a pseudo-religious message. In some parts of Germany, Christianity spread as part of a grassroots movement during the first centuries AD. In others, it arrived more than 1,000 years later – and conversion typically occurred under pressure from 1 Classic models of political transitions emphasize expected utility – with a shift from autocracy to democracy (and not the reverse) guaranteeing greater redistribution or wider provision of common goods ( Acemoglu and Robinson 2000 , Lizzeri and Persico 2004 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "kings and nobles. We argue that in areas where Christianity failed to develop deep roots, National Socialism filled the gap as an alternative faith. Contemporary audiences described how listening to the message of the Nazi movement’s charismatic “F ̈uhrer”, Adolf Hitler, filled a spiritual void not least because of the “supernatural, superhuman powers” attributed to him. 2 The Nazi party broadened the appeal of right-wing parties. In Imperial Germany, conservative parties had mainly garnered support from bourgeois voters, pursuing a nationalistic and anti-Semitic agenda without “charismatic” leaders and without offering a substitute religion. The Nazi Party, in striking contrast, gained a mass following across class divides ( Falter 1991 ). It also regularly used religious language and imagery, emphasizing communal rituals, salvation and redemption through the Nazi party and its leader, and the sanctity of the fatherland. Hitler ended many of his speeches with the word “Amen”. Nazi propaganda cast Hitler as Germany’s “redeemer”, and party members professed their “faith” in his mission to “resurrect” Germany’s greatness. The party staged its congresses in “cathedrals of light” and celebrated the movement’s martyrs, sanctifying relics (“blood banners”, etc.). Leading Nazi figures like Heinrich Himmler and Alfred Rosenberg sought to marginalize the Christian churches, and to replace Christian rites with pseudo-religious ceremonies ( Voegelin 1939 ). Along the same lines, the Nazi Party explicitly demanded “religious” fanaticism from its followers, many of whom described their commitment to the party in semi-religious language ( Maier 2006 ). We use three indicators to capture a lack of deep-rooted Christian religiosity in the early 20C Germany. Because parents choose first names, these can provide unique insight into a family’s worldview ( Bazzi, Fiszbein and Gebresilasse 2020 ). Christian first names reflect the strength of Christian identity within families ( Hacker 1999 , Andersen and Bentzen 2022 ). We analyze first names in the German population at large, using data from lists of WWI casualties. We also use newly digitized data from the Atlas der Deutschen Volkskunde (ADV) , a nationwide survey of local folklore and traditions in the 1930s. It contains information on superstitious/pagan beliefs; these were markedly more common in areas with a lower frequency of Christian first names. As a third indicator of Christian religiosity in early 20C Germany, we use data on the share of notable people with religious occupations. From these three components we extract the first principal component, and use it as a measure of Shallow Christianity. In our main empirical analysis, we show that this indicator of Shallow Christian2 The concept of charisma is religious in origin, and emphasizes a leader’s extraordinary, even supernatural powers. Max Weber ( 1968 ) famously considered charisma one of the three main forms of political legitimacy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "ity and its constituent components predict higher Nazi vote shares across all elections and more frequent Nazi party entry. 3 Our IV-strategy suggests that the link is causal. We exploit the geography of Christianization in Northern Europe. Monasteries were a key driving force of Christianization, especially outside the formerly Roman areas. As indicators of medieval religiosity, we use distances to pre-1500 monasteries ( Nieders ̈achsische Akademie der Wissenschaften 2023 ) and to sites of pagan cults. Since many monasteries were closed down during the Reformation period ( Cantoni, Dittmar and Yuchtman 2018 , Heldring, Robinson and Vollmer 2021 ), the exclusion restriction is likely to hold: (lack of) medieval religiosity only affects our outcomes via its legacy effect on Shallow Christianity in the 1920s and 1930s. Hundreds of pre-Christian places of worship have been documented all across Germany – from “Heidenh ̈ohlen” (pagan caves) to places of ritual sacrifice, including human sacrifices. Medieval conversion of the local pagan population reached these areas later, as reflected in a lower density of monasteries. Distance from places of pagan worship and from medieval monasteries predict Shallow Christianity in the 1920s and 1930s, and in turn, Nazi voting. In combination, these results document a consistent pattern of (a lack of) medieval Christian religiosity (stemming from late Christianization), leading to more “Shallow Christianity” in early 20C Germany, and ultimately, higher Nazi support. Protestantism also predicts Nazi voting. An important study by Spenkuch and Tillmann ( 2018 ) shows that it outperforms socio-economic variables in terms of predictive power, and concludes that this is partly due to Catholics having their own party, the Centre Party (Zentrumspartei). Here, we explore a complementary perspective and examine why Protestantism is strongly associated with Nazi support. Our results suggest that Christianity’s shallow roots are one key factor. Because Shallow Christianity strongly predicts the spread of Protestantism, the share of Protestants in a county is a bad control for our analysis. We show that the adoption of Protestantism can be predicted by both Shallow Christianity and proximity to Wittenberg (as in Becker and Woessmann ( 2009 )). Even within areas where Protestantism spread for exogenous reasons (i.e. those close to Wittenberg), we find that “shallower” Christianity predicts more support for the Hitler movement. We complement these results by analyzing the first names of Nazi Party members, and of party leaders. Relative to the location-specific norm, they are less likely to have a Christian first name. This suggests that issues of ecological inference are not crucial for our results; the family in which children grew up, and the importance they 3 The one exception is the 1928 election, when the Nazi party’s overall vote share was miniscule and it had not yet secured a base of mass support.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "gave to Christianity, is a relevant predictor of involvement with the Nazi movement. Nazi leadership in any one location was even less Christian in its naming pattern than either the local population or Nazi party members. These results shed light on spiritual needs as a key driver of political legitimacy 4 and sources of support for extremist movements. Hitler’s charisma may have propelled him into his position of quasi-religious leader of a political movement. Traditional models of populism and the rise of the Nazis emphasize economic hardship and a commitment to redistribution, or cultural and ethnic cleavages as key motivators. 5 Marxist theories Moore (e.g. 1966 ), Hamilton (e.g. 1982 ) focus on big business support (the Nazi Party as an agent of monopoly capitalism) and “petty bourgeois” support. Modernization theory ( Dahrendorf 1965 ) posits that fascism resolved and completed German society’s “unfinished” modernization. Totalitarianism theory ( Arendt 1951 , Ortega y Gasset 1985 , Nolte 1965 ), in contrast, sees fascism and communism as two expressions of the same phenomenon, arguing that industrialization created “rootless masses” ready to be recruited. Along similar lines, work in political theory on political religions ( Voegelin 1939 , Gentile 1990 , Maier 2006 ) emphasizes how totalitarian ideologies gather support by appealing to transcendental meaning. We examine the political religion hypothesis empirically. 6 We emphasize the importance of a confluence of Shallow Christianity on the one hand, and the appeal of a movement harnessing the power of religious symbolism, myths, and supernatural powers of a leader. Our study is the first to provide causal evidence based on granular data of the effect of (susceptibility to) transcendental, otherworldly legitimacy on political outcomes. Our study contributes to the understanding of how large segments of a highly educated population can come to support an authoritarian movement.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 2,
+        "section_name": "Historical Background",
+        "paragraph_id": 0,
+        "text": "In the first part of this section, we describe the spread of Christianity in Europe over the last two millennia. While all of Europe eventually became notionally Christian, late-converting areas never developed a deep-rooted attachment to the Christian 4 This is a point distinct from religious legitimization whereby rulers justify their rule by divine election ( Rubin 2017 ). 5 Economic interpretations in particular grapple with the challenge that the group most affected by the Great Depression, the unemployed, overwhelmingly supported the Communists, and not the Nazis. For recent evidence on the role of economic factors, cf. Doerr et al. ( 2022 ), Galofr ́e-Vil`a et al. ( 2021 ). 6 Based on correlational patterns and anecdotal evidence Steigmann-Gall ( 2000 ) concluded that Nazi support was not driven by a lack of religiosity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 2,
+        "section_name": "Historical Background",
+        "paragraph_id": 1,
+        "text": "faith and doctrine. 7 In the second part, we provide a brief overview of the Nazi Party’s rise to power, and the pseudo-religious features of the party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 3,
+        "section_name": "The Spread of Christianity",
+        "paragraph_id": 0,
+        "text": "Christianity spread slowly across Europe. More than a millennium separates the earliest dates of conversion from the final ones. In Southern Europe, the first Christian communities were founded in the first century. In contrast, it took until the 14 th century before the last parts of Northern Europe converted to Christianity. 8 Under Roman rule, “Christianity was a mass movement that spread primarily through personal efforts by the rank and file to convert their relatives, friends and neighbors” ( Stark 2004 , p. 104). Eventually, it became the official state religion in 380 AD under Emperor Theodosius I. 9 By late antiquity, under the Roman Empire, many areas had dense networks of churches (see Fletcher 1997 , p. 47). In contrast, outside the Roman Empire, the Church “did little to evangelize the general population”( Stark 2004 , p. 104). After the fall of Rome, Christianity mainly spread through top-down conversions of rulers and the nobility, as was the case in Scandinavia and the Frankish kingdom. In Eastern Europe, Christianity was introduced by a mix of Christian settlers, Christian missionaries ( Wood 2001 ), and via crusades. Newly-founded monasteries contributed to the spread of Christianity, especially in Northern and Eastern Europe ( Davis 2018 ). Areas of Roman settlement in Germany were home to early Christian communities. Nonetheless, it took until the 13 th century for the last German areas to convert to Christianity. The first major wave of conversions to Christianity in the German lands beyond the former borders of the Roman Empire occurred in 496 AD, when the Franks under Clovis became Christians. The last Germanic people on the territory of modern-day Germany to be converted to Christianity were the Saxons during the second half of the 8 th century. The territory east of the rivers Elbe and Saale was populated by Slavic tribes. There, both crusades and Germanic settlers spread Christianity. 10 7 Andrew Greeley ( 1995 , p.63) even argues that: ‘there could be no de-Christianization of Europe ... because there never was any Christianization in the first place. Christian Europe never existed.’ 8 Lithuanians were converted in the 1380s. 9 Prior to this, the Edict of Milan in 313 had allowed Christians and Romans of all faiths ‘liberty to follow that mode of religion which to each of them appeared best’. This, as well as Emperor Constantine’s baptism in 337 AD, are generally seen as important contributors to the rapid rise of Christianity. 10 Examples are the Wendish Crusades in the 12 th century and the Prussian crusades in the 13 th",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 3,
+        "section_name": "The Spread of Christianity",
+        "paragraph_id": 1,
+        "text": "Late conversion to Christianity – often ordered from above, or under the threat of violence – was usually only skin-deep. In the 11 th century, Adam of Bremen used the word “pseudo-Christians” to describe recent converts. Stark ( 2001 ) concluded that “neither the exclusive commitment to Christianity nor the high levels of personal piety exhibited by the early Christians ever developed among the majority of people in northwestern Europe.” The Reformation was more successful in North-Eastern Germany - the same parts of the country where Christianity arrived late. Where Catholic doctrine was not firmly entrenched, the new faith spread more easily. 11 Protestantism also did not lead to effective indoctrination. As Parker ( 1992 ) observed: “[. . . ] the surviving evidence indicates a widespread inability [. . . ] to create an acceptably pious laity”. Church visitations, designed and instituted to enforce religious doctrine, uncovered case after case of pastors preaching to empty churches, clerics not knowing the basics of the faith, and almost complete ignorance of church teachings among the laity ( Strauss 1975 ). Martin Luther himself lamented:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 3,
+        "section_name": "The Spread of Christianity",
+        "paragraph_id": 2,
+        "text": "“ Dear God help us, what misery have I seen! The common man, especially in the villages, knows absolutely nothing about Christian doctrine; indeed, many pastors are in effect unfit and incompetent to teach. Yet they are all called Christians, are baptized, and enjoy the holy sacraments even though they cannot recite either the Lord’s Prayer, the Creed or Commandments. They live just like animals ... ” ( Parker 1992 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 3,
+        "section_name": "The Spread of Christianity",
+        "paragraph_id": 3,
+        "text": "Differences in the timing and depth of Christian conversion have important repercussions to the present day. Using data from 16 European countries, Stark ( 1999 ) shows that the number of centuries since Christianization has a correlation coefficient of 0.89 with the share of Catholics in 1996 – Protestantism was more successful in areas that converted later. At the regional level, and focusing on popular religion, Rothkrug ( 1980 ) and Pfaff ( 2013 ) demonstrate that Protestantism was less successful where the cult of the saints was highly developed, such as in the Low Countries, the Rhineland, or the South of Germany. At the same time, Stark ( 1999 ) shows that the number of centuries since Christianization has a correlation of 0.72 with church attendance in the late 20 th century, using the 1990-1991 World Values Survey. In other words, the timing of Christianization predicts both the success of the Protestant Reformation, and also popular participation in organized religion in the 20 th century, across religious denominations. and 14 th centuries, in which the Teutonic Order played an important role. 11 See Ekelund, H ́ebert and Tollison ( 2002 ), Bercea, Ekelund Jr and Tollison ( 2005 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 0,
+        "text": "The Nazi Party was founded in Munich in 1920. Initially committed to an immediate, violent overthrow of the democratic order, it staged an ill-fated coup in 1923. Afterwards, the party was banned, its leaders in exile or in jail. Adolf Hitler was released from prison in late 1924. As restrictions on the party were repealed, it began to compete again in state and national elections. In 1928, the party scored a paltry 2.6% of the national vote. It appeared destined for obscurity. Its electoral fortunes began to change after 1929, after the onset of the Great Depression and the fall of the last democratic government with a parliamentary majority. In 1930, the party participated in a broad coalition of bourgeois and right-wing parties agitating against the Young Plan, a rescheduling of Germany’s reparation obligations. In the national election in September 1930, the party achieved a major breakthrough, receiving 18.3% of the vote. As the German economy continued to deteriorate and the country’s financial system collapsed, its vote share surged, becoming the largest party in parliament in 1932. The Nazis did particularly well in rural areas of Northern Germany, where Christianization arrived late and, as a result, was less deeply rooted. 12 Hitler was narrowly defeated in his bid to become President in 1932. Eventually, he was appointed Chancellor at the head of a coalition of right-wing parties in January 1933 ( Fest 1973 ). The Nazi Party as a quasi-religious movement. The Nazi Party itself used religious language and imagery aggressively, often casting itself as an alternative to established religion. For example, the party youth movement, the Hitlerjugend , used in its official song the following stanza:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 1,
+        "text": "“ We are the happy Hitler Youth; We have no need for Christian virtue; For Adolf Hitler is our intercessor And our redeemer No priest, no evil one Can keep us From feeling like Hitler’s children. Not Christ do we follow, but Horst Wessel! 13 Away with incense and holy water pots ... ” ( Helmreich 1979 , p. 267)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 2,
+        "text": "Even simple, everyday activities like greetings were infused with quasi-religious imagery – “Heil Hitler” means, literally, “salvation Hitler.” Party congresses regu12 Their success in such areas initially startled the party, and drew early attention by social scientists (e.g. Loomis and Beegle ( 1946 )). 13 After being shot by Communists in 1930, the Nazi storm trooper Horst Wessel became a “martyr” of the Hitler movement.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 3,
+        "text": "larly involved batteries of flak lights, forming “cathedrals of light” above the participants, lending an air of religious celebration to the political gathering. Other rituals involved even more overt pseudo-Christian symbolism. In staged ceremonies, the “blood banner” of the movement, carried during the failed putsch of 1923, would be held over other flags, thereby “sanctifying” them during a ceremony known as Fahnenweihe (“banner consecration”). Similarly, in 1928, the party faithful gathered in the city of Kaub, on the Rhine, where Bl ̈ucher’s army had crossed in 1813 while chasing Napoleon out of the country. There, they cleansed themselves in the waters, washing away the “sin” of defeat in WWI and the allegedly shameful November revolution in 1918. Pagan rituals like celebrations of the summer and winter solstice were publicly celebrated, and leading Nazi organizations like the SS sought to replace church ceremonies for life events like weddings with their own celebrations. Leading members conceptualized the party and its mission in religious terms. Joseph Goebbels, who regularly referred to Hitler as a ”demi-god”, wrote in his diary in October 1928: “One day soon NS [national socialism] will be the religion of all Germans. My party is my church. And I believe I serve the Lord if I do his will and liberate my oppressed people from the fetters of slavery. That is my gospel.” ( Goebbels ( 1970 ), entry: 16 Oct 1928.) Abel ( 1938 ) collected essays by Nazi party members on ”how they came to join the party”. 14 His collection offers unique insight into the mind of Germans joining the Nazi party. While clearly a selected sample, there are no other cases of openended documents written by individuals themselves, reflecting on their motivations. Many themes and topics are touched on in these essays ( Merkl 1975 ). Here, we highlight the importance of religious symbols and concepts. The submission of Agnes Mosler-Sturm, of Berlin-Spandau, illustrates the importance of religious imagery. She speaks about how",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 4,
+        "text": "“ a revelation illuminated us – he [Hitler] is the German savior ! [...] civil war broke out, everything high and holy was trampled into the mud by the animalistic, jewish-marxist, ... masses. With [...] most holy indignation we fight for Hitler and his idea [...] a single scream of redemption : Adolf Hitler is chancellor [...] new hope, new faith , new power emerges from the German people like an enormous stream [...] a great, good, and strong people stand up courageously, to follow its only god-given F ̈uhrer and savior – Adolf Hitler... ” The word “holy” appears 227 times in the 344 transcribed biographies, 15 “faith” 14 The party itself gathered similar evidence on motives for joining ( Falter et al. 2022 ). 15 Out of 597 biographies submitted, 344 have been transcribed by the Hoover Institution at",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 5,
+        "text": "(glauben/Glaube) 575 times, “religion” 104 times, and “redemption” 10 times. For comparison – “Jew/Jews” gets 597 hits, “fatherland” 613, and Hitler, 1858. In what sense was the Nazi party a quasi-religious movement? Norenzayan ( 2010 ) emphasizes four main features of religions: counter-intuition, commitment, communion, and compassion. The Nazi movement and its rhetoric speaks to all four of these dimensions: Hitler is cast in the role of Germany’s saviour, sent by providence; the party emphasizes the importance of costly sacrifice for the German nation; it stages emotion-arousing rituals, creating a sense of communion; and it promises to relieve existential anxieties by creating a glorious Thousand Year Reich, giving meaning to the lives of ordinary party members. We are not the first to highlight the pseudo-religious side of the Nazi party, and other totalitarian movements like Communism. The Italian historian Gaetano Salvimini, writing in 1932, already observed:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 6,
+        "text": "“ Dictators need myths, symbols, and ceremonies to regiment, excite, and terrify the multitude and suffocate their every attempt at independent thought. The Catholic Church’s fantastic and grandiose ceremonies and mysterious rituals in a strange language are masterpieces of their genre, and fascists and communists copied these models when they appealed to the irrational instincts of the crowd ... ”(cit. acc. to Gentile ( 2006 ))",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 7,
+        "text": "Bracher ( 1971 ) similarly speaks of “grotesque practices” that “testified to the quasi-religious impact” of Nazi propaganda. Mosse ( 1975 ) observes that in Nazi gatherings, “...the symbolic content [. . . ] took priority, the ritual expression of a shared worship that was so crucial to their sense of belonging.” However, historians remain divided on the overall importance of religious elements for the appeal of the Nazi party. Schreiber ( 2009 ) contends that the notion of the Nazi movement as a quasi-religious cult was analytically “empty”. Other historians argue that the religiosity of Nazi language was only skin-deep, and a cheap form of propaganda ( Mommsen 2003 , Hockerts 2003 ). Steigmann-Gall ( 2000 ), analyzing crossmunicipality patterns of church attendance, concluded that “enough evidence is at hand to discount categorically the long-held supposition that the Nazi movement got its strength primarily from Protestants who had lost their faith or experienced a Nietzschean ‘Death of God’”. 16 Finally, Evans ( 2007 ) concluded that ”Nazism certainly did borrow language and ritual from religion, but far from attracting people Stanford. 16 His analysis compares Nazi support in areas of high vs low church attendance. However, low-attendance areas are typically urban, where Nazi support was generally low. Steigmann-Gall does not control for confounding factors. Therefore, these broad correlational patterns offer little insight into the question whether lack of religiosity boosted support for the Nazi party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 4,
+        "section_name": "The Rise of the Nazi Party",
+        "paragraph_id": 8,
+        "text": "searching for spiritual commitment in a secularized world, it was least attractive to the most secularized and most anti-Christian part of the population...”. 17 However, despite numerous, forceful, and contradictory statements by leading historians, there is as yet no systematic, quantitative analysis of the hypothesis that Shallow Christianity contributed to the rise of the Nazi party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "We draw on a number of data sources. Here, we briefly summarize how we used them to compile our data.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 6,
+        "section_name": "The German Folklore Atlas",
+        "paragraph_id": 0,
+        "text": "Over the period 1930-35, German anthropologists under Fritz B ̈ohm conducted a systematic study of German folklore (“Atlas der Deutschen Volkskunde” - ADV). They sent out a total of five questionnaires with 243 items to about 14,000 locations all over Germany, asking questions ranging from harvest rituals to the meaning of certain birds in local culture and the restrictions placed on newly-weds ( Harmjanz, R ̈ohr et al. 1937 ). After 1945, the material – in the form of 4.5 million file cards – was transferred to the University of Bonn. The anthropologists conducting the survey sought to cover all German-speaking areas. They sent questionnaires to even the smallest hamlets, typically to the local elementary school teacher. These locations were mapped onto a unique system of grid-cells. Since we are interested in the survival of pagan beliefs, we digitized all the file cards for question 176a in the ADV: “Are there certain people, according to the people’s opinion, who have the power to see the future?” We chose this question because it is of general interest, and common to many pagan religions. The question was asked in 13,953 locations. Since many of the locations used in the ADV survey do not readily correspond to modern-day municipalities, we geocode the – finelygrained – grid-cell reference for each file card, and then aggregate the answers to modern-day counties. In this way, we seek to reduce measurement error. 18 17 Relatedly, Selb and Munzert ( 2018 ) focus on Hitler’s charisma and the electoral effect of his speeches. They find little or no effect. However, for logistical reasons, Hitler’s appearances were scheduled in more populous urban areas, where the Nazi party in general struggled to find support. 18 Braun ( 2023 ) demonstrates the high reliability of the ADV respondents by exploiting the fact that some questions were asked repeatedly, in successive years, yielding multiple reports from different experts living in the same locality. He finds near-perfect agreement between different experts in the same locality.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 7,
+        "section_name": "German casualty lists and first name indices",
+        "paragraph_id": 0,
+        "text": "Historians have long used Christian first names as markers of the Christian identity of the parents ( Hacker 1999 ). To assess how Christian naming practices are in any one location, we need a representative sample of first names, and a method to assign religiosity to a particular name. We scrape the German casualty list for WWI from des.genealogy.net to obtain a distribution of male first names across localities. Germany suffered 7.8 million male casualties – 2 million dead and the rest wounded, missing in action or imprisoned – during the years 1914-18. Since Imperial Germany used conscription, we consider the casualty list akin to a random sample. 19 We geocode the place of residence of each casualty and then assess how religious their first name is. We define Christian first names as those used on major medieval churches in Germany, 20 e.g. St. Peter or St. Wolfgang, and compute the share of such names in the local population. To the extent that some names are more commonly used than others, there is a risk of classifying a name as Christian merely because it is used by many parents. To address this issue, following Andersen and Bentzen ( 2022 ), we construct a religious-names index (RNI) that assigns a higher score to names that are a) common on churches and b) rare among the population, using the approach in Fryer and Levitt ( 2004 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 8,
+        "section_name": "Share of religious notables",
+        "paragraph_id": 0,
+        "text": "Using the comprehensive dataset on notable individuals collected by Laouenan et al. ( 2022 ), we examine the share of religious individuals among all “famous” people in a location. This can serve as an indicator of how religious the more educated parts of the population are. We use the share of religious notables who died in 1900-1930 as an additional indicator of interwar religiosity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 8,
+        "section_name": "Share of religious notables",
+        "paragraph_id": 1,
+        "text": "3.4 Gravestones Zelinsky ( 2007 ) argues that the incidence of religious symbols, iconography, or religious text (e.g. bible verses) on gravestones reveals the religiosity of the deceased. 21 We scrape the images of gravestones from the website grabsteine.genealogy.net , and extract the years of birth and death of the deceased. We manually code whether 19 The overwhelming share of casualties were inflicted by artillery; this makes them as good as random. 20 These are drawn from the data collected by Buringh et al. ( 2020 ). 21 Others have used gravestones to study the effect of religiosity on longevity ( Ebert et al. 2020 ) and the effect of war on religiosity ( Berkessel, Ebert and Mill 2023 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 8,
+        "section_name": "Share of religious notables",
+        "paragraph_id": 2,
+        "text": "a gravestone features a cross, or praying hands, and other markers of Christianity. We then compute the share of deceased whose gravestone features markers of Christianity as an alternative measure of religiosity at the county level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 9,
+        "section_name": "Nazi voting",
+        "paragraph_id": 0,
+        "text": "We use election data collected by Falter and H ̈anisch ( 1990 ). The source for their database are the official electoral statistics of the Weimar Republic (Statistik des Deutschen Reiches). The vote for each party is calculated as the ratio of the number of valid votes received by a party, divided by the total number of valid votes cast. We use data for the parliamentary elections in 1928, 1930, 1932 (July and November) and 1933. We also use results of the first and second round of the Presidential Elections in March and April 1932.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 10,
+        "section_name": "Nazi party entry",
+        "paragraph_id": 0,
+        "text": "Our starting point is the Nazi membership sample drawn by J ̈urgen Falter’s research group, and described by Schneider-Haase ( 1991 ). It comprises close to 31,000 records of members that joined the party in the year 1928 to 1932, the five years before the Nazis come to power in January 1933. In addition, we hand-collected data from an additional 6,000 records on Nazi party entry at the German Federal Archive in Berlin. The German federal archives have sorted them alphabetically by family name, first name and date of birth. The Nazi membership records, originally kept in file drawers containing several hundred membership records each, are today available electronically as images. However, only every 50th card is electronically indexed. We deliberately focus the year 1930, which is the first year when the Nazis made a substantial electoral breakthrough, dramatically increasing their number of seats in the Reichstag from 12 to 107, while becoming the second-largest party in parliament. Overall, we use 36,964 records in total.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 10,
+        "section_name": "Nazi party entry",
+        "paragraph_id": 1,
+        "text": "3.7 F ̈uhrerlexikon To gather additional information on leading party members, we use information from the 1934 F ̈uhrerlexikon ( 1934 ). Published to give an overview of the “New Germany” under the Nazis, it listed men in leading positions across the country. A total of 1,700 short biographies are presented. Figure A.1 shows a typical entry. August Herwegen was the president and highest-ranking judge at the Oberlandesgericht Breslau, the top tribunal in Silesia. Born in Cologne in 1879, he studied law in Switzerland and Germany, became",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 10,
+        "section_name": "Nazi party entry",
+        "paragraph_id": 2,
+        "text": "a judge, and then served in World War I. In July 1932, he joined the Nazi party. We digitize all entries in the F ̈uhrerlexikon , and analyse the first names of the Nazi elite. We allocate individuals to their place of birth. Figure A.2 gives an overview of the geographical origins of “leaders” in our source.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 11,
+        "section_name": "Medieval monasteries",
+        "paragraph_id": 0,
+        "text": "While the travels of individual missionaries are only rarely documented, and information on the foundation years of local churches and chapels are patchy at best, the foundation years of monasteries have been recorded widely and accurately as a result of better record-keeping by monastic orders. We use information on monasteries collected by the Nieders ̈achsische Akademie der Wissenschaften ( 2023 ) to measure the spread of “institutionalized Christianity” across the German lands. We focus monasteries founded before 1500 since many monasteries were closed during the Reformation period. 22",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 12,
+        "section_name": "Places of pagan worship",
+        "paragraph_id": 0,
+        "text": "All across Germany, for thousands of years before Christianization, people worshiped pagan gods. While local practices varied greatly, and few direct sources describe these practices, the remnants of rituals and symbolic centers of pre-Christian religion remain in many places. For example, near the city of G ̈ustrow, we find the so-called “Stone Dance of Boitin” – a set of four concentric stone “circles”. Constructed between 600 and 400 BC, archaeologists surmise that the area served as a prehistoric calendar and/or as a funerary chamber. In other places, there is evidence of use of the location for religious purposes until the time of Christianization. In Niederdorla, for example, a moor was used for pagan sacrifices (including human sacrifices). Bones and ceremonial gifts from the period 600 BC to 1100 AD have been excavated by archaeologists – a period of use of at least 1700 years, markedly longer than the total duration of Christian presence in the area up to the present. We scrape the locations of all known pagan sites from the online reference resource www.digital-culture.de , and calculate distances to them for the municipalities in our main database. We use this data to show that “medieval religiosity” can be predicted by opposition to Christianization via the presence of places of pagan worship. 22 Cantoni, Dittmar and Yuchtman ( 2018 ), Heldring, Robinson and Vollmer ( 2021 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 13,
+        "section_name": "Control variables",
+        "paragraph_id": 0,
+        "text": "We also use socio-economic correlates, collected by Falter and H ̈anisch ( 1990 ), derived from the 1925 census. These allow us to control for the number of inhabitants, the percentage of the population who are blue-collar workers, white-collar workers, population density, and a host of geographic and other demographic variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 14,
+        "section_name": "Shallow Christianity in the Interwar Period",
+        "paragraph_id": 0,
+        "text": "We measure Shallow Christianity in any one location in three ways – by the share of Christian first names, the surviving level of superstition, and the share of religious notables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 15,
+        "section_name": "First names",
+        "paragraph_id": 0,
+        "text": "Parents chose the first name of their children. Naming practices offer a unique window into the preferences and views of parents ( Bazzi, Fiszbein and Gebresilasse 2020 ). Here, we analyze how Christian the names given to children in Germany are. We use the Andersen and Bentzen ( 2022 ) approach to determine how religious a name is. They create a religious-names index (RNI) by calculating",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 15,
+        "section_name": "First names",
+        "paragraph_id": 1,
+        "text": "RNI i = Pr ( Name i | Church ) Pr ( Name i | Church ) + Pr ( Name i | Person ) The RNI gives greater weight to names that are a) common on churches and b) rare among people. For example, the name “Kornelius” is rare in the population, but more common on churches. Conversely, the most popular German male first name in our period, “Karl”, is not present on any German church. The index is 1 for names that are only used on churches, and 0 for those only used by people. Figure 1 , panel A gives an impression of how frequent Christian first names are in Germany, using data from the roll of WWI casualties (“Verlustlisten”). Instead of the RNI, which we use in the regression analysis, here we simply use a dummy variable for whether a name coincides with the name of a major Christian. Overall, the county-level share of Christian first names is highly correlated with the RNI ( ρ = 0.9875). Christian first names, thus defined, are rarely in the majority, but there are pockets of more frequent usage. Interestingly, these occur in the South and in the West of the country, where Christianization occurred earlier.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 15,
+        "section_name": "First names",
+        "paragraph_id": 2,
+        "text": "Figure 1: Christian first names, Clairvoyance and Religious notables in Germany",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 15,
+        "section_name": "First names",
+        "paragraph_id": 3,
+        "text": "Note: Panel A shows first-name religiosity name index within counties. Panel B displays our measure of beliefs in clairvoyance. Panel C shows the share of religious individuals among a county’s notable people.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 16,
+        "section_name": "Superstition and Shallow Christianity",
+        "paragraph_id": 0,
+        "text": "The German Folklore Atlas (ADV) asked numerous questions about local folklore and cultural practices. Here, we focus on clairvoyance. For each county, we calculate the number of places where people believe in the existence of “seers”, people who have particular insight into what the future will bring. 23 In some parts of Germany, the local enumerators marked their papers “not known here” or “no such practice in living memory!” In many other locations, belief in seers was recorded. While there are substantial differences in this variable between the North and South of Germany overall, there is also ample, local variation (Figure 1 , panel B).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 17,
+        "section_name": "Religious notables",
+        "paragraph_id": 0,
+        "text": "Two of our measures of Shallow Christianity capture popular beliefs – naming practices and folklore. To also capture the religiosity of elites, we exploit information on the professions of notables from each county. We use the data in Laouenan et al. ( 2022 ) to calculate the share of notables in religious professions. We use all notables who died in the period 1900-1930, and allocate them to their place of birth. 24 When a country only produces lawyers and doctors of distinction, but no leading clerics, religiosity is arguably lower. Figure 1 , panel C shows the distribution of this measure within Germany. While some areas register very high shares of up to 50%, many others show a share of zero.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 18,
+        "section_name": "Summary measure and validation: Gravestone symbols",
+        "paragraph_id": 0,
+        "text": "How plausible a measure of deep-rooted Christian beliefs are our three indicators? And how much do they agree with each other? Figure 2 shows that all three indicators are correlated with each other. Name religiosity at the county level predicts clairvoyance and a higher share of religious notables; religious notables are negatively correlated with clairvoyance. Because our three indicators appear to capture a single underlying dimension in our data, we use the first principal component of these three variable as our measure of “Shallow Christianity”. Ideally, these indicators are not only closely related to each other, but reflect an important, independent, and “costly” measure of Christian belief. Symbols on 23 Since the ADV tries to achieve universal coverage of locations in very dis-aggregated grid cells, there is no need to standardize the count by area or population. Results are indeed similar with and without standardization. 24 The share of religious notables is significantly correlated across time periods; we chose those who died 1900-30 to (a) avoid contamination with post-33 ”treatment” and (b) reflect religiosity of elites close to the time of the Nazi takeover.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 18,
+        "section_name": "Summary measure and validation: Gravestone symbols",
+        "paragraph_id": 1,
+        "text": "Figure 2: Shallow Christianity and its Components",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 18,
+        "section_name": "Summary measure and validation: Gravestone symbols",
+        "paragraph_id": 2,
+        "text": "Note: Binscatter of the three main indicators of 20C religiosity – the Religious Names Index, clairvoyance, and the share of religious notables. The first row plots these against Shallow Christianity the first principal component of these three variables. The second row shows correlations between them.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 18,
+        "section_name": "Summary measure and validation: Gravestone symbols",
+        "paragraph_id": 3,
+        "text": "headstones can be used to examine this question ( Berkessel, Ebert and Mill 2023 ). We exploit newly compiled data on 192,000 graves, which are available for 519 German counties. Since we are missing almost half of all German interwar counties, we are not exploiting this information as a direct indicator – but we can use it to examine the plausibility of our Shallow Christianity index. Here, we demonstrate that individuals in communities with higher Shallow Christianity according to our index also live in places where gravestones are less likely to be decorated by a cross or similar Christian symbols. As Figure A.4 shows, more Christian naming and religious notables correlate with more crosses on headstones; greater belief in clairvoyance predicts fewer crosses on graves. Importantly for our argument, the lower the fraction of Christian symbols on headstones in the local graveyard, the more support there was for the Nazi party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 19,
+        "section_name": "Main empirical results",
+        "paragraph_id": 0,
+        "text": "In this section, we examine the link between Shallow Christianity in the interwar period and Nazi support. Starting from bivariate patterns in the data, we move to OLS regressions. We examine the influence of Protestantism, and then introduce our IV strategy, based on “medieval (Christian) religiosity”.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 0,
+        "text": "Figure 3 compares the geography of Shallow Christianity and of Nazi voting in July 1932, at the peak of the party’s electoral success prior to coming to power. It shows a broad pattern of similarity between these two indicators. Counties with “shallower” Christianity and high Nazi vote shares are often in the North and East of the country. However, there is important regional variation within broader regions. In our regressions below, we add province fixed effects to avoid results being driven by aggregate patterns. 25 Figure A.5 in the appendix shows binned values for each measure of Nazi support – seven elections and party entry rates – plotted against Shallow Christianity. In Table 1 , we show our main OLS results, with and without controls. We find highly significant coefficients for the Shallow Christianity score for all elections from 1930 onwards, as well as for party entry. 26 Only in 1928, when the party had no mass following and polled a paltry 2.6% of the vote, is there no significant association 25 Adding province fixed effects absorbs 35% of the variation of Shallow Christianity, and 12-18% of the variation of the indicators of Nazi support. Cf. Figure A.6 . 26 Note that we display p-values, and not standard errors, in parentheses in all regression tables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 1,
+        "text": "Figure 3: Maps of the Shallow Christianity and vote share of the Nazi Party, July 1932",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 2,
+        "text": "Note: Data in maps is aggregated and displayed at the county level. A darker blue colour in the first map indicates “shallower” Christianity. A darker red colour in the second map shows a higher NSDAP vote share.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 3,
+        "text": "between Shallow Christianity and Nazi support. When we add controls (panel B), including province fixed effects, results remain highly significant and only decline slightly in size. Tables A.1 , panels A-C show corresponding results for each of the constituent parts of our Shallow Christianity measure. Table 1: OLS Results - Nazi Support and Shallow Christianity",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 4,
+        "text": "(a) Panel A: No controls",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 5,
+        "text": "Vote share NSDAP, all elections Party entry 1928 1930 Pres. Mar./Apr. 1932 Jul. 1932 Nov. 1932 1933 1928-32 (1) (2) (3) (4) (5) (6) (7) (8) Shallow -0.109 [FORMULA] 0.265 [FORMULA] 0.270 [FORMULA] 0.367 [FORMULA] 0.372 [FORMULA] 0.308 [FORMULA] 0.241 [FORMULA] 0.226 [FORMULA] Christianity (0.002) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) N 785 803 788 788 788 740 740 799 R 2 0.012 0.070 0.073 0.135 0.139 0.095 0.058 0.051 (b) Panel B: Full controls and FE",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 6,
+        "text": "Vote share NSDAP, all elections Party entry 1928 1930 Pres. Mar./Apr. 1932 Jul. 1932 Nov. 1932 1933 1928-32 (1) (2) (3) (4) (5) (6) (7) (8) Shallow 0.037 0.200 [FORMULA] 0.256 [FORMULA] 0.256 [FORMULA] 0.270 [FORMULA] 0.270 [FORMULA] 0.264 [FORMULA] 0.235 [FORMULA] Christianity (0.504) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) N 656 657 652 652 656 649 650 657 R 2 0.223 0.277 0.278 0.311 0.334 0.309 0.309 0.350",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 7,
+        "text": "Note: P-values in parentheses. Significance indicated by ∗ p < 0 . 1, ∗∗ p < 0 . 05, [FORMULA] p < 0 . 01. Note: Measures of Nazi sympathy regressed on Shallow Christianity the principal component analysis of Christian names, clairvoyance and religious notables (1900-1930) with and without controls. The table reports the beta coefficients. In the full specification we control for population density, share white collar, share blue collar, and province fixed effects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 8,
+        "text": "If Shallow Christianity is clearly associated with Nazi support, we want to know how important is its predictive power. We find that every standard deviation increase in Shallow Christianity raises Nazi support by 0.2 to 0.37 standard deviations. For the July 1932 election, for example, a one standard deviation increase in shallowness implies going from 39 percentage points of support for the Nazi party – the sample mean – to 44 percent. An alternative, simple method to assess relative importance is to use Shapley values from a machine learning exercise. We predict Nazi voting in July 1932 using random forest estimation. Then, we calculate a measure of importance from the Shapley values, derived from changes in the RMSE of the prediction of models that either contain or do not contain the variable in question ( Schonlau and Zou 2020 ). Figure A.7 in the Appendix shows the result. We find that both geographical",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 20,
+        "section_name": "Basic patterns",
+        "paragraph_id": 9,
+        "text": "variables and province fixed effects exhibit significant predictive power. Shallow Christianity is the fourth-strongest predictor of Nazi voting in our sample, ahead of the occupational composition of the workforce and population density.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 21,
+        "section_name": "The Role of Protestantism",
+        "paragraph_id": 0,
+        "text": "Protestantism is the strongest single predictor of Nazi voting ( Spenkuch and Tillmann 2018 ). At the same time, Protestantism spread first and more rapidly in areas where Christianity arrived late and was not firmly rooted. This makes the share of Protestants a “bad control” for our analysis. Here, we address the role of Protestantism in three steps. First, we examine an important predictor of the spread of the Reformation – distance to Wittenberg, where Martin Luther started the Protestant Reformation ( Becker and Woessmann 2009 , Cantoni 2012 ). Even within the area close to Wittenberg – and hence, with a clear exogenous component in the adoption of Protestantism – both the share of Christian first names and the strength of clairvoyance beliefs predict Nazi voting. Next, we show that controlling for exogenously-induced Protestantism (i.e. distance to Wittenberg) does not reduce the magnitude or significance of the effect of Shallow Christianity. Finally, we show that – despite being a bad control – adding the share of Protestants to our regressions does not undermine the significance of Shallow Christianity. Figure 4 shows binscatters of Nazi voting against the share of Christian first names, close to Wittenberg ( < 250 km) or far away. Even within the area of exogenously induced conversion, close to Wittenberg, the share of Christian names is a strong predictor of Nazi voting, and the slope associated with it is not different from that in the rest of the sample. Note that this is an area of exceptionally high Protestant presence – within 250km of Wittenberg, the median share of Protestants in our sample is 92.2%. 27 Figure A.3 in the Appendix generalizes this approach, and compares binscatters of Nazi voting against Shallow Christianity for areas that are overwhelmingly Protestant ( > 75%) or overwhelmingly Catholic. For both groups, there is a clear, positive relationship between Nazi support and Shallow Christianity. In Table 2 we show results while controlling for distance to Wittenberg. For both the baseline (Panel A) and the full specification (Panel B), we find strong and significant effects of Shallow Christianity on Nazi support. While the share of 27 Protestantism and distance to Wittenberg are highly correlated ( σ = − 0 . 44), but Nazi voting and distance to Wittenberg are not ( σ = − 0 . 06 for the election result in 1933, for example). This suggests that the exogenous component of Protestantism is not strongly correlated with Nazi voting.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 21,
+        "section_name": "The Role of Protestantism",
+        "paragraph_id": 1,
+        "text": "Figure 4: Nazi Voting and Shallow Christianity - 2 Samples",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 21,
+        "section_name": "The Role of Protestantism",
+        "paragraph_id": 2,
+        "text": "Note: The graph shows binscatters for all counties in our dataset, for locations with a distance of up to 250km (left panel) and over 250km (right panel). The figure show shows that, even in the heartland of Protestantism, Shallow Christianity is closely associated with Nazi voting.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 21,
+        "section_name": "The Role of Protestantism",
+        "paragraph_id": 3,
+        "text": "Protestants is arguably a “bad control”, we can still run OLS regressions including this variable. Panel C shows the results for a full specification with all controls and fixed effects, including the 1925 share of Protestants. We find positive coefficients for all elections from 1930-33 and for party entry; and significant effects for March 1932, April 1932, July 1932, November 1932, March 1933, and for party entry. 28",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 0,
+        "text": "Our OLS results may suffer from omitted variables bias – places with more Shallow Christianity may share other characteristics associated with Nazi voting. These could differ from places elsewhere in several dimensions other than in their Shallow Christianity – for example, they could on average be more agricultural. While province fixed effects and controls for occupational composition address some of these concerns, we want to isolate an exogenous component of Shallow Christianity and examine its impact. We use an instrumentation strategy that builds on the way in which Christianity 28 Full results are reported in Table A.4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 1,
+        "text": "Table 2: OLS - Nazi Support, Shallow Christianity and Distance to Wittenberg Vote share NSDAP, all elections Party entry 1928 1930 Pres. Elect. Mar./Apr. 1932 Jul. 1932 Nov. 1932 1933 1928-32 (1) (2) (3) (4) (5) (6) (7) (8)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 2,
+        "text": "Panel A: Basic Specification Shallow Christianity -0.137 [FORMULA] 0.193 [FORMULA] 0.205 [FORMULA] 0.259 [FORMULA] 0.277 [FORMULA] 0.230 [FORMULA] 0.200 [FORMULA] 0.171 [FORMULA] (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Distance to -0.069 ∗ -0.176 [FORMULA] -0.159 [FORMULA] -0.261 [FORMULA] -0.233 [FORMULA] -0.194 [FORMULA] -0.102 [FORMULA] -0.134 [FORMULA] Wittenberg (0.078) (0.000) (0.000) (0.000) (0.000) (0.000) (0.009) (0.000) N 785 803 788 788 788 740 740 799 R 2 0.016 0.096 0.094 0.191 0.184 0.126 0.067 0.066 Panel B: Full Specification Shallow Christianity 0.020 0.186 [FORMULA] 0.233 [FORMULA] 0.228 [FORMULA] 0.248 [FORMULA] 0.251 [FORMULA] 0.251 [FORMULA] 0.224 [FORMULA] (0.719) (0.001) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Distance to -0.215 [FORMULA] -0.188 [FORMULA] -0.294 [FORMULA] -0.362 [FORMULA] -0.276 [FORMULA] -0.232 [FORMULA] -0.157 ∗∗ -0.145 ∗∗ Wittenberg (0.005) (0.010) (0.000) (0.000) (0.000) (0.001) (0.030) (0.036) N 656 657 652 652 656 649 650 657 R 2 0.233 0.285 0.296 0.339 0.350 0.321 0.314 0.355 Panel C: Controlling for Protestantism Shallow Christianity -0.056 0.054 0.063 ∗ 0.053 ∗ 0.068 ∗∗ 0.066 ∗∗ 0.071 ∗∗ 0.132 [FORMULA] (0.282) (0.219) (0.072) (0.076) (0.015) (0.039) (0.046) (0.005) N 656 657 652 652 656 649 650 657 R 2 0.328 0.529 0.705 0.785 0.809 0.757 0.702 0.477 Note: P-values in parentheses. Significance indicated by ∗ p < 0 . 1, ∗∗ p < 0 . 05, [FORMULA] p < 0 . 01. Note: Measures of Nazi sympathy regressed on Shallow Christianity the principal component analysis of Christian names, clairvoyance and religious notables (1900-1930) with and without controls. The table reports the beta coefficients. In the full specification we control for population density, share white collar, share blue collar and province fixed effects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 3,
+        "text": "spread. Medieval conversion of pagans should not have a direct effect on Nazi voting other than through Shallow Christianity in the interwar period. We use two main instrumental variables – distance to pre-1500 monasteries, and distance to sites of ancient pagan worship. Figure 5: Conceptual Framework",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 4,
+        "text": "distance to medieval monasteries distance to pagan worship clairvoyance Christian first names",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 5,
+        "text": "share of religious notables Nazi support Medieval Christianity Shallow Christianity",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 6,
+        "text": "Note: The diagram summarizes our conceptual framework and empirical strategy. Medieval Christianization is measured by distance to monasteries and to pagan sites of worship. These in turn predict Shallow Christianity (SC) in interwar Germany, which me measure by the religiosity of first names, clairvoyance in the German Folklore Atlas, and the share of religious notables, 1900-30. In turn, we use SC directly (OLS), or in an IV-approach, to analyse Nazi support.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 7,
+        "text": "Medieval monasteries. Why did Christianity spread early in some parts of Germany, and late in others? In Germany as elsewhere, monasteries were a key driving force of Christianization, especially outside the formerly Roman areas. In Figure 6 , we binscatter the Shallow Christianity index from section 3.1 against the distance to the closest monastery. As Panel D shows, there is a strong, highly significant relationship between Shallow Christianity and all of these measures of medieval religiosity. We also find a strong reduced-form relationship with Nazi voting and party entry (panels E and F). Pagan worship and Shallow Christianity. In addition, conversion was slower and more difficult where the local population was strongly attached to pagan beliefs. One way to proxy for the strength of these beliefs is to use archaeological information on places of pagan worship. These include sites where sacrifices (including human sacrifices) took place, as well as locations with ritual symbols and structures. Our assumption is that, where pagan rituals were held for centuries prior to the arrival of Christianity, the latter’s hold over the minds of worshippers was potentially weaker. Figure 6 shows how strongly proximity of pagan worship sites predicts Shallow Christianity; it is also a strong predictor of Nazi voting and",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 8,
+        "text": "Figure 6: First Stage and Reduced Form Relationships: Shallow Christianity, Nazi Support and Medieval Determinants of Religiosity",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 9,
+        "text": "Note: Binscatters of measures of Nazi sympathy on distance in kilometers to places of pagan worship. All data at the county level. Data is restricted to counties within the geographical boundaries of modern Germany. Rate of party entry is per 10,000 inhabitants.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 10,
+        "text": "membership entry rates (Panels A-C). Section 4.1 already showed that areas with more Shallow Christianity were more likely to support the Nazi party. We now use our two measures of medieval religiosity as instruments for Shallow Christianity. 29 Table 3 , Panel A shows the reduced-form relationship. With the exception of the 1928 election, we find significant, large effects of distances to pagan places of worship (negative) and to monasteries (positive), ranging from beta coefficients of 0.08 to 0.25, on Nazi voting in 1930, 1932-7, 193211, and 1933, support for Hitler in the Presidential Election in March/April 1932, as well as party entry rates. As in the OLS, we do no find a significant or large effect on voting in 1928, when the party had only just returned to the polls after a long period of illegality (and only received 2.6% of the overall vote). 30 Next, we use our instruments to estimate the relationship between Nazi support and Shallow Christianity (Panel B). There is a highly significant first-stage relationship between distances to monasteries, distances to pagan worship sites, and the Shallow Christianity indicator ( Table 3 , Panel B and C, col. 1). Each variable enters with a t-statistic above 6.5, and with the expected sign – greater proximity of monasteries increases Christian beliefs in the interwar period, and proximity of pagan worship sites does the opposite. In col. 3, for example, we obtain an F-statistic of 32.6 and an Anderson-Rubin χ 2 statistic of 14.5 (p-value 0.0008). Panel B, cols 3-9 shows strong and highly significant results in the second stage throughout (except for 1928). In panel C, we add controls from Table 1 , and again find positive and broadly similar effects. 31",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 11,
+        "text": "29 One might be tempted to use the Roman Limes in a spatial RDD, to build on the contrast between grass-roots and top-down Christianization. In fact we find consistently lower Shallow Christianity, and less support for the Nazi Party, in the areas conquered by Rome (see Table A.6 ). This is consistent with our main results, but to argue for a sharp discontinuity along a 2,000 year-old border stretches credulity. 30 In other words, the component of Nazi support driven by Shallow Christianity reflects broader, public appeal – and not the ”hard core” support of the party’s early years. 31 Table A.2 shows that results are also strong and significant after controlling for fixed effects. However, once we add both FE and controls to the IV (Panel B), significance falls below standard levels, but coefficients remain large and positive).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 12,
+        "text": "Table 3: Nazi Support and Shallow Christianity - IV Estimates First Vote share NSDAP, all elections Party entry Stage 1928 1930 Pres. Elect. Mar./Apr. 1932 Jul. 1932 Nov. 1932 1933 1928-32 (1) (2) (3) (4) (5) (6) (7) (8) (9)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 13,
+        "text": "Panel A: Reduced Form Distance to medieval -0.024 0.076 ∗∗ 0.177 [FORMULA] 0.179 [FORMULA] 0.148 [FORMULA] 0.145 [FORMULA] 0.169 [FORMULA] 0.096 [FORMULA] monastery (0.496) (0.027) (0.000) (0.000) (0.000) (0.000) (0.000) (0.005) Distance to pagan 0.018 -0.111 [FORMULA] -0.187 [FORMULA] -0.253 [FORMULA] -0.252 [FORMULA] -0.241 [FORMULA] -0.126 [FORMULA] -0.103 [FORMULA] place (0.607) (0.001) (0.000) (0.000) (0.000) (0.000) (0.000) (0.003) N 827 846 829 829 830 782 782 842 R 2 0.001 0.017 0.062 0.090 0.080 0.074 0.041 0.018 Panel B: Basic Specification Distance to medieval 0.265 [FORMULA] monastery (0.000) Distance to pagan -0.116 [FORMULA] place (0.000) Shallow Christianity -0.139 0.482 [FORMULA] 0.896 [FORMULA] 1.085 [FORMULA] 1.095 [FORMULA] 1.130 [FORMULA] 0.820 [FORMULA] 0.522 [FORMULA] (0.292) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) N 832 785 803 788 788 788 740 740 799 R 2 0.06 0.011 0.023 -0.319 -0.381 -0.384 -0.580 -0.277 -0.036 First stage F-stat 30.6 32.6 34.56 34.6 30.5 23.96 25.6 32.18 Anderson Rubin p-value 0.57 0.0008 < 0.0001 < 0.0001 < 0.0001 < 0.0001 < 0.0001 0.0001 Panel C: Full Specification Distance to medieval 0.073 ∗∗ monastery (0.015) Distance to pagan -0.084 place (0.33) Shallow Christianity -0.028 0.592 [FORMULA] 0.933 [FORMULA] 1.174 [FORMULA] 1.178 [FORMULA] 1.220 [FORMULA] 0.802 [FORMULA] 0.636 [FORMULA] (0.857) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) N 832 776 777 766 766 765 717 717 777 R 2 0.06 0.032 -0.006 -0.242 -0.420 -0.422 -0.614 -0.077 -0.076 First Stage F-stat 24.5 24.6 24.4 25.6 25.6 23.8 17.4 18.7 24.4 Anderson Rubin p-value 0.74 0.0001 < 0.0001 < 0.0001 < 0.0001 < 0.0001 < 0.0001 < 0.0001 Note: P-values in parentheses. Significance indicated by p < 0 . 1, p < 0 . 05, ∗∗ p < 0 . 01. Measures of Nazi sympathy regressed on Shallow Christianity, the principal component analysis of Christian names, clairvoyance and share of religious notables (1900-1930), with and without controls. We reports beta coefficients. The controls are population density, share white collar in the 1925 census, and share blue collar. Because data on places of pagan worship is only available for modern-day Germany, we restrict the sample to these locations in the IV estimation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 14,
+        "text": "Figure 7: Christian name distributions in the general population and among Nazis",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 22,
+        "section_name": "Instrumental variables results",
+        "paragraph_id": 15,
+        "text": "Note: The panels compare the religiosity of Nazi first names with the general population at the county level. Panel A shows the distributions of the share of Christian names. Panel B shows the distribution of the Religiosity Names Index. The distribution in the general population is taken from the roll of WWI casualties, the “Verlustlisten.” Names of NSDAP members stem from party entry records, and names of leading Nazis come from the “F ̈uhrerlexikon” (1934).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 23,
+        "section_name": "Individual-level Evidence: Christian First Na-",
+        "paragraph_id": 0,
+        "text": "mes and Nazi Party Membership",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 23,
+        "section_name": "Individual-level Evidence: Christian First Na-",
+        "paragraph_id": 1,
+        "text": "So far, we have used Christian first names at the county level, for the population as a whole. Now, we exploit the fact that names are specific to individuals, and examine whether people who joined the Nazi party had less Christian first names. Do Nazi Party members within any given location have less Christian names? Our hypothesis predicts that Christian upbringing, as reflected in family names, reduces involvement with and commitment to the Nazi ideology. Using within-municipality variation allows us to sidestep any potential concerns about spatial correlation. 32 Additionally, we can analyze whether these patterns hold all the more for leading Nazis. We first analyze naming practices for Nazi Party members and compare them 32 We examine the issue separately in the robustness section.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 23,
+        "section_name": "Individual-level Evidence: Christian First Na-",
+        "paragraph_id": 2,
+        "text": "with the general population. In Figure 7 , left panel, we calculate averages of the share of Christian first names by county for (1) the German population as a whole (taken from the roll of WW1 casualties) and (2) Nazi party members. As is immediately apparent, Nazi party members were less likely to have Christian first names than the general population. The same pattern can be seen in the right panel, which uses the Religious Names Index. The distinctly different distributions in Figure 7 could reflect different geographical origins of Nazi party members and the general population. If Nazis overwhelmingly came from areas with low shares of Christian first names, these patterns may not necessarily indicate that they come from families with lower commitment to the Christian church than other, similar, compatriots, in the same location. In Figure 8 , we compare religiosity by Nazi affiliation within each county. We binscatter the share of Christian first names among NS party members, county by county, against the share of Christian first names in the general population. Observations along the 45 ° line would indicate that Nazi members are as likely to have Christian first names as the population in their county of residence. For the vast majority of counties, we find points below the 45 ° line, suggesting below-average Christian naming practices. Nazi party leaders are even less likely to have Christian first names. In the overwhelming majority of municipalities, Nazis are much less likely to have a religious name than the general population. These results – at the individual level, effectively controlling for location fixed effects – strongly suggest that religiosity, as reflected in naming conventions, is a clear, negative predictor of Nazi involvement.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 23,
+        "section_name": "Individual-level Evidence: Christian First Na-",
+        "paragraph_id": 3,
+        "text": "Figure 8: Name Religiosity by location – General population and Nazis",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 23,
+        "section_name": "Individual-level Evidence: Christian First Na-",
+        "paragraph_id": 4,
+        "text": "Note: Share of Christian names among Nazi party members and persons listed in Das deutsche F ̈uhrerlexikon compared to the share in the general population. Data is at the county level. The area below the 45 ◦ line shows a lower share of Christian names among Nazis than in the general population.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 24,
+        "section_name": "Robustness and alternative interpretations",
+        "paragraph_id": 0,
+        "text": "In this section, we demonstrate the robustness of our results and examine whether our findings survive the inclusion of a set of alternative controls used in the literature. We also examine the effect of spatial error correlation, the importance of outliers, and we perform permutation tests to validate statistical significance.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 25,
+        "section_name": "Alternative explanations and additional controls",
+        "paragraph_id": 0,
+        "text": "The rise of the Nazi party has attracted substantial scholarly attention in recent years. To what extent does Shallow Christianity constitute a separate, additional explanation? Or does it simply reflect other, already-examined variables? We focus on three variables in particular – medieval pogroms ( Voigtl ̈ander and Voth 2012 , Becker and Pascali 2019 ), the presence of the Danat Bank ( Doerr et al. 2022 ), Germany’s second-largest bank that collapsed during the 1931 banking crisis, and the density of clubs and associations ( Satyanath, Voigtl ̈ander and Voth 2017 ). In Table 4 we add these variables to the basic regression setup from Table 1 , one at a",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 25,
+        "section_name": "Alternative explanations and additional controls",
+        "paragraph_id": 1,
+        "text": "time. Each line in Table 4 shows the coefficient on Shallow Christianity for a different election/entry rate; the first row is the baseline from Table 1 . We then report how the coefficients on Shallow Christianity change as we add pogroms, bank exposure, or a measure of social capital. Coefficient sizes and significance are remarkably stable. We find that the coefficient of interest, Shallow Christianity, is largely unchanged when we add variables capturing alternative drivers of Nazi support. This should not be surprising. Many papers in this literature have focused on explanataions that vary at the level of towns and cities, such as big bank exposure. One of the advantages of our approach is that, instead of focusing on municipalities, we analyze counties. This allows us to say something also about the countryside, where a significant share of Nazi supporters lived. Here, much of the sample is not affected by the explanatory variables used in earlier studies. For example, most counties had neither a Jewish presence in the Middle Ages nor big banks in the interwar years because they were too small and not densely populated enough. The same logic applies to associations, which only become more common above a certain population size. It is therefore unsurprising that the effect of Shallow Christianity remains largely unaffected when controlling for these additional explanatory variables. Our main results use a parsimonious set of control variables from the 1925 census. To show the robustness of our results, we can add a long vector of additional, plausible controls capturing geographic and demographic factors. Appendix Table A.7 shows the results. We find that adding a total of 11 covariates plus 26 province fixed effects leaves significance largely unchanged, and even enhances the size of the main effect for some outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 26,
+        "section_name": "Spatial errors",
+        "paragraph_id": 0,
+        "text": "Our analysis is based on cross-sectional differences in Shallow Christianity and Nazi support. Spatial auto-correlation can lead to understated standard errors. We first examine the extent to which our data exhibit spatial auto-correlation, and then adjust standard errors using the Conley correction. In Figure A.8 we show Moran’s I statistic for three main variables - Nazi voting in July 1932, Shallow Christianity, and distance to medieval monasteries, at a range of distances (from 100km to 1,000km). The left panel shows the pattern without fixed effects; the right panel, with fixed effects. In the un-transformed data, spatial dependence is lowest for Nazi voting, and highest for medieval religiosity. Some spatial dependence remains substantial",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 26,
+        "section_name": "Spatial errors",
+        "paragraph_id": 1,
+        "text": "Table 4: Alternative interpretations Vote share NSDAP, all elections Party entry 1928 1930 Pres. Mar./Apr. 1932 Jul. 1932 Nov. 1932 1933 1928-32 (1) (2) (3) (4) (5) (6) (7) (8) Baseline 0.037 0.200 [FORMULA] 0.256 [FORMULA] 0.256 [FORMULA] 0.270 [FORMULA] 0.270 [FORMULA] 0.264 [FORMULA] 0.235 [FORMULA] (0.504) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Pogrom 1347-9 0.039 0.203 [FORMULA] 0.259 [FORMULA] 0.260 [FORMULA] 0.272 [FORMULA] 0.274 [FORMULA] 0.266 [FORMULA] 0.237 [FORMULA] (0.473) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Sum pogroms 0.034 0.197 [FORMULA] 0.251 [FORMULA] 0.250 [FORMULA] 0.265 [FORMULA] 0.265 [FORMULA] 0.261 [FORMULA] 0.231 [FORMULA] (0.543) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Danat exposure -0.029 0.223 ∗∗ 0.316 [FORMULA] 0.239 ∗∗ 0.266 [FORMULA] 0.298 [FORMULA] 0.340 [FORMULA] 0.241 ∗∗ (0.743) (0.044) (0.005) (0.026) (0.009) (0.005) (0.001) (0.041) All clubs p.c. 0.210 ∗∗ 0.354 [FORMULA] 0.427 [FORMULA] 0.464 [FORMULA] 0.444 [FORMULA] 0.432 [FORMULA] 0.464 [FORMULA] 0.293 [FORMULA] (0.025) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.003) Note: P-values in parentheses. Significance: * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01. Each entry in the table is the coefficient on Shallow Christianity . Row 1 shows coefficients from the baseline specification in Table 1 , Panel B, controlling for province fixed effects and other covariates. Each row uses an alternative, additional explanatory variable (not reported) – we report the coefficient on Shallow Christianity when this additional explanatory variable is included in the OLS regressions. Pogrom 1349: dummy for medieval pogroms Voigtl ̈ander and Voth ( 2012 ). Any pogrom: pogrom incidence 1400s-1900s Becker and Pascali ( 2019 ). Danatbank exposure: county’s exposure to Danatbank’s failure Doerr et al. ( 2022 ). Density of associations Satyanath, Voigtl ̈ander and Voth ( 2017 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 26,
+        "section_name": "Spatial errors",
+        "paragraph_id": 2,
+        "text": "at distances of up to 400km. As in our regressions, we add fixed effects (Panel B). 33 Spatial errors fall dramatically, and at a distance of 200km, there is no remaining evidence of spatial dependance. To examine how much standard errors are affected by auto-correlation, we use the method in Colella et al. ( 2023 ). Table A.8 uses the specification in Table 1 , with full controls. For Nazi voting, we find highly significant results independent of the assumed distance cut-off. For membership entry, we obtain somewhat larger standard errors. With cut-offs of 50 and 200km, we obtain significant results at the 1% level; for 100 and 150km, the standard errors are above the 5% cut-off. Because spatial errors die out beyond 200km, we do no examine higher values.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 27,
+        "section_name": "Permutation tests",
+        "paragraph_id": 0,
+        "text": "While we have taken care to estimate coefficients with conservative, saturated specifications using province fixed effects, it is possible that the assumptions underlying asymptotic statistics are not fully satisfied in our case. In particular, we might be understating standard errors. To examine this possibility, we perform permutation tests in the spirit of Young ( 2019 ). Table A.9 gives the results. We perform a Monte Carlo simulation, permuting observations 1,000 times and recording the number of regressions where the coefficient on Shallow Christianity is greater than the one using actual data under OLS (reported as c). Except for the 1928 election, which is never significant in our analysis, there are no cases of permuted data showing a stronger t-statistic than the one we obtain using actual data.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 28,
+        "section_name": "Outlier analysis",
+        "paragraph_id": 0,
+        "text": "Are outliers driving our results? We first examine if our results are potentially influenced by outliers. To this end, we re-estimate the basic regression in Table 1 using robust regressions as in Li ( 1985 ). These first drop all observations with a Cook’s distance greater 1 and then perform Huber and biweight iterations. Results are reported in Figure A.9 for all election results. We find that OLS and robust regression results are near-identical for all dependent variables. It is also possible that a single province is behind the statistical results presented so far. We first plot raw averages for Nazi support for below/above median levels of Shallow Christianity, in each province/state ( Figure A.10 ). While the high shallowness areas do not always register higher levels of Nazi support, this is still 33 We thank Damian Kozbur for this suggestion.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 28,
+        "section_name": "Outlier analysis",
+        "paragraph_id": 1,
+        "text": "overwhelmingly the case in our data. The only exception is the 1928 election. To demonstrate that statistical results are not driven by a single province, we drop one province at a time and re-estimate the baseline regression in Table 1. Figure A.11 shows the results. While coefficients change slightly with the sample, no single province is driving our results.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 29,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "“Choosing Hitler was not an act of political decision, not the choice of a known programme or ideology; it was simply joining a quasi-religious mass movement as an act of faith.”",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 29,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "– Walter Lacqueur (1962)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 29,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "While never winning a majority of the popular vote, the NSDAP was the largest party in German parliament from 1932 onwards; mass support swept it to the gates of power. In Imperial Germany, parties with broadly similar right-wing programs had conspicuously failed to gather mass support. Why did Germans fall for the Nazi agenda in the 1930s, succumbing to the siren song of dictatorship and authoritarianism? Economic distress as a key driver of Nazi voting has limited explanatory power, with the vast majority of the unemployed voting for the Communists ( Falter 1991 ). 34 In this paper, we take seriously the idea that behavioral political economy can shed light on major events, and test the “political religion” hypothesis ( Voegelin 1939 , Gentile 2006 ) – the argument that totalitarian movements in particular acted as substitute religions in an increasingly secularized society. In particular, we examine Shallow Christianity – a general lack of deeply-held Christian beliefs. We measure shallowness in early 20 th century Germany as superstition – a belief in clairvoyance – as reflected in a uniquely detailed anthropological survey, the share of local notables in religious occupations, and the religiosity of first names. A long lineage of research in social psychology has asked what makes people susceptible to authoritarianism ( Adorno et al. 1951 , Tajfel and Turner 2004 ). Theodor Adorno’s list of characteristics of the authoritarian personality includes, amongst others, “superstition” – a form of magical thinking, and an inclination to imbue everyday events with hidden meaning. Here, we directly measure superstitious beliefs, using a large-scale anthropological survey from the 1930s, focusing on clairvoyance. 34 Brey and Facchini ( 2023 ) show that areas hard-hit by the trade collapse of the early 1930s were less likely to vote for the Nazi party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 29,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "We present evidence that such beliefs went hand-in-hand with support for an antidemocratic, authoritarian, militarist, and genocidal regime – the Nazi dictatorship. Our second measure of shallowness of Christian beliefs is based on first names. Not only did areas with fewer Christian first names see greater support for the Nazi Party; in addition, rank-and-file Nazi members in each municipality were less likely to have religious first names. Nazi leaders had even fewer religious names. This suggests that the strength of Christian belief in each family was an important determinant of susceptibility to the Nazi message. Our third measure of Christian religiosity uses the allocation of high-end human capital. We examine the share of notables from each German county that enter religious professions; where this share is high, we assume that religiosity is higher and the Christian faith more deeply rooted. The common component of these variables – Shallow Christianity – is highly correlated with Nazi voting and party entry during the interwar period. This pattern is robust to controlling for the role of Protestantism. Two fundamentally different mechanisms drove the Christianization of Europe – ”bottom-up”, grass-roots conversion during late antiquity, and forced conversions, often under the threat of violence, in the Middle Ages. We hypothesize that the former leads to Christianity having deeper roots in any one location. Germany is a useful setting for our purposes because there are vast differences between the mode of conversion (voluntary in the South and West, forced in much of the North and East) and the time of arrival (ranging from 300 AD to the 13 th century). We exploit these rich contrasts to pin down a causal channel. Monasteries were a key driving force of Christianization, especially outside the formerly Roman areas. We consider distances to pre-1500 monasteries and distances to pagan cult sites as instruments. The intensity of medieval proselytizing by the Church interacted with the presence of pagan places of worship. Where the latter were close, and the former far, Christianity experienced greater difficulties in growing deep roots: Places of pagan worship often existed for centuries before the arrival of Christianity. In such places, the founding of monasteries was less likely, and Christianity was likely to be adopted only superficially. The Nazi Party actively sought to fill the spiritual void created by the weakness of traditional religion. It staged quasi-religious rituals and public events, from “sanctifying” banners and the elevation of the movement’s “martyrs” to the constant reference to Hitler as Germany’s “redeemer”. Long noticed by political scientists and historians, the quasi-religious imagery and language of the Nazi party have often been dismissed as a propaganda trick – an analytical category of limited empirical",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 29,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "importance and without conceptual clarity. Our results suggest that, where the local population’s attachment to Christianity was weak, and had been weak for a long time, the Nazi Party scored its greatest successes. Hitler’s paramount role in the Nazi movement also attests to the importance of quasi-religious beliefs for political legitimacy. Charismatic authority, according to Max Weber, derives from a leader’s magical qualities, often claimed to be of divine origin. Many contemporaries described Hitler’s ”charisma”, his ability to enthrall thousands at mass rallies ( Fest 1973 , Kershaw 2000 ). His appeal went beyond his rhetoric skill, and in part derived from him being “[...] treated as endowed with supernatural, superhuman, or at least specifically exceptional powers or qualities” ( Weber 1968 ); Nazi propaganda regularly claimed that Hitler had been sent by providence to redeem and reawaken Germany. Support for the main competing, totalitarian ideology, Communism, was also markedly stronger in interwar Germany in highly secularized areas, such as the main cities Evans ( 2007 ). While voting in cities is not a reflection of medieval conversion among the pagan population, this broad pattern suggest that the quasi-religious nature of totalitarian ideology has predictive power beyond the Nazi case. 35 In combination, our results suggest that Nazi support and Hitler’s startling appeal received an important boost from the spiritual “emptiness” of large parts of the German population. Nazi policies and propaganda were leaning on an open door when they publicly rejected Christian morality. While the vast majority of the population remained nominally Christian, much of the intelligentsia and bourgeois society had long come to accept Nietzsche’s claim that “God is dead”. 36 Where Christianity had arrived late in Germany and never developed deep roots, people readily turned to new idols, faiths, and saviours. The same areas that fell for the Nazi message had already embraced a new faith during the Reformation. Protestants’ well-known susceptibility to the Nazi movement is arguably not a direct consequence of Luther’s teachings and Protestant society. Instead, the rise of Protestantism and the Nazi party share a common root: Shallow Christianity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1268,
+        "section_id": 29,
+        "section_name": "Conclusion",
+        "paragraph_id": 5,
+        "text": "35 Communism lacked the ability to make claims to transcendental legitimacy through a charismatic leader. 36 Whyte ( 2008 ).",
+        "extraction_warnings": ""
+    }
+]

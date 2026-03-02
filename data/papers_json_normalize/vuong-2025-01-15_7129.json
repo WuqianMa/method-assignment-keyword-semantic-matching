@@ -1,0 +1,1266 @@
+[
+    {
+        "paper_id": 1454,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "The Persistent Health Effects of Defoliating Vietnam",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Nguyen Dinh Tuan Vuong *",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "University of Tsukuba",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "Abstract This paper investigates the long-run unintended environmental effects of conflicts on health and socioeconomic outcomes by focusing on dioxin exposure from herbicidal warfare deployed in the Second Indochina War. To address omitted variable bias caused by the non-randomness of dioxin exposure, I leverage the difference in dioxin contamination, unknown during the war, between different herbicides. The estimation results show a higher prevalence of disability in more exposed areas, with one standard deviation increase in the exposure index associated with about 5%-20% of the disability prevalence in the unexposed communes. My methods allow me to uncover two main channels contributing to impaired health: direct dioxin exposure during wartime and cascading intergenerational effects from the initial exposure. I also find that dioxin exposure affects educational, labor, and economic outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "Keywords : conflict, chemical warfare, health, Vietnam JEL codes : N45 O13 Q56",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "* Email address: vuong.nguyen.ge@u.tsukuba.ac.jp . This project is supported by 2022-2023 Fellowship of the Center for Southeast Asian Studies at the University of Wisconsin– Madison. I thank Ian Coxhead, Quoc-Anh Do, Gaurav Doshi, Corbett Grainger, Sarah Johnston, Kieu-Trang Nguyen, Dominic Parker, Daniel Phaneuf, Laura Schechter, Yanos Zylberberg, Khoa Vu and the audience of AERE, ASHEcon, SEASSI, DIRC, Camp Resources, AERE@SEA, Heartland Workshop, AERE@MEA, MWIEDC, JADE x JTREE, SWET (Otaru), JEA, EAEA, AHEC and seminars at AAE (UW-Madison), National Economics University, and Kyoto University for helpful comments and feedback.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Even though wars and conflicts leave behind decimated populations and annihilated economies, the existing economics literature finds that economic activities converge to the pre-war levels, even with big shocks like World War II ( Davis and Weinstein , 2002 ; Brakman, Garretsen and Schramm , 2004 ). 1 Economic recovery, in the long run, could be explained by the neoclassical concept of convergence. However, war and conflicts may have unintended consequences on human capital accumulation through environmental factors, which might not recover within a couple of generations. In this paper, I study the long-run environmental impact of conflicts on health and socioeconomic outcomes by focusing on the Second Indochina War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "The Second Indochina War 2 was one of the most devastating conflicts of the 20th century. Not only did the US forces and allies drop about 7.6 million tons of bombs, three times the amount of ordnance used in World War II and the Korean War combined ( Clodfelter , 1995 ), they also deployed herbicidal warfare spraying twenty million gallons of herbicides over Indochina ( Stellman and Stellman , 2018 ). 3 In 1961-1971, the US and South Vietnamese militaries sprayed defoliants, mainly Agent Orange and Agent White, to destroy vegetation cover that insurgent forces could hide in, as well as crops potentially supplying these forces. An unintended consequence of this herbicidal warfare was contamination by 2,3,7,8Tetrachlorodibenzo-P-dioxin (TCDD, hereafter “dioxin”) in Agent Orange, which directly affected 2.1-4.8 million Vietnamese civilians ( Stellman et al. , 2003 ). Because dioxin is a toxic and persistent organic pollutant ( White and Birnbaum , 2009 ), the effect of Agent Orange is one of the long-lasting legacies of the Second Indochina War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "In this paper, I study the long-run impact of dioxin exposure on health and socioeconomic outcomes. The econometric exercise compares outcome variables between areas with different levels of dioxin exposure. However, the endogeneity of exposure to dioxin-contaminated herbicides is a threat because of the nonrandomness of spray paths, which causes omitted variable bias. For instance, herbi1 In the context of this paper, Miguel and Roland ( 2011 ) do not find evidence for the long-run impact of US bombing on poverty or population in Vietnam. However, Yamada and Yamada ( 2021 ) and Ria ̃no and Valencia Caicedo ( 2024 ) find opposite results in Laos. 2 It is commonly known as the ‘Resistance War against America’ in Vietnam or the ‘Vietnam War’ in the US. 3 Even though most herbicide sorties were on South Vietnam, there were defoliating missions in Laos and Cambodia.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "cide was sprayed where the guerilla and North Vietnamese forces were based ( Le, Pham and Polachek , 2022 ). Because these areas were more likely to be remote and mountainous, the sprayed areas would have had worse socioeconomic outcomes than non-sprayed ones, even in the absence of herbicide sorties. In addition, herbicides were applied around military bases to avoid surprise attacks. Given that the estimated parameter consists of the effects of i) dioxin exposure, ii) herbicides, and iii) confounding factors, bias from confounding factors could underestimate or overestimate the impact of Agent Orange.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "To solve the endogeneity issue, I use total exposure to Agent Orange and Agent White as a control variable. This method leverages the difference in dioxin contamination between Agent Orange and White to estimate the effect of dioxin exposure. Both were herbicides used against broadleaf plants and trees ( Institute of Medicine , 2011 ). However, Agent Orange was dioxin-contaminated, while Agent White was not. Even though Dow Chemical and other herbicide producers knew about dioxin contamination in Agent Orange and its biological impact, high-ranking government officials were unaware of the issue ( Burnham , 1983 b ). Therefore, exposure to dioxin could be considered a random shock after accounting for the non-randomness of herbicide sorties. Assuming that the socioeconomic effects of Agent Orange, in the absence of dioxin contamination, would mirror those of Agent White, the total exposure to Agent Orange and Agent White in the regression model is a continuous matching variable to match communes with similar herbicide exposure, implying similar characteristics. Given that this assumption is likely to hold, the method reveals the impacts of dioxin exposure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "This paper uses two datasets. One is information on exposure, which I measure using data from Stellman and Stellman ( 2011 ). Using the records on spray paths, herbicide type, and amount in each sortie in Stellman and Stellman ( 2011 ), I calculate the amount of dioxin-containing herbicides dropped within a five-kilometer (km) radius of commune centroids and discount it by distance to the centroids. This measurement is the Stellman Exposure Opportunity Index proposed by Stellman et al. ( 2003 ). The second dataset is the 2009 Census of Population and Housing that the General Statistics Office of Vietnam conducted on April 1, 2009. This dataset includes demographic, educational, labor, migration, and health information for about 15% of the population.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "The baseline results show that individuals born by 1975 living in areas with higher exposure to dioxin-containing herbicides were more likely to report visual, auditory, mobility, and cognitive difficulties in 2009. I find that the magnitude of the impact is non-trivial. For instance, for the birth cohorts of 1955-1964, a unit",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "increase in dioxin exposure level raises the chance of reporting difficulties in seeing, hearing, walking, and memory by 0.247, 0.052, 0.145, and 0.091 percentage points, respectively. One standard deviation increase in exposure level is associated with 5-20 percent of the disability prevalence in areas with zero exposure to dioxin.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "Three potential channels for the persistence of dioxin’s health effects are: i) wartime direct exposure to dioxin, ii) intergenerational effects of direct exposure, and iii) indirect exposure through environmental contamination. While those conceived after Operation Trail Dust are affected by the second and third channels, older cohorts are impacted by all three. Since directly exposed parents would transmit the effects to their offspring through their worsened health and socioeconomic outcomes, children born during the operation still experienced the intergenerational effects of direct dioxin exposure. To investigate which channels drive this persistence, I analyze regional differences in population composition. One region’s population experienced all three channels, whereas the population in another region, primarily comprising migrants from northern Vietnam, only encountered post-Operation Trail Dust indirect effects. The former is the Mekong Delta, and the latter is the Central Highlands. I find no evidence of dioxin’s impacts on indirectly exposed communities in the Central Highlands but observe significant effects on cohorts born before and after the end of the operation in the Mekong Delta. These results indicate that wartime exposure to dioxin and its intergenerational effects are the primary channels contributing to the persistent effects of dioxin.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "In addition, I find persistent effects of dioxin exposure on socioeconomic outcomes. The results show that exposure to dioxin is associated with lower literacy rates and educational attainments, even in cohorts born after the war. Dioxin exposure also affects local labor markets by lowering the labor participation rate and population size. Lastly, I find that highly exposed communes emit less nightlight. Since nightlight is a proxy for economic activities, the interpretation is that dioxin exposure lowers local economic outputs.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "This paper contributes to a growing literature evaluating the impact of pollution on human capital accumulation. Early-life exposure to pollution has a persistent effect on health outcomes. For instance, Rosales-Rueda and Triyana ( 2019 ) found the impact of forest fires on children’s stature and lung capacity, which could last 17 years after exposure. Children living near heavy metal mines are at a higher risk of stunted growth by five percentage points ( von der Goltz and Barnwal , 2019 ). Even among infants, the effect is also observable ( Currie and Neidell , 2005 ; Currie, Neidell and Schmieder , 2009 ). In addition to health, early-life exposure to pollution affects cognitive function and educational outcomes ( Aizer et al. , 2018 ; Persico,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "Figlio and Roth , 2020 ; Persico and Venator , 2021 ; Rau, Urz ́ua and Reyes , 2015 ; Currie et al. , 2009 ). Continuing in this line of research, I find long-lasting adverse effects on health, educational, and socioeconomic outcomes, even in the generations born after the war.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "The insights gained from this paper remain relevant outside the context of the Second Indochina War. Since dioxin and similar chemical substances are byproducts of industrial processes, dioxin exposure is a problem in both developed and developing countries. For instance, thermal industrial activities, including combustion engines, emit these substances ( Dopico and G ́omez , 2015 ). The results in this paper are also relevant to other persistent organic pollutants. A closely related case is Dichlorodiphenyltrichloroethane (DDT) and other organochlorine pesticides. Studies have found that DDT, a once-popular insecticide, increases the risk of cancer and disorders of the reproductive, nervous, and immune systems ( Beard , 2006 ; Eskenazi et al. , 2009 ). Another case is the “forever chemicals” Perfluoroalkyl and polyfluoroalkyl (PFAS), which had numerous applications, including household products. Evidence shows the potential health issues caused by PFAS contamination ( Beans , 2021 ), which implies an effect on human capital accumulation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "This paper also contributes to the literature on the socioeconomic impact of conflicts. I find that the Second Indochina War, through dioxin exposure, reduced human capital stocks, and the effects are still observable decades after. This result aligns with the existing literature ( Chamarbagwala and Mor ́an , 2011 ; Le ́on , 2012 ; Akbulut-Yuksel , 2014 ; Grimard and Laszlo , 2014 ; Islam et al. , 2016 ; AkbulutYuksel , 2017 ). By crippling human capital, warfare distorts local economies in the long run, as in Feigenbaum, Lee and Mezzanotti ( 2022 ), Yamada and Yamada ( 2021 ), and Ria ̃no and Valencia Caicedo ( 2024 ). However, the long-term effects of wars and conflicts on affected populations are not unforeseeable. On the other hand, the impact of dioxin in the Second Indochina War was unintended, as dioxin affected both sides. Therefore, this paper is distinct from the existing literature.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "In addition, the results provide evidence for the long-lasting effect of conflicts that persist through environmental channels. The economics literature on wars and conflicts seems to overlook the chemical side of these shocks, as many similar contexts have not been studied. For instance, the British used “rainbow herbicides”, including Agent Orange, during the Malaya Emergency (1947-1960). Another related context is efforts against drug production. In Colombia, glyphosate, which may cause cancer, has been used to destroy coca crops ( Massey , 2001 ). The US government made similar efforts to destroy poppy fields in Afghanistan ( Whitlock , 2019 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "that funded insurgency.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "This is not the first study on the long-run impact of the Second Indochina War. Do ( 2009 ), Appau et al. ( 2021 ), Yamashita and Trinh ( 2022 ), Le, Pham and Polachek ( 2022 ), Bui ( 2023 ) and Ito, Tran and Yoshida ( 2023 ) find adverse impacts of dioxin exposure on health, agricultural, educational outcomes and population size. On the effect of US bombing, interestingly, Miguel and Roland ( 2011 ) find that bombing intensity does not affect local economic development in Vietnam. However, Palmer et al. ( 2019 ), Singhal ( 2019 ), Appau et al. ( 2021 ) and Vuong, Chang and Palmer ( 2021 ) provide evidence that US bombing lowers agricultural productivity and health outcomes in Vietnam. In the context of Laos, Yamada and Yamada ( 2021 ) and Ria ̃no and Valencia Caicedo ( 2024 ) also find that heavily bombed areas have worsened economic outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "The literature on the impacts of the Second Indochina War is fascinating. However, the literature relies excessively on geographic distance instrumental variables for causal inference. An issue with the instrumental variable approach is nontransparency in its estimation. For example, Miguel and Roland ( 2011 ), Singhal ( 2019 ), Palmer et al. ( 2019 ) and Appau et al. ( 2021 ) use the distance to the 17th parallel as an IV for bombing intensity. Without considering any control variables, instrumental variable estimation would put more positive weight on the southmost and northmost areas of unified Vietnam and put more negative weight on areas around the 17th parallel. As a result, the method compares outcomes between communes around the 17th parallel and the southmost and northmost ones and ignores the economic hubs surrounding Ha Noi and Ho Chi Minh City. Since this comparison is arbitrary, whether a geographic distance IV could solve the endogeneity of the war’s effects is still ambiguous.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "The rest of this paper is organized as follows. Section 2 presents the background information on Operation Trail Dust and dioxin. Section 3 describes the data and Section 4 explains the econometric model. Sections 5 and 6 estimate the health and socioeconomic impact of dioxin exposure. Section 7 concludes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 0,
+        "text": "2.1 Operations Trail Dust (1961-1971) The First Indochina War (1946-1954) ended with the defeat of the French military in Dien Bien Phu. The 1954 Geneva Agreement temporarily partitioned Vietnam into communist North Vietnam and non-communist South Vietnam for a reunion",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 1,
+        "text": "later after an election. But the partition became permanent as both sides developed their governments. By the 1960s, the conflict between the South Vietnamese government led by Ngo Dinh Diem and communist insurgents escalated, becoming the Second Indochina War. Because of a certain parallel between the situation in South Vietnam at the time and the Malayan Emergency (1948-1960), Malaysia was considered a model for South Vietnam in the early 1960s for counter-insurgency ( Tilman , 1966 ; Sodhy , 1987 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 2,
+        "text": "With the arrival of the British Advisory Mission to Vietnam in 1961 ( Busch , 2002 ), the British experience in Malaysia influenced the counter-insurgency in South Vietnam. One example is the use of defoliants. The British first used it to remove foliage cover along roads to avoid ambushes and later to destroy crops that could supply guerilla forces ( Perera and Thomas , 1985 ). In South Vietnam, the attention was on controlling the movement of insurgents ( Buckingham , 1982 , p. 11). The Diem administration was also interested in the crop denial program to cut enemy food supply ( Buckingham , 1982 , p. 13). After the arrival of the first herbicide shipment in early July 1961, the South Vietnam Air Force carried out test runs until April 1962 ( Neilands , 1970 ) marked the start of Operation Trail Dust. 4",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 3,
+        "text": "On November 30, 1961, President Kennedy approved the use of herbicides in South Vietnam ( Office of the Secretary of Defense , 1971 , p. 425). However, the Kennedy administration was initially cautious. Herbicide sorties needed approval from Washington and only defoliated “key routes”. In subsequent years, the operations expanded. For instance, crop denial operations were authorized in October 1962 ( Buckingham , 1982 , p. 78). In November 1962, non-crop defoliation missions only needed approval from the Military Assistant Command Vietnam (MACV) and the US ambassador in Saigon ( Mrozek , 1988 , p. 135). As the conflict escalated with US boots on the ground in South Vietnam from March 1965, the operation took off. According to data from Stellman and Stellman ( 2011 ), about 94% of herbicide sorties were carried out after 1965, and these missions accounted for about 98% of the herbicide volume that the operation sprayed from 1961 to 1971.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 4,
+        "text": "From the beginning, there were concerns over herbicide use in South Vietnam, even from within the Kennedy administration. One was about violation of the 1925 Geneva Protocol, in which using chemical and biological weapons in armed conflicts is prohibited. The administration avoided the term “chemical warfare” but instead referred to the defoliants as “weed killers” and used the deployment of the 4 Though some might refer to the herbicide program as Operation Ranch Hand, Ranch Hand was the code name for herbicide sorties using fixed-wing aircraft, specifically C-123.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 5,
+        "text": "same chemicals in Malaysia by the British military as a precedent ( Landa, Sampson and Glennon , 1988 , p. 663). Additionally, the US government consistently argued that the use of defoliants would not cause any health issues to exposed population and personnel. For instance, the Kennedy administration replied to a Wisconsinite congressman that the defoliants “were not harmful to man, animals or the soil” ( Buckingham , 1982 , p. 83). On page 108 of the handbook distributed by Headquarters Seventh Air Force ( 1968 ), “aircrews are often splashed with it [defoliation chemicals], and the ARVN [Army of the Republic of Vietnam] troops who load the aircraft have been working with for several years with no ill effects.” 5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 6,
+        "text": "Another concern is the effectiveness of the herbicide use in counter-insurgency. For instance, in 1963, the head of the British Advisory Mission to Vietnam wrote to the Kennedy administration that dead trees, after being defoliated, could still provide cover to the guerilla forces ( Buckingham , 1982 , p. 85). His letter also suggested that the crop destruction would not work if the Viet Cong had alternative food sources. The efficiency in counter-insurgency of herbicidal warfare was complicated. A study on enemy captives and defectors by RAND revealed that the guerilla fighters were scared of the herbicides because of the communist propaganda on herbicides’ toxicity, which turned out to be correct ( Goure, Russo and Scott , 1966 ). They also feared being detected and thus avoided defoliated areas ( Goure, Russo and Scott , 1966 ). Russo ( 1967 ), another RAND study, finds that the crop destruction program caused the guerilla and North Vietnamese forces to divert more resources for food procurement, but it did not significantly affect their rice consumption. Russo ( 1967 ) suggested that the program alienated the exposed population, estimated at least 325,000 people.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 7,
+        "text": "Despite the concerns over the legality, morality, and efficiency of the operation, its end came from an unlikely source. Sponsored by the National Cancer Institute, the Bionetics Research Laboratory in Maryland started its “Evaluation of Carcinogenic, Teratogenic, & Mutagenic Activities of Selected Pesticide and Industrial Chemicals” study ( Institute of Medicine , 1994 ). Their research reveals that mice exposed to 2,4,5-T, a component of herbicides including Agent Orange in Operation Trail Dust, developed tumors, and exposed fetuses are deformed and adversely affected ( Bionetics Research Laboratories , 1968 a , b ). 40% of the samples have a deformity rate in mice offspring ranging from 66% to 100% ( Bionetics Research Laboratories , 1968 b ). Bionetics later found that 2,4,5-T is not a mutagen, and the 5 Brigadier General Tom Pilsch briefly mentioned being told that defoliants were not harmful when he was in South Vietnam in 1968-1969. See https://www.tom.pilsch.com/AirOp s/traildust.html .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 8,
+        "text": "adverse effect came from the dioxin contamination in 2,4,5-T ( Reggiani , 1988 ). After these results were publicly available in late 1969, in April 1970, the US government suspended the domestic use of 2,4,5-T with a few exceptions and later the use of Agent Orange in Vietnam ( Reggiani , 1988 ). In data compiled by Stellman and Stellman , the use of Agent Orange lasted until October 1970. Nevertheless, herbicide use declined from 1970, and the last sorties were in December 1971.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 9,
+        "text": "Operation Trail Dust ended in 1971, but the cost it inflicted on the environment and the exposed population is long-lasting. The US Ambassador in Vientiane once expressed that using herbicides to locate the communist forces in the jungle would open a “bottomless pit” ( Buckingham , 1982 , p. 116). 6 At the end of the operation, the US military consumed nearly 20 million gallons of herbicides on about six million acres of land, about 14% of the South Vietnamese territory ( Buckingham , 1982 ). Even though it was nearly impossible to fully evaluate the ecological impact of the operation since the war was still ongoing, Committee on the Effects of Herbicides in Vietnam ( 1974 ) concluded that the operation heavily damaged 330,000 acres of inland forests 7 and destroyed 36% of mangrove forests without any prospect of natural recovery within a century. 8 Using data on the South Vietnamese population, Stellman et al. ( 2003 ) estimates that the number of people directly exposed to herbicides during wartime ranges from 2.1 to 4.8 million. Given that about three million US soldiers deployed in South Vietnam ( Institute of Medicine , 1994 ), the operation also affected American personnel, though the exact number is still unknown.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 10,
+        "text": "After the war, the effort led by ecological conservationists rehabilitated about 130,000 acres of mangroves ( Food and Agriculture Organization of the United Nations , 2007 ; Ives , 2017 ), even though it was only a fraction of the destroyed forest. In recent years, the US and Vietnamese governments have been working to clean up dioxin hot spots caused by Operation Trail Dust ( Martin , 2021 ). One example is the cleanup of contaminated dirt in Danang Airport, which took six years and 116 million dollars ( Martin , 2021 ). There are also efforts to address costs inflicted on exposed communities. In 1984, American veterans were awarded a 180 million dollar settlement following the lawsuit against Agent Orange producers, includ6 Ambassador William H. Sullivan referred to defoliating missions in Southern Laos, but his statement could apply to South Vietnam. 7 Committee on the Effects of Herbicides in Vietnam ( 1974 ) showed from the aerial photos that the damage was heavy on areas receiving more than two sprays. The areas were estimated to be 134,212 hectares or about 330,000 acres. 8 Unlike inland forests, mangrove forests could be killed by a single spray of Agent Orange ( Committee on the Effects of Herbicides in Vietnam , 1974 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 11,
+        "text": "ing Dow Chemical and Monsanto ( Blumenthal , 1984 ). But in 2005, a US court dismissed a lawsuit filed by Vietnamese victims of dioxin against the chemical companies ( Butler , 2005 ). Nevertheless, the US government allocated more than a hundred million dollars to assist disabled Vietnamese, and some programs focus specifically on locations that were heavily sprayed with Agent Orange during the war ( Martin , 2021 ). 9",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 12,
+        "text": "2.2 Herbicidal warfare in Indochina Operation Trail Dust used several types of herbicide in its decade-long operation. Most herbicides were dioxin-contaminated because it was 2,4,5-T or a mixture of 2,4-D and 2,4,5-T. Both chemicals are plant growth hormones and were widely used herbicides in agriculture before the 1970s. Though the general public only knew about the adverse health effects of 2,4,5-T caused by dioxin contamination from the early 1970s, chemical companies were aware of the problem earlier. In 1955, a German firm named Boehringer contacted Dow Chemical about the adverse health issues on their workers in their 2,4,5-T producing plant ( Grotto and Jones , 2009 ). Later in 1957, Boehringer found that dioxin was the cause, and minimizing the dioxin concentration would slow down the production of 2,4,5-T ( Grotto and Jones , 2009 ), which they notified Dow Chemical. 10 By 1965, Dow Chemical and other US chemical companies were aware of dioxin contamination and its health impacts ( Burnham , 1983 a ). However, they decided to conceal the information due to the possibility of more regulations over the industry ( Burnham , 1983 a ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 13,
+        "text": "The most frequently used herbicide in the operation was Agent Orange, which is a 50:50 mixture of 2,4-D and 2,4,5-T. Since Agent Orange defoliates broadleaf plants ( Darrow, Irish and Minarik , 1969 ), 85% was used against forest, 7% was sprayed around military bases and other infrastructures, and only 8% was for crop destruction ( Young , 2009 , p.67). Throughout the operation, about 60% of herbicides were Agent Orange ( Institute of Medicine , 1994 ; Stellman and Stellman , 2011 ; Young , 2009 ), but Agent Orange was not used until the end of March 1965 ( Stellman and Stellman , 2011 ). Before that, the operation used Dinoxol and Trinoxol for test sprays in 1961 and then Agent Pink, Agent Green, and Agent Purple until March 1965 ( Stellman and Stellman , 2011 ). These herbicides were 2,4,5-T 9 USAID funds Project Inclusion to provide health services and other assistance in eight heavily sprayed provinces, including Quang Tri, Thua Thien Hue, Quang Nam, Binh Dinh, Dong Nai, Binh Phuoc, Tay Ninh, and Kon Tum. The budget for 2021-2026 is 65 million dollars. 10 See the court-related document at https://www.nj.gov/dep/passaicdocs/docs/ Aetna/45_OCCNJ0118248.pdf",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 14,
+        "text": "or a 50:50 mixture of 2,4-D and 2,4,5-T but in slightly different formulas ( Buckingham , 1982 , p.199). Even though Agent Pink, Agent Green, and Agent Purple only accounted for less than 4% of herbicides sprayed in Indochina ( Young , 2009 , p.104), their dioxin concentration could be higher than Agent Orange. For instance, Agent Orange contained about 105-119 kg of dioxin in total, but it is 25 kg for Agent Pink, Agent Green, and Agent Purple ( Young , 2009 , p.186). Nevertheless, Agent Orange still contained more dioxin than the commercial 2,4,5-T in the US. The average dioxin concentration in Agent Orange was about 1.58 parts per million ( Young , 2009 , p.186), but it was less than 0.05 part per million for 2,4,5-T produced in 1978 ( United States General Accounting Office , 1978 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 15,
+        "text": "In 1965, the Air Force planned to use more than 10% of US herbicide output ( Buckingham , 1982 , p.133). Because of the possible shortage of 2,4,5-T, the operation began to use Agent White, an 80:20 mixture of 2,4-D and picloram ( Young , 2009 , p.38), as a substitute for Agent Orange ( Stellman et al. , 2003 ). Without 2,4,5-T, Agent White did not contain dioxin, but it was also effective against broadleaf plants like Agent Orange and other 2,4,5-T herbicides. Therefore, Agent White was used mainly for defoliation missions ( Young , 2009 , p.67). Even though Agent White acted slower than Agent Orange and was more expensive than Agent Orange ( Cecil , 1986 ), Agent White was believed to be less likely to drift like Agent Orange ( Buckingham , 1982 , p.133). After Agent Orange was banned in 1970, the defoliation missions used Agent White instead ( Buckingham , 1982 , p.167). From 1966 until 1971, the operation sprayed nearly 6 million gallons of Agent White, which accounted for about 30% of herbicides used by the operation ( Institute of Medicine , 1994 ; Stellman and Stellman , 2011 ; Young , 2009 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 16,
+        "text": "The last type of herbicide is Agent Blue, which is cacodylic acid, an organic arsenic chemical ( Buckingham , 1982 , p.199). Since Agent Blue was effective against narrow-leaf plants, the operation used Agent Blue for crop destruction missions and defoliating grass and bamboo ( Young , 2009 , p.66). In addition to its impact on rice crops, Agent Blue could also affect broadleaf plants. For instance, during one of the first test runs in November 1962, Agent Blue took less than two days to kill rice and broadleaf plants, including beans, peanuts, potatoes, and manioc plants ( Buckingham , 1982 , p.80). According to Stellman and Stellman ( 2011 ), the operation used 1.1 million gallons of Agent Blue, which was about 6% of herbicide use, even though this figure might be disputed ( Buckingham , 1982 , p.200).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 17,
+        "text": "The operation sprayed herbicides with fixed-wing aircraft, helicopters, or ground vehicles. Data in Stellman and Stellman ( 2011 ) show that missions using fixedwing aircraft, specifically C-123, and helicopters sprayed 95.9% and 3.8% of her-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 18,
+        "text": "bicides, respectively. Ground spraying sorties accounted for less than 0.3%. According to Buckingham ( 1982 , p.132), a C-123 would hold and spray a tank of 1,000 gallons or about four cubic meters within four minutes at 130 knots or 240 km per hour. A single C-123 could cover a 300-acre strip of 80 meters wide and 16 kilometers long. On average, they sprayed three gallons of herbicides on an acre of land. Since a strong wind, even for low-altitude spraying, could spread the herbicide away from targets, herbicide sorties were conducted in the early morning when the weather was calm ( Buckingham , 1982 , p.131). They also canceled herbicide sorties if the ground temperature exceeded 29.5 degrees Celcius or the surface wind speed was more than eight to ten knots ( Buckingham , 1982 , p.131). On the other hand, a helicopter could only carry 100 gallons and spray 1.5 gallons per acre, covering a 75-meter-wide strip ( Institute of Medicine , 1994 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 19,
+        "text": "2.3 2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD) Dioxins are a group of toxic chemicals. Outside the context of the Second Indochina War, industrial activities are the sources of dioxins and dioxin-alike compounds. For instance, one source of dioxins and similar compounds is chemical processing, such as pulp bleaching in paper production or producing halogenated organic chemicals ( Committee on the Implications of Dioxin in the Food Supply, Food and Nutrition Board , 2003 ). Halogenated organic chemicals have many applications in different industries, from producing pesticides to preserving wood and textiles ( Hutzinger et al. , 1985 ). Dioxins and dioxin-alike compounds could also come from thermal industrial activities, including burning fossil fuel, urban waste incineration, chemical waste incineration, and metal manufacturing, which could also produce these compounds ( Committee on the Implications of Dioxin in the Food Supply, Food and Nutrition Board , 2003 ; Hutzinger et al. , 1985 ). Exposure to dioxins is a public health issue not only in Vietnam but also in other countries. In the context of the Second Indochina War, 2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD) was the chemical contaminating Agent Orange and other herbicides containing 2,4,5-T. Although I refer to TCDD as “dioxin” for simplicity, I will use its name “TCDD” in this section for accuracy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 20,
+        "text": "At the low dose, TCDD exposure could cause a wide range of symptoms from skin irritation, eye irritation, headache, dizziness, and vomiting to chloracne and liver damage ( New Jersey Department of Health and Senior Services , 1996 ). However, TCDD could be lethal, and it is considered one of the most toxic chemicals on Earth ( Vandenberg , 2021 ) because of its adverse effect on health and the reproductive system. When Bionetics was studying the dioxin-contaminated 2,4,5-T, they found in one sample that about one-third of the mice developed tumors 18 months",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 21,
+        "text": "after exposure to the chemical ( Bionetics Research Laboratories , 1968 a ). After this study, many experiments on animals and observational studies on humans have confirmed the association of TCDD exposure and tumors in the lung, liver, soft-tissue sarcomas, thyroid gland, oral cavity, and reproductive system ( Huff , 1992 ; Agency for Toxic Substances and Disease Registry , 1998 ; Kogevinas , 2001 ). TCDD also adversely affects the reproductive system by reducing sperm counts or causing endometriosis ( Kogevinas , 2001 ). In addition, Bionetics Research Laboratories ( 1968 b ) found that exposure to supposedly pure 2,4,5-T reduces placenta’s and fetus’s weight, increases fetus mortality rate, and causes fetus abnormalities. In some samples, the fetus abnormality rate went up to 100%. In addition, the chemical damages the brain tissues ( Hassoun et al. , 2000 ; Bagchi et al. , 2002 ) and could cause brain atrophy and declining cognitive functions ( Lee, Kyeong and Kim , 2022 ; Barrett et al. , 2001 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 2,
+        "section_name": "Background information",
+        "paragraph_id": 22,
+        "text": "The persistency of TCDD makes it even more harmful. Even though TCDD’s halflife could be less than 48 hours if it is exposed to natural sunlight ( McCrady and Maggard , 1993 ), its half-life in surface soil could be 9-15 years and 25-100 years in subsurface soil and river sediments ( Paustenbach et al. , 1992 ; Sinkkonen and Paasivirta , 2000 ). Another reason for TCDD’s persistent presence in the environment is its solubility. Since TCDD is insoluble in water ( Marple, Brunck and Throop , 1986 ) but soluble in fat ( Geyer et al. , 1993 ), it would stick to organic matter and not move unless the soil moves. In the human body, a study on American veterans estimated that TCDD’s half-life is about seven years ( Pirkle et al. , 1989 ), but this number depends on many factors, including age, body fat or lifestyle ( Milbrath et al. , 2009 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "3.1 Spray missions I retrieve records of spray missions in Operation Trail Dust from Stellman and Stellman ( 2011 ). For each mission, Stellman and Stellman ( 2011 ) includes the date, flight path, herbicide type, volume, and delivery vehicles. The dataset includes 8,959 missions from 1961 to 1971, which, in total, sprayed about 19 million gallons of defoliants. Figure 1a maps spray missions that sprayed dioxincontaminated herbicides, of which 96% were Agent Orange. Figure 1b maps missions that used the dioxin-free Agent White. Figure 1c plots the monthly herbicide use, showing that the deployment of defoliants rose significantly after the mass arrival of US and allied forces in 1965. The number of spray missions by month also",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "Figure 1: Data on spray missions, 1961-1971 (a) Dioxin-contaminated spray missions (b) Missions spraying Agent White",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "(c) Monthly herbicide use (gallons) (d) Number of missions by month",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "Note: Records of spray missions are from Stellman and Stellman ( 2011 ). Figure 1a maps spray paths of Agent Orange and other dioxin-contaminated herbicides. Figure 1b maps paths that used the dioxin-free Agent White. Figure 1c plots monthly herbicide use in gallons. Figure 1d plots the number of spray missions each month. Figures 1c and 1d mark March 8, 1965, when the first U.S. troops arrived in Danang as the escalation in the Second Indochina War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "Figure 2: Dioxin exposure (a) Stellman Exposure Opportunity Index",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "(b) Number of spray missions (c) Number of spray paths",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "Note: Figure 2 maps different measures for dioxin exposure at the commune level. Figure 2a maps the Stellman Exposure Opportunity Index from dioxin-contaminated spray missions within a 5 km radius of commune centroids, which is the explanatory variable in this paper. Figure 2b maps the number of dioxin-contaminated missions sprayed in all locations within a 5 km radius of commune centroids. Figure 2c maps the number of paths, either points or lines, sprayed dioxin-contaminated herbicides in any location within a 5 km radius of commune centroids.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "shows a similar trend as in Figure 1d . To the best of my knowledge, this is the best source of information on Operation Trail Dust.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "I use the Stellman Exposure Opportunity Index (EOI) as the explanatory variable because it accounts for the amount of dioxin-contaminated herbicides and the locations of the spray paths relative to the centroid. Appendix A describes how to calculate the Stellman EOI, and Figure 2a maps the calculated EOI at the commune level. For exposure to dioxin-contaminted herbicides and Agent White, I add herbicide sorties spraying Agent White and follow the same procedure. To check whether the calculated EOI is reliable, I construct two other measurements of dioxin exposure. The first measurement is the number of missions that sprayed dioxin-contaminated herbicides on any location within a five-km radius of commune centroids. Since each would consist of different paths, which could be either a point or a straight line, I break them down into spray paths and calculate the second measurement by counting the number of spray paths that sprayed defoliant on any location within a five-km radius of commune centroids.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 9,
+        "text": "Figures 2b and 2c map the numbers of missions and spray paths within a five km radius of commune centroids. These maps show a similar feature to the map of calculated EOI in Figure 2a . Furthermore, these two measures and EOI show a strong correlation. The correlation coefficient between EOI and the number of missions within five km is 0.779. The correlation coefficient between EOI and the number of spray paths is 0.701. Interestingly, these figures show a consistent pattern that the US military sprayed heavily on the outskirts of Saigon and the mangrove forests on the southernmost tip of the country. These were also the locations of the Vietminh bases during the First Indochina War (1946-1954) against the French colonial forces. Other heavily defoliated areas are the Central Coast, which was and still is a population center, and along the Ho Chi Minh trail.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 10,
+        "text": "3.2 The 2009 Census of Population and Housing For health outcomes, I use the self-reported disability prevalence from the Census of Population and Housing as the dependent variables. The dataset is a sample of 15% of the population from the 2009 census. The outcomes are binary variables of whether an individual reports difficulties in seeing (even with glasses), hearing, memory, and walking. To minimize the noise that comes from migration, I restrict the sample to individuals who did not migrate within five years before the census. Also, the analysis does not include those living north of the 17th parallel at the time of the survey. The summary statistics of the outcome variables are in Table 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 11,
+        "text": "Table 1: Summary statistics of EOI and health outcomes",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 12,
+        "text": "Obs. Mean Std. Dev Min Max (1) (2) (3) (4) (5) Outcome variables at the commune level Stellman Exposure Opportunity Index 4,316 1.42 3.86 0 45.88 Estimated population in 2009 4,265 10,587 8,199 536 91,037 Estimated non-migrated population in 2009 4,265 8,653 5,542 451 51,551",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 13,
+        "text": "Binary outcome variables at the individual level Reporting visual difficulties 5,819,714 0.05 Reporting auditory difficulties 5,819,362 0.03 Reporting mobility difficulties 5,819,380 0.03 Reporting cognitive difficulties 5,818,181 0.04 Being able to read and write 5,818,819 0.90 Finished middle school 5,818,819 0.22 Participating in the labor force 4,619,930 0.26 Working in agricultural sector 3,440,923 0.59",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 14,
+        "text": "Note: The Stellman Exposure Opportunity Index measures the exposure to dioxin-contaminated herbicides. I calculate using the Agent Orange Data Warehouse built by Stellman and Stellman . The description of the calculation is in Appendix A . Other variables are from the 2009 Vietnamese Census of Population and Housing conducted by the General Statistical Office of Vietnam. Individual-level outcome variables are binary.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 15,
+        "text": "Figure B1 plots the disability rate by age, which shows the increase in self-reported disability starting at 40 years old.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 16,
+        "text": "In addition to the health outcomes, the 2009 Census provides information on educational attainments, labor participation, and population size. The summary statistics of these variables are also in Table 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 0,
+        "text": "4.1 Cross-sectional comparisons To estimate the conditional correlation between health outcomes and dioxin exposure, I start with an OLS estimation with the following specification.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 1,
+        "text": "y icpt = βEOI cp + δX icpt + γ p + θ t + ε icpt (1) In Equation 1 , y icpt is the health outcome of individual i living in commune c of",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 2,
+        "text": "province p born in year t . The explanatory variable is the commune-level Exposure Opportunity Index EOI cp that measures exposure to dioxin-containing defoliants. I also control for individual and household-level covariates X icpt , including gender, age, ethnicity, marital status, and urban status. Other parameters are province fixed effects γ p , birth cohort fixed effects θ t , and error terms ε icpt .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 3,
+        "text": "One concern of the OLS estimation is nonrandom exposure to dioxin and Operation Trail Dust. The operation had two targets: foliage cover and crops that could supply the North Vietnamese forces. Therefore, areas around bases belonging to the North Vietnamese had higher exposure to dioxin and other defoliants. As noted above, since these areas were often mountainous or remote, and therefore on a relatively slow development trajectory, the model would overestimate the human capital effects of dioxin exposure. On the other hand, there also could be underestimation, because herbicides also were sprayed around South Vietnamese and US military bases and communication lines to reduce the chance of being ambushed. Including the province fixed effects γ p does not fully solve the problem because it only accounts for the cross-province variation in exposure level. Without accounting for within-province variation in exposure level, the model suffers from omitted variable bias.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 4,
+        "text": "To address the omitted variable bias, I incorporate total exposure to dioxin-contaminated herbicides and Agent White as a control variable. Two underlying assumptions are made: i) in the absence of dioxin contamination, these herbicides would have the same effect as Agent White, and ii) the decision to spray either dioxin-contaminated herbicides or Agent White was random. If these two assumptions hold, the total exposure to dioxin-contaminated herbicides and Agent White serves as a continuous matching variable to align communes with similar herbicide exposure, implying similar characteristics. Consequently, this reduces estimation bias from unobservable confounding factors. Additionally, this method compares the effects of exposure to dioxin-contaminated herbicides and Agent White. Given the underlying assumptions, the model estimates the difference in effects between exposure to dioxin-contaminated herbicides and Agent White, which is attributed to dioxin. I term this method “Adjusted OLS” and Equation 1 as “Uncontrolled OLS.”",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 5,
+        "text": "The assumptions are likely to hold due to the usage similarity between Agent Orange, the most common dioxin-contaminated herbicide, and Agent White. Agent Orange and Agent White accounted for approximately 60% and 30% of herbicide volume, respectively. Both herbicides were broad-leaf defoliants comprising 2,4D and another chemical. However, Agent Orange contained dioxin, while Agent White did not, as the 2,4,5-T in Agent Orange was contaminated by dioxin. Con-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 6,
+        "text": "sequently, Agent Orange without dioxin contamination and Agent White would likely yield similar health effects. Moreover, the US military was unaware of the dioxin contamination in 2,4,5-T, making dioxin exposure during the Second Indochina War unintended, as it was not intended to harm US personnel. Additionally, the adoption of Agent White in 1965 stemmed from the anticipation of a 2,4,5-T shortage, driven by the increasing demand for military purposes. Given the lack of information on the difference in toxic levels and the exogeneity of adopting Agent White, the decision to use Agent White and Agent Orange should be considered as good as random.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 7,
+        "text": "Denoting EOI ′ cp as the commune-level Exposure Opportunity Index that measures exposure to dioxin-contaminated herbicides and Agent White, the regression model for the Adjusted OLS specification is y icpt = βEOI cp + β ′ EOI ′ cp + δX icpt + γ p + θ t + ε icpt . (2) There are sources of bias that I cannot overcome with available data. Firstly, the research sample does not include individuals who did not survive the war and its aftermath. Since these individuals likely had worse health outcomes than the current population, their absence from the data reduces the observed health incidence, biasing the estimates towards zero. Secondly, the sample does not account for migration that occurred before 2004. Since information on dioxin exposure was unavailable to the general public, individuals may have unknowingly moved between exposed and unexposed locations. If the exposed population is less healthy than the unexposed population, migration reduces the observed health incidence in exposed areas and increases the observed health incidence in unexposed areas. Although restricting the sample to those who did not relocate during 2004-2009 partially addresses the issue, it does not fully account for migration that occurred before 2004. In summary, the estimates in this chapter provide a lower bound in magnitude for the long-lasting legacy of dioxin exposure in local communities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 8,
+        "text": "Even though the estimates could be biased away from zero if sorting in migration happens, the bias would be insignificant. If the migration from exposed to unexposed areas is larger than the other direction, the observed health incidence would be higher in exposed areas. The reason is that migrants are typically healthier than the left-behind population. Therefore, using data with limited information on migration would exaggerate the estimated effect of dioxin. However, the estimation bias from this source is insignificant because information on dioxin exposure has not been available to the general public. But, because most exposed areas are rural, sorting in migration still could happen due to migration from rural to urban",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 4,
+        "section_name": "Econometric model",
+        "paragraph_id": 9,
+        "text": "areas. Later in this paper, I use a sample consisting of rural areas and still observe the health effects of dioxin exposure with a similar magnitude. Therefore, the bias from sorting in migration is insignificant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 0,
+        "text": "The health effects of dioxin exposure persist through three main channels: i) direct wartime exposure to dioxin, ii) intergenerational effects of this exposure, and iii) indirect exposure resulting from environmental contamination. Firstly, individuals who lived through Operation Trail Dust might have been exposed to dioxin through inhalation, dermal absorption, the food chain, or decreasing agricultural productivity. This direct exposure also affected those who were in utero during the operation. Secondly, older generations could have transmitted the impact of dioxin exposure to younger generations due to their worsening health and socioeconomic conditions. This transmission could occur in cohorts born after and even during the operation. Thirdly, people might have been indirectly exposed to dioxin residue, as dioxin is a persistent organic pollutant with a long half-life in soil.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 1,
+        "text": "4.2.1 Indirect exposure to dioxin The Kinh ethnic group, currently comprising 85% of the Vietnamese population, had settled in the Central Coast, Southeast, and Mekong Delta regions for centuries prior to the Second Indochina War. In contrast, permanent settlements of the Kinh ethnic group in the Central Highlands began in the late 19th century with the arrival of French colonialism, with the majority of the population arriving after 1975 ( Evans , 1992 ; Hardy , 2000 ). As depicted in Figure 3 , the US and South Vietnamese governments estimated that most of the Central Highlands area had fewer than 50 people per square mile, while a significant share of the Central Coast, Southeast, and Mekong Delta regions had more than 500 people per square mile.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 2,
+        "text": "Interestingly, the majority of migrants to the Highlands are from north of the DMZ. Table 2 shows the origins of the migrants to regions in South Vietnam in 1989, 1999, and 2009. North Vietnam was the dominant source of migrants in these years. However, in 1989, migrants from North Vietnam since 1984 accounted for only 1.63% of the Central Coast population and 0.80% of the Mekong Delta population. This number is 9.34% in the Central Highland. The numbers from the 1999 and 2009 censuses show that migration to these regions became smaller. Still, the inflow of 2004-2009 migrants to the Central Highlands was larger than inflows to the Mekong Delta and Central Coast in all three censuses. Meanwhile, the former",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 3,
+        "text": "Figure 3: Population density in South Vietnam in 1968",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 4,
+        "text": "Note: The map was produced by the US Central Intelligence Agency. I retrieved it from PerryCastaneda Library Map Collection, the University of Texas at Austin.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 5,
+        "text": "Table 2: Migration flows in South Vietnam in 1989, 1999 and 2009 “Where were you five years ago?” (%) Central Coast Central Highland Southeast Mekong Delta 1989 1999 2009 1989 1999 2009 1989 1999 2009 1989 1999 2009 Answer: North Vietnam 1.63 0.71 0.69 9.34 5.41 2.22 4.33 3.34 3.06 0.80 0.15 0.11 Central Coast 97.79 98.67 98.77 2.44 2.00 0.72 0.65 0.86 1.41 0.08 0.04 0.04 Central Highland 0.19 0.26 0.24 87.06 91.77 96.41 0.14 0.20 0.49 0.01 0.01 0.01 Southeast 0.33 0.29 0.23 0.86 0.55 0.51 93.90 94.13 91.19 0.34 0.30 0.25 Mekong Delta 0.07 0.06 0.08 0.30 0.27 0.14 0.99 1.47 3.84 98.77 99.50 99.58 Note: The numbers are calculated based on the 1989, 1999 and 2009 Censuses of Population and Housing conducted by the General Statistics Office of Vietnam. Data are retrieved from Minnesota Population Center ( 2020 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 6,
+        "text": "capital city of South Vietnam and surrounding areas, which are in the Southeast region, received a constant flow of migrants.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 7,
+        "text": "To disentangle the impacts of indirect exposure to dioxin versus wartime direct exposure and the intergenerational effects of such exposure, I compare two regions: the Central Highlands and the Mekong Delta. The Mekong Delta, densely populated during the war and experiencing minimal post-war migration, serves as a prime example where the health effects of dioxin persist through all three channels: i) direct wartime exposure, ii) intergenerational effects of this exposure, and iii) indirect exposure. In contrast, the population of the Central Highlands primarily comprises migrants from northern Vietnam, where the US military did not spray dioxin. Here, exposure to dioxin occurs primarily through environmental residue. By comparing the estimation results from these two regions, we can observe the differing magnitudes of impact between indirect dioxin exposure and the combined effects of direct wartime exposure and its intergenerational transmissions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 8,
+        "text": "While the Central Highlands sample presents several issues, the biases resulting from these issues are insignificant. The initial migration to the Central Highlands was primarily driven by the New Economic Zone policy (1976-1980), which encouraged both Southerners, particularly urban residents, and Northerners to relocate to remote and mountainous areas in South Vietnam ( Desbarats , 1987 ). While a small fraction of the Central Highlands population originates from South Vietnam and may have experienced direct wartime exposure and its intergenerational effects, this fraction should not significantly affect estimations using the Central Highlands sample, as these state-sponsored migrants are likely to be young and healthy adults. Moreover, the bias from the initial state-sponsored migration might have an opposite effect to that of dioxin exposure. Migrating into defoliated areas required less effort for clearing forests for agricultural production, making these areas attractive destinations for migrants. Thus, the initial wave of migration likely targeted areas with higher dioxin exposure, suggesting that exposed areas might have better health outcomes than unexposed areas within the Central Highlands. However, this concern is mitigated by the fact that most migrants to the Central Highlands were unexposed to dioxin due to their origins in North Vietnam.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 9,
+        "text": "For transparency, I also include the estimation results for the Central Coast and Southeast regions. Although migration inflows from other regions to the Central Coast were insignificant, internal migration from coastal to mountainous areas within the Central Coast may have reduced the observed magnitude of the effect of wartime direct dioxin exposure. A similar phenomenon is observed in the Southeast sample due to the constant flow of migration to this region and internal mi-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 10,
+        "text": "gration within it. However, given that the population of these two regions also experiences indirect exposure, I anticipate that the estimations in these regions will be bounded by the estimates using the Central Highlands sample and the Mekong Delta sample.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 11,
+        "text": "4.2.2 In utero exposure vs. intergenerational effects Since most herbicides were sprayed from 1965 to the end of 1969, the estimated effects in the baseline model of dioxin exposure on the health outcomes of birth cohorts born by 1965 could be attributed to direct exposure. Similarly, the impact of dioxin exposure is intergenerational for the sample of those born after 1972, the last birth cohort that could have been directly exposed. They are also affected by post-Operation Trail Dust indirect dioxin exposure. However, for those born in 1965-1972, who were children and newborn babies during the operation, it is unclear whether in utero effects are observable, given the intergenerational effects of direct exposure and indirect dioxin expsure. To address this question, I use the records of herbicide sorties to identify the time of the last spray on each commune. Then, I use this information to separate the sample of those born in 1965-1975 into treatment and control groups. For instance, the last spray mission that might have used dioxin-containing herbicides was in November 1971. In communes affected by that sortie, people born by the end of August 1972 would be in the treatment group, and those born in September 1972 and after in the control group.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 12,
+        "text": "With birth cohort treatment, the second variation is the dioxin exposure level, which Exposure Opportunity Index measures. Since dioxin exposure is nonrandom, I use the exposure to dioxin-contaminated herbicides and Agent White and its interaction with the birth cohort treatment as control variables. The econometric specification is y icpt = β . 1 EOI cp .treat cpt + β 2 .EOI cp + β 3 .treat cpt + β ′ 1 .EOI ′ cp .treat cpt + β ′ 2 .EOI ′ cp + δX icpt + γ p + θ t + ε icpt . (3) In Equation 3 , y icpt is the health outcome of individual i living in commune c of province p born at time t . Two treatment variables are EOI cp , which measures dioxin exposure level, and treat cpt , 1 for those born within nine months after the last spray on commune c and 0 otherwise. Control variables are exposure to dioxincontaminated herbicides and Agent White EOI ′ cp and individual and household level covariates X icpt , including gender, age, ethnicity, marital status, and urban status. Other parameters are province fixed effects γ p , birth year cohort fixed effects θ t , and error terms ε icpt . The error term ε icpt is clustered at the commune",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 5,
+        "section_name": "Mechanism",
+        "paragraph_id": 13,
+        "text": "One concern over the generalized difference-in-differences method is the parallel trend assumption, as Callaway, Goodman-Bacon and Sant’Anna ( 2021 ) point out. The assumption is that the trend between age and health outcomes has a similar slope between areas with different exposure levels. If this assumption holds, the estimate ˆ β 1 is the effect of direct dioxin exposure, including during the in utero stage, and ˆ β 2 is the intergenerational effects of direct exposure and post-Operation Trail Dust indirect exposure. However, this assumption would be violated if health deterioration due to aging happens faster in areas with higher dioxin exposure. Therefore, ˆ β 1 might also capture the aging effect of dioxin exposure. To reduce the estimation bias, I minimize age variation in the sample by only including those born between January 1965 and December 1974. Since people born from 1965 to 1974 would be 35-44 years old in 2009, the aging effect on health outcomes should be trivial in this group.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 0,
+        "text": "5.1 Baseline results Using the regression model following Equations 1 and 2 , I compare the health outcomes between areas with different dioxin exposure. I apply models on different samples separated by birth cohorts to reveal the effect of dioxin exposure and eliminate the effects of aging. Figure 4a plots the estimated effect of dioxin exposure on the chance of having eyesight problems. The plot shows an increase in effect size as people age. It is statistically significant for those born before 1975. As the unit of the horizontal axis is percentage points, the results show that a one-unit increase in dioxin exposure would raise the chance of having eyesight problems by 0.087 percentage points for those born in 1965-1974. The numbers are 0.247, 0.374, 0.813, and 0.682 for those born in 1955-1964, 1945-1954, 1935-1944, and 1925-1934. In 2009, individuals in these five birth cohort groups were from 35 to 84 years old. Since the effect magnitude becomes larger in the older generations, the results suggest that aging amplifies the effect of dioxin exposure. Details of these estimations are in Table B1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 1,
+        "text": "Compared to eyesight issues, the effect of dioxin exposure on hearing difficulties has a smaller magnitude. A one-unit increase in dioxin exposure would raise the chance of having hearing difficulties by 0.052 and 0.137 percentage points for those born in 1955-1964 and 1945-1954. The number for the 1935-1944 and 1925-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 2,
+        "text": "Figure 4: Dioxin exposure and disability prevalence, 2009 Census (a) Visual difficulties (b) Hearing difficulties",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 3,
+        "text": "(c) Walking difficulties (d) Memorizing difficulties",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 4,
+        "text": "Note: Figure 4 shows the impact on disability prevalence (in percentage points) of a oneunit increase of the Exposure Opportunity Index at the commune level. These are regression results from different samples of birth cohort groups from the 2009 Census of Population and Housing. The samples consist of 15% of the population who were living below the 17th parallel and who had not migrated within five years previous to the survey. Uncontrolled OLS does not control for the exposure to dioxin-contaminated herbicides and Agent White, but the Adjusted OLS does. The control variables are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 5,
+        "text": "1934 birth cohorts are 0.227 and 0.369. Even though it is consistent that the effect magnitude is larger in the older generations, the effect on these two birth cohort groups is not statistically significant. A possible explanation is that hearing issues are common in these age groups, so that dioxin exposure has little additional effect. The results are in Table B2 , which I plot in Figure 4b .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 6,
+        "text": "Figure 5: Impact of one standard deviation increase in dioxin exposure (a) In percentage points (b) Relative to sample mean",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 7,
+        "text": "Note: Figure 5 shows the impact of a one-standard-deviation increase in EOI on disability prevalence by birth cohorts. Figure 5a shows the change in percentage points of the disability probabilities. Figure 5b compares the impact magnitude in Figure 5a to the prevalence in unexposed communes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 8,
+        "text": "The estimated effects of dioxin exposure on walking and memory difficulties show similar patterns, in that the point estimates are larger in the older generations. A one-unit increase in dioxin exposure would increase the chance of having walking problems by 0.043 percentage points in the 1965-1974 birth cohorts. These numbers would jump to 0.145, 0.204, and 0.548 in the 1955-1964, 1945-1955, and 1925-1934 birth cohorts. The effects on walking are shown in Table B3 and Figure 4c . Unlike the other health outcomes, the impact of dioxin exposure on memory becomes statistically significant in the younger generation, as shown in Table B4 and Figure 4d . The effect of a one-unit increase in dioxin exposure increase the chance of having memory difficulty by 0.012, 0.021, and 0.091 percentage points in the 1985-1994, 1975-1984, and 1955-1964 birth cohorts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 9,
+        "text": "To understand the magnitude, I multiply the estimated coefficient by the standard deviation of the Exposure Opportunity Index to obtain the health effect of a onestandard-deviation increase in exposure level. Figure 5a plots all point estimates by age group regardless of statistical significance. The figure shows that a onestandard-deviation increase in EOI could raise the disability prevalence by one to three percentage points for those born before 1945 and less than one percentage point for those born between 1945 and 1975. Figure 5 compares the effect magnitude to the disability prevalence in zero-exposure areas. For the cohort born by the end of the Second Indochina War in 1975, the effect of one standard deviation of EOI would be around 5-20% of the disability prevalence. In short, the persistent",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 10,
+        "text": "health effect of dioxin exposure is non-trivial.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 11,
+        "text": "5.2 Indirect exposure to dioxin",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 12,
+        "text": "Figure 6: Estimation results by regions, 2009 Census (a) Visual difficulties (b) Hearing difficulties",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 13,
+        "text": "(c) Walking difficulties (d) Memorizing difficulties",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 14,
+        "text": "Note: Figure 6 shows the impact on disability prevalence (in percentage points) of a oneunit increase in dioxin exposure by region. The data is from the 2009 Census of Population and Housing. The sample consists of 15% of the population who were living below the 17th parallel and who had not migrated within five years previous to the survey. The control variables are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 15,
+        "text": "As discussed in Section 4.2.1 , I estimate the effect of dioxin exposure by regions to understand the magnitude of the effects of indirect exposure. Because migrants who came after the Second Indochina War account for a big part of the Central Highlands and Southeast populations, those populations are less likely to have experienced direct exposure to dioxin during the war or to have inherited adverse",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 16,
+        "text": "effects from older generations. Therefore, estimations using the sample of the Central Highlands and Southeast populations would reveal the health effects of indirect exposure, resulting from dioxin residue in soil and decreased agricultural productivity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 17,
+        "text": "Figure 6 plots the Adjust OLS estimations with samples from the Central Coast, Central Highlands, Southeast, and Mekong Delta. The results suggest that exposure to dioxins has not affected the current Central Highlands and Southeast populations. Surprisingly, in the Central Highlands, the statistically insignificant point estimates show better health outcomes in a more exposed commune in certain age groups. From the current data, I do not have enough evidence to conclude that dioxin residue left from the Second Indochina War has persistent health effects on the contemporary population. The extreme level of dioxin concentration in areas such as Bien Hoa airbase, Da Nang airbase, or A Sau Valley still harms the local communities. But, nationwide, the dioxin residue might not have any effect.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 18,
+        "text": "The Mekong Delta sample shows larger and more statistically significant estimates of the effect of dioxin exposure than the one in Figure 4.1 . However, the Central Coast sample shows smaller estimates with higher standard errors than the Mekong Delta sample. This result suggests that the persistent health effect of dioxin exposure is weaker in the Central Coast. A possible explanation is internal migration within the Central Coast. Figure 3 shows high population density in coastal plains but low density in mountainous areas. Moreover, provinces in the southern tip of the Central Coast from Phu Yen to Binh Thuan have low population density.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 19,
+        "text": "To check whether the estimation results are robust, I conduct the same analysis with samples from rural areas. Figure B2 plots the estimated parameters and shows a similar trend as Figure 6 . These results suggest direct exposure and intergenerational effect as the primary channels.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 20,
+        "text": "5.3 In utero exposure vs. intergenerational effects Table 3 presents the impact of direct dioxin exposure and intergenerational effect in the sample of those born in 1965-1974. The coefficients of the interaction of birth cohort treatment and dioxin exposure represent the effect on those conceived before the last spraying. On the other hand, the coefficient of dioxin exposure represents the effect on the whole sample. Without concluding evidence for the health impacts of post-Operation Trail Dust indirect dioxin exposure, I interpret these two coefficients as the impacts of in utero exposure and intergenerational effects. Because data on birthplace is unavailable, the estimates rely on the assumption that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 21,
+        "text": "Table 3: In utero exposure vs. intergenerational factor in 1965-1974 birth cohorts",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 22,
+        "text": "Central Central Southeast Mekong Coast Highlands Delta (1) (2) (3) (4) Panel A : Visual difficulties EOI/100 0.164 -0.02 0.004 0.133** (0.105) (0.091) (0.045) (0.067) treat × EOI/100 0.22 -0.072 0.074 0.163* (0.154) (0.107) (0.094) (0.098) Observations 243,926 115,274 192,293 361,048 R-squared 0.008 0.009 0.007 0.008 Panel B : Hearing difficulties EOI/100 0.046 -0.027 -0.013 0.047** (0.059) (0.037) (0.017) (0.022) treat × EOI/100 0.005 0.039 -0.006 -0.028 (0.070) (0.064) (0.024) (0.027) Observations 243,923 115,272 192,266 361,034 R-squared 0.005 0.005 0.004 0.003 Panel C : Walking difficulties EOI/100 0.099 0.021 0.044 0.037 (0.088) (0.061) (0.030) (0.034) treat × EOI/100 0.068 -0.029 -0.009 0.073 (0.078) (0.090) (0.028) (0.048) Observations 243,878 115,242 192,243 360,955 R-squared 0.022 0.014 0.01 0.01 Panel D : Memorizing difficulties EOI/100 -0.003 -0.011 -0.001 0.017 (0.088) (0.043) (0.026) (0.029) treat × EOI/100 0.053 0.048 0.038 0.031 (0.095) (0.100) (0.030) (0.038) Observations 243,923 115,272 192,274 361,038 R-squared 0.01 0.006 0.006 0.007 Robust standard errors in parentheses [FORMULA] p < 0.01, ** p < 0.05, * p < 0.1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 23,
+        "text": "Note: Table 3 shows the results of the diff-in-diff regressions with two layers of variation. One is dioxin exposure measured by Exposure Opportunity Index, and another is direct exposure, including the in utero period. The sample consists of those born in 1965-1974. Other variables are exposure to dioxin-contaminated herbicides and Agent White, birth cohort treatment, and the interaction of exposure to dioxin-contaminated herbicides and Agent White and birth cohort treatment. I also control for gender, age, ethnicity, marital status, urban status, birth year cohort fixed effects and province fixed effects. The error term is clustered at the commune level. 30",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 24,
+        "text": "a person living in a commune was born in the same commune. However, this assumption is unlikely to hold, meaning that the measurement error in birth treatment exists. Given the measurement error in dioxin exposure that I discussed previously, the coefficients are biased toward zero.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 25,
+        "text": "As discussed in the previous section, because the Central Highlands and Southeast have been two popular destinations for migrants from all over the country, the in utero and intergenerational effects in these regions are small and noisy. This is consistent with Columns (2) and (3), in which estimates are statistically insignificant. The Central Coast has a similar situation because of internal migration to mountainous and western areas. On the other hand, the results from the Mekong Delta show the in utero and intergenerational effects of dioxin exposure on visual impairments, which have similar magnitudes. A one-unit increase in dioxin exposure increases the chance of having visual difficulties by 0.133 and 0.163 percentage points due to intergenerational effect and in utero exposure, respectively. Since only 1.8% of the 1965-1974 birth cohorts in unexposed areas reported eyesight problems, the magnitudes of both channels in terms of one standard deviation of dioxin exposure, which is 3.8, would be 28% and 34% of the visual difficulty prevalence. However, only the intergenerational channel impacts hearing impairments. Since 0.78% of the 1965-1974 birth cohorts report hearing difficulties, the coefficient of 0.047 means that the impact of one standard deviation would be 23% of the hearing impairment prevalence.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 6,
+        "section_name": "The health effects of dioxin exposure",
+        "paragraph_id": 26,
+        "text": "The results show that both in utero exposure and intergenerational effects of dioxin affect health outcomes, even though the estimated coefficients for in utero exposure are statistically significant only for visual difficulties. There are many explanations. Firstly, the data on birthplace is unavailable, leading to underestimation of the effect. Secondly, the sample consists of those who survived direct dioxin exposure. Lastly, the 1965-1974 birth cohorts were too young in 2009 to have age-related health issues. The self-reported disability prevalence in these birth cohorts in the 2009 Census does not exceed 2%. Even though the results underestimate the effect of dioxin exposure, they still show the non-trivial impacts of intergenerational and in utero effects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 0,
+        "text": "5.4.1 Sorting by migration One potential source of bias is sorting by migration. If the information on dioxin contamination were publicly available, there would be migration from the exposed",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 1,
+        "text": "areas to the unexposed ones. Even when the information is unavailable, if the associated effects were noticeable, it would result in the same migration pattern. Since migration is costly, the characteristics of migrants would be different from those who choose to stay. For instance, healthy and productive members of exposed communities might be more likely to move to unexposed areas. If such sorting happened, the econometric model overestimates the impact on health and labor outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 2,
+        "text": "To test whether migrants were more likely to move to unexposed areas, I use the regression models with Equations 1 and 2 , in which the binary outcome variable is one if a person moved to a commune within the previous five years and zero otherwise. Given that the data is from the 2009 census, a person was an immigrant if he lived in a different commune in 2004. The estimation shows the change in migration status for a one-unit increase in dioxin exposure. An insignificant estimated coefficient implies indifference in migration inflow between exposed and unexposed communes. A disadvantage of this outcome variable is the inability to capture migration that happened before the five-year threshold.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 3,
+        "text": "Figure 7: Migrant inflows and dioxin exposure, 2009 Census (a) Whole sample (b) By regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 4,
+        "text": "Note: Figure 7 the correlation between migrant inflows and dioxin exposure at the commune level. Figure 7a plots the estimates with the whole samples. Figure 7a plots the Adjusted OLS results by regions. The data is from the 2009 Census of Population and Housing. The sample consists of 15% of the population who were living below the 17th parallel at the time of the survey. The control variables are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 5,
+        "text": "Figure 7 plots the correlation between the inflow of migrants and exposure level by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 6,
+        "text": "age groups. Figure 7a plots the estimations with and without exposure to dioxincontaminated herbicides and Agent White. Both specifications show that areas exposed to dioxin have been less likely to receive migrants. However, this trend is not homogeneous among regions, as shown in Figure 7b . The Central Coast and Mekong Delta do not show any correlation between migration inflows and exposure to dioxin. However, migrants were more likely to come to areas with higher dioxin exposure in the Central Highland. This correlation explains the negative coefficients in the Central Highlands estimates in Figure 6 . The Southeast shows an opposite trend, in that migrants were more likely to come to areas with lower dioxin exposure, meaning that the Southeast estimates overestimate the health impacts of dioxin exposure. Even though these results suggest sorting by migration, the bias caused by this phenomenon seems small because the estimates for the health impact of dioxin in the Southeast are not statistically different from zero, as shown in Figure 6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 7,
+        "text": "I conduct a similar test for emigrant outflows. However, information on the district of origin is available only for individuals who migrated within a province. To test this hypothesis, I use district-level average exposure as the explanatory variable and exclude those who migrated across provinces from the sample. The regression model is y idpt = β.EOI dp + β ′ .EOI dp + δX idpt + γ p + θ t + ε idpt . (4) In Equation 4 , y idpt is a binary variable if person i from district d of province p born in year t migrated out of district d . The explanatory variable is the average dioxin exposure of all communes within district d , EOI dp . I also control for the average exposure to dioxin-contaminated herbicides and Agent White EOI ′ dp , individual characteristics X idpt , province fixed effects γ p , and birth cohort fixed effects θ t . The standard error ε idpt is clustered at the district level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 8,
+        "text": "Figure 8 plots the correlation between emigrant outflows and dioxin exposure. Using the whole sample, Figure 8a shows that districts with higher average dioxin exposure would have smaller migration outflows, even though the estimates are not statistically significant. This trend might happen in the Central Coast or Southeast, but not in the Central Highlands or Mekong Delta, as shown in Figure 8b . Based on these results and those on migrant inflows, dioxin exposure does not strongly correlate with migration flows. Therefore, it should not be a concern in this chapter.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 9,
+        "text": "Figure 8: Within-province emigrant outflows and dioxin exposure, 2009 Census (a) Whole sample (b) By regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 10,
+        "text": "Note: Figure 8 plots the correlation between within-province emigrant outflows and district-level dioxin exposure. Figure 7a plots the estimates with the full samples. Figure 7a plots the Adjusted OLS results by regions. The data is from the 2009 Census of Population and Housing. The sample consists of 15% of the population who were living below the 17th parallel. The control variables are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Standard errors are clustered at the district level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 11,
+        "text": "5.4.2 Skewness of EOI The distribution of the Exposure Opportunity Index is heavy-tailed because of the extreme level of dioxin exposure in the Ma Da forest of Dong Nai province. To test whether the health outcomes of these extreme locations manipulate the estimation results, I transform the value of EOI and use it as the explanatory variable. The transformations that I use in this exercise are modified logarithm log( EOI cp + 1) and inverse hyperbolic sine log( EOI cp + q EOI 2 cp + 1) . The results in Figures B3 and B4 show a trend that is similar to the one in Figure 4 . It suggests that the results are not driven by the health outcomes of those living in areas with extreme levels of dioxin exposure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 12,
+        "text": "5.4.3 Bombing and Agent Blue A potential source for omitted variable bias is bombing intensity. However, because the spatial distributions of bombing and herbicide sorties that used Agent Blue are non-random and endogenous, controlling these two variables alone would not solve the issue. In the case of bombing intensity, I calculate the total weight of bombing dropped within a 10-km radius of commune centroids and restrict the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 13,
+        "text": "sample to communes that received less than 300,000 pounds of ordnance (about 150 tons) throughout the war, which is about the average bombing intensity at the commune level. As in Figure B5a , this group of communes is on the very left tail of the distribution, which limits the variation in bombing intensity and the related endogeneity issue. Figures B6 and B7 plot the estimation results that control the modified logarithm of bombing intensity, which show patterns similar to the baseline results in Figures 4 and 6 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 7,
+        "section_name": "Robustness checks",
+        "paragraph_id": 14,
+        "text": "Another source of omitted variable bias is Agent Blue, which is a herbicide type for crop destruction missions. To account for exposure to Agent Blue, I only use communes that have an Exposure Opportunity Index to Agent Blue of less than 0.2, which is the average exposure to Agent Blue at the commune level. As in Figure B5b , these communes are on the very left tail of the distribution, and therefore using this sample would reduce the endogeneity of Agent Blue. Figures B8 and B9 plot the estimation results with exposure to Agent Blue as an additional control variable. The results do not change much, except that estimations with the Central Highlands sample in Figure B8 are negative and statistically significant. These results mean that, in the Central Highlands, people living in communes with higher exposure to dioxin would have better health outcomes. The best explanation is suggested by Figure 7 , which shows that migrants to the Central Highlands chose to move to areas with higher exposure. For migrants who did not know about Operation Trail Dust, highly exposed areas could be desirable, because these areas did not require any time and effort for land clearing before cultivation. To sum up, not including bombing intensity and exposure to Agent Blue does not change the results substantially.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 0,
+        "text": "In a context that is similar to Vietnam, Yamada and Yamada ( 2021 ) and Ria ̃no and Valencia Caicedo ( 2024 ) find that Laotian areas with higher bombing intensity during the Second Indochina War emit less light at night, meaning that these areas have less economic activity. Ria ̃no and Valencia Caicedo ( 2024 ) attributed this in part to unexploded ordnance and in part to the persistent impact of bombing intensity on human capital accumulation and structural transformation. Similarly, the persistent health effects of herbicidal warfare in Vietnam may have affected educational attainment and, thus, local labor markets. Therefore, dioxin exposure would have long-term economic effects. In this section, I test these hypotheses.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 1,
+        "text": "6.1 Dioxin exposure and educational outcomes",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 2,
+        "text": "Figure 9: Dioxin exposure and the ability to read and write (a) Whole sample (b) By regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 3,
+        "text": "Note: Figure 9 plots the impacts of one unit of the Exposure Opportunity Index of dioxincontaining herbicides on the chance of being able to read and write (unit: percentage points). The samples consist of 15% of the population who were living below the 17th parallel and who had not migrated within five years previous to the survey. The control variables in Uncontrolled OLS are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Adjusted OLS control for these variables and exposure to dioxin-contaminated herbicides and Agent White. Regressions in Figure 9b are Adjusted OLS. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 4,
+        "text": "To study the impact of dioxin exposure on educational attainment, I use two binary outcome variables, namely being able to read and write and finishing lower secondary education. Figure 9 plots the regression results, in which the ability to read and write is the dependent variable. Figure 9a shows that people living in highly exposed communes are less likely to be able to read and write. A one-unit increase in dioxin exposure reduces the chances of being able to read and write by about 0.2 percentage points for cohorts born from 1945 to 1984. Even though the ability to read and write is an educational outcome, it also reflects cognitive ability, which explains the impact on cohorts born in 1945-1955. Figure 9b plots the Adjusted OLS estimations by region. I do not find any evidence for the impact of dioxin exposure on ability to read and write in the Central Coast, Central Highlands, and Southeast. However, in the Mekong Delta, which was populated during the war and received a tiny inflow of migrants after the war, I find that people in highly exposed communes are less likely to be able to read and write.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 5,
+        "text": "Figure 10 plots the impact of dioxin exposure on education, using completion of lower secondary education as the outcome variable. Figure 10a shows that people",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 6,
+        "text": "Figure 10: Dioxin exposure and lower secondary education (a) Whole sample (b) By regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 7,
+        "text": "Note: Figure 10 plots the impacts of one unit of the Exposure Opportunity Index of dioxincontaining herbicides on the chance of finishing lower secondary education (unit: percentage points). The samples consist of 15% of the population who were living below the 17th parallel and who had not migrated within five years previous to the survey. The control variables in Uncontrolled OLS are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Adjusted OLS control for these variables and exposure to dioxin-contaminated herbicides and Agent White. Regressions in Figure 10b are Adjusted OLS. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 8,
+        "text": "in highly exposed communes are less likely to have finished middle school. To understand the source of this result, I run the regressions by regions and plot them in Figure 10b . Similarly to Figure 9b , I do not find any evidence for the impact on educational attainment in the Central Coast and Central Highlands areas. However, in the Southeast, the communes with higher dioxin exposure have lower educational attainment. One explanation for this pattern is that communes with higher dioxin exposure attract fewer migrants, as shown in Figure 7b . On the other hand, in the Mekong Delta, the impact of dioxin exposure on education is observed only for those born after 1955. Thus, dioxin exposure distorts human capital accumulation, not only through health effects, but also by adversely affecting educational outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 9,
+        "text": "6.2 Dioxin exposure and labor outcomes Since dioxin exposure adversely affects health and education attainments, it would affect the labor supply. Using the 2009 census, I define a person as unemployed if that person did not work or receive any payment within the previous seven days and was not returning to work in the next 30 days. Using this outcome variable, I run regressions by age group and plot the results in Figure 11 . Figure 11a plots the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 10,
+        "text": "Figure 11: Dioxin exposure and unemployment (a) Whole sample (b) By regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 11,
+        "text": "Note: Figure 11 plots the impacts of one unit of the Exposure Opportunity Index of dioxincontaining herbicides on the chance of being unemployed (unit: percentage points). The samples consist of 15% of the population who were living below the 17th parallel and who had not migrated within five years previous to the survey. The control variables in Uncontrolled OLS are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Adjusted OLS control for these variables and exposure to dioxincontaminated herbicides and Agent White. Regressions in Figure 11b are Adjusted OLS. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 12,
+        "text": "estimation with the whole sample, showing that one increase in exposure level increases the chance of unemployment by about 0.5 percentage points for the group born after 1945. Figure 11b plots the regression results by region. Dioxin exposure does not affect employment in Central Coast and Central Highland. But, dioxin exposure increases the chance in Southeast and Mekong Delta. In the Mekong Delta, one increase in exposure level raises the probability of unemployment by more than one percentage point for the post-1945 birth cohorts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 13,
+        "text": "Ria ̃no and Valencia Caicedo ( 2024 ) find that bombing intensity pushes back structural transformation by keeping exposed individuals from moving out of the agricultural sector. I conduct the same test for dioxin exposure and plot it in Figure B10 . The results do not support the hypothesis that dioxin exposure has distorted structural transformation in Vietnam.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 14,
+        "text": "6.3 Dioxin exposure and population size Figure 12 provides evidence for the impact of dioxin exposure on population size. As in Figure 12a , the Adjusted OLS estimates with the whole sample show that a one-unit increase in dioxin exposure decreases the population size by about four",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 15,
+        "text": "Figure 12: Dioxin exposure and log of population (a) Whole sample (b) By regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 16,
+        "text": "Note: Figure 12 plots the impacts of one unit of the Exposure Opportunity Index of dioxincontaining herbicides on the log of population. The samples consist of 15% of the population who were living below the 17th parallel. The control variables in Uncontrolled OLS are age, gender, marital status, ethnicity, religion, urban status, and province fixed effects. Adjusted OLS control for these variables and exposure to dioxin-contaminated herbicides and Agent White. Regressions in Figure 12b are Adjusted OLS. Standard errors are clustered at the commune level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 17,
+        "text": "percent. However, in Figure 12b , no region shows a statistically significant impact of dioxin exposure on population size, except for the Mekong Delta sample. Still, it is worth noting that the point estimates for the Central Coast sample are similar to those for the Mekong Delta. The effects of dioxin exposure on non-migrant populations in Figure B11 have the same patterns.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 18,
+        "text": "6.4 Dioxin exposure and luminosity Because dioxin exposure affects human capital accumulation, unemployment, and population size, it is likely to distort economic activities. To test this hypothesis, I use the nightlight data acquired from NOAA called Version 4 DMSP-OLS Nighttime Lights Time Series as a proxy for the economic outcome. In this test, I use both Uncontrolled and Adjusted OLS specifications.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 19,
+        "text": "y cp = β.EOI cp + γ p + θX cp + ε cp y cp = β.EOI cp + β.EOI cp + γ p + θX cp + ε cp In the above equations, y cp is the average luminosity level in commune c of province p . The main explanatory variable is the Exposure Opportunity Index EOI cp , which is a proxy for dioxin exposure level. EOI ′ cp is exposure to dioxin-contaminated herbicides and Agent White. Other variables are province fixed effects γ p and control variable X cp , which includes urban status, longitude, and latitude. The",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 20,
+        "text": "Figure 13: Dioxin exposure and luminosity (a) Whole sample",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 21,
+        "text": "(b) Central Coast (c) Central Highland",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 22,
+        "text": "(d) Southeast (e) Mekong Delta",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 23,
+        "text": "standard error ε cp is bootstrapped with 500 replications.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 8,
+        "section_name": "Dioxin exposure and long-term economic development",
+        "paragraph_id": 24,
+        "text": "Figure 13 separately plots the estimation results for the cross-sectional nightlight data from 1992 to 2013. The results show that dioxin exposure adversely affects luminosity only in the Mekong Delta. These estimates are consistent with the previous findings that the adverse effect of dioxin exposure persists in the Mekong Delta. The reason is that the Mekong Delta was populated before the war and, therefore, was not as desirable as, for instance, the Central Highlands for migrants. Plus, the region does not have an industrial hub like areas surrounding Hanoi and Ho Chi Minh City. Without a substantial change in population or economic structure, the Mekong Delta perpetuates one of the lasting legacies of the Second Indochina War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In this chapter, I investigate the long-term impact of dioxin exposure from the Second Indochina War on human capital accumulation. By comparing the difference in effects of Agent Orange and Agent White, the results show that individuals living in exposed areas are more likely to report having difficulties in seeing, hearing, memory, and walking. The magnitude of these effects is non-trivial; the impact of one standard deviation of exposure index is about 5-20% of the baseline disability prevalence. My methods allow me to uncover two main channels contributing to impaired health: wartime dioxin exposure and cascading intergenerational effects from the initial exposure. However, I find no conclusive evidence regarding the health effects of post-Operation Trail Dust exposure to dioxin residue, despite dioxin being a persistent organic pollutant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1454,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "I also find that herbicide warfare has long-term impacts on local economies. By affecting health, dioxin exposure distorts human capital accumulation, as well as reducing educational attainment and population size. I also found that communes with higher dioxin exposure have a high unemployment rate. It is unclear whether the cause of higher unemployment is impaired health or lower levels of development. In terms of economic activities, communes with higher exposure emit less luminosity, which is a correlate of less economic activity. In conclusion, even though the Second Indochina War ended in 1975, its socioeconomic legacy remains persistent.",
+        "extraction_warnings": ""
+    }
+]

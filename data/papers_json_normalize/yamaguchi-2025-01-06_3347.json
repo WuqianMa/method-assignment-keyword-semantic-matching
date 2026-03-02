@@ -1,0 +1,1754 @@
+[
+    {
+        "paper_id": 1249,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Unpacking the Child Penalty Using Personnel Data: How Promotion Practices Widen the Gender Pay Gap ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Yoko Okuyama † Takeshi Murooka ‡ Shintaro Yamaguchi §",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "We estimate the child penalty using detailed personnel records that enable decomposition into distinct pay components. Our analysis reveals that the penalty is initially driven by reductions in time-based pay following childbirth. However, job-rank-based pay becomes increasingly significant over time, emerging as the dominant factor by the 15-year mark. These effects are interconnected: reduced working hours lead to lower performance evaluations, which subsequently limit promotion opportunities. Our theoretical model demonstrates that current promotion practices, which reward extended hours at entry-level positions, can generate production inefficiency. This finding suggests that addressing promotion practices could simultaneously reduce gender inequality and improve talent allocation, making a compelling business case for organizational reform.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "Keywords: Child penalty, promotion, management practice, personnel economics, internal labor markets, gender pay gap, career progression",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "JEL Codes: J13, J16, J24, J31, M51",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "∗ We are grateful for comments and suggestions from seminar participants at EALE 2024 Bergen, Uppsala Center for Labor Studies (UCLS) annual meeting, Uppsala University, Lund University, SOFI Stockholm University, University of Hong Kong, Doshisha University, RIETI, and Kansai Labor Workshop. Isshin Habu and Yusuke Makino provided excellent research assistance. This work was supported by JSPS KAKENHI Grant Number 23H00045. We gratefully acknowledge data provision and financial support from an anonymous firm. All remaining errors are our own. † Corresponding author. Department of Economics, UCLS, and Uppsala Center for Fiscal Studies (UCFS), Uppsala University, 753 13 Uppsala, Sweden. E-mail: yoko.okuyama@nek.uu.se ‡ Institute of Social and Economic Research (ISER), University of Osaka, 6-6-1 Mihogaoka, Ibaraki, Osaka 567-0047, Japan. Email: murooka@iser.osaka-u.ac.jp § Faculty of Economics, the University of Tokyo, 7-3-1 Hongo Bunkyo-ku, Tokyo, Japan. Email: syamaguchi@e.u-tokyo.ac.jp",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Despite women’s increasing educational qualifications and growing presence in highpaying occupations, gender pay gaps persist across advanced economies ( Goldin , 2014 ). These gaps suggest potential misallocation of talent, 1 with implications for both equity and efficiency. Recent studies identify motherhood as a primary driver of modern gender inequalities, estimating that earnings differences between men and women are now largely attributable to the differential impacts of parenthood on career trajectories. 2 While existing research has illuminated various worker-side mechanisms—including labor market sorting 3 and gender norms 4 —the role of organizational practices, particularly firms’ internal promotion systems, remains underexplored. This gap in understanding is particularly consequential given that within-firm wage growth, rather than between-firm sorting, accounts for the majority of lifetime earnings inequality between men and women.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "We examine how HR management policies and practices affect the child penalty using detailed internal personnel records from a Japanese manufacturing firm. A unique aspect of this dataset is its comprehensive breakdown of payroll data, which is provided on a monthly basis and categorized by various pay components. This allows us to decompose earnings into different pay categories and analyze how each contributes to earnings trajectory over workers’ careers, particularly before and after the birth of the first child. The personnel records also track monthly working hours, job assignments, promotions, leavetaking, annual evaluations, and employee surveys. This rich dataset enables us to investigate the mechanisms driving these earnings patterns.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Our firm provides an ideal setting for studying how HR management practices influ1 See Hsieh et al. ( 2019 ); Sevilla ( 2020 ); Bandiera et al. ( 2022 ). 2 See Bertrand et al. ( 2010 ); Kleven et al. ( 2021 ); Bertrand ( 2020 ); Cortés and Pan ( 2023 ) 3 See Goldin ( 2014 ); Goldin and Katz ( 2016 ); Adda et al. ( 2017 ); Kleven et al. ( 2019b ); Casarico and Lattanzio ( 2021 ). 4 See Moberg ( 2016 ); Nix and Andresen ( 2019 ); Kleven ( 2022 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "ence within-firm earnings dynamics and the child penalty for several reasons. First, the firm’s low annual quit rate of 4% reflects its position as a large employer offering competitive compensation and comprehensive leave benefits, which minimizes sample attrition concerns and enables long-term observation of career trajectories. Second, the firm provides a representative case in terms of gender disparities: its within-firm gender pay gap of 30% and women’s 8% representation in management closely align with both the national average and manufacturing sector average. Third, the firm has implemented family-friendly policies that substantially exceed Japan’s already generous national mandates. The persistence of gender gaps despite these supportive policies suggests that organizational factors beyond formal policies, particularly HR practices and workplace dynamics, may drive the disparities. Through analyzing this firm’s detailed personnel records, we can illuminate how HR practices contribute to the globally observed child penalty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "To quantify the impact of childbirth on monthly earnings trajectories, we employ a matching event study design to identify and estimate the child penalty several years after childbirth. Each worker who has a child is matched with a pure control — another worker of the same sex, marital status, birth cohort, and education level, but who never had children during the observation period. Using this matched sample, we perform an event study regression on several outcomes, including both total monthly earnings and its components. Specifically, we categorize the firm’s 27 distinct pay items into four main components: (i) age-based pay, which increases with age; (ii) time-based pay, which encompasses overtime, night shift, and weekend shift compensation; (iii) job-rank-based pay, which rises with higher positions and includes managerial compensation; and (iv) other allowances unrelated to the above categories. Additionally, we estimate the impacts on expressed promotion aspirations and work-family conflicts. We demonstrate that the parallel trend assumption holds for each outcome in the period leading up to childbirth.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "The event study analysis indicates the following key results: the estimated ten-year child",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "penalty is 55%, with its sources evolving over time. Immediately after childbirth, timebased pay accounts for nearly 90% of the penalty. As time progresses, the contribution of time-based pay decreases, while job-rank-based pay becomes increasingly significant. By the ten-year mark, time-based pay’s contribution falls to 60%, while job-rank-based pay accounts for 17%. Beyond ten years, the influence of rank-based pay rises sharply, becoming the dominant factor by the 15-year mark. Even though childbirth do not significantly affect both mothers’ and fathers’ career aspirations in the employee survey, nearly 80% of mothers reduce their working hours until their children turn 12, while most fathers do not. This gendered pattern reflects the uneven distribution of childcare responsibilities at home. 5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "The shift in the sources of the child penalty is not simply sequential but deeply intertwined. Our data further indicate that reduced work hours lower annual evaluation scores at the lowest job rank. These lower annual evaluations limit promotion opportunities. The importance of work hours, however, is significant only at the entry level. As workers climb the promotion ladder, the link between hours worked and evaluation scores is faded. In other words, long working hours are crucial for initially securing a path to promotion, but become less important as employees progress in their careers. This is particularly relevant because most new parents are at the lowest job rank. As a result, childbirth reduces mothers’ earnings in two key ways: their monthly pay decreases immediately due to parental leave and reduced hours, and their future earnings are hampered by diminished promotion prospects due to these reduced hours. The latter represents the true essence of the term child penalty , highlighting systemic repercussions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "To interpret these empirical findings and investigate welfare implications for HR management practices, we study a theoretical model of internal promotion building upon Gibbons and Waldman ( 1999 ). The model incorporates three key features. First, workers differ 5 In the employee survey, women express a need for work accommodations twice as often as men postchildbirth. This aligns with national trends: Japanese women spend five times more time on household duties than men — the largest gender gap among OECD countries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "in their time-invariant abilities and in the marginal cost of work due to childcare responsibilities. Second, workers face the same promotion thresholds and are promoted step-by-step without skipping any job rank. Third, consistent with our empirical finding, long working hours improve promotion prospects only at the lowest job rank. We show that this promotion system incentivizes workers with lower abilities but fewer time constraints to work excessively long hours to secure a promotion path. Consequently, even in a simple model with full information and no discrimination or bias, these promotion practices can generate both production and Pareto inefficiency. 6 This inefficiency stems from talent misallocation that disadvantages high-ability workers who face high time costs. 7",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "The model offers a framework for interpreting our empirical patterns. In our institutional context, mothers typically face substantial time constraints due to childcare responsibilities, while fathers experience minimal changes to their time availability. The theoretical analysis suggests that within the current promotion system, high-ability mothers systematically face greater barriers to advancement beyond entry-level positions compared to equally or less capable fathers who retain temporal flexibility. These promotion dynamics amplify the child penalty over time. Moreover, this mechanism generates productive inefficiency, as capable women remain in lower-ranked positions despite their underlying productivity. Our analysis indicates that redesigning promotion and evaluation practices could both mitigate the long-term child penalty and improve organizational productivity, providing both equity and efficiency rationales for management reforms.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "6 The latter result holds in our model because of the assumption that workers are paid at their own productivity. 7 Bronson and Thoursie ( 2021 ) also analyze a model with multiple promotion opportunities, focusing on parental leave and subsequent gender differences in wage growth. Our model differs by highlighting how existing promotion systems can distort productive efficiency, especially on employees with childcare responsibilities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "Contribution to Existing Literature To our knowledge, this study is one of the first to use pay records to decompose the child penalty and examine how HR management practices influence its magnitude and evolution. Both analyses are made possible by detailed firmlevel personnel data. 8 In doing so, we contribute to three strands of literature.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "First, we deepen the understanding of long-term drivers of the child penalty by tracking how the birth of a first child affects mothers’ long-term earnings within a firm. While the post-childbirth earnings drop for mothers is well-documented ( Waldfogel , 1997 ; Lundberg and Rose , 2000 ; Ejrnaes and Kunze , 2013 ; Angelov et al. , 2016 ; Lundborg et al. , 2017 ; Kleven et al. , 2019b ), its size, interpretation, and underlying mechanisms are still debated ( Lundborg et al. , 2024 ; Adams-Prassl et al. , 2024 ). In particular, within-firm dynamics contributing to this penalty remains to be explored. The existing literature has focused primarily on worker-related characteristics: biological traits contribute minimally to the child penalty ( Kleven et al. , 2021 ); productivity shifts ( Antecol et al. , 2018 ; Kim and Moser , 2021 ; Healy and Heissel , 2024 ) and gender norms ( Moberg , 2016 ; Nix and Andresen , 2019 ; Kleven , 2022 ) play substantial roles. Labor market sorting emerges as another key mechanism, with women often selecting into positions offering shorter hours, greater substitutability or greater flexibility, but at a cost of lower compensation and fewer advancement opportunities ( Manning and Petrongolo , 2008 ; Fernández-Kranz et al. , 2013 ; Goldin , 2014 ; Goldin and Katz , 2016 ; Adda et al. , 2017 ; Kleven et al. , 2019b ; Casarico and Lattanzio , 2021 ; Azmat et al. , 2022 ). While these findings underscore the importance of supporting work-family 8 A recent study by Healy and Heissel ( 2024 ) uses personnel data to examine child penalty. Analyzing internal records in the US Marine Corps, they estimate the negative impacts of childbirth on Marine women’s physical fitness performance, on-the-job training assignments, and promotions up to two years post-birth. Marine men also experience a decline in physical fitness, though for a shorter period. These findings emphasize that parenthood, particularly for women, is physically demanding, which can affect workplace performance and hinder promotion prospects. Their study highlights the important policy issue of providing reasonable accommodations for workers’ birth-related medical conditions, particularly for new parents in physically demanding jobs. This is especially crucial in a context where parental leave is short (6-18 weeks at the US Marine Corps). In contrast, our study examines a context where maternal and parental leave is generous (up to 52 weeks), so the physical fitness channel is less likely to be at play. Complementing their study, our research illuminates mothers’ and fathers’ working hours and their long-term career consequences, using comprehensive personnel records that contain detailed pay records, as well as performance evaluation and promotion records.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "balance and encouraging gender-neutral caregiving, public policies targeting these objectives have shown limited effectiveness ( Kleven et al. , 2020 ; Nix and Andresen , 2024 ). Our analysis suggests that organizational practices, particularly HR management policies, may offer a complementary pathway for mitigating the child penalty beyond the scope of public interventions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "Second, our findings contribute to the literature on the widening gender pay gap over the life cycle. Recent research using administrative data from North America and Europe demonstrates that within-firm wage growth, rather than between-firm sorting, plays the dominant role in explaining the expansion of gender pay disparities over workers’ careers ( Card et al. , 2016 ; Frederiksen et al. , 2016 ; Barth et al. , 2021 ; Bronson and Thoursie , 2021 ; Casarico and Lattanzio , 2022 ). These findings highlight the importance of understanding gender differences in within-firm hierarchical mobility—specifically, promotion patterns. Our comprehensive personnel records, which include detailed information on earnings, work hours, performance evaluations, and employee attitudes, allow us to identify the specific mechanisms through which gender gaps in promotion emerge and persist. In particular, we demonstrate how organizational policies and practices create systematic differences in career progression between men and women after childbirth.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "Third, we contribute to the literature on the mechanisms underlying gender disparities in promotions ( Lazear and Rosen , 1990 ; Blau and Devaro , 2007 ). Recent studies examining career trajectories across various contexts—including lawyers ( Azmat and Ferrer , 2017 ; Ganguli et al. , 2021 ; Azmat et al. , 2024 ), central bankers ( Hospido et al. , 2022 ), and a global corporation ( Haegele , 2024a )—find that differences in promotion aspirations substantially explain observed promotion gaps. While our data show similar post-childbirth divergence in career aspirations between mothers and fathers, these differences are not statistically significant. Instead, our analysis emphasizes the role of organizational architecture, particularly personnel policies and promotion criteria. Prior work has identified several poten-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "tial mechanisms driving the gender promotion gap, including managerial bias in subjective performance evaluations ( Haegele , 2024b ; Benson et al. , 2024 ) and discrimination against mothers ( Bronson and Thoursie , 2021 ). Our findings suggest that promotion disparities can emerge even in the absence of explicit discrimination or bias. Specifically, we demonstrate that promotion systems that reward extended work hours create barriers to advancement that disproportionately affect women with childcare responsibilities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "Organization of the Paper The remainder of this paper is organized as follows. Section 2 provides a brief background on the firm we investigate, and describe our data. Section 3 documents the evolution of child penalty. Section 4 further investigates promotion dynamics in the firm. Section 5 presents an illustrative model of internal promotion that aligns with our empirical findings, and discuss the welfare implication of the personnel policies and practices in the firm. Section 6 concludes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 0,
+        "text": "This study examines a large, anonymous Japanese manufacturing firm that produces consumer nondurable goods. With approximately 4,000 regular workers as of 2013, the firm operates in Japan’s manufacturing sector, an industry accounting for roughly 20% of GDP and 16% of total employment. This setting offers three distinct advantages for studying how childbirth affects gender disparities in career trajectories within a firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 1,
+        "text": "The first key advantage is the firm’s low annual quit rate of 4% among both men and women (see detailed statistics in Section 2.3.2 ). This stability stands in marked contrast to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 2,
+        "text": "settings with high turnover, where workers frequently exit the sample. With most workers remaining at the firm long-term, we can track career trajectories and observe how gender gaps evolve over extended periods within a firm, particularly around key life events like childbirth. While this low turnover rate is characteristic of large Japanese firms offering competitive compensation packages, 9 it provides crucial analytical advantages for our research design.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 3,
+        "text": "Second, the firm provides a representative case in terms of gender disparity at work in Japan, where one of the largest gender gaps in the OECD exists. The firm’s gender pay gap of approximately 30% closely aligns with both the national average (25%) and manufacturing sector average (26%). Similarly, women hold 8% of managerial positions, which is below the national average of 19% but close to the manufacturing sector average of 7%. These patterns suggest that our findings may offer insights into broader gender gaps, especially in male-dominated sectors where gender disparities are most pronounced.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 4,
+        "text": "Third, the firm allows us to examine an important segment of the maternal labor force. It stands out among similarly sized firms by offering comprehensive family-friendly policies that exceed Japan’s national mandates. 10 As documented in Appendix B.1 , women with access to such policies demonstrate significantly higher employment attachment and lower turnover rates compared to those without access. This selection pattern means our sample represents an important group of working mothers, who remain employed at firms with strong family support and have the potential to excel in their careers as men do.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 5,
+        "text": "Together, these three key advantages — low turnover enabling long-term tracking, repre-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 6,
+        "text": "9 According to Toyo Keizai Inc., a major market database provider in Japan, the annual quit rate in 2022 was 4.12% among the 546 listed and major unlisted firms with over 1,000 employees surveyed for their CSR database. 10 The firm extends reduced work hours for parents until their children reach age 12, well beyond the legally required age of three. It also provides in-house childcare facilities and flexible work-from-home arrangements tailored for parents. These policies are particularly noteworthy given that only about 40% of Japanese firms offer formal reduced work-hour options for parents.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 3,
+        "section_name": "The ﬁrm",
+        "paragraph_id": 7,
+        "text": "sentative gender gaps, and comprehensive family policies — make this firm an ideal setting for investigating how childbirth affects mens and women’s career trajectories. By examining career dynamics in an environment where institutional barriers to combining work and family are minimized, we can gain insights into why gender pay gaps persist even when workplace policies strongly support working parents, and can shed light on why familyfriendly policies alone might not be sufficient to close persistent gender gap at work.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 0,
+        "text": "We restrict our sample to permanently contracted employees under 60, the current default retirement age at the firm. Our sample does not include temporary workers. All personnel records are observed for all employees in our sample and linked using anonymized employee identification numbers. Table 5 in Appendix A summarizes our data sources, detailing the frequency of observations, the periods covered, and the sample coverage.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 1,
+        "text": "Job Title, Division Assignment, and Promotion The personnel record provides us with each worker’s job assignment every month between September 2013 and March 2023. During this period, we also have complementary records of the exact dates of job assignment change. Within the firm, jobs are differentiated both horizontally and vertically. Horizontally, roles are divided into three divisions: manufacturing, sales, and back-office functions such as finance and HR. The production division is the largest, with 58% of employees. 19% of employees work in the sales division, while the remaining employees work in back office. Most horizontal job sorting occurs at the entry stage and is rare later in one’s career, although not precluded by the employment contract.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 2,
+        "text": "Within each division, jobs are vertically differentiated by rank, with compensation increasing as employees advance. We define promotion as an upward progression from one",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 3,
+        "text": "rank to another. Our data record the precise date of each rank change, eliminating potential subjectivity in identifying promotions from wage growth. The first three ranks— staff member , team leader , and senior team leader —are classified as non-managerial positions. Positions above senior team leader are designated as managerial according to firm policy. The promotion structure is strictly sequential: employees must advance through consecutive ranks without skipping levels. While the employment contract permits downward mobility, demotion occurs rarely in practice.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 4,
+        "text": "Hours worked Monthly payroll data between September 2013 and January 2024 provide a comprehensive view of both the amount and timing of work hours for non-managerial employees. Specifically, we have monthly data on each worker’s contracted hours and actual hours worked. Actual hours are further categorized into regular hours, overtime, irregular hours (including night, weekend, and holiday shifts), and reduced hours for childcare. Employees with children under 12 can opt for reduced hours with a proportional reduction in pay. Note that the data do not record the actual hours worked by managers, as they have discretion over their working hours and are exempt from overtime compensation. Therefore, our analysis of hours worked and hourly pay is limited to non-managerial employees.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 5,
+        "text": "Monthly pay by item The firm employs a structured compensation system that determines monthly earnings through a combination of base pay adjustments and various supplemental components. The base pay, determined by age and job rank, represents the wage rate for standard full-time work. This base amount is then adjusted according to actual hours worked, with overtime hours receiving a premium and reduced hours resulting in proportional reductions. During parental leave, salaries fall to zero as leave benefits are administered through employment insurance rather than the firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 6,
+        "text": "Given this institutional structure, we decompose monthly earnings into four components",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 7,
+        "text": "using detailed payroll records. The firm’s monthly payroll data itemizes 27 distinct pay categories, which we aggregate into: (1) time-based pay, (2) job-rank-based pay, (3) agebased pay, and (4) allowances. This decomposition enables us to analyze how different institutional channels contribute to earnings growth throughout an employee’s career at the firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 8,
+        "text": "1. The time-based pay component reflects adjustments to base pay based on deviations from standard full-time hours. This includes positive adjustments for overtime, night, and holiday shifts, as well as negative adjustments when employees work reduced hours. During parental leave, this component becomes negative enough to reduce total earnings to zero.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 9,
+        "text": "2. The job-rank-based pay component is tied to an employee’s job rank. Each rank has a narrow pay band, within which individual pay is determined by performance evaluations from immediate supervisors and those two ranks above. Additionally, managers receive a fixed amount of managerial compensation. An increase in job-rank-based pay is directly linked to a promotion within the firm’s organizational hierarchy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 10,
+        "text": "3. The age-based pay component is determined by both educational qualifications and age. Entry-level base pay increases with employees’ educational qualifications. As employees age, this component automatically increases by a modest amount. It is not influenced by hours worked or job ranks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 11,
+        "text": "4. Allowances include various supplemental payments: family allowance for household heads, professional license/certification premiums (e.g., for boiler operators), and training supplements. Most allowances apply to a small subset of workers and involve modest or infrequent payments. The family allowance is the notable exception: it provides substantial additional compensation to household heads - defined as employees with dependent children and a spouse earning below $10,400 annually. While this",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 12,
+        "text": "allowance is formally gender-neutral, in practice it creates systematic gender differences in pay since male employees typically qualify as household heads while female employees rarely do. 11",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 13,
+        "text": "Each pay component is calculated according to a pre-determined formula. Individual pay negotiation cannot directly influence specific salary items. To increase her pay, an employee must negotiate for a higher evaluation and promotion to a higher job rank. Alternatively, the labor union can negotiate changes to the pay formula on behalf of all nonmanagerial employees. This implies that the gender pay gap does not stem from differences in willingness to negotiate or negotiation skills between men and women conditional on observed employee characteristics, such as age and job ranks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 14,
+        "text": "The proposed decomposition offers several analytical advantages for studying how parenthood affects earnings trajectories 12 . First, by isolating time-based adjustments, we can capture both complete work stoppage during parental leave and partial hours reductions. Second, separating rank-based from age-based components allows us to distinguish career advancement effects from mechanical wage growth. Third, this categorization maps directly onto the firm’s personnel policies and promotion practices, enabling us to identify specific organizational mechanisms that generate earnings disparities between men and women following childbirth. While alternative approaches might express earnings simply as the product of hours worked and wage rates, our decomposition better serves our goal of 11 Family allowances originate from social welfare policies first introduced in Europe during the early 20th century. During World War II, the Japanese government, as part of its warfare strategy, regulated company wage scales and mandated family allowances to alleviate poverty. This practice, although no longer required, has continued to influence pay structures in firms long after World War II ended. According to a 2020 survey from the Ministry of Health, Labour, and Welfare, about 70% of firms with more than 30 employees offer family allowances. Recently, family allowances have faced increasing criticism. Critics argue that it perpetuates the outdated family model of “a working husband and a stay-at-home wife”, despite the growing diversity in family structures in Japan. 12 An alternative approach would be to express earnings as the product of hours worked and wage rates and analyze changes in log earnings. However, such an approach cannot handle zero-earnings periods during parental leave without arbitrary adjustments. Our decomposition avoids this issue while maintaining the ability to separate hours-based adjustments from changes in wage rates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 15,
+        "text": "understanding how different institutional channels contribute to the child penalty over time.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 16,
+        "text": "Personnel evaluation score The firm employs a 5-point performance rating scale for its annual evaluations, ranging from 1 (lowest) to 5 (highest). These ratings are retrospective, based on a set of demonstrable criteria evaluated by immediate supervisors and subsequently approved by higher-level supervisors. The evaluation criteria assess both individual performance and teamwork skills over the past year.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 4,
+        "section_name": "Sample and Variable Deﬁnitions",
+        "paragraph_id": 17,
+        "text": "Employee demographics Finally, we collect data on employees’ sex, age, tenure, highest degree attained, marital status, number of children, and the birth year and month of both the employees and their children.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 0,
+        "text": "2.3.1 Employee Demographics",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 1,
+        "text": "Table 1 presents summary statistics for our entire sample in Column 1, as well as male employees in Column 2 and female employees in Column 3 as of September 2013. Female employees account for 20% of the sample. On average, they are younger (27.98 years old) than their male counterparts (39.86 years old). Consequently, women have shorter tenure. Men and women have similar educational backgrounds, with 34.2% of men and 30.2% of women having graduated from either some college, a 4-year college, or above.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 2,
+        "text": "There is a noticeable gender difference in the distribution of job ranks. 96.6% of female employees are at the entry-level job rank, whereas the figure for men is 59.2%. This disparity is partly due to differences in tenure between genders. However, it also suggests the presence of a broken rung phenomenon, where women in entry-level positions are pro-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 3,
+        "text": "Table 1: Summary Statistics (As of September 2013)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 4,
+        "text": "Overall (n = 3956) Men (n = 3173) Women (n = 783) Age (Year) Mean 37.51 39.86 27.98 Education 4-Yr College (%) 31.6% 33.2% 25.3% Some college (%) 1.8% 1.0% 4.9% High school (%) 66.5% 65.6% 69.9% Missing (%) 0.1% 0.1% 0.0% Sex Men (%) 80.2% 100.0% 0.0% Women (%) 19.8% 0.0% 100.0% Tenure (Year) Mean 16.14 18.22 7.70 Monthly Wage Total (USD) Mean 3,840 4,148 2,591 Time (USD) Mean 644 730 299 Rank (USD) Mean 1,886 2,035 1,282 Age (USD) Mean 1,028 1,055 917 Family Allowance and Others (USD) Mean 282 328 92 Job rank StaffMember (%) 66.6% 59.2% 96.6% Team Leader (%) 12.1% 14.8% 0.8% Senior Team Leader (%) 11.7% 14.0% 2.3% Manager (%) 9.6% 11.9% 0.4% Missing (%) 0.0% 0.0% 0.0% % with child 35.2% 40.7% 12.8% # of children Mean 0.68 0.80 0.19 Age of the youngest child (Year) Mean 10.65 11.14 4.37 Notes: Standard deviations are shown in parenthesis. All amounts in Japanese yen are converted to U.S. dollars using an exchange rate of 1 USD = 99 JPY, which was the average exchange rate in September 2013, the starting point of our payroll data.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 5,
+        "text": "0 96 120 Months Since First Child's Birth Percentage (%) Quit Parental Leave Other Leave Reduced Time Full Time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 6,
+        "text": "Figure 1: Women’s Post Birth Employment Status Notes: This figure presents a monthly breakdown of employee outcomes up to 120 months after the birth of their first child. It shows the proportion of employees who quit the firm, took parental leave, opted for reduced working hours, or continued to work full-time. Unlike other event study analyses, this figure is limited to 120 months due to data availability on the birth year and month of the first child for workers who left the firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 7,
+        "text": "moted to managerial positions at much lower rates than their male counterparts ( McKinsey and LeanIn , 2019 ). We will discuss a possible broken rung in connection to the child penalty on promotion in Section 4 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 8,
+        "text": "2.3.2 Employee Turnover and Post-Childbirth Employment Status",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 9,
+        "text": "The firm’s low employee quit rate offers an ideal setting for studying within-firm earnings dynamics, as it minimizes concerns about sample attrition. The overall annual quit rate across all ages is approximately 4%, declining as employees age and stabilizing in their 30s (see Appendix A Figure 12 ). This figure presents the average annual quit rate by age and gender, calculated by dividing the total number of voluntary quits in a given year by the number of employees of the corresponding age and gender at the start of the year. Women’s",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 10,
+        "text": "quit rates are slightly higher than men’s until age 25, after which there is no statistically significant difference between genders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 11,
+        "text": "Notably, the low quit rate extends even to female employees following their first childbirth, a subgroup conventionally considered at high risk of exiting the labor force. Figure 1 illustrates the changing proportions of mothers who continue working full-time, reduce their hours, take parental leave, or leave their jobs. 13 The average annual quit rate over the 10 years post-birth is 1.1%, which is significantly lower than the firm’s overall voluntary quit rate of 4.0%. This suggests that childbirth does not increase quit rates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 12,
+        "text": "The high firm attachment of mothers is likely attributed to the company’s generous family-friendly policies. Nearly 80% of mothers choose to reduce their work hours at some point, a benefit available to employees with children under 12 years old. 14 These mothers typically work around 30 hours per week. Interestingly, the proportion opting for reduced hours increases, rather than decreases, as their first child ages. This trend likely reflects the growing caregiving responsibilities mothers face, as they often need to leave work early to care for school-age children.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 13,
+        "text": "2.3.3 Within-Firm Earnings Trajectory",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 14,
+        "text": "Finally, we use detailed pay items from the payroll data to document the sources of the gender earnings gap. In cross section, male employees earn [FORMULA] 2,591 per month on average. This results in an unconditional, within-firm",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 15,
+        "text": "13 We extract data on employee turnover, parental leave uptake, and reduced working hours for women with children from internal personnel records. Specifically, our dataset comprises a balanced panel of women who had their first child before September 2013. For those who subsequently left the company, we lack records of their children’s birth dates. Therefore, we infer the timing of childbirth based on the start date of post-birth maternity leave. We validate this inference method using data from current employees with known family characteristics. 14 The share of female workers who have ever opted for reduced work hours is 78%, whereas it is only 0.4% for male workers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 16,
+        "text": "Men Women 0 1000 2000 3000 4000 5000",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 17,
+        "text": "0 1000 2000 3000 4000 5000",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 18,
+        "text": "Age Monthly Earnings (USD) Pay component Allowances Age Job Rank Time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 19,
+        "text": "Figure 2: Decomposition of Average Monthly Earnings Notes: This figure displays the average monthly earnings for age and gender groups, broken down into four pay components. The sample is restricted to male and female employees aged 59 or below who have worked for at least one year at domestic office between September 2013 and January 2024.The upper panel shows All amounts in Japanese yen are converted to U.S. dollars using an exchange rate of 1 USD = 99 JPY.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 20,
+        "text": "gender pay gap of 38%. The primary driver of this gap is job-rank-based pay, accounting for 48% ( [FORMULA] 431) is attributed to the gender gap in time-based pay, while allowances explain 15%. The remaining 9% ( $ 138) is attributed to age-based pay, reflecting differences in age between male and female employees.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 21,
+        "text": "Dynamically, the gender pay gap widens over the career. Figure 2 shows the average monthly earnings for men and women, broken down into four pay components. Between ages 25 and 50, the gender gap more than doubles, increasing from 11% to 26%. At age 25, nearly 95% of the pay gap comes from differences in time-based pay. By age 50, time-based pay accounts for less than 30%. In contrast, job-rank-based pay explains over 50% of the gap. Women’s pay growth within the firm falls short of men’s largely due to the lack of",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 22,
+        "text": "growth in rank-based pay.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 5,
+        "section_name": "Summary Statistics",
+        "paragraph_id": 23,
+        "text": "Women’s pay growth significantly correlates with the presence of children. Figure 14 in Appendix A shows the trajectory of monthly earnings for those with children and without children. For women’s with children, their time-base pay goes negative during childbearing ages, and pay growth stalls. From age 25 and 50, monthly earnings grow by 30%. In contrast, pay for women without children grows continuously over the career. From age 25 and 50, monthly earnings grow by 36%. These patterns align with previous research, which identifies the gendered effects of childbirth as a major contributor to the overall gender pay gap ( Bertrand et al. , 2010 ; Kleven et al. , 2021 ; Bertrand , 2020 ; Cortés and Pan , 2023 ). In the following sections, we examine in detail how and why childbirth impacts the earnings trajectories of men and women.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 6,
+        "section_name": "Child Penalty",
+        "paragraph_id": 0,
+        "text": "As shown in the earlier section, parenthood is a key factor correlating with women’s slower pay growth compared to men within the firm. In this section, we expand on these observations by quantifying the impact of childbirth on total monthly earnings. We explore how the child penalty evolves over time, and decompose it into key pay components: agebased, time-based, job-rank-based pay, and allowances. This analysis sheds light on the evolving nature of the child penalty, thereby offering a comprehensive understanding of the mechanisms.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "We employ a matching event study design to quantify the impact of childbirth on the total monthly earnings from this firm and each pay component. Let E i represent the year and month when employee i had their first child. For employee i of gender g in calendar year t , we run the following regression:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 1,
+        "text": "Y g it = X e ̸ = − 10 α g e D e it + X s X k β g k,s Age k it Educ s i + γ i + δ g t + ε g it (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "where Y g it is the outcome of interest such as monthly earnings. Earnings are used in levels rather than logs to preserve zero values resulting from leave-taking. D e it = 1 [ t − E i = e ] are event time dummies and the coefficients α g e capture the dynamic effects of the birth of the first child (i.e., the child penalty). We have interactions of age dummies, Age k it = 1 [ k = age it ] , and education dummies, Educ s i = 1 [ s = Educ i ] , allowing for different age-earnings profiles by education and gender. The regression also includes individual fixed effects γ i and genderspecific calendar time fixed effects δ g t . The study window spans from 60 months (5 years) before childbirth to 180 months (15 years) after ( e = [60 , . . . , 180] ), with the timing of conception, e = − 10 , serving as the reference month.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 3,
+        "text": "To estimate the long-run effects of the first childbirth on career outcomes, we employ the exact matching estimator. The pool of control units consists of employees who are married but have no children throughout the study period. 15 We argue that childless, married people constitute a suitable control group because they are similarly at risk of having a child. This approach is particularly relevant in Japan, where 97.6% of children are born within marriage, 16 and 96.5% of married couples express a desire to have a child. 17",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 4,
+        "text": "15 See Kleven et al. ( 2019a ) online Appendix B.2 for a discussion of employing pure controls. 16 See Vital Statistics 2020. 17 See Annual Population and Social Security Surveys 2015.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 5,
+        "text": "For each treated individual i , we match a control individual (denoted as i ′ ) based on gender, education, and the month and year of birth. When there is more than one candidate for a control individual, we randomly select one. We assign to each control individual i ′ a placebo childbirth month taken from the corresponding treated individual i so that a matched pair share the same childbirth month, E i ′ = E i . The resulting dataset consists of equal-sized treated and control groups. We present the raw average monthly earnings and the composition breakdown before and after childbirth for the treatment group in Figure 3 , 18 and those for the control group in Appendix A Figure 16a . We then run the regression ( 1 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 6,
+        "text": "The key parameter of interest, α g e , represents the impact of childbirth on monthly earnings, relative to ten months before childbirth, for individuals who remain with the same firm at event time e . The child penalty, α g e , is identified if the parallel trend assumption is satisfied. This means that, had they not had children, the trajectory of monthly earnings for employees with children would have been parallel to that of employees without children. Since our earnings measure excludes parental leave benefits — and thus those on parental leave have zero earnings — α g e represents the reduction in earned income from productive work at the firm following childbirth. 19",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 7,
+        "text": "Following Kleven et al. ( 2023 ), we further convert the estimated level effects into percentages using the formula P g e = α g e /E [ ̃ Y g it | e, Treat i = 1] , where ̃ Y g it represents the counterfactual outcome in the absence of childbirth’s impact at event time e , i.e.,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 8,
+        "text": "̃ Y g it = X s X k ̃ β g k,s Age k it Educ s i + ̃ γ i + ̃ δ g t (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 9,
+        "text": "and Treat i is an indicator variable that takes the value of one for a treated individual and 18 As Figure 3a shows, the decline in women’s time-based pay occurs twice: first immediately after their first childbirth and then again around three years later. This pattern aligns with the fact that most parents, both men and women, have more than one child. Appendix A Figure 15 presents a similar figure by the number of children, showing that the second dip does not occur for women with only one child. 19 Adams-Prassl et al. ( 2024 ) show that the size of child penalty on earnings significantly differ with and without counting parental leave benefit as earnings.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 10,
+        "text": "−60 0 120 180 −2500 0 2500 5000",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 11,
+        "text": "Months Since First Child's Birth Monthly Earnings (USD) Pay component Allowances Age Job Rank Time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 12,
+        "text": "(a) Monthly earnings by items and gender",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 13,
+        "text": "0.00 0.25 0.50 0.75 1.00",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 14,
+        "text": "−60 0 120 180 Months Since First Child's Birth Gender Gap (%) Pay component Allowances Age Job Rank Time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 15,
+        "text": "(b) Father-mother gap Figure 3: Average Monthly Earnings Around the Time of the First Childbirth Notes: Figure 3a displays the accounting decomposition of average monthly earnings 60 months before and 180 months after the first childbirth. Figure 3b displays the earnings difference between male and female employees. The sample is restricted to employees aged 59 or below who have worked for at least one year at domestic office and have had the first child between September 2013 and January 2024. All amounts in Japanese yen are converted to U.S. dollars using an exchange rate of 1 USD = 99 JPY, which was the average exchange rate in September 2013.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 16,
+        "text": "zero for a control individual.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 17,
+        "text": "Finally, we compute the child penalty at event time e as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 18,
+        "text": "Child Penalty ( ̄ e ) ≡ E [ P Men e | 0 ≤ e ≤ ̄ e ] − E [ P Women e | 0 ≤ e ≤ ̄ e ] . (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 7,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 19,
+        "text": "The first term represents the percentage effect on men’s earnings averaged over ̄ e months post birth. We refer to it as the fatherhood premium if positive, or the fatherhood penalty if negative. The second term represents the average effects on women’s earnings, referred to as the motherhood penalty. The child penalty is then defined as the difference between the fatherhood premium (or penalty) and the motherhood penalty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 0,
+        "text": "Figure 4 presents the event study estimates of the child penalty on total monthly earnings, spanning from 60 months before to 180 months after the birth of the first child. Figure 4a displays the effect on men’s earnings, while Figure 4b shows women’s. In both cases, there is no significant pretrend observed, which supports the parallel trend assumption. Averaged over the first ten years after childbirth, the long-run child penalty is 55 percentage points. Of this, 8 percentage points are attributed to the fatherhood premium, while the remaining 46 percentage points come from the motherhood penalty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 1,
+        "text": "Our data can further quantify the impact of childbirth on each pay component as shown in Figure 5 . Specifically, Figures 5a and 5b present the event-study estimates for the impact on time-based pay for men and women, respectively. Figures 5c and 5d display the effects on job-rank-based pay, while Figures 5e and 5f illustrate the impact on allowances. No significant pre-trend is observed for any pay component except for allowances for men, further supporting our identification strategy. These estimates help us to breakdown the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 2,
+        "text": "0 120 180 Months Since First Child's Birth Total Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 3,
+        "text": "(a) Men ( ˆ α Men e )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 4,
+        "text": "0 120 180 Months Since First Child's Birth Total Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 5,
+        "text": "(b) Women ( ˆ α Women e ) Figure 4: Event Study Estimates on the Monthly Total Earnings Notes: This figure shows the event study estimates and 95% confidence intervals for the impact of childbirth on total monthly earnings, based on the regression specified in equation ( 1 ). The reference month is set at the time of conception ( e = − 10 ). All amounts in Japanese yen are converted to U.S. dollars using an exchange rate of 1 USD = 99 JPY.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 6,
+        "text": "0 120 180 Months Since First Child's Birth Hourly−Based Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 7,
+        "text": "(a) Time-Based Pay Component (Men) −2000 −1000 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 8,
+        "text": "0 120 180 Months Since First Child's Birth Hourly−Based Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 9,
+        "text": "(b) Time-Based Pay Component (Women)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 10,
+        "text": "0 120 180 Months Since First Child's Birth Job−Rank−Based Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 11,
+        "text": "(c) Job-Rank-Based Pay Component (Men) −400 −300 −200 −100 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 12,
+        "text": "0 120 180 Months Since First Child's Birth Job−Rank−Based Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 13,
+        "text": "(d) Job-Rank-Based Pay Component (Women)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 14,
+        "text": "0 120 180 Months Since First Child's Birth Family Allowance and Other Component of Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 15,
+        "text": "(e) Allowances (Men) −150 −100 −50 0 100",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 16,
+        "text": "0 120 180 Months Since First Child's Birth Family Allowance and Other Component of Earnings",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 17,
+        "text": "(f) Allowances (Women) Figure 5: Event Study Estimates by Pay Component Notes: This figure shows the event study estimates and 95% confidence intervals for the impact of childbirth on monthly earnings by pay component, based on the regression specified in equation ( 1 ). The reference month is set at the time of conception ( e = − 10 ). All amounts in Japanese yen are converted to U.S. dollars using an exchange rate of 1 USD = 99 JPY.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 18,
+        "text": "0.00 0.25 0.50 0.75 1.00",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 19,
+        "text": "0 120 180 Month Since First Child's Birth Percentage Allowances Job Rank Time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 20,
+        "text": "Figure 6: Sources of Child Penalty Notes: This figure shows the relative contributions of pay components, time, rank and allowances, to the child penalty. The estimates are derived from the regression specified in equation ( 1 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 21,
+        "text": "fatherhood premium and motherhood penalty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 22,
+        "text": "We break down the fatherhood earnings premium. Unlike findings from studies in the US ( Lundberg and Rose , 2000 ), the premium in this paper is not driven by an increase in hours worked, rejecting the idea of within-household specialization. As shown in 5a , the arrival of a child has little effect on time-based pay, except for a small but noticeable drop in the first few months after childbirth. Instead, Figure 5e reveals an immediate, significant, and persistent positive impact on allowances at the time of childbirth. This increase is largely automatic, driven by the family allowance , which is common in Japanese firms. The allowance provides additional compensation to household heads, with the amount increasing as family size grows. As discussed in Section 2.2 , while the family allowance is de jure (by law) gender-neutral, it is de facto (in practice) gendered, as male employees are almost always considered household heads. As shown in Figure 5c , job-rank-based pay shows no short-term effect, but positive impacts emerge in the long run.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 23,
+        "text": "Interestingly, the sources of the motherhood penalty change over time. As shown in Figure 5b , time-based pay declines sharply after childbirth, initially accounting for nearly the entire motherhood penalty. Because our payroll data is recorded monthly, we capture the steep earnings drop when mothers take parental leave. While earnings gradually recover within two years, they dip again, likely due to about half of the mothers having a second child. 20 Data on parental leave and reduced hours usage, as shown in Figure 1 , support this pattern. After 60 months, the reduction in time-based pay begins to steadily diminish. Meanwhile, job-rank-based pay experiences a smaller but noticeable decline immediately after childbirth, which grows steadily over time. This pattern contrasts with findings from previous studies using registry data, which report an immediate and significant drop in occupational rank and promotion opportunities following childbirth ( Kleven et al. , 2019b ; Bronson and Thoursie , 2021 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 24,
+        "text": "Combining the fatherhood premium and the motherhood penalty, Figure 6 illustrates the changing shares of the sources of the child penalty up to 15 years after childbirth. Timebased pay initially accounts for nearly 90% of the penalty, consistent with women’s leavetaking patterns (Section 2.3.2 ). This coincides with increased family care responsibilities: employee surveys reveal a 70-percentage point rise in female employees needing work accommodations after their first childbirth (detailed in Appendix A.4 ). However, the relative importance of these factors shifts over time. By year 10, time-based pay’s contribution decreases to 60%, while job-rank-based pay accounts for 17%. Beyond this point, the impact of rank-based pay increases significantly, becoming the largest contributor to the penalty by year 15. This evolution suggests that understanding the long-term child penalty requires examining the mechanisms behind the growing rank component, particularly promotions and job evaluations, which we address in the next section.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 25,
+        "text": "20 Figure 13 in Appendix A.2 shows the distribution of the number of children among male and female workers at the firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 26,
+        "text": "Table 2: Unconditional Promotion Rate by Gender",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 8,
+        "section_name": "Estimation Results",
+        "paragraph_id": 27,
+        "text": "Promotion Men Women Gender Gap p-value Relative rate StaffMember to Team Leader 0.05 0.02 0.04 0.00 0.35 Team Leader to Senior Team Leader 0.08 0.09 -0.01 0.75 1.09 Senior Team Leader to Manager 0.07 0.05 0.02 0.19 0.72 Notes: This table reports the unconditional, annual promotion hazard by sex at each job rank. Relative rate is defined as women’s promotion rate divided by men’s rate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 9,
+        "section_name": "Underlying Mechanisms",
+        "paragraph_id": 0,
+        "text": "Our previous analysis demonstrated that rank-based pay differences are a key determinant of the long-term child penalty. Understanding the mechanisms through which childbirth affects rank-based pay, i.e., promotion prospects, is therefore crucial for explaining both the existence and magnitude of the penalty. We begin in Section 4.1 by quantitatively examining how working hours and performance evaluations influence promotion decisions, showing that these factors create particular challenges for mothers. In Section 4.2 , we then evaluate other potential mechanisms that could explain the relationship between childbirth and slower promotion trajectories.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 0,
+        "text": "4.1.1 Promotion Decision",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 1,
+        "text": "A significant gender gap in promotions emerges early in the career ladder. Table 2 presents the unconditional annual promotion rates by gender, showing that men are promoted from staffmember to team leader at 4.5% annually, more than double the 1.8% promotion rate for women. Although this gender promotion gap narrows at higher ranks, women remain significantly underrepresented in the upper echelons of the firm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 2,
+        "text": "Figure 7 illustrates the distribution of women across three non-managerial positions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 3,
+        "text": "59.2% 14.8% 14% 11.9%",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 4,
+        "text": "96.6% 0.8% 2.3% 0.4% Women",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 5,
+        "text": "Staff Member Team Leader Senior Team Leader Manager",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 6,
+        "text": "Figure 7: Distribution of Men and Women Across the Job Ladder Notes: This figure shows the percentage distribution of employees across job ranks, separately for men and women. The job ranks include StaffMembers at the entry level, followed by Team Leaders and Senior Team Leaders, which are non-managerial positions. Section Managers represent the first managerial rank. The sample is limited to employees working in domestic offices as of September 2013. Employees above the Section Manager rank are excluded from this figure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 7,
+        "text": "(staffmember, team leader, and unit leader) and one managerial position (section manager). The data clearly show that most women are concentrated at the lowest level of the career ladder, while many men occupy higher positions. This distribution aligns with the “broken rung” phenomenon observed in many organizations ( McKinsey and LeanIn , 2019 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 8,
+        "text": "Our interview with the firm’s HR department revealed the promotion decision process. Promotions are made solely based on recommendations from supervisors. The immediate supervisor assesses their subordinates based on performance, teamwork, and leadership potential. Reflecting cultural norms in Japanese firms, collaborative skills are highly valued, while individual output is given less emphasis. These assessments are generally reflected in the annual evaluation score by immediate supervisors, which must be approved by supervisors two levels above in the organizational hierarchy. Although employees have no opportunity to apply for promotion, they can express their career aspirations in a one-onone meeting, which is recorded in the annual employee survey.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 9,
+        "text": "To understand how these qualitative assessments translate into promotion decisions, we examine the relationship between performance scores and promotion rates. Figure 8 shows the average annual promotion rate by performance evaluation score from the previous year. For each job rank, the promotion rate increases with performance scores. Achieving the highest score (5) increases the likelihood of promotion by a factor of three to five compared to the second-highest score (4). These statistics indicates that the current promotion system assigns higher performers to higher ranks, confirming the HR department’s explanation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 10,
+        "text": "While performance scores play a crucial role in promotions, we also examined the potential influence of working hours. The HR department notes that working hours are not officially considered in promotion decisions, as the ability to work longer is not a prioritized quality. Figure 9 presents the distribution of weekly hours worked across three nonmanagerial positions: staffmember, team leader, and unit leader. Although team and unit leaders on average work longer hours than staffmembers, these leaders do not necessarily work beyond 50 hours per week. In fact, some leaders work less than 40 hours per week. However, HR reports that supervisors often informally favor employees who work longer hours or take on unconventional shifts, such as night shifts. The extent to which this unofficial preference influences internal promotions, however, remains unclear.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 11,
+        "text": "Staff Member Team Leader Senior Team Leader",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 12,
+        "text": "Figure 8: Promotion Rate by Evaluation Score and Job Rank Notes: This figure shows the average annual promotion rate by evaluation score and job rank, based on data from 2013 to 2023. The sample includes employees who worked for at least one year in domestic offices during these years.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 13,
+        "text": "Staff Member Team Leader Senior Team Leader",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 14,
+        "text": "0 0 0 0.00 0.02 0.04 0.06 0.08",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 15,
+        "text": "Weekly working hours Density",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 16,
+        "text": "Figure 9: Distribution of Weekly Hours Worked by Job Rank Notes: This figure shows the distribution of average weekly hours worked by job rank, based on pooled data from 2013 to 2023. The sample includes employees who worked for at least one year in domestic offices during this period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 17,
+        "text": "To empirically assess the influences of performance evaluation scores and hours of work, as well as other demographic characteristics, we run a regression model for promotion. This model examines the factors affecting an employee’s likelihood of moving up by one rank, as described in Section 2.2 . Specifically, for employee i at the rank r in the division s in year t ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 18,
+        "text": "promote i,r,s,t +1 = X j β r j · D j i,t + X h λ r h · D h i,t + θ r p D female i + τ r t + δ r s + x ′ i,s,t γ r + ε i,r,s,t (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 19,
+        "text": "where promote i,r,s,t +1 is an indicator of promotion from rank r to r + 1 for worker i at division s in year t + 1 . The variable D j i,t ( j = 1 , 2 , 4 , 5 ) is a dummy variable indicating whether an employee’s evaluation score, rounded to the nearest integer, is j = 1 , 2 , 4 , or 5 . Score 3 is the omitted category. The variable D h i,t is a dummy variable indicating whether an employee works shorter hours (less than 40 hours per week) or longer hours (more than 50 hours per week). Regular working hours (40-50 hours per week) serve as the reference category. The variable D female i is a female dummy, τ r t is a time fixed effect, δ r s is a division fixed effect, and x i,s,t is a vector of i ’s other characteristics including educational attainment, age, and recruitment channels through which i was hired. The last term ε i,r,s,t is an error term uncorrelated with all other variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 20,
+        "text": "Table 3 reports the results. 21 At each step of promotion, there is a significant, positive, non-linear relationship between the evaluation score and the promotion rate. Column 1 shows that compared to score 3, achieving the highest score (5) increases the chance of promotion from staffmember to team leader by 24 percentage points. Similarly, Column 2 shows that it increases the chance of promotion from team leader to unit leader by 29 percentage points, while Column 3 indicates a 26 percentage point increase for promotion",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 21,
+        "text": "21 In Appendix A.5 , we present the results from running the regression separately for each division.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 22,
+        "text": "from senior team leader to section manager. Consistent with HR’s description, hours worked have no impact on promotion probability when evaluation score is given, except for a small negative effect of short working hours at the entry rank.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 23,
+        "text": "Having a child does not affect the probability of promotion for women. However, regardless of parenthood status, being female reduces the likelihood of promotion from staff member to team leader by 4 percentage points. This gender gap is equivalent to the impact of a reduction in evaluation scores from 4 to 3, indicating a potential unexplained barrier for women in the promotion process. While this study focuses on the child penalty within the firm, our findings do not rule out the possibility that factors beyond the child penalty also contribute to the overall gender gap within the organization.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 24,
+        "text": "Table 3: Determinants of Promotions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 25,
+        "text": "StaffMember Team Leader Senior Team Leader Female − 0 . 04 [FORMULA] − 0 . 02 − 0 . 02 ( 0 . 00 ) ( 0 . 02 ) ( 0 . 02 ) Evaluation score (ref. 3) 0 . 24 [FORMULA] 0 . 29 [FORMULA] 0 . 26 [FORMULA] ( 0 . 01 ) ( 0 . 02 ) ( 0 . 02 ) 0 . 04 [FORMULA] 0 . 07 [FORMULA] 0 . 06 [FORMULA] ( 0 . 00 ) ( 0 . 01 ) ( 0 . 01 ) − 0 . 01 ** − 0 . 01 − 0 . 02 ( 0 . 00 ) ( 0 . 01 ) ( 0 . 01 ) 0 . 00 ( 0 . 01 ) Weekly Hours Worked (ref. 40 ≤ hours < 50 ) ≥ 50 hours − 0 . 00 0 . 00 − 0 . 00 ( 0 . 01 ) ( 0 . 01 ) ( 0 . 01 ) < 40 hours − 0 . 01 ** 0 . 03 0 . 04 + ( 0 . 00 ) ( 0 . 03 ) ( 0 . 02 ) Education (ref. High school) 4-Yr College 0 . 00 0 . 04 [FORMULA] 0 . 02 * ( 0 . 00 ) ( 0 . 01 ) ( 0 . 01 ) Some College − 0 . 00 0 . 09 * 0 . 03 ( 0 . 01 ) ( 0 . 04 ) ( 0 . 02 ) Mid Carrer − 0 . 01 [FORMULA] − 0 . 02 − 0 . 04 [FORMULA] ( 0 . 00 ) ( 0 . 01 ) ( 0 . 01 ) Age 0 . 01 [FORMULA] 0 . 04 [FORMULA] 0 . 07 [FORMULA] ( 0 . 00 ) ( 0 . 00 ) ( 0 . 01 ) Age Squared − 0 . 00 [FORMULA] − 0 . 00 [FORMULA] − 0 . 00 [FORMULA] ( 0 . 00 ) ( 0 . 00 ) ( 0 . 00 ) Mean Outcome 0 . 04 0 . 08 0 . 07 Num.Obs. 18 359 4020 3706 R2 0 . 114 0 . 121 0 . 095 R2 Adj. 0 . 113 0 . 117 0 . 090 R2 Within 0 . 106 0 . 112 0 . 089 R2 Within Adj. 0 . 106 0 . 109 0 . 086 Std.Errors by: id by: id by: id FE: Division X X X FE: Period X X X Notes: This table presents the results from regressing promotion incidence on worker characteristics, as specified in regression equation ( 4 ). The sample consists of workers from all divisions combined. Column 1 reports results for all staffmembers, Column 2 focuses on team leaders, and Column 3 on senior team leaders. Each specification includes division and year fixed effects. Standard errors are clustered at the worker level and are reported in parentheses.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 26,
+        "text": "0 1000 2000 Total annual working hours Score",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 27,
+        "text": "(a) StaffMember 2.5 3.0 3.5 4.0 4.5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 28,
+        "text": "1000 2000 Total annual working hours Score",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 29,
+        "text": "1000 2000 Total annual working hours Score",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 30,
+        "text": "(c) Senior Team Leader Figure 10: Hours Worked and Evaluation Scores Notes: This binscatter plot illustrates the relationship between annual hours worked (x-axis) and annual evaluation scores (y-axis), following the methodology of Cattaneo et al. ( 2024 ). The optimal number of bins is determined by minimizing the integrated mean square error (IMSE), using the default settings in the binsreg package. The blue line represents a third-order polynomial fit, with shaded regions indicating 95% confidence intervals. All estimates control for division fixed effects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 31,
+        "text": "4.1.2 Performance Evaluation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 32,
+        "text": "Given that performance evaluations are crucial for promotion, as evidenced by our previous analysis, we next examine the determinants of evaluation scores. In particular, we are interested in understanding how working hours are associated with these scores, especially because our interviews with HR suggested that long hours are informally favored. This analysis will help us further unpack the mechanisms behind the promotion patterns we observe.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 33,
+        "text": "To see how hours of work is associated with evaluation scores in a simple framework, we apply the binscatter method proposed by Cattaneo et al. ( 2024 ). Here, we control for division fixed effects because evaluation criteria differ substantially by divisions, according to HR. As shown in Figure 10a , hours worked and evaluation scores are positively correlated at the lowest job rank (staffmember). This association, however, disappears at the higher ranks (see Figures 10b and 10c ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 34,
+        "text": "We also run the following regression model for performance evaluation with more control variables. Specifically, for employee i at the rank r in the division s in year t ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 35,
+        "text": "eval i,r,s,t = X h λ r h · D h i,t + θ r p D female i + τ r t + δ r s + x ′ i,s,t γ r + ε i,r,s,t (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 36,
+        "text": "where eval i,r,s,t is i ’s evaluation score in year t. The variable D h i,t is a dummy variable indicating whether an employee works shorter hours (less than 40 hours per week) or longer hours (more than 50 hours per week). Regular working hours (40-50 hours per week) serve as the reference category. The variable D female i is a female dummy, τ r t is a time fixed effect, δ r s is a division fixed effect, and x i,s,t is a vector of i ’s characteristics including educational attainment, age, and recruitment channels through which i was hired. The last term ε i,r,s,t is an error term uncorrelated with all other variables.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 37,
+        "text": "Table 4 presents the results. 22 At the lowest rank (staffmember), there is a significant, positive, and non-linear relationship between hours worked and evaluation scores. Column 1 shows that long working hours are associated with a 0.07 point higher evaluation score than regular working hours. Conversely, short working hours are associated with a 0.20 point lower score than regular working hours. Interestingly, for team leaders (Column 2) and senior team leaders (Column 3), hours worked no longer show a statistically significant association with evaluation scores. Finally, the coefficient for the female dummy is posi-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 38,
+        "text": "22 In Appendix A.6 , we present the results from running the regression separately for each division.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 39,
+        "text": "Table 4: Determinants of Employee Evaluation Scores",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 40,
+        "text": "StaffMember Team Leader Senior Team Leader Female 0 . 05 ** 0 . 02 − 0 . 04 ( 0 . 02 ) ( 0 . 07 ) ( 0 . 06 ) Weekly Hours Worked (ref. 40 ≤ hours < 50 ) ≥ 50 hours 0 . 07 ** 0 . 03 0 . 03 ( 0 . 02 ) ( 0 . 04 ) ( 0 . 04 ) < 40 hours − 0 . 20 [FORMULA] 0 . 11 0 . 00 ( 0 . 02 ) ( 0 . 08 ) ( 0 . 05 ) Education (ref. High school) 4-Yr College 0 . 13 [FORMULA] 0 . 09 * 0 . 05 ( 0 . 02 ) ( 0 . 04 ) ( 0 . 04 ) Some College 0 . 17 ** 0 . 01 0 . 03 ( 0 . 06 ) ( 0 . 12 ) ( 0 . 11 ) Mid Carrer 0 . 04 + 0 . 15 ** 0 . 10 * ( 0 . 02 ) ( 0 . 05 ) ( 0 . 05 ) Age − 0 . 00 0 . 05 * 0 . 01 ( 0 . 01 ) ( 0 . 02 ) ( 0 . 03 ) Age Squared − 0 . 00 ** − 0 . 00 [FORMULA] − 0 . 00 ( 0 . 00 ) ( 0 . 00 ) ( 0 . 00 ) Mean Outcome 3 . 38 3 . 63 3 . 67 Num.Obs. 18 359 4020 3706 R2 0 . 201 0 . 101 0 . 151 R2 Adj. 0 . 201 0 . 097 0 . 147 R2 Within 0 . 128 0 . 085 0 . 104 R2 Within Adj. 0 . 128 0 . 083 0 . 102 Std.Errors by: id by: id by: id FE: Division X X X FE: Period X X X Notes: This table presents the results from regressing annual evaluation scores on worker characteristics, as specified in regression equation ( 5 ). The sample consists of workers from all divisions combined. Column 1 reports results for all staffmembers, Column 2 focuses on team leaders, and Column 3 on senior team leaders. Each specification includes division and year fixed effects. Standard errors are clustered at the worker level and are reported in parentheses.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 10,
+        "section_name": "Internal Promotion Dynamics",
+        "paragraph_id": 41,
+        "text": "tive and statistically significant, indicating that women perform better than men with the same work hours at the same hierarchical level, even though women’s higher scores do not necessarily lead to more promotions, as we have shown in the previous subsection.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "Our analysis in Section 4.1 identifies working hours as a critical pathway through which childbirth affects promotion prospects: increased caregiving responsibilities following childbirth constrain mothers’ time allocation at work, which subsequently impacts their career progression. This finding raises two questions. First, we investigate why working hours are so crucial for career advancement in our setting (Section 4.2.1 ). Our evidence strongly supports compensating differentials as the primary mechanism, while showing that tournament incentives might play a complementary role. We find limited support for alternative explanations based on signaling or human capital accumulation. Second, we consider whether mechanisms beyond the hours-evaluation-promotion channel might explain the child penalty (Section 4.2.2 ). We find limited empirical support for explanations based on managerial bias against mothers or changes in women’s career aspirations following childbirth. These findings suggest that gendered time constraints after childbirth, rather than a priori bias or changes in aspirations, drive the motherhood penalty identified in Section 3.2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "4.2.1 Extended Hours and Career Advancement: Assessing Alternative Mechanisms",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "Our analysis in Section 4.1 reveals a strong empirical relationship between working hours and career advancement within the firm. This pattern, while documented in our single-firm setting, reflects a broader phenomenon observed across various contexts, from the United States ( Bell and Freeman , 2001 ; Goldin , 2014 ) and Germany ( Bell and Freeman , 2001 ) to ( Frederiksen et al. , 2024 ). 23 The widespread nature of this relationship suggests our",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "23 Using Danish registry data, Frederiksen et al. ( 2024 ) document population-wide evidence of a positive association between work hours and career success in Denmark. They examine the mechanisms linking hours to career outcomes. Their data support multiple explanations: tournament theory, asymmetric information about workers’ costs of long hours, and human capital accumulation. They also find that long working hours matter for career progression only within the same firm, not when switching firms. Compared to Frederiksen et al. ( 2024 ), we use internal records including production outputs, detailed job ranks beyond the manager/nonmanager distinction, work hours, evaluations, and qualitative interviews with the HR department. These data",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "findings may have broader relevance. Below, we examine four potential mechanisms that could explain how long hours translate into career success. Our evidence strongly supports compensating differentials as the primary mechanism, while providing limited support for alternative explanations based on tournament incentives, signaling, or human capital accumulation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "The primary mechanism supported by our evidence is that the firm’s production technology requires extended availability for handling contingencies,( Goldin and Katz , 2011 ; Goldin , 2014 ) particularly at entry-level positions. This requirement stems from the need to address time-sensitive situations: sales staffmust respond to urgent client requests involving perishable products, while manufacturing workers address unexpected demand surges or mechanical problems. While such events are infrequent, their potential costs make employee preparedness particularly valuable. Notably, these contingency responsibilities primarily affect entry-level positions rather than team leaders, whose main role is staffsupervision. The firm addresses this technological constraint through two compensation channels: direct overtime pay and, more importantly, the promise of higher future earnings through better evaluation scores and promotion prospects.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 6,
+        "text": "While the production technology mechanism aligns well with our empirical patterns and institutional context, we systematically examine alternative explanations for two reasons. First, it helps validate our interpretation that the hours-evaluation link reflects technological constraints rather than other factors. Second, different mechanisms could have distinct implications for both the efficiency of current practices and potential policy interventions. We consider three alternative explanations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 7,
+        "text": "The first alternative mechanism operates through human capital accumulation: longer working hours could build skills through learning-by-doing, leading to higher future pro-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 8,
+        "text": "allow us to further narrow down the potential mechanisms linking long hours to career progression.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 9,
+        "text": "ductivity ( Shaw , 1989 ; Imai and Keane , 2004 ). If this mechanism explains our findings, we would expect employees who work longer hours to become more productive over time, which would justify their higher evaluation scores. While we cannot directly observe individual productivity, we can test this hypothesis using team-level data. Specifically, we examine whether teams whose non-managerial employees work longer hours in year t − 1 produce more hourly output in year t , controlling for year and workplace fixed effects. Our analysis, detailed in Appendix A.8 , finds no significant relationship between past working hours and current productivity. This evidence suggests that productivity enhancement through learning-by-doing is not likely to explain the relationship between working hours and evaluation scores.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 10,
+        "text": "Signaling theory ( Spence , 1973 ) suggests that early-career employees might use long working hours to signal their commitment and leadership potential. According to this explanation, evaluators would interpret extended hours as a proxy for leadership qualities, rewarding these workers with better evaluations. However, our evidence is not consistent with the signaling mechanism: we find that working hours do not correlate with performance evaluations at upper ranks (Section 4.1.2 ). This lack of correlation suggests that the ability to work long hours does not predict leadership effectiveness, making it unlikely that working hours serve as a meaningful signal of worker quality in our context.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 11,
+        "text": "Our evidence also supports a complementary role for tournament incentives. Tournament theory suggests that promotion and reward systems operate as rank-order tournaments where workers compete based on relative rather than absolute performance ( Lazear and Rosen , 1981 ; Rosen , 1986 ). Tournament theory is particularly relevant in corporate settings, helping explain the substantial pay premiums at higher ranks. If tournament dynamics drive our findings, relative working hours among peers should be more predictive of evaluation scores than absolute hours worked. To test this prediction, we modify regression ( 5 ) to include an indicator for whether an employee works the longest hours within their peer group",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 12,
+        "text": "(defined as those at the same job rank under the same supervisor). Our analysis shows that while being the longest-hours worker carries a significant additional premium in evaluation scores, the baseline relationship between absolute hours and evaluations remains the same (see Appendix A.7 ). These results suggest tournament incentives may complement rather than replace our primary mechanism — evaluators appear to reward both absolute effort and relative performance. This complementarity aligns with HR’s observation that the firm faces scarcity of talent for high-ranked positions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 13,
+        "text": "In summary, our evidence suggests that production technology—specifically, the need to handle time-sensitive contingenciescreates fundamental demands for extended availability, particularly at entry-level positions. The firm addresses this technological constraint through compensating differentials, rewarding availability through both evaluation scores and promotion decisions. This mechanism helps explain why reduced hours following childbirth disproportionately affect early-career advancement: the ability to maintain extended presence is most valuable precisely when women face increased family demands.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 14,
+        "text": "4.2.2 Examining Other Potential Drivers of the Child Penalty: Discrimination and Career Aspirations",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 15,
+        "text": "Our analyses in Section 4.1 identify working hours as a critical pathway through which childbirth affects promotion prospects: increased caregiving responsibilities following childbirth constrain mothers’ time allocation at work, which subsequently impacts their career progression. Specifically, we find that promotion and evaluation practices rewarding extended hours create barriers to advancement that disproportionately affect women with childcare responsibilities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 16,
+        "text": "We consider two alternative explanations that might explain the child penalty, but find limited empirical support for either in our data. First, supervisors might hold a priori prej-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 17,
+        "text": "udice against mothers, resulting in lower performance evaluations and fewer promotions. However, when we include an indicator for having children in our regression analysis of evaluation scores (detailed in Appendix A.7 ), we find no evidence that motherhood negatively affects performance assessments. While women face lower promotion rates for a given evaluation score, this gender gap remains constant before and after childbirth, suggesting discrimination against mothers does not drive the child penalty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 18,
+        "text": "Second, the arrival of a child might fundamentally change women’s career aspirations, leading them to reduce their work hours and voluntarily step back from advancement opportunities. Our analysis of employee survey data (detailed in Appendix A.4 ), however, reveals no significant changes in women’s stated career aspirations following childbirth.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 19,
+        "text": "These findings suggest that gendered time constraints after childbirth, rather than bias or changing aspirations, drive motherhood penalties in within-firm career advancementthe main source of long-run child penalties identified in Section 3.2 . While our conclusions derive from one firm’s detailed records and cannot speak to potential discrimination in the broader labor market, we highlight that organizational practices linking extended working hours to career advancement can generate substantial gender gaps even in the absence of explicit bias.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 20,
+        "text": "These findings raise important questions about the efficiency implications of current promotion practices. While the firm’s emphasis on long hours at entry-level positions may serve legitimate operational needs, it could lead to systematic misallocation of talent when combined with gendered constraints on time allocation. To formally explore these efficiency implications, the next section provides a theoretical framework that incorporates our empirical findings on promotion dynamics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 0,
+        "text": "Building on our empirical findings, we now investigate a theoretical model to explore the efficiency implications of the firm’s current evaluation and promotion practices. Our analysis in the previous section revealed the following key patterns:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 1,
+        "text": "1. Promotions are mainly based on performance evaluation scores.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 2,
+        "text": "2. At the entry level, longer working hours are associated with higher evaluation scores. The association between hours worked and evaluations diminishes at higher ranks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 3,
+        "text": "These patterns suggest that while working long hours may not be crucial for career advancement in the long run, it appears to be essential for getting started on the promotion track. In this section, we analyze an illustrative model of internal promotion that incorporates these empirical regularities. By modifying the model of Gibbons and Waldman ( 1999 ) to step-by-step promotion opportunities, we demonstrate that even in a simple model under full information and no taste-based or other a priori gender bias, these evaluation and promotion practices themselves can cause production and Pareto inefficiency. We then discuss implications to the long-run child penality by focusing on gender differences in post-childbirth time constraints.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 4,
+        "text": "Consider a model with a unit mass of female workers and a unit mass of male workers in a firm. Each worker has two traits: utility cost of working β i > 0 which is potentially genderspecific as we discuss later, and innate ability θ i drawn from a uniform distribution over [ θ, θ ] where θ > θ > 0 . For simplicity and to solely highlight the implications from a promotion policy, we assume that θ i is independently distributed across gender and observable to all parties.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 5,
+        "text": "There are three periods following childbirth, t = 1 , 2 , 3 . A firm consists of three-rank",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 6,
+        "text": "job ladders, j = 1 , 2 , 3 . If worker i is assigned to job rank j in period t , then the worker produces outputs y i,t = d j + c j η i,t , where d j and c j are known to all parties. We assume that d 1 ≥ d 2 ≥ d 3 ≥ 0 and c 3 ≥ c 2 ≥ c 1 ≥ 0 . 24 We also assume that workers are paid at their own productivity (evaluated by the firm), i.e., w i,j,t = d j + c j η i,t where η i,t represents worker i ’s human capital (evaluated by the firm) in period t , as defined in the next paragraph.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 7,
+        "text": "Each worker i is endowed with the initial productivity η i, 1 = θ i and assigned to job 1 (entry rank) at the beginning of period 1. Given η i,t and periodt job rank denoted by j ( t ) , each worker chooses hours worked h i,t ≥ 0 . Then, worker i ’s (cumulative) evaluation score on the job according to one’s own ability and hours worked in period t is updated to:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 8,
+        "text": "η i,t +1 = η i,t + θ i + 1 j ( t )=1 h i,t .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 9,
+        "text": "Because all workers are assigned to job 1 at the beginning of period 1, η i, 2 = 2 θ i + h i, 1 for any i . The firm’s promotion rule at the end of period t = 1 , 2 is to assign worker i from job 1 to job 2 (team leader) if and only if η i,t +1 ≥ η 1 , and to assign worker i from job 2 to job 3 (senior team leader) if and only if η i,t +1 ≥ η 2 , where η 1 , η 2 are exogenously-given thresholds with η 2 > η 1 > θ . 25",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 10,
+        "text": "Four remarks are in order. First, consistent with Fact 1 , worker i ’s productivity is increasing in one’s own ability. Second, reflecting Fact 2 that long working hours are appreciated only for the lowest-rank job, worker i ’s evaluation score is increasing in one’s own labor input only for j = 1 . Third, if a worker is not promoted in period 1, then the worker cannot be promoted to the highest rank ( j = 3 ), which potentially leads to a broken rung as 24 For the solution of the utility maximization (which is introduced later) to be well-defined, we also assume that β i > 2 c 1 , β i ( β i − c 1 ) > 2 c 2 2 , and β 2 i > c 2 2 + c 2 3 . 25 Different from existing models such as Gibbons and Waldman ( 1999 ), Gicheva ( 2013 ), Kato et al. ( 2017 ), and Bronson and Thoursie ( 2021 ), there is a friction on promotion steps: each worker faces the same promotion thresholds and cannot be promoted from job 1 to job 3 within one period. For this friction, we assume that workers can neither negotiate with a company nor find an outside position with a higher-ranked job. Consistent with this assumption, there is essentially no wage negotiation in these (i.e., non-top) job ranks in this company. Furthermore, hiring a worker for a middle or high-rank position is exceptional.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 11,
+        "text": "we discuss later. Fourth, because each worker’s wage is assumed to be paid at her/his production, each worker receives all of the production surplus. Hence, production efficiency (together with each worker’s utility maximization, as defined in the next paragraph) implies Pareto efficiency in our model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 12,
+        "text": "Worker i ’s utility consists of consumption and home production. We assume that it takes the following form:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 13,
+        "text": "U ( θ i , β i ) = \u0012 w i,j (1) , 1 h i, 1 − 1 2 β i h 2 i, 1 \u0013 + \u0012 w i,j (2) , 2 h i, 2 − 1 2 β i h 2 i, 2 \u0013 + \u0012 w i,j (3) , 3 h i, 3 − 1 2 β i h 2 i, 3 \u0013 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 14,
+        "text": "Each worker chooses their labor inputs ( h i, 1 , h i, 2 , h i, 3 ) to maximize their own utility. Note that if each η i,t were exogenously fixed, the optimal labor input would be h i,t = w i,j,t /β i = ( d j + c j η i,t ) /β i , which we call effective productivity of worker i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 15,
+        "text": "In Appendix C , we derive the worker’s optimal decision by solving the maximization problem and provide the proofs of the following propositions. Figure 11 illustrates the optimal household behavior depending on θ i and β i . Note that the worker is more likely to be promoted to a higher job rank, as one’s ability ( θ i ) increases or the marginal disutility of labor ( β i ) decreases.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 16,
+        "text": "Now, we focus on a situation in which female workers bear higher marginal cost of working than male workers due to higher childcare responsibilities, i.e., β female > β male (consistent with the fact shown in Figure 17a ). Then, we obtain the following theoretical results:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 17,
+        "text": "Proposition 1 Female workers’ unconditional promotion rate from j = 1 to j = 2 is lower than male workers’.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 18,
+        "text": "Proposition 2 It is possible that female workers’ unconditional promotion rate from j = 2 to j = 3 is higher than male workers’.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 19,
+        "text": "Figure 11: Illustration of Household Behavior Notes: This figure illustrates the optimal household decisions when c = 0 . 3 , d = 0 . 05 , η 1 = 1 , and η 2 = 1 . 5 . In the last period ( t = 3 ), the worker’s job rank is j = 1 if the worker is in the left area of the dashed curve; j = 2 if the worker is in the area between the dashed curve and the thick curve, and j = 3 if the worker is in the right area of the thick curve.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 20,
+        "text": "Propositions 1 and 2 align with empirical findings in Table 2 . Namely, male workers’ annual promotion rate from staffmember to team leader is more than double the female workers’ rate. However, at higher ranks, the promotion rates for male workers are not necessarily higher than those for female workers. 26",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 21,
+        "text": "Proposition 3 It is possible that a female worker who is not promoted to j = 3 has higher innate ability ( θ i ) , human capital ( η i, 3 ) , and effective productivity at j = 3 \u0010 d 3 + c 3 η i, 3 β i \u0011",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 22,
+        "text": "than a male worker who is promoted to j = 3 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 23,
+        "text": "Proposition 3 highlights a possibility of production and Pareto inefficiency. This result comes from the firm’s promotion and evaluation systems. To understand the intuition behind Proposition 3, consider first a female worker with high θ i and high β i . Suppose that the female worker does not work long in t = 1 and hence does not get promoted to j = 2 at the 26 Note that it is also possible that female workers’ unconditional promotion hazard is lower in Proposition 2. For example, if η 2 is sufficiently large, only male workers who have both low β i and high θ i can be promoted to j = 3 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 24,
+        "text": "end of t = 1 . Consider next a male worker with lower θ i and β i than the female worker. The male worker may work very long in t = 1 so that he can get promoted at the end of both periods. By comparing these two workers, it is possible in t = 3 that the female worker has higher innate ability ( θ i ) , human capital ( η i, 3 ) , and effective productivity \u0010 d 3 + c 3 η i, 3 β i \u0011",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 25,
+        "text": "than the male worker. As in the proof, this result is especially relevant when the path to the first promotion is difficult compared to higher promotions. By Figure 7 , our data seem to correspond with such a case.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 12,
+        "section_name": "Theoretical Exploration",
+        "paragraph_id": 26,
+        "text": "Building on but beyond the discussions on the literature, Proposition 3 theoretically highlights that the job-assignment inefficiency can occur by the combination of the firm’s step-by-step promotion policy and evaluating long working hours only at entry-level jobs. That is, even under full information and no taste-based or other a priori gender bias, a firm’s seemingly gender-neutral HR management policies themselves can lead to production and Pareto inefficiency, which is disadvantageous to employees who bear childcare responsibilities. Given that such a step-by-step promotion policy is widespread across industries and unrealistic to alter (at least in the firm we empirically investigated), we discuss some possible labor and evaluation reforms in the next section.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 0,
+        "text": "Using detailed personnel data, we decompose the child penalty into distinct pay components, revealing a substantial child penalty of 55%. The sources of this penalty follow a clear intertemporal pattern: while time-based pay drives the initial impact immediately following childbirth, job-rank-based pay gradually becomes the dominant factor, accounting for the majority of the child penalty by the 15-year mark. This evolution reflects an interconnected mechanism: reduced working hours following childbirth lead to lower performance",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 1,
+        "text": "evaluations, which subsequently constrain promotion opportunities. Our analysis reveals that long working hours serve as a critical factor for advancement within the firm, while our theoretical model demonstrates that such promotion practices can generate production and Pareto inefficiencies.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 2,
+        "text": "Our findings highlight that while current promotion practices may appear merit-based in isolation, their gendered implications emerge when considered within the broader social context. In a society where women disproportionately bear caregiving responsibilities, these practices systematically limit advancement opportunities for capable women with children compared to equally qualified men who face fewer time constraints. Our theoretical model demonstrates that these promotion practices can impair production efficiency. Thus, the case for reconsidering these practices rests on both equity and efficiency grounds: addressing these structural barriers would simultaneously reduce the child penalty while improving firms’ talent allocation and productivity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1249,
+        "section_id": 13,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 3,
+        "text": "Our study has some limitations that suggest avenues for future research. Most notably, we do not address why the firm continues to maintain potentially inefficient human resource practices or what prevents changes from being made. We hypothesize that these practices are remnants of a time when the male-sole-breadwinner model was the norm, and the workforce was homogenous, predominantly male, and had ample disposable time due to stay-at-home female partners. In that context, rewarding long working hours did not result in efficiency losses. Additionally, changing internal practices can be costly, and those in higher leadership positions — who advanced under the current system — may have little incentive to push for change. Understanding why firms adopt and maintain certain human resource management practices would provide valuable insights into why the gender gap in the labor market persists and why progress toward closing it is slow.",
+        "extraction_warnings": ""
+    }
+]

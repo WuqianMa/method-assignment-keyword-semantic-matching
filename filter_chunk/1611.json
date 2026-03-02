@@ -1,0 +1,32 @@
+[
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 58,
+        "text": "π/ 2 − 1; in this case, the minimum demand is 0, the maximum is 2 on average and therefore the average traded quantity in a one-cycle problem is close to 1. In a two-cycle problem, c 0 = π/ 2 − 1 would correspond to keeping at least half of the quantity purchased in the prior cycle. This Proposition speaks to the incentives to buy; selling is readily understood from Lemma 2 as this is the last cycle of operation for the storage unit. These incentives to buy depend on the interaction of capacity k and the state of charge c 0 . For a small capacity k , it is the constraining factor when the state of charge c 0 is large enough; then the initial state of charge only matters to determine when to start and stop charging. If c 0 is sufficiently small, the storage operator wishes to buy more and adopts a buying strategy that resembles the selling strategy of Lemma 2 . She starts buying immediately at a strictly positive rate, finishes at t = 3 π at a positive rate and accumulates k starting from c 0 , which may exceed c m (depending on the exact value of k ). For a large capacity (in excess of c ′ m or c ′′ m ), if c 0 is large, c ′ m is the constraining maximum and c 0 only matters to determine when to start and stop buying. The selling strategy mirrors that Lemma 2 and so depends on the value of c ′ m . If c 0 is small enough, c ′′ m is the constraining maximum state of charge; the operator wants to charge more and so adopts a similar strategy of starting and finishing at a strictly positive rate at the boundaries of the charging interval. The selling strategy is as before. Hence we see that a storage operator has incentives to buy in such a way to accumulate more than c m starting from some positive initial state c 0 , even if operating for a single cycle. The reason is that the purchased quantity c ′′ m − c 0 or k − c 0 is smaller than c m , and so costs less to acquire. This allows the storage operator to take a cheap gamble in the hope of a large, positive shock at time t = 3 π . This is not mis-characterization of probabilities. The gamble has a strictly positive expected value, precisely because the cost of acquiring the energy in the second cycle is lower than the cost of buying c m . Combining Propositions 5 and 6 we conclude that a storage operator facing a low demand at t = π may save energy in that first cycle, and faces incentives to accumulate more than c m in the second cycle. But Proposition 5 is stated for k ⩽ c m , which limits the applicability of our results. The complementary case to Proposition 5 – when capacity is larger ( k > c m ) – is analytically intractable. However, even though the exact solution is out of reach, we are able",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Propositions"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 62,
+        "text": "Remark 7. We are unable to derive formal analytical results for the very interesting case that allows for learning, as in Proposition 3 , over two periods. However it is intuitive to conjecture that instead of selling all its energy in suboptimal circumstances, a storage operator would then have strong incentives to preserve energy for the next cycle instead. Then Propositions 5 and 6 apply.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Propositions"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    }
+]

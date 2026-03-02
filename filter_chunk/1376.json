@@ -1,0 +1,47 @@
+[
+    {
+        "paper_id": 1376,
+        "section_id": 15,
+        "section_name": "Slide_16",
+        "paragraph_id": 0,
+        "text": "Introduction Model Theoretical Results Simulation Results Conclusion Bang-Bang Strategy and Equilibrium Theorem 6: Existence of Nash Equilibrium In the belief-driven threshold utility model with discrete actions (Bt i [FORMULA] 1, 0, 1}) and continuous, belief-dependent softmax utilities, a mixed-strategy Nash equilibrium exists for any finite agent network with bounded heterogeneity. Definition: Bang-Bang Incentive Strategy Assume the platform only observes the average belief ̄θt = 1 n P i θt i . Then the optimal incentive policy reduces to a threshold rule: PI ∗ t = ( PImax, ̄θt < ̄θ∗ 0, ̄θt ≥ ̄θ∗ for some ̄θ∗∈(0, 1). Interpretation: The platform intervenes only when average belief falls below a threshold, yielding a clear and interpretable control boundary. Lydia, Simona, Steffen Belief-Based Behavioral Diffusion & Interpretability 16/31",
+        "extraction_warnings": "Slide-format PDF detected",
+        "matched_keywords": [
+            "Nash Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1376,
+        "section_id": 21,
+        "section_name": "Slide_22",
+        "paragraph_id": 0,
+        "text": "Introduction Model Theoretical Results Simulation Results Conclusion Filtering-Aware Mechanism Design Fig.4. Coherence triangle linking structure, behavior, and Platform Objective: Control belief while preserving interpretability. max {PI t,G t} U(θT) s.t. ∆t i < δ, ∀i, t Filtering-Aware Design: Structure–Behavior–Belief Triangle Coherence The triangle (G t, Bt j , φi) is coherent if: E \u0002 φi(Bt j ) −θt j | G t\u0003 < δ ∀i, j, t. Filtering-aware mechanisms must actively preserve epistemic viability—keeping signals interpretable throughout the feedback loop. Lydia, Simona, Steffen Belief-Based Behavioral Diffusion & Interpretability 22/31",
+        "extraction_warnings": "Slide-format PDF detected",
+        "matched_keywords": [
+            "Mechanism Design"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1376,
+        "section_id": 22,
+        "section_name": "Slide_23",
+        "paragraph_id": 0,
+        "text": "Introduction Model Theoretical Results Simulation Results Conclusion Filtering-Aware Mechanism Design (Cont’d) Goal: Preserve epistemic viability—i.e., keep behavioral signals interpretable. Design Objective: max{PI t, G t, It} U(θT) s.t. E \u0002 φi(Bt j ) −θt j \u0003 < δ Triangle Failure Channels: Structure →Behavior: Compression – reduce action entropy via quantized incentives. Behavior →Belief: Anchoring – inject labeled agents or interpretive tags. Belief →Structure: Recursive Repair – periodic feedback or synchronization. Interpretability is not given—it must be constructed and sustained. Insight: Mechanism design becomes a structural challenge: preserving coherence across the structure–behavior–belief triangle to ensure control under distortion. Lydia, Simona, Steffen Belief-Based Behavioral Diffusion & Interpretability 23/31",
+        "extraction_warnings": "Slide-format PDF detected",
+        "matched_keywords": [
+            "Mechanism Design"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    }
+]

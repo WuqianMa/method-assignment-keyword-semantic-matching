@@ -1,0 +1,1226 @@
+[
+    {
+        "paper_id": 1565,
+        "section_id": 0,
+        "section_name": "Greener Thy Neighbor? On the Welfare Effects of Protectionist Climate Policies",
+        "paragraph_id": 0,
+        "text": "Protectionist Climate Policies",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 0,
+        "section_name": "Greener Thy Neighbor? On the Welfare Effects of Protectionist Climate Policies",
+        "paragraph_id": 1,
+        "text": "Saumya Deojain David Lindequist",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 0,
+        "section_name": "Greener Thy Neighbor? On the Welfare Effects of Protectionist Climate Policies",
+        "paragraph_id": 2,
+        "text": "Abstract The world is witnessing a surge in green industrial policies, with prominent examples such as the U.S. Inflation Reduction Act (IRA) incorporating significant protectionist elements. While traditionally viewed as distortive, we argue that in the case of climate policies, protectionism can have strategic value by facilitating coordination between countries on climate action. We present a simple model that blends a standard abatement game with a zero-sum beggar-thy-neighbor game, allowing for the possibility of multiple equilibria. Using techniques from the global games literature, we show that uncertainty surrounding the distortions caused by protectionist policies yields a unique equilibrium. We find that protectionist climate policies improve welfare when expected distortions are low, as they promote coordination on climate change mitigation at relatively modest costs. High expected distortions make these policies welfare-neutral, as countries are unlikely to adopt them. For intermediate expected distortions, protectionist policies are most harmful, combining a high probability of coordination failure with substantial costs. Our findings suggest that regulators like the WTO could boost global welfare by restricting but not entirely banning protectionist climate policies. We further find that efforts to reduce uncertainty about distortions might backfire, inadvertently encouraging coordination on costly protectionist measures.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 0,
+        "section_name": "Greener Thy Neighbor? On the Welfare Effects of Protectionist Climate Policies",
+        "paragraph_id": 3,
+        "text": "JEL Classification: C72, D83, Q56 Keywords: climate policy coordination, protectionism, beggar-thy-neighbor policies, global games, inflation reduction act, coordination games",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 0,
+        "section_name": "Greener Thy Neighbor? On the Welfare Effects of Protectionist Climate Policies",
+        "paragraph_id": 4,
+        "text": "We thank Christoph Carnehl, Josh Ederington, Doug Hanley, Ahmad Lashkaripour, Georg Schaur, and various seminar audiences for useful comments. All errors are our own. Deojain: Thapar School of Liberal Arts and Sciences, and University of Rochester, W. Allen Wallis Institute of Political Economy; e-mail: saumya.deojain@thapar.edu. Lindequist: Miami University; e-mail: lindeqd@miamioh.edu",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Industrial policy has reemerged as a central topic in economic debates, with countries actively promoting industries critical to national security and the green transition toward sustainability (Juhász, Lane, and Rodrik 2023; Mazzucato and Rodrik 2023). In the United States, the CHIPS and Science Act of 2022 aims to strengthen semiconductor research and manufacturing, reflecting this renewed focus. This revival has been extensively analyzed, particularly regarding global semiconductor markets (Goldberg et al. 2024; Bown and Wang 2024) and broader protectionist trends (Fajgelbaum et al. 2020). The Inflation Reduction Act (IRA) of 2022, considered the most ambitious climate legislation in U.S. history (Bistline et al. 2023), directs [FORMULA] 369 billion of this funding is earmarked for green subsidies, including tax credits and direct financial support. Notably, many of these subsidies apply exclusively to products made in North America through ’domestic content requirements.’ For instance, $12 billion is allocated for electric vehicle incentives, but only for vehicles assembled in North America. Additionally, the IRA imposes tariffs on certain green technologies, such as solar cells and lithium-ion batteries, to protect and promote the U.S. green technology sector. This strategy, coupled with incentives for domestic production, has been characterized as a shift toward green protectionism (Attinasi, Boeckelmann, and Baptiste 2023), exemplifying the intersection of environmental objectives with industrial policy goals (Rodrik 2014). These protectionist measures have drawn criticism from several U.S. trading partners. The European Union (EU), in particular, has been vocal, even considering legal action against the U.S. at the World Trade Organization (WTO) or contemplating retaliatory protectionist measures (Fajeau et al. 2023). This has raised concerns about a potential ’green arms race,’ where countries engage in zero-sum competition to attract international firms and capital (Kleimann et al. 2023; Gros, Mengel, and Presidente 2023; Dahlström et al. 2023; Sattich and Huang 2023). Economists have largely expressed discomfort with the protectionist components of the IRA. Historically, they have been wary of industrial policies due to risks like the negative welfare consequences of beggar-thy-neighbor protectionism (Evenett 2019), the potential for rent-seeking, and the challenges in selecting winning industries (Rodrik 2020). There are also concerns about trade frictions resulting from such policies (Irwin 2011), which could distort international supply chains and labor markets, ultimately leading to welfare losses (Canayaz, Erel, and Gurun 2024).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "In this paper, we theoretically examine the welfare effects of protectionist climate policies, highlighting a crucial distinction from standard protectionist measures. While beggar-thy-neighbor (BTN) policies—zero-sum strategies where one country’s gain directly results in another’s loss—typically create distortions leading to inefficiencies, these distortions may, in the context of the green transition, mitigate the lack of coordination in climate policies and enhance social welfare. Specifically, BTN elements in climate policy increase the desirability of mitigation in a climate game that would otherwise suffer from the underprovision of a global public good. We argue that provisions encouraging the domestic production of a public good—such as those in the IRA—can help overcome this global underprovision by promoting coordination on the green transition, even though they distort the efficient allocation of international capital. This contrasts with policies like the CHIPS Act, where support for the domestic production of non-public goods is essentially zero-sum and offers no increase in global welfare. Although the WTO currently restricts industrial policies that distort trade, particularly subsidies, we suggest that in a second-best world, these restrictions may be detrimental to global welfare. Trade distortions could provide an effective pathway to tackling climate change. Our work builds on the long-standing insight from the theory of the second best, originally outlined by Lipsey and Lancaster (1956). This theory posits that if eliminating a specific market distortion—such as externalities in public good provision—is impractical, introducing an additional distortion in related markets, like BTN frictions in international trade, may offset the original distortion, potentially resulting in a more efficient outcome. The central question driving this paper is under what conditions protectionist climate policy can actually improve global welfare. To clarify the relevant trade-offs and structure our analysis of the welfare effects of protectionist green policy, we model two identical countries deciding whether to undergo the green transition—a binary action choice. Each country’s decision generates a positive externality for the other, as both benefit from reduced global emissions. Social welfare is maximized when both countries transition, but since the costs are privately borne and countries do not fully internalize the global benefits, they individually find it optimal not to transition. In this ’pure climate game,’ not transitioning is the dominant strategy, resulting in a prisoner’s dilemma where neither country transitions. We extend this model to allow countries to implement protectionist policies during the green transition, introducing what we call the ’BTN climate game.’ Here, countries can allocate a portion of their transition effort to BTN policies, which we term BTN effort. In this game, a country can extract a resource transfer from the other if its BTN effort exceeds",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "that of the other. However, BTN effort incurs a cost, denoted by κ , reflecting welfare losses from supply chain distortions and the rising cost of goods caused by protectionist measures. First, we consider the case where BTN costs κ are known. If these costs are sufficiently low, both countries will find it optimal to transition with full protectionism. For high values of κ , the dominant strategy is not to transition. At intermediate values of κ , the BTN climate game exhibits multiple equilibria: a country will transition if the other does and will not transition if the other does not. This multiplicity stems from the convexity of payoffs in the number of countries transitioning. At intermediate BTN costs, transitioning is attractive only if the other country transitions, creating a coordination problem and resulting in multiple equilibria. A fundamental issue in the real world is that the welfare costs from BTN-induced trade distortions are uncertain. We introduce this uncertainty by assuming both countries share a common prior belief about the true BTN cost parameter before making their transition decision. Each country then receives a private signal about the cost and updates its belief accordingly. This framework leads to a global game in the sense of Carlsson and Van Damme (1993). We demonstrate that under mild conditions, the game with uncertain BTN costs has a unique equilibrium in switching strategies. 1 If countries believe BTN costs are low, they will transition; if they believe the costs are high, they will not. As is typical in global games, this uncertainty combined with sufficiently precise private signals eliminates the multiplicity of equilibria found in the coordination game. The unique equilibrium provides a probability distribution over the possible payoffs of the BTN climate game, allowing us to derive comparative statics for expected welfare based on the model parameters. We find that the expected welfare in the unregulated BTN climate game is non-monotonic in the mean of the prior belief about the BTN cost parameter κ . When expected BTN costs are very low, both countries will almost certainly transition with full protectionism, leading to welfare that exceeds the payoff from the pure climate game. In this case, it is socially efficient to endure BTN costs for the sake of the green transition. When BTN costs are very high, neither country will transition, which is also efficient, as the costs of trade distortions outweigh the benefits of transitioning. However, for intermediate BTN costs, welfare can be lower than in the pure climate game. This occurs for one of two reasons. First, if welfare improves when both countries transition but not when only one does, intermediate BTN costs create a high probability that only one country will transition, 1 These conditions reflect those in Morris and Shin (2000) and require the signal about the BTN costs to be sufficiently precise relative to the precision of the prior belief about these costs.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "reducing welfare relative to the pure climate game. Second, if expected BTN costs are just high enough to make full protectionist transitions undesirable, the likelihood of both countries transitioning remains relatively high, resulting in a welfare loss compared to the pure climate game. While the BTN climate game can lead to a welfare improvement over the pure climate game, the zero-sum nature of BTN transfers means that more protectionist policy is implemented in equilibrium than is necessary to incentivize transitions. We show that a regulator who controls the level of protectionist policy can improve expected welfare. By reducing the extent of BTN policies in the BTN game, a regulator can increase the welfare benefits over the pure climate game, provided expected BTN costs are not excessively high. In terms of policy conclusions, our results suggest that the WTO should be restrictive toward protectionist climate policies when their expected distortions are of intermediate size, as this creates a high risk of costly coordination failures, making the use of such policies too expensive for facilitating the green transition. However, when expected distortions are low, the WTO should permit some protectionist measures to support the green transition. In contrast, when expected distortions are high, strict WTO regulation becomes less critical, as countries are unlikely to adopt protectionist climate policies due to their prohibitive costs. In practice, no global regulatory authority has the power to control protectionist policies fully. However, institutions like the WTO (or the economics profession more broadly) can offer more precise information about the expected distortions these policies cause. 2 We find that the welfare effects of such information are complex. While greater precision can increase the likelihood of countries undergoing a green transition, it may also prompt this transition in cases where protectionist distortions are high, leading to suboptimal outcomes. In these instances, less precise information may actually improve welfare by preventing undesirable coordination on costly protectionist measures. In summary, our paper takes a first step toward understanding the global welfare effects of green protectionist policies by analyzing their strategic value in facilitating global climate action. Protectionist climate policies, like those in the IRA, may enhance international cooperation on climate action. However, costly coordination failures remain a real threat, especially when the expected costs of trade distortions are moderate, complicating the job of international regulators like the WTO. 2 Fajgelbaum and Khandelwal (2022), Attinasi, Boeckelmann, and Meunier (2023), Balistreri and McDaniel (2024), and Robinson and Thierfelder (2024) are examples of the booming literature trying to assess the welfare costs of the recent reemergence of distortive trade policies.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 2,
+        "section_name": "Related Literature",
+        "paragraph_id": 0,
+        "text": "Our work contributes to the vast literature on international climate change policy coordination. The overview articles by Finus (2000), Barrett (1994, 2005), and Wood (2011) highlight the challenges of achieving stable cooperation in international environmental agreements due to strong free-rider incentives. In related work, Fischer (2017) explores how interventionist green policies, often seen as distorting, might actually enhance global welfare—particularly in situations where implementing carbon prices is politically challenging, as noted by Juhász and Lane (2024). We extend this literature by introducing protectionist climate policies, demonstrating how these policies can shift strategic incentives and potentially foster cooperation. Our work adds to the reemerging literature on trade policy and climate agreements and is closely related to studies by Barrett and Dannenberg (2022) and Andres (2023). Barrett and Dannenberg (2022) show that linking trade agreements to public goods provision enhances cooperation, with multilateral approaches outperforming unilateral ones. Similarly, Andres (2023) finds that temporary protectionism and subsidies can foster clean technology development and yield long-term welfare gains. While these studies also emphasize the effect of industrial policy on climate policy coordination, we incorporate uncertainty about the costs of trade distortions to explore the welfare implications of protectionist climate policies. Harstad (2024) and Farrokhi and Lashkaripour (2024) focus on the climate effects of institutional mechanisms like contingent trade agreements and carbon border taxes. Unlike their approaches, we highlight how beggar-thy-neighbor protectionist policies can shift incentives for cooperation without formal agreements. Ederington (2010) explores whether trade agreements should include environmental policy, while we suggest that it is the absence of free trade agreements that can help mitigate the underprovision of climate action. Additionally, Hambel, Kraft, and Schwartz (2018) examine carbon abatement dynamics and free-riding, whereas we focus on how trade distortions interact with climate mitigation efforts in a strategic context. Ulph (2004), Kolstad (2007), and Barrett and Dannenberg (2012) emphasize the role of uncertainty around future costs and benefits in shaping climate agreements. We extend this work by focusing on the uncertainty surrounding economic distortions from protectionist policies, demonstrating how such uncertainty can either lead to welfare-improving coordination or result in costly coordination failures. While applications of global games methodology to climate coordination are rare, notable exceptions include Heijmans (2022) and Heijmans (2023), who explores equilibrium selection in the context of network ex-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 2,
+        "section_name": "Related Literature",
+        "paragraph_id": 1,
+        "text": "ternalities. 3 Our paper examines how the availability of protectionist policies impacts climate cooperation, which, to the best of our knowledge, has not been studied before. Zehaie (2009), Bayramoglu, Finus, and Jacques (2018), and Hritonenko, Hritonenko, and Yatsenko (2020) investigate the trade-offs between adaptation and mitigation strategies. In contrast, our work focuses on the interaction between protectionism and mitigation rather than adaptation. By combining protectionist measures with mitigation efforts, we analyze how these policies reshape the strategic environment in international climate cooperation. In studies like Rubio and Ulph (2007), de Zeeuw (2008), Heitzig, Lessmann, and Zou (2011), and Nordhaus (2021), the stability of self-enforcing agreements is explored. We contribute by demonstrating how distortive protectionist measures can introduce strategic incentives that help sustain cooperation. Lastly, Harstad (2012), Nordhaus (2015), and Martimort and Sand-Zantman (2016) focus on the design of optimal climate contracts. While these papers rely on formal agreements and mechanisms, our work shows that protectionist policies can influence incentives for cooperation even without binding contracts, offering a new lens through which to view the effects of protectionism on international climate coordination. The rest of this paper is organized as follows. Section 2 presents the basic model setup. In Section 3, we analyze the global game resulting from uncertainty about the welfare costs of protectionist policy. We derive our main results regarding the welfare effects of protectionist climate policy in Section 4. Section 5 concludes. All proofs are in Appendix A.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 0,
+        "text": "Consider two countries, referred to as players. For any player i (’she’), let j (’he’) denote the other player, such that j ̸ = i . Each player has a binary abatement (’green transition’) choice a i = {0, 1}, where a i = 0 signifies ’no abatement’ and a i = 1 indicates ’abatement.’ Furthermore, each player selects a protectionism level per unit of abatement, denoted by α i ∈ [0, 1], where α i = 0 corresponds to no protectionism and α i = 1 represents full protectionism, meaning all abatement expenditure is protectionist. For example, if 30% of climate policy spending by player i is protectionist, then α i = 0.3. The total level of protectionism by player i is denoted by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 1,
+        "text": "τ i = α i a i =    α i if a i = 1, 0 if a i = 0. (1) 3 See Morris and Shin (2003), Frankel, Morris, and Pauzner (2003), Jorge and Rocha (2015), and Morris (2016) for an introduction and discussion of global game methodology.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 2,
+        "text": "In the event that player i adopts a greater level of protectionism than player j , as indicated by τ i > τ j , player i receives a resource transfer from player j . This setup captures the intent of protectionist policies to favor domestic production at the expense of foreign production or to draw foreign capital. Following Rodrik (2020), we assume a reduced-form zero-sum transfer function of the form:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 3,
+        "text": "T i ( τ i , τ j ) =                0 if a i = a j = 0, α i if a i = 1, a j = 0, – α j if a i = 0, a j = 1, α i – α j if a i = a j = 1, (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 4,
+        "text": "which implies that T i ( τ i , τ j )+ T j ( τ i , τ j ) = 0. Moreover, we assume that ’beggar-thy-neighbor’ (BTN) policies incur a private cost that is linearly related to the level of protectionism: κ i ( τ i ) = κ i τ i where κ i ≥ 0. These costs serve as a simplified representation of the distortions stemming from mercantilist policies that lead to efficiency losses in international trade or capital allocation. 4 Climate mitigation serves as a public good from which both players benefit. Let γ i u ( G ) represent the utility player i derives from public good G = a A + a B . The parameter γ i > 0 reflects player i ’s enjoyment of the public good. Alternatively, it represents the damages player i experiences from unmitigated climate change. We assume that the utility derived from the public good is increasing in its overall provision: u (2) > u (1) > u (0). Crucially, we further assume that the marginal effect of climate change mitigation increases in the number of abating players: u (2)– u (1) > u (1)– u (0). Intuitively, joint efforts lead to more effective results than isolated actions. This assumption reflects the importance of international cooperation in addressing climate change, as the benefits of such cooperation are significantly higher than if each player were to act alone. Relatedly, tipping points in the context of climate change refer to critical thresholds at which a small change in environmental conditions can lead to a significant and often irreversible change in the ecosystem. As the number of players engaged in mitigation increases, the effectiveness of these efforts grows disproportionately. This non-linearity reflects how avoiding tipping points can prevent disproportionately large negative impacts. If fewer players engage in mitigation, the world risks crossing these tipping points, leading to severe and possibly irreversible environmental consequences. 4 For instance, conditioning subsidies on EVs to require battery production within the US could potentially raise the subsidies required to promote EV purchases compared to a scenario where all EVs receive subsidies, irrespective of battery origin.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 5,
+        "text": "Climate policies entail a private cost, denoted by c i ( a i ). For simplicity, assume that the cost function is linear: c i ( a i ) = c i a i , where c i > 0 indicates player i ’s private cost of abatement (climate policy implementation). This cost may be high either because a player is relatively poor, making climate change mitigation particularly costly in terms of opportunity costs of resource allocation, or because it is technologically challenging for that player to reduce emissions. The welfare function of player i is given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 6,
+        "text": "W i = γ i u ( G ) – c i a i – κ i τ i + T i ( τ i , τ j ), (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 7,
+        "text": "where G = a i + a j and τ i = α i a i . For the remainder of the analysis, we will assume that players are identical, i.e., c i = c j = c and γ i = γ j = γ . We further make the following crucial assumption:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 8,
+        "text": "ASSUMPTION 1. Let there be N = 2 players. For each player it is always privately inefficient but socially efficient to abate. This means that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 9,
+        "text": "γ \u0002 u (1) – u (0) \u0003 < c < 2 γ \u0002 u (1) – u (0) \u0003 and γ \u0002 u (2) – u (1) \u0003 < c < 2 γ \u0002 u (2) – u (1) \u0003 . (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 10,
+        "text": "Assuming that u (2) – u (1) > u (1) – u (0) , we can succinctly write:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 11,
+        "text": "γ \u0002 u (2) – u (1) \u0003 < c < 2 γ \u0002 u (1) – u (0) \u0003 . (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 12,
+        "text": "Furthermore, both players abating is socially efficient. This means that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 13,
+        "text": "2 γ u (2) – 2 c > 2 γ u (0), (6)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 14,
+        "text": "which is guaranteed by assuming that γ \u0002 u (2) – u (0) \u0003 > c.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 15,
+        "text": "These assumptions imply that abatement is privately inefficient for each player because the private costs exceed the private benefit, but it is socially efficient as the social benefit outweighs the private cost. This creates a standard collective action problem where countries do not abate despite it being the socially optimal choice. The payoff matrix of the climate game with protectionist policy is presented in Table 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 16,
+        "text": "2.1. Pure climate game",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 17,
+        "text": "To fix ideas, first consider a pure climate game without BTN policies. Assumption 1 guarantees that each player’s dominant strategy is to choose a i = 0, meaning not to abate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 18,
+        "text": "Player j a j = 1 a j = 0 Player i a i = 1 γ u (2) – c – κα i , γ u (2) – c – κα j γ u (1) – c – κα i + α i , γ u (1) – α i a i = 0 γ u (1) – α j , γ u (1) – c – κα j + α j γ u (0), γ u (0)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 19,
+        "text": "TABLE 1. Payoffs in Climate Game with Protectionist Policy",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 20,
+        "text": "Consequently, players will face a prisoner’s dilemma: no individual player perceives abatement as privately optimal, and thus, G = 0 emerges as the unique Nash equilibrium. In contrast, the socially efficient outcome would be G = 2. Due to misaligned private and social incentives, the Nash equilibrium results in inefficiency. The following Lemma summarizes these insights.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 21,
+        "text": "LEMMA 1 (Nash equilibrium of pure climate game). In the absence of protectionism ( α i = α j = 0 ), the unique Nash equilibrium of the climate game is characterized by a i = a j = 0 , resulting in G = 0 . This equilibrium is Pareto-dominated by a i = a j = 1 , yielding G = 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 22,
+        "text": "2.2. BTN climate game with unregulated protectionism and known κ",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 23,
+        "text": "As another benchmark, consider the game in which players can freely choose their level of protectionism α i and in which the BTN cost parameter κ is known. The payoff function in eq. (3) is such that the marginal cost of BTN policies is given by κ , while the transfer function in eq. (2) indicates that the marginal benefit of BTN policies is equal to one. The linearity of the transfer function implies that if a player opts to abate, it will do so with fully protectionist climate policies (i.e., α = 1). The game structure implies that the payoff to each player depends on whether the other player abates, and the BTN cost parameter κ determines the relative costs of protectionist abatement. First, consider the case when κ < κ ≡ 1 + γ \u0002 u (1) – u (0) \u0003 – c . In this case, the marginal cost of protectionist abatement, given by κ , is less than the threshold marginal benefit κ . Consequently, the payoff to player i is higher if it abates with full protectionism regardless of the other player’s action. Therefore, protectionist abatement becomes a dominant strategy for both players, and the unique Nash equilibrium is ( a i = 1, a j = 1). Next, for κ > κ ≡ 1 + γ \u0002 u (2) – u (1) \u0003 – c , the marginal cost of protectionist abatement exceeds the threshold marginal benefit κ . As a result, no abatement becomes a dominant strategy for both players, leading to the unique Nash equilibrium ( a i = 0, a j = 0).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 24,
+        "text": "Finally, for intermediate values of κ ∈ ( κ , κ ), protectionist abatement is beneficial if the other player also abates, but not if the other player does not abate. This creates a coordination problem in which both players prefer to match the other’s action, leading to two possible Nash equilibria in pure strategies: ( a i = 1, a j = 1) and ( a i = 0, a j = 0). Figure 1 shows equilibrium play as a function of the BTN cost parameter κ . The interval ( κ , κ ) presents a window of multiplicity , in which the BTN climate game becomes a stag hunt, a class of games of strategic complementarity with multiple equilibria. 5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 25,
+        "text": "(1,1) (1,1) or (0,0) (0,0)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 26,
+        "text": "0 κ κ κ FIGURE 1. BTN Climate Game with Perfect Information – Equilibrium Play",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 27,
+        "text": "Similarly, the welfare of each equilibrium outcome depends on the social payoff function, and the welfare-optimal outcome changes as a function of the BTN cost parameter κ . If κ < κ w ≡ γ \u0002 u (2) – u (0) \u0003 – c , the social benefit of both players abating exceeds the cost of protectionist climate policies. Therefore, the outcome ( a i = 1, a j = 1) maximizes welfare. In contrast, if κ > κ w , the cost of abatement is too high, and welfare is maximized when neither player abates. Hence, the outcome ( a i = 0, a j = 0) is welfare-maximizing in this case. For intermediate values κ ∈ ( κ w , κ w ), where κ w = 2 γ \u0002 u (1) – u (0) \u0003 – c and κ w = 2 γ \u0002 u (2) – u (1) \u0003 – c , the outcome of only one player abating is welfare-minimizing. However, for κ < κ w , one player abating is preferable to no abatement. Similarly, for κ > κ w , one player abating is better than both players abating.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 28,
+        "text": "(1,1)>(1,0)>(0,0) (1,1)>(0,0)>(1,0) (0,0)>(1,1)>(1,0) (0,0)>(1,0)>(1,1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 29,
+        "text": "FIGURE 2. BTN Climate Game with Perfect Information – Welfare Ordering",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 30,
+        "text": "Figure 2 illustrates the welfare ranking of different equilibrium outcomes of the unregulated BTN game as a function of the BTN cost parameter κ . It is never welfare-optimal for 5 Fields and Lindequist (2024) empirically investigate the existence of climate policy risk spillovers from the US to the EU and find that financial markets expect the EU to align its climate policy stance with that of the US, providing suggestive evidence for the potential of multiple equilibria in global abatement efforts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 31,
+        "text": "just one player to abate. However, an outcome in which only one player abates is minimizing welfare if κ ∈ \u0000 κ w , κ w \u0001 , i.e., a coordination failure is particularly welfare-damaging for intermediate values of κ . The following Proposition summarizes the equilibrium and welfare effects of the unregulated BTN climate game with known BTN costs κ . PROPOSITION 1 (Equilibrium and welfare effects of unregulated BTN climate game with known BTN costs). Consider the game where players choose their level of protectionism, denoted by α , with known BTN cost parameter κ . • If κ < κ , both players abating is the only equilibrium. If, additionally, κ < κ w , this equilibrium is socially efficient. However, if κ w < κ < κ , this equilibrium is inefficient. • If κ > κ , no player abating is the only equilibrium. If, additionally, κ > κ w , this equilibrium is socially efficient. However, if κ w > κ > κ , this equilibrium is socially inefficient.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 32,
+        "text": "• If κ ∈ [ κ , κ ] , the welfare effects are ambiguous since the BTN climate game features multiple equilibria.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 33,
+        "text": "When the marginal private cost of implementing protectionist climate policies κ is low, the private benefit each player gains from these policies exceeds the cost. As a result, both players find it individually rational to abate, leading to a socially efficient outcome if the total social benefit from abatement also outweighs the costs. In this case, the alignment between private and social incentives ensures that the equilibrium is optimal. Conversely, when the marginal cost κ is high, the cost of protectionist policies outweighs the private benefit to each player. In this scenario, neither player chooses to abate, which can still be socially efficient if the overall cost of abatement exceeds the total social benefit. Here, private and social incentives again align, resulting in an optimal equilibrium. However, when the marginal cost κ is at an intermediate level, the relationship between costs and benefits becomes more complex. In such cases, each player’s decision depends on whether the other player abates, creating a coordination problem. This leads to multiple possible outcomes: either both players abate or neither does. The welfare implications are ambiguous because the players may fail to coordinate on the socially optimal outcome, resulting in inefficiency. Thus, the equilibrium outcomes and their welfare effects in this game depend critically on the balance between the marginal cost of protectionist policies, the private benefits that individual players receive, and the overall social benefits of abatement. Misalignment between private and social incentives is most problematic in the intermediate-cost range, where coordination failures can prevent socially desirable outcomes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 3,
+        "section_name": "Model Setup",
+        "paragraph_id": 34,
+        "text": "In the next section, we show how the case of multiple equilibria can be resolved in the context of imperfect information about the BTN cost parameter κ . Using global games methodology, we derive the unique Nash equilibrium of the unregulated BTN climate game. As we will see, the threat of costly coordination failure remains relevant in this context and is crucial in understanding the welfare effects of protectionist climate policy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 0,
+        "text": "Consider the setup as before. Suppose that there is uncertainty about the cost associated with BTN policies, i.e., uncertainty about the cost parameter κ . This parameter is the same for both players. The ’true state of the world’ is given by z ∈ (– ∞ , + ∞ ), which translates into the BTN cost parameter as follows:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 1,
+        "text": "where ζ > 0 is a scale parameter. This functional form ensures that κ ∈ (0, ∞ ). We assume that the true state of the world z is a random variable that is distributed with mean ̄ z and precision σ z (i.e., variance 1/ σ z ): z ∼ N ( ̄ z , 1/ σ z ). This implies that the distribution of the BTN cost parameter κ is log-normal, i.e., its logarithm is normally distributed. Thus, the random variable κ has a probability density function given by f ( κ ) = √ σ z κ √ 2 π exp \u0012 – 1 2 σ z (ln( κ ) – ln( ζ ) – ̄ z ) 2 \u0013 . (8)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 2,
+        "text": "This implies that the random variable ln ( κ ) is normally distributed with mean ln ( ζ ) + ̄ z and variance 1/ σ z (or precision σ z ). Furthermore, by the properties of the log-normal distribution, it holds that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 3,
+        "text": "E ( κ ) = ζ exp \u0012 ̄ z + 2 σ z \u0013 , (9) Var( κ ) = ζ 2 \u0012 exp \u0012 1 σ z \u0013 – 1 \u0013 exp \u0012 2 ̄ z + 1 σ z \u0013 . (10)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 4,
+        "text": "These expressions provide a tractable map from beliefs about the true state of the world z to beliefs about the BTN cost parameter κ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 5,
+        "text": "3.1. Common-belief game",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 6,
+        "text": "Without any other sources of information about the true state of the world, both players hold the same belief about BTN costs with expected value E ( κ ) = ζ exp \u0010 ̄ z + 2 σ z \u0011 . The equilibrium and welfare effects of this common-belief game immediately follow from the results in Proposition 1, which summarized the equilibrium and welfare effects of the unregulated BTN climate game with known BTN cost parameter κ . The key difference is that in the common-belief game, there is uncertainty regarding the true state of the world κ meaning that the welfare effects need to be evaluated in terms of (ex-ante) expected welfare.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 7,
+        "text": "COROLLARY 1 (Equilibrium and welfare effects of common-belief unregulated BTN climate game). Consider the game where players choose their level of protectionism, denoted by α , with a common-belief of the expected BTN costs E ( κ ) . • If E ( κ ) < κ , both players abating is the only equilibrium. If, additionally, E ( κ ) < κ w , this equilibrium is ex-ante socially efficient. However, if κ w < E ( κ ) < κ , this equilibrium is ex-ante inefficient. • If E ( κ ) > κ , no player abating is the only equilibrium. If, additionally, E ( κ ) > κ w , this equilibrium is ex-ante socially efficient. However, if κ w > E ( κ ) > κ , this equilibrium is ex-ante socially inefficient.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 8,
+        "text": "• If E ( κ ) ∈ [ κ , κ ] , the welfare effects are ambiguous since the common-belief BTN climate game features multiple equilibria.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 9,
+        "text": "Note that ex-post, it is possible that an equilibrium which was ex-ante socially efficient turns out to be inefficient. For instance, if E ( κ ) < κ w (leading to both players optimally abating ex-ante), but the actual κ realized ex-post is significantly larger than E ( κ ), the cost of abatement outweighs the social benefits, rendering the equilibrium inefficient. However, because the players are risk-neutral—a result of the linearity of the payoff function—their decisions under uncertainty depend only on the expected value of BTN costs, E ( κ ). The variance or other higher moments of the belief distribution have no impact on ex-ante welfare considerations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 10,
+        "text": "3.2. Beliefs and private information",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 11,
+        "text": "Now suppose that there is uncertainty about the true state of the world z and that players observe a private signal about this state of the world. As before, z is a random variable with",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 12,
+        "text": "mean ̄ z and precision σ z (i.e., variance 1/ σ z ): z ∼ N ( ̄ z , 1/ σ z ). Player i observes a private signal about z : x i = z + ε i , where ε i is normally distributed with mean 0 and precision σ ε : ε i ∼ N (0, 1/ σ ε ). Player i ’s signal is unobserved by player j . The signals are independent and identically distributed across players. A strategy for a player is a rule of action that prescribes an action for each realization of the signal. A profile of strategies (one for each player) is an equilibrium if, conditional on the information available to player i and given the strategy followed by player j , the action prescribed by i ’s strategy maximizes her conditional expected utility. Treating the realization of i ’s signal as a possible ’type’ of the player, we are solving for the Bayes Nash equilibrium of the imperfect-information game. Player i uses the signal x i to update her belief about the distribution of random variable z using Bayes rule. Suppose player i was sure that player j was going to follow a ‘threshold’ strategy where he abated only if the mean of his posterior belief of the true state of the world z was below ˆ ρ j , which means that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 13,
+        "text": "s j ( ρ j ) =    a j = 0 if ρ j > ˆ ρ j , a j = 1 if ρ j < ˆ ρ j . (11)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 14,
+        "text": "Under this strategy, player j will not abate if his posterior belief about the state z is sufficiently high so that his belief about the BTN cost parameter κ is sufficiently high as well (as a high z implies a high κ ). The following Lemma summarizes player i ’s belief about the true state of the world as well as her belief about the other player’s belief.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 15,
+        "text": "LEMMA 2 (Beliefs of players). In the game with incomplete information, player i uses her private signal x i to update her belief about the true state z using Bayes’ rule. The posterior belief about z is distributed according to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 16,
+        "text": "z | x i ∼ N \u0012 ρ i , σ z + σ ε \u0013 , (12)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 17,
+        "text": "where ρ i ≡ σ z ̄ z + σ ε x i σ z + σ ε is the mean of the player’s posterior belief distribution. Player i’s belief about player j ’s posterior belief ρ j being less than some threshold ˆ ρ j is given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 18,
+        "text": "q ≡ Prob ( ρ j < ˆ ρ j | ρ i ) = Φ \u0012p β \u0012 ˆ ρ j – ρ i + σ z σ ε ( ˆ ρ j – ̄ z ) \u0013\u0013 , (13)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 19,
+        "text": "where Φ ( · ) is the CDF of the standard normal distribution and β ≡ σ ε ( σ z + σ ε ) σ z +2 σ ε is the precision of the belief of player i about player j ’s signal given player i’s signal.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 20,
+        "text": "Given these beliefs, player i ’s net expected gain from protectionist abatement is given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 21,
+        "text": "F ≡ q γ ( u (2) – u (1) – c ) + (1 – q ) γ ( u (1) – u (0) – c ) + α i | {z } expected benefit – ˆ κ i |{z} expected cost , (14)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 22,
+        "text": "where q is the probability player j will abate. The expected benefit from protectionist abatement stems from an increase in the provision of the public good (which alone would not suffice to incentivize a player to abate), as well as an anticipated resource transfer from the other player resulting from protectionist policies, α i = 1. The cost of protectionist abatement, on the other hand, is captured by the player’s posterior belief about the BTN costs, denoted by ˆ κ i . Let b i ( ˆ ρ j ) denote player i ’s best response threshold strategy such that for all ρ i ≤ b i ( ˆ ρ j ), player i will abate (i.e., F > 0) and for all ρ i > b i ( ˆ ρ j ) player i will not abate (i.e., F < 0). This best response cutoff strategy for player i is defined as the strategy that sets F = 0 at ρ i = b i ( ˆ ρ j ) for a given threshold ˆ ρ j .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 23,
+        "text": "3.3. Existence and uniqueness of equilibrium",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 24,
+        "text": "Note that player i is indifferent between abatement and no abatement if the net expected gain from abatement is equal to zero. Specifically,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 25,
+        "text": "F ≡ q γ ( u (2) – u (1)) + (1 – q ) γ ( u (1) – u (0)) + 1 – \u0000 c + ˆ κ i \u0001 = 0 ⇐⇒ ˆ κ i = 1 + γ \u0002 q ( u (2) – u (1)) + (1 – q ) ( u (1) – u (0)) \u0003 – c ⇐⇒ ˆ κ i = κ + q ( κ – κ ) , (15)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 26,
+        "text": "where ˆ κ i denotes the expected marginal BTN cost, and κ + q ( κ – κ ) denotes the expected marginal BTN benefit. Given our analysis above, we know that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 27,
+        "text": "κ = 1 + γ \u0002 u (2) – u (1) \u0003 – c , κ = 1 + γ \u0002 u (1) – u (0) \u0003 – c , ˆ κ i = E ( κ | x i ) = ζ exp \u0012 ρ i + 2( σ z + σ ε ) \u0013 , q = Prob( ρ j < ˆ ρ j | ρ i ) = Φ \u0012p β \u0012 ˆ ρ j – ρ i + σ z σ ε ( ˆ ρ j – ̄ z ) \u0013\u0013 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 28,
+        "text": "where β = σ ε ( σ z + σ ε ) σ z +2 σ ε is the precision of player i ’s belief about player j ’s signal given player i ’s signal. As a result, the equilibrium threshold belief for player i , ρ ∗ i , solves: ζ exp \u0012 ρ ∗ i + 2( σ z + σ ε ) \u0013 = κ + Φ \u0012p β \u0012 ˆ ρ j – ρ ∗ i + σ z σ ε ( ˆ ρ j – ̄ z ) \u0013\u0013 ( κ – κ ) . (16)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 29,
+        "text": "Similarly, player j ’s equilibrium threshold belief ρ ∗ j is such that player j ’s marginal cost of abatement equals its marginal benefit. Assuming that players are identical and that the solution { ρ ∗ i , ρ ∗ j } is unique, it is straightforward to show that the threshold beliefs will also be identical.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 30,
+        "text": "LEMMA 3. Suppose players are identical, i.e., γ i = γ j = γ and c i = c j = c. Then, any unique equilibrium threshold beliefs { ρ ∗ i , ρ ∗ j } are identical: ρ ∗ i = ρ ∗ j = ρ ∗ . Any unique equilibrium threshold belief ρ ∗ solves:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 31,
+        "text": "ζ exp \u0012 ρ ∗ + 2( σ z + σ ε ) \u0013 = κ + Φ   s σ ε ( σ z + σ ε ) σ z + 2 σ ε σ z σ ε ( ρ ∗ – ̄ z )   ( κ – κ ) . (17)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 32,
+        "text": "What remains to be shown is that such a unique threshold belief exists. The following Proposition establishes conditions such that the equilibrium threshold belief ρ ∗ exists and is unique. PROPOSITION 2. Suppose Assumption 1 holds. Then, if θ ≤ 2 π \u0010 κ κ – κ \u0011 2 there exists a unique equilibrium threshold belief ρ ∗ satisfying:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 33,
+        "text": "ζ exp \u0012 ρ ∗ + 2( σ ε + σ z ) \u0013 = κ + Φ \u0010 √ θ ( ρ ∗ – ̄ z ) \u0011 ( κ – κ ), (18)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 34,
+        "text": "where θ = β σ 2 z σ 2 ε and β = σ ε ( σ z + σ ε ) σ z +2 σ ε . In the resulting Bayesian Nash equilibrium, player i abates if and only if ρ i < ρ ∗ , and does not abate otherwise. The Proposition demonstrates that as long as players’ private signals are sufficiently precise, both players adopt a switching strategy centered around a critical threshold belief about BTN costs, denoted by ρ ∗ . At this threshold, the marginal cost of BTN policies, which arise from trade distortions, MC ≡ ζ exp \u0010 ρ ∗ + 2( σ ε + σ z ) \u0011 , equals the marginal benefit, MB ≡ κ + Φ \u0010 √ θ ( ρ ∗ – ̄ z ) \u0011 ( κ – κ ), which stems from the marginal utility of public good provision and the ability to extract resources from the other player through protectionist climate policies. The marginal benefit of BTN policies depends on whether the other player also engages in abatement, with the probability of abatement given by q ≡ Φ \u0010 √ θ ( ρ ∗ – ̄ z ) \u0011 . Consequently, ρ > ρ ∗ implies that MC > MB , which implies that a player finds it optimal not to abate, whereas if ρ < ρ ∗ , then MC < MB and a player finds it optimal to abate. At the equilibrium threshold level ρ ∗ , the player is indifferent between abating and not abating. To gain some more intuition for the uniqueness argument, consider Figure 3, which depicts the marginal benefit and marginal cost of protectionist climate policy for an",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 35,
+        "text": "FIGURE 3. Existence and Uniqueness of Equilibrium Notes: The figure illustrates the unique Bayesian Nash equilibrium. The marginal benefit (MB) of abatement is given by κ + Φ \u0010 √ θ ( ρ ∗ – ̄ z ) \u0011 ( κ – κ ), and the marginal cost (MC) of abatement is given by ζ exp \u0010 ρ ∗ + 2( σ ε + σ z ) \u0011 . The intersection of the marginal benefit of abatement and the marginal cost of abatement determines the equilibrium threshold belief ρ ∗ , which is such that a player abates for ρ < ρ ∗ and does not abate for ρ > ρ ∗ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 36,
+        "text": "individual player. The equilibrium threshold belief ρ ∗ is identified as the point where the marginal benefit curve intersects the marginal cost curve. Without further assumptions, multiple intersections between these curves are possible, which could lead to multiple solutions to eq. (18) and thus, multiple equilibria. To see this, note that the slope of the marginal benefit curve is governed by the slope of the standard normal CDF Φ ( · ), which in turn depends on the value of θ , the relative precision of prior beliefs about BTN costs, σ z , compared to the precision of private signals, σ ε . Specifically, a low θ flattens the MB-curve. In the limit of θ → 0, the MB-curve becomes effectively a flat line at 1 2 ( κ + κ ) , ruling out multiple intersections with the MC-curve. Conversely, as θ →∞ , the MB-curve effectively becomes a step function with a jump at ρ = ̄ z . In this case, multiple intersections with the MC-curve become very likely, though not guaranteed. Therefore, a precise enough private signal, i.e., a low enough θ , is a sufficient (but not necessary) condition for the existence of a unique intersection and thus guarantees the existence of a unique equilibrium, as indicated in Proposition 2. The term κ – κ κ reflects the size of the ’window of multiplicity,‘ and equilibrium uniqueness requires this window to be sufficiently small. If κ = κ , the window collapses, and a",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 37,
+        "text": "unique equilibrium always exists, as either abating or not abating becomes a dominant strategy for both players. Importantly, the condition on κ – κ κ is a sufficient, but not necessary, condition for uniqueness. Violations of this condition do not preclude uniqueness but indicate the possibility of multiple equilibria. If κ becomes very large, the marginal benefit of abatement becomes highly sensitive to players’ beliefs about the other’s actions, expanding the ’window of multiplicity‘ and amplifying the potential for multiple equilibria. Extremes in the precision of information ( θ ) also shed light on equilibrium outcomes. For instance, if σ ε = 0, we revert to the common-belief game, where intermediate expected BTN costs reintroduce multiplicity. Conversely, if σ z = 0, players rely solely on private signals, and the equilibrium cutoff corresponds to each player’s probability of abatement being 1/2, ensuring uniqueness as the marginal benefit curve flattens. Once the existence and uniqueness of a Bayesian Nash equilibrium in switching strategies are established, it is straightforward to conduct comparative statics of equilibrium abatement probability q ∗ with respect to the various parameters of the model. The following Corollary highlights the impact of a change in the prior belief about abatement costs ̄ z on equilibrium abatement probability. COROLLARY 2. The equilibrium abatement probability q ∗ is decreasing in ̄ z.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 38,
+        "text": "The intuition here is that as ̄ z increases, the expected cost of protectionist climate policy for any player increases. This reduces the incentives for either player to abate at the posterior belief ρ ∗ . As a result, both players lower their equilibrium cutoff ρ ∗ , which in turn implies that players play not abate for a larger set of signals, reducing their equilibrium abatement probability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 39,
+        "text": "3.4. Expected welfare of protectionist climate policy",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 40,
+        "text": "For the expected welfare of the BTN game, note that the true state of the world pins down all payoffs. More specifically, welfare for the four different outcomes of the game with symmetric players is given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 41,
+        "text": "W 11 = 2 γ u (2) – 2 c – 2 κ , (19) W 10 = W 01 = 2 γ u (1) – c – κ , (20) W 00 = 2 γ u (0), (21)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 42,
+        "text": "where κ = ζ exp ( z ), i.e., the true BTN cost parameter depends on the realization of the state of the world z . Note that W 00 is equal to the social welfare in the prisoner’s dilemma of the pure climate game.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 43,
+        "text": "Now, the expected welfare of the climate game with protectionist policy is given by EW = Z ∞ – ∞ h ( q ∗ ) 2 W 11 + q (1 – q ∗ ) W 10 + (1 – q ∗ ) qW 01 + (1 – q ∗ ) 2 W 00 i f ( z ) dz , (22)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 44,
+        "text": "where f ( z ) = √ σ z √ 2 π exp \u0010 – σ z ( z – ̄ z ) 2 \u0011 is the pdf of the distribution of the state of the world z and q ∗ is the probability player i will abate given her private signal. The following Lemma shows that this integral can be calculated and simplified to a tractable expression in terms of the welfare thresholds derived in Section 2.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 45,
+        "text": "LEMMA 4 (Expected welfare of the unregulated BTN climate game with uncertainty about BTN costs). The expected welfare of the unregulated BTN climate game with uncertainty about BTN costs is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 46,
+        "text": "EW = W 00 + 2 q ∗ \u0002 q κ w + (1 – q ∗ ) κ w – E ( κ ) \u0003 , (23)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 4,
+        "section_name": "Uncertainty about Beggar-Thy-Neighbor Costs",
+        "paragraph_id": 47,
+        "text": "where κ w = γ \u0002 u (2) – u (0) \u0003 – c, κ w = 2 γ \u0002 u (1) – u (0) \u0003 – c, and E ( κ ) = ζ \u0010 ̄ z + 2 σ z \u0011 . We see that if E ( κ ) < κ w , then the BTN game will always be a welfare improvement over the pure climate game. Intuitively, when E ( κ ) < κ w , then the expected welfare ordering is W 11 > W 10 > W 00 . Thus, even if only one of the two players abates, such an equilibrium improves welfare compared to the pure climate game. If κ w < E ( κ ) < κ w , we see that the welfare effects of the unregulated BTN game are ambiguous. If both players abate (which happens with probability ( q ∗ ) 2 ), then the BTN game is a welfare improvement over the pure climate game. However, if only one of the two players abates (which happens with probability 2 q ∗ (1 – q ∗ )), then the BTN game leads to a reduction in welfare compared to the pure climate game. The overall effect of the BTN game on ex-ante welfare is thus ambiguous. The risk that only one of the two players ends up abating is the concern here from a welfare perspective. The lower the probability of that happening, the more likely it is that the unregulated BTN game is in fact a welfare improvement over the pure climate game. If E ( κ ) > κ w , the unregulated BTN game is unambiguously reducing welfare compared to the pure climate game. In this case, the best possible outcome of the game is W 00 , and no player should abate from a welfare perspective. The fact that there is a positive probability that one of the two players (or both) may end up abating reduces expected welfare compared to the prisoner’s dilemma of the pure climate game.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 0,
+        "text": "We are now in a position to ask: what are the welfare effects of protectionist climate policy? Consider the expected welfare from the unregulated BTN climate game with uncertain BTN costs which is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 1,
+        "text": "EW = W 00 + 2 q ∗ [ q ∗ κ w + (1 – q ∗ ) κ w – E ( κ )]. (24)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 2,
+        "text": "Comparison to social optimum. Let q w be the probability of abatement that a social planner would impose to maximize the expected welfare of the two players. If the welfare gain from abating, given by κ w , is larger than the expected cost of abating, given by E ( κ ), the social planner would want abatement to happen with certainty. Otherwise the social planner would not want abatement to happen at all. Specifically,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 3,
+        "text": "q w =    if E ( κ ) < κ w , 0 if E ( κ ) > κ w . (25)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 4,
+        "text": "As the equilibrium abatement probability q ∗ lies in the open interval (0, 1) for any E ( κ ), players either under-abate (i.e., abate with a too low probability) or over-abate (i.e., abate with a too high probability). As the social planner’s first best will always be either abatement or no abatement for certain, we know exactly when players are over-abating and underabating depending on the value of κ w in equilibrium. Specifically, the deviation from the first best is given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 5,
+        "text": "D ( q w , q ∗ ) = ∥ q w – q ∗ ∥ =    1 – Φ ( √ θ ( ρ ∗ – ̄ z )) if E ( κ ) < κ w , Φ ( √ θ ( ρ ∗ – ̄ z )) if E ( κ ) > κ w . (26)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 6,
+        "text": "Comparison to pure climate game. Even though the unregulated BTN climate game may not achieve the social optimum, it may nonetheless represent an improvement over the prisoner’s dilemma of the pure climate game. Note that we can rewrite the expected welfare of the unregulated BTN climate game in eq. (24) as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 7,
+        "text": "EW = W 00 + 2 q ∗ ( κ w – κ w ) \u0014 q ∗ – E ( κ ) – κ w κ w – κ w \u0015 . (27)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 8,
+        "text": "Now, let q P be the minimum probability of abatement required for the unregulated BTN climate game to be a welfare improvement over the pure climate game. Specifically,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 9,
+        "text": "q P ≡          0 if E ( κ ) < κ w , E ( κ )– κ w κ w – κ w if E ( κ ) ∈ [ κ w , κ w ], if E ( κ ) > κ w . (28)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 10,
+        "text": "Therefore by construction, the unregulated BTN climate game is welfare improving the prisoner’s dilemma if and only if equilibrium abatement probability is more than or equal to q P . In other words,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 11,
+        "text": "EW – W 00          > 0 if q ∗ > q P , = 0 if q ∗ = q P , < 0 if q ∗ < q P . (29)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 12,
+        "text": "As a result, the unregulated BTN climate game is a welfare improvement if the equilibrium abatement probability is sufficiently large.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 13,
+        "text": "4.1. The role of expected BTN costs",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 14,
+        "text": "With regard to the effect of the prior mean ̄ z on optimal abatement probabilities, note that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 15,
+        "text": "q w =    if ̄ z < ̄ z w , 0 if ̄ z > ̄ z w , (30)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 16,
+        "text": "where ̄ z w solves E ( κ ) = κ w . Further,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 17,
+        "text": "D ( q w , q ∗ ) = ∥ q w – q ∗ ∥ =    1 – Φ ( √ θ ( ρ ∗ – ̄ z )) if ̄ z < ̄ z w , Φ ( √ θ ( ρ ∗ – ̄ z )) if ̄ z > ̄ z w , (31)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 18,
+        "text": "q P =          0 if ̄ z < ̄ z ′ , E ( κ )– κ w κ w – κ w if ̄ z ∈ [ ̄ z ′ , ̄ z w ], if ̄ z > ̄ z w , (32)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 19,
+        "text": "where ̄ z ′ solves E ( κ ) = κ w with E ( κ ) = ζ exp \u0010 ̄ z + 2 σ z \u0011 so that ∂ q P ∂ ̄ z ≥ 0.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 20,
+        "text": "Note that q P is an increasing function of ̄ z : when expected protectionism costs go up, the likelihood of abatement must also go up to ensure the gains of abatement are larger than the costs. Since q ∗ is a strictly decreasing function of ̄ z (see Corollary 2) and also bounded between 0 and 1, it must be the case that there exists some ̄ z ′′ such that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 21,
+        "text": "q ∗ – q P =    q ∗ – q P > 0 if ̄ z < ̄ z ′′ , q ∗ – q P < 0 if ̄ z > ̄ z ′′ . (33)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 22,
+        "text": "This ̄ z ′′ sets the marginal social cost equal to the marginal social benefit of the unregulated BTN climate game. Specifically, ̄ z ′′ solves the equation:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 23,
+        "text": "q ∗ κ w + (1 – q ∗ ) κ w = ζ exp \u0012 ̄ z ′′ + 2 σ z \u0013 ≡ E ( κ ′′ ). (34)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 24,
+        "text": "The following Proposition summarizes the effects of expected BTN costs on the expected welfare of the unregulated BTN climate game. PROPOSITION 3 (Welfare effects of protectionist climate policy). Let ̄ z represent the prior mean belief about BTN costs in the unregulated BTN climate game. The equilibrium abatement probabilities and welfare outcomes behave as follows: 1. For low ̄ z ( ̄ z < ̄ z ′ ): The BTN climate game is a welfare improvement over the prisoner’s dilemma of the pure climate game, even if only one player abates. 2. For intermediate-low ̄ z ( ̄ z ′ < ̄ z < ̄ z ′′ ): The BTN climate game is a welfare improvement over the prisoner’s dilemma of the pure climate game only if both players abate. Equilibrium abatement probabilities are sufficiently large such that the BTN climate game leads to an expected welfare benefit. 3. For intermediate-high ̄ z ( ̄ z ′′ < ̄ z < ̄ z w ): The BTN climate game is a welfare improvement over the prisoner’s dilemma of the pure climate game only if both players abate. Equilibrium abatement probabilities are so low that the BTN climate game leads to an expected welfare loss. 4. For high ̄ z ( ̄ z > ̄ z w ): The BTN climate game can never be a welfare improvement over the prisoner’s dilemma of the pure climate game. Equilibrium abatement probabilities are so high that the BTN climate game leads to an expected welfare loss.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 25,
+        "text": "Figure 4 graphically illustrates the main insights from the Proposition. If ̄ z < ̄ z w , abatement by both players is constrained efficient in the BTN climate game since W 11 > W 00 . If",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 26,
+        "text": "FIGURE 4. Welfare Effects of ̄ z (Mean of Prior Belief about BTN costs κ ) Notes: The figure illustrates the welfare effects of ̄ z , the mean of prior beliefs about the costs associated with BTN policies. ̄ z ′ solves E ( κ ) = κ w , ̄ z ′′ solves E ( κ ) = q ∗ κ w + (1 – q ∗ ) κ w , and ̄ z w solves E ( κ ) = κ w . The welfare rankings of payoffs are such that if ̄ z < ̄ z ′ then W 11 > W 10 > W 00 , if ̄ z ′ < ̄ z < ̄ z w then W 11 > W 00 > W 10 , and if ̄ z > ̄ z w then W 00 > W 11 . The blue line represents q P , the minimum abatement probability for the BTN game to potentially be a welfare improvement over the pure climate game, and solves q P κ w + (1 – q P ) κ w = E ( κ ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 27,
+        "text": "̄ z < ̄ z ′ < ̄ z w , the welfare ranking of the payoffs is W 11 > W 10 > W 00 . This means that expected BTN costs are low enough for the BTN game to deliver a welfare benefit over the pure climate game (where no player abates), even if only one player abates. As a result, any probability of abatement in the BTN game will lead to a welfare improvement over the pure climate game. For ̄ z ∈ \u0000 ̄ z ′ , ̄ z w \u0001 , the welfare ranking shifts to W 11 > W 00 > W 10 . Here, the expected BTN costs are higher, so the BTN climate game only generates a welfare benefit over the pure climate game if both players abate. Consequently, the equilibrium abatement probability must be large enough to offset the risk of only one player abating, which would otherwise result in welfare loss. As ̄ z increases, the welfare damage from unilateral abatement rises, requiring even larger equilibrium abatement probabilities for the BTN climate game to improve welfare over the pure climate game. Once ̄ z > ̄ z ′′ , equilibrium abatement probabilities are no longer sufficient to compensate for the risk of one player abating, and the BTN game becomes welfare-damaging compared to the pure climate game.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 28,
+        "text": "Crucially, the distinction between the intermediate-low and intermediate-high regions of expected BTN costs lies in the impact of coordination failure (i.e., when only one player abates). In the intermediate-low region, the costs of such failure are low enough that the unregulated BTN climate game still results in a welfare improvement. However, in the intermediate-high region, the costs of coordination failure are significant enough to make the unregulated BTN climate game an expected welfare loss. When ̄ z exceeds ̄ z w , abatement is no longer optimal in the BTN game (since W 00 > W 11 ), and any non-zero equilibrium abatement probability will reduce welfare compared to the pure climate game. As equilibrium abatement probabilities approach zero for large ̄ z , the expected payoff of the BTN climate game aligns with that of the pure climate game. The greatest disparity between socially optimal and equilibrium abatement probabilities occurs near ̄ z w , where socially optimal probabilities abruptly shift from 1 to 0, while equilibrium probabilities decrease gradually.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 29,
+        "text": "4.2. The role of regulation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 30,
+        "text": "Suppose that there is a regulating authority in place, such as the WTO, that can choose both countries’ protectionist abatement level α ∈ [0, 1].",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 31,
+        "text": "Equilibrium existence and uniqueness. Limiting protectionist policy to a level α changes the incentives for abatement for both countries. Specifically, for a given country j ’s threshold belief ˆ ρ j , country i ’s threshold belief, ρ ∗ i α , now solves the equation:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 32,
+        "text": "F α = ζ exp \u0012 ρ ∗ i α + 2( σ ε + σ z ) \u0013 – \u0002 κ α + q α ( κ α – κ α ) \u0003 = 0, (35)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 33,
+        "text": "where κ α ≡ 1 + γ [ u (2)– u (1)]– c α , κ α ≡ 1 + γ [ u (1)– u (0)]– c α , and q α ≡ Φ \u0012p β \u0012 ˆ ρ j – ρ ∗ i α + σ z σ ε ( ˆ ρ j – ̄ z ) \u0013\u0013 . (36)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 34,
+        "text": "Note that if α < c – γ ( u (1) – u (0)), the regulation is such that countries would not abate even at zero costs to protectionism. Therefore, it is never optimal for regulators to set α < c – γ ( u (1) – u (0)). This gives us the following assumption for meaningful optimal regulatory policy:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 35,
+        "text": "ASSUMPTION 2. Assume α > c – γ ( u (1) – u (0)) ≡ α min . As countries are symmetric, any equilibrium will be symmetric as well, i.e., ρ ∗ i α = ρ ∗ j α = ρ ∗ α .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 36,
+        "text": "Therefore, if an equilibrium exists, the equilibrium threshold ρ ∗ α must solve ζ exp \u0012 ρ ∗ α + 2( σ ε + σ z ) \u0013 = κ α + Φ \u0010 √ θ ( ρ ∗ α – ̄ z ) \u0011 ( κ α – κ α ) . (37)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 37,
+        "text": "This gives us the following Proposition for the existence of a unique equilibrium at a regulated level of protectionism α . PROPOSITION 4. Suppose Assumptions 1 and 2 hold. Then, if θ ≤ 2 π \u0010 κ α κ α – κ α \u0011 2 there exists a unique equilibrium ρ ∗ α where the unique equilibrium, ρ ∗ α , satisfies, ζ exp \u0012 ρ ∗ α + 2( σ ε + σ z ) \u0013 = κ α + q ∗ α ( κ α – κ α ), (38)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 38,
+        "text": "where κ α = 1 + γ { u (2)– u (1)}– c α , κ α = 1 + γ { u (1)– u (0)}– c α , and q ∗ α = Φ \u0010 √ θ ( ρ ∗ α – ̄ z ) \u0011 . The proof is nearly identical to the one for the case without regulation. If α = 1, then we get back our Proposition 2 for unregulated protectionism. Note that Proposition 4 implies that the equilibrium uniqueness breaks once the regulator imposes regulation that is too tight, i.e., an α that is too low.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 39,
+        "text": "COROLLARY 3. The equilibrium of the regulated BTN climate game is unique as long as α > α 0 ≡ α min + γ ( u (2) + u (0) – 2 u (1)) q θ 2 π . We see that α 0 declines as θ decreases. Therefore, for very precise signals it holds that α 0 ≈ α min . Note that since α 0 > α min , at α 0 , the equilibrium threshold ρ ∗ 0 elicits a positive equilibrium probability of abatement which we denote by q ∗ 0 . If α ∈ (0, α 0 ], the regulated BTN game can have multiple equilibria, which renders welfare analysis and comparative statics impossible. As a result, we will focus on the case in which α = {0} ∪ ( α 0 , 1]. Note that the BTN game with α = 0 returns the prisoner’s dilemma of the pure climate game. It is straightforward to show that the equilibrium abatement probability q ∗ increases in the level of protectionism α . COROLLARY 4. Suppose that α > α 0 . Equilibrium abatement probability q ∗ is increasing in α .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 40,
+        "text": "Intuitively, as α increases, the player’s perceived benefit from abating increases. This implies that players will find it optimal to play abate for a larger set of posterior beliefs about the BTN cost parameter κ , which increases their belief thresholds and thus increases the probability that they will play abate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 41,
+        "text": "Welfare effects of regulation. The expected welfare of the regulated climate game is given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 42,
+        "text": "EW = 2 γ u (0) + 2 q ∗ α [ q ∗ α κ w + (1 – q ∗ α ) κ w – α E ( κ )]. (39)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 43,
+        "text": "Once again, let q P α be the minimum probability of abatement required for protectionist abatement level α to be welfare improving. Then we have,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 44,
+        "text": "q P α =          0 if α < α ′ , α E ( κ )– κ w κ w – κ w if α ∈ [ α ′ , α w ], if α > α w , (40)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 45,
+        "text": "where α ′ = κ w E ( κ ) and α w = κ w E ( κ ) . If q ∗ > q P α then protectionist abatement level α is welfare improving the pure climate game. On the other hand, if q ∗ < q P α then the pure climate game has greater social welfare than setting protectionist policy at α . Further, the welfare impact of protectionism α is thus given by:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 46,
+        "text": "dEW d α = –2 q ∗ α E ( κ ) + 2 dq ∗ α d α \u0002 κ w + 2 q ∗ α \u0000 κ w – κ w \u0001 – α E ( κ ) \u0003 . (41) The first term represents the marginal cost of protectionist climate policy: for a given probability of abatement, more protectionism increases the expected distortions from BTN policies (the ’BTN waste’). The second term represents the potential marginal benefit of protectionist climate policies: an increase in protectionism increases the equilibrium abatement probability (since dq ∗ α / d α > 0 as per Corollary 4), which increases the expected welfare as long as the equilibrium success probability q ∗ α is sufficiently large. We know that an increase in equilibrium abatement probability q ∗ α as a result of an increase in protectionism α has a positive welfare effect if and only if q ∗ α > q P α . As a result, if q ∗ α ≤ q P α , a decrease in α (i.e., more regulation) will unambiguously increase expected welfare in the regulated BTN climate game (as dEW / d α < 0). These intuitions directly leads to the following Proposition: PROPOSITION 5. Consider the regulated BTN climate game with regulation α ∈ [0, 1] . (a) If E ( κ ) < κ w α 0 , then optimal protectionist policy α ∗ is positive. (b) If α min E ( κ ) > κ w then α = 0 is welfare maximizing. (c) If E ( κ ) > κ w then there exists protectionist regulation ˆ α ∈ ( α 0 , 1) that is a welfare improvement over the unregulated protectionist climate game.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 47,
+        "text": "We see that if expected BTN distortions are sufficiently small, then the regulator should allow for a positive level of protectionist climate policy. Intuitively, if at the lowest level of protectionist policies that generates a unique equilibrium, α 0 , the equilibrium abatement probability q ∗ α is larger than the required probability for the BTN game to welfare dominate the pure climate game, q P α , then we know that there is a region of values for α such that the BTN game welfare dominates the pure climate game. 6 If expected distortions are sufficiently large, then the regulator wants to prevent countries from abating at all, which she can achieve by setting α = 0, which reverts the game into the prisoner’s dilemma of the pure climate game. Furthermore, if α = 1, which is the level of protectionism in the unregulated BTN climate game, and it is the case that q ∗ 1 < q P α , then the regulator will be able to improve welfare by reducing the level of protectionism α below 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 48,
+        "text": "4.3. The role of public information",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 49,
+        "text": "In reality, there is no effective regulator. What the WTO can do instead of directly regulating protectionist policy is to provide public information about the welfare costs of protectionist policies. In terms of our model, we can conceptualize an increase in public information about distortions from protectionist policies as an increase in the precision σ z of the prior belief about the true state of the world. For the remainder of this subsection, suppose that the regulator cannot regulate the level of protectionism α but can control the precision of the prior belief about BTN costs, σ z .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 50,
+        "text": "Common-belief game. First, consider again the unregulated BTN climate game without private signals as a benchmark. In this game, both players hold the same prior belief about BTN costs with expected value E ( κ ) = ζ exp \u0010 ̄ z + 2 σ z \u0011 . To simplify the analysis, we assume that the expected BTN costs are sufficiently low such that both players will play abate as the dominant strategy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 51,
+        "text": "ASSUMPTION 3. Assume that E ( κ ) < κ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 52,
+        "text": "Given this assumption, the unregulated BTN climate game without private signals generates a unique equilibrium in which both players abate. 7 If expected BTN costs are sufficiently low, then abatement will be the dominant strategy for both players. Note that in this common-belief game, abatement with full protectionism being a dominant strategy 6 Note that this is a sufficiency condition only. It may be the case that optimal protectionist policy is positive even if this condition does not hold. 7 See Corollary 1 for explanation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 53,
+        "text": "is not necessarily socially optimal. We know from Corollary 1 that an equilibrium in which both players abate as a dominant strategy is socially inefficient if κ w < κ and E ( κ ) ∈ \u0000 κ w , κ \u0001 . That is, abatement can be socially inefficient if the joint BTN costs from protectionist policies are sufficiently large to outsize the positive welfare effects of abatement.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 54,
+        "text": "Private-information game. Now consider the BTN climate game with private signals. In this game, players are no longer sure about each other’s beliefs as they do not observe each other’s signals about the state of the world. As a result, players may have different posteriors about the state of the world. The unique Bayesian Nash equilibrium, in this case, consists of switching strategies, as shown in Proposition 2. If player i observes a high private signal about the state of the world, then she will believe that the true BTN costs are rather large, which makes abatement rather unattractive. At the same time, player i knows that a high private signal increases the likelihood that player j receives a rather high signal as well and may decide not to abate, which further reduces the expected payoffs from abatement. As a result, abatement will not be a dominant strategy in the private information game, even if it is in the common-belief game. In the unregulated BTN game with private signals, the threshold belief ρ ∗ will be such that the marginal benefit of abatement equals its marginal cost at that threshold. If abatement is a dominant strategy in the common-belief game, then the equilibrium threshold belief in the private-information game ρ ∗ is above the prior belief ̄ z and increases in the precision of the prior belief, σ z . LEMMA 5. Suppose Assumption 1 and Assumption 3 are fulfilled. Then, ρ ∗ > ̄ z and the equilibrium abatement probability increases in the precision of the prior belief: ∂ q ∗ ∂σ z > 0 . Intuitively, the equilibrium threshold belief ρ ∗ must be above the prior belief ̄ z if abatement is a dominant strategy in the common-belief game since a player will have to become more pessimistic about the true BTN costs after observing its private signal (i.e., it must expect a higher cost level) to find it optimal not to abate. Specifically, if a player became more optimistic about the true BTN costs after observing the private signal (i.e., if ρ i < ̄ z ), the marginal benefit of abatement would be larger than its marginal cost at that posterior belief. This means the cut-off posterior ρ ∗ , which sets a player’s expected marginal belief equal to her expected marginal cost equal, must be greater than ̄ z . The effect of prior precision σ z on equilibrium abatement probability q ∗ is driven by two effects. First, an increase in the prior belief precision σ z directly reduces the belief about expected BTN costs for any given signal x i , i.e., it reduces ˆ κ i = E ( κ | x i ) = ζ exp \u0010 ρ + 2( σ z + σ ε ) \u0011 , which increases player i ’s marginal benefit from abatement and which tends to increase",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 55,
+        "text": "abatement probability. Second, an increase in σ z decreases the relative weight each player puts on its private signal x i . As a result, player i becomes more certain about player j ’s posterior belief as the role of private signals is diminished in forming posterior beliefs. This implies that the precision of player i ’s belief that ρ j < ρ ∗ , in which case player j abates, increases. Consequently, the probability that ρ j < ρ ∗ increases as long as ρ ∗ > ̄ z , which is the case if abatement is a dominant strategy in the common-belief game. We are now in a position to assess the welfare effects of changes in the public information precision σ z . PROPOSITION 6. Assume Assumption 1 and Assumption 3 hold. Consider an increase in the precision of the public signal, σ z , from σ z to σ ′ z . Let ̄ σ z solve θ = 2 π \u0010 κ κ – κ \u0011 2 and assume that σ z < ̄ σ z . (a) Suppose that σ ′ z ≤ ̄ σ z . The welfare benefit of the unregulated BTN climate game relative to the prisoner’s dilemma of the pure climate game increases if E ( κ ) < κ w , and decreases if E ( κ ) > κ w . (b) Suppose that σ ′ z > ̄ σ z . The equilibrium of the unregulated BTN climate game may no longer be unique in the private information game, and the welfare effects are ambiguous.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 56,
+        "text": "The Proposition illustrates that more precise information provided by a regulator is not always improving the relative welfare of the BTN climate game. Specifically, when expected BTN costs are sufficiently high such that a social planner would want both players not to abate (in which case the pure climate game welfare dominates the unregulated BTN climate game), then more precise public information about BTN costs moves the equilibrium further away from the social optimum as it increases abatement probabilities that are already too high. If, however, expected BTN costs are low enough such that a social planner would want both players to abate, then an increase in the precision of public information moves equilibrium abatement probabilities in a welfare-improving direction. We conclude that if expected BTN costs are sufficiently high, then it may be the case that a regulator will not improve welfare by providing more precise information about these high costs. Rather the opposite, a regulator would improve welfare by reducing the precision of the public information about expected BTN costs. Intuitively, more precise prior information makes players more likely to abate, which is not desirable when BTN costs are already quite high. The second part of Proposition 6 points out that if public information becomes too precise, then the assumption on the relative precision of the private signal, θ , in Proposition 2 will be violated, which implies that the equilibrium in the unregulated BTN climate game",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 5,
+        "section_name": "Welfare Effects of Protectionist Policy",
+        "paragraph_id": 57,
+        "text": "may no longer be unique, which in turn renders welfare analysis impossible. Thus, the ability of a regulator to predictably influence the equilibrium of the unregulated BTN climate game through the provision of public information is limited by the fact that more precise public information may re-introduce multiple equilibria which limits the regulators ability to predictably influence the outcome of the unregulated BTN climate game.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1565,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper explores the welfare effects of protectionist climate policies in the context of the green transition. While economists have traditionally cautioned against protectionism due to its distortive effects, we demonstrate that, in the case of climate policies, these distortions can have strategic value by encouraging coordination between countries on climate action. We emphasize the nuanced role that protectionist policies can play in the green transition, noting that the World Trade Organization’s blanket restrictions on trade-distorting industrial policies may, in certain cases, undermine global welfare. In a second-best world, allowing limited protectionist measures could help overcome the coordination failures that often plague international climate agreements. Our findings highlight the importance of tailoring international regulations to the specific characteristics of green industrial policies. When expected distortions are low, protectionist policies may enhance welfare by promoting climate cooperation. When expected protectionist costs are high, the welfare impact is less of a concern, as countries will avoid pursuing such policies due to their prohibitive costs. However, when distortions from protectionist green policies are expected to be moderate, the risks of coordination failure outweigh the potential benefits, and stricter regulatory oversight may be necessary. Going forward, policy frameworks should consider these trade-offs carefully to strike a balance between encouraging climate action and minimizing the negative consequences of protectionism.",
+        "extraction_warnings": ""
+    }
+]

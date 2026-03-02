@@ -1,0 +1,554 @@
+[
+    {
+        "paper_id": 1615,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Paving Over Streets of Gold: The Economic Impact of Immigration Restrictions on Sending Regions",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Dean Hoi ∗ (Preliminary Draft, Please Do Not Cite or Distribute)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Abstract The Quota Acts of the early 1920s severely restricted European immigration to the United States and effectively ended the ‘Age of Mass Migration’ that saw over 30 million Europeans migrate to America. Using newly constructed data and novel identification, this paper analyzes the economic impacts of mass emigration and subsequent restriction on local sending regions in Southern and Eastern Europe. I obtain townlevel emigration rates for the entirety of Europe from administrative records covering the universe of male European migrants who entered through Ellis Island between 1892 and 1924, over 6.6 million individuals. I propose a contagion instrument that uses epidemiological modeling to predict the spread of migration from early emigration locations. I find that emigration had a large positive impact on economic growth, likely driven by migrants returning with savings and increased human capital that facilitated industrialization. Simulating counterfactual unrestricted migration with the epidemiological model, I then estimate the Quota Acts resulted in a 10.6% reduction in GDP per capita by 1938.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "At several points in history, developed countries have sharply restricted migration from developing regions as an apparent means of alleviating domestic economic hardship. However, while the impact on local receiving regions has been widely studied (Lafortune et al. 2015, Clemens et al. 2018, Lee et al. 2022, Abramitzky et al. 2023, Long et al. 2022, Hoi 2023), much less is known about how restrictions impact the economic development of local sending regions due to a lack of detailed data on migrant origin and identification challenges. The ∗ PhD Candidate, Department of Economics, University of Melbourne, Level 4, FBE Building, 111 Barry Street, Carlton, VIC Australia 3010, email (dean.hoi@unimelb.edu.au). My deepest thanks to my committee members Laura Panza, Sascha O. Becker and Andrew Clarke for their unwavering support and guidance. I also thank Leah Boustan, Kerstin Enflo, Katherine Eriksson, James Feigenbaum, Tim Hatton, Santiago P ́erez, Hannah Postel, Marco Tabellini, Yanos Zylberberg, and seminar participants at Harvard University, Warwick University, the University of Melbourne and the CEPR for helpful comments. This project was supported by a grant from The History Project at Harvard University.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "effects of emigration and restriction on sending regions are ex-ante ambiguous. On the one hand, emigration may cause the loss of human capital from a ‘brain drain’ (Kwok & Leland 1982, Beine et al. 2011). On the other hand, emigration may create significant remittances (Dustmann & Mestres 2010), as well as migrants returning with additional savings and human capital, creating a potential ‘brain gain’ instead (Stark et al. 1998, Stark & Wang 2002, Mayr & Peri 2009, Dustmann et al. 2011, Fernihough & ́ O Gr ́ada 2024). Furthermore, emigration may decrease labor supply, impacting incentives for innovation and labor-saving technology (Coluccia & Spadavecchia 2021, Andersson et al. 2022). This paper studies the impact of mass emigration to the US from 1892-1924 and its restriction with the Quota Acts (1921 & 1924) on the economic development of Southern and Eastern European sending regions. This ‘Age of Mass Migration’ saw over 30 million Europeans arrive in the US between 1850 and 1924 with essentially no barriers to entry. At its peak, over a million migrants were arriving every year (as illustrated in Figure 1), drawn largely from the poorest regions of Europe. 1 The Quota Acts were introduced in the response to growing American nativism and represent the most substantial immigration restrictions in US history, bringing to an end America’s open border policy. Beginning with the Emergency Quota Act of 1921, and later tightened and cemented by the Immigration Act of 1924, the Quota Acts assigned annual intake quotas by national origin. This particularly targeted Southern and Eastern Europeans who were allotted roughly 25,000 entries for the entire region (less than 5% of entries in 1920). To evaluate the impact of the Quota Acts, I construct a novel dataset of sub-national European emigration to the US. I use administrative records from Ellis Island, which served as the main port of entry to the US from 1892 until its closure in 1924 (as a result of the Quota Acts), processing the vast majority of immigration from Southern and Eastern Europe during this period. I extract detailed last places of residence from the universe of male European immigrants in the Ellis Island records, over 6.6 million individuals. 2 This is comprehensively recorded at the town/commune level in the vast majority of cases, providing over 100,000 unique places of origin across the entirety of Europe. I use these individual-level origins to construct emigration rates with broad coverage and highly granular temporal and spatial variation, at the daily/town-level. 3 Estimating the causal impact of immigration restrictions on the economic development of sending regions is challenging given the endogeneity of emigration, with socio-economic conditions impacting both the incentives and constraints to migration. 4 To address these 1 Figure 1 also shows the regional composition over the period, with the early wave driven by Northern and Western Europeans and the later, larger wave by Southern and Eastern Europeans. This paper focuses on this second wave and its subsequent restriction. Northern and Western European emigration is excluded from the analysis as these areas had low emigration rates and little regional variation for the analysis period (1892-1924) and were essentially unaffected by the Quota Acts. 2 Male migrants represented roughly 60% of Southern and Eastern European migrants during this period. Female migrants were not collected due to to difficulties imputing their origin in the US Census with surname changes. 3 Figures 2 and 3 map all towns identified in the Ellis Island records (the level of aggregation for the emigration modeling) and the overall emigration rates by historical province respectively. 4 Under Zelinsky’s model of migration transition, this has an inverted U-shaped pattern: migration initially increases with development as it releases financial constraints to migration, but eventually declines again with higher rates of development reducing the returns to migration (Dao et al. 2018).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "challenges, I propose a novel identification method, the contagion instrument, which uses early emigration distribution and epidemiological dynamics to provide quasi-exogenous variation in emigration rates. This empirical strategy leverages the diffusion properties of mass migration, first proposed by Gould (1980) and later formalized and tested by Spitzer & Zimran (2023) for Italian emigration. Social constraints to emigration have been shown to be highly binding during this period, i.e. individuals rarely migrate when they lack social connections at destination despite significant potential gains to migration and substantial push factors (Spitzer et al. 2020, Spitzer 2021). 5 As a result, the early stages of emigration waves spread primarily through social networks with properties similar to that of an infectious disease, a phenomenon that was referred to at the time as ‘migration fever’ (Moya 1998). Emigration patterns therefore exhibit strong path dependency based on the location of early migration moves, which I leverage for causal identification. The contagion instrument takes early migration as given (measured in 1892), 6 and utilizes a compartmental model, a workhorse of the epidemiological literature, to predict the spread of emigration from the initial locations. 7 Variation in emigration is therefore determined solely by initial emigration distribution and the spatial/demographic structure of the region. I validate that early emigration locations do not differ significantly in pre-1892 economic characteristics (although are generally closer to emigration ports). I also consider a ‘leave-out’ version of the instrument that excludes the early emigration locations as well as controlling for distance to ports. I find the contagion model strongly predicts emigration patterns across Southern and Eastern Europe. This is apparent in Figure 7, which maps actual and simulated town-level emigration for Italy, the largest volume sending country for the period, clearly demonstrating both the epidemiological dynamics of emigration movements and the accuracy of the contagion model. 8 I first evaluate the effect of emigration on GDP per capita utilizing the contagion instrument in a two-stage least squares (2SLS) design. Longitudinal data at the regional level (equivalent to modern NUTS 2) covering Southern Europe for the period 1893-1938 is used in the main specification. 9 I include region and country-year fixed effects to account for any national or time-invariant regional confounding factors. Under the main specification, I find emigration had a large, positive effect on regional economic growth with an estimated emigration elasticity of GDP per capita of 0.12; in other words, a 10% increase in the emigration rate increased regional GDP per capita by 1.2%. The results are robust to the leave-out 5 This may be due to a number of factors, including information provision, social insurance and travel funding. However, this paper remains agnostic to which of these factors dominate, as it ultimately does not impact the resulting dynamics. 6 The 1892 emigration rates used for the initial model conditions are illustrated in Figure 6. For all countries in Southern and Eastern Europe, emigration in 1892 represents the early stages of the mass emigration movement, with 96% of towns recording zero migrants in 1892. 7 Compartmental models were popularized by Kermack & McKendrick (1927) with the Susceptible, Infected, Recovered (SIR) model. The first use of compartmental models in the migration literature model was the diffusion migration model developed by Spitzer & Zimran (2023), which this model directly builds upon. 8 Similar maps for the whole of Southern and Eastern Europe can be found in Figure B2. 9 Reliable, longitudinal GDP data is only available for Italy, Spain and Portugal, largely due to the relative stability of their borders during this period. However, I also examine longer-term outcomes (to 1991) for the entirety of Southern and Eastern Europe in a cross-sectional analysis at the finer, NUTS 3 level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "version of the contagion instrument as well as a battery of geographic, political and market access controls. I then carry out a counterfactual unrestricted simulation exercise to evaluate the impact of the Quota Acts on the economic growth of sending regions. The key challenge in evaluating the impact is estimating how emigration would have developed in the absence of the restriction. The contagion properties of emigration imply beta-convergence in outflow rates: regions that begin their emigration wave later have faster future emigration growth. Therefore, emigration rates prior to restriction will provide poor estimates of counterfactual unrestricted emigration and likely underestimate the impact of the restriction. I overcome this by using the contagion model to simulate counterfactual unrestricted emigration, which incorporates the spatial and temporal emigration dynamics. I simulate counterfactual unrestricted emigration up to 1929 and combine this with the emigration elasticity above to estimate the economic impact of the Quota Acts. 10 I estimate that GDP per capita in Southern Europe was 10.6% lower than the counterfactual unrestricted case in 1938. This is equivalent to a 0.7% reduction in the annual growth rate up to 1930, over US $ 40 billion in total. I find the effects are largest for Spain, despite having one of the lowest rates of emigration prior to the restriction. The effects are also larger for poorer regions, leading to a 15% increase in regional inequality (as measured by the coefficient of variation), contributing to 68% of the overall increase in regional inequality between 1925 and 1938. Importantly, I find no evidence of destination substitution in response to the restriction, either to the New World, within Europe or internally, that would diminish the impact of the Quota Acts. 11 Finally, the paper explores potential mechanisms in a number of ways. I first examine the role of return migration by estimating time-varying regional rates of return by combining the Ellis Island data with US Census data covering the universe of European immigrants in the US. 12 I find that regional rates of return were very high for Southern Europe, over 70% on average, but with significant variation, ranging from 50 to 90%. Comparing emigration and return rates, I find the main results are almost entirely driven by return migration rather than emigration. 13 I then examine structure of the effects of emigration on the structure of the regional economy. Emigration had a small, but insignificant negative effect on population due to the high rates of return, suggesting minimal labor supply effects. However, it accelerated the transition out of agriculture into industrial employment. The industrialization effects 10 I stop the simulate before 1930 as the Great Depression would have likely significantly dampened emigration to the US, as evidenced by collapses in emigration from Northern and Western Europe in 1930. 11 The lack of substitution is likely due to a number of reasons. Firstly, the US was by far the most attractive destination for Europeans in terms of wage differentials and accessibility (Hatton & Williamson 1998), meaning the benefits of other destinations may not have outweighed the costs. Secondly, most regions lacked social connections to other destinations, making substitution very difficult. Finally, the Quota Acts were part of a worldwide shift towards closed borders, with Argentina, Australia, Brazil and Canada all shifting to policies restricting migration in the 1920s, although to varying degrees (Timmer & Williams 1998). 12 This method probabilistically imputes the regional origins of immigrants in the Census based on recorded surname, country of birth and year of entry, and then applies demographic accounting as per Bandiera et al. (2013). 13 This remains only correlative evidence, however, as rates of return are likely endogenous to development at the sending region and not instrumented by the contagion instrument.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "are larger in regions with higher rates of return, as well as regions where migrants moved to more urban, industrial and higher-skilled markets in the US. Overall, this is consistent with migrants returning with industrial experience and human capital (in support of the ‘brain gain’ hypothesis) that facilitated the industrialization of the regional economy. 14 Finally, I provide descriptive evidence on the role of remittances using national-level estimates of money sent home per year abroad and savings of returning migrants. I extrapolate these to the entirety of the analysis period to show that remittance flows were substantial (averaging 2-3% of GDP), with the majority coming from returning migrants rather than money sent from abroad. A back-of-the-envelope calculation shows the flows are equivalent to around 65% of the increase in national GDP per capita in Southern Europe. This paper contributes to the large literature on the migration-development nexus. While much of the literature has focused on macro-level analyses (Hamilton & Whalley 1984, Moses & Letnes 2004, Bradford 2021), the empirical evidence on the impact on local sending regions is hampered by a paucity of data and instruments for causal identification (Mendola 2012, Clemens et al. 2014). This paper addresses this gap with data and methodological contributions that allow for extensive, micro-level analysis. The emigration dataset constructed provides one of the most granular and comprehensive datasets of emigration rates. Granular emigration rates have been estimated for this period from passenger records, national censuses and parish records for individual countries and sub-national regions, such as Norway (Abramitzky et al. 2012), Ireland (Connor 2019), Italy (Spitzer & Zimran 2018, Coluccia & Spadavecchia 2021, P ́erez 2021), Sweden (Karadja & Prawitz 2019), the Pale of Settlement (Spitzer 2021) and Galicia, Spain (Fern ́andez S ́anchez 2022). This dataset represents a substantial expansion of granular emigration rates to the entirety of Europe, allowing for much broader analysis that can account for national differences and shocks. The paper also provides the first sub-national estimates of return migration for the entirety of Europe, where previously this was only available for select countries or for Europe at the national-level (Bandiera et al. 2013). The return migration findings in the paper relate closely to studies examining individual outcomes of returning migrants during this period in Norway (Abramitzky et al. 2019), Sweden (Ejermo et al. 2022) and Ireland (Fernihough & ́ O Gr ́ada 2024), finding increased wealth, occupational mobility and human capital for returnees. This paper is also the first to use the epidemiological dynamics of emigration for causal identification and counterfactual estimation. The contagion instrument provides comprehensive, granular, quasi-exogenous variation in emigration rates without having to rely on local push shocks such as weather, natural disasters or persecution, which may be limited in scope, correlated with economic development, or inconsistently predict emigration, as has been shown in cases during this period (Spitzer et al. 2020, Spitzer 2021). The contagion instrument also contributes to our understanding of the role of social networks in determining emigration patterns. The paper builds on the findings of Spitzer & Zimran (2023), demonstrating that epidemiological dynamics from networks were not just a strong determinant of 14 While I have no data on the selection of returning migrants, the rates of return are sufficiently high such that the average skills of returning migrants would be similar to that of the overall migrant cohort, even with strong selection effects. This shift out of agriculture into industry upon returning is also consistent with the historical evidence. Surveys of returning Italian migrants from America found 26% of respondents worked in industry or services prior to departure, compared with 36% upon returning (Cerase 1974).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "emigration patterns in Italy, as was shown in Spitzer & Zimran (2023), but for the entirety of Southern and Eastern Europe. This contributes to a wider literature emphasizing the centrality of social networks in determining migration patterns (Munshi 2003, McKenzie & Rapoport 2007, Beaman 2011, Becker et al. 2024) This paper is more narrowly related to literature on the impact of emigration and restriction during the Age of Mass Migration, which have linked emigration to increased wages (O’Rourke & Williamson 1995, Hatton & Williamson 1998), human capital (Fern ́andez S ́anchez 2022) and innovation (Andersson et al. 2022) in sending regions, as well as political development (Karadja & Prawitz 2019). Literature on the impact of immigration restrictions on sending regions is much scarcer, with studies focusing instead on receiving regions, including the impact of the Quota Acts (Lafortune et al. 2015, Lew & Cater 2018, Abramitzky et al. 2023), Mexican-US restrictions (Clemens et al. 2018, Lee et al. 2022) and the Chinese Exclusion Act of 1882 (Long et al. 2022, Hoi 2023). This paper is the first to examine the effect of such restrictions on the development of local sending rather than receiving regions. Taylor & Williamson (1997) and Gomellini & ́ O Gr ́ada (2013) model national-level, no-migration counterfactual scenarios and find negative development effects of similar magnitudes to this paper. Also related are studies examining other impacts of historical restrictions on sending regions, including technology adoption Coluccia & Spadavecchia (2021) and the fate of Jews in Nazi Germany (Buggle et al. 2023).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 3,
+        "section_name": "Ellis Island and the Age of Mass Migration",
+        "paragraph_id": 0,
+        "text": "The period from 1850 to 1924 saw arguably the largest voluntary mass migration in history, with fifty million Europeans migrating to the New World. Thirty million of these migrants went to the United States (relative to an 1850 population of 23 and 116 million for the US and Europe respectively). Driven by falling travel times and costs, and increasing wages and labor demand in the US, the first wave (roughly 1850-1890) largely originated from Northern and Western Europe, the second wave (roughly 1900-1914) from Southern and Eastern Europe. The second wave, in particular, was driven by rural migrants leaving overpopulated regions with poor standards of living in pursuit of real wages that were in many cases 2-4 times higher than back home (Hatton & Williamson 1998). Ellis Island in New York Harbor was opened on January 1, 1892 as America’s first federal immigration station following the Immigration Act of 1891 that brought immigration processing under federal jurisdiction. As the main port of entry from Europe, it processed more than 12 million immigrants, constituting roughly 95% of Southern and Eastern European immigration and 72% of all immigration during this period (Bandiera et al. 2013, Coluccia & Spadavecchia 2021). The station was eventually closed with the Immigration Act of 1924 that severely restricted entry to the United States and effectively ended the Age of Mass Migration. The Manifest of Immigrants Act of 1819 required ship captains to record and submit details of all passengers entering the United States regardless of nationality, citizenship, port of origin or intended length of stay. Steamship companies prepared manifests for the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 3,
+        "section_name": "Ellis Island and the Age of Mass Migration",
+        "paragraph_id": 1,
+        "text": "immigration station prior to departure, typically from identification documents. Incomplete documentation meant passengers were sent back at the steamship company’s expense, thus strongly incentivizing accurate and complete manifests (Bandiera et al. 2013). Figure 1 shows annual immigration inflows into the US from Europe overall and Southern/Eastern Europe specifically, with the highlighted period representing Ellis Island station operation. The Ellis Island period captures the majority of entries during the Age of Mass Migration, importantly including the height of the movement and right up until the Quota Acts. The period also captures the radical shift in the origin composition discussed above from so-called ‘Old-World’ origins of Northern and Western Europe to ‘New-World’ origins of Southern and Eastern Europeans.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 4,
+        "section_name": "The Quota Acts",
+        "paragraph_id": 0,
+        "text": "The mass migration movement was met with growing anti-immigrant backlash in the late nineteenth century, influenced heavily by the emerging racial science movement in the US. Pressure from the nativist movement resulted in the exclusion of Chinese immigrants in 1882 and Japanese immigrants in 1907, but was initially unsuccessful at restricting European migrants. Congress eventually convened a commission into immigration, the Dillingham Commission, which released its findings in 1911. It recommended significant numerical restrictions based on national origins, stating that immigration from Southern and Eastern Europe in particular constituted a serious threat to America, both economically and culturally. This influenced the passing of literacy requirements in 1917 (which was largely ineffective), followed by the first of the two Quota Acts, the Emergency Quota Act of 1921. This Act temporarily placed intake quotas based on 3% of the number of immigrants from each national origin in the 1910 Census. The Immigration Act of 1924, also known as the Johnson-Reed Act, further restricted the quotas to 2% of the 1890 Census and made them permanent. The change to the 1890 Census specifically targeted Southern and Eastern Europeans, as they did not arrive in significant numbers until after 1890. The quotas limited overall immigration to less than 20% of pre-war averages, but to less than 5% for Southern and Eastern Europeans, effectively ending the Age of Mass Migration in the US. These restrictions would remain in place until the Immigration and Naturalization Act of 1965.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 6,
+        "section_name": "Ellis Island Administrative Records",
+        "paragraph_id": 0,
+        "text": "Ellis Island administrative records contain detailed data from passenger manifests on all 12 million individuals that passed through Ellis Island immigration station between 1892 and 1924. I extract the full name, age, date of arrival and last place of residence from all male European migrants from publicly available records from the Statue of Liberty-Ellis Island Foundation, over 6.6 million individuals. Females were not included due to linking difficulties. The last place of residence is the key variable of interest from this dataset and is used to determine immigrant origin. The variable is comprehensive and incredibly granular: I estimate roughly 95% of immigrants recorded their last place of residence at the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 6,
+        "section_name": "Ellis Island Administrative Records",
+        "paragraph_id": 1,
+        "text": "Figure 1: Total Annual Immigration Inflows into the US",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 6,
+        "section_name": "Ellis Island Administrative Records",
+        "paragraph_id": 2,
+        "text": "Notes : Constructed with data from Carter et al. (2006). The highlighted region indicates the coverage of the Ellis Island administrative data (1892-1924). The vertical dashed lines represent the Quota Acts of 1921 and 1924.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 6,
+        "section_name": "Ellis Island Administrative Records",
+        "paragraph_id": 3,
+        "text": "town/settlement level, 3% at the country/region level, and only 2% missing or illegible. Due to internal migration, the last place of residence does not always coincide with the place of birth, which would be the preferred measure of immigrant location of origin. However, analysis of Italian place of birth data by Spitzer & Zimran (2018) find that the last place of residence in the manifest matches the place of birth in 98% of cases. 15 Of the 6.6 million individuals in the sample, 1.5 million unique residence names are recorded, one million of which have only a single migrant originating from there, suggesting multiple alternative spellings and high rates of transcription errors. I process cleaned residence names through the GeoNames database to obtain the residence longitude and latitude. 16 I use string distance measures to account for slight transcription errors. 116,745 unique last places of residence are successfully geocoded, covering 68.4% of the dataset. Figure 2 maps all the hometowns successfully geocodes, illustrating the breadth and granularity of the data, while Figure 3 maps the emigration aggregated to the regional-level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 7,
+        "section_name": "Regional European Data",
+        "paragraph_id": 0,
+        "text": "Historical GDP, population and sectoral employment are obtained from Ros ́es & Wolf (2018), which provide decennial measures at the NUTS-2 level from 1900-2010 for Western and Southern Europe. These are obtained largely from national censuses and are harmonized for comparability. For the main analysis, I consider observations from 1900-1938 for countries in this dataset without significant migration prior to 1892, namely Italy, Spain and Portugal. I complement with Italian industry censuses in 1911, 1927 and 1936 from the Italian Statistical Office, which provides province-level data on horsepower generation in industry. Historical literacy rates are provided by Diebolt & Hippe (2022).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 9,
+        "section_name": "Model Setup",
+        "paragraph_id": 0,
+        "text": "The contagion instrument is based on the diffusion theory of emigration, first proposed by Gould (1980) and later formalized by Spitzer & Zimran (2023). The theory states that social constraints were particularly binding in developing regions during this time, i.e. individuals rarely migrate to destinations where they lack any social connections, despite significant potential gains to migration. As a results, emigration patterns move largely through social networks, giving it dynamics similar to that of an infectious disease. Figure 4 illustrates the dynamics underpinning the contagion model. A region experiences no significant migration until an initial migration (Panel A). The initial migrant generates a link to the destination, thus releasing the social constraint to emigration for their network. This leads to more migration, which in turn releases more constraints, creating exponential 15 While this rate may seem unusually high, it is likely reflective of the fact that manifests were not self-reported, but rather prepared by the shipping companies from the passenger’s identification documents (required for ticket purchase), which recorded birthplace rather than residence. 16 The GeoNames database (available at www.geonames.org) contains over 4.8 million populated places with 13 million alternative names, which importantly includes historical place names as well as local and alternative spellings in its searches.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 9,
+        "section_name": "Model Setup",
+        "paragraph_id": 1,
+        "text": "Figure 2: Geocoded Last Places of Residence",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 9,
+        "section_name": "Model Setup",
+        "paragraph_id": 2,
+        "text": "Figure 3: Emigration Frequency by Province (1892-1924)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 9,
+        "section_name": "Model Setup",
+        "paragraph_id": 3,
+        "text": "growth in emigration in their hometown (Panel B), before slowing to a saturation point. This contagion spreads to other hometowns through inter-hometown connections (Panel C). Since these connections depend strongly on geographic proximity (i.e. an individual is far more likely to know someone in the next town than on the other side of the country), this creates gradual spatial diffusion in emigration from the epicenter (Panel D). I use the populated settlement of origin (henceforth called ‘hometown’) as the main unit for modeling the spread of migration. 17 As such, I model emigration numbers at the hometown level, and networks are characterized as either intraand inter-hometown connections. There are several reasons for modeling at the hometown-level. Firstly, hometowns have been found to be the strongest basis for network formation at both origin and destination (Munshi 2003). Secondly, hometowns play a central role in facilitating migration during this period, as evidenced by the prevalence and influence of hometown-based associations (Spitzer 2021, Fern ́andez S ́anchez 2022), and the ubiquity of hometown-level enclaves (see MacDonald & MacDonald (1964) and (Cinel 1982) for summaries). Finally, hometown is the most granular measure of community available in this dataset, with family connections beyond the immediate household generally unrecorded in immigration datasets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 0,
+        "text": "The model takes early emigration (measured in 1892) as given, and predicts the spread of emigration based off the epidemiological properties of migration. To capture these epidemiological dynamics, I use a compartmental model. Compartmental models, such as the SIR (Susceptible, Infected, Recovered) model, are a workhorse in epidemiological modeling. In the basic SIR model, individuals are assigned to compartments, and progression between compartments (i.e. going from susceptible to infected to recovered) is determined by social interactions and underlying disease and population characteristics. In this model, developed from a similar model by Spitzer & Zimran (2023), individuals are in one of three compartments: unlinked, linked and migrated (illustrated in Figure 5). The model assumes that social constraints are completely binding, in that individuals are unable to migrate without a social connection to a migrated individual, regardless of the incentives (with the exception of the initial 1892 movers). As such, all individuals outside of the firstmovers begin in the unlinked compartment (i.e the source compartment). Individuals then move into the linked compartment through social connection to migrated individuals. Once linked, individuals can then choose to migrate based on standard push-pull factors. Those who migrate move into the migrated compartment and provide links to destination for their social network. The compartmental model is a one-way progression, meaning individuals remain in the migrated compartment (i.e. a sink compartment), even after returning. 18 The transition from unlinked to linked compartment is determined by social factors, while the 17 I use the GeoNames categorization of populated place in the data, defined as ‘a city, town, village, or other agglomeration of buildings where people live and work’. 18 The assumption here is that, once returned home, individuals did not migrate to the United States again. While repeat migration did exist, most migrants did not return to the US multiple times. I use repeat manifest entries (i.e. entries with the same name, origin and year of birth, but different immigration dates) to roughly estimate repeat migration rates, and find less than 0.5% of migrants during this period have repeat entries.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 1,
+        "text": "Figure 4: Social Contagion Dynamics Panel A",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 2,
+        "text": "Figure 5: Compartmental Model Structure",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 3,
+        "text": "Notes : This illustrates the three compartments of the model, with flows between them determined first by social exposure (captured by the parameters λ and δ ), and then by economic push-pull factors (captured by the parameter m ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 4,
+        "text": "transition from linked to migrated is determined by economic factors. The state variables of the model are given by the set Ξ = { U it , L it , M it , E it } . U it , L it and M it represent the number of individuals in hometown i in period t in the unlinked, linked and migrated compartments respectively. By construction, all individuals from the hometown must be in one of the three compartments, implying U it + L it + M it = P i where P i is the population of origin hometown i , assumed to be fixed. However, since a compartmental model generally predicts the entire population will migrate (which is unrealistic), I replace population here with population available for migration (similar to introducing natural immunity to an SIR model), given by P i = ̄ P i × ρ log( ̄ P i ) where the actual population ̄ P i , is scaled by parameter ρ and the inverse log of the actual population, such that P i = (0 , ̄ P i ). Scaling the population by the inverse log gives lower population hometowns higher rates of overall emigration, capturing the higher emigration rates from rural areas during this period. The final state variable, E it ∈ [0 , 1], represents hometown i ’s exposure to migrating individuals from other hometowns. It is defined as the probability of hometown i having an inter-hometown connection to a migrated individual, given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 5,
+        "text": "E it = P j ̸ = i M jt d − π ij P j ̸ = i P j d − π ij where d ij is the geographic distance between hometowns i and j , and π > 0 is a parameter capturing the rate of decay in inter-hometown connections by distance. The main parameters of the social contagion model are given by the set Θ = { λ, δ, π ρ, μ } . The social network parameters ( λ, δ, π ) determine the releasing of social constraints (i.e. the movement between the unlinked and linked compartment), either through intraor interhometown connections. λ > 0 represents the number of social connections an individual has within their hometown, and δ > 0 the number of connections in other hometowns. The social parameters are assumed to be the same everywhere, and are calibrated using the full sample. Once linked, the individual decision to migrate in hometown i is captured by the proba-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 10,
+        "section_name": "Compartmental Model",
+        "paragraph_id": 6,
+        "text": "bility of migration m i , given by m i = μ log( ̄ P i ) where, similar to population, it is scaled by parameter μ and the log inverse of the actual population, such that m i = (0 , 1). The scaling variables ( ρ, μ ) are calibrated at the nationallevel to capture national-level barriers and incentives to migration. See Appendix 8.2 for a full discussion of the calibration and sensitivity checks. From these, I construct the laws of motion for the three main state variables, i.e the flow rates between the three migration compartments (unlinked to linked to migrated). The law of motion for the migrated population in hometown i is simply determined by the push-pull probability as ∆ M it = m it L it while the law of motion for the unlinked population is determined by the linking rate parameters and is given by ∆ U it = − ( λ ∆ M it + δ ∆ E it ) U it /P i that is, unlinked individuals who generate links through intra/inter-hometown connections. The law of motion for the linked state variable is given by the motion of the other two state variables, as the compartment gains the change in unlinked individuals, but loses the change in migrated individuals, or more specifically ∆ L it = ( λ ∆ M it + δ ∆ E it ) U it /P i − m i L it",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "The model generates two key dynamics that are important for the emigration predictions. The first is spatial diffusion. Provided λ and δ are sufficiently high to support social spread of migration, and π sufficiently high to make long-distance inter-hometown connections rare, then the model predicts the gradual spatial spread of emigration from these early emigration locations. This gives emigration strong path dependency based on the early emigration locations. The second key dynamic is bell-shaped emigration trends. Emigration from a hometown is zero until an individual migrates. Once an individual in a hometown has migrated, intrahometown connections create a contagion reaction (provided λ is not close to zero), rapidly increasing the emigration rate. However, since the population available to migrate is fixed, the hometown becomes saturated with migrated individuals, and emigration rates slow until everyone is in the migrated compartment. Combining these stages creates the bell-shaped trend in emigration rates, with the peak and speed of the wave determined by the actual population and the scaling parameters ( ρ , μ ). 19 Both these dynamics are common predictions 19 Following directly from the bell-shaped curve is also the prediction of beta-convergence in emigration rates. In other words, hometowns that enter the mass migration later will have faster growth in emigration than earlier hometowns. This then predicts a strong negative relationship between past emigration rates and future growth in emigration rates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "of compartmental models. The combination of these dynamics also aggregate up to nationallevel trends bell-shaped emigration patterns. The key question is what determines variation in emigration rates within the model. The first main factor is calibration of the scaling variables at the national-level. This calibration essentially fits the predicted emigration curve to the actual one at the national-level. However, this only impacts cross-country comparisons; the within-country regional variation remains exogenous, and all analysis in the paper uses within-country variation (i.e. all regressions use country-year fixed effects). The second main factor is the distribution of initial emigration, shown in Figure 6. While there are not many towns with non-zero emigration rates in 1892 (only 4%), there may be concern that the distribution may be endogenous to future regional growth. While these locations are clearly not random, the historical evidence suggests that are likely driven by the short-term, idiosyncratic decisions of pioneering migrants, and thus unlikely to be related to future long-term economic growth. I validate this in Appendix 8.2 by showing that early emigration locations do not significant differ from other locations in pre-1892 economic characteristics (although are generally closer to emigration ports). Furthermore, Spitzer & Zimran (2023) trace the Italian mass emigration to both the US and South America to a handful of epicenter municipalities in Figure A1 and find that US and South American epicenters differ considerably, suggesting a lack of inherent epicenter characteristics. This is not to say that underlying economic characteristics did not impact emigration. Indeed, once connected, emigration did grow slightly faster and reach higher peaks in poorer, more rural regions. However, these characteristics do not appear to predict where the emigration movements begin. Finally, emigration patterns are determined by the hometown population and spatial structure of the towns. While highly granular population does not exist for the entirety of Europe for this period, I use modern town populations scaled to the regional population in 1900. While this is imperfect at the town level, ultimately all emigration rates are aggregated back to the regional level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 0,
+        "text": "This section provides visual and empirical evidence for the model performance. Figure 7 & 8 present the cumulative town-level emigration rates for Italy (the largest sending region), comparing actual and contagion-simulated rates. Figure 9 graphs the overall actual vs. simulated emigration rates. The first notable feature is that actual emigration patterns clearly exhibit both spatial diffusion patterns and overall bell-shaped trends (taking into account the collapse in emigration during WWI). The model also clearly captures the diffusion properties, as the simulations appear to provide accurate prediction of both the spatial and temporal variation in emigration rates. This can also be seen for Iberia (Figure D4) and the whole of Southern and Eastern Europe (Figure B2). The total emigration rates are noisy, but are on average well-captured by the model, although this is by largely of the national-level calibration of the scaling variable. 20 This is further supported by the graphical representation of the first-stage relationship for all regions in Figure 10. The predictions highly accurate at the aggregated level, even 20 The model caps predicted emigration at the national-level for WWI, thus exactly matching at the national-level, but keeping regional variation as predicted by the model. Similarly, it caps post-1921 emigration at the actual quota levels set out by the Emergency Quota Act.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 1,
+        "text": "Figure 6: 1892 Town-Level Emigration Frequency",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 2,
+        "text": "when predicting later into the period. In comparison, Figure 11 shows the same first-stage using a standard shift-share instrument: taking the 1892 emigration distribution and dividing the dividing the actual emigration rates by this distribution. While it predicts the 1892-1899 period relatively well, the prediction becomes less accurate the further away it moves from the initial period, highlighting the dynamic nature of emigration composition. Furthermore, there is significant heterogeneity in the strength of the first-stage by country, with the predictions for Spain and Portugal (representing the zero emigration predictions) being substantially worse than for Italy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 3,
+        "text": "Figure 7: Actual vs. Simulated Italian Cumulative Emigration, 1893-1908 (a) 1897 Actual (b) 1901 Actual (c) 1905 Actual (d) 1908 Actual",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 4,
+        "text": "(e) 1897 Simulated (f) 1901 Simulated (g) 1905 Simulated (h) 1908 Simulated",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 5,
+        "text": "Figure 8: Actual vs. Simulated Italian Cumulative Emigration, 1893-1924 (a) 1911 Actual (b) 1914 Actual (c) 1920 Actual (d) 1924 Actual",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 6,
+        "text": "(e) 1911 Simulated (f) 1914 Simulated (g) 1920 Simulated (h) 1924 Simulated",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 7,
+        "text": "Figure 9: Actual vs. Simulated Emigration: Southern Europe",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 12,
+        "section_name": "Model Performance",
+        "paragraph_id": 8,
+        "text": "Notes: The figure illustrates the emigration flows for Italy, Spain and Portugal and the flows predicted by the social contagion model. The grey dashed vertical lines represent the Quotas Acts of 1921 and 1924 respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 13,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "The first step of the empirical strategy is to use the contagion-predicted migration in a two-stage least squares framework with the following first and second-stages: Migrate ict = λ i + γ ct + α 1 \\ Migrate ict + ε ict (1) y ict = ψ i + δ ct + β 1 Migrate ict + ε ict (2) where y ict is the outcome variable (log GDP per capita in the main analysis) of region i in country c at time t . Migrate ict is the log number of migrants per thousand inhabitants from region i in country c that entered the US between t − 1 and t (starting from 1893). \\ Migrate ict is the same migration rate predicted by the model. I include regional and country-year fixed effects (year fixed effects are absorbed by the country-year fixed effects). Standard errors are clustered at the regional level. The coefficient of interest then is β 1 , which can be interpreted as the emigration elasticity of GDP per capita, or the percent change in GDP per capita with a one percent increase in emigration rate. The key identifying assumption is that the determinants of emigration in the contagion model (as discussed in Section 4.3) are exogenous to future economic growth. The determinants are all fixed at pre-1893 levels and do not directly include any economic factors. The inclusion of region fixed effects and country-year fixed effects controls for any time invariant regional confounders or country-level shocks. However, there may be concerns that the model determinants are correlated with time-varying determinants of growth, or that the effect of the time-invariant factors changes over time, particularly as Southern Europe was in the early stages of industrialization during this period.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 13,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 1,
+        "text": "Figure 10: First-Stage Relationship",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 13,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "Notes: The figure graphs the actual log migration rates against the log migration rates simulated by the social contagion model for Italian, Spanish and Portuguese NUTS2 regions across three periods. The gray line is the 45 degree line where simulated migration rates equal actual migration rates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 13,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 3,
+        "text": "Figure 11: First-Stage Relationship: Shift-Share Instrument",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 13,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 4,
+        "text": "Notes: The figure graphs the actual log migration rates against the log migration rates predicted by a shift-share instrument for Italian, Spanish and Portuguese NUTS2 regions across three periods. The gray line is the 45 degree line where simulated migration rates equal actual migration rates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 13,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 5,
+        "text": "To address concerns of endogeneity in the early emigration locations, I consider a ‘leaveout’ version of the contagion instrument that drops predicted emigration from any town with non-zero emigration in 1892, thus only using variation in towns with no emigration in the initial conditions. I also consider controlling for initial emigration rate (interacted with time dummies) and dropping the highest emigration rate region from each country in 1892. To address concerns that major ports may be correlated with both emigration and growth, I control for distance to ports (interacted with time dummies). 21 Finally, I consider a battery of time-invariant controls interacted with time dummies, including population density, town density, elevation, ruggedness, latitude, longitude, and fertility, as well as time-varying factors such as length of railway. To evaluate the impact of the Quota Acts, I use the contagion model to simulate how emigration would have continued in the absence of the restriction. I simulate unrestricted migration from 1921-1929, as emigration would have likely collapsed with the Great Depression from 1930. I compare actual with simulated emigration to estimate the regional exposure to the Quota Acts by the number ‘missing migrants’. This is combined with the estimated elasticity calculated above to evaluate the regional impact of the restriction on GDP per capita. I consider more conservative as well as more liberal simulations by adjusting the scaling variables down/up 10% from the benchmark.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 15,
+        "section_name": "Effect of Emigration on Economic Growth",
+        "paragraph_id": 0,
+        "text": "The main results are presented in Table 1, with Columns 1 and 2 progressively adding fixed effects, Column 3 providing the preferred estimate, and Column 4 using a shift-share instrument instead for comparison. The contagion instrument has very strong first-stages, although the size of the F-statistic can be largely disregarded for Columns 1 & 2, as the predictions are scaled at the national-level and these specifications do not include countryyear fixed effects. The shift-share instrument is substantially weaker, but marginally above the F = 10 threshold. The results show that emigration had a significantly positive impact on economic growth. The OLS estimates are all positive, but consistently smaller in magnitude than the 2SLS estimates, suggesting negative bias in the OLS estimates. The direction of the bias suggests slower economic growth led to higher rates of emigration, which is to be expected. The preferred 2SLS estimate in Column 3 is large in magnitude with an elasticity of 0.12, or, in other words, a 10% increase in emigration leads to a 1.2% increase in GDP per capita. The shift-share estimate is even larger in magnitude but less precise, suggesting that ignoring the dynamic change in emigration composition may lead to an overestimation of the impact of emigration on development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 16,
+        "section_name": "Heterogeneity Analysis",
+        "paragraph_id": 0,
+        "text": "TBC 21 For Southern Europe, this includes Naples, Genoa, Palermo, Trieste, Lisbon, Porto and Barcelona.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 16,
+        "section_name": "Heterogeneity Analysis",
+        "paragraph_id": 1,
+        "text": "Table 1: Effect of Emigration on Regional Development",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 16,
+        "section_name": "Heterogeneity Analysis",
+        "paragraph_id": 2,
+        "text": "Log GDP Per Capita (1) (2) (3) (4) A: OLS Estimates Migration ict 0 . 062 ∗∗ 0 . 024 ∗∗ 0 . 091 [FORMULA] 0 . 091 [FORMULA] (0 . 025) (0 . 009) (0 . 025) (0 . 025) A: Reduced Form Estimates \\ Migration ict 0 . 063 [FORMULA] 0 . 036 [FORMULA] 0 . 089 [FORMULA] 0 . 040 ∗∗ (0 . 021) (0 . 008) (0 . 030) (0 . 018) C: 2SLS Estimates Migration ict 0 . 069 [FORMULA] 0 . 040 [FORMULA] 0 . 117 [FORMULA] 0 . 130 [FORMULA] (0 . 024) (0 . 009) (0 . 036) (0 . 050) F-stat 715.47 858.63 185.64 10.60 N 164 164 164 164 N of Regions Two-Way FE Y Y Y Country-Year FE Y Y Contagion Instrument Y Y Y Shift-Share Instrument Y The table reports the effect of emigration rates on regional economic growth. The outcome variable is log GDP per capita. Migration is the log number of migrants per thousand inhabitants. \\ Migration is the log number of migrants per thousand inhabitants as predicted by the social contagion model. F-stat refers to the Kleibergen–Paap F-stat for weak instruments. Robust standard errors, clustered at the regional level, in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 18,
+        "section_name": "Counterfactual Analysis",
+        "paragraph_id": 0,
+        "text": "The total simulated unrestricted emigration is illustrated in Figure 12. It shows the counterfactual simulation is relatively conservative, predicting that emigration rates would have likely declined from their peaks; but even under this conservative case, the Quota Acts prevented the entry of nearly two million migrants in less than ten years. However, this hides significant variation in the restriction exposure. Figure 13 compares counterfactual emigration between Italy and Iberia, and shows that while Italian emigration was largely saturated by 1920 and would have likely declined, Iberian emigration was growing rapidly and would have overtaken Italian emigration. 22 Furthermore, Appendix Figure G7 compares the cumulative emigration rate and the rate of ‘missing migrants’ predicted by the simulation. This illustrates that the most exposed regions are not those with the lowest emigration rates (as these would not reach peak emigration within 10 years) or those with the highest rates (as these would be largely saturated and have declining emigration rates). Rather, the most exposed regions are those with medium levels of emigration that were poised to enter peak emigration at the time of restriction. Overall, this emphasizes the dynamic nature of emigration across both spatial and temporal dimensions, and that using static measures therefore lead to highly inaccurate identification of restriction exposure. Figure 14 graphs the estimate effect of the Quota Acts on economic growth under the main elasticity estimation and simulation parameters. It shows that even using relatively conservative counterfactual emigration over a relatively short period of time, the Quota Acts resulted in a large decline in economic growth. GDP per capita was on average 10.6% lower than the counterfactual unrestricted case in 1938, equivalent to a 0.7 percentage point reduction in the annual growth rate from 1921-1929, or over US $ 40 billion at current levels.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 0,
+        "text": "In the final section, I explore a number of potential mechanisms to explain the emigration and restriction effects. I first examine how the effect differs by return migration. Return migration is a particularly important determinant of development outcomes from emigration, impacting labor supply effects as well as potential brain drain vs. brain gain effects. I then examine the effect on the regional economic structure, namely labor supply and sectoral employment. Finally, I provide some descriptive evidence to the role of remittances. 22 This is not surprising when comparing early emigration rates (shown in Appendix Figure F6), which show Iberian emigration patterns align closely with Italian patterns (and share similar economic and demographic structure and overall population), but lagging around 15 years behind. The later period panels in Figure D4 also show evidence that emigration in Iberia was reaching the rapid spread phase of the emigration wave, similar to Italy in the early 1900s.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 1,
+        "text": "Figure 12: Counterfactual Unrestricted Emigration: Southern Europe",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 2,
+        "text": "Notes: The solid lines represent actual emigration flows for Italy, Spain and Portugal. The long dashed lines from 1921 to 1930 represent how the contagion-simulated emigration flows under the main calibration. The short dash lines represent simulated flows under more optimistic and conservative calibrations respectively. The red vertical lines indicate the Quota Acts of 1921 and 1924 respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 3,
+        "text": "Figure 13: Counterfactual Unrestricted Emigration: Italy vs. Iberia",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 4,
+        "text": "Notes: The solid lines represent actual emigration flows. The long dashed lines from 1921 to 1930 represent how the contagion-simulated emigration flows under the main calibration. The short dash lines represent simulated flows under more optimistic and conservative calibrations respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 5,
+        "text": "Figure 14: Counterfactual Emigration and Economic Growth (a) Actual vs. Counterfactual Emigration (1900-1929)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 6,
+        "text": "(b) Actual vs. Counterfactual Log GDP Per Capita (1900-1938)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 19,
+        "section_name": "Mechanisms",
+        "paragraph_id": 7,
+        "text": "Notes: The graphs show the actual and counterfactual emigration rates (Panel A) and log GDP per capita (Panel B) for Italy, Spain and Portugal. The counterfactual emigration rates are generated by the contagion model under the main calibration. The counterfactual log GDP per capita combines the difference in actual and counterfactual emigration from Panel A with the emigration elasticity of GDP from the 2SLS estimates in Table 1. The red dashed lines represent the 95% confidence interval of the emigration elasticity estimates. The grey vertical dashed lines indicate the Quota Acts of 1921 and 1924 respectively.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 20,
+        "section_name": "Return and Lagged Migration",
+        "paragraph_id": 0,
+        "text": "To evaluate the role of return migration, I estimate regional rates of return by combining the Ellis Island data with US Census data. I first calculate the stock of immigrants from each sending region in the 1900, 1910, 1920 and 1930 US Censuses. I collapse the universe of immigrants in the Census into surname, country of birth, year of immigration and mother tongue cells. 23 I then impute probabilistic origins to each cell based on the same characteristics in the Ellis Island data. 24 I then use the method developed by Bandiera et al. (2013) to estimate the regional rate of return between Census dates. This combines the change in stock levels between the two Censuses with the flow rate from the Ellis Island data, assuming the migrants ‘missing’ in the latter Census have returned home (net the estimated mortality rate over the decade). 25 The full methodology is described in Appendix 8.3 with the return rates for Southern Europe shown in Appendix Figure I9. Return rates are high for Southern Europe, averaging over 70%, but with substantial variation between 50 and 90%. Table 2 reports the effects of return and lagged emigration on economic growth. Lagged emigration has little impact on economic growth, except after restriction, where it provides a small positive effect. However, log return migration per capita and interacting the overall return rate with emigration both have strong positive effects on GDP per capita. Once return migration is controlled for, emigration has essentially no effect on economic growth. While this remains only correlative evidence as return migration is not instrumented and likely endogenous to growth, the findings suggest that the main results are largely driven by return migration rather than emigration.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 21,
+        "section_name": "Labor Supply and Sectoral Employment",
+        "paragraph_id": 0,
+        "text": "Table 3 reports the effect of emigration and return on regional population. Emigration alone surprisingly has no discernible impact on population. However, this is due to the high rates of return migration; once this are taken into account, emigration has a negative effect and return a positive effect, as expected. Regardless, the estimates remain quite small and not statistically significant. This likely reflects the fact that we do not observe emigration to other destinations in the data, and thus low emigration regions may have been migrating elsewhere. Table 4 reports the effect of emigration and return on the share of employment in agricultural and industrial sector. The results show a shift out of agriculture into industry, with 23 Surnames are particularly important in this process as they have been shown to be highly regionally specific during this period (Brum 2019). Mother tongue is recorded in the 1910, 1920 and 1930 Censuses, but not in 1900, so is dropped from the imputation algorithm for that period. 24 For example, a Census cell with surname ‘Kowalski’, place of birth ‘Austria’, year of entry 1908 and mother tongue ‘Polish’ contains 10 individuals in the 1910 Census. If in the Ellis Island data, 80% of migrants with those characteristics are from Galicia and 20% from Lodz, then the algorithm would assign 8 people to Galicia, and 2 to Lodz. 25 The measure represents an upper bound estimate of return migration, since missing migrants may not have migrated to a different country or region. While the historical evidence suggests the vast majority of migrants did return to their home region (Ejermo et al. 2022), there is still likely some overestimation. This may attenuate the estimates, but should not further bias the estimates provided there is no systematic correlation between error in the return rate estimation and economic development.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 21,
+        "section_name": "Labor Supply and Sectoral Employment",
+        "paragraph_id": 1,
+        "text": "Table 2: Effect of Lagged and Return Migration on Regional Development",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 21,
+        "section_name": "Labor Supply and Sectoral Employment",
+        "paragraph_id": 2,
+        "text": "Log GDP Per Capita (1) (2) (3) (4) (5) Migration ict 0 . 119 [FORMULA] 0 . 132 ∗∗ 0 . 132 ∗∗ 0 . 010 0 . 011 (0 . 036) (0 . 061) (0 . 061) (0 . 035) (0 . 078) Migration ic,t − 1 0 . 007 0 . 001 (0 . 029) (0 . 022) Migration ic,t − 1 × 0 . 024 0 . 024 Restict t (0 . 067) (0 . 064) ReturnMigration ict 0 . 086 ∗∗ (0 . 041) Migration ic,t − 1 × 0 . 127 ReturnRate ic (0 . 095) F-stat 77.45 38.16 23.10 106.81 133.36 N 164 164 164 164 164 N of Regions Two-Way FE Y Y Y Y Y Country-Year FE Y Y Y Y Y The table reports the effect of emigration rates on regional economic growth. The outcome variable is log GDP per capita. Migration is the log number of migrants per thousand inhabitants. Restrict is a binary variable equal to one after 1924. ReturnMigration is the log number of returned migrants per thousand inhabitants, while ReturnRate is the rate of return for the entire period (1893-1930). F-stat refers to the Kleibergen–Paap F-stat for weak instruments. Robust standard errors clustered at the regional level in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 21,
+        "section_name": "Labor Supply and Sectoral Employment",
+        "paragraph_id": 3,
+        "text": "a doubling of emigration rates leading to a 10% increase in the industrial/agricultural employment ratio, although not statistically significant. However, the results are significantly different by the regional rate of return. Regions in the lowest quintile of return had essentially no change in the industrial/agricultural employment ratio, while regions in the highest quintile had an estimated 21% increase relative to the mean with a doubling in the emigration rate. This is consistent with the historical evidence that while most of the emigrants were drawn from the agricultural sector, a substantial proportion of these individuals chose to shift into industrial employment upon return (Cerase 1974, Fernihough & ́ O Gr ́ada 2024).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 23,
+        "section_name": "Remittance Flows",
+        "paragraph_id": 0,
+        "text": "Finally, I provide descriptive evidence on the role of remittances. While data on remittances is scarce, I use pre-WWI national averages of money sent home per year per emigrant abroad and money brought back per return migrant from Esteves & Khoudour-Cast ́eras (2009). I extrapolate these national per-migrant averages to the regional emigration and return rates to roughly estimate regional remittance flows. Using the simulated unrestricted migration can also estimate how remittances would have developed in the absence of the restriction. The results are shown in Appendix Figure H8, and essentially calculates remittances as a smoother, slightly lagged function of emigration. The graph illustrates that remittance flows were substantial, around 2-3% of GDP at the peak of the emigration movement, with the majority coming from returning migrants rather than money sent from abroad. It further illustrates the magnitude of the lost remittance as a result of the Quota Acts, over 4% of GDP.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 24,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In the public and academic discourse around immigration restrictions, the economic impacts on sending regions is often overlooked, despite it having potential large effects on local development (Clemens 2011). However, evaluating these impacts is significantly hampered by a lack of sub-national emigration data and causal identification challenges. This paper overcomes this with the construction of most extensive and granular dataset of emigration using Ellis Island administrative data and a novel identification strategy utilizing epidemiological modeling. I apply this to an evaluation of the Quota Acts of the early 1920s in the US that severely restricted immigration from developing regions in Europe. I find the restrictions significantly slowed long-run economic growth in exposed sending regions. I show this is likely driven by the disruption to the circular migration process that was bringing back human capital and savings that helped to foster industrialization.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 24,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "Table 3: Effect of Emigration on Regional Population",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 24,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "Log Population (1) (2) (3) A: OLS Estimates Migration ict − 0 . 008 − 0 . 009 − 0 . 043 ∗ (0 . 013) (0 . 012) (0 . 023) Migration ic,t − 1 − 0 . 008 (0 . 019) ReturnMigration ict 0 . 051 ∗ (0 . 030) B: 2SLS Estimates Migration ict 0 . 001 − 0 . 002 − 0 . 021 (0 . 017) (0 . 017) (0 . 036) Migration ic,t − 1 0 . 014 (0 . 023) ReturnMigration ict 0 . 031 (0 . 037) F-stat 185.64 77.45 49.53 N 164 164 164 N of Regions Region FE Y Y Y Country-Year FE Y Y Y The table reports the effect of emigration rates on population. Migration is the log number of migrants per thousand inhabitants. ReturnMigration is the log number of returned migrants per thousand inhabitants. F-stat refers to the Kleibergen–Paap F-stat for weak instruments. Robust standard errors clustered at the regional level in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 24,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "Table 4: Effect of Emigration and Return on Sectoral Employment",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1615,
+        "section_id": 24,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "Agricultural Industrial Ind./Agric. Employ Share Employ Share Employ Ratio (1) (2) (3) (4) (5) (6) A: OLS Estimates Migration ict − 0 . 006 0 . 039 0 . 005 − 0 . 033 − 0 . 010 − 0 . 279 [FORMULA] (0 . 008) (0 . 008) (0 . 007) (0 . 022) (0 . 039) (0 . 127) Migration ic,t × − 0 . 056 ∗ 0 . 047 ∗ 0 . 349 ∗ ReturnRate ic (0 . 033) (0 . 026) (0 . 140) B: 2SLS Estimates Migration ict − 0 . 012 0 . 040 0 . 011 − 0 . 031 0 . 045 − 0 . 180 ∗ (0 . 011) (0 . 031) (0 . 008) (0 . 020) (0 . 036) (0 . 105) Migration ic,t × − 0 . 066 ∗ 0 . 054 ∗∗ 0 . 301 ∗∗ ReturnRate ic (0 . 039) (0 . 027) (0 . 144) Mean of D.V. 0 . 589 0 . 589 0 . 202 0 . 202 0 . 427 0 . 427 F-stat 185.64 133.36 185.64 133.36 185.64 133.36 N 164 164 164 164 164 164 N of Regions Region FE Y Y Y Y Y Y Country-Year FE Y Y Y Y Y Y The table reports the effect of emigration rates on population and sectoral employment. The outcome variable is share of working age population in agriculture for Columns 1 and 2, and share in the industrial sector for Columns 3 and 4, and the ratio of working age employment in industry/agricultural for Columns 5 and 6. Migration is the log number of migrants per thousand inhabitants. ReturnRate is the rate of return migration for the entire period (1893-1930). F-stat refers to the Kleibergen–Paap F-stat for weak instruments. Robust standard errors, clustered at the regional level, in parentheses. * p < 0 . 1, ** p < 0 . 05, [FORMULA] p < 0 . 01",
+        "extraction_warnings": ""
+    }
+]

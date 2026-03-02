@@ -1,0 +1,946 @@
+[
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Non-Monitoring Monitoring in Teams ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Hyungmin Park University of Warwick † Chan-Oi Song Korea University ‡",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Abstract We study how a principal incentivizes team production using the mere possibility of costly peer monitoring. The principal offers wages and free-rider reporting bonuses, both payable only upon team success. By promising large reporting bonuses, agents’ incentives shift: anticipating others’ shirking no longer leads to shirking, but to working and monitoring peers. Shirking is thus deterred ex ante, and equilibrium involves no actual monitoring. Unlike hierarchical schemes relying on strategic rents ( Winter , 2004 ), our mechanism uniquely implements full effort without rents, at the same cost as partial implementation. This highlights the preventive role of off-path contractual clauses under limited liability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "A central challenge in designing team incentives lies in managing strategic uncertainty from complementarities and limited observability. Each worker’s payoff depends not only on their own effort but also on others’. When project success depends on joint effort and rewards are contingent on it, each worker’s incentive depends on beliefs about others’ unobserved actions. A worker may shirk if they expect others to do so—even if the reward suffices when all work. A common approach to mitigating this issue is to introduce peer-based monitoring systems, in which team members may report observed shirking to the principal, thereby linking punishment to credible peer reports. Yet there are difficulties in implementing an effective peer-based monitoring system. Peer monitoring is costly, and even with monitoring, some shirking can go unnoticed. As a result, workers monitor only when they suspect a peer is shirking, undermining its deterrent effect. However, when monitoring does lead to a report, it confirms shirking has already occurred—precisely what the principal aims to prevent. Can shirking be deterred simply through the availability of peer monitoring, even if actual monitoring does not occur? ∗ We are grateful to Dan Bernhardt, Costas Cavounidis, Danielle Condorelli, Mira Frick, Alkis GeorgiadisHarris, Francesco Squintani, Ilan Kremer, Herakles Polemarchakis and Debraj Ray for helpful conversations, and audiences at Warwick MWIP seminar for useful comments. Nevertheless, we absolve them from responsibility for any errors in the paper and the opinions expressed herein. † University of Warwick. hyungmin.park@warwick.ac.uk ‡ Korea University. gnos@korea.ac.kr",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 4,
+        "text": "We formalize this question in a team production characterized by moral hazard and effort complementarities. Each agent privately chooses whether to work or shirk. Working is individually costly, but its marginal productivity increases with the number of agents who also work. Agents may monitor a subset of their peers at a cost, and if shirking is observed, they can submit verifiable reports to the principal. However, monitoring is imperfect and may fail to detect shirking even when it occurs. The principal cannot observe effort choices or monitoring, but only sees project success and any reports of shirking. Consistent with standard moral hazard models under limited liability, the principal cannot impose negative transfers. The objective is to design a cost-minimizing incentive scheme that uniquely implements full effort by all agents. We show that the mere contractual inclusion of a peer monitoring option, together with outcome-contingent bonus, can implement full effort by all agents as the unique Nash equilibrium. The key mechanism is off-path deterrence via latent free-rider reporting bonus: although no monitoring occurs in equilibrium, the contractually specified rewards make shirking strictly dominated for each agent. If the bonus is sufficiently large, a worker who suspects shirking by a peer has an incentive to monitor. Because the bonus is granted only upon project success, a monitoring worker also has an incentive to work, as his effort increases the project’s chance of success—and hence their own chance of being rewarded. Our result suggests a new approach to incentive design under limited liability: coordination can be sustained without monitoring or punishment, by embedding outcome-contingent free-rider reporting bonus that remains off-path. This design stands in contrast to the incomplete contracts tradition (e.g., Grossman and Hart , 1986 ; Hart and Moore , 1999 ), which emphasizes the value of leaving contracts open to renegotiation in light of unforeseen contingencies. Instead, our mechanism shows how dormant but verifiable clauses—similar to overspecified contracts ( Squintani , 2019 )—can discipline behavior through off-path incentives. This mechanism challenges the standard view in contract theory that discipline requires active monitoring and credible punishment. For instance, Alchian and Demsetz ( 1972 ) argue that effective discipline relies on active monitoring backed by threats of dismissal or reduced pay. Rahman ( 2012 ) formally shows that incentive compatibility requires some positive probability of on-path monitoring, and that deviations must result in detectable losses. By contrast, our mechanism imposes no punishment, requires no monitoring in equilibrium, and relies solely on the contractible availability of verifiable rewards off the equilibrium path. 1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 5,
+        "text": "Related Literature. Our paper contributes to the literature on contracting with externalities, where strategic interdependence among agents leads to coordination failures. Se1 This non-punitive structure has the additional benefit of simplifying contract design: transfers depend only on project success and an agent’s own report of observed shirking, and are entirely independent of others’ reports. This reduces the burden of designing contracts that require careful incentive alignment.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 6,
+        "text": "gal ( 2003 ) addresses this problem through “divide-and-conquer” contracts that use payoff discrimination across agents. In moral hazard settings with effort complementarity, Winter ( 2004 ) shows that unique implementation requires hierarchical contracts with strategic rents. 2 Halac et al. ( 2021 ) achieve unique implementation without hierarchy by using private contracts that induce optimistic beliefs about others’ effort. Their approach eliminates the need for hierarchy, but continues to rely on strategic rents. Cavounidis and Park ( 2025 ) resolve strategic uncertainty by delegating reward allocation and leveraging forward induction. In contrast, our mechanism achieves unique implementation by embedding a contractible, outcome-contingent free-rider reporting bonus—a verifiable clause that is never triggered in equilibrium. A line of research examines how observability affects the design of incentives, distinguishing between principal-led monitoring and mutual observation among agents. One strand focuses on principal-led monitoring under noise or capacity constraints ( Gershkov and Winter , 2015 ; Halac et al. , 2023 ; Camboni and Porcellacchia , 2025 ). Among agents, Ma ( 1988 ) shows that with costless and perfect mutual observation, cross-reports can uniquely implement the first-best. However, when observation for verified reporting is costly, agents cannot be incentivized to simultaneously observe and work in this manner. We instead propose an off-path mechanism based on contractible peer monitoring. A similar structure appears in Marx and Squintani ( 2009 ) and Squintani ( 2019 , Example 3), where overspecified contracts mandate both effort and monitoring, but only effort is implemented in equilibrium. Under individual liability, low output alone does not reveal who shirked, making punishment infeasible. With a monitoring clause, low output without a report signals a breach—making punishment feasible and deterring shirking. Our framework departs from theirs along two fronts. First, their setting features perfect complementarity, where any shirking leads to low output. In contrast, ours involves strategic complementarity, allowing free-riding and multiple equilibria absent appropriate incentives. Second, their mechanism deters shirking via penalties for breach of monitoring duty, while ours relies on outcome-contingent bonus for reporting free-riders. Other studies examine observability in sequential production environments, where agents observe predecessors’ actions, which can facilitate coordination ( Winter , 2006 , 2009 ; Gershkov and Winter , 2015 ; Winter , 2010 ; Lu and Song , 2025 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 0,
+        "text": "We present a stylized example to illustrate our main results. Consider two workers, i = 1 , 2, each assigned a distinct task on a joint project. If worker i works ( W ), his task is completed with certainty; if shirks ( S ), it is completed with probability θ i ∈ (0 , 1). The project succeeds 2 When effort is substitutable, Winter ( 2004 ) argues such rents are unnecessary. In this regard, Cusumano et al. ( 2024 ) show that when the principal can choose the output structure, she can reduce such rents by counteracting complementarities.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 1,
+        "text": "if and only if both tasks are completed. Each worker incurs cost c > 0 to work and d > 0 to monitor the other, obtaining verifiable evidence of shirking with probability q ∈ (0 , 1]. Effort and monitoring choices are made simultaneously. As a benchmark, suppose the principal offers a contract under which wages depend solely on project success. The standard approach is to set wages so that working is a best response, given that the teammate works. Specifically, let worker i receive a wage w i = c/ (1 − θ i ) upon project success, and zero otherwise. Then, if worker − i works, worker i ’s best response is to work, since w i − c ≥ θ i w i , where the leftand right-hand sides represent the expected payoffs from working and shirking, respectively. However, this equilibrium is fragile under strategic uncertainty. If worker − i shirks, worker i ’s payoff from working drops to θ − i w i − c , which is less than the payoff from shirking θ i θ − i w i . The contract thus supports multiple equilibria: both work, or both shirk. Since the incentive to work depends on believing that the teammate also works, we refer to w = ( w 1 , w 2 ) as a partial implementation wage —a wage vector that ensures the desired outcome at minimal cost, but does not eliminate the undesired one. This multiplicity arises due to effort complementarity. The marginal contribution from working is θ − i (1 − θ i ) if the teammate shirks; and 1 − θ i if the teammate works. Thus, uncertainty about the teammate’s effort creates a risk of low marginal return, weakening the incentive to work. To ensure that both agents work in equilibrium, Winter ( 2004 ) proposes a hierarchical incentive scheme. Suppose w i > c/ { θ − i (1 − θ i ) } . Then, worker i strictly prefers to work regardless of the teammate’s action. If the teammate shirks, the payoff from working θ − i w i − c exceeds the payoff from shirking θ i θ − i w i ; if the teammate works, w i − c > θ i w i . Given that worker i always works, worker − i also works if w − i > c/ (1 − θ − i ), since w − i − c > θ − i w − i by the same logic. Under the wage conditions just described, both workers have a dominant strategy to work. This requires paying strategic rents—extra transfers that guarantee effort regardless of beliefs—which results in higher total wages than under partial implementation. However, if total wages w 1 + w 2 fall below",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 2,
+        "text": "min i ∈{ 1 , 2 } \u001a c θ − i (1 − θ i ) + c 1 − θ − i \u001b ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 3,
+        "text": "the outcome is no longer dominance-solvable, and multiple equilibria re-emerge. We now ask whether peer monitoring can be incorporated into the contract to uniquely implement effort at a lower cost than the hierarchical scheme, given that workers can verify their teammates’ shirking at a cost. A fundamental challenge is that, once agents expect that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 4,
+        "text": "effort will be exerted, monitoring becomes a pure cost, as shirking is not expected to occur. As a result, any strategy profile in which both agents choose to exert effort and monitor cannot constitute an equilibrium, since agents strictly prefer not to monitor—rendering the threat of monitoring non-credible. To incentivize monitoring, some shirking must occur in equilibrium, which is undesirable. Even in such an environment, a carefully designed contract using monitoring can overcome strategic uncertainty without requiring strategic rents. Consider a contract that transfers wages ( w 1 , w 2 ) and free-rider reporting bonuses ( b 1 , b 2 ) upon project success, where bonuses are awarded for reporting verified shirking. We show that such a contract, with wages near the partial implementation wage, can sustain work as the unique equilibrium. Each agent selects a pair of actions from the set { W, S } × { M, N } , where W denotes work, S shirk, M monitor the teammate, and N not monitor, yielding four pure strategies: ( W, M ) , ( W, N ) , ( S, M ) , ( S, N ). Table 1 lists worker 1’s expected payoffs (row player), conditional on worker 2’s strategy (column player). Based on this payoff table, we verify that the two pure strategies involving shirking are strictly dominated in the following two steps.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 5,
+        "text": "( W, M ) ( W, N ) ( S, M ) ( S, N ) ( W, M ) w 1 − c − d w 1 − c − d θ 2 ( w 1 + qb 1 ) − c − d θ 2 ( w 1 + qb 1 ) − c − d ( W, N ) w 1 − c w 1 − c θ 2 w 1 − c θ 2 w 1 − c ( S, M ) θ 1 w 1 − d θ 1 w 1 − d θ 1 θ 2 ( w 1 + qb 1 ) − d θ 1 θ 2 ( w 1 + qb 1 ) − d ( S, N ) θ 1 w 1 θ 1 w 1 θ 1 θ 2 w 1 θ 1 θ 2 w 1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 6,
+        "text": "Table 1. Payoff matrix of worker 1 with wage w 1 and free-rider reporting bonus b 1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 7,
+        "text": "Step 1: Elimination of ( S, M ) If worker 2 works, the payoff from ( W, M ) exceeds that from ( S, M ) by (1 − θ 1 ) w 1 − c > 0 . If worker 2 shirks, the payoff difference becomes",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 8,
+        "text": "θ 2 (1 − θ 1 )( w 1 + qb 1 ) − c,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 9,
+        "text": "which is positive for sufficiently large b 1 . Hence, ( S, M ) is strictly dominated.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 10,
+        "text": "Step 2: Elimination of ( S, N ) Consider a mixed strategy that assigns probability p to ( W, M ) and 1 − p to ( W, N ). When worker 2 works, the payoff from this mixture exceeds that from ( S, N ) by (1 − θ 1 ) ε − pd,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 11,
+        "text": "which is positive for p < (1 − θ 1 ) ε/d . Let ˆ p be such a value. If worker 2 shirks, the payoff difference becomes θ 2 (1 − θ 1 ) w 1 + ˆ p ( θ 2 qb 1 − d ) − c, which is again positive for large enough b 1 . Thus, ( S, N ) is strictly dominated.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 12,
+        "text": "These two steps eliminate all pure strategies involving shirking. Since monitoring brings no benefit once effort is ensured, the unique equilibrium strategy is ( W, N ) for both workers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 13,
+        "text": "Why Outcome-Independent Rewards Fail. If the bonus is not contingent on project success, it fails to eliminate strategic uncertainty when the wage is close to the partial implementation wage. Suppose the principal pays a high b i upon a report, irrespective of project success. Then the payoff difference between ( W, M ) and ( S, M ), when worker − i shirks, is θ − i (1 − θ i ) w i − c < 0 , which implies that the bonus fails to align worker i ’s incentive with effort. As a result, ( S, M ) remains an equilibrium strategy. Moreover, monitoring not only fails to induce effort but also rewards shirking. Making bonuses contingent on the outcome is therefore crucial for resolving strategic uncertainty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 1,
+        "section_name": "Simple Example",
+        "paragraph_id": 14,
+        "text": "Why Limited Liability Penalties Do Not Perform Better. A natural question is whether incorporating punishment for shirking under limited liability can achieve better outcomes than the contracts we have considered. To see this, consider a contract where an agent caught shirking receives zero payment, regardless of the project outcome. Suppose that the strategy profile σ ∗ is a Nash equilibrium in which all agents choose to work. Since shirking is off-path and monitoring imposes a cost, agents strictly prefer not to monitor. Hence, the only actions taken in equilibrium are ( W, N ). If the wage w i falls below the partial implementation wage w i < c/ (1 − θ i ), agent i can profitably deviate to ( S, N ), since, in equilibrium, the other agent does not monitor him. Thus, the penalty fails to deter shirking and cannot support the work-only equilibrium at a lower cost. This result demonstrates that outcome-contingent rewards are not just effective but optimal under limited liability. In equilibrium, since monitoring decisions are private and no agent finds it worthwhile to monitor, the threat of being caught is never realized. As a result, punishment—though nominally present under limited liability—plays no role in sustaining effort, rendering punishment redundant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 0,
+        "text": "We consider a principal who designs a contract for a subset N of n ≥ 2 agents. Each agent i ∈ N chooses e i ∈{ W, S } , where W and S denote work and shirk. Working incurs a cost c i > 0, while shirking is costless. Each agent may also monitor others. Let m ij ∈{ 0 , 1 } indicate whether agent i monitors agent j , with m ij = 1 meaning agent i monitors agent j , and m ij = 0 otherwise. Let m i = ( m ij ) j ̸ = i ∈{ 0 , 1 } n − 1 denote agent i ’s monitoring vector. Monitoring each peer incurs a cost d i > 0, and both effort and monitoring decisions are private and unobservable to the principal. The pure strategy of agent i is the pair ( e i , m i ) ∈{ W, S } × { 0 , 1 } n − 1 . If agent i monitors agent j who shirks, he obtains verifiable evidence with probability q , and nothing otherwise. If agent j works, monitoring j yields no information. 3 Reporting such evidence to the principal is costless. The project either succeeds or fails, with the probability determined by agents’ effort choices. Let W ⊆ N denote the set of agents who work. 4 The project succeeds with probability P ( W ). We assume that P : 2 N → (0 , 1] is strictly increasing and strictly supermodular. The former means that adding workers raises the success probability; the latter reflects effort complementarity—an agent’s marginal contribution of work increases with the number of others working.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 1,
+        "text": "Assumption 1. For any W 1 , W 2 ⊆ N , P ( · ) satisfies 1. Strict monotonicity: if W 1 ⊊ W 2 , then P ( W 1 ) < P ( W 2 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 2,
+        "text": "2. Strict supermodularity: P ( W 1 ∪ W 2 ) − P ( W 1 ) > P ( W 2 ) − P ( W 1 ∩ W 2 ) whenever W 1 ̸⊂ W 2 and W 2 ̸⊂ W 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 3,
+        "text": "We now describe the incentive scheme in which the principal specifies wages and freerider reporting bonuses to induce effort. The principal commits to paying each agent i a wage w i ≥ 0. She also promises agent i a bonus b i ≥ 0 for each verifiable report he provides that another agent shirked. Both the wage and the bonus are paid only if the project succeeds. The restriction to non-negative, outcome-contingent transfers can be interpreted as limited liability on both sides. The principal cannot impose losses on agents when the project fails, nor is contractually required to compensate them unless it succeeds. This contingency of transfers also aligns with theoretical precedent: Holmstr ̈om ’s ( 1982 ) seminal analysis of 3 This assumption reflects an asymmetry in verifiability. Shirking can be detected by observing a specific deviation, but confirming work would require ruling out shirking over the entire task, which is practically infeasible. 4 We sometimes abuse notation by using W and S to refer to the sets of working and shirking agents, respectively; that is, W = { i ∈ N : e i = W } and S = N \\ W .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 4,
+        "text": "moral hazard in teams shows that paying agents regardless of project outcome is suboptimal. As discussed in Section 1 , unconditional bonus is likewise useless in resolving the strategic uncertainty in our model. 5 Since reporting is costless, an agent who obtains verifiable evidence of shirking always has an incentive to submit it to the principal. An incentive scheme ( w , b ), consisting of a wage scheme w = ( w i ) i ∈ N and a bonus scheme b = ( b i ) i ∈ N , defines a simultaneous game among the agents. Each agent’s payoff is his expected wage and bonus, net of effort and monitoring costs. The principal’s total expected payment is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 5,
+        "text": "P ( W )    X i ∈ N w i + X i ∈ N X j ∈ N \\ W,j ̸ = i qm ij b i    . (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 6,
+        "text": "Here, P ( W ) is the probability of success, w i is the wage paid to agent i , and qm ij b i is the expected bonus earned by agent i for monitoring an agent j who shirks. The principal seeks a least-cost incentive scheme under which all agents work for every Nash equilibrium of the induced game. In this case, no bonuses are paid in equilibrium, and the principal’s expected payment reduces to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 7,
+        "text": "P ( N ) X i ∈ N w i . (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 8,
+        "text": "The principal’s problem is to minimize total wages over all w such that full effort is uniquely implemented for some bonus scheme b . To characterize this formally, we define",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 9,
+        "text": "Definition 1. A wage scheme w uniquely implements work (UIW) if there exists a bonus scheme b such that every Nash equilibrium of the game induced by ( w , b ) involves all agents working.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 10,
+        "text": "In general, the minimum cost scheme does not exist because the set of UIW wage schemes is not closed. Thus, we define optimality as the infimum over the set of UIW wage schemes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 11,
+        "text": "Definition 2. A wage scheme w is optimal UIW if:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 12,
+        "text": "1. For any ε > 0 , the wage scheme w + ε 1 is also UIW. 2. There is no UIW wage scheme w ′ such that P i ∈ N w ′ i < P i ∈ N w i . In the following section, we benchmark UIW against two reference schemes. Partial implementation achieves the lowest cost without ensuring full effort uniquely, while hierarchical implementation in Winter ( 2004 ) induces full effort uniquely without relying on b . Together, these two schemes provide lower and upper bounds on the cost of implementation. 5 While, in practice, principals may withhold wages from identified shirking agents, we do not rely on such punishment, as strategic uncertainty can be resolved through the bonus alone (see Section 1 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 0,
+        "text": "We consider two reference mechanisms to locate the optimal UIW within known cost bounds. The first benchmark, partial implementation (PIW), supports full effort as an equilibrium outcome but admits multiple equilibria. The second, hierarchical implementation (HIW), guarantees uniqueness using differential wages alone, without peer monitoring, but incurs higher cost.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 1,
+        "text": "3.1 Partial Implementation of Work (PIW)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 2,
+        "text": "The partial implementation benchmark captures the lowest wage scheme that supports full effort in equilibrium, even if other equilibria exist. Formally, we define",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 3,
+        "text": "Definition 3. A wage scheme w partially implements work (PIW) if the strategy profile in which all agents work constitutes a Nash equilibrium.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 4,
+        "text": "A wage vector w partially implements work if and only if it satisfies, for all i ∈ N , w i ≥ w PIW i := c i P ( N ) − P ( N \\ { i } ) . (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 5,
+        "text": "This threshold makes agent i indifferent between working and shirking, assuming all others work. Any wage below this level gives agent i a strict incentive to deviate, so full effort cannot be sustained as a Nash equilibrium. We refer to w PIW = ( w PIW i ) i ∈ N as the PIW wage scheme. Under the equilibrium in which all agents work, the principal’s expected total cost is then",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 6,
+        "text": "φ PIW := P ( N ) X i ∈ N w PIW i . (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 7,
+        "text": "Proposition 1. Any UIW incentive scheme incurs total expected expenditure weakly greater than φ PIW .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 8,
+        "text": "Proof. Assume, for contradiction, that there exists a UIW scheme ( w ′ , b ′ ) with total wage cost strictly less than P i ∈ N w PIW i . Then, there exists some agent i with w ′ i < w PIW i . Since UIW implies that all agents work in equilibrium, no shirking occurs and hence no monitoring takes place. Agent i ’s expected payoff from working is thus P ( N ) w ′ i − c i , while shirking yields P ( N \\ { i } ) w ′ i . Because w ′ i < w PIW i , the payoff from working is strictly lower than from shirking, contradicting that all agents working is a Nash equilibrium.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 9,
+        "text": "Partial implementation captures the lowest possible wage levels under which full effort can be sustained in equilibrium, albeit without ensuring uniqueness. Importantly, the availability of a bonus scheme does not relax this requirement. Since no monitoring occurs when",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 10,
+        "text": "all agents work, such a bonus does not have an effect in the full effort equilibrium. Thus, as Proposition 1 shows, no wage vector strictly below w PIW can be a UIW incentive scheme.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 11,
+        "text": "3.2 Hierarchical Implementation of Work (HIW)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 12,
+        "text": "We now consider the second benchmark: hierarchical implementation of work (HIW). This refers to the dominance hierarchy developed by Winter ( 2004 ), which relies solely on wages to uniquely implement work. It corresponds to the special case of the UIW framework in which free-rider reporting bonuses are set to zero. Formally, the principal assigns a rank to each agent using a permutation π ∈ Π n , where Π n denotes the set of all permutations of N . That is, π ( i ) < π ( j ) means that agent i is ranked higher than agent j . In this setup, each agent’s dominant strategy is to work provided that all agents ranked above them also work. For a given permutation π , the infimum of such wage for agent i is ˆ w HIW i ( π ) := c i P ( { j ∈ N : π ( j ) ≤ π ( i ) } ) − P ( { j ∈ N : π ( j ) < π ( i ) } ) . (5)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 13,
+        "text": "This expression captures the marginal contribution of agent i to the success probability when all higher-ranked agents work. The total expected payment under a given HIW scheme defined by permutation π is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 14,
+        "text": "Φ HIW ( π ) := P ( N ) X i ∈ N ˆ w HIW i ( π ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 15,
+        "text": "The optimal HIW scheme minimizes this total cost over all permutations π ∈ Π n . Let π ∗ be the minimizer of Φ HIW ( π ), and define the corresponding wage scheme by w HIW i := ˆ w HIW i ( π ∗ ). We refer to this as the optimal HIW wage scheme. The associated minimal expected payment is denoted by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 16,
+        "text": "φ HIW := Φ HIW ( π ∗ ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 17,
+        "text": "Proposition 2. The total expected expenditure under the optimal UIW scheme is weakly less than φ HIW . Proof. For any ε > 0, the wage scheme w HIW + ε 1 , together with the zero reward vector b = 0 , constitutes a UIW incentive scheme. Hence, w HIW satisfies the first condition of Definition 2 . This proves the proposition.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 18,
+        "text": "Intuitively, since UIW schemes allow the principal to use additional instruments—namely, outcome-contingent free-rider reporting bonuses—they cannot incur strictly higher cost than HIW schemes, which rely solely on wages. This characterizes HIW as a natural upper bound on the set of optimal UIW wage schemes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 3,
+        "section_name": "Baseline Implementation Schemes and Cost Bounds",
+        "paragraph_id": 19,
+        "text": "HIW resolves strategic uncertainty by ensuring that each agent’s wage makes work a dominant strategy, given that higher-ranked agents also work. However, ensuring such dominance imposes significant cost. Higher-ranked agents must be paid substantially more to deter their own deviations, even when effort by those below them is uncertain, resulting in a steep wage gradient across the hierarchy. These additional payments constitute strategic rents —the cost of sustaining dominant-strategy incentives under strategic uncertainty. We next show how outcome-contingent free-rider reporting bonuses can reduce these rents while preserving unique implementation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 0,
+        "text": "In this section, we characterize the incentive scheme that uniquely implements work using outcome-contingent free-rider reporting bonuses, at lower cost than the hierarchical wage scheme. PIW minimizes cost but allows multiple equilibria; HIW ensures uniqueness but is costly. We ask whether outcome-contingent bonuses can preserve uniqueness while keeping wages close to the PIW. Specifically, we analyze whether wage vectors of the form w PIW + ε 1 , with small ε > 0, can support unique implementation through free-rider reporting bonuses. Absent such bonuses, this wage level fails to eliminate equilibria involving shirking. We show that for each ε > 0, a properly constructed bonus vector b can support this wage scheme and ensure that all strategies involving shirking are strictly dominated under the resulting contract ( w , b ). While the strategy space in the n = 2 case—illustrated in Section 1 —is small and easily enumerated, the general case becomes substantially more complex. In particular, Each agent chooses whether to monitor each of the n − 1 peers, resulting in 2 n − 1 distinct monitoring vectors. This exponential growth in monitoring options makes it infeasible to rule out all shirking strategies by direct comparison of payoffs. To address this challenge, we partition the space of shirking strategies according to their monitoring intensity—the number of peers each strategy monitors. For each strategy within a partition, we construct a mixed strategy tailored to its monitoring configuration. This mixed strategy assigns just enough probability to the corresponding working strategy with the same monitoring vector to ensure that the expected transfer is no lower. The remaining probability mass is then distributed uniformly across other working strategies within the same group. This construction ensures that each shirking strategy is strictly dominated, thereby overcoming the complexity from exponential growth of the strategy space. We define α i := sup A ⊆ N P ( A \\ { i } ) P ( A ∪{ i } ) , (6) which is the upper bound on agent i ’s inverse marginal contribution to the probability of",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 1,
+        "text": "project success. This definition yields a key inequality: for all W ⊆ N ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 2,
+        "text": "P ( W \\ { i } ) ≤ α i · P ( W ∪{ i } ) . (7)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 3,
+        "text": "This inequality plays a crucial role in the construction of strictly dominating strategies. Specifically, we use α i to compare a shirking strategy’s payoff with that of a mixed strategy assigning α i -weighted probability to working strategy with the same monitoring vector. If b i is sufficiently large, the following three lemmas show that any strategy involving shirking becomes strictly dominated. Specifically, we choose b i as follows to ensure strict dominance: b i = \u0014 1 + P ( { i } ) − P ( ∅ ) + nd i P ( N ) − P ( N \\ { i } ) · 1 ε \u0015 · \u0014 n − 1 1 − α i · qP ( ∅ ) ( c i + d i ) \u0015 . (8)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 4,
+        "text": "This ensures that, regardless of the number of agents being monitored, any shirking strategy yields a strictly lower expected payoff than some work-based alternative. To organize the analysis, let k ∈{ 0 , 1 , . . . , n − 1 } denote the number of peers agent i chooses to monitor; that is, k = m i · 1 . Each lemma then addresses one of the three exhaustive cases—partial monitoring (0 < k < n − 1), full monitoring ( k = n − 1), and no monitoring ( k = 0)—and demonstrates that the corresponding shirking strategies are strictly dominated. Lemma 1 (Partial Monitoring) . Fix agent i ∈ N , and let M ik ⊂{ 0 , 1 } n − 1 denote the set of monitoring vectors where agent i monitors exactly k peers, where 0 < k < n − 1 . Let ˆ m i ∈M ik , and consider the pure strategy ( S, ˆ m i ) . Then, this strategy is strictly dominated by the mixed strategy σ i ∈ ∆( { W, S } × { 0 , 1 } n − 1 ) defined by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 5,
+        "text": "σ i ( e i , m i ) =            α i + 1 − α i |M ik | if ( e i , m i ) = ( W, ˆ m i ) , 1 − α i |M ik | if ( e i , m i ) = ( W, ̃ m i ) for some ̃ m i ∈M ik \\ { ˆ m i } , 0 otherwise .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 6,
+        "text": "Proof. Suppose that all agents j ̸ = i choose ( e j , m j ), where exactly l agents shirk. Let W ′ be the subset of agents who work. To simplify the calculation of expected payoff, we group strategies ( W, m i ) that monitor exactly k peers in the support of σ i based on the number of shirking agents being monitored, noting that strategies monitoring the same number of shirkers yield identical payoffs. We partition the support as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 7,
+        "text": "{ W } × M ik = k [ m =0 M ( m ) ik ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 8,
+        "text": "where M ( m ) ik = { ( W, m i ) ∈{ W } × M ik : m i monitors exactly m shirking agents } . Suppose that h shirking agents are monitored under the strategy ( S, ˆ m i ). Agent i ’s payoff from choosing ( W, m i ), where m i monitors exactly m shirking agents, is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 9,
+        "text": "V i ( m, k ) := P ( W ′ ∪{ i } )[ w i + qmb i ] − c i − kd i ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 10,
+        "text": "where w i + qmb i denotes the transfer received conditional on project success, which occurs with probability P ( W ′ ∪{ i } ), and c i + kd i denotes the total effort and monitoring costs. Agent i ’s expected payoff under the strategy σ i is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 11,
+        "text": "U i ( σ i , ( e j , m j ) j ̸ = i ) = k X m =0 X ( e i , m i ) ∈M ( m ) ik σ i ( e i , m i ) V i ( m, k ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 12,
+        "text": "For any m , V i ( m, k ) is identical across all monitoring vectors in M ( m ) ik . Hence, the inner summation equals |M ( m ) ik | · V i ( m, k ). The cardinality |M ( m ) ik | is given by a standard combinatorial expression. 6 For σ i , the above U i ( σ i , ( e j , m j ) j ̸ = i ) can be written as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 13,
+        "text": "k X m =0 \u0012 l m \u0013\u0012 n − 1 − l k − m \u0013 1 − α i |M ik | V i ( m, k ) − 1 − α i |M ik | V i ( h, k ) + \u0012 α i + 1 − α i | M ik | \u0013 V i ( h, k ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 14,
+        "text": "To further simplify the payoff expression, we apply standard combinatorial identities. 7 Substituting into the payoff expression and applying these identities yields",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 15,
+        "text": "U i ( σ i , ( e j , m j ) j ̸ = i ) = ( P ( W ′ ∪{ i } ) w i − c i − kd i ) + P ( W ′ ∪{ i } ) \u001a lk 1 − α i n − 1 + α i h \u001b qb i . (9)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 16,
+        "text": "On the other hand, the payoff from ( S, ˆ m i ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 17,
+        "text": "U i (( S, ˆ m i ) , ( e j , m j ) j ̸ = i ) = P ( W ′ )( w i + hqb i ) − kd i . (10)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 18,
+        "text": "The difference between ( 9 ) and ( 10 ) is greater than",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 19,
+        "text": "\u0002 P ( W ′ ∪{ i } ) − P ( W ′ ) \u0003 w i + P ( W ′ ∪{ i } ) 1 − α i n − 1 lkqb i − c i , (11) because α i P ( W ′ ∪{ i } ) − P ( W ′ ) ≥ 0, by definition of α i . 6 It equals \u0000 l m \u0001\u0000 n − 1 − l k − m \u0001 , corresponding to choosing m shirking agents from the total l , and k − m agents among the remaining n − 1 − l working agents. 7 We use the Vandermonde identity and its variant: k X m =0 l m ! n − 1 − l k − m ! = n − 1 k ! and k X m =0 m l m ! n − 1 − l k − m ! = l n − 2 k − 1 ! .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 20,
+        "text": "Consider ( 11 ). The first term is positive, due to the strict monotonicity of P ( · ). If l > 0, the second term is P ( W ′ ∪{ i } ) 1 − α i n − 1 lk qb i ≥ P ( W ′ ∪{ i } ) P ( ∅ ) c i . The inequality follows from k ≥ 1 and b i ≥ ( n − 1) c i / { (1 − α i ) qP ( ∅ ) } from ( 8 ). Since P ( W ′ ∪{ i } ) > P ( ∅ ), ( 11 ) is strictly positive. If l = 0, W ′ = N \\ { i } and the expression ( 11 ) reduces to [ P ( N ) − P ( N \\ { i } )] w i − c i , which equals [ P ( N ) − P ( N \\ { i } )] ε > 0 by the definition of w i . In both cases, the strategy σ i strictly dominates ( S, ˆ m i ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 21,
+        "text": "Lemma 2 (Full monitoring) . The strategy ( S, 1 ) is strictly dominated by ( W, 1 ) . Proof. Let l , m and W ′ be as in the proof of Lemma 1 . Agent i ’s payoff from ( W, 1 ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 22,
+        "text": "P ( W ′ ∪{ i } )( w i + lqb i ) − c i − ( n − 1) d i ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 23,
+        "text": "while the payoff from ( S, 1 ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 24,
+        "text": "P ( W ′ )( w i + lqb i ) − ( n − 1) d i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 25,
+        "text": "The difference between these two payoffs is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 26,
+        "text": "[ P ( W ′ ∪{ i } ) − P ( W ′ )]( w i + lqb i ) − c i . (12)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 27,
+        "text": "If l ≥ 1, we use the bound b i ≥ c i / [ q ( P ( { i } ) − P ( ∅ ))] from ( 8 ), yielding [ P ( W ′ ∪{ i } ) − P ( W ′ )] lqb i ≥ \u0012 P ( W ′ ∪{ i } ) − P ( W ′ ) P ( { i } ) − P ( ∅ ) \u0013 c i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 28,
+        "text": "Since P ( · ) is strictly supermodular, the fraction exceeds 1, implying positivity of the entire expression of ( 12 ). If l = 0, then W ′ = N \\ { i } and the expression ( 12 ) reduces to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 29,
+        "text": "[ P ( N ) − P ( N \\ { i } )] w i − c i > 0 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 30,
+        "text": "given w i = w PIW i + ε and ε > 0. In both cases, the strategy ( W, 1 ) strictly dominates ( S, 1 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 31,
+        "text": "Lemma 3 (No monitoring) . The pure strategy ( S, 0 ) is strictly dominated by a mixed strategy in which agent i works and randomizes between monitoring all peers and monitoring no one. Proof. Let l , m , W ′ and V i ( · , · ) be as in the proof of Lemma 1 . When agent i monitors all n − 1 peers, the number of monitored shirking agents m equals l . This maximizes bonus",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 32,
+        "text": "opportunities, but entails unnecessary monitoring costs when all peers exert effort. Agent i ’s payoff from the pure strategy ( W, 1 ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 33,
+        "text": "V i ( l, n − 1) = P ( W ′ ∪{ i } )( w i + lqb i ) − c i − ( n − 1) d i",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 34,
+        "text": "If agent i does not monitor, it avoids monitoring costs, but forfeits the opportunity to earn bonuses when peers shirk. Agent i ’s payoff from ( W, 0 ) is given by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 35,
+        "text": "V i (0 , 0) = P ( W ′ ∪{ i } ) w i − c i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 36,
+        "text": "Using these two extremes in monitoring intensity, we construct a mixed strategy ρ i as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 37,
+        "text": "ρ i := β i · ( W, 1 ) + (1 − β i ) · ( W, 0 ) ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 38,
+        "text": "where β i = min \u001a 1 − α i , P ( N ) − P ( N \\ { i } ) nd i · ε \u001b . To show that ρ i strictly dominates ( S, 0 ), we will verify that the difference in payoffs between ρ i and ( S, 0 ),",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 39,
+        "text": "[ P ( W ′ ∪{ i } ) − P ( W ′ )] w i − c i + β i \b P ( W ′ ∪{ i } ) lqb i − ( n − 1) d i . (13)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 40,
+        "text": "is strictly positive by examining all possible cases.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 41,
+        "text": "Case 1: l ≥ 1 and β i = 1 − α i ≤ ( P ( N ) − P ( N \\ { i } )) / ( nd i ) · ε . In this case, omitting the strictly positive first term of ( 13 ) and substituting β i = 1 − α i , the difference is greater than",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 42,
+        "text": "(1 − α i ) \b P ( W ′ ∪{ i } ) lqb i − ( n − 1) d i − c i . (14)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 43,
+        "text": "By ( 8 ), we have b i > ( n − 1)( c i + d i ) / { q (1 − α i ) P ( ∅ ) } . Substituting this bound on b i into ( 14 ) and rearranging terms, \u001a l ( n − 1) P ( W ′ ∪{ i } ) P ( ∅ ) − 1 \u001b c i + ( n − 1) \u001a l P ( W ′ ∪{ i } ) P ( ∅ ) − 1 + α i \u001b d i ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 44,
+        "text": "which is strictly less than the expression ( 14 ). Since P ( · ) is strictly monotone, we have P ( W ′ ∪{ i } ) /P ( ∅ ) > 1. Moreover, l ≥ 1, α i ∈ (0 , 1) and d i > 0, so both the bracketed terms are strictly positive. It follows that the entire expression is strictly positive.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 45,
+        "text": "Case 2: l ≥ 1 and β i = ( P ( N ) − P ( N \\ { i } )) / ( nd i ) · ε ≤ 1 − α i .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 46,
+        "text": "We proceed with algebraic steps analogous to those in Case 1. From ( 13 ), after simplifying,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 47,
+        "text": "β i { P ( W ∪{ i } ) lqb i − ( n − 1) d i } − c i . (15)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 48,
+        "text": "Using the definition of β i and α i ∈ (0 , 1), and omitting strictly positive terms from ( 8 ), we obtain the strictly weaker lower bound:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 49,
+        "text": "b i > β i c i + ( n − 1) d i qP ( ∅ ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 50,
+        "text": "Substituting this bound into ( 15 ) and rearranging, we obtain \u001a l P ( W ′ ∪{ i } ) P ( ∅ ) − 1 \u001b ( c i + β i (1 − n ) d i ) > 0 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 51,
+        "text": "where the inequality follows from the strict monotonicity of P ( · ), as in Case 1. Case 3: l = 0. If l = 0, then the difference ( 13 ) reduces to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 52,
+        "text": "[ P ( N ) − P ( N \\ { i } )] w i − c i − β i ( n − 1) d i (16)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 53,
+        "text": "Substituting w i = w PIW i + ε into ( 16 ) and using β i ≤ P ( N ) − P ( N \\{ i } ) nd i ε , the expression becomes strictly greater than [ P ( N ) − P ( N \\ { i } )] ε \u0012 1 − n − 1 n \u0013 > 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 54,
+        "text": "Since the incentive scheme ( w , b ) is publicly known, it is common knowledge that every undominated strategy involves work for all agents. Because this reasoning holds for any ε > 0, the infimum wage scheme satisfying the inequality must equal w PIW . This leads to our main result: Theorem 1. Optimal UIW incentive scheme is w PIW . Proof. From Lemma 1 – 3 , the wage scheme w PIW + ε 1 is UIW for any ε > 0. That is, the bonus scheme b in ( 8 ) successfully supports w PIW + ε 1 . Since Proposition 1 shows that w PIW is the minimal wage scheme that supports work as the Nash equilibrium, it follows that w PIW is the optimal UIW scheme.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 4,
+        "section_name": "Implementation with Off-Path Monitoring Incentives",
+        "paragraph_id": 55,
+        "text": "Theorem 1 formalizes the central insight of our study. Our mechanism achieves unique implementation without relying on strategic rents, instead embedding an insurance-like reporting bonus that rewards agents ex post for detecting teammates’ deviations and thereby deters shirking ex ante.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "In what follows, we briefly discuss the epistemic structure behind our mechanism, compare it to principal-led monitoring, and consider its robustness under sequential production.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "Order of Belief. Our result is obtained as the unique rationalizable outcome, as is standard in the unique implementation literature, but differs subtly in the order of belief. To illustrate the contrast, consider the hierarchical implementation in Winter ( 2004 ), where unique implementation relies on n th-order beliefs. Specifically, at the first-order belief, all agents know that the highest-ranked agent has a dominant strategy to work. At the secondorder belief, all agents know that the second highest-ranked agent has a dominant strategy to work, given that the highest-ranked agent works. This reasoning proceeds iteratively, requiring each agent to hold increasingly higher-order beliefs, up to the n th-order belief held by the final agent. By contrast, the optimal UIW incentive scheme imposes strictly weaker belief requirements, relying only on second-order beliefs regardless of group size. At the first-order belief, each agent recognizes that any strategy involving shirking is strictly dominated. At the second-order belief, all agents understand that others will also avoid dominated strategies involving shirking, which in turn renders any monitoring strictly dominated. The unique Nash equilibrium that survives this reasoning is for all agents to work without monitoring.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "Monitoring by Principal. We showed that the mere possibility of peer monitoring—without actual implementation—can eliminate strategic uncertainty. By contrast, if the same monitoring technology were held by the principal, this off-path effect would disappear: unused monitoring by the principal carries no strategic implication. To induce effort, she must actively monitor and bear its cost. Whether this is efficient depends on how costly monitoring is. Suppose the principal can monitor each agent i at negligible cost d i . She monitors all agents, paying each agent w i if no shirking is detected, and zero otherwise. Agent i prefers to work if w i − c i > (1 − q ) w i , which holds whenever w i > c i /q . The total implementation cost is P i ∈ N { d i + c i /q } , which approaches the first-best as monitoring costs become negligible and q tends to 1. In this case, strategic uncertainty disappears, and the principal achieves an outcome strictly better than that attainable under any peer-monitoring scheme. When monitoring is costly and q is not 1, however, the principal may instead combine direct monitoring with a hierarchical wage scheme, as in Camboni and Porcellacchia ( 2025 ). Under supermodular production, high-ranked agents in a hierarchy command large strategic",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "rents, making direct monitoring potentially more efficient. Let π denote the agent ranking. The cost of monitoring agent i directly is d i + c i /q , whereas the cost of incentivizing i via the hierarchy is bounded below by",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "P ( N ) c i P ( { j : π ( j ) ≤ π ( i ) } ) − P ( { j : π ( j ) < π ( i ) } ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "If direct monitoring is cheaper, it is optimal to insulate agent i from the hierarchy. If this holds for all agents, full direct monitoring is strictly more efficient. Otherwise, when some agents must remain within the hierarchy, mutual monitoring among agents may yield a lower total cost. The key trade-off, as in standard moral hazard, lies in comparing monitoring costs to informational rents.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1559,
+        "section_id": 5,
+        "section_name": "Discussion",
+        "paragraph_id": 6,
+        "text": "Robustness to Sequential Production. Prior studies on peer observability in moral hazard problems with team production have focused on sequential settings (e.g., Winter , 2006 , 2010 ; Gershkov and Winter , 2015 ), where agents choose effort in a fixed order and may observe predecessors’ actions. However, these frameworks do not apply to simultaneous settings, where agents choose effort without observing others and cannot adjust their actions accordingly. In contrast, our model shows that peer monitoring can still be effective in simultaneous settings, as coordination can be sustained by the mere possibility of monitoring others. The framework also extends to sequential production. To illustrate, we adapt the model to a setting where agents, ordered by index, make decisions sequentially. Specifically, agent i decides whether to work or shirk and whether to monitor peers, restricted to predecessors only. As in the simultaneous case, we fix the wage scheme just above the partial implementation wage: w i = w PIW i + ε for some ε > 0. From Lemmas 1 – 3 , agent n , who can monitor all predecessors, strictly prefers exerting effort if a sufficiently high reporting bonus b n is promised. Given that agent n exerts effort, we can recursively induce agent n − 1, n − 2 to work, and so on, by assigning appropriate bonuses. This backward induction ensures effort from all agents, despite agent 1 being unable to monitor any peers. This reasoning confirms that the main insight of our framework remains valid under sequential production.",
+        "extraction_warnings": ""
+    }
+]

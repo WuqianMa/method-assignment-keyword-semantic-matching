@@ -1,0 +1,570 @@
+[
+    {
+        "paper_id": 1180,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "One Question at a Time: The Impact of the American Civil War on Mobilization for Women’s Suffrage",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Abstract This paper investigates the impact of the American Civil War on mobilization for women’s suffrage in the US. I construct a new dataset of soldiers enlisted in the Union army and their wartime experience, and locate them to their town of residence. Leveraging variation in casualty rates, I show that people from towns with more casualties were less likely to petition for women’s suffrage in the following years. Consistent with a narrative that the legislative appetite for social change is limited and that major events such as the Civil War can shift preferences and priorities away from reform I find evidence of two possible mechanisms through which casualty rates drive these results. Firstly, Northern towns with higher casualties were more attune to the salience of Black rights - which the Civil War was fought over, resulting in a prioritization of this movement over women’s suffrage. Secondly, that the collective trauma of casualties resulted in a tightening of pre-War social norms that were not welcoming of female political empowerment. I also find evidence that the effect is not driven by the demographic shock of high casualty rates, due to high levels of immigration at the time.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Keywords: . JEL Codes: D72, D74, J16, N31, N41",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "∗ School of Economics, University of New South Wales. E-mail: a.calder@student.unsw.edu.au.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Politics is about prioritization. The demand for political and social change is limited by the finite nature of attention, capacity, and resources, leading to the prioritization of issues over one another. Understanding the factors that determine which movements are successful is an important issue in political economy. It has implications for nations yet to undergo democratization and the enfranchisement of minorities, groups who by definition lack access to the accepted channels through which to express their demands as well as for a diverse range of social and political movements today ( Dryzek et al. , 2003 ). Political theory frames political mobilization as a process of modernization: as structural change shifts resources and political opportunities, marginalized groups take advantage of these and undertake new behaviours, like political activity ( Deutsch , 1961 ; Opp , 2019 ), with elites then choosing to extend rights in response to prevent unrest ( Robinson and Acemoglu , 2000 ). However, movements can get derailed by other political events, such as conflict, or by competing social movements, both of which alter people’s preferences and appetite for mobilization and their capacity to mobilize for a particular cause. In this work I draw on the historical context of women’s suffrage and the American Civil War, to demonstrate how experience of such significant events, and their repercussions, can shift the incentives of populations to mobilize for particular causes. This paper investigates the effect of variation in the Civil War casualty rate, encompassing both the loss of soldiers from communities, as well as those returning with wounds, disability, and trauma, on support for women’s suffrage in the following decades. Research has shown that combat experience has significant impacts for those involved, such as on their capacity for political organization ( Jha and Wilkinson , 2012 ; Dippel and Heblich , 2021 ) and their values ( Cag ́e et al. , 2023 ; Acemoglu et al. , 2022 ; Koenig , 2023 ). My research is part of a growing and related approach that shifts the focus to the experience of loss, coping, and recovery in the communities of disabled and fallen soldiers, and the effect of this on political mobilization in various contexts ( Cag ́e et al. , 2023 ; De Juan et al. , 2024 ; Walker et al. , 2024 ). The scale of loss in the Civil War (1861-1865), the political change it triggered, and its connection to public issues unrelated to women’s suffrage make this a well-suited context for my analysis. In the aftermath of the war the Reconstruction era ushered in questions of how to define the citizenship and status of the millions of formerly enslaved emancipated by the war. At this time tensions grew between the (previously harmonious) women’s suffrage movement, Abolition societies, and the Republican party over whether women’s political rights should also be considered ( DuBois , 2021 ). Despite initial successes, the women’s suffrage movement splintered and faltered in this post-war period, and it would take another 55 years for women to get the right to vote at the national level ( Flexner , 1975 ). Given this context, I hypothesize that towns with higher exposure to the costs",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "of Civil War, which I will instrumentalize as the town’s casualty rate, would develop differing attitudes in the Reconstruction era about women’s suffrage, due both to the ideology around the War and its physical effects. Quantifying the impact of the Civil War is an empirical challenge due to limitations in available data, particularly geo-locating soldiers to their place of residence. Previous work on Union army veteran outcomes have used service records to create novel and comprehensive datasets on soldiers, however it has either focused on sub samples of specific groups ( Costa et al. , 2018 ), or universal coverage where a significant share are missing residence data which was not reported in the records ( Dupraz and Ferrara , 2023 ). To address this challenge I construct a new dataset of Union Army soldiers for all contiguous states in the Union, that allows me to identify, at a town level, where soldiers resided, which regiment they served in, and which battles they fought in. 1 My resulting data set includes data on soldiers of over 6600 towns from 16 states. 2 Using this information, I construct a town-level measure of the average casualty rate for the soldiers of a town. To address the concern that Union Army soldiers’ tendency to engage in risky action may correlate with their (or their communities) views on women’s suffrage, I employ an instrumental variable strategy to isolate exogenous variation in risk exposure. I exploit the fact that some battles of the Civil War were particularly deadly and calculate a measure of average days of exposure to the thirteen deadliest battles in the Civil War for the enlisted men of a town. Using this exposure to deadly battles as an instrument for a town’s casualty rate I explore the effect of casualties on petitioning for women’s suffrage, using a dataset of all petitions sent to Congress that referenced women’s suffrage in the period following the Civil War up until the 19th Amendment ( Carpenter et al. , 2018 ). Results confirm the hypothesized negative impact of casualties on the demand for women’s suffrage. Towns with higher casualty rates experienced less petitioning for women’s suffrage in subsequent years. I find that a one standard deviation increase in the casualty rate is associated with a 31 percent reduction in total petitioning for women’s suffrage in that town. These results are consistent with historical accounts of the effect of the Civil War on the women’s suffrage movement ( DuBois , 1978 ; Silber , 2011 ; Etcheson , 2020 ), which elaborate a more nuanced view of the impact of the war on women than traditional narratives that paint the war as emancipatory for women. Instead these accounts point to there being a limit to the legislative appetite for social change and a fatigue of constitutional reform, exacerbated by conflict. Historically, this is visible in the struggles the women’s suffrage movement faced in the aftermath of war, including the Reconstruction era, which saw the movement struggle to generate popular 1 Data collected from Fold3, more information on this data source is available in Section 3. 2 These are Connecticut, Illinois, Indiana, Iowa, Maine, Massachusetts, Michigan, Minnesota, New Hampshire, New Jersey, New York, Ohio, Pennsylvania, Rhode Island, Vermont, and Wisconsin. I exclude Kansas, which had only recently become a state, and the Western states of California, Oregon, and Nevada.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "support and the formation of deep divides in the movement over issues of race and gender ( Dudden , 2011 ). 3 I interpret my results on petitioning for women’s suffrage as evidence that communities with greater casualty rates were less likely to pursue legislative reform for women’s suffrage. As a large share of casualties were those who were wounded and would plausibly return to their towns, my main result may also reflect lower levels of suffrage support among veterans returning with injuries, rather than the communities more broadly. However, of the petitions that specify the gender of the lead petitioner (only 11 percent of petitions), I find that 94 percent specified a female lead petitioner, suggesting suffrage petitioning was not led by veterans. Thus although these men likely influenced their communities, I am confident my findings are reflective of the impact of the casualty rate on citizens more broadly, rather than just veterans. To better understand this phenomenon, I investigate and provide rich evidence from a variety of sources on the potential explanatory mechanisms through which one might expect the casualty rate to influence a town’s demand for women’s suffrage. Informed by the historical literature on the women’s suffrage movement, as well as previous research on the impact of conflict on women’s post-war outcomes, I identify two complementary mechanisms I believe to be driving these results, and find evidence that what I observe is not an example of demographic shifts significantly altering incentives. Firstly, I focus on the Black rights movement, hypothesizing that towns with higher casualty rates would feel a tighter connection to these more salient issues of race given that the Civil War was fought over the status of slavery and that support for women’s suffrage would be crowded out. Black men also fought and died in the War, and this was a prominent argument for their enfranchisement, so towns with higher casualty rates are likely to have a more direct link through returning veterans to first-hand experience of this sacrifice. I analyze newspaper data from 1850-1870 from online archives to gauge public and media sentiment on the issues. 4 Firstly, I show that pre-War, coverage of Black rights and women’s rights was positively correlated, however, post-War, this relationship becomes negative, implying newspapers were substituting coverage of one issue for another. Consistent with resource mobilization theory, these movements had to compete for the finite resources of attention and media ( McCarthy and Zald , 1977 ; Little and Little , 2014 ). Additionally, towns with higher casualty rates experienced an increase in newspaper coverage of Black rights meetings and a decrease for women’s meetings in the post-war period. During Reconstruction the question of whether women’s or Black suffrage should be prioritized divided the women’s suffrage movement, resulting in inflam3 The insertion of the word “male” into the constitution in its definition of citizenship through the Fourteenth Amendment was seen as a bitter betrayal by many in the women’s suffrage movement. ( Free , 2015 ) 4 I use newspapers.com for broader, keyword searches, and Chronicling America to analyze the text of articles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "matory campaigning and racist rhetoric, and the tension between the women’s suffrage movement and the Black rights movement is cited as a potential cause for the inability of the women’s suffrage movement to capitalize on the window of opportunity the Civil War opened up ( Dudden , 2011 ) ( Free , 2015 ; Dudden , 2011 ). These results also complement those of previous work which shows the positive impact on progressive attitudes towards race of Union soldier experience ( Gannon , 2011 ; Weaver , 2022 ). Next, I draw on the theory that societies that experience more collective threats tend to develop tighter cultural norms as a means of survival ( Gelfand , 2018 ). Towns with high casualty rates would have undergone significant trauma, and thus clung more tightly to pre-War norms, in this case more traditional conceptions of gender roles. The US in this period was a place where each gender was considered to have their separate sphere, men in the public and active, and women in the domestic and passive ( Tocqueville , 1865 ). Analyzing the language in newspaper articles I do indeed find that in towns with higher casualty rates the local newspapers write about women’s suffrage and rights using more negative and subjective language, suggesting a rejection of this progress. Further I also identify higher levels of religious adherence and in particular Protestantism in towns with higher casualty rates, and lower levels of Catholicism, which would have been the minority denomination at the time. Finally, I examine the demographic shocks that resulted from casualty rates during the Civil War. As fatalities are part of the casualty rate it is plausible to expect that they may shift sex ratios. Existing literature documents that such imbalances can have important effects for labor force participation ( Grosjean and Khattar , 2019 ; Boehnke and Gay , 2022 ), marriage markets ( Abramitzky et al. , 2011 ; Angrist , 2002 ), and household bargaining power ( Porter , 2016 ). However, the expected effect on suffrage demand is unclear. On one hand, without marriage as an option to support herself and her family more women might seek out work or become the head of their household, and through this realize the importance of political rights. On the other, losing male support increases women’s emotional and physical workload, meaning there is no time or fewer resources to mobilize. Importantly, however, high levels of migration of the period may have nullified any expected sex ratio shock ( Abramitzky et al. , 2012 ). In addition to the hundreds of thousands of immigrants entering the US in this period, the cross-country variation in casualty rates could lead to high internal mobility from places with lower casualty rates ( Bazzi et al. , 2023 ). Comparing pre and post-war populations in towns with higher casualty rates reveals an increase in out of state migrants and migrants from particular countries, and no significant change in the sex ratio. This paper contributes to two main strands of literature: one that attempts to understand the political mobilization, with a particular focus on the role of conflict; and one that looks at the evolution and determinants of women’s rights, specifically the women’s suffrage movement in the US. There is heterogeneity across countries in the timing of mo-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "bilization for different rights, and we know relatively little about what drives individuals to mobilize and demand these rights ( Porta , 2014 ). Existing empirical work looks at the motives for various forms of mobilization, such as voting ( Ali and Lin , 2013 ); engagement in protest movements ( Bursztyn et al. , 2021 ); and engagement in other forms of collective action such as the woman’s crusade for temperance ( Garc ́ıa-Jimeno et al. , 2022 ). Contemporary theory posits that conflict in particular plays an important role in political change by opening a policy window ( Kingdon , 1997 ; McAdam et al. , 2001 ). Specifically for women’s empowerment and pursuit of political rights, conflict can prompt grand social and institutional shifts that disrupt existing gender hierarchies ( Webster et al. , 2019 ; Bakken and Buhaug , 2021 ), but it can also lead to the entrenchment of gender norms of patriarchal control and militarization that work against movements that seek to empower women ( Enloe , 2016 ). The impact of Civil War conflict experience in particular is also important and receiving growing attention: Dippel and Heblich ( 2021 ) find that exiled revolutionaries from Germany inspired enlistment in the American Civil War, and later progressive views on race; Feigenbaum et al. ( 2022 ) identify long-term economic impacts of Sherman’s march through the South; Weaver ( 2022 ) shows how the battle experience of Union soldiers had impacts on veterans support for Black suffrage; and Walker et al. ( 2024 ) show that Confederate battle experience had long-term social and political impacts. This paper adds to these studies by looking at mobilization for a movement focused on democratization and enfranchisement and the effects of Civil War conflict on such a movement. There exists a rich literature charting the history of the women’s movement ( DuBois , 1998 ; Free , 2015 ; Ginzberg , 2005 ) and scholars are increasingly paying attention to the tensions, challenges, and issues of gender, race, and class that characterized it ( Sapiro , 2020 ). However, analytical work that exists, mainly in political science, largely studies how differences in the supply of, and to a much lesser extent demand for, suffrage interacted to bring about scattered achievements at the state-level over the 19th and 20th centuries as opposed to the dynamics of the movement itself ( Teele , 2018b ; McCammon and Campbell , 2001 ; Braun and Kvasnicka , 2013 ). On the supply side women faced institutional barriers from incumbent political interests unwilling to expand the electorate and risk losing their political power ( Teele , 2018a ; McConnaughy , 2013 ). These acted alongside demographic factors including sex ( Jones , 1991 ; Braun and Kvasnicka , 2013 ) and race ratios ( Braun and Kvasnicka , 2013 ; McConnaughy , 2013 ) that shifted the incentives of extending the franchise to women. Studies of the demand side focus on the organizations that campaigned for women’s suffrage, documenting the tactics of the movement ( McCammon , 2003 ) and framing of the suffrage argument ( McCammon and Hewitt , 2005 ). Further work on demand looks at demand from anti-suffrage groups, such as manufacturing, railroad, and liquor industries concerned that women would vote against their interests ( Jones , 1991 ). This same focus on incentives for the group in power",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "to extend suffrage, rather than demand of the disenfranchised, is also evident in work on suffrage of other groups and in other countries ( Aidt and Jensen , 2014 ; Bertocchi , 2011 ). By divorcing mobilization for women’s suffrage from its eventual political successes, it is possible to add to the understanding of this pivotal movement and the women and men who supported it. Similar work has been undertaken by Bateman ( 2020 ), on Black suffrage, who shows that it was not the potential to win votes alone that led to politicians extending the franchise, but the tireless work of the antislavery movement. This paper makes several empirical contributions to these literatures. Firstly, it makes use of a novel data set that contains, to the best of my knowledge, the largest number (around 1,030,000) of Union soldiers geo-located to their town of residence. Previous work using state Union Army records has lacked detailed residence data, limiting potential sample size and thus my sample of Union army soldiers (with residence data) is around twice as large as that of this research ( Weaver , 2022 ; Dupraz and Ferrara , 2023 ). This complements, and was possible thanks to, the work of Walker et al. ( 2024 ) who constructed a similar dataset for the Confederacy. Secondly, it forms part of a relatively small literature in economics that focuses on the factors that influenced the demand for women’s suffrage in the US, rather than factors that influenced the success of the movement. Since political success for the women’s suffrage movement in the US did not necessarily happen in the places with the most mobilization of suffrage organizations (as they also faced the strongest opposition) this approach is particularly important ( Banaszak , 1996 ). Finally, it is the first quantitative study of the impact of Civil War conflict exposure on women’s suffrage in the US, the closest being ? which analyzes the relationship between the Civil War and women’s political participation in the temperance movement. I proceed as follows. Section 2 summarizes the historical background of the women’s suffrage movement in the US and the American Civil War, highlighting key moments and events that will be relevant to the analysis here, followed by Section 3 which describes the data sets created and data used. Section 4 details the empirical strategies employed, followed by the main results and robustness checks in Section 5. Then, Section 6 puts forward potential mechanisms and provides evidence for each. Section 7 concludes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 0,
+        "text": "On the 19th & 20th July, 1848, the Seneca Falls convention convened in upstate New York - marking what is generally considered the beginning of the women’s suffrage movement in the US. 5 The meeting was a broader women’s rights convention where the women’s 5 Although there was certainly smaller scale action and agitation for the movement before the Seneca Falls Convention. The convention was organized by, among others, Elizabeth Cady Stanton, who would",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 1,
+        "text": "suffrage platform appears to have been initially introduced, albeit with some resistance from attendees. What followed was close to 70 years of varying success and failure for the movement, with periods of scattered state-level wins as 20 states granted women some measure of suffrage before the federal amendment in 1920. In the final years, the 19th Amendment, which enfranchised women across the U.S., scraped through the political process, culminating in a final highly contested ratification in Tennessee in 1920. 6 Scholarship around the US women’s suffrage movement largely focuses on the final 25 years leading up to the 19th Amendment when the movement was at its most active. The years following the Civil War were, however, fundamental in determining the course of the cause as, at a time when the whole nation was engaged in fierce debate over questions of freedom and citizenship, proponents of the movement fought to define it ( Tetrault , 2017 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 2,
+        "text": "2.1.1 Movement History Ante and Post-Bellum",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 3,
+        "text": "The early history of the women’s suffrage movement held a close link with the abolition movement, particularly its more radical wing ( Porter , 1918 ). Prominent abolitionists attended and spoke at women’s suffrage conventions, and the abolition movement not only provided women with an opportunity to organize and orate, but for many it was also where they first encountered debates around natural rights and citizenship - it was a logical leap for women to then question their own diminished citizenship with regards to white men. Women’s involvement in petitioning to end slavery was formative in the development of both petitioning skills and political character ( Carpenter and Moore , 2014 ). Two key figures met at this time, Susan B. Anthony and Elizabeth Cady Stanton, starting a collaboration that spanned decades and would fundamentally shape the women’s suffrage movement in the US. On the eve of Civil War the women’s suffrage movement was well developed, at least in the North, with established and regular conventions, organizations in multiple states and a battery of capable writers and speakers ( Porter , 1918 ). Women’s rights activities were suspended during the war to focus on abolition, and Anthony and Stanton formed the Women’s Loyal National League, collecting hundreds of thousands of signatures in favour of abolishing slavery, whilst also creating a pool of female activists they would draw from later ( Venet , 1991 ). Despite early harmony between women’s rights activity and abolitionist movements, the post-bellum period marked the beginning of deep divisions between the two. Stanton and Anthony, as well as Lucy Stone another prominent activist, formed the American Equal Rights Association (AERA) from the Women’s Rights Conventions, an organizabecome one of the women’s suffrage movement’s most prominent figures. It was also attended by Frederick Douglass, the sole African American attendee who spoke up in defence of the suffrage resolution. 6 Representative Harry Burn from Tennessee, who had previously tabled the resolution, is believed to have changed his mind at the last minute after receiving a letter from his mother compelling him to vote yes ( Weiss , 2018 )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 4,
+        "text": "tion that championed universal suffrage ( Dudden , 2011 ). However, they received increasing criticism from leadership in the abolitionist movement (which had become the chief proponent of Black rights post-War) and those in the Republican party who believed suffrage for Black men should be prioritized ( Sapiro , 2020 ; Buhle and Buhle , 2005 ). 7 Proponents for women’s suffrage felt betrayed when, after their continued efforts towards abolition and Black rights, the 14th Amendment (which granted citizenship to people who were formerly enslaved) for the first time explicitly introduced the word “male” into the constitution in its definition of citizenship ( Free , 2015 ). The AERA then refused to support the 15th Amendment (suffrage for Black men), unless it included suffrage for women, causing further rifts ( Tetrault , 2017 ). Following a disastrous campaign in Kansas where both Black and female suffrage were defeated the AERA split, with Stone and husband Henry Blackwell forming the American Women’s Suffrage Association willing to focus primarily on and prioritize Black suffrage, and Stanton and Anthony the National Women’s Suffrage Association insisting on universal suffrage and working for independence from the resources of the abolitionists. The passage and ratification of the Fifteenth Amendment in 1869 and 1870 cut any remaining ties between the causes of black male suffrage and women’s suffrage leaving the women’s suffrage movement arguably worse off than it had been before the amendment, given that its language implicitly allowed for political discrimination based on sex ( Keyssar , 2009 ). Despite rapid growth in support the women’s suffrage movement was unable to capitalize on the (apparently limited) appetitie for democratic reform of the time, which quickly stalled in the post-War years (ibid.). Neither did it gain the same momentum and reach as other women’s organizations at this time, such as the Women’s Christian Temperance Union which boasted more members than any women’s suffrage organization ( Bordin , 1981 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 5,
+        "text": "The methods undertaken to gain the vote for women were varied, involving grassroots organizing to drum-up support, campaigns to win women the franchise at the state-level as well as actions aimed at bringing about federal change. The fact that women were disenfranchised meant that female supporters had to find ways outside of voting to make their voices heard. One of the more successful tactics followed the example of the antislavery movement and consisted of petitioning state legislatures ( Flexner , 1975 ; Zaeske , 2003 ). This would go on to become one of their most widely used and effective tools. The right to petition in the United States is enumerated in the 1st Amendment and has been used by numerous disenfranchised groups in the nation’s history to enact political change, including African Americans, women, and Indigenous peoples. Each petition had 7 Such as Wendell Phillips who I quote at the beginning of this paper, as well as Horace Greeley, the prominent reform editor.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 3,
+        "section_name": "Women’s Suffrage",
+        "paragraph_id": 6,
+        "text": "to be read aloud (at least partly) on the chamber floor and then tabled by referencing it to a committee or other body ( Blackhawk et al. , 2020 ). Between 1870 and the passing of the 19th Amendment in 1920 women’s suffrage activists sent at least 2,157 petitions to Congress, sometimes with many hundreds of signees on a single petition, in order to make their demands heard ( Carpenter et al. , 2018 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 4,
+        "section_name": "American Civil War",
+        "paragraph_id": 0,
+        "text": "The American Civil War began in 1861, following the secession of seven southern states (forming the Confederacy) from the United States (the Union) in reaction to the election of Abraham Lincoln. 8 The central cause of secession, and therefore for the following conflict, was the status of slavery. Although Lincoln refused to acknowledge the Confederacy, he originally declared no intention of invading the South. However, following an attack on a Union held fort, Fort Sumter, war was declared on April 12, 1861. Lincoln issued the Emancipation Proclamation in 1863, abolishing slavery in all rebelling states, meaning the Union’s eventual victory marked the end of slavery in the country.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 4,
+        "section_name": "American Civil War",
+        "paragraph_id": 1,
+        "text": "2.2.1 Enlistment and Battle Experience",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 4,
+        "section_name": "American Civil War",
+        "paragraph_id": 2,
+        "text": "The American Civil War was incredibly destructive, resulting in over 360,000 military deaths for the Union Army ( Chambers and Anderson , 1999 ). This was driven by a combination of modernizing quick-firing weaponry coupled with an adherence to traditional military tactics where armies still faced each other head-on in long lines. As battlefields were often covered in dense vegetation, and obscured with smoke, battles were a blind and chaotic experiences where you might not see your enemy until they were a few meters away ( Hess , 1997 ). In this fog the chance of getting shot appeared almost random; and many surviving soldiers later reported their shock at having survived, given the bullets flying past their ears and the neighbours they saw fall ( Hess , 1997 ). Despite the Union Army’s larger size and better funding, the outcome of the war was never guaranteed. The soldiers of the Confederacy were fighting on interior lines, to protect institutions they believed important, and the South is generally believed to have held stronger to a military tradition. The war consisted of many alternating wins and losses, and battles over small strategic gains at the cost of heavy loss of life to both sides ( McPherson , 2003 ). The experiences of soldiers in the Civil War characterized their generation. The vast majority of enlistees, around 90 percent, to the Union Army were volunteers, driven by a belief in preserving the Union and the actions of others in their communities ( Dippel 8 The Union states were California, Connecticut, Illinois, Indiana, Iowa, Kansas, Maine, Massachusetts, Michigan, Minnesota, Nevada, New Hampshire, New Jersey, New York, Ohio, Oregon, Pennsylvania, Rhode Island, Vermont, and Wisconsin. The Confederate states were Alabama, Arkansas, Florida, Georgia, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, Texas, and Virginia.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 4,
+        "section_name": "American Civil War",
+        "paragraph_id": 3,
+        "text": "and Heblich , 2021 ). 9 Unlike previous generations who had fought in the Revolutionary War, these men were generally not trained soldiers. The war altered them in numerous ways. Not only did it result in the death or disability of many, but exposure to wartime sacrifice, the trauma of battle, first-hand exposure to slavery, and collaboration with African Americans altered their beliefs and shaped their future social and political behavior ( Weaver , 2022 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 4,
+        "section_name": "American Civil War",
+        "paragraph_id": 4,
+        "text": "2.2.2 Reconstruction and Black Rights",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 4,
+        "section_name": "American Civil War",
+        "paragraph_id": 5,
+        "text": "The Civil War was fought over the status of slavery, and once slavery was abolished the extent of Black men’s rights became an essential issue during Reconstruction. In 1868 the 14th Amendment was ratified, which guaranteed citizenship to the formerly enslaved, and the 15th Amendment was ratified in 1870, extending the franchise to Black men by prohibiting the denial of the vote on the basis of race. 10 The passing of the 14th and 15th Amendments were not straightforward. The push for Radical Reconstruction measures, such as Black suffrage, came from activists engaged in local politics, not the national leadership, who initially sought a more moderate outcome than Black suffrage ( Weaver , 2022 ). The movement to extend the franchise to Black men had been ongoing prior to the Civil War and evolved from a relatively non-partisan issue to one of the most polarizing of the period ( Bateman , 2020 ). Activists for Black rights petitioned and organized extensively over the period and although the prospect of securing the votes of Black men is often cited as the chief reason the Republican party supported Black suffrage, the actions and continued pressure of these activists were vitally important ( Bateman , 2020 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "I construct a new town-level dataset for all contiguous Union states in the US, i.e. all Union states excluding California, Oregon, and Kansas 11 , that incorporates information on how many petitions from a town were sent to Congress for women’s suffrage; the socioeconomic and demographic composition of the town; how many men enlisted, died, and were wounded in the Union Army; as well as the share of deadliest battles a town’s soldiers participated in and the distance of towns to the Civil War battles. My chief data sources are: 1) a digitized dataset of all petitions sent to Congress relating to women’s suffrage between 1870 and 1920 ( Carpenter et al. , 2018 ); 2) the 1860 and 1870 Full-Count 9 It is broadly agreed that enlistment in the Union Army was, however, not driven by a desire to end the institution of slavery ( Weaver , 2022 ). 10 Across the United States, however, various methods were employed to restrict this in reality. 11 Aside from being geographically separate, this is because Oregon and California are on the West Coast and enfranchised women earlier (1911 and 1912). Kansas only became a state three months prior to the Civil War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "Census ( Ruggles et al. , 2021 ) aggregated to the town-level Berkes et al. ( 2023 ); and 3) Fold3 digital archives of Civil War military records for the Union Army. 12",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 6,
+        "section_name": "Petitioning Data",
+        "paragraph_id": 0,
+        "text": "The dataset of petitions contains all petitions for women’s suffrage sent to Congress, as recorded in the Congressional Record, between 1870 and 1920 ( Carpenter et al. , 2018 ). This data includes the date of the petition as well as the city in which the petitioners resided, enabling the use of town-level variation. The data also includes varying levels of information about the petitioner(s) such as the number of individuals, gender, and whether the petition came from a suffrage association, temperance union or other group. The geographical dispersion of these petitions is shown in Figure A1 . Many more petitions were sent from some towns than others, particularly the urban centres of Massachusetts and Connecticut, but petitioning was widespread and practiced in rural areas as well as large urban hubs.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 7,
+        "section_name": "Civil War Enlistment, Deaths, and Wartime Experience",
+        "paragraph_id": 0,
+        "text": "To calculate the casualty rate, I use individual-level data on Union Army enlistment, residence, and regiment history collected from Fold3 by Walker et al. ( 2024 ). This data allows me to geo-locate just over 1,030,000 Union soldiers from the 16 contiguous Union states, enabling me to expand upon what has been possible in previous work that has used state Union Army records. These records from individual state archives often lack detailed residence data, limiting sample size, resulting in my sample of locatable Union army soldiers being twice as large as that used in previous research, e.g. Weaver ( 2022 ); Dupraz and Ferrara ( 2023 ). The primary records I use are individual soldier-level records for each soldier that served in the Union Army. In addition to their residence this individual-level data includes whether an individual survived the war as well as what regiment they fought in. 13 I combine this with data on which regiments fought in which battles and data on locations, dates, fatalities, and casualties for the largest battles fought by the Union Army ( Trust , 2012 ). 12 Fold3 is a digital archive of millions of military records including photos and personal documents that individuals can add to, all records in Fold3 must be accompanied by scans of original documents or references to sources, making it a trusted resource. 13 Unfortunately accurate residence data at the town-level is only available for a subsection of men in each state and my sample of 1,030,000 is still only about half the size of total Union enlistment (2,100,000) However, I have an alternative data set for six states (MA, NH, CT, ME, VT, and IL) ( Weaver , 2022 ) which contains more comprehensive residence data (over 80% per state) which I use to validate my main sample by comparing the two samples for the available states, further detail is available in the Appendix.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 8,
+        "section_name": "US towns",
+        "paragraph_id": 0,
+        "text": "I combine individual-level census data from 1860 (as well as additional decades before and after for decade-by-decade analysis) aggregated to town-level combined with geographic, town, and county-level data in order to control for a wide range of factors that may influence my outcome of interest ( Ruggles et al. , 2021 ; Manson et al. , 2023 ). I am able to aggregate this data to the town level thanks to the crosswalks created by Berkes et al. ( 2023 ). These include counts of people in a particular town by age, sex, race, and nationality, literacy levels, personal and real estate values, whether a town’s county had rail transport, labor force participation, number of churches per capita, average occupational scores, as well as latitude and longitude. My final dataset of towns that I can match soldiers with regiment data contains 7151 locations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 9,
+        "section_name": "Additional Data",
+        "paragraph_id": 0,
+        "text": "In addition to the main sources above, I combine further varied sources of data to provide evidence for the potential mechanisms identified. I collect counts of variants of the phrases “Black rights convention” and “woman’s rights convention” from newspapers.com for all newspapers published in the 16 states of interest between 1850 and 1870. These years enable the analysis of preand post-war coverage of both Black and women’s rights meetings at a time when both were happening with some regularity. 14 I use the Chronicling America database of historic newspapers as well, to conduct sentiment analysis of the way papers were covering women’s suffrage and women’s rights issues. I also use data from the Mapping the Klan project ( Kneebone , 2023 ) on the distribution of second wave Ku Klux Klan Klaverns across the US. I use data collected by McCammon et. al ( McCammon et al. , 2001 ) on the share of female professionals, college students, women’s organizations, and a wide variety of women’s suffrage organization and movement information at the state level to further understand shifts in gender norms and for additional analysis of the women’s suffrage movement. Finally, to test shifts in political demand, voting data from the United States Historical Election Returns, 1824-1968 ( Inter-University Consortium For Political And Social Research , 1984 ) dataset allows the comparison of turnout rates and vote shares across counties.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 10,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "To estimate town-level casualty rates I average the casualty rates of the regiments for every soldier from town i , and estimate its effect on the demand for women’s suffrage, 14 Post 15th Amendment there are far fewer Black rights conventions happening, and many more women’s rights/suffrage meetings.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 10,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 1,
+        "text": "measured by petitioning activity. To study the effect of these casualty rates on petitioning I would ideally like to estimate the following Poisson regression model:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 10,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "log ( λ i ) = β 1 CasualtyRate i + δ X i + η s + ε is (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 10,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 3,
+        "text": "Where λ i = E [ y i | CasualtyRate i , X i , η s ], and y i is the count of total petitions for town i . The term X i is a vector of town control variables, all measured in 1860, that attempt to capture other demographic and locational factors that potentially influenced casualty rates. The term η s are state fixed effects and ε is is an error term. The Poisson model is preferred since the outcome of interest is a count. However, in estimating my coefficient of interest β 1 , I run into a key identification issue in that this casualty rate could plausibly be affected by factors that could also influence the demand for women’s suffrage, biasing my estimate. In Figure 4 , I show that in towns with higher casualty rates men had lower occupational scores, 15 Black literacy was lower, fertility higher, and they were in counties with lower shares of urban residents, all variables that are also plausible predictors of lower levels of political progressivity and thus lower support for women’s suffrage. To overcome this issue I employ an instrumental variable strategy instrumenting the casualty rate with the count of days the men of a town spent in the most deadly battles of the Civil War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 0,
+        "text": "I introduce a town-level measure of battle intensity as an instrument for the casualty rate. Regimental records include information on which regiments fought in which battles and on which dates, allowing me to calculate the number of days any particular soldier’s regiment spent in any particular battle. The instrument I create, BloodyBattleDays i , is the count of days spent in any battle with over 10,000 Union casualties (thirteen in total) of the Civil War, 16 averaged across the soldiers of a town t :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 1,
+        "text": "BloodyBattleDays i = P J j =0 # daysbloodybattle ji P soldiers i (2)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 2,
+        "text": "The identifying assumptions here are that (i) fighting in the Civil War’s bloodiest battles positively correlates with casualty rates, and (ii) casualty rates are the only channel through which participation in these battles would affect women’s suffrage petitioning in these soldiers’ towns of residence. Table 2 presents the first stage results, estimating the following: CasualtyRate i = βBloodyBattleDays i + δ X i + η s + ε is (3) 15 Lower scores are associated with lower-paying lower-status work. 16 The cut-off of 10,000 Union casualties can be varied with minimal effect on final results.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 3,
+        "text": "where all variables other than BloodyBattleDays i are as in (1). It shows a strong, positive correlation between BloodyBattleDays i and the casualty rate. With full controls (detailed in the next section) as in Column (3), the F statistic exceeds 116, suggesting a strong first stage, and providing evidence in favor of assumption (i). Further, the thirteen battles I use, of the 384 total battles classified in CWSAC’s Report on the Nation’s Civil War Battlefields, accounted for roughly 156,000 of the 596,000 in-battle casualties (killed, wounded, captured or missing in action) of the Civil War on the Union Side, so it is unsurprising that the relationship found in equation (3) holds. Assumption (ii), the exclusion restriction, relies on soldiers not being sent to these deadliest battles based on underlying characteristics that might be associated with support for women’s suffrage. The battles with the highest casualties were battles which mobilized very large numbers of Union soldiers, total Union Army strength across the 13 deadliest battles was roughly 997,000, almost half of total Union Army enlistment across the whole of the War. 17 These battles required as many bodies as possible to be sent as quickly as possible, meaning that despite best efforts at military strategy, in these deadly battles regiments were far more likely to be mobilized based on proximity and speed rather than on individual soldier characteristics ( Hess , 1997 ). Accounts of these extremely deadly battles record that they were incredibly uncertain and the tides of battle could turn in an instant leaving little time to organize troops. For example, the infamous Battle of Gettysburg, a Union victory, was initiated by a Confederate Army sure that it would be their decisive blow to the North, turning into the deadliest battle of the War for both sides. To verify the argument from this historical evidence, I show in Figure 4 that BloodyBattleDays i is orthogonal to a large set of prewar covariates measured at the town level. This instrument is uncorrelated with, in panel (a), a number of socio-economic characteristics, and in panel (b), characteristics that might be particularly relevant to support for women’s suffrage, such as female labor force participation, Republican vote share, and fertility. In panel (a) rail and latitude are significantly negatively and positively correlated with bloody battle days. This may potentially cause concern that more rural (further North and not connected to rail) counties were sent to more deadly battles, however, no other characteristics associated with rural locations, including wealth, share of employment in agriculture, and longitude, are significant, suggesting this is not a concern. I conduct a similar balance test with a range of purely agricultural variables in Appendix Figure A4 , again indicating no consistent rural-bias in the instrument. I will control for all these significant variables in addition to others. Panel (a) in Figure 1 shows the geographic patterns of casualty rate variation with evidence of significant geographic clustering, while panel (b) shows the distribution of deadly battle days, indicating that this measure does not suffer from the same clustering issues. 17 Though some of these men fought in multiple of these battles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 4,
+        "text": "Therefore, with the inclusion of relevant controls (discussed below), the assumption that variation in the deadly battle exposure is largely driven by quasi-random allocation of available regiments, rather than systematic characteristics at the town level is likely to hold.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 5,
+        "text": "4.2 Controls Historical accounts of Civil War battles and soldiers help to inform the selection of controls to be included in X i . Controls fall into four main categories: military, economic, demographic, and geographic. Table 1 reports summary statistics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 6,
+        "text": "4.2.1 Military Controls",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 7,
+        "text": "A significant factor of military organization affecting town-level exposure to deadly battle days is the share of battles fought in the Eastern theater, where all the deadliest battles occurred. 18 As Figure A2 shows, there is a clear geographic divide whereby soldiers from more western states were far less likely to be sent to fight in the Eastern Theater of war. I will therefore control for the share of soldiers from town i who fought in the Eastern theater, along with military controls, including average muster-in date for the men of a town, share of men in a town enlisted in the army, and an average of the total days spent in any battles. 19",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 8,
+        "text": "4.2.2 Other Controls",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 9,
+        "text": "The other controls I employ and the rationale for their potential effect on casualty rates are as follows, falling into three broad categories. First, demographic controls. I control for the share of the population born in the US, as it is likely that immigrants to the US, with little connection to the history and causes being fought over, might put more effort into avoiding danger without a strong connection to the Union. Also, I control for the Black share of the male population, as Black regiments were more likely to suffer casualties during the War. Second, geographic controls include latitude and longitude. Geographic location may be a significant predictor in where men were being sent to fight, e.g. drawing on closer troops first, as well as of differing social and political attitudes. For example people from places further West (closer to the Frontier) may exhibit more ”rugged individualism” ( Bazzi et al. , 2020 ). 18 Battles fought in the states of Virginia, West Virginia, Maryland, North Carolina, and Pennsylvania, and the District of Columbia. 19 Controlling for date of enlistment, in days, is important because men enlisted at different points in the war dependent upon their socioeconomic status. Bounties of $ 100 were introduced three months into the war, and got larger as the war went on, incentivizing wealthier individuals later in the conflict.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 11,
+        "section_name": "Instrumental Variable Strategy",
+        "paragraph_id": 10,
+        "text": "Finally, I control for key economic indicators. I control for wealth, which I measure by real estate value (per capita). This may have affected the casualty rate of Union soldiers through its impact on physical health, wealthier individuals were more likely to have better diets which may reduce their possibility of dying from illness. I also control for proximity to rail transport. Interestingly, results from Figure 4 suggest rail and casualty rates are negatively correlated, whereas one might expect that regiments from areas with good rail connections may be more likely to be sent to more dangerous locations, as they could be sent more quickly. Lack of rail may therefore may have resulted in more arduous journeys for troops, meaning they are weaker and more tired when they arrive at battles. I also control for the share of women working, to capture more preogresive sttitudes towards women.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 13,
+        "section_name": "Main Results",
+        "paragraph_id": 0,
+        "text": "Table 3 shows the estimated impact of an increase in the casualty rate on later petitioning for women’s suffrage. Panel A shows OLS results where the dependent variable is the log of total petions plus one, and panel B shows Poisson results where the dependent variable is count of total petitions. In both cases the count of petitions include all petitions for women’s suffrage up until the 19th Amendment is passed and the results without instrumenting the casualty rate are displayed in the first three columns, with results using the battle instrument in the second three columns. Given that the outcome of interest is a count variable the Poisson results in panel B will be preferred. I provide three specifications. Columns (1) and (4)include just state fixed effects presenting the simple correlation between the casualty rate and petitioning. Columns (2) and (5) includes military controls (Eastern theater share, average muster-in date, enlistment), and columns (3) and (6) add in geographic (latitude and longitude), demographic controls (share of male population that is Black and share of population born in the US) and economic controls (rail and average property value). Across all models results remain stable and show that higher casualty rates result in a lower expected total petitioning for women’s suffrage in a town. Calculating the incidence rate ratio for the specification in panel B, column (6), the IV-Poisson specification including the full set of controls show that an increase in the casualty rate of 1 percentage point, is associated with a 3 percent reduction in total petitions. A one standard deviation increase in the casualty rate is therefore associated with a reduction in total petitioning of around 30 percent. As there are many towns where no petitioning occurred, the average number of petitions from a town is around 0.4, meaning at the mean a one standard deviation increase in the casualty rate is associated",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 13,
+        "section_name": "Main Results",
+        "paragraph_id": 1,
+        "text": "with about 0.13 fewer petitions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 13,
+        "section_name": "Main Results",
+        "paragraph_id": 2,
+        "text": "5.1.1 Poisson vs. IV-Poisson",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 13,
+        "section_name": "Main Results",
+        "paragraph_id": 3,
+        "text": "Poisson results are about half that of IV-Poisson. One potential explanation is that omitted variable bias weakens the Poisson coefficient, however, an alternative explanation is that casualties experienced through the bloodiest battles of the Civil War would affect soldiers more intensely and be more salient than, say, casualties brought on by illness. Firstly, thinking about those wounded in battle (the largest share of those making up the casualty rate) it is likely that wounds endured in these long, messy, and bloody battles might be worse than those in battles that had lower casualty rates. It would be more difficult to get medical attention if you were one of thousands injured at the same time, leading to worse post-injury outcomes such as infection. If casualties were not only higher in frequency in these battles but also worse in intensity, one could imagine the effect on the town would be more intense as well. Both soldiers returning and people of the town would have more gruesome and salient images of the horrors of war available to them. Secondly, for those at home, the knowledge that your friend, son, or husband, was killed in a grisly battle is likely to have a different impact than knowing they perished from malaria while marching. The latter might have happened anyway, but the former is tied to the War, and may strengthen the idealistic feeling one attaches to the death and subsequent beliefs, and thus the larger observed effect on suffrage petitioning. Using the terminology of local average treatment effect (LATE), in this regard one could regard those who died in these bloody battles as ’compliers’ and those who died from disease as ’always takers’.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 0,
+        "text": "I conduct several robustness tests to validate these results, the results of which can be found in the Appendix.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 1,
+        "text": "Alternative models: As an alternative to estimating a Poisson regression, I estimate an alternative outcome where y i is a binary variable indicating whether there was any petitioning from a town, rather than the count of total petitioning. Results are available in Table A1 , and show a negative and significant relationship persists with this alternative specification.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 2,
+        "text": "Decade-by-decade analysis: In the main results, all petitioning between the end of the Civil War (1865) and the nineteenth amendment is included (1920). This is a rather long time period over which to expect to see impacts of the Civil War and it is possible to look more narrowly at petitioning at different times. Figure A3 shows the estimates",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 3,
+        "text": "for petitions where the effect is dis-aggregated by decade (i.e. just those sent in the 1870s, 1880s etc.) and shows that there is generally a persistent negative effect in every decade (1890s excluded, a period commonly referred to in suffrage history as ”the doldrums”). The magnitude is largest in the 1900s, a period where many more petitions were sent and the suffrage movement was generally more active and organized.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 4,
+        "text": "Alternative battle cut-offs and leave-one-out: To generate my instrument it was necessary to specify a cut-off for what was considered a large and bloody battle, I limited this to any battle involving over 10,000 Union casualties. This may cause concern that any particular cut-off was chosen to influence results. To allay such concern I estimate my main results using alternative cut-offs, such as the Top 10 or Top 20 battles. Results remain negative and significant. I also estimate a series of versions of my main regression where each time a different battle is left out of the instrument. Results are plotted in Figure A5 and are stable. This suggests that the main results do not originate from a quirk generated by the choice of battle cut offs or a driven by one particular battle.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 5,
+        "text": "Reduction in political activity: Finally, an alternative explanation is that rather than a reduction in mobilization for women’s political causes the result is picking up a decrease in political participation broadly. Potentially towns with higher casualty rates were just less interested or able to take part in any type of political activity. To check this explanation I collected voting data for the period 20 years before and 20 years after the start of the Civil War, this data is only available at the county-level so all following results are at the county rather than the town-level. I estimated the following regression:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 6,
+        "text": "y c = turnout tc = βCasualtyRate c × Period t + α c + μ t + ε t,c (4) where turnout in year t , county c is turnout t,c = totalvotes t,c eligiblemalepopn t,c , α c and μ t are county and year fixed effects respectively, ε t , c is an error term and βCasualtyRate c × Period t is the main variable of interest for the interaction of instrumented casualty rate in county c with the period t , in this case election year. Estimates of β from equation 4 are shown in Figure A6 and show that there was no significant effect on election turnout induced by higher county-level casualty rates. Therefore, it seems unlikely that a reduction in general political motivation or capability is driving results.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 7,
+        "text": "Alternative measures of suffrage support: Petitioning was a key tool for women and men to demand women’s suffrage but there were other channels available as well. I verify these results by checking the impact of casualty rates on women’s suffrage organization and conventions. Table A5 reports the results of estimations of the impact of the casualty rate on numerous variables related to the suffrage movement as collected by McCammon et al. ( 2001 ). Columns (1), (2), and (7) of the Organization results indicate",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 8,
+        "text": "that casualty rate had a negative impact on the existence of men’s and college women’s suffrage organizations in a town’s state, and that there was any convention held in a particular year in a town’s state. Scraping newspapers (newspapers.com) for mentions of women’s suffrage conventions, plausibly a proxy for convention activity in an area, reveals a similarly negative relationship between the instrumented casualty rate and women’s suffrage conventions, results are displayed in Appendix Table A2 . These consistent results further validate the argument that higher casualty rate is associated with lower mobilization for women’s suffrage across multiple dimensions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 14,
+        "section_name": "Robustness",
+        "paragraph_id": 9,
+        "text": "Alternative treatments: There are a range of possible treatment measures that might also captures meaningful variation in exposure to Civil War battle sacrifice, for example the total number of deaths or casualties scaled by eligible male population of a town, or a measure of deaths over casualties used by De Juan et al. that they name the casualty fatality rate ( De Juan et al. , 2024 ). 20 In Table A3 I estimate equation 1 using these various different treatments, always controlling for Eastern theater share and state fixed effects. Columns (1) and (2) are for the eligible population scaled treatments, with both showing negative but insignificant relationships. Columns (3) and (4) are a binary and continuous measure of the casualty fatality rate, and are both negative and significant.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 15,
+        "section_name": "Mechanisms",
+        "paragraph_id": 0,
+        "text": "This core relationship having been established, this section identifies and investigates three potential mechanisms that might explain the negative effect that casualty rate had on women’s suffrage petitioning. First, that in towns with higher casualty rates the cause of Black rights was more salient, resonating more strongly and crowding out attention for women’s suffrage. Second, that the collective trauma associated with higher casualty rates led to an entrenchment of traditional pre-War norms and thus resistance to women’s suffrage. And finally, that higher casualty rates meant higher town fatalities, and thus a shift to the sex ratio and differing incentives for the women and men in such towns.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 16,
+        "section_name": "Salience of Black rights",
+        "paragraph_id": 0,
+        "text": "The US Civil War was fought over the status of slavery, not women’s suffrage. Black men also fought and died in the war, women could and did not. For both these reasons, towns that had experienced higher casualty rates are likely to have experienced the debate over Black rights as more salient than that over women’s rights and, given these places were also likely to have more reform fatigue due to the costs they had endured, these issues are 20 In their paper which looks at German soldiers in WWI they show that in this context the casualty fatality rate is (unlike a population measure) exogenous to a variety of prewar social, political, and economic characteristics that likely influenced military recruitment and volunteering.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 16,
+        "section_name": "Salience of Black rights",
+        "paragraph_id": 1,
+        "text": "likely to have crowded out women’s call for reform. Section 2.1.1. presented background on the split between the Black and women’s movements and the very public tension that emerged between the two. Manifestations of this included the Republican party (the progressive party at the time) refusing to publicly support women’s suffrage until decades after the War ( DuBois , 2021 ) and the NWSA refusing to support, even actively opposing, the 15th Amendment (Black male suffrage) unless it included language that enfranchised women. During Reconstruction Republicans relied on gender to justify the enfranchisement of Black men, using arguments that put masculinity to the forefront and claiming the only definition of suffrage that was logically consistent was that of universal manhood suffrage ( Free , 2015 ). To explore empirically whether or not Civil War casualties seem to have induced a trade-off between support for Black rights and support for women’s rights, or a prioritization of one over the other, I provide evidence that in places with higher casualty rates a preference for Black rights is observed in newspaper coverage, there is less later extreme racism, and I illustrate the importance that fighting alongside Black men seems to have had. Newspaper coverage: In this period newspapers were essential for spreading news of movement organization and success. A newspaper’s editors refusing to cover certain topics was a political statement, and the silence of eastern liberal newspapers during the first campaign for women’s suffrage in Kansas was considered a betrayal ( Flexner , 1975 ). In my hypothesis I expect a divergent pattern in coverage related to Black rights and women’s rights around the time of the Civil War. Collecting data from newspapers.com, I count mentions in a newspaper of the phrases ‘woman rights convention’, ‘anti slavery society’, ‘abolition convention’, ‘anti slavery convention’ and, ‘freedmen convention’. I estimate the relationship between newspaper coverage of women’s movement meetings per capita ( WomenMention ) and Black movement meetings per capita ( BlackMention ) in the following equation:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 16,
+        "section_name": "Salience of Black rights",
+        "paragraph_id": 2,
+        "text": "WomenMention t,c = βBlackMention c × Period t + α c + μ t + ε t,c (5) Where Period t refers to either the period pre-war, during the war, or post-war; and α c and μ t are county and period fixed-effects respectively. The results are presented in Figure 5 . As expected coverage of the two is positively correlated pre-War. However, during and after the war, this relationship reverses, indicating that in this period newspapers were picking between one issue or the other. To validate this hypothesis including variation in Civil War casualty rates, I estimate a version of equation ( 4 ) where y t,c is coverage of women’s or Black movement meetings per capita, and Period t is a binary variable taking on value 0 for pre-war and 1 for during and post-war. The results are presented in Figure 6 and show that in the post-war period towns with higher casualty rates saw an increase in newspaper coverage of Black conventions but a decrease in women’s conventions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 16,
+        "section_name": "Salience of Black rights",
+        "paragraph_id": 3,
+        "text": "Racism: The history of Post-Civil War USA is wrought with discrimination and racism expressed in many forms, the women’s suffrage movement not excepted. In 1869 having been abandoned by Republican allies in key battles for women’s suffrage in New York and Kansas, Stanton and Anthony embraced racist rhetoric that argued for white women’s superiority over Black men in order to sway Democrats to their cause, laying a foundation of inequality that scarred the movement for decades ( Free , 2015 ). A possible outcome of this substitution of causes would be more unequal outcomes for, or discriminatory behavior towards, Black people in places where casualty rates were lower and women’s suffrage demand higher. To measure extreme and explicit racism I use data on the establishment of Ku-Klux Klan chapters between 1921 and 1930. Table 4 shows the results of equation ( 4 ) where the outcome is now a count of KKK chapters established in a town. Column (1) shows that higher casualty rates are associated with fewer KKK chapters in a town. This suggests that towns where casualty rates were higher, with higher wartime sacrifice held less extreme discriminatory views than places with lower casualty rates. Battle experience with USCT: If it is important to support for Black rights that Black men fought and died in the Civil War then one might expect the effect of casualty rates on a reduction in women’s suffrage support, due to this crowding out effect, to be particularly important when the soldiers of a town had direct experience fighting alongside Black soldiers. Regiments were segregated in the Civil War, so it is simple to see which battles involved Black (United States Colored Troops, USCT) regiments. Repeating the estimation from my main results in equation 1 , but this time including an interaction between the casualty rate and a binary variable that indicates whether a town’s soldiers fought an above or below average share of their battles alongside USCT regiments gives the results displayed in Table 5 . When this interaction is included, the coefficient on the casualty rate becomes insignificant but there is a significant and negative coefficient on the interaction between the casualty rate and fighting an above average share of battles with USCT regiments. 21 This suggests that the effect I observe in my main results is particularly driven by towns where soldiers not only experienced high casualties, but experienced these casualties alongside Black troops, witnessing their bravery and service first-hand.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 17,
+        "section_name": "Collective trauma entrenching priors",
+        "paragraph_id": 0,
+        "text": "Economic and sociological literature suggests that collective trauma can reinforce preexisting beliefs, leading to heightened conservatism and stronger in-group cohesion ( Gelfand , 2018 ). Towns with higher casualty rates would arguably be more traumatized than others, resulting in an even stronger tightening of pre-War social norms, such as those about 21 The casualty rate coefficient alone is jointly significant with the interaction term.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 17,
+        "section_name": "Collective trauma entrenching priors",
+        "paragraph_id": 1,
+        "text": "traditional gender roles. In 19th Century USA the genders had their separate spheres, women the domestic and passive, men the public and active, and this distinction was carefully drawn ( Tocqueville , 1865 ). Observing a stronger adherence to such norms around gender, and other pre-War norms, suggests that the lack of support for women’s suffrage in such towns may be driven by this traumatic experience. Newspaper sentiment: Section 6.1 identified that newspapers covering towns with higher casualty rates were less likely to be writing about women’s rights and suffrage conventions. Towns rejecting the shifting norms around gender might go further than this, and continue to write about women’s rights but in a negative way. Using the Chronicling America database of historical newspaper pages for the period 1850-1875 (10 years pre-War and 10 years post) I pull the text from every page that mentions “women’s suffrage” or “women’s rights”, and then isolate the sentences around the mention of the phrase. I then conduct sentiment analysis using the TextBlob Python library on these sentences. This computes a sentiment polarity score (ranging from -1 to 1) by evaluating the positivity, negativity, or neutrality of individual words in the text and then aggregates these scores to derive the overall sentiment of the sentences. Additionally, it provides a subjectivity score (ranging from 0 to 1) to indicate the extent to which the text expresses personal opinions or factual information. I match the locations of the newspapers to my town dataset assigning newspapers to towns within a roughly 35km radius, and conduct a difference-in-differences analysis to measure how the sentiment and subjectivity of articles in towns shifted after the Civil War in towns with higher (instrumented) casualty rates. There are 20,316 articles for 481 towns. Results are shown in Figure 7 and indicate that higher casualty rates are associated with the tone of articles written about women’s political rights being more negative, as well as being more subjective. This suggests that these issues were not being written about as favorably in towns with more significant sacrifice, potentially providing evidence for this backlash against, or at least de-prioritizing the progress of, women mechanism. Fertility: Higher fertility has been shown to be associated with a lack of female empowerment with lower fertility preferences among women who have higher levels of education, skills development, and who exercise higher household decision-making power (see Upadhyay et al. ( 2014 ) for a review of literature). An expectation on women to repopulate following the War further suggests an increase in fertility would be expected. Figure 8 displays the results of an event study where coefficients correspond to the effect of a one standard deviation increase in casualty rates on fertility (for both the entire population of women and only married women) for the decades between 1850-1910. I observe a significant increase in fertility for all women emerging that persists in the long-term. Religion: If the hypothesis on collective trauma holds, one would expect the tightening of pre-War norms to manifest in ways beyond gender, and in particular norms",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 17,
+        "section_name": "Collective trauma entrenching priors",
+        "paragraph_id": 2,
+        "text": "around religion and church attendance which was dominant throughout the US. Using census data on the number of religious buildings, the value of religious buildings and the number of sittings 22 I compare how the casualty rates effected these measures of religiosity post-War. Results are displayed in figure 9 and provide evidence for this hypothesis. Towns with higher casualty rates have both more religious buildings overall and higher religious property value, suggesting that religion was a key outlet for people’s effort postWar. There is also an increase in Protestant (Baptist and Presbyterian) sittings, but a decrease in Catholic sittings; as the minority Christian denomination of the period the reduction in Catholicism would be explained by the idea of collective trauma tightening pre-War norms as for the vast majority of towns Protestantism would have been the status quo. Other causes: Finally, to the extent that casualty rates may have pushed women to cultivate a more public role in society it appears that postwar groups such as the Women’s Christian Temperance Union (WCTU) and the Woman’s Relief Corps (WRC) were the more popular avenues ( Silber , 2011 ). Although both organizations were radical in mobilizing women outside of church work, both were also more aligned with women’s more acceptable domestic role than the suffrage movement. They were also directly responding to the Civil War, with the WCTU tackling the debilitating impact of alcohol and drug dependence many Civil War veterans faced and the WRC supporting Union veterans and war-memorializing activities. The relative success of these movements compared to women’s suffrage further suggests that there were more ”acceptable” avenues for women to pursue a more active role.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 18,
+        "section_name": "Demographic Shock and Immigration",
+        "paragraph_id": 0,
+        "text": "Deaths are included in the casualty rate (along with wounded, missing and POW). Higher casualty rates might then have shifted attitudes due to the effect on the sex ratio of excess male death. There are two key challenges for this mechanism. Firstly, theory posits that an imbalanced ratio with more women shifts the relative power of the sexes in different ways, however, in the context of the women’s suffrage movement at this time it is not obvious whether a sex ratio shock would be driving or dampening my results. Secondly, high pre-existing male-biased sex ratios, and high migration in this period may be counter-balancing any expected sex ratio shifts. I will explore both these challenges further. Loss of men might have lead to political progress for women and demand for suffrage. Women pushed by necessity to enter the labor force or lead their households are in a stronger position to realize their economic and social liberation through economic power 22 Sittings refers to the number of seats for individuals in places of worship or the number of people they will accommodate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 18,
+        "section_name": "Demographic Shock and Immigration",
+        "paragraph_id": 1,
+        "text": "and the recognition that they deserve the same rights as men in those roles ( Guttentag and Secord , 1983 ; Ferber and Berg , 1991 ; Heer and Grossbard , 1981 ). Alternatively, a shock to the sex ratio which leads to male-advantage in the marriage market and decreased female bargaining power ( Abramitzky et al. , 2011 ) would make political agitation more costly and negatively effecting support for women’s suffrage. I estimate a difference-in-differences (DiD) using census data pre (1860) and post (1870) war, to check whether towns with higher casualty rates did experience sex ratio shocks that shifted the balance towards women. The results of this estimation are displayed in Figure 10 , along with a variety of other demographic outcomes, and indicate that if anything towns with higher casualty rates ended up gaining men in relation to women. I also observe no impacts on factors associated with a sex ratio shock such as female labor force participation or share of female household heads. Therefore, it is unlikely that this is the mechanism underlying my results. The most reasonable explanation for the lack of observable impact of high casualty rates on the sex ratio is that high levels of immigration into and within the US at the time are likely to have mitigated any initial shift. 23 Men looking for work, or a wife, may well have deliberately chosen to migrate during this period to areas that lost more men, to try and fill the gaps in labor and marriage markets their absence would have created, and as the census data used here is from 5 years after the War there would have been time for these countervailing shifts to occur. I conducted DiD analysis on the shares of different immigrant populations in the US measured pre (1860) and post-War (1870), calculating a version of equation ( 4 ) where Period t is a binary variable representing the pre or postwar period. These results are presented in Figure 11 and show that although towns with higher casualty rates experienced no significant increases in the overall share of immigrant men 24 , they did experience an increase in Canadian, British, Irish, and French immigrants and out of state migrants. This suggests that migrants were selectively moving, negating any shock to the sex ratio we might expect. This introduces the concern that this immigration could itself be driving my main results. If immigrants replacing dead men are generally more conservative regarding gender roles than native born populations then this would have a negative impact on suffrage petitioning, leading the results to be over-estimations of the effect of casualty rates. However, if the incoming migrants hold more progressive views relating to women’s role in society then this might be downwardly biasing the results. I follow Haddad ( 2022 ) in attempting to capture migrants’ views by using their home country (or state’s) female 23 Unlike in other studies of imbalanced sex ratios, such as Grosjean and Khattar ( 2019 ), where imbalances were broadly country-wide (or at least very large or remote areas) in this context there was high internal as well as external mobility to dampen any expected effects of male scarcity. Bazzi et al. ( 2023 ) propose a similar hypothesis when looking at the effect of male-biased sex ratios on the frontier on women’s bargaining power. 24 Likely because many, German men in particular, also died in huge numbers fighting in the Civil War.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 18,
+        "section_name": "Demographic Shock and Immigration",
+        "paragraph_id": 2,
+        "text": "labor force participation to capture a measure of progressive attitudes towards women. These results are shown in Figure 12 . They show a positive but insignificant shift in immigrant shares from countries/states where women had above average FLFP, and a significant reduction in shares of immigrants from below average FLFP locations. This suggests that incoming migrants may have replaced men with less progressive attitudes towards women’s rights, if anything biasing my results downwards. Taken together these results suggest that the casualty rate, driven by its likely impact on immigration inflows, are unlikely to have shifted the sex ratio in Northern states in such a way as to have fundamentally altered decision-making. Unlike previous research on the impact of conflict on women’s outcomes where the key mechanism is an absence of men ( Rogall and Z ́arate-Barrera , 2020 ; Boehnke and Gay , 2022 ) I am observing a more direct impact of wartime experience itself rather than the resulting sex imbalance. A sex ratio shock is therefore unlikely to be the mechanism driving results.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 19,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In this work I show the impact of conflict casualties in the US Civil War on the demand for women’s suffrage. I find that higher casualty rates in the Civil War are associated with a decrease in petitioning to Congress, consistent with the hypothesis that when casualty rates are higher the already finite appetite for social and political reform is further constrained resulting in a reduction in demand. I present evidence that the mechanism for this reduction is partly the increased salience of Black rights in high casualty rate areas, a cause competing with women’s suffrage for this limited resource, and a tightening of pre-War social norms due to the collective trauma of the War. That social and political causes are competing for the limited attention and resources of public support is a particularly interesting phenomena, and one that repeats itself in the history of social movements throughout time. For example, many women campaigning for the Student Non-Violent Coordinating Committee 25 in the 1960s were pushed to join the second-wave feminist movement when they recognized that they were treated as secondclass citizens to men even in this progressive reform movement ( Hole , 1971 ). Similarly, we see these tensions arise in debates of prioritization, such as over the inclusion of lesbian rights in second-wave feminism ( Sapiro , 2020 ), or trans issues in wider LGBT movements ( Lewis and Taylor , 2014 ). These findings add to our understanding of political mobilization and provide evidence that local experiences and contexts matter for demand for political reform. My results also add nuance to our understanding of conflict and social change, although it can shake up hierarchies and open policy windows, it can also shift people’s priorities away 25 The Student Non-Violent Coordinating Committee was the primary student group for civil rights.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1180,
+        "section_id": 19,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "from progressive movements, entrench existing structures, and generate backlash against groups. This sheds light on the struggles for political rights in countries where some populations have yet to achieve the franchise, as well as on the dynamics of political movements in developed contexts today that are competing for attention and action.",
+        "extraction_warnings": ""
+    }
+]

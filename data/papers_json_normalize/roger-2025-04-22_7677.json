@@ -1,0 +1,2282 @@
+[
+    {
+        "paper_id": 1611,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Sergei Balakin ∗ & Guillaume Roger ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "We study the monopoly problem of a large-scale electricity storage unit that faces a periodic but uncertain demand over multiple cycles. Time is continuous and strategies are functions of time expressed in terms of power rates (rather than quantities). Storage buys in periods of below-average demand and sells when demand exceeds the mean. For different information structures we characterize the selling and buying strategies exactly as a pair of (time-varying) intensity and threshold time. This flexibility enables the operator to alleviate the impact of its market power over time within a cycle by smoothing out the (dis)charge rate. When the capacity is not too large in a sense we make precise, the storage operator trades that capacity in full every cycle, even under rate (dis)charge constraints. For a large capacity, intertemporal (dynamic) linkages emerge across cycles. Depending on the demand realization, the storage operator may save some energy to mitigate the impact of her market power when selling now and buying again later, may then gamble over the next cycle and may even buy more at t = 0 than in the one-cycle optimum.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Keywords: dynamic trading, storage, market power",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "JEL: C73, D43, D47, Q41, Q42 ∗ Monash University. Funding from ARENA under grant 2021/ARP-016 gratefully acknowledged. Corresponding author: Roger–guillaume.roger72@gmail.com",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Storing electricity is completely essential to the energy transition. As illustrated by Figure 1 , storage is the means to smooth production and consumption to deliver variable renewable energy (VRE) when it is needed, on the right-hand panel, rather than when available, as on the left-hand panel. 1 Today, storage is the bottleneck of further expansion of renewable energy sources and of any energy transition on a large scale. Even in California, by far the most advanced market when it comes to storage, only 10 GW of capacity are installed while the total dispatchable capacity stands at 89 GW. 2 The state of South Australia, where the penetration of renewable energy is arguably the highest in the world, regularly produces more VRE than it needs to power itself, as for example in September 2023 when it reached 120% of demand. 3 Hence there is a pressing need for more storage rather than more VRE generation capacity. Furthermore, storage is widely believed to deliver large benefits to consumers and producers thanks to price smoothing. Lueken and Apt ( 2014 ) estimate the benefits to consumers to be as large as US $ 4 Bn in the PJM market alone, for example. 4",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "2000 4000 6000 8000 10000 12000 14000 16000",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Trading interval Average daily VRE output NEM 4-10 July",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "20000 25000 30000 35000 40000 45000",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "Trading interval 30-min daily average demand NEM 4-10 July",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "Figure 1: Mismatch between VRE (grid-scale) supply and (gross) energy demand. Daily 30-min averages, 4-10 July 2024, Australia. Source: AEMO data.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "1 This picture is typical of many markets with a high penetration of VRE. See also Figure 9 in the Appendix. 2 Source: https://www.energy-storage.news/california-energy-storage-revolution-is-here-says-governor-asus-leader-state-surpasses-10gw/. The article only gives an aggregate power rating figure (not energy, which depends on duration). The dispatchable capacity is also quoted as power rating but it can run at will. 3 Source: RenewEconomy, https://reneweconomy.com.au/solar-reaches-record-120-per-cent-ofelectricitydemand-in-south-australia/. 4 PJM: Pennsylvania, New Jersey and Maryland.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "Yet, we know very little about the economics of electricity storage. This paper contributes, in part, to addressing this gap. Understanding storage behavior matters a great deal to assess whether market design need be modified, whether competition policy is ready to cope with it, what intervention may be necessary or even to assess the welfare benefits of storage. For example, does storage shift energy over time as efficiently as widely expected? In what way do consumer benefits depend on the behavior of storage? In light of the enormous investment in storage that is required to meaningfully transition legacy power systems and develop new ones in emerging economies, we argue these are essential questions to address. 5 Our singular focus is the study of a continuous-time, dynamic problem of a monopoly storage operator that seeks to take advantage of intertemporal price differences that can be forecast but remain uncertain. The storage operator sways market power, either because of its sheer size, or because of a strategic location on the network. 6 We are particularly interested in understanding how the storage operator manages the impact of her own market power on prices, what implications this has on quantity withholding, and whether any intertemporal linkages emerge from these operations. That is, does a storage unit with a finite, but possibly large, energy capacity save currently stored energy, or conversely buy more of it, in anticipation of a large demand shock in the future? We draw some welfare implications. These price differences are induced by intra-day demand fluctuations that are well documented – see Jha and Leslie ( Forthcoming ) or Butters et al. ( Working Paper ). In our model, demand follows a periodic function with a low and high-demand interval to match the data in markets like California (see Figure 9 in the Appendix), Australia (recall Figure 1 ), Texas or Spain. Within a cycle, the high-demand period is subject to a random shock that determines peak demand. The storage operator wants to exploit high demand by selling, for which she must first make a purchasing decision under uncertainty about this forthcoming maximum demand. We attempt to be faithful to the physics of electricity: actions are functions b ( t ) , s ( t ) of time that describe power flows . Energy is the time-integral of these flows and is subject to a capacity constraint. Capacity is a critical parameter that drives the optimal behavior. For one and two cycles, we characterise the optimal strategy of the storage operator under 5 To get a sense for scale, battery systems cost approximately US [FORMULA] 18Bn. 6 Local congestion or market power are real considerations on an electricity grid. See also the Discussion, Section 5.1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "different information structures; it is enough to restrict attention to either no or all information. A key fact to bear in mind is that, regardless of the time horizon (one or two cycles), a storage unit can control both when it (dis)charges and how intensely it does so (power rate). It uses both instruments to mitigate the impact of its own market power, both in selling and buying . The problem of the storage operator is akin to that of managing price impact in selling securities (see for example Vayanos ( 1999 ), Almgren and Chriss ( 2001 ) and others since). For a large demand shock, the discharge rate rises steeply but is smooth, peaks at a high level and the duration remains short; the unit sells at high prices but its capacity is limited. The converse holds when the demand shock is small: to alleviate its own price impact, it sells more slowly and over a longer interval. For really low demand, there is a discontinuous jump at the start and the end. The (dis)charge rate follows the path of the demand; in other words, it never completely smooths demand – neither when buying nor when selling. In practical terms, storage never seeks to completely “shave the peak”, as practitioners often suggest. These results hold even under (dis)charge rate constraints, as long as the unit is not oversized in a sense that we make precise; that condition connects the (dis)charge rate constraint to the capacity of the unit. When she operates under no information, we also allow the operator to learn the true state of demand and thus correct course. Upon learning, she either delays selling if the shock is high, or must (discontinuously) accelerate discharging if demand is low. Our main results pertain to the inter-cycle behavior for two cycles. The critical insight is that a large storage operator need not trade her capacity in full every cycle, whether selling or buying. This affords her some further flexibility in making her trading decisions in both the second and the first cycle. We find that the optimal strategy systematically takes advantage of this flexibility, both in selling and buying. In other words, even with a finite horizon, for some combinations of capacity and demand shocks, there are intertemporal linkages between the two cycles. A large storage unit that faces a low demand in the first cycle withholds energy to ( a ) mitigate its own price impact when selling in the current cycle and ( b ) purchase comparatively less (than it otherwise would) next cycle, which also mitigates its price impact when buying . This speaks to the incentives to save energy across cycles. In addition, if for whatever reason, the storage operator enters the second cycle with a positive inventory – say, as a result of withholding – she buys enough to reach an optimal inventory level ( c ′ m or c ′′ m ) that exceeds the one-cycle optimal inventory ( c m ). However, the total purchase in the second",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "cycle remains lower than the one-cycle optimal quantity. In other words, the operator takes a cheap gamble on a larger demand shock in the second cycle. The gamble is cheap because less energy is purchased than the one-cycle optimal quantity, which implies also a lower price impact when buying. This cost-saving dominates the risk of facing a poor demand shock in the second cycle and the gamble has a strictly positive expected value. Then proceeding backwards, the storage operator also takes a gamble in the first cycle by purchasing more than the one-cycle optimum c m . This gamble is not cheap but it is not risky since the storage unit can keep some of its charge at the end of that cycle. Time provides some insurance, and this delivers again a lottery with a strictly expected value. The consequence of this optimal behavior is that storage progressively shifts less energy from the low-value to the high-value period (see Figure 1 ). There is less intertemporal smoothing of demand in the market because of more intertemporal smoothing of trades to the benefit of the storage operator. When the storage capacity is small enough, the unit does trade its entire capacity every cycle. The incentives to withhold and gamble disappear because the price impact is not large enough; these intertemporal linkages vanish. Because storage is an intermediation activity and demand is inelastic in this model, it delivers no direct welfare benefit in the aggregate. The same quantity has to be delivered, so at best storage activities reallocate rents between consumers, producers and itself. 7 Hence any welfare implications are distributional in nature; we compute the transfers from consumers (to storage and sellers) and show that storage increases consumer welfare. Other welfare benefits may lie outside our model. For example, if generators are excessively extracted by a storage sector with market power, they may not invest as much as socially optimal. With an elastic demand however, the behavior of the storage unit induces quantity withholding (see Balakin and Roger ( 2023 ), for example). Then the implication for competition authorities is immediate: it should promote entry by small operators, and prohibit firms from owning multiple units to preempt coordination. Our model borrows from that used by Andres-Cerezo and Fabra ( 2023a ), which also uses a periodic function to model a deterministic time-varying demand to analyze the interaction of storage and renewable generation. To this basic construction we add market power, uncer7 In the specific case of electricity, the welfare benefit of storage is the reduction in GHG emissions through the emergence of renewable energy on a large scale.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "tainty and dynamics – multiple cycles – to study the optimal strategy of a storage operator in the details it deserves. 8 Our work departs significantly from Cruise et al. ( 2018 ), who study storage operations under imperfect competition. First we take profit maximization as the objective function rather than cost minimization (which are not equivalent under imperfect competition). Second, we allow for a cyclical, but uncertain demand. Third, our storage unit operates in continuous time, which allows us to express strategies as power rates rather than quantities. We need not rely on an exogenous parametrization of the market impact (the term λ in Cruise et al. ( 2018 )); instead we can compute that market impact from the endogenous variables. In another paper, Andres-Cerezo and Fabra ( 2023b ) study the question of market structure with storage but leave aside how storage actually behaves; in particular, they ignore the dynamics of storage. Butters et al. ( Working Paper ) use California data to estimate the equilibrium effect of large-scale storage. Storage is assumed to behave competitively and trades in quantities rather than rates; this is almost orthogonal to our work. Karaduman ( 2020 ) presents an early economic study of grid scale storage. He does allow for market power in a quantity game; however he does not compute the best reply but simulates it using Australian data. Geske and Green ( 2020 ) study arbitrage in a model of imperfect competition with demand uncertainty and diurnal, weekly and seasonal patterns. They must confine themselves to numerical (approximate) solutions to the welfare maximization problem and show quantity withholding. In two other papers, Balakin and Roger ( 2023 ) and Balakin and Roger ( 2024 ), we study optimal strategies and equilibria of games where storage operator(s) face an uncertain demand, the mean of which is constant. Here demand varies over time. It is important to note that hydro-electric power differs from storage. The water inflow is free, exogenous and stochastic; our storage unit pays for the energy it buys and it makes that decision optimally as part of its trading strategy. In addition, most models of dam management take prices as fixed (not even moving in the aggregate). This work bears connection to the literature on asset trades in financial mathematics and economics but also differs fundamentally. Almgren and Chriss ( 2001 ) solve the problem of a trader facing a trade-off between price impact (i.e. market power) and price uncertainty. Selling too fast decreases the clearing price, but selling slowly increases the risk of price shocks. 8 Andres-Cerezo and Fabra ( 2023a ) are not the first to model market demand using a periodic function; see for example Dhar et al. ( 1993 ) and others since.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "Vayanos ( 1999 ) considers the strategic dimension of a similar problem where the price impact also depends on the behaviour of other traders but traders are all identical. Sannikov and Skrzypacz ( 2023 ) extend Vayanos ( 1999 ) to heterogeneous traders, which introduces momentum in prices. 9 In all these papers, traders mitigate their price impact by trading slowly over time – just like our storage operator. The motivations for trading are very different though. The financial traders in these papers face idiosyncratic shocks and so trade to diversify their risk. Our storage units arbitrages intertemporal price differences and therefore supplies (imperfect) insurance in the face of aggregate risk.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 0,
+        "text": "Consider a market with a single storage operator, an infinite number of competitive sellers (for example, generators in the case of electricity), and a pool of consumers. The behavior of consumers is described by the price inelastic, but time-varying, demand function D ( t, ε ) such that, for each cycle,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 1,
+        "text": "D ( t, ε ) =      θ − sin t if t ∈ [0 , π ) , θ − (1 + ε ) sin t if t ∈ [ π, 2 π ) , (1) and which is depicted in Figure 2 . The term θ ⩾ 1 is a parameter that captures the mean demand, t is time and ε ∼ U [ − 1 , 1] is a demand shock that augments the peak of demand.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 2,
+        "text": "π π 3 π 2 π t θ - 1 θ θ + 1 θ + 2 D",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 3,
+        "text": "Figure 2: Demand function for 0 ⩽ t ⩽ 2 π .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 4,
+        "text": "9 Momentum can be understood as inertia: the clearing price keeps drifting even after the trade is completed. This is due to the action of large traders and the heterogeneity of traders.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 5,
+        "text": "The demand function D is thus periodic, so E ε D ( t, ε ) = E ε i D ( t + 2 πi, ε i ) for any i ∈ N and all shocks are identically distributed and pairwise (so, serially) independent. The shock ε can be interpreted either strictly as a demand shock or as a VRE supply shock, with D ( t, ε ) being net demand. What matters for the analysis of storage behavior is that this uncertainty be reflected in prices, as is the case in ( 2 ) and ( 3 ) below. The storage unit has limited inventory capacity equal to k < ∞ . We abstract from efficiency losses, which are not material to our analysis. The storage operator can only buy flows b ( t ) or sell s ( t ), and starts empty – so the first action must be to purchase: b . Given D ( t, ε ), one can reasonably conjecture that the storage unit buys b ( t ) , t ∈ [0 , π ) under low demand conditions and sells s ( t ) , t ∈ [ π, 2 π ) when demand is high. The demand shock ε only affects the selling period [ π, 2 π ). This assumption is mostly simplifying and we discuss it further in Section 5 in light of the results we derive. It largely reflects the empirical evidence in most power markets that exhibit this systematic demand pattern (called the “duck curve”), such as California, Texas, Spain or Australia. The sellers each produce a quantity q with a diminishing-return technology that induces convex costs; we specialise the cost function to be quadratic, which is sufficient for the model and not substantive to the argument: c ( q ) := q 2 / 2. Thus, by the standard arguments that Marginal Cost = Marginal Benefit and MB = p due to perfect competition among suppliers, the clearing price p is equal to the aggregate quantity q = c ′ ( q ). More precisely, we have the following market clearing conditions that determine the price function p :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 6,
+        "text": "q ( t ) = p ( t ) = θ − sin t + b ( t ) if t ∈ [0 , π ) , (2) q ( t, ε ) = p ( t, ε ) = θ − (1 + ε ) sin t − s ( t ) if t ∈ [ π, 2 π ) . (3)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 7,
+        "text": "In buying and selling, a storage unit arbitrages obvious prices differences as made evident by ( 2 ) and ( 3 ). In this environment we seek the optimal strategy ( b ( t ) , s ( t )) for the storage operator over two cycles. We also want to understand whether any intertemporal linkages can exist between any two cycles of duration 2 πi, i = 1 , 2 , ... To do so we consider different treatments of information. We study both the case in which the storage operator only has access to the distribution of the shock ε , as well as that when the storage operator observes the realisations of ε 1 and ε 2 at times t = π and t = 3 π , respectively, that is, just before deciding on her selling strategy s ( t ). In the first case, the functions b ( t ) and s ( t ) can only be functions of time in any cycle. In the second one, s becomes",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 8,
+        "text": "s 1 ( t, ε 1 ) and s 2 ( t, ε 1 , ε 2 ) while b ( t ) in the second cycle also becomes a function of the first cycle information; we write b 2 ( t, ε 1 ). Because the payoffs and the relevant constraints also depend on this information structure, we specify them for each case as we proceed with the analysis.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 3,
+        "section_name": "The main result",
+        "paragraph_id": 0,
+        "text": "Here we state and explain heuristically the main finding and postpone its thorough analysis to the next Section. There are two cycles with time t ranging from 0 to 4 π . At times t = π and t = 3 π the storage operator receives perfect information about the upcoming demand shocks ε 1 and ε 2 , respectively. With this information, the operator can set its selling strategies: s 1 := s 1 ( t, ε 1 ), s 2 := s 2 ( t, ε 1 , ε 2 ); the buying strategy b 2 := b 2 ( t, ε 1 ) in the second cycle also depends on the first-cycle shock through the state variable c := c ( ε 1 ) that denotes the state of charge at time t = 2 π . A storage unit cannot short-sell, it cannot purchase more than its capacity, in the first cycle it cannot sell more than it has bought, nor cumulatively over the two cycles. To present our result we need to introduce the quantity c m ; this is the largest quantity traded over one cycle when the storage operator receives information at time t = π about the state of demand in the interval [ π, 2 π ]. We derive c m in Lemma 2 . One can conceive of c m as the unconstrained monopoly quantity for one cycle.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 0,
+        "text": "Over two cycles, the optimal strategy of a storage operator consists in:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 1,
+        "text": "1. In the first cycle:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 2,
+        "text": "• buying a quantity X = min { k, ̄ c } , where ̄ c ⩾ c m depends solely on the distribution of the shocks, using the function b 1 ( t ) for t ∈ [ t 0 , π − t 0 ), where t 0 ∈ [0 , π/ 2] is some time threshold;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 3,
+        "text": "• selling a quantity Y < X following the function s 1 ( t, ε 1 ) for t ∈ [ π + t ε , 2 π − t ε ), where t ε ∈ [0 , π/ 2] is some time threshold, when the shock ε 1 is low enough and the capacity is high enough, and keeping c = X − Y > 0; or",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 4,
+        "text": "• selling a quantity Y = X following the function s 1 ( t, ε 1 ) for t ∈ [ π + t ε , 2 π − t ε ), where t ε is some other time threshold, when the shock ε 1 is large enough and the capacity is low enough (then c = 0).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 5,
+        "text": "2. In the second cycle:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 6,
+        "text": "• buying a quantity Z = min { k, c } where c := c ( ε 1 ) ⩽ c m is endogenously determined, according to the function b 2 ( t, ε 1 ) for t ∈ [2 π + t 0 , 3 π − t 0 ) where t 0 ∈ [0 , π/ 2] is some other time threshold; • selling the quantity c + Z ⩾ X according to a function s 2 ( t, ε 1 , ε 2 ) for t ∈ [3 π + t ε , 4 π − t ε ) where t ε ∈ [0 , π/ 2] is some other time threshold; • the storage unit finishes empty.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 7,
+        "text": "In the formal statement of this result we characterize exactly the functions b 1 , s 1 , b 2 and s 2 , the intervals over which they are non-zero, the quantities X, Y and Z (at least for k ⩽ c m ), as well as the exact conditions (realisations of ε and capacity level k ) under which each action becomes optimal. For now we confine ourselves to explaining some aspects of this result. Whether buying or selling, the storage unit picks an optimal rate b, s and an optimal time window – the thresholds t 0 and t ε in each cycle. 10 Both can be adjusted, which confers the monopolist considerable flexibility to best manage her market power within the cycle and across cycles. Acquiring information (at times π and 3 π ) allows the storage operator to tailor her selling rates s 1 ( t, ε 1 ) , s 2 ( t, ε 1 , ε 2 ) to the demand conditions, rather than selling in expectation. To determine how much to purchase each cycle, the operator takes the mean quantity E ε [ s ( t, ε )], adds her current state of charge c and considers the time-horizon. Buying is entered into under full information in a trivial way; there is no demand uncertainty in the buying periods, and the quantity to be purchased is known. 11 Hence the function b 1 ( t ) is independent of ε 1 – it does depend on its distribution – and b 1 ( t ) minimizes the cost of buying the required quantity. History matters in this dynamic problem, and it is reasonable to expect intertemporal linkages between cycles (true dynamics). They obviously show through the function b 2 ( t, ε 1 ), which does depend on the first-cycle shock ε 1 through the state variable c := c ( ε 1 ). Therefore, even though the manner in which the storage operator buys is the same in both periods, the exact quantities are not. Even though in both cases it buys forming expectations about the next selling interval, the details are not the same because of past information ε 1 that affects 10 By symmetry of sin t , the starting and finishing times are characterised by the same threshold time for each action. 11 We further discuss relaxing this assumption in Section 5 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 4,
+        "section_name": "Result:",
+        "paragraph_id": 8,
+        "text": "the state of charge c ( ε 1 ). Consequently the intensity b 2 ( t, ε 1 ) need not be the same as b 1 ( t ), and neither is the duration of the buying interval. In the face of a small shock ε 1 inducing low demand, the storage operator has both myopic incentives to withhold quantities, and intertemporal incentives to save quantities in cycle 1 to decrease her procurement costs in cycle 2. This does hold for some pairs of parameters ( ε 1 , k ): the capacity must be large enough and the demand low enough. That is why c may be positive at t = 2 π . Furthermore, when the state of charge c is positive at t = 2 π – so not everything has been sold, for whatever reason – the storage operator buys less in the second cycle than in the first one, hence c < c m . But in total she holds more after purchase than in the static benchmark – more than c m . She takes a cheap gamble on the second cycle. The gamble is cheap because she buys lower quantities at a lower price than in the first cycle. This makes up for the cost of the risk in taking the gamble, which has a positive expected value. Finally, this behavior actually starts from the first cycle at t = 0 because the storage operator anticipates not having to sell everything in a single cycle if demand is low; she can keep some charge level c ( ε 1 ) at t = 2 π . This allows her to also gamble in the first period, not because it is cheap, but because it is risk-free. She buys a little more than the static optimum to exploit a large demand shock, with no obligation to sell it all if demand turns out to be low. That is why c m < ̄ c . The next Section is devoted to understanding the details of this result, some of which are quite intricate and technically demanding.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 5,
+        "section_name": "Analysis",
+        "paragraph_id": 0,
+        "text": "The analysis is broken down in four steps to better understand the role of three elements on the optimal strategy within a cycle, namely information setting, capacity k and stochastic shock ε . In the last step we pull everything together to shed some light on dynamic incentives. Hence we begin with a single cycle and continue with the two-cycle model; the single-cycle case is used as benchmark against which one can contrast the dynamic, optimal strategies.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 0,
+        "text": "Within a cycle we focus on the role of information, capacity and demand on the optimal strategy of the storage operator, which acts as a monopolist on her residual demand. Understanding how the monopolist behaves “myopically” – in the sense of over a single cycle [0 , 2 π ] – is the key to this problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 1,
+        "text": "4.1.1 No information",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 2,
+        "text": "Under no information about the shock ε , the monopolist storage can only rely on the expected value of the (single) shock ε . The payoff function writes:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 3,
+        "text": "max b ( t ) ,s ( t ) \" − Z π ( θ − sin t + b ( t )) b ( t ) dt + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε ) sin t − s ( t )) s ( t ) dtdε # (4)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 4,
+        "text": "and reflects the fact that there is no uncertainty from 0 to π , but there is from π to 2 π . The support is [ − 1 , 1] and the density is 1 / 2. The storage unit is subject to the natural constraints b ( t ) ⩾ 0 , s ( t ) ⩾ 0 , Z π b ( t ) dt ⩽ k, Z 2 π ( b ( t ) − s ( t )) dt ⩾ 0 . (5) There is no short-selling, it can buy quantities at the rate b ( t ) up to its capacity k , and it cannot sell more than has been bought before. A storage unit starts from empty at time 0. Expression ( 4 ) can be simplified to",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 5,
+        "text": "max b ( t ) ,s ( t ) \" − Z π ( θ − sin t + b ( t )) b ( t ) dt + Z 2 π π ( θ − sin t − s ( t )) s ( t ) dt # ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 6,
+        "text": "that is, with symmetric noise around the mean, the storage unit sells following mean demand. In the Appendix we prove",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 7,
+        "text": "Lemma 1. The optimal storage strategy that solves ( 4 ) subject to ( 5 ) is characterized as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 8,
+        "text": "b ( t ) =      2 (sin t − sin t 0 ) if t ∈ [ t 0 , π − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 9,
+        "text": "s ( t ) =      − 1 2 (sin t + sin t 0 ) if t ∈ [ π + t 0 , 2 π − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 10,
+        "text": "where t 0 ∈ [0 , π/ 2] is implicitly defined as a root of the equation cos t − \u0010 π 2 − t \u0011 sin t = k. (6) In this case, the last two inequalities of ( 5 ) are bounded, so the storage operator always trades its full capacity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 11,
+        "text": "b ( t ) =      sin t if t ∈ [0 , π ) , otherwise, s ( t ) =      − sin t if t ∈ [ π, 2 π ) , otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 12,
+        "text": "The storage operator simply trades the monopoly quantity of 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 13,
+        "text": "In Figure 3 below we depict the optimal paths b ( t ) , s ( t ) for different capacity levels (for any k > 1 the path is the same as for k = 1 since 1 is the monopoly quantity under no information). The threshold t 0 marks the first intersection of the function b ( t ) with the x axis; the second intersection determines π − t 0 . The interval [ t 0 , π − t 0 ] grows longer and b ( t ) reaches a higher maximum as capacity k increases; the storage unit simply buys more. The same holds for the function s ( t ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 14,
+        "text": "k = 1. k = 0.8 k = 0.6 k = 0.4 k = 0.2 π 3 π 2 π t s ( t )",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 15,
+        "text": "Figure 3: The optimal buying and selling strategies for different k with no information.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 16,
+        "text": "The storage unit is a monopolist that operates for a single cycle. Under no information, it computes the best trajectory s ( t ) to maximize its expected payoff max E [ profit ( ε )] in the interval π to 2 π . This determines a quantity R 2 π π s ( t ) dt to purchase in the interval 0 to π . The cost-minimizing way to procure this quantity is then determined by b ( t ). Because the information is the same over the entire cycle and the distribution of shocks and the sin function are symmetric, there is a unique threshold t 0 that pins intervals [ t 0 , π − t 0 ] and [ π + t 0 , 2 π − t 0 ] of the same length. Finally, when the capacity k ⩽ 1, it can always be absorbed in full by the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 17,
+        "text": "demand for t ∈ ( π, 2 π ]; otherwise the storage operator simply behaves like a monopolist and restrains quantities to at most 1. Importantly, and this is a recurring theme that pervades this paper, the storage operator spreads the quantities she buys and sells over the relevant interval. There is no selling at a constant rate s ( t ) = s ∗ around the peak of demand; the storage operator wants to follow the path of demand. In doing so, she preserves a large mark-up (near the peak) at the expense of a smaller inframarginal loss (near the boundaries of the interval). This logic is simply that of monopoly pricing, but where time can also be used to smooth price impact.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 18,
+        "text": "4.1.2 Incomplete information",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 19,
+        "text": "Now let the storage operator receive a fully informative signal about the shock ε ; this could be observing the shock itself or receiving a precise report of it. 12 Clearly the storage unit can set its selling strategy according to this information: s ( t ) := s ( t, ε ). Then the maximization problem changes to:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 20,
+        "text": "max b ( t ) , { s ( t,ε ) } \" − Z π ( θ − sin t + b ( t )) b ( t ) dt + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε ) sin t − s ( t, ε )) s ( t, ε ) dtdε #",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 21,
+        "text": "subject to constraints",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 22,
+        "text": "b ( t ) ⩾ 0 , s ( t, ε ) ⩾ 0 , Z π b ( t ) dt ⩽ k, Z 2 π ( b ( t ) − s ( t, ε )) dt ⩾ 0 for any ε ∈ [ − 1 , 1] . (8) In the objective function ( 7 ), each trajectory is a function s ( t, ε ) of the noise ε , and we aim to find a function b ( t ) and a family of continuous functions { s ( t, ε ) } − 1 ⩽ ε ⩽ 1 that solve Problem ( 7 ) subject to ( 8 ). The constraint set ( 8 ) is almost as in ( 5 ) except for the exact definition of the function s ( t, ε ). This makes for a much richer problem already. Not only can the operator use a perfectly adapted selling strategy, we show she can also avail more flexibility in the quantity of energy traded.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 23,
+        "text": "Lemma 2. The optimal storage strategy that solves ( 7 ) subject to ( 8 ) is characterized as: 12 Information remains incomplete in that at t = 0, the operator does not know ε yet.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 24,
+        "text": "b ( t ) =      2 (sin t − sin t 0 ) if t ∈ [ t 0 , π − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 25,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin t ε ) if t ∈ [ π + t ε , 2 π − t ε ) , otherwise, if ε ⩾ k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 26,
+        "text": "s ( t, ε ) =      π ( k − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [ π, 2 π ) , otherwise, if ε < k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 27,
+        "text": "where t 0 is defined by ( 6 ) and t ε ∈ [0 , π/ 2] is defined as a root of the equation cos t − \u0010 π 2 − t \u0011 sin t = k 1 + ε . (9)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 28,
+        "text": "• If 1 < k ⩽ c m , where c m ≈ 1 . 009 is a root of the equation Z 1 k − 1 (1 + ε ) sin t ε dε = 4 π ( k − 1) + k 2 π (10)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 29,
+        "text": "with respect to k , then",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 30,
+        "text": "b ( t ) =      sin t 2 + 1 π ( k − 1) if t ∈ [0 , π ] , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 31,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin t ε ) if t ∈ [ π + t ε , 2 π − t ε ) , otherwise, if ε ⩾ k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 32,
+        "text": "s ( t, ε ) =      π ( k − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [ π, 2 π ) , otherwise, if ε < k − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 33,
+        "text": "In these two cases, the last two inequalities of the set ( 8 ) are bounded, therefore storage always trades its full capacity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 34,
+        "text": "b ( t ) =      sin t 2 + 1 π ( c m − 1) if t ∈ [0 , π ] , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 35,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin ̄ t ε ) if t ∈ [ π + ̄ t ε , 2 π − ̄ t ε ) , otherwise, if ε ⩾ c m − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 36,
+        "text": "s ( t, ε ) =      π ( c m − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [ π, 2 π ) , otherwise, if ε < c m − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 37,
+        "text": "where ̄ t ε ∈ [0 , π/ 2] is defined as a root of the equation cos t − \u0010 π 2 − t \u0011 sin t = c m 1 + ε . (11)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 38,
+        "text": "In this case, storage optimally does not trade its whole capacity but only up to c m .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 39,
+        "text": "The function s ( t, ε ) differs from s ( t ) through the terms ε and t ε , which determines when the storage unit actively sells. The reason is that instead of solving max E [ profit ( ε )], which gives a unique solution s ( t ), it solves max profit ( ε ) for each ε , which yields a family of solutions s ( t, ε ) parameterized by ε . When buying under uncertainty, it does so taking into account the mean quantity E [ s ( t, ε )] and finds the optimal path b ( t ) to minimize the procurement cost of this mean quantity. Depending on the exact capacity, this new mean quantity can reach c m and so can exceed that purchased under no information (that is, 1 – see Lemma 1 ). The quantity c m is the profit-maximizing quantity of the unconstrained monopolist under this information. It is akin to the simple profit-maximizing quantity of a monopolist facing linear demand q ( p ) = 1 − p . Even with unbounded capacity, this monopolist only ever trades q = 1 / 2; this is our c m . The upper bound c m is determined as a function of the distribution of the shock ε . In a one-shot game, the operator never trades more than c m . Then the interpretation of the conditions of Lemma 2 should be read as follows. When 1 ⩽ k ⩽ c m , the binding constraint is the capacity k ; when c m < k, c m binds. It is useful to recall this quantity as our one-cycle benchmark to be compared to results of the dynamic model.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 40,
+        "text": "0.1 0.3 0.4 s ( t, ε) ξ = 1. ξ = 0.8 ξ = 0.6 ξ = 0.4 ξ = 0.2 ξ = 0. ξ =- 0.2 ξ =- 0.4 ξ =- 0.6 ξ =- 0.8 ξ =- 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 41,
+        "text": "Figure 4: The optimal selling strategies for k = 0 . 6 and different ε with incomplete information.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 42,
+        "text": "Figure 4 is drawn for for k = 0 . 6 without loss. For any ε > k − 1 the functions s ( t, ε ) have their support strictly inside the interval ( π, 2 π ) (all pictured in different shades of blue). As the shock ε decreases, the support expands and the peak also decreases. The storage operator sells at increasingly worse prices. She must keep extending the selling interval to mitigate her own price impact – as explained in Section 4.1.1 . At the level ε = k − 1, the function s ( t, ε ) reaches the maximum possible support [ π, 2 π ] (that is, t ε = 0), the storage unit starts selling at t = π until t = 2 π , and the support cannot expand further. Instead, for ε < k − 1, the “wings” of function s ( t, ε ) start lifting up, and the peak still decreases. The function s ( t, ε ) contains a discrete jump (1 /π ) ( k − 1 − ε ) and so now starts at a strictly positive rate s ( π, ε ) > 0 at time π . This process goes on until the function s ( t, ε ) becomes the degenerate constant k/π at ε = − 1. In this case, the demand is constant at θ : there is no intertemporal trade off the operator must manage; the price she receives is the same for all t ∈ [ π, 2 π ]. The key difference compared to the no information case is how storage sells, which now depends on the shock ε . This induces two consequences: ( i ) how much it can sell and ( ii ) at what price it sells. In particular, when the demand shock is small, the storage operator has to start selling immediately at the positive rate (1 /π )( k − 1 − ε ), which is “too high” (and a price that is “too low”). 13 In the extreme (only), it sells at a constant rate. In contrast, for 13 We use the terms “too high” and “too low” with some diffidence: this is still the optimal strategy, but",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 43,
+        "text": "a large demand shock, the storage unit sells at a high intensity – the function s ( t, ε ) has a high peak – and for a short duration. In this case, it sells at high prices – when the demand is the highest. Between these extreme cases, the storage unit adapts its selling rate s ( t, ε ) to the demand, precisely to manage its price impact. Anticipating having access to information in the future is valuable and leads the storage operator to purchase (slightly) more in the first place ( c m > 1). This is a second benefit of superior information that is reflected in the strategy s ( t, ε ) and in the resulting clearing price. Intuitively, the better-informed storage operator can better exploit, or mitigate, these swings in demand. Indeed, under no information (Lemma 1 ), the selling strategy s ( t ) is not responsive to these shocks; it follows that the clearing price function p ( t, ε ) also suboptimal. In the case of large, positive shock ε the storage operators sells too low a quantity at too high a price under strategy s ( t ), but it does not sell soon enough when the shock is very low. There are some technical difficulties in this problem because the threshold times t ε , ̄ t ε are both implicitly determined as the solution of conditions ( 9 ) and ( 11 ), but also enter the objective function ( 7 ). Using Lemmata 1 and 2 , we can compute the storage payoffs U 0 and U 1 for the cases of no information and incomplete information, respectively. We have",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 44,
+        "text": "U 0 =      \u0000 cos t 0 sin t 0 + \u0000 π 2 − t 0 \u0001 cos 2 t 0 \u0001 , k ⩽ 1 , π 4 , k > 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 45,
+        "text": "U 1 =              k 3 \u0000 π 8 − 1 π \u0001 + 1 \u0000 cos t 0 sin t 0 + \u0000 π 2 − t 0 \u0001 cos 2 t 0 \u0001 + 1 8 I 0 ( k ) + k 4 I 1 ( k ) , k ⩽ 1 , \u0010 1 + k 3 \u0011 \u0000 π 8 − 1 π \u0001 + k (2 − k ) π + 1 8 I 0 ( k ) + k 4 I 1 ( k ) , 1 < k ⩽ c m , \u0010 1 + c 3 m \u0011 \u0000 π 8 − 1 π \u0001 + c m (2 − c m ) π + 1 8 I 0 ( c m ) + c m 4 I 1 ( c m ) ≈ 0 . 807 , k > 1 , where I 0 ( y ) = Z 1 y − 1 (1 + x ) 2 \u0010 π 2 − t ε ( y ) − cos t ε ( y ) sin t ε ( y ) \u0011 dε, I 1 ( y ) = Z 1 y − 1 (1 + x ) sin t ε ( y ) dε. (12)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 46,
+        "text": "In those integrals the function t ε ( y ) is a generic notation that corresponds to t ε from formula ( 9 ) for y = k . When y = c m , this function t ε ( y ) correspondingly denotes the function ̄ t ε , which may be computed using formula ( 11 ). not very favourable.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 47,
+        "text": "Figure 5 displays these payoffs with and without information (black and gray, respectively). Both functions start at zero for k = 0, and the black line is always above the gray one. The second drawing shows the behavior of these payoffs in the neighborhood of k = 1 and k = c m . Under no information, the maximum payoff is π/ 4 at k = 1; it remains constant at this monopoly profit level for any k > 1 because the unit prefers not to use any extra capacity. With incomplete information, the payoff reaches its maximum slightly further, at c m > 1, and remains constant thereafter – for the same reason.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 48,
+        "text": "0.2 0.4 0.6 0.8 1.2 k 0.2 0.4 0.6 0.8 U",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 49,
+        "text": "0.94 0.96 0.98 c m 1.02 1.04 k 0.77 π 0.807 U",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 50,
+        "text": "Figure 5: Storage payoffs for different capacities k",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 51,
+        "text": "4.1.3 Learning from trading",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 52,
+        "text": "A storage operator can learn from their own trading activity. She could start selling at time π + t 0 , observe an instantaneous payoff p ( t 0 , ε ) s ( t 0 ) and by ( 3 ) learn ε exactly. This would allow the operator to adjust her strategy s ( t ) to ε : stop and delay if ε > 0 or modify the rate of sale if ε < 0. The impact of this new information on behavior is even more drastic (even if belated) than in Lemma 2 . This is particularly pertinent in electricity markets, where the trading intervals are short and so allow for rapid corrective action. 14 In this model, because time is continuous and optimal strategies are (at least) right-continuous, learning from one’s actions is instanteneous. Our next Proposition characterises this corrective action. Note first that, as a consequence of Lemma 1 , a storage operator holds at most c = 1 at time t = π . Hence, in implementing any correction, it is as if k ⩽ 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 53,
+        "text": "Proposition 3. Let k ⩽ 1 and suppose the storage operator follows the optimal strategy laid out in Lemma 1 . Upon selling at time t 0 , it learns the shock ε . 15 The ensueing adjustments 14 CAISO operates in 15-minute increments while the NEM in Austalia settles every 5 minutes. 15 By continuity, it immediately observes its revenue upon selling and so computes the corresponding shock ε .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 54,
+        "text": "• If ε > 0 . The storage operator updates her selling start time from t 0 to t ε > t 0 determined by ( 9 ) and uses the selling strategy from Lemma 2 ;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 55,
+        "text": "• If ε = 0 . A storage operator need not update her strategy;",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 56,
+        "text": "• If ε < 0 . A storage operator starts selling immediately according to its updated selling strategy, which depends on the realisation of ε . There exists ε p ≡ 2 k 1+cos t 0 − 1 < 0 such that :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 57,
+        "text": "̃ s ( t, ε ) =      − 1 + ε (sin t + sin t 1 ) if t ∈ [ π + t 0 , 2 π − t 1 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 58,
+        "text": "where t 1 ∈ [0 , π/ 2] is implicitly defined as a root of the equation cos t 0 + cos t 1 − ( π − t 0 − t 1 ) sin t 1 = 2 k 1 + ε ; (13)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 59,
+        "text": "̃ s ( t, ε ) =        k π − t 0 − 1 + ε \u0012 1 + cos t 0 π − t 0 + sin t \u0013 if t ∈ [ π + t 0 , 2 π ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 60,
+        "text": "In both cases a full storage unit sells all its energy and ends up empty at the end of the cycle.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 61,
+        "text": "A shock that is larger than anticipated is good news for the selling storage unit. It is also easy to handle: the storage operator immediately suspends discharge and postpones selling until the optimal time t ε , whereupon she follows the corresponding optimal strategy described in Lemma 2 . In contrast, when the shock is smaller than expected, selling following s ( t ) according to Lemma 1 (under no information) starts too late to be optimal – see Lemma 2 . The storage operator must immediately accelerate discharge. How much to accelerate, and especially when to stop selling, depend on the exact level of the shock ε . For the higher shock, above the pivotal value ε p , there is a discontinuous jump at t 0 because the operator is “late” in selling, and so must immediately increase the intensity of discharge. Then there is a lower peak and wider support compared to the default function s ( t ). However, selling stops at time",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 62,
+        "text": "t 1 < 2 π , at which time s ( t 1 , ε ) = 0. For the smaller shock, below the threshold ε p , the same discontinuity arises at t 0 but the right boundary is 2 π , rather than t 1 < 2 π , and there is a second discontinuity at 2 π . The operator keeps selling at strictly positive rate s ( t, ε ) until t = 2 π . The maximum of the discharge intensity is even lower (at t = 3 π/ 2). These two strategies are depicted in Figure 6 for negative shocks. Take capacity k = 0 . 342, then t 0 = π/ 6 and the pivotal value of ε is ε p = 2 · 0 . 342 1+cos π/ 6 − 1 = − 0 . 633 and t 1 = 0 . 198 can be obtained from formula ( 13 ). We consider shocks taking values ε = − 0 . 5 and ε = − 0 . 75, so on either sides of threshold ε p . In both panels, the no-information selling strategy s ( t ) is shown with the dashed line.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 63,
+        "text": "π 7 π 3 π 11 π 2 π t 0.076 0.2 s ( t ) \u0002 = - 0.5",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 64,
+        "text": "π 7 π 3 π 11 π 2 π t 0.104 0.167 s ( t ) ε - 0.75",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 65,
+        "text": "Figure 6: Adjustments of selling strategies for different ε .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 6,
+        "section_name": "One cycle",
+        "paragraph_id": 66,
+        "text": "With these preliminaries in hand we turn to the two-cycle model to examine intertemporal incentives.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 0,
+        "text": "Compared to the one-cycle case, now the storage operator may have more options to smooth sales after time t = π – depending on the exact information that is available to her. Consider a two-cycle model for 0 ⩽ t ⩽ 4 π , where storage buys at some rates b 1 and b 2 in periods [0 , π ) and [2 π, 3 π ), respectively, and sells at rates s 1 and s 2 in periods [ π, 2 π ) and [3 π, 4 π ]. From the preceding Section 4.1 , it must be true that the operator sells everything in the second period (interval [3 π, 4 π ]) in order to maximize its profits. Beyond that a more careful analysis is required. Here the two important questions are the following: first, if the shock were bad enough, would storage find it optimal to not sell everything in the interval [ π, 2 π ) and buy less in the period [2 π, 3 π ) when purchasing? That is, are there intertemporal incentives to smooth trade between two cycles by altering buying and selling decisions compared to the one-cycle",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 1,
+        "text": "problem? Second, does this option to not sell the entire inventory at time t = 2 π alter the first-cycle incentives to purchase? For completeness and to ease the transition we start with the simple case of no information over two cycles. That is, the operator never learns ( ε 1 , ε 2 ). Then we turn to the more demanding analysis when shocks ( ε 1 , ε 2 ) are progressively revealed to the operator.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 2,
+        "text": "4.2.1 No information",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 3,
+        "text": "Under no information, the maximization problem is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 4,
+        "text": "max b 1 ,s 1 ,b 2 ,s 2 \" − Z π ( θ − sin t + b 1 ( t )) b 1 ( t ) dt + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε 1 ) sin t − s 1 ( t )) s 1 ( t ) dtdε 1 − Z 3 π 2 π ( θ − sin t + b 2 ( t )) b 2 ( t ) dt + 1 Z 1 − 1 Z 4 π 3 π ( θ − (1 + ε 2 ) sin t − s 2 ( t )) s 2 ( t ) dtdε 2 # (14)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 5,
+        "text": "where s i := s i ( t ) and b i := b i ( t ) , i = 1 , 2, and subject to the constraints",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 6,
+        "text": "b i ( t ) ⩾ 0 , s i ( t ) ⩾ 0 , i ∈{ 1 , 2 } , Z π b 1 ( t ) dt ⩽ k, Z 2 π ( b 1 ( t ) − s 1 ( t )) dt ⩾ 0 , (15) Z 3 π ( b 1 ( t ) − s 1 ( t ) + b 2 ( t )) dt ⩽ k, Z 4 π ( b 1 ( t ) − s 1 ( t ) + b 2 ( t ) − s 2 ( t )) dt ⩾ 0 . The two new constraints of set ( 15 ) assert that cumulative buying net of cycle-one selling cannot exceed capacity, and that the storage unit cannot cumulatively sell more than it cumulatively buys. We show a simple result.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 7,
+        "text": "Lemma 4. If k ⩽ 1 , the optimal storage strategy which solves ( 14 ) subject to ( 15 ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 8,
+        "text": "b i ( t ) =      2 (sin t − sin t 0 ) if t ∈ [2 π ( i − 1) + t 0 , π + 2 π ( i − 1) − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 9,
+        "text": "s i ( t ) =      − 1 2 (sin t + sin t 0 ) if t ∈ [ π + 2 π ( i − 1) + t 0 , 2 πi − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 10,
+        "text": "where t 0 is a root of equation ( 6 ) . Storage trades its entire capacity in both cycles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 11,
+        "text": "If k > 1 , the optimal storage strategy which solves ( 14 ) subject to ( 15 ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 12,
+        "text": "b i ( t ) =      sin t if t ∈ [2 π ( i − 1) + t 0 , π + 2 π ( i − 1) − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 13,
+        "text": "s i ( t ) =      − sin t if t ∈ [ π + 2 π ( i − 1) + t 0 , 2 πi − t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 14,
+        "text": "for i = 1 , 2 . The storage operator trades a quantity equal to 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 15,
+        "text": "Under no information the two cycle-problem is no different from the one-cycle problem. To maximize its profits, a storage unit just buys and sells up to min { k, 1 } ; more to the point, it behaves exactly in the same way in both cycles. The reason is that there is no information acquisition over the two cycles, so that the second cycle is a repetition of the first one. When capacity is large, the optimal strategy is very simple and resembles a straightforward repetition of the (unconstrained) monopoly problem facing mean demand. Next we investigate the impact of information revelation on the intertemporal incentives of a storage operator.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 16,
+        "text": "4.2.2 Incomplete information",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 17,
+        "text": "As in section 4.1.2 , assume now that at times t = π and t = 3 π the storage operator acquires full information about the upcoming demand shocks ε 1 and ε 2 , respectively. Again she can tailor its selling strategies according to this information, that is: s 1 := s 1 ( t, ε 1 ), s 2 := s 2 ( t, ε 1 , ε 2 ). But she also implicitly adjusts the second-cycle buying decision b 2 to the first-cycle shock ε 1 , that is, b 2 := b 2 ( t, ε 1 ) through the state variable c := c ( ε 1 ) that captures the state of charge at t = 2 π . That state of charge c need not be zero in a two-cycle model. The maximization problem is much richer too:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 18,
+        "text": "max b 1 , { s 1 } , { b 2 } , { s 2 } \" − Z π ( θ − sin t + b 1 ( t )) b 1 ( t ) dt + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε 1 ) sin t − s 1 ( t, ε 1 )) s 1 ( t, ε 1 ) dt − Z 3 π 2 π ( θ − sin t + b 2 ( t, ε 1 )) b 2 ( t, ε 1 ) dt + 1 Z 1 − 1 Z 4 π 3 π ( θ − (1 + ε 2 ) sin t − s 2 ( t, ε 1 , ε 2 )) s 2 ( t, ε 1 , ε 2 ) dtdε 2 ! dε 1 # (16)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 19,
+        "text": "subject to a new constraint set b 1 ( t ) ⩾ 0 , s 1 ( t, ε 1 ) ⩾ 0 , b 2 ( t, ε 1 ) ⩾ 0 , s 2 ( t, ε 1 , ε 2 ) ⩾ 0 , Z π b 1 ( t ) dt ⩽ k, Z 2 π ( b 1 ( t ) − s 1 ( t, ε 1 )) dt ⩾ 0 , Z 3 π ( b 1 ( t ) − s 1 ( t, ε 1 ) + b 2 ( t, ε 1 )) dt ⩽ k, (17) Z 4 π ( b 1 ( t ) − s 1 ( t, ε 1 ) + b 2 ( t, ε 1 ) − s 2 ( t, ε 1 , ε 2 )) dt ⩾ 0 for any ε 1 , ε 2 ∈ [ − 1 , 1] . Learning from Section 4.1.2 , we conclude that storage always sells everything in the last cycle. It is also easy to see that if storage sells all its energy in the first cycle (and starts the second cycle at t = 2 π with zero state of charge: c = 0), we are exactly in the setting of Lemma 2 at t = 2 π . But because of the strategic flexibility afforded by the dynamics, it may not sell everything in the first cycle. Indeed, facing an unfavorable shock in the first period, the storage operator now has an option to sell less . Therefore, the first object of interest is the interim interval from π to 2 π : does a storage operator sell everything at that time? Dynamics allow for even more flexibility, which raises the question of how much to buy in the interval from 2 π to 3 π if it is not empty ( c > 0). In that interval, storage can potentially save on purchasing energy, and even to speculate on a large positive demand shock in the interval [3 π, 4 π ]. In such a case, the storage operator may have incentives to accumulate more than the quantity c m that is characterized in Lemma 2 . We also would like to understand how the operator behaves in the first purchasing interval (from 0 to π ). To this end, we aim to find a function b ( t ) and families of continuous functions { s 1 ( t, ε 1 ) } − 1 ⩽ ε 1 ⩽ 1 , { b 2 ( t, ε 1 ) } − 1 ⩽ ε 1 ⩽ 1 , { s 2 ( t, ε 1 , ε 2 ) } − 1 ⩽ ε 1 ,ε 2 ⩽ 1 for each ε 1 ∈ [ − 1 , 1] and ε 2 ∈ [ − 1 , 1] that solve Problem ( 16 ) subject to ( 17 ). This analysis is quite complicated because, in addition to the richness of the analysis of Lemma 2 , it also requires keeping track of the state variable c that is implicitly determined through integral equations. This proves to be too much and instead we proceed in multiple steps. First we characterize the optimal strategies of a storage operator as a Proposition for k ⩽ c m . Then we append this first result with a second one that details the optimal strategy of the operator when the interim state of charge c 0 takes arbitrary positive values for any capacity. Finally we present numerical results for c m < k . Combining all these paints a picture as we portray in Section 3 . To formally state our results we must define some auxiliary constants. Let the threshold",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 20,
+        "text": "shock ̄ ε ≈ 0 . 018 be a root of the equation (1 + ε ) sin ̄ t ε = 2 π ( c m − 1) , where ̄ t ε is defined from ( 11 ). ̄ ε is the smallest positive shock under which the operator still finds it optimal to trade her capacity in full for any k ⩽ c m . Let also the quantities c 1 := c 1 ( ε ) and c 2 := c 2 ( ε ) be roots of the equations sin t b = 2 π ( c − 1 − ε ) , (1 + ε ) sin t s = 2 π ( c − 1) , (18) respectively, where t b and t s are defined from ( 26 ) and ( 28 ) (in the Appendix). The quantities c 1 and c 2 are maximum, unconstrained levels of charge at the interim stage ( t = 2 π ) that determine the optimal selling strategy. Finally, let the time thresholds t 1 := t 1 ( ε 1 ) and t 2 := t 2 ( ε 1 , ε 2 ) be, respectively, roots of the equations cos t − \u0010 π 2 − t \u0011 sin t = c 1 ( ε 1 ) , cos t − \u0010 π 2 − t \u0011 sin t = c 2 ( ε 2 ) 1 + ε 2 . Figure 7 shows how these quantities relate in the ( ε, k ) space. For example, in the left-hand panel, the grey region c 1 is bounded above by the solution c 1 ( ε ) that solves ( 18 ). In that region k is large enough so that c 1 is the relevant, unconstrained monopoly quantity. In the region labelled k , capacity k binds and so constrains quantities. Likewise for the right-hand panel.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 21,
+        "text": "c m 1 . 009 ̄ ε 1 . 018 k c 2",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 22,
+        "text": "Figure 7: Selling scheme in the second period for different k and ε .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 23,
+        "text": "Proposition 5. Let k ⩽ c m . The optimal storage strategy which solves ( 16 ) subject to ( 17 ) is as follows:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 24,
+        "text": "• Storage always buys up to capacity k in the first period. The buying strategy b 1 ( t ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 25,
+        "text": "b 1 ( t ) =      2 (sin t − sin t 0 ) if t ∈ [ t 0 , π − t 0 ) , otherwise, if 0 < k ⩽ 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 26,
+        "text": "b 1 ( t ) =      sin t 2 + 1 π ( k − 1) if t ∈ [0 , π ] , otherwise, if 1 < k ⩽ c m ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 27,
+        "text": "where t 0 is defined by ( 6 ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 28,
+        "text": "• If k ⩽ c 1 under − 1 ⩽ ε 1 ⩽ 0 , or k ⩽ c 2 under 0 < ε 1 ⩽ ̄ ε , or k ⩽ c m under ̄ ε < ε 1 ⩽ 1 , then the selling strategy s 1 ( t, ε 1 ) in the first period and the buying strategy b 2 ( t, ε 1 ) in the second period are",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 29,
+        "text": "s 1 ( t, ε 1 ) =      − 1+ ε 1 (sin t + sin t ε 1 ) if t ∈ [ π + t ε 1 , 2 π − t ε 1 ) , otherwise, if ε 1 ⩾ k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 30,
+        "text": "s 1 ( t, ε 1 ) =      π ( k − 1 − ε 1 ) − 1 2 (1 + ε 1 ) sin t if t ∈ [ π, 2 π ) , otherwise, if ε 1 < k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 31,
+        "text": "b 2 ( t, ε 1 ) =      2 (sin t − sin t 0 ) if t ∈ [2 π + t 0 , 3 π − t 0 ) , otherwise, if k ⩽ 1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 32,
+        "text": "b 2 ( t, ε 1 ) =      sin t 2 + 1 π ( k − 1) if t ∈ [2 π, 3 π ] , otherwise, if k > 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 33,
+        "text": "where t ε 1 is defined from ( 9 ) . If k > c 1 under − 1 ⩽ ε 1 ⩽ 0 , the optimal strategies are",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 34,
+        "text": "s 1 ( t, ε 1 ) =      π ( c 1 − 1 − ε 1 ) − 1 2 (1 + ε 1 ) sin t if t ∈ [ π, 2 π ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 35,
+        "text": "b 2 ( t, ε 1 ) =      2 (sin t − sin t 1 ) if t ∈ [2 π + t 1 , 3 π − t 1 ) , otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 36,
+        "text": "If k > c 2 under 0 < ε 1 ⩽ ̄ ε , then the optimal strategies are",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 37,
+        "text": "s 1 ( t, ε 1 ) =      − 1+ ε 1 (sin t + sin t 2 ) if t ∈ [ π + t 2 , 2 π − t 2 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 38,
+        "text": "b 2 ( t, ε 1 ) =      sin t 2 + 1 π ( k − 1) if t ∈ [2 π, 3 π ] , otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 39,
+        "text": "• Storage always sells all its capacity k in the second period. The selling strategy s 2 ( t ) is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 40,
+        "text": "s 2 ( t, ε 2 ) =      − 1+ ε 2 (sin t + sin t ε 2 ) if t ∈ [3 π + t ε 2 , 4 π − t ε 2 ) , otherwise, if ε 2 ⩾ k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 41,
+        "text": "s 2 ( t, ε 2 ) =      π ( k − 1 − ε 2 ) − 1 2 (1 + ε 2 ) sin t if t ∈ [3 π, 4 π ) , otherwise, if ε 2 < k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 42,
+        "text": "where t ε 2 is defined from ( 9 ) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 43,
+        "text": "This Proposition shows us importance of dynamics. In the one-cycle setting, the storage operator always buys and sells up to the minimum of capacity k and c m – whichever binds. In a two-cycle setting, the incentives differ. Depending on capacity k , either it or the quantities c 1 ( ε 1 ) , c 2 ( ε 1 ) become constraining and determine how much is sold in the first cycle ( t ∈ [ π, 2 π ]) and subsequently bought in the second one ( t ∈ [2 π, 3 π ]). The first and last bullet points are familiar from Lemma 2 ; as alluded to, the novelty is the interim period. For small enough a capacity, nothing changes and capacity is traded in full: consider the shock ε 1 = − 1, which implies that c 1 = 0 . 529. Then only for k ⩽ 0 . 529 does the storage operator trade her full capacity every cycle, and the strategies are identical to those in Lemma 2 . But for a larger capacity, whether she does depends on the shock as well. Indeed, if the shock is negative and capacity is high enough, the storage operator prefers not selling everything but keeping some energy, so that c > 0 at time t = 2 π . For example, if ε 1 = − 1 / 2, we have c 1 = 0 . 757, which means that for any capacity k > 0 . 757, storage indeed prefers not to sell everything under the bad shock. This allows her to buy less, and thus to move prices to a lesser extent, in the second cycle. How much less the operator buys is not obvious at all, and the object of our next Proposition. Figure 7 shows this is not just a curiosity but is relevant for a non-trivial region of the parameter space.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 44,
+        "text": "For our next statement we need to introduce some further notation. Let c 0 denote the initial state of charge. Here we let c 0 > 0 to study the incentives of the operator at the interim stage t = 2 π ; it is as if finishing the first cycle with a positive state of charge. Next define c p ≈ 1 . 015 to be the root of the equation Z 1 c − 1 (1 + ε ) sin t ε dε = c 2 π , (19) where t ε is defined from ( 9 ). Also, let the functions c ′ m := c ′ m ( c 0 ) and c ′′ m := c ′′ m ( c 0 ) be roots of the equations Z 1 c − 1 (1 + ε ) sin t ε dε = c 2 π − sin ̃ t b , Z 1 c − 1 (1 + ε ) sin t ε dε = c 2 π + 4 π ( c − c 0 − 1) , (20) respectively, where ̃ t b ∈ [0 , π/ 2] is a root of the equation cos t − \u0010 π 2 − t \u0011 sin t = c − c 0 . The quantities c ′ m and c ′′ m play the same role as c m in the one-cycle problem; they are unconstrained maximum energy levels that the storage unit may want to accumulate – but may not be able to if its capacity k is smaller. Importantly, c ′ m ( c 0 ) > c m and c ′′ m ( c 0 ) > c m as soon as c 0 > 0. Finally, let’s define t ′ ε and t ′′ ε as roots of the equations cos t − \u0010 π 2 − t \u0011 sin t = c ′ m 1 + ε , cos t − \u0010 π 2 − t \u0011 sin t = c ′′ m 1 + ε , respectively, and ̃ t 0 as a root of the equation cos t − \u0010 π 2 − t \u0011 sin t = k − c 0 . As in the simpler one-cycle problem, t ′ ε , t ′′ ε and ̃ t 0 are time thesholds that pin when the storage unit sells and buys. We state the formal problem in the proof and provide the result directly.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 45,
+        "text": "Proposition 6. Let 0 < c 0 ⩽ min { 1 , πθ 2 − 1 } . If k ⩽ c ′′ m under 0 < c 0 ⩽ c p − 1 or k ⩽ c ′ m",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 46,
+        "text": "under c 0 > c p − 1 , then the optimal storage strategy for the second period is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 47,
+        "text": "b ( t ) =      \u0000 sin t − sin ̃ t 0 \u0001 if t ∈ [2 π + ̃ t 0 , 3 π − ̃ t 0 ) , otherwise, if c 0 ⩾ k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 48,
+        "text": "b ( t ) =      sin t 2 + 1 π ( k − c 0 − 1) if t ∈ [2 π, 3 π ] , otherwise, if c 0 < k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 49,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin t ε ) if t ∈ [3 π + t ε , 4 π − t ε ) , otherwise, if ε ⩾ k − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 50,
+        "text": "s ( t, ε ) =      π ( k − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [3 π, 4 π ) , otherwise, if ε < k − 1 . If k > c ′ m under c 0 > c p − 1 , the optimal storage strategy is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 51,
+        "text": "b ( t ) =      \u0000 sin t − sin ̃ t 0 \u0001 if t ∈ [2 π + ̃ t 0 , 3 π − ̃ t 0 ) , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 52,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin t ′ ε ) if t ∈ [3 π + t ′ ε , 4 π − t ′ ε ) , otherwise, if ε ⩾ c ′ m − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 53,
+        "text": "s ( t, ε ) =      π ( c ′ m − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [3 π, 4 π ) , otherwise, if ε < c ′ m − 1 . If k > c ′′ m under 0 < c 0 ⩽ c p − 1 , the optimal storage strategy is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 54,
+        "text": "b ( t ) =      sin t 2 + 1 π ( c ′′ m − 1) if t ∈ [2 π, 3 π ] , otherwise,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 55,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin t ′′ ε ) if t ∈ [3 π + t ′′ ε , 4 π − t ′′ ε ) , otherwise, if ε ⩾ c ′′ m − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 56,
+        "text": "s ( t, ε ) =      π ( c ′′ m − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [3 π, 4 π ) , otherwise, if ε < c ′′ m − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 57,
+        "text": "The constraint on c 0 is technical; it requires the (initial) state of charge to not be too large compared to market size. We are confident it is not substantive in that its smallest value is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 58,
+        "text": "π/ 2 − 1; in this case, the minimum demand is 0, the maximum is 2 on average and therefore the average traded quantity in a one-cycle problem is close to 1. In a two-cycle problem, c 0 = π/ 2 − 1 would correspond to keeping at least half of the quantity purchased in the prior cycle. This Proposition speaks to the incentives to buy; selling is readily understood from Lemma 2 as this is the last cycle of operation for the storage unit. These incentives to buy depend on the interaction of capacity k and the state of charge c 0 . For a small capacity k , it is the constraining factor when the state of charge c 0 is large enough; then the initial state of charge only matters to determine when to start and stop charging. If c 0 is sufficiently small, the storage operator wishes to buy more and adopts a buying strategy that resembles the selling strategy of Lemma 2 . She starts buying immediately at a strictly positive rate, finishes at t = 3 π at a positive rate and accumulates k starting from c 0 , which may exceed c m (depending on the exact value of k ). For a large capacity (in excess of c ′ m or c ′′ m ), if c 0 is large, c ′ m is the constraining maximum and c 0 only matters to determine when to start and stop buying. The selling strategy mirrors that Lemma 2 and so depends on the value of c ′ m . If c 0 is small enough, c ′′ m is the constraining maximum state of charge; the operator wants to charge more and so adopts a similar strategy of starting and finishing at a strictly positive rate at the boundaries of the charging interval. The selling strategy is as before. Hence we see that a storage operator has incentives to buy in such a way to accumulate more than c m starting from some positive initial state c 0 , even if operating for a single cycle. The reason is that the purchased quantity c ′′ m − c 0 or k − c 0 is smaller than c m , and so costs less to acquire. This allows the storage operator to take a cheap gamble in the hope of a large, positive shock at time t = 3 π . This is not mis-characterization of probabilities. The gamble has a strictly positive expected value, precisely because the cost of acquiring the energy in the second cycle is lower than the cost of buying c m . Combining Propositions 5 and 6 we conclude that a storage operator facing a low demand at t = π may save energy in that first cycle, and faces incentives to accumulate more than c m in the second cycle. But Proposition 5 is stated for k ⩽ c m , which limits the applicability of our results. The complementary case to Proposition 5 – when capacity is larger ( k > c m ) – is analytically intractable. However, even though the exact solution is out of reach, we are able",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 59,
+        "text": "to compute solutions. Bearing in mind Proposition 6 , the next Table 1 illustrates the dependence of the new maximal state of charge c ′ m , c ′′ m that optimally emerges at t = 3 π on the value of c – the energy left from the first cycle (at t = 2 π ). (Capacity k is large enough: k > c ′ m , c ′′ m ⩾ c m .):",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 60,
+        "text": "c 0.005 0.01 0.015 0.02 0.03 0.05 0.1 0.3 0.5 c ′ m , c ′′ m 1.009 1.011 1.013 1.015 1.017 1.021 1.029 1.049 1.137 1.236",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 61,
+        "text": "Indeed, a storage unit that optimally withholds quantities in the first cycle also optimally accumulates more in the second cycle than the one-cycle optimum, and does so buy buying less than the one-cycle optimum. When c = 0, the storage operator optimally buys a quantity c m at the beginning of the second cycle, but it tends to purchase less as c grows. For example, for the very large c = 0 . 5, the purchased quantity in the second cycle shrinks to c ′ m − c = 0 . 736. Nevertheless, the state of charge right at t = 3 π reaches c m for c = 0 and monotonically increases with c . The functions c ′ m ( c ) , c ′′ m ( c ) are concave. This behavior in the second cycle in turn suggests that storage also finds it optimal to buy more than c m in the first period because it does not have to sell everything immediately. These incentives change if, instead of independent shocks, the random process is (positively) serially correlated and shows persistence. In this case, the storage operator may expect another negative shock after the first one. Then saving energy for later makes less sense. Thus, persistence dampens the dynamics and the problem converges to a simple repeated one period maximization problem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 7,
+        "section_name": "Two cycles",
+        "paragraph_id": 62,
+        "text": "Remark 7. We are unable to derive formal analytical results for the very interesting case that allows for learning, as in Proposition 3 , over two periods. However it is intuitive to conjecture that instead of selling all its energy in suboptimal circumstances, a storage operator would then have strong incentives to preserve energy for the next cycle instead. Then Propositions 5 and 6 apply.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 9,
+        "section_name": "Market power.",
+        "paragraph_id": 0,
+        "text": "Our model assumes market power; we point to the work of Asker et al. ( 2019 ) who show distortions that result from the exercise of market power are socially very costly and take the (same) view that it is an important feature. Market power is often derived from size. While most currently-operating storage facilities are small, their size is increasing rapidly from 150MWh for the Hornsdale Power Reserve (South Australia) in 2018 to 3,287MWh for the Edwards & Sanborn facility (California) in 2024. When completed, the government-built pumped hydro scheme “Snowy 2.0” in the Snowy Mountains of Australia will deliver 2 GW of capacity – between 5% and 20% of market size depending on the time of the day. However size alone is not necessary to exercise market power on a network because then market power is very local. It is enough to be present at a node when transmission into the node is congested. On an electrical network, the laws of power flows induce constraints that routinely result in local congestion. 16 Moreover, that local congestion can be exploited to artificially create market power, as shown by Cardell et al. ( 1997 ). Finally, with convex costs, as in this model, suppliers can sway considerable market power in times of high demand because the supply function becomes very inelastic. In electricity, productions costs are widely accepted to be convex. 17",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 10,
+        "section_name": "Intertemporal smoothing?",
+        "paragraph_id": 0,
+        "text": "It is widely anticipated that by trading over time, storage can contribute to the intertemporal smoothing of both clearing prices and quantities produced by intermittent generators; see for example Andres-Cerezo and Fabra ( 2023a ). This is unambiguously true under perfect competition, which they (and others) assume for a variety of reasons. It is also true in this model when the capacity of the storage operator is small. Even with market power, a small-scale operator trades her capacity in full every cycle, and so contributes fully to this smoothing exercise. Here, whether a large operator delivers the same services depends on the state of charge. 16 Specifically, Ohm’s Law and Kirchoff’s Laws. 17 See for example https://hepg.hks.harvard.edu/faq/marginal-cost",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 10,
+        "section_name": "Intertemporal smoothing?",
+        "paragraph_id": 1,
+        "text": "An empty operator has incentives to purchase more than c m to gamble on a positive demand shock this cycle or next. Hence she contributes more to demand smoothing when buying. But in the face of low demand in the selling interval, she withholds quantities and so contributes less to demand smoothing when selling (admittedly when demand smoothing is less critical and so carries a lower value). An operator with a residual state of charge buys less than c m and in doing so, she contributes less to intertemporal smoothing on the market. So an operator with a positive state of charge has incentives to smooth her own trades, thereby eschewing demand smoothing, while an empty unit amplifies her buying and so contributes to demand smoothing. In our model, the numbers in question are small: c m = 1 . 009; so are the intra-cycle variations (on average, 2 from sin( π/ 2) to sin(3 π/ 2)), which are also symmetric. In practice, the intraday variations are very large; for example, in California, on July 16, 2024, net demand bottomed at 7,869 MW and peaked at 31,220 MW (so almost 3x the minimum) with a mean of 18,650 MW. For the 3rd of October 2024, the through was 10,062 MW, the peak 36,687 MW and the average 22,251 MW. In both instances there is an evident upward asymmetry that would speak in favour of purchasing more than c m at the beginning of the time horizon. This consideration is becoming practically relevant; even though storage capacity is not dominant yet, it is increasing very rapidly. For example, in California, storage accounts for approximately 11% of the dispatchable capacity in 2024. 18",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 11,
+        "section_name": "Welfare implications.",
+        "paragraph_id": 0,
+        "text": "Demand is inelastic in this model, which implies that the intermediation activity of the storage operator is welfare neutral; more precisely, it has no direct welfare consequences and merely reallocates rents between the demand side, the supply side and itself. In other words, these are distributional implications. But of course there may be more indirect welfare implications. On the proviso that VRE and storage are complements (see Andres-Cerezo and Fabra ( 2023a )), generators that face lower ex post rents may choose to invest less ex ante. This may slow down the energy transition and keep large CO2 emitters active for longer. On the demand side, lower power prices (in the aggregate) relax the budget constraint of consumers. As a proxy for consumer welfare, we compute the total transfers consumers pay for the 18 https://www.caiso.com/documents/2023-special-report-on-battery-storage-jul-16-2024.pdf",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 11,
+        "section_name": "Welfare implications.",
+        "paragraph_id": 1,
+        "text": "cases of no information and incomplete information. We stay with one period and k ⩽ 1 and denote W 0 ⩾ 0 and W 1 ⩾ 0 be consumers’ payments in the case of no information and incomplete information, respectively. W 0 = 2 π \u0012 1 3 + θ 2 \u0013 + t 0 + cos t 0 sin t 0 , W 1 = 2 π \u0012 1 3 + θ 2 \u0013 + t 0 + θ \u0012 1 − k \u0013 \u0012 k − \u0012 1 + k \u0013 cos t 0 \u0013 − k 3 \u0012 1 π + π \u0013",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 11,
+        "section_name": "Welfare implications.",
+        "paragraph_id": 2,
+        "text": "− \u0000 2 − k 3 \u0001 \u0010 π 2 − t 0 + cos t 0 sin t 0 \u0011 + θ \u0010 π 2 − t 0 \u0011 I 1 ( k ) + 1 2 cos t 0 I 2 ( k ) , where I 1 ( k ) is defined in ( 12 ) and I 2 ( k ) = Z 1 k − 1 (1 + x ) 2 sin t ε dε. Computationally we verify that both W 0 and W 1 decrease in k . This supports the broad idea that storage smooths prices and increases consumer welfare. We address another question: is allowing storage to hold demand information beneficial for consumers? To do so we compute the difference W 1 − W 0 for different mean demand θ and plot this difference on Figure 8 for different k . Consumers are always worse off when storage holds better information: W 1 > W 0 for any θ and k but that difference is not monotonic. There are two effects at work. From zero, the difference starts increasing with k thanks to a quantity effect that is driven by larger capacity. That is, when capacity remains small, the informed storage operator sells favourably for most realizations of ε and so extracts more than the uninformed operator. Starting from some k the difference decreases because the price effect dominates. More precisely, the informed operator must sell in unfavourable circumstances more frequently (see Lemma 2 ). This depresses prices, so she extracts consumers less efficiently.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 11,
+        "section_name": "Welfare implications.",
+        "paragraph_id": 3,
+        "text": "0.2 0.4 0.6 0.8 1.0 k 0.01 0.02 0.03 0.04 W 1 - W 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 11,
+        "section_name": "Welfare implications.",
+        "paragraph_id": 4,
+        "text": "Figure 8: Difference in consumers’ payments under incomplete information and no information as a function of k for various θ .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 11,
+        "section_name": "Welfare implications.",
+        "paragraph_id": 5,
+        "text": "Figure 8 shows small differences in transfers; we compute the difference in transfers to be about 2% of capacity. This may suggests that information is not very valuable. These numbers are subdued by the fact that the storage unit must purchase under incomplete information about the future state of demand. If quantities could be adjusted when also purchasing, information becomes much more valuable. We discuss this further in Section 5.4 . With an elastic demand the trading behavior of a storage operator with market power induces quantity withholding, which leads to dead-weight losses in the usual way. These welfare losses come in addition to the aforementioned distributional implications. Then the policy implications are immediate: a welfare-maximizing regulator should favor entry by small units, and limit the ability of a firm to control and operate multiple units.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 12,
+        "section_name": "The role of information.",
+        "paragraph_id": 0,
+        "text": "We already discuss some of the impact of information in Section 4.1.2 , however remaining in the confines of our informational environment. That analysis considers only the starkest of cases: none or all the relevant information, and presumes of no random shock in the buying interval. We discuss these in turn.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 12,
+        "section_name": "The role of information.",
+        "paragraph_id": 1,
+        "text": "Informative signal. A more reasonable information structure may be a more progressive filtration or could involve the disclosure of an informative signal from which the storage operator can form a posterior belief and take a more informed action. The exact impact of this new posterior belief depends on the timing of arrival of the signal. If the signal arrives not before t = π, 3 π , even if more accurate, the posterior belief acts just like the prior belief about ε in the sense that the structure of the problem is the same as if no new information were supplied. It follows Lemma 4 but with posterior distributions of ε 1 and ε 2 . Thanks to these posterior distributions, the selling strategies s 1 ( t, ε 1 ) and s 2 ( t, ε 1 , ε 2 ) are better adapted. For example, with a positive signal, they follow an upward bias and may result in better sales revenue. But the signal cannot change the quantities traded since these must have been bought before the signal realization. If the signal does arrive before t = π, 3 π , the posterior belief has the same effect on the strategies s 1 ( t, ε 1 ) , s 2 ( t, ε 1 , ε 2 ). But now the operator can also change the purchased quantities in response to updating her expected sales quantities. With a negative signal, for example,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 12,
+        "section_name": "The role of information.",
+        "paragraph_id": 2,
+        "text": "she expects to sell less than the unconditional average and so buys less in response. Hence more information does not change the structure of the problem, but of course it does affect the exact response of the operator; that response depends also on the timing of information acquisition. The information structure may also include serial correlation between ε 1 and ε 2 , which acts just like an informative signal that generates a more accurate posterior belief of ε 2 (given the realization of ε 1 ). As briefly discussed above, a positive serial correlation (persistence) implies weaker intertemporal incentives to smooth trades, while a negative serial correlation enhances them.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 12,
+        "section_name": "The role of information.",
+        "paragraph_id": 3,
+        "text": "Buying under uncertainty. In the main text, the storage operator buys under uncertainty as to selling (in the future) but at the time of purchase the contemporaneous demand is known. This assumption is greatly simplifying but possibly substantive in the following sense. If demand were also subject to stochastic shocks in the buying intervals, the storage operator likely would have stronger incentives to engage in intertemporal (inter cycles) smoothing. For example, fixing the selling strategy, a negative demand shock would be an opportunity to purchase more than c m since the price is lower than average. Conversely for a positive demand shock in the buying interval, which in turn implies greater incentives to save energy in the prior period. In other words, more uncertainty amplifies the precautionary motive, as we uncovered in prior work ( Balakin and Roger ( 2023 )).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 13,
+        "section_name": "Rate constraints.",
+        "paragraph_id": 0,
+        "text": "The storage unit freely adjusts the rates s i , b i at which it sells and buys, respectively, to best manage its own price impact (equivalently, the impact of its own market power). Technology may constrain these rates – for example, the discharge rate of a storage unit in electricity, the pipe capacity of a dam or the throughput rate in the case of inventory logistics. The impact of such a constraint depends on its tightness in a discontinuous way. Our findings remain relevant if the caps ̄ s, ̄ b are not “too binding”, even if b ( t ) ⩽ ̄ b and/or s ( t ) ⩽ ̄ s for some t . More precisely, as long as the discharge rate constraint ̄ s is not too tight, that is k/π ⩽ ̄ s , there exists a policy that maximizes the arbitrage revenue with this additional condition and under which storage trades its entire capacity k . The constrained-optimal",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 13,
+        "section_name": "Rate constraints.",
+        "paragraph_id": 1,
+        "text": "strategy features a time interval during which s ( t, ε i ) = ̄ s ; the larger the shock, the longer that interval. Under that strategy, it is still most profitable for the storage operator to buy and sell in full – as long k/π ⩽ ̄ b as well. If ̄ s ⩽ k/π instead, the storage unit is so constrained that it cannot sell its full capacity in any interval of duration π . The same applies to buying with ̄ b ⩽ k/π . In that case it is simply oversized. Taking this capacity k as exogenous, there exists a value k < k such that k/π = ̄ s , and the storage unit uses only k . From Section 4.1.2 , it should use all of k in full. From Section 4.2.2 , whether it does may depend on another value of k (for a given ̄ s ). If considering an investment stage, it is clear that the triple ( k, ̄ s, ̄ b ) with either ̄ s ⩽ k/π or ̄ b ⩽ k/π (or both) is suboptimal; the unit is too large given its (dis)charge rate. 19",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 14,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper studies the profit-maximizing charge and discharge strategy of a large scale, monopoly storage operator in a competitive wholesale electricity market in continuous time. Demand fluctuates in an uncertain fashion over two cycles. Understanding optimal strategies in this environment is important to market participants, and by extension, their financiers. It is also essential to possibly design better-functioning markets and anticipate any possible corrective action. Because the storage unit has flexibility in its charge and discharge rate at any point in time, it adjusts both that rate and the time interval during which it operates to best manage the impact of its own market power on prices. When demand is very large, so is the discharge rate and the operating window is narrow; the converse holds when demand is relatively low. The smoothing of price and of traded quantities is imperfect. For a small capacity, the storage unit trades its capacity in full in every cycle; the reason is the flexibility afforded by adjustable rates combined with a large enough difference in equilibrium prices. However, when the capacity becomes large enough, intertemporal linkages between cycles emerge. In the face of a low demand, a storage unit prefers saving energy to mitigate its price impact when selling and buying in the next cycle. Further, if saving some energy in the first cycle, the storage operator faces a favourable gamble in the second cycle and trades more energy in that second cycle than 19 Note there could be other reasons to oversize a storage unit as described here, such as reliability considerations.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 14,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "she would if operating for a single cycle. This extends to the first cycle because the second cycle provides some insurance against low demand in the first cycle. Finally we investigate welfare implications for consumers, which are limited to transfers in this model. The introduction of storage does decrease payments consumers have to make to satisfy their (energy) needs. However, a better-informed storage extracts more surplus from consumers because it is better equipped to respond to demand shocks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 15,
+        "section_name": "Appendix",
+        "paragraph_id": 0,
+        "text": "This Appendix includes some simple evidence of cyclical demand in California, as well as the Proofs of the results stated in the main text.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 16,
+        "section_name": "Cyclical demand in California",
+        "paragraph_id": 0,
+        "text": "15000 17000 19000 21000 23000 25000 27000 29000 31000 33000",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 16,
+        "section_name": "Cyclical demand in California",
+        "paragraph_id": 1,
+        "text": "0:00 0:35 1:10 1:45 2:20 2:55 3:30 4:05 4:40 5:15 5:50 6:25 7:00 7:35 8:10 8:45 9:20 9:55 10:30 11:05 11:40 12:15 12:50 13:25 14:00 14:35 15:10 15:45 16:20 16:55 17:30 18:05 18:40 19:15 19:50 20:25 21:00 21:35 22:10 22:45 23:20 23:55 CAISO net demand 12 September 2014",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 16,
+        "section_name": "Cyclical demand in California",
+        "paragraph_id": 2,
+        "text": "Figure 9: California electricity demand, September 2024.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 0,
+        "text": "Proof of Lemma 1 . Since all the regularity constraints are satisfied, we can use the KuhnTucker theorem here. Note that b ( t ) = 0 for π < t ⩽ 2 π and s ( t ) = 0 for 0 ⩽ t < π . Thus, we can set the same integration limits [0 , 2 π ] in both the objective functional and all the constraints, which allows us to solve the maximization problem inside the integral. The Lagrangian is the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 1,
+        "text": "L = − ( θ − sin t + b ( t )) b ( t ) + ( θ − sin t − s ( t )) s ( t ) + ν 1 ( t ) b ( t ) + ν 2 ( t ) s ( t ) + μ ( k/π − b ( t )) + λ ( b ( t ) − s ( t )) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 2,
+        "text": "The first-order conditions are:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 3,
+        "text": "− ( θ − sin t ) − 2 b ( t ) + ν 1 ( t ) − μ + λ = 0 , θ − sin t − 2 s ( t ) + ν 2 ( t ) − λ = 0 , (21) Z π b ( t ) dt ⩽ k, Z 2 π ( b ( t ) − s ( t )) dt ⩾ 0 . (22) We conjecture that there exist positive t 1 b , t 2 b , t 1 s , t 2 s , such that 0 < t 1 b < π − t 2 b ⩽ π + t 1 s < 2 π − t 2 s < 2 π and      b ( t ) > 0 if t ∈ ( t 1 b ; π − t 2 b ) , b ( t ) = 0 otherwise,      s ( t ) > 0 if t ∈ ( π + t 1 s ; 2 π − t 2 s ) , s ( t ) = 0 otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 4,
+        "text": "In the intervals ( t 1 b ; π − t 2 b ) and ( π + t 1 s ; 2 π − t 2 s ), from ( 21 ) we obtain b ( t ) = − θ + sin t − μ + λ , s ( t ) = θ − sin t − λ . (23) By continuity, from ( 23 ) we have:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 5,
+        "text": "− θ + sin t 1 b − μ + λ = − θ + sin t 2 b − μ + λ = 0 , θ + sin t 1 s − λ = θ + sin t 2 s − λ = 0 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 6,
+        "text": "which implies t 1 b = t 2 b , t 1 s = t 2 s , λ = θ + sin t 1 s , μ = sin t 1 b + sin t 1 s , and b ( t ) = 1 \u0000 sin t − sin t 1 b \u0001 , t ∈ ( t 1 b , π − t 1 b ) , s ( t ) = − 1 \u0000 sin t + sin t 1 s \u0001 , t ∈ ( π + t 1 s , 2 π − t 1 s ) . We can see that λ > 0 and μ > 0 ( μ can be equal to zero only in the case of t 1 b = t 1 s = 0 which we’ll consider later). Then both inequalities in ( 22 ) are bounded and we can find t 1 b and t 1 s from them: Z π b ( t ) dt = k ⇒ Z π − t 1 b t 1 b \u0000 sin t − sin t 1 b \u0001 dt = k ⇒ cos t 1 b − \u0010 π 2 − t 1 b \u0011 sin t 1 b = k, Z 2 π ( b ( t ) − s ( t )) dt = 0 ⇒− 1 Z 2 π − t 1 s π + t 1 s \u0000 sin t + sin t 1 s \u0001 dt = k ⇒ cos t 1 s − \u0010 π 2 − t 1 s \u0011 sin t 1 s = k. The function f ( t ) = cos t − \u0000 π 2 − t \u0001 sin t monotonically decreases from 1 to 0 in the interval [0 , π/ 2]. Thus, for any 0 < t < π/ 2 there is a unique solution to ( 6 ) as long as k ⩽ 1. Putting t 0 = t 1 b = t 1 s finishes the proof in this case. Fig. 3 shows the solutions b ( t ) and s ( t ) for different levels of capacity if 0 < k ⩽ 1.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 7,
+        "text": "Note that the last inequality of ( 22 ) is always bounded, so we always have λ > 0. Indeed, storage is interested in selling optimally and purchasing as little as possible. Thus, as long as it finds the optimal s ( t ), it can always adjust b ( t ) in order to buy exactly as much as needed. Finally, let’s consider t 1 b = t 1 s = 0. Then μ = 0 and we can find λ from the last equality in ( 22 ): Z 2 π ( b ( t ) − s ( t )) dt = 0 ⇒ 1 Z π ( − θ + sin t + λ ) dt − 1 Z 2 π π ( θ − sin t − λ ) dt = 0 ⇒ λ = θ. Hence, b ( t ) = sin t 2 , s ( t ) = − sin t 2 . In this case, the first inequality of ( 22 ) works only if k ⩾ 1. As long as k < 1, this is not a solution.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 8,
+        "text": "Proof of Lemma 2 . Problem ( 7 ) may be reformulated as a three-step problem by introducing a new (interim) parameter c which is the current state of charge: 0 ⩽ c ⩽ k . Step 1. We solve the problem",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 9,
+        "text": "min b c ( t ) Z π ( θ − sin t + b c ( t )) b c ( t ) dt with respect to constraints b c ( t ) ⩾ 0 , Z π b c ( t ) dt = c for each c : 0 ⩽ c ⩽ k . Step 2. We find the function s c ( t, ε ) that solves the problem",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 10,
+        "text": "max s c ( t,ε ) Z 2 π π ( θ − (1 + ε ) sin t − s c ( t, ε )) s c ( t, ε ) dt with respect to constraints s c ( t, ε ) ⩾ 0 , Z 2 π π s c ( t, ε ) dt ⩽ c for each c : 0 ⩽ c ⩽ k . Step 3. Finally, we find the optimal c that solves the problem",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 11,
+        "text": "max c ∈ [0 ,k ] \" − Z π ( θ − sin t + b c ( t )) b c ( t ) dt + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε ) sin t − s c ( t, ε )) s c ( t, ε ) dtdε # . (24)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 12,
+        "text": "Step 1 solution. In a fashion similar to the proof of Lemma 1 , we construct the Lagrangian first (we omit subindices c throughout the entire proof):",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 13,
+        "text": "L b = ( θ − sin t + b ( t )) b ( t ) + ν 1 ( t ) b ( t ) + μ 1 ( c/π − b ( t )) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 14,
+        "text": "The first-order conditions are: θ − sin t + 2 b ( t ) + ν 1 ( t ) − μ 1 = 0 , Z π b ( t ) dt = c. (25) Again, we conjecture that there exist t 1 b , t 2 b , such that 0 < t 1 b < π − t 2 b ⩽ π and      b ( t ) > 0 if t ∈ ( t 1 b ; π − t 2 b ) , b ( t ) = 0 otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 15,
+        "text": "In the interval ( t 1 b ; π − t 2 b ), from the first equation of ( 25 ) we obtain b ( t ) = μ 1 − θ + sin t , which implies, by continuity:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 16,
+        "text": "μ 1 − θ + sin t 1 b = μ 1 − θ + sin t 2 b = 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 17,
+        "text": "Thus, we have t b ≡ t 1 b = t 2 b and μ 1 = θ − sin t b , so b ( t ) = 1 2 (sin t − sin t b ) , t ∈ [ t b , π − t b ] . From the second condition of ( 25 ), we can obtain the equation for finding t b : Z π b ( t ) dt = c ⇒ Z π − t b t b (sin t − sin t b ) dt = c ⇒ cos t b − \u0010 π 2 − t b \u0011 sin t b = c. (26) The last equality has a solution if and only if c ⩽ 1. For c > 1, the support of the function b ( t ) extends up to [0 , π ], and from ( 25 ) we have: Z π ( μ 1 − θ + sin t ) dt = c ⇒ μ 1 = 2 π ( c − 1) + θ, which implies b ( t ) = sin t + 1 π ( c − 1) , t ∈ [0 , π ] . Step 2 solution. Here, the Lagrangian is:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 18,
+        "text": "L s = ( θ − (1 + ε ) sin t − s ( t, ε )) s ( t, ε ) + ν 2 ( t ) s ( t, ε ) + μ 2 ( c/π − s ( t, ε )) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 19,
+        "text": "The first-order conditions are: θ − (1 + ε ) sin t − 2 s ( t, ε ) + ν 2 ( t ) − μ 2 = 0 , Z 2 π π s ( t, ε ) dt ⩽ c. (27) Again, we conjecture that there exist t 1 s , t 2 s , such that π < π + t 1 s < 2 π − t 2 s ⩽ 2 π and      s ( t ) > 0 if t ∈ ( π + t 1 s ; 2 π − t 2 s ) , s ( t ) = 0 otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 20,
+        "text": "In the interval ( π + t 1 s ; 2 π − t 2 s ), from the first equation of ( 27 ) we obtain s ( t, ε ) = θ − (1 + ε ) sin t − μ 2 , which implies, by continuity:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 21,
+        "text": "θ − (1 + ε ) sin( π + t 1 s ) − μ 2 = θ − (1 + ε ) sin(2 π − t 2 s ) − μ 2 = 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 22,
+        "text": "Thus, we have t s ≡ t 1 s = t 2 s and μ 2 = θ + (1 + ε ) sin t s , so s ( t, ε ) = − 1 + ε (sin t + sin t s ) , t ∈ ( π + t s , 2 π − t s ) . Since μ 2 > 0 for any values of the parameters, the second condition of ( 27 ) turns into an equality, and we can obtain the equation for finding t s : Z 2 π π s ( t, ε ) dt = c ⇒− 1 + ε Z 2 π − t s π + t s (sin t + sin t s ) dt = c ⇒ cos t s − \u0010 π 2 − t s \u0011 sin t s = c 1 + ε . (28) The last equality has a solution if and only if ε ⩾ c − 1. For ε < c − 1, the support of the function s ( t, ε ) extends up to [0 , π ], and from ( 27 ) we have: Z 2 π π ( θ − (1 + ε ) sin t − μ 2 ) dt ⩽ c ⇒ π 2 ( θ − μ 2 ) + 1 + ε ⩽ c. If μ 2 > 0, this condition turns to an equality, and we have μ 2 = θ − 2 π ( c − 1 − ε ) ⇒ s ( t, ε ) = 1 π ( c − 1 − ε ) − 1 + ε sin t, which holds for c − 1 − πθ/ 2 ⩽ ε < c − 1. If μ 2 = 0, we have s ( t, ε ) = θ − (1 + ε ) sin t ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 23,
+        "text": "which works if and only if ε < c − 1 − πθ/ 2. Step 3 solution. Let’s first summarize what we found in steps 1 and 2. We obtained solutions for b ( t ) that have different formulae for c ⩽ 1 and c > 1. We are going to define them as b 1 ( t ) and b 2 ( t ), respectively. We also obtained solutions for s ( t, ε ) for ε ⩾ c − 1, c − 1 − πθ/ 2 ⩽ ε < c − 1, and ε < c − 1 − πθ/ 2 that we correspondingly denote as s 1 ( t, ε ), s 2 ( t, ε ), and s 3 ( t, ε ). We need to consider six cases and find the value of c that maximizes the equation in ( 24 ) for each of them:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 24,
+        "text": "• 1 < c ⩽ min { 2 , πθ 2 } ; • 2 < c ⩽ πθ 2 (if 2 < πθ 2 ); • πθ 2 < c ⩽ 2 (if πθ 2 < 2); • max { 2 , πθ 2 } < c ⩽ 2 + πθ 2 ; • c > 2 + πθ 2 . c ⩽ 1 . We need to find c that solves the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 25,
+        "text": "max c ∈ [0 , 1] \" − Z π ( θ − sin t + b 1 ( t )) b 1 ( t ) dt + 1 Z 1 c − 1 Z 2 π π ( θ − (1 + ε ) sin t − s 1 ( t, ε )) s 1 ( t, ε ) dtdε + + 1 Z c − 1 − 1 Z 2 π π ( θ − (1 + ε ) sin t − s 2 ( t, ε )) s 2 ( t, ε ) dtdε # .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 26,
+        "text": "Let’s denote the three summands here as B 1 , S 1 , and S 2 , respectively. We have B 1 = − 1 Z π − t b t b \u0012 θ − sin t + 1 2 (sin t − sin t b ) \u0013 (sin t − sin t b ) dt = = − 1 \u0010 (4 θ − sin t b ) cos t b − \u0010 π 2 − t b \u0011 (cos 2 t b + 4 θ sin t b ) \u0011 , S 1 = − 1 Z 1 c − 1 1 + ε Z 2 π − t s π + t s \u0012 θ − (1 + ε ) sin t + 1 + ε (sin t + sin t s ) \u0013 (sin t + sin t s ) dtdε = = 1 Z 1 c − 1 (1 + ε ) \u0010 (4 θ + (1 + ε ) sin t s ) cos t s + \u0010 π 2 − t s \u0011 ((1 + ε ) cos 2 t s − 4 θ sin t s ) \u0011 dε, S 2 = 1 Z c − 1 − 1 Z 2 π π \u0012 θ − (1 + ε ) sin t − 1 π ( c − 1 − ε ) + 1 + ε sin t \u0013 \u0012 1 π ( c − 1 − ε ) − 1 + ε sin t \u0013 dε = = c 2 \u0012 θ + c \u0012 π 8 − 1 π \u0013\u0013 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 27,
+        "text": "To differentiate with respect to c , we need to find ( t b ) ′ c and ( t s ) ′ c . From ( 26 ) and ( 28 ), we obtain ( t b ) ′ c = − \u0000 π 2 − t b \u0001 cos t b , ( t s ) ′ c = − (1 + ε ) \u0000 π 2 − t s \u0001 cos t s . Then ( B 1 ) ′ c = − \u0000 π 2 − t b \u0001 cos t b · \u0010 π 2 − t b \u0011 cos t b ( θ − sin t b ) = − θ + sin t b , ( S 1 ) ′ c = − c \u0010 θ + πc \u0011 + 1 Z 1 c − 1 (1 + ε ) \u0000 π 2 − t s \u0001 cos t s · \u0010 π 2 − t s \u0011 (1 + ε ) cos t s ( θ + (1 + ε ) sin t s ) dε = = θ (1 − c ) − πc 2 16 + 1 Z 1 c − 1 (1 + ε ) sin t s dε, \u0000 S 2 \u0001 ′ c = θc + c 2 16 π \u0000 π 2 − 8 \u0001 (we used the Leibniz integral rule for S 1 ). Thus, the first derivative of the entire maximand is \u0000 B 1 + S 1 + S 2 \u0001 ′ c = sin t b + 1 Z 1 c − 1 (1 + ε ) sin t s dε − c 2 2 π . We can see that sin t b is always nonnegative and it decreases monotonically with increasing c . The second summand is also nonnegative, and its derivative with respect to c is equal to \u0012 1 Z 1 c − 1 (1 + ε ) sin t s dε − c 2 2 π \u0013 ′ c = − 1 Z 1 c − 1 dε π 2 − t s < 0 , so this integral also decreases monotonically with increasing c . Thus, the entire first derivative decreases with c and reaches its minimum value at the boundary c = 1. This value may be computed: sin 0 + 1 Z 1 (1 + ε ) sin t s (1) dε − 1 2 π ≈ 1 2 · 0 . 349 − 0 . 159 = 0 . 015 , where t s (1) is the root of the equation cos t s − \u0000 π 2 − t s \u0001 sin t s = 1+ ε . We can see that for any c the first derivative of the maximand is positive and, thus, the latter reaches its maximum at c = 1. 1 < c ⩽ min { 2 , πθ 2 } . We need to find c that solves the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 28,
+        "text": "max c ∈ [ 1 , min { 2 , πθ 2 } ] \" − Z π ( θ − sin t + b 2 ( t )) b 2 ( t ) dt + S 1 + S 2 # .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 29,
+        "text": "Let’s denote the first integral of the maximand as B 2 . We have B 2 = − Z π \u0012 θ − sin t + sin t + 1 π ( c − 1) \u0013 \u0012 sin t + 1 π ( c − 1) \u0013 dt = π 8 − θc − ( c − 1) 2 π ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 30,
+        "text": "and ( B 2 ) ′ c = − θ − 2 π ( c − 1) . The first derivative of the entire maximand is",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 31,
+        "text": "\u0000 B 2 + S 1 + S 2 \u0001 ′ c = 1 Z 1 c − 1 (1 + ε ) sin t s dε − c 2 + 4( c − 1) 2 π .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 32,
+        "text": "Equalizing this to zero, we get the formula ( 10 ). Let the root of this equation be c m . We can compute it: c m ≈ 1 . 009. The first derivative of the maximand is positive if c < c m and negative if c > c m . Thus, c m is the optimal state of charge for the given interval. 2 < c ⩽ πθ 2 (if 2 < πθ 2 ). We need to find c that solves the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 33,
+        "text": "max c ∈ [ 2 , πθ 2 ] \" B 2 + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε ) sin t − s 2 ( t, ε )) s 2 ( t, ε ) dε # .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 34,
+        "text": "Let’s denote the last summand as S 2 . We have",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 35,
+        "text": "S 2 = Z 1 − 1 Z 2 π π \u0012 θ − (1 + ε ) sin t − 1 π ( c − 1 − ε ) + 1 + ε sin t \u0013 \u0012 1 π ( c − 1 − ε ) − 1 + ε sin t \u0013 dε = π 2 − 8 6 π + c \u0012 θ + 2 − c π \u0013 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 36,
+        "text": "Then ( B 2 + S 2 ) ′ c = − 4( c − 1) π < 0 . πθ 2 < c ⩽ 2 (if πθ 2 < 2). We need to find c that solves the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 37,
+        "text": "max c ∈ [ πθ 2 , 2 ] \" B 2 + S 1 + 1 Z c − 1 c − 1 − πθ Z 2 π π ( θ − (1 + ε ) sin t − s 2 ( t, ε )) s 2 ( t, ε ) dε + + 1 Z c − 1 − πθ − 1 Z 2 π π ( θ − (1 + ε ) sin t − s 3 ( t, ε )) s 3 ( t, ε ) dε # .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 38,
+        "text": "Let the last two summands of the maximized function be S 2 and S 3 , respectively. We have",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 39,
+        "text": "S 2 = Z c − 1 c − 1 − πθ Z 2 π π \u0012 θ − (1 + ε ) sin t − 1 π ( c − 1 − ε ) + 1 + ε sin t \u0013 \u0012 1 π ( c − 1 − ε ) − 1 + ε sin t \u0013 dε = = π 2 θ 3 384 \u0000 π 2 − 8 \u0001 + πθ 32 c \u0012 8 θ + π \u0012 c − πθ \u0013\u0013 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 40,
+        "text": "S 3 = 1 Z c − 1 − πθ − 1 Z 2 π π \u0012 θ − (1 + ε ) sin t − θ − (1 + ε ) sin t \u0013 θ − (1 + ε ) sin t dε = = 1 \u0012 c − πθ \u0013 θc + π \u0012 c − πθ \u0013 2 ! .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 41,
+        "text": "\u0000 B 2 + S 1 + S 2 + S 3 \u0001 ′ c = − θ − 2 π ( c − 1) + θ (1 − c ) − πc 2 16 + 1 Z 1 c − 1 (1 + ε ) sin t s dε + + πθ 64 \u0000 4 πc + (16 − π 2 ) θ \u0001 + 1 64 \u0000 4 πc 2 + ( π 2 − 8)( πθ − 4 c ) θ \u0001 = = 1 Z 1 c − 1 (1 + ε ) sin t s dε − \u0012 πθ 2 + 2( c − 1) π + θ \u0012 c − πθ \u0013\u0013 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 42,
+        "text": "Even if we take 1 as an upper bound of sin t s and put the minimum possible c = πθ/ 2 to maximize the integral, the resulting estimation Z 1 πθ 2 − 1 (1 + ε ) dε = 1 − π 2 θ 2 will be lower than even the first summand πθ 2 / 8 of the second part of the derivative for any θ > 1. Thus, the maximand always decreases by c in the interval [ πθ/ 2 , 2]. max { 2 , πθ 2 } < c ⩽ 2 + πθ 2 . We need to find c that solves the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 43,
+        "text": "max c ∈ [ max { 2 , πθ 2 } , 2+ πθ 2 ] \" B 2 + 1 Z 1 c − 1 − πθ Z 2 π π ( θ − (1 + ε ) sin t − s 2 ( t, ε )) s 2 ( t, ε ) dtdε + S 3 # .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 44,
+        "text": "Let’s denote the middle summand as S 2 . We have",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 45,
+        "text": "S 2 = Z 1 c − 1 − πθ Z 2 π π \u0012 θ − (1 + ε ) sin t − 1 π ( c − 1 − ε ) + 1 + ε sin t \u0013 \u0012 1 π ( c − 1 − ε ) − 1 + ε sin t \u0013 dε = = 2 + πθ 2 − c 16 π \u0012 2 + πθ \u0013 c + π 2 − 8 4 + 2 \u0012 c − πθ \u0013 + \u0012 c − πθ \u0013 2 !! .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 46,
+        "text": "Then \u0000 B 2 + S 2 + S 3 \u0001 ′ c = 1 2 π \u0012 c − πθ \u0013 2 − 8( c − 1) ! .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 47,
+        "text": "Since inside the given interval \u0000 c − πθ \u0001 2 < 4 and 8( c − 1) > 8, this derivative is also negative and the maximand decreases for the given c . c > 2 + πθ 2 . We need to find c that solves the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 48,
+        "text": "max c> 2+ πθ \" B 2 + 1 Z 1 − 1 Z 2 π π ( θ − (1 + ε ) sin t − s 3 ( t, ε )) s 3 ( t, ε ) dε # .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 49,
+        "text": "Let’s denote the last summand as S 3 . We have S 3 = 1 Z 1 − 1 Z 2 π π \u0012 θ − (1 + ε ) sin t − θ − (1 + ε ) sin t \u0013 θ − (1 + ε ) sin t dε = π 6 + θ + πθ 2 4 . Then ( B 2 + S 3 ) ′ c = − θ − 2 π ( c − 1) < 0 . Since the maximized function is continuous for any c (the values are always equal at the edges of the adjacent intervals), we may conclude that it monotonically increases for any c up to c m and monotonically decreases afterwards. Thus, c m is a global maximum. If k ⩽ c m , the storage unit always buys (and sells) up to its capacity. In this case, the strategies are going to be b 1 ( t ) for charging and either s 1 ( t, ε ) or s 2 ( t, ε ) for discharging (depending on the realization of ε ) for k ⩽ 1. For 1 < k ⩽ c m the strategy b 1 ( t ) gets changed by the strategy b 2 ( t ). However, in case k > c m the optimal strategy of storage is not to purchase up to the entire capacity k but to buy (and sell) only c m units of energy. The optimal strategies are still b 2 ( t ) and either s 1 ( t, ε ) or s 2 ( t, ε ) depending on ε .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 50,
+        "text": "Proof of Lemma 3 . If ε ⩾ 0, the proof is straight-forward. It doesn’t matter whether we learn the shock at the moment t = π (as in Lemma 2 ) or t = π + t 0 since selling does not start before π + t 0 anyway. Now consider negative shocks. For any ε < 0, we have the following maximization problem:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 51,
+        "text": "max ̃ s ( t,ε ) Z 2 π π + t 0 ( θ − (1 + ε ) sin t − ̃ s ( t, ε )) ̃ s ( t, ε ) dt subject to constraints ̃ s ( t, ε ) ⩾ 0 , Z 2 π π + t 0 ̃ s ( t, ε ) dt ⩽ k.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 52,
+        "text": "All the regularity constraints are satisfied, so we can use the Kuhn-Tucker theorem here. The Lagrangian reads: L 0 = − ( θ − (1 + ε ) sin t − ̃ s ( t, ε )) ̃ s ( t, ε ) + ν ( t ) ̃ s ( t, ε ) + η \u0012 k π − t 0 − ̃ s ( t, ε ) \u0013 , with F.O.C.:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 53,
+        "text": "θ − (1 + ε ) sin t − 2 ̃ s ( t, ε ) + ν ( t ) − η. (29)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 54,
+        "text": "We conjecture that there exists positive some t 1 ∈ (0 , π/ 2), such that      ̃ s ( t, ε ) > 0 if t ∈ ( π + t 0 ; 2 π − t 1 ) , ̃ s ( t, ε ) = 0 otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 55,
+        "text": "In the interval ( π + t 0 ; 2 π − t 1 ), from ( 29 ) we obtain ̃ s ( t, ε ) = θ − (1 + ε ) sin t − η , which implies, by continuity:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 56,
+        "text": "θ − (1 + ε ) sin(2 π − t 1 ) − η = 0 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 57,
+        "text": "so η = θ + (1 + ε ) sin t 1 > 0",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 58,
+        "text": "and ̃ s ( t, ε ) = − 1 + ε (sin t + sin t 1 ) , t ∈ ( π + t 0 , 2 π − t 1 ) . Since η > 0, a storage operator always sells up to its full capacity k and we can find t 1 : Z 2 π − t 1 π + t 0 ̃ s ( t, ε ) dt = k ⇔ − 1 + ε ( − cos t 0 − cos t 1 + ( π − t 1 − t 0 ) sin t 1 ) = k, which is exactly ( 13 ). Equation ( 13 ) has solution t 1 ⩾ 0 if and only if 1 + cos t 0 ⩾ 2 k 1+ ε , which is equivalent to ε ⩾ 2 k 1 + cos t 0 − 1 . For any lower ε , we have t 1 = 0, and η can be found from the boundary condition: Z 2 π π + t 0 ̃ s ( t, ε ) dt = k ⇔ Z 2 π π + t 0 ( θ − (1 + ε ) sin t − η ) dt = k,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 59,
+        "text": "which implies η = θ − 2 k − (1 + ε )(1 + cos t 0 ) π − t 0 and ̃ s ( t, ε ) = k π − t 0 − 1 + ε \u0012 1 + cos t 0 π − t 0 + sin t \u0013 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 60,
+        "text": "Proof of Lemma 4 . If storage sells everything it has in the end of the first period, the second period setting just repeats the one in the first period. The strategies for buying and selling turn out to be the same as in section 4.1.1 , and the proof is completed. Let’s prove that there is no optimal strategy that would require storage to sell less in the first period in order to save some energy for the second period. Consider two cases k ⩽ 1 and k > 1. For k ⩽ 1, we know from Lemma 1 that marginal benefits of selling more energy are higher than marginal costs of purchasing the same amount of energy. Thus, storage should optimally buy up to its capacity k in both periods to avoid underselling. Also, the optimal solution for storage is to sell everything in the second period: R 4 π 3 π s 2 ( t ) dt = k . Hence, the only question is if storage would like to sell less than its capacity in the first period in order to spend less on purchasing later. However, this maximization problem for s 1 ( t ) and b 2 ( t ) is exactly the same as the one in Lemma 1 : the order of buying and selling doesn’t matter here since we set all our strategies all together in advance. Thus, storage optimally sells all k units of energy in period one and buys k units again in period two. For k > 1, the situation is only slightly different. According to Lemma 1 , it’s not profitable for storage to sell more than one unit of energy. It implies that storage should buy exactly up to one unit in the second period. If it buys more than 1, it’s going to be wasted (because it sells exactly 1). If it buys less than 1, there will be underselling again. Thus, going backwards we conclude that in the second period storage buys up to 1 and sells exactly 1. There is no reason for storage to buy less than 1 in the first period (underselling). However, if it buys more than one unit of energy, the optimal strategy will be to sell 1 and then buy less in the second period. Due to concavity of the integral function, buying exactly 1 in both periods is less costly than buying k > 1 in the first period and buying 2 − k < 1 in the second period. Indeed, the overall payments in the first case are P 1 = 2 Z π \u0012 θ − sin t + sin t \u0013 sin t 2 dt = 2 \u0010 θ − π \u0011 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 61,
+        "text": "For the second case, let ̃ t be the root of the equation",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 62,
+        "text": "cos t − \u0010 π 2 − t \u0011 sin t = 2 − k.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 63,
+        "text": "Then the payments are P 2 = Z π \u0012 θ − sin t + sin t + 1 π ( k − 1) \u0013 \u0012 sin t + 1 π ( k − 1) \u0013 dt + + Z 3 π − ̃ t 2 π + ̃ t \u0012 θ − sin t + 1 \u0000 sin t − sin ̃ t \u0001 \u0013 1 \u0000 sin t − sin ̃ t \u0001 dt = = θk + ( k − 1) 2 π − π 8 + cos ̃ t \u0012 θ − sin ̃ t \u0013 − \u0010 π 2 − ̃ t \u0011 \u0012 cos 2 ̃ t + θ sin ̃ t \u0013 = = 2 θ + ( k − 1) 2 π − π 8 − 1 \u0012 1 2 sin 2 ̃ t + \u0010 π 2 − ̃ t \u0011 cos 2 ̃ t \u0013 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 64,
+        "text": "We have P 2 − P 1 = ( k − 1) 2 π + π 8 − 1 \u0012 1 2 sin 2 ̃ t + \u0010 π 2 − ̃ t \u0011 cos 2 ̃ t \u0013 , where the last (third) summand is a decreasing function by ̃ t that reaches its maximum value π/ 8 at ̃ t = 0. Thus, P 2 − P 1 ⩾ 0 for any values of parameters k, θ > 1, which provides storage the maximum profit under buying and selling exactly one unit of energy in both periods.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 65,
+        "text": "Proof of Proposition 5 . First, we can conclude that a storage unit optimally buys up to its capacity k in the second period and then sells everything. Indeed, let c ⩾ 0 be the remaining state of charge after the first period. If c = 0, we already know from Lemma 2 that a storage unit would optimally trade its full capacity k (recall that we have k ⩽ c m ). Therefore, it would be optimal to trade k if there is some energy c > 0 in the beginning of the period: selling profits stay the same but you spend less on buying energy. Using this, we conclude that it is also optimal for the unit to buy up to its capacity in the first period. Assume that it buys less than k because it anticipates less selling in the first round. In this case, c 0 goes down, and the unit has to buy more in the second round to reach c m . Since purchasing schedules are interchangeable, we may conclude that it at least doesn’t matter when you reach c m , at time t = π or at time t = 3 π , if you want to sell less. Moreover, higher state of charge before selling provides higher profits for storage because it can sell more in case of a favorable shock. Thus, instead of maximization problem ( 16 ) with constraints ( 17 ), we need to solve a",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 66,
+        "text": "simpler problem, where we start from t = π and ε 1 ≡ ε is given:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 67,
+        "text": "max s 1 ( t,ε ) ,b 2 ( t,ε ) \" Z 2 π π ( θ − (1 + ε ) sin t − s 1 ( t, ε )) s 1 ( t, ε ) dt − Z 3 π 2 π ( θ − sin t + b 2 ( t, ε )) b 2 ( t, ε ) dt # ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 68,
+        "text": "subject to a new constraint set s 1 ( t, ε ) ⩾ 0 , b 2 ( t, ε ) ⩾ 0 , Z 2 π π s 1 ( t, ε ) dt ⩽ k, Z 3 π π ( s 1 ( t, ε ) − b 2 ( t, ε )) dt ⩾ 0 , for any ε ∈ [ − 1 , 1] . (31) Thus, we almost got the setting of Lemma 2 with one important distinction: now we first sell and then buy, which means that we already know the exact realization of the shock ε . Let’s assume again that c is an internal parameter which shows how much the storage unit sells in the first period and, consequently, how much it buys in the second period. Therefore, instead of ( 31 ), we have Z 2 π π s ( t, ε ) dt = c, Z 2 π π b ( t ) dt = c. (32) (To ease notation, we omit subindeces of functions s ( t, ε ), b ( t, ε ) and also ignore dependence of b ( t ) on ε because the shock affects b ( t ) only through c .) Step 1 solution of the proof of Lemma 2 gives us two functions for b ( t ) for different c :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 69,
+        "text": "b ( t ) =      2 (sin t − sin t b ) if t ∈ [2 π + t b , 3 π − t b ) , otherwise, if c ⩽ 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 70,
+        "text": "b ( t ) =      sin t 2 + 1 π ( c − 1) if t ∈ [2 π, 3 π ] , otherwise, if c > 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 71,
+        "text": "where t b is defined by ( 26 ). We can see that the second integral in ( 30 ) is either B 1 or B 2 from the proof of Lemma 2 :",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 72,
+        "text": "− Z 3 π 2 π ( θ − sin t + b 2 ( t, ε )) b 2 ( t, ε ) dt =      B 1 , c ⩽ 1 , B 2 , c > 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 73,
+        "text": "Step 2 solution of the same proof gives us two functions for s ( t, ε ) (the third one doesn’t",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 74,
+        "text": "apply here since c ⩽ c m ):",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 75,
+        "text": "s ( t, ε ) =      − 1+ ε 2 (sin t + sin t s ) , if t ∈ [ π + t s , 2 π − t s ) , otherwise, if ε ⩾ c − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 76,
+        "text": "s ( t, ε ) =      π ( c − 1 − ε ) − 1+ ε 2 sin t, if t ∈ [ π, 2 π ] , otherwise, if ε < c − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 77,
+        "text": "where t s is defined by ( 28 ). Now we can calculate the first integral of ( 30 ): Z 2 π π ( θ − (1 + ε ) sin t − s 1 ( t, ε )) s 1 ( t, ε ) dt =",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 78,
+        "text": "=        θc + \u0012 1 + ε \u0013 2 \u0010 cos t s sin t s + \u0010 π 2 − t s \u0011 cos 2 t s \u0011 ≡ SS 1 , ε ⩾ c − 1 , θc + c π (2(1 + ε ) − c ) + \u0000 π 8 − 1 π \u0001 (1 + ε ) 2 ≡ SS 2 , ε < c − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 79,
+        "text": "Consider three different cases:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 80,
+        "text": "ε > c m − 1 . In this case, for the maximized function from ( 30 ), we have SS 1 + B 1 if c ⩽ 1 and SS 1 + B 2 if 1 < c ⩽ c m . Since",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 81,
+        "text": "( SS 1 + B 1 ) ′ = sin t b + (1 + ε ) sin t s > 0 , ( SS 1 + B 2 ) ′ = (1 + ε ) sin t s − 2 π ( c − 1) , the maximum will be reached when the second function turns to zero: (1+ ε ) sin t s = 2 π ( c − 1), which is exactly the second equation of ( 18 ). The root of this equation is c 2 . If we substitute c m into this equation, we can find the pivotal value ̄ ε of ε , such that for any ε > ̄ ε we have c 2 > c m . Computing that, we get ̄ ε ≈ 0 . 018. Thus, if ε > ̄ ε , we have c 2 > c m , so there is no interior maximum of the function, and the storage unit trades full capacity k for any 0 < k ⩽ c m . If c m − 1 < ε ⩽ ̄ ε , we have a local maximum c 2 . If k ⩽ c 2 , the unit trades full capacity again, but if k > c 2 , the unit optimally trades exactly c 2 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 82,
+        "text": "0 < ε ⩽ c m − 1 . In this case, for the maximized function from ( 30 ), we have SS 1 + B 1 if c ⩽ 1, SS 1 + B 2 if 1 < c ⩽ ε + 1, and SS 2 + B 2 if ε + 1 < c ⩽ c m . Since ( SS 2 + B 2 ) ′ = − 2 ε π − 4 π ( c − 1 − ε ) < 0 for any ε > 0 and c > ε − 1, we still have the maximum value when c = c 2 . Again, when k ⩽ c 2 , the storage unit trades full capacity, and it trades c 2 otherwise. ε < 0 . In this case, for the maximized function from ( 30 ), we have SS 1 + B 1 if c ⩽ ε + 1, SS 2 + B 1 if ε + 1 < c ⩽ 1, and SS 2 + B 2 if 1 < c ⩽ c m . Since ( SS 1 + B 1 ) ′ and ( SS 2 + B 2 ) ′ are still correspondingly positive and negative for all c in their domain, the maximum of the function will be reached when ε + 1 < c ⩽ 1. We have",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 83,
+        "text": "( SS 2 + B 1 ) ′ = sin t b − 2 π ( c − 1 − ε ) . Let c 1 be the root of the equation sin t b = 2 π ( c − 1 − ε ) (exactly the first equation of ( 18 )). Then a storage operator trades full capacity if k ⩽ c 1 and she trades c 1 otherwise. Description of strategies for buying in the first period (different functions for b ( t ) depending on whether k is lower or higher than 1) and for selling in the second period (also two different functions depending on whether the shock ε 2 is lower or higher than k − 1) finishes the proof.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 84,
+        "text": "Proof of Proposition 6 . The proof almost repeats the proof of Lemma 2 with only one distinction: the initial state of charge is not zero but c 0 ⩾ 0. Let’s consider the second period problem, where the initial state of charge is c 0 ⩾ 0. If c 0 = 0, this is exactly the setting of one period fully described in Lemma 2 . However, if c 0 > 0, the situation becomes slightly different. The maximization problem looks like 20",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 85,
+        "text": "max b 2 ( t ) , { s 2 ( t,ε 2 ) } \" − Z 3 π 2 π ( θ − sin t + b 2 ( t )) b 2 ( t ) dt + 1 Z 1 − 1 Z 4 π 3 π ( θ − (1 + ε 2 ) sin t − s ( t, ε )) s ( t, ε ) dtdε #",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 86,
+        "text": "20 To ease notation, we drop the dependence of functions b 2 ( t, ε 1 ) and s 2 ( t, ε 1 , ε 2 ) on ε 1 since it all connects solely through c 0 , which we consider an exogenous parameter here. Also, we omit subindices and put ε 2 ≡ ε , b ( t ) ≡ b 2 ( t ), and s 2 ( t, ε 2 ) ≡ s ( t, ε ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 87,
+        "text": "subject to the constraints b ( t ) ⩾ 0 , Z π b ( t ) dt ⩽ k − c 0 , s ( t, ε ) ⩾ 0 , c 0 + Z 4 π 2 π ( b ( t ) − s ( t, ε )) dt ⩾ 0 for any ε ∈ [ − 1 , 1] . (34) Strategies for buying from Step 1 will be slightly different. Now they are",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 88,
+        "text": "b 1 ( t ) =      \u0000 sin t − sin ̃ t b \u0001 if t ∈ [2 π + ̃ t b , 3 π − ̃ t b ) , otherwise, if c − c 0 ⩾ 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 89,
+        "text": "b 2 ( t ) =      sin t 2 + 1 π ( c − c 0 − 1) if t ∈ [2 π, 3 π ] , otherwise, if c − c 0 > 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 90,
+        "text": "where ̃ t b is a root of the equation cos t − \u0010 π 2 − t \u0011 sin t = c − c 0 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 91,
+        "text": "Strategies for selling from Step 2 remain exactly the same:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 92,
+        "text": "s 1 ( t, ε ) =      − 1+ ε 2 (sin t + sin t s ) if t ∈ [3 π + t s , 4 π − t s ) , otherwise, if ε ⩾ c − 1 ,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 93,
+        "text": "s 2 ( t, ε ) =      π ( c − 1 − ε ) − 1 2 (1 + ε ) sin t if t ∈ [3 π, 4 π ) , otherwise, if ε < c − 1 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 94,
+        "text": "Thus, the integrals with the function s ( t, ε ) will look exactly the same, and we can use notation from the proof of Lemma 2 . The integrals containing functions b ( t, ε ) will be renamed as ̃ B 1 and ̃ B 2 instead of B 1 and B 2 , respectively. Instead of periods 0 < c ⩽ 1 and 1 < c ⩽ min 2 , πθ/ 2, we consider periods c 0 ⩽ c ⩽ 1 + c 0 and 1 + c 0 < c . In the first interval, the first derivative of the maximized function is the following: f 1 ( c ) = \u0010 ̃ B 1 + S 1 + ̄ S 2 \u0011 ′ c = sin ̃ t b + 1 Z 1 c − 1 (1 + ε ) sin t s dε − c 2 2 π . In the second interval 1 + c 0 < c , for the same first derivative we have: f 2 ( c ) = \u0010 ̃ B 2 + S 1 + ̄ S 2 \u0011 ′ c = 1 Z 1 c − 1 (1 + ε ) sin t s dε − c 2 2 π − 2 π ( c − c 0 − 1) .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 95,
+        "text": "Note that the first summand of f 1 and the last summand of f 2 turn to zero when c = 1 + c 0 . Recalling that c p is the root of equation ( 19 ), we conclude that: – if c 0 > c p − 1, then f 1 (1 + c 0 ) = f 2 (1 + c 0 ) < 0, and the maximum is reached at some c < 1 + c 0 , which we define as c ′ m and which delivers f 1 ( c ) = 0 (see the first equation pf ( 20 )); – if c 0 < c p − 1, then f 1 (1 + c 0 ) = f 2 (1 + c 0 ) > 0, and the maximum is reached at some c > 1 + c 0 , which we define as c ′′ m and which delivers f 2 ( c ) = 0 (see the second equation pf ( 20 )). Since c ′ m < 1 + c 0 , the case c 0 > c p − 1 gives us the following. If k ⩽ c ′ m , the storage unit trades the full capacity. It uses strategy b 1 ( t ) for buying (the choice of s i ( t, ε ) depends on the shock). If k > c ′ m , the unit trades only c ′ m . The situation for c 0 < c p − 1 is slightly more complicated. Here, 1 + c 0 < c ′′ m , and we have to consider two cases: k ⩽ 1 + c 0 and k > 1 + c 0 . In the first one, the unit trades the full capacity using the same strategy b 1 ( t ) now. However, if 1 + c 0 < k ⩽ c ′′ m , the unit trades the full capacity using strategy b 2 ( t ). Finally, if k > c ′′ m , the unit trades only c ′′ m using strategy b 2 ( t ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 96,
+        "text": "Thus, the optimal value c m that we informally defined in the end of Section 4.2.2 , is the following:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1611,
+        "section_id": 17,
+        "section_name": "Proofs and Extra Statements",
+        "paragraph_id": 97,
+        "text": "c m =      c ′ m if c 0 > c p , c ′′ m if 0 < c 0 ⩽ c p .",
+        "extraction_warnings": ""
+    }
+]

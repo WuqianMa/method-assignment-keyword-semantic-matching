@@ -1,0 +1,17 @@
+[
+    {
+        "paper_id": 1514,
+        "section_id": 13,
+        "section_name": "Structural Model Specification",
+        "paragraph_id": 8,
+        "text": "To estimate the model, we employ a simulated method of moments estimator using the Markov Chain Monte Carlo (MCMC) algorithm. The vector of simulated moments as a function of parameters ξ is denoted by m N ( ξ ), while ˆ m represents the observed moments. We select parameters ˆ ξ that minimize the distance ( m N ( ξ ) − ˆ m ) ′ W ( m N ( ξ ) − ˆ m ). We use the diagonal of the inverse of the variance-covariance matrix as the weighting matrix so that the estimator minimizes the sum of squared distances, weighted by the inverse variance of each moment. We include 20,000 individuals in the simulation. Table D.16 in Appendix D summarizes the simulated and empirical moments. Details about the simulation can be found in Appendix D. 16 We did not include the likelihood of expressing socially appropriate views as moment conditions because they do not rely on the perceived fraction of agreement. Therefore, these moments are co-linear with the moment conditions in 2.",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Markov Chain Monte Carlo"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    }
+]

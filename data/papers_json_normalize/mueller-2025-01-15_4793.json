@@ -1,0 +1,386 @@
+[
+    {
+        "paper_id": 1442,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Central Bankers Who Doubt: Measuring Their Knowledge of the Limits of Knowledge",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Bernardo Mueller † Department of Economics University of Brasilia",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "Abstract This paper explores the epistemic attitudes of central bankers, focusing on their awareness of the inherent uncertainties in economic modeling and decision-making. Using natural language processing (NLP) techniques, I analyze over 5,000 speeches from the Federal Reserve (Fed), European Central Bank (ECB), and Bank of England (BoE) from 1996 to 2024. Employing topic modeling and Kullback-Leibler divergence, I construct an index measuring each speech’s alignment with a benchmark of uncertainty-aware discourse. The findings reveal divergent responses to the 2008 Great Recession: the Fed and ECB exhibited greater epistemic humility post-crisis, while the BoE displayed increased overconfidence. Female committee members across all three institutions were notably more self-assured in their speech tones than their male counterparts. This study contributes to the literature on central bank communication by quantifying shifts in epistemic attitudes, offering insights into how central bankers navigate the tension between confidence and uncertainty in response to external shocks. Keyword: Central banks, ignorance, overconfidence, natural language processing, Great Recession.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "In the 2024 film Conclave , Cardinal Thomas Lawrence, portrayed by Ralph Fiennes, is tasked with organizing the conclave to elect a new pope. Troubled by the contrast between the moral failings of the contending cardinals and the lofty ideals required to occupy the papal seat, as well as grappling with his own crisis of faith, Cardinal Thomas delivers a speech that stirs the sequestered cardinals:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "And over the course of many years in the service of our mother, the church, let me tell you, there was one sin which I have come to fear above all others: Certainty. Certainty is the great enemy of unity. Certainty is the deadly enemy of tolerance. Even Christ was not certain at the end. ‘Dio mio, Dio mio, perch ́e mi hai abbandonato?’ He cried out in his agony at the ninth hour on the cross. Our faith is a living thing, precisely because it walks hand in hand with doubt. If there was only certainty and no doubt, there would be no mystery and therefore no need for faith. Let us pray that God will grant us a Pope who doubts. And let him grant us a Pope who sins and asks for forgiveness . . . and who carries on. 1 † bmueller @ unb.br 1 See Conclcave at 35:00, https://www.imdb.com/pt/title/tt20215234/",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "This challenge is not confined to the Church or religion; it permeates all fields of expertise. Experts often face the tension of projecting confidence about inherently uncertain matters. This poses a dilemma, because the greater the assuredness, the greater the expectations and also the greater the disillusionment when explanations and forecasts fail, as they inevitably do (Best 2022). In this paper, I explore how central bankers navigate this delicate balance. Markets and economies are complex non-stationary systems, where past data, knowledge and experience often offer little assistance in predicting the future or identifying emerging crises (Caballero 2010). Yet, akin to religious leaders, central bankers are expected by the public, markets, and politicians to display perfect understanding about the state of the economy and certainty about the appropriate future course of action. The Great Moderation — a nearly two-decade period of macroeconomic stability spanning from the mid-1980s to 2007— fostered growing confidence among economists and central bankers in the power of macroeconomic theories and models to understand that complex world, creating a heightened sense of control. Perhaps the greatest example of such hubris was Robert Lucas’ presidential address to the American Economic Association in 2003 that claimed ”my thesis in this lecture is that macroeconomics ... has succeeded: its central problem of depression prevention has been solved, for all practical purposes, and has in fact been solved for many decades” (Lucas Jr 2003). Shortly thereafter, the world economy would enter its most severe crisis since the Great Depression. In this paper, I exploit the Great Recession as an unanticipated shock to measure changes in central bankers’ beliefs about the extent of their knowledge and ability to steer the economy, as expressed in their speeches. Several papers have used this event as an exogenous shock to compare changes of central banks behaviors, choices and attitudes (D ̈opke, Fritsche, and M ̈uller (2019), Caballero (2010). Bertsch et al. (2022)). There can be little doubt that this shock was largely unexpected and unpredicted. Neither central banks nor private institutions nor mainstream economic forecasters predicted a housing market collapse or a financial crisis. Although a few voices were retrospectively recognized as having anticipated the crisis - such as Robert Shiller, Nouriel Roubini, Raghuram Rajan, and Nassim Tableb - these were more general warnings that something was amiss than specific forecasts. The magnitude of the Great Recession and the long and slow recovery was a rude awakening. Traumatic events often compel individuals and institutions to question their beliefs and the limits of their knowledge. Alan Greenspan, the iconic central banker and Chairman of the U.S. Federal Reserve during nearly all of the Great Moderation, later admitted in an interview to the Financial Times that",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "”(t)he whole period upset my view of how the world worked -the models failed at a time when we needed them the most ... and the failure was uniform. JPMorgan had the Amercian economy accelerating three days before [the collapse of Lehman Brothers] - their model failed. The Fed model failed. The IMF model failed. I am sure the Goldman model also missed it too.” (Tett 2013)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "In a 2013 book titled The Map and the Territory Greenspan presents a candidly reformed view of the limitations of economic models and forecasting, acknowledging that the Great Recession fundamentally",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "challenged his long-held beliefs in market efficiency (Greenspan 2014). The book is full of references to ”existential crisis” (pg.182), ”crack in my view of the economic world” (pg. 99), being ”especially shaken by the breakdown in 2008” (pg. 98), ”state of shocked disbelief” (pg. 99), and reference to his famous expression ”rational exuberance” (pg. 168), that in this context highlighted the realization that even the most powerful economic policymakers, equipped with sophisticated tools and models, could not fully understand or predict market dynamics. Sir Mervyn King, another quintessential Central Banker, who presided the Bank of England during the turbulent period of the Great Recession (2003-2013), also published a retrospective book that displays a similar conversion. In Radical Uncertainty he states:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "On many economic issues there will always be an explanation of why the anticipated outcome failed to materialise, and no means of disputing the explanation other than derision. Economists have repeatedly used this excuse, and received that derision. But variants of the falsificationist argument have enabled economists ever since to deflect criticism of their models for failing to confront the reality of how people behave, and to dismiss critiques of their predictive failures by reference to auxiliary hypotheses. Such a view is closer to religion than science. (Kay and King 2020, pg. 260)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "Similarly, Jean-Claude Trichet, president of the European Central Bank, stated in the opening address at the ECB Central Banking Conference in Frankfurt 2010 that ”as a policy-maker during the crisis, I found the available models of limited help. In fact, I would go further: in the face of the crisis, we felt abandoned by conventional tools” (Trichet 2010). The fact that leading figures from some of the world’s most influential central banks reassessed their beliefs about the limits of knowledge is striking evidence of the potential traumatic impact of the Great Recession on beliefs. In this paper, I attempt to measure this impact more systematically and quantitatively by analyzing the complete set of speeches delivered between 1996 and 2024 by members of the primary decision-making committees of the Federal Reserve (Fed), the European Central Bank (ECB), and the Bank of England (BoE). Using natural language processing, I track changes over time in their expressed awareness of the limitations of their knowledge. To isolate the impact of the Great Recession on central bankers’ epistemic confidence, I estimate the effects of year fixed effects on this measure while controlling for speaker fixed effects and speech-topic effects. The goal is not to argue that forecasts and predictions by central bankers, macroeconomists, and other experts are flawed—that much is well-documented. Ample evidence demonstrates that economic forecasts are often strikingly inaccurate, particularly during critical moments, such as anticipating the onset of recessions when accurate predictions are needed most. Tetlock (2017)’s Expert Political Judgment analyzed over 82,000 predictions by political and economic experts over two decades, revealing that most forecasters performed no better than random chance (or ”dart-throwing monkeys”). Campbell and Moore (2024) test over 16,000 forecasts from the Survey of Professional Forecasters and find they were correct only 23% of the time and suffered from excessive",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "Figure 1: ECB projections of core inflation (Darvas 2018) Note: Thick red line is the observed inflation. Colored lines are ECB projections.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "faith in the accuracy of their knowledge. Guedj and Bouchaud (2005) find, in a large data set of earning forecasts, that financial experts are over-optimistic and exhibit herding behavior, doing no better than simply predicting no change from the previous year. There are numerous other such studies (Kay and King (2020), Tyszka and Zielonka (2002), Taleb (2007), among others). Figure 1, reproduced from Darvas (2018, p. 14), exemplifies the challenges of central bank forecasting. It shows the European Central Bank’s projections and revisions of core inflation from 2013 to 2018. During this period, the Bank consistently overestimated future core inflation, as evidenced by the upward-sloping projection lines, while actual inflation remained remarkably stable. When faced with forecasting performance such as this - which is by no means confined to the ECB - one wonders what is the point of these exercises. The purpose of this paper is not to assess the accuracy of central bankers’ statements and forecasts, but to explore the gap between how much they know and how much they think they know—a phenomenon often refered to as epistemic arrogance (Alpert and Raiffa (1982), Taleb (2007)). To illustrate this concept, consider the following experiment: pose a question that has a quantitative answer that requires obscure information, such as, ”How many red cars are currently registered in the city of Rio de Janeiro?” Instead of being asked for a single number, respondents are instructed to provide a range within which they believe the true answer lies with 95% confidence. Naturally, the wider the range, the greater the likelihood it contains the correct answer, with a theoretical certainty of 100% achieved by choosing a range from 0 to infinity. Thus, the range reflects respondents’ epistemic confidence in their knowledge—a narrow range implies high confidence, while a wide range acknowledges greater uncertainty. If respondents accurately assessed their own knowledge, we would expect 5% of the ranges to exclude the true value when applying the experiment to a large number of individuals. However, experiments consistently reveal that the proportion of failed ranges is significantly higher, often between 30% and 45%, suggesting pervasive overconfidence, or epistemic arrogance (Taleb, 2007: 219). Moreover, While",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "all cultures, professions, ages, and classes seem to be prone to this bias, certain groups, such as MBAs, risk analysts, and economists, are particularly prone to overconfidence. In this paper, instead of relying on experimental approaches, I develop a measure of epistemic arrogance through natural language processing of speeches by central bankers. A substantial body of literature examines central bank communication and its effects on financial markets. The primary focus of this research has been to estimate the impact of central bankers’ statements on key market variables, such as bond yields, stock indices, exchange rates, interest rate futures, professional forecaster surveys, market sentiment, and media coverage (Swanson (2023), G ̈urkaynak, B. Sack, and Swansonc (2005), Bernanke and Kuttner (2005), Cieslak and Schrimpf (2019), Ahrens, Erdemlioglu, et al. (2024), Ahrens and McMahon (2021), Bholat et al. (2015), Hansen, McMahonprat, and Prat (2018), G ́ati and Handlan (2022), Leek and Bischl (2024), Kohn and B. P. Sack (2003),Bordo, Istrefi, and Mart ́ınez (2024)). Initially, much of this research centered on committee meeting minutes, such as the Federal Reserve’s FOMC (Federal Open Market Committee) minutes, which are carefully crafted aware of their impact on market reactions. Over time, attention has expanded to encompass other forms of central bank communication, including official post-meeting statements, voting records, interviews, testimonies (e.g., to Congress), reports, press conferences, and other instances where central bankers express their views (Ehrmann and Talmi (2020), Ellen, Larsen, and Thorsrud (2022), Golub, Kaya, and Reay (2015), Moschella and Pinto (2019), Schonhardt-Bailey (2013)). This research has grown increasingly sophisticated, employing methods such as analyzing high-frequency financial data to capture market reactions down to the second, or employing textual analysis to study subtle nuances in word choice, sentiment, tone, or even body language (Neuhierl and Weber (2019), Petropoulos and Siakoulis (2021)). I focus on speeches by central bankers that are not directly related to official monetary policy meetings, but rather given at conferences, university lectures, financial sector gatherings, investor forums, think tanks, and high-profile summits like Jackson Hole or Davos. These speeches offer several advantages: they are more numerous than official committee communications and are often less scripted or guarded, allowing for more candid and individualized opinions to emerge. The details of the data are provided in the next section. The primary aim of this study is not merely to validate a measure of epistemic arrogance or humility but also to explore how these traits differ among central banks and individual central bankers. The unanticipated nature of the Great Recession provides a unique context to assess whether this shock disrupted the pervasive hubris often associated with economists and financial professionals, particularly in the wake of the Great Moderation. My paper also contributes to the literature on epistemic politics and the limits of expertise (Best (2022), Best (2024), James (2024), Matthijs and Blyth (2018), Eyal (2019)). While drawing on similar data sources as much of this literature, that is, text based data such as speeches, reports, and transcripts, one of my contributions lies in quantifying agents’ epistemic positions and tracking how these positions evolve in response to salient events. My results indicate an average decrease in expressed certainty following the onset of the 2007–2008",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "crisis for both the Federal Reserve (Fed) and the European Central Bank (ECB). However, for the Bank of England (BoE), the effect was positive. Additionally, I find that in all three central banks, women were more likely to express higher levels of confidence, as were the bank chairs. There is also evidence suggesting that PhD economists exhibit greater overconfidence than other members. For board members whose tenure spanned the onset of the crisis, the impact varied by individual. The closest work to this study is (Johnson, Arel-Bundock, and Portniaguine 2019), which examines central bankers’ responses to the Global Financial Crisis through a combination of computer-assisted text analysis and qualitative analysis of 13,586 speeches delivered between 1997 and 2017 by members of various different central banks. Their study demonstrates that while the crisis prompted significant rhetorical adjustments, central bankers largely retained the core elements of the pre-crisis monetary policy paradigm, layering new ideas onto established beliefs to address post-crisis challenges. My paper uses a subset of the same speech data, limited to the US Fed, European Central Bank and the Bank of England, and while I also use natural language processing methods based on topic modeling and dictionary-based approaches, the detailed procedures are different. In addition, in estimating the impact of the crisis on speeches, I control for speaker fixed effects and topic effects, thus removing some of the potential confounding biases. The next section describes the central banks’ speech data and the NLP methods used to measure the epistemic confidence level in the speeches. Section 3 then shows the results for the Fed and section 4 those for the ECB and the BoE.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "The speech data used in this paper includes all the speeches by the committee members of three central banks: The Federal Reserve of the US (Fed), the European Central Bank (ECB), and the Bank of England (BoE). The Fed data includes all 1,764 speeches by the seven members of the Federal Board of Governors from 1996-2004. 2 The ECB corpus contains 2,219 speeches by the six members of the Executive Board from 1997 to 2024. I use only the 82% of speeches which are in English. 3 The BoE data is made up of 959 speeches by the nine members of the Monetary Policy Committee from 1996-2024. 4 In addition, selected speeches from the Reserve Bank of Australia, Reserve Bank of New Zealand, and the Bank of Canada, are used in a training set of speeches that are explicitly recognize uncertainty in central banking. 5 . For each speech I have the date (day, month, year) when it was given and the name of the speaker. The primary objective of the data analysis is to develop a measure for each speech that reflects the degree to which it conveys, through tone, content, and word choice, an awareness of the inherent radical 2 Available at https://www.federalreserve.gov/newsevents/speeches.htm 3 https://www.ecb.europa.eu/press/pubbydate/html/index.en.html?name o f p ublication = Speech 4 https://www.bankofengland.co.uk/news/speeches 5 RBA - https://www.rba.gov.au/speeches/, RBNZ - https://www.rbnz.govt.nz/news-and-events/speeches, BOC - https://www.bankofcanada.ca/press/speeches/",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "Figure 2: Topic weights in FED speeches - 1996-2024 Note: Topic weights calculated on 1,767 Fed speeches using latent Dirichlet allocation (LDA).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "uncertainty of the economy and financial markets, as well as the broader limitations of knowledge. This measure, described in detail below, is primarily derived from the results of a topic modeling exercise using Latent Dirichlet Allocation (LDA)(Blei, Ng, and Jordan 2003). LDA identifies a predefined number of topics within a textual corpus by analyzing patterns of word frequencies and co-occurrences, enabling a structured examination of thematic content across the speeches. Given the breadth of themes addressed in the speeches over the extended period from 1996 to 2024, I have chosen to set the number of topics at twenty. The topic modeling exercise produces a matrix of topics by speeches, where each speech is assigned a weight for each topic, with the weights summing to one. This allows each speech to be quantitatively represented as a distribution of topic weights. The model also generates a list of words associated with each topic (see Appendix A for word lists corresponding to each bank). To enhance interpretability, I used a large language model to assign titles to each topic, leveraging",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "its remarkable ability to identify patterns within word lists. In Figure 2, I averaged the topic weights across all speeches for each year and plotted these trends over time to illustrate the evolution of topics at the Federal Reserve. The topic titles are displayed in the figure. The impact of the 2008 financial crisis is particularly evident, with some topics, such as 12 - Community banking and local lending and 17 - Crisis management and systemic regulation , gaining prominence, while others, like 20 - Risk management and Basel framework and 8 - Inflation dynamics and energy shocks , receive diminished attention after the onset of the crisis. To illustrate the concept of representing a speech as a distribution of topic weights, consider Ben Bernanke’s influential speech, ’The Great Moderation,’ delivered on February 20, 2004, at the Eastern Economic Association meeting in Washington, D.C. In this address, Bernanke attributed the then-reduced volatility in inflation and output to three key factors: (1) improved monetary policy, (2) structural changes, and (3) good luck. 6 The weights attributed to this speech by the topic modeling were concentrated on just two topics, 8 - Inflation Dynamics and Energy Shocks (55%) and 10 - Monetary Policy and Economic Uncertainty (37%). None of the other topics received more than 5%, which is the value they would receive on average if topics were randomly chosen. Another example is Alan Greenspan’s December 5, 1996 speech ”The Challenge of Central Banking in a Democratic Society”, where he coined the term ”irrational exuberance.” The topic weights for this speech are less concentrated that Bernanke’s. It featured 29% topic 2 - Government Policies ad Economic Impact , 25% topic 5 - Federal Reserve Policies and Actions , 13% topic 8 Inflation Dynamics and Energy Shocks , 11% topic 15 - Payment Systems and Financial Innovations , 10% topic 3 - Banking, Risks and Financial System , 6% topic 9 - Asset Prices, Risk, and Market Trends , and 5% topic 10 - Monetary Policy and Economic Uncertainty , with all other topics below 5%.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 4,
+        "section_name": "Measuring speech novelty and resonance",
+        "paragraph_id": 0,
+        "text": "In the next section I use the topic weight distributions to create an index of uncertainty awareness for each speech. To do this I use a measure of surprise in each speech given the content of previous speeches. This measure is the Kullback-Leibler divergence (KL), a measure from information theory that quantifies the difference between two probability distributions by measuring how much additional information or uncertainty is introduced when moving from distribution to the other. 7 To understand how KL divergence capture novelty or surprise, consider the following metaphor. Suppose you are used to going to a specific restaurant where the cook has 20 different sets of ingredients (topics) to chose from to make his recipes. Examples of the sets of ingredients can be meats, tubers, leafy vegetables, dairy, herbs, broths, mushrooms, etc. You are used to the cook’s pattern of ingredient use. Even though the specific dishes (speeches) are different each time you go, there is a discernible signature which you have come to expect. Now suppose that one day, without you knowing, the cook has taken a day off and has been replace by another cook that has a different style of ingredient use. When you 6 Available at https://www.federalreserve.gov/boarddocs/speeches/2004/20040220/default.htm. 7 For and excellent primer on these topics see DeDeo (2018)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 4,
+        "section_name": "Measuring speech novelty and resonance",
+        "paragraph_id": 1,
+        "text": "try the dish you are expecting the usual pattern, but you are surprised to taste something different. The KL measure is a way of quantifying that surprise by using the topic weight distributions from the topic modeling exercise. See Appendix C for a more technical description of this statistic. I following the insight in Barron et al. (2018) of using KL divergence to measure novelty, transience and resonance in texts. They used these methods in their analysis of transcripts of debates held in the parliamentary assembly of the French Revolution. A speech’s novelty is defined as the KL divergence of that speech relative to the set of preceding speeches. I used a window of 100 speeches, which in most years covered a period of about 6 months. Transience is defined as the KL divergence of a speech to the subsequent set of speeches. The idea is that if future speeches diverge from the topic distribution of that given speech, then whatever novelty it has introduced is not perpetuated in time. Finally, resonant speeches are those that are novel and not transient, that is, something new was introduced and instead of being forgotten, had an impact on future discourse. Resonance is calculated as novelty minus transience. 8 These measures have applied to a diverse range of text corpora beyond the French Revolution debates: Darwin’s reading diaries (Murdock, Allen, and DeDeo 2017), fan-fiction (Jing, DeDeo, and Ahn 2019), publications of the Royal Society of London (Degaetano-Ortlieb and Teich 2018), economic journal article (Correia and Mueller 2022). A consistent finding across most of these applications is that novelty tends to be strongly correlated with transience: what is new and surprising often meets resistance or rejection. Both cultural and evolutionary processes are inherently averse to change (Mokyr 2016). Figure C.1 in Appendix C illustrates this strong correlation between novelty and transience in Fed speeches. However, some speeches deviate from this trend, exhibiting high novelty but low transience (those furthest south from the 45-degree line). These are resonant speeches —ones that leave a lasting impact. One of the highest ranking speeches in the Fed data set, for example, is Alan Greenspan’s speech at Annual Conference of the National Community Reinvestment Coalition, Washington, D.C. March 22, 2000. 9 It reached a resonance score of 4.12 (see Figure C.2). Why it scored so high is not determined by the algorithm and must instead be reasoned by the researcher. When consulted ChatGPT 4o, suggested that the speech ”encapsulated a unique moment in time, capturing the optimism of the dot-com boom while addressing its challenges, making it a hallmark of Greenspan’s tenure as Fed Chair.” The most resonant speech at the ECB was Risk Management in Central Banking by Lorenzo Bini Smaghi at the International Risk Management Conference at the Free University of Amsterdam on June 15, 2011. 10 . At the BoE one of the most resonant speeches was by Sir Mervyn King on January 23, 2007 explaining the rationale behind recent interest rate hikes. 11 Figure 3 presents the values of novelty, transience, and resonance for all Fed speeches over time, with each Fed chairman distinguished by color and other committee members shown in gray. Panel A highlights a rise in novelty leading up to the Great Recession in late 2007 and early 2008, likely reflecting the shift in discourse as the crisis began to dominate discussions that previously related to a more stable 8 Appendix C provides a technical treatment. See also (Barron et al. 2018, p. 4612). 9 Available here https://www.federalreserve.gov/boarddocs/speeches/2000/20000322.htm 10 Available here https://www.bis.org/review/r110616d.pdf 11 Available here https://www.bankofengland.co.uk/-/media/BoE/files/speech/2007/speech-by-mervyn-king.pdf",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 4,
+        "section_name": "Measuring speech novelty and resonance",
+        "paragraph_id": 2,
+        "text": "economy. After this period, novelty declines sharply as the crisis becomes a persistent theme, therefore losing its novelty. Similar patterns are observed during 2014–2015 (potentially related signs of the long awaited recovery) and again in 2019–2020 (coinciding with the COVID-19 pandemic). Panel B shows that transience closely mirrors the trajectory of novelty, reflecting their strong correlation. In contrast, the evolution of resonance, depicted in Panel C, follows a different pattern. A peak occurs as the Great Recession emerges in late 2007, marked by speeches that introduce a distinct mix of topics that later become central to subsequent discussions, reducing their novelty and transience. The second-highest resonance in Panel C is associated with the speech The Recent Financial Turmoil and its Economic and Policy Consequences , delivered by Ben Bernanke on October 15, 2007, at a pivotal moment. In this speech, Bernanke analyzed the causes and impacts of the financial turmoil, emphasizing the Federal Reserve’s proactive commitment to stabilizing financial markets and supporting the broader economy through vigilant monitoring and decisive monetary policy actions This methodology for analyzing central bankers’ speeches may be useful for the study of monetary policy and central bank history, as it provides a tool for quantifying and timing shifts in beliefs and ideas. Here, however, my focus is on examining changes in central bankers’ epistemic attitudes toward the pervasiveness of uncertainty. The next section outlines the approach used to measure these changes and presents the results for Fed data, while the subsequent section discusses findings for the ECB and BoE.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 0,
+        "text": "To construct a measure of the epistemic uncertainty content in speeches delivered by U.S. Federal Reserve central bankers, I calculate the Kullback-Leibler divergence of each speech relative to a benchmark speech. This benchmark is derived from a carefully curated training set of speeches chosen for their explicit awareness, in tone, theme, message and vocabulary, of the radical uncertainty inherent in monetary policymaking and central banking. The training set, manually assembled through extensive review of speeches from different institutions and time periods, comprises 137 speeches from the Reserve Bank of Australia, Reserve Bank of New Zealand, Bank of Canada, Bank of England, U.S. Federal Reserve, and European Central Bank. The set includes ten non-speech texts — such as editorials, blog posts, and articles — that align with these themes. 12 The training set was processed alongside the full set of Federal Reserve speeches using a topic modeling algorithm, generating a matrix of topic weights. The average topic weights of the training set were then compared to the average topic weights of the Federal Reserve speeches to identify topics that distinguished the two sets. Notably, Topic 10— Monetary Policy and Economic Uncertainty —had an average weight of 0.41 in the training set but only 0.02 in the Federal Reserve speeches, while the average weights of all other topics were statistically similar in both sets. This result aligned with expectations, given the thematic focus of Topic 10 on uncertainty. To create the benchmark speech, I calculated the average topic 12 See Appendix B for examples of speeches in the training set.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 1,
+        "text": "Figure 3: Novelty, transience and resonance in FED speeches Note: Each point is one speech. A - Novelty is measured as the Kullback-Leibler divergence of each speech to the 20 previous speeches in time. B - Transience is the divergence to the 20 next speeches. C - Resonance is Novelty-Transience (Barron et al. 2018). The four chairmen are color-coded and other FOMC members are grey.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 2,
+        "text": "weights of all speeches with a Topic 10 weight of 0.2 or higher. Finally, the Kullback-Leibler divergence of each speech in the dataset relative to this benchmark speech was calculated, providing an index of uncertainty awareness. The index is a positive number with an average of 7.85 and a standard deviation of 2.77. A lower deviation from the benchmark speech indicates a greater alignment with the epistemic understanding of the limits of knowledge, as the speech is closer to the benchmark. Importantly, the index is not strictly a measure of epistemic arrogance as previously defined. A high value does not necessarily imply that a speech makes unfounded predictions or overreaches the boundaries of what is knowable in a given context. Instead, many speeches may diverge from the benchmark simply because they address topics where uncertainty is not a central concern or is irrelevant. Thus, the index is better understood as a measure of awareness of uncertainty and the limits of knowledge, reflected in the choice of words, themes, and overall tone of the speech. A small body of literature explores ways to measure uncertainty in texts, such as scientific journal articles. 13 However, I chose this approach, based on topic modeling and KL divergence, for its intuitive appeal, leaving the development of more sophisticated algorithms that can capture more fine-grained uncertainty dimensions in central bank speeches as future extensions or for other researchers. 14 The results for the Federal Reserve speech corpus are presented in Figure 4. Each point represents an individual speech, and the index measures its divergence from the benchmark speech characterized by uncertainty awareness. Consequently, lower values indicate greater recognition within a speech of the epistemic challenges posed by the radical uncertainty inherent in central banking. The speeches in the training set, represented as dark points in the scatterplot, are primarily concentrated in the lower portion of the graph. A smoothed trend line illustrates the general evolution of the index over time. The graph indicates that as the Great Recession unfolded, central bankers’ speeches — on average — shifted downward as measured by the index, reflecting greater acknowledgment of uncertainty. This trend suggests that the crisis, which continued to evolve well beyond 2008 and lasted far longer than initially anticipated, modestly tempered the tone and content of central bankers’ discourse. This outcome is interesting because, in principle, the response could have taken a very different form: central bankers might have displayed greater certainty and confidence to reassure markets, policymakers, and politicians. Alternatively, the Great Recession might have had little to no discernible effect on the nature of their speeches. The observed shift, therefore, underscores the nuanced impact of the crisis on central bank communication. While the graph offers valuable insights into the impact of the crisis on the speeches of Federal Reserve committee members, it does not allow for definitive conclusions. The speeches span a wide range of topics, were delivered by numerous individuals with varying characteristics, and cover a period of nearly three decades. Consequently, there are many potential confounding factors that may influence the uncertainty 13 See Pei and Jurgens (2021) and references therein. 14 For a different approach to answer similar questions using a similar data set see Johnson, Arel-Bundock, and Portniaguine (2019).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 3,
+        "text": "Figure 4: Uncertainty awareness in US Federal Reserve speeches Note: Each point is one speech. The point measures the Kullback-Leibler divergence to an uncertainty aware benchmark speech. The trend is a Lowess (Locally Weighted Scatterplot Smoothing) line that provides a non-parametric fit if the scatterplot. The red line marks the onset of the Great Recession. The dark points show speeches in the training set.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 4,
+        "text": "content of the speeches. To account for these effects, I regressed the index against year, speaker, and topic dummies. The twenty topic dummies are coded as 1 if the topic weight from the topic modeling exercise exceeds 0.2. Additionally, I controlled for measurable speaker characteristics. The first is whether the speaker held a PhD in Economics, as opposed to a lower degree or a degree in another field, such as Law. This variable tests the frequent assertion that economists are particularly prone to overconfidence (Kozlowski and Van Gunten (2023), Soyer and Hogarth (2012), Angner (2006)). I also controlled for whether the speaker was serving as the Chair of the Federal Reserve at the time of the speech, as this position comes with higher visibility and unique pressures. Additionally, I included a gender dummy to explore whether female central bankers approached uncertainty differently. I also include a dummy variable set to 1 if the speech was delivered within seven days before an FOMC meeting and another for speeches given within seven days after. This accounts for the blackout period surrounding FOMC meetings, during which committee members typically refrain from making public statements, speeches, or interviews that might reveal their views on monetary policy or economic conditions, potentially influencing the index. Additionally, I include a control that takes advantage of the fact that some speakers served as committee members both before and after the onset of the Great Recession. This allows for holding many speaker-specific characteristics constant, providing a clearer estimate of the crisis’s impact on speech content. To achieve this, I include an interaction term between the speaker dummy and a dummy for the pre-crisis period. As a way to validate the results, I repeat the estimation using a different dependent variable as",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 5,
+        "text": "the measure of uncertainty awareness. This variable was calculated combining textual analysis and sentiment assessment. The process involved identifying 297 uncertainty-related words using the LoughranMcDonald lexicon and calculating an Uncertainty Score as the proportion of such words in each speech. This is dictionary-based method provides a test of the robustness of the results using the topic modeling and KL divergence-based method. Contrary to the that variable, the uncertainty score increases with greater levels of confidence in speeches. The estimation results are presented in Table 1. Column 1 captures the effect of the crisis through a dummy variable for the years prior to 2008. The estimated coefficient is positive and statistically significant, indicating that, before the crisis, the epistemic index deviated more from the benchmark speech characterized by uncertainty awareness than it did after the crisis began. This finding aligns with the pattern observed in the scatterplot, where Federal Reserve speeches reflected greater acknowledgment of uncertainty following the onset of the crisis. In Column 2, the year dummies for the post-2008 period are divided into three distinct phases: the height of the crisis (2007–2008), the protracted development of the crisis (2010–2015), and the recovered period (2016–2024). The results reveal that there was no significant effect on the index during the initial years of the crisis. Instead, the decline occurred in the later periods, with notable reductions in the index during both the 2010–2015 phase and the 2016–2024 recovery phase. This suggests that the impact of the crisis on central bankers’ discourse took time to materialize, reflecting a delayed but sustained shift toward greater recognition of uncertainty. A more detailed analysis of the year effects is presented in Figure 5, which plots the coefficients of individual year dummies (base year = 2008). The pattern reveals that, after controlling for speaker and topic effects, the year effects for the post-2008 period are statistically lower. This indicates that speeches delivered after 2008 were less divergent from the benchmark uncertainty speech, further corroborating the trend toward greater recognition of uncertainty in the aftermath of the crisis. Additional findings from Table 1 indicate no significant difference in epistemic uncertainty, ceteris paribus, between speakers with and without a PhD in economics. However, both the dummy for chairmen and the gender dummy controlling for female central bankers were found to exhibit a statistically significant higher level of confidence in their speeches on average. This result was expected for chairpersons, as their leadership role often requires projecting authority and serving as a model. The higher divergence observed among women, however, had no a priori expectation. One might have expected women to exhibit less epistemic arrogance and greater acknowledgment of uncertainty than their male counterparts. Instead, the opposite proved true. One possible interpretation is that the traditionally male-dominated environment of the FOMC and central banking more broadly imposes implicit pressures on women to adopt a more confident tone, potentially as a strategy to counteract biases and avoid perceptions of weakness (Ainsley (2017),Bisbee, Fraccaroli, and Kern (2022), Koenig, Eagly, et al. (2011), Koenig and Eagly (2014), Kern, Reinsberg, and Romelli (2024), Comunale et al. (2023)). Table 1 also reveals that the timing of speeches relative to FOMC meetings had no discernible im-",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 6,
+        "text": "Table 1: Estimation of Fed speeches’ uncertainty indices",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 7,
+        "text": "KL-divergence KL-divergence Uncertainty (Epistemic confidence) (Epistemic confidence) Score Years 1996-2008 0.482[FORMULA] (5.42) Years 2007-2009 0.095 0.001 (0.29) (0.85) Years 2010-2015 -0.600* 0.003* (-1.84) (1.95) Years 2016-2024 -0.808* 0.004* (-1.78) (1.93) PhD Economics 0.101 0.096 0.001 (0.21) (0.20) (0.39) Fed Chairman 0.903[FORMULA] 0.913[FORMULA] 0.002 (3.25) (3.31) (1.41) Female 1.147[FORMULA] 1.222[FORMULA] 0.0004 (5.27) (3.98) (0.75) Week before FOMC -0.012 -0.012 -0.002** (-0.05) (-0.05) (-2.22) Week after FOMC -0.001 -0.000 -0.001* (-0.01) (-0.00) (-1.96) Bernanke 1996-2007 -0.060 -0.056 0.006[FORMULA] (-0.64) (-0.22) (4.88) Kohn 1996-2007 0.808[FORMULA] 0.993[FORMULA] 0.006[FORMULA] (7.52) (3.31) (5.04) Warsh 1996-2007 1.070[FORMULA] 1.159[FORMULA] 0.005[FORMULA] (13.90) (8.02) (4.90) Constant 5.778[FORMULA] 6.505[FORMULA] 0.018[FORMULA] (13.12) (11.88) (8.77) Speaker fixed effects Y Y Y Year fixed effects N N N Topic effects Y Y Y Observations 1,767 1,767 1,767 R-squared 0.56 0.56 0.45 Notes: The dependent variable in columns 1 and 2 is the divergence (in the Kullback-Leibler sense) of each speech’s topic weights (Latent Dirichlet allocation) to the average topic weights of the 137 speeches curated for awareness of epistemic limitations. In column 3, the dependent variable is an uncertainty score calculated as the proportion of tokens in the speech that match a predefined list of 297 uncertainty-related terms from the Loughran-McDonald lexicon ( https://sraf.nd.edu/ loughranmcdonald-master-dictionary/ ). Standard errors clustered by speaker. Topic effects equal 1 for speeches in which that topic has a weight greater than 0.2.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 8,
+        "text": "Figure 5: Year effects on uncertainty awareness in Fed speeches Note: Estimates from a regression of the KL-divergence uncertainty measure on all non-year variables in column 1 of Table 1 (regression not shown in table). Base for year dummies is 2008.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 9,
+        "text": "pact on the epistemic index. Regarding the effect of the crisis on committee members who served both before and after its onset—including not only Chairman Ben Bernanke but also Donald Kohn and Kevin Warsh—the results indicate a notable shift toward greater uncertainty awareness for Kohn and Warsh. Interestingly, no such shift was observed for Bernanke, suggesting that while some committee members adjusted their discourse to reflect increased recognition of uncertainty, the chairman maintained a consistent tone throughout. For committee members whose terms were either entirely before or entirely after the onset of the crisis, I plot the estimated speaker effects with confidence intervals in Figure 6. The speakers are ranked from those whose speeches diverged the most from the benchmark uncertainty speech to those who diverged the least. These effects control for both topic and year influences. Stars indicate whether a speaker’s tenure occurred before the crisis, straddled its onset, or occurred entirely afterward. The absence of any clear pattern based on timing suggests that these effects reflect idiosyncratic differences in individual speakers’ beliefs and attitudes, rather than systematic changes driven by the crisis. The third column in Table 1 replicates the specification from the previous column but uses a different dependent variable, labeled as the Uncertainty Score. This score quantifies the proportion of hedge words and expressions conveying uncertainty relative to the total word count in a speech. Unlike the KL-divergence measure, which assesses uncertainty by analyzing the distribution of topic weights across speeches, the Uncertainty Score captures linguistic expressions of caution or doubt. Despite these methodological differences, the two measures are expected to align in highlighting broader trends (though negatively correlated due to how each measures uncertainty). Indeed, the results confirm the primary",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 10,
+        "text": "Figure 6: Individual speaker effects - US Federal Reserve Note: Speaker effects from column 1 in Table 1. Bars ar 95% confidence intervals.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 5,
+        "section_name": "Measuring Uncertainty Awareness at the FED",
+        "paragraph_id": 11,
+        "text": "findings from columns 1 and 2: speeches delivered after the onset of the Great Recession express a higher degree of uncertainty. Interestingly, this measure reveals no significant differences based on characteristics such as holding an Economics PhD, serving as the Chairman, or being a woman. However, speeches delivered immediately before and after FOMC meetings exhibit a heightened use of hedge words, indicating greater awareness of uncertainty during these periods. Additionally, the three FOMC members who served throughout the pre-crisis and crisis periods, including Chairman Ben Bernanke, adjusted their language after the crisis, incorporating more hedge words. These findings suggest that while the overall mix of topics may diverged from the uncertainty benchmark for Kohn and Warsh, these Federal Reserve officials consciously modified their language around FOMC meetings.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 0,
+        "text": "In this section, I replicate the tests applied to the U.S. Federal Reserve using data from the European Central Bank (ECB) and the Bank of England (BoE). While these central banks share similar mandates and organizational structures with the Fed, they also exhibit important differences, making it insightful to examine whether the same results continue to hold. The Fed operates under a dual mandate, aiming to achieve both price stability and maximum sustainable employment. In contrast, the ECB and BoE prioritize price stability, with a target of 2% inflation, while other objectives—such as supporting economic policies, employment, and financial stability—are secondary.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 1,
+        "text": "All three central banks rely on committee-based decision-making processes, primarily focused on interest rate setting. However, they differ slightly in aspects such as membership representation, meeting frequency, transparency, and communication strategies. Despite their interconnectedness through the globalized nature of financial markets, each institution is also influenced by unique local challenges, political pressures, and cultural contexts. The ECB, in particular, stands out for its responsibility over monetary policy across 20 eurozone member countries, while the Fed is distinctive for its decentralized structure, comprising 12 regional Federal Reserve Banks. The dataset for the ECB comprises 2,316 speeches delivered between 1997 and 2024, while the BoE dataset includes 959 speeches over the same period. To establish a benchmark for uncertainty in speeches from each institution, the same training set used for the Fed in the previous section is applied here. Figures 7 and 8 present the scatter plots illustrating the trends in the uncertainty index for each central bank. For the ECB, the data reveals a subtle but discernible decline in the average uncertainty index beginning around 2008, suggesting a gradual increase in awareness of the limits of knowledge following the Great Recession. While this trend aligns with the findings for the Fed, it appears weaker in magnitude. In contrast, the BoE shows a pronounced upward trajectory in its uncertainty index during the same period, indicating a shift toward greater confidence—or possibly overconfidence—in its communication after the crisis. This paper does not aim to definitively explain the contrasting responses of the Fed, ECB, and BoE to the Great Recession—greater epistemic humility at the Fed and ECB versus increased overconfidence at the BoE. As Johnson, Arel-Bundock, and Portniaguine (2019, p. 515) note, crises do not always spur learning; in some contexts, they can instead reinforce rigidity and resistance to change. 15 A notable distinction between the BoE and the other two central banks is its more centralized structure. One could hypothesize that the Fed’s decentralized framework and the ECB’s multinational composition foster greater openness to uncertainty and adaptability, enabling these institutions to question their established models more readily. However, definitively testing this hypothesis would require a specific empirical strategy and is not in the scope of this study. Figures 9 and 10 provide more detailed insights by displaying year-specific effects derived from regressions with year dummies instead of a single pre-2009 dummy. These figures show that, on average, ECB speeches began to align more closely with the benchmark speech (lower values) after the onset of the crisis, reflecting increased uncertainty awareness. In contrast, BoE speeches diverged further from the benchmark during this period, indicating a shift toward greater confidence or reduced acknowledgment of uncertainty. Table 2 presents regression results for both the ECB and the BoE, analyzing the determinants of the KL-divergence uncertainty measure before and after 2008, as well as those for the uncertainty score. The regressions control for speaker and topic effects to isolate the temporal trends. The estimated 15 See examples in Boin and Hart (2003), Stern and Sundelius (1997), and Baker (2015).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 2,
+        "text": "Figure 7: Uncertainty awareness in European Central Bank speeches Note: Each point is one speech. The point measures the Kullback-Leibler divergence to an uncertainty aware benchmark speech. The trend is a Lowess (Locally Weighted Scatterplot Smoothing) line that provides a non-parametric fit if the scatterplot. The red line marks the onset of the Great Recession.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 3,
+        "text": "Figure 8: Uncertainty awareness in Bank of England speeches Note: Each point is one speech. The point measures the Kullback-Leibler divergence to an uncertainty aware benchmark speech. The trend is a Lowess (Locally Weighted Scatterplot Smoothing) line that provides a non-parametric fit if the scatterplot. The red line marks the onset of the Great Recession.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 4,
+        "text": "Figure 9: Year effects on uncertainty awareness in European Central Bank speeches Note: Estimates from a regression of the KL-divergence uncertainty measure on all non-year variables in column 1 of Table 2 (regression not shown in table). Base for year dummies is 2008.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 5,
+        "text": "Figure 10: Uncertainty awareness in Bank of England speeches Note: Estimates from a regression of the KL-divergence uncertainty measure on all non-year variables in column 3 of Table 2 (regression not shown in table). Base for year dummies is 2008.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 6,
+        "text": "Table 2: Estimation of ECB and BoE speeches’ epistemic indices",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 7,
+        "text": "ECB ECB BoE BoE KL-divergence Uncertainty KL-divergence Uncertainty (confidence) Score (confidence) Score Years 1996-2008 0.284 0.002[FORMULA] -1.376[FORMULA] 0.005** (1.41) (5.31) (-5.21) (2.14) PhD Economics 0.137 0.001** -3.186[FORMULA] 0.005[FORMULA] (0.67) (2.53) (-10.88) (3.69) Chairman 0.637[FORMULA] -0.002[FORMULA] 0.568[FORMULA] 0.001* (16.09) (-10.41) (4.73) (1.70) Female 0.376[FORMULA] -0.001[FORMULA] 1.924[FORMULA] -0.004[FORMULA] (5.22) (2.97) (9.17) (-4.88) Week Before MPC 0.089 0.001 (0.51) (0.97) Week After MPC -0.038 -0.0003 (-0.33) (-0.50) Papademos 1997-2007 0.343** 0.002[FORMULA] (2.26) (3.83) Trichet 1997-2007 -0.198 -0.001 (-1.19) (-0.42) Gugerell 1997-2007 -0.383** -0.001** (-2.72) (-5.73) Paramo 1997-2007 -0.330* 0.002 (-1.83) (-0.53) Stark 1997-2007 -0.056 -0.001[FORMULA] (-0.41) (-2.91) Smaghi 1997-2007 0.296 -0.004[FORMULA] (2.13) (14.61) Bean 1997-2007 -0.292 -0.0001 (-1.30) (-0.05) Blanchflower 1997-2007 1.873[FORMULA] -0.008[FORMULA] (6.12) (-3.39) Gieve 1997-2007 0.939[FORMULA] 0.007[FORMULA] (5.90) (8.63) Barker 1997-2007 0.284 -0.004** (1.48) (-2.21) Beseley 1997-2007 1.000 -0.002 (0.37) (-1.31) King 1997-2007 0.767[FORMULA] -0.002 (3.63) (-1.11) Constant 5.972[FORMULA] 0.013[FORMULA] 7.973[FORMULA] 0.006** (57.27) (23.98) (21.11) (2.18) Speaker fixed effects Y Y Y Y Year fixed effects N N N N Topic effects Y Y Y Y Observations 2,220 2,220 959 959 R-squared 0.33 0.27 0.42 0.42 Notes: The dependent variable in columns 1 and 3 is the divergence (in the Kullback-Leibler sense) of each speech’s topic weights (Latent Dirichlet allocation) to the average topic weights of the 137 speeches curated for awareness of epistemic limitations. In columns 2 and 4 the dependent variable is an uncertainty score calculated as the proportion of tokens in the speech that match a predefined list of 297 uncertainty-related terms from the Loughran-McDonald lexicon ( https: //sraf.nd.edu/loughranmcdonald-master-dictionary/ ). Standard errors clustered by speaker. Topic effects equal 1 for speeches in which that topic has a weight greater than 0.2. 21",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 6,
+        "section_name": "Measuring Uncertainty Awareness at the ECB and BoE",
+        "paragraph_id": 8,
+        "text": "effects of the pre-crisis dummy variable reveal greater divergence from the benchmark speech (indicating less uncertainty awareness) for the ECB, while the BoE exhibits reduced divergence (suggesting more overconfidence). However, the results for the ECB are not statistically significant. Additional regression results reinforce the finding of greater certainty in speeches delivered by female members of both the ECB and the BoE, consistent with the patterns observed in the Fed data. Similarly, chairmen at these banks were found to express higher levels of confidence, likely reflecting the leadership demands and expectations associated with their roles. Interestingly, committee members holding PhDs in economics exhibited greater awareness of uncertainty, as evidenced by higher uncertainty scores in ECB speeches and in both measures at the BoE. This finding suggests that advanced academic training in economics may actually encourage a more nuanced acknowledgment of the limits of knowledge and the complexities of economic decision-making. For the BoE, no significant relationship was found between the proximity of committee meetings and uncertainty awareness in speeches. Unfortunately, I could not obtain the dates of ECB meetings to test this hypothesis for that institution. Table 2 also presents the impact of the financial crisis on the speeches of members who served both before and after 2008. The interaction term coefficients measure their divergence from the uncertainty benchmark prior to the crisis. At the ECB, Lucas Papademos exhibited greater confidence in his speeches before the crisis than after, ceteris paribus. In contrast, both Gertrude Tumpel-Gugerell and Jos ́e Manuel Gonz ́alez-P ́aramo demonstrated increased confidence post-crisis. Other ECB members did not show significant changes. At the BoE, David Blanchflower, John Gieve, and Mervyn King displayed greater uncertainty awareness in their speeches following the onset of the crisis. The individual speaker effects for the full set of committee members from 1997 to 2024 at both the ECB and the BoE are displayed in Figures 11 and 12. These effects are estimated using the regressions in column 1 of Table 2 for the ECB and column 3 for the BoE, where the dependent variable is the KLdivergence from the benchmark uncertainty speech. The results reveal variability, with some individuals exhibiting positive divergence effects and others negative. This variability underscores the importance of controlling for speaker-specific effects when analyzing the impact of the Great Recession on speeches. Individual committee members naturally differ in their beliefs, epistemic attitudes, and rhetorical styles. Thus, the focus is not on their absolute levels of uncertainty awareness but rather on how these levels were influenced by the unexpected shock of the crisis.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In the introduction, I described a test designed to experimentally measure epistemic arrogance. This test involves presenting respondents with an essentially unanswerable question and asking them to set an interval within which they believe the answer will fall with 95% confidence. A tendency to provide intervals that are too narrow reflects overconfidence. What might a similar test look like for economists and central bankers? Lars Hansen, who received the 2013 Nobel Prize in Economics for developing",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "Figure 11: Individual speaker effects for European Central Bank speeches Note: Speaker effects from column 1 in Table 2. Bars ar 95% confidence intervals.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "Figure 12: Individual speaker effects for Bank of England speeches Note: Speaker effects from column 1 in Table 2. Bars ar 95% confidence intervals.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "methods to analyze economic models under uncertainty, emphasizes the importance of understanding the boundaries of a model’s credible use. Since all models are inherently abstractions and simplifications, the question is not whether a model is “wrong” but rather at what point its misspecification relative to reality becomes a concern. 16 This boundary-setting is akin to defining the confidence interval in the epistemic arrogance experiment. In this paper, I sought to measure how central bankers at the Fed, ECB, and BoE navigated these boundaries and, in particular, how their approach shifted in response to the shock and trauma of the 2008 Great Recession. Using the full set of speeches from the primary monetary committees of the Fed, ECB, and BoE between 1996 and 2024, I developed an index to measure awareness of uncertainty. This index was constructed using topic modeling techniques and by assessing each speech’s divergence from a benchmark speech, which was curated from speeches explicitly acknowledging the distinct challenges posed by radical uncertainty in central banking. The index enabled an evaluation of uncertainty awareness at each institution, by individual speakers, and particularly in response to the 2008 financial crisis. Controlling for confounding factors such as speaker characteristics and speech topics, the analysis revealed a significant increase in uncertainty awareness in Fed and ECB speeches following the crisis, whereas the BoE exhibited the opposite trend, with speeches reflecting greater overconfidence. A robust and perhaps unexpected finding across all three institutions was that speeches by female committee members demonstrated a higher level of assuredness compared to those by their male counterparts. Central bankers face a fundamental dilemma shared by all experts: the public demands certainty and definitive solutions, pressuring them to project confidence and resoluteness. They operate under the relentless scrutiny of the press and, in many countries, face ongoing threats from politicians intent on curbing their power and independence. Compounding this, central banks are predominantly staffed by economists, a profession often characterized by a culture of self-assurance and assertiveness. It is therefore unsurprising that their beliefs and behaviors might gravitate toward overconfidence. Yet, there is a counterbalancing force at play. Financial markets and economies are inherently complex systems, resistant to precise prediction or control, meaning that today’s confident declarations risk being disproven tomorrow. Rational central bankers must navigate this trade-off carefully, balancing the need to project authority with an awareness of the uncertainties that define their domain. While my findings do not determine whether central bankers strike this balance optimally, they offer a lens into how these beliefs and attitudes manifest and evolve in response to shifting contexts. By quantifying uncertainty awareness, this work contributes to a deeper understanding of how central banks—and those who steer them—grapple with the tension between confidence and caution in an unpredictable world.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1442,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "16 The Pie podcast, University of Chicago Economics Podcast, Dec. 19, 2024, minute 14:30 https://bfi.uchicago.edu/ insights/choosing-with-uncertainty/?occurrence_id=0",
+        "extraction_warnings": ""
+    }
+]

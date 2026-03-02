@@ -1,0 +1,32 @@
+[
+    {
+        "paper_id": 1542,
+        "section_id": 4,
+        "section_name": "Reduced-Form Evidence",
+        "paragraph_id": 5,
+        "text": "communication on the economy, with a 17.19% effect in the opposite direction. An effect of PD messages on migration is also weakly significant. In column (4) we unpack events by their type, such as delivered to us by a Latent Dirichlet Allocation (LDA) over the ANSA database with 14 categories for each topic. In Appendix C, we specify the details of the LDA clustering procedure and its outcomes. Here, it is sufficient to say that the inclusion of events by more detailed type provides more precision in the estimates and accounts for the possibility that messages are confounded with specific types of events. Results mostly stay the same. The impact of Lega messages on the economy now becomes statistically significant at 5% level and the effect of PD messages on migration becomes significant at 5% level too. Table 3 shows that Lega communication is more effective at affecting salience than communication by the other parties. To test this formally, we perform F-tests after regressions in columns (3) and (4) that coefficients associated to the communication of each party are jointly zero regardless of the topic. Indeed, what we find is that we can reject the null hypothesis at 1% level for Lega in both regressions while we cannot do the same for the other parties. Overall, Lega’s communications affect salience more than those of other parties. Moreover, its focus on migration seems to pay off by increasing the salience of immigration as compared to the economy. M5S, FI and PD do not seem to achieve the result of shifting salience on their own preferred issue, i.e. the economy. We now look at the robustness of these results to different specifications of the regression models. We start, as a baseline model, from column (4) of Table 3. We first examine whether our results are robust to using a 12 hour timeframe as opposed to a 24 hour time frame. Next, we consider Google searches time series built with queries over 20 keywords for each category instead of 10 (see section on data and Appendix B for details). Finally, one may worry that events, no matter how accurately we controlled for their type in column (4) of Table 3, may still confound the influence of messages on salience. To test this, we drop all observations where an event occurred in the previous 24 hours. Given the limited number of remaining observations (91), and the consequent risk of saturating the model, we include in this regression only 12 lags of the dependent variable. Results are in Table 4. They are fully consistent with the previous results. Political messages, events and intentions to vote . The previous analyses suggest that parties leverage events to increase the effectiveness of online political communication and change the salience of particular issues. Using data on polls, we now investigate whether their communication ultimately affects citizens’ propensity to vote for a given party. Employing only time variation in political communication and polls is problematic in this case. Since polling data frequency is daily at best, overcoming endogeneity concerns with frequent data is not a viable option. Instead, we used difference-in-RDD design, combining time variation in party posts with an exposure variable based on 4G coverage in the year prior to the treatment, measured",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Latent Dirichlet Allocation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1542,
+        "section_id": 5,
+        "section_name": "Structural Model",
+        "paragraph_id": 7,
+        "text": "   ∆ Q m,t = exp \u0010 η m 0 + P j η m j N j m,t + ζ m t \u0011 ∆ Q n,t = exp \u0010 η n 0 + P j η n j N n n,t + ζ n t \u0011 (4) where N j m,t is an indicator variable for news about immigration, in subtopic j , occurring in period t , and N n,t is an indicator variable for news about the economy, in subtopic j , occurring in the same period. We allow for two subtopics for immigration–border crossings and first reception versus events involving migrants in Europe–and two subtopics for the economy–corporate and finances events versus state of the economy and redistribution. The variables ζ m t and ζ m t represent shocks to the advantage of party A on migration and the economy, normally-distributed with mean zero and standard deviations σ m t and σ n t . Parties take decisions on how much to communicate and which topics to cover. Their joint decisions, together with the exogenous occurrence of news events, determine the salience of immigration in the economy, which in turn results in the support for the party. We assume that, at every period t , parties play the Nash Equilibrium of this game. An equilibrium is defined as a pair of vectors ( k m ∗ t , k n ∗ t ) such that, for each party p , the chosen communication levels maximize support in the electorate given the levels chosen by the other party:",
+        "extraction_warnings": "",
+        "matched_keywords": [
+            "Nash Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    }
+]

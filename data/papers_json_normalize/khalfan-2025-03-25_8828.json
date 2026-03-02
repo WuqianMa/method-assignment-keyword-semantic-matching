@@ -1,0 +1,106 @@
+[
+    {
+        "paper_id": 1602,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Forecast Elicitation and Frequency Control",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Nawaaz Khalfan Guillaume Roger ∗",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "- click here for the most recent version -",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 0,
+        "text": "This paper outlines how appropriately chosen, state-contingent contracts can be used to incentivize forecast reporting in scheduled, stochastic markets, improving outcomes markedly. This is of particular importance for electricity grids, where market operators engage in frequency control by scheduling participants. These contracts are examples of scoring rules, and significantly differ from existing causer-pay frameworks. Scoring rules are more broadly useful in market design and can also be tailored to incentivize the further acquisition of publicly valuable forecasts.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 1,
+        "text": "On an electricity grid, there are generators who supply electricity and users who consume it. In any instant, when the amount supplied does not match that which is drawn from the grid, the frequency adjusts to equate power in with power out. A change of frequency is costly for the grid and its participants; at best degrading infrastructure and harming use, at worse disrupting service entirely. As a result, most modern electricity grids employ a market operator to schedule generators and users, as well as dispatch on and offload from the grid when there is an imbalance. These activities are broadly referred to as frequency control .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 2,
+        "text": "In an ordinary market, prices react to equate demand and supply, eliminating the need for a market operator or scheduler . On the electricity grid however, the resolution of some types of uncertainty and the subsequent price response occurs only after production decisions have been made. Subsequently a scheduler can improve efficiency by minimizing the likelihood of mismatch. This is particularly important for incorporating some producers, such as renewable generators, whose output is highly stochastic. Of recent concern is how the scheduler incentivises participation on the grid and whether renewable generators are being appropriately accommodated.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 3,
+        "text": "∗ Impact Labs, Monash Business School; contact: nawaaz.khalfan@monash.edu , guillaume.roger@monash.edu",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 4,
+        "text": "Consider a market where suppliers are privately informed about the distribution of their output if they are scheduled to produce and where consumption is described by a commonly known demand function. Refer to the suppliers private information as a forecast of production. Endow the market with a scheduler who selects those who will produce and those who will consume, and values trade whenever the marginal benefits exceed the marginal cost but is punished when the resolution of production varies from scheduled consumption. That is, a scheduler who values efficiency on the electricity grid but faces a the cost of frequency control.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 5,
+        "text": "In this paper we outline how to design contracts that make the most of private forecasts as well as incentivising their truthful reporting. The key to this design is that they are scoring rules - payment schemes that assign rewards and penalties to future states in order to incentivize the truthful reporting of beliefs about the likelihood of those states. Their characterisation is attributed historically to McCarthy ( 1956 ) and Savage ( 1971 ), though the connection to auctions and mechanism design can be seen in McAfee and McMillan ( 1987 ). 1",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 6,
+        "text": "Given their flexibility, we have enough freedom in their design not only to use reported forecasts for their best public use in our environment (Theorem 1), but to additionally encourage acquisition of publicly valuable information (Theorem 2). That is, regardless of the availability of forecast-investment opportunities, the first best is achievable for the scheduler. A corollary to the first result is that this can also be done with no budget deficit where this need not be the case with respect to the second result.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 7,
+        "text": "This follows the line of inquiry on efficient mechanism design - Vickrey ( 1961 ), Clarke ( 1971 ), Groves ( 1973 ) - and the extension to information acquisition as in Bergemann and V ̈alim ̈aki ( 2002 ). Subsequently it contributes to the literature on voluntary acquisition and disclosure of information, for example Farrell ( 1985 ), Jung and Kwon ( 1988 ), Pae ( 1999 ), and DeMarzo, Kremer and Skrzypacz ( 2019 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 8,
+        "text": "Applying the results to the electricity grid, we find that these optimal scoring rules differ significantly from existing causer-pay rules . These pay rewards to generators who over-produce when net supply is negative and under-produce when net supply is positive, and collect fines from generators who over-produce when net supply is positive and under-produce when net supply is negative. These rules seem to be designed to elicit a generator response which is antithetical to replacing the price mechanism with a scheduler, and would never be optimal if designed to elicit private information from the generators. These ideas also speak to dynamic scheduling on the electricity grid, the balancing of low-cost stochastic generation with high-cost deterministic generation and storage, and the adoption of scoring rules into other stochastic markets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1602,
+        "section_id": 1,
+        "section_name": "Abstract",
+        "paragraph_id": 9,
+        "text": "1 For a concise, modern treatment, see Gneiting and Raftery ( 2007 ).",
+        "extraction_warnings": ""
+    }
+]

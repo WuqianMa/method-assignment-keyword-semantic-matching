@@ -1,0 +1,1370 @@
+[
+    {
+        "paper_id": 1528,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 0,
+        "text": "Article-Level Slant and Polarization of News Consumption on Social Media *",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 1,
+        "text": "Luca Braghieri, Sarah Eichmeyer, Ro’ee Levy, Markus Mobius, Jacob Steinhardt, and Ruiqi Zhong",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 2,
+        "text": "How polarized is news consumption on social media? We fine-tune a large-language-model to assign a content-based measure of slant to the near-universe of hard-news articles published online by the top 100 U.S. outlets in 2019. We find that polarized news consumption on Facebook, defined as the difference in the average slant of articles consumed by Republicans and Democrats on the platform, is arguably high. We identify pro-attitudinal news consumption within outlets as a crucial mechanism. Analyzing the distribution of slant on the production side, we find that 67% of the article-level variation in slant is within rather than across outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 0,
+        "section_name": "Preamble",
+        "paragraph_id": 3,
+        "text": "* Braghieri: Bocconi University, CEPR, CESifo, and IGIER. Email: luca.braghieri@unibocconi.it . Eichmeyer: Bocconi University, CEPR, CESifo, and IGIER. Email: sarah.eichmeyer@unibocconi.it . Levy: Tel Aviv University and CEPR. Email: roeelevy@tauex.tau.ac.il . Mobius: Microsoft Research. Email: mobius@microsoft.com . Steinhardt: UC Berkeley, BAIR, and CLIMB. Email: jsteinhardt@berkeley.edu . Zhong: UC Berkeley. Email: ruiqizhong@berkeley.edu . We thank Rafael Jim ́enez-Dur ́an, Stefano DellaVigna, Matthew Gentzkow, Carlo Schwarz, Jesse Shapiro, Mateusz Stalinski, and seminar participants at the Association for Comparative Economic Study and Society for Institutional and Organization Economics ASSA Session, Bocconi University, Carnegie Mellon University, the EJPE-CEPR Political Economy Conference (Naples), the Hebrew University of Jerusalem, the London School of Economics, the National University of Singapore, Northwestern University, NOVA University in Lisbon, the NYU Center for Social Media and Politics, the Polarize Conference, the TAD annual conference, the University of Cologne, the University of Copenhagen, the University of Essex, the University of Vienna, and the University of Warwick for helpful comments. We thank Maor Ankri, Oliver Kiss, Heitor Sousa Borges, Wei Pin, Uri Schwartz, and Daniel Wolkowicz for excellent research assistance. Funding for this project was provided by the European Research Council (ERC Grant 759885), the Foerder Institute for Economic Research, The Pinhas Sapir Center, and the Tel Aviv AI and Data Science Center.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Over the last two decades, social media has become one of the primary ways in which people consume information and access news ( Newman et al. , 2023 ). As of 2023, around 50% of U.S. adults reported regularly consuming news through social media, with Facebook being the dominant social media platform for news access ( Pew Research Center , 2023 a ; Newman et al. , 2023 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "The increased reliance on social media for news consumption has generated widespread concern. In particular, many worry that the high personalization of content through the political pages a user follows, the structure of the social network, and the algorithm governing users’ feeds lead to the formation of “echo chambers” and “filter bubbles” that promote the consumption of pro-attitudinal news ( Pariser , 2011 ; Sunstein , 2018 ). 1 The resulting limited exposure to counter-attitudinal news might hinder the formation of accurate political beliefs, and, ultimately, people’s ability to constructively participate in the democratic process ( Downs , 1957 ; Becker , 1958 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Although almost ubiquitous in the popular press, worries about pro-attitudinal news consumption online, and especially on social media, have received relatively little empirical substantiation from the academic literature ( Gentzkow and Shapiro , 2011 ; Bakshy, Messing and Adamic , 2015 ; Nelson and Webster , 2017 ; Guess and Nyhan , 2018 ; Eady et al. , 2019 ; Yang et al. , 2020 ; Guess , 2021 ). Such seeming lack of evidence might partly reflect a mismatch between the level of aggregation at which political slant is commonly measured in the academic literature—namely, news outlets—and the level at which content is curated on social media platforms—namely, news articles. When measuring polarization in news consumption on social media, much of the existing literature proxies the slant of an article with that of the outlet it came from. 2 This approach does not account for the possibility that the social media curation process exposes users to ideologically congenial content even within outlets. If the social media ecosystem promotes the consumption of pro-attitudinal news within outlets, measuring slant at the outlet level will underestimate, perhaps severely, the degree of polarization of news consumption on social media.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "This paper addresses the limitation above by means of a two-pronged approach. First, we pro1 Pro-attitudinal news, also known as congenial or like-minded news, refers to news whose slant matches a person’s ideology. 2 Gonz ́alez-Bail ́on et al. ( 2023 ) and Green et al. ( 2023 ) are notable exceptions. We discuss our contribution relative to them towards the end of the introduction.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "pose and implement a novel content-based method to assign slant to individual news articles rather than to entire news outlets. Second, we apply our article-level slant measure to estimate the degree of polarization in news consumption on Facebook.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "Our analysis relies on three main datasets. The first dataset encompasses the near universe of hard news articles ( ∼ 1 million) published online by the top 100 U.S. outlets in terms of online visits in 2019. The second dataset is the ”Facebook Privacy-Protected Full URLs Dataset,” produced by a consortium of academics (Social Science One) in partnership with Facebook’s parent company Meta. The dataset comprises aggregated, anonymized Facebook activity data at the URL level for all articles publicly shared on Facebook at least 100 times. The third dataset is a panel of browsing behavior for a representative sample of U.S. adults.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "The cornerstone of our analysis is a content-based measure of slant at the article level obtained by fine-tuning a large language model (LLM) pre-trained on a vast corpus of text data. To generate the training data on which to fine-tune the model, we hired two expert raters (as well as a research assistant), gave them a sample of more than 4,400 articles randomly drawn from our database of hard news articles, and asked them to assign to each article a measures of slant on a scale from -3 (very left-wing) to 3 (very right-wing). Fine-tuning the LLM substantially increases its performance, from a prediction accuracy of 0.72 to a prediction accuracy of 0.83.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "An array of validation exercises shows that our machine-learning-based measure of article-level slant is well-calibrated. For instance, when we aggregate our measure at the outlet level and compare it to one of the most well-established and comprehensive measures of outlet-level slant ( Bakshy, Messing and Adamic , 2015 ), we find a Pearson correlation of 0.89. Similarly, when we compare our article-level slant measure to the slant manually assigned by media watchdog Ad-Fontes Media to a small subset of our articles, we find a Pearson correlation of 0.82.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "Our first set of results focuses on the production of slant by the top 100 U.S. outlets in terms of online visits in 2019. Analyzing the landscape of slant on the production side helps contextualize our main result about polarization in news consumption and provides a useful benchmark against which to measure the distribution of slant on social media. To obtain a quantitative measure of the importance of taking into account article-level slant, we perform a variance decomposition estimating the degree to which variation in slant at the article level can be accounted for by outlet",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "provenance. 3 We find that the vast majority ( ∼ 67%) of the variance in slant at the article level is within outlets rather than across outlets. This finding highlights the importance of measuring slant at the article level and the potential for social media to expose users to ideologically congenial news even within outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "Next, we analyze the distribution of slant on the production side. Based on the near-universe of articles published by the top 100 outlets in 2019, we find that the overall slant distribution is unimodal and centered around moderate. However, there is substantial variation in slant by article type and topic. For example we find that opinion article have a bimodal distribution and that articles about welfare, gender, LGBTQ issues, gun rights, and racial relations are more slanted than articles about international conflicts, natural disasters, drugs, and trade.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "Our second set of results focuses on the circulation and consumption of slanted articles on social media. For our main result, we introduce and estimate a new measure of polarization in news consumption. We define polarization in news consumption as a scaled difference between the average slant of the articles that Republicans and Democrats consume on Facebook. We find that the degree of polarization in news consumption on social media is arguably substantial: the distance on our scale between the average slant that Republicans and Democrats consume on Facebook corresponds to the distance in slant between the average article from the Washington Times and the average article from the Washington Post. 4 We also find that the news consumed through social media is substantially more polarized that the online news accessed through other means; for instance, it is 2.4 times more polarized than the news accessed through search engines.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "To provide an additional benchmark for our polarization result, we calculate a version of our measure where, following the approach employed by much of the literature, we proxy the slant of each article by the slant of the outlet it came from. This way, we mechanically shut down the channel of pro-attitudinal news consumption within outlets. We find that the degree of polarization in news consumption is 50% higher when we take into account the possibility of pro-attitudinal news consumption within outlets—as per our original measure of polarization—than when we shut down that channel by proxying the slant of an article by that of the outlet it comes from. 3 Our variance decomposition is designed to be robust to the fact that we measure slant at the article level with a degree of noise. 4 Where the Washington Post and the Washington Times rank at the 11 th and 82 nd percentile of the overall distribution in average slant across the outlets in our dataset.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "Thus, employing measures of slant at the outlet rather than the article level leads to a substantial underestimation of the degree of polarization in news consumption on social media.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "We highlight three additional important drivers of polarized news consumption on social media. First, we show that extreme articles are much more likely to be shared widely on Facebook than moderate articles. As a result, the distribution of articles that are widely shared on Facebook has much thicker tails than the distribution of articles produced. Second, we examine whether polarization in news consumption is primarily driven by the articles that Democrats and Republicans are exposed to on their feeds or by the articles that they select among the articles they are exposed to. We find that 82% of our measure of polarization can be explained by the articles that Democrats and Republicans are exposed to on their feeds, thus highlighting the role of the feed-curation process in driving polarization in news consumption on social media. Third, in an attempt to further unpack the role of the feed-curation process, we explore the degree to which echo chambers—which arise from the interaction between the politically homophilous structure of the Facebook network and pro-attitudinal sharing patterns—can explain polarization in news consumption on Facebook. A back-of-the-envelope calculation finds results consistent with echo chambers being a substantial, although not exclusive, driver of polarization in news exposure on social media. Specifically, we find that if users’ feeds simply reflected the articles shared by their friends, the degree of polarization in news exposure on Facebook would be around 59% of what it currently is.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "This project contributes to the literature trying to measure the differential consumption of news by partisanship or ideology ( Bakshy, Messing and Adamic , 2015 ; Flaxman, Goel and Rao , 2016 ; Gentzkow and Shapiro , 2011 ; Gonz ́alez-Bail ́on et al. , 2023 ; Green et al. , 2023 ). To help readers navigate this crowded literature, Appendix Table A.1 provides a schematic overview of the research articles most closely related to our paper. To the best of our knowledge, this paper is the first to employ a content-based measure of article-level slant at scale to estimate the degree of polarization in news consumption on social media.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "We view each component of the sentence above as conceptually important. First, we believe that our measure of polarization in news consumption is an essential complement to other measures employed in the literature, such as measures of segregation and favorability ( Gentzkow and Shapiro , 2011 ; Gonz ́alez-Bail ́on et al. , 2023 ). 5 Specifically, an important hypothesis that researchers and 5 See Appendix H for definitions of measures of segregation and favorability, and for a detailed discussion of the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "policymakers are interested in assessing is whether Democrats and Republicans consume articles with different slant—as captured by our measure of polarization—as opposed to whether they simply consume different articles—which would be captured by measures of segregation or favorability. 6 The conceptual distinction between the polarization measure we introduce and measures of segregation and favorability can be readily seen in the following thought experiment. Consider a world in which: i) people only follow local politics, ii) individuals are geographically segregated by political ideology, and iii) the articles discussing local politics are all exactly moderate. In that world, our measure of polarization would equal zero, whereas measures of segregation would be at their maximum. 7",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "Second, we believe that, for studying polarization of news consumption in the digital age, it is particularly important to develop a content-based measure of slant at the article level . The existing alternatives are mainly audience-based measures of slant at the article level (as in Bakshy, Messing and Adamic , 2015 ; Gonz ́alez-Bail ́on et al. , 2023 ; Green et al. , 2023 ), content-based measures of slant at the outlet level (as in Groseclose and Milyo , 2005 ; Gentzkow and Shapiro , 2010 ), or audience-based measures of slant at the outlet level (as in Flaxman, Goel and Rao , 2016 ; Nyhan et al. , 2023 ). 8 The importance of developing a content-based measure of slant rather than an audience-based measure of slant follows from the observation in the previous paragraph that the differential consumption and sharing patterns across Democrats and Republicans captured by audience-based measures of slant might, in principle, have little to do with slant. The importance of developing a content-based measure of slant at the article level rather than at the outlet level follows from the observation that the curation process on social media occurs at the article level and that individuals might consume pro-attitudinal articles even within outlets. A relatively small literature",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 19,
+        "text": "difference between those measures and the one we develop and employ in this paper. 6 Of course, whether Democrats and Republicans consume the same or different articles is itself an important, albeit separate, policy-relevant question. 7 As another example, consider outlets that source their content from news agencies like the Associated Press (AP). Suppose the same article from a news agency is published by both a liberal and a conservative outlet. Under our content-based measure of slant, the two identical articles would, by definition, receive the same slant score regardless of the outlet of provenance. As a result, our measure of polarization would remain unchanged even if Democrats predominantly read the article in the liberal outlet and Republicans predominantly read the article in the conservative outlet. In contrast, measures of segregation would increase if Democrats accessed the article through the liberal outlet and Republicans accessed the same article through the conservative outlet. Section H.1 shows that this phenomenon does indeed occur in the data. 8 Audience-based measures of slant are those that rely on differential consumption or sharing patterns by Democrats and Republicans.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 20,
+        "text": "does attempt to assign a content-based measure of slant to individual news articles ( Boxell and Conway , 2022 ; Budak, Goel and Rao , 2016 ; Garz et al. , 2020 ; Green et al. , 2023 ; Peterson, Goel and Iyengar , 2021 ). Such papers, however, do not deploy their content-based article-level measure of slant at scale and/or focus on topics (e.g., the role of journalists in the production of slant) that are largely orthogonal to the ones considered in this paper.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 21,
+        "text": "Overall, the content-based measure of slant at the article level that we introduce in this paper allows us to make the following qualitative contributions to the literature. First, we show for the first time that most of the variance in article-level slant occurs within rather than across outlets. Second, we introduce and estimate a novel measure of polarization in news consumption on social media, which captures the degree to which Democrats and Republicans consume articles with different slant. Contrary to much of the literature, we find that polarization in news consumption on social media is arguably high. 9 Third, we provide unique evidence on the mechanisms that produce polarized news consumption on social media. Specifically, we compare the slant landscape on the production side to that of articles that circulate widely on social media, highlighting special features of the social media environment—e.g., pro-attitudinal sharing patterns and network homophily— that drive polarization in news consumption.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 22,
+        "text": "The rest of this paper is organized as follows: Section 2 provides some background information about the prevalence of news consumption on social media and about the curation process on social media platforms; Section 3 introduces the datasets we use for our analysis; Section 4 describes our methodology to assign slant at the article level and a battery of validation exercises; Section 5 describes the slant landscape of the news produced by the top 100 U.S. outlets in 2019; Section 6 presents our main result about polarization of news consumption on social media and describes the mechanisms driving it; Section 7 presents extensions and robustness analyses; Section 8 concludes.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 0,
+        "text": "As of 2023, around 50% of U.S. adults reported consuming news on social media ”often” or ”sometimes” as opposed to ”rarely” or ”never” ( Pew Research Center , 2023 a ). Furthermore, individuals 9 This finding dovetails with the analysis in Gonz ́alez-Bail ́on et al. ( 2023 ) showing that Democrats and Republicans tend to consume different outlets and, even more markedly, different articles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 1,
+        "text": "aged 19 to 29 reported preferring to consume news from social media more than from any other medium and were more likely to consume news on social media compared to visiting news sites or apps ( Pew Research Center , 2023 b ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 2,
+        "text": "Due to a combination of its sheer size ( ∼ 190 million monthly active users in the U.S.) and the fact that many of its users get news on the platform, the dominant platform for news consumption on social media in the U.S. is Facebook ( Datareportal , 2023 ). According to 2023 Pew Research Center data, 30% of U.S. adults report regularly getting news from Facebook, more than from any other social media platform. As a point of comparison, only 14% and 12% of U.S. adults report regularly getting news from TikTok and Twitter (now ”X”), respectively ( Pew Research Center , 2023 a ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 3,
+        "text": "A striking difference between news consumption on social media and more traditional forms of news consumption such as newspapers is the degree of personalization of the news bundles that readers are exposed to. In particular, traditional newspapers distribute the same content to virtually all consumers; therefore, a person reading a newspaper top to bottom (e.g., the New York Times) is exposed to a bundle of news articles whose slant is curated by the news outlet. Conversely, the bundles of articles that social media users are exposed to are tailored to their individual tastes: news articles appear on users’ feeds as a function of the pages that they follow on the platform, of the network of friends they are connected to, and of the platform’s content-ranking algorithm.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 4,
+        "text": "The highly personalized process of news content curation on social media makes it so that the slant of an article that appears on a user’s feed need not reflect the average slant of the news outlet that the article came from. For instance, a Democrat Facebook user might be more likely to encounter New York Times opinion columns by Paul Krugman (a relatively left-wing columnist according to our slant measure), whereas a Republican Facebook user might be more likely to encounter New York Times opinion columns by Bret Stephens (a relatively right-wing columnist according to our slant measure). For this reason, in order to study the slant of the bundle of news that Democrats and Republicans are exposed to and consume on social media, it is necessary to assign a measure of slant to individual news articles rather than to entire outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "Our analysis relies on three main datasets: one that includes the URL, text, and meta-data of a large collection of hard news articles, one that details the number of Facebook views, clicks, and shares for a subset of those articles, and one that tracks the browsing behavior of a sample of U.S. adults.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 0,
+        "text": "The first dataset we employ in our analysis comprises the near universe of hard news articles ( ∼ 1 million) published online in 2019 by the top 100 U.S. outlets in terms of online visits. 10 Our choice of focusing on the top 100 U.S. outlets is the result of a trade-off between covering as large a fraction of online news consumption in the U.S. as possible and data collection costs. According to Comscore data, visits to the top 100 U.S. outlets cover 93% of all online consumption from U.S. outlets focused on hard news, thus yielding a database of articles with very extensive coverage.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 1,
+        "text": "We automatically retrieved the English-language news articles published online in 2019 by the top 100 U.S. news outlets directly from the outlets’ websites. 11 We decided not to include articles containing fewer than 250 characters since these are typically not news articles (e.g., videos, alerts, or pages linking to other articles). 12 This procedure generated a dataset of 3,268,760 articles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 2,
+        "text": "In order to identify and isolate the subset of hard news from the dataset of articles described in the previous paragraph, we employed a machine learning algorithm. Following the literature, we define hard news as news typically displayed in the first section of a newspaper. Thus, our definition of hard news excludes sports, entertainment, classified advertisements, weather forecasts, etc. The reasons for restricting our focus to hard news are twofold: first, slant is not as well-defined for soft news such as celebrity gossip and sports; second, hard news is arguably more relevant in shaping people’s political behaviors like voting. To classify hard news, we relied on a machine-learning",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 3,
+        "text": "10 We exclude popular outlets from regions other than the U.S. (e.g., the BBC), news agencies (e.g. the Associated Press), as well as outlets that do not focus on hard news (e.g., Elle). 11 To ensure that we were only collecting news articles, we restricted data collection to English articles where the HTML ’pageType’ meta field is defined as ’article’. 12 We further excluded outlets where our automatic retrieval appeared not to capture the full article text. Such outlets were: azfamily.com, dailykos.com, dailywire.com, inforum.com, komonews.com, post-gazette.com, today.com, triblive.com, usnews.com, and WSJ.com.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 4,
+        "text": "algorithm trained on 2,470 labels annotated by the research team. The binary classifier achieved 90% sensitivity and 97% specificity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 5,
+        "text": "Our final sample includes 1,065,217 hard-news articles. Appendix Table J.1 presents the list of outlets (column 1), as well as the number of hard news articles published in 2019 by each outlet (column 2).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 6,
+        "text": "Using browsing data from a representative sample of 5,115 adults described in Section 3.3 , we can obtain an estimate of the degree to which our dataset is comprehensive. Specifically, we can match the URLs that appear in our dataset of hard news with the hard news URLs visited by the panelists. We find that our dataset has very high coverage. Specifically, we find that only 5.8% of all hard news articles that appear in the browsing histories of the panelists and that originate from the top-100 news outlets do not find a match in our dataset. In other words, our dataset of hard news articles comprises 94.2% of all the news articles visited at least once by at least one of the 5,115 panelists in our dataset of browsing behavior.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 4,
+        "section_name": "Near Universe of Hard News Articles",
+        "paragraph_id": 7,
+        "text": "Article cleaning The objective of our cleaning procedure was to ensure that our machine learning algorithm assessed article slant based solely on the article text and title. To clean the articles, we first tested existing packages (Domdistiller, Readability, Trafilatura) designed to extract relevant text from HTML files. We compared the differences across these packages and selected the most effective one for each outlet. Additionally, we removed extra white space and excluded paragraphs that contained only a short line of text (up to 100 characters) without a period, as such lines were typically advertisements or captions rather than part of the article body.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 0,
+        "text": "The second dataset we employ is the ”Facebook Privacy-Protected Full URLs Dataset”, which results from a partnership between Social Science One (SS1), a consortium of academics hosted by Harvard’s Institute for Quantitative Social Science, and Facebook’s parent company Meta. The dataset, henceforth referred to as the URL-level Facebook Activity Dataset, contains information about various forms of engagement with all the URLs shared publicly on Facebook more than 100",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 1,
+        "text": "times starting on January 1, 2017. 13 The dataset provides the number of unique users who viewed, clicked, and shared a given URL on Facebook. The engagement counts (i.e. views, clicks, shares) are broken down by calendar year-month, gender, age group, and users’ political affinity (discussed in detail below). 14",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 2,
+        "text": "For privacy protection, Meta added Gaussian noise to each engagement data point (i.e., counts of clicks, views, and shares) according to the dictates of epsilon-delta differential privacy—a mathematical framework designed to quantify and manage the privacy risk associated with the release of statistical summaries of datasets containing individual information ( Messing et al. , 2023 ). In all our analyses based on the Facebook engagement data, we aggregate engagement counts across thousands of news articles within our article slant bins, thereby averaging out the noise present in the engagement measures at the level of individual articles. Column (3) of Appendix Table A.2 provides summary statistics for the articles in the URL-level Facebook Activity Dataset.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 3,
+        "text": "Political Affinity Measure The URL-level Facebook Activity Dataset contains a political affinity measure that classifies Facebook users into five ideology buckets, along with a sixth bucket for users who are not assigned a political affinity score. For most of our analysis, we consolidate the measure into three buckets: liberals, moderates, and conservatives. The political affinity measure is derived from users’ interactions with political pages on Facebook, employing a methodology similar to the one in Barber ́a et al. ( 2015 ). 15",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 4,
+        "text": "The political affinity measure has several desirable features. First, Bond and Messing ( 2015 ) validate a measure based on the same model against existing measures of ideology for political 13 For privacy protection, Meta added Laplace-5 noise to the share counts used to determine which URLs are shared publicly on Facebook more than 100 times ( Messing et al. , 2023 ). 14 We only consider engagement that occurred in the calendar year 2019. In principle, some articles published in 2019 could experience a degree of engagement in subsequent years. In practice, almost all engagement—more precisely 0.92, 0.93 and 0.91 of views, clicks, and shares, respectively—occurs immediately, in the month in which an article first appears in the URL-level Facebook Activity Dataset. This means that using 2019 engagement data should provide relatively precise engagement measures since almost no engagement occurs in the calendar year following the year when the article first appears in the dataset. 15 This process begins by constructing an adjacency matrix that represents monthly active U.S. users (aged 18 and over) as rows and a curated list of political pages as columns. The matrix tracks whether users ”like” these pages on Facebook. Correspondence analysis is then applied to a subset of this matrix, focusing on users who ”like” at least ten political pages, to estimate the political positions of pages and users on a common ideological scale. Subsequently, political page-affinity scores for all users who like at least one of the selected political pages are calculated by averaging the scores of the pages they ”like.” These scores are then converted to percentiles to categorize users into quintiles based on their political affinity.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 5,
+        "text": "actors and against the self-reported political views of users, and find Pearson correlations as high as 0.94. Second, the measure is defined on the URL-level Facebook Activity Dataset, which covers the universe of URLs shared on Facebook at least 100 times. Third, the measure can be applied to users who do not actively report their ideology or register with a party.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 6,
+        "text": "The political affinity measure, however, has also some drawbacks. First, it is not a canonical measure of partisanship, in the sense that it does not directly track canonical indicators such as party registration. Second, it does not have universal coverage, because it is assigned only to individuals who ”like” at least one political page on Facebook. Third, it might suffer from a circularity problem, because a small set of news outlets is included in the set of political pages used in the construction of the measure. Below, we elaborate on each drawback in turn, as well as on our proposed solutions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 7,
+        "text": "The first drawback of the political affinity measure in the URL-level Facebook Activity Dataset is that it is not a canonical measure of partisanship. Specifically, if we define partisanship status as being a registered member of the Democratic or Republican party, it is not immediately clear how the political affinity measure in the URL-level Facebook Activity dataset maps to party registration. Furthermore, since we do not have access to the underlying proprietary data that Meta uses to construct the political affinity measure, we cannot create a confusion matrix to understand the relationship between political affinity scores and being a registered member of the Democratic or Republican party. Luckily, however, the construction of the political affinity score in the URL-level Facebook Activity Dataset is almost identical to the construction of the political affinity measure developed in Barber ́a et al. ( 2015 ) using Twitter (now ”X”) data. Since the dataset used in Barber ́a et al. ( 2015 ) is publicly available, we can recover the confusion matrix that describes how voter registration maps to political affinity in the Twitter dataset. Assuming the confusion matrix for the Twitter and the Facebook datasets are the same, we can leverage that confusion matrix to estimate the degree of polarization in news consumption that would prevail if, in the URL-level Facebook Activity Dataset, partisanship was defined according to party registration, as opposed to being defined according to the political affinity measure. We follow this approach in the estimation of our headline statistic about polarization in news consumption on Facebook and provide the methodological details in Appendix F .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 8,
+        "text": "Second, since the political affinity score is only assigned to individuals who like at least one",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 9,
+        "text": "news page on Facebook, the political affinity measure does not have universal coverage: it only covers around 25% of users ( Messing et al. , 2023 ). Despite being a minority of Facebook users, individuals who are assigned a political affinity score are responsible for the lion’s share of engagement— 72% to 87%, depending on the engagement measure—with hard news articles on Facebook, as shown in Table A.3 . Thus, whenever we report results that rely directly on the political affinity score, we capture the vast majority of engagement. As described in the previous paragraph, our headline estimate of polarization is based on party registration as opposed to the political affinity score directly. Besides having the upside of tracking a more canonical definition of partisanship, basing our preferred polarization estimate on party registration also has the advantage of allowing us to take into account the news consumption behavior of users with a missing political affinity score as described in Appendix F .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 10,
+        "text": "Lastly, the political affinity score might suffer from a small degree of circularity. Specifically, among the more than 500 political pages employed in its construction, there are 18 news outlets that overlap with the ones in our list. 16 In Section 7.3 , we assuage concerns about such potential circularity by providing a robustness check that drops from our analysis the set of outlets that are both in our universe and among the political pages used in the construction of the political affinity variable. Furthermore, we show that our results go through when we use an alternative ideology proxy that relies on basic demographics rather than on Facebook’s political affinity measure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 11,
+        "text": "Besides the proposed solutions above, the key robustness check we run to assuage potential concerns about the political affinity measure is to leverage a panel dataset of browsing behavior, described in detail below, in which individuals are assigned a measure of partisanship based directly on whether they are registered Democrats or Republicans. Specifically, by considering news visits that have Facebook as a referrer, we can calculate a measure of polarization in news consumption that is completely independent from the one calculated using the URL-level Facebook Activity Dataset. Reassuringly, as shown in Section 7.3 , we find that the measures of polarization calculated on our panel of browsing behavior and on the URL-level Facebook Activity Dataset are almost identical. 17",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 5,
+        "section_name": "URL-level Facebook Activity Dataset",
+        "paragraph_id": 12,
+        "text": "16 The other political pages are members of Congress, hosts of cable news shows, political parties, candidates in presidential primary elections, and other news outlets. 17 The advantage of measuring polarization using our panel of browsing behavior is that it relies directly on party registration records; the disadvantage is that it is estimated on a sample that is not necessarily representative of the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 6,
+        "section_name": "Panel of Browsing Behavior",
+        "paragraph_id": 0,
+        "text": "For additional robustness checks and analyses, we rely on browsing panel data from a representative sample of 5,115 U.S. adults, curated by market-research firm Luth Research. 18 This dataset provides comprehensive URL-level browsing activity data on both desktop and mobile devices for all panel members during the last quarter of 2019. Within this dataset, we observe 121,703 clicks on hard news articles published by the 100 outlets included in our study. A unique feature of this dataset is that it includes party registration status for 75% of panel members—specifically, those residing in states where party registration status is publicly available. Luth procures this information from TargetSmart’s voter registration database, which itself is sourced from information released by state election officials.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 0,
+        "text": "The cornerstone of our analysis is a content-based measure of slant for each article in our database. We construct this measure by fine-tuning a large language model on a training dataset of more than 4,400 articles whose slant was rated by experts. We discuss the procedure in detail below.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 1,
+        "text": "4.1 “Ground Truth” Expert Slant Labels",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 2,
+        "text": "To successfully fine-tune a large language model to assign a measure of political slant to news articles, it is paramount to obtain a high-quality training dataset with accurate labels. To obtain the training dataset, we employed, for about six months, two freelance workers with graduate degrees in political science and criminal justice, as well as a research assistant. Henceforth, we refer to the two freelance workers as ”expert raters”. 19",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 3,
+        "text": "Our two expert raters were independently asked to assign slant labels to 4,433 news articles randomly selected from our database, with the randomization stratified by week of the year. For each Facebook population. 18 The sample is recruited to be representative, on the first moments of various observables, of the adult U.S. population. 19 The experts were recruited through Upwork, after careful review of their credentials, a Zoom interview, and the successful completion of a sample rating task.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 4,
+        "text": "article, raters received solely the cleaned text and title; we did not provide any additional information, such as the URL of the article or the outlet that it came from. Raters were asked to assess the slant of each article on a 7-point scale, where 1 corresponded to a very left-wing article and 7 corresponded to a very right-wing article. For ease of interpretation, in the rest of the paper, we recenter the scale so that negative numbers indicate left-leaning articles, positive numbers indicate right-leaning articles, and zero indicates a moderate article. The raters were told to consider primarily three criteria when assigning a measure of slant to each article: language, political position, and issue coverage. Language refers primarily to the usage of partisan terminology as in Gentzkow and Shapiro ( 2010 ). Political position refers to whether the article takes a position, if at all, that is closer to the Democratic or Republican stance on the issue. Issue coverage refers to whether the article’s content disproportionately emphasized issues important to either party’s base. 20 The expert raters were asked to consider all three criteria and then provide a holistic assessment for each article. The instructions we gave the expert raters can be found in Appendix B .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 5,
+        "text": "We decided to rely on experts, as opposed to crowd-sourced ratings (e.g., via mTurk), because we believed our experts would produce higher quality ratings than mTurk workers. In fact, previous papers that employed mTurk workers found a correlation between the labels of different raters of only 0.26 ( Peterson, Goel and Iyengar , 2021 ). As discussed in detail below, the correlation between our labels is much higher.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 6,
+        "text": "We took several steps to ensure high-quality ratings. First, we ordered articles by publication date, so that, when rating articles from the same period, our experts would gain a better understanding of context. Second, we asked our experts how confident they were in their ratings and removed the less than 2% of articles where at least one of the expert raters said that they were not at all confident. Third, in the rare cases where the two experts disagreed about the direction in which an article was slanted (an event that occurred 6% of the time), we passed the article to a research assistant (RA) hired specifically for the task of providing a third independent assessment. The RA reviewed the article, provided a written rationale for why he thought the two raters might disagree about the slant of the article, replaced the rating of the expert he disagreed with with his own independent rating, and finally provided a written justification for his rating. 20 See, for instance, the example of selective coverage in Chopra, Haaland and Roth ( 2024 ) in which the Congressional Budget Office evaluates a prospective reform along two dimensions and news articles selectively report only one of the two dimensions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 7,
+        "text": "The procedure above generated two labels for each of the 4,433 articles. The correlation between the original two labels is 0.56 and increases to 0.72 after including the RA’s correction. Cohen’s Kappa, a commonly used measure of inter-rater reliability, is 0.68, which is generally interpreted as “substantial” agreement (the second best category out of 5). 21 The disagreement in slant across the two ratings is arguably small: the median and modal absolute difference between the two labels is 0, and the average absolute difference between them is 0.60 on our 7-point scale.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 7,
+        "section_name": "Measurement of Slant at the Article Level",
+        "paragraph_id": 8,
+        "text": "To further reduce idiosyncratic noise in the rating, we use the average slant rating of the two expert raters, after the RA correction, as the label for each article in the training data.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 8,
+        "section_name": "Machine Learning",
+        "paragraph_id": 0,
+        "text": "Following recent advances in natural language processing and machine learning, we use a mixture of general-purpose and task-specific machine learning to assign a measure of slant to each news article in our universe. The general purpose component consists of the generative pre-trained transformer model GPT-4o by OpenAI. The task-specific component involves fine-tuning GPT-4o, using our expert labels as training data, for the specific task of assigning a measure of slant to a given news article based on its text. For the fine-tuning component, we provided GPT-4o with the same set of instructions as our expert raters, as well as with 2,955 articles from our training set containing the average of our two experts’ labels. The remaining 1,476 labeled articles were held out for validation. We only provided GPT-4o with each article’s headline and text; we did not provide any additional information, such as the URL of the article or the outlet it came from.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 8,
+        "section_name": "Machine Learning",
+        "paragraph_id": 1,
+        "text": "Fine-tuning GPT-4o yielded substantial improvements in the model’s ability to predict the average of our two experts’ labels. The Pearson correlation between the model’s predictions and the average of our two experts’ ratings in the hold-out portion of our training dataset is 0.72 when the model is not fine-tuned and 0.83 when the model is fine-tuned. Thus, the increase in precision due to fine-tuning is around 20%.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 8,
+        "section_name": "Machine Learning",
+        "paragraph_id": 2,
+        "text": "21 Cohen’s Kappa is a statistical measure used to evaluate the agreement between two raters who each classify items into mutually exclusive categories. Unlike simple percent agreement, it accounts for the possibility of the agreement occurring by chance, providing a more accurate assessment of inter-rater reliability.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 9,
+        "section_name": "Model Predictions",
+        "paragraph_id": 0,
+        "text": "Our machine learning model outputted, for each article in our database, a slant prediction that ranged from -3 (indicating a very left-wing article) to 3 (indicating a very right-wing article). For all analyses other than the validation analysis below, we merge slant bucket -3 with slant bucket -2.5 and slant bucket 3 with slant bucket 2.5. This is because slant buckets -3 and 3 contained too few articles to draw meaningful conclusions, especially given the noise introduced to the URL-level Facebook Activity Dataset due to differential privacy.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 9,
+        "section_name": "Model Predictions",
+        "paragraph_id": 1,
+        "text": "For reference, Table A.2 provides some summary statistics about the mean and standard deviation of the slant of articles in our datasets, and Table A.4 lists the titles of the ten most clicked articles on Facebook in 2019 from the most extreme left-wing and right-wing slant buckets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 0,
+        "text": "Our paper introduces the first large-scale content-based measure of slant at the article level built on expert labels. Since the measure is novel, it is important to carefully validate it before relying on it in our analysis. In this section, we describe the results of an array of validation exercises showing that our methodology to estimate slant at the article level produced precise and highquality estimates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 1,
+        "text": "First, for the articles in the hold-out portion of our training dataset, we correlate the prediction from our machine learning algorithm with our expert slant label (given by the average rating of our two experts). As mentioned above, we find a correlation of 0.83. 22 In Appendix E , we show that, since our “ground truth” measure of slant is itself noisy (the correlation between the two experts’ labels is 0.72) we can derive, under a set of assumptions, an upper bound on the maximum achievable correlation between our model prediction and our slant labels of 0.91. In light of this upper bound, our model predictions attain 91% of the maximum achievable correlation, which we view as highly satisfactory.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 2,
+        "text": "Second, we compare the absolute difference between the model prediction and the expert slant labels. The mean absolute difference (MAE) is 0.36, which corresponds to only 5% of the length of 22 The R 2 from a regression of a hold-out article’s model-predicted slant on its average expert label is 0.69 and the RMSE is 0.55.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 3,
+        "text": "our scale. We also run this comparison separately for each expert. The absolute differences between our model and each expert label are smaller than the absolute difference between the expert labels; this is true for both the original and the RA-amended expert labels. Finally, we check how often the predicted slant and the expert slant label have the same direction of slant (among all non-neutral articles). We find an agreement rate of 95%.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 4,
+        "text": "Third, we aggregate our measure at the outlet level and compare it to one of the most comprehensive existing measures of outlet-level slant, namely the measure by Bakshy, Messing and Adamic ( 2015 ). Figure 1 plots the outlet-level slant rating against the outlet-level measures we obtain by averaging the slant of all the articles produced by the same outlet. We find a Pearson correlation of 0.89.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 5,
+        "text": "Fourth, we correlate our model predictions of slant with high-quality human slant ratings from an independent source: media watchdog Ad Fontes Media (henceforth “AFM”). AFM uses a panel of analysts from across the political spectrum to rate a representative sample of news articles every week. For the year 2019, we found a total of 512 news articles with publicly available expert slant ratings from AFM. Lending credence to our model predictions, we find a high correlation of 0.82 between the two slant measures. To illustrate the fit across the distribution, we plot the mean AFM slant rating across articles in each model-predicted slant bin in Figure A.1 . We find a smooth linear relationship between the two ratings. Given that the AFM raters are chosen to evenly represent political perspectives (each article gets rated by a panel of three individuals, one from the political left, one from the political center, and one from the political right), the strong alignment between our model predictions and the AFM labels should also alleviate concerns about our two expert raters having the same political orientation. 23",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 6,
+        "text": "The comprehensive validation exercises above solidify our confidence in the measure of articlelevel slant assigned to the near universe of hard news articles analyzed in this study.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 10,
+        "section_name": "Validation Exercises",
+        "paragraph_id": 7,
+        "text": "23 Both our raters self-identify as weakly liberal.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 11,
+        "section_name": "News Production",
+        "paragraph_id": 0,
+        "text": "In order to provide useful context and to benchmark our measure of polarization in news consumption on social media, our first set of results analyzes the production of slant by the top 100 U.S. outlets in 2019. We begin this analysis by introducing a variance decomposition aimed at obtaining a quantitative measure of the importance of taking into account article-level slant instead of relying on slant measured at the outlet level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 0,
+        "text": "One of the key arguments in this paper is that measuring slant at the outlet level might underestimate polarization in news consumption on social media. This argument is predicated on the intuition that the social media environment can induce partisans to sort ideologically within outlets and not just across outlets. Of course, a necessary condition for meaningful partisan sorting within outlets is that there be variation in slant within outlets in the first place.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 1,
+        "text": "To assess the degree of variation in slant within outlets we perform a variance decomposition. The following two illustrative cases might help build intuition. At one extreme, one can imagine a world in which all articles from the same outlet have the same slant. In that world, the entirety of the variance in slant across articles would be explained by outlet provenance. At the other extreme, one can imagine a world in which all outlets have the same average slant, and articles differ in slant only within outlets. In that world, none of the variance in slant across articles would be explained by outlet provenance. Proxying the slant of an article with the average slant of the outlet it comes from is perfectly accurate in the first illustrative case and it becomes progressively less accurate the closer reality is to the second illustrative case. In other words, the smaller the fraction of variance in slant that can be accounted for by outlet provenance, the more important it is to measure slant at the article level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 2,
+        "text": "We begin our analysis by illustrating the role of withinvs. across-outlet variation in slant with a case study of two of the most influential U.S. news outlets: the New York Times and Fox News. Figure 2 shows the distribution of article-level slant separately for each outlet. The two outlets clearly differ in their average slant, with the slant distribution of articles from the New York Times",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 3,
+        "text": "skewing visibly more left-wing than that of Fox News. The difference in average slant between the two outlets is 0.98 points on our scale. Despite the average difference in slant, however, there is substantial overlap in the two distributions: within each outlet, approximately 50% of articles are neutral or cross-cutting (i.e., exhibiting a slant of the opposite sign than the average slant of the outlet). Thus, the two outlets contain both liberal and conservative articles. Appendix Figure J.1 shows the distribution of slant for all outlets and demonstrates that there is substantial within-outlet variation in slant for virtually all outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 4,
+        "text": "To obtain a quantitative measure of the extent to which, in general, the slant distributions of articles from different outlets overlap, we turn to a variance decomposition. We begin by noting that, due to measurement error in our slant measure, a ”naive” variance decomposition—obtained by first regressing our model-predicted article-level slant on outlet fixed effects, and then retrieving the R 2 as a measure of the fraction of the overall variation in slant that is accounted for by fixed differences across outlets—would produce biased estimates. In particular, in the presence of measurement error in our slant measure, the naive variance decomposition above would necessarily underestimate the true amount of variation in article-level slant that can be accounted for by outlet provenance, as shown in Appendix D .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 5,
+        "text": "Our measure of article-level slant is affected by two separate sources of measurement error: first, the labels of our two experts exhibit a degree of noise in that they do not always agree. Second, our machine learning algorithm produces a noisy slant prediction. We deal with the latter source of noise by limiting our variance decomposition to our dataset of labeled articles, and we deal with the former source of noise by leveraging the fact that we have two independent labels per article and by employing a measurement-error-correction technique. The details of the variance decomposition are provided in Appendix D . Conceptually, our measurement-error-correction technique is similar to the standard procedure that estimates the variance of an underlying latent variable by considering the covariance of two independent but noisy draws of that variable.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 6,
+        "text": "Our variance decomposition shows that outlet differences account for only 33% of the variance in article-level slant. In other words, ignoring within-outlet variation in slant induces one to miss 67% of the overall variation in article-level slant —that is, all the variation that occurs within outlets .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 7,
+        "text": "Our variance decomposition has two main implications: first, it emphasizes the importance",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 12,
+        "section_name": "Variance Decomposition: The Role of Outlets",
+        "paragraph_id": 8,
+        "text": "of considering slant at the article level. Second, it shows that there are ample opportunities for ideological sorting within outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 13,
+        "section_name": "Overall Distribution of Slant",
+        "paragraph_id": 0,
+        "text": "Figure 3 presents the overall slant distribution of the ∼ 1 million hard news articles published online by the 100 most-visited U.S. news outlets in 2019. The distribution of slant on the production side is unimodal and centered around moderate values. Notably, 40% of all articles have a slant of zero, classifying them as centrist. Among the remaining articles, 68% are left-leaning, meaning left-leaning articles are around twice as common as right-leaning ones. 24 When comparing slant intensity, however, right-leaning articles are on average more extreme. In fact, the share of extreme right-leaning articles, defined as articles with a slant of 2 and above, among all article in our data is 7%, while the share of extreme left-learning, defined as articles with a slant of -2 and below, is only 3%.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 13,
+        "section_name": "Overall Distribution of Slant",
+        "paragraph_id": 1,
+        "text": "Figure J.1 presents the distribution of slant for each outlet and shows that there is a clear asymmetry in how news outlets produce leftand right-leaning content. Only 1 outlet produces articles among which the majority is extremely left-leaning, whereas a considerably larger number of 6 outlets predominantly generate extremely right-leaning articles. These patterns dovetail with findings from the literature that point to the presence of a small segment of the news ecosystem that caters almost exclusively to conservatives ( Gonz ́alez-Bail ́on et al. , 2023 ; Guess , 2021 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 0,
+        "text": "Next, we analyze how slant varies by news category and topic. This analysis compares opinion versus non-opinion pieces, local versus national versus international news, and slant differences across various topics. We use GPT-4o to extract these characteristics—see Appendix C for details.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 1,
+        "text": "24 The independent ratings by AdFontes Media described in Section 4.4 support these findings. Specifically, our model’s 0-centrist designation closely matches AdFontes: for articles rated 0 by our model that also have AdFontes ratings, the average AdFontes rating is -0.11 (after we re-scale their scale to -2.5 to 2.5 with 0 unchanged), indicating these articles are indeed likely to be centrist. Moreover, among articles with AdFontes ratings, both slant measures broadly agree on the fraction that are left-leaning, moderate, and right-leaning.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 2,
+        "text": "Opinion vs. Non-Opinion The large language model classifies 23% of articles as opinion pieces. We find that opinion pieces are significantly more slanted than non-opinion articles. Specifically, 43% of opinion articles have an absolute slant of 2 or more on our scale, compared to only 2% of non-opinion pieces. As illustrated in Figure A.2 , the distribution of slant in non-opinion articles is unimodal and centered around moderate values, with relatively thin tails on both sides. In contrast, opinion pieces exhibit a strongly bimodal distribution, with peaks at both ends of the slant spectrum, indicating a tendency towards more extreme positions.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 3,
+        "text": "The small share of moderate opinion pieces is consistent with arguments on the decline of moderates in US politics, both among political elites and engaged citizens ( Abramowitz , 2010 ). Moreover, our finding that opinion pieces are particularly slanted, together with results from the literature showing that news consumers often trust opinion pieces as sources of fact ( Bursztyn et al. , 2023 ), suggest that opinion pieces might be an important contributor to political polarization among the news-reading electorate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 4,
+        "text": "National vs. Local vs. International News Figure A.3 presents clear differences across the three news categories of articles and shows that national news is substantially more slanted than international and local news. When we limit our analysis to national news, the media landscape no longer appears to be primarily moderate, as a majority of articles have an absolute slant of at least 1 on our scale. Furthermore, 18% of national news articles have an absolute slant of 2 or more, whereas only approximately 3% of local and international news do. Interestingly, when focusing only on national news, we still observe more left-leaning than right-leaning articles and more extreme right-leaning than extreme left-leaning articles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 5,
+        "text": "The discrepancy in slant across national, local, and international news can partly be explained by the fact that national news tends to cover relatively more contentious topics. For instance, 40% of international news articles cover international conflicts. Since in 2019 the U.S. was not directly involved in many of those conflicts, articles covering them tend to feature more factual and neutral coverage, as shown below. Similarly, bipartisan topics such as drug abuse are primarily covered in local news, and such coverage once again tends to be relatively neutral.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 6,
+        "text": "Slant across News Topics Our last piece of analysis in this section investigates the distribution of slant across news topics. Appendix C provides a list of the news topics and descriptions thereof that we used when prompting GPT-4o to classify our articles into topics.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 7,
+        "text": "We begin our analysis by showing the degree to which various topics are over vs. underrepresented among left-leaning articles relative to right-leaning articles. 25 We consider a topic as being over- (under-) represented among left-leaning articles if, among all leftand right-leaning articles about that topic, the proportion of left-leaning articles is higher (lower) than the proportion of left-leaning articles across our entire sample of leftand right-leaning articles. Figure 4 presents the results. Perhaps unsurprisingly, the most over-represented topic among left-leaning articles is the topic of Republican scandals, and the most under-represented topic is that of Democrat scandals. This result aligns with prior evidence at the outlet level ( Puglisi and Snyder , 2011 ) and provides further validation for our slant measure. Besides scandals involving Republicans, the most over-represented topics among left-leaning articles include natural disasters, the environment, policing practices, housing, drugs, gender, race, and LGBTQ issues. Besides scandals involving Democrats, the most over-represented topics among right-leaning articles include technology, the economy, international conflicts, welfare, trade, national security, and innovation.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 8,
+        "text": "A lasso regression analysis of article slant on the unigrams and bigrams in the article titles provides evidence in line with the rest of our topic analysis. The results, depicted in Figure A.4 , show that the most predictive unigrams for right-leaning articles are “dems”, “aoc”, “hillary”, “democrats”, “illegal”, “socialism”, “left”, “china”, and “beto”, while those for left-leaning articles are “trump”, “climate”, “women”, “lgbtq”, “black”, “globe”, “pride”, and “gay”. These language-based signals map closely onto the topic-level findings, with right-leaning articles highlighting immigration and trade-related terms, and left-leaning articles emphasizing climate change, gender, race, and LGBTQ issues. 26",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 9,
+        "text": "Next, in order to obtain an indication of which topics are more contentious in terms of news coverage, we study the dispersion in slant across topics. Figure A.6 , which displays the standard deviation of slant by topic, shows that cultural topics such as gender, LGBTQ issues, and race,",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 10,
+        "text": "25 For this analysis, we consider an article as being left-leaning if it has a slant below -0.5 and right-leaning if it has a slant above 0.5. We drop articles that are broadly moderate, namely articles with a slant between -0.5 and 0.5. 26 To give a sense of the most slanted topics, overall, we show the mean absolute slant by topic in Figure A.5 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 14,
+        "section_name": "Distribution of Slant by News Category and Topic",
+        "paragraph_id": 11,
+        "text": "together with the topics of welfare, gun rights, the environment, and immigration have the most dispersion in coverage in terms of slant. Conversely, topics such as international conflicts, drugs, natural disasters, trade, and crime have the least dispersion in terms of slant. 27 Figure A.7 shows the full distribution of slant by topic.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 15,
+        "section_name": "News Consumption on Facebook",
+        "paragraph_id": 0,
+        "text": "In the previous section, we provided a broad overview of the slant landscape of the hard news articles in our database. In this section, we first estimate the degree of polarization in news consumption on social media and then study the drivers of such polarization. The distribution of slant on the production side provides context for our polarization result and helps us describe the mechanisms driving it.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 0,
+        "text": "Construction of the Polarization Measure In order to study the degree to which news consumption on social media is polarized, we introduce a new measure of polarization in news consumption. Our measure, denoted by P ( S R , S D ) , calculates polarization based on the difference in click-weighted average slant between Republican and Democrat Facebook users, normalized to range between -1 and 1. The measure is constructed using the following formula:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 1,
+        "text": "P ( S R , S D ) = S R − S D (1)",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 2,
+        "text": "where S j represents the click-weighted average slant for users registered with party j ∈{ D,R } and where D stands for Democratic and R for Republican party. To interpret the measure on a standardized scale from -1 to 1, we normalize it by dividing it by the maximum possible distance (five points) on our scale. 28",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 3,
+        "text": "27 The topic of policing practices also has a relatively low degree of dispersion in slant. We note that our dataset pre-dates the death of George Floyd in May 2020, which sparked a series of protests about police brutality throughout the U.S. 28 Recall that, in order to have a sufficient number of articles in each bucket to perform our analysis, we merge slant",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 4,
+        "text": "We believe our measure has three desirable features that make it an important complement to other measures developed in the literature, such as measures of segregation and favorability. First, and foremost, our measure takes into account both the ideology of a user and the slant of the news articles that the user consumes. This allows us to study whether, indeed, Democrat users tend to consume left-leaning articles and Republican users right-leaning articles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 5,
+        "text": "Second, our measure is straightforward to interpret: a value of 1 indicates extreme pro-attitudinal news consumption, a value of 0 means both groups consume news with an identical slant, and a value of -1 indicates extreme counter-attitudinal news consumption.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 6,
+        "text": "Third, our measure allows for an easily interpretable comparison between article-level and outlet-level polarization. Specifically, as shown in an example in Appendix H , a comparison of our polarization index calculated at the article level (henceforth, article-level polarization) and the index calculated at the outlet level (henceforth, outlet-level polarization) reveals the following intuitive results. Article-level polarization is strictly larger (smaller) than outlet-level polarization if and only if individuals engage in pro-attitudinal (counter-attitudinal) news consumption within outlets. Polarization at both levels is equal if and only if individuals select articles within outlets without regard to their political slant, as would occur if users consumed random articles from within each outlet.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 7,
+        "text": "Many of the standard measures in the literature (e.g., measures of segregation) lack these features. First, measures of segregation rely solely on consumption patterns; they do not feature an independent measure of the slant of the content consumed. Thus, they measure whether Democrats and Republicans consume different articles, but not whether they consume articles with a different slant. Second, the interpretation of segregation measures is arguably less intuitive. For instance, segregation measures can reach their maximum even when Democrats and Republicans consume counter-attitudinal rather than pro-attitudinal news. Lastly, segregation measures suffer from a small-sample bias, as discussed in Gentzkow, Shapiro and Taddy ( 2019 ) and as shown in the illustrative example comparing segregation at the outlet and article levels analyzed in Appendix H . 29 A more detailed analysis of the theoretical and empirical differences between our polarization meabucket -3 with slant bucket -2.5 and slant bucket 3 with slant bucket 2.5. As a result, our effective scale ranges from -2.5 to 2.5. 29 The small-sample bias is unlikely to be relevant for a dataset as large as the URL-level Facebook Activity Dataset, but it could be relevant, for instance, for datasets of browsing behavior containing a relatively small set of users.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 8,
+        "text": "sure and measures of segregation and favorability is presented in Appendix H .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 9,
+        "text": "Headline Polarization Results Using our novel article-level measure of slant, we estimate that, in 2019, the degree of polarization in news consumption on Facebook was 0.17 (see Table 1 ). This measure of polarization employs, as a definition of partisanship, being a registered Democrat or a registered Republican, and it is estimated as described in Appendix F .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 10,
+        "text": "The next few paragraphs provide a series of benchmarks showing that our preferred estimate of polarization in news consumption on Facebook is arguably high. Our first benchmark compares the difference in click-weighted average slant between Republican and Democrat users (i.e., the numerator in Equation 1 ) to the standard deviation in the overall database of news articles. The mean difference in the slant of articles clicked on by Republican and Democrat users is 0.84. The standard deviation in our overall database of news articles is 0.99. Therefore, the mean difference in slant for articles clicked on by Republican and Democrat users is 0.85 standard deviation units.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 11,
+        "text": "Another benchmark for our polarization measure compares the slant difference in articles consumed by Republicans and Democrats on Facebook to the difference between the average slant of articles from ideologically contrasting outlets. We find that the slant difference between the average news articles consumed by Republicans and Democrats on Facebook equals the distance in slant between the average article from the Washington Times and the average article from the Washington Post (where the Washington Post and The Washington Times rank at the 11th and 82nd percentile of the overall distribution in slant across our outlets, respectively).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 12,
+        "text": "For additional context, we can compare the slant difference in articles clicked on by Republicans and Democrats on Facebook to the average slant difference between articles written by different New York Times columnists. For instance, we find that the slant difference in news consumption on Facebook between Democrats and Republicans is comparable to the slant difference between the average article written by liberal columnist Nicholas Kristof and by moderate/conservative columnist David Brooks.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 13,
+        "text": "Our final benchmark compares the distance in slant between articles consumed by Republicans and Democrats on Facebook to the slant difference between articles shared by various politicians on Twitter (now ”X”). We find that the slant distance in our analysis is slightly smaller than the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 14,
+        "text": "average distance between articles shared by Democratic Senator Chuck Schumer and those shared by Republican Senator Marco Rubio.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 16,
+        "section_name": "Polarization in News Consumption on Social Media",
+        "paragraph_id": 15,
+        "text": "As discussed, our headline measure of polarization employs, as a definition of partisanship, being a registered Democrat or a registered Republican. If we were to directly use the political affinity score from the URL-level Facebook Activity Dataset as a measure of partisanship, we would obtain a measure of polarization of 0.29 (see Table A.3 ). The higher level of polarization obtained using the political affinity scores, as opposed to our estimates of party registration, is in line with the observation in Appendix F that the political affinity score in the URL-level Facebook Activity Dataset is likely to pick out individuals with particularly strong partisan leanings. In light of the above, our preferred estimate of polarization in news consumption is the former, namely the one employing the more standard definition of partisanship based on party registration. Section 7.3 shows that, when we estimate polarization in news consumption based on an independent dataset of browsing behavior where partisanship is defined according to party registration records, we obtain an estimate of 0.16—a number that is almost identical to our preferred estimate.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 0,
+        "text": "What drives the high degree of polarization in news consumption on social media? In this section, we address four key mechanisms. First, we study the degree to which polarization in news consumption on Facebook is driven by the selection of ideologically congenial articles within outlets. Second, we analyze the extent to which polarization in news consumption is driven by the articles that users are exposed to on their feeds versus the articles they select conditional on the ones they are exposed to. Third, we examine how the distribution of articles that circulate widely on social media differs from the distribution of slant on the production side. Fourth, we perform a back-of-the-envelope calculation to estimate, under a host of assumptions, the degree to which echo chambers are responsible for polarized news exposure and consumption on Facebook.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 1,
+        "text": "6.2.1 Within vs. Across Outlets",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 2,
+        "text": "In order to study the degree to which polarization in news consumption on Facebook is driven by the selection of ideologically congenial articles within outlets, we proceed in two steps. First, we",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 3,
+        "text": "provide direct evidence that Facebook users with a political affinity score consume pro-attitudinal news within outlets. Second, we study the extent to which shutting down the channel of proattitudinal news consumption within outlets affects our preferred measure of polarization.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 4,
+        "text": "Figure 5 focuses on the top 20 outlets in terms of online visits and shows that, even within an outlet, the average article consumed by users with a liberal political affinity score is virtually always more left-leaning than the average article consumed by users with a conservative political affinity score. Table J.1 presents statistics about the slant of the average article consumed by users with a liberal and a conservative political affinity for each outlet in our dataset. The pattern is similar: partisans tend to consume pro-attitudinal content even within outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 5,
+        "text": "In order to study how polarization in news consumption changes when we shut down the channel of pro-attitudinal news consumption within outlets, we re-calculate our polarization index after assigning to each article a measure of slant that equals the average slant of the outlet that the article came from. This exercise mimics the results one would obtain if, in line with much of the literature, one were to carry out the analysis of polarization in news consumption on Facebook at the outlet level rather than at the article level.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 6,
+        "text": "When we shut down the channel of pro-attitudinal news consumption within outlets as described above, we obtain a measure of polarization in news consumption of 0.11. 30 In contrast, as shown in Section 6.1 , when we allow for the selection of ideologically congenial articles within outlets, we obtain a measure of polarization of 0.17. Thus, the estimate of polarization in news consumption on Facebook increases by 55% when the channel of pro-attitudinal news consumption within outlets is taken into account. Figure A.8 shows that this gap is similar or larger when, instead of focusing on news consumed, we focus on the articles individuals viewed or shared. These results are in line with our initial intuition that the curation process on social media, which operates at the level of individual news articles, promotes substantive pro-attitudinal news consumption within outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 7,
+        "text": "30 As in our preferred measure of polarization from the previous section, this measure employs, as a definition of partisanship, being a registered Democrat or a registered Republican. If we were to consider a measure of polarization in news consumption based directly on the political affinity score, we would obtain a similar result in terms of the fraction by which polarization in news consumption is underestimated when the channel of pro-attitudinal news consumption within outlets is shut down.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 8,
+        "text": "6.2.2 Selection vs. Exposure",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 9,
+        "text": "Our measure of polarization in news consumption on social media can be decomposed into two factors: exposure and selection conditional on exposure. Exposure refers to articles that appear on partisans’ feeds; selection conditional on exposure refers to the way in which partisans select which articles to click on and read among the articles that appear on their feeds. In this section, we show that the lion’s share of polarization in news consumption can be accounted for by differential exposure to slanted articles. 31",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 10,
+        "text": "We find that the polarization in news exposure on Facebook is 0.14. Thus, exposure alone can account for 82% of the degree of polarization in news consumption on Facebook. In other words, if Democrats and Republicans on Facebook clicked randomly among the articles that appear in their feeds, rather than actively selecting articles among the ones that appear in their feeds, polarization in news consumption would be only 18% smaller than it currently is. 32 , 33 , 34",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 11,
+        "text": "6.2.3 Production vs. Distribution",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 12,
+        "text": "How does the distribution of slant from the top 100 U.S. outlets in 2019 translate to the social media ecosystem? The Facebook environment need not reflect the distribution of slant on the production side for three main reasons. First, the homophilous network structure on social media, together with pro-attitudinal sharing patterns by Democrats and Republicans, can generate echo chambers in which partisans are primarily exposed to and consume ideologically congenial news ( Sunstein , 2018 ). Second, personalized ranking algorithms might produce filter bubbles that promote proattitudinal content ( Pariser , 2011 ). Third, social media platforms offer ample scope for individuals to customize their feeds ( Negroponte , 1995 ). In this section, we analyze various ways in which",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 13,
+        "text": "31 We measure the degree of exposure to a particular news article using the number of times the article was viewed on Facebook. 32 As in our preferred measure of polarization from Section 6.1 , this measure employs, as a definition of partisanship, being a registered Democrat or a registered Republican. If we were to consider a measure of polarization in news consumption based directly on the political affinity score, we would obtain a similar result in terms of the percent of polarization in news consumption that is explained by exposure and by selection conditional on exposure. 33 Of course, our analysis is in ”partial equilibrium.” A ”general equilibrium” analysis would take into account the feedback patterns that exist between exposure, consumption, and sharing behavior. 34 Consistent with our findings for news consumption, we also find strong pro-attitudinal news exposure within outlet, as depicted in Figure A.9 .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 14,
+        "text": "the distribution of slant in the Facebook ecosystem differs from the distribution of slant on the production side, as well as the drivers of such differences.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 15,
+        "text": "Slant of the Articles Circulating on Facebook We begin by analyzing, as a function of an article’s slant, the probability that the article is shared publicly on Facebook more than 100 times. This definition corresponds to the criterion used by Meta for including an article in the URL-level Facebook Activity Dataset. We measure this outcome using an indicator that equals one if a given article from our database of articles appears in the URL-level Facebook Activity Dataset and zero otherwise.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 16,
+        "text": "Figure 6 shows the probability that an article from our database appears in the URL-level Facebook Activity Dataset as a function of the article’s slant. We find a stark V-shaped pattern: the more extreme the article, the higher the probability that it gets shared on Facebook more than 100 times. The difference in the likelihood of getting shared more than 100 times across slant categories can be substantial. For instance, centrist articles with a slant of 0 have an 11% chance of being widely shared on Facebook, whereas extreme articles with an absolute slant of 2 or more have an over 39% chance of being widely shared on the platform. Thus, extreme articles are approximately 4 times more likely to be publicly shared on Facebook at least 100 times. We note that this analysis includes virtually all hard news articles published online by major outlets in 2019, thus arguably offering the most comprehensive picture to date of the relationship between slant and sharing behavior on Facebook.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 17,
+        "text": "In light of the sharing patterns documented above, the distribution of slant of the articles that are shared on Facebook at least 100 times is quite different from the distribution of slant on the production side. Figure A.10 overlays the two distributions and shows how the distribution of slant of the articles that are shared on Facebook at least 100 times has much thicker tails than the distribution of slant on the production side. In fact, comparing the variance of the two distributions, we see that the variance of the former is 60% higher than the variance of the latter.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 18,
+        "text": "Over-representation of slanted news types and topics on Facebook In Section 5 , we showed that opinion pieces, national news, and articles about certain topics are particularly slanted. Here",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 19,
+        "text": "we show that articles with those characteristics are much more likely to be shared on Facebook at least 100 times.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 20,
+        "text": "Figure A.11 shows that contentious topics (i.e., topics with a relatively high standard deviation in slant on the production side) tend to also be over-represented among widely shared articles on Facebook. Figure A.12 shows that, compared to the production side, both national news and opinion pieces are over-represented among the articles shared on Facebook at least 100 times by a factor of at least 41%.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 21,
+        "text": "Pro-attitudinal sharing patterns What role do pro-attitudinal sharing patterns by liberals and conservatives play in promoting the circulation of slanted articles on Facebook? For this exercise, we limit our attention to articles in the URL-level Facebook Activity Dataset; i.e. articles publicly shared on Facebook at least 100 times. Figure 7 shows the distribution of the number of shares per article, separately for individuals with liberal and conservative political affinity scores, as a function of an article’s slant. The figure depicts striking differences in sharing behavior: liberals share left-leaning content around three times more often than moderate content and almost never share right-leaning articles. Conservatives display the mirror image of this behavior: they primarily share right-leaning content, and they almost never share left-leaning articles. 35",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 22,
+        "text": "Appendix Figure A.15 presents the same analysis separately for articles that users clicked on before sharing and articles that users shared without first clicking on them. We do not find dramatic differences between the two figures, suggesting that reading an article does not increase or decrease the tendency to share pro-attitudinal news.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 23,
+        "text": "Appendix Table A.5 shows that the sharing patterns of opinion articles on Facebook are substantially more pro-attitudinal than the sharing patterns for non-opinion articles. Specifically, the sharing patterns of opinion articles on Facebook are 2.6 times more polarized than those of nonopinion articles.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 24,
+        "text": "35 Appendix Figure A.13 shows the same figure after residualizing for outlet fixed effects. Compared to the unresidualized version, the distributions of shares by liberal and conservative users do move closer together, indicating that outlets play a role in explaining the differential sharing patterns among liberals and conservatives. However, even after residualizing on outlet fixed effects, the distribution of shares by liberals is markedly to the left of that by conservatives, showcasing, again, the important role of within-outlet differences in sharing behavior across the political spectrum. Figure A.14 , which shows stark within-outlet differences in the mean slant of articles shared by Facebook users with conservative vs. liberal political affinity, further underscores this point.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 25,
+        "text": "In the next section, we show how our finding that both liberals and conservatives share proattitudinal articles much more frequently than counter-attitudinal ones can help us assess the degree to which polarized news exposure and consumption on social media is driven by echo chambers.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 26,
+        "text": "6.2.4 The Role of Echo Chambers",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 27,
+        "text": "In order to assess the degree to which echo chambers can explain polarization in news exposure on Facebook, we perform a back-of-the-envelope calculation. Specifically, we estimate, under a set of assumptions described in Appendix G , a lower bound on the amount of polarization in news exposure on Facebook that would prevail if users’ feeds were only shaped by their friend networks and by the content shared by those friends. By doing so, we mechanically shut down other channels that shape users’ feeds such as the personalized content-ranking algorithm and the users’ own customization decisions. We then compare the amount of polarization in news exposure obtained in the first step to the actual amount of polarization in news exposure on Facebook estimated in Section 6.2.2 . For simplicity, we employ, throughout this section, the polarization measure based on political affinity scores from the Facebook URL-level Activity Dataset, rather than party registration. 36",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 28,
+        "text": "Echo chambers in news consumption can be thought of as arising from the interaction of two distinct features of the social media environment: i) the relatively high degree of political homophily of social media networks, and ii) pro-attitudinal sharing patterns by partisans. When both features are simultaneously present, users share pro-attitudinal content in groups of like-minded individuals, thus giving rise to echo chambers. In Section 6.2.3 , we documented strong pro-attitudinal sharing patterns by Facebook users. The remaining ingredient to estimate the role of echo chambers is information about the degree of political homophily of the Facebook network.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 29,
+        "text": "There are various measures of network homophily ( Jackson , 2008 ). For the purpose of our analysis, we rely on the following six statistics: the fraction of friends of liberal users who are liberal ( x { lib ← lib } ), conservative ( x { lib ← con } ), and moderate ( x { lib ← mod } ), and the fraction of friends of conservative users who are liberal ( x { con ← lib } ), conservative ( x { con ← con } ), and moderate ( x { con ← mod } ). 36 Using the polarization measure based on party registration would have required to impose two sets of assumptions: one for translating polarization based on political affinity scores into polarization based on party registration as described in Appendix F , and another for estimating the role of echo chambers as described in Appendix G .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 30,
+        "text": "As shown in Appendix G , these statistics allow us to estimate a lower bound on the degree of polarization in news exposure that would obtain if users’ feeds were only shaped by the structure of the Facebook network and by the articles shared by their friends.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 31,
+        "text": "Formally, we calculate:",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 32,
+        "text": "ˆ P echo exposure ( ̄ y lib , ̄ y con , ̄ y mod , x { lib ← lib } , x { lib ← con } , x { lib ← mod } , x { con ← lib } , x { con ← con } , x { con ← mod } ) =",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 33,
+        "text": "= 1 5 { [ ̄ y lib · x { con ← lib } + ̄ y con · x { con ← con } + ̄ y mod · x { con ← mod } ] − [ ̄ y lib · x { lib ← lib } + ̄ y con · x { lib ← con } + ̄ y mod · x { lib ← mod } ] }",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 34,
+        "text": "where ̄ y lib denotes the average slant of articles shared by users with a liberal political affinity score, ̄ y con denotes the average slant of articles shared by users with a conservative political affinity score, and ̄ y mod denotes the average slant of articles shared by users with a moderate political affinity score. The first (second) part of the numerator in the expression above is a proxy for the average slant that conservative (liberal) Facebook users would be exposed to if their feed was governed solely by the sharing behaviors of their friends. Taking the difference between the first and second components and normalizing it by five yields a measure that is comparable to the actual degree of polarization in news exposure calculated using the political affinity scores as a measure of partisanship.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 35,
+        "text": "When calculating the expression above, we plug in the measures of ̄ y lib , ̄ y con , ̄ y mod that we obtained from the sharing patterns documented in Section 6.2.3 . Furthermore, we rely on data from Bakshy, Messing and Adamic ( 2015 ) in order to obtain estimates for x { a ← b } where a , b ∈ { lib , mod , con } .",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 17,
+        "section_name": "Mechanisms",
+        "paragraph_id": 36,
+        "text": "Following this approach, we conclude that the amount of polarization in news exposure that would result from echo chambers alone is at least 59% of the actual degree of polarization in news exposure calculated using the political affinity scores as a measure of partisanship.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 19,
+        "section_name": "Comparison of Social Media to Other Sources of Online News Consump-",
+        "paragraph_id": 0,
+        "text": "This section investigates whether the news consumed via Facebook exhibits greater ideological polarization compared to news accessed through other online sources. Using detailed individuallevel browsing history data on a panel of 1,637 registered Democrats and Republicans, we analyze the slant of news articles consumed by panel members, comparing instances where the referrer to the article was Facebook versus other online sources.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 19,
+        "section_name": "Comparison of Social Media to Other Sources of Online News Consump-",
+        "paragraph_id": 1,
+        "text": "To conduct this analysis, we regress the slant of a news article consumed by an individual on a dummy variable indicating whether Facebook was the referrer, a dummy for party registration status (Republican vs. Democrat), and their interaction, while including individual fixed effects to isolate within-person variation. The results, shown in column 2 of Table A.6 , reveal that Facebook amplifies polarization in news consumption: the gap in slant between articles consumed by Republicans and Democrats is 0.13 units larger for articles accessed through Facebook compared to those not accessed through Facebook—corresponding to an increase in the polarization index of 0.03 units, or 16% relative to the mean. Column 3 shows that this effect is not unique to Facebook and generally social media amplified polarization in news consumption. This finding suggests that the algorithmic curation and mechanisms unique to social media exacerbate ideological sorting relative to the broader online ecosystem.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 19,
+        "section_name": "Comparison of Social Media to Other Sources of Online News Consump-",
+        "paragraph_id": 2,
+        "text": "We next compare polarization in news consumption across the ten most common referrer types, by augmenting the above-mentioned regression through the inclusion of referrer-type dummies, as well as their interaction with an indicator for being a registered Republican. We present the results in Figure 8 . We find that polarization is smallest for news accessed via news aggregators, followed by search engines; it is largest for other social media platforms (driven by Twitter, now “X”) and Facebook, further underscoring the potential importance of social media platforms in amplifying polarization in news consumption. In terms of magnitudes, we find that news accessed via social media is 2.4 times more polarized than the news accessed via search engines.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 20,
+        "section_name": "Extending Results to Additional Outlets",
+        "paragraph_id": 0,
+        "text": "Our main analysis focuses on the 100 most visited U.S. outlets that cover hard news. We limited our scope to these outlets because we perceived the marginal benefit of adding more outlets to be smaller than the marginal cost of additional data collection. As discussed in section Section 3 , these top 100 outlets account for 93% of all online hard-news consumption in the U.S. according to Comscore data. Thus, they provide very extensive coverage. Nonetheless, it is natural to wonder as to how our estimate of polarization in news consumption on Facebook would change if we included more outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 20,
+        "section_name": "Extending Results to Additional Outlets",
+        "paragraph_id": 1,
+        "text": "To explore this, Figure A.16 extrapolates our results by extending the analysis to the top 200 U.S. outlets by online visits. Our extrapolation works as follows. First, we rank outlets by size (using Comscore data) and calculate our polarization measure for ever-increasing subsets of these outlets. 37 Based on the trend observed, we assume a logarithmic relationship between the number of outlets included in the subset and our polarization measure. The logarithmic extrapolation suggests that expanding to 200 outlets would lead to a 7% increase over our baseline polarization measure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 21,
+        "section_name": "Robustness: Political Affinity Measure",
+        "paragraph_id": 0,
+        "text": "In this section, we present a battery of robustness checks to address the limitations of the political affinity measure in the URL-level Facebook Activity Dataset. As discussed in Section 3 , the political affinity measure in the URL-level Facebook Activity Dataset has three limitations: first, it does not directly track canonical indicators of partisanship such as party registration; second, it covers only 25% of adult Facebook users from the U.S.; third, it might suffer from a circularity problem, because a small set of news outlets is included in the set of political pages used in the construction of the measure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 21,
+        "section_name": "Robustness: Political Affinity Measure",
+        "paragraph_id": 1,
+        "text": "Our first and main robustness check addresses all three problems at once. Specifically, it calculates polarization in news consumption on Facebook using our independent dataset of individuallevel browsing behavior. This dataset includes a highly accurate measure of partisanship in the 37 We begin by only considering the most visited U.S. outlet, and then progressively expand the subset to less visited outlets.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 21,
+        "section_name": "Robustness: Political Affinity Measure",
+        "paragraph_id": 2,
+        "text": "form of administrative records on panel members’ party registration status. We restrict attention to the 1,637 individuals who are registered Democrats or registered Republicans. To facilitate comparability with our baseline polarization index measure, we further restrict attention to all clicks on hard news articles that i) appear in the URL-Level Facebook Activity Dataset and ii) for which the referrer is Facebook. We report results in column 1 of Table A.6 . The table shows that news articles clicked on by registered Republicans are, on average, 0.81 units more right-slanted than those clicked on by registered Democrats. This difference gives rise to a polarization index of 0.16, which is almost identical to our preferred polarization estimate from the URL-level Facebook Activity Dataset. Thus, we replicate our headline result using a completely different dataset where partisanship is defined directly based on administrative voting records.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 21,
+        "section_name": "Robustness: Political Affinity Measure",
+        "paragraph_id": 3,
+        "text": "Our second robustness check aims to address the potential circularity in the political affinity variable from the URL-level Facebook Activity Dataset. Specifically, we recalculate our preferred estimate of polarization in news consumption after excluding all articles from the 18 outlets in our database that are also used in the construction of the political affinity variable. We report the results in Table A.7 and find a pattern of results virtually identical to the one described in Section 6.1 . Furthermore, when omitting those 18 outlets, our measure of polarization in news consumption is 59% higher when the analysis is carried out at the article level rather than at the outlet level (see Table A.8 ).",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 21,
+        "section_name": "Robustness: Political Affinity Measure",
+        "paragraph_id": 4,
+        "text": "Our third robustness check involves proxying a person’s political ideology using her demographic characteristics. Specifically, the URL-level Facebook Activity Dataset contains engagement numbers by age bracket and gender. Based on representative survey data from the ANES 2020-2022 Social Media Study, we can determine, for each age-gender bucket, the difference in the share of the demographic group’s members who identify as or lean Republican and the share who identify as or lean Democrat. Using that difference as a proxy for the ideological leaning of individuals in each age-gender bucket, we can then relate the average ideology in an age-gender bucket to the average slant that individuals in that bucket are exposed to and consume on Facebook. The results are shown in Figure A.17 . In line with the results in previous sections, we find that, as we move towards age-gender buckets with relatively higher Republican vote shares, the average slant of the articles individuals in those buckets are exposed to, consume, and share on Facebook becomes more right-leaning according to our slant measure.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 22,
+        "section_name": "Robustness: Threshold in the URL-Level Facebook Activity Dataset",
+        "paragraph_id": 0,
+        "text": "As discussed in Section 3.2 , a limitation of the URL-level Facebook Activity Dataset is that it only includes articles shared publicly on Facebook at least 100 times (after adding Laplace-5 noise to the share counts). The polarization measure derived in Section 6.1 is based on the articles included in the URL-level Facebook Activity Dataset. Naturally, polarization of news exposure and consumption on social media might be different if one were to consider all the articles consumed on Facebook. In this section, we use our browsing panel data to extend our measure of polarization to all articles consumed on Facebook.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 22,
+        "section_name": "Robustness: Threshold in the URL-Level Facebook Activity Dataset",
+        "paragraph_id": 1,
+        "text": "Using our browsing panel data, we can simply compute polarization in news consumption (that is, the scaled difference in the average slant of hard news articles consumed by registered Republicans and registered Democrats) for all hard news articles that panelists got referred to via Facebook. We find a polarization index of 0.15— a value that is only 5% smaller than the original estimate that restricts to articles included in the URL-Level Facebook Activity Dataset. The numbers are so similar because articles shared widely on Facebook are consumed much more often than those shared fewer than 100 times—the former account for 79% of all hard news article clicks through Facebook—thereby rendering the restriction to widely shared articles relatively innocuous.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 22,
+        "section_name": "Robustness: Threshold in the URL-Level Facebook Activity Dataset",
+        "paragraph_id": 2,
+        "text": "Appendix I presents a separate extrapolation exercise on the URL-level Facebook Activity Dataset to address the limitation of only observing articles shared publicly on Facebook at least 100 times. The extrapolation exercise confirms the results of the robustness check from the previous paragraph: the limitation of only observing articles shared on Facebook at least 100 times seems to have a very small impact on our polarization estimates.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 23,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In this paper, we introduced a novel measure of article-level slant and used it to quantify the degree of polarization in news consumption on Facebook. Our guiding hypothesis was that, due to the way in which content is curated on social media platforms, an important driver of polarization in news consumption on social media is ideological sorting within outlets. Of course, this driver of polarization can only be captured by means of a measure of slant at the article level akin to the",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 23,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "one that we develop. Consistent with our hypothesis, we find a much higher degree of polarization when employing our fine-grained article-level slant measure than we do when employing a coarser measure of outlet-level slant that mimics the approach taken by much of the literature.",
+        "extraction_warnings": ""
+    },
+    {
+        "paper_id": 1528,
+        "section_id": 23,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "Overall, this paper provides strong evidence that the news environment on social media is more polarized than previously thought. This insight is crucial for understanding the dynamics of political polarization in the digital age and for informing both academic inquiry and policy interventions aimed at fostering a more balanced and informed public discourse. Furthermore, this paper highlights the importance of using content-based article-level slant measures when studying today’s fragmented media landscape.",
+        "extraction_warnings": ""
+    }
+]
