@@ -1,6 +1,22 @@
 # Method Classification Pipeline
 
-Classifies academic papers from the SIOE conference by research methodology using a two-stage pipeline: **keyword matching** followed by **SPECTER2 semantic similarity**.
+Classifies academic papers from the SIOE 2025 conference by research methodology using a two-stage pipeline: **keyword matching** followed by **SPECTER2 semantic similarity**.
+
+Result-preview:
+Even though the results are confusing, it's a easy way to inspect the pipeline's result without the ground truth.
+
+https://method-assignment-keyword-semantic-matching-2gxvkogidmtws73fdb.streamlit.app/
+
+Observation:
+- 38 out of 150 papers were selected by keywords, I should expand the keyword dictionary.
+- NotebookLLm can't be the groundtruth, or maybe i didn't success in filetring all the dialogues that realted to the methods. 
+- Methods are quite close to each other, maybe i should improve the semantic meaning of each. 
+- I keyword filter first, then do the embedding on the filtered chunks. Maybe embedding all the chunks without selection? 
+- The pdf to json is on the datasource branch, I find that i didn't replace all the math formular into [formular], if i am embedding all the chunks these could hurt the similarity check.
+- If in the next run i success in expand the vocabulary to filter the related chunks, will it also work on the other years's conferecne? Maybe i should try the 2024 papers too. 
+- This is an unmature pipeline everything is in a draft. 
+
+
 
 ## Project Structure
 
