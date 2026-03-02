@@ -18,7 +18,7 @@ Observation:
 
 
 
-### **The smoking gun: Zero discriminative power**
+
 
 Every single one of the 38 papers that passes keyword filtering gets assigned all 5 L1 categories and all 17 L2 methods in semantic matching. The similarity scores cluster in the 0.78–0.94 range, all far above the 0.5 threshold. The semantic stage is a no-op — it might as well hard-code "assign everything."
 
