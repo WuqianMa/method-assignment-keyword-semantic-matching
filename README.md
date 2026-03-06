@@ -1,6 +1,6 @@
 # Method Classification Pipeline
 
-Classifies academic papers from the SIOE 2025 conference by research methodology using a two-stage pipeline: **keyword matching** followed by **SPECTER2 semantic similarity**.
+Classifies academic papers from the conference by research methodology using a two-stage pipeline: **keyword matching** followed by **SPECTER2 semantic similarity**.
 
 Result-preview:
 Even though the results are confusing, it's a easy way to inspect the pipeline's result without the ground truth.
