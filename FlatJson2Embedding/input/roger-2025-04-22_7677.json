@@ -1,0 +1,3215 @@
+[
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 0,
+    "text": "Storage Cycles Sergei Balaki& Guillaume Rogectober 2024 Abstract We study the monopoly problem of a large-scale electricity storage unit that faces a periodic but uncertain demand over multiple cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 1,
+    "text": "Time is continuous and strategies are functions of time expressed in terms of power rates (rather than quantities).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 2,
+    "text": "Storage buys in periods of below-average demand and sells when demand exceeds the mean.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 3,
+    "text": "For different information structures we characterize the selling and buying strategies exactly as a pair of (time-varying) intensity and threshold time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 4,
+    "text": "This flexibility enables the operator to alleviate the impact of its market power over time within a cycle by smoothing out the (dis)charge rate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 5,
+    "text": "When the capacity is not too large in a sense we make precise, the storage operator trades that capacity in full every cycle, even under rate (dis)charge constraints.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 6,
+    "text": "For a large capacity, intertemporal (dynamic) linkages emerge across cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 7,
+    "text": "Depending on the demand realization, the storage operator may save some energy to mitigate the impact of her market power when selling now and buying again later, may then gamble over the next cycle and may even buy more at t = 0 than in the one-cycle optimum.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 8,
+    "text": "Keywords: dynamic trading, storage, market power JEL: C73, D43, D47, Q41, Q42 Monash University.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 9,
+    "text": "Funding from ARENA under grant 2021/ARP-016 gratefully acknowledged.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 10,
+    "text": "Corresponding author: Roger–guillaume.roger72@gmail.com",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "Storing electricity is completely essential to the energy transition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "As illustrated by Figure 1, storage is the means to smooth production and consumption to deliver variable renewable energy (VRE) when it is needed, on the right-hand panel, rather than when available, as on the left-hand panel. 1 Today, storage is the bottleneck of further expansion of renewable energy sources and of any energy transition on a large scale.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "Even in California, by far the most advanced market when it comes to storage, only 10 GW of capacity are installed while the total dispatchable capacity stands at 89 GW. 2 The state of South Australia, where the penetration of renewable energy is arguably the highest in the world, regularly produces more VRE than it needs to power itself, as for example in September 2023 when it reached 120% of demand. 3 Hence there is a pressing need for more storage rather than more VRE generation capacity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "Furthermore, storage is widely believed to deliver large benefits to consumers and producers thanks to price smoothing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "Lueken and Apt estimate the benefits to consumers to be as large as US $ 4 Bn in the PJM market alone, for example. 4 2000 4000 6000 8000 10000 12000 14000 16000 Output (MW) Trading interval Average daily VRE output NEM 4-10 July 20000 25000 30000 35000 40000 45000 Output (MW) Trading interval 30-min daily average demand NEM 4-10 July Figure 1: Mismatch between VRE (grid-scale) supply and (gross) energy demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "Daily 30-min averages, 4-10 July 2024, Australia.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "This picture is typical of many markets with a high penetration of VRE. See also Figure 9 in the Appendix. 2 Source: https://www.energy-storage.news/california-energy-storage-revolution-is-here-says-governor-asus-leader-state-surpasses-10gw/. The article only gives an aggregate power rating figure (not energy, which depends on duration).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "The dispatchable capacity is also quoted as power rating but it can run at will. 3 Source: RenewEconomy, https://reneweconomy.com.au/solar-reaches-record-120-per-cent-ofelectricitydemand-in-south-australia/. 4 PJM: Pennsylvania, New Jersey and Maryland.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "Yet, we know very little about the economics of electricity storage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "This paper contributes, in part, to addressing this gap.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "Understanding storage behavior matters a great deal to assess whether market design need be modified, whether competition policy is ready to cope with it, what intervention may be necessary or even to assess the welfare benefits of storage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "For example, does storage shift energy over time as efficiently as widely expected?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "In what way do consumer benefits depend on the behavior of storage?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "In light of the enormous investment in storage that is required to meaningfully transition legacy power systems and develop new ones in emerging economies, we argue these are essential questions to address. 5 Our singular focus is the study of a continuous-time, dynamic problem of a monopoly storage operator that seeks to take advantage of intertemporal price differences that can be forecast but remain uncertain.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "The storage operator sways market power, either because of its sheer size, or because of a strategic location on the network. 6 We are particularly interested in understanding how the storage operator manages the impact of her own market power on prices, what implications this has on quantity withholding, and whether any intertemporal linkages emerge from these operations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "That is, does a storage unit with a finite, but possibly large, energy capacity save currently stored energy, or conversely buy more of it, in anticipation of a large demand shock in the future?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "We draw some welfare implications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "These price differences are induced by intra-day demand fluctuations that are well documented – see Jha and Leslie ( Forthcoming ) or Butters et al. ( Working Paper ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "In our model, demand follows a periodic function with a low and high-demand interval to match the data in markets like California (see Figure 9 in the Appendix), Australia (recall Figure 1 ), Texas or Spain.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "Within a cycle, the high-demand period is subject to a random shock that determines peak demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "The storage operator wants to exploit high demand by selling, for which she must first make a purchasing decision under uncertainty about this forthcoming maximum demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "We attempt to be faithful to the physics of electricity: actions are functions b ( t ), s ( t ) of time that describe power flows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "Energy is the time-integral of these flows and is subject to a capacity constraint.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "Capacity is a critical parameter that drives the optimal behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "For one and two cycles, we characterise the optimal strategy of the storage operator under 5 To get a sense for scale, battery systems cost approximately US 18Bn. 6 Local congestion or market power are real considerations on an electricity grid.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "See also the Discussion, Section 5.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "different information structures; it is enough to restrict attention to either no or all information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "A key fact to bear in mind is that, regardless of the time horizon (one or two cycles), a storage unit can control both when it (dis)charges and how intensely it does so (power rate).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "It uses both instruments to mitigate the impact of its own market power, both in selling and buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "The problem of the storage operator is akin to that of managing price impact in selling securities (see for example Vayanos, Almgren and Chriss and others since).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "For a large demand shock, the discharge rate rises steeply but is smooth, peaks at a high level and the duration remains short; the unit sells at high prices but its capacity is limited.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "The converse holds when the demand shock is small: to alleviate its own price impact, it sells more slowly and over a longer interval.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "For really low demand, there is a discontinuous jump at the start and the end.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "The (dis)charge rate follows the path of the demand; in other words, it never completely smooths demand – neither when buying nor when selling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "In practical terms, storage never seeks to completely “shave the peak”, as practitioners often suggest.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "These results hold even under (dis)charge rate constraints, as long as the unit is not oversized in a sense that we make precise; that condition connects the (dis)charge rate constraint to the capacity of the unit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "When she operates under no information, we also allow the operator to learn the true state of demand and thus correct course.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "Upon learning, she either delays selling if the shock is high, or must (discontinuously) accelerate discharging if demand is low.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "Our main results pertain to the inter-cycle behavior for two cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "The critical insight is that a large storage operator need not trade her capacity in full every cycle, whether selling or buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "This affords her some further flexibility in making her trading decisions in both the second and the first cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "We find that the optimal strategy systematically takes advantage of this flexibility, both in selling and buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "In other words, even with a finite horizon, for some combinations of capacity and demand shocks, there are intertemporal linkages between the two cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "A large storage unit that faces a low demand in the first cycle withholds energy to ( a ) mitigate its own price impact when selling in the current cycle and ( b ) purchase comparatively less (than it otherwise would) next cycle, which also mitigates its price impact when buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "This speaks to the incentives to save energy across cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "In addition, if for whatever reason, the storage operator enters the second cycle with a positive inventory – say, as a result of withholding – she buys enough to reach an optimal inventory level ( c ′ m or c ′′ m ) that exceeds the one-cycle optimal inventory ( c m ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "However, the total purchase in the second cycle remains lower than the one-cycle optimal quantity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "In other words, the operator takes a cheap gamble on a larger demand shock in the second cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "The gamble is cheap because less energy is purchased than the one-cycle optimal quantity, which implies also a lower price impact when buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "This cost-saving dominates the risk of facing a poor demand shock in the second cycle and the gamble has a strictly positive expected value.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "Then proceeding backwards, the storage operator also takes a gamble in the first cycle by purchasing more than the one-cycle optimum c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "This gamble is not cheap but it is not risky since the storage unit can keep some of its charge at the end of that cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "Time provides some insurance, and this delivers again a lottery with a strictly expected value.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "The consequence of this optimal behavior is that storage progressively shifts less energy from the low-value to the high-value period (see Figure 1 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "There is less intertemporal smoothing of demand in the market because of more intertemporal smoothing of trades to the benefit of the storage operator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "When the storage capacity is small enough, the unit does trade its entire capacity every cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "The incentives to withhold and gamble disappear because the price impact is not large enough; these intertemporal linkages vanish.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "Because storage is an intermediation activity and demand is inelastic in this model, it delivers no direct welfare benefit in the aggregate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "The same quantity has to be delivered, so at best storage activities reallocate rents between consumers, producers and itself. 7 Hence any welfare implications are distributional in nature; we compute the transfers from consumers (to storage and sellers) and show that storage increases consumer welfare.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "Other welfare benefits may lie outside our model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 60,
+    "text": "For example, if generators are excessively extracted by a storage sector with market power, they may not invest as much as socially optimal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 61,
+    "text": "With an elastic demand however, the behavior of the storage unit induces quantity withholding (see Balakin and Roger, for example).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 62,
+    "text": "Then the implication for competition authorities is immediate: it should promote entry by small operators, and prohibit firms from owning multiple units to preempt coordination.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 63,
+    "text": "Our model borrows from that used by Andres-Cerezo and Fabra, which also uses a periodic function to model a deterministic time-varying demand to analyze the interaction of storage and renewable generation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 64,
+    "text": "To this basic construction we add market power, uncer In the specific case of electricity, the welfare benefit of storage is the reduction in GHG emissions through the emergence of renewable energy on a large scale.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 65,
+    "text": "tainty and dynamics – multiple cycles – to study the optimal strategy of a storage operator in the details it deserves. 8 Our work departs significantly from Cruise et al., who study storage operations under imperfect competition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 66,
+    "text": "First we take profit maximization as the objective function rather than cost minimization (which are not equivalent under imperfect competition).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 67,
+    "text": "Second, we allow for a cyclical, but uncertain demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 68,
+    "text": "Third, our storage unit operates in continuous time, which allows us to express strategies as power rates rather than quantities.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 69,
+    "text": "We need not rely on an exogenous parametrization of the market impact (the term λ in Cruise et al. ); instead we can compute that market impact from the endogenous variables.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 70,
+    "text": "In another paper, Andres-Cerezo and Fabra study the question of market structure with storage but leave aside how storage actually behaves; in particular, they ignore the dynamics of storage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 71,
+    "text": "Butters et al. ( Working Paper ) use California data to estimate the equilibrium effect of large-scale storage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 72,
+    "text": "Storage is assumed to behave competitively and trades in quantities rather than rates; this is almost orthogonal to our work.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 73,
+    "text": "Karaduman presents an early economic study of grid scale storage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 74,
+    "text": "He does allow for market power in a quantity game; however he does not compute the best reply but simulates it using Australian data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 75,
+    "text": "Geske and Green study arbitrage in a model of imperfect competition with demand uncertainty and diurnal, weekly and seasonal patterns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 76,
+    "text": "They must confine themselves to numerical (approximate) solutions to the welfare maximization problem and show quantity withholding.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 77,
+    "text": "In two other papers, Balakin and Roger and Balakin and Roger, we study optimal strategies and equilibria of games where storage operator(s) face an uncertain demand, the mean of which is constant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 78,
+    "text": "Here demand varies over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 79,
+    "text": "It is important to note that hydro-electric power differs from storage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 80,
+    "text": "The water inflow is free, exogenous and stochastic; our storage unit pays for the energy it buys and it makes that decision optimally as part of its trading strategy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 81,
+    "text": "In addition, most models of dam management take prices as fixed (not even moving in the aggregate).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 82,
+    "text": "This work bears connection to the literature on asset trades in financial mathematics and economics but also differs fundamentally.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 83,
+    "text": "Almgren and Chriss solve the problem of a trader facing a trade-off between price impact (i.e. market power) and price uncertainty.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 84,
+    "text": "Selling too fast decreases the clearing price, but selling slowly increases the risk of price shocks. 8 Andres-Cerezo and Fabra are not the first to model market demand using a periodic function; see for example Dhar et al. and others since.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 85,
+    "text": "Vayanos considers the strategic dimension of a similar problem where the price impact also depends on the behaviour of other traders but traders are all identical.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 86,
+    "text": "Sannikov and Skrzypacz extend Vayanos to heterogeneous traders, which introduces momentum in prices. 9 In all these papers, traders mitigate their price impact by trading slowly over time – just like our storage operator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 87,
+    "text": "The motivations for trading are very different though.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 88,
+    "text": "The financial traders in these papers face idiosyncratic shocks and so trade to diversify their risk.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 89,
+    "text": "Our storage units arbitrages intertemporal price differences and therefore supplies (imperfect) insurance in the face of aggregate risk.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 0,
+    "text": "Consider a market with a single storage operator, an infinite number of competitive sellers (for example, generators in the case of electricity), and a pool of consumers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 1,
+    "text": "The behavior of consumers is described by the price inelastic, but time-varying, demand function D ( t,      θ − sin t if t − (1 + ⩾ 1 is a parameter that captures the mean demand, t is time and − 1, 1] is a demand shock that augments the peak of demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 2,
+    "text": "Momentum can be understood as inertia: the clearing price keeps drifting even after the trade is completed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 3,
+    "text": "This is due to the action of large traders and the heterogeneity of traders.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 4,
+    "text": "The demand function D is thus periodic, so E – so the first action must be to purchase: b.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 5,
+    "text": "Given D ( t, “duck curve”), such as California, Texas, Spain or Australia.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 6,
+    "text": "The sellers each produce a quantity q with a diminishing-return technology that induces convex costs; we specialise the cost function to be quadratic, which is sufficient for the model and not substantive to the argument: c ( q ):= q 2 / 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 7,
+    "text": "Thus, by the standard arguments that Marginal Cost = Marginal Benefit and MB = p due to perfect competition among suppliers, the clearing price p is equal to the aggregate quantity q = c ′ ( q ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 8,
+    "text": "More precisely, we have the following market clearing conditions that determine the price function p:",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 9,
+    "text": "q ( t ) = p ( t ) = θ − sin t + b ( t ) if t − (1 + ε ) sin t − s ( t ) if t; we write b 2 ( t, ε 1 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Model",
+    "paragraph_id": 10,
+    "text": "Because the payoffs and the relevant constraints also depend on this information structure, we specify them for each case as we proceed with the analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "The main result",
+    "paragraph_id": 0,
+    "text": "Here we state and explain heuristically the main finding and postpone its thorough analysis to the next Section.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "The main result",
+    "paragraph_id": 1,
+    "text": "There are two cycles with time t ranging from 0 to 4; the buying strategy b 2:= b 2 ( t,; this is the largest quantity traded over one cycle when the storage operator receives information at time t =",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 0,
+    "text": "Over two cycles, the optimal strategy of a storage operator consists in:",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 1,
+    "text": "• buying a quantity X = min { k,c̄ }, wherec̄ ⩾ c m depends solely on the distribution of the shocks, using the function b 1 ( t ) for t − t 0 ), where t 0; • selling a quantity Y < X following the function s 1 ( t, − t − Y > 0; or • selling a quantity Y = X following the function s 1 ( t, − t",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 2,
+    "text": "In the second cycle:",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 3,
+    "text": "• buying a quantity Z = min { k, c } where c:= c ( ε 1 ) ⩽ c m is endogenously determined, according to the function b 2 ( t, − t 0 ) where t 0; • selling the quantity c + Z ⩾ X according to a function s 2 ( t, − t; • the storage unit finishes empty.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 4,
+    "text": "In the formal statement of this result we characterize exactly the functions b 1, s 1, b 2 and s 2, the intervals over which they are non-zero, the quantities X, Y and Z (at least for k ⩽ c m ), as well as the exact conditions (realisations of ε and capacity level k ) under which each action becomes optimal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 5,
+    "text": "For now we confine ourselves to explaining some aspects of this result.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 6,
+    "text": "Whether buying or selling, the storage unit picks an optimal rate b, s and an optimal time window – the thresholds t 0 and t; there is no demand uncertainty in the buying periods, and the quantity to be purchased is known. 11 Hence the function b 1 ( t ) is independent of ε 1 – it does depend on its distribution – and b 1 ( t ) minimizes the cost of buying the required quantity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 7,
+    "text": "History matters in this dynamic problem, and it is reasonable to expect intertemporal linkages between cycles (true dynamics).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 8,
+    "text": "They obviously show through the function b 2 ( t,",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 9,
+    "text": "the state of charge c ( – so not everything has been sold, for whatever reason – the storage operator buys less in the second cycle than in the first one, hence c < c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 10,
+    "text": "But in total she holds more after purchase than in the static benchmark – more than c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 11,
+    "text": "She takes a cheap gamble on the second cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 12,
+    "text": "The gamble is cheap because she buys lower quantities at a lower price than in the first cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 13,
+    "text": "This makes up for the cost of the risk in taking the gamble, which has a positive expected value.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Result:",
+    "paragraph_id": 14,
+    "text": "Finally, this behavior actually starts from the first cycle at t = 0 because the storage operator anticipates not having to sell everything in a single cycle if demand is low; she can keep some charge level c ( ̄. The next Section is devoted to understanding the details of this result, some of which are quite intricate and technically demanding.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Analysis",
+    "paragraph_id": 0,
+    "text": "The analysis is broken down in four steps to better understand the role of three elements on the optimal strategy within a cycle, namely information setting, capacity k and stochastic shock ε. In the last step we pull everything together to shed some light on dynamic incentives.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Analysis",
+    "paragraph_id": 1,
+    "text": "Hence we begin with a single cycle and continue with the two-cycle model; the single-cycle case is used as benchmark against which one can contrast the dynamic, optimal strategies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 0,
+    "text": "Within a cycle we focus on the role of information, capacity and demand on the optimal strategy of the storage operator, which acts as a monopolist on her residual demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 1,
+    "text": "Understanding how the monopolist behaves “myopically” – in the sense of over a single cycle [0, 2 π ] – is the key to this problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 2,
+    "text": "No information Under no information about the shock",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 3,
+    "text": "max b ( t ),s ( t ) \" − Z − sin t + b ( t )) b ( t ) dt + 1 Z 1 − 1 Z 2 − (1 + ε ) sin t − s ( t )) s ( t ) dtdε # (4) and reflects the fact that there is no uncertainty from 0 to − 1, 1] and the density is 1 / 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 4,
+    "text": "The storage unit is subject to the natural constraints b ( t ) ⩾ 0, s ( t ) ⩾ 0, Z π b ( t ) dt ⩽ k, Z 2 π ( b ( t ) − s ( t )) dt ⩾ 0. (5) There is no short-selling, it can buy quantities at the rate b ( t ) up to its capacity k, and it cannot sell more than has been bought before.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 5,
+    "text": "A storage unit starts from empty at time 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 6,
+    "text": "Expression ( 4 ) can be simplified to max b ( t ),s ( t ) \" − Z − sin t + b ( t )) b ( t ) dt + Z 2 − sin t − s ( t )) s ( t ) dt #, that is, with symmetric noise around the mean, the storage unit sells following mean demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 7,
+    "text": "In the Appendix we prove Lemma 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 8,
+    "text": "The optimal storage strategy that solves ( 4 ) subject to ( 5 ) is characterized as • If k ⩽ 1, b ( t ) In this case, the last two inequalities of ( 5 ) are bounded, so the storage operator always trades its full capacity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 9,
+    "text": "• If k > 1, b ( t ) =      sin t if t      − sin t if t",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 10,
+    "text": "The storage operator simply trades the monopoly quantity of 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 11,
+    "text": "In Figure 3 below we depict the optimal paths b ( t ), s ( t ) for different capacity levels (for any k > 1 the path is the same as for k = 1 since 1 is the monopoly quantity under no information).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 12,
+    "text": "The threshold t 0 marks the first intersection of the function b ( t ) with the x axis; the second intersection determines π − t 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 13,
+    "text": "The interval [ t 0, π − t 0 ] grows longer and b ( t ) reaches a higher maximum as capacity k increases; the storage unit simply buys more.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 14,
+    "text": "The same holds for the function s ( t ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 15,
+    "text": "The storage unit is a monopolist that operates for a single cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 16,
+    "text": "Under no information, it computes the best trajectory s ( t ) to maximize its expected payoff max E [ profit ( − t 0 ] and [ − t 0 ] of the same length.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 17,
+    "text": "Finally, when the capacity k ⩽ 1, it can always be absorbed in full by the demand for t; otherwise the storage operator simply behaves like a monopolist and restrains quantities to at most 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 18,
+    "text": "Importantly, and this is a recurring theme that pervades this paper, the storage operator spreads the quantities she buys and sells over the relevant interval.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 19,
+    "text": "There is no selling at a constant rate s ( t ) = round the peak of demand; the storage operator wants to follow the path of demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 20,
+    "text": "In doing so, she preserves a large mark-up (near the peak) at the expense of a smaller inframarginal loss (near the boundaries of the interval).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 21,
+    "text": "This logic is simply that of monopoly pricing, but where time can also be used to smooth price impact.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 22,
+    "text": "Incomplete information Now let the storage operator receive a fully informative signal about the shock ε; this could be observing the shock itself or receiving a precise report of it. 12 Clearly the storage unit can set its selling strategy according to this information: s ( t ):= s ( t, ε ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 23,
+    "text": "Then the maximization problem changes to:",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 24,
+    "text": "max b ( t ), { s ( t,ε ) } \" − Z − sin t + b ( t )) b ( t ) dt + 1 Z 1 − 1 Z 2 − (1 + ε ) sin t − s ( t, # (7) subject to constraints b ( t ) ⩾ 0, s ( t, ε ) ⩾ 0, Z π b ( t ) dt ⩽ k, Z 2 π ( b ( t ) − s ( t, ε )) dt ⩾ 0 for any − 1, 1]. (8) In the objective function ( 7 ), each trajectory is a function s ( t, − 1 ⩽ ε ⩽ 1 that solve Problem ( 7 ) subject to ( 8 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 25,
+    "text": "The constraint set ( 8 ) is almost as in ( 5 ) except for the exact definition of the function s ( t, ε ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 26,
+    "text": "This makes for a much richer problem already.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 27,
+    "text": "Not only can the operator use a perfectly adapted selling strategy, we show she can also avail more flexibility in the quantity of energy traded.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 28,
+    "text": "The optimal storage strategy that solves ( 7 ) subject to ( 8 ) is characterized as: 12 Information remains incomplete in that at t = 0, the operator does not know ε yet.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 29,
+    "text": "• If k ⩽ 1, b ( t ) • If 1 < k ⩽ c m, where c. 009 is a root of the equation Z 1 k − 1 (1 + − 1) + k 2 π (10) with respect to k, then b ( t ) =      sin t 2 + 1 π ( k − 1) if t      − 1+ − t ⩾ k − 1, s ( t, ε ) =      π ( k − 1 − ε ) − 1 2 (1 + − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 30,
+    "text": "In these two cases, the last two inequalities of the set ( 8 ) are bounded, therefore storage always trades its full capacity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 31,
+    "text": "• If k In this case, storage optimally does not trade its whole capacity but only up to c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 32,
+    "text": "The function s ( t, – see Lemma 1 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 33,
+    "text": "The quantity c m is the profit-maximizing quantity of the unconstrained monopolist under this information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 34,
+    "text": "It is akin to the simple profit-maximizing quantity of a monopolist facing linear demand q ( p ) = 1 − p.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 35,
+    "text": "Even with unbounded capacity, this monopolist only ever trades q = 1 / 2; this is our c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 36,
+    "text": "The upper bound c m is determined as a function of the distribution of the shock ε. In a one-shot game, the operator never trades more than c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 37,
+    "text": "Then the interpretation of the conditions of Lemma 2 should be read as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 38,
+    "text": "When 1 ⩽ k ⩽ c m, the binding constraint is the capacity k; when c m < k, c m binds.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 39,
+    "text": "It is useful to recall this quantity as our one-cycle benchmark to be compared to results of the dynamic model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 40,
+    "text": "0. 0. 0. 0. 1. k 0. 0. 0. 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 41,
+    "text": "U Information: No Yes 0. 0. 0. c m 1. 1. k 0. ’s actions is instanteneous.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 42,
+    "text": "Our next Proposition characterises this corrective action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 43,
+    "text": "Note first that, as a consequence of Lemma 1, a storage operator holds at most c = 1 at time t = π. Hence, in implementing any correction, it is as if k ⩽ 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 44,
+    "text": "Let k ⩽ 1 and suppose the storage operator follows the optimal strategy laid out in Lemma 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 45,
+    "text": "Upon selling at time t 0, it learns the shock",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 46,
+    "text": "A storage operator need not update her strategy; • If − 1 < 0 such that:",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 47,
+    "text": "– if ε p ⩽ ε < 0,s̃ ( t, ε ) =      − 1 + − t 1 ), otherwise, where t 1 − ( π − t 0 − t 1 ) sin t 1 = 2 k 1 + ε; (13) – if ̃ ( t, ε ) =        k π − t 0 − 1 + − t 0 + sin t if t",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 48,
+    "text": "A shock that is larger than anticipated is good news for the selling storage unit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 49,
+    "text": "It is also easy to handle: the storage operator immediately suspends discharge and postpones selling until the optimal time t ε, whereupon she follows the corresponding optimal strategy described in Lemma 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 50,
+    "text": "In contrast, when the shock is smaller than expected, selling following s ( t ) according to Lemma 1 (under no information) starts too late to be optimal – see Lemma 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 51,
+    "text": "The storage operator must immediately accelerate discharge.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 52,
+    "text": "How much to accelerate, and especially when to stop selling, depend on the exact level of the shock “late” in selling, and so must immediately increase the intensity of discharge.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 53,
+    "text": "Then there is a lower peak and wider support compared to the default function s ( t ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 54,
+    "text": "However, selling stops at time t 1 < 2 · 0. 342 1+cos π/ 6 − 1 = − 0. 633 and t 1 = 0. 198 can be obtained from formula ( 13 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 55,
+    "text": "We consider shocks taking values ε = − 0. 5 and ε = − 0. 75, so on either sides of threshold ε p.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 56,
+    "text": "In both panels, the no-information selling strategy s ( t ) is shown with the dashed line.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "One cycle",
+    "paragraph_id": 57,
+    "text": "With these preliminaries in hand we turn to the two-cycle model to examine intertemporal incentives.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 0,
+    "text": "Compared to the one-cycle case, now the storage operator may have more options to smooth sales after time t = π – depending on the exact information that is available to her.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 1,
+    "text": "Consider a two-cycle model for 0 ⩽ t ⩽ 4?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 2,
+    "text": "That is, are there intertemporal incentives to smooth trade between two cycles by altering buying and selling decisions compared to the one-cycle problem?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 3,
+    "text": "Second, does this option to not sell the entire inventory at time t = 2 π alter the first-cycle incentives to purchase?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 4,
+    "text": "For completeness and to ease the transition we start with the simple case of no information over two cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 5,
+    "text": "That is, the operator never learns (",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 6,
+    "text": "No information Under no information, the maximization problem is max b 1,s 1,b 2,s 2 \" − Z − sin t + b 1 ( t )) b 1 ( t ) dt + 1 Z 1 − 1 Z 2 − (1 + ε 1 ) sin t − s 1 ( t )) s 1 ( t ) dtdε 1 − Z 3 − sin t + b 2 ( t )) b 2 ( t ) dt + 1 Z 1 − 1 Z 4 − (1 + ε 2 ) sin t − s 2 ( t )) s 2 ( t ) dtdε 2 # (14) where s i:= s i ( t ) and b i:= b i ( t ), i = 1, 2, and subject to the constraints b i ( t ) ⩾ 0, s i ( t ) ⩾ 0, i ⩽ k, Z 2 π ( b 1 ( t ) − s 1 ( t )) dt ⩾ 0, (15) Z 3 π ( b 1 ( t ) − s 1 ( t ) + b 2 ( t )) dt ⩽ k, Z 4 π ( b 1 ( t ) − s 1 ( t ) + b 2 ( t ) − s 2 ( t )) dt ⩾ 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 7,
+    "text": "The two new constraints of set ( 15 ) assert that cumulative buying net of cycle-one selling cannot exceed capacity, and that the storage unit cannot cumulatively sell more than it cumulatively buys.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 8,
+    "text": "We show a simple result.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 9,
+    "text": "If k ⩽ 1, the optimal storage strategy which solves ( 14 ) subject to ( 15 ) is b i ( t ) =      2 (sin t − sin t 0 ) if t − 1) + t 0, − 1) − t 0 ), otherwise, s i ( t ) =      − 1 2 (sin t + sin t 0 ) if t − 1) + t 0, 2 πi − t 0 ), otherwise, where t 0 is a root of equation ( 6 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 10,
+    "text": "Storage trades its entire capacity in both cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 11,
+    "text": "If k > 1, the optimal storage strategy which solves ( 14 ) subject to ( 15 ) is b i ( t ) =      sin t if t − 1) + t 0, − 1) − t 0 ), otherwise, s i ( t ) =      − sin t if t − 1) + t 0, 2 πi − t 0 ), otherwise, for i = 1, 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 12,
+    "text": "The storage operator trades a quantity equal to 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 13,
+    "text": "Under no information the two cycle-problem is no different from the one-cycle problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 14,
+    "text": "To maximize its profits, a storage unit just buys and sells up to min { k, 1 }; more to the point, it behaves exactly in the same way in both cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 15,
+    "text": "The reason is that there is no information acquisition over the two cycles, so that the second cycle is a repetition of the first one.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 16,
+    "text": "When capacity is large, the optimal strategy is very simple and resembles a straightforward repetition of the (unconstrained) monopoly problem facing mean demand.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 17,
+    "text": "Next we investigate the impact of information revelation on the intertemporal incentives of a storage operator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 18,
+    "text": "Incomplete information As in section 4.1., assume now that at times t =",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 19,
+    "text": "max b 1, { s 1 }, { b 2 }, { s 2 } \" − Z − sin t + b 1 ( t )) b 1 ( t ) dt + 1 Z 1 − 1 Z 2 − (1 + ε 1 ) sin t − s 1 ( t, − Z 3 − sin t + b 2 ( t, − 1 Z 4 − (1 + ε 2 ) sin t − s 2 ( t, # (16) subject to a new constraint set b 1 ( t ) ⩾ 0, s 1 ( t, ε 1 ) ⩾ 0, b 2 ( t, ε 1 ) ⩾ 0, s 2 ( t, ⩾ 0, Z π b 1 ( t ) dt ⩽ k, Z 2 π ( b 1 ( t ) − s 1 ( t, ε 1 )) dt ⩾ 0, Z 3 π ( b 1 ( t ) − s 1 ( t, ⩽ k, (17) Z 4 π ( b 1 ( t ) − s 1 ( t, − s 2 ( t, ⩾ 0 for any − 1, 1]. Learning from Section 4.1., we conclude that storage always sells everything in the last cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 20,
+    "text": "It is also easy to see that if storage sells all its energy in the first cycle (and starts the second cycle at t = 2?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 21,
+    "text": "Dynamics allow for even more flexibility, which raises the question of how much to buy in the interval from 2 − 1 ⩽ ε 1 ⩽ 1, { b 2 ( t, ε 1 ) } − 1 ⩽ ε 1 ⩽ 1, { s 2 ( t, − 1 ⩽ ⩽ 1 for each − 1, 1] and − 1, 1] that solve Problem ( 16 ) subject to ( 17 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 22,
+    "text": "This analysis is quite complicated because, in addition to the richness of the analysis of Lemma 2, it also requires keeping track of the state variable c that is implicitly determined through integral equations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 23,
+    "text": "This proves to be too much and instead we proceed in multiple steps.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 24,
+    "text": "First we characterize the optimal strategies of a storage operator as a Proposition for k ⩽ c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 25,
+    "text": "Then we append this first result with a second one that details the optimal strategy of the operator when the interim state of charge c 0 takes arbitrary positive values for any capacity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 26,
+    "text": "Finally we present numerical results for c m < k.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 27,
+    "text": "Combining all these paints a picture as we portray in Section 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 28,
+    "text": "To formally state our results we must define some auxiliary constants.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 29,
+    "text": "Let the threshold shock ̄ ̄ − 1), wheret̄ ε is defined from ( 11 ). ̄ ε is the smallest positive shock under which the operator still finds it optimal to trade her capacity in full for any k ⩽ c m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 30,
+    "text": "Let also the quantities c 1:= c 1 ( − 1 − − 1), (18) respectively, where t b and t s are defined from ( 26 ) and ( 28 ) (in the Appendix).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 31,
+    "text": "The quantities c 1 and c 2 are maximum, unconstrained levels of charge at the interim stage ( t = 2 − π 2 − t sin t = c 1 ( ε 1 ), cos t − π 2 − t sin t = c 2 (",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 32,
+    "text": "k ε − 1 1 c m 0. 529 k c 1 k ε c m 1. 009 ̄",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 33,
+    "text": "The optimal storage strategy which solves ( 16 ) subject to ( 17 ) is as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 34,
+    "text": "• Storage always buys up to capacity k in the first period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 35,
+    "text": "The buying strategy b 1 ( t ) is b 1 ( t ) =      2 (sin t − sin t 0 ) if t − t 0 ), otherwise, if 0 < k ⩽ 1, b 1 ( t ) =      sin t 2 + 1 π ( k − 1) if t ⩽ c m, where t 0 is defined by ( 6 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 36,
+    "text": "• If k ⩽ c 1 under − 1 ⩽ ε 1 ⩽ 0, or k ⩽ c 2 under 0 < ε 1 ⩽ ̄ ε, or k ⩽ c m under ̄ ⩽ 1, then the selling strategy s 1 ( t,      − 1+ − t ⩾ k − 1, s 1 ( t, ε 1 ) =      π ( k − 1 − ε 1 ) − 1 2 (1 + − 1, b 2 ( t, ε 1 ) =      2 (sin t − sin t 0 ) if t − t 0 ), otherwise, if k ⩽ 1 b 2 ( t, ε 1 ) =      sin t 2 + 1 π ( k − 1) if t − 1 ⩽ ε 1 ⩽ 0, the optimal strategies are s 1 ( t, ε 1 ) =      π ( c 1 − 1 − ε 1 ) − 1 2 (1 +      2 (sin t − sin t 1 ) if t − t 1 ), otherwise.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 37,
+    "text": "If k > c 2 under 0 < ε 1 ⩽ ̄      − 1+ − t 2 ), otherwise, b 2 ( t, ε 1 ) =      sin t 2 + 1 π ( k − 1) if t",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 38,
+    "text": "• Storage always sells all its capacity k in the second period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 39,
+    "text": "The selling strategy s 2 ( t ) is s 2 ( t, ε 2 ) =      − 1+ − t ⩾ k − 1, s 2 ( t, ε 2 ) =      π ( k − 1 − ε 2 ) − 1 2 (1 + − 1, where t s defined from ( 9 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 40,
+    "text": "This Proposition shows us importance of dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 41,
+    "text": "In the one-cycle setting, the storage operator always buys and sells up to the minimum of capacity k and c m – whichever binds.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 42,
+    "text": "In a two-cycle setting, the incentives differ.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 43,
+    "text": "Depending on capacity k, either it or the quantities c 1 (; as alluded to, the novelty is the interim period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 44,
+    "text": "For small enough a capacity, nothing changes and capacity is traded in full: consider the shock ε 1 = − 1, which implies that c 1 = 0. 529.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 45,
+    "text": "Then only for k ⩽ 0. 529 does the storage operator trade her full capacity every cycle, and the strategies are identical to those in Lemma 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 46,
+    "text": "But for a larger capacity, whether she does depends on the shock as well.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 47,
+    "text": "Indeed, if the shock is negative and capacity is high enough, the storage operator prefers not selling everything but keeping some energy, so that c > 0 at time t = 2 − 1 / 2, we have c 1 = 0. 757, which means that for any capacity k > 0. 757, storage indeed prefers not to sell everything under the bad shock.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 48,
+    "text": "This allows her to buy less, and thus to move prices to a lesser extent, in the second cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 49,
+    "text": "How much less the operator buys is not obvious at all, and the object of our next Proposition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 50,
+    "text": "Figure 7 shows this is not just a curiosity but is relevant for a non-trivial region of the parameter space.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 51,
+    "text": "For our next statement we need to introduce some further notation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 52,
+    "text": "Let c 0 denote the initial state of charge.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 53,
+    "text": "Here we let c 0 > 0 to study the incentives of the operator at the interim stage t = 2 π; it is as if finishing the first cycle with a positive state of charge.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 54,
+    "text": "Next define c. 015 to be the root of the equation Z 1 c − 1 (1 + ′ m:= c ′ m ( c 0 ) and c ′′ m:= c ′′ m ( c 0 ) be roots of the equations Z 1 c − 1 (1 + − sint̃ b, Z 1 c − 1 (1 + − c 0 − 1), (20) respectively, wheret̃ b − π 2 − t sin t = c − c 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 55,
+    "text": "The quantities c ′ m and c ′′ m play the same role as c m in the one-cycle problem; they are unconstrained maximum energy levels that the storage unit may want to accumulate – but may not be able to if its capacity k is smaller.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 56,
+    "text": "Importantly, c ′ m ( c 0 ) > c m and c ′′ m ( c 0 ) > c m as soon as c 0 > 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 57,
+    "text": "Finally, let’s define t ′ ε and t ′′ ε as roots of the equations cos t − π 2 − t sin t = c ′ m 1 + ε, cos t − π 2 − t sin t = c ′′ m 1 + ε, respectively, andt̃ 0 as a root of the equation cos t − π 2 − t sin t = k − c 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 58,
+    "text": "As in the simpler one-cycle problem, t ′ ε, t ′′ ε andt̃ 0 are time thesholds that pin when the storage unit sells and buys.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 59,
+    "text": "We state the formal problem in the proof and provide the result directly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 60,
+    "text": "Let 0 < c 0 ⩽ min { 1, − 1 }. If k ⩽ c ′′ m under 0 < c 0 ⩽ c p − 1 or k ⩽ c ′ m under c 0 > c p − 1, then the optimal storage strategy for the second period is b ( t ) =      sin t − sint̃ 0 if t ̃ 0, 3 π −t̃ 0 ), otherwise, if c 0 ⩾ k − 1, b ( t ) =      sin t 2 + 1 π ( k − c 0 − 1) if t − 1, s ( t, ε ) =      − 1+ − t ⩾ k − 1, s ( t, ε ) =      π ( k − 1 − ε ) − 1 2 (1 + − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 61,
+    "text": "If k > c ′ m under c 0 > c p − 1, the optimal storage strategy is b ( t ) =      sin t − sint̃ 0 if t ̃ 0, 3 π −t̃ 0 ), otherwise, s ( t, ε ) =      − 1+ ε 2 (sin t + sin t ′ ′ − t ′ ⩾ c ′ m − 1, s ( t, ε ) =      π ( c ′ m − 1 − ε ) − 1 2 (1 + ′ m − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 62,
+    "text": "If k > c ′′ m under 0 < c 0 ⩽ c p − 1, the optimal storage strategy is b ( t ) =      sin t 2 + 1 π ( c ′′ m − 1) if t      − 1+ ε 2 (sin t + sin t ′′ ′′ − t ′′ ⩾ c ′′ m − 1, s ( t, ε ) =      π ( c ′′ m − 1 − ε ) − 1 2 (1 + ′′ m − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 63,
+    "text": "The constraint on c 0 is technical; it requires the (initial) state of charge to not be too large compared to market size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 64,
+    "text": "We are confident it is not substantive in that its smallest value is π/ 2 − 1; in this case, the minimum demand is 0, the maximum is 2 on average and therefore the average traded quantity in a one-cycle problem is close to 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 65,
+    "text": "In a two-cycle problem, c 0 = π/ 2 − 1 would correspond to keeping at least half of the quantity purchased in the prior cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 66,
+    "text": "This Proposition speaks to the incentives to buy; selling is readily understood from Lemma 2 as this is the last cycle of operation for the storage unit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 67,
+    "text": "These incentives to buy depend on the interaction of capacity k and the state of charge c 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 68,
+    "text": "For a small capacity k, it is the constraining factor when the state of charge c 0 is large enough; then the initial state of charge only matters to determine when to start and stop charging.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 69,
+    "text": "If c 0 is sufficiently small, the storage operator wishes to buy more and adopts a buying strategy that resembles the selling strategy of Lemma 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 70,
+    "text": "She starts buying immediately at a strictly positive rate, finishes at t = 3 π at a positive rate and accumulates k starting from c 0, which may exceed c m (depending on the exact value of k ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 71,
+    "text": "For a large capacity (in excess of c ′ m or c ′′ m ), if c 0 is large, c ′ m is the constraining maximum and c 0 only matters to determine when to start and stop buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 72,
+    "text": "The selling strategy mirrors that Lemma 2 and so depends on the value of c ′ m.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 73,
+    "text": "If c 0 is small enough, c ′′ m is the constraining maximum state of charge; the operator wants to charge more and so adopts a similar strategy of starting and finishing at a strictly positive rate at the boundaries of the charging interval.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 74,
+    "text": "The selling strategy is as before.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 75,
+    "text": "Hence we see that a storage operator has incentives to buy in such a way to accumulate more than c m starting from some positive initial state c 0, even if operating for a single cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 76,
+    "text": "The reason is that the purchased quantity c ′′ m − c 0 or k − c 0 is smaller than c m, and so costs less to acquire.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 77,
+    "text": "This allows the storage operator to take a cheap gamble in the hope of a large, positive shock at time t = 3 ⩽ c m, which limits the applicability of our results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 78,
+    "text": "The complementary case to Proposition 5 – when capacity is larger ( k > c m ) – is analytically intractable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 79,
+    "text": "However, even though the exact solution is out of reach, we are able to compute solutions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 80,
+    "text": "Bearing in mind Proposition 6, the next Table 1 illustrates the dependence of the new maximal state of charge c ′ m, c ′′ m that optimally emerges at t = 3 π on the value of c – the energy left from the first cycle (at t = 2 π ). (Capacity k is large enough: k > c ′ m, c ′′ m ⩾ c m.):",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 81,
+    "text": "c 0.005 0. 0.015 0. 0. 0. 0. 0. 0. c ′ m, c ′′ m 1.009 1.011 1.013 1.015 1.017 1.021 1.029 1.049 1.137 1.236 Table 1 Indeed, a storage unit that optimally withholds quantities in the first cycle also optimally accumulates more in the second cycle than the one-cycle optimum, and does so buy buying less than the one-cycle optimum.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 82,
+    "text": "When c = 0, the storage operator optimally buys a quantity c m at the beginning of the second cycle, but it tends to purchase less as c grows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 83,
+    "text": "For example, for the very large c = 0. 5, the purchased quantity in the second cycle shrinks to c ′ m − c = 0. 736.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 84,
+    "text": "Nevertheless, the state of charge right at t = 3 π reaches c m for c = 0 and monotonically increases with c.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 85,
+    "text": "The functions c ′ m ( c ), c ′′ m ( c ) are concave.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 86,
+    "text": "This behavior in the second cycle in turn suggests that storage also finds it optimal to buy more than c m in the first period because it does not have to sell everything immediately.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 87,
+    "text": "These incentives change if, instead of independent shocks, the random process is (positively) serially correlated and shows persistence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 88,
+    "text": "In this case, the storage operator may expect another negative shock after the first one.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 89,
+    "text": "Then saving energy for later makes less sense.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 90,
+    "text": "Thus, persistence dampens the dynamics and the problem converges to a simple repeated one period maximization problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 91,
+    "text": "We are unable to derive formal analytical results for the very interesting case that allows for learning, as in Proposition 3, over two periods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 92,
+    "text": "However it is intuitive to conjecture that instead of selling all its energy in suboptimal circumstances, a storage operator would then have strong incentives to preserve energy for the next cycle instead.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Two cycles",
+    "paragraph_id": 93,
+    "text": "Then Propositions 5 and 6 apply.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 0,
+    "text": "Our model assumes market power; we point to the work of Asker et al. who show distortions that result from the exercise of market power are socially very costly and take the (same) view that it is an important feature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 1,
+    "text": "Market power is often derived from size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 2,
+    "text": "While most currently-operating storage facilities are small, their size is increasing rapidly from 150MWh for the Hornsdale Power Reserve (South Australia) in 2018 to 3,287MWh for the Edwards & Sanborn facility (California) in 2024.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 3,
+    "text": "When completed, the government-built pumped hydro scheme “Snowy 2.0” in the Snowy Mountains of Australia will deliver 2 GW of capacity – between 5% and 20% of market size depending on the time of the day.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 4,
+    "text": "However size alone is not necessary to exercise market power on a network because then market power is very local.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 5,
+    "text": "It is enough to be present at a node when transmission into the node is congested.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 6,
+    "text": "On an electrical network, the laws of power flows induce constraints that routinely result in local congestion. 16 Moreover, that local congestion can be exploited to artificially create market power, as shown by Cardell et al.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 7,
+    "text": "Finally, with convex costs, as in this model, suppliers can sway considerable market power in times of high demand because the supply function becomes very inelastic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Market power.",
+    "paragraph_id": 8,
+    "text": "In electricity, productions costs are widely accepted to be convex. 17 5.2",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 0,
+    "text": "It is widely anticipated that by trading over time, storage can contribute to the intertemporal smoothing of both clearing prices and quantities produced by intermittent generators; see for example Andres-Cerezo and Fabra.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 1,
+    "text": "This is unambiguously true under perfect competition, which they (and others) assume for a variety of reasons.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 2,
+    "text": "It is also true in this model when the capacity of the storage operator is small.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 3,
+    "text": "Even with market power, a small-scale operator trades her capacity in full every cycle, and so contributes fully to this smoothing exercise.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 4,
+    "text": "Here, whether a large operator delivers the same services depends on the state of charge. 16 Specifically, Ohm’s Law and Kirchoff’s Laws. 17 See for example https://hepg.hks.harvard.edu/faq/marginal-cost An empty operator has incentives to purchase more than c m to gamble on a positive demand shock this cycle or next.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 5,
+    "text": "Hence she contributes more to demand smoothing when buying.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 6,
+    "text": "But in the face of low demand in the selling interval, she withholds quantities and so contributes less to demand smoothing when selling (admittedly when demand smoothing is less critical and so carries a lower value).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 7,
+    "text": "An operator with a residual state of charge buys less than c m and in doing so, she contributes less to intertemporal smoothing on the market.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 8,
+    "text": "So an operator with a positive state of charge has incentives to smooth her own trades, thereby eschewing demand smoothing, while an empty unit amplifies her buying and so contributes to demand smoothing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 9,
+    "text": "In our model, the numbers in question are small: c m = 1. 009; so are the intra-cycle variations (on average, 2 from sin(; for example, in California, on July 16, 2024, net demand bottomed at 7,869 MW and peaked at 31,220 MW (so almost 3x the minimum) with a mean of 18,650 MW. For the 3rd of October 2024, the through was 10,062 MW, the peak 36,687 MW and the average 22,251 MW. In both instances there is an evident upward asymmetry that would speak in favour of purchasing more than c m at the beginning of the time horizon.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 10,
+    "text": "This consideration is becoming practically relevant; even though storage capacity is not dominant yet, it is increasing very rapidly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Intertemporal smoothing?",
+    "paragraph_id": 11,
+    "text": "For example, in California, storage accounts for approximately 11% of the dispatchable capacity in 2024. 18 5.3",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 0,
+    "text": "Demand is inelastic in this model, which implies that the intermediation activity of the storage operator is welfare neutral; more precisely, it has no direct welfare consequences and merely reallocates rents between the demand side, the supply side and itself.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 1,
+    "text": "In other words, these are distributional implications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 2,
+    "text": "But of course there may be more indirect welfare implications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 3,
+    "text": "On the proviso that VRE and storage are complements (see Andres-Cerezo and Fabra ), generators that face lower ex post rents may choose to invest less ex ante.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 4,
+    "text": "This may slow down the energy transition and keep large CO2 emitters active for longer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 5,
+    "text": "On the demand side, lower power prices (in the aggregate) relax the budget constraint of consumers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 6,
+    "text": "As a proxy for consumer welfare, we compute the total transfers consumers pay for the 18 https://www.caiso.com/documents/2023-special-report-on-battery-storage-jul-16-2024.pdf cases of no information and incomplete information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 7,
+    "text": "We stay with one period and k ⩽ 1 and denote W 0 ⩾ 0 and W 1 ⩾ 0 be consumers’ payments in the case of no information and incomplete information, respectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 8,
+    "text": "W 0 = 2 − k k − 1 + k cos t 0 − k 3 1 − 2 − k 3 π 2 − t 0 + cos t 0 sin t 0 + − t 0 I 1 ( k ) + 1 2 cos t 0 I 2 ( k ), where I 1 ( k ) is defined in ( 12 ) and I 2 ( k ) = Z 1 k − 1 (1 + x ) 2 sin t?",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 9,
+    "text": "To do so we compute the difference W 1 − W 0 for different mean demand",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 10,
+    "text": "0. 0. 0. 0. 1. k 0. 0. 0. 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Welfare implications.",
+    "paragraph_id": 11,
+    "text": "W 1 - W 0 = 2. = 2 = 1. = 1 Figure 8: Difference in consumers’ payments under incomplete information and no information as a function of k for various θ.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 0,
+    "text": "We already discuss some of the impact of information in Section 4.1., however remaining in the confines of our informational environment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 1,
+    "text": "That analysis considers only the starkest of cases: none or all the relevant information, and presumes of no random shock in the buying interval.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 2,
+    "text": "We discuss these in turn.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 3,
+    "text": "A more reasonable information structure may be a more progressive filtration or could involve the disclosure of an informative signal from which the storage operator can form a posterior belief and take a more informed action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 4,
+    "text": "The exact impact of this new posterior belief depends on the timing of arrival of the signal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 5,
+    "text": "If the signal arrives not before t =; that response depends also on the timing of information acquisition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 6,
+    "text": "The information structure may also include serial correlation between",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 7,
+    "text": "Buying under uncertainty.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 8,
+    "text": "In the main text, the storage operator buys under uncertainty as to selling (in the future) but at the time of purchase the contemporaneous demand is known.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 9,
+    "text": "This assumption is greatly simplifying but possibly substantive in the following sense.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 10,
+    "text": "If demand were also subject to stochastic shocks in the buying intervals, the storage operator likely would have stronger incentives to engage in intertemporal (inter cycles) smoothing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 11,
+    "text": "For example, fixing the selling strategy, a negative demand shock would be an opportunity to purchase more than c m since the price is lower than average.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 12,
+    "text": "Conversely for a positive demand shock in the buying interval, which in turn implies greater incentives to save energy in the prior period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "The role of information.",
+    "paragraph_id": 13,
+    "text": "In other words, more uncertainty amplifies the precautionary motive, as we uncovered in prior work ( Balakin and Roger ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 0,
+    "text": "The storage unit freely adjusts the rates s i, b i at which it sells and buys, respectively, to best manage its own price impact (equivalently, the impact of its own market power).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 1,
+    "text": "Technology may constrain these rates – for example, the discharge rate of a storage unit in electricity, the pipe capacity of a dam or the throughput rate in the case of inventory logistics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 2,
+    "text": "The impact of such a constraint depends on its tightness in a discontinuous way.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 3,
+    "text": "Our findings remain relevant if the capss̄,b̄ are not “too binding”, even if b ( t ) ⩽b̄ and/or s ( t ) ⩽s̄ for some t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 4,
+    "text": "More precisely, as long as the discharge rate constraints̄ is not too tight, that is k/π ⩽s̄, there exists a policy that maximizes the arbitrage revenue with this additional condition and under which storage trades its entire capacity k.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 5,
+    "text": "The constrained-optimal strategy features a time interval during which s ( t, ε i ) =s̄; the larger the shock, the longer that interval.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 6,
+    "text": "Under that strategy, it is still most profitable for the storage operator to buy and sell in full – as long k/π ⩽b̄ as well.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 7,
+    "text": "Ifs̄ ⩽ k/̄ ⩽ k/̄, and the storage unit uses only k.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 8,
+    "text": "From Section 4.1., it should use all of k in full.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 9,
+    "text": "From Section 4.2., whether it does may depend on another value of k (for a givens̄ ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Rate constraints.",
+    "paragraph_id": 10,
+    "text": "If considering an investment stage, it is clear that the triple ( k,s̄,b̄ ) with eithers̄ ⩽ k/π orb̄ ⩽ k/π (or both) is suboptimal; the unit is too large given its (dis)charge rate. 19",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 0,
+    "text": "This paper studies the profit-maximizing charge and discharge strategy of a large scale, monopoly storage operator in a competitive wholesale electricity market in continuous time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 1,
+    "text": "Demand fluctuates in an uncertain fashion over two cycles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 2,
+    "text": "Understanding optimal strategies in this environment is important to market participants, and by extension, their financiers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 3,
+    "text": "It is also essential to possibly design better-functioning markets and anticipate any possible corrective action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 4,
+    "text": "Because the storage unit has flexibility in its charge and discharge rate at any point in time, it adjusts both that rate and the time interval during which it operates to best manage the impact of its own market power on prices.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 5,
+    "text": "When demand is very large, so is the discharge rate and the operating window is narrow; the converse holds when demand is relatively low.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 6,
+    "text": "The smoothing of price and of traded quantities is imperfect.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 7,
+    "text": "For a small capacity, the storage unit trades its capacity in full in every cycle; the reason is the flexibility afforded by adjustable rates combined with a large enough difference in equilibrium prices.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 8,
+    "text": "However, when the capacity becomes large enough, intertemporal linkages between cycles emerge.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 9,
+    "text": "In the face of a low demand, a storage unit prefers saving energy to mitigate its price impact when selling and buying in the next cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 10,
+    "text": "Further, if saving some energy in the first cycle, the storage operator faces a favourable gamble in the second cycle and trades more energy in that second cycle than 19 Note there could be other reasons to oversize a storage unit as described here, such as reliability considerations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 11,
+    "text": "she would if operating for a single cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 12,
+    "text": "This extends to the first cycle because the second cycle provides some insurance against low demand in the first cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 13,
+    "text": "Finally we investigate welfare implications for consumers, which are limited to transfers in this model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 14,
+    "text": "The introduction of storage does decrease payments consumers have to make to satisfy their (energy) needs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "roger-2025-04-22_7677.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 15,
+    "text": "However, a better-informed storage extracts more surplus from consumers because it is better equipped to respond to demand shocks.",
+    "warnings": ""
+  }
+]

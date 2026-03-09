@@ -1,0 +1,2234 @@
+[
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 0,
+    "text": "Moral Characters: Social Media and U.S. Congressional Elections * Preliminary draft: Please do not circulate without authors’ permission Edoardo Grillo † Juan S. Morales ‡ Alessandra Moresi §.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 1,
+    "text": "June 19, 2024 Abstract This paper examines how social media, and the moral language used by political leaders on these platforms, affects electoral outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 2,
+    "text": "Using a new dataset of around 13 million U.S. House congressional candidates’ tweets, we begin our analysis by describing how candidates’ social media use emerged and evolved over the last fifteen years.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 3,
+    "text": "We use text analysis and data on social media engagement to explore the supply and demand of moral rhetoric on Twitter.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 4,
+    "text": "We show that moral language on Twitter is positively and strongly correlated with both social media engagement and electoral returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 5,
+    "text": "Then, using a regression discontinuity design (RDD) on primary elections, we show that social media use by politicians increases vote shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 6,
+    "text": "Heterogeneity analysis provides evidence that the effect is driven by candidates’ who tend to use moral language in their posts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 7,
+    "text": "JEL Codes: D 72, P 0, L 86, Z 13 Keywords: social media; moral rhetoric; political behaviour, elections * Trevor Ferreti, Rhea Sen, Zainab Shina-Wahab and Tanvi Sikka provided excellent research assistance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 8,
+    "text": "All errors are our own. † Department of Economics and Management “Marco Fanno”, University of Padua.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 9,
+    "text": "E-mail: edoardo.grillo@unipd.it ‡ Department of Economics, Lazaridis School of Business and Economics, Wilfrid Laurier University.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 10,
+    "text": "E-mail: jmorales@wlu.ca. § Department of Economics and Statistics, University of Turin and Collegio Carlo Alberto.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 11,
+    "text": "E-mail: alessandra.moresi@carloalberto.org.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "Social media has transformed political dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "Over the past two decades, it has been rapidly adopted by both politicians and their constituents, leading to radical changes in political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "Despite its ubiquity, our understanding of the effects of social media, and the mechanisms through which its adoption affects electoral outcomes, remains incomplete.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "One particularly understudied aspect of the adoption of social media is the use of moral language by political leaders.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "Social media is an important avenue through which moral values are diffused, and moral content receives a disproportionate amount of online engagement and attention.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "Furthermore, moral values are an important correlate of voting behaviour and policy preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "Together, these patterns suggest that the use of moral language online may be an important factor in shaping contemporary political communication and electoral outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "Our paper studies these issues in the context of U.S. congressional elections from 2010 to 2018, a period of rapid adoption of social media as a political communication tool.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "To do so, we collected a new dataset of over 3, 000 congressional candidates’ Twitter accounts, including over 13 million tweets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "The United States is an ideal setting in which to study these issues with four specific features worth highlighting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "First, the U.S. is a large democracy in which elections are common, with both data being widely available and sample sizes being large enough for statistical inference.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "Second, concerns regarding political polarization, partisan animosity, and the erosion of democratic norms are particularly pronounced in the U.S. Third, we leverage the particular context of U.S. primary constests to identify our effects of interest (more details on this below).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "Finally, a large component of previous academic work on social media, moral values, and politics has a U.S. focus, allowing us to directly address and contribute to this literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "Our data allows us to present new stylized facts about the use of social media as a political communication tool.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "Our focus is on Twitter, given its wide adoption and common use by politicians.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "We document its rapid adoption over the past fifteen years: while only a handful of congressional candidates used Twitter in the 2008 election, by 2018 between sixty and seventy percent of U.S. congressional candidates had a Twitter account (Figure 1 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "Similarly, public engagement with political content (as measured by likes and retweets) rose significantly during this period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "We use a series of event study fixed-effects regressions to document how Twitter use varies across the electoral cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "Our analysis reveals patterns consistent with the use of Twitter being an important political campaigning tool.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "The number of tweets increases substantially before elections, drops immediately after elections, and drops disproportionately when candidates lose (both the primary and the general elections).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "Furthermore, we observe very similar temporal dynamics for public engagement (and for the number of moral tweets).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "We show that moral language plays an important role in online political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "Following previous work, we use simple keyword definitions of moral content to analyze the text in our dataset of social media posts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "Around 40 percent of these U.S. congressional candidates’ tweets contain moral content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "Furthermore, over the period of study, the use of moral language on social media by politicians has significantly increased.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "Our paper then presents evidence consistent with the idea that moral rhetoric on social media is an important factor in shaping political outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "We show that moral content on social media is positively and strongly associated with both positive engagement (as measured by likes and retweets), and electoral returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "Conditional on having a Twitter account, those that use moral language on their posts perform significantly better in both primary and general elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "Close primary elections provide quasi-random variation on the traits of the candidates who go on to represent their parties in the general election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "Using a regression discontinuity design which exploits this variation, we show that Twitter use leads to an increase in general election vote shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "On average, Twitter use increases vote shares by around 6 percentage points.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "Furthermore, we show that this effect is largely driven by candidates who tend to use moral language in their social media posts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "The estimated increase in vote shares due to Twitter use is approximately 14 percentage points for candidates who used social media with above median moral intensity, as measured by the share of posts with moral content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "Our paper builds on recent work on the role of moral values in U.S. politics, which documents the importance of this dimension for political outcomes, economic choices, and policy preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "We contribute to this research agenda through the construction of a large dataset concerning the use of moral language by U.S. congressional candidates from social media posts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "We further assess the relationship between moral language and candidates’ electoral results, and show that moral rhetoric is associated with electoral returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "A closely related paper dealing with moral values in politics is Manacorda, Tabellini and Tesei.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "This paper shows that access to mobile Internet fueled the support for nationalistic parties and communal ideas. 1 We complement Manacorda, Tabellini and Tesei by relating moral language to electoral prospects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "The focus on the link between morality and electoral outcomes also complements recent work in Gennaro and Ash, which focus on the use of emotional language in the U.S. Congress.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "Insofar we analyze how politicians use a specific social media platform (Twitter), we relate to the recent and growing literature that studies the role of social media in political settings. 2 Among these works, we are particularly close to those that study the relationship between social media, politicians’ campaigning strategies or, more in general, behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "For instance, Bessone et al. finds that politicians increase their use of social media when their constituencies become more active on these platforms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "In addition, this increase substitutes for other, more traditional ways to engage with the constituencies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "Petrova, Sen and Yildirim, instead, shows that politicians can use social media to improve their recognition among voters and attract more donations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "We contribute to this literature by documenting how the use of social media affects parliamentary elections and by further investigating how this effect depends on the use of a language that emphasizes moral values. 3 An extensive literature in economics and political science studies electoral campaigns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "Our work highlights the relevance of the moral cleavage in campaigns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "The rise of new political cleavages (often made up by a combination 1 Manacorda and Tesei, instead, shows how access to mobile Internet affects protest movements. 2 This literature highlights the impact of social media on voters’ participation, electoral outcomes, political accountability, the quality of voters’ information, news diffusion, policy preferences, protests and civil uprisings, online dissent, and xenophobic or hateful attitudes, among others.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "Social media have also been associated with the formation of echo-chambers and with an increase in polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "Other papers suggest that the impact of social media on polarization is less severe.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "For instance, field experiments find that polarization does not decrease significantly after a reduction in the exposure to like-minded individuals, nor when one eliminates the exposure to reshared news.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "In a similar vein, Boxell, Gentzkow and Shapiro finds no positive correlation between polarization and the use of social media, and Guess documents that media diets are severly biased only for a minority of online users. 3 Other media affect elections too.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "Strömberg provides a review of the literature on the role of media in politics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "More recently, Le Pennec and Pons shows that campaigns shape voters belief and that media play a role in this process.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "Grosjean, Masera and Yousaf provides evidence that electoral rallies can lead to racial discrimination, while Enikolopov, Petrova and Zhuravskaya documents how propaganda by government-controlled media hurts electoral fairness.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "Researchers have also shown that television reduces voters’ turnout, affects electoral results in advanced democracies, and can have long-lasting effects on voters’ political preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "Finally, Esposito et al. shows that movies can also shape voters’ attitudes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "of identity, anti-globalist sentiment, populism, and attitudes toward civil rights) has recently received scholarly attention both from a theoretical and from an empirical point of view.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "Our paper contributes to the extensive literature on electoral campaigns in two respects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "First, it documents how the adoption of a novel campaigning tool can pay off in elections and how this payoff evolves over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "Second, it provides district-level evidence concerning the effectiveness of campaigning strategies based on a specific cleavage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "Section 2 describes the contextual background of the U.S. House of Representatives and its electoral institutions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 60,
+    "text": "Section 3 discusses the details about the collection of the Twitter data, the measurement of moral language, and presents descriptive statistics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 61,
+    "text": "Section 4 outlines our empirical approaches and presents the main results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 62,
+    "text": "Section 5 concludes and provides directions for future research.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 0,
+    "text": "Our analysis focuses on politicians running for the United States House of Representatives (HoR).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 1,
+    "text": "The HoR is the lowest chamber of the United States Congress and it has 435 voting members.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 2,
+    "text": "These members are elected every two years.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 3,
+    "text": "The election takes place on the Tuesday following the first Monday in November.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 4,
+    "text": "Each member of the HoR represents one congressional district.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 5,
+    "text": "Congressional districts are determined every ten years based on the census.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 6,
+    "text": "The United States Constitution sets three requirements to become a member of the HoR: the person must be at least twenty-five years old, must have been a U.S. citizen for the last seven years, and must reside in the state that they represents. 4 Federal legislation further requires candidates for the HoR to file a petition with the Federal Election Commission (FEC) within 15 days of making campaign expenditures above $ 5, 000.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 7,
+    "text": "The FEC cannot prevent any candidate who fills this petititon from running for office.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 8,
+    "text": "The U.S. does not have federal laws that regulate access to the HoR’s ballot.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 9,
+    "text": "Each state can set its own requirements.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 10,
+    "text": "These requirements usually consist of filing a petition with a minimum number of signatures and of paying a registration fee to the FEC. Candidates that comply with ballot access regulations can decide to be listed 4 The residency is required to take office but not to run for office.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 11,
+    "text": "The same candidate can then run for office in different states within the same election year (see, for instance, Allan Levene ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 12,
+    "text": "on the ballot as independent, or they can seek the nomination from a state-recognised political party. 5 The two main U.S. parties are the Democratic party and the Republican party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 13,
+    "text": "These parties use partisan primary elections to select the candidate for the general election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 14,
+    "text": "States regulate primary elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 15,
+    "text": "The National Conference of State Legislatures classifies primary elections into seven categories based on their openness to voters unaffiliated to a political party: closed, partially closed, partially open, open to unaffiliated voters, top two and top four.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 16,
+    "text": "The datasets in Pettigrew, Owen and Wanless and Miller and Camberg adopt a similar classification.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 17,
+    "text": "Parties can also nominate candidates to the general elections without going through a primary election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 18,
+    "text": "Uncontested primaries are also a common even: in the period 2008 - 2018, 53 % of primaries features only one candidate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 19,
+    "text": "The date of primary elections vary from one electoral year to the other and from state to state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Institutional framework",
+    "paragraph_id": 20,
+    "text": "Figure A 1 represents the electoral cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 0,
+    "text": "US Congressional Elections We use primary election data from Pettigrew, Owen and Wanless and Miller and Camberg and general election data from MIT. Our period of study is centered on the emergence of social media, using races from 2010 to 2018 (the last election year for which we have both primary and general election returns).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 1,
+    "text": "Indeed, we gather twitter data starting from races happening in 2008, but in 2008 Twitter use was arguably low and is therefore excluded from our period of study (see Figure 1 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 2,
+    "text": "It is important to note that while the primary and general election datasets share some candidates, they are not perfectly nested.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 3,
+    "text": "Specifically, both datasets capture primary election winners, but only the primary dataset includes primary election losers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 4,
+    "text": "Furthermore, in the United States candidates may appear on the general election ticket without undergoing a partisan primary, for instance, if they are directly nominated by the party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 5,
+    "text": "During the years 2010 - 2018, there are 6, 943 unique candidates running in congressional elections, among which 2, 213 ( 31 %) candidates appear in both the primary and general datasets, 1, 198 ( 17 %) are exclusive to the general election dataset and 3, 041 ( 43 %) are only in the primary dataset.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "3 . 1 US Congressional Elections",
+    "paragraph_id": 6,
+    "text": "We exclude general election write-in candidates, those without any party affiliation, and those affiliated with parties that fielded fewer than 100 candidates from 2008 - 2018. 5 In some states, candidates can also run as write-in candidates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 0,
+    "text": "Twitter data To explore how candidates’ social media activity affects electoral outcomes, we assembled a unique dataset comprising tweets published by congressional candidates appearing in our election dataset.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 1,
+    "text": "This new dataset was collected using the Twitter Academic Research Track API. The dataset consists of more than 13 million tweets published by 4, 395 different candidates and 5, 990 handles from the opening of the platform to the suspension of the Twitter API in April 2023. 6 Appendix A describes the data collection in detail.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 2,
+    "text": "Figure 1 plots the monthly number of tweets published by candidates over time and the share of candidates with a Twitter account in each of the six election years for which 6 Some candidates have more than one Twitter account.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 3,
+    "text": "Table A 2 and Figure A 6 show the distribution of the number accounts for the 4, 395 candidates that have at least one account open.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 4,
+    "text": "Democrats and Republicans exhibit similar adoption rates and usage patterns in the early years of Twitter, but the number of tweets among Democrats start increasing at a faster rate after November 2013.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 5,
+    "text": "Twitter adoption rates among both parties flattened over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 6,
+    "text": "We analyze candidates’ use of social media throughout the electoral cycle using a weekly fixed effects event-study design with two event dates: the date of the primary election and the date of the general election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 7,
+    "text": "Details on the estimation of these regressions are discussed in Appendix E. Figure 2 shows changes in the number of tweets published across candidate categories (all winners, only primary winners, primary losers), with respect to the period prior to the fourth week before the primary.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 8,
+    "text": "While both winners and losers increase the volume of their tweets as the primary week gets closer, candidates that win their primary remain much more active after the week of the primary.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 9,
+    "text": "As the general election date gets closer, primary winners increase their activity, but those who win the general election remain significantly more active in the post election period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 10,
+    "text": "This pattern is consistent for both Republican and Democratic candidates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 11,
+    "text": "Importantly, these dynamics highlight that social media is an important campaigning tool which is actively used by candidates running for office.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 12,
+    "text": "We view these descriptive results as key to understanding the supply of political social media content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 13,
+    "text": "We use measures of post engagement as a proxy for the demand of social media.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 14,
+    "text": "We define engagement = log ( likes + retweets + 1 ). 7 Consistent with the patterns on overall Twitter adoption by politicians, Figure A 4 shows all tweets in our dataset and it reveals how wide use of the platform occured earlier for Democrats.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 15,
+    "text": "In particular, engagement is consistently higher for Democratic candidates up until the end of the Trump presidency.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 16,
+    "text": "Figure 3 reveals changes in social media engagement throughout the election cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 17,
+    "text": "Most notably, tweets published by candidates who go on to win the general election generate systematically more engagement than tweets published by those who eventually lose.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 18,
+    "text": "Moreover, as candidates drop out of election races, engagement tends to return to pre-election cycle levels.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 19,
+    "text": "Consistent with the view of Twitter being a democratic-leaning platform during the period of study, the relative increase in pre-election engagement for tweets by Democrats is larger than that for Republicans.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 20,
+    "text": "Social media engagement metrics have been shown to correlate with traditional public opinion polls.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 21,
+    "text": "Since social media engagement metrics are highly skewed we apply a log( 1 +Y) transformation to these outcome variables as in Cagé, Hervé and Viaud and Morales.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "3 . 2 Twitter data",
+    "paragraph_id": 22,
+    "text": "However, we acknowledge that there are important limitations to this approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 0,
+    "text": "Measurement of morality using Twitter data Moral values are individuals’ fundamental beliefs about what is right and what is wrong.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 1,
+    "text": "We measure candidates’ morality applying dictionary methods to their tweets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 2,
+    "text": "In particular, we measure how frequently candidates use moral language on social media, as well as the type of morality which can be inferred from their posts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 3,
+    "text": "One important dimension of morality is the extent to which individuals care about the well-being of those close them, such as their families and local communities, relative to the well-being of others who may not be part of their own close groups.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 4,
+    "text": "This cleavage between communal and universal morality is also strongly associated with political ideology, suggesting that liberals and conservatives rely on different sets of moral foundations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 5,
+    "text": "In particular, progressive individuals tend to give a higher importance to universalistic rather than communal values.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 6,
+    "text": "The Moral Foundations Dictionary (MFD) is a hierarchical dictionary that can be used to infer latent candidate’s moral types from text (Figure A 8 shows the structure of the dictionary).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 7,
+    "text": "The MFD is composed by two main sections, each one containing either universal or communal words. 8 We use the same MFD used by Enke, which con Note that certain words could be in both sections of the dictionary.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 8,
+    "text": "tains 215 words. 9 The intuition that motivates the use of a dictionary to infer candidates’ latent morality is simple: there are words which are a good fit for the transmission of specific moral values.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 9,
+    "text": "We measure moral values with a simple scoring exercise on the text corpus.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 10,
+    "text": "We begin by generating a dummy indicating whether a tweet contains any of the words in the MFD, separately for each of the universal and communal sections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 11,
+    "text": "For each candidate we then compute the share of tweets with at least one word in each section of the dictionary, and the overall share of moral tweets. 10 Table 1 (bottom panel) reports summary statistics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 12,
+    "text": "On average, around 40 percent of tweets contain at least one moral 9 The original MFD developed by psychologists contains more than 2000 words.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 13,
+    "text": "A different subset of the MFD is used by Hackenburg, Brady and Tsakiris to analyze the language spoken on social media by presidential primary candidates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 14,
+    "text": "Hackenburg, Brady and Tsakiris fine-tune their morality dictionary based on their corpus.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 15,
+    "text": "We adopt a more neutral approach and use the same dictionary as Enke, without tailoring the dictionary to our corpus of tweets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 16,
+    "text": "All the results discussed are similar when using the dictionary in Hackenburg, Brady and Tsakiris. 10 We also build the same measures concatenating all the tweets published by a single candidate, which allows us to infer the share of universal, communal and overall moral words as a share of all words.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 17,
+    "text": "The two measures are highly correlated and the results are robust to using the alternative measure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 18,
+    "text": "Furthermore, we explore candidates’ morality by constructing an index of relative importance of universalistic versus communal values.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 19,
+    "text": "Positive values of the index indicate greater relative importance of universalistic beliefs, which are typically associated with the left of the ideological spectrum.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 20,
+    "text": "Consistent with previous work, Ideology and Universalism are negatively correlated (see Figure A 9 ): candidates on the right of the ideological spectrum tend to be less universal, while left-leaning candidates tend to be more universal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 21,
+    "text": "word, a fact which underscores that moral content is prevalent and important in online political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 22,
+    "text": "Additional details on the measurement of moral values are discussed in Appendix D. 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 23,
+    "text": "Figure 4 shows the evolution of tweets’ moral content over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 24,
+    "text": "The figure reports the monthly share of communal and universal tweets (i.e. the share of tweets with at least one word in each section of the MFD).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 25,
+    "text": "Three patterns stand out.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 26,
+    "text": "First, the share of tweets with moral content has increased substantially over the last decade.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 27,
+    "text": "Second, Democrats post systematically more moral content than Republicans.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 28,
+    "text": "Third, Republicans use relatively more communal language compared to Democrats (see also Figure A 2 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 29,
+    "text": "Figure 5 shows the changes in the number of tweets containing at least one word of the moral foundations dictionary Enke across the election cycle.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 30,
+    "text": "We observe the supply of moral tweets increases as general election dates get closer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 31,
+    "text": "Furthermore, candidates who go on to win these election, on average tweet more moral content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 32,
+    "text": "Interestingly, no differential changes in the use of universal or communal words are visible across Democrats and Republicans (see also Figure A 11 and A 10 ), which hints to the fact that within parties moral intensity may be more important than moral types in predicting election results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 33,
+    "text": "In contrast to the previous literature, which has focused on the universal versus communal distinction among politicians’ moral types, this paper builds on the idea that moral language on social media can lead to electoral returns, regardless of the type of morality emphasized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "3 . 3 Measurement of morality using Twitter data",
+    "paragraph_id": 34,
+    "text": "Hence, while we report descriptive statistics for moral types throughout the paper with the specific aim of empirically validating the conceptual framework of our analysis, our main focus remains on moral intensity, as proxied by the share of tweets with at least one word in the MFD.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "3 . 4 Other data sources",
+    "paragraph_id": 0,
+    "text": "Other data sources We recover candidate-level imputed ideology and campaign contributions from Bonica. 11 We plan to further augment our dataset by recovering candidates’ demographics, previous political experience and education from their Ballotpedia profile.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "3 . 4 Other data sources",
+    "paragraph_id": 1,
+    "text": "We scraped the HTML pages associated to each candidate and we are in the process of extracting the relevant information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "3 . 4 Other data sources",
+    "paragraph_id": 2,
+    "text": "These data are available until 2020.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Empirical Analysis",
+    "paragraph_id": 0,
+    "text": "We explore the relationship between politicians’ social media use - and the moral language they employ - through two separate sets of empirical exercises.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Empirical Analysis",
+    "paragraph_id": 1,
+    "text": "First, we use a series of fixed effects regressions exploring the relationship between social media use and electoral outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Empirical Analysis",
+    "paragraph_id": 2,
+    "text": "Second, we exploit a close elections politicians’ characteristics regression discontinuity design (PCRD).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Empirical Analysis",
+    "paragraph_id": 3,
+    "text": "We outline each in turn below.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 0,
+    "text": "Fixed effects Moral values and electoral outcomes In this section we explore the relationship between the use of moral language on social media (as defined above) and electoral outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 1,
+    "text": "Our sample includes only congressional candidates with Twitter accounts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 2,
+    "text": "More specifically, we estimate the following equation on a candidate-level dataset:",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 3,
+    "text": "VoteShare cr = · Incumbent cr + ’s incumbency status in race r.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 4,
+    "text": "We also include Party · Incumbent - 0. 041 - 0. 023 - 0. 062 - 0. 062 - 0. 023 - 0. 099 ( 0. 015 ) ( 0. 022 ) ( 0. 019 ) ( 0. 012 ) ( 0. 018 ) ( 0. 016 ) N 7444 7444 3385 3385 4059 4059 4175 4175 2098 2098 2077 2077 N-clusters (candidates) 5243 5243 2482 2482 2803 2803 2439 2439 1318 1318 1125 1125 Party-Year FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Party-State FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Dep.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 5,
+    "text": "Mean. 486. 486. 531. 531. 448. 448. 5. 5. 502. 502. 498. 498 R-sq 0. 486 0. 486 0. 415 0. 415 0. 538 0. 539 0. 619 0. 623 0. 626 0. 627 0. 612 0. 623 Notes: Each observation in these regressions corresponds to a unique candidate-race combination, covering all primary and general U.S. House elections from 2010 to 2018.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 6,
+    "text": "The outcome is the vote share obtained in these elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 7,
+    "text": "The Twitter dummy is assigned a value of one if a candidate had an active Twitter account by the election date, determined using data from the archive accessed via the Academic Research Track.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 8,
+    "text": "Standard errors are clustered at the candidate level, Significance levels indicated *p < 0. 10, ** p < 0. 05, p < 0. 01.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 9,
+    "text": "nations where candidates have Twitter and use it with high/low moral intensity, against candidate-race combinations in which candidates did not use Twitter.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 10,
+    "text": "Tables 5 and 6 show the results of this heterogeneity analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 11,
+    "text": "We find that using Twitter with a high moral intensity is associated with electoral returns which are much larger than those from using Twitter with a low moral intensity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 12,
+    "text": "This is true for both Democrats and Republicans, and for both primary (Table 5 ) and general elections (Table 6 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 13,
+    "text": "This difference in vote shares is starkest in general elections, where Twitter use for high moral intesity candidates is associated with an increased vote share of around 10 percentage points, but less than 2 percentage points for candidates with below median share of moral tweets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 14,
+    "text": "Heterogeneous results on the sample where the candidates with an open Twitter account use it with a high (low) universal or communal intensity are shown in Appendix Tables A 4, A 5, A 6 and A 7.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 15,
+    "text": "The results are similar to those described above.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "4 . 1 Fixed effects",
+    "paragraph_id": 16,
+    "text": "Interestingly, no differential effect along the use of specific communal or universal words is detected across parties, suggesting that moral intensity drives returns to using social media more than moral types.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 0,
+    "text": "Regression discontinuity design One limitation of the estimates reported above is that the results could be driven by selection bias: candidates who use Twitter are likely inherently different to those who do not, and these underlying differences could drive the observed gaps in vote shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 1,
+    "text": "To minimize these selection biases, we use a politician characteristic regression discontinuity design (PCRD) exploiting close elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 2,
+    "text": "The analysis provides additional evidence on the extent to which politicians’ social media use increases vote shares, and whether the use of moral language on social media is an important variable moderating this effect.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 3,
+    "text": "The PCRD research design is particularly suitable to estimate the effect of a specific candidates’ feature on downstream outcomes associated with the politician itself or their opposing candidate. 13 Election systems that are bipartisan and elect representatives through single-member plurality voting are specifically fit for this empirical design, because primary winners face a singular opponent candidate in the general elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 4,
+    "text": "More precisely, we use quasi-random variation inherent in close U.S. House partisan primaries, to study electoral outcomes in the general election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 5,
+    "text": "Primary close elections provide variation in the type of winning politicians who go on to represent their party in the general election, where politician type in our setting is defined over their use of social media.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 6,
+    "text": "We define politicians’ Type ∆ pd as the difference between the vote share obtained by the primary candidate of type 1 (with Twitter) and the vote share obtained by the primary candidate of type 0 (without Twitter) in the partisan primary p D, R (Democratic or Republican) of district d:",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 7,
+    "text": "∆ pd = V 1 pd − V 0 pd [ − 1, 1 ] ( 3 ) Districts with primary winners who had an active Twitter account will therefore have a positive running variable, while districts in which winners did not have an active twitter account will have a negative running variable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 8,
+    "text": "We can then write treatment status as a deterministic function of the running variable: 13 See for instance Hall and Di Tella et al. for similar empirical applications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 9,
+    "text": "Twitter pd: ( if ∆ pd > 0 0 if ∆ pd 0 ( 4 ) We use this sharp RD design (see Figure A 14 ) to estimate the local average treatment effect (LATE) around the artificial zero cutoff using the following model:",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 10,
+    "text": "VoteShare pd = · Twitter pd + witter pd · f ( ∆ pd ) + f ( ∆ pd ) + ε pd ( 5 ) We estimate f ( ∆ pd ) as a linear function of the running variable, and estimate it separately at each side of the cutoff, indicated by the interaction with Twitter pd.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 11,
+    "text": "Our parameter of interest, β 1, captures the estimated return to having a Twitter account for candidates who compete in close primary elections in the subsequent general elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 12,
+    "text": "We also analyze alternative outcomes: a dummy for whether the candidate is elected, the vote share obtained by the opponent, and a dummy for whether the opponent is elected.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 13,
+    "text": "Baseline results Figure 6 shows the data underlying our regression discontinuity empirical design.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 14,
+    "text": "The sample includes primary elections in which the top two candidates differed in their type (have an active Twitter account) and relates the difference between their vote shares ( ∆ pd, in the x-axis) to the subsequent vote share for their parties in the general election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 15,
+    "text": "We compare districts in which the Twitter candidate barely won their primary election (to the right of the cutoff) to districts in which the Twitter candidate barely lost (to the left of the cutoff).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 16,
+    "text": "The jump at the discontinuity measures our LATE, parameter bove.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 17,
+    "text": "Table 7 shows our baseline RD estimates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 18,
+    "text": "Twitter use by politicians increases general election vote shares by an estimated 6 percentage points (column 1 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 19,
+    "text": "This estimate is remarkably close to the estimate from our fixed effects regression above. 14 Moreover, Twitter use increases the probablity of being elected into office by 22 percentage points (column 3 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 20,
+    "text": "Having Twitter is also detrimental for the opponent in the general election, as it lowers the opponents’ vote share by around 7 percentage points and their election probability by 19 percentage points.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 21,
+    "text": "Though the results with controls (even-numbered columns) are not statistically different from these baseline results, one important note of caution is that the magnitude of the estimated effects is lower with controls (and our 14 That the estimates from both empirical approaches yield similar results could suggest that selection bias is small in our fixed effects regressions above, but because the RD sample is specific to close elections with top two candidates of different types, this LATE may also differ more broadly from the ATE (which we do not observe).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 22,
+    "text": "results are particularly sensitive to incumbency status). 15 Figure 6: Twitter user vote margin and general election results Notes: Sample includes all primary races in which one of the candidates has a Twitter account.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 23,
+    "text": "Each data point represents one observation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 24,
+    "text": "A linear fit is separately estimated on each side of the margin of victory discontinuity, 95 percent confidence intervals are shown.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 25,
+    "text": "We discuss this issue in more detail in the Appendix and present additional robustness checks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 26,
+    "text": "Heterogeneity by use of moral language To study heterogeneous effects of Twitter use based on the use of moral language, we split primary winners with Twitter by the share of moral tweets that they publish, using the sample median share as threshold (as in our previous exercises).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 27,
+    "text": "Our sample is split along this margin for winners only, and we compare their vote shares with primary elections in which the candidate with Twitter lost the election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 28,
+    "text": "The idea is illustrated in Figure 7, which shows the same underlying data as our baseline RD regression, but splits winners depending on their moral language on social media.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 29,
+    "text": "The figure reveals that candidates which use Twitter with above median moral intensity perform better in the general election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 30,
+    "text": "The gap in votes is consistent along the range of margin of victory (consistent with our previous results).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 31,
+    "text": "Most importantly, we observe that this gap is also apparent at the margin of victory discontinuity (at zero): parties in which candidates with Twitter who frequently used moral language narrowly won the primary do significantly better in the general election, relative to when candidates with Twitter lost the primary.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 32,
+    "text": "In contrast, we do not observe an increase in vote shares for parties in which the winning candidate used Twitter with low relative intensity, compared to those in which the primary winner did not use Twitter.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 33,
+    "text": "These results are formally shown in Tables 8 and 9.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 34,
+    "text": "The estimates reveal that Twitter use with high moral intensity is associated with an increase in vote shares of 14 percentage points and in the probability of being elected of 47 percentage points (Table 8 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 35,
+    "text": "Similarly, opposing candidates do worse when facing a candidate who uses Twitter with high moral intensity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 36,
+    "text": "In contrast, parties in which candidates used Twitter with low moral intensity do not perform statistically better than parties in which Twitter candidates lost in the primaries (Table 9 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 37,
+    "text": "Robustness tests RD designs rely on the assumption of no manipulation of the margin of victory around the cutoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 38,
+    "text": "Evidence about the plausibility of the identifying assumption is shown in Figure A 15.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 39,
+    "text": "Table A 10 (top panel) provides evidence on continuity in predetermined district level variables.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 40,
+    "text": "Twitter use as a characteristic of the winning politician, which determines the treatment, might also be associated with other traits of the politician.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 41,
+    "text": "As a result, the estimated LATE becomes a compound treatment effect.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 42,
+    "text": "Moreover, by focusing solely on tight elections, we are implicitly conditioning the treatment on a candidate’s vote share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 43,
+    "text": "This share could potentially be influenced by the variable determining the candidate’s type, leading to what Marshall defines as compensating differential.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 44,
+    "text": "To study this potential shortcoming, we first analyze candidate-level covariates to identify discontinuities.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 45,
+    "text": "This approach aids in characterizing the inherent compensating differentials.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 46,
+    "text": "For example, factors like incumbency status, gender, age, past political experience, and education level may jump discontinuously at the artificial cutoff, leading to compound estimates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 47,
+    "text": "Analyzing candidates’ characteristics helps to understand the direction of the compensating differential and will clarify whether s as an upper or lower bound of the treatment effect of Twitter use.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 48,
+    "text": "Table A 10 (bottom panel) provides evidence on continuity in candidate level traits.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 49,
+    "text": "Table A 8 shows descriptive statistics for all contested primaries, and Table A 9 shows the same for those used in our RD estimation sample, where the top two candidates differ in their type.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 50,
+    "text": "Both tables demonstrate that the measures in our RD sample and the overall population of contested primaries are notably similar.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "4 . 2 Regression discontinuity design",
+    "paragraph_id": 51,
+    "text": "We further analyze the robustness of our analysis to the exclusion of observations near the cutoff (donuts hole approach) and to the use of placebo cutoff, concluding that our estimates are relatively stable to these validity checks (Figure A 18 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 0,
+    "text": "This paper explores the relationship between social media, moral rhetoric, and political behavior, contributing to our understanding of contemporary political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 1,
+    "text": "By leveraging a new dataset comprising tweets from U.S. congressional candidates, we examine how politicians’ use of Twitter can influence electoral outcomes, and the role moral language plays in these dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 2,
+    "text": "We document that social media use by politicians has increased substantially over the last decade, and at the same time, the use of moral rhetoric by politicians has also risen.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 3,
+    "text": "Exploring the electoral cycle dynamics of Twitter use by politicians, we provide evidence that social media is an important campaigning tool, and that moral rhetoric is associated with increased electoral returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 4,
+    "text": "Using a series of fixed-effects regressions, and a regression discontinuity design exploiting close primary elections, we provide empirical evidence that social media use increases electoral performance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 5,
+    "text": "Furthermore, this effect is particularly pronounced for those who employ moral rhetoric with above-median intensity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 6,
+    "text": "Candidates who incorporate moral language into their social media posts see significant electoral returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 7,
+    "text": "Social media has been shown to have consequential political effects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 8,
+    "text": "Our findings reiterate the idea that moral content on social media is highly correlated with online engagement, highlighting its potential as a powerful tool for garnering online attention.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 9,
+    "text": "The natural tendency of moral language to achieve high engagement suggests that its use can be a key factor in these broader trends.",
+    "warnings": ""
+  },
+  {
+    "file_name": "grillo-2025-01-14_391.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 10,
+    "text": "As such, our paper links our evolving understanding of the relationship between social media and politics to emerging research on the intersection of moral values and political behavior - underlining the relevance of morality for online political communication.",
+    "warnings": ""
+  }
+]

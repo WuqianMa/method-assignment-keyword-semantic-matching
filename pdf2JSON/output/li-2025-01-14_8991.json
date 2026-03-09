@@ -1,0 +1,3233 @@
+[
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 0,
+    "text": "Optimal Rule Enforcemenanzhe Li Jin Li Yunchou Zhang Most recent draft here.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 1,
+    "text": "Abstract Although rules are often seen as rigid, their enforcement can be flexible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 2,
+    "text": "We develop a relational contract model between a manager and a worker to characterize how rules are dynamically enforced.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 3,
+    "text": "Our results reveal two approaches: the manager-led approach, involving cycles of rule enforcement and optimal when enforcement costs are low, and the worker-led approach, relying on worker self-regulation and emerging as enforcement costs rise.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 4,
+    "text": "Under intermediate enforcement costs, a subcategory arises where the manager initially enforces rules before transitioning to worker autonomy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 5,
+    "text": "Interestingly, when rules can be enforced after the worker’s participation, higher enforcement costs may benefit the manager.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 6,
+    "text": "Keywords: rule enforcement, relational contract, managerial discretion, worker autonomy JEL Codes: C73, D23, D82, D87, M12 Contact information: Hanzhe Li ( hanzhe.li@connect.hku.hk ), Jin Li ( jli1@hku.hk ), Yunchou Zhang ( zyc616@connect.hku.hk ), Faculty of Business and Economics, The University of Hong Kong, Pokfulam Road, Hong Kong SAR. We are grateful for the helpful conversations with Daniel Barron, David Chan, Wouter Dessein, Matthias Fahn, Guido Friebel, George Georgiadis, Jie Gong, Carl Heese, John Bodian Klopfer, Fabrice Lumineau, Costa Meghir, Arijit Mukherjee, Masaki Miyashita, Wojciech Olszewski, Alessandro Pavan, Harry Pei, Michael Powell, Nicola Persico, Wing Suen, Balazs Szentes, Michael B. Wong, Yanhui Wu, Giorgio Zanarone, Chen Zhao, Xiaodong Zhu, and seminar participants at HKU and MSU. All remaining errors are ours.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 7,
+    "text": "This is a very preliminary and incomplete draft.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 8,
+    "text": "Please do not cite or circulate without permission.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 9,
+    "text": "“Knowing when to bend the rules is one of the hallmarks of an experienced decision maker.” — James G March, 1994.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 10,
+    "text": "A Primer on Decision Making.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "The management literature is littered with criticisms of rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "They lead to rigidity, stifle innovation, and create unnecessary bureaucracy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "Reed Hastings, the founder of Netflix, went so far as to famously advocate for a no-rule-rule approach, suggesting that abolishing rules unleashes creativity and autonomy within organizations. 1 Despite the criticisms, rules persist in most organizations because they fulfill essential functions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "Rules provide structure, ensure consistency, and create a framework that aligns actions with organizational goals.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "Without rules, organizations risk descending into disorder.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "Although rules are often thought of as rigid and hard constraints, in practice they are often more flexible than they appear.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "The enforcement of rules is rarely automatic or uniform; rather, it is carried out by managers who exercise discretion in deciding when and how to apply them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "Importantly, enforcing rules involves both tangible and intangible costs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "Managers must deploy resources to monitor and ensure compliance and often face psychological and relational costs when disciplining employees.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "Any parent who has enforced a rule with their children can attest to the emotional toll involved.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "The dilemma that managers (or any rule enforcers) face is that they prefer not to enforce the rule as long as the workers provide good behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "But if the rule is not enforced, then the workers have incentive to shirk and lower their performance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "The key challenge is to exercise discretion (to lower the enforcement cost) while maintaining a functioning organizational environment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "The classic work of Gouldner illustrates selective rule enforcement in a mining company.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "The company’s “no-floating around” rule required workers to stay at their workplace except for essential needs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "Managers enforced this rule flexibly, allowing workers to socialize when performance was satisfactory but invoking it when productivity declined.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "As Gouldner notes, “formal rules gave supervisors something with which they could ‘bargain’ in order to secure informal cooperation from workers”, highlighting how rule enforcement emerges from relational contracts. 1 An earlier famous example of minimal rules is Nordstrom, which states in its employee handbook that “Rule #1: Use good judgment in all situations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "There will be no additional rules”.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "In this paper, we formally examine rule enforcement through a repeated interaction between a middle manager (she) and a worker (he).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "At the beginning of each period, the manager can enforce a rule requiring worker effort, but doing so incurs a cost to the manager. 2 Without rule enforcement, the worker freely chooses his effort level based on his privately observed effort cost, which fluctuates over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "Notably, in our baseline model, rules can be enforced only before both parties participate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "We characterize the optimal relational contracts, which fall into two distinct categories.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "The first category, the “manager-led” approach, involves active management through cyclical rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "When worker performance deteriorates, the manager imposes strict rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "After a period of enforcement, rules are relaxed, allowing the worker to exert effort only when his privately observed effort cost is low.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "Over time, the worker’s performance will naturally decline again due to the stochastic nature of the effort cost, causing the manager to enforce the rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "Thus, under the manager-led approach, the relationship cycles between periods of strict rule enforcement, which limits flexibility and adaptability, and periods of relaxed enforcement, during which the worker may slack off.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "This cyclical pattern reflects the inherent trade-offbetween maintaining control through rules and allowing for adaptation and discretion.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "This cyclical enforcement aligns with organizational observations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "In Gouldner ’s mining company study, managers enforced rules only after performance declined, allowing flexibility until intervention became necessary.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "Similar patterns appear in China’s governance model, where scholars document “campaign-style mobilization” - periodic intensification of enforcement followed by relaxation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "Although scholars have long criticized this pattern, described in Chinese as yi-guanjiu-si, yi-fang-jiu-luan, meaning “control leads to stagnation, freedom leads to disorder”, these patterns are simply unavoidable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "Enforcing rules too rigidly stifles flexibility, while relaxing them too much leads to disorder.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "The adherence to either strict control or relaxed flexibility is difficult to maintain over the long run, but this cyclical approach may, in fact, be the best that managers or governments can achieve under the constraints they face.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "The cyclical pattern thus reflects an ongoing negotiation between these two extremes, allowing for a dynamic, if imperfect, equilibrium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "The second category of relational contracts is the “worker-led” approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "Here, managers maintain order not through rule enforcement but through the threat of termination, or exit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "This possibility of being fired serves as a disciplinary tool, motivating workers to self-manage without constant oversight. 2 A familiar example for many readers might be that a professor displays a “No Phones Allowed” slide at the start of each class.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "Under this approach, the worker may initially avoid effort when costs are high, knowing there is short-term tolerance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "However, after a period of lower effort, the worker begins to exert effort again, even with high costs, understanding that continued slacking risks termination.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "The fear of exit thus drives self-regulation and proactive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "The worker-led approach creates a more hands-offdynamic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "Workers internalize the consequences of sustained underperformance by incorporating the long-term value of the relationship into their daily decision-making.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "The relationship operates through an implicit understanding: continued employment depends on maintaining adequate effort, even in challenging circumstances.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "Workers balance current effort costs against future termination risks, eliminating the need for frequent managerial intervention.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "Our analysis allows us to clearly delineate when each of the two approaches—managerled and worker-led—comes into play.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "When the cost of enforcing rules is relatively low, the manager-led approach is more likely to be used.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "Specifically, we show that there exists a cutoffenforcement cost: the manager-led approach is employed if and only if the enforcement cost falls below this threshold, as the benefits of improved worker effort outweigh the enforcement cost.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "When the enforcement cost exceeds this threshold, the worker-led approach is used.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "Our analysis reveals two distinct subcategories within the worker-led approach, depending on the size of the enforcement cost.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "When the enforcement cost is sufficiently high— above a second, higher threshold—the manager never enforces the rules throughout the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "The cost of enforcing effort is prohibitively expensive, so the manager relies entirely on the threat of termination to motivate the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "The relationship is thus governed purely by the exit mechanism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "Interestingly, when the enforcement cost lies between the two thresholds, a different dynamic emerges within the worker-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "The manager enforces rules initially for a limited period, even though this enforcement is not necessarily optimal for the overall long-term value of the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "This initial use of enforcement reflects the manager’s own short-term incentive: she prefers that the worker puts in effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "This feature of early enforcement relates to deferred rewards in the dynamic game literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "By enforcing rules at the outset, the manager effectively increases the worker’s future payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "Once the initial enforcement period ends, the worker gains more flexibility to withhold effort when costs are high.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "The initial phase of rule enforcement thus functions as a way to build up the worker’s “credit” or trust within the relationship, where high effort early on is effectively “paid” in exchange for later autonomy and flexibility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 60,
+    "text": "In addition to enforcement costs, we show that the worker-led approach is more likely to be adopted when players are more patient, or equivalently, when there is greater surplus in the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 61,
+    "text": "Patience means both parties value future payoffs more highly relative to immediate rewards.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 62,
+    "text": "For the worker, this creates a stronger incentive to maintain the relationship, making the threat of exit more potent and encouraging self-discipline even when effort is costly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 63,
+    "text": "As a result, the management of the relationship increasingly relies on worker selfregulation rather than direct rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 64,
+    "text": "Motivated by preserving the long-term relationship, the worker takes responsibility for meeting performance expectations without strict supervision.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 65,
+    "text": "This shift in responsibility reflects a deeper trust, where workers manage their effort based on the understanding that their future within the organization depends on it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 66,
+    "text": "This finding is consistent with management literature, which shows that rules and strict enforcement are used less in high-performing organizations–those with greater surplus.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 67,
+    "text": "In such organizations, workers receive more autonomy as the focus shifts from rigid rule enforcement to self-management.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 68,
+    "text": "This cultivates a culture of accountability and self-motivation, where workers maintain the relationship without constant oversight.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 69,
+    "text": "However, this autonomy has a price: workers must sometimes make short-term sacrifices, exerting effort even when costs are high, to maintain their long-term role in the organization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 70,
+    "text": "Finally, our analysis extends beyond the baseline framework to address real-world complexities, particularly the timing of rule enforcement and its impact on relationship dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 71,
+    "text": "In our baseline model, the manager enforces rules before the worker decides to participate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 72,
+    "text": "In practice, however, managers may enforce rules after securing the worker’s participation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 73,
+    "text": "For instance, managers might promise flexibility to attract workers but later impose stricter rules once participation is guaranteed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 74,
+    "text": "To examine this, we analyze a setup where the manager can enforce rules after the worker’s participation (but before effort is exerted).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 75,
+    "text": "Counterintuitively, we find that this discretion reduces the manager’s payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 76,
+    "text": "In the optimal relational contract, the manager motivates the worker to exert effort in earlier periods by promising no rule enforcement and granting autonomy in later periods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 77,
+    "text": "However, when the manager has the discretion to enforce rules post-participation, she is tempted to renege on these promises, undermining her credibility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 78,
+    "text": "This loss of trust demotivates the worker in earlier periods, ultimately diminishing the value of the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 79,
+    "text": "Beyond this direct effect, the erosion of trust leads to two additional consequences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 80,
+    "text": "First, as future promises become less effective for motivating the worker, the manager must rely more on rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 81,
+    "text": "Therefore, compared to the baseline model, the manager is more likely to adopt the manager-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 82,
+    "text": "Second, increasing the cost of rule enforcement can help restore credibility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 83,
+    "text": "A higher enforcement cost acts as a commitment device, preventing the manager from reneging on promises.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 84,
+    "text": "Interestingly, this can benefit the manager by improving worker motivation and preserving trust in the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 85,
+    "text": "The remainder of this paper is organized as follows: Section 2 reviews the related literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 86,
+    "text": "Section 3 presents our baseline model, where the manager can enforce rules only before the worker decides on participation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 87,
+    "text": "In Section 4, we briefly outline how to solve the model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 88,
+    "text": "The characterization of the optimal relational contract is provided in Section 5.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 89,
+    "text": "Section 6 explores an alternative setup where the manager can enforce rules after the worker’s participation and presents the corresponding results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 90,
+    "text": "Section 7 concludes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 91,
+    "text": "Additional results and all proofs are provided in the Appendix.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 0,
+    "text": "Dating back at least to Weber, there has been a large interest in understanding how to maintain the functioning and promote the performance of organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 1,
+    "text": "Following the terms proposed by Mintzberg, the literature can be broadly divided into two streams: one focusing on “ex-ante action planning” that specifies actions to be carried out and the other on “ex-post performance control” that only imposes general performance standards.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 2,
+    "text": "The economics literature on dynamic contracts primarily falls within the stream that studies ex-post performance control, focusing on how to provide incentives to align individual interests with organizational goals.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 3,
+    "text": "A common approach is to contract on output using monetary transfers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 4,
+    "text": "The relational contract literature examines how monetary transfers, subject to selfenforcing constraints, can motivate desired effort from workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 5,
+    "text": "In this paper, however, we abstract away from monetary incentives to focus on how the dynamic enforcement of rules can shape worker behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 6,
+    "text": "This focus connects our study to the literature on non-monetary incentives, including decision rights, knowledge transfer, managerial attention, ownership, power, routines, and standardized working process.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 7,
+    "text": "Unlike these papers, our study belongs to the stream that examines ex-ante action planning.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 8,
+    "text": "In the literature on non-monetary incentives, only a few papers have considered ex-ante action planning.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 9,
+    "text": "Padró i Miquel and Yared examine a repeated moral hazard model where the principal can prescribe actions with endogenously chosen interventions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 10,
+    "text": "They show that occasional inefficient intervention is necessary to incentivize the agent to take efficient actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 11,
+    "text": "Our model differs from theirs in two key aspects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 12,
+    "text": "First, in our model, the worker’s effort is publicly observable, and the problem is one of adverse selection rather than moral hazard.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 13,
+    "text": "Second, the rule-based action in our model is more costly to the worker than to the manager.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 14,
+    "text": "Consequently, unlike their model, the central challenge is not subsidizing the manager to enforce rules but incentivizing the worker to exert more effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 15,
+    "text": "These two differences lead to distinct dynamics in our framework.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 16,
+    "text": "Meagher, Prasad and Wait ( Forthcoming ) study instructions in organizations, focusing on how to ensure worker obedience to instructions by selecting appropriate workers and designing effective incentive pay schemes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 17,
+    "text": "In contrast, we abstract away from obedience concerns by assuming that rules, once enforced, are coercive.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 18,
+    "text": "Our paper is related to a specific branch of the delegation literature that studies optimal delegation through a mechanism design approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 19,
+    "text": "These papers allow for interim communication and focus on identifying the optimal “delegation set” from which the agent can make decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 20,
+    "text": "In contrast, we abstract away from communication and model rules as a tool for uniformly enforcing effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related Literature",
+    "paragraph_id": 21,
+    "text": "Furthermore, we incorporate enforcement costs and examine how these costs shape the dynamics of rule enforcement over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 0,
+    "text": "Consider a long-term relationship between a manager and a worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 1,
+    "text": "Time is discrete and denoted as t",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 2,
+    "text": "as ∈{ 0, 1 }, where 0 indicates no participation and 1 indicates participation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 3,
+    "text": "Given that both parties participate ( d m t d w t = 1 ), there are four pure actions that the manager and the worker can choose in the stage game:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 4,
+    "text": "Forced Effort ( F ): The manager enforces the rule, compelling the worker to exert effort regardless of the state. 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 5,
+    "text": "Proactive Effort ( P ): The manager does not enforce the rule, but the worker still exerts effort in all states. 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 6,
+    "text": "Adaptive Effort ( A ): The manager does not enforce the rule, and the worker exerts effort only in the good state. 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 7,
+    "text": "Shirking ( S ): The manager does not enforce rule, and the worker makes no effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 8,
+    "text": "Alternatively, either party can opt out ( d m = 0 or d w = 0 ), which is referred to as Outside Option and denoted as O. Note that we exclude the case in which the manager does not enforce the rule and the worker exerts effort only in the bad state, as this is not incentivecompatible for the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 9,
+    "text": "Payoffs: In each period, if the players do not engage in the stage game, this period ends with both parties receiving their outside option payoffs ( u, π ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 10,
+    "text": "We normalize u to zero for simplicity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 11,
+    "text": "Instead, if they enter the stage game, production occurs according to the previously specified technology.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 12,
+    "text": "The worker receives a fixed wage w, while the manager obtains the output.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 13,
+    "text": "To focus on the dynamics of rule enforcement, we abstract from monetary incentives by assuming that the wage is exogenous and not paid by the manager.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 14,
+    "text": "This setup reflects scenarios where middle managers have limited control over wage-setting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 15,
+    "text": "Taking production, the worker’s effort cost, and the manager’s enforcement 4 While this assumption makes the rule appear coercive, it is fundamentally different from Acemoglu and Wolitzky.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 16,
+    "text": "In our model, the worker is protected by a fixed outside option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 17,
+    "text": "This outside option can be thought of as specific to the manager-worker relationship but still within the organization, with an additional fallback option outside the organization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 18,
+    "text": "Because the option outside the organization is sufficiently low, the worker never breaks the rule once it is enforced. 5 See Falk and Kosfeld for experimental evidence on the hidden costs of control, and Sliwka, Ellingsen and Johannesson, and Von Siemens for follow-up theoretical studies that further explore and unpack these costs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 19,
+    "text": "cost into account, we express their stage payoffs as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 20,
+    "text": "At the end of each period, the manager and the worker observe the realization x t [0, 1] of a public randomization device.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 21,
+    "text": "Assume that at the beginning of the first period, they can also observe a realization of the randomization device, which is denoted as x 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 22,
+    "text": "The randomization device guarantees that the set of equilibrium payoffs is convex, which is commonly used in the literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 23,
+    "text": "The timing of the stage game is summarized in Figure 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 24,
+    "text": "M decides on rules − − tû − − t ˆ",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 25,
+    "text": "These payoffs are normalized to per-period average values through multiplication by 1 − − 1 ∪{ d m t, ∪{ d m t, d w t, ∈H t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 26,
+    "text": "Among all possible relational contracts, one is called optimal if it maximizes the manager’s expected payoff t the beginning of the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 27,
+    "text": "Our goal is to characterize the set of optimal relational contracts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 28,
+    "text": "Preliminaries This section outlines how we characterize the set of PPE payoffs, denoted as E. Following Abreu, Pearce and Stacchetti, any equilibrium payoffpair ( u, ∈{ O, F, P, A, S } supporting an equilibrium payoffmust satisfy three constraints:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 29,
+    "text": "Promise-keeping constraint: The equilibrium payoffpair decomposes into a pair of flow payoffs and a pair of continuation payoffs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 30,
+    "text": "The continuation payoffs represent the discounted value of future actions. 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 31,
+    "text": "No-deviation constraint: The worker is willing to exert effort in line with the action. 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 32,
+    "text": "Self-enforcing constraint: The pair of continuation payoffs must belong to the PPE payoffset.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 33,
+    "text": "Combined with the no-deviation constraint, this ensures that the supported payoffis indeed an equilibrium payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 34,
+    "text": "The details of these constraints can be found in Appendix A. The Maximization Problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 35,
+    "text": "Now we formulate our maximization problem that characterizes the frontier of E. Define the PPE payofffrontier as ′: ( u, π ′ ) ∈E}.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 36,
+    "text": "This frontier is well defined as E is compact.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 37,
+    "text": "In addition, since the players can randomize their behavior with the randomization device { x t }, E is convex.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 38,
+    "text": "This implies that π ( u ) is a concave function.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 39,
+    "text": "Suppose that a payoffpair ( u, ’s highest equilibrium payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 40,
+    "text": "The worker’s promise-keeping constraint indicates that u = (1 − ’s flow payofffrom action j, and u j ( u ) denotes the realization of the worker’s continuation payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 41,
+    "text": "The following lemma establishes a key property that facilitates the characterization of the manager’s continuation payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 42,
+    "text": "For any ( u, ’s continuation payoffis realized as π ( u j ( u )).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 43,
+    "text": "Lemma 1 shows that for any payoffs on the PPE payofffrontier, the associated continuation payoffs also stay on the frontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 44,
+    "text": "This is because the manager’s actions are publicly observable, and there is no need to punish her by moving below the frontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 45,
+    "text": "We can therefore trace out the entire equilibrium action sequences on the frontier without worrying about payoffs below the frontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 46,
+    "text": "In particular, we can decompose f j ( u ) as f j ( u ) = (1 − ’s flow payofffrom action j.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 47,
+    "text": "Now, observe that the PPE payofffrontier is the highest payoffthe manager can achieve by using a pure action or randomizing between different pure actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 48,
+    "text": "Thus, it can be characterized by the following constrained maximization problem:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 49,
+    "text": "Assumption 3. (i) π/y < c/ [ pc +(1 − p ) C ]; (ii) − C ] / [ − p ) C ] }.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 50,
+    "text": "Assumption 4. (i) (1 − p ) / h w C + 1 2 − p w C i; (ii) p < min { w/ ( w + C ), ( C − w ) / (2 C − c ) }. Assumption 1 indicates that the manager cannot simply repeat enforcing rules, as the worker’s payofffrom forced effort is lower than his outside option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 51,
+    "text": "In contrast, the worker’s payofffrom adaptive effort is greater than the outside option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 52,
+    "text": "Assumption 2 is a necessary condition for proactive effort to be chosen within the relational contract.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 53,
+    "text": "Assumption 3 simplifies our analysis on the part of the PPE payofffrontier supported by shirking.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "A Model of Dynamic Rule Enforcement",
+    "paragraph_id": 54,
+    "text": "Finally, the necessity of Assumption 4 will become clear as we proceed to characterize the optimal relational contract; see the discussion following Definition 1 in the next section.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Optimal Relational Contract",
+    "paragraph_id": 0,
+    "text": "This section characterizes the optimal relational contract by solving the maximization problem outlined in the previous section.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Optimal Relational Contract",
+    "paragraph_id": 1,
+    "text": "We begin by presenting some general properties of the optimal relational contract.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Optimal Relational Contract",
+    "paragraph_id": 2,
+    "text": "Next, we identify two distinct approaches the manager can use to address unsatisfactory performance from the worker, and for each approach, we illustrate the corresponding dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Optimal Relational Contract",
+    "paragraph_id": 3,
+    "text": "Finally, we examine the impact of the discount factor on the relational contract.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 0,
+    "text": "In our model, the worker’s flow payoffis strictly negative if he exerts effort in both good and bad states.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 1,
+    "text": "To incentivize participation in the employment relationship, the worker must receive strictly positive flow payoffs in some periods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 2,
+    "text": "This implies that part of the PPE payofffrontier is supported by either adaptive effort or shirking, as these are the only actions that yield a strictly positive flow payoffto the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 3,
+    "text": "The following lemma characterizes this part of the PPE payofffrontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 4,
+    "text": "There exist three cutoffs, u ( w − c, w ), u A:= w − c, and u A ( w − c, u ), such that:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 5,
+    "text": "(i) For u [ u A, u A ], the PPE payofffrontier is supported by adaptive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 6,
+    "text": "The worker’s continuation payoffsatisfies u A,h ( u ) = 1 δ u − 1 − − c ) − 1 −",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 7,
+    "text": "(ii) For u − 1 − ’s perspective, the organization is in decline when the worker fails to deliver output in the adaptive region.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 8,
+    "text": "When the worker’s continuation payofffalls below the adaptive region (i.e., u < u A ), the decline becomes so severe that the manager must take action to counter it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 9,
+    "text": "Specifically, she must ensure effort input and production output.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 10,
+    "text": "This necessitates one of two actions: forced effort or proactive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 11,
+    "text": "Under both actions, the worker exerts effort regardless of the state, guaranteeing output.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 12,
+    "text": "However, the two actions differ in rule enforcement decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 13,
+    "text": "Under forced effort, the manager incurs the enforcement cost to impose rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 14,
+    "text": "In contrast, under proactive effort, no rules are enforced—the worker voluntarily exerts effort to counter organizational decline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 15,
+    "text": "Depending on whether proactive effort supports the PPE payofffrontier, we can formally define two approaches by which the manager counters organizational decline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 16,
+    "text": "The optimal relational contract adopts the worker-led approach if the PPE payofffrontier is supported by proactive effort for some u",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 17,
+    "text": "Intuitively, the worker-led approach refers to the case where the manager can rely on worker self-regulation to counter organizational decline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 18,
+    "text": "If this is not the case, the manager is expected to lead the relationship, which is therefore referred to as the manager-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 19,
+    "text": "Assumption 4 ensures that the worker-led approach is adopted under the optimal relational contract when enforcement costs are sufficiently high.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 20,
+    "text": "Recall that u A = w − c.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 21,
+    "text": "Part (i) of the assumption states that c is small enough to make u A sufficiently large, ensuring that proactive effort is feasible for at least some u < u A. Part (ii) of the assumption ensures that the payofffrom adaptive effort is low enough.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 22,
+    "text": "Hence, when proactive effort is feasible, the optimal relational contract will not begin with adaptive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 23,
+    "text": "Together, these assumptions help characterize the conditions under which the manager prefers the worker-led approach over the manager-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 24,
+    "text": "(i) When D < D ( δ ), it is optimal for the manager to adopt the manager-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 25,
+    "text": "Lemma 3 shows that the choice between the worker-led approach and the manager-led approach depends on the cost of rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "General Property",
+    "paragraph_id": 26,
+    "text": "Specifically, there exists a threshold D (",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 0,
+    "text": "We begin by investigating the manager-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 1,
+    "text": "(i) For u ’s continuation payoffsatisfies u F (0) = 1 − − p ) C − w ] > 0. (ii) The optimal relational contract delivers an equilibrium payoffpair (0, π (0)) and starts with players engaging in forced effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 2,
+    "text": "In subsequent periods, their actions and payoffs are determined by what region the worker’s continuation payoffis in.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 3,
+    "text": "Proposition 1 completes the characterization of the PPE payofffrontier under the manager-led approach (Figure 2 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 4,
+    "text": "In addition to the adaptive region for adaptive effort and the rewarding region for shirking (as established in Lemma 2 ), Part (i) of the proposition introduces a preventive region [0, u A ), where the manager may enforce rules to force the worker to exert effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 5,
+    "text": "In line with the definition of the manager-led approach, the PPE payofffrontier is not supported by proactive effort anywhere when the enforcement cost is sufficiently small. 6 In cases of a tie between the two approaches, we favor the worker-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 6,
+    "text": "( 0, 0 ) u A u A u w & A A A & S forced effort shirking adaptive effort w − pc − (1 − p ) C y − D Figure 2: PPE PayoffFrontier: D < D ( δ ) By characterizing this frontier, the proposition identifies the optimal relational contract under the manager-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 7,
+    "text": "The relationship begins in the preventive region, where the worker’s payoffis zero and the two parties engage in forced effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 8,
+    "text": "Then, the worker’s continuation payoffincreases and may remain in the preventive region where the payoffis supported by randomization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 9,
+    "text": "Eventually, it transitions into regions where the manager no longer enforces rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 10,
+    "text": "In the rewarding region, the worker may receive a fixed wage without exerting any effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 11,
+    "text": "However, shirking is not self-enforcing, as it yields the manager a payoff lower than her outside option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 12,
+    "text": "Hence, the worker’s continuation payoffdecreases after shirking and eventually transitions into the adaptive region.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 13,
+    "text": "In this region, if the worker encounters good states and exerts effort, his continuation payoffincreases.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 14,
+    "text": "In contrast, if the worker encounters bad states and fails to exert effort, his continuation payoffdecreases, and the organization enters a period of decline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 15,
+    "text": "Over time, these declines bring the relationship back to the preventive region, where the dynamics repeat as if starting anew.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 16,
+    "text": "It is worth noting that under the manager-led approach, not only does the optimal relational contract begin with rule enforcement, but the worker’s equilibrium payoffis also zero.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 17,
+    "text": "The first feature arises partly because the manager prioritizes output and incurs a sufficiently low cost of rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 18,
+    "text": "More importantly, it stems from the second feature, which shows how enforcing rules allows the manager to exploit the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 19,
+    "text": "By enforcing rules, the manager can compel the worker to exert effort without concern for incentive compatibility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 20,
+    "text": "As a result, she extracts all the rents from the relationship, and the relationship begins with the worker’s payoffexactly equal to his outside option (i.e., zero).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 21,
+    "text": "In our model, any further exploitation over the worker is blocked by his participation constraint.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 22,
+    "text": "This constraint also explains why the relationship follows a cyclical pattern of rule enforcement and no enforcement, rather than repeated rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 23,
+    "text": "Since forced effort imposes a negative flow payoffon the worker, he is willing to participate in the relationship and exert effort in both good and bad states during the initial periods only because the manager promises not to enforce rules in future periods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 24,
+    "text": "Specifically, the worker will later be allowed to make adaptive effort or even shirk, thereby earning positive flow payoffs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 25,
+    "text": "These back-loaded incentives are a common feature of dynamic contracting models.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 26,
+    "text": "The following corollary characterizes what the dynamics look like in the long run.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 27,
+    "text": "Suppose D < D ( ’s continuation payoff u [0, u ]; and if ’s continuation payoff u [0, u A ].",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 28,
+    "text": "Corollary 1 demonstrates that, in the long run, the dynamics under the manager-led approach are not absorbing but instead follow a cyclical pattern of rule enforcement and no enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 29,
+    "text": "Formally, this cycle implies that whenever the two parties engage in rule enforcement, there exists a stopping time in the future when the manager ceases to enforce rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 30,
+    "text": "Conversely, whenever the two parties engage in no enforcement, there exists a stopping time in the future when the manager resumes enforcing rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 31,
+    "text": "As we have explained, this cyclical behavior stems from the participation constraints of both players and the back-loaded incentives for the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 32,
+    "text": "In particular, after rule enforcement in the first period, the action in the second period depends on the discount factor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 33,
+    "text": "If the discount factor is sufficiently high ( ’s continuation payoffremains weakly smaller than u A. In this case, the action in the second period is determined by the randomization device: if u = 0 is realized, the two parties engage in forced effort, and the relationship resets as in the first period; if u = u A is realized, the two parties engage in adaptive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 34,
+    "text": "In both scenarios, the worker’s continuation payoffremains weakly smaller than u A after the action is taken.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 35,
+    "text": "As a result, the dynamics cycle exclusively between forced effort and adaptive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 36,
+    "text": "In contrast, if the discount factor is sufficiently low ( ’s continuation payoffstarting from the second period is strictly above u A. In this case, the action in the second period may involve adaptive effort if u ’s continuation payoffis already in the rewarding region.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 37,
+    "text": "Thus, when ’s performance deteriorated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 38,
+    "text": "This approach to management, where rules are imposed when productivity or behavior slides, mirrors the “manager-led” pattern we describe.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 39,
+    "text": "Organizations typically maintain flexibility until performance falls below acceptable levels, at which point stricter rule enforcement becomes necessary to restore productivity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 40,
+    "text": "This pattern extends beyond individual organizations to broader governance systems, particularly in China’s economic management.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 41,
+    "text": "In the example of “campaign-style mobilization” in China, the state periodically mobilizes resources and intensifies enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 42,
+    "text": "These mobilization periods can roughly be understood as periods of strict rule enforcement, followed by phases of relaxation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 43,
+    "text": "Brandt and Zhu presents an empirical study on the “boom-bust” feature of Chinese economy since 1978, showing how government’s cyclical control on credit allocation shapes economic outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 44,
+    "text": "During financial decentralization, state-owned banks divert resources to more productive private sectors, with the government financing through money creation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 45,
+    "text": "The resulting inflation forces the government to return to centralization and reassert control over credit allocation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 46,
+    "text": "Brandt and Zhu develops a macro-dynamic model to explain this cyclical pattern of Chinese economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Manager-led Approach",
+    "paragraph_id": 47,
+    "text": "Much like in organizational settings, this ebb and flow of enforcement in governance reflects an adaptation to fluctuating circumstances.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 0,
+    "text": "We now consider the case where the worker-led approach is adopted (i.e., D − δ )[ w + p ( C − c )] such that for u ’s continuation payoffsatisfies u P ( u P ) = 1 −",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 1,
+    "text": "Lemma 4 confirms that when the cost of rule enforcement is sufficiently high, the PPE payofffrontier can indeed be supported by proactive effort, leading to the adoption of the worker-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 2,
+    "text": "Specifically, in addition to the adaptive region and the rewarding region identified in Lemma 2, Lemma 4 introduces a preemptive region [ u P, u A ), where the manager does not enforce rules, but the worker may make proactive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 3,
+    "text": "When u = u P is realized, the worker exerts effort regardless of the state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 4,
+    "text": "Notably, when the worker is called to make proactive effort, his payoffis strictly positive (formally, u P > 0 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 5,
+    "text": "This is because, without rule enforcement, the manager relies on the threat of exit to motivate the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 6,
+    "text": "Since the worker can choose to shirk and still receive the fixed wage for the current period, the manager must provide a strictly positive payoff to ensure effort in both good and bad states.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 7,
+    "text": "This feature highlights a key difference between proactive effort and forced effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 8,
+    "text": "Unlike forced effort, the manager cannot extract all the rents from the worker under proactive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 9,
+    "text": "The feature sets the stage for the next result, which examines the maximum point of the PPE payofffrontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 10,
+    "text": "(ii) When D < D ( δ ), the manager’s highest equilibrium payoffis given by π (0) and supported by forced effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 11,
+    "text": "Lemma 5 shows a threshold D ( ’s payoffis maximized at u = u P, with the equilibrium payoffpair supported by proactive effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 12,
+    "text": "In contrast, when the rule enforcement cost is below D ( δ ), the manager’s payoffis maximized at u = 0, with the equilibrium payoffpair supported by forced effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 13,
+    "text": "This result arises because rule enforcement allows the manager to extract more rents from the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 14,
+    "text": "When the cost of enforcement is sufficiently low (but not so low as to undermine the worker-led approach), the manager may enforce rules at the start of the relationship to maximize her payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 15,
+    "text": "The following proposition fully characterizes the PPE payofffrontier and the optimal relational contract under the worker-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 16,
+    "text": "The actions and payoffs in subsequent periods are determined by what region the worker’s continuation payoffis in:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 17,
+    "text": "(i) For u ’s continuation payoffis weakly greater than u P, it will never enter [0, u P ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 18,
+    "text": "Proposition 2 shows that, under the worker-led approach, the optimal relational contract begins either in the preemptive region [ u P, u A ) or a preventive region [0, u P ), depending on the rule enforcement cost.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 19,
+    "text": "This result follows directly from Lemma 5.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 20,
+    "text": "When the rule enforcement cost is sufficiently high ( D ’s continuation payoffeventually exits it, with u = u P being realized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 21,
+    "text": "Once the continuation payoffsurpasses u P, it remains at or above this level, preventing any re-entry into the preventive region.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 22,
+    "text": "Thus, the worker-led approach is characterized by three main regions: the preemptive region [ u P, u A ), the adaptive region [ u A, u A ], and the rewarding region ( u A, u ]. In the preemptive region, the manager does not enforce rules; instead, the worker disciplines himself to exert effort out of fear of termination.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 23,
+    "text": "As the worker sustains proactive effort, his continuation payoffincreases and eventually transitions into the adaptive or rewarding region.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 24,
+    "text": "In these regions, the worker earns positive flow payoffs, either through adaptive effort or shirking, causing his continuation payoffto gradually decrease.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 25,
+    "text": "If the worker is required to make adaptive effort but fails to deliver output over several periods, his continuation payoffreturns to the preemptive region, restarting the cycle of self-discipline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 26,
+    "text": "( 0, 0 ) u A u A u w & P A A & S forced effort shirking adaptive effort proactive effort P & A D ( − D y − D w − pc − (1 − p ) C Figure 3: PPE PayoffFrontier: D; prolonged enforcement would reduce the worker’s payoffbelow his outside option, jeopardizing the relationship’s sustainability.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 27,
+    "text": "Similar to the manager-led approach, the worker complies during the initial phase because the manager refrains from enforcing rules in later periods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 28,
+    "text": "By trading offfuture leniency to build the relationship, the manager ensures the worker’s cooperation, while the worker exchanges initial compliance for future autonomy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 29,
+    "text": "The following corollary formalizes this result.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 30,
+    "text": "By Definition 1, an optimal relational contract adopts the worker-led approach if proactive effort supports the PPE payofffrontier at some u [0, u A ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 31,
+    "text": "Corollary 2 strengthens this definition by showing that the worker-led approach not only involves proactive effort but also ensures that the relationship avoids rule enforcement in the long run.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 32,
+    "text": "This result follows directly from Proposition 2, as the manager credibly commits to granting future autonomy in exchange for initial compliance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Worker-led Approach",
+    "paragraph_id": 33,
+    "text": "Because the manager effectively holds commitment power over rule enforcement, her promise is ultimately honored.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 0,
+    "text": "Lemma 3, Proposition 1, and Proposition 2 have shown how the rule enforcement cost shapes the optimal relational contract and its dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 1,
+    "text": "The following proposition examines the comparative statics with respect to the discount factor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 2,
+    "text": "D − c ) ’s highest equilibrium payoffis achieved by a convex combination of forced effort and adaptive effort that reduces the worker’s payoffto zero.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 3,
+    "text": "This payoffis therefore independent of the discount factor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 4,
+    "text": "Then, to show the impact of the discount factor, we need only examine how it affects the optimal relational contract under the worker-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 5,
+    "text": "When both players are more patient, the surplus from continuing the relationship increases, which strengthens the threat of exit as a means to motivate worker effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 6,
+    "text": "In this case, the worker can be incentivized to make proactive effort with a lower continuation payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 7,
+    "text": "This change allows the worker-led approach to deliver higher equilibrium payoffs for the manager.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 8,
+    "text": "As a result, the manager-led approach loses its appeal, and rule enforcement becomes optimal only when enforcement costs are extremely low.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Impact of the Discount Factor",
+    "paragraph_id": 9,
+    "text": "If the discount factor is sufficiently large, the manager-led approach is not optimal at any level of the enforcement cost.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 0,
+    "text": "Our model assumes that managers can enforce rules only before workers decide to participate, which allows the manager to commit to rule enforcement decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 1,
+    "text": "In practice, however, managers often lack such commitment power.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 2,
+    "text": "They may initially promise a workplace with minimal rules to attract workers but later reverse course and impose stricter rules after the employment relationship has begun.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 3,
+    "text": "To better capture this possibility, we modify our model by altering the timing of rule enforcement decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 4,
+    "text": "Specifically, the manager’s rule enforcement decision ( γ t ) now occurs after the worker’s participation decision ( d w t ), as shown in Figure 5.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 5,
+    "text": "We refer to this revised setup as ex-post rule enforcement, in contrast to the original ex-ante rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 6,
+    "text": "The following lemma demonstrates how this seemingly minor change in timing has a significant impact on the manager’s payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 7,
+    "text": "W privately observes the state ’s payoffon the PPE payofffrontier satisfies − δ )( y − D ) whenever it is supported by a pure action other than the outside option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 8,
+    "text": "Lemma 6 demonstrates that ex-post rule enforcement guarantees the manager a minimum payoffof (1 − δ )( y − D ) whenever the two parties engage in a pure action other than the outside option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 9,
+    "text": "This is because, after the worker participates, the manager retains the option to enforce the rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 10,
+    "text": "By enforcing the rule, the manager incurs a cost of D but secures y from the worker’s forced effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 11,
+    "text": "This enforcement option establishes a lower bound on the manager’s payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 12,
+    "text": "In the following, we investigate how ex-post rule enforcement influences the optimal relational contract and the manager’s approach to counter organizational declines.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 13,
+    "text": "To ensure that the worker-led approach remains feasible for certain parameter ranges, we introduce an additional assumption: Assumption 5. ax { 1 − − δ )[ pc + (1 − p ) C ], 1 − − − 1 − p δ ) C ] }. Proposition 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 14,
+    "text": "Suppose that Assumption 5 holds.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 15,
+    "text": "Under ex-post rule enforcement, there exists D ′ ( ′ ( δ ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 16,
+    "text": "In particular, the following hold:",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 17,
+    "text": "(i) Compared with ex-ante rule enforcement, ex-post rule enforcement decreases the manager’s payofffrom the optimal relational contract.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 18,
+    "text": "Proposition 4 establishes a threshold structure similar to the ex-ante case: under expost rule enforcement, the optimal relational contract adopts the worker-led approach if and only if ′ ( δ ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 19,
+    "text": "Furthermore, this threshold is higher than its ex-ante counterpart.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 20,
+    "text": "Consequently, the lack of commitment reduces the manager’s inclination toward the workerled approach, thereby undermining worker autonomy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 21,
+    "text": "To understand the intuition, we must first consider Part (i) of the proposition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 22,
+    "text": "It shows that ex-post rule enforcement harms the manager.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 23,
+    "text": "Recall from our earlier results that, under ex-ante rule enforcement, the optimal relational contract involves cyclical patterns of actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 24,
+    "text": "These cycles alternate between actions imposing negative flow payoffs on the worker, such as forced or proactive effort, and actions yielding positive flow payoffs to the worker, such as adaptive effort or shirking.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 25,
+    "text": "Crucially, the worker agrees to endure disciplinewhether imposed by rules or self-disciplineduring the initial periods only because the manager credibly promises future rewards in later periods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 26,
+    "text": "However, ex-post rule enforcement disrupts these future rewards, which is expected to erode the overall value of the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 27,
+    "text": "Specifically, in the adaptive region, promising higher continuation payoffs to the worker necessarily reduces the manager’s payoffs (as indicated by [ u A, u A ] in Figure 6 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 28,
+    "text": "Since the manager’s payoffis bounded below by (1 − δ )( y − D ), ex-post rule enforcement restricts the range of continuation payoffs that can be credibly offered to the worker.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 29,
+    "text": "As a result, a payoffthat was previously supported by adaptive effort may now require support through shirking or randomization involving shirking.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 30,
+    "text": "This restriction diminishes the manager’s payoffalong the PPE payofffrontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 31,
+    "text": "( 0, 0 ) u A u A u w & A u P u u A (1 − δ )( y − D ) ex-post ex-ante w − pc − (1 − p ) C F & A y − D proactive effort forced effort Figure 6: Comparison of the PPE payofffrontiers between ex-ante and ex-post rule enforcement Part (ii) naturally follows from Part (i): the manager is more likely to adopt the managerled approach under ex-post rule enforcement than under ex-ante rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 32,
+    "text": "Since ex-post rule enforcement severely limits the manager’s ability to promise future rewards, the worker loses motivation to exert effort when the organization is in decline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 33,
+    "text": "Ironically, this forces the manager to rely more heavily on rules to discipline the worker, leading to the adoption of the manager-led approach even when the enforcement cost exceeds D ( ′ ( δ ), the manager’s payofffrom the optimal relational contract increases in D. Proposition 5 shows that under ex-post rule enforcement, the manager can actually benefit from a higher enforcement cost of rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 34,
+    "text": "A sufficiently high enforcement cost can act as a commitment device, discouraging the manager from enforcing rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 35,
+    "text": "As the manager regains commitment power over rule enforcement decisions, her credibility in honoring future rewards is restored, enabling the value of the relationship to recover closer to the level observed under ex-ante rule enforcement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 36,
+    "text": "An important takeaway from the discussion on ex-post rule enforcement is that constraints on the manager’s discretion can ultimately benefit the manager herself.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 37,
+    "text": "This insight complements our analysis of the relationship between selective rule enforcement and organizational performance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Ex-post Rule Enforcement",
+    "paragraph_id": 38,
+    "text": "While our main results in Section 5 demonstrate that selective rule enforcement fosters a more effective organization than blind rule enforcement, Propositions 4 and 5 suggest that managerial discretion should still be limited to prevent the manager from reneging on rule-related commitments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 0,
+    "text": "This paper explores the optimal enforcement of rules in employment relationships.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 1,
+    "text": "Optimal relational contracts fall into two categories: manager-led approach and worker-led approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 2,
+    "text": "When enforcement costs are low, the manager-led approach is used, characterized by cycles of rule enforcement and relaxation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 3,
+    "text": "In this setting, the manager plays an active role in maintaining the worker’s performance by enforcing the rule when necessary to ensure effort.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 4,
+    "text": "However, as enforcement costs increase and the surplus of the relationship grows, the worker-led approach will be chosen.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 5,
+    "text": "Here, the threat of termination serves as the motivator, causing the worker to self-regulate and maintain effort without managerial supervision in the long run.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 6,
+    "text": "Furthermore, we identify a subcategory within the worker-led approach where rules are enforced at the beginning of the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 7,
+    "text": "This temporary enforcement helps establish future flexibility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 8,
+    "text": "Our findings align with empirical studies that suggest that high-performing organizations, which typically have greater surplus, rely less on rigid rules and more on worker autonomy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 9,
+    "text": "Our analysis of variations to the baseline model yields additional insights into rule enforcement dynamics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 10,
+    "text": "Managers face a dilemma when they make enforcement decisions after workers join the organization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 11,
+    "text": "Instead of benefiting from this additional flexibility, managers actually end up worse offbecause they cannot credibly promise future autonomy to workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 12,
+    "text": "We also find that information structure significantly affects enforcement strategies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 13,
+    "text": "Paradoxically, when effort costs become public information, managers are less likely to enforce rules, as the worker-led approach becomes more appealing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 14,
+    "text": "This suggests that improved information technologies might lead to more flexible organizational structures rather than increased monitoring and control.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 15,
+    "text": "For future research, it would be valuable to explore how managerial characteristics, which influence enforcement costs, interact with the production environment and the surplus of the relationship.",
+    "warnings": ""
+  },
+  {
+    "file_name": "li-2025-01-14_8991.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Conclusion",
+    "paragraph_id": 16,
+    "text": "This could provide further insight into when and how organizations transition between different enforcement strategies, potentially linking management styles to specific industry or market conditions.",
+    "warnings": ""
+  }
+]

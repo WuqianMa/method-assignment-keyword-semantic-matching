@@ -1,0 +1,3323 @@
+[
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 0,
+    "text": "Álvaro Delgado-Vega University of Chicago Barton E. Lee ETH Zürich First version: September 15, 2024 Please view the latest version here January 5, 2025 Abstract In many settings, individuals face a tradeoff between cooperating to expand a collective good (a “collective pie”) or competing to expand the share they own of that good.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 1,
+    "text": "We study this tradeoff as a dynamic public goods problem where the size of the collective pie (and its shares) can only be gradually changed and contributions to the pie’s growth are irreversible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 2,
+    "text": "Our main result is that the pie’s growth eventually halts and conflict between the agents ensues forever.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 3,
+    "text": "In the essentially unique subgame perfect equilibrium, growth ultimately leads to a stage-game that is reminiscent of the prisoner’s dilemma.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 4,
+    "text": "However, unlike a repeated prisoner’s dilemma, cooperation is unsustainable in our model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 5,
+    "text": "We also show that any initial inequality in agents’ shares decreases gradually as the pie grows, and the speed of the pie’s growth may either increase or decrease with greater initial inequality.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 6,
+    "text": "These results are independent of the agents’ discount factors, and the inefficiency induced by conflict is unbounded.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 7,
+    "text": "We highlight the empirical relevance of our theory to factionalism in organizations, special interest politics, and market competition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 8,
+    "text": "*Álvaro Delgado-Vega: adelgadovega@uchicago.edu; Barton E. Lee: bartonlee@ethz.ch.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 9,
+    "text": "This paper has benefited from discussions with S. Nageeb Ali, Sandeep Baliga, Benjamin Blumenthal, Ethan Bueno de Mesquita, Peter Buisseret, Philipp Denter, Jon Eguia, Christian Ewerhart, William Fuchs, Hans Gersbach, Gabriele Gratton,Ángel Hernándo-Veciana, Hongyi Li, Elliot Lipnowski, Antoine Loeper, Pedro P. PérezVelasco, Armin Schmutzler, and Johannes Schneider.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 10,
+    "text": "We also thank seminar and workshop participants at Ca’ Foscari University of Venice, the Stigler Affiliates Conference (Chicago Booth), and the 2 nd UC3M Micro Retreat.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 11,
+    "text": "During part of this project,Á. Delgado-Vega was supported by a Postdoctoral Fellowship at the Chair of Political Economy and eDemocracy at ETH Zürich; he is grateful for his time there.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "When Growth leads to Zero-sum Conflict *",
+    "paragraph_id": 12,
+    "text": "B. Lee is an Affiliate Fellow at the Stigler Center at Chicago Booth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "In many settings, individuals face a tradeoff between pursuing cooperative actions that expand a collective good or competitive actions that expand the share they own of that good.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "This classical tradeoff is ever present—from the internal workings of organizations to interactions between competing firms in the same industry.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "For example, members of an organization must choose between investing their time in expanding their organization’s resources or trying to redirect existing resources toward their preferred use.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "In an industry, firms may expand their industry’s market as a whole (e.g., via industry-wide advertising) or compete to increase their market share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "Organized interest groups may exert effort toward expanding production—“society’s pie”—or try to shift a greater share of the existing pie toward their members.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "Understanding when and why individuals cooperate to grow a collective good or when, instead, they pursue conflict over its distribution is crucial for our understanding of the dynamics of organizations, markets, and political competition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "Yet, the dynamics of growth and conflict with collective goods are potentially complicated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "In these settings, individuals’ interactions are rarely one-shot; instead, individuals must repeatedly resolve this tradeoff as they interact in the same market place, organization, or economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "This gives rise to dynamic consequences: Choosing to expand one’s share today means starting with a higher share tomorrow; expanding the collective good today leads to a larger good tomorrow.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "Therefore, present decisions may have long-term consequences for both the evolution of the collective good’s size and its distribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "Furthermore, since individuals have long-term interests, there is scope for relational contracts to emerge whereby cooperation is sustained over time by the threat of (self-enforcing) punishment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "In this paper, we study this tradeoff as a dynamic public goods problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "We focus on settings that have two features common to the literature on public goods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "First, individuals face constraints imposed by institutions or technology that allow only for gradual shifts in the shares and size of the collective good.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "Second, contributions to expand the collective good are irreversible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "Irreversibility appears naturally in many settings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "For example, useful ideas contributed by an organization’s member cannot be unlearned.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "A firm’s advertisement that makes a new segment of the population aware of the industry’s existence is a contribution not easily reversed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "In our model, two forward-looking agents own complementary shares of a pie, and each period they simultaneously choose whether to expand the pie or expand their share of it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "The pie only grows if some agent contributes to it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "The law of motion of the pie is additive: Each agent’s contribution adds a fixed amount to the pie and if both agents contribute to it, the pie grows by twice as much as if only one contributes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "The law of motion of each agent’s share is also additive: If only one agent attempts to increase her share, it increases by a fixed amount but if both (or neither) do, there is a stalemate and the agents’ shares remain unchanged.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "This means that an agent, if she so chooses, can always guarantee that her share does not decrease.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "An agent’s incentive to expand the pie is increasing in her share of it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "Conversely, her incentive to expand her share is increasing in the size of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "Hence, an agent is more likely to expand the pie when the pie is small or her share is large.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "With myopic agents, a sufficiently large pie leads to perpetual conflict: Both agents fight for their share, producing a stalemate that stops growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "Yet, one may conjecture that cooperation can be sustained when agents are forward-looking and interacting repeatedly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "Our main result shows that this conjecture is wrong: Growth eventually halts and conflict follows thereafter.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "Furthermore, the size of the pie for which conflict ensues is independent of the agents’ discount factor (and, hence, coincides with the agents’ myopic behaviors).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "To see why, suppose we try to sustain a path of growth via grim-trigger strategies: If any agent deviates to increase her share, she will be punished by the other agent also attempting to increase her share and growth ceasing thereafter.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "By the ensuing stalemate over the shares of the pie, a deviating agent will still guarantee herself the payoff that she appropriated in her deviation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "The breakdown of cooperation then follows from the fact that, since the pie grows with constant returns, the total future growth of the pie is independent of its current size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "However, each agent’s gain from deviating to increase her share naturally increases in the pie’s size—in turn, there exists a size of the pie for which agents deviate. 1 The fact that cooperation eventually halts has an unraveling effect.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "As a result, forward-looking agents are unable to grow the pie beyond what myopic agents can achieve.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "More generally, all dynamics in our model are unaffected by the agents’ discount factors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "Our results connect inequality both to the speed and limit of growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "If agents have equal initial shares, both contribute to expand the pie and eventually stop at the same time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "If they have different initial shares, the agent with the smallest share stops cooperating first.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "This causes the speed of growth to slow and resembles a key observation by Mancur Olson in his seminal work on collective action problems: There exists a “tendency for 1 In Section 6, we show that this result is robust to relaxations of key assumptions, including: the possibility that the size of pie depreciates or conflict over the shares destroys part of the pie, and endowing the agents with asymmetric discount factors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "‘exploitation’ of the great by the small.” The agent who owns a larger share keeps the pie growing while the agent with a smaller share free rides and increases her share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "However, because the share of the large-share agent is decreased, this also decreases the large-share agent’s incentive to contribute to expanding the pie—eventually, leading the large-share agent to also compete over shares of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "Perhaps interestingly, this initial inequality leads the pie to grow to a long-run size that is larger than would otherwise be attained if the agents had equal shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "Hence, more persistent growth requires initial inequality but growth also gradually erodes inequality.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "In our framework, initial conditions matter.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "More extreme initial levels of inequality are more likely to have a persistent effect, which consists of greater long-run inequality but also a greater long-run size of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "However, this does not mean that extreme initial inequality is necessarily the utilitarian optimum since, as a result of the “tendency for ‘exploitation’ of the great by the small,” more unequal initial conditions translate into equilibrium paths where only one agent contributes to the collective good, implying slower growth rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "Hence, equality is the utilitarian optimum if agents are sufficiently impatient, whereas maximal inequality is the utilitarian optimum for sufficiently patient agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "Our setting connects to two classical games: The prisoner’s dilemma and the centipede game.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "When the pie is such that in equilibrium conflict ensues, the agents face a prisoner’s dilemma stage game: Each agent has a dominate strategy in the stage game to expand their share but both agents would be better off if they expanded the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "Therefore, the dynamics of growth in this model imply that regardless of initial conditions, agents will eventually end up playing a repeated prisoner’s dilemma at perpetuity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "However, unlike the folk theorems for repeated games, cooperation cannot be sustained because cooperation leads to a larger pie, which increases the attractiveness of defection and this, in turn, has an unraveling effect that makes cooperation impossible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "In this sense, the logic of conflict is reminiscent of a centipede game.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "Yet, in our model, the unraveling argument of the centipede game applies only partially: When the pie is small, agents are able to cooperate and grow the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "Institutions and the broader technological environment play an important role in enabling, or hindering, cooperation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "Consider the example of market competition and firms’ advertising decisions mentioned earlier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "The effectiveness of the firms to expand the market or their share might depend on their ability to micro-target new customers outside of the market or customers of their competitor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "New technologies, access to richer data, or changes in privacy regulation may affect one or both of these.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "Similarly, in organizations and politics, the ability of an individual’s or interest group’s effectiveness in redirecting resources toward their own interests might depend on institutional structures, such as the stringency of checks and balances.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "Holding all else equal, if institutions or technology are such that it becomes easier for agents to expand their share or harder to expand the pie, then cooperation becomes harder to sustain, conflict ensues earlier, and the long-run size of the pie is smaller. 2 This result provides insight into when and why demand for more stringent regulations or institutions (e.g., checks and balances) might arise.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 60,
+    "text": "Finally, in Section 5, we emphasize the empirical relevance of our results by focusing on three applications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 61,
+    "text": "First, we consider the emergence of factionalism in social movement organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 62,
+    "text": "We show that the literature in organizational behavior and sociology provide support for our underlying mechanism and that a larger pie—more organizational resources—may induce conflict in organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 63,
+    "text": "Second, we apply our theory to market competition and firms’ decisions to invest in industry-wide (“generic”) or firm-specific (“branded”) advertising.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 64,
+    "text": "The former aims to expand market demand for the entire industry, whereas the latter aims to steal, or defend, market share from competitors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 65,
+    "text": "We show that our key predictions for growth and conflict are supported by a range of anecdotal and empirical evidence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 66,
+    "text": "Finally, we highlight how our theory is consistent with observations made by Olson, which connect the existence of special interest groups (so called “distributional coalitions”) to a country’s poorer economic performance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 67,
+    "text": "The remainder of the paper is structured as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 68,
+    "text": "Subsection 1. reviews the related literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 69,
+    "text": "Section 2 presents the model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 70,
+    "text": "Section 3 establishes our core result that growth eventually halts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 71,
+    "text": "Section 4 characterizes the dynamics of growth and conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 72,
+    "text": "Section 5 discusses the empirical relevance of our theory with applications to organizations, politics, and markets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 73,
+    "text": "Section 6 discusses some relaxations of key modeling choices.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 74,
+    "text": "Section 7 concludes the paper.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 75,
+    "text": "All proofs are deferred to the appendix.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 0,
+    "text": "The limits of growth have long attracted the attention of economists.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 1,
+    "text": "This paper presents a theory of stagnation based on a collective action problem in which we abstract away from technological explanations of stagnation by assuming constant returns to agents’ efforts to grow a collective good.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 2,
+    "text": "Instead, stagnation arises in our model as a result of growth itself: A larger pie makes conflict over the shares of the collective good more attractive.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 3,
+    "text": "This provides a novel explanation of when and why individuals who are united by a collective goal (e.g., individuals in organizations, producers in an industry) will fail to adapt to change—in this case, change in the form 2 Naturally, changes that make it easier for agents to expand their share might also have spillover effects that make it easier to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 4,
+    "text": "So long as the spillovers are not too large, the same conclusion holds.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 5,
+    "text": "of growth and progress toward their collective goals.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 6,
+    "text": "According to Garicano and Rayo, failure in adaptation is the type of organization failure that is least understood by the literature. 3 Like many theories of stagnation in collective action problems, our theory is underscored by a commitment problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 7,
+    "text": "Commitment problems arise in situations where an agent who contributes to expanding the pie today is not guaranteed to enjoy the entirety of those benefits tomorrow.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 8,
+    "text": "This idea is reminiscent of the centipede game and the hold-up problem in contract theory.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 9,
+    "text": "Closer to us, Krusell and Rios-Rull, Schaefer, Acemoglu and Dow and Perotti study settings where an increase in the size of the pie also produces (by assumption) a redistribution of the pie. 4 In the political economy literature of public debt and state capacity a similar commitment problem results from turnover in decision-making authority.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 10,
+    "text": "In contrast to this literature, in our setting the distribution of the pie changes endogenously to the growth of the pie (since growth affects the agents’ incentives to expand their shares) and there is no turnover in decision-making authority.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 11,
+    "text": "In the context of (dynamic) veto bargaining, a common explanation for inefficient outcomes is the status quo effect: bargaining outcomes that are achieved today can increase agents’ reservation values in the future. 5 Our model also features a status quo effect in the form of “gradualism” whereby only small changes in the size of the pie and its shares can be achieved each period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 12,
+    "text": "However, unlike the veto bargaining literature, our agents are not endowed with veto power and, furthermore, there are no synergies in their actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 13,
+    "text": "This implies that the net effect of an agent’s action is independent of the other’s action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 14,
+    "text": "Perhaps closer to our paper is Acharya and Ortner, which studies a setting where two agents engage in veto bargaining with policies arriving stochastically and there is an exogenously-assumed (and 3 In this sense, we connect to the literature on the theory of the firm and the limits of organizational growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 15,
+    "text": "Our limit to the organization does not result from a lack of welfare-enhancing opportunities but because, as the organization grows, agent’s incentives for conflict increase.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 16,
+    "text": "This result also points toward the advantages of centralization since in the model, growth would not stop if one agent was guaranteed the entire share of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 17,
+    "text": "Centralization has also been highlighted as a potential solution to collective action problems in several literatures. 4 More distant from our model, Kreps and Chassang study how rigidities in the organization’s relational contract may produce failed adaptations. 5 Offering a different perspective, Bowen, Chen and Eraslan show that the status quo effect can improve efficiency.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 18,
+    "text": "For a recent survey of the literature, see Eraslan, Evdokimov and Zápal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 19,
+    "text": "commonly known) Pareto frontier.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 20,
+    "text": "Our framework poses an interesting contrast—despite the potential for unbounded growth—in equilibrium, what would appear as a Pareto frontier emerges endogenously.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 21,
+    "text": "The key tradeoff we study is between expanding the pie or expanding one’s share of it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 22,
+    "text": "This tradeoff appears in Olson; although he does not consider its dynamic consequences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 23,
+    "text": "Since Olson, economists have analyzed this tradeoff in a variety contexts but have largely approached the problem by considering static settings, the steady states of dynamical systems, or dynamic settings with myopic agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 24,
+    "text": "Gonzalez and Eggert et al. analyze this tradeoff in a dynamic setting with forward-looking agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 25,
+    "text": "However, we differ in two important ways.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 26,
+    "text": "First, their approaches do not feature history-dependence in the agent’s shares of the pie—a key focus of our theory.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 27,
+    "text": "In this sense, the aforementioned papers study contexts without property rights, whereas we (implicitly) study a context with “weak” property rights: An agent’s benefit from the good can be reduced from one period to the next but only gradually.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 28,
+    "text": "Assuming history-dependent shares allows us to connect asymmetries in agents’ endowments of the pie to their incentives to pursue conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 29,
+    "text": "Although our formulation differs, we speak to Hirshleifer ’s observations that “the initially disadvantaged group is typically rationally motivated to fight harder” and “cooperative strategies tend to be relatively more rewarding for the better-endowed side”. Second, we allow for history-dependent strategies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 30,
+    "text": "Eggert et al. restricts attention to Markovian equilibria.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 31,
+    "text": "Gonzalez ’s theory features a continuum of agents but because an individual agent’s deviation is undetectable, this approach precludes the possibility of relational contracts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 32,
+    "text": "Our theory is a version of a dynamic public goods problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 33,
+    "text": "As is common in this literature, our public good is subject to gradualism and irreversibility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 34,
+    "text": "Previous work has focused on why gradualism appears in bargaining outcomes or public goods contributions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 35,
+    "text": "Others have focused on how the irreversibility of a public good generates gradualism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 36,
+    "text": "In contrast, and similar to Acharya and Ortner, we impose gradualism as a constraint, which captures frictions generated by institutions, technology, or consumer behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 37,
+    "text": "Contributions to public goods are commonly assumed to be irreversible. 6 In our theory, the public good (the size of the pie) is also irreversible but, in addition, we also assume that the benefit an agent derives from the public good can be gradually changed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 38,
+    "text": "This latter feature contrasts our approach from the aforementioned papers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 39,
+    "text": "Finally, our theory speaks to the emergence of zero-sum competition in markets, politics, and organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 40,
+    "text": "Recent work has focused on the role of information asymmetries in generating zero-sum competition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 41,
+    "text": "Bueno de Mesquita and Dziuda analyze a dynamic model of politics where the underlying prevalence of common-value issues is known to politicians but unknown to voters.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 42,
+    "text": "Bueno de Mesquita and Dziuda show the inevitability of “partisan traps,” whereby political competition centers around zero-sum (partisan) policy issues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 43,
+    "text": "Politicians exploit the informational asymmetry to make voters more pessimistic about the prevalence of common-value issues and to behave as partisans— ultimately, leading to a zero-sum trap.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 44,
+    "text": "Similarly, Ali, Mihm and Siga illustrate how uncertainty about the distribution of a policy’s zero-sum benefits may lead ex-ante Pareto efficient policies to be rejected by a majority of voters.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 45,
+    "text": "Ash, Morelli and Van Weelden illustrate how a politician’s desire to signal her type to voters can lead her to (inefficiently) allocate resources toward divisive, zero-sum policy issues instead of common-value issues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 46,
+    "text": "Our theory, in contrast, features no informational asymmetry. 7 We offer a complementary perspective in which the emergence and inevitability of zero-sum competition is a product of the growth of the collective good itself.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Model",
+    "paragraph_id": 0,
+    "text": "Time is discrete and infinite, t ∈{ 1, 2,.. }. There are two agents, A and B, who own shares s t and 1 − s t, respectively, of a pie ’s share constitute a two-dimensional state of the world ( s t, ’s state ( s t − 1, π t − 1 ) determine periodt state, ( s t, ’s dilemma if agents are sufficiently patient and have control over their publicly observable record of behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Model",
+    "paragraph_id": 1,
+    "text": "s t = max n 0, min 1, s t − 1 + κ ( a t B − a t A ) o and − 1 + − 1 } and",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Model",
+    "paragraph_id": 2,
+    "text": "Agent A and B ’s per-period payoffs are u A ( s t, − s t ); hence, agent j ’s payoff is P − 1 u j ( s t,",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Model",
+    "paragraph_id": 3,
+    "text": "Equilibrium concept.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Model",
+    "paragraph_id": 4,
+    "text": "Our equilibrium concept is pure-strategy Subgame Perfect equilibrium (equilibrium hereafter).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Model",
+    "paragraph_id": 5,
+    "text": "A strategy for j ∈{ A, B } is a mapping a j ( s t − 1, π t − 1, h t − 1 ) from every feasible state ( s t − 1, π t − 1 ) and history of past actions h t − 1 into a binary decision a t j ∈{ 0, 1 }. We denote the agents’ strategy profile by ’s continuation payoff from a state ( s t − 1, π t − 1 ) = ( s, π ) with history h t − 1 as V j ( s, − 1 ):= E h ∞ X t ′ = t β t ′ − t u j ( s t ′, π t ′ ) − 1 i, where ( s t ′, π t ′ ) and h t ′ are determined by σ and the law of motion for every period t ′ t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 0,
+    "text": "In this section, we show that there exists a limit to the growth of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 1,
+    "text": "We begin with two auxiliary lemmas that highlight the key forces that ultimately limit growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 2,
+    "text": "First, consider the payoff an agent obtains if perpetual conflict occurs: Both agents perpetually choose to increase their shares—guaranteeing that the pie never grows and each agent’s share remains fixed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 3,
+    "text": "Lemma 1 says that, in every equilibrium, an agent’s continuation payoff must be at least as high as her payoff from this perpetual conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 4,
+    "text": "Lemma 1 (Perpetual conflict as a lower bound on payoffs.) Let the state be ( s t − 1, π t − 1 ) = ( s, π ) with some history h t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 5,
+    "text": "In every equilibrium, ’s continuation payoff is bounded below by the continuation payoff of perpetual conflict:",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 6,
+    "text": "V A ( s, − 1 ) − − 1 ) Since each agent’s impact on the share is symmetric, an agent’s choice to increase her share has a defensive effect: She ensures that her share does not decrease regardless of the other agent’s action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 7,
+    "text": "At the same time, growth is irreversible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 8,
+    "text": "Therefore, an agent’s continuation payoff must not be less than maintaining her current share and the current size of the pie for every future period, which corresponds precisely to the perpetual conflict payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 9,
+    "text": "Second, consider the payoff an agent obtains from the opposite extreme: Perpetual cooperation, whereby in every period the agents choose to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 10,
+    "text": "Thus, the pie grows at its maximum speed: 2 ω per period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 11,
+    "text": "This maximizes the sum of both agents’ continuation payoffs, which is simply the discounted sum of the size of the future pies (since the agents own complementary shares).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 12,
+    "text": "Intuitively, in every equilibrium, this discounted sum—the “surplus” generated by the agents—is bounded above by the surplus generated by perpetual cooperation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 13,
+    "text": "Yet, because there are constant returns to cooperation, the surplus generated by perpetual cooperation is decreasing as a fraction of the pie’s current size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 14,
+    "text": "Lemma 2 formalizes these results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 15,
+    "text": "Lemma 2 (Perpetual cooperation as an upper bound on payoffs.) Let the state be ( s t − 1, π t − 1 ) = ( s, π ) with some history h t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 16,
+    "text": "In every equilibrium, ’ continuation payoffs is bounded above by the continuation payoff of perpetual cooperation:",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 17,
+    "text": "V A ( s, − 1 ) + V B ( s, − 1 ) Moreover, because there are constant returns to cooperation, the surplus from perpetual cooperation is finite and decreasing as a fraction the pie’s current size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 18,
+    "text": "Lemmas 1 and 2 present two forces that act against cooperation: Agents are able to defend their existing shares of the pie and the surplus generated by perpetual cooperation is bounded and decreasing as fraction of the pie’s size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 19,
+    "text": "Consider, for example, a strategy profile whereby the agents perpetually cooperate, so the surplus generated by the agents is the right hand side of ( 2 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 20,
+    "text": "If an agent, say agent A, instead decides to deviate and increase her share, she free rides on the other agent’s choice to expand the pie and benefits immediately from a larger share of the now larger pie: ( s +",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 21,
+    "text": "However, as the pie grows, even the surplus generated by perpetual cooperation—the maximum possible surplus—is insufficient: Cooperation cannot be sustained.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 22,
+    "text": "Intuitively, when the pie is sufficiently large and because there are constant returns to cooperation, perpetual cooperation generates only an arbitrarily small surplus relative to what perpetual conflict generates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 23,
+    "text": "At the same time, the incentive to deviate increases as the pie grows, and eventually some agent will prefer not to cooperate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 24,
+    "text": "Lemma 3 formalizes the above intuition and implications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 25,
+    "text": "It says that if each agent has a non-unit share (i.e., s ̸ = 0, 1 ), then growth eventually halts: For a sufficiently large pie, in every equilibrium, the agents engage in perpetual (zero-sum) conflict and the size of the pie and the agents’ shares remain fixed. 8 Lemma 3 (Limited growth.) There exists ̄ − 1, π t − 1 ) = ( s, ̄ ′, ′ ) = ( s, π ) for every t ′ t; We have seen that conflict ensues when the pie is sufficiently large.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 26,
+    "text": "However, Lemma 3 and the above discussion suggest that the agents’ discount factor plays an important role in determining the limit of growth; indeed, the surplus generated by perpetual cooperation is larger when the agents are more patient.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 27,
+    "text": "Therefore, one may expect that even if growth must eventually halt, a more patient agent can be incentivized to cooperate for larger pies through the promise of the other’s future cooperation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 28,
+    "text": "Proposition 1 establishes that this is not the case: The limit of growth is independent of the agents’ discount factors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 29,
+    "text": "The case where an agent owns a non-interior share (i.e., s ∈{ 0, 1 } ) is an edge case that does not arise on the equilibrium path (we show this formally in Section 4 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 30,
+    "text": "For completeness, Corollary A. in Appendix A, states the possible equilibrium outcomes for these subgames.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 31,
+    "text": "In some equilibria of these subgames, the pie may continue to grow; however, in every equilibrium, the agents’ shares remain fixed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 32,
+    "text": "It follows because, when one agent has a unit share, the other agent (who has a zero share) is indifferent between having a zero share of the current pie and having a zero share of a larger pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 33,
+    "text": "Yet, this scenario never arises on the equilibrium path since an agent with non-zero share always has a strict incentive to avoid subgames where their share is zero.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 34,
+    "text": "The possibility of growth in this edge case (and our results more generally), do not rely on the possibility that agents can have zero, or unit, shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 35,
+    "text": "Our essentially unique equilibrium (to be presented in Proposition 2 ) remains unchanged if agents’ shares are bounded between s and 1 − s for some s > 0 sufficiently small.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 36,
+    "text": "Proposition 1 (The unraveling effect of limited growth.) Let the state be ( s t − 1, π t − 1 ) = ( s, − − s ) − ω (3) and with any history h t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 37,
+    "text": "In every equilibrium, ′, ′ ) = ( s, π ) for every t ′ t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 38,
+    "text": "Proposition 3 highlights that the limit of growth depends only on the agents’ shares, s, and the extent to which they can expand their share, —which is a bound smaller than the one in Lemma 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 39,
+    "text": "Since this frontier is exclusively determined by myopic incentives, it is independent of agents’ discount factor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 40,
+    "text": "This logic is reminiscent of the centipede game, in which two agents fail to grow a common pie because each is afraid of the other appropriating it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 41,
+    "text": "In the centipede game, the expectation of the other agent’s selfish behavior also triggers an unraveling effect making cooperation altogether impossible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 42,
+    "text": "However, unlike the centipede game, in our model agents accrue payoffs continually over time—hence, temporary cooperation can offer both agents benefits—and an agent may be better off cooperating today even if she expects that in the future the other agent will selfishly deviate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 43,
+    "text": "These crucial differences result from the gradualism with which shares change and imply that cooperation has a greater chance of being sustained in our setting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 44,
+    "text": "It is interesting to note that at the point at which growth ceases, the agents’ stage game payoffs correspond to a prisoners’ dilemma: In the stage game, both agents have a dominant strategy to increase their share but the agents would be strictly better off if both expanded the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 45,
+    "text": "More generally, at any point where cooperation to expand the pie cannot occur, the stage game is a prisoners’ dilemma.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 46,
+    "text": "Yet, unlike a repeated prisoners’ dilemma, our game is a dynamic game: Cooperation generates a larger pie, which in turn increases agents’ incentives to defect.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 47,
+    "text": "This difference makes cooperation impossible, regardless of the agents’ discount factors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 48,
+    "text": "This conclusion is perhaps surprising given that our equilibrium concept is Subgame Perfect equilibrium, which potentially allows agents to sustain cooperation through relational incentives. 9 Proposition 1 leaves open a number of questions: Can growth be achieved when the 9 Related folk theorems for dynamic games, such as those in Dutta, do not apply to our setting because of the irreversibility constraint.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 49,
+    "text": "How does the size of the pie and the agents’ shares evolve in the face of limited growth?",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 50,
+    "text": "What is the relationship between the inequality of agents’ shares and the long-run size of the pie?",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Growth eventually halts",
+    "paragraph_id": 51,
+    "text": "We turn to these questions in the next section.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 0,
+    "text": "We now characterize the equilibrium dynamics of growth and conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 1,
+    "text": "These dynamics are underscored by a simple tradeoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 2,
+    "text": "An agent’s marginal benefit from increasing her share is (roughly) in proportion to the size of the pie, and her marginal benefit from increasing the pie is (roughly) in proportion to the size of her share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 3,
+    "text": "This suggests that a small pie is more likely to incentivize the agents to expand the pie; while a large pie is more likely to incentive the agents to expand their shares—inducing perpetual zero-sum conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 4,
+    "text": "Conversely, it also suggests that, for any given size of the pie, the agent with the smallest share will have the greatest incentive to expand their share and the agent with the largest share will have the greatest incentive to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 5,
+    "text": "Proposition 2 says that there exists an essentially unique equilibrium that is Markovian (history-independent); it is depicted in Figure 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 6,
+    "text": "The dynamics induced by the equilibrium have two key features that follow from the simple tradeoff described above:",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 7,
+    "text": "When the agents’ initial shares are not too unequal (and the initial pie is not too large), both agents initially cooperate to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 8,
+    "text": "However, as the pie grows, cooperation ceases: The agent with the smaller initial share chooses to expand her share, while the agent with the larger initial share continues to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 9,
+    "text": "This implies that the state evolves along a diagonal in the ( s, π ) space: The pie expands (albeit at a slower rate) and agents’ shares gradually equalize to s t = 1 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 10,
+    "text": "Once any initial inequality between the agents’ shares has been removed, perpetual zero-sum conflict ensues and growth halts with the long-run size of the pie attaining a minimal value.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 11,
+    "text": "When the agents’ initial shares are sufficiently unequal (and the pie is not too large), the agents never cooperate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 12,
+    "text": "The agent with the smaller share immediately chooses to expand her share, and the agent with the larger initial share expands the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 13,
+    "text": "Again, this process temporarily leads to an expanding pie and a gradually more equal distribution of shares between the agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 14,
+    "text": "But once the pie has grown sufficiently, perpetual conflict ensues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 15,
+    "text": "However, at this point and unlike (i), the agents shares are not equalized—the initial inequality persists (although the inequality is reduced)—and the long-run size of the pie is larger than the minimal value attained in (i).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 16,
+    "text": "Proposition 2 (Dynamics of growth and conflict.) There exists a Subgame Perfect equilibrium − 1, π t − 1 ) = ( s, π ) and any history h t − 1 a − 1 ) =    0 if − − − 1 ) =    0 if − s ) − − s ) − ’s share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 17,
+    "text": "In equilibrium, the amount that the pie grows by is (weakly) decreasing as the pie grows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 18,
+    "text": "Similarly, as an agent’s share increases she is less likely to further expand her share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 19,
+    "text": "Yet, in our setting there are constant returns to both actions. 10 Our results are, instead, driven by the payoff complementary between an agent’s share and the size of the pie. 10 Our results are strengthened—with growth being more limited and conflict ensuing earlier—if there were diminishing marginal returns to agents’ actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 20,
+    "text": "We return to these assumptions in Section 6.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 21,
+    "text": "As in Proposition 1, the equilibrium dynamics in Proposition 2 are independent of the agents’ discount factors and follow precisely the (Markovian) dynamics that would arise if the agents were myopic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 22,
+    "text": "In equilibrium, therefore, the agents’ dynamic concerns do not play any role.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 23,
+    "text": "Intuitively, this feature arises via an unraveling argument.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 24,
+    "text": "The inevitability of perpetual conflict (recall Proposition 1 ) makes it impossible for the agents to develop a relational contract that differs from their myopically preferred strategies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 25,
+    "text": "Our model allows for the possibility of unbounded growth of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 26,
+    "text": "However, in some settings, it may be more natural to consider the size of the pie to be bounded by some upper limit, say ̄ π. For example, the upper bound may represent the optimal level of growth after which further growth is detrimental or the (finite) amount of resources available; alternatively, π t may map into the probability for which agents will capture some fixed prize and this probability is bounded by ̄ π = 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 27,
+    "text": "The equilibrium behavior and dynamics presented in Proposition 1 are unaffected if the maximum size of the pie is bounded.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 28,
+    "text": "Intuitively, a bounded pie necessarily means that growth must halt—in particular, when π t = ̄ ̄ π, the agents anticipate that perpetual conflict will ensue if the pie is expanded and, in turn, resort to their myopic incentives.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 29,
+    "text": "The remainder of the argument then follows identically to that of the benchmark model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 30,
+    "text": "Remark 1 (Extension with a bounded pie.) Suppose the maximum size of the pie is bounded by some (exogenous) value ̄; that is, the law of motion of ̄ − 1 + ω ( a t A + a t B ) }.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Dynamics of growth and conflict and its consequences",
+    "paragraph_id": 31,
+    "text": "Then Proposition 1 holds verbatim.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 0,
+    "text": "We now turn to the consequences of the equilibrium dynamics for long-run outcomes and the optimal level of (in)equality.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 1,
+    "text": "Corollary 1 summarizes the implications of the dynamics of growth and conflict (Proposition 2 ) for the relationship between initial levels of inequality and long-run outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 2,
+    "text": "The corollary focuses on cases where the initial size of the pie is intermediate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 3,
+    "text": "When initial inequality of agents’ shares is low, initial conditions do not matter: In the long-run, there is perfect equality and the long-run pie attains its minimum long-run value of (approximately) − − − 3 κ ) − − − 1 < 1 2 − ( −",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 4,
+    "text": "Although greater initial inequality is needed for a larger long-run pie, it does not follow that inequality is optimal in the utilitarian sense.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 5,
+    "text": "This is because when the initial size of the pie is intermediate there is a tradeoff between a larger long-run pie and the speed at which it grows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 6,
+    "text": "Indeed, when there is little inequality, the pie develops quickly toward its minimal long-run size; when there is extreme inequality, the pie develops slowly toward its maximal long-run size. 12 Therefore, the utilitarian optimal level of inequality intuitively depends on the agents’ discount factor: when the agents are more patient, maximal inequality is optimal; when the agents are impatient, minimal inequality is optimal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 7,
+    "text": "Proposition 3 formalizes this result for the case where the initial size of the pie is intermediate and this tradeoff arises.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 8,
+    "text": "Proposition 3 (Utilitarian-optimal inequality.) Suppose the initial size of the pie is intermediate: − 3 κ ) − − — the initial conditions are the same as the long-run outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 9,
+    "text": "When the initial size of the pie is sufficiently small, all levels of initial inequality with s 0 − − —this is partly due to the coarseness of our state space.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 10,
+    "text": "Thus, minimal inequality is the utilitarian optimum.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 11,
+    "text": "(ii) If the agents are sufficiently patient ( − κ.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 12,
+    "text": "Part (ii) of Corollary 1 and Proposition 3 suggest that when agents are sufficiently patient, there may be an incentive for the agents to agree to a redistribution of initial shares that increases inequality—so to induce a larger long-run size of the pie and higher utilitarian payoff.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 13,
+    "text": "For example, for a fixed initial size of the pie, the small-share agent may agree to redistribute part of their share to the high-share agent.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 14,
+    "text": "However, in the absence of transferable utility, the small-share agent would not agree to such a redistribution plan.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 15,
+    "text": "Intuitively, such a plan hurts the small-share agent in the short-run because they must sacrifice part of their share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 16,
+    "text": "Therefore, the agreement could only possibly be reached if the long-run state induced by greater inequality is beneficial to the small-share agent, but this is not the case.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 17,
+    "text": "Greater inequality induces a long-run state that lies higher along the diagonal illustrated in Figure 1 (and per Proposition 2 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 18,
+    "text": "However, moving the state to a higher point along this diagonal hurts the small-share agent: they strictly prefer lower states along this diagonal (and the high-share agent strictly prefers the opposite).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Inequality and the long-run size of the pie",
+    "paragraph_id": 19,
+    "text": "Thus, there is no agreement to redistribution that could be struck.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 0,
+    "text": "So far, we have taken the agents’ effectiveness to expand the pie or their share to be fixed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 1,
+    "text": "In this section, we explore the implications of changes in the agents’ effectiveness: ’s incentive to expand her share compared to expanding the pie depends on the effectiveness of each action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 2,
+    "text": "Intuitively, as the agents become more effective at expanding their shares, they are also less willing to expand the pie, and the region for which perpetual conflict ensues becomes larger (i.e., as κ increases, the upper triangle in Figure 1 expands).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 3,
+    "text": "In turn, the long-run size of the pie is smaller and long-run inequality is larger.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 4,
+    "text": "The reverse holds when the agents become more effective at expanding the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 5,
+    "text": "Corollary 2 states this result.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 6,
+    "text": "Corollary 2 (More effective agents.) As; (ii) for any initial condition, ( s 0, π 0 ), the long-run inequality (weakly) increases, and the long-run size of the pie (weakly) decreases.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 7,
+    "text": "We can extend the logic of this result to contexts in which reducing agents’ effectiveness in expanding their share has spillover effects such that agents are also less effective at expanding the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 8,
+    "text": "For example, in the context of legislative bargaining, stronger checks and balances and constraints on legislative majorities may limit the effectiveness of agents to achieve partisan and bipartisan reforms alike.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 9,
+    "text": "Formally, these spillovers can be analyzed by taking the agent’s effectiveness at expanding the pie to be an increasing function of their ability to expand their share: ′ ( ′ ( κ ), is not too large, Corollary 2 will continue to hold.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 10,
+    "text": "Finally, we note that Corollary 2 provides some insights into when and why agents may demand—and even agree—on reforms that affect their ability to expand their shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 11,
+    "text": "For example, consider an instance where the state is such that, in equilibrium, the agents engage in perpetual conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 12,
+    "text": "In such cases, a reform that reduces their effectiveness to expand their shares may facilitate a (temporary) end of conflict and a larger pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 13,
+    "text": "Such a reform constitutes a Pareto improvement so, if available, is likely to be agreed to by the agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 14,
+    "text": "Applied to the context of democratic politics, this suggests that countries with a larger pie (e.g., higher levels of development and state capacity) may be more likely to demand and adopt reform that strengthen checks and balances. 13 Now, instead, consider states such that, in equilibrium, the agents are not in perpetual conflict (i.e., the size of the pie is not too large).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 15,
+    "text": "In such cases, it is possible that reducing the agents’ abilities to expand their shares is not Pareto optimal and, hence, is less likely to be demanded by both agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Institutions and technology",
+    "paragraph_id": 16,
+    "text": "Returning again to the context of democratic politics, this suggests that countries with a smaller pie (e.g., lower levels of development and state capacity) are less likely to demand and adopt reforms that strengthen checks and balances.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 0,
+    "text": "Our theory points toward a type of organizational “resource curse,” whereby the prevalence (or sudden influx) of resources produces an inefficient halt in cooperation and the emergence of zero-sum conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 1,
+    "text": "Our theory also highlights that the temptation for an agent to stop cooperating is strongest for the agent with smaller share, since she has relatively more to gain from expanding her own share of the existing pie compared to expanding the pie as whole.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 2,
+    "text": "This highlights a subtlety of our theory: it is not the greater resources that you already own that stifles cooperation but, rather, the greater resources that can be 13 We share this feature with Karakas.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 3,
+    "text": "obtained via conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 4,
+    "text": "Our resource curse stems neither from agents being short-sighted (or subjected to turnover) nor from decreasing returns in the technology used to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 5,
+    "text": "Instead, our resource curse is grounded in the simple fact that avoiding conflict becomes harder as growth increases the victor’s spoils. 14 Our organizational resource curse resonates with several applications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Empirical relevance",
+    "paragraph_id": 6,
+    "text": "In the following subsections, we explore three applications: factionalism within social movement organizations, competition in markets, and distributive conflict within economies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 0,
+    "text": "Within a social movement organization (and sometimes between social movement organizations), there is often a collective goal that unites its members, e.g., progress toward social justice or environmental goals.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 1,
+    "text": "Nonetheless, organization scholars and sociologists widely agree that, with progress and growth, factionalism arises, leading to internal conflict over “movement resources, direction, and media attention” and the “distribution of power”. Indeed, in his seminal book Gamson refers to factionalism as the “nature of the beast” and Kretschmer concludes that factionalism is “probably inevitable.” As in our theory, factionalism also imposes an opportunity cost as “resources are channeled into internal disputes rather than toward pressing the [organization’s] demands”. Our theory highlights that, as a social movement organization becomes more prominent and accumulates more resources and power, factionalism will arise.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 2,
+    "text": "This is consistent with Gamson ’s and Kretschmer ’s observations that factionalism is inevitable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 3,
+    "text": "Further, in our theory it is the expansion of resources itself that generates factionalism and conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 4,
+    "text": "This mechanism, which runs contrary some arguments and empirical examples, is nevertheless supported by existing work. 15 First, in summarizing the literature, Kretschmer writes “evidence across a variety of movements shows us that in boom times, when movements are popular, public participation is high, and resources are flowing in, factionalism [.] within and between groups is likely to be high.” Kretschmer hints at our mechanism by asking “is factionalism more likely in prosperous economic times because there are more resources to fight over?” For evidence, Kretschmer points to Balser ’s case study of the SNCC (Student Nonviolent Coordinating Committee) in 14 A related dynamic appears in Acemoglu et al. where as the economy grows, a politician’s temptation to steal production also grows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 5,
+    "text": "In this electoral accountability setting, voters avoid this “resource curse” by providing relational incentives to the politician. 15 Other arguments include that organization growth often entails a more diverse body of members or that, once an organization comes close to achieving its goals, it can struggle to reorient and establish consensus for a new collective goal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 6,
+    "text": "Balser documents how the influx of new resources from the Kennedy administration in 1961 “instigated a serious conflict” between members with competing views over the organization’s direction.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 7,
+    "text": "More systematic empirical studies also come to a similar conclusion.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 8,
+    "text": "Soule and King study competition between social movement organizations within the same “social movement industry” (i.e., sharing a common goal).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 9,
+    "text": "They analyze the organizational tactics adopted by protest organizations supporting peace, women’s, and environmental movements in New York State between 1960 and 1986.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 10,
+    "text": "Contrary to their own hypothesis, they document that tactics associated with competition over resources are more likely when “resources are prevalent.” Similarly, Vermeulen analyzes collaboration and competition between Turkish organizations within different European cities from 1965 to 2000.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 9,
+    "section_name": "Factionalism in social movement organizations",
+    "paragraph_id": 11,
+    "text": "Contrary to his own hypothesis, he concludes that an “open and supportive environment [.] increases competition and fragmentation because more resources and opportunities are available.” Although the causes of factionalism are surely multi-faceted, our mechanism appears empirically relevant across a variety of settings within and between social movement organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 0,
+    "text": "In market competition, firms face a tradeoff between taking actions that expand the market as a whole—benefiting all firms in the industry—and actions that expand their market share—at the expense of their competitors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 1,
+    "text": "For example, and as mentioned in the introduction, firms can choose between engaging in industry-wide (“generic”) advertising as opposed to firm-specific (“branded”) advertising.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 2,
+    "text": "Industry-wide advertising aims to expand the market for the entire industry, so it is cooperative in nature, generating a collective good that benefits all firms in the industry. 16 In contrast, firm-specific advertising is competitive and primarily aims to steal, or defend, market share from competing firms in the same industry without affecting the size of the market as a whole.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 3,
+    "text": "In this setting, our theory makes three key predictions that are supported by anecdotal and empirical evidence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 4,
+    "text": "First, we predict that firms will collectively underinvest in industry-wide advertising.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 5,
+    "text": "Indeed, this is a key argument used by proponents of the many federal laws that require firms to fund industry-wide advertising campaigns ( Varian, 2006; 16 In some industries, the amount of expenditure on industry-wide advertising is large and significant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 6,
+    "text": "As described by Chakravarti and Janiszewski, “In 2002 alone, the annual domestic expenditure on generic advertising for cheese, beef, and Florida orange juice was 45 million, and 26. million, 32. million, respectively.” Messer et al., 2008 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 7,
+    "text": "As put by Ward, “Removing potential free-riders and creating a pool of funds earmarked for generic advertising messages is precisely the intent of the national legislation for supporting commodity checkoff programs and an important objective of many federal and state marketing orders.” The claim that, absent mandatory requirements, firms underinvest in industry-wide advertising is also supported by a range of empirical and experimental studies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 8,
+    "text": "Second, our theory predicts that firms are more likely to engage in industry-wide advertising when the industry’s market is relatively small but will switch to firm-specific advertising as the market grows and matures.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 9,
+    "text": "Indeed, when federal law does not require industry-wide advertising, marketing scholars often describe industry-wide advertising as a feature of emerging markets and firm-specific advertising as a feature of mature markets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 10,
+    "text": "Quoting a contemporary source, Beard ’s historical analysis describes the steamship industry’s strategy to engage in industry-wide advertising in the early 1900s: “It dawned upon both lines that it was work meet [i.e., suitable or fitting] for even two advertisers to educate the local public to travel more by water.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 11,
+    "text": "The patronage was not fixed; it could be increased as the public came to understand the pleasures and the benefits of a trip by steamer.” Beard explains that similar attitudes appeared in industries where there was “nearunanimous confidence in market expansion.” Yet, these cooperative behaviors eventually end.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 12,
+    "text": "For example, in the early 1980s, the fast food industry matured and firms switched to combative and firm-specific advertising.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 13,
+    "text": "Again quoting a contemporary source, Beard explains the switch: “fast-food marketers are dealing with slow-growth industry, where market share gains are the driving force behind any expansion.” Another example comes from the cigarette industry.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 14,
+    "text": "Tremblay and Tremblay notes that between 1914 and 1940, the market was “taking off” and cigarette advertising was mostly constructive (increasing market demand for all firms).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 15,
+    "text": "However, in the 1960s, advertising turned combative (attempting to “steal customers from another firm”).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 16,
+    "text": "Third, our theory predicts that, as a market matures, firms with smaller market shares are more likely to engage in firm-specific advertising—free riding off the (temporarily) more cooperative advertising made by large market share firms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 17,
+    "text": "Suggestive evidence for this prediction comes from the observation that, when federal laws mandate producers to contribute to industry-wide advertising campaigns, large firms appear content with the mandatory programs whereas small firms tend to complain.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 18,
+    "text": "Indeed, in some cases, small firms are formally exempt from the mandatory program—in effect, allowing them to free ride on the contributions of larger firms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 19,
+    "text": "In other cases, when voluntary industry-wide advertising programs have broken down or never existed at all, it has been observed that larger firms may nonetheless continue to fund industry-wide advertising regardless of other firms’ decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 20,
+    "text": "Beyond being consistent with the above stylized facts, we provide an additional insight that—to the best of our knowledge—is novel to the literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 21,
+    "text": "Our theory suggests that federal laws that mandate firms to contribute to industry-wide advertising may be a double-edged sword.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 22,
+    "text": "On the one hand, and as is well-established, such mandatory programs allow for a larger expansion of markets than would otherwise be achievable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 10,
+    "section_name": "Competition in growing markets",
+    "paragraph_id": 23,
+    "text": "But on the other hand, these programs are likely to insulate larger firms from having their market shares eroded over time by smaller firms’ competitive and firm-specific advertising. 17 Thus, mandatory programs pose a dynamic tradeoff between efficiency (a larger market) and market concentration (greater inequality of firms’ market shares).",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "Distributive conflict and economic growth",
+    "paragraph_id": 0,
+    "text": "At a macroeconomic level, our theory connects to a long-running debate about the sources of economic growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "Distributive conflict and economic growth",
+    "paragraph_id": 1,
+    "text": "Olson describes a framework that shares many similarities with ours: Society is comprised of special interest groups (“distributional coalitions”) that can benefit their members by either “making the pie the society produces larger, so that its members would get larger slices even with the same shares as before, or alternatively by obtaining larger shares or slices of the social pie.” Olson argues that distributional coalitions are costly for economic growth (society’s pie) as they direct resources toward distributive conflict and away from efficient uses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "Distributive conflict and economic growth",
+    "paragraph_id": 2,
+    "text": "Indeed, Olson documents that: mature societies have slower economic growth and more special interest groups than less mature societies, and these special interest groups are “overwhelmingly orientated to struggles over the distribution of income and wealth rather than to the production of additional 17 Although it has been noted in literature that these mandatory programs have distributional (and possibly unequal) consequences on small and large firms, the focus has not been on the evolution of market shares and market concentration.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "Distributive conflict and economic growth",
+    "paragraph_id": 3,
+    "text": "output.” Olson aimed to explain the “economic miracles” of Germany and Japan after World War II. Differently from us, his explanation focused on periods of economic and political stability, which—he argues—allows distributional coalitions to emerge, and not on growth per se. 18 Our theory also speaks to the dynamic competition between special interest groups.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "Distributive conflict and economic growth",
+    "paragraph_id": 4,
+    "text": "It predicts that smaller interest groups will be initially more active (and, hence, effective) in distributive conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 11,
+    "section_name": "Distributive conflict and economic growth",
+    "paragraph_id": 5,
+    "text": "Furthermore, this asymmetry will generate greater distributional conflict in the long run as larger interest groups will gradually lose incentives to expand society’s pie and, hence, will also pursue distributional conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 0,
+    "text": "Before concluding the paper, we return to our core result, namely, that growth eventually halts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 1,
+    "text": "We discuss now the role played by key assumptions in our benchmark model and explore extensions of the benchmark to illustrate the robustness of this result when certain assumptions are relaxed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 2,
+    "text": "Asymmetric discounting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 3,
+    "text": "Our benchmark model assumes that agents discount time in the same way.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 4,
+    "text": "But if agents have asymmetric discount factors, our key result that growth eventually halts continues to hold.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 5,
+    "text": "We analyze this extension formally in Appendix F. Furthermore, we show that—as in the benchmark model—the point at which growth halts is independent of either agent’s discount factor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 6,
+    "text": "It is straightforward to see then that all the dynamics of our benchmark model are identical in this extension. 19 Thus, whether one agent is more patient than the other has no bearing on the dynamics of growth and conflict—contrasting results, such as Rubinstein, where a more patient agent is able to extract a larger share of the surplus.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 7,
+    "text": "Exponential growth of pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 8,
+    "text": "A key assumption of our benchmark model is that of constant returns: An agent’s decision to expand the pie contributes a fixed amount ω, regardless of the size of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 9,
+    "text": "Constant returns implies that, as the pie grows, the relative (discounted) payoff from continually growing the pie compared to pursuing conflict is decreasing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 10,
+    "text": "Hence, for a large enough pie, the agents prefer conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 11,
+    "text": "Naturally, and unsurprisingly, 18 There is debate surrounding the explanatory power of Olson ’s argument, although recent work continues to support Olson ’s core predictions. 19 In particular, the same proof arguments used to characterize the dynamics of growth and conflict in the benchmark model can be applied.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 12,
+    "text": "this result also holds if there are decreasing returns to the growth of the pie (for details, see Appendix G ). 20 With exponential returns, however, continual growth may be possible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 13,
+    "text": "We can formalize this intuition by assuming that the periodt pie is given by − 1 (1 + r (2 − a t A − a t B )) for r > 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 14,
+    "text": "For a sufficiently small exponential growth rate r, growth will halt.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 15,
+    "text": "However, for larger growth rates, it is possible for the agents to sustain an equilibrium with continual growth. 21 The assumption of constant (or decreasing) returns is consistent with existing work on the dynamic provision of public goods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 16,
+    "text": "For example, Battaglini et al. effectively assumes decreasing returns since an agent’s private consumption can be transformed into a public good contribution at a constant rate but the agents’ benefit from the public good exhibits diminishing returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 17,
+    "text": "Similarly, Marx and Matthews assume agents’ benefit from the public good’s level of provision is piece-wise linear with initially positive and constant marginal returns and then, above a certain threshold, zero marginal returns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 18,
+    "text": "More generally, a growing body of empirical research calls into question the exponential returns assumption that is traditionally present in growth models.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 19,
+    "text": "Ability to expand one’s share as a function of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 20,
+    "text": "Our benchmark model assumes that an agent’s ability to expand her share is independent of the size of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 21,
+    "text": "Naturally, our result—growth eventually halts—continues to hold if an agent’s ability to expand her share increases with the size of the pie. 22 If, instead, an agent’s ability to expand her share decreases with the size of the pie, our result is robust if the rate of decrease is not too fast.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 22,
+    "text": "Formally, we can modify the law of motion of the agents’ shares so that κ is replaced with ̃ ̃ κ ( · ) is a positive and decreasing function of π. In Appendix H, we show that if the agent’s ability to expand their share does not decline too fast, then growth eventually halts for all (interior) distributions of shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 23,
+    "text": "Formally, the condition we require is that ̃ ̃",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 24,
+    "text": "Depreciation of the pie or destructive conflict.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 25,
+    "text": "In some settings, it may be natural to assume that, in the absence of growth, the size of pie decreases.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 26,
+    "text": "This may arise because 20 Formally, this would mean that an agent’s decision to expand the pie contributes an amount ̃ ̃ ω ( · ) is a positive and decreasing function of π. 21 This result requires that the growth rate is also not too large since a sufficiently large growth rate leads to the agents’ discounted payoffs being possibly unbounded.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 27,
+    "text": "In such cases, the one-shot deviation principle does not apply due to a violation of the “continuity at infinity” condition and, hence, proving equilibrium existence becomes intractable. 22 Formally, this would mean that, in the law of motion of s t, κ is replaced with ̃ ̃ κ ( · ) is a positive and increasing function of π.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 28,
+    "text": "of depreciation or because of conflict being destructive.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 12,
+    "section_name": "Discussion",
+    "paragraph_id": 29,
+    "text": "Our benchmark model can be extended to incorporate this feature by assuming that, whenever conflict ensues, the periodt pie is π t = (1 − − 1, where; however, in this extension, periods of growth and decline may still arise periodically.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 0,
+    "text": "We proposed a dynamic theory of growth and conflict with collective goods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 1,
+    "text": "Our focus centers on each agent’s tradeoff between expanding a collective pie and attempting to expand her share of it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 2,
+    "text": "We showed that, as the pie grows, an individual’s incentives to expand her share of the pie eventually dominates her incentive to expand the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 3,
+    "text": "Ultimately, this leads the pie’s growth to halt and produces an (endogenous) upper bound on the pie’s size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 4,
+    "text": "This bound on the growth of the pie is unaffected by the individuals’ patience levels and persists despite the possibility of unbounded growth of the pie, the presence of constant returns of individuals’ actions to expand the pie, and the possibility of relational contracts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 5,
+    "text": "When the pie is not too large, growth is possible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 6,
+    "text": "We characterized the dynamics of growth and conflict prior to growth halting, illustrating how individuals’ incentives to expand the pie depends on their shares and the pie’s size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 7,
+    "text": "When the pie is small and individuals have relatively equal shares, both contribute to expanding the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 8,
+    "text": "However, when individuals have sufficiently unequal shares, as per Olson, there is a “tendency for ‘exploitation’ of the great by the small.” The individual with the largest share contributes to the pie’s expansion, while the small-share individual not only free rides but also expands her own share of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 9,
+    "text": "These dynamics connect inequality to the speed and limits of growth: Greater inequality in the shares slows down growth but leads to a larger long-run size of the pie—yet, growth also gradually reduces inequality.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 10,
+    "text": "In evaluating the benefits and costs of inequality, our result highlights a novel tradeoff between the speed at which a collective good grows and the long-run size of such good.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 11,
+    "text": "A novel feature of our theory is that it provides a rationale for the ubiquity of the prisoners’ dilemma.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 12,
+    "text": "In our theory, given any initial condition, the pie and its share evolve along a path that leads to prisoners’ dilemma stage-game: Both agents would be better off expanding the pie but their (stage-game) dominant strategy is to attempt to expand their share.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 13,
+    "text": "Furthermore, we shed light on why cooperation may be unsustainable even if agents are patient and repeatedly play a prisoners’ dilemma.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 14,
+    "text": "Since cooperation generates a larger pie, it leads to greater incentives for defection in the future.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 15,
+    "text": "Anticipating the inevitability of future defection has an unraveling effect that makes even temporary cooperation impossible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 16,
+    "text": "Instead, zero-sum conflict emerges over the shares of the pie.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 17,
+    "text": "Although our theory finds support in empirical studies, its pessimistic conclusion— that growth eventually halts—gives an important role for institutions and technology.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 18,
+    "text": "A solution to the halting of growth is that agents achieve exponential growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 19,
+    "text": "However, as previously noted, a growing body of empirical research calls into question the realism of exponential growth.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 20,
+    "text": "Alternatively, institutions that make it more difficult for agents to expand their shares may facilitate greater (albeit still temporary) cooperation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 21,
+    "text": "Indeed, Olson provides suggestive evidence of such institutions in his cross-country assessment of economic outcomes and interest group prevalence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 22,
+    "text": "Similarly, in the context of market competition, the presence federal laws that mandate industry-wide advertising and their continued support on the side of producers suggest an important role for regulation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 23,
+    "text": "Nonetheless, as discussed in Section 6, sustained growth requires that each agent’s effectiveness in expanding their share is not only limited but also declines rapidly as the pie grows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 24,
+    "text": "That is, growth requires “sophisticated” institutions (and regulation) that dynamically adjust to a changing environment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 25,
+    "text": "Yet, caution is also needed since institutional solutions to limit agents’ effectiveness in expanding their share may have unintended spillovers that limit agents’ effectiveness in expanding the pie—such spillovers, if large, can be self-defeating.",
+    "warnings": ""
+  },
+  {
+    "file_name": "lee-2025-01-13_3778.pdf",
+    "format_class": "standard_complete",
+    "section_id": 13,
+    "section_name": "Conclusion",
+    "paragraph_id": 26,
+    "text": "Therefore, sophisticated institutions and regulation appear to be the most promising avenues for achieving continued growth of collective goods.",
+    "warnings": ""
+  }
+]

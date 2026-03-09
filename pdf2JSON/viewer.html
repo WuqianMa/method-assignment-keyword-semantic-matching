@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF→JSON Extraction Viewer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f5f5; color: #333; }
+
+  .header {
+    background: #1a1a2e; color: #fff; padding: 20px 30px;
+    display: flex; align-items: center; gap: 20px;
+  }
+  .header h1 { font-size: 1.3rem; font-weight: 600; }
+  .header .controls { display: flex; gap: 12px; align-items: center; margin-left: auto; }
+  .header label { font-size: 0.85rem; color: #aaa; }
+  .header select, .header input[type="file"] {
+    padding: 6px 10px; border-radius: 6px; border: 1px solid #444;
+    background: #16213e; color: #eee; font-size: 0.85rem;
+  }
+  .btn {
+    padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer;
+    font-size: 0.85rem; font-weight: 500;
+  }
+  .btn-primary { background: #0f3460; color: #fff; }
+  .btn-primary:hover { background: #1a4a8a; }
+  .btn-warn { background: #e94560; color: #fff; }
+
+  .layout { display: flex; height: calc(100vh - 70px); }
+
+  /* Sidebar */
+  .sidebar {
+    width: 280px; min-width: 280px; background: #fff; border-right: 1px solid #ddd;
+    overflow-y: auto; padding: 10px;
+  }
+  .file-item {
+    padding: 8px 12px; border-radius: 6px; cursor: pointer;
+    margin-bottom: 4px; font-size: 0.82rem; transition: background 0.15s;
+  }
+  .file-item:hover { background: #e8f0fe; }
+  .file-item.active { background: #1a73e8; color: #fff; }
+  .file-item .badge {
+    display: inline-block; padding: 1px 6px; border-radius: 10px;
+    font-size: 0.7rem; margin-left: 6px;
+  }
+  .badge-standard { background: #e6f4ea; color: #1e8e3e; }
+  .badge-partial { background: #fef7e0; color: #f9ab00; }
+  .badge-abstract { background: #fce8e6; color: #d93025; }
+  .badge-slides { background: #e8eaf6; color: #5c6bc0; }
+  .badge-no_section { background: #f3e8fd; color: #9334e6; }
+  .badge-error { background: #fce8e6; color: #d93025; }
+  .file-item.active .badge { opacity: 0.8; }
+
+  /* Main content */
+  .main { flex: 1; overflow-y: auto; padding: 24px 30px; }
+
+  .paper-header {
+    background: #fff; border-radius: 10px; padding: 20px 24px;
+    margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .paper-header h2 { font-size: 1.1rem; margin-bottom: 8px; }
+  .paper-meta { display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.82rem; color: #666; }
+  .paper-meta span { display: flex; align-items: center; gap: 4px; }
+
+  .section-block {
+    background: #fff; border-radius: 10px; margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden;
+  }
+  .section-header {
+    padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #eee;
+    font-weight: 600; font-size: 0.9rem; display: flex; justify-content: space-between;
+    cursor: pointer;
+  }
+  .section-header:hover { background: #eef1f5; }
+  .section-header .count { color: #888; font-weight: 400; font-size: 0.8rem; }
+
+  .paragraph {
+    padding: 12px 20px; border-bottom: 1px solid #f0f0f0;
+    font-size: 0.88rem; line-height: 1.65;
+  }
+  .paragraph:last-child { border-bottom: none; }
+  .para-id { color: #aaa; font-size: 0.75rem; margin-right: 8px; font-family: monospace; }
+
+  /* Highlight issues */
+  .highlight-math { background: #fff3cd; padding: 1px 3px; border-radius: 3px; }
+  .highlight-cite { background: #cfe2ff; padding: 1px 3px; border-radius: 3px; }
+  .highlight-table { background: #f8d7da; padding: 1px 3px; border-radius: 3px; }
+
+  .warning-bar {
+    background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px;
+    padding: 10px 16px; margin-bottom: 16px; font-size: 0.85rem;
+  }
+
+  .stats-bar {
+    display: flex; gap: 30px; padding: 10px 0; font-size: 0.82rem; color: #555;
+  }
+
+  /* View toggle */
+  .view-toggle { display: flex; gap: 4px; }
+  .view-toggle .btn { padding: 4px 10px; font-size: 0.78rem; }
+  .view-toggle .btn.active { background: #1a73e8; color: #fff; }
+
+  /* Raw JSON view */
+  .raw-json {
+    background: #1e1e1e; color: #d4d4d4; padding: 16px 20px;
+    border-radius: 10px; font-family: 'Cascadia Code', 'Fira Code', monospace;
+    font-size: 0.8rem; white-space: pre-wrap; word-break: break-word;
+    max-height: 80vh; overflow-y: auto; line-height: 1.5;
+  }
+
+  .empty-state {
+    text-align: center; padding: 80px 20px; color: #888;
+  }
+  .empty-state h3 { margin-bottom: 10px; }
+
+  /* Compare toggle */
+  .compare-container { display: flex; gap: 16px; }
+  .compare-container .compare-panel { flex: 1; overflow-y: auto; }
+  .compare-label {
+    font-weight: 600; font-size: 0.85rem; padding: 8px 12px;
+    background: #e8f0fe; border-radius: 6px 6px 0 0; text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>PDF → JSON Extraction Viewer</h1>
+  <div class="controls">
+    <div>
+      <label>Load folder:</label>
+      <input type="file" id="folderInput" webkitdirectory multiple>
+    </div>
+    <div>
+      <label>Compare with raw:</label>
+      <input type="file" id="rawFolderInput" webkitdirectory multiple>
+    </div>
+    <div class="view-toggle">
+      <button class="btn active" id="btnClean" onclick="setView('clean')">Clean</button>
+      <button class="btn" id="btnRaw" onclick="setView('raw')">Raw</button>
+      <button class="btn" id="btnCompare" onclick="setView('compare')">Compare</button>
+      <button class="btn" id="btnJson" onclick="setView('json')">JSON</button>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="sidebar" id="sidebar">
+    <div class="empty-state" style="padding:40px 10px;">
+      <p>Load the <b>output/</b> folder to inspect cleaned JSON files.</p>
+      <p style="margin-top:8px; font-size:0.78rem; color:#aaa;">Optionally load <b>middle/raw/</b> to compare.</p>
+    </div>
+  </div>
+  <div class="main" id="main">
+    <div class="empty-state">
+      <h3>No file selected</h3>
+      <p>Use the folder picker above to load JSON output, then click a file.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const state = {
+  cleanFiles: {},   // filename -> parsed JSON (array of rows)
+  rawFiles: {},     // filename -> parsed JSON (raw extraction object)
+  activeFile: null,
+  view: 'clean',
+};
+
+// Load clean output folder
+document.getElementById('folderInput').addEventListener('change', async (e) => {
+  state.cleanFiles = {};
+  for (const file of e.target.files) {
+    if (file.name.endsWith('.json')) {
+      const text = await file.text();
+      try {
+        state.cleanFiles[file.name] = JSON.parse(text);
+      } catch(err) { console.warn('Bad JSON:', file.name); }
+    }
+  }
+  renderSidebar();
+  if (Object.keys(state.cleanFiles).length > 0) {
+    selectFile(Object.keys(state.cleanFiles)[0]);
+  }
+});
+
+// Load raw folder for comparison
+document.getElementById('rawFolderInput').addEventListener('change', async (e) => {
+  state.rawFiles = {};
+  for (const file of e.target.files) {
+    if (file.name.endsWith('.json')) {
+      const text = await file.text();
+      try {
+        state.rawFiles[file.name] = JSON.parse(text);
+      } catch(err) { console.warn('Bad JSON:', file.name); }
+    }
+  }
+  console.log(`Loaded ${Object.keys(state.rawFiles).length} raw files`);
+});
+
+function renderSidebar() {
+  const sb = document.getElementById('sidebar');
+  const names = Object.keys(state.cleanFiles).sort();
+  if (names.length === 0) {
+    sb.innerHTML = '<div class="empty-state" style="padding:40px 10px;"><p>No JSON files loaded.</p></div>';
+    return;
+  }
+
+  sb.innerHTML = names.map(name => {
+    const rows = state.cleanFiles[name];
+    const fc = rows[0]?.format_class || 'unknown';
+    const badgeClass = fc.includes('standard') ? 'badge-standard'
+      : fc.includes('partial') ? 'badge-partial'
+      : fc.includes('abstract') ? 'badge-abstract'
+      : fc.includes('slide') ? 'badge-slides'
+      : fc.includes('no_section') ? 'badge-no_section'
+      : 'badge-error';
+    const paraCount = rows.length;
+    const label = name.replace('.json', '');
+    return `<div class="file-item" data-name="${name}" onclick="selectFile('${name}')">
+      ${label}
+      <span class="badge ${badgeClass}">${fc}</span>
+      <span style="float:right;color:#999;font-size:0.72rem;">${paraCount}p</span>
+    </div>`;
+  }).join('');
+}
+
+function selectFile(name) {
+  state.activeFile = name;
+  document.querySelectorAll('.file-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.name === name);
+  });
+  renderMain();
+}
+
+function setView(v) {
+  state.view = v;
+  document.querySelectorAll('.view-toggle .btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn' + v.charAt(0).toUpperCase() + v.slice(1)).classList.add('active');
+  renderMain();
+}
+
+function renderMain() {
+  const main = document.getElementById('main');
+  const name = state.activeFile;
+  if (!name || !state.cleanFiles[name]) {
+    main.innerHTML = '<div class="empty-state"><h3>No file selected</h3></div>';
+    return;
+  }
+
+  const rows = state.cleanFiles[name];
+
+  if (state.view === 'json') {
+    main.innerHTML = `<div class="raw-json">${escapeHtml(JSON.stringify(rows, null, 2))}</div>`;
+    return;
+  }
+
+  if (state.view === 'compare') {
+    renderCompare(main, name, rows);
+    return;
+  }
+
+  if (state.view === 'raw') {
+    const rawData = state.rawFiles[name];
+    if (!rawData) {
+      main.innerHTML = '<div class="empty-state"><h3>No raw file loaded</h3><p>Load the middle/raw/ folder using "Compare with raw" picker.</p></div>';
+      return;
+    }
+    renderRawView(main, rawData);
+    return;
+  }
+
+  // Clean view (default)
+  renderCleanView(main, name, rows);
+}
+
+function renderCleanView(main, name, rows) {
+  const fc = rows[0]?.format_class || '?';
+  const warnings = rows[0]?.warnings || '';
+  const totalChars = rows.reduce((sum, r) => sum + (r.text?.length || 0), 0);
+
+  // Group by section
+  const sections = {};
+  rows.forEach(r => {
+    const key = `${r.section_id}|${r.section_name}`;
+    if (!sections[key]) sections[key] = [];
+    sections[key].push(r);
+  });
+
+  let html = `
+    <div class="paper-header">
+      <h2>${escapeHtml(name.replace('.json', ''))}</h2>
+      <div class="paper-meta">
+        <span><b>Format:</b> ${fc}</span>
+        <span><b>Sections:</b> ${Object.keys(sections).length}</span>
+        <span><b>Paragraphs:</b> ${rows.length}</span>
+        <span><b>Characters:</b> ${totalChars.toLocaleString()}</span>
+      </div>
+    </div>`;
+
+  if (warnings) {
+    html += `<div class="warning-bar">Warnings: ${escapeHtml(warnings)}</div>`;
+  }
+
+  for (const [key, sectionRows] of Object.entries(sections)) {
+    const sname = key.split('|')[1];
+    const sChars = sectionRows.reduce((s, r) => s + (r.text?.length || 0), 0);
+    html += `
+      <div class="section-block">
+        <div class="section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+          <span>${escapeHtml(sname)}</span>
+          <span class="count">${sectionRows.length} paragraphs · ${sChars.toLocaleString()} chars</span>
+        </div>
+        <div>`;
+    sectionRows.forEach(r => {
+      const text = highlightIssues(r.text || '');
+      html += `<div class="paragraph"><span class="para-id">P${r.paragraph_id}</span>${text}</div>`;
+    });
+    html += `</div></div>`;
+  }
+
+  main.innerHTML = html;
+}
+
+function renderRawView(main, rawData) {
+  const sections = rawData.sections || [];
+  let html = `
+    <div class="paper-header">
+      <h2>${escapeHtml(rawData.file_name || '?')} <span style="color:#888;font-size:0.85rem;">(RAW)</span></h2>
+      <div class="paper-meta">
+        <span><b>Format:</b> ${rawData.format_class}</span>
+        <span><b>Sections:</b> ${sections.length}</span>
+      </div>
+    </div>`;
+
+  sections.forEach(s => {
+    html += `
+      <div class="section-block">
+        <div class="section-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+          <span>${escapeHtml(s.section_name)}</span>
+          <span class="count">${s.paragraphs.length} paragraphs</span>
+        </div>
+        <div>`;
+    s.paragraphs.forEach((p, i) => {
+      html += `<div class="paragraph"><span class="para-id">P${i}</span>${escapeHtml(p)}</div>`;
+    });
+    html += `</div></div>`;
+  });
+
+  main.innerHTML = html;
+}
+
+function renderCompare(main, name, cleanRows) {
+  const rawData = state.rawFiles[name];
+  if (!rawData) {
+    main.innerHTML = '<div class="empty-state"><h3>No raw file loaded for comparison</h3><p>Load the middle/raw/ folder.</p></div>';
+    return;
+  }
+
+  // Side by side
+  let leftHtml = '<div class="compare-label">RAW (before cleaning)</div>';
+  (rawData.sections || []).forEach(s => {
+    leftHtml += `<div style="padding:6px 12px;font-weight:600;background:#fafafa;border-bottom:1px solid #eee;">${escapeHtml(s.section_name)} (${s.paragraphs.length}p)</div>`;
+    s.paragraphs.forEach((p, i) => {
+      leftHtml += `<div class="paragraph" style="font-size:0.82rem;"><span class="para-id">P${i}</span>${escapeHtml(p)}</div>`;
+    });
+  });
+
+  let rightHtml = '<div class="compare-label" style="background:#e6f4ea;">CLEAN (after cleaning)</div>';
+  const sections = {};
+  cleanRows.forEach(r => {
+    const key = `${r.section_id}|${r.section_name}`;
+    if (!sections[key]) sections[key] = [];
+    sections[key].push(r);
+  });
+  for (const [key, sectionRows] of Object.entries(sections)) {
+    const sname = key.split('|')[1];
+    rightHtml += `<div style="padding:6px 12px;font-weight:600;background:#f0faf0;border-bottom:1px solid #eee;">${escapeHtml(sname)} (${sectionRows.length}p)</div>`;
+    sectionRows.forEach(r => {
+      const text = r.text || '';
+      rightHtml += `<div class="paragraph" style="font-size:0.82rem;"><span class="para-id">P${r.paragraph_id}</span>${highlightIssues(text)}</div>`;
+    });
+  }
+
+  main.innerHTML = `
+    <div class="paper-header">
+      <h2>${escapeHtml(name.replace('.json', ''))} — Comparison</h2>
+      <div class="paper-meta">
+        <span><b>Raw sections:</b> ${(rawData.sections || []).length}</span>
+        <span><b>Clean sections:</b> ${Object.keys(sections).length}</span>
+        <span><b>Clean paragraphs:</b> ${cleanRows.length}</span>
+      </div>
+    </div>
+    <div class="compare-container">
+      <div class="compare-panel" style="max-height:calc(100vh - 200px);overflow-y:auto;border:1px solid #ddd;border-radius:8px;">${leftHtml}</div>
+      <div class="compare-panel" style="max-height:calc(100vh - 200px);overflow-y:auto;border:1px solid #ddd;border-radius:8px;">${rightHtml}</div>
+    </div>`;
+}
+
+function highlightIssues(text) {
+  let html = escapeHtml(text);
+  // Highlight leftover math artifacts
+  html = html.replace(/(\[FORMULA\])/g, '<span class="highlight-math">$1</span>');
+  // Highlight leftover citations (Author, Year)
+  html = html.replace(/(\([A-Z][a-z]+(?:\s+(?:and|&amp;)\s+[A-Z][a-z]+)*,?\s*\d{4}[a-z]?\))/g,
+    '<span class="highlight-cite">$1</span>');
+  // Highlight leftover table-like patterns
+  html = html.replace(/((?:\d+\.\d+\s+){3,})/g, '<span class="highlight-table">$1</span>');
+  return html;
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Auto-load from server ──
+async function autoLoad() {
+  try {
+    const res = await fetch('/api/files');
+    if (!res.ok) return;
+    const { clean, raw } = await res.json();
+
+    // Load clean files
+    const cleanResults = await Promise.all(
+      clean.map(async name => {
+        try {
+          const r = await fetch(`/api/file/clean/${name}`);
+          return [name, await r.json()];
+        } catch { return null; }
+      })
+    );
+    cleanResults.forEach(item => { if (item) state.cleanFiles[item[0]] = item[1]; });
+
+    // Load raw files
+    const rawResults = await Promise.all(
+      raw.map(async name => {
+        try {
+          const r = await fetch(`/api/file/raw/${name}`);
+          return [name, await r.json()];
+        } catch { return null; }
+      })
+    );
+    rawResults.forEach(item => { if (item) state.rawFiles[item[0]] = item[1]; });
+
+    if (Object.keys(state.cleanFiles).length > 0) {
+      renderSidebar();
+      selectFile(Object.keys(state.cleanFiles).sort()[0]);
+    }
+    console.log(`Auto-loaded ${clean.length} clean, ${raw.length} raw files`);
+  } catch {
+    // Not served from serve.py – manual folder pickers still work
+  }
+}
+
+autoLoad();
+</script>
+</body>
+</html>

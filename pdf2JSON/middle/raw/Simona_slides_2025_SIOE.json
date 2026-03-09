@@ -1,0 +1,195 @@
+{
+  "file_name": "Simona_slides_2025_SIOE.pdf",
+  "format_class": "slides",
+  "warnings": [
+    "Slide-format PDF detected"
+  ],
+  "sections": [
+    {
+      "section_name": "Slide_1",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBelief-Based Behavioral Diffusion and the Limits of Incentive Design\nInterpretability as a Structural Constraint\nLydia Li, Simona Fabrizi and Steffen Lippert\nThe University of Auckland\nDepartment of Economics & Centre for Mathematical Social Science\n29th Annual SIOE Conference\nUNSW, Sydney, 24–26 August 2025\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n1/31"
+      ]
+    },
+    {
+      "section_name": "Slide_2",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBackground\nDigital platforms increasingly serve as the infrastructure through which individuals encounter, interpret,\nand respond to social information. In this context, behavior is not simply reactive—it reflects evolving\ninternal beliefs shaped by social signals, peer actions, and platform incentives. Despite the complexity of\nonline discourse, user behavior is structured around a limited repertoire of expressive actions—replying,\nquoting, retweeting, sharing, reporting, blocking.\nTraditional models of information diffusion often neglect the cognitive bottlenecks of\nreal-world environments: users do not observe beliefs directly, but infer them from\nbehavior—an inference process subject to distortion, ambiguity, and feedback.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n2/31"
+      ]
+    },
+    {
+      "section_name": "Slide_3",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nMotivation\nHow do agents behave when they infer from peer actions rather than observe the truth?\nWhat if actions reflect both belief and incentive—introducing ambiguity?\nCan platforms still steer behavior under filtered or misaligned inference?\nWhat structural conditions restore interpretability of behavioral signals?\nHow to design incentive paths that prevent lock-in under distortion?\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n3/31"
+      ]
+    },
+    {
+      "section_name": "Slide_4",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nClosely Related Literature\nThreshold and cascade models: Adoption spreads via peer exposure (Granovetter (1978); Watts\n(2002); Acemoglu et al. (2011)), but assume transparent inference.\nDiscrete choice, softmax, social learning: Account for probabilistic actions and belief\nheterogeneity (McFadden (1974); Train (2009); Goeree et al. (2016); DeGroot (1974)), yet\npresume signals are interpretable.\nFiltering and inference bottlenecks: Recent advances highlight how endogenous filtering can\ndisrupt collective learning (B´enabou and Tirole (2016); Duffie et al. (2017); Miller (2019)).\nLatest advances: Acemoglu et al. (2024) show that platform interventions may collapse under\nfeedback-driven misinterpretation, demanding new mechanism design paradigms.\n→How to systematically incorporate interpretability as a structural constraint in dynamic incentive\ndesign remains an open question.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n4/31"
+      ]
+    },
+    {
+      "section_name": "Slide_5",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nOur Contribution\nUnified framework: We propose a belief-driven behavioral diffusion model with endogenous\nfiltering, making interpretability an explicit design constraint.\nTheoretical advance: We formalize the collapse of incentive effectiveness and show how\nfiltering-induced irreversibility locks in misinformation.\nMechanism innovation: We design, analyze, and simulate filtering-aware\ninterventions—compression, anchoring, and recursive repair—that restore robust system control\neven under epistemic fragility.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n5/31"
+      ]
+    },
+    {
+      "section_name": "Slide_6",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nSome Preliminaries\nUtility Function:\nUi(B) = Qt\ni · B + PI t · St\ni + ϵi,\nBelief Update via Social Learning:\nθt+1\ni\n= θt\ni + λ\n\n1\n|Ni|\nX\nj∈Ni\nBt\nj −θt\ni\n\n\nQt\ni = α + βθt\ni + ϵ′\ni represents the agent’s internal assessment of the information, determined by a\nbelief-dependent signal θt\ni , a baseline bias α, belief sensitivity β, and idiosyncratic heterogeneity ϵ′\ni.\nn agents on a network, each with belief θt\ni ∈[0, 1] at time t.\nBt\nj ∈{−1, 0, 1} is the behavior of neighbor j at time t, indicating rejection, neutrality, or support;\nPlatform incentive PI t and alignment label St\ni ∈{−1, 1}.\nNi is the set of agent i’s neighbors in the network;\nλ ∈(0, 1) is a learning rate reflecting responsiveness to social signals.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n6/31"
+      ]
+    },
+    {
+      "section_name": "Slide_7",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nLatent Utility and Softmax Choice Rule\nThe latent utility of agent i taking action b ∈{−1, 0, 1} at time t is given by:\nUt\ni (b) = Qt\ni · b + PItSt\ni · b + εi(b)\nHere, the action variable b plays a directional role: it encodes the polarity and intensity of\nbehavioral choice.\nSince both ε′\ni · b and εi(b) represent unobserved heterogeneity across actions, we aggregate them into a\nsingle Gumbel-distributed shock for tractability:\nUt\ni (b) = (α + βθt\ni ) · b + PItSt\ni · b + ˜εi(b),\nwith ˜εi(b) = ε′\ni · b + εi(b).\nThis leads to the softmax (multinomial logit) choice rule:\nP(Bt\ni = b) =\nexp(Ut\ni (b))\nP\nb′∈{−1,0,1} exp(Ut\ni (b′))\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n7/31"
+      ]
+    },
+    {
+      "section_name": "Slide_8",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nPlatform Problem\nPlatform Objective and Error Metrics\nThe platform’s central concern is to avoid amplifying false information. We define:\nFPRt =\nP\ni I[info is false ∧Bt\ni = 1]\nP\ni I[Bt\ni = 1]\nFNRt =\nP\ni I[info is true ∧Bt\ni = −1]\nP\ni I[Bt\ni = −1]\nFalse Positive (Type I error): Supporting false content.\nFalse Negative (Type II error): Rejecting true content.\nLegitimacy Guarantee:\nIncentive Compatibility (IC): Agents should find it utility-maximizing to act in accordance with\ntheir beliefs.\nIndividual Rationality (IR): Expected utility for participation must meet a minimum\nthreshold: E[Ui(Bt\ni )] ≥Ui.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n8/31"
+      ]
+    },
+    {
+      "section_name": "Slide_9",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nSome Results\nTheorem 1: Belief Monotonicity and Comparative Statics\nLet Bt\ni ∈{−1, 0, 1} be chosen by agent i via softmax rule with utility\nUt\ni (b) = (α + βθt\ni )b + PI tSt\ni b. Then, for β > 0:\n∂P(Bt\ni = 1)\n∂θt\ni\n> 0,\n∂P(Bt\ni = −1)\n∂θt\ni\n< 0\nThe effect on neutrality satisfies:\n∂P(Bt\ni =0)\n∂θt\ni\nmay be positive or negative, depending on the distribution of\nactions.\nInterpretation:\nIncreasing belief strictly raises the likelihood of support, reduces rejection, and reshapes the\nneutrality region.\nThis micro-level monotonicity is the analytic foundation for using observed actions as\ninterpretable signals of latent belief in all subsequent inference and mechanism design.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n9/31"
+      ]
+    },
+    {
+      "section_name": "Slide_10",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nSome Results (Cont’d)\nTheorem 2: Degeneration of Neutral Behavior\nLet Bt\ni ∈{−1, 0, 1} follow the softmax rule with utility Ut\ni (b). Then for any θt\ni ̸= θ∗, where θ∗is the\nbelief value at which Ut\ni (1) = Ut\ni (−1), limβ→∞P(Bt\ni = 0) = 0.\n• As belief sensitivity β increases, the probability mass for neutral actions is compressed into an\nincreasingly narrow belief interval around θ∗.\n• Outside this critical interval, agents overwhelmingly choose polarized actions, resulting in the\ndisappearance of robust neutral zones and amplifying system fragility.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n10/31"
+      ]
+    },
+    {
+      "section_name": "Slide_11",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nSome Results (Cont’d)\nTheorem 3: Incentive Substitution with Behavioral Alignment\nLet b∗∈{−1, 1}, St\ni = sign(b∗). For any θt\ni ∈[0, 1], there exists PI ∗(b∗) > 0 such that if\nPI t > PI ∗(b∗),\nP(Bt\ni = b∗) > δ\n(δ > 0).\nTheorem 4: Directional Deterrence for Misaligned Incentive\nSuppose St\ni = −sign(b∗). Then ∃PI † > 0, for any ε > 0, if PI t > PI †,\nP(Bt\ni = b∗) < ε.\nBy adjusting the sign and magnitude of incentives, the platform can selectively amplify aligned\nbehaviors or suppress misaligned ones for any belief profile.\nThis directional control mechanism highlights the capacity—and potential cost—of overriding\nbelief heterogeneity through strong intervention, laying the foundation for subsequent\nanalysis of interpretability and system robustness.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n11/31"
+      ]
+    },
+    {
+      "section_name": "Slide_12",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nFigure: Action Distributions under Varying Incentives\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n12/31"
+      ]
+    },
+    {
+      "section_name": "Slide_13",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBehavioral Cascades\nTheorem 5: Misinformation-Induced Behavioral Cascades\nSuppose the true state is false. Let agent beliefs θt\ni ∼F(θ) be i.i.d. across agents, and define the\ncritical belief threshold θ as the minimal belief at which rejection becomes utility-optimal:\nθ := inf {θ ∈[0, 1] | Ui(−1) > max{Ui(0), Ui(1)}} .\nAssume the average belief E[θt\ni ] < θ, and let\nPI := inf\n\b\nPI t \f\f P(Bt\ni = −1) > δ\n\t\nbe the minimal incentive to sustain consistent rejection.\nIf PI t < PI and agents update beliefs via observed neighbor behavior, then the system may exhibit\nlocally reinforced behavioral cascades.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n13/31"
+      ]
+    },
+    {
+      "section_name": "Slide_14",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBehavioral Cascades (Cont’d)\n(a) Support-dominant: Early supportive behavior boosts peer signals, raises beliefs, and reinforces\npro-false cascades—even when the true state is negative.\n(b) Neutral-dominant: Ambiguous actions and weak incentives sustain indecision, resulting in\nprolonged stagnation and inaction.\n(c) Rejection-dominant: Low initial beliefs and visible opposition reduce confidence, triggering\ncollective rejection.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n14/31"
+      ]
+    },
+    {
+      "section_name": "Slide_15",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nCorollary: Path Dependence Near Critical Incentives\nDirectional Sensitivity to Incentive Level\nLet PI be the minimum incentive to trigger rejection dominance. When initial beliefs θ0\ni < θ, long-run\nsystem behavior depends sharply on how PI t compares to PI:\n(i) PI t < PI: Support dominates via rising belief.\n(ii) PI t ≈PI: Neutrality and stagnation persist.\n(iii) PI t > PI: Rejection dominates as belief decays.\nSmall changes in incentive near the threshold can lead to dramatically different outcomes—highlighting\nstrong path dependence and the critical importance of incentive calibration.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n15/31"
+      ]
+    },
+    {
+      "section_name": "Slide_16",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBang-Bang Strategy and Equilibrium\nTheorem 6: Existence of Nash Equilibrium\nIn the belief-driven threshold utility model with discrete actions (Bt\ni ∈{−1, 0, 1}) and continuous,\nbelief-dependent softmax utilities, a mixed-strategy Nash equilibrium exists for any finite agent network\nwith bounded heterogeneity.\nDefinition: Bang-Bang Incentive Strategy\nAssume the platform only observes the average belief ¯θt = 1\nn\nP\ni θt\ni . Then the optimal incentive policy\nreduces to a threshold rule:\nPI ∗\nt =\n(\nPImax,\n¯θt < ¯θ∗\n0,\n¯θt ≥¯θ∗\nfor some ¯θ∗∈(0, 1).\nInterpretation: The platform intervenes only when average belief falls below a threshold, yielding a clear\nand interpretable control boundary.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n16/31"
+      ]
+    },
+    {
+      "section_name": "Slide_17",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBelief Lock-In\nTheorem 7: Belief Lock-In under Network Reinforcement\nLet the average belief evolve as\n¯θt+1 = (1 −λ)¯θt + λ · ρ(PI t, ¯θt),\nwhere ρ(PI t, ¯θt) is continuously differentiable in PI t. Let ˆθ be the unique fixed point under\nmaximal incentive PImax:\nˆθ = (1 −λ)ˆθ + λ · ρ(PImax, ˆθ).\nThen for any ϵ > 0, if ¯θt ∈[ˆθ −ϵ, ˆθ + ϵ],\n∂¯θt+1\n∂PI t = λ∂ρ(PI t, ¯θt)\n∂PI t\n→0\nas ¯θt →ˆθ,\ni.e., incentives lose marginal effect near belief lock-in.\nIncentives lose effect near lock-in, causing structural irreversibility.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n17/31"
+      ]
+    },
+    {
+      "section_name": "Slide_18",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nOptimal Incentive Path\nTheorem 8: Structure of the Optimal Incentive Path\nThe platform’s discounted objective [L(PI t, ¯θt) := FPRexp(PI t, ¯θt) + η FNRexp(PI t, ¯θt), with c > 0\nmarginal cost of increasing incentive intensity.]\nmin\n{PI t} J =\nT\nX\nt=0\nγt \u0002\nL(PI t, ¯θt) + c PI 2\nt\n\u0003\n,\ns.t.\n¯θt+1 = (1 −λ)¯θt + λ · ρ(PI t, ¯θt).\nThe optimal incentive path {PI t∗} satisfies:\nStarts positive if initial belief is low: PI ∗\n0 > 0;\nIs weakly decreasing over time;\nVanishes as beliefs approach the target: PI ∗\nt →0 as ¯θt →ˆθ.\nStrong early intervention should taper as belief stabilizes, but pure smooth paths risk fragility\nnear thresholds—motivating more responsive, trigger-based designs.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n18/31"
+      ]
+    },
+    {
+      "section_name": "Slide_19",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nFiltering-Based Update Rule and Filtering Barrier\nAgent i observes peer j’s action Bt\nj and infers latent belief via\nˆθt\nij = ϕi(Bt\nj , PI t, St\nj ),\nthen updates her own belief by\nθt+1\ni\n= θt\ni + λ\n\n1\n|Ni|\nX\nj∈Ni\nˆθt\nij −θt\ni\n\n.\nFiltering Barrier: For agent i at time t,\n∆t\ni := E\nh\f\f\fˆθt\nij −θt\nj\n\f\f\f | Bt\nj\ni\n,\nmeasuring the expected distortion between inferred and true belief. High ∆t\ni erodes interpretability,\nbreaking the link between observed behavior and actual belief.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n19/31"
+      ]
+    },
+    {
+      "section_name": "Slide_20",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nFiltering-Induced Irreversibility\nTheorem 9: Filtering-Induced Irreversibility\nLet beliefs evolve as\nθt+1\ni\n= θt\ni + λ\n\n1\n|Ni|\nX\nj∈Ni\nϕi(Bt\nj , PI t, St\nj ) −θt\ni\n\n.\nSuppose that for all i in some subset G, the filtering barrier ∆t\ni > δ for all t ∈[t0, t0 + k]. Then:\n\f\f\f\f\n∂E[θt\ni ]\n∂PI t\n\f\f\f\f →0\nas t →t0 + k.\nOnce distortion exceeds a structural threshold, agents’ beliefs no longer respond to\nincentives—platform control collapses.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n20/31"
+      ]
+    },
+    {
+      "section_name": "Slide_21",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nTotal Control Collapse\nTheorem 10: Filtering Expansion Causes Incentive Irrelevance\nSuppose filtering barriers evolve as:\n∆t+1\ni\n= ∆t\ni + κ ·\n1\n|Ni|\nX\nj∈Ni\n∆t\nj + γ ·\n1\n|Ni|\nX\nj∈Ni\n\f\f\fˆθt\nij −θt\nj\n\f\f\f ,\nwith ∆t+1\ni\n−∆t\ni ≥γ > 0 for all i and t > t0.\nDefine the Effective Incentive Reach (EIR) as:\nEIRt := 1\nn\nn\nX\ni=1\nI\n\u0012\f\f\f\f\n∂θt\ni\n∂PI t\n\f\f\f\f > ϵ\n\u0013\n.\nThen there exists t∗< T such that for all t > t∗: EIRt = 0\n(for any ε ∈(0, 1)).\nAs filtering distortion compounds, incentive effectiveness vanishes system-wide—no amount of\nintervention can steer beliefs. This marks a point of total control collapse.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n21/31"
+      ]
+    },
+    {
+      "section_name": "Slide_22",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nFiltering-Aware Mechanism Design\nFig.4. Coherence triangle linking structure, behavior, and\nPlatform Objective: Control belief while preserving\ninterpretability.\nmax\n{PI t,G t} U(θT)\ns.t. ∆t\ni < δ, ∀i, t\nFiltering-Aware Design: Structure–Behavior–Belief\nTriangle Coherence\nThe triangle (G t, Bt\nj , ϕi) is coherent if:\nE\n\u0002\f\fϕi(Bt\nj ) −θt\nj\n\f\f | G t\u0003\n< δ\n∀i, j, t.\nFiltering-aware mechanisms must actively preserve\nepistemic viability—keeping signals\ninterpretable throughout the feedback loop.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n22/31"
+      ]
+    },
+    {
+      "section_name": "Slide_23",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nFiltering-Aware Mechanism Design (Cont’d)\nGoal: Preserve epistemic viability—i.e., keep behavioral signals interpretable.\nDesign Objective: max{PI t, G t, It} U(θT)\ns.t.\nE\n\u0002\f\fϕi(Bt\nj ) −θt\nj\n\f\f\u0003\n< δ\nTriangle Failure Channels:\nStructure →Behavior: Compression – reduce action entropy via quantized incentives.\nBehavior →Belief: Anchoring – inject labeled agents or interpretive tags.\nBelief →Structure: Recursive Repair – periodic feedback or synchronization.\nInterpretability is not given—it must be constructed and sustained.\nInsight: Mechanism design becomes a structural challenge: preserving coherence across the\nstructure–behavior–belief triangle to ensure control under distortion.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n23/31"
+      ]
+    },
+    {
+      "section_name": "Slide_24",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nEIR and Distortion: Filtering-Aware vs Naive\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n24/31"
+      ]
+    },
+    {
+      "section_name": "Slide_25",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBelief Trajectories (Heatmap) Comparison\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n25/31"
+      ]
+    },
+    {
+      "section_name": "Slide_26",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nEvolution of Belief Variance\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n26/31"
+      ]
+    },
+    {
+      "section_name": "Slide_27",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nBang-Bang vs. Hybrid Mechanism Performance\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n27/31"
+      ]
+    },
+    {
+      "section_name": "Slide_28",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nComparative EIR and Distortion across Six Mechanisms\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n28/31"
+      ]
+    },
+    {
+      "section_name": "Slide_29",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nNetwork Snapshots: Six Mechanism Interventions\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n29/31"
+      ]
+    },
+    {
+      "section_name": "Slide_30",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nConclusion\nCore insight: Incentives only work if behavior remains interpretable—interpretability is a\nstructural constraint.\nFiltering collapses control: When inference is distorted, belief-action coherence dissolves, and\nincentives fail.\nOur solution: We propose filtering-aware mechanisms—compression, anchoring, and recursive\nrepair—to preserve triangle coherence between structure, behavior, and belief.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n30/31"
+      ]
+    },
+    {
+      "section_name": "Slide_31",
+      "paragraphs": [
+        "Introduction\nModel\nTheoretical Results\nSimulation Results\nConclusion\nImplications & Future Work\nGovernance ̸= Incentive tuning: Platform control is a problem of cognitive infrastructure design.\nBeyond smooth strategies: Bang-bang fails near belief thresholds; robust control needs\nresponsive, interpretable interventions.\nFuture directions:\nEndogenize filtering and belief heterogeneity.\nExtend to dynamic networks and hybrid incentive schemes.\nExplore negative incentives and strategic reversibility.\nLydia, Simona, Steffen\nBelief-Based Behavioral Diffusion & Interpretability\n31/31"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2729 @@
+[
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 0,
+    "text": "Strategic Use of Social Media by Political Parties: Evidence from Italiacomo Battiston † Federico Boffa ‡ Eugenio Levi § Steven Stillman ¶ January 6, 2025 Preliminary draft.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 1,
+    "text": "Please do not circulate without permission.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 2,
+    "text": "Abstract We examine how Italian politicians strategically use news events and political communication to increase their support in the electorate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 3,
+    "text": "Using machine-learning techniques, we extract events about immigration and the economy from newswires.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 4,
+    "text": "We then test a causal chain connecting events, political communication, the salience of particular cleavages, and support for parties measured.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 5,
+    "text": "In addition, we measure the relevance of such effects in explaining support for parties by calibrating a structural model of political competition informed by the relationships uncovered by our reduced-form analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 6,
+    "text": "We show that social media communication about immigration impacts salience and voting, and is more important than actual events in explaining political support.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 7,
+    "text": "∗ We thank participants to UIB, AASLE, SKILS, Bocconi University, Universit`a La Sapienza, ISPP’s 2022 Annual Meeting, 6th UniBZ Workshop on Political Economy, 1st Unicatt Political Economy Workshop, CReAMRFBerlin Workshop 2023, 13th Annual Conference on Immigration in OECD countries, 2023, SISP Conference, 2022, for valuable comments and feedback.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 8,
+    "text": "We also thank IPSOS and ANSA for providing us data that we employed in the analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 9,
+    "text": "The results presented in this study are the work of the authors, not ANSA, IPSOS or individual data suppliers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 10,
+    "text": "Eugenio Levi’s position was funded from 2020 to 2022 by Marie Curie Fellowship CZ.02.2.69/0.0/0.0/19 074/0012727 under the program OP VVV Mobility MSCA-IF of the Ministry of Education, Youth and Sport of Czech Republic. † Rockwool Foundation Berlin.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 11,
+    "text": "Email: gb@rfberlin.com ‡ Free University of Bolzano-Bozen.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 12,
+    "text": "Email: federico.boffa@unibz.it § Masaryk University, Free University of Bolzano-Bozen.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 13,
+    "text": "Email: eugenio.levi@unibz.it ¶ Free University of Bolzano-Bozen.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Abstract",
+    "paragraph_id": 14,
+    "text": "Email: steven.stillman@unibz.it 1 1",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "Political parties compete in elections where many aspects are uncertain.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "In particular, voters’ priorities shift over time in response to events occurring in society.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "For example, the recent surge in migration to Europe has benefited far-right populist parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "Although such events typically lie beyond politicians’ direct control, they can strategically leverage communication to affect the relative salience of different political issues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "By timing this communication to emphasize newsworthy events, they can potentially sway public attention towards particular topics that they “own”. In the social media era, the connection between political communication and events is likely even more relevant as it is easier for parties to choose when and how to communicate with voters.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "This paper examines the traditional and online communication strategies used by the main Italian political parties and their impact in the lead up to and just after the 2018 national election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "First, we compare communication by a populist anti-immigration party (Lega) to that by the other main parties at that time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "Second, using both reduced-form identification strategies and a structural model of political communication, we examine the link between events, communication, topic salience, and the growth of right-wing populism in Italy during this time period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "Our goal is to answer the question of how important the strategic use of social media has been in explaining this populist shift.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "While there is a developing literature on the impact of social media communication on polarization and populism, it is not yet clear how political parties make strategic use of social media to exploit events related to topics that they ”own”. In a multi-dimensional political competition, parties compete not only over voter preferences, but also on the relative weights given by voters to different topics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "The emergence of social media has given political parties a new tool that can potential impact salience by shifting attention or by emphasizing social identity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "Our paper is the first that examines the full causal chain between events, political communication, topic salience and voting behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "We begin by using the universe of political communication by Italian political parties on Facebook, Twitter and in traditional media (excluding TV), along with newswires by the main Italian news agency, ANSA, to measure how party communication responds to different types of events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "We classify events and communication using a supervised machine learning approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "Then, using an event history identification strategy, we show that immigration events have larger impacts on the daily communication of the populist anti-immigration party in both traditional and online media, while other parties are more responsive to economic events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "We then use a high-frequency (hourly) event history approach to examine the impact of both traditional and social media communication on the salience of different topics, as measured by 2 Google search data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "In this analysis, we control for the direct impact of different types of events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "We find that there is an immediate impact of parties’ social media communication, in particular by Lega, on the salience of immigration versus the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "On the other hand, the use of traditional media has no impact on the relative salience of these topics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "We next examine whether online communication has a causal impact on political support measured by voting intentions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "We do this by using a difference-in-RDD strategy that combines time variation in social media communication with geographical variation in 4G coverage. 1 This approach assumes that unobservable time-varying characteristics correlated with political outcomes do not change discontinuously with 4G coverage, for which we provide supporting evidence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "We find that Lega’s online communication on immigration not only increases the salience of this topic but also attracts voters.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "Finally, we quantify the impact of migration events on support for Lega and contrast it with the portion of Lega’s support driven by the party’s ability to react to migration events using online political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "We do this by specifying and calibrating a structural model of online political communication where two party coalitions compete to maximize their support in the electorate and news events and salience shocks interact with communication to determine the equilibrium salience of immigration versus economic factors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "We find that political communication about immigration, rather than immigration events per se, are a more important driver of support for the anti-immigration coalition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "In the period leading up to the election of 2018, communication explains about 6.9% of the support for the coalition favoring anti-immigration policies, while events only explain 5.6% of the support.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "Our paper is first to examine the impact of communication by political parties on both topic salience and voter intentions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "We also expand on the current literature by examining the use of both traditional and online social media and showing that, controlling for both the impacts of events and traditional media, social media communication matters for voting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "We contribute to three related areas of the literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "First, we contribute to the literature examining the causal impact of social media on political outcomes, including polarization, voting, protests, fake news, hate crimes, and politicians’ behavior. 2 Our paper is the first to establish a causal link between political communication, salience and support for far-right populism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "We also contribute to this literature by using a structural econometric model to quantify the overall impact 1 Informa UK and OpenSignal that show mobile data consumption more than doubled and that download speed was between 3 and 6 times higher under 4G with respect to 3G, and this leads to increased usage of social media. 2 This literature expands on past work in political science measuring the effects of political communication on TV and in political debates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "3 of social media. 3 Second, we contribute to the literature on issue selection and salience by measuring frequent communication choices by parties over a long period of time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "Previous papers have mainly looked at political communication in TV debates and in advertising spaces, or have focused on electoral campaigns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "These papers broadly show that parties persuasion can shift the salience of topics in the final months of the campaign shifts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "We find that parties continuously try to affect the salience of cleavages in the electorate, and that, in the case of the populist far-right, this has a direct impact on day-to-day support.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "These results suggest that social media has extend the persuasion effort by political parties beyond electoral campaigns, debates, and advertising, turning political communication into a continuous campaign.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "Third, we contribute to the literature on the effects of immigration on the support for populist parties by accounting for the role of online political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "Many recent studies have argued that increased immigration explains the recent rise in political populism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "Others have noted that communication by populist parties was a key ingredient in conjunction with the increased relevance of immigration in explaining the increase support for populism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "We contribute to this debate by quantifying the relative relevance of immigration events and communication about immigration in explaining the support for populism, and showing that both make an important contribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 0,
+    "text": "Italian political history shares several similarities with that of several other Western countries after World War II. Before 2013, Italy can be characterized by a steady rivalry along ideological lines.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 1,
+    "text": "From 1947 to 1993, the centrist bloc, led by the Christian Democrats, consistently remained in power.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 2,
+    "text": "Between 1991 and 1994, both the Communist and the Christian Democratic party dissolved, originating respectively the post-communist Democratic Party of the Left (PDS), and two centrist parties, the slightly more left-oriented Italian People’s party (PPI), and the slightly more right-oriented Christian Democratic Center (CCD).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 3,
+    "text": "From 1994 to 2013, two coalitions alternated in government.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 4,
+    "text": "The left-leaning coalition was led at first by the Democratic Party of the Left and then, since its foundation, by the Democratic party (PD), created in 1997 by the merger of the PDS and the PPI. The PD’s platform, while exhibiting some variation during the different leaderships, has broadly been in line with main Related work by Kendall et al. use a structural model to examine the importance of information in a particular political campaign.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 5,
+    "text": "4 stream European social democratic parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 6,
+    "text": "On the other side of the spectrum was a center-right coalition led by the conservative Silvio Berlusconi’s Forza Italia, which included the CCD and then its heirs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 7,
+    "text": "Our analysis spans the 2015-2019 time period, which marks important changes in Italian politics, most notably the emergence of a populist government.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 8,
+    "text": "Founded in 1989 as a regionalist northern Italian party with an agenda of decentralization, the Lega gradually turned first into a mainstream conservative party, and subsequently, under Matteo Salvini’s leadership, into a nationalist right-wing party, with a clear anti-immigration platform and a conservative economic ideology and a broader voter base.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 9,
+    "text": "Additionally, in 2013, the populist Five-Star Movement (M5S), founded in 2005 by Beppe Grillo and characterized by strong anti-establishment traits and a clear anti-politics attitude, started contesting national elections, moving Italy to a de-facto tri-polar political system.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 10,
+    "text": "During this time period, there were two general elections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 11,
+    "text": "The 2013 general election witnessed the victory, by a small margin, of the center-left coalition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 12,
+    "text": "However, the center-left, fell short of a majority of seats in the Senate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 13,
+    "text": "After failed attempts to form a government with M5S, which came in third with approximately one-fourth of the votes, a grand coalition involving the center-right (with Forza Italia as the most voted party), center-left and a centrist bloc agreed to form a government, with Enrico Letta from the PD as Prime Minister.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 14,
+    "text": "In 2014, Matteo Renzi, new leader of the PD, replaced Letta, while part of the center-right abandoned the governing coalition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 15,
+    "text": "Renzi then resigned in 2016 and was replaced by Paolo Gentiloni, also of the PD. In the 2018 elections, the center-right bloc obtained more votes (approximately 37%) than M5S (around 32%) and the center-left (close to 23%), but again not enough to secure a majority of seats.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 16,
+    "text": "After the slowest government-formation process in the Italian history, M5S and the Lega (without its traditional center-right allies Forza Italia) form a populist coalition government.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 17,
+    "text": "Tensions between the coalition partners increased during the electoral campaign for the 2019 European elections, and ended with the government collapsing in August 2019, which marks the end of the period of our analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 18,
+    "text": "In the years covered by our sample, PD’s policy position was rather centrist on economic issues, it had a “Blairian-type” pro-trade and pro-globalization approach along with a moderate view on the amount of taxes and expenditures.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 19,
+    "text": "It also had a mildly pro-migration policy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 20,
+    "text": "Forza Italia, in the opposition throughout the entire period, kept its moderately conservative platform broadly unaltered.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 21,
+    "text": "M5S both in opposition and governing had a platform which remained that of an anti-elite and anti-caste populist party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 22,
+    "text": "Similarly, Lega’s anti-immigration economically conservative platform did not significantly change during the period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 23,
+    "text": "Italy is a particularly good case study for our analysis since the 2018 electoral campaign focused on two main issues, immigration and economic (redistribution and taxing and spending), with both issues seen as being particularly crucial in determining voting patterns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "The Italian Political Landscape",
+    "paragraph_id": 24,
+    "text": "In addition, Lega’s platform, being extremely focused on immigration, allows us to place a special focus on that issue.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 0,
+    "text": "Our analysis covers the period from January 1, 2015 to August 20, 2019.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 1,
+    "text": "We start in 2015 because of data availability, while the end time coincides with the resignation of the Conte I government, the last one before the outbreak of the COVID-19 emergency, which arguably affected, among other things, parties’ communication strategies. 4 Below we discuss the sources of our data on social media messages, news events, salience and polling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 2,
+    "text": "Social media messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 3,
+    "text": "We collected the social media messages by Lega, M5S, FI, PD and their leaders on Twitter and Facebook 5.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 4,
+    "text": "In particular, we collected all tweets for “@LegaSalvini” (58,091 tweets), “@matteosalvinimi” (17,334), “@pdnetwork” (650), “@matteorenzi” (1,595), “@maumartina” (550), “@nzingaretti” (563), “@forza italia” (90,149), “@berlusconi” (3,208), “@Mov5Stelle” (4,662) and “@beppe grillo” (38,105).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 5,
+    "text": "We also collected Facebook posts from public pages “Lega Salvini premier” (34,644 posts), “Salvini official” (16,159), “Partito Democratico” (8,188), “Matteo Renzi ufficiale” (1,463), “Maurizio Martina” (323), “Nicola Zingaretti” (814), “Forza Italia” (5,656), “Silvio Berlusconi” (1,357), “MoVimento 5 Stelle” (18,529) and “Beppe Grillo” (17,753). 6 A machine-learning algorithm trained on this dataset is then used to generate a classification into our two reference categories, economic and immigration, and a third residual group (see Appendix A for more details).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 6,
+    "text": "Our training sample for this purpose included 3,232 Facebook posts and 4,989 tweets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 7,
+    "text": "We run the classification separately for tweets and Facebook posts to account for the differences in length and communication style across the two medias. 7 In our 4 Google trends hourly data are not available until 2015. 5 PD changed three leaders during the period under consideration.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 8,
+    "text": "There was Matteo Renzi from the start of the period until the 12th March 2018, then Maurizio Martina until the 17th November 2018, and finally Nicola Zingaretti.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 9,
+    "text": "For each leader, we only considered their social media and traditional messages in the period in which they were secretary of the party. 6 Given the download limits on the Twitter public API (3200 tweets per user), we develop an algorithm to collect the universe of tweets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 10,
+    "text": "We first identify all tweets IDs by a specific user using the Python selenium module, then download each of them one by one.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 11,
+    "text": "Facebook data comes from Crowdtangle, Facebook’s interface for data sharing with commercial and academic ventures. 7 In further analyses, after having classified based on the topic, we also look at sentiment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 12,
+    "text": "We employ a sentiment classifier trained on a corpus of Italian tweets to do our sentiment classification.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 13,
+    "text": "The outcome of this classification suggests that, across all topics and parties, over 80% of the social media messages 6 empirical analysis, we aggregate the leaders’ and the corresponding party’s messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 14,
+    "text": "Figure 1 in the top panel depicts thedaily total number of social media messages over time for all parties. 8 It shows that Lega, M5S and Forza Italia communicate way more than the PD throughout the period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 15,
+    "text": "On average, Lega and Salvini produce 74. (32. s.d.) social media messages per day between Facebook and Twitter, while the corresponding figures for the other parties are 59. (45.3) for Forza Italia, 46 (55.7) for the M5S, and 8. (6.5) for PD. Furthermore, Lega exhibits a spike close to three events of major national relevance in Italy (identified by the dashed vertical line in the graph).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 16,
+    "text": "In general, Lega communicates more during the summer, likely as a result of the higher intensity of immigration events, such as rescues and arrivals episodes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 17,
+    "text": "Communication by the M5S follows less regular patterns and is mostly driven by its founder Beppe Grillo’s tweeting behavior, which concentrates on scandals involving his political enemies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 18,
+    "text": "The communication by Forza Italia broadly mirrors that by Lega, although it shrinks after the 2018 election.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 19,
+    "text": "The top panel of Figure 2 reports the evolution of the difference between immigration and economic messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 20,
+    "text": "Lega is the only party that communicates more about immigration, as it produces on average 2. more messages per day on immigration than on the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 21,
+    "text": "The difference is especially large in 2015 during the refugee crisis, as well as during the Conte I government, when its leader Salvini was Minister of Internal Affairs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 22,
+    "text": "All other parties concentrate their communication efforts more on the economy throughout the whole period 9.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 23,
+    "text": "We interpret this, consistently with our theoretical assumptions, as Lega owning the migration issue, and the other parties fighting for ownership on the economy. 10 Traditional messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 24,
+    "text": "We derive traditional media messages from the universe of newswires provided by ANSA, the main Italian news agency.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 25,
+    "text": "ANSA is a politically neutral news agency.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 26,
+    "text": "We got permission to access ANSA MIDA, a professional portal for the ANSA database containing all newswires from 2015 onwards.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 27,
+    "text": "We scraped it using a Python algorithm based on the selenium module.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 28,
+    "text": "Our initial dataset included 1,802,687 newswires from 2015 to 2020.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 29,
+    "text": "We identified messages by the party leaders (Salvini, Renzi, Martina, Zingaretti, Berlusconi and Grillo) by have a negative sentiment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 30,
+    "text": "That is why we do not elaborate more on this issue. 8 We smooth out the time series using a non linear filter with a median smoother of span 7.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 31,
+    "text": "The vertical dashed lines represent, in chronological order, the start of the 2015 refugee crisis, the 2016 referendum on constitutional reforms, the start of the 2018 general elections’ electoral campaign, the 2018 general election, and the formation of the Conte I government (supported by Lega and the M5S). 9 M5S has 5. more messages per day on the economy than on migration, PD 2. and Forza Italia 10.2. 10 The content of messages broadly reflects the parties’ policy positions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 32,
+    "text": "In Appendix Table D1 we present the most frequent bigrams for each party by topic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 33,
+    "text": "Lega’s messages on migration focus on illegal migration, security and “presumed refugees” while PD is more concerned with the activity of the coastal guard and saving human lives.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 34,
+    "text": "Forza Italia’s messages broadly mirror those by Lega while M5S’s messages lack a clear focus.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 35,
+    "text": "On the economy, a left/right divide emerges, with Lega and Forza Italia focusing on fewer taxes and PD and M5S on jobs, minimum income and citizenship’s income.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 36,
+    "text": "7 exploiting ANSA’s peculiar way of titling the newswires 11.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 37,
+    "text": "When the title has the surname of the politician either as the first word or after a colon ending a description of the topic of the newswire, then it contains a message by the leader itself.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 38,
+    "text": "Most of these messages represent direct communication of politicians that later in the day gets picked up by newspapers or TV news, while a handful of them reports politicians’ statements from newspaper or TV’s interviews.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 39,
+    "text": "The machine-learning model we used for social media messages is then used to generate a classification into our two reference categories, economic and immigration, and a third residual group.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 40,
+    "text": "The bottom panel of Figure 1 depicts the daily total number of traditional media messages over time for all parties 12.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 41,
+    "text": "Forza Italia and M5S communicate very little in this traditional way - on average 0. and 0. messages per day, respectively 13.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 42,
+    "text": "For Lega and PD this communication is more frequent with 1 and 1. messages per day respectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 43,
+    "text": "However, traditional messages are less frequent than the social media ones by an average ratio of 77. and 6. respectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 44,
+    "text": "Interestingly, PD communicated more than Lega while in government, and vice versa, probably explaining the rise in social media communication for PD in more recent times in our sample period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 45,
+    "text": "When we look at topics, M5S and Forza Italia only communicate on the economy 14.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 46,
+    "text": "As expected, Lega communicates relatively more on migration and PD more on the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 47,
+    "text": "We measure the occurrence of politically-relevant events using ANSA. To the extent of our knowledge, our paper is the first to employ newswires to extract events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 48,
+    "text": "At this purpose, we dropped newswires unrelated to the economy and immigration (e.g., weather reports, daily recaps, summaries of election results, stock market news, foreign news) exploiting ANSA’s own classification.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 49,
+    "text": "We further excluded politicians’ statements using a dictionary-based approach. 15 This left us with 552,899 newswires, which we classified using the same method employed for political messages using supervised machine learning (see Appendix A for details).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 50,
+    "text": "We then adapted the clustering algorithm by Piskorski et al. to extract events from news.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 51,
+    "text": "Intuitively, we cluster pieces of news based on the similarity of their text, and we consider clusters of news to be generated by the same underlying events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 52,
+    "text": "We then take the timestamp on the first occurring article to measure when the event occurred. 16 The bottom panel of Figure 2 shows 11 We only consider the party leaders and not the official party communication because on traditional media that is very scarce (and noisy, often including communication by local party branches). 12 The only difference with the top panel of Figure 1 is that we now smooth out the time series using a non linear filter with a median smoother of span 28 rather than 7. 13 We conjecture that this depends in the case of Forza Italia on Berlusconi’s ownership of TVs and in the case of M5S on their populist way of communicating online only. 14 From our classifier, M5S has 2 traditional messages on immigration over 4 years, Forza Italia not even that. 15 We create a list of politicians including all national MPs elected in 2008, 2013 and 2018, all European MPs elected in 2014 and 2019, members of Renzi’s, Gentiloni’s and Conte I’s cabinets, all regional Presidents, all majors of provincial capitals in office between 2015 and 2020, all trade unions’ and business associations’ leaders, all leaders of the Italian Roman Catholic Bishops’ Conference, as well as the Pope and the last two Presidents of the Republic. 16 More precisely, we perform agglomerative (hierarchical) clustering on data with average cosine distance; 8 the pattern of events over time with economic events always more common than immigration events (77. vs. 12. per day on average).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 53,
+    "text": "We measure salience of immigration versus the economy using Google search volume in Italy, downloaded through Google Trends APIs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 54,
+    "text": "We first build a dictionary of the most representative 10 keywords for each topic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 55,
+    "text": "To this end, we consider the top 10 words in terms of feature importance that emerged while dealing with the classification of events. 17 The list of words by category is available in Appendix B. We also perform a robustness in which we use 20 keywords rather than 10.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 56,
+    "text": "Then, we collect hourly searches by computing Google Trends queries involving the keywords using the Python module pytrends 18.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 57,
+    "text": "We then rescale by a common factor time series representing different words pertaining to the same category and then sum them up.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 58,
+    "text": "Polling data and 4G coverage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 59,
+    "text": "We use polling data collected by IPSOS, a leading Italian polling company from 2015 to 2018.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 60,
+    "text": "Each week IPSOS surveys via phone a sample of 1000 respondents, selected through the using CATI statistical methodology.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 61,
+    "text": "The overall sample aggregates to approximately 50,000 observations per year 19.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 62,
+    "text": "Each observation in this dataset is an individual response and includes information on voting intentions and intention to vote, as well as sociodemographic characteristics - age, gender, education, and occupation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 63,
+    "text": "Importantly, the data includes the respondent’s municipality of residence, which we use to match each respondent with the availability 4G coverage in their area collected via the Collins Bartholomew map explorer (https://www.collinsbartholomew.com/mobile-networkcoverage-map-data-technical-detail/). agglomerative clustering is restricted to links closer than 2 weeks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 64,
+    "text": "In order to deal with disconnected components, we separately run clustering for different network components of the connectivity matrix.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 65,
+    "text": "The algorithm then prepares a loop creating adjacency matrix based on cosine similarity at each time t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 66,
+    "text": "We choose a threshold of 0. to determine the maximum distance, but in the analysis we perform robustness over several thresholds and the results stay qualitatively the same. 17 Feature importance is a procedure that extracts from a classification model the words that better predict classification into a category. 18 Given that Google allows for contemporaneous queries of 6 words only, we had to perform multiple overlapping queries where the overlap was both within and between the categories.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 67,
+    "text": "In addition, Google only returns data on a hourly basis as opposed to daily, weekly or monthly if the time range of the query is equal or lower than a week.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 68,
+    "text": "Also, Google Trends time series are not comparable over time if there is no overlap between dates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 69,
+    "text": "We thus had to instruct our algorithm to overlap weekly queries over time and continuously rescale them over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Data",
+    "paragraph_id": 70,
+    "text": "The overlap was of 3 days, so to accommodate for values of the series close to the end/beginning of the range equal to zero. 19 Aggregated data is publicly available at www.sondaggipoliticoelettorali.it 9 4",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 0,
+    "text": "We first look at the reduced-form relationships between (i) events and online political messages, (ii) political messages, events and salience, and (iii) political messages, events and intentions to vote.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 1,
+    "text": "In each case, we use an identification strategy designed to reveal causal relationships.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 2,
+    "text": "Events and political messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 3,
+    "text": "We first investigate the impact of events on party’s online and traditional communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 4,
+    "text": "More specifically, we look at if and how much political parties communicate on immigration or on the status of the economy just after a migration-related or an economy-related event occurs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 5,
+    "text": "In the Appendix, we examine the residual category of messages mostly as a placebo, although messages in this category could well be complements or substitutes for messages on immigration or on the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 6,
+    "text": "In particular, we estimate the following specification:",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 7,
+    "text": "messages k,t,p = − i + X k − i and a wide range of time fixed effects δ t, more specifically day of the week, week of the year, and year fixed effects as well as daily time trends that vary by year.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 8,
+    "text": "Table 2 shows results from this regression analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 9,
+    "text": "In the top panel, we show results for Lega and M5S, while FI and PD are in the bottom row.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 10,
+    "text": "Results on social media messages are in the left columns, while those on traditional messages to the right.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 11,
+    "text": "We first look at Lega.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 12,
+    "text": "Column (5) shows that a 1-point standard deviation increase in immigration events leads to a statistically significant 0.027 standard deviation increase in Lega social media messages on immigration.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 13,
+    "text": "As expected, it has no discernible effect on tweets and post on the economy, as indicated in Column (6).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 14,
+    "text": "The same effect on traditional media in Column (7) is of 0.016 s.d., so discernibly lower than that of social media.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 15,
+    "text": "Again, there is no discernible effect on traditional media on the economy, as indicated in Column (8).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 16,
+    "text": "Economic events show a similar pattern.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 17,
+    "text": "They lead to more messages on the economy by Lega; a 1-point standard deviation increase in events corresponds to a 0.012 s.d. increase in social media messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 18,
+    "text": "This effect is smaller than that of migration events on migration messages, suggesting that Lega indeed exploits events related to migration for its communication strategy more than those related to the 10 economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 19,
+    "text": "Again, as before, and intuitively, economic events do not significantly affect messages on migration.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 20,
+    "text": "More interestingly, they also do not significantly affect traditional messages on the economy, consistently with Lega’s populist approach of favouring social media over more institutional channels.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 21,
+    "text": "When looking at the other parties, a few results stand out.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 22,
+    "text": "First, as expected and consistently with the notion that Lega “owns” the immigration issue, the other three main parties react more to economic than to immigration events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 23,
+    "text": "Interestingly, M5S reacts to immigration events by increasing its political communication on the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 24,
+    "text": "While this result may at a first glance appear counter-intuitive, it is consistent with qualitative evidence on M5S communication strategies that show that M5S tries to shift the focus from immigration policies to the immigrants’ impact on jobs and economic insecurity. 20 We also find that PD reacts relatively more on traditional media than on social media, especially on the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 25,
+    "text": "Figure D1 and D2 in the Appendix plots event-study graphs on social media and traditional messages using the same specification as in Table 2, but now allowing for 7 days lags and leads in the explanatory variables, i.e. economic and immigration events, to account for potential anticipation effects of a news (e.g., a report due in a certain date), or for events that trigger a long lasting debate extending to days after their occurrence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 26,
+    "text": "The picture on social media messages is consistent with results from Table 2, and it further shows that most of the effects are short-lived and concentrated in the same day when the event happen.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 27,
+    "text": "The same cannot be said of traditional media messages, as the effects become noisier and less concentrated in the same day the events happened.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 28,
+    "text": "In Appendix D, we provide robustness checks by looking at important events only and at Facebook and Twitter communication separately.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 29,
+    "text": "When looking at important events only in Table D2, results go in the same direction; however, coefficients are smaller suggesting that our main results are not driven by the important events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 30,
+    "text": "We find similar impacts on Facebook and Twitter communication (see Table D3), although parties seem to have a strategic use of each media.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 31,
+    "text": "We also investigate in Table D4 and Table D5 whether our results are driven by the political parties’ strategy in specific time periods, like the electoral campaign, or are related to their incumbency status.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 32,
+    "text": "Results on Lega’s social media messages don’t, while we find some evidence that the increase in traditional messages on migration is driven by the period in which Lega was in government.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 33,
+    "text": "We also find limited evidence that other parties are more reactive while in opposition and during the electoral campaign.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 34,
+    "text": "Social media messages, events and salience.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 35,
+    "text": "We next examine the effects of social media messages on topic salience, measured as the difference between the volume of searches on immigration and on the status of the economy. 20 We also find that a large fraction of the increase in the messages by M5S on the economy following immigration events is associated to events involving immigrant exploitation in the labor market (see Appendix C).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 36,
+    "text": "In particular, we estimate the following event-study specification:",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 37,
+    "text": "salience t = − i + X k,p δ k m,p 24 X i =0 messages t − i,k,t,p + X k δ k e 24 X i =0 events t − i,k,t + − i,k,t,p reporting the total standardized number of messages in the previous 24 hours for topic k by party p at hour t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 38,
+    "text": "We include social media and traditional messages separately in our regressions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 39,
+    "text": "Again, messages by topic and by party are standardized over the total amount of either social media or traditional messages so that all coefficients can be directly compared.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 40,
+    "text": "The standardized variable P 24 i =0 events t − i,k,t controls for the number of events of category k in the previous 24 hours.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 41,
+    "text": "Time fixed effects δ t are in this specification date and hour of the day times day of the week fixed effects, so that our estimates come from comparisons in Google searches within the same day controlling for within-day trends.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 42,
+    "text": "Table 3 shows results from this specification in column (3) and (4).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 43,
+    "text": "In column (1) the volume of messages aggregated by topic P 24 i =0 messages t − i,k,t,p is additionally summed across the parties p and we do not control for events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 44,
+    "text": "In column (2) we bring back the rolling sum of events in the previous 24 hours, to disentangle the direct impact of events on salience from the impact on salience mediated by the parties communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 45,
+    "text": "It is to note that we only report coefficients for social media messages: all coefficients associated to traditional messages, although pointing in the right direction, are not significant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 46,
+    "text": "Results in columns (1) and (2) broadly suggest that political communication affects salience in the intuitive direction, although differentially for immigration-related and for the economyrelated messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 47,
+    "text": "An increase in the volume on messages on immigration increases the salience of immigration.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 48,
+    "text": "The effect remains strongly statistically significant, and coefficients remain quite stable, even after the inclusion of the events in column (2).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 49,
+    "text": "In terms of magnitudes, a one-standard deviation increase in communication on immigration increases Google searches on immigration over the economy by 13-17% of its standard deviation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 50,
+    "text": "An equivalent increase in messages on the economy, instead, has no discernible effect on relative salience.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 51,
+    "text": "In column (3), we unpack social media messages by party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 52,
+    "text": "We find that the significant effect on messages on migration on salience is driven by communication by Lega.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 53,
+    "text": "A one-standard deviation increase in communication increases the relative salience of migration over the economy by 23.89% of its standard deviation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 54,
+    "text": "We also find a weakly significant impact of Lega 12 communication on the economy, with a 17.19% effect in the opposite direction.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 55,
+    "text": "An effect of PD messages on migration is also weakly significant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 56,
+    "text": "In column (4) we unpack events by their type, such as delivered to us by a Latent Dirichlet Allocation (LDA) over the ANSA database with 14 categories for each topic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 57,
+    "text": "In Appendix C, we specify the details of the LDA clustering procedure and its outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 58,
+    "text": "Here, it is sufficient to say that the inclusion of events by more detailed type provides more precision in the estimates and accounts for the possibility that messages are confounded with specific types of events.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 59,
+    "text": "Results mostly stay the same.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 60,
+    "text": "The impact of Lega messages on the economy now becomes statistically significant at 5% level and the effect of PD messages on migration becomes significant at 5% level too.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 61,
+    "text": "Table 3 shows that Lega communication is more effective at affecting salience than communication by the other parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 62,
+    "text": "To test this formally, we perform F-tests after regressions in columns (3) and (4) that coefficients associated to the communication of each party are jointly zero regardless of the topic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 63,
+    "text": "Indeed, what we find is that we can reject the null hypothesis at 1% level for Lega in both regressions while we cannot do the same for the other parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 64,
+    "text": "Overall, Lega’s communications affect salience more than those of other parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 65,
+    "text": "Moreover, its focus on migration seems to pay off by increasing the salience of immigration as compared to the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 66,
+    "text": "M5S, FI and PD do not seem to achieve the result of shifting salience on their own preferred issue, i.e. the economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 67,
+    "text": "We now look at the robustness of these results to different specifications of the regression models.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 68,
+    "text": "We start, as a baseline model, from column (4) of Table 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 69,
+    "text": "We first examine whether our results are robust to using a 12 hour timeframe as opposed to a 24 hour time frame.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 70,
+    "text": "Next, we consider Google searches time series built with queries over 20 keywords for each category instead of 10 (see section on data and Appendix B for details).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 71,
+    "text": "Finally, one may worry that events, no matter how accurately we controlled for their type in column (4) of Table 3, may still confound the influence of messages on salience.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 72,
+    "text": "To test this, we drop all observations where an event occurred in the previous 24 hours.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 73,
+    "text": "Given the limited number of remaining observations (91), and the consequent risk of saturating the model, we include in this regression only 12 lags of the dependent variable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 74,
+    "text": "Results are in Table 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 75,
+    "text": "They are fully consistent with the previous results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 76,
+    "text": "Political messages, events and intentions to vote.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 77,
+    "text": "The previous analyses suggest that parties leverage events to increase the effectiveness of online political communication and change the salience of particular issues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 78,
+    "text": "Using data on polls, we now investigate whether their communication ultimately affects citizens’ propensity to vote for a given party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 79,
+    "text": "Employing only time variation in political communication and polls is problematic in this case.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 80,
+    "text": "Since polling data frequency is daily at best, overcoming endogeneity concerns with frequent data is not a viable option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 81,
+    "text": "Instead, we used difference-in-RDD design, combining time variation in party posts with an exposure variable based on 4G coverage in the year prior to the treatment, measured 13 by Collins Bartholomew (https://www.collinsbartholomew.com/mobile-network-coverage-mapdata-technical-detail/).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 82,
+    "text": "We consider 4G coverage as a proxy of social media usage in line with reports that find that mobile data usage more than doubled under 4G with respect to 3G with specific increases in Facebook usage 21.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 83,
+    "text": "More specifically, we match IPSOS survey data on a given day to communication by parties in different topics (economy, immigration, and the residual category), and events in a given category (economy, immigration) all in the prior week.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 84,
+    "text": "We estimate the impact of communication and events by measuring the differential effect of polls and communication across areas with 4G versus 3G mobile internet coverage, controlling for aggregate shocks in the support to a given party (week FEs), time-invariant characteristics political characteristics (geographical FEs) and potential selection of the sample of respondents (through time-varying averages of respondents’ characteristics).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 85,
+    "text": "In particular, we estimate the following specification:",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 86,
+    "text": "y i,l,t = # messages p,j,t # messages p,j,t # messages p,j,t % for Vodafone and by 43.1% for Tim.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 87,
+    "text": "Both measures are relevant for assessing the quality of mobile data usage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 88,
+    "text": "The fact that the performance of both factors was much higher under 4G should suggest that users were probably more inclined to frequently access social media in the areas with 4G coverage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 89,
+    "text": "14 messages p,j,t report the total number of messages in a given week for topic j by party p.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 90,
+    "text": "Outcomes y are poll dummies for Lega, PD, Forza Italia, and Movimento 5 Stelle, and turnout intentions (the share being sure to turn out).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 91,
+    "text": "Fixed effects are represented by ‘treatment’ and ‘control’ locations are comparable, we only use data from areas sufficiently close to the border between 3G and 4G coverage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 92,
+    "text": "We choose a benchmark of 20KM, allowing for sufficient variation on both sides of the 4G-coverage border, and experiment with a threshold of 12.5KM for robustness.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 93,
+    "text": "Since 4G coverage is not measured with precision between 1 and 23 squared kilometers, we also leave out an area closer to the border than 5KM. We cluster errors at the municipality-week level.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 94,
+    "text": "In Table 5, we show means and standard deviations, for all of the sociodemographic covariates in the whole sample and in the bandwidth that we have in our analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 95,
+    "text": "Sample characteristics in the sample used in the RDD analysis are virtually identical to the ones of the overall sample, supporting external validity of our analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 96,
+    "text": "As for internal validity, the main identifying assumption for our empirical strategy is that timevarying unobservable characteristics correlated with political outcomes do not change discontinuously at the 4G border.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 97,
+    "text": "In the last three columns, we use a simple RDD test, with the bandwidth we use in our main analysis, to show that the main observable characteristics do not change at the 4G border.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 98,
+    "text": "Out of 13 sociodemographic covariates tested, only one occupational category–being in search of the first job–jumps at the threshold.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 99,
+    "text": "Overall, these results support the external and internal validity of our estimates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 100,
+    "text": "Our main results are reported in Table 6.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 101,
+    "text": "The first five columns report the estimates of Equation 3 on intentions to vote for Lega, PD, Forza Italia, Movimento 5 Stelle, and for turnout intentions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 102,
+    "text": "The estimates on the interaction between Lega’s immigration messages and 4G coverage is positive and significant for Lega’s polls, and negative and significant for Movimento 5 Stelle’s polls.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 103,
+    "text": "In terms of magnitude, an increase in messages by Lega equal to 0.1-SD in the whole sample of messages by all parties differentially increases voting by Lega by 1. percentage points in 4G areas, and reduces votes for Movimento 5 Stelle by 3. percentage points. 22 We include age and age squared, proportion of persons with secondary and tertiary education, and proportion of population in different occupations–self-employed, permanent job, temporary job, apprenticeship, seasonal/occasional job, student, home production, retired, in search of first job, other (all compare to unemployed).",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 104,
+    "text": "In the last rows of the table we perform two additional tests.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 105,
+    "text": "In the first, we report the F-stat computed under the null hypothesis that the sum of party’s communication coefficients across communication for the column’s party is equal to 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 106,
+    "text": "In the second row we report the F-statistic computed under the null hypothesis that no communication category is different from 0 for the column’s party; in the turnout column we include all parties’ communication variables.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 107,
+    "text": "The results of the first test suggest that only Lega’s communication has a robust effect on own support, while the second test supports the idea that also the communication of Movimento 5 Stelle affects own support in the electorate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 108,
+    "text": "To further explore the connection between exposure to political messages online and intentions to vote, we exploit data from the 2012 wave of the European Social Survey on internet usage to create an indicator for high internet usage predicted by observable characteristics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 109,
+    "text": "In particular, we use lasso linear regression to select predictors of daily internet usage among education, occupation, sex, age, age squared, and two-way interactions between them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 110,
+    "text": "The resulting index represents a predicted probability of daily internet usage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 111,
+    "text": "Using such predictor, we now run our estimation only using data on individuals with high predicted internet usage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 112,
+    "text": "Restricting to this sub-sample, the effect of Lega’s communication on own polling remains significant and almost doubles while the effect of Lega’s communication on Moviemento 5 Stelle’s support become much more noisy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 113,
+    "text": "The F-stat for the sum of coefficients and for joint significance are similar to the previous version.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 114,
+    "text": "However, we do not see an effect of Movimento 5 Stelle’s communication now, and instead register a less robust effect of Forza Italia’s communication, statistically significant at a 10% level.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 115,
+    "text": "In Appendix Table D6, we examine the robustness of our estimates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 116,
+    "text": "In the first five columns, we drop distance interactions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 117,
+    "text": "The effect remains significant for Lega’s immigration communication, but much smaller in magnitude.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 118,
+    "text": "In addition, we now see a negative effect of Lega’s communication on the economy on Forza Italia’s poll and on turnout.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 119,
+    "text": "In the last five columns, we experiment with an alternative window, restricted to the right at 12.5KM. The effect of Lega’s communication remains significant and is similar to the one computed on the sample of high internet users.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Reduced-Form Evidence",
+    "paragraph_id": 120,
+    "text": "Now, F-stat for the sum and the joint significance of coefficients are both statistically significant, together with the F-stat on joint significance of Movimento 5 Stelle’s communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 0,
+    "text": "In the previous section, we have shown that populist parties in Italy used immigration events in conjunction with social media communication to increase their support in the electorate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 1,
+    "text": "While reduced-form methods are able to establish a causal relationship between events, salience, and 16 communication, measuring the empirical relevance of such channels in explaining the support for populist parties requires a theoretical framework.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 2,
+    "text": "In this section, we develop a simple model where a party sets the level of communication on social media over time to influence salience of the preferred topic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 3,
+    "text": "We then use the model to quantify the relevance of communication and events in explaining anti-migration parties’ support in the electorate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 4,
+    "text": "In the model, voters perceive parties to have a given quality level on each topic Q i,p 1 / 2, 1 / 2 }, i ∈{ m, n }, modeling either horizontal differentiation– Q s representing the difference in parties’ positions and voters’ ideology–or vertical differentiation– Q s representing the quality of parties’ platform.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 5,
+    "text": "A voter’s expected utility from voting party d is given by the quality of a party’s proposed policy on each issue, weighted by the salience of the issue, with γ t indicating the salience of immigration at time t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 6,
+    "text": "This modeling framework captures the idea that voters pay more attention to some topics in choosing their favorite parties, and the aggregate movement of salience is a measure of such level of attention.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 7,
+    "text": "Finally, voters’ utility from choosing a party depends on an additive random component, ε p,t, modeling voters’ heterogeneity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 8,
+    "text": "We define − − 1 / 2, 1 / 2]. Then, a voter will choose to vote party if:",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 9,
+    "text": "U p,t = ( − ∆ Q j = Q j,A − Q j,B represents the difference in the average quality of parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 10,
+    "text": "We also allow for a fraction",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 11,
+    "text": "− 1 N m,t and N n,t are indicators of the occurrence of news about migration the economy ’ platforms in the eyes of voters, and complement parties’ communication’s influence on salience.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 12,
+    "text": "To model this process we assume that the relative advantage of party A in a given topic is given by the following functions of events occurrence dummies,    ∆ Q m,t = exp ∆ Q n,t = exp –border crossings and first reception versus events involving migrants in Europe–and two subtopics for the economy–corporate and finances events versus state of the economy and redistribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 13,
+    "text": "k m − Q − p,m )+ + (1 − − Q − p,n )] + + ε p,t − ε − p,t − c p max { k m t,p, k n t,p } (5) We calibrate the model using a Non-Linear-Least-Squares estimator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 14,
+    "text": "Namely, we estimate the model’s parameters by choosing the vector of parameters minimizing a distance between the realized communication, polling, and salience and the one simulated by our model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 15,
+    "text": "For every parameter draw in the minimization algorithm, we compute all potential Nash Equilibria using 18 Table 1: Identifying variation Parameters Moments ’ support c A, c B, ’ support",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 16,
+    "text": "Counterfactuals We use the calibrated model to examine two counterfactual scenarios.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 17,
+    "text": "First, we simulate a counterfactual scenario where we set the probability of immigration events occurring to 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 18,
+    "text": "Under this scenario, we observe a drop in Under this scenario, the simulated vote for the right-wing coalition is about 17% lower than the 24% polling predicted by estimated parameters.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 19,
+    "text": "Such reduction is caused by a 19% reudction in the salience of migration, as proxied by Google searches, amplified by a 60% decrease in migration communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 20,
+    "text": "In the second counterfactual scenario, we set the η 1 = 0, implying that parties are not able to affect the salience of migration through mgiration communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Structural Model",
+    "paragraph_id": 21,
+    "text": "In this case, the counterfactual support for anti-migration parties would fall by 19%. Such reduction would be caused by a decrease in the salience of migration by 90%. These results are in line with the idea that shifts in exogenous events are not enough to explain the rise of the anti-immigration right, which has also exploited these events using political communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 0,
+    "text": "This paper examines how politicians in Italy strategically use news events and political communication to increase their support in the electorate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 1,
+    "text": "We examine the link between news events, online political communication, the salience of different cleavages, and party support.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 2,
+    "text": "We compare the communication used by populist anti-immigration politicians to the communication of traditional parties, and examine its impact on the support for anti-immigration populism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 3,
+    "text": "We show that parties differ in the response of their daily communication to different types of events, and that immigration events have more pronounced effects on the communication of the populist anti-immigration party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 4,
+    "text": "We also show that there is an immediate impact of parties’ communication on the salience of different cleavages in the electorate and that this has a causal impact on political support.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 5,
+    "text": "In particular, we find that communication on immigration increases support for the right-wing populist Lega party.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 6,
+    "text": "We then uses a structural model of political competition informed by the relationships uncovered in our reduced-form analysis to evaluate two counterfactual scenarios, one where political parties compete in the absence of communication events, and a second where parties cannot affect migration salience with communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 7,
+    "text": "We find that communication about immigration is more important than immigration events for explaining increased support for the anti-immigration coalition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "boffa-2025-01-30_5601.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Conclusions",
+    "paragraph_id": 8,
+    "text": "In the period leading up to the election of 2018, communication explains about 6.9% of the support for the coalition favoring anti-immigration policies, while events only explain 5.6% of the support.",
+    "warnings": ""
+  }
+]

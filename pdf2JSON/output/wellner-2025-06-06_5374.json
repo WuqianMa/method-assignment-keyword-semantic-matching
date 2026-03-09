@@ -1,0 +1,2765 @@
+[
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 0,
+    "text": "War and Structural Transformation Evidence from Germany after World War I Tobias Koratthias Quinckhardt † Lukas Wellner ‡ April 10, 2024 Abstract This paper investigates the effect of war on structural change by looking at the economic transformation of Germany after WWI. For this, we combine newly geocoded data on the birthplaces of 7. million German WWI casualties with county level data from the 1910 and 1925 German business and agricultural census.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 1,
+    "text": "Based on continuous difference-in-differences estimations, we show that WWI casualties accelerated the moving-out of the primary sector, yet delayed the formation of the service industry.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 2,
+    "text": "While the agricultural sector responded to the war-induced human capital shock with the absorption of very small farms by medium-sized farms and mechanization, we argue that the educational requirements of the tertiary sector made deceased WWI soldiers harder to replace, delaying the formation of the service and trade industries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 3,
+    "text": "Keywords: WWI, war casualties, structural transformation, economic development.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 4,
+    "text": "JEL Classification: O14, N44 Leibniz University Hannover and Heidelberg University. korn@mak.uni-hannover.de. † Heidelberg University. matthias@quinckhardt.de. ‡ University of Göttingen and Heidelberg University. lukas.wellner@uni-goettingen.de.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 5,
+    "text": "Acknowledgments: We thank Philipp Ager, Antonio Ciccone, Axel Dreher, Andreas Fuchs, Martin Gassebner, Erik Hornung, Jean Lacroix, Markus Ludwig, Felix Rösel, and seminar audiences at the 2019 Beyond Basic Questions Seminar, the 2022 Centre for European Studies Dissertation Workshop at Harvard University, the Spatial Dimensions of the Labour Market at the Institut für Arbeitsmarktund Berufsforschung Nuremberg 2022, the Political Economy of Democracy and Dictatorship 2023, the Ruhr Graduate School Doctoral Workshop 2023, the German Development Economics Conference 2023, and the 2023 Beyond Basic Questions Seminar for helpful comments and suggestions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 6,
+    "text": "We are grateful to Dr.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 7,
+    "text": "Jesper Zedlitz of the Verein für Computergenealogie for providing data on the digitized loss lists, to Christoph Halbmeier for sharing data on geocoded tax revenues, to Uli Schubert for sharing the hierarchical list of German administrative regions in 1910, and to De Juan et al. for sharing the information on dead and wounded WWI soldiers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 8,
+    "text": "We thank Erik Schulte, Fynn von Reeken, and Laura Wedemeyer for excellent research assistance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 9,
+    "text": "Tobias Korn and Lukas Wellner acknowledge generous support by the German Research Foundation (DFG) as part of the Research Training Group 1723 “Globalization and Development.”",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "Population shocks can have large and sustained consequences for local economic development.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "The literature provides ample evidence that sudden labor supply shocks from out-migration, pandemics, natural disasters or wars can persistently change economic trajectories.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "Yet, identifying the causal effect of such labor supply shocks is challenging.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "For instance, natural disasters and wars usually affect the local infrastructure and capital stocks along with the local population.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "Similarly, we must assume that individuals’ decisions to migrate are endogenous to local economic conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "The closest setting to an exogenous negative population shock that does not directly affect other economic inputs are pandemics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "The Black Death, for instance, killed an estimated 40% of the population in the Middle Ages and had vast economic consequences for affected locations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "But can we directly infer from shocks in pre-industrial economies to more modern settings?",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "Whereas pandemics still leave their toll on today’s economies, their scale is not comparable to the Black Death.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "For instance, about 2% of the population died during the Spanish Flu in the early 20th century, and mortality from Covid-19 was significantly below 0.5% of the population in most countries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "Very likely, these later pandemics do not constitute a human capital shock as transitory as the Black Death to understand how industrialized economies respond to vast human capital reductions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "We analyze another, modern human capital shock that had severe demographic consequences: German casualties during World War I. 1 During the four years of war, an estimated two million German soldiers (about 15% of the male population between 20 and 45) died, and many more were wounded or incapacitated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "Notable in our setting is the fact that, different from most other violent settings, the shock did barely affect the capital stock of the economy through war-related destruction. 2 Except for a short period at the beginning of the war, all combat took place outside of German territory.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "At the end of the 19 th century, Germany was in the midst of the second wave of industrialization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "In 1882, the primary sector was still by far the largest employee with 48.4% of the workforce employed in agriculture, while the secondary sector share was 29.6%, and the tertiary sector made up for 22.0% of the workforce.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "In the wake of WWI, primary employment was at 27.4%, secondary employment at 40.9%, and tertiary employment at 31.7%. A host of labor-saving and labor-assisting technologies became available that transformed the routines of manual labor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "Women started entering the regular workforce in large numbers, often taking up new-tasks opened up by the de-skilling of labor brought by the new technologies (Brown and Philips, 1 We use the term casualty as those who died in war. 2 See Broadberry and Harrison for an estimate of the war-related destruction of physical assets in the combatant countries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "The authors report a 3.1% rate of destruction of German domestic assets as a share of prewar assets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "In addition, the large-scale promotion of higher education transformed Germany’s workforce and society.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "A new form of White Collar workers emerged.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "These were well educated and high-skilled individuals who took over lower managerial tasks within firms, ending the aspirations of less educated Blue Collar workers to climb up the ranks with more on-the-job experience.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "These White Collar Workers were referred to as “Angestellte” vis-á-vis the Blue Collar “Arbeiter.” They received better working contracts with higher pay, better job security, and more vacation days and turned into Germany’s new social upper middle class.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "This paper investigates how the war-induced labour force shock affected the structural transformation in Germany at the local level.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "For this, we use newly geocoded data on the birthplaces of 7. million German soldiers from the official casualty lists published by the German army during the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "We combine this data with newly digitized German business and agriculture census waves from 1907 and 1925, which provide detailed sector level data at the county level.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "Among other things, we observe the number of employees across 18 sector categories as well as agricultural landholdings by size before and after the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "To investigate counties’ trends in structural transformation, we leverage continuous difference-in-differences estimations following Callaway et al. to identify the average causal response of a marginal increase in a location’s casualty rate on various outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "Our identification approach relies on the assumption of “conditional strong local parallel trends.” We therefore need to assume that, conditional on covariates, locations with marginally different treatment “doses” would have followed the same trend absent the treatment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "For this assumption to hold, we introduce treatment quartile fixed effects in all our regressions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "This is, we always estimate the marginal effect of an increase in the treatment dose among counties with a similar treatment intensity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "Therefore, our identification approach allows for selection into higher or lower treatment intensities, i.e., quartiles, but demands a quasi-random distribution of treatment doses within each quartile.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "In addition, we further account for local institutional and economic factors that may have influenced the casualty rate indirectly via differences in drafting ratios or the deployment to more or less lethal battle scenes of local regiments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "Tests for parallel pre-trends suggest that the “conditional strong local parallel trends assumption” is likely to hold for our treatment variable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "Our results show that counties with more war casualties exhibited lower employment growth, especially in the primary and tertiary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "In the industrial sector, war casualties did not affect the employment trend.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "This is because firms in this sector recruited unskilled workers from the informal daily laborer as well as small-scale farming sectors to rapidly fill vacant positions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "The agricultural sector also reduced employment, despite cultivating constant amounts of land.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "This was possible by medium-sized farms investing in mechanization and replacing small subsistence farms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "The tertiary sector, finally, faced a significant decline in employment as high-skilled White Collar Workers could not be replaced by machines or labor reserves.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "Hence, counties with more war fatalities saw a decline in the tertiary sector and therefore the new upper middle class of White Collar Workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "Our findings contribute to three strands of the literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "First, we contribute to the literature on the effects of negative labor supply shocks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "In terms of technology adoption, Hornbeck and Naidu and Andersson et al. find that areas more affected by out-migration have higher rates of technology adoption in agriculture.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "For individual-level outcomes, Goldin and Goldin and Olivetti find that the labor supply of women increased due to male mobilization in World War II. Acemoglu et al. show that this increase in female labor force participation lowered wages because female labor became a better substitute for male labor after the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "In a closely related setting to our study, Boehnke and Gay and Brodeur and Kattan show that French casualties in World War I as well as US casualties in World War II, respectively, led to higher female labor force participation after the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "Gay confirms the positive effect of WWI casualties on female labor force participation in France, and additionally shows that the excess labor demand improved attitudes towards working women.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "Closer to our paper, Eder finds that farmers moved into low-skilled manufacturing jobs in Austria where casualties from World War II were higher.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "Finally, Huber et al. investigate the expulsion of Jewish Managers in 1930s Germany and find similar to us that highly educated workers were difficult to replace, hence forcing an overall deterioration of production.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "Our findings extend this line of the literature by providing a more detailed look into within-sector changes, shedding light on economic transformations within the agricultural sector, and providing first evidence for the decline of tertiary employment related to human capital shocks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "Second, we contribute to a growing literature which examines the impact of WWI in the interwar period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "Acemoglu et al. use Italian WWI casualties to argue that the death toll in the war was a major cause for the rise of communism in Italy, which in turn caused the counter-movement and rise of the right-wing government led by Mussolini in the mid 1920s.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "The impact of local exposure to the war on the rise of the Nazi party in Germany is examined in a similar fashion by Koenig and De Juan et al.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "Both papers establish a direct connection between WWI casualties or the return of veterans to their homes and increased vote shares of extreme right and the Nazi Party in Germany.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "They attribute these effects to the organizational skill of right-wing veterans’ organizations and the common experience of suffering and human loss associated with casualties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "Third, several recent studies rely on the raw data set of German WWI casualties from Verein für Computergenealogie that we also use in our analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "For instance, De Juan et al. investigate the effect of casualties in a county on voting behavior in the post-war era.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "Ciccone uses casualty list entries as a negative, exogenous local population shock for the state of Württemberg.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "Kersting and Wolf use the names and birthplaces of soldiers to identify patterns in first names as signs of nation-building after German unification in 1871.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "All these studies rely on the original geocoding provided by Computergenealogie, which we improve by providing a new and more accurate geocoding of the data source on the county level for more than 84% of observations in the data set, as we discuss in Appendix A. This paper proceeds as follows. section 2 provides a brief historical background and theoretical considerations. section 4 presents the data used. section 5 describes the identification strategy. section 6 presents the results and related robustness tests. section 7 discusses the mechanisms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "Finally, section 8 concludes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 0,
+    "text": "WWI was the first fully modern global war spanning vast regions across Europe, the Middle East, Africa, the Pacific, and Asia. 3 WWI ranks among the most deadly wars in history, with an estimate of 10 million dead soldiers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 1,
+    "text": "From July 1914 to November 1918, the conflict persisted, pitting the Central Powers—comprising Germany, Austria-Hungary, and the Ottoman Empire—against the Allies, which included Great Britain, France, Russia, Italy, and the United States, among manz other nations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 2,
+    "text": "After the envisioned German military strategy of a quick victory against France failed, the Western front consisted of trench warfare from the English channel in the north to Switzerland in the South.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 3,
+    "text": "The Eastern front was more mobile, yet despite heavy casualties, there was no victory on either side, until the Russian Empire collapsed and Soviet Russia dropped out of the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 4,
+    "text": "The war continued in the West, and Allied forced secured victory in the summer of 1918.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 5,
+    "text": "As a result of the war, the Ottoman Empire and Austria-Hungary were broken up.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 6,
+    "text": "Germany was demilitarized, ceded 12% of its pre-war territory, and faced large reparation payments to the Allies. 4 The German war effort involved almost universal mobilization of men aged 17-45.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 7,
+    "text": "In total, 13 million soldiers fought for the German Empire during the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 8,
+    "text": "Casualty numbers were extremely high, making WWI one of the most deadliest wars in human history.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 9,
+    "text": "The scale of the war, but also its brutality using heavy artillery, machine guns, and chemical warfare to inflict unprecedented numbers of casualties on the enemy, let contemporaries in shock.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 10,
+    "text": "The German imperial army alone lists two million dead soldiers. 5 From those who returned from the war, a total of six million soldiers suffered minor or major injuries, not accounting for those who grappled with severe psychological trauma from the war exposure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 11,
+    "text": "WWI had vast economic consequences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 12,
+    "text": "After the war, the national income had fallen by a third.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 13,
+    "text": "Production numbers shrunk significantly, especially in mining (17%), iron and steel (37%), construction (65%), textiles (83%), and cereals (43%).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 14,
+    "text": "Labour productivity fell, both in the civilian and military sector, and real income per capita shrunk by 15–25%. German structural transformation slowed down significantly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 15,
+    "text": "The primary sector transition stagnated, and so did the formation of the industries and service sectors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 16,
+    "text": "As a consequence, 3 In this paper, we focus on the European war theater and in particular on the events related to the German war effort. 4 Reparations largely consisted of direct monetary payments as well as deliveries of coal, steel, and other industrial goods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 17,
+    "text": "While monetary payments were made out of central government funds, we believe it unlikely that in kind reparation payments correlated with the WWI casualty rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 18,
+    "text": "Similarly, it is unlikely that the 1923 hyperinflation correlated systematically with the casualty rate. 5 Rates where similar across the main European belligerents, with even higher casualty rates in France and Russia.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 19,
+    "text": "the German economy still employed 24% of its workforce in agriculture, compared to only 5% in Great Britain. 6 Structural transformation would only return to its pre-war levels after 1950 (see Figure 1).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 2,
+    "section_name": "Historical Background",
+    "paragraph_id": 20,
+    "text": "The next chapter provides theoretical considerations on how the WWI casualties contributed to the slowed down structural transformation of the German economy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 0,
+    "text": "This paper investigates how the German economy — in particularly German businesses — reacted to the war-induced human capital shock experienced during WWI. For this, we focus on the two defining aspects of the classical structural transformation: the transition of the workforce from the agricultural sector to industries and services, and the associated increase in demand for a more specialized, highskilled workforce.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 1,
+    "text": "We theorize that the unprecedented death toll — more than two million soldiers, about 15% of the male population between 20 and 45, had died in the trenches of WWI — slowed down the German structural transformation in Germany, in particularly in sectors that relied more strongly on high-skilled labour. 6 The structural change of the workforce out of the relatively large and unproductive primary sector is understood a large contributor to Germany’s post WWII economic boom.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 2,
+    "text": "German army mobilization was universal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 3,
+    "text": "In expectancy of a short war, mobilization rates — and subsequently casualty rates — were high across workers from all sectors of the economy, even in the war-relevant industries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 4,
+    "text": "Rasch estimates that even in the industrial centers of the Ruhr, an average of 30% of the workforce were recruited at the beginning of the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 5,
+    "text": "Mobilization did not discriminate based on the skill set of the recruits.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 6,
+    "text": "Factory workers as well as their manager were drafted and served during the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 7,
+    "text": "This changed to some extent when the prospect of a short war vanished and the German economy turned towards war production.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 8,
+    "text": "If anything, then, mobilization rates among low-skilled, industrial workers were lower as these workers were speared to maintain war production.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 9,
+    "text": "German businesses faced significant challenges due to the high number of casualties during World War I, which led to a notable reduction in the overall workforce.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 10,
+    "text": "The process of replacing deceased workers varied depending on their skill level.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 11,
+    "text": "For low-skilled laborers, who could be trained on the job, finding replacements was relatively straightforward, often sourced from other industries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 12,
+    "text": "However, replacing jobs that required high skill levels posed a much greater challenge, primarily because their roles involved intricate tasks that demanded years of education and formal training.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 13,
+    "text": "As war recruitment did not spear high-skilled workers, high-skilled labor became scarce, and firms had to compete for the remaining employees.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 14,
+    "text": "This made the consequences of WWI more severely felt in sectors that relied on high-skilled employment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 15,
+    "text": "The tertiary sector had the highest human capital requirements.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 16,
+    "text": "With an increase in the specialization of firms also came an increase in the demands of skills of the labour force from unskilled, manual workers to high skilled employees conducting administrative, professional, or scientific tasks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 17,
+    "text": "This was particularly the case in the German economy, where educational focus was high since the early 19 th century.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 18,
+    "text": "The share of high skilled workers in services in 1910 was high, and the dependence on high skilled work made the tertiary sector particularly vulnerable to the loss of human capital.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 19,
+    "text": "What is more, the tertiary sector was in direct competition with the war-benefiting industries for the remaining pool of high-skilled employees, yet could not offer the same wages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 20,
+    "text": "War losses therefore resulted in vacancies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 21,
+    "text": "This is likely to have hampered the development of the tertiary sector in counties with higher WWI casualties and these counties fell behind in the structural transformation process of the German economy after WWI. The secondary sector strongly relied on low-skilled labour for repetitive, semiautomated tasks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 22,
+    "text": "While the administration of large businesses required to some extend also high-skilled labour predominantly for administrations and legal tasks, low-skilled worker comprised of 74.6% of the total workforce in the secondary sector in 1910.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 23,
+    "text": "What is more, parts of the industrial sector relevant for war production benefited from the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 24,
+    "text": "Those industries received vast public investments, faced high public demand, and had priority access to raw materials to continue production.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 25,
+    "text": "Wages for skilled and unskilled workers in these sectors continued to rise with employment on high levels.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 26,
+    "text": "After the first months of the war, casualty rates were lower in war-related industries, and if workers did as soldiers in war, Figure 2: Employment and skill level by sector, 1910 and 1925 Notes: This figure depicts the share of high-skilled workers and low-skilled workers of total employment by sector according to the 1910 and 1925 business census.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 27,
+    "text": "the high wages facilitated new hires — crowding out low-skill employment in the non-war industries, in agriculture, and services, and high-skilled employment in the tertiary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 28,
+    "text": "We therefore do not expect a large effect of WWI casualties on the secondary sector, in particular among industries that were relevant to fight the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 29,
+    "text": "The agricultural sector comprised of low-skilled workers undertaking physically demanding jobs in a sector was still at the beginning of the mechanisation process.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 30,
+    "text": "While farmers themselves were exempt, a large share of WWI soldiers were agricultural workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 31,
+    "text": "This made the agricultural sector the sector which was most strongly exposed to WWI. What is more, the agricultural sector strong competition for the remaining pool of low skilled workers, who were offered higher wages in the industrial sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 32,
+    "text": "This further exacerbated the effects of the war-related human capital shock in agriculture.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 33,
+    "text": "Farmers had several options to respond to the increased capital/labor ratio: mechanization, extensification, or reduction of the amount of land cultivated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 34,
+    "text": "Here, we expect farms to mechanize where mechanization was not fully undertaken (in particular in family owned, medium-sized farms), to extensify where mechanization was already implemented (the case of larger estates), or not possible due to insufficient financial means or lands (small farms).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 3,
+    "section_name": "Theoretical Considerations",
+    "paragraph_id": 35,
+    "text": "The next section presents the data we use to test these hypothesises.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 0,
+    "text": "To measure the war-induced human capital shock on structural transformation in Germany, we collect a vast set of data on German WWI casualties and German economic statistics from before and after the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 1,
+    "text": "Our unit of observation is the 1907 county level. 7 Casualty data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 2,
+    "text": "We derive our main explanatory variable from the number of WWI casualties based on the official war records of the German Imperial Army, the so called loss lists (“Verlustlisten”).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 3,
+    "text": "Digitized by Verein für Computergenealogie, these lists contain 8. million entries with information on each soldier’s name, birthplace, rank, regiment and the type of casualty reported from wounded to dead. 8 For this study, we geocoded the birthplaces of 7. million WWI soldiers at the county level. 9 Systematic information on the casualty status – that is, whether the entry constitutes a dead or wounded soldier – has been digitized by De Juan et al.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 4,
+    "text": "In combination with the population census of 1907, we calculate the share of total casualties in the 1907 male population.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 5,
+    "text": "Figure 3 shows the distribution of the casualty rate, along with the army districts (black lines) and regiment districts (white lines) within which military drafting and deployment was organized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 6,
+    "text": "As depicted by the map, casualty rates tended to be higher in more rural areas, such as East Prussia and West Prussia, Pomerania, Posen, and Silesia, and lower in more urban areas such as Berlin, Danzig, the Ruhr area as well as Southern Bavaria.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 7,
+    "text": "We newly digitized German census data from the German business census waves from 1907 and 1925. 10 The census reports information on company level employment for all companies in Germany.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 8,
+    "text": "It provides this information for the primary, secondary, and tertiary sector, as well as subcategories (“Gewerbegruppe”).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 9,
+    "text": "We matched the data at the level of sub-sectors across the two census waves, and merged them with our stable 1907 county boundaries. 11 The census data contain information on the number of businesses as well as employees and worker per county 7 The county (“Kreis”) constitutes Germany’s fourth administrative layer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 10,
+    "text": "We match all data to constant 1907 county borders.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 11,
+    "text": "To do so, we proceed in two steps.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 12,
+    "text": "First, we link all counties whose borders remain unchanged from the first year of observation in 1907 until our last year of observation in 1933.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 13,
+    "text": "Second, for counties that split or merge over time but where the outside boundaries remain unchanged, we trace all administrative reforms and aggregate these counties to the biggest common spatial entity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 14,
+    "text": "This provides us with 725 stable county units.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 15,
+    "text": "For the remaining 229 counties, we were unable to link them over time due to exhaustive re-drawings of their boundaries amid large scale administrative reforms, especially in Baden and Thuringia. 8 This corresponds to 65% of the soldiers that fought during WWI. Note that not all of this information is reported for all entries, and only information on soldiers’ names and birthplaces have been digitized systematically. 9 To this end, we exploited the hierarchical structure of loss list entries that typically consist of the name of the municipality of birth, followed by the county or administrative district and matching birthplace entries with a list of German municipality names in 1910 from Schubert.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 16,
+    "text": "The remaining uncoded 1. million entries were of too broad resolution to be coded on the county level (e.g. “Bayern”), inconclusive (e.g., “Neustadt,” of which there exist more than 40 in Germany), or outside the 1910 German boundaries (e.g., “Zürich”).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 17,
+    "text": "We describe the geocoding process as well as improvements made vis-à-vis the original coding provided by Verein für Computergenealogie in detail in Appendix A. 10 We use the business census as compared to the employment census as the former has more detailed information on the number of businesses, sector level employment, blue and white collar workers, and mechanization. 11 We provide detailed information on the different sector classifications and how they are matched in the Table B2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 18,
+    "text": "Both census waves also indicate the level of skill of employees by distinguishing high-skilled, white-collar workers (“Angestellte”) from low-skilled, blue collar workers (“Arbeiter”).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 19,
+    "text": "From this, we code the share of white collar workers in total employment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 20,
+    "text": "We digitized data from the German agricultural census in 1907 and 1925.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 21,
+    "text": "The census contains data on the total number of farms by county, the total amount of plotted land in hectare, and the number of farm workers employed in a county.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 22,
+    "text": "As is common in German agricultural censuses, it provides this information separately for five different farm sizes: very small (0 – 2 ha), small (2 – 5 ha), medium sized (5 – 20 ha), large (20 – 100 ha), and very large (above 100 ha).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 4,
+    "section_name": "Data",
+    "paragraph_id": 23,
+    "text": "From the 1925 census, we further leverage data on agricultural machine usage for four major types of agricultural machinery: threshing machines, mowers, seeding machines, and cultivators.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 0,
+    "text": "To measure the war induced labour force shock on the local economic conditions in Germany, we rely on continuous difference-in-differences estimations that exploit the institutional setup of the German military recruitment and follow Callaway et al. by comparing counties within similar casualty rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 1,
+    "text": "Contemporaneous accounts from WWI suggest that a soldiers survival in battle was largely determined by chance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 2,
+    "text": "Large scale industrial warfare, in particular machine guns and heavy artillery, lead to an unprecedented high level of casualties, with up to 50% of the German WWI casualties caused by heavy artillery fire.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 3,
+    "text": "As Remarque reports: “Above all is chance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 4,
+    "text": "When a bullet is coming, all I can do is duck.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 5,
+    "text": "I can neither know nor steer where it lands.” While a soldiers fate during battle was largely random, the number or total casualties across battles during the war largely differed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 6,
+    "text": "For the German army, casualty numbers peaked during the 1914 invasion of France, the battles at Verdun and at the Somme in 1916, and the Spring Offensive in 1918. 12 A soldiers fate during war then therefore depended on the deployment to specific battlefields.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 7,
+    "text": "German army deployment during WWI was organized by army district.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 8,
+    "text": "Each of these districts was responsible for staffing and the equipment of an army.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 9,
+    "text": "The German Empire was divided into 25 army districts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 10,
+    "text": "Each of these army districts was further divided into several regiment districts, which were responsible for recruitment and staffing of specific regiments. 13 Commonly, a regiment district comprises of three or four counties. 14 The idea of this setup was to fill regiments with soldiers from neighbouring districts to increase morale and fighting spirit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 11,
+    "text": "Part of a specific army, these regiments fought together in the same war theaters and in consequence faced comparable likelihoods to die in war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 12,
+    "text": "Army deployment is conditional on mobilization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 13,
+    "text": "And while mobilization was organized within the very same regiment districts, certain individuals were exempt from military service.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 14,
+    "text": "This was for instance the case of workers in the war-related industries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 15,
+    "text": "Mobilization thus differed depending on the economic structure of the county.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 16,
+    "text": "Unfortunately, county level mobilization rates do no longer exist.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 17,
+    "text": "We therefore use a proxy, which models the number of absent men during war times.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 18,
+    "text": "To track the labour toll of the war, the German government undertook a wartime census in 1916, which we use to obtain data on the gender ratio in each county.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 19,
+    "text": "We argue that counties with a higher female share as compared to the prewar period are likely to have a higher mobilization rate. 15 We argue that two men from counties with a similar mobilization rate and of the same regiment district had a comparable chance to survive the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 20,
+    "text": "We provide evidence for this in Table 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 21,
+    "text": "For this, we simply regress the share of casualties soldiers on various pre-war county characteristics in a cross-sectional OLS regression.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 22,
+    "text": "We include the economic structure of the county controlling for primary, secondary, and tertiary employment, as well as the share of employees working in war industries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 23,
+    "text": "We also include an indicator for urban areas as political and economic conditions in denser populated areas likely affected mobilization from these places.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 24,
+    "text": "Finally, we 12 Figure C4 provides an overview of the development of the German casualty numbers from 1914 to 1919. 13 Figure B1 a) shows the borders of the army districts, Figure B1 b) shows the borders of the regiment districts. 14 Figure B2 shows the distribution of the number of counties per military district. 15 The census provides information for the male population in three categories: civilian males, male military personnel, and foreign prisoners of war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 25,
+    "text": "We exclude prisoners of war because they were not part of the local male population and we exclude soldiers because they were either on leave or in local training camps at the time of the census.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 26,
+    "text": "separately control for whether or not the county belongs to the state of Prussia, as Prussia was the central power in the military administration, and Prussian officers might have deemed Prussian regiments to be more reliable due to higher loyalty to the regime and the traditionally higher military spirit in Prussian counties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 27,
+    "text": "As can be seen in column 1, these variables are meaningful determinants of the number of WWI casualties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 28,
+    "text": "Casualty numbers were higher in counties with a higher employment in the primary and secondary sector, and lower in counties with higher employment in tertiary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 29,
+    "text": "Furthermore, counties with a higher share of employees in the war industries experienced lower casualty shares.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 30,
+    "text": "In line with our expectation, casualty numbers were also higher in counties belonging to Prussia.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 31,
+    "text": "Also note that the included control variables include 27. percent of the variation in the casualty variable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 32,
+    "text": "When including the controls for deployment and mobilization, this value increases to 72. percent and the control variables lose explanatory power.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 33,
+    "text": "Yet, some county level characteristics remain important predictors of the casualty rates despite controlling for mobilization and deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 34,
+    "text": "Importantly, agricultural areas report higher casualty rates, while urban and more industrialized counties report lower rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 35,
+    "text": "To avoid that our estimates are biased, we thus introduce a third central control variable in column 3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 36,
+    "text": "To address remaining differences across counties within the same regiment district, and similar mobilization rates, we follow Callaway et al. and differentiate into different treatment intensities.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 37,
+    "text": "While differences between counties with high and low casualty rates might be driven by differences in the economic, social, and political conditions in these counties, we argue that within a close range of similar doses of the treatment, the selection into a specific dose is arguably random.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 38,
+    "text": "For this, we categorize the sample of counties into four groups of treatment intensities.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 39,
+    "text": "Our identifying variation thus no longer comes from comparing counties with high and low casualty rate, but counties within the range of similar casualty rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 40,
+    "text": "Within units of the same dose, local parallel trends are then sufficient to interpret our results as causal local marginal effects Callaway et al.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 41,
+    "text": "Column 3 of Table 1 shows this approach at work.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 42,
+    "text": "Beyond deployment and mobilization, we now also include the casualty quartiles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 43,
+    "text": "These casualty quartiles divide all counties in four groups of similar treatment doses, from low to high casualty rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 44,
+    "text": "Figure C3 illustrates the distribution of the treatment intensity for the defined quartiles. 16 We now only compare counties within neighbourhoods of similar treatment doses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 45,
+    "text": "As can be seen in column 3, the introduction of these quartiles renders all previously significant predictors of the casualty rate insignificant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 46,
+    "text": "Now, neither the total number of workers in the agricultural sector, nor the share of workers engaged in war industries has predictive power on the number of WWI casualties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 47,
+    "text": "Also note that within these doses, our setting now explains 89. percent of the variation in the casualty rate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 48,
+    "text": "We argue that controlling for treatment intensity via casualty quartiles, army deployment, and army mobilization allows us to interpret our findings as causal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 49,
+    "text": "Based on this, we estimate the following continuous difference-in-differences es Figure B3 in the Appendix shows the geographic distribution of casualty quartiles.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 50,
+    "text": "Y i,t = ’s treatment intensity Casualty i, which we measure as the share of a county’s casualties over its 1907 male population.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 51,
+    "text": "Our causal parameter of interest is β k, the coefficient of the interaction between each county i ’s treatment intensity Casualty k i and an indicator variable for observations after the war ( P t ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 52,
+    "text": "Our estimations follow the common two-way fixed-effects setup, with the periodindicator P t accounting for counties’ common trends over time, and the county-fixed effects",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 53,
+    "text": "casualty quartile fixed effects D k i, interacted with the post-war indicator P t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 54,
+    "text": "These quartile fixed effects help establish the strong local parallel trends assumption by reducing the overall variation within the dose to variation within a neighborhood of similar doses D k i. 17 M i indicates the excess female population share as proxy for mobilization, and Pop i,t indicates county population over time. ε i,t denotes the error term.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 5,
+    "section_name": "Identification Strategy",
+    "paragraph_id": 55,
+    "text": "Based on the regiment district fixed effects, mobilization rates, and casualty rate quartile fixed effects provide us with a setting where we compare counties with different casualty rates among counties with a similar exposure to WWI.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 0,
+    "text": "We observe a reduction in overall employment in counties with a higher casualty rate during WWI. This reduction in employment was driven by the primary and tertiary sector, while we do not observe an effect of WWI casualties on secondary sector employment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 1,
+    "text": "The effects are sizeable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 2,
+    "text": "A one percentage point increase in the casualty rate reduces total employment by 4.65%. This reduction is most prominent in the tertiary sector, where employment decreases by about 4.19% for a one percentage point higher death rate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 3,
+    "text": "We also find a significant reduction in agricultural employment, where a 1% increase in the fatality rate leads to 2.04% fewer workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 4,
+    "text": "For the interpretation of the results, we have to remember the overall change in the German economy from 1907 to 1925 (see Figure 1).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 5,
+    "text": "First, primary employment was in decline, yet at significantly slower rates than in the pre-war period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 6,
+    "text": "In counties with higher casualty rates, this decline was faster, than in counties with fewer casualties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 7,
+    "text": "Thus, the war-induced labour force shock increased economic transition in agriculture, and slowed down the transition in counties with fewer casualties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 8,
+    "text": "Second, secondary employment was reaching its pre-war heights, yet the growth of the secondary sector slowed down after the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 9,
+    "text": "Our results suggest that this was not directly related to the casualties of the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 10,
+    "text": "Third, the formation of the tertiary sector continued after WWI, but again at reduced pace.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 11,
+    "text": "We observe that WWI casualties played a significant role in the slower emergence of the tertiary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 12,
+    "text": "We explore the mechanisms behind this in section 7.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 13,
+    "text": "We test the robustness of these findings in several ways.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 14,
+    "text": "First, we test for local parallel trends among counties with similar treatment doses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 15,
+    "text": "We investigate pretrends in the pre-sample period using sector-level employment data for Prussian counties in 1867, 1882, 1895, and 1907 from Galloway. 18 If counties with 18 We have to restrict this analysis to Prussia as reliable data for the remaining German states for the same time periods is not available.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 16,
+    "text": "To account for administrative reforms that occurred during this 60 year panel, we harmonize the counties to a constant sample over time, aggregating county mergers and splits to the biggest common entity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 17,
+    "text": "similar casualty shares followed otherwise parallel growth trajectories during the war, we should not see any significant differences across counties in the periods before the eventual war casualties were realized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 18,
+    "text": "Figure C6 reports the results from continuous difference-in-differences regressions that follow our main specification in equation 1, but for the time periods 1867–1882, 1882–1895, and 1895–1907. 19 We find no evidence of different employment trajectories across counties with marginally different casualty rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 19,
+    "text": "Also, our baseline results hold when only examining the subset of Prussian counties as we show in Figure C6.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 20,
+    "text": "The results are correspond to our baseline estimates in coefficient size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 21,
+    "text": "Our results also hold when excluding specific subsamples, as we show in Table C4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 22,
+    "text": "Column 1 reports our main results for comparison.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 23,
+    "text": "Column 2 drops counties in the Ruhr area that were occupied by French and Belgium forces from 1923–1925.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 24,
+    "text": "After Germany’s failure to meet the reparation requirement, France and Belgium occupied the territory and confiscated industrial goods and raw material, which is likely to have stunted the industrial development in the area and therefore affect our results. 19 Table C1 in the Appendix presents the corresponding results in table form.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 25,
+    "text": "Column 3 drops the East Prussian territory invaded by Russian forces in 1914, which was the only 1914 Germany territory exposed to fighting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 26,
+    "text": "Column 4 restricts the sample to the non-Prussian counties to show that results also hold when excluding the central state within the German Empire. 20 Columns 5 and 6 drop the highest decile of counties with the highest respectively lowest casualty rate to control that our results are not driven by possible outliers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 6,
+    "section_name": "Results",
+    "paragraph_id": 27,
+    "text": "Convincingly, our results hold when dropping these subsamples.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 0,
+    "text": "Counties with higher casualty rates in WWI experienced an accelerated transformation of the primary sector and a delayed tertialization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 1,
+    "text": "First, we turn to the primary sector to understand the mechanisms behind these results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 2,
+    "text": "Throughout the 19 th century, agricultural employment has been on the decline, driven mostly by labour saving technologies such as the threshing machine.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 3,
+    "text": "Such innovations freed up labour force, and allowed farmers to cultivate more land with fewer labourers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 4,
+    "text": "This trend continued in the early 20 th century, and the primary share of total employment in 1925 was down to 31.5%, as we show in Figure B6.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 5,
+    "text": "This decrease was strongest among farms of 20 hectares and more, while there was an increase in employment of very small, subsistence farms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 6,
+    "text": "The number of farms changed only marginally, increasing from 4. million farms in 1910 to 4. million farms in 1925.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 7,
+    "text": "As with the number of workers, the number of very small farms expanded, while in particular the number of large and very large estates decreased.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 8,
+    "text": "Also the total cultivated land in Germany shrunk from 23,037 thousand hectares in 1910 to 21,738 thousand hectares in 1925. 21 Most of the reduction in farm land occurred at large estates, while very small to medium sized farms expanded.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 9,
+    "text": "WWI heavily drew on the labour supply of the agricultural sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 10,
+    "text": "While farmers themselves where exempt from conscription, their workers where not, and conscription reduced the availability of farm workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 11,
+    "text": "Farmers could increase their own work effort where possible, substitute workers with labour-saving technology, or reduce farm sizes in response to this war-induced labour force shock.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 12,
+    "text": "We test farmers’ response in Table 3, using logged primary sector employment (panel A), logged farm size (panel B), and the logged number of farms (panel C) as an outcome variable in equation 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 13,
+    "text": "In panel D, we additionally look at mechanization based on a cross-sectional OLS regression using 1925 threshing machine usage as the outcome variable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 14,
+    "text": "For all of these outcomes, we observe the outcome by farm size from very small farms below two hectares (column 2) to very large farms with more than 100 hectares (column 6).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 15,
+    "text": "This differentiation allows us to understand how the agricultural sector coped with the WWI-induced labour force shock.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 16,
+    "text": "After WWI, small-scale farming increased in Germany.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 17,
+    "text": "Yet, in regions with 20 The strong reduced sample size prevents us from including regiment district fixed effects in this regressions and we use army district fixed effects instead. 21 The reduced area corresponds to 13 thousand hectares, an area equivalent to the extend of the modern city states of Hamburg and Berlin.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 18,
+    "text": "Note that all these numbers are based on our final sample and thus do not include land ceded in 1919.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 19,
+    "text": "higher casualty rates, this occurred significantly less.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 20,
+    "text": "In these counties, fewer people worked in small-scale farming, and the number of small-scale farms and the total cultivated land on them decreased.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 21,
+    "text": "The increase in small-scale farming occurred in counties with low casualty rates, and we hypothesise that indeed war returnees are behind this increase in smallholder farming, which had a high capability of absorbing low-skilled workers after the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 22,
+    "text": "For farms between 2-5 ha, we observe no change.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 23,
+    "text": "Rather, medium-sized, often family-owned farms consolidated their land, arguably at the expense of the very small farms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 24,
+    "text": "Interestingly, they did so without expanding their labour force.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 25,
+    "text": "Results from panel D suggest that they compensated the war-related labour shortage with labour saving technology, such as threshing machines.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 26,
+    "text": "Large farms, traditionally relying on a larger workforce to cultivate their lands, found the number of workers further reduced, and, as their amount of land remained constant, also relied more strongly on labour saving technologies in 1925.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 27,
+    "text": "Overall, agricultural transformation accelerated in counties with higher casualty rates after WWI. We observe land consolidation in the hands of mid-sized farms and higher labour-saving technology usage after the war, while counties with lower WWI casualties experienced an increase in agricultural employment, in particular in small scale farming.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 28,
+    "text": "We now turn to the secondary and tertiary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 29,
+    "text": "Secondary employment was reaching its pre-WWII plateau with about 40.1% of total employment in 1925.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 30,
+    "text": "Our main results in Table 2 show that there was no effect of WWI casualties on secondary employment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 31,
+    "text": "Table 4 further shows that there was no effect on either war-related, or non-war related industries (panel A).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 32,
+    "text": "Further, there was no significant change in the share of high-skilled employees in the secondary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 33,
+    "text": "The required skills to work in the secondary sector, in particular of factory workers in standardized production, was relatively low.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 34,
+    "text": "As shown in Figure 2, three quarters of the employees in the secondary sector in 1910 were lowskilled workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 35,
+    "text": "Their tasks would be typically physically demanding or repetitive with few specific skills required.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 36,
+    "text": "The results confirm our hypothesis that, even when high-skilled workers died in war, companies in the secondary sector were able to replace these workers, arguably from further qualifying the large pool of unskilled labourers (panel B).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 37,
+    "text": "Finally, we observe a reduction in the number of firms in the secondary sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 38,
+    "text": "The decease, as expected, occurred entirely in the non-war-related industries, who strongly affected by the adverse economic conditions during wartime.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 39,
+    "text": "Further versions of this paper will analyze this further.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 40,
+    "text": "Finally, and based on 1925 cross-sectional data, we do not observe a change in technology adaption in the secondary sector, based on the share of more modern electric engines (as compared to less modern wind, water, or heat power generators) on the total power generated by the firms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 41,
+    "text": "Finally, we turn to the tertiary sector, which was on a steady rise since the 1880s, and made up for 28.4% of total employment in 1925.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 42,
+    "text": "Our results suggest that tertiary sector growth was systematically lower in counties with a higher WWI death toll.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 43,
+    "text": "We provide further details to this in Table 5, distinguishing the transport sector (arguably among the services in strong demand), from all other related services, which mostly comprise of consumption goods, such as trades, insurances, gastronomy, barbers, and pharmacies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 44,
+    "text": "Columns 2 presents the results for transport services, column 3 for consumption services.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 45,
+    "text": "As we expected, the decrease in tertiary sector employment derives from a reduction in employment in consumption goods, while we do not observe a significant decrease in transport-related employment in counties with higher casualty rates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 46,
+    "text": "Next, we look at high-skill employment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 47,
+    "text": "Work in the trades and services sector required specific skills, often acquired through specialized educational institutions and formal training.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 48,
+    "text": "Consequently, more than two thirds of employees in the tertiary sector was high skilled (see Figure 2).",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 49,
+    "text": "In contrast to primary or secondary sector employment, these skills are difficult to transfer across sectors, and employees thus difficult to replace.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 50,
+    "text": "As we show in column 1, the share of high-skilled employment indeed decreased in counties with higher employment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 51,
+    "text": "Again, the effect is stronger is driven in the consumption related services, while there is not decile in the transport sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 7,
+    "section_name": "Mechanisms",
+    "paragraph_id": 52,
+    "text": "The same holds true for the number of firms, which declined in the tertiary sector overall, and in particular in the consumption related services, while there is even a positive, yet insignificant change in the number of companies engaged in transport.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 0,
+    "text": "This paper examines how the loss of life during World War I affected the local structural transformation in Germany.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 1,
+    "text": "The German context of WWI provides an exceptional case study to investigate the effect of a severe population shock in isolation from other economic destruction that usually accompanies such shocks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 2,
+    "text": "Due to the fact that fighting mostly took place outside of German territory, the infrastructure and capital stock were left largely untouched.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 3,
+    "text": "Hence, we can identify the sole effect of the population shock on various economic outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 4,
+    "text": "For our analysis, we collected, combined, and harmonized various unique data sets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 5,
+    "text": "First of all, we geocoded more than 8. million casualty list entries.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 6,
+    "text": "What is more, we digitized several censuses and archival data on local economic outcomes, and harmonized them across the German territory to account for various reforms to Germany’s subnational borders.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 7,
+    "text": "This allowed us to not only investigate national trends in different economic outcomes, but to also estimate how counties that suffered more under WWI casualties deviated from this national trend in a Continuous Difference-in-Differences setting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 8,
+    "text": "Our identification approach relies on a “Conditional Strong Local Parallel Trends” assumption following Callaway et al., which requires a quasi-random allocation of treatment intensities among units in similar areas of treatment intensity, conditional on covariates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 9,
+    "text": "We show that, conditional on treatment quartile fixed effects and institutional determinants of war deployment and conscription, pre-war economic characteristics lose predictive power of local war exposure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 10,
+    "text": "Additionally, we observe no evidence of non-parallel economic trajectories before the war.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 11,
+    "text": "Our results demonstrate that the labor supply shock induced by WWI casualties had significant effects on counties’ structural transformation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 12,
+    "text": "Most importantly, we find that harder hit counties fall behind in the transition towards tertiary production and face lower growth rates of White Collar workers, who were the emerging upper middle class at the turn of the century.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 13,
+    "text": "Investigating mechanisms, we find plausible evidence that these effects accrued due to a lower substitutability of White Collar workers, on which especially the tertiary sector relied.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 14,
+    "text": "Blue Collar workers in industry could be replaced by agricultural workers and labor reserves from the informal sector, while a loss in agricultural workers could be cushioned by more rapid mechanization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 15,
+    "text": "Only in the tertiary sector, where production relied on specific tasks and highly trained individuals, job vacancies remained unfilled.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 16,
+    "text": "Our findings shed new light on the harm political violence inflicts on transforming economies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 17,
+    "text": "Structural transformation requires establishing new modes of production, which increasingly rely on specific human capital that cannot easily be re-produced once lost.",
+    "warnings": ""
+  },
+  {
+    "file_name": "wellner-2025-06-06_5374.pdf",
+    "format_class": "standard_complete",
+    "section_id": 8,
+    "section_name": "Conclusion",
+    "paragraph_id": 18,
+    "text": "Our findings hence bear important insights for developing countries that are currently undergoing structural transformation: socio-political shocks like civil wars, disease, or brain drain complicate the move to modern production technologies as highly trained employees are both essential and hard to replace once lost.",
+    "warnings": ""
+  }
+]

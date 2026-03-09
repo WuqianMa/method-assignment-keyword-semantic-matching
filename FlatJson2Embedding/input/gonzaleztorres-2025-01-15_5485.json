@@ -1,0 +1,4259 @@
+[
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 0,
+    "text": "Monitoring Harassment in Organizations Laura Boudreau Columbia University Sylvain Chassang Princeton University Ada González-Torres Ben Gurion University Rachel Heat, †, ‡ University of Washington December 23, 2024 This project is funded by the Private Enterprise Development in Low-income Countries (PEDL) Initiative, by Columbia University’s Provost’s Diversity Grants Program for Junior Faculty and by the Israeli Science Foundation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 1,
+    "text": "We are grateful to Ferdausi Sumana, Raied Arman, and Krishna Kamepalli for their excellent research assistance. † We are grateful to Nava Ashraf, Florian Englmaier, Yana Gallen, Jorge García Hombrados, Matthew S. Johnson, Emily Nix, Rocco Macchiavello, Andrea Prat, Benjamin Roth, and Jason Sockin for helpful comments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 2,
+    "text": "We are grateful to seminar participants at AFE at Chicago, Bar-Ilan, Berkeley, Chicago-Booth, Columbia, CUNEF, Haifa, Hebrew University, LMU Munich, Reichman, Rochester, UBC, UCSD, USC, UW, as well as participants at the ASSA Meetings, the Barcelona Summer Forum, the BREAD & MIT Conference, the CEPR/CESifo/Imo-ENT Conference, the Development Workshop at Universitat de Barcelona, the Economics of Firms and Labor Conference, the Economics of Violence against Women Conference at Stanford, the German-Israeli Frontiers of Humanities Symposium, the Organising Development & the Development of Organisations Conference, the NBER Organizational Economics Meeting, the NBER Personnel SI, the SIOE Conference, the Stockholm Workshop on Diversity & Workplace Inclusion, the Women in Applied Microeconomics Conference, Peking University, Aix-Marseille School of Economics, Paris School of Economics, Toulouse School of Economics, and the World Bank conference on Female Labor Force Participation: Drivers and Policy Options for stimulating comments. ‡ This research was pre-registered in the AEA RCT registry ( AEARCTR-0007103 ), and received IRB approval from Ben-Gurion University, Columbia University, and the University of Washington.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 3,
+    "text": "Abstract We experimentally evaluate secure survey methods for monitoring harassment in organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 4,
+    "text": "We partner with a Bangladeshi garment manufacturer and survey its workers. “Hard garbling” responses to sensitive questions, i.e., automatically recording a random subset as complaints, increases reporting of physical harassment by 290%, sexual harassment by 271%, and threatening behavior by 45%, from rates of 1.5%, 1.8%, and 9.9% under direct elicitation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 5,
+    "text": "Rapport-building and removing team identifiers do not increase reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 6,
+    "text": "We show that garbled reports can be used to consistently estimate policy-relevant statistics of reported harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 7,
+    "text": "In our data, harassment is widespread, most managers partake, and victims are isolated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 8,
+    "text": "Keywords: Harassment, whistleblowing, garbling, secure survey design, gender, garments, Bangladesh 2 1",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "Organizations’ ability to take action against harassment is limited by their ability to elicit information from relevant parties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "Reporting harassment is a difficult step for individuals who have been victimized and for witnesses concerned with possible retaliation and reputational costs.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "This prevents organizations not only from responding to individual issues, but also from assessing the scope and nature of their harassment problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "Using a phone-based survey experiment implemented at a large Bangladeshi apparel manufacturer, we study the impact of survey methods that seek to offer plausible deniability, increase trust in the survey enumerator, and reduce the perceived likelihood of leaks, on information transmission.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "We also show how such reporting data can be used to inform policy-relevant questions about the nature of harassment, including: How widespread is it?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "What share of managers are responsible for what share of the damage?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "How isolated are victims?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "Our theoretical framework builds on a principal-agent-monitor model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "A monitor (here a worker) is asked to report harassment behavior by an agent (the worker’s manager) to a principal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "The difficulty is that the manager can engage in retaliation, and workers may be concerned that reports could be leaked.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "Leakages may be the result of legitimate steps taken by the principal to investigate or address the issue, as well as malicious or erroneous revelation by either the principal or survey collectors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "Theory predicts that steps that increase plausible deniability in the event of a leak, i.e., steps that make it harder to infer a respondent’s intended message, as well as steps that increase trust in the enumerator and reduce the perceived likelihood of leaks, can reduce the perceived risk of retaliation and increase reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "Our field experiment investigates combinations of three treatments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "First, hard garbling (HG) recorded information by automatically setting a random subset of reports as reports that harassment took place.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "This provides respondents with plausible deniability in the event that they file an incriminating report.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "Second, rapport building (RB) by the survey enumerator, i.e., chatting about family and hobbies in a natural but pre-specified manner beyond the minimum small talk typical in a social science survey.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "This may increase the respondents’ trust in the enumerator, as well as their trust in the surveyor’s commitment to follow the protocol.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "Third, refraining from collecting personally identifying information (Low PII), including the identity of workers’ supervisors and their production team.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "With all three treatments, the possible benefit of increased willingness to report comes at a cost: HG provides a noisy signal of misbehavior, which constrains the severity of organizational responses to reports; RB requires careful planning of the RB process, additional training of survey enumerators, and more time to conduct the survey; removing team-level information precludes the computation of manager-level statistics that are needed to assess policy-responses to harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "We conducted phone-based surveys of 2,245 workers at two of the apparel producer’s plants. 1 We randomly assigned survey respondents to 9 different combinations of three treatment conditions: HG, RB, and Low PII. The status quo, or baseline treatment arm, entailed direct elicitation (DE) of respondents’ experience of harassment, no RB, and elicitation of team-level PII. We examine the effects of our survey design interventions on three pre-specified outcomes: reporting of threatening behavior, physical harassment, and sexual harassment by respondents’ direct supervisors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "We find that reporting rates in the control group are low, especially for physical and sexual harassment: 9.9% of respondents report threatening behavior, 1.53% report physical harassment, and 1.78% report sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "HG increased reporting of threatening behavior by 45%, sexual harassment by 271%, and physical harassment by 290%. 2 These findings extend in a subsequent implementation of the 1 The response rate was 63%. 76% of non-response was due to our inability to reach workers by phone. 2 All respondents were assured of a strong commitment to confidentiality as part of the IRB4 HG treatment across around 2,900 workers in 208 factories (see Table A. ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "We also find that low PII and RB had positive but weak effects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "There is suggestive evidence of complementarity between treatment arms: combining the three treatment conditions increases reporting compared to the sum of individual effects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "We conduct a pre-specified heterogeneous treatment effect (HTE) analysis by respondents’ sex.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "Compared to women, men’s baseline reporting rates were higher for threatening behavior and physical harassment and lower for sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "The effects of HG were substantially larger for men compared to women for threatening behavior and sexual harassment, although for the latter, we cannot reject that the effects are the same at conventional significance levels.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "Next, we use improved reporting data from HG treatment arms to assess the scope and nature of harassment in the apparel producer’s organization. 3 To do so, we extend results from the literature on inference from garbled reports to estimate team-level statistics of reported harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "Such statistics include: what share of managers is responsible for the bulk of the misbehavior? 4 and, how isolated are victims?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "The answers to these questions are crucial inputs to designing policies to address harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "For example, if a small share of managers is responsible, the organization could investigate and fire them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "In contrast, if most managers are involved, firing them all is likely impossible, and other remedial actions need to be taken.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "Using data from treatment arms using HG, we estimate that in this organization, 13.5% of workers reported threatening behavior, 5.7% reported physical harassment, and 7.7% reported sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "On average, seven workers per team are sampled in arms that use HG and collect PII. In this sample, we find that 72% required informed consent process. (See Supplementary Materials section 1. for the exact wording.) It is noteworthy that reporting rates for more sensitive types of harassment are very low among control respondents even under this strong security assurance. 3 We provide testable conditions under which HG reduces the bias between relevant statistics of intended reports and statistics of actual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "They hold in our sample. 4 In the context that we study, harassment by managers perpetrated against workers is the primary concern.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "Section 2 provides more information on the context.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "5 of teams had at least one worker who had been threatened, 40% had at least one who had been sexually harassed, and 25% had at least one who had been physically harassed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "Evidently, harassment is widespread, and a policy of firing all misbehaving supervisors is unlikely to be feasible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "Conditional on a type of harassment, victims tend to be isolated, and more so for graver types of harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "The probability of having at least two victims willing to report on the team, conditional on having at least one, is 17% for threatening behavior, 14% for physical harassment, and 8% for sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "These results shed light on the implications of setting different burdens of proof for harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "When victims are isolated, requiring multiple victims to come forward will miss the majority of cases, and addressing harassment requires processes that can be initiated when only one victim reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "Finally, we consider several alternative mechanisms for why HG may increase reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "We argue that the results are not driven by increased confusion under HG generating false positives and fail to find evidence of increased strategic misreporting under HG. Finally, we discuss the extent to which participants understand the effect of HG on plausible deniability, and why actually garbling reports – rather than just providing reassuring language – matters in an equilibrium monitoring setting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "This paper contributes to an emerging economic literature on workplace harassment, in particular sexual harassment, and its implications for labor markets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "We contribute evidence that lack of plausible deniability causally negatively affects the reporting of workplace harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "Our findings suggest that estimates of labor supply and other responses to harassment may be severely biased when harassment is measured using formal complaints: it may be that reporting is most suppressed in workplaces where harassment is most problematic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "In the context of developing countries, sexual harassment is considered a key barrier to women’s labor market participation. 5 There is a 5 One stream of literature establishes that harassment is prevalent in public spaces and transit systems in cities ranging from Rio de Janeiro to Delhi and that it reduces women’s educational investments and labor supply (e.g., Aguilar et al., Kondylis et al., Borker ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "6 dearth of evidence, however, on the effects of sexual harassment in the workplace on workers’ labor supply and well-being. 6 We contribute evidence that in the context of garment production in Bangladesh – a low-skill manufacturing sector that is common to many developing countries – harassment against women by managers who are men is common, and harassment by men against subordinate men is also substantial.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "This research also contributes to the literature on the detection and deterrence of misbehavior in organizational settings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "An important body of research in contract theory studies the possibility of side-contracting in principal-agent-monitor settings, with monitors and agents conspiring to limit information transmission to the principal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "A closely related literature studies circumstances in which misbehaving agents can discipline potential informants through threats of punishment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "Chassang and Padró i Miquel develop a model in which misbehaving agents can commit to a retaliation strategy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "They show that garbled intervention policies along the lines of HG are needed to discipline agents, and clarify how to experimentally evaluate such policies even in the hypothetical presence of malicious workers wrongfully reporting well-behaved managers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "We contribute by bringing HG into a real-world organizational setting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "The large experimental effect of HG on information transmission suggests that this class of mechanisms deserves further exploration in other environments where credible threats or reputational costs limit information transmission.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "Finally, this research contributes to a literature on garbled survey designs and on inference from garbled surveys dating back to Warner.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "Warner proposed randomized response (RR) as a way to offer survey respondents a form of plausible deniability when answering sensitive questions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "Under RR, which admits 6 The poor working conditions and extreme gender imbalances between managers and workers documented in Bangladesh’s garment sector suggest that garment workers have limited outside options, creating circumstances that allow harassment to run rampant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "7 numerous variants, the surveyor instructs respondents to roll a dice, and answer the question truthfully or not depending on the outcome.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 60,
+    "text": "The surveyor does not observe the respondent’s dice roll.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 61,
+    "text": "Provided that people comply with the surveyor’s instructions, RR offers plausible deniability. 7 Ljungqvist rationalizes RR in a model where agents have some intrinsic preferences for truth-telling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 62,
+    "text": "The empirical literature on survey design for sensitive questions has found that RR performs better than DE, at least in single shot, large scale surveys. 8 An important difference between RR and HG is that under RR, the randomization is under the respondent’s control, so respondents can ignore instructions to randomly respond “Yes” if they are worried about retaliation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 63,
+    "text": "Because the garbling in RR relies on respondents’ compliance, we refer to mechanisms in this class as soft garbling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 64,
+    "text": "In our design, responses are mechanically switched at an exogenous rate, which we refer to as hard garbling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 65,
+    "text": "Non-compliance with soft-garbling injunctions can cause plausible deniability to unravel in equilibrium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 66,
+    "text": "This concern is empirically validated by Chuang et al.: survey respondents often do not comply with the protocol to garble and systematically provide the least sensitive response.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 67,
+    "text": "Chassang and Zehnder show that in contrast to RR, HG does not unravel in equilibrium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 68,
+    "text": "For this reason, we believe HG is better suited for ongoing use in organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 69,
+    "text": "This reflects the general point made by the literature on mediation (see Forges or more recently Goltsman et al. ) that exogenous sources of randomness meaningfully expand the set of implementable outcomes compared to endogenous randomizations performed by interested agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 70,
+    "text": "In addition, HG permits more confident inference than RR: the garbling rate (needed for inference from garbled reports) is known for HG, but not for RR if some participants do not comply with instructions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 71,
+    "text": "The remainder of the paper is organized as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 72,
+    "text": "Section 2 provides back The original version of RR proposed by Warner treats yes and no responses symmetrically.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 73,
+    "text": "In our setting, the sensitive response is known a priori, so that noise can be added following non-sensitive responses only. 8 Blume et al. and Blume et al. study communication via noisy channels in the lab.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 74,
+    "text": "They find that mechanisms like HG can improve information transmission but may fall well short of perfect reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 75,
+    "text": "8 ground on Bangladesh’s garments sector and the apparel producer we partner with.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 76,
+    "text": "Section 3 provides a theoretical framework that clarifies incentives for information transmission, and inference from recorded reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 77,
+    "text": "Section 4 presents the research design.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 78,
+    "text": "Section 5 describes the empirical impact of treatments on reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 79,
+    "text": "Section 6 uses the garbled survey data to assess the apparel producer’s harassment problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 80,
+    "text": "Section 7 discusses our findings, possible alternative interpretations of the data, as well as preliminary evidence of the external validity of treatment effects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 81,
+    "text": "An Online Appendix gathers tables, figures, proofs, and additional analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 82,
+    "text": "Context We conducted this research in collaboration with a large apparel producer in Bangladesh, employing upwards of 25,000 workers in roughly half a dozen factories. 9 The manufacturer’s senior leadership team sought a collaboration with our research team because it wished to improve relations with its workers and to improve workers’ well-being.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 83,
+    "text": "To achieve this, it aimed to directly collect feedback from workers on their experiences in the workplace and relationships with their managers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 84,
+    "text": "It then aimed to use this feedback to inform its HR policies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 85,
+    "text": "For the purpose of the experiment, we agreed to survey workers at 2 of its plants.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 86,
+    "text": "In the longer-term, the senior management team considered setting up systems for ongoing real-time reporting of issues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 87,
+    "text": "Ethnographic evidence and evidence from community-based surveys suggests that harassment is a long-running problem in Bangladesh’s garments sector.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 88,
+    "text": "Workers’ precarious livelihoods and lack of legal recourse, as well as conservative societal norms around gender and sex, contribute to an enabling environment for abusive managers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 89,
+    "text": "While there is reason to believe that harassment is widespread, measuring and constructing informative statistics of harassment is challenging, even in social science research 9 We have a confidentiality agreement with the apparel manufacturer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 90,
+    "text": "9 conducted outside of the workplace.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 91,
+    "text": "For example, in data from Kabeer et al. ’s community-based survey of garment workers, 20% (11%) of workers report witnessing physical (sexual) harassment, but only 1% (0%) report experiencing it themselves.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 92,
+    "text": "The manufacturer’s operations are representative of garment manufacturing in Bangladesh.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 93,
+    "text": "Production is organized into cutting, sewing, and finishing sections.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 94,
+    "text": "Some factories also have wet and dry washing sections, which add texture and fading to sewn garments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 95,
+    "text": "Within these sections, workers are organized into production teams or lines, with stable team assignments over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 96,
+    "text": "The organizational structure is hierarchical: teams of workers are typically overseen by 2 supervisors, followed by line chiefs or team incharges, floor-supervisors and/or assistant production managers, production manager(s), and finally, the managing director.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 97,
+    "text": "The gender balance varies considerably across production sections: cutting and wet washing sections typically exclusively employ men; sewing and finishing sections mostly employ women; and dry washing sections are mixed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 98,
+    "text": "In all sections, more than 90% of managers are men.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 99,
+    "text": "In the two plants surveyed, 34-42% of workers are employed on sewing lines, 1618% are employed in finishing, and 10-14% are employed in washing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 100,
+    "text": "The remaining workers are employed in smaller support sections. 93% of managers are men.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 101,
+    "text": "Framework We begin by identifying policy-relevant statistics of harassment that we are interested in estimating.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 102,
+    "text": "Some statistics, such as the share of victimized workers, do not require collecting information about workers’ teams (i.e., their team id).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 103,
+    "text": "Statistics associated with team-level patterns do: for instance, assessing whether victimized workers are isolated or assessing the number of managers engaging in misbehavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 104,
+    "text": "As a result, computing team-level statistics requires more sensitive data collection.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 105,
+    "text": "Harassment is not directly observable, and only statistics of reported data can be computed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 106,
+    "text": "Using a principal-agent-monitor framework, we show how the gap between statistics of actual harassment and their counterparts based on intended 10 reports is affected by survey features, including garbling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 107,
+    "text": "We then show how to consistently estimate statistics of intended reports based on garbled reports alone.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 0,
+    "text": "Consider an organization consisting of m ≡{ 1, · · ·, m } consists of a manager (also denoted by a ) and L workers indexed by i · · ·, L }. Altogether, there are n M in the organization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 1,
+    "text": "We are interested in four statistics that can help organizations assess policy options:",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 2,
+    "text": "S V ∈{ 1, · · ·, L }, S TV",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 3,
+    "text": "Statistic S V measures the share of victimized workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 4,
+    "text": "This allows decisionmakers to gauge the magnitude of the harassment problem in their organization, allowing stakeholders to prioritize the issue appropriately.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 5,
+    "text": "Statistic S PM measures the share of problematic managers, in other words, managers who have harassed at least one person.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 6,
+    "text": "It is a special case of statistic S TV",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 7,
+    "text": "Statistics of intended reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 8,
+    "text": "Statistics S V, S PM and S TV",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 9,
+    "text": "Sensitivity of statistics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 10,
+    "text": "These statistics differ in the sensitivity of information required to compute them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 11,
+    "text": "It is not necessary to know a worker’s team to compute S r V. In contrast, S r PM, S r TV k, and E r 2 V | 1 V require the respondent to associate some team identifier to their report.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 12,
+    "text": "Otherwise, it is not possible to match the reports of different workers on the same team.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 13,
+    "text": "For this reason, these statistics are intrinsically more sensitive than S r V.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 14,
+    "text": "Third-party witnesses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 15,
+    "text": "While harassment may be observed by workers other than the victim, this paper focuses on the reporting of one’s own harassment status.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 16,
+    "text": "We leave the question of witnesses’ role in detecting and counter-acting harassment to future research.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 17,
+    "text": "Getting victims to come forward strikes us as the main bottleneck, and we cannot confidently take a stand on how informed potential witnesses are.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 18,
+    "text": "In our data (Table A. ), team-level measures of witnessed harassment are uncorrelated to team-level reports of own harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Policy-relevant statistics of harassment",
+    "paragraph_id": 19,
+    "text": "This means that information from third parties is not a good substitute for victims’ reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 0,
+    "text": "Because the actual harassment status h i,a of workers is typically not observed, organizations must proxy the true statistics of interest with reported harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 1,
+    "text": "One difficulty is that victims are often unwilling to come forward.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 2,
+    "text": "This may be due to explicit or implicit threats of retaliation, concerns over one’s own reputation, or negative impacts on one’s career and private life, even if the organization takes action against the perpetrator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 3,
+    "text": "We consider a set-up in which worker i in team a completes a binary survey, meaning that they can submit an intended response r i,a ∆( { 0, 1 } ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 4,
+    "text": "Concretely, we are interested in the following survey designs: • Direct Elicitation, in which φ ( r ) = r: the recorded report matches the intended report.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 5,
+    "text": "• Hard Garbling, in which − “garbling.” The rationale for garbling surveys is to guarantee the worker plausible deniability in the event that their record is leaked.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 6,
+    "text": "In particular, we assume that the worker assigns subjective probability p [0, 1] on their recorded report e r i,a being leaked.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 7,
+    "text": "We do not take a stance on whether leaks actually occur or not.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 8,
+    "text": "In our experimental application, leaks of individual reports would only occur in the event of an unforeseen breach of confidentiality.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 9,
+    "text": "However, we are interested in the use of reporting systems for ongoing monitoring in organizations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 10,
+    "text": "In such a context, leaks may simply correspond to the fact that some action is taken by the organization on the basis of the recorded report.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 11,
+    "text": "For instance, the manager may be sent to a training seminar.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 12,
+    "text": "Leaks are inevitable even under ideal governance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 13,
+    "text": "The assumption that SB (1 | 0) < 0 implies that arbitrarily high garbling rates are not desirable. 11 This formulation captures concerns over ex post retaliation and reputational damages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 14,
+    "text": "Hence, a harassed worker is willing to send intended report r Taking as given the share of null reports prob ( r i,a = 0), it follows from ( 1 ) and ( 2 ) that increasing π increases a worker’s propensity to send report r i,a = 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 15,
+    "text": "Equation ( 2 ) captures the fact that increasing π reduces the impact of a positive recorded report e r i,a on posterior beliefs that a worker intentionally complained.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 16,
+    "text": "In addition, coefficient (1 −; (ii) equilibrium reporting weakly increases with garbling rate π; 12 Indeed, HG increases the welfare of workers who make a report, but can decrease the welfare of workers who don’t by exposing them to retaliation with some probability.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 17,
+    "text": "This is a design trade-off inherent to HG. This issue can be addressed by letting workers as a group weigh in on whether they wish a particular reporting scheme to be implemented.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 18,
+    "text": "In our specific experimental setting, attrition patterns across HG and DE treatments do not suggest that HG caused a reduction in welfare among workers who chose not to complain.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 19,
+    "text": "See Online Appendix G for further discussion.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 20,
+    "text": "16 (iii) equilibrium reporting weakly decreases with perceived leakage probability p.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 21,
+    "text": "We note that the impact of garbling π on reporting is an equilibrium effect.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 22,
+    "text": "For HG to be effective in the long run, respondents as well as managers must understand that reported complaints are not necessarily associated with intended complaints.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 23,
+    "text": "Takeaways for inference.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 24,
+    "text": "Because harassment is systematically under-reported, statistics of harassment based on intended reports of harassment rather than actual harassment will be biased.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 25,
+    "text": "An implication Proposition 1 is that both garbling and reducing the perceived leakage probability increase the accuracy of intended reports as proxies for true harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 26,
+    "text": "We now draw implications for inference based on reported harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 27,
+    "text": "More generally, for statistics that are monotonic in h i,a (resp. r i,a ), increasing garbling rate",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 28,
+    "text": "Takeaways for survey design.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 29,
+    "text": "Proposition 1 suggests that increasing the garbling rate π and reducing the worker’s subjective probability p of a leak can encourage reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 30,
+    "text": "We evaluate two strategies to reduce the subjective likelihood of leaks: first, we vary whether team identifiers (needed to compute team statistics) are elicited or not; second, we vary the extent of rapport built with enumerators prior to the sensitive module.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 31,
+    "text": "Alternative survey methods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 32,
+    "text": "Starting with the pioneering work of Warner on randomized response (RR), many indirect response methods have been developed to guarantee survey respondents plausible deniability, including the unrelated question approach, list experiments (LEs, Raghavarao and Federer ), and most recently, crosswise RR methods.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 33,
+    "text": "Our interest in the steady state monitoring of harassment in organizations makes us favor HG over these variants for three reasons, which we summarize here and elaborate on in Online Appendix C on design choices.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 34,
+    "text": "Under RR and LE, the respondent is in charge of garbling their own messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 35,
+    "text": "This is why we refer to those methods as soft-garbling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 36,
+    "text": "If one message is less sensitive than the other, respondents will have strict incentives to send the less sensitive message, and plausible deniability will vanish in equilibrium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 37,
+    "text": "This is consistent with the evidence from Chuang et al. or Chassang and Zehnder.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 38,
+    "text": "Under soft-garbling techniques, the actual garbling rate is an endogenous object that is not observed by the survey designer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 39,
+    "text": "Since the garbling rate is needed to estimate statistics of intended reports from recorded reports, this makes it more difficult to draw confident inferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 40,
+    "text": "In contrast, under HG, the garbling rate is 18 exogenously known, permitting confident inference.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 41,
+    "text": "Finally, hard garbling allows the designer to deviate from i.i.d. garbling, for instance using population blocked garbling, in which the number of recorded reports mechanically assigned to 1 is fixed at the population level.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 42,
+    "text": "When the reporting rate is very low, this improves the estimation of treatment effects that could otherwise be dwarfed by sampling error.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 43,
+    "text": "Measurement Corollary 1 argues that garbling reduces bias in the measurement of policy-relevant statistics based on intended reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 44,
+    "text": "However, intended reports are not directly available to the analyst when garbling is used.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 45,
+    "text": "We now discuss how to infer S r V, S r PM, and S r TV k from garbled reporting data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 46,
+    "text": "For simplicity, this section focuses on the case of i.i.d. garbling with a constant team size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 47,
+    "text": "Online Appendix B extends the analysis to the case of varying team size and shows that correlated garbling can improve the precision of estimates in small samples.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 48,
+    "text": "Inference from garbled reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 49,
+    "text": "A key insight of Warner is that the share of workers reporting harassment S r V can be consistently estimated from garbled data, even though it depends on intended reports.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 50,
+    "text": "The following estimator is consistent S e r V − π 1 − ∆( { 0, 1, · · ·, L } ) and e ∆( { 0, 1, · · ·, L } ) respectively denote the sample distribution of number of 19 team-level intended and recorded reports, ( r a ) a · · ·, L }, M 1 e r a = r.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "A worker’s reporting decision",
+    "paragraph_id": 51,
+    "text": "We are interested in recovering − r i,a ); (ii) a consistent estimator of",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 0,
+    "text": "We surveyed workers at 2 of the apparel producer’s plants.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 1,
+    "text": "Prior to the survey’s launch, the plants’ HR departments announced on the PA system that workers may 20 be invited to participate in a survey the firm was running in collaboration with independent researchers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 2,
+    "text": "The BRAC Institute for Governance and Development (BIGD), a respected arm of BRAC University, conducted all data collection.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 3,
+    "text": "We prepared a pre-analysis plan (PAP) and registered it on the AEA’s RCT registry.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 4,
+    "text": "We overwhelmingly adhere to our PAP and acknowledge any deviations in the text.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 5,
+    "text": "The survey process entailed 3 phone calls conducted outside of work hours.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 6,
+    "text": "The first call introduced the survey, established a baseline level of trust, and recruited the prospective respondent.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 7,
+    "text": "The second completed the main survey.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 8,
+    "text": "The third, 2 weeks later, conducted a follow-up survey.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 9,
+    "text": "The first call included the informed consent process, 13 in which we provided strong general assurances around the confidentiality of workers’ responses and informed them that participation in the survey was completely voluntary and could be stopped at any time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 10,
+    "text": "We informed them that only aggregated results would be shared with senior management and would inform HR policy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 11,
+    "text": "Workers who consented to participate were asked to suggest a time for the survey when they could find a private place where they felt comfortable talking about difficult workplace issues.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Experiment Design",
+    "paragraph_id": 12,
+    "text": "All survey enumerators for the study were women. 14 The Supplementary Materials include all scripts and instruments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "Harassment Outcomes",
+    "paragraph_id": 0,
+    "text": "We were interested in measuring workers’ experience of three types of harassment: threatening behavior, physical harassment, and sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "Harassment Outcomes",
+    "paragraph_id": 1,
+    "text": "For each type of harassment, we asked, “In the past year, has your line supervisor taken any of the following actions toward you against your will?” We then listed, for each type of harassment, the actions in the second column of Table 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "Harassment Outcomes",
+    "paragraph_id": 2,
+    "text": "Respondents were instructed to answer “Yes” if they had experienced any of the actions, without revealing which of 13 See section 1. of the Supplementary Materials for the script. 14 Budget constraints prohibited random assignment of the survey enumerator’s sex after stratifying respondents by their sex.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "Harassment Outcomes",
+    "paragraph_id": 3,
+    "text": "Based on contextual knowledge and guidance from local staff, we expected that it would be more acceptable for enumerators who are women to survey men than the reverse.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "Harassment Outcomes",
+    "paragraph_id": 4,
+    "text": "21 the specific actions they had experienced.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "Harassment Outcomes",
+    "paragraph_id": 5,
+    "text": "Ex ante, we hypothesized that threatening behavior (sexual harassment) would be the least (most) sensitive to report.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 0,
+    "text": "We randomly assigned survey participants to different combinations of treatment conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 1,
+    "text": "The status quo and alternative treatment conditions were as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 2,
+    "text": "Survey method for harassment-related questions:",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 3,
+    "text": "• Direct elicitation (DE): directly ask the survey respondent about sensitive information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 4,
+    "text": "22 • Hard garbling (HG): for a yes or no question, where yes is the more sensitive answer, exogenously flip no answers to yes with probability π = 2 / 10.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 5,
+    "text": "DE is the status quo survey method and the control condition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 6,
+    "text": "HG is the treatment condition: it provides respondents with plausible deniability if they submit a sensitive answer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 7,
+    "text": "For HG, we set the flipping rate to 20% and use blocking to ensure that 2 out of every 10 consecutive reports, after ordering respondents by production team and gender, are garbled. 15 We decided upon a 20% flipping rate based on several contextual considerations, including reporting rates from prior surveys that we and other researchers had run, focus groups, and piloting, that suggested that this rate was perceived as providing material protection, and the relative ease of explaining a 1-in-5 flipping rate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 8,
+    "text": "Online Appendix C further explains the reasons for our HG design choices, and Online Appendix D and the Supplementary Materials provide implementation details and scripts, respectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 9,
+    "text": "We explained HG as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 10,
+    "text": "“We are now going to ask you several questions about the way your manager treats you and other employees.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 11,
+    "text": "For instance: ‘Has your manager shouted at you in the last month?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 12,
+    "text": "Yes or No?’ Each of the questions has a Yes or No answer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 13,
+    "text": "Our system is set up so that it’s safe to report an issue.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 14,
+    "text": "If you choose to respond YES (there is an issue), our system will record it as a YES for sure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 15,
+    "text": "Importantly, if someone responds NO, the system will sometimes record the response as YES. This means that if you respond YES, we can guarantee that you won’t be the only one saying YES. For every 5 responses from workers, at least 1 will be recorded as YES. The researchers are only interested in the total number of yes/no responses from all surveys.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 16,
+    "text": "If you respond YES, aside from me, no one will ever be able 15 We implemented the blocked garbling ex ante, so it is not conditional on the intended response.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 17,
+    "text": "23 to know that this was your answer, not even the researchers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 18,
+    "text": "Your answers are fully protected with us.” We report the main effects of HG and our other treatments in Section 5.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 19,
+    "text": "It is legitimate to ask whether any potential effect of HG on responses is actually due to respondents understanding the value of plausible deniability.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 20,
+    "text": "An alternative hypothesis is that respondents trust the assertion that “Our system is set up so that it’s safe to report an issue” but do not understand the garbling mechanism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 21,
+    "text": "We address this challenge in Section 7.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 22,
+    "text": "Rapport-building (RB):",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 23,
+    "text": "• Status quo approach: survey enumerators follow a typical research introduction script before beginning the survey and then ask the survey questions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 24,
+    "text": "• RB approach: survey enumerators allocate survey time to build rapport with the participant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 25,
+    "text": "RB entails chatting about family and hobbies in a natural but pre-specified manner, beyond the small talk typical in social science surveys. 16 We developed our RB treatment modules by combining insights from practitioners and policy-makers conducting surveys on sensitive issues, such as sexual abuse and gender-based violence and from research focused on protocols for criminal investigations of sexual abuse allegations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 26,
+    "text": "For details on the development of our RB approach and our RB modules, see the paper’s Supplementary Materials.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 27,
+    "text": "The status quo approach is the control condition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 28,
+    "text": "RB is the treatment condition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 29,
+    "text": "We conduct a shorter and a longer version of RB to test for the possibility that excessive attempts at rapport building may be counterproductive since they can reveal personal information about respondents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 30,
+    "text": "RB1 is the baseline rapport-building 16 During training, survey enumerators developed and practiced the RB approach using role plays.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 31,
+    "text": "A senior research associate tested each enumerator before launch.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 32,
+    "text": "24 section, in which the enumerator signals that they care about the worker, getting to know the respondent, using emotional mirroring and acknowledging them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 33,
+    "text": "RB2 is the extended rapport-building section, in which the enumerator becomes personable with the worker, who has the chance to ask them questions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 34,
+    "text": "The enumerator also shares a related experience.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 35,
+    "text": "Removing personally-identifying information (Low-PII):",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 36,
+    "text": "• Status quo approach: ask survey respondents questions that reveal more PII, including production section, line number, and direct supervisor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 37,
+    "text": "• Low PII approach: limit PII requested from the survey respondent; no questions asked about production section, line number, or direct supervisor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 38,
+    "text": "Asking questions that reveal relatively more PII is the status quo approach because surveys in organizational settings often explicitly or de facto reveal respondents’ identities.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 39,
+    "text": "Note that identifying respondents’ teams is necessary to compute teamlevel statistics such as the number of managers involved in harassment, the number of victims associated to repeat offenders, and the degree of isolation of victims.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 40,
+    "text": "This represents an unavoidable trade-off. 17 Table 2 summarizes the experimental treatment arms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 41,
+    "text": "Arm 1 is the benchmark, as it represents the status quo survey approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 42,
+    "text": "Ex ante, we identified arm 7 as the most protective.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 43,
+    "text": "This may not be the case, however, if RB, which entails asking the respondent for more information about themselves that is not recorded in the survey, erodes the benefit of not asking for respondents’ PII. We shed light on this possibility by comparing arms 3 and 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 44,
+    "text": "The experimental conditions were introduced 17 We sampled workers from teams using the employee lists, so respondent in the low PII condition may have inferred that we possessed some team-level identifying information; that said, we did not know workers’ supervisors, who are the subject of the harassment questions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 45,
+    "text": "For the rest of the paper, consistent with the intention of this treatment condition, we drop respondents in the low PII condition when estimating team-level statistics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 46,
+    "text": "Table 2: Treatment Arms & Surveyed (Planned) sample sizes No Rapport Rapport 1 Rapport 2 TOTAL Direct elicitation PII Arm 1 Arm 2a Arm 2b 412(476) 190(225) 188(229) 790(930) Low PII Arm 3 Arm 4 197(226) 189(220) 386(446) Hard garbling PII Arm 5 Arm 6a Arm 6b 416(487) 188(225) 195(227) 799(939) Low PII Arm 7 270(305) 270(305) Total 1025(1189) 837(975) 383 (456) 2245(2620) after respondents completed all non-harassment related survey modules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 47,
+    "text": "Figure A. displays the survey modules and location of treatment interventions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 48,
+    "text": "There are small variations across HG treatment arms in the realized garbling rate, as it was blocked within team but not within treatment arm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "Treatment Conditions",
+    "paragraph_id": 49,
+    "text": "Consequently, we use each HG treatment arm’s realized garbling rate to ensure that differences in the realized garbling rate across treatment arms do not affect our estimates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 0,
+    "text": "We conducted a stratified random selection of workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 1,
+    "text": "We sampled workers from 4 types of production teams using the plants’ employee lists: sewing lines, finishing teams, dry washing teams, and wet washing teams.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 2,
+    "text": "We chose teams with 15 or more workers because we aimed to stratify the treatment assignment by team and gender.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 3,
+    "text": "We were left with 112 eligible teams and 5,948 eligible workers out of a workforce of 7,727 workers (77% of workers).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 4,
+    "text": "The average size of teams in our survey is 53 workers (Table A. ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 5,
+    "text": "Within teams, we stratified workers by sex, which we identified based on name (male, female, uncertain). 18 In a small number of teams with few members of one sex, we aggregated members of this sex across teams to the 18 We categorized names as male or female for 99.7% of eligible workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 6,
+    "text": "Among surveyed workers, the classification error rate was 2.76% for men (11 respondents) and 1% for women (17 respondents).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 7,
+    "text": "26 smallest level that yielded a suitable group size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 8,
+    "text": "We selected 9 workers per stratum, to ensure a minimum of 1 per stratum assigned to each arm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 9,
+    "text": "We then sampled larger strata in proportion to their share of the overall eligible worker population.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 10,
+    "text": "Based on power calculations, we targeted a sample size of 2,620.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 11,
+    "text": "Because we had the plants’ employee lists, we were able to replace workers who were unreachable or who declined to participate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 12,
+    "text": "We attempted to recruit 3,578 workers, and we achieved a sample size of 2,245 (63% response rate).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 13,
+    "text": "The main reason for non-response was that we were not able to reach workers by phone (76% of cases); of workers whom we reached, 96% agreed to be surveyed on a follow up call at a time convenient for them, and we were ultimately able to survey 86%. 19 Conditional on survey start, the completion rate was 100%. Workers were not aware of their treatment assignment when deciding whether to participate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 14,
+    "text": "We obtained workers’ phone numbers from the apparel manufacturer’s HR department, so the main cause of our inability to reach workers was likely outdated phone numbers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 15,
+    "text": "Online Appendix E conducts several checks of whether non-response is correlated with harassment experience or treatment status.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 16,
+    "text": "We do not find evidence that this was the case.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 17,
+    "text": "We did not achieve our target sample size despite our ability to replace workers because we stratified our selection by team and gender, and for some strata, we ran out of candidate replacement workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 18,
+    "text": "The median (mean) team in the data has 39% (41%) of its workers surveyed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 19,
+    "text": "The median and mean team-level response rate to the survey was 65%. 20 Assignment to Treatment Arms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 20,
+    "text": "The unit of randomization is a worker, stratified by plant-production team and sex whenever possible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 21,
+    "text": "We implemented the 19 We attempted to call workers 9 times to recruit them. 20 One concern is that supervisors who engage in more harassment may have pressured workers not to participate.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 22,
+    "text": "This would not affect the experiment’s internal validity, as selection into the sample happens before a respondent knows their treatment assignment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 23,
+    "text": "However this would bias downward the statistics of intended reports in Section 6.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 24,
+    "text": "Tests described in Online Appendix E suggest this was not the case.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 25,
+    "text": "27 randomization in Stata.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 26,
+    "text": "We first randomly assigned one worker per stratum to each treatment arm because we wanted to ensure that all strata were represented in all treatment arms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 27,
+    "text": "For larger strata, we then randomly assigned workers to each treatment arm with probabilities of assignment that corresponded to the treatment arm’s target share of the overall sample size.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 28,
+    "text": "We used the randtreat package by Carril to address misfits across strata.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 29,
+    "text": "To improve balance, we proceeded along the lines suggested by Banerjee et al.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 30,
+    "text": "We conducted 10 randomizations and selected the one that performed best in terms of balance on two covariates available to the research team: tenure, and high versus low skill status.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 31,
+    "text": "Integrity of the experiment and baseline balance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 32,
+    "text": "As detailed in Online Appendix D, we implemented HG using a system of preassigned, encrypted 1-2 digit numeric codes for “Yes” and “No” intended responses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 33,
+    "text": "Encryption ensured that neither the enumerator nor the respondent knew whether a particular response had been garbled; relatedly, the enumerators could not influence the garbling of “no” intended responses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 34,
+    "text": "They did, however, need to adhere to the protocol to input the code assigned to the respondent’s intended report.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 35,
+    "text": "Following the survey, we found that one enumerator did not adhere to this protocol.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 36,
+    "text": "Upon further questioning, it was confirmed that the enumerator understood the data entry protocol but had not adhered to it (inputting the same code for all questions for a given respondent to save time).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 37,
+    "text": "This enumerator conducted 53 DE and 48 HG surveys, all of which we drop.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 38,
+    "text": "We also drop one worker under age 18 who was accidentally surveyed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 39,
+    "text": "As a result, the sample size is 2,143 observations for the remainder of the paper.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 40,
+    "text": "Table A. in Online Appendix A presents summary statistics of our sample.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 41,
+    "text": "Table A. presents team-level summary statistics for the teams represented in the survey, calculated for overall teams, including workers not sampled in the survey.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 42,
+    "text": "Table A. shows balance tests for workers’ characteristics across the main treatment conditions, and Table A. does the same across no rapport, short rapport, and long rapport conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Sampling and Assignment to Treatment Arms",
+    "paragraph_id": 43,
+    "text": "There are no statistically significant differences across treatment 28 conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 0,
+    "text": "We seek to estimate coefficients in the following regression:",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 1,
+    "text": "r is = ’ characteristics X i, which are selected using the post double selection (PDS) lasso.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 2,
+    "text": "Eligible control variables include the worker characteristics reported in Table A.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 3,
+    "text": "Identification using garbled responses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 4,
+    "text": "For individuals in the HG arms, we observe garbled response e r i instead of intended response r i.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 5,
+    "text": "However, following Blair et al., we note that recorded reports can be expressed as e r i = r i + (1 − r i )( − − π with probability 1 − π. We defined normalized recorded reportsr̂ i byr̂ r i − π 1 − π = r i + 1 − r i 1 − ̂ i is equal to the intended report plus a heteroskedastic error term.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 6,
+    "text": "If r i satisfies ( 5 ), thenr̂ i satisfies a similar regression ( 5b ) with heteroskedastic, mean-zero errors (conditional on covariates).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 7,
+    "text": "Consequently, OLS is consistent, and robust standard 29 errors are correct.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 8,
+    "text": "With blocked-garbling (see Online Appendix B ), error terms ̂ is = ’ sex.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "The Impact of Survey Design",
+    "paragraph_id": 9,
+    "text": "We also estimate treatment effects separately for women and for men:",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 0,
+    "text": "Main effects of survey design on reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 1,
+    "text": "Table 3 reports the main treatment effects. 22 In this and other regression tables, odd-numbered columns display 21 We pre-specified reporting of robust standard errors, so reporting clustered standard errors is a deviation from our PAP. Since sampling errors are negatively correlated within HG batch, this deviation is justified.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 2,
+    "text": "See NBER Working Paper No. 31011 for results estimated using robust standard errors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 3,
+    "text": "For regressions that do not use intended reports, we report robust standard errors as per our PAP. 22 Table A. reports the main results with separate indicators for shortand long-RB conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 4,
+    "text": "30 the results from the baseline specification, while even-numbered columns display the results with PDS lasso-selected controls.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 5,
+    "text": "In the control arm, ( DE % of workers report experiencing threatening behavior, 1.53% report being physically harassed, and 1.78% report being sexually harassed by their supervisor.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 6,
+    "text": "In percentage points (ppts), HG increases the reporting of threatening behavior, physical harassment, and sexual harassment, respectively, by 4. ppts (45.4%, p < 0.01), 4. ppts (290%, p < 0.01), and 4. ppts (271%, p < 0.01). 23 Removing questions about respondents’ supervisor (Low PII) increases the reporting of physical harassment by a marginally statistically significant 2. ppts (188%, p = 0.108) but has no effect on the reporting of threatening behavior or sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 7,
+    "text": "Building rapport appears to have a positive effect on the reporting of threatening behavior (1. ppts, a 11.6% increase) and sexual harassment (1. ppts, a 107% increase), but it is not statistically significant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 8,
+    "text": "Rapport has no detectable effect on the reporting of physical harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 9,
+    "text": "Together, these results make a compelling case for the importance of plausible deniability in the design of information transmission mechanisms in organizational settings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 10,
+    "text": "The costs and benefits of removing team-level identifying questions are much less clear.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 11,
+    "text": "Low PII appears to increase the reporting of physical harassment, but not of threatening behavior or sexual harassment, and it comes at the cost of not being able to calculate manager-level statistics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 12,
+    "text": "Finally, we cannot reject that RB has no effect on reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 13,
+    "text": "It is possible that this null result masks heterogeneous effects across respondents or that RB’s effect depends tightly on the survey design.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 14,
+    "text": "Section 7 discusses the robustness of these findings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 15,
+    "text": "We show that confusion among respondents does not explain HG’s impacts on reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 16,
+    "text": "We also show that treatment status does not affect reporting behavior associated with a placebo question using DE for all arms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 17,
+    "text": "This suggests that respondents’ behavior reflects a real understanding of the benefits afforded by plausible deniability.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 18,
+    "text": "We then discuss 23 The average treatment effects of HG are similar across types of harassment, but this is not the case conditional on gender (see Table 4 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 19,
+    "text": "Table 3: Effects of Survey Design on Reporting of Harassment Threatening behavior Physical harassment Sexual harassment (1) (2) (3) (4) (5) (6) HG Treatment 0.0445 0.0448 0.0438 0.0451 0.0478 0.0487 (0.0150) (0.0145) (0.0121) (0.0117) (0.0114) (0.0111) Rapport Treatment 0.0113 0.0140 -0.0094 -0.0082 0.0188 0.0186 (0.0202) (0.0195) (0.0200) (0.0192) (0.0183) (0.0176) Low PII Treatment 0.0102 0.0097 0.0280 0.0299 0.0045 0.0067 (0.0245) (0.0239) (0.0184) (0.0178) (0.0203) (0.0201) Control Group Mean.0992.0992.0153.0153.0178.0178 Yes Yes Yes Yes Yes Yes PDS lasso controls No Yes No Yes No Yes 2140 2140 2140 2140 2140 2140 Notes: This table reports OLS estimates of treatment effects on workers’ reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 20,
+    "text": "Each column in the table reports the estimated coefficient from a separate regression.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 21,
+    "text": "The dependent variable in each column is regressed on the treatment indicator and stratification variables.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 22,
+    "text": "Even-numbered columns also include controls selected using the PDS lasso.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 23,
+    "text": "Standard errors clustered by HG batch (HG respondents) or respondent (DE respondents) are reported in round brackets. * p < 0.1; ** p < 0.05; p < 0.01.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 24,
+    "text": "interpreting our findings if there are concerns over false reporting by workers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 25,
+    "text": "Effects of survey design on reporting by men and women.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 26,
+    "text": "Motivated by the possibility that the experience of harassment and the utility generated by reporting harassment are different for men and women, we estimate the main effects separately by sex in Table 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 27,
+    "text": "In our control arm, 19.12% of men report experiencing threatening behavior, 4.41% report experiencing physical harassment, and 1.47% report experiencing sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 28,
+    "text": "Reporting rates among women are different: 8.0% report threats, 0.92% report physical harassment, and 1.85% report sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 29,
+    "text": "We cannot disentangle whether these differences are due to differential incidences of harassment or differential reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 30,
+    "text": "HG continues to increase reporting across the board.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 31,
+    "text": "Interestingly, the point estimates are particularly large for men, but because our sample of men is small, with the exception of threatening behavior, we cannot reject that the effects are the 32 same for men and women.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 32,
+    "text": "The fact that the effects of HG are, if anything, more positive for men echoes recent results on intimate partner violence (IPV) in Kenya.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 33,
+    "text": "Using list experiments, Castilla and Murphy find that roughly equal numbers of men and women are victims of IPV. In contrast, using DE, Haushofer et al. find that women report being the victim of IPV at higher rates than men. 24 The impact of removing PII appears to be weakly more positive for women, although we cannot reject that the effects for both groups are zero or the same.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 34,
+    "text": "Table 4 suggests that the impact of rapport on men and women may be different.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 35,
+    "text": "For threatening behavior and sexual harassment, rapport appears to have increased reporting among women and may have backfired for men.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 36,
+    "text": "This is plausible: survey enumerators were women, and small talk with an unknown woman may have raised men’s suspicion regarding the survey.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 37,
+    "text": "This suggests that further experimentation, and better tailoring of RB, is needed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 38,
+    "text": "Interactions among treatment conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 39,
+    "text": "We examine the possibility that the treatment conditions may substitute or complement each other using regression equation ( 7 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 40,
+    "text": "Figure 1 summarizes the results, which are presented in Table A. The omitted category is the control arm, DE % of women and 43% of men reported experiencing some form of sexual harassment and/or assault in their lifetime, with 49% and 18% reporting having been sexually touched in an unwelcome way.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 41,
+    "text": "In a study conducted in seven cities in India, 19% of men reported being victims of sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 42,
+    "text": "Table 4: Effects of Survey Design on Reporting of Harassment, Heterogeneity by Sex Threatening behavior Physical harassment Sexual harassment (1) (2) (3) (4) (5) (6) HG Treatment ’ reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 43,
+    "text": "Each column in the table reports the estimated coefficient from a separate regression.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 44,
+    "text": "The dependent variable in each column is regressed on the gender interactions of treatment variables and stratification variables.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 45,
+    "text": "Even-numbered columns also include controls selected using the PDS lasso.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 46,
+    "text": "Standard errors clustered by HG batch (HG respondents) or respondent (DE respondents) are reported in round brackets. * p < 0.1; ** p < 0.05; p < 0.01.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 47,
+    "text": "harassment is driven by women.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 48,
+    "text": "This suggests that: (1) RB does impact reporting, but its effect is subtle and varies across participants; and (2) that RB needs to be carefully tailored.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 49,
+    "text": "The bottom 4 treatment conditions in Figure 1 correspond to reports elicited using HG, first on its own, then introducing RB and Low PII. Estimated treatment effects appear to be rising as additional trust-enhancing steps are taken.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 50,
+    "text": "This con Figure 1: Treatment effects by survey arm DE x PII x Rapport 1 DE x PII x Rapport 2 DE x Low PII x No Rapport DE x Low PII x Rapport 1 HG x PII x No Rapport HG x PII x Rapport 1 HG x PII x Rapport 2 HG x Low PII x Rapport 1 -. -. 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 51,
+    "text": "Threatening behavior [0.099] Physical harassment [0.015] Sexual harassment [0.018] Notes: This figure reports coefficients from separate regressions of the outcome variable on the treatment arm indicators, strata fixed effects, and controls selected using the PDS lasso.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 52,
+    "text": "The regression specification is equation ( 7 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 53,
+    "text": "The whiskers are 95% confidence intervals estimated using robust standard errors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 54,
+    "text": "The omitted category is treatment arm 1, 1 ( DE",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 55,
+    "text": "trasts with patterns under DE, where trust-enhancing steps are not accompanied with increasing treatment effects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 56,
+    "text": "This suggests that there exist complementarities between HG and other steps that foster trust in the survey protocol.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 57,
+    "text": "This is intuitive since HG can only be effective if respondents trust that protocol will be followed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Results",
+    "paragraph_id": 58,
+    "text": "This visual intuition corresponds to the fact that the point estimate for the effect of ( HG",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 0,
+    "text": "Consistent with Proposition 1 and Corollary 1, we use response data from garbled treatment arms to assess the scope and nature of the apparel producer’s harassment problem.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 1,
+    "text": "This reduces bias in the measurement of statistics of true harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 2,
+    "text": "Based on intended reports, we find that low grade harassment is prevalent and that victims tend to be isolated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 3,
+    "text": "This contrasts with an archetypal image of serial harassers, shaped by high-profile cases, whereby a small number of individuals are responsible for the majority of misconduct.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 4,
+    "text": "While specific to our partner organization, this finding informs our prior on likely patterns of harassment in other organizations and cautions against policy responses that exclusively target small numbers of frequent offenders or require multiple victims to initiate action.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 5,
+    "text": "Scale of the issue and potential gains.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 6,
+    "text": "Figure 2 illustrates the estimated share of victimized workers, computed using ( 3 ) under DE and HG. Since this statistic does not require PII, we pool data across low and high PII arms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 7,
+    "text": "As we have already discussed, HG considerably increases workers’ propensity to report harassment: 13.5% reported threatening behavior with HG compared to 8.7% with DE, 5.7% reported physical harassment with HG compared to 1.9% with DE, and 7.7% reported sexual harassment with HG compared to 2.8% with DE. The primary takeaway is that harassment is meaningfully more widespread than standard surveys (or the firm’s internal reporting channels) suggest.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 8,
+    "text": "This means that addressing harassment may have a much more positive impact on overall employee 36 Figure 2: Share of workers who report harassment ( S r V ) by survey method 0.. Share of workers Threats Physical Sexual Harassment Type Direct Elicitation Hard Garbling Notes: This figure illustrates reported harassment rates estimated using reporting with DE and HG, respectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 9,
+    "text": "We compute the harassment rates using ( 3 ) under DE and HG. For both DE and HG, we pool across all treatment arms, including the RB arms and the arms in which we do not collect team-level identifying information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 10,
+    "text": "welfare than what previously available data would lead one to conclude.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 11,
+    "text": "We also note that since both men and women report significant levels of harassment under HG, addressing harassment would likely benefit both groups.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 12,
+    "text": "Problem managers and isolated victims.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 13,
+    "text": "We now turn to team-level characteristics of interest, S r TV % for threatening behavior, 25% for physical harassment, and 40% for sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 14,
+    "text": "Table 5: Estimated team-level statistics S r TV 1, 2 and E r 2 V | 1 V, estimated using pooled data from treatment arms that use HG and collect PII. The sample includes 112 teams.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 15,
+    "text": "The share of teams with at least 2 workers reporting harassment is 11% for threats, 3.5% for physical harassment, and 3.3% for sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 16,
+    "text": "This confirms that the bulk of the challenge consists in dealing with fairly widespread, medium intensity harassment, rather than dealing with a fairly circumscribed group of high intensity offenders: k S TV k is not high for k large.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 17,
+    "text": "Across all types of harassment, self-identified victims are relatively isolated: conditional on getting a report, the likelihood of getting at least another one is equal to 17% for threats, 14% for physical harassment, and 8% for sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 18,
+    "text": "Figure 3 visualizes this finding; it plots the full distribution of S r TV k for each type of harassment and shows that no teams have 3 or more self-identified victims for threats or physical harassment and a small share of teams have 3 self-identified victims for sexual harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 19,
+    "text": "A caveat for this statement is that our estimate of intended reports is a lower bound to the real amount of harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 20,
+    "text": "For this reason, the finding is better stated as: victims willing to report under HG are isolated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 21,
+    "text": "Policy implications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 22,
+    "text": "Our findings suggest three policy takeaways.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 23,
+    "text": "First, harassment is much more prevalent than filed complaints would suggest, and it affects both men and women.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 24,
+    "text": "Second, harassment occurs at a moderate intensity but is widespread across teams.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 25,
+    "text": "This means that firing a few bad apples cannot be the sole 38 Figure 3: Share of teams with k or more workers reporting harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 26,
+    "text": "1. 2. 3. 4. 5. 6. 7. k 0. 0. 0. 0. 0. 0. 0. 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 27,
+    "text": "S r TV k Issue Threats Physical Sexual Notes: This figure reports the full distribution of S r T for each type of harassment, estimated using pooled data from treatment arms that use HG and collect PII. We estimate the statistics using the unbiased consistent estimator of Proposition 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 28,
+    "text": "The sample includes 112 teams.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 29,
+    "text": "Instead, the behavior of existing managers must be changed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 30,
+    "text": "Third, the extent to which victims are isolated in teams varies substantially by type of harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 31,
+    "text": "This has implications for setting different burdens of proof for harassment: when victims are more isolated, requiring multiple victims to come forward, for example, to avoid “he said, she said” situations, may miss the majority of cases.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 32,
+    "text": "Remedying harassment likely requires having actions that can be taken in cases when only one victim comes forward.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Understanding Harassment",
+    "paragraph_id": 33,
+    "text": "Examples include moving possible victims to different production lines, providing training to managers, or initiating an HR review.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 0,
+    "text": "This paper makes two main contributions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 1,
+    "text": "First, we evaluate the impact of different aspects of survey design – HG, RB, and removing team level information – on respondents’ propensity to report harassment in a real-life organizational context.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 2,
+    "text": "Our experimental results show that lack of plausible deniability causes 39 under-reporting of harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 3,
+    "text": "Limited trust in the integrity of the reporting system may also contribute, though our results suggest that the process of trust-building is highly contextual and may backfire when not well-targeted.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 4,
+    "text": "Second, we identify policy-relevant statistics of reported harassment that con be consistently estimated using garbled reporting data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 5,
+    "text": "Applying these estimators to our data illustrates how they can guide policy responses to harassment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 6,
+    "text": "In our context, harassment appears to be widespread, a significant of managers harass workers, and victims are frequently isolated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 7,
+    "text": "This cautions against policy responses that target a small minority of very frequent offenders, as well as policies that require multiple victims to come forward to escalate a complaint.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 8,
+    "text": "Directions for further research.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 9,
+    "text": "Two directions for future research strike us as particularly valuable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 10,
+    "text": "First, what governance actions should be taken following a garbled report of harassment?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 11,
+    "text": "Actions need to be acceptable, legitimate responses to an inherently noisy signal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 12,
+    "text": "In addition, they should not invite malicious false reports by workers or further retaliation by managers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 13,
+    "text": "For example, sending a manager to a training seminar, or initiating a more thorough yearly review, seem safer choices than firing a manager or passing them over for promotion without further evidence.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 14,
+    "text": "Online Appendix C further discusses considerations for meaningful follow up actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 15,
+    "text": "Second, along the lines of Adams-Prassl et al., Folke and Rickne, and Dahl and Knepper, what are the mental health and broader welfare effects of reporting harassment for workers, managers and producers?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 16,
+    "text": "Sociological studies suggest that the act of confiding secrets can improve well-being through improving perceived coping ability and reducing the mental load associated with the secret.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 17,
+    "text": "We resurveyed workers two weeks after the survey experiment to test whether reporting harassment improved their mental well-being and job satisfaction.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 18,
+    "text": "We estimate a 2SLS model with the randomized assignment to the treatments as our instruments for reporting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 19,
+    "text": "Appendix G provides suggestive evidence that reporting improves mental well-being and job satisfaction; 40 the latter suggests a possible mechanism for benefits to the producer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Discussion",
+    "paragraph_id": 20,
+    "text": "The remainder of this section discusses alternative interpretations for our findings, and briefly describes available evidence for external validity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 0,
+    "text": "It is legitimate to ask whether any potential effect of HG on responses reflects respondents’ value for plausible deniability or an unrelated mechanism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 1,
+    "text": "We investigate two alternative interpretations: (i) whether confusion in the HG condition can explain our results; and (ii) whether reassuring language in the HG script directly increased trust among respondents in the HG condition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 2,
+    "text": "Confusion in the HG condition One concern with our findings is that HG is a more complicated mechanism than DE. 25 This means that respondents may be confused by HG, and that confusion may be more likely under HG compared to DE. This concern is especially relevant in our context, in which the average survey respondent has 6. years of schooling.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 3,
+    "text": "We were concerned about this possibility, so we included two comprehension questions in the HG module. 26 Respondents answered these prior to being asked the questions about harassment, and survey enumerators explained the correct answers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 4,
+    "text": "In our data, 8.8% of HG respondents answered at least 1 comprehension question incorrectly, while 4.8% answered 2 incorrectly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 5,
+    "text": "Women and men answer incorrectly at somewhat similar rates: 9.6% of men and 8.6% of women in HG answer at least 1 question incorrectly ( p = 0. 685 ), while 6.9% of men and 4.3% of women answer 2 questions incorrectly ( p = 0. 133 ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 6,
+    "text": "Explaining HG takes more time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 7,
+    "text": "This increases average survey duration by 4% (Table A. ). 26 The questions were, “Can you please tell me whether the following statements are true or false: (a) If I respond ‘Yes,’ no one can ever know this for sure. (b) The system will record at least one out of every five workers’ responses as ‘Yes.’ ” 41 Because reporting rates turn out to be weakly higher among confused respondents, we investigate whether asymmetric confusion among HG versus DE respondents could explain our results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 8,
+    "text": "We adopt a very conservative approach and reestimate our main results setting to “No” the recorded answers to harassment questions of respondents who answer any comprehension question incorrectly. 27 Panel A of Table A. shows that even under this conservative treatment, the effects of HG are positive, large, and statistically significant for all harassment types.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 9,
+    "text": "Panel B shows that there is not a differential pattern of attenuation by sex, and the patterns of heterogeneity are unchanged.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 10,
+    "text": "General assurances in the HG condition The script explaining HG states that “our system is set up so that it’s safe to report an issue” before explaining that garbling ensure that at least 1 in 5 answers is recorded as a complaint.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 11,
+    "text": "This raises the question of whether respondents directly trust the assertion that the system is safer without understanding why, and if this increases their willingness to report with HG. Alternatively, it is possible that respondents perceived the HG script as a signal of the research team’s general trustworthiness, and this made them more willing to report in general.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 12,
+    "text": "We note that while HG does admit stronger security assurances, those correspond to the real-life need of explaining the point and legitimacy of an unfamiliar survey methodology to respondents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 13,
+    "text": "In addition, even if survey participants respond to reassurances, rather than to an actual understanding of increased plausible deniability, it is still necessary to implement a mechanism supporting these reassuring statements.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 14,
+    "text": "Not doing so would be unethical, and most likely unsustainable in the medium run, as respondents learn that assurances are in fact empty.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 15,
+    "text": "Even if respondents simply trust our wording in a one-shot setting, it is important for us to be able to implement the plausible deniability features we advertise.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 16,
+    "text": "In the ongoing monitoring scenario 27 Less conservative approaches would be to exclude these respondents from the analysis or to set their intended response to “no” and simulate out their recorded responses.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 17,
+    "text": "42 we have in mind, trust needs to be maintained and continuously earned. 28 In addition, we think it is unlikely that these assurances drive our results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 18,
+    "text": "First, all respondents were assured of a strong commitment to confidentiality as part of the informed consent process, but even under this very strong general security assurance, baseline reporting rates for more sensitive types of harassment are very low among DE respondents. 29 Second, the high rate of correct responses to comprehension questions suggests that respondents were attentive to the explanation of HG and comprehended the mechanics of how it works.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 19,
+    "text": "Third, evidence from a placebo question and from enumerators’ assessments of respondents after the survey suggest this is not the case.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 20,
+    "text": "Our survey module included a sensitive question that appeared directly following the three harassment questions and was asked using DE for all respondents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 21,
+    "text": "Specifically, we asked whether their supervisor had refused to forward their request for leave to their factory’s administration or required them to perform certain tasks to submit it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 22,
+    "text": "If the effect of HG is driven by respondents’ understanding of the benefits of plausible deniability, then responses to this question should not be affected.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 23,
+    "text": "Table A. shows that the shares of HG and DE respondents reporting “Yes” to this question are indistinguishable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 24,
+    "text": "This suggests that HG respondents understood that the survey mechanism had changed and was less secure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 25,
+    "text": "Finally, enumerators answered 5 questions about respondents’ behavior during the survey; we test within-enumerator differences in perceived behavior across treatment conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 26,
+    "text": "Enumerators perceived HG respondents to be more honest, but no different from DE respondents on trust or other behaviors (Table A. ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 27,
+    "text": "Altogether, the evidence appears to support the interpretation that respondents in HG have some comprehension of how the HG mechanism works and responding to the specific assurances of plausible deniability it provides.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 28,
+    "text": "It is less consistent with 28 Chassang and Zehnder provide preliminary lab evidence that HG has a lasting effect on reporting, in contrast to RR, which unravels because respondents don’t comply with instructions. 29 The Supplementary Materials collect all scripts, survey instruments, and consent forms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 12,
+    "section_name": "Do respondents value plausible deniability?",
+    "paragraph_id": 29,
+    "text": "43 the key mechanism being general purpose reassurances provided in the HG script and is inconsistent with increased confusion under HG. That said, we acknowledge that the evidence is limited and better understanding the mechanism through which HG is effective is a natural question for follow-up studies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 0,
+    "text": "In our conceptual framework, we assume that there are no false positives in reporting; workers either report their true harassment status or they report that they have not been harassed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 1,
+    "text": "As discussed in Section 3, we think that this is an appropriate assumption for our setting, at least in the short-run.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 2,
+    "text": "One may still be concerned that this is a strong assumption.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 3,
+    "text": "Workers may have malicious motivations for filing false reports, such as career concerns driving them to sabotage supervisors, or more benign ones, such as other-regarding preferences driving them to report harassment they have witnessed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 4,
+    "text": "We explore both possibilities using our data and find no evidence in support of either, so we present and discuss these checks in Appendix F. 30 Appendix F also discusses theoretical guidance from Chassang and Padró i Miquel on issues around false positives that arise in the longer-run.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 5,
+    "text": "One important design decision is the choice of follow up action in the event of a recorded complaint.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 13,
+    "section_name": "Strategic misreporting by workers",
+    "paragraph_id": 6,
+    "text": "Some actions (say sending someone to a training seminar) is less likely to damage a manager and benefit a malicious worker than others.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 0,
+    "text": "One may question whether our results extend to other organizational settings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 1,
+    "text": "We provide some evidence from an ongoing study by Boudreau et al.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 2,
+    "text": "The study examines barriers to reporting harassment to a worker helpline that serves 600-700 garment factories in Bangladesh.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 3,
+    "text": "It includes a survey of workers employed at factories that participate in the helpline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 4,
+    "text": "Unlike in the current study, survey participants are 30 These analyses were not pre-specified and should be interpreted as exploratory.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 5,
+    "text": "44 recruited through the community and are aware that the survey will only be used for research.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 6,
+    "text": "As of December 2024, around 2,900 workers from 208 factories have been surveyed, with a small number of surveys pending.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 7,
+    "text": "The module on workers’ experience of harassment uses the same DE and HG scripts to ask about the same types of harassment, as well as a less sensitive behavior, shouting.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 8,
+    "text": "Table A. shows a similar pattern of very low reporting rates for sensitive types of harassment under DE, with large, positive, statistically significant increases under HG. The null result on reporting of shouting is consistent with the high reporting rate under DE, and the magnitude of HG’s effect increases with the sensitivity of the behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gonzaleztorres-2025-01-15_5485.pdf",
+    "format_class": "partial_sections",
+    "section_id": 14,
+    "section_name": "External validity",
+    "paragraph_id": 9,
+    "text": "In this population, the effects appear to larger for men for threatening behavior, but are similar magnitudes for men and women for physical and sexual harassment.",
+    "warnings": ""
+  }
+]

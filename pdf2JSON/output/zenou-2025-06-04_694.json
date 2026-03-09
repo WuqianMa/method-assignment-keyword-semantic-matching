@@ -1,0 +1,2909 @@
+[
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 0,
+    "text": "The Polarization Paradox: Why More Connections Can Divide Us * Arthur Campbell C. Matthew Leister Philip Ushchev Yves Zenou ¶ June 3, 2025 Abstract We develop a simple model to examine how social network structure shapes political polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 1,
+    "text": "Despite its tractability, the model generates a rich set of equilibrium behaviors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 2,
+    "text": "First, we show that moderate views, expressed by centrist contents, bene t from a pairwise advantage and is ampli ed when it is the most common type.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 3,
+    "text": "However, when extreme views dominate, su ciently dense networks can amplify polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 4,
+    "text": "Second, we establish a non-monotonic relationship between network density and polarization, o ering a theoretical explanation for the mixed empirical evidence on the role of social media.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 5,
+    "text": "Third, we show that partial polarization is less likely in nearly regular networks than in those with more dispersed degree distributions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 6,
+    "text": "We also explore two extensions: one where agents can abstain from forwarding extreme content, and another where ideological preferences are asymmetric.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 7,
+    "text": "In both cases, the results remain, but the conditions for full or no polarization become more restrictive.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 8,
+    "text": "JEL classi cation numbers: D83, D85, L82.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 9,
+    "text": "Key words: Social networks, network density, content ltering, polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 10,
+    "text": "* We thank the participants of the Asian-Paci c Industrial Organisation Society Annual Conference, the Fifth Annual Network Science and Economics Conference, the 24th Coalition Theory Network Workshop, the 2021 Cambridge-INET Networks Webinar Series, the departmental seminars at the University of Queensland, the University of Hong Kong, and the University of Antwerp, for their helpful comments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 11,
+    "text": "The nancial support from the Australian Research Council is gratefully acknowledged.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 12,
+    "text": "Monash University, Australia.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 13,
+    "text": "E-mail: arthur.campbell@monash.edu.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 14,
+    "text": "Monash University, Australia.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 15,
+    "text": "E-mail: matthew.leister@monash.edu.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 16,
+    "text": "ECARES, ULB, Belgium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 17,
+    "text": "E-mail: ph.ushchev@gmail.com. ¶ Monash University, Australia, and CEPR. E-mail: yves.zenou@monash.edu.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "The recent rise of populism and political polarization has generated widespread concern about how political opinions form and evolve, as well as their implications for democratic institutions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "In response, a growing literature has examined the role of social networks in shaping political beliefs and behaviors.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "A prevalent view links the rise of polarization to the increasing use of social media and denser patterns of online interaction, which are said to facilitate the formation of echo chambers environments in which individuals are primarily exposed to ideologically aligned content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "These dynamics are thought to reinforce prior beliefs and limit exposure to opposing views, thereby intensifying polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "However, a more recent wave of empirical studies challenges this narrative, arguing that social media can, under certain conditions, mitigate polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "By expanding users' exposure beyond immediate social circles to include weak ties and diverse viewpoints, platforms like Twitter and Facebook may counteract ideological narrowing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "The coexistence of these two perspectives with empirical evidence supporting both highlights the need for a more nuanced theoretical understanding of how network structure in uences polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "This paper contributes to this debate by developing a theoretical framework that links the density and heterogeneity of social networks to the degree of ideological polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "Speci cally, we ask: Does greater network connectivity (i.e., denser social communication) always lead to greater polarization, or can it instead foster moderation?",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "We address this question by building a dynamic model of content di usion on random networks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "Our approach draws on the theory of random graphs and builds on recent applications in economics.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "To the best of our knowledge, our model is the rst to systematically explore the interplay between network structure and polarization in a dynamic setting with endogenous behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "Despite its simplicity, the model yields rich and realistic outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "In particular, we uncover a non-monotonic relationship between network density and polarization: intermediate levels of connectivity amplify polarization, while very sparse or very dense networks tend to promote centrist behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "This theoretical result helps reconcile the con icting ndings in the empirical literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "Our framework features a population of agents aligned with one of three ideological types left, centrist, and right positioned along a one-dimensional spectrum.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "Inspired by classical models of spatial competition in political economy and industrial organization, we assume that individuals prefer content matching their own ideology but rank centrist content higher than the opposite extreme.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "Content di uses through peer-to-peer recommendations, and the composition of forwarded content evolves endogenously over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "We nd that when centrist agents are su ciently prevalent, the equilibrium ampli es moderate views due to a pairwise advantage: centrist content is never more than one ideological step away from any agent.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "However, when extremists dominate the population, intermediate levels of network density can reinforce their in uence and lead to full polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "Strikingly, when the network becomes very dense, exposure again becomes representative of the overall population, restoring the prevalence of moderate content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "We derive several novel results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "First, we identify the thresholds at which polarization, partial polarization, or full polarization becomes the dominant behavioral outcome.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "Second, we show that the relationship between network density and polarization is highly nonlinear: polarization is most acute in networks that are neither too sparse nor too dense.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "Third, we analyze the e ects of a mean-preserving spread in the degree distribution and nd that polarization is more likely in networks with greater variance in connectivity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "This aligns with empirical concerns about super-spreaders or in uencers disproportionately shaping ideological content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "To assess the robustness of our results, we consider two key extensions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "First, we allow agents to abstain from forwarding content when exposed only to ideologically distant messages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "Even with this behavioral re nement, we nd that polarization emerges under intermediate connectivity and dispersed preference distributions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "Second, we introduce asymmetry in the ideological composition of the population and show that small deviations from symmetry shrink the regions of full or zero polarization, leading to a wider domain of partial polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "Overall, our model provides a tractable yet exible framework for understanding how network structure shapes ideological outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "It delivers new theoretical insights into when communication fosters consensus and when it fuels polarization, o ering a uni ed explanation for the mixed empirical evidence on the e ects of social media on political discourse.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 0,
+    "text": "This paper contributes to the growing literature on echo chambers, political polarization, and the role of network structure in shaping collective behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 1,
+    "text": "We build on and connect several strands of work both theoretical and empirical that explore how individual exposure to content, preferences, and network connectivity interact to determine ideological outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 2,
+    "text": "Related empirical literature A large body of empirical research examines the informational consequences of algorithmic curation and social network structure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 3,
+    "text": "Ross Arguedas et al. provide an extensive review of studies on echo chambers, lter bubbles, and selective exposure, concluding that interventions aimed at diversifying content exposure such as reducing algorithmic homophily do not consistently reduce polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 4,
+    "text": "Rather, outcomes depend on the structure of exposure and the cognitive and emotional responses of users.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 5,
+    "text": "Similarly, Terren and Borge emphasize that content ampli cation dynamics, rather than mere exposure patterns, are crucial to understanding polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 6,
+    "text": "These ndings support a key feature of our model: agents do not passively absorb what they observe; they actively choose what to forward based on their ideological preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 7,
+    "text": "Experimental evidence also points to unintended consequences of increased exposure to opposing views.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 8,
+    "text": "Bail et al. conduct a randomized experiment in which Twitter users followed bots that introduced them to opposing ideological content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 9,
+    "text": "Instead of reducing polarization, the intervention increased it especially among Republicans highlighting the potential for back re e ects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 10,
+    "text": "Levy similarly nd that moderate increases in exposure to diverse views on social media can increase polarization due to backlash or motivated reasoning, although at very high exposure levels, moderation may occur.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 11,
+    "text": "Network structure also plays a pivotal role.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 12,
+    "text": "Barberá et al. show that users embedded in denser political discussion networks tend to be more ideologically extreme, though some crosscutting ties can moderate attitudes albeit under speci c conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 13,
+    "text": "Finally, Guess et al. use a large-scale eld experiment during the 2020 U.S. election to test the e ects of altering feed algorithms on Facebook and Instagram.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 14,
+    "text": "They nd that reducing exposure to like-minded content had no signi cant impact on polarization or political attitudes, suggesting that connectivity or structural changes alone may not yield predictable e ects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 15,
+    "text": "Our model formalizes and uni es these empirical insights by introducing a dynamic framework in which agents repeatedly forward content based on their ideological preferences and social exposure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 16,
+    "text": "We characterize the steady-state distribution of forwarded content and show that it depends nonlinearly on both the degree distribution and the ideological composition of the population.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 17,
+    "text": "First, we identify threshold e ects in the relationship between network density and behavioral polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 18,
+    "text": "For a xed centrist share, there exists a critical level of network density below which centrist content dominates and above which extremist content can be ampli ed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 19,
+    "text": "Second, when the centrist population is small, intermediate levels of connectivity can generate maximal polarization even when centrist agents are numerous.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 20,
+    "text": "Third, as network density becomes very large, the behavioral distribution converges to the population's ideological composition, as agents begin to sample the full diversity of preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 21,
+    "text": "Our model is, to our knowledge, the rst to demonstrate that increasing network density can have non-monotonic e ects on polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 22,
+    "text": "Sparse networks favor centrism, since extremists are less likely to encounter reinforcing content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 23,
+    "text": "Intermediate density enables ideological sorting and ampli cation, while high density reintroduces moderation as exposure becomes representative.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 24,
+    "text": "These ndings yield new, testable implications about when connectivity fosters or mitigates polarization and complement empirical work by o ering microfounded behavioral mechanisms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 25,
+    "text": "Related theoretical literature Our paper also contributes to the theoretical literature on political polarization and opinion dynamics in networked settings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 26,
+    "text": "Levy and Razin review foundational mechanisms behind echo chambers, emphasizing how cognitive frictions such as correlation neglect can produce polarization even in the absence of extreme preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 27,
+    "text": "Their work motivates our dynamic approach, which emphasizes how behavioral responses to social exposure evolve over time.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 28,
+    "text": "Callander and Carbajal develop a dynamic model where polarization emerges endogenously through feedback loops between media content and voter behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 29,
+    "text": "While their focus is on strategic media-voter interactions, our model centers on peer-to-peer content di usion and its dependence on network structure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 30,
+    "text": "Della Lena et al. examine a ective polarization in a repeated setting where individuals interact through media and social channels.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 31,
+    "text": "Our model di ers in focusing on ideological (rather than emotional) alignment and on how content preferences shape the ow of information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 32,
+    "text": "Finally, Bolletta and Pin study dynamic opinion formation with endogenous network evolution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 33,
+    "text": "While they show how homophily and clustering can endogenously produce polarization, we instead hold the network exogenous and vary its degree distribution parametrically.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 34,
+    "text": "This allows us to isolate how the structural properties of the network alone a ect the equilibrium distribution of ideological behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 35,
+    "text": "We introduce a dynamic model of ideological content di usion with exogenous but variable network structure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 36,
+    "text": "Agents forward content aligned with their type, and behavior evolves based on what content is observed and passed on.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 37,
+    "text": "We show that polarization responds non-monotonically to network density: Centrism prevails in sparse and dense networks, but intermediate connectivity ampli es extremism.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 38,
+    "text": "This result, absent in prior models, o ers a new explanation for when network expansion can unintentionally fuel polarization despite increased exposure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 39,
+    "text": "The rest of the paper is organized as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 40,
+    "text": "Section 3 introduces our baseline model and characterizes the steady-state equilibria.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 41,
+    "text": "Section 4 presents the comparative statics with respect to the degree distribution and establishes our main result: denser networks have a non-linear e ect on polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 42,
+    "text": "In Section 5, we explore two extensions of the baseline model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 43,
+    "text": "In the rst (Section 5.1), agents are allowed to abstain from forwarding content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 44,
+    "text": "In the second (Section 5.2), we introduce asymmetry in the distribution of extremists on the left and right.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 45,
+    "text": "Section 6 concludes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 46,
+    "text": "All proofs are provided in the Appendix, with additional results available in the Online Appendix.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 47,
+    "text": "The baseline model In this section, we describe and study our baseline model of content ltering and di usion which we use to study the impact of network structure and preference distribution on polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 48,
+    "text": "We characterize the conditions under which the social transmission mechanism ampli es centrist views, and those under which it favors the extremes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 49,
+    "text": "In the latter case, we refer to the outcome as political polarization a state in which leftand right-leaning ideologies dominate public discourse at the expense of mainstream views.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 50,
+    "text": "Notation, de nitions, and preferences Consider a model of ideological competition along a one-dimensional discrete spectrum consisting of three content types: L ( left ), M ( middle ), and R ( right ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 51,
+    "text": "These correspond to political ideologies, with the centrist type M having a relative advantage in pairwise comparisons against the extremes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 52,
+    "text": "The population has unit mass, initially we assume that it is symmetrically composed of a measure ρ of individuals of type M, and a measure (1 − 's ranking of content types depends on their own ideological type, as summarized below: Type Ranking L L ≻ M ≻ R M M ≻ R R ≻ M ≻ L Each agent strictly prefers content that matches their own type.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 53,
+    "text": "In addition, a typeL or typeR individual prefers centrist ( M ) content to content from the opposing extreme.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 54,
+    "text": "A typeM individual, by contrast, is indi erent between L and R content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 55,
+    "text": "An agent will forward content of their own type if they receive at least one such recommendation from their k friends.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 56,
+    "text": "If they receive no content of their own type, they follow their preference ranking as given above to select among the recommended contents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 57,
+    "text": "In the case of a typeM individual receiving only L and R content (and thus being indi erent), they choose between the two with equal probability, i.e., 50 50. 1 We see that under these preferences type M content has a relative advantage in pairwise comparisons against either of the extremes. 1 In the baseline model, we assume that agents are required to recommend some content, even if it does not align with their preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 58,
+    "text": "In Section 5.1, we relax this assumption and allow agents particularly those who are ideologically distant from all received content (e.g., left-wing individuals receiving only right-wing content) the option to remain silent and refrain from forwarding any political content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 59,
+    "text": "We also allow M -type individuals to remain silent if none of their friends made a recommendation in the previous period.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 60,
+    "text": "Content Filtering We are interested in the steady-state distribution of political content recommendations across types as t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 61,
+    "text": "Let y t [0, 1] denote the share of middle-oriented (centrist type M ) individuals at time t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 62,
+    "text": "Accordingly, the population normalized to have total mass one comprises a fraction y t of centrists, and equal fractions 1 − y t of left-wing and right-wing individuals, respectively. 2 This implies that the share of centrists y t evolves according to y t = X k p k ρ h 1 − (1 − y t − 1 ) k i + (1 − ρ ) \" 1 + y t − 1 k − 1 − y t − 1 k #!, (1) where { p k } is the degree distribution of the social network, with k − (1 − y t − 1 ) k ], represents the probability that an individual is of type M and receives at least one recommendation of their most preferred content type ( M ) from k friends drawn uniformly at random from the population at time t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 63,
+    "text": "The second term, (1 − ρ ) h 1+ y t − 1 k − 1 − y t − 1 k i, is the probability that an individual is of type L or R and ends up recommending content of type M. This occurs when the individual hears neither: (i) content of their own (most preferred) type, nor (ii) exclusively content of their least preferred type (i.e., type R for a typeL individual, and type L for a typeR individual) from their k randomly selected friends.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 64,
+    "text": "It is convenient to rewrite this dynamic equation in terms of generating functions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 65,
+    "text": "Speci cally, equation (1) can be expressed as y t = f ( y t − 1, − G (1 − y )] + (1 − ρ ) G 1 + y − G 1 − y, (3) and G: [0, 1]",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 66,
+    "text": "Steady state equilibrium We de ne y − − − 2 μ 1 − p 1, (7) where ψ:= E \" e k 1 e k − 1 # = ∞ X k =1 kp k 1 k − 1 = G ′ 1, (8) is the 50%-discounted average degree.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 67,
+    "text": "The value ψ re ects the expected degree of a randomly chosen node, weighted by the probability that a neighbor relays a signal with probability 2 at each hop.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 68,
+    "text": "It captures how e ectively information spreads in the network starting from a single source, discounting by distance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 69,
+    "text": "The following proposition provides an exhaustive characterization of the stable steady states.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 70,
+    "text": "The steady-state equilibria de ned by (5) are characterized as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 71,
+    "text": "This proposition identi es three distinct regimes for the long-run population state y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 72,
+    "text": "the population contains enough centrist individuals to sustain some centrist behavior in the long run, but the network is not su ciently supportive to eliminate polarization altogether.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 73,
+    "text": "This re ects a society where di erent content types coexist in equilibrium: some individuals continue to endorse moderate views, while others promote extremes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 74,
+    "text": "The fact that y 's degree distribution, emphasizing that structural properties of social networks shape collective outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 75,
+    "text": "Figure 1 illustrates how the distribution of preferences maps into the distribution of behavior, 4 where behavior re ects content recommendation patterns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 76,
+    "text": "As shown in the gure, the central position of the middle-type content in the product space leads to its ampli cation when preferences are either concentrated or uniformly distributed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 77,
+    "text": "In contrast, when the preference distribution is su ciently dispersed such that extreme preferences dominate the extreme content types may be ampli ed at the expense of the middle type.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 78,
+    "text": "Comparative statics with respect to the degree distribution Our broader goal is to understand how structural features of the social network a ect the ideological landscape in the long-run.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 79,
+    "text": "In particular, we aim to address the following questions: Does increasing network density lead to more or less polarization? 4 Here, behavior refers to the act of recommending a particular type of content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 80,
+    "text": "Preferences Content No polarization:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 81,
+    "text": "L M R L M R Partial polarization:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 82,
+    "text": "L M R L M R Full polarization:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 83,
+    "text": "L M R L M R Figure 1: The mapping of the preference distribution into the behavior distribution Does heterogeneity in individuals' connectivity amplify or mitigate polarization?",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 84,
+    "text": "We now turn to the comparative statics of the stable equilibrium with respect to the degree distribution of the network.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 85,
+    "text": "First, we analyze how increased network density a ects polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 86,
+    "text": "By network density, we refer to changes in the degree distribution that are ordered according to the monotone likelihood ratio (MLR) criterion.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 87,
+    "text": "Second, we derive sharper results by focusing on a parametric family of degree distributions speci cally, the exponential distribution where density can be varied systematically.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 88,
+    "text": "Third, we investigate how a mean-preserving spread in the degree distribution a ects polarization, comparing the outcomes in more regular versus more dispersed (irregular) networks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 89,
+    "text": "The impact of a denser network: General results We de ne a denser network as one in which the degree distribution shifts in a way that the postshock distribution dominates the pre-shock distribution according to the MLR ordering.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 90,
+    "text": "Formally, consider a parametric family of degree distributions { p k (",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 91,
+    "text": "The family { p k ( ′ ) p k ( ′ >",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 92,
+    "text": "lim    1, k = 1; 0, k → 0, the degree distribution admits the following local approximation:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 93,
+    "text": "Assumption 3 o ers a second-order approximation of the degree distribution in sparse networks, capturing its local behavior as",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 94,
+    "text": "Consider a parametric family of degree distributions { p k ( θ ) } satisfying Assumptions 1-3.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 95,
+    "text": "(ii) There is a threshold b",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 96,
+    "text": "(iii) As the network becomes in nitely dense, the equilibrium content distribution converges to the share of centrists in the population:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 97,
+    "text": "Proposition 2 provides key insights into how the structure (i.e., density) of social networks a ects long-run ideological behavior in a dynamic recommendation model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 98,
+    "text": "Agents repeatedly share content aligned with their ideological preferences, but their behavior is shaped by the recommendations they receive through the network.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 99,
+    "text": "The degree distribution governs how many friends (and hence recommendations) each agent receives, making it a central determinant of content di usion.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 100,
+    "text": "Part ( i ) indicates that when the network is su ciently sparse (i.e.,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 101,
+    "text": "Finally, part ( iii ) shows that as the network becomes in nitely dense (i.e., − − 1, k",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 102,
+    "text": "Assume that the degree distribution is exponential.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 103,
+    "text": "(i) If ≺ FOSD p 1 k ≺ FOSD p 2 k, leads to partial polarization under p 0 k, no polarization under p 1 k, and partial polarization again under p 2 k.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 104,
+    "text": "This is another illustration of polarization being highly non-monotone with respect to network density.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 105,
+    "text": "(ii) If 1 9 − 2 − 2, then y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 106,
+    "text": "Proposition 3 provides a rich bifurcation structure of equilibrium behavior as a function of the network density parameter 's ideological composition.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 107,
+    "text": "Overall, Proposition 3 demonstrates how a simple change in the structure of social interactions via the degree distribution can produce complex, discontinuous shifts in ideological behavior, even when preferences are xed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 108,
+    "text": "Figure 2 illustrates the core ndings of Proposition 3, demonstrating how the equilibrium level of centrist content y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 109,
+    "text": "The impact of a mean-preserving spread on polarization We now examine how the shape of the degree distribution holding its mean xed a ects the equilibrium polarization outcome.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 110,
+    "text": "The following proposition focuses on a mean-preserving spread of the degree distribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 111,
+    "text": "Consider a mean-preserving spread of the degree distribution in which p 1 remains approximately constant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 112,
+    "text": "Then the polarization thresholds are such that",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 113,
+    "text": "Recall that the thresholds − − − 2 μ 1 − p 1, (a) · (1 / 2) e k − 1 ] is the discounted degree.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Related literature",
+    "paragraph_id": 114,
+    "text": "A meanpreserving spread increases the variance of e k while keeping",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 0,
+    "text": "In this section, we present two extensions of our baseline model to demonstrate the robustness of our main results.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 1,
+    "text": "In Subsection 5.1, we allow agents to refrain from recommending their least preferred content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 2,
+    "text": "In Subsection 5.2, we consider asymmetric distributions of preferences, and consequently, asymmetric behavioral patterns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 3,
+    "text": "Allowing for no recommendation Consider an extension of the baseline model in which agents have the option of remaining silent that is, making no recommendation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 4,
+    "text": "An M -type individual chooses silence at period t if and only if none of their friends made a recommendation at period t − 1; in other words, all their friends were silent.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 5,
+    "text": "An extreme-type agent (either L or R ) chooses silence at period t if all of their friends at t − 1 were either silent or recommended content that is two steps away from the agent's preferred type.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 6,
+    "text": "This re ects the assumption that agents remain silent when faced with a non-empty set of recommendations only if all such recommendations are two steps removed from their preferred content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 7,
+    "text": "This situation never arises for M -types, since any recommendation whether L or R is always only one step away from their ideal content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 8,
+    "text": "Let y t denote the probability that a randomly chosen agent recommends M at period t, and let s t denote the probability that an agent chooses to remain silent (i.e., makes no recommendation) at period t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 9,
+    "text": "By symmetry, the probability of recommending each type of extreme content is then given by 1 − y t − s t.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 10,
+    "text": "The state of society at period t is thus fully described by the vector ( y t, s t ), which satis es the following constraints: y t",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 11,
+    "text": "The dynamical system is now given by y t Compared to the benchmark model, where the dynamics are governed by equations (2) and (3), the key di erence is the introduction of the option to remain silent.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 12,
+    "text": "This additional behavioral choice results in a new equation, (16), that governs the evolution of silence in the population.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 13,
+    "text": "Assume that extreme-type individuals abstain from making a recommendation rather than endorsing content two steps away from their preference and that M -type individuals remain silent at period t if and only if none of their friends made a recommendation at period t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 14,
+    "text": "Then, polarization becomes less likely than in the baseline model, in the following sense:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 15,
+    "text": "(i) The non-polarized equilibrium ( y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 16,
+    "text": "(ii) In any polarized equilibrium, a strictly positive fraction of the population abstains from recommending content, that is, > 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 17,
+    "text": "(iii) The polarized equilibrium ( = 0, 1 − s",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 18,
+    "text": "The next proposition, which can be viewed as a counterpart to Proposition 2, characterizes how network density a ects the degree of polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 19,
+    "text": "(i) For sparse networks (i.e., θ close to zero), the non-polarized equilibrium is stable, and no non-trivial polarized equilibrium exists.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 20,
+    "text": "(ii) There exists a threshold b",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 21,
+    "text": "Proposition 6 shows that allowing for silence preserves the key non-monotonic relationship between network density and polarization established in the baseline model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 22,
+    "text": "Speci cally, polarization cannot arise in very sparse or very dense networks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 23,
+    "text": "In sparse networks (part (i)), individuals have few social contacts and are unlikely to encounter extreme content with enough frequency to adopt or propagate it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 24,
+    "text": "As a result, moderate behavior dominates: individuals tend to recommend centrist content, and the society avoids polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 25,
+    "text": "This re ects a form of behavioral inertia: limited exposure implies limited change.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 26,
+    "text": "As networks become denser (part (ii)), individuals are more likely to be exposed to content from like-minded peers, enabling reinforcement dynamics and the formation of echo chambers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 27,
+    "text": "This facilitates behavioral polarization: a large share of the population recommends only extreme content, while others abstain from engagement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 28,
+    "text": "The presence of silence as an option further ampli es this dynamic, as individuals prefer to withdraw rather than recommend content far from their preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 29,
+    "text": "In very dense networks (part (iii)), the diversity of content exposure increases again, weakening echo chamber e ects.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 30,
+    "text": "Individuals encounter a wider mix of views, including moderate ones, which restores balance and leads to convergence toward a centrist, non-polarized equilibrium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 31,
+    "text": "From a behavioral perspective, exposure to diverse viewpoints enabled by higher connectivity acts as a moderating force.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 32,
+    "text": "Interior equilibria are generally di cult to characterize analytically under an arbitrary degree distribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 33,
+    "text": "To gain sharper insights, we therefore restrict attention to the exponential degree distribution de ned in (14), parameterized by the density parameter",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 34,
+    "text": "     0,; solves ρ 1 − θ + (1 − ρ ) 16(1 − θ ) (2 − − 4; (17)      0,; 2 θ − 1 4 θ − (2",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 35,
+    "text": "Under the exponential degree distribution (14) with density parameter",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 36,
+    "text": "Proposition 7 delivers a full characterization of equilibria under an exponential degree distribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 37,
+    "text": "Finally, compared to the baseline model without silence, polarization is less likely in the current extension.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 38,
+    "text": "This is visible in the lower critical value b 's capacity to sustain centrism or polarization critically depends on the prevalence of centrist agents and the density of social ties.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 39,
+    "text": "Silence acts as a behavioral lter: rather than forcing agents to recommend misaligned content, it o ers an exit option.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 40,
+    "text": "This introduces a damping mechanism on polarization and leads to more realistic participation dynamics capturing real-world political apathy, abstention, or content fatigue.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 41,
+    "text": "Figure 3 illustrates Proposition 7 for the exponential degree distribution with the density parameter θ = 0. 8.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 42,
+    "text": "Each of the three panels shows the loci of ( s t − 1, y t − 1 ) -pairs under which, respectively, y t = y t − 1 and s t = s t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 43,
+    "text": "The intersection points of the two loci are steady-state equilibria. 6 Panel 3a shows that, when",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 44,
+    "text": "Allowing for asymmetry Our second robustness check relaxes the assumption of symmetry in the distribution of extreme agents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 45,
+    "text": "Speci cally, let − 1 − ρ 2, 1 −",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 46,
+    "text": "Type L M R Fraction 1 − ρ 2 − −",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 47,
+    "text": "(a) The case of the non-polarized stable equilibrium:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 48,
+    "text": "As a result, the fractions of L -type and R -type agents are no longer symmetric around the centrist share",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 49,
+    "text": "l t The second terms of the right-hand side of equations (19) and (20), given respectively by ρ l t − 1 l t − 1 + r t − 1 G ( l t − 1 + r t − 1 ) and ρ r t − 1 l t − 1 + r t − 1 G ( l t − 1 + r t − 1 ), re ect the following behavioral convention: if each friend of an M -type agent recommends either L - or R -type content (and none recommend M -type), then the agent is indi erent and randomizes uniformly across the observed recommendations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 50,
+    "text": "Speci cally, if an M -type agent has k friends, of whom recommend L -type content while the remaining k − j recommend R -type, then the agent adopts the L -type recommendation with probability j/k.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 51,
+    "text": "The expression l t − 1 l t − 1 + r t − 1 G ( l t − 1 + r t − 1 ) thus represents the conditional probability that an M -type agent recommends L -type content, which can be derived algebraically as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 52,
+    "text": "l t − 1 l t − 1 + r t − 1 X k p k ( l t − 1 + r t − 1 ) k = l t − 1 X k p k ( l t − 1 + r t − 1 ) k − 1 = l t − 1 X k p k k − 1 X j =0 l j t − 1 r k − 1 − j t − 1 k − 1 j = X k p k k X j =1 l j t − 1 r k − j t − 1 k − 1 j − 1 = X k p k k X j =1 l j t − 1 r k − j t − 1 j k k j, where the last line gives the full expression for the probability that an M -type agent randomly adopts an L -type recommendation when exposed only to extreme content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 53,
+    "text": "As in Section 3, we de ne a non-polarized equilibrium as a steady state in which no agent recommends extreme content (i.e., l",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 54,
+    "text": "We obtain the following results for a right-skewed preference distribution ( ε > 0 ):",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 55,
+    "text": "(ii) There exists a threshold",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 56,
+    "text": "If p 2 is not too large, then",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 57,
+    "text": "Proposition 8 characterizes how the steady-state equilibrium of the system depends on the centrist share 's ideological distribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 58,
+    "text": "It shows that even a small departure from symmetry in the distribution of extreme agents signi cantly alters the long-run behavior of the system.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Extensions",
+    "paragraph_id": 59,
+    "text": "When the population becomes slightly more skewed toward R -type individuals (i.e.,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 0,
+    "text": "We have developed a simple yet powerful model that illustrates how the structure of social networks in uences the di usion of political content and the degree of ideological polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 1,
+    "text": "Despite its tractability, the model yields rich equilibrium behavior and o ers insights into when connectivity fosters consensus versus when it ampli es division.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 2,
+    "text": "First, we show that centrist content bene ts from a pairwise advantage since no agent is more than one ideological step away from the center which leads to ampli cation of moderate views when centrists are su ciently prevalent.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 3,
+    "text": "However, when extremist preferences dominate, su ciently dense networks can reinforce polarization by enabling like-minded individuals to encounter and forward extreme content.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 4,
+    "text": "This mechanism may help explain the rise in political polarization observed in settings like the United States.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 5,
+    "text": "Second, we establish that the relationship between network density and polarization is non-monotonic: intermediate levels of connectivity are most likely to generate polarization, while very sparse or very dense networks tend to favor moderation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 6,
+    "text": "This nding helps reconcile con icting empirical results on the impact of social media on political attitudes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 7,
+    "text": "Third, we nd that partial polarization is less likely to arise in regular networks compared to those with a more dispersed degree distribution.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 8,
+    "text": "This suggests that heterogeneity in connectivity i.e., the presence of highly connected individuals or in uencers can foster fragmentation and ideological sorting, even when average exposure remains unchanged.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 9,
+    "text": "We also explore two robustness extensions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 10,
+    "text": "In the rst, agents are allowed to abstain from forwarding ideologically distant content, which acts as a moderating force but does not eliminate polarization under dispersed preferences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 11,
+    "text": "In the second, we introduce asymmetry in the distribution of ideological types and nd that both fulland no-polarization outcomes become less robust, making partial polarization more likely.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 12,
+    "text": "A promising direction for future work is to endogenize the network formation process.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 13,
+    "text": "Agents could strategically choose their connections based on ideological proximity or content alignment, leading to endogenous echo chambers or ideological segregation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 14,
+    "text": "Such an extension would provide a deeper understanding of how social fragmentation and polarization co-evolve but would be less tractable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 15,
+    "text": "Our results also suggest important policy implications.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 16,
+    "text": "E orts to reduce polarization by increasing exposure to diverse views may back re if implemented in networks with intermediate density.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 17,
+    "text": "Instead, interventions should consider both the ideological composition of the population and the structure of communication.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 18,
+    "text": "Policies that promote broad, weakly tied connections rather than highly clustered ones may be more e ective in counteracting polarization.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 19,
+    "text": "Moreover, limiting the in uence of highly connected individuals or amplifying centrist voices could help stabilize moderate discourse in politically fragmented societies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 20,
+    "text": "Proofs of all results in the main text Proof of Proposition 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 21,
+    "text": "Let us start with the following lemma, which will be useful later in proving the uniqueness of a stable equilibrium.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 22,
+    "text": "(ii) Only one of the three mutually exclusive statements holds:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 23,
+    "text": "Proof of Lemma 1. ( i ) By di erentiating (3) with respect to y, we obtain:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 24,
+    "text": "f y ( y, ′ (1 − y ) + (1 − ρ ) 1 2 G ′ 1 + y + 1 2 G ′ 1 − y. (21) Combining (21) with (?? ) proves ( i ). ( ii ) Equation (21) implies that f y ( y, ρ, ) is convex with respect to y, since it is a convex combination of three convex functions of y, that is, G ′ (1 − y ), G ′ 1+ y, and G ′ 1 − y.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 25,
+    "text": "Hence, f yyy ( y, (0, 1).",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 26,
+    "text": "f yy (0,; f yy (0,; f yy (1,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 27,
+    "text": "This proves ( ii ) and completes the proof. □ We rst prove that the stable steady state is unique.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 28,
+    "text": "From the de nition (3) of the f -function, one can see that both y = 0 and y = 1 are solutions to the steady state condition (5); hence, they are both steady states.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 29,
+    "text": "If the alternative ( ii.a ) from Lemma 1 prevails, the f -function lies below the 45 ◦ -degree line for all y ◦ - degree line for all y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 30,
+    "text": "Finally, if the alternative ( ii.b ) from Lemma 1 takes place, and f y (0,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 31,
+    "text": "Hence, f ( y, ρ, { p k } ) − y > 0 in the vicinity of y = 0, and f ( y, ρ, { p k } ) − y < 0 in the vicinity of y = 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 32,
+    "text": "By the intermediate value theorem, there must be y ·,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 33,
+    "text": "f y (0, ρ, { p k } ) > 1 ⇐− y ] y =0 > 0; f y (1, ρ, { p k } ) > 1 ⇐− y ] y =1 > 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 34,
+    "text": "Hence, it must be that − y ] y = y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 35,
+    "text": "Since 1 − 1+ y = (1 − y ) − 1 − y = 1 − y 2, we have G (1) − G 1+ y > G (1 − y ) − G 1 − y, due to convexity of G ( · ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 36,
+    "text": "Hence, f □ Proof of Proposition 2 We will need the following Lemma.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 37,
+    "text": "Under Assumptions 1-3, ′ 1 ( θ ) > 0, let us rst rewrite (7) as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 38,
+    "text": "Let us rewrite the expression μ ′ 1 ( − 1 + p ′ 1 ( θ ) 1 − p 1 ( θ ), which we need to sign, as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 39,
+    "text": "μ ′ 1 ( − 1 + p ′ 1 ( θ ) 1 − p 1 ( ′ k (    0, k = 1; k − 1 − 1 − 1 − p 1 (",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 40,
+    "text": "μ ′ 1 ( − 1 = P ∞ k =1 ( k − 1) p ′ k ( − 1) p k ( θ ), p ′ 1 ( θ ) 1 − p 1 ( θ ) = − P ∞ k =1 (1 − ) p ′ k ( − 's delta.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 41,
+    "text": "The sequence { a k ( \" − \" to \" + \":",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 42,
+    "text": "μ ′ 1 ( − 1 + p ′ 1 ( θ ) 1 − p 1 ( θ ) = X l>k 0 p ′ l ( − X 0 p ′ k ( − a k ( θ )) = A \"X l>k 0 p ′ l ( − X 0 p ′ k ( − a k ( θ ) A # > A inf l>k 0 p ′ l ( − sup 0 p ′ k ( ′ l ( ′ k ( ′ l ( ′ k (",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 43,
+    "text": "This proves that ρ ′ ( θ ) > 0, and completes the proof. □ We now proceed with the proof of Proposition 2. ( i ) From Lemma 2 and the intermediate value theorem, the equation; hence, lim",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 44,
+    "text": "If;; (0, 1) (partial polarization); ⋛ ⇐⋚ b",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 45,
+    "text": "Thus, ( ii ) follows from Proposition 1. ( iii ) The result follows immediately if we set □ Proof of Proposition 3 The generating function of the exponential distribution (14) is given by:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 46,
+    "text": "Plugging this generating function into (3) and solving the steady-state condition (5), it is readily veri ed that the closed form for the stable steady-state equilibrium y − ρ − 2 − θ ) − (1 − − ρ − 2 − θ ) − (2 yθ + 1 −",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 47,
+    "text": "lim − (1 + 3 − 16 ρ > 0 ⇐",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 48,
+    "text": "This proves ( i ). ( ii ) If 1 9 < − 2, we have e y ( − ρ − 4 − 2, we have e y ( − ρ − 4 □ Proof of Proposition 4 First, consider the impact of a mean preserving spread on ρ 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 49,
+    "text": "Assume rst that p 1 remains unchanged as a result of the mean-preserving spread.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 50,
+    "text": "Then, as the expression k · (1 / 2) k − 1 is a convex function of k for all k · (1 / 2) e k − 1 i increases in response to a mean-preserving spread.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 51,
+    "text": "From (6), the threshold value",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 52,
+    "text": "Consider now the impact of a mean-preserving spread on □ Proof of Proposition 5 From (15)-(16), the steady-state conditions are:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 53,
+    "text": "y The Jacobian evaluated at a steady state ( y",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 54,
+    "text": "(29) ( i ) The no-polarization case is an equilibrium ( y − s",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 55,
+    "text": "The trace and the determinant of J (1, 0) are given, respectively, by:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 56,
+    "text": "From the Vieta theorem, the eigenvalues of J (1, 0) are given by:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 57,
+    "text": "The no-polarization equilibrium is stable i | λ i | < 1 for i = 1, 2, which in turn holds i the following condition holds:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 58,
+    "text": "   0,; μ 1 2 − 1 μ 1 2 − p 1,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 59,
+    "text": "s = ρG ( s ) + (1 − − ρ G ′ (1) > 1, or, equivalently,     ρG ′ (1) + (1 − ρ ) G ′ 1+ − 1 − ′ 1+ s ′ + 1 − ′ 1+    , its eigenvalues being ′ (1) + (1 − ρ ) G ′ 1+ s ′ + 1 − ′ 1+ s ′ 1+ < 1 (which occurs if, for example, the network is su ciently dense, hence G ′ ( · ) is close to zero almost everywhere).",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 60,
+    "text": "If both these conditions hold, we get polarized equilibrium is stable ⇐− G ′ 1+ ′ (1) − G ′ 1+ s − G ′ 1+ ′ (1) − G ′ 1+ < 1 − G ′ 1 G ′ (1) − G ′ 1 = ρ 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 61,
+    "text": "This completes the proof. □ Proof of Proposition 6 ( i ) The polarized equilibrium fails to exist if − 1 1 + ρ.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 62,
+    "text": "This proves non-existence of a polarized equilibrium for very sparce networks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 63,
+    "text": "The stability of the non-polarized equilibrium follows from Proposition 5 ( i ) and Lemma 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 64,
+    "text": "This proves ( i ) ( ii ) We proceed in three steps.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 65,
+    "text": "b   1 − G x 1+ s ( − G x 1+ s (  , where s (",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 66,
+    "text": "It is readily veri ed that s ( ·, ·,",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 67,
+    "text": "S tep 2: proof that b ρ > 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 68,
+    "text": "As the denominator in 1 − G x ( 1+ s ( − G x ( 1+ s ( − G x 1+ s (",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 69,
+    "text": "Thus, 1 − G x 1+ s ( − s",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 70,
+    "text": "Such xists because 1 − G x ( 1+ s ( − G x ( 1+ s ( ′ x (1, θ ) + (1 − ρ ) G ′ x 1 + s ( ′ x (1, θ ) + (1 − ρ ) G ′ x 1 + s □ Proof of Proposition 7. ( i ) Under the exponential degree distribution, the fraction s",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 71,
+    "text": "We need the following Lemma.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 72,
+    "text": "Proof of Lemma 3. ( a ) By plotting m ( ⋛ 1 ⇐⋚ 0. 75, as one can see from Figure 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 73,
+    "text": "This proves ( a ). ( b ) Evaluate",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 74,
+    "text": "The inequality □ Figure 5: How",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 75,
+    "text": "We now proceed with the proof of Proposition 7 ( i ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 76,
+    "text": "From Lemma 3 ( a ), the stability condition (33) or the polarized equilibrium fails to hold when for",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 77,
+    "text": "( ii ) We will now show that an interior equilibrium ( y − 1, we have: s t ⋛ s t − 1 ⇐⇒ y t − 1 ⋚ỹ ( s t − 1 ), (35) whereỹ ( s ): Similarly, because the RHS of the dynamic equation (15) is increasing with respect to s t, we have: y t ⋛ y t − 1 ⇐⇒ s t − 1 ⋛ e s ( y t − 1 ), (37) where e s ( y ): The interior steady state, if it exists, must be an intersection point of two curves on the ( s, y ) -plane given by the equations:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 78,
+    "text": "y = e y ( s ), s = e s ( y ), (39) where the functions e y ( s ) and e s ( y ) are de ned by, respectively, (36) and (38).",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 79,
+    "text": "From (35) and (37), it is clear that the two curves in (39) correspond to the loci of, respectively, y t = y t − 1 and s t = s t − 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 80,
+    "text": "Furthermore, one can show that the function e s ( y ) is always concave, while the function e s ( y ) is always decreasing and convex.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 81,
+    "text": "Hence, the two curves have at most one interior intersection point.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 82,
+    "text": "The necessary and su cient conditions for the two curves to have an interior intersection point are as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 83,
+    "text": "First, the e s ( y ) curve must be less steep at ( y, s ) = (0, 1) than the e y ( s ) curve: 1 − 1 2 − (1 − − ρ < 1 − − − θ − p 4 ρ − 4",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 84,
+    "text": "( iii ) The expression − 1 4 θ − 2 θ 2 − 1 for the exponential degree distribution can be obtained by plugging p 1 ( θ ) = 1 − − □ Proof of Proposition 8.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 85,
+    "text": "( i ) The steady-state conditions of the two-dimensional dynamical system (19)-(20) are given by:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 86,
+    "text": "It is readily veri ed that the non-polarized equilibrium ( l − ρ 2 − ε G ′ (1) + 1+ ′ (0) 1 − ′ (1) + 1+ ρ 2 − ε G ′ (0)!.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 87,
+    "text": "The eigenvalues of the Jacobian are as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 88,
+    "text": "As we focus on the case of right-skewed preference distributions ( − 2 μ 1 − p 1 + 2 ε.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 89,
+    "text": "Hence, the steady-state conditions (42) (43) become:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 90,
+    "text": "If the rst steady-state condition holds for some l − l − ρ − ε G ′ (1) + ρ + 1 − ′ (0) > 1, which, in turn, holds true if and only if ρ < 1 − 2 − p 1 μ 1 + p 1 − 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 91,
+    "text": "Because we assume ε > 0 to be small, this condition is likely to be satis ed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 92,
+    "text": "The Jacobian of the dynamical system (19)-(20) evaluated at the polarized equilibrium is given by:",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 93,
+    "text": "[ 1 − ′ + 1 − ρ 2 − ε G ′ ( r ′ (1) − 1) ′ (1) − 1) ′ (1) − 1) [ 1 − ′ + 1 − ρ 2 − ε G ′ ( r − ′ ( l − ρ − ε G ′ ( r ′ (1); − ′ ( l − ρ − ε G ′ ( r",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 94,
+    "text": "Hence, ⋛ 0 ⇐⇒ 2 G 1 G ′′ 1 2 − G 1 1 − G ′ 1 ⋛ 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 95,
+    "text": "This inequality holds with \" > \" when p 2 is not too large.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 96,
+    "text": "To see this, set p 2 = 0 rst.",
+    "warnings": ""
+  },
+  {
+    "file_name": "zenou-2025-06-04_694.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Concluding remarks",
+    "paragraph_id": 97,
+    "text": "By continuity, the same is true if p 2 is positive but not too large.",
+    "warnings": ""
+  }
+]

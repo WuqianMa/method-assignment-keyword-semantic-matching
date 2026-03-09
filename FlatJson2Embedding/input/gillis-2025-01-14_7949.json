@@ -1,0 +1,2963 @@
+[
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 0,
+    "text": "Regulating Algorithms: What and When Talia Gillis Scott Nelson Jann Spiess December 2024 Abstract The regulation of algorithmic decisions, ranging from advanced credit scoring to employment screening, presents unique challenges in aligning firm behavior with regulatory goals, as well as renewed opportunities to develop the timing and methods of regulation and scrutiny.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 1,
+    "text": "We propose a framework for algorithmic regulation that emphasizes the importance of temporal stages in the regulatory pipeline: ex-ante (pre-training), ex-interim (post-training but pre-deployment), and ex-post (post-deployment).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 2,
+    "text": "Regulators can choose both the pipeline stage targeted by the legal rule (“rule timing”) and the stage at which compliance is assessed (“scrutiny timing”).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 3,
+    "text": "We analyze the tradeoffs between different regulatory regimes and highlight how ex-interim rules offer a unique opportunity in algorithmic settings compared to the rigidity of ex-ante rules or the bluntness of ex-post rules, and explore the considerations that guide whether regulators might scrutinize ex-interim rules before or after deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 4,
+    "text": "Using our temporal taxonomy of rule and scrutiny timing, we situate emerging and proposed AI regulations and outline an agenda for developing tools to regulate AI effectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 5,
+    "text": "Authors are listed in alphabetical order.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 0,
+    "section_name": "Preamble",
+    "paragraph_id": 6,
+    "text": "We thank Laura Blattner for earlier input and discussions, and Ritha Sarf for excellent research assistance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 0,
+    "text": "In many high-stakes domains of algorithmic decision-making, there is a misalignment between the objectives of AI system developers and deployers, and those of regulators.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 1,
+    "text": "Firms deploying algorithmic systems may prioritize profitability or other private benefits, while regulators may have additional or differing concerns, such as the distributional effects of those decisions and their impact on safety and market stability.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 2,
+    "text": "These differences in preferences, compounded by information asymmetries and the costs of regulation, present a fundamental challenge—how should algorithmic decisions be regulated?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 3,
+    "text": "This chapter examines various regulatory approaches available for overseeing algorithmic decision-making, with a particular focus on the temporal design of rules and compliance scrutiny.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 4,
+    "text": "Our goal is to illuminate the trade-offs between different approaches and highlight the unique opportunities afforded by algorithmic settings compared to more traditional decision-making contexts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 5,
+    "text": "In our principal–agent framework, a firm (agent) develops and deploys a policy for automated decisionmaking—such as a lender creating a loan-underwriting model to maximize profits—while a regulator (principal) considers additional societal objectives like fairness, safety, or systemic risk.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 6,
+    "text": "The regulator aims to design a regulatory regime that addresses the misalignment of preferences, while accounting for information and cost constraints.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 7,
+    "text": "The game between regulator and lender plays out around two key phases.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 8,
+    "text": "In the training phase, some initial data become available, and the firm implements its algorithm using these data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 9,
+    "text": "Next, in the deployment phase, the resulting algorithmic policy is applied for decision-making on new data—such as real-time loan applications—the particulars of which might not be fully knowable at the training phase.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 10,
+    "text": "We argue that in algorithmic settings, there is a unique opportunity to design regulation around these two phases of model training and deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 11,
+    "text": "We highlight two temporal dimensions of regulation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 12,
+    "text": "The first dimension concerns the stage of the algorithmic pipeline targeted by a legal rule: ex-ante (before the training phase), ex-interim (after training but before deployment), or ex-post (after deployment).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 13,
+    "text": "Ex-ante rules constrain how training data can be used for building models, even before the data becomes available.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 14,
+    "text": "For instance, restrictions on permissible inputs limit the range of models without relying on specific training data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 15,
+    "text": "Ex-interim rules apply after the model has been trained but before deployment, and constrain the models adopted by the firm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 16,
+    "text": "For example, one way these rules can operate is by allowing regulators to inspect and test models prior to those models’ deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 17,
+    "text": "Finally, ex-post rules target the deployment stage, where regulators evaluate the outcomes of the deployed model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 18,
+    "text": "These outcomes reflect both the algorithmic policy and the particulars of the real-world environment—deployment state—that are only knowable at this stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 19,
+    "text": "For example, regulators may investigate disparities in realized lending decisions, which are a consequence of both the deployed algorithmic policy and the realized distribution of applicants.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 20,
+    "text": "The second temporal dimension concerns the timing of compliance scrutiny.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 21,
+    "text": "A legal rule can be scrutinized at a stage later than the one it targets.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 22,
+    "text": "For example, an ex-ante rule might be scrutinized not only during the ex-ante stage but also at the ex-interim or ex-post stages following model development and/or deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 23,
+    "text": "Similarly, ex-interim rules may be scrutinized either during the ex-interim stage or later at the ex-post stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 24,
+    "text": "By explicitly modeling these two temporal dimensions—the timing of rules and the timing of scrutiny—this chapter maps the space of possible regulatory regimes and explores the trade-offs associated with different approaches.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 25,
+    "text": "Our main insight is that ex-interim rules represent a potentially powerful tool for regulating algorithmic policies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 26,
+    "text": "Unlike ex-ante interventions, ex-interim rules are less rigid because they account for the specific models developed based on the training data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 27,
+    "text": "Compared to ex-post interventions, ex-interim rules are less blunt since they more directly target the conduct of the firm, as they do not depend on the realization of outcomes, which are also a function of the random deployment state that the firm has no control over.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 28,
+    "text": "Crucially, ex-interim rules, particularly when scrutinized before deployment, can help prevent the materialization of harmful outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 29,
+    "text": "This offers an important opportunity in algorithmic settings compared to more traditional decision-making contexts.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 30,
+    "text": "For example, in decision-making based on human discretion, there is no ex-interim stage where a policy is fully described or describable prior to deployment, leaving only rigid ex-ante or blunt ex-post regulation as feasible options.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 31,
+    "text": "To illustrate the potential value of ex-interim scrutiny, consider a financial regulator overseeing credit decisions by a lender.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 32,
+    "text": "The regulator may, for example, be concerned with ensuring that not too many loans are given to risky borrowers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 33,
+    "text": "But how many such loans are given, and how many borrowers actually default, depends not only on the lender’s algorithmic policy, but also on which borrowers actually apply and how the economic environment affects their repayment behavior.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 34,
+    "text": "While the algorithm is under the lender’s control, some of these additional factors are not.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 35,
+    "text": "Scrutinizing the lender only based on realized outcomes may, therefore, be inefficient since it risks punishing the lender for bad luck rather than bad decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 36,
+    "text": "Asking the question of whether the algorithmic policy itself was reasonable may lead to a more targeted regulatory policy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 37,
+    "text": "Furthermore, such scrutiny is already possible before the lending rule is deployed and, thus, before any harm is done.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 38,
+    "text": "The desirability of ex-interim rules, however, depends crucially on the cost of scrutinizing compliance by the firm with restrictions at each stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 39,
+    "text": "If scrutiny of the ex-interim stage is more resource-intensive than checking ex-post rules—for instance, because ex-post rules leverage easily measurable outcomes, while applying ex-interim rules may require accessing the training data and evaluating a highly complex algorithmic process—then regulation based on ex-interim rules may be less attractive for a resource-constrained regulator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 40,
+    "text": "Despite these caveats, we illustrate in an example that ex-interim scrutiny can have value even in cases when it has higher cost, since targeting the firm’s conduct directly allows the regulator to align preferences in a more precise way than overly static or overly noisy ex-ante and ex-post rules can.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 41,
+    "text": "The effectiveness of ex-interim rules also depends on factors such as the relationship between the training signal and the deployment state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 42,
+    "text": "For example, if the training data used by a lender closely resembles the real-world distribution of borrowers, the outcomes of the deployment stage are more likely to reflect the decisions made during the training phase.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 43,
+    "text": "In such cases, ex-post rules are less likely to target noise or unexpected factors unknown to the developer at the training stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 44,
+    "text": "We connect our framework to emerging approaches in AI regulation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 45,
+    "text": "We begin by developing a temporal taxonomy of regulatory approaches, characterized by both the stage of the algorithmic decision-making pipeline that the rule targets and the timing at which compliance with the rule is assessed and scrutinized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 46,
+    "text": "This taxonomy mirrors the timing in our theoretical framework, and it enables us to explore how the full range of regulatory options has been addressed in existing regulations, proposed frameworks, and policy discussions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 47,
+    "text": "Within each temporal approach, we argue that regulators can adopt a variety of legal rule types, ranging from “mandates,” which impose specific restrictions, to “evaluation obligations,” which require firms to demonstrate that they have considered risks, evaluated alternatives, and implemented measures, such as risk-management systems, to address regulatory concerns.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 48,
+    "text": "We consider all these legal rule types as mechanisms to constrain the algorithmic policies adopted by firms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 49,
+    "text": "Our chapter contributes to the interdisciplinary literature on regulatory design as it relates to AI, spanning economics, law, political science, computer science, and data science more broadly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 50,
+    "text": "Recent work examines the design of regulations for algorithmic decision-making and the trade-offs faced by regulators when aligning firm incentives with broader societal objectives eiro2023regulating,cowgill2020algorithmic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 51,
+    "text": "Work by Kleinberg et al. and Kleinberg et al. emphasizes the opportunities for ex-interim legal rules in algorithmic settings, where training models are determined pre-deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 52,
+    "text": "While they emphasize the potential to inspect ex-interim decisions following post-deployment disparities, our work extends these insights by emphasizing additional temporal dimensions in the regulatory pipeline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 53,
+    "text": "Specifically, we study the trade-offs between regulating algorithms before and after deployment, building on our previous work introducing the concept of algorithmic explainers and stress testing at the ex-interim stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 54,
+    "text": "Other related work has drawn on existing and emerging AI regulatory frameworks, across countries and regulatory tools, such as licensing and auditing, which we consider within our temporal framework.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 55,
+    "text": "Our work also builds on literature documenting and considering the various AI risks, such as existential risks, privacy, and fairness, and the tensions between innovation and addressing potential risks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 56,
+    "text": "By relating these different policy considerations to the regulatory timing in algorithmic pipelines, we demonstrate the trade-offs of legal rule timing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 57,
+    "text": "While we highlight some representative examples here, this list is not exhaustive, as the literature on AI regulation continues to grow rapidly.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 58,
+    "text": "Our analysis also relates to the classic law and economics literature on optimal regulatory design, which discusses the choice of regulatory restriction types, the design of legal enforcement mechanisms and the impact of enforcement costs on optimal legal rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 59,
+    "text": "The remainder of this chapter proceeds as follows.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 60,
+    "text": "Section II introduces our framework, modeling regulation as a game between a firm deploying an algorithm and a regulator overseeing its use.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 61,
+    "text": "Section III illustrate key considerations through a simple example.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 62,
+    "text": "Section IV highlights the model’s key insights and situates them within related work, emphasizing the unique opportunity that algorithmic regulation provides to scrutinize decisions before deployment and the materialization of harm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 63,
+    "text": "This section also discusses some important limitations of our framework.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 64,
+    "text": "Section V presents our taxonomy of regulatory approaches and connects the theoretical framework to current debates on AI regulation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 65,
+    "text": "Finally, Section VI proposes some directions for future research.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 66,
+    "text": "II. A Framework for Algorithm Deployment and Regulation In this section, we model the regulation of algorithms as a game between a firm that deploys an algorithm and a regulator that oversees its use.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 67,
+    "text": "The regulator can impose restrictions on the algorithmic policies selected by the firm, with the type of restriction depending on the stage of the decision-making timeline targeted by the regulatory rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 68,
+    "text": "Rules that target the ex-ante stage are limited to simple restrictions, such as input restrictions, that do not rely on training data, which becomes available only at a later stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 69,
+    "text": "Rules that target the ex-interim stage focus on restricting algorithmic policies that emerge after the firm accesses the training data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 70,
+    "text": "Finally, rules targeting the ex-post stage impose restrictions based on the observed impact of the algorithmic policies after deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 71,
+    "text": "The regulator’s choice of the timing of the rule depends on the relative costs of each approach, and whether the approach can sufficiently address the regulator’s objectives.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 72,
+    "text": "Additionally, the regulator must decide when to scrutinize compliance with a rule, which can also impact the cost of regulatory oversight.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 73,
+    "text": "A key example is whether to evaluate compliance with ex-interim restrictions immediately, prior to deployment, or to defer scrutiny until after deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 74,
+    "text": "Using our general framework, we consider several regulatory regimes and discuss additional frictions arising in the context of very complex algorithms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 75,
+    "text": "We then provide a simple example to demonstrate the trade-offs between different regulatory options, highlighting the opportunity for algorithmic regulation to target algorithmic decisions even before they have been deployed and possibly scrutinize compliance before harm can materialize at deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 76,
+    "text": "II. Setup We model a game between a firm (agent) deploying an algorithm and a regulator (principal) overseeing its use.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 77,
+    "text": "The firm chooses an algorithmic policy f from some set F. Although our framework is more general, we think of this algorithmic policy as a mapping f: X ’s goal, e.g. by additional fairness or risk considerations.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 78,
+    "text": "Both objectives depend on the state of the world ̂ ’s algorithm on the training data τ to come up with the algorithmic policyf̂ ̂ ̂ ̂ ̂ ̂ τ ) to the regulator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 79,
+    "text": "However, the firm’s first-best choice may have undesirable properties from the perspective of the regulator, such as when a lender’s credit-scoring policy excludes part of the target population or leads to excess ex-ante regulator chooses ̂ ̂ ̂ ̂",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 1,
+    "section_name": "Introduction",
+    "paragraph_id": 80,
+    "text": "The regulator, therefore, may want to restrict the firm’s choice of algorithmic policy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 0,
+    "text": "Regulatory interventions in our game can target, and happen at, three points in time: before the training phase (ex-ante); between the training and deployment phases (ex-interim); and after deployment (ex-post).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 1,
+    "text": "Ex-ante, the regulator can decide on general restrictions on how the firm is allowed to process training data that does not depend on the particular training data that is later realized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 2,
+    "text": "For example, the regulator may generally rule out the use of some prohibited features.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 3,
+    "text": "Alternatively, a rule targeting the ex-interim stage, after the training sample τ is available and the firm chooses its algorithmic policy, can determine whether a particular algorithmic rulef̂ ̂ ̂ τ depends solely on the processed data, so thatf̂ τ =f̂ ̂ τ, and may depend on the training data itself.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 4,
+    "text": "That is, these rules take the formf̂ ̂ τ. This could also include restrictions on functional forms that the lender is allowed to consider beyond pre-processing of the training data, such as ex-ante restrictions to the functional form.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 5,
+    "text": "For ex-post rules, tests take the form whether g θ (f̂ · ( · ) is fixed and predefined, while the choice of the set G θ expresses the regulator’s actual restriction.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 6,
+    "text": "When there are disparity concerns, then g ̂ T ), and that checking g (f̂ ̂ ̂ ̂ —that is, which information the specific rule is based on—and the scrutiny timing —that is, when the rule is scrutinized.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 7,
+    "text": "This taxonomy is discussed in greater detail in Section V below.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 8,
+    "text": "We assume that ex-interim scrutiny implies that the regulator forces the firm to choose a permissible functionf̂ ̂ —such as when a regulator uses materialized harm for targeting auditing efforts of ex-interim compliance—may involve the cost of testing ex-post c ex-post as well as the cost of ex-interim testing c ex-interim, for firms that are selected for auditing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 2,
+    "section_name": "Target and Timing of Regulation",
+    "paragraph_id": 9,
+    "text": "Throughout, we consider the case where the regulator commits to a deterministic regulatory policy (in the form of ex-ante rules",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 0,
+    "text": "We now make these different regulatory options concrete by listing five specific regulatory regimes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 1,
+    "text": "We consider the case where ex-ante rules can be scrutinized for free,c̄ ex-ante = 0, which expresses the idea that restrictions on pre-processing may be easy to verify.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 2,
+    "text": "Ex-interim rules costc̄ ex-ante to enforce, no matter the complexity of the rule. 4 Finally, we assume that inspecting outcomes comes at a flat cost ofc̄ ex-post.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 3,
+    "text": "Typically, we would assume that ex-post rules are cheap to enforce while checking ex-interim rules may be more costly (c̄ ex-interim >c̄ ex-post 0 =c̄ ex-ante ) since they require inspecting the complex algorithm (and possibly the training data) beyond the realized consequences of algorithm deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 4,
+    "text": "The five regulatory regimes we consider are:",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 5,
+    "text": "In the laissez-faire regime, there are no regulatory constraints, and the firm is free to choose anyf̂",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 6,
+    "text": "If the regulator performs an ex-interim audit, the regulator paysc̄ ex-interim and chooses b F τ, and the firm choosesf̂ ̄ ex-post to choose G ̂ ̂ ̂ τ ) −c̄ ex-post since the algorithmic policy is already deployed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 7,
+    "text": "If the regulator imposes ex-interim rules based on an ex-post audit, the regulator first tests based on an ex-post rule g θ (f̂ ̄ ex-post, whether to perform an in-depth audit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 8,
+    "text": "If the rule is violated, the regulator pays an additionalc̄ ex-interim and chooses b F ̂ τ ) iff̂ ̂ ̂ ̄ ex-post + δc̄ ex-interim.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 9,
+    "text": "While these regulatory options could be combined in principle, we consider them separately to simplify our analysis.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 3,
+    "section_name": "Regulatory Regimes",
+    "paragraph_id": 10,
+    "text": "Throughout, we assume that regulator and firm maximize expected utility and profit, respectively.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 0,
+    "text": "Our approach to ex-interim regulation of algorithms is built around tests of the formf̂ ’s choicef̂ τ, or the firm may be limited in its ability to share all the algorithm’s details for privacy or intellectual property reasons.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 1,
+    "text": "Instead, the regulator may have to rely on simplified (typically low-dimensional) 4 An alternative would be to distinguish between simple and complex restrictions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 2,
+    "text": "Simple restrictions would be of the formf̂ ̄ simple ex-interim 0.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 3,
+    "text": "This would include restrictions on the functional form that is separate from the actual coefficients.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 4,
+    "text": "Complex restrictions would be of the more general formf̂ ̄ complex ex-interim >c̄ simple ex-interim, where the allowable functions themselves depend on the data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 5,
+    "text": "descriptions of algorithmic decisions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 6,
+    "text": "In practice, these could take the form of variable-importance measures, simpler proxy models, or evaluations at a limited number of data-points.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 7,
+    "text": "In our model, we capture the restriction that the regulator may not be able to fully capture complex AI algorithms by restrictions of the form F;",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 8,
+    "text": "That is, rather than being able to distinguish between all functions f “discrimination stress testing” based on evaluating an algorithmic policy by evaluating it at specific test points.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 9,
+    "text": "III. Regulation in an Illustrative Example In order to illustrate insights from our general model, we now provide a simple instance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 10,
+    "text": "Specifically, we consider a lender as our firm, who selects between three decision rules for allocating credit, namely a risky rule that expands credit to many borrowers, a conservative rule that provides credit only to highly safe borrowers, and an imprecise rule that adds unnecessary noise, f ∈{ great, good, bad }. The lender generally prefers the risky to the conservative policy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 11,
+    "text": "The financial regulator prefers expanding credit access in the high state, but is concerned about harm to marginal borrowers who cannot repay their loans in the low state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 12,
+    "text": "So the regulator prefers the risky rule to be used in the high state and the conservative rule in the low state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 13,
+    "text": "Neither the regulator nor the lender prefer the imprecise rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 14,
+    "text": "Concrete profits and regulator utility that represent these rank-orderings are provided in Table 1.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 15,
+    "text": "Lender profit − 1 great bad f = conservative good good f = imprecise 0 0 bad bad Table 1: Lender and regulator payoffs in the example.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 16,
+    "text": "In the training phase, we assume that the lender receives a noisy signal %. If it is ̂",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 17,
+    "text": "We now consider the different regulatory regimes from Section II. in this example.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 18,
+    "text": "Throughout, we assume that the regulator aims to maximize expected utility, that the regulator can punish the lender by setting profit to Π = − 6 (e.g. by excluding it from making profits in the future), that the cost for ex-interim tests isc̄ ex-interim = c with 0 < c < 3, and that ex-ante and ex-post tests are not costly (c̄ ex-ante = 0 =c̄ ex-interim ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 19,
+    "text": "The different regulatory regimes then play out as follows:",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 20,
+    "text": "In the laissez-faire regime without regulatory constraints, the lender always chooses the risky algorithm, leading to expected lender profit of 4 and regulator utility of 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 21,
+    "text": "If the regulator can only impose ex-ante rules of the formf̂ τ =f̂",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 22,
+    "text": "If the regulator imposes an ex-post rule, they can punish the lender as a function of the outcome in the deployment state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 23,
+    "text": "In the example, a plausible option would be to punish the lender (by imposing profit Π = − 6) whenever the bad outcome materializes ( g θ (f̂",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 24,
+    "text": "If the regulator intervenes at the interim stage, they can pay a fee ofc̄ to impose restrictions on the choice of the lender based on the training signal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 25,
+    "text": "Here, this would imply a restriction to the regulator’s preferred choice,f̂      { risky },",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 26,
+    "text": "In this case, the overall expected regulator utility, net of cost, is 2. 75 −c̄, which is an improvement over the other options as long as the cost is small enough ( c <. 75).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 27,
+    "text": "The expected lender profit in this case is 3.75.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 28,
+    "text": "The regulator could also intervene in the ex-post stage, but still use ex-interim information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 29,
+    "text": "In this case, a natural policy would be to only scrutinize the training phase if the risky algorithmic policy was deployed in the low state.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 30,
+    "text": "In this case, if the regulator threatens to pay a costc̄ to check whether the lender chosef̂ ̂ τ = risky are realized, then it would push the lender to implement the preferred choicef̂ τ =      risky,",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 31,
+    "text": "However, the cost is now lowered toc̄/ 4, since the ex-interim scrutiny only happens in the case of a low deployment state following the optimistic training signal, for an expected regulator utility (net of cost) of 2. 75 −c̄/ 4.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 32,
+    "text": "Expected lender profit is unchanged at 3.75.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 33,
+    "text": "Of course, the results would change with different parameters and variants of the model.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 34,
+    "text": "For example, assume that the regulator could impose simple restrictionsf̂ ∈{ risky, conservative }, which would make effective regulation impossible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 35,
+    "text": "Instead, an effective way of summarizing complex functions has to be mindful of the source of preference misalignment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 36,
+    "text": "Here, this would mean that a coarsening into, say, { risky } and { conservative, imprecise } would do the job, since it preserves all the information relevant to the misalignment between lender and regulator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 37,
+    "text": "IV. General Implications for Regulating Algorithms The prior section introduced a model of a regulator leveraging ex-ante, ex-interim, and ex-post tools to regulate a firm that deploys an algorithmic policy.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 4,
+    "section_name": "Frictions from Algorithmic Complexity",
+    "paragraph_id": 38,
+    "text": "In this section, we highlight three key implications of the model and discuss them in connection with other related work.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 0,
+    "text": "First, we observe that the ex-interim stage—something we argue is unique to the algorithmic context—has value from a regulatory perspective.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 1,
+    "text": "To see this, contrast the option of ex-interim intervention with several possible ex-post regulatory regimes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 2,
+    "text": "One such ex-post regime is to penalize the firm for undesirable outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 3,
+    "text": "While this helps align preferences, it risks penalizing the firm for deployment-state realizations beyond its control, such as external market conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 4,
+    "text": "This undermines the primary goal of many legal rules, which is to target specific unwanted conduct rather than impose strict liability for all adverse outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 5,
+    "text": "The regulator then faces a trade-off, as in a classic delegation problem, between a penalty being either so mild that it leads to excessive realizations of bad outcomes from the regulator’s perspective, or so strict that it leads to overly conservative behavior by a risk-averse firm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 6,
+    "text": "Ex-interim regulation, in contrast, allows the regulator, in principle, to target precisely the aspects of the firm’s conduct that are under the firm’s control.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 7,
+    "text": "In our model, ex-interim rules can even lead to first-best outcomes for the regulator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 8,
+    "text": "As an extreme case, if there is no cost to ex-interim tests (c̄ ex-interim = 0), then ex-interim audits generally dominate ex-ante and ex-post rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 9,
+    "text": "First, ex-interim tests of the formf̂ ̂ τ =f̂ ̂ ̂ ’s algorithmic policy into a lower-dimensional representation that shows how it behaves in a few (carefully chosen) dimensions, can constrain the firm’s behavior in ways targeted at the principal–agent preference misalignment; in general, this leads to second-best outcomes unless misalignment is very severe and high-dimensional.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 10,
+    "text": "Gillis and Spiess develop a related ex-interim regulatory approach that involves deploying the algorithmic policy on test data—an approach they refer to as “stress testing” an algorithm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 11,
+    "text": "Inspired by bank stress testing, under this approach, a model is tested under a hypothetical materialization of the deployment state θ that is unknown to the developer during model training.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 12,
+    "text": "In contrast with Blattner, Nelson, and Spiess, whose explainer tool can be thought of as examining ex-interim how an algorithmic policy behaves on several columns (variables) of data, the Gillis and Spiess approach can be thought of as examining algorithm behavior on several rows (individual observations) of data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 13,
+    "text": "This has the advantage of potentially being easier to implement than an explainer and may also be a well-suited tool when misalignment is best summarized by different preferences over a few (high-dimensional) examples rather than by a few data features.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 14,
+    "text": "Another consideration is that the form of optimal regulation depends on the relationship between the training and deployment state, as well as the effectiveness of ex-post punishments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 15,
+    "text": "In settings where training and deployment data are very similar, scrutiny based on ex-interim rules may be unnecessary and scrutiny based on ex-post outcomes may be sufficient, provided that effective ex-post punishment leads to high compliance with the ex-post rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 16,
+    "text": "On the other hand, if there is substantive additional uncertainty about the deployment state, then optimal regulation is likely to include ex-interim rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 17,
+    "text": "If there is limited room for ex-post punishment, then such rules should also be enforced at the interim stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 18,
+    "text": "More broadly, the distinction between ex-interim and ex-post regulation parallels the distinction between certification regimes and enforcement regimes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 5,
+    "section_name": "The Value of Ex-Interim Regulation",
+    "paragraph_id": 19,
+    "text": "Consider how the US regulates car safety, which at a high level can be viewed as a combination of (1) supervising car manufacturers’ car development process and certifying a car model as meeting safety standards at the pre-production stage, and (2) periodically investigating cars’ safety performance in the “deployment” state of being driven, either through annual safety inspections (as mandated in some US states) or through NHTSA-ordered recalls (at the federal level). ( Ex-ante regulation of cars, meanwhile, might take the form of restrictions on which types of cars can even be designed, for example, maximum allowable axle length.) Algorithmic decision-making enables such ex-interim regulation to be used for a broader set of economic activity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 0,
+    "text": "A second implication of our framework is that, even if regulation is more feasible or cost-effective to apply expost—for example, because of the costc̄ ex-interim of accessing the training data—any ex-post regulatory tools will optimally also include ex-interim information.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 1,
+    "text": "This follows from a logic similar to that in the preceding subsection: effective regulation should optimally target the actual conduct, rather than only possibly noisy consequences.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 2,
+    "text": "Section V below points to some real-world examples of such interventions, and Section III provides a theoretical illustration.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 3,
+    "text": "To build intuition for this result, an analogy from a classic example in the economics of regulation may be helpful.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 4,
+    "text": "Consider the case of cost-of-service regulation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 5,
+    "text": "In cost-of-service regulation, an agent (e.g., a price-regulated electric utility) is compensated with revenue that is approximately affine in specific components of their per-unit cost structure, such as capital and fuel expenses, assuming demand is close to price-inelastic.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 6,
+    "text": "This incentive scheme penalizes the agent for other cost realizations that are less observable and verifiable, such as expenses related to certain forms of research and development, which are not factored into the compensation rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 7,
+    "text": "Unlike traditional agents, who cannot be effectively regulated at the ex-interim stage by promising a certain level of profits (as opposed to revenue) in return for incentive-aligned choices at the interim stage due to the difficulty of observing and verifying their actions, an algorithmic agent offers an opportunity for ex-interim regulation because its processes and decisions—such as model development and data usage—can, in theory, be observed by a regulator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 8,
+    "text": "However, if scrutinizing ex-interim decisions is costly for the regulator, it may be optimal to only scrutinize the ex-interim decision in the case of particularly adverse ex-post outcomes; in the case of a regulated electric utility, this could be a high price of electricity in the bad state of the world where expensive research and development did not yield the cost savings that the utility anticipated.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 9,
+    "text": "There are cases where ex-post scrutiny based on ex-post rules alone can be effective or desirable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 10,
+    "text": "For example, if the regulator in an extension of our model would be able to impose arbitrary penalties, then they could align preferences based on realized outcomes alone (e.g. by imposing a penalty ̂ τ ) − U θ (f̂ τ )).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 6,
+    "section_name": "The Optimal Form of Ex-Post Scrutiny",
+    "paragraph_id": 11,
+    "text": "However, if the firm has limited liability, transfers are limited otherwise, or it is infeasible to observe or estimate the necessary utility differences even ex-post, then effective regulation without ex-interim scrutiny may become inefficient.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 0,
+    "text": "When might ex-ante regulation still be valuable in the algorithmic setting?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 1,
+    "text": "A third important takeaway from our framework is an understanding of cases in which ex-ante regulation may be valuable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 2,
+    "text": "To recap, in our model, ex-ante restrictions refer to limitations on algorithmic restrictions that do not rely on any training or deployment data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 3,
+    "text": "This ex-ante regulation can take several forms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 4,
+    "text": "In our model, they take the form of pre-processing of the data, and capture the ex-ante exclusion of specific inputs before training happens.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 5,
+    "text": "In a broader sense, we could think of simple ex-ante restrictions as also including restrictions to simple functional forms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 6,
+    "text": "The two leading cases in which ex-ante regulation makes sense within our framework are when the cost of implementing ex-post and especially ex-interim rules is very high (such as when accessing training and deployment data is complicated), and when misalignment can be easily captured by preferences over which inputs to use (such as when the regulator wants to enforce that only certain variables are used for pricing by a firm).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 7,
+    "text": "But when exinterim and ex-post rules are easily enforced, then they subsume any ex-ante rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 8,
+    "text": "However, the trade-offs between ex-ante and downstream rules can become more complex when additional frictions are involved.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 9,
+    "text": "In a related model that introduces frictions through algorithm complexity, Blattner, Nelson, and Spiess considers when it might be optimal to ex-ante restrict an algorithmic agent to use only simple models.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 10,
+    "text": "Their analysis points to several such conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 11,
+    "text": "First, if the loss from restricting to simple models is small, or if misalignment between regulator and lender is particularly severe, then ex-ante restrictions to simple models can be beneficial.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 12,
+    "text": "Second, if the regulator cannot observe the training state and if their regulator’s prior is relatively uninformative about the training state, ex-interim tools may have less use.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 13,
+    "text": "Concerns about artificial intelligence presenting an existential risk for society often reflect some combination of these conditions: an uninformative prior about the training of AI tools, or a perception of severe misalignment, or a belief in the loss from using simple models being modest.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 14,
+    "text": "A specific case of ex-ante regulation involves restricting which inputs an algorithm can access.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 15,
+    "text": "Typically, such input restrictions are considered in the context of anti-discrimination regulation for protected characteristics, such as race or gender.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 16,
+    "text": "While input-based regulation is often considered fraught in the era of “big data”, given how high-dimensional combinations of permitted inputs can be used to proxy for a forbidden input, Liang et al. [, presented at this conference,] makes the case for input-based restrictions to achieve certain fairness goals.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 7,
+    "section_name": "Cases for Ex-Ante Regulation",
+    "paragraph_id": 17,
+    "text": "Relative to Blattner, Nelson, and Spiess, the setup in Liang et al. highlights several conditions that contribute to ex-ante restrictions being valuable: the principal has limited uncertainty about the training or deployment state, so that the form of optimal regulation is relatively knowable from the ex-ante perspective; and the principal and agent have particularly strong misalignment (in the form of strong fairness preferences of the regulator). 5 IV.4",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 0,
+    "text": "Our framework necessarily excludes some features that may also be relevant for the context-specific regulation of algorithms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 1,
+    "text": "One important consideration not included above is the demand for privacy and other normative 5 An interesting intermediate case is whether input restrictions can productively be combined with the Blattner, Nelson, and Spiess explainer tool.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 2,
+    "text": "For example, if the explainer that a regulator has access to is too low-dimensional to sufficiently capture the misalignment with the firm, but the regulator additionally has access to ex-ante restrictions on model inputs, then combining an ex-interim explainer that targets some model features with an ex-ante restriction on using other model features may be optimal.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 3,
+    "text": "considerations in algorithmic regulation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 4,
+    "text": "Ex-ante restrictions on certain model inputs, for example, may be justified either by privacy concerns or by concerns about whether including these features per se in a model would be ethically undesirable.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 5,
+    "text": "In addition, our model focuses on the regulator scrutinizing the algorithmic policy actually chosen by the firm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 6,
+    "text": "Some regulatory approaches instead on the procedure that generated these algorithmic decisions from training data, beyond pre-processing of the data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 7,
+    "text": "This procedure—that is, the actual algorithm—is represented in our model as the mapping from training data to algorithmic policy, ̂ τ. The regulator in our model scrutinizes the algorithm’s outputf̂ ̂ τ. In our model, we focus on the chosen policy since only this realization ultimately gets deployed and enters the regulator’s utility.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 8,
+    "text": "In addition, in practice, training algorithms may involve manual steps that are hard to capture fully.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 9,
+    "text": "Nevertheless, there could be cases where scrutiny already happens before training data is available or in which communicating the training data may be infeasible.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 10,
+    "text": "In those cases, scrutinizing how training data is generally processed—that is, analyzing the full mapping ̂ τ —may be part of effective regulation as a variant of our ex-interim approach.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 11,
+    "text": "Another relevant question we have not addressed is how the regulator learns about the markets they are regulating, which may be particularly relevant in some emerging algorithmic settings where regulatory precedent is scant.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 12,
+    "text": "The regulator’s data collection may also interact with competing firms’ incentives to differentially disclose data to the regulator. 6 We also do not consider the question of how frequently to audit a firm, or how to target these audits (e.g., the resource-constrained regulator’s problem of whether to audit a small firm with probable rule violations, or a larger firm with less likely, but potentially more widespread, rule violations).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 13,
+    "text": "Finally, we only consider the decision of the firm on how to turn training data into algorithmic policies, but not their decision on which training data to acquire in the first place.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 14,
+    "text": "Especially questions of fairness can be as much about which data is used as about how the algorithm is trained, and obtaining high-quality data that represent the deployment distribution well may be a costly investment that firm and regulator have different preferences over.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 15,
+    "text": "V. A Taxonomy of Emerging Regulatory Approaches In this section, we examine how our framework informs and connects to emerging regulatory strategies for AI and ongoing policy debates.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 16,
+    "text": "Our earlier discussion highlighted how regulators face choices over the stage of intervention within the lifecycle of algorithmic development or deployment—and the distinctive opportunities presented by algorithmic settings.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 17,
+    "text": "Here, we build upon these stages to form a taxonomy of regulatory approaches and show how examples from current discussions around AI governance fall within this scheme.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 18,
+    "text": "Our taxonomy is based on the distinction between “rule timing” and “scrutiny timing”, which we now make more explicit.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 19,
+    "text": "By “rule timing,” we refer to the phase in the development or deployment pipeline that a rule is designed to govern.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 20,
+    "text": "In contrast, “scrutiny timing” pertains to the stage at which compliance with that rule is assessed—whether before training, after training and before deployment, or after deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 21,
+    "text": "This distinction underscores the temporal choices regulators must navigate: not only when to impose rules but also when to 6 For an interesting related analysis, see work in Callander and Li [ also presented at this conference].",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 22,
+    "text": "evaluate adherence to them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 23,
+    "text": "Table 2 illustrates the temporal choices available to regulators.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 24,
+    "text": "While ex-ante rules—such as input restrictions— can theoretically be scrutinized at any of the three stages (e.g., as part of a pre-development licensing process, monitored ex-interim, or evaluated only after deployment), other rule timings impose more limited scrutiny options.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 25,
+    "text": "For example, an ex-interim rule, such as a requirement on the model’s fit to the training data, can only be scrutinized during or after the ex-interim stage (e.g., at the ex-interim or ex-post stage), but not ex-ante, since scrutiny of the relationship of the model to training data cannot occur before the training data is available.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 26,
+    "text": "Scrutiny timing → ex-ante (before training) ex-interim (between training and deployment/during development) ex-post (after deployment) Rule timing ↓ ex-ante (before training) Legal rule targets the ex-ante stage and is scrutinized ex-ante.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 27,
+    "text": "Example: input restrictions (ex-ante rule) that are required for a license (ex-ante scrutiny).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 28,
+    "text": "Legal rule targets the pre-development stage but is only scrutinized at the development stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 29,
+    "text": "Example: demonstrating compliance with an input restriction (ex-ante) through a submission of a conformity assessment before model deployment (ex-interim) Legal rule targets pre-development stage but is only scrutinized ex-post.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 30,
+    "text": "Example: demonstrating compliance with an input restriction (ex-ante) through a post-hoc analysis following a claim that a model caused unfair outcomes for a minority group. ex-interim (between training and deployment/during development) N/A Legal rule targets development stage and is scrutinized pre-deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 31,
+    "text": "Example: an explainer of model weights (ex-interim) that must be documented and reported to the regulator.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 32,
+    "text": "Legal rule targets development stage but is only scrutinized at deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 33,
+    "text": "Example: Evaluation of whether inappropriately trained model parameters (ex-interim) were the cause of disparities at deployment (ex-post). ex-post (after deployment) N/A N/A Legal rule targets outcomes and is scrutinized at deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 34,
+    "text": "Example: Deployment impact assessments (ex-post) showing the true impact on different groups.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 35,
+    "text": "It is important to recognize that within each rule–scrutiny temporal choice, regulators can deploy a wide variety of rule types.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 36,
+    "text": "Policy discussions around the regulation of AI generally fall into two broad categories.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 37,
+    "text": "The first category comprises mandates, where legal rules prescribe specific conduct.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 38,
+    "text": "Mandates can take the form of clearly defined directives, such as input restrictions or requirements to conform to specified standards, which are often referred to in the law and economics literature as “rules”. Alternatively, mandates may include more flexible requirements that, while subject to interpretation, are primarily designed to enforce compliance with specific obligations (e.g., ensuring the representativeness of training datasets).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 39,
+    "text": "These types of standards, though adaptable, function closer to mandates because their focus is on achieving compliance with a predetermined requirement.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 40,
+    "text": "The second category, which we term evaluation obligations, covers legal requirements aimed at demonstrating deliberation and risk consideration rather than prescribing specific actions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 41,
+    "text": "Evaluation obligations typically require actors to engage in processes like conducting assessments, evaluating risks, or documenting decisionmaking without dictating particular outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 42,
+    "text": "In the law and economics framework, these are often closer to “standards,” as their interpretation depends on the specifics of the context and is often assessed ex-post.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 43,
+    "text": "For example, a rule requiring a developer to identify and mitigate foreseeable risks through a documented process would fall under evaluation obligations, as its focus is on promoting transparency, accountability, and iterative risk management. 7 Both categories of legal rules—mandates and evaluation obligations—can, in principle, correspond to any combination of rule timing and scrutiny timing represented in Table 2.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 44,
+    "text": "Relative to the formal model in Section II, we apply the three temporal stages and possible regulatory interventions more broadly in this section to encompass a wider range of instruments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 45,
+    "text": "While our focus is on scrutiny through public enforcement, private enforcement, such as private litigation, can also play a role in ensuring compliance; however, this scrutiny typically occurs ex-post, following the materialization of harm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 8,
+    "section_name": "Other Considerations",
+    "paragraph_id": 46,
+    "text": "Below, we examine the various choices of rule timing and how these rules can be scrutinized at different stages of algorithmic development and decision-making.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 0,
+    "text": "Ex-ante rules, applied prior to the development of an algorithm, cover a range of regulatory tools, including restrictions or requirements regarding future functions the firm may develop.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 1,
+    "text": "Within the model, we considered a particular type of ex-ante restriction, where only a specific aspect of the training signal “social behavior or known, inferred, or predicted personal or personality characteristics” for uses not in the context in which the information was collected.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 2,
+    "text": "Another example in the EU AI Act is the prohibition on the use of emotion recognition in workplaces or educational institutions (except for medical and safety reasons).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 3,
+    "text": "Within our model in Section II, this are restrictios on the aspects of the training signal available to the firm (mandate), which can be imposed on firms already at the ex-ante stage before the particular training state τ is known.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 4,
+    "text": "Another type of ex-ante rule, not captured explicitly by our model’s definition of ex-ante rules and more in the spirit of Footnote 1, could be an evaluation obligation that requires model developers to assess and document potential risks associated with the type of algorithmic policy they intend to create.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 5,
+    "text": "These obligations aim to ensure that risks are considered at the earliest stages of the pipeline, to allow for risk mitigation before development 7 Although this distinction can be helpful in considering the different ways in which requirements operate, the distinction between them may be blurred at times.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 6,
+    "text": "For example, a legal rule may require the establishment of a risk management system.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 7,
+    "text": "If the obligation specifies how the system should be set up, such as defining required steps, documentation protocols, or adherence to certain standards, it aligns more closely with a mandate (even if it is a flexible standard).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 8,
+    "text": "If the obligation focuses on the process of identifying and managing risks, leaving the specifics of implementation open to interpretation, it is better classified as an evaluation obligation.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 9,
+    "text": "In this case, the rule emphasizes deliberation and ongoing assessment rather than compliance with a predefined structure.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 10,
+    "text": "Article 9 of the EU AI Act, which requires the establishment of a risk management system considering foreseeable risks to “health, safety or fundamental rights,” would likely fall into the evaluation obligation category, as it focuses on process-oriented compliance.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 11,
+    "text": "Below we consider how both ex-ante mandates and evaluation obliglations can be scrutinized at any point in the pipeline.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 12,
+    "text": "There are several reasons why a regulatory regime might choose to scrutinize ex-ante rules already during the pre-development stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 13,
+    "text": "If the mere collection and storage of data introduce significant risks— such as when dealing with highly sensitive information like biometric data or if there is a concern about models leaking or being stolen—it may be preferable to ensure compliance before development begins rather than defer scrutiny to a later stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 14,
+    "text": "Additionally, in high-risk domains that pose substantial safety concerns, regulators may seek to limit which entities are permitted to develop AI for certain purposes, requiring these entities to demonstrate that they have sufficient safeguards in place.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 15,
+    "text": "Anderljung et al., for example, proposes requiring a governmental license for developing AI models in certain safety-critical and high-risk industries such as air travel, power generation, and manufacturing.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 16,
+    "text": "In these examples, the regulator is more risk-averse than the model developer, creating friction that makes it undesirable to scrutinize the model at a later stage, as discussed in Section II. Ex-ante scrutiny often takes the form of a licensing regime, where a firm is permitted to proceed to the development stage only after meeting specific conditions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 17,
+    "text": "These conditions might include demonstrating compliance with input restrictions (mandate) or adequately addressing potential risks through documented risk assessments (evaluation obligation).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 18,
+    "text": "Ex-interim scrutiny.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 19,
+    "text": "Rather than scrutinizing an ex-ante rule during the pre-development stage, a regulator might opt to scrutinize compliance during the ex-interim development stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 20,
+    "text": "For example, the EU AI Act requires deployers of high-risk AI systems to produce a report demonstrating that their systems comply with the Act’s requirements (see Annex VII of European Union ).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 21,
+    "text": "In some cases, a “notified body”—a designated third party—is tasked with certifying these conformity assessments.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 22,
+    "text": "These assessments often include ex-ante restrictions, such as prohibitions on the use of certain sensitive personal data (mandate) or requirements to identify and mitigate risks at the pre-development stage (evaluation obligation).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 23,
+    "text": "In certain circumstances, a notified body’s refusal to certify the assessment may halt further development, effectively making the third-party approval an ex-interim scrutiny of certain ex-ante requirements.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 24,
+    "text": "Similarly, Anderljung et al. suggest that certain AI models should require a government license pre-deployment, depending on the developer’s ability to demonstrate compliance with certain safety standards, which could include ex-ante restrictions or requirements.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 25,
+    "text": "Ex-post scrutiny refers to evaluating compliance with legal rules after an AI system has been deployed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 26,
+    "text": "Scrutinizing an ex-ante rule at this later stage may be particularly desirable when the cost of auditing and assessing compliance is particularly high, as discussed in Section II, in which case the regulator might selectively scrutinize the ex-ante rule when observing a particular outcome at deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 27,
+    "text": "For instance, a regulator might choose to consider whether a firm has complied with an input restrictions on using protected characteristics only if the deployed model results in significant racial disparities.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 28,
+    "text": "In line with this approach, Article 79 of the EU AI Act allows for market surveillance authorities to evaluate an already deployed AI system with respect to its compliance with the Act’s obligations, covering rules that target any stage of the algorithmic life-cycle, including rules that relate to pre-development.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 9,
+    "section_name": "Ex-Ante Rules",
+    "paragraph_id": 29,
+    "text": "While this approach allows regulators to focus costly enforcement efforts, it also raises challenges in cases where immediate intervention is needed to prevent ongoing or widespread harm.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 0,
+    "text": "Ex-interim rules apply to the model development stage, after training data is available but before deployment, and therefore relate to rules that restrict or constrain the algorithmic function once the training state τ is known.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 1,
+    "text": "At this point in time, the regulator can impose rules that relate to the training signal and the concrete function trained on that data.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 2,
+    "text": "As described in Section II., ex-interim rules can be restrictions on the functionf̂ τ and may depend on the training data itself.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 3,
+    "text": "For instance, a regulator might assess whether a better algorithmic rule could have been implemented based on the information available during training, using tools such as explainers or stress-testing frameworks, as discussed in Section IV. 8 For example, Article 9 of the EU AI Act requires a risk management system that considers the foreseeable risks to “health, safety or fundamental rights” at deployment (evaluation obligation).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 4,
+    "text": "Similarly, the proposed Canadian Artificial Intelligence and Data Act (AIDA), requires that firms developing high-impact AI systems establish measures to “identify, assess, and mitigate risks of harm or biased output” before the system is deployed.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 5,
+    "text": "Another type of ex-interim requirement puts restrictions on the training dataset—which can be understood as targeting the training signal —serve as examples of ex-interim rules.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 6,
+    "text": "For instance, Article 10 of the EU AI Act mandates that AI systems use training, validation, and testing datasets that satisfy quality standards, such as relevance, representativeness, and absence of prohibited biases. 9 Sometimes ex-interim rules take the form of evaluation obligations, which indirectly constrain the particular model firms are able to adopt.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 7,
+    "text": "However, in practice, precisely defining the boundaries of the ex-interim and ex-post stage can be challenging, particularly when developers engage in iterative testing or smaller-scale internal evaluations that blur the line between development and deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 8,
+    "text": "This ambiguity complicates the enforcement of ex-interim rules, especially when scrutiny is intended to take place before individuals are impacted by an AI system.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 9,
+    "text": "As noted earlier, ex-interim rules cannot be scrutinized at the ex-ante stage because compliance with a future requirement cannot be assessed before the relevant activities take place.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 10,
+    "text": "Therefore, scrutiny of ex-interim rules typically occurs during the ex-interim or ex-post stages.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 11,
+    "text": "Ex-interim scrutiny.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 12,
+    "text": "Ex-interim scrutiny refers to the evaluation of compliance with ex-interim rules during the model development stage, prior to deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 13,
+    "text": "This type of scrutiny ensures that developers adhere to requirements in real-time as the system is being developed rather than after deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 14,
+    "text": "Under the EU AI Act, providers of high-risk AI systems are required to maintain detailed documentation of their development processes, including demonstrating how training data meets specified standards.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 15,
+    "text": "Regulators or third-party entities, such as notified bodies, may review this documentation during the development phase to verify compliance, so that these ex-interim evaluation obligations are scrutinized ex-interim. 8 In our framework, we jointly consider obligations for both developers of AI systems and those who deploy them.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 16,
+    "text": "However, in practice, the deployer of an AI system may not be the same as the developer.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 17,
+    "text": "For instance, a lender (user) might use a credit scoring model created by a third party (developer).",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 18,
+    "text": "Legal frameworks such as the EU AI Act recognize this distinction and impose separate obligations on developers and deployers.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 19,
+    "text": "For tractability, we consider these obligations jointly. 9 While this requirement might seem somewhat vague and open to interpretation, we classify it as an ex-interim mandate rather than an evaluation obligation, as it imposes restrictions on developers during the model development stage rather than a requirement to generally assess risks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 20,
+    "text": "Ex-interim scrutiny is particularly valuable for addressing risks that may be difficult or costly to mitigate after deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 21,
+    "text": "However, this approach often requires significant regulatory resources and access to the development process, which can be burdensome.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 22,
+    "text": "As a result, regulators may prefer to allocate enforcement resources to ex-post scrutiny, where compliance is prioritized based on realized outcomes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 23,
+    "text": "Ex-post scrutiny refers to the evaluation of compliance with the ex-interim rule after the deployment of the AI system.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 24,
+    "text": "Where regulators are risk neutral relative to firms, it may be beneficial for regulators to only scrutiny ex-interim compliance after there is ex-post materialized harm or some other indication of lack of compliance to selectively target enforcement efforts to the most concerning incidents.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 25,
+    "text": "Discrimination law often functions as an ex-post scrutiny of ex-interim decision-making.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 26,
+    "text": "For example, while review under the disparate impact doctrine is triggered by ex-post disparities, 10 the primary consideration of whether an entity engaged in prohibited disparate impact, for example, an employer who uses a screening tool that selects men at a higher rate than women, is whether there is a “business justification” for the policy that led to the disparity.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 27,
+    "text": "Because this justification relates to whether the AI system was meant to predict job performance, for example, this would be scrutinizing the model development stage.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 28,
+    "text": "Similarly, the Community Reinvestment Act triggers scrutiny of banking lending policies when financial institutions fail to adequately provide loans to lowand moderate-income areas they service.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 10,
+    "section_name": "Ex-Interim rules",
+    "paragraph_id": 29,
+    "text": "In this vein, Kleinberg et al. argue that algorithms provide an important opportunity for transparency by enabling the inspection of the training model—which they refer to as the “screener” algorithm—once decision disparities are detected, to enforce discrimination laws.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 0,
+    "text": "Ex-post rules are designed to address materialized harm rather than anticipated risks.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 1,
+    "text": "Unlike ex-ante or exinterim rules, which focus on preventing potential issues before deployment, ex-post rules are reactive, assessing harm that has, at least partially, already occurred.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 2,
+    "text": "As discussed in Section II, the materialized harm is a function of the modelf̂ and training signal “[t]his conclusion should be as obvious as it is tautological: there can be no disparate impact unless there is a disparate impact.” 635 F.2d at 191-92.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 3,
+    "text": "assessments made pre-deployment.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 4,
+    "text": "As noted earlier, some rules combine ex-post and ex-interim elements.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 5,
+    "text": "Ex-post rules enable regulators to focus enforcement efforts on actual harms rather than theoretical risks that may never materialize.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 6,
+    "text": "However, liability that extends beyond the monitoring and reporting requirements—such as a determination of illegal disparate impact—may also require scrutiny of an ex-interim rule.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 7,
+    "text": "In such cases, the ultimate finding of liability often hinges on whether the deployer or developer complied with ex-interim rules, such as demonstrating that the model’s design and data usage were justified and aligned with legitimate business purposes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 8,
+    "text": "Ex-post rules are less desirable in high-risk domains where regulators may prioritize preventing harm before it materializes.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 9,
+    "text": "However, when firms are more risk-averse than policymakers, ex-post rules may lead to overly conservative behavior that is not socially optimal, particularly since outcomes depend on the deployment state θ, which is beyond the firm’s control.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 10,
+    "text": "The trade-offs involved in harm regulation, including negligence-based and strict liability approaches, have been extensively examined in the law and economics literature.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 11,
+    "text": "VI. An Agenda on Building Tools for AI Regulation The unique opportunity for novel approaches to regulation in algorithmic settings also suggests a broad agenda for future research.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 12,
+    "text": "We close with a few highlights from what we see as a wide-open area.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 13,
+    "text": "On the one hand, this chapter argues that there are already clear opportunities for the effective regulation of algorithms.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 14,
+    "text": "Among those is that regulation in an algorithmic setting can already intervene at an ex-interim stage where a firm has designed an algorithmic policy but has not yet deployed it.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 15,
+    "text": "The framework developed here, building on some of our other work, helps articulate why this ex-interim stage has value.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 16,
+    "text": "Our framework also shows the broad—but not universal— conditions under which a regulator would prefer ex-interim regulation over more traditional ex-ante or ex-post interventions.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 17,
+    "text": "Drawing on insights from the landscape of emerging AI regulation in practice, we also show how the option to delay the scrutiny of these ex-interim processes until a later ex-post stage can have added benefit beyond an ex-interim approach alone.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 18,
+    "text": "On the other hand, we see a long list of unanswered questions, including some related to how our conclusions above extend (or do not) to settings with other features than those considered here.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 19,
+    "text": "Among other open issues discussed in Section V, we see it as particularly exciting to understand how the demand for privacy or other ethical considerations interact with algorithmic regulation, how the algorithmic development process itself might be regulated distinctly from the trained algorithmic policy, and how competitive forces and dynamic incentives among firms might shape the information available to regulators at the ex-ante stage when deciding their approach to regulation, and to firms at the training stage when they compute algorithmic policies.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 20,
+    "text": "Taking a step back from the economics of regulation, we also see it as exciting to ask what market solutions might be available for some of the regulatory challenges studied here.",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 21,
+    "text": "For example, could a market emerge for ex-interim certification, and under what conditions?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 22,
+    "text": "What might be the advantages and disadvantages of having a private firm provide such certification services in lieu of a regulator?",
+    "warnings": ""
+  },
+  {
+    "file_name": "gillis-2025-01-14_7949.pdf",
+    "format_class": "partial_sections",
+    "section_id": 11,
+    "section_name": "Ex-Post Rules",
+    "paragraph_id": 23,
+    "text": "And how should incentives for those be designed?",
+    "warnings": ""
+  }
+]
