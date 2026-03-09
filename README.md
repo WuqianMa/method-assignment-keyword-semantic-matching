@@ -139,6 +139,63 @@ Edit `predefine/config.py` to change:
 - `ZSCORE_THRESHOLD` — z-score cutoff for method assignment (default: 1.0)
 - `KEYWORD_BONUS_WEIGHT` — bonus per keyword hit added to semantic score (default: 0.1)
 
+## Pipeline Results
+
+On 150 input papers (economics / social science corpus):
+
+### Coverage
+
+| Stage | Result |
+| --- | --- |
+| Paragraph filtering | 144/150 papers passed (9,697 chunks) |
+| Keyword matching | 132/150 papers had keyword hits |
+| SPECTER2 embedding | 145 papers embedded |
+| Semantic assignment | 145 papers scored |
+
+### L1 Assignment Distribution
+
+| L1 methods assigned | Papers | Share |
+| --- | --- | --- |
+| 0 | 6 | 4% |
+| 1 | 132 | 91% |
+| 2 | 7 | 5% |
+| 3+ | 0 | 0% |
+
+The z-score threshold eliminates the "everything matches" problem — no paper is assigned more than 2 L1 categories.
+
+### L1 Frequency
+
+| L1 Category | Papers |
+| --- | --- |
+| Empirical and Econometric Methods | 100 |
+| Theoretical and Formal Modeling | 30 |
+| Computational, Data Science, and Machine Learning | 8 |
+| Experimental Methods | 5 |
+| Qualitative, Descriptive, and Mixed Methods | 3 |
+
+### L2 Frequency
+
+| L2 Sub-method | Papers |
+| --- | --- |
+| Regression Discontinuity Design (RDD) | 93 |
+| Game Theory & Mechanism Design | 10 |
+| Macroeconomic & Spatial Equilibrium | 6 |
+| Machine Learning Predictors & Regularization | 4 |
+| Behavioral & Cognitive Modeling | 4 |
+| Survey & Conjoint Experiments | 3 |
+| NLP & Text Analysis | 3 |
+| Panel Data and Fixed Effects | 3 |
+| Other L2 methods | 7 |
+
+### Baseline Comparison
+
+- **L1 agreement with NotebookLM:** 62%
+- **L2 agreement with NotebookLM:** 13%
+
+### Known L2 Limitation
+
+RDD is over-assigned (93/145 papers). SPECTER2 produces very similar cosine similarities (~0.89–0.93) across all L2 methods under "Empirical and Econometric Methods", so the z-score threshold amplifies small differences. RDD's semantic description uses generic causal-inference language that slightly outscores the other sub-methods consistently. This is an embedding model granularity limitation, not a pipeline logic issue.
+
 ## Notes
 
 - The pdf-to-json conversion is on the `datasource` branch. Some math formulas may not be fully replaced with `[formula]` placeholders.
