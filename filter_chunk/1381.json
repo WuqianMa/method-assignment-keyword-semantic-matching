@@ -1,0 +1,1402 @@
+[
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Academia is a hyper-competitive work environment. The up-or-out tenure system, the intense competition for a limited set of positions, grants, and space in top journals, and the “publish-or-perish” expectations are thought to encourage scholars to put forward their best work and rise to the next level. It is a culture where norms of individualism, competitiveness, strength, and dominance are often seen as keys to success. 1 One could argue that while this type of extremely competitive culture may have detrimental effects on employees’ well-being, it is the price to pay for academics to out-perform themselves and contribute to the development of science. To date, however, there is no hard evidence on whether this is the case.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "Of course, academia is not the only work environment that can be aggressively competitive. Extreme hours of work, dominance and putting work before family is similarly valorised in consulting, investment banking, law, and surgery, where an atmosphere of intense competition is seen a necessary condition for superior firm performance, with also little supporting evidence to date 2 . In such environments, referred to as “toxic”, “always on” or even “burnout” cultures in non-academic literature, there is mounting concern for employees’ health and well-being, making these norms an important focus of research. 4",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "In this paper, we study the role of workplace norms and expectations in explaining well-being and performance of employees in academic institutions. We focus on this particularly salient dimension of norms in academia, which we refer to as hyper-competitive norms, and seek to provide evidence on why these norms persist in spite of the negative effects we uncover. In doing so, we provide an empirical strategy to evaluate norms that are specific to a given environment (Gibbons et al., 2021). This is valuable as it is notoriously difficult to measure specific norms: Norms are intangible in nature and, as an equilibrium outcome, very hard to manipulate exogenously.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "1 See https://www.theguardian.com/higher-education-network/blog/2014/oct/24/bullying-academia-universities-stresssupport. Leading academic institutions’ faculty hiring and promotion guidelines (and other similar, publicly available, administrative documents) provides ample evidence of these expectations. Academics are expected to stand in competition with the foremost persons of similar rank in similar fields. They are expected to be output oriented, producing sustained scholarly output of high quality and scholarly significance. While academics are encouraged to collaborate with internal and external colleagues, it is ultimately their individual contribution to research that is used for career appraisal. 2 For example, recent debates have sparked around work expectations in Big Four consulting firms, following cases of employees committing suicide as a result of extreme pressure and working hours (see https://www.consultancy.in/news/4168/young-mckinsey-consultant-commits-suicide-due-to-work-pressure). 4 For a review of this issue, see for example Malissa Clark’s 2024 book Never Not Working: Why the Always-On Culture Is Bad for Business--and How to Fix It .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "Furthermore, it is important to isolate the role of norms and culture, which are “soft” in nature, from the impact of correlated, “hard” workplace practices or policies.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "To measure hyper-competitive norms (HCN), we collected survey data from staff and faculty in five leading European business schools. Specifically, we use selected items from a validated scale developed by Glick et al. (2018) that captures the extent to which norms reflect a culture where (1) one is expected to be ruthlessly competitive and individualistic, (2) to put work over family, (3) to display strength and stamina and (4) where vulnerability is seen as a sign of weakness. 5 To understand the implications of such norms for employee well-being, we also measured individual’s attachment to their institution through turnover intentions and (eudaimonic) workplace well-being. Finally, to measure academic productivity, we build a second dataset for the entire population of academics at the institutions we study. This dataset contains indicators of performance typically used to evaluate academics’ career success, namely, number of publications, citations, and Google’s h-index.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "Norms are defined as the common beliefs in a reference group about socially rewarded or sanctioned patterns that guide behaviour (Young, 2015, Bicchieri, 2005). Starting from the individual perceptions in the survey, we construct two measures of group norms that aim to capture statistically the definition of norms. First, following earlier work, we define the norm as the mean perception in an individual’s reference group (HCNg). Second, we define the norm as a predicted value of the individual perception, estimated from the mean norm in the set of relevant reference groups, excluding the individual himself (HCNp). This second novel measure of norms reflects “common beliefs” i.e. how much reference groups beliefs correlate with individual beliefs. It has the advantage that by construction it will be orthogonal to individual idiosyncratic beliefs and also that it lets the data tell us how much each reference group matters in explaining individual perceptions or, in other words, at which level hyper-competitive norms form. In the academic context, the relevant reference groups are defined by the institution, the academic field, gender, tenure at the institution and academic rank (similar to Haas and Park, 2010).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "Our first set of results show that the stronger norms of hyper-competition are within the relevant reference group the higher the individual’s turnover intentions, and the lower the well-being. A contribution of this paper relative to existing work on climate, norms and culture is the tight identification we can provide. Given how we construct the norm, we are able to control for a rich set of fixed effects (institution, department, rank, gender and tenure in particular) in all our results. This",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "5 The full scale is the “masculinity contest culture” as these expectations are associated with stereotypically masculine characteristics (see discussions in Berdahl et al., 2018, Cheryan and Markus, 2020).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "means we can rule out that observed and unobserved omitted variable or selection at the level of the fixed effects are driving the results. In addition, to account for variation at the individual level that could be correlated with the norm, we also control for a large set of demographics, household characteristics and beliefs about the institution so that we can argue those are not driving the effect, and it is really the correlated norm that matters. We discuss the identification driving our results in more detail below. 6",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "Next, we turn to the relationship between HCN and (research) performance for academics. We assign each faculty member in the population the measure of HCN as estimated in the relevant reference groups from the survey. We find that the higher the HCN, the lower the performance: academics have fewer publications. This could reflect lower performance but a higher per-paper quality indicating that competitive environments make scholars try for more frontier or impact research. However, we find that citations and the h-index also drop, suggesting that quality also declines, so that performance is lower on both dimensions. 7",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "Given the negative effects we find on well-being and performance outcomes, we then explore different reasons why HCN persist in academia. We explore three possible hypotheses. The first hypothesis is that men, who have historically been the dominant gender in academia, might benefit from working in hyper-competitive environments. Given the literature on gender norms and stereotypes, men could be socially rewarded for conforming with stereotypically male behaviours, relative to women (Eagly and Karau, 2002, Ibarra et al., 2010, Ridgeway, 2001, Rudman et al., 2012; Cheryan et al., 2017, Cheryan and Markus, 2020). Relatedly, there is evidence that women may face a more aggressive environment: they are asked more patronizing or even hostile questions in seminars (Dupas et al., 2021) and they face more hostile and toxic comments in anonymous professional online boards (Wu, 2018, Ederer et al., 2023). In contrast, women are typically expected to be discrete and modest about their achievements (Reuben et al., 2014, Williams and Tiedens, 2016), which could make it more difficult to thrive in these work environments. However, we find no evidence in support of this hypothesis: men and women are equally harmed in our data by hyper-competitive norms.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "The second hypothesis we explore is whether hyper-competitive norms are associated with lower performance on average, but are less detrimental or even beneficial to top performers. To 6 To the extent that we do not have true exogenous variation in norms (it would be very difficult to exogenously manipulate specific norms in a real organization), besides including a rich set of controls and fixed effects, and using a measure of norms that is orthogonal to individual beliefs, we also test for the potential impact of unobservables on our main estimates using the bounding methodology from Oster (2013, 2019). The bounds produced suggest our results are robust to selection on unobservables. 7 Given the sensitivity of questions we asked in the survey, responses are anonymous, meaning we cannot match individual perceptions of HCN to the exact corresponding faculty member’s research records.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Oster Bounds (Selection on Unobservables)",
+            "Exogenous Variation",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "explore this, we examine the implications of HCN at different quantiles of each of the main outcomes’ distribution. Here also, we find no evidence that HCN benefit top performers, and actually harms them more: HCN harm everyone above the median., including in the top percentiles.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "Third, we ask whether in high HCN environments scholars believe they are more highly performing. In a context with high incentives, such as tournaments, effort is higher, and academics may mistake this higher effort for higher performance. We test this using a self-reported survey measure from academics on their own performance and find that those facing high HCN subjectively perceive themselves to have a higher research performance than their peers. This suggests one possible reason why hyper-competitive norms subsist: because they are associated with individuals believing they perform better, even if they do not.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "In all, our paper contributes to the literature on culture and norms by showing the importance of workplace norms and in particular, the importance of HCN for employees’ performance and wellbeing. First, we demonstrate negative implications of HCN for how individuals feel in their institution, measured both as attachment and well-being. Second, to our knowledge, we are the first to relate the workplace norms of hyper-competition to objective performance metrics. 8 This is crucial given the conjecture that strong competition/individualism may be beneficial for organizations: at least along this obvious dimension (research for academics), this is not the case in our study. Organizational practices and norms that glorify overwork and privilege work over private life have been argued to be the last barrier in wage convergence between men and women (Goldin, 2021, 2014), which furthers calls for providing empirical evidence on the true implications of such norms.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "Our study is related to but distinct from the literature on social norms, whether observational or experimental. Cultural norms have been shown to drive behaviour, fertility, marriage choices, labour force participation, occupational choice and many other decisions (Krupka and Weber, 2013, Alesina et al., 2013, Fernández and Fogli, 2009; Bertrand, 2020, Bertrand et al., 2021, Del Carpio and Guadalupe, 2022).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "However, less is known about the role of organizational norms on relevant economic outcomes within organizations (Blader, Gartenberg and Prat, 2020; Castro, Englmaier and Guadalupe, 2024). This is a further contribution of our paper, in which we evaluate norms that are specific to a given",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "8 Related recent work examines other “soft” aspects of organizations related to culture, such as values (Guadalupe, Kinias and Schloderer, 2020; Delfino and Espinosa, 2024) or meaning and purpose (Gartenberg, Prat and Serafeim, 2019; Ashraf et al, 2024) .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 19,
+        "text": "environment (or as in Gibbons et al., 2021, culture with a “little-c”), rather than society wide (Culture with a “big-C”). In doing so, we are able to provide evidence from organizations on why “bad” norms persist, and hence on the dynamics of norms. This is an active field within and beyond the social sciences, as the dynamics of norms, their emergence and persistence at the societal level is what underpins the dynamics of societies and civilizations (Gelfand, Gavrilets and Nunn, 2024).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 20,
+        "text": "The rest of the paper proceeds as follows. In section II, we introduce our novel framework to measure perceptions and norms in the workplace. Section III presents the data and section IV the results. Section V concludes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 22,
+        "text": "Norms are defined as the common beliefs in a reference group about what are the right, socially rewarded behaviours (e.g. Elster, 1989, Ostrom, 2000, Bicchieri, 2005, Young, 2015, Kranton, 2016). While there is not a single type of norm, experimental and non-experimental studies highlight the power that norms have in general on shaping individual beliefs, behaviours, and decision-making (Field et al., 2021, Ke, 2018, Krupka and Weber, 2013). This definition highlights that norms are (1) beliefs, (2) that are common to a reference group and (3) that are self-enforcing or socially rewarded --the normative component. Note that norms can be “good” or “bad” (in the sense of increasing or decreasing welfare), and that bad norms can persist (Smerdon et al 2020; Gelfand Gavrilets and Nunn, 2024). We will turn to this later.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 23,
+        "text": "In what follows, we describe how we operationalize the measurement of hyper-competitive norms in our data given this definition or, in other words, how we go from measuring individual beliefs to measuring norms.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 25,
+        "text": "We measure individual beliefs of hypercompetition in organizations, HCNi, using selected items from the scale developed and validated by Glick et al (2018). The scale includes four themes that capture hyper-competitive behaviors at the workplace which reflect stereotypically masculine competitive behaviors (the masculine contest culture scale). As mentioned before, the scale includes four types of rewarded behaviors: (1) ruthless competition and individualism (“Dog-eat-dog”), (2) putting work over family and looking down upon efforts to work-life balance (“Put work first”) , (3) valuing displays of strength and stamina (“Strength and Stamina”) and (4) avoidance of showing emotions or vulnerability at work (“Show no weakness”).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 26,
+        "text": "We selected items from the scale in each theme and include them as questions in the survey: “In my institution, if you don’t stand up for yourself people will step on you”, “In my institution, taking days off is frowned upon”, “In my institution, admitting you don’t know the answer looks weak”, and “In my institution, it’s important to be in good physical shape to be respected”, all measured from 1 (Strongly disagree) to 5 (Strongly agree). The items chosen were those with the highest factor loadings (i.e. those that best capture the underlying construct) in the original scale and refer to the type of individualistic and hyper-competitive norms we are interested in. 9 We averaged the answer by individual and the final measure of HCNi is standardized.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 27,
+        "text": "These items reflect individual beliefs about the right/expected behaviours at the workplace for each individual, so they are the right starting point to measure norms. But they will also reflect individual idiosyncratic variation in beliefs and affect. In order to capture norms we need to relate each individual belief to the beliefs of their reference group, the “common” component of our definition.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 29,
+        "text": "Our two measures of norms build on these individual perceptions to estimate norms as shared beliefs within normative reference groups. In order to do so, we start by defining the relevant reference groups. We base our groups on the literature that has focused on this question in the context of academia (e.g., Burris, 2004, Furman and Stern, 2011, Ginther and Kahn, 2004, Gualavisi et al., 2024, Lundberg and Stearns, 2019, Sarsons, 2017), as well as on our own institutional knowledge and data available. The first obvious reference group is the institution itself. Expectations of the right behaviors vary by institution because of differences in policies, national cultures, leadership, history etc. But within institutions, different subgroups are known to hold different norms: staff and faculty norms are different; And within faculty, academics from different fields and different ranks have been shown to have different norms (see Haas and Park, 2010). Similary, research has also shown that norms can vary by gender if different genders are held to different standards (as in Wu, 2018 or Dupas et al., 2021) or are differentially sanctioned for displaying certain behaviours because of the extent to which they conform or violate a gender stereotype (Eagly and Karau, 2002, Ibarra et al., 2010, Ridgeway, 2001, Rudman et al., 2012; Cheryan et al., 2017, Cheryan and Markus, 2020).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 30,
+        "text": "We will therefore allow for institution, department, rank, tenure and gender to be potential reference groups where norms can form.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 31,
+        "text": "9 We could not include the full scale because we had a limit in the number of questions we could ask.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 32,
+        "text": "Using these reference groups we construct two measures, that exploit related but slightly different levels of variation. The first, HCNg is simply the mean norm within a person’s narrow reference group, defined by each unique combination of institution, tenure, gender, academic rank and field of research. This is a straightforward starting point that is similar to what has been done in the literature on social attitudes with country survey data (eg. Guiso, Sapienza, and Zingales, 2006; Alesina and Angeletos, 2005).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 33,
+        "text": "The second measure of norms, which we call HCNp, is the predicted value of HCNi from the average HCN in the set of reference groups and their interactions. We allow for a rich set of possible relevant (narrower) reference groups in order to (1) let the data decide which are most relevant in reality and (2) obtain richer variation to identify our effects,",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 34,
+        "text": "To illustrate how we do this, let’s start with our base reference groups which are the reference groups by institution, tenure, gender, rank and academic field in our study. Next, we begin to build narrower reference groups. The first are two-way reference groups, which are two-way interactions between each of these base groups. For example, we interact institution with field, to allow for two academic fields within an institution to have different norms; or gender with rank, to allow two academics of the same rank (assistant, associate, full) but different gender to be faced with different norms. Next, we further allow for three-way interactions of these variables so that norms could be different for two men, in the same institution, in different fields; or for two academics in the same field, in the same institution but with different gender.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 35,
+        "text": "Table 1 provides descriptive statistics for each of these grouping levels, and in particular, on how much raw variation there is in our data in terms of the average perceptions of hyper-competitive norms across these groups. In all, this leads us to generate a set of 25 grouping levels. Note that some of these subgroup interactions and differences may seem a priori more plausible than others, but rather than imposing them ex-ante we will let the data determine which have most explanatory power.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 36,
+        "text": "Now we can estimate what is common between the HCNi of the focal individual and average HCN of their reference groups. To do this, we calculate the average norm in each of these 25 grouping levels excluding the focal individual’s answer.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 37,
+        "text": "Table 2 below shows the unconditional estimates of the bivariate relationships between individual perceptions and the average norm in this series of reference groups. The estimates suggest that a person's HCNi is most strongly correlated with the institutional norm. However, we see the",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 38,
+        "text": "advantage of considering the two-way and three-way interactions of the main reference groups, since the second strongest correlation is estimated for the reference groups defined by the combination of institution and tenure in the institution. Notably this is also the grouping level which explains the largest share of variation in HCNi (R2 = 3.7%). This is followed by reference groups defined by the combination of institution, tenure and gender.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 39,
+        "text": "The final HCNp measure we use in the remainder of the paper is the predicted value of the norm on all groups (average norm in the group excluding the focal individual) simultaneously. 10 This method has the further advantage of allowing us to decompose HCNi into HCNp and the residual from the OLS regression, HCNr. HCNr is therefore by construction orthogonal to the norm HCNp and captures any idiosyncratic variation in individual beliefs that is not correlated with the beliefs of the reference groups.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 40,
+        "text": "Our measure HCNp has several advantages that can be useful for future research on norms. First, by construction, it captures what is common between the individual and the group beliefs, hence corresponding to the definition a norm (as common belief). Second, it allows us to provide empirical evidence on the strength of this correlation between an individual's perceptions and each of the reference groups, without imposing ex ante which groups and their interactions are most relevant. Third, since we systematically exclude the focal individual, we only use others' responses in the reference group to define the average norm. This is particularly useful when exploiting survey responses to avoid correlating beliefs and perceptions measured with the same survey instrument. Fourth, because it varies as a function of all the reference groups that we specify (and their interactions), we can include fixed effects for these. In that way, we identify effects while holding constant important dimensions along which outcomes will vary such as institution, academic field, rank, tenure and gender. Fifth, when predicting the individual's perception from the group norm, we can also obtain the predicted residual, which we refer to as HCNr. This residual can be thought of as",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 41,
+        "text": "10 At this stage, a question could be raised as to why our predicted norm HCNp stops at reference groups defined by threeway interactions, as opposed to going all the way to four-way and five-way interactions, especially since the five-way interaction by institution, tenure, gender, rank and academic field is that at which we estimate HCNg. This said, given our sample size, there is an inherent trade-off between generating more precise reference groups, and loosing observations for reference groups defined by a single observation, since we systematically exclude the focal individual himself from the calculation of the reference group norm (in addition, one could argue that a single observation does not constitute a reference “group”, per se). As such, Annexe Table 1 replicates Table 2 with the remaining reference groups defined by four-way and five-way interactions. This gives us confidence that we are not omitting important grouping levels in predicting HCNp, which could be indicated by both larger β or R2 than those in Table 2. Note also that in Annexe Tables 2 and 3, we replicate all our results with additional measures of HCNp, predicted with the addition of four-way and fiveway interactions of the main reference groups.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 42,
+        "text": "the deviation between the individual perception and the norm in the reference groups, or idiosyncratic variation in beliefs about what the true norm is.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 0,
+        "text": "1. Survey and population samples Our analysis is based on two data sources. First, we use survey data collected from 1024 staff and faculty across five European business schools. 11 Second, we scrape research output data the population of academics in these schools (670 total), from Google scholar profiles. For every observation across these two samples, we have information on institution, gender, academic field, tenure in the institution and rank.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 1,
+        "text": "To obtain information on HCN in the true population of academics in our second dataset, we merge observations from both samples on this exact combination of institution, gender, academic field, tenure in the institution and rank. For 425 of the 670 faculty observations, we obtain an exact match on these characteristics. For the remaining observations, we obtain a match using information on institution, gender, academic field and tenure in the institution, only 12 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 2,
+        "text": "As shown in Table 3, our survey sample is made up of 70% staff and 30% faculty. Of staff, 77% are female and of faculty, 55% are female. We obtained a response rate of 43% overall, and while there were no large differences in response rates by rank, women are slightly overrepresented in the survey. Therefore, all the results using the survey will be reweighted to be representative of the total population within each institution.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 3,
+        "text": "2. Empirical Specification and Idetification Having obtained the different measures for HCN (HCNi, which we decompose into and HCNp and HCNi; and HCNg), we use them evaluate their relationship with the main outcomes of interest/ We will run regressions of the following form:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 5,
+        "text": "Where Y i represents the different dependent variables (in particular well-being measures, and performance measures, see below for detail), f(Xi) is a set of individual controls (demographics 11 This is part of a data collection effort by a consortium of schools concerned about promoting gender equality and included ESADE (Spain), ESMT (Germany), EUR-RSM (The Netherlands), INSEAD (France), and UNIBA (Slovakia). 12 We checked the results are similar when focusing on the sample of the faculty population for whom we have an exact match.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 6,
+        "text": "characteristics, household characteristics and other individual beliefs see below for detail) u i is the error term.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 7,
+        "text": "Note we also include dummies for institution I i (5 institutions), department d i (staff or one of academic 4 departments), rank R i (assistant, associate, full and other for faculty members), gender G i and tenure T i (less than 3, 3 to 7, more than 7 years at the institution). We will also include department times institution fixed effects in our most saturated specification.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 8,
+        "text": "The inclusion of all these dummies means that we can rule out that, for example characteristics of institutions such as their leadership, policies, HR practices, local crises or national cultures are driving our results. We can also rule out that it is other characteristics of the academic fields, such as whether they value papers or books, what conferences they have or other features. Similarly, gender effects means we are taking out mean gender differences in attitudes, demographics, beliefs etc. As well as any cohort effects that are driven by tenure or rank, (as well as anything else that varies at rank or tenure levels). As one can see, even though we rely on cross-sectional identification, it is extremely tight and we can rule out several obvious alternative explanations, that it is typically hard to control away for in studies of culture and norms.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 9,
+        "text": "We will evaluate the results for the different HCN variables, which as discussed have different sources of identification. For the survey regressions we will re-weight the results to be representative of the population distributions of department, gender, tenure and rank.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 10,
+        "text": "One final comment on identification: all the results we present are conditional on who is present in the institutions at the time of our surveys. This means that they are conditional on any selection into the institutions or even before, to academia. For institutions, this is a parameter of interest as they want to know the effects norms have on their current employees. But we also want to know the effect on the population (without selection). The inclusion of all the fixed effects helps, as it takes out the mean characteristics that may be behind selection along all the 5 dimensions we saturated, so that effectively we look for example at differences in outcomes within institutions and departments (and all other fixed effects) as function of HCN. In addition, at the end of section IV we will evaluate the potential for selection on unobservables in our sample using Oster bounds.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Oster Bounds (Selection on Unobservables)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 12,
+        "text": "The main dependent variables from the survey are turnover intentions and workplace well-being. They capture overall commitment to and satisfaction within the organization. These have been shown to predict actual turnover and retention and employee’s performance (Wright and Bonett, 2007).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 13,
+        "text": "Turnover intentions . We measured turnover intentions using two items rated on a five-point scale (Bothma and Roodt, 2013). First, we asked whether a respondent has considered leaving their institution in the past year. Second, we asked whether a respondent would leave their institution for similar compensation elsewhere should they be offered this. We first average and then standardize the items to produce one measure of turnover intentions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 14,
+        "text": "Workplace well-being . To measure workplace well-being, we used four items on a five-point eudaimonic workplace well-being scale developed by Bartels et al. (2019). The scale captures both intrapersonal and interpersonal dimensions of well-being. The items we used were: “I am emotionally energized at work”, “I feel that I have a purpose at my work”, “I feel I am able to continually develop as a person in my job”, and “I have a strong sense of belonging towards my institution”. We first aggregate then standardize the items into a single variable.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 15,
+        "text": "Research Performance. To obtain objective measures of performance, we collected information on the Google scholar page of each academic in the institutions. Specifically, we collect information on their number of publications, citations and h-index. Since not every academic has a Google scholar profile, we generate an indicator for those 71% who do, which could be interpreted as an academic’s keenness to put forward their research outcomes. 13 These are of course imperfect measures, and there are other demands on researchers, but these are the best objective measures one could obtain on the scientific output of these scholars and also are commonly used to evaluate academics’ performance, promotion and raises.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 16,
+        "text": "Additional controls available in the survey: Gender equality support . In the survey, we measure gender equality support by asking respondents the extent to which “My institution is committed to promoting gender equality”. This question is measured from 1 (Strongly disagree) to 5 (Strongly agree). This is also a measure of perceptions on a topic related to gender inclusion, which allows us to control for individuals’ related beliefs about their institutional context.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 17,
+        "text": "13 In Annexe Table 4, we show that our results are consistent if we were to restrict our sample to the population of academics who have a Google scholar profile.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 18,
+        "text": "Other controls. We also control for a range of demographic and workplace related measures, including institution and field fixed effects, respondents’ marital status and household structure, alongside an indicator of whether the respondent identifies with a minority group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 3,
+        "section_name": "Data description",
+        "paragraph_id": 19,
+        "text": "Before turning to the main results, Table 4 provides summary statistics for the main dependent and independent variables included in the estimations. Summary statistics for control variables included in the estimations are detailed in Appendix Table 1.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "In Table 5 below, we start by assessing the implications of our different measures of HCN for individuals’ turnover intentions and workplace well-being. In both cases, we start with unconditional estimates in Column 1, progressively saturating the estimations in a way that allows us to determine how sensitive the norm measures are to the inclusion of different covariates. As for HCN, we include the three measures described in section II: the raw survey variable for individual perceptions ( HCNi ), the predicted norm obtained by regressing HCNi on the mean in the series of reference grouping levels described in Tables 1 and 2 (HCNp), alongside the average norm in narrow reference groups, defined by a unique combination of institution, gender, tenure, academic field and rank (HCNg) . We also include the predicted residual perception, HCNr, in the estimates for HCNp.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "Panel A contains the estimates for turnover intentions. Focusing on the estimates for HCNi first, which is what the contest culture literature in social psychology does, our results map closely to what this literature has suggested: higher HCNi associate with higher turnover intentions (Glick et al., 2018). This is also true when including different institution and field fixed effects in Columns 2 and 3 and including a series of dummy variables as controls in Column 4 which relate to the variables we use to define the main reference groups. This means that the effect we are estimating is a “within” effect in the different reference groups. In other words, we hold constant difference in average outcomes as well as sources of selection into the different groups and estimate differences in the relationship between HCN and outcomes within individuals across these groups.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "In Column 5, we add a further series of controls to account for differences that may be driven by other characteristics of the individual. First, people may have different perceptions of HCN and",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "turnover intentions because of their idiosyncratic and family situation. We therefore include controls for whether the individual reports having care responsibilities, their marital status, and whether they identify with a minority group. In Column 5, we also control for a variable indicating how much the individual perceives that their institution supports gender equality. This is also a perception variable. It captures some dimension of perceived gender policies and attitudes. We control for this perception in order to tease out other dimensions of how a person perceives their workplace, unrelated to HCN, and yet which we would otherwise be conflating with our measures of HCN. As expected, including these additional controls reduces the coefficient a few percentage points but does not affect the main result. In the fully conditional model Column 5, a one standard deviation increase in a person’s perception of HCN is associates with a 35% standard deviation increase in turnover intentions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 5,
+        "text": "Next, we turn to the effect of HCNp. Recall this recovers the part of HCNi that is correlated with the true norm in the different reference groups. Here also, the results are very consistent: HCNp associate with a 0.15 standard deviation increase in turnover intentions (Column 5). In the estimates using HCNp as the main independent variable, we include the HCNr, “residual” component, or the part of a person’s beliefs about HCN that orthogonal to the norm in the reference groups and related to idiosyncratic beliefs. Not surprisingly, this residual component also has negative implications for turnover intentions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "Finally, the results are similar when we focus on HCNg, or the average HCN in the narrowest reference groups. Here, it is also the case that higher HCNg reduces turnover intentions by 15% of a standard deviation, conditional on institutional, field fixed effects and individual controls (Column 5).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "While we do not have actual turnover in our data, we can use estimates of the relationship between turnover intentions and actual turnover to provide a back of the envelope calculation of the effect. A range of estimates for the correlation coefficient are provided in the literature going from 0.32 (Carsten and Spector, 1987) to 0.52 (Tett and Meyer, 1993). If we take these as lower and upper bounds, this means that a standard deviation increase in HCNi, using these estimates, would imply between 11% and 18% increase in actual turnover, or between 4% and 5% increase in actual turnover with a standard deviation increase in HCNp.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "Panel B is structured identically to Panel A but using workplace well-being as the dependent variable. As a reminder, this survey question is not a hedonistic dimension of well-being, but it aims to capture individuals’ sense that they have purpose at work, feel they belong, and can continuously develop as individuals (eudaimonic well-being). This is important to consider in parallel to turnover",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 10,
+        "text": "intentions, to be able to interpret the desire to leave as reflecting the fact that the individual does not feel they are thriving in the institution.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 11,
+        "text": "Our results show that well-being is lower with high HCN. Focusing on HNCi, first, the negative unconditional point estimate in Column 1 remains stable to the inclusion of different control variables, at both the institutional and individual level. In Column 5, where these different confounders are all included, our results suggest that a standard deviation higher perception of HCNi decreases well-being by a 0.24 standard deviation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 12,
+        "text": "As for our norm variable, HCNp, our results also indicate detrimental implications for wellbeing. In Column 1, HCNp is insignificantly related to individual well-being. In contrast, the residual component HCNr is negative and significant, largely mapping out the results we find when considering HCN from individuals’ perspective. However, these differences in the normative component are significant when we condition them on different individual controls in Columns 4 and 5. In Column 4, this is due to the inclusion of the fixed effects for tenure in the institution: well-being increases over time within the institution and so does the average HCN. This could reflect different mechanisms and highlights the need to control for all the variables and fixed effects to ensure we identify our effects holding constant other important confounders. In turn, the correlation of HCNr with well-being is very strong and coefficients do not change as much with the inclusion of controls. Finally, the findings remain consistent when we look at HCNg, although the point estimate is smaller in magnitude than the other HCN measures: a one standard deviation increase in HCNg is associated with close to a 10% standard deviation decrease in workplace well-being (Column 5).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 13,
+        "text": "Overall, results in Panel B suggest that the detrimental implications of HCNp, in a series of key reference groups which exclude the focal individual, for individuals’ well-being is quite significant, but is even more strongly driven by how individuals interpret their workplace, based on personal beliefs (i.e., HCNi).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 15,
+        "text": "In order to estimate the relationship between HCN and objective indicators of performance, we use our second dataset. This is the universe of faculty members (all ranks) in the five academic institutions, collected from Google scholar. As suggested above, we collect sufficient information to match this universe of faculty members to survey respondents, based on the unique combination of characteristics for their institution, gender, academic field, rank, and years in the institution. This also",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 16,
+        "text": "allows us to match faculty with HCNg, the average measure of norms within this narrow definition of the reference group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 17,
+        "text": "Table 6 presents the implications of HCNg for individual level research performance metrics. Given the discrete nature of the data, we use a probit model for the Google scholar page outcome. Furthermore, since data for publications, citations and H-index are count data we use Poisson models for these three outcomes. This means that coefficients can be interpreted as the expected change in log counts for publications, citations and h-index for a one-unit increase in HCNg. One could also easily take the exponent of the coefficients of interest to interpret them in terms of rate ratios 14 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 18,
+        "text": "Turning to the first set of results in Panel A of Table 6, higher HCNg does seem to associate with a higher likelihood of having a scholar profile, although the coefficient is insignificant. In Panel B, which uses publication counts as the main dependent variable, we see that HCNg has a clear negative and significant effect across specifications. Simply put, faculty members in hypercompetitive environments publish less, not more. The results are similar when we focus on indicators of research quality: higher HCNg associate with lower log counts for both citations and h-index, and this result is significant at the 10% level for h-index. While some of this variation is explained away in Column 4 by adding our set of controls, when one looks at the body of results in Table 6, there is no indications that HCNg has a positive effect on performance 15 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 20,
+        "text": "The previous results establish average differences in how our measures of HCN relate to wellbeing and performance outcomes. For the large part, the evidence produced suggests that HCN are negatively and significantly associated with indicators of performance and well-being. To probe this further, we explore different reasons which could contribute to HCN persisting in spite of their negative effects. To do so, we start by analysing whether these main results differ for male and female respondents.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 21,
+        "text": "14 We consider other specifications that could provide an adequate fit given the skewed nature of our data. In Annexe Table 6, we show that our results are consistent across some of these, including normal OLS regression models and OLS models using 1 + log of the main dependent variables. Annexe Table 6 also shows that the results are consistent when excluding the top end of the distribution. 15 Note that in this dataset, contrary to the survey, we do not have any information on individual faculty’s household characteristics or information on other dimensions of their workplace perceptions as in Table 5. However, Column 4 of Panels A and B in Table 5 for our main survey outcomes have the same set of controls as those in our fully conditional model in Column 4 of this Table 6. This gives us confidence that our results for the research performance outcomes would not change substantially should we have information on these additional controls, since including additional controls in Column 4 of Table 5 has only minor effects on the main HCN estimates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 22,
+        "text": "To the extent that men have historically been the dominant gender in academia, it may be that HCN norms are more beneficial or less harmful to them, and that the negative effects we find are driven by women. Also, women conform less to the hyper-competitive, stereotypically masculine stereotype, or to the expectation to be an individual “super-star” and demonstrate academic brilliance (Leslie et al., 2015, Vial et al., 2022). As a result, they may suffer more in those contexts. Relevant to our context of academia, Dupas et al. (2021) find women are asked more patronizing and hostile questions in economics seminars. Wu (2020) shows that when people are given the opportunity to hide behind anonymity, female economists are often sexualized and their work is trivialized. Ederer et al. (2023) find that toxic comments in the economics wiki are particularly derogatory towards women. In addition, female economists generally feel less included socially or intellectually within their field (American Economic Association Climate Survey, 2019).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 23,
+        "text": "We therefore investigate to what extent HCN affect men and women differently. Table 7 replicates the most saturated specification from Table 5 (with all controls and fixed effects) for turnover and well-being, but now interacts gender with HCN. As with previous tables, we estimate the implications of these different HCN measures separately. Here, these are contained in separate columns, with results for HCNi in Columns 1 (turnover intentions) and 4 (workplace well-being), HCNp in Columns 2 (turnover intentions) and 4 (workplace well-being), and HCNg in Columns 3 (turnover intentions) and 6 (workplace well-being). In all cases, the point estimates for the interactions are close to 0. In other words, we find no evidence that men benefit in terms of their well-being and institutional attachment, from being in hyper-competitive workplaces.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 24,
+        "text": "Next, Table 8 returns to the larger population of academics to assess whether there are different implications of HCN for men and women’s research performance. As a first remark, we observe that men’s research output is significantly lower the higher the HCNg in narrow reference groups. This is significant in terms of publications, citations and h-index. In addition, the coefficients on the gender interaction are not significant, but they are always positive and large. This indicates that women’s research output, if anything, is less harmed than that of men. However, this difference is not statistically significant. Either way, there is no support for the hypothesis that hyper-competitive, or stereotypically masculine, norms, benefit men. Again, this is holding constant rank, academic field, institution, and tenure in the institution. 16",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 25,
+        "text": "16 Estimates in Table 8 also highlight that women are on average less productive on these objective research output metrics than men in the same institutions. However, this effect is largely driven by women in non-tenure track positions",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 27,
+        "text": "Our next question is whether implications of HCN differ at different levels of the distribution of the dependent variables. It could be that our average results on the negative effects of HCN, change at different points of the distribution. One intuitive scenario is that top performers benefit from being in hyper-competitive environments, so even if the norms are bad on average, they encourage top performers to push the frontier and create scientific leaps. Figure 1 illustrates the results from this analysis. The point estimates on the Y-axis correspond to those from quantile regressions at different points of the distribution, indicated in the X-axis. 17",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Quantile Regressions",
+            "Quantile Regressions"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Structural & Advanced Econometrics"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 28,
+        "text": "Starting with turnover intentions in Panel A, the effects are positive throughout, particularly the middle of the distribution of turnover intentions. In Panel B for well-being, there is evidence that negative implications of all 3 HCN measures are worse for those respondents with the lowest workplace well-being, with effects converging toward 0 for those in the 90 th percentiles and above. This trend is particularly strong in the case of HCNp.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 29,
+        "text": "Finally, Panels C, D and E plot the estimates for publications, citations and h-index, respectively. Here, we find no support for the hypothesis that hyper-competitive norms promote the research productivity of “super-star” academics. In fact the negative effects for performance emerge for those with above median performance levels on all three dimensions. We tested the effect up the the 95% percentile of the performance distribution and the negative effects are strongest there, so HCN does not help the “stars” at these institutions either.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 31,
+        "text": "Finally, we examine whether and how HCN relate to academic’s subjective interpretation of how well they are performing in terms of research. More specifically, we derive this information from a survey question to faculty respondents, asking them to assess their own research performance, relative to colleagues at similar stages of their career (we do not have an equivalent measure for staff respondents). Table 9 below, which is structured identically to Table 5, reports the results from this analysis.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 32,
+        "text": "(11.89% of the faculty sample). If we focus on assistant, associate of full professors there is no differential effect in performance between men and women. 17 We conduct the estimation in 10 points increments until the 90 th percentile, but also include the 95 th and 90 th percentiles, meaning the X-axis is not consistently scaled to distance between percentiles.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 33,
+        "text": "Given the importance of including fixed effects as discussed (we expect research performance to be related to covariates, such as rank, academic field, or tenure in one’s institution), we focus on the last column of Table 9. 18 Here, it is the case for all 3 HCN measures that increasing HCN increases faculty’s subjective perception of their research output: by 13% standard deviations for HCNi and 8% for HCNp (although the coefficient for HCNp is not statistically significant at conventional levels). In addition, the residual perception HCNr also has a positive impact on self-perceived performance, suggesting that the individual beliefs about HCN (or those who feel that HCN are even highr that their group’s beliefs) have an even higher perception of their own performance. The results from HCNp and HCNr taken together suggest that beliefs play a role in the persistence of these norms.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 4,
+        "section_name": "Results",
+        "paragraph_id": 34,
+        "text": "Taken together, these results provide suggestive evidence as to why hyper-competitive behaviours prevail and persist in academia even if they are associated with lower well-being and lower research performance: because HCN environments could lead individual to think they are being more productive than their peers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 0,
+        "text": "Before concluding, we assess the sensitivity of our results to selection on unobservable variables, using a bounding technique developed by Oster (2019). The methodology produces a bound which contains the “true” treatment effect of interest, should one possess complete information on observed and unobserved variables. To do so, the potential impact of omitted variables on the treatment effects is assessed by measuring their sensitivity to the inclusion of key observable variables. In our case, this can be thought of as the sensitivity of HCN measures to controlling for variables which form the basis of our main reference groups. In general, estimates which are unaffected by the addition of observed variables can be interpreted as revealing limited omitted variable bias (Altonji et al., 2005). The contribution of Oster’s methodology is in considering that estimated coefficients may remain stable as a result of adding uninformative covariates, such that changes in the model R2 are equally incorporated in the construction of bounds.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 1,
+        "text": "There are several assumptions in Oster’s method. First, we assume that δ, the relative degree of selection on observables is equal to that of unobservables, such that δ =1. The second assumption is made as to the value of R2 Max . R2 Max is the model R2 derived from a hypothetical regression of the dependent variable on the treatment variable, should one possess complete information on observed",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 3,
+        "text": "and unobserved variables. Using a sample of 58 journal results from randomized experiments, Oster (2019) sets R2 Max to Min !1.3R & 2, 1) , where R & 2 is obtained from the regression of the dependent variable with observed treatment and control variables.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 4,
+        "text": "Thereof, the bound is estimated as follows: *β , , β ∗ (R \"#$ % , δ= 1)1 Where R2 Max is !1.3R & 2, 1) and β , is the treatment effect from the regression of the dependent variable with observed treatment and control variables. β *, which is the bound estimate of β , , is estimated as follows:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 5,
+        "text": "β * = β , −(β ̇ −β , ) & !\"# [FORMULA] '& ̇ 2 Where β ̇ and R ̇ 2 are drawn from the uncontrolled regression of the treatment variable on the dependent variable. In our context, this is the equivalent to extracting the β on HCN measures in Column 1 of Table 5 and corresponding R2, and comparing that to the β on HCN measures in Column 5 of Table 5 and corresponding R2. As to the interpretation, Oster (2019) suggests that if the bound excludes zero, then the true effect of a treatment on an outcome variable is not 0. In other words, a bound excluding 0 indicates that the point estimates produced are robust to selection on unobserved variables.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 6,
+        "text": "Table 10 below describes the bounds produced for the survey sample. First, we produce bounds for the main estimates in the full samples. Second, we produce bounds disaggregated by gender. This is particularly important given interaction terms in Tables 7 and 8 which suggest women could, if anything, be less harmed by HCN relative to men. In order to compare these results to the robustness check in the full faculty population, for which we do not have information on household structure and additional perceptions, we produce midβ & using only those covariates identical across both samples (or, those corresponding to estimates in Column 4 of Table 5). We then produce fullβ & , using the additional information for the survey sample (or, those corresponding to estimates in Column 5 of Table 5).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 7,
+        "text": "For the full sample, none of the bounds between the estimated effect and the effect under proportional selection include 0. We can interpret this as our results being robust to selection on unobservables. In a second step, we replicate the bounding analysis for male and female respondents, separately. Comparing Columns 3 and 4 which contain the results for male respondents, we also find relatively consistent results, with one exception. When measured as HCNg, the point estimate for the effect on men’s workplace well-being accounting for selection on unobservables is 0.025, relative to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Oster Bounds (Selection on Unobservables)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 8,
+        "text": "-0.057 when we ignore potential selection on unobservables. This means we cannot reject that the true effect of HCNg for men’s workplace well-being is actually 0. This is not true of the 2 remaining HCN measures, and in particular of our predicted norm HCNp. Turning to the two last Columns 5 and 6, which contain results for female respondents, these give no evidence that our results are driven by section on unobservables since none of the constructed bounds include 0.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Oster Bounds (Selection on Unobservables)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 9,
+        "text": "Next, we produce bounds on our HCN estimates for indicators of research performance. Before doing so, there are several points worth noting. First, Oster’s methodology uses changes in β and R2 as derived from unconditional and conditional OLS regressions. This means that it is impossible to construct bounds using estimates from our main probit and Poisson regressions. We therefore produce the bounds using OLS estimates. As highlighted in column 2 of Annexe Table 6, however, we already check that our main results are consistent when using OLS regressions 19 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 10,
+        "text": "Second, in the population sample, we have fewer observable variables to analyse the sensitivity of the main treatment effect to the inclusion of these variables. On this, we consider the reference group characteristics to be those that matter, a priori, which is why we systematically include them as our main controls. In contrast, as reflected in the changes between columns 4 and 5 of Table 5, the point estimates for our HCN measures are largely insensitive to the inclusion of additional controls (household characteristics and perception that the institution supports gender equality). However, we do not know whether these additional controls would have larger implications in relation to objective indicators of research performance. This is a limitation to the bounds we can produce for our research performance outcomes. Nonetheless, we present bounds with these midβ & in Table 11 below. These suggest that our results for indicators of research performance are also robust to selection on unobservables, since most of the constructed bounds exclude 0. One exception to this is the bound produced on female academics’ citations, where we cannot reject that the true effect is 0. This is noteworthy since, not only do the bounds produced for female academics’ publications and h-index not contain 0, but in both cases, the estimated bounds are positive, suggesting that on these outcomes, HCNg may actually be beneficial to women’s performance. This raises further questions, such as the nature of selection of women in academia and how this relates to research productivity. This being 19 The concern remains with replicating Oster’s bounding analysis with OLS estimates that this ignores the count data/nonnegative nature of the indicators for publications, citations and h-index. To ensure that we are not missing information relating to the distribution of these three dependant variables, we use the log 1 + dependent variables, and reproduce Oster bounds with this specification. Results of this are presented for the full, male and female samples in Annexe Table 7. These largely replicate those in Table 11 above. One difference is that the bound produced on the estimates for citations in the female sample now does not 0 when citations are transformed to log 1 plus the original count, in line with what we find for both publications and h-index, in both Tables 11 and Annexe Table 7.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Oster Bounds (Selection on Unobservables)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 5,
+        "section_name": "Robustness check",
+        "paragraph_id": 11,
+        "text": "said, Table 11 continues to confirm that HCNg are detrimental to male academics’ research performance, even accounting for potential selection.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "Our study examines the implications of hyper-competitive norms, for the well-being and performance of employees in academic institutions, and investigates why “bad” norms may persist. To do so, we collected detailed data from staff and faculty in 5 leading European business schools. Of course, all our results apply to the sample of institutions we study. These are leading research institutions in their own countries. Further research should collect data to assess whether they would be the same in other institutions, or in other industries or countries.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "An important contribution of this study is in how we used individual survey responses to develop a novel measure of norms across key reference groups, which we use to explain differences in wellbeing, turnover intentions and research performance. This novel measure allows us to introduce rich fixed effects, such that our identification comes from within institution differences, holding constant key characteristics of gender, rank, tenure and academic field.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "We first show that HCN has a large negative effect on employees’ well-being in the workplace, and it increases their turnover intentions. We show this for individual perceptions of these norms, a finding that is therefore in line with other studies that have measured similar elements of hypercompetitive workplace cultures. However, we contribute to this literature and to that of social norms, by showing that these negative implications remain when using a measure of norms that accounts for the norm derived from the individual’s narrow reference groups, and where we can therefore control for differences in many dimensions such as institutional policies, rank cohort effects, gender differential socialization, etc",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "Our second main result shows that this lower well-being is not compensated for by higher objective performance. We find academics publish less and have fewer citations in hyper-competitive environments. To our knowledge, we are the first to relate the impact of this prevalent type of workplace norms to objective measures of performance.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "In the second part of our analysis, we explore several reasons why such norms may persist in academic environments. First, we find not significant differences between men and women in terms of HCN’s implications. An intuitive prior could have found benefits of HCN for men, who by demonstrating hyper-competitive behaviours, are demonstrating behaviours stereotypically congruent",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 5,
+        "text": "with their gender. If anything, our results suggest that men suffer significantly from HCN, and the difference with respect to women is not statistically significant. Next, we explore HCN increases the performance subsets of the productivity distribution, such as stars, which could justify why norms persist: by pushing the research frontier even if it harms the average researcher. We find no evidence at all that this is the case.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1381,
+        "section_id": 6,
+        "section_name": "Conclusion",
+        "paragraph_id": 6,
+        "text": "In contrast, our survey data suggests that HCN lead academics to think that they have superior performance to their peers in these hyper competitive environments. This may explain why these norms persist even though they have no psychological or performance benefit: The question of why bad norms persist is an important one to explain cultural evolution. Here we provide empirical evidence on one specific mechanism: individuals believe they are good. Why these false beliefs may persist is a question that we leave for future research.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

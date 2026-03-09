@@ -1,19 +1,325 @@
 [
     {
         "paper_id": 1600,
-        "section_id": 6,
-        "section_name": "Results",
-        "paragraph_id": 5,
-        "text": "Table 3.1: Determinants of Exhaustion: OLS and Quantile Regressions",
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Workplace emotional exhaustion has been rising for decades, reaching its peak during the COVID-19 pandemic (Jenkins, 2023; Wilk et al., 2023; Sherman and Klinenberg, 2024). In Australia, about 46% of employees feel burnt out and 92% of workplace serious mental health issues are attributed to work-related stressors (ELMO Employee Sentiment Index report, 2022). Similar trends can be found in the US and the UK (ref.). Essential workers, including healthcare workers, are particularly vulnerable to experiencing higher burnout risk (Grace and VanHeuvelen, 2019; Haar and O’Kane, 2022; Jenkins, 2023). SafeWork Australia (2022) recently reported that work-related mental health conditions are on the rise, leading them to issue the Code of Practice for Managing Psychosocial Hazards under section 274 of the Work Health and Safety Act 2011. The Code mandates that Australian employers must honour their responsibility to identify, assess and eliminate workplace psychosocial hazards and risks, suggesting they are just as threatening to employees as physical hazards (Safe Work Australia, 2019, 2022). Legislations on psychosocial risk also exist in other countries, for example some European countries (Jain et al., 2022). Psychosocial hazards can be defined as “all the aspects of management and work organization that may negatively affect the employee’s mental and physical health” (Kowalczuk et al., 2018:1). In common with workplace bullying or psychological safety climate more broadly, workplace psychosocial hazards are largely influenced by an organisation’s approach to leadership including the values, beliefs, and behaviours of supervisors (Dollard et al., 2017). Psychosocial risks are recognised as a major challenge to occupational health and safety and public health more broadly (EU-OSHA (European Agency for Safety and Health at Work), 2007; Leka, S. and Cox, T., 2008). Exposure to psychosocial risks can lead to physical, mental and social health including burnout (World Health Organization, 2010). This means that high job demands, low control, and effort-reward imbalance are risk factors for mental and physical health problems (World Health Organization, 2010). It is therefore widely recommended that occupational health and safety also include workrelated stress (for example, by the Commission for the Social Determinants of Health",
         "extraction_warnings": "",
+        "tier": 2,
         "matched_keywords": [
-            "Quantile Regressions"
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "(World Health Organization, 2008)). The disparities and observed unevenness of the psychological hazards are particularly relevant to policy makers within governments (Sheehy et al. 2021), and in particular in the context of the Australian Work Health and Safety Act 2011 and the Australian Government’s Mental Health Strategy (Safe Work Australia 2022), which place greater demands on employers’ responsibility to identify and reduce psychosocial risks and hazards. The objective of the government’s mental health strategy is to ensure that proactive measures are taken to identify, eliminate or minimise psychosocial risks in the workplace. The promotion of a positive workplace culture, for example, includes committing and supporting managers to develop their capability to create mentally healthy workplaces that promote a culture of positive mental health and well-being (Safe Work Australia, 2022). Stressing that employers, including any person conducting a business or undertaking (PCBU), have a legal responsibility to manage hazards and risks in the workplace, the resources provided include access to a free account which encompasses five key risk management steps that guide users along the way. The steps are: 1) preparing the workplace; 2) conducting the survey (identifying risks); 3) understanding results (assessing hazards); taking action (controlling risks); and 3) reviewing and improving control measures (SafeWork Australia, 2021). Emotional exhaustion has been shown to be a key factor that is detrimental to workers’ satisfaction, engagement, performance, and intention to leave (e.g., Cropanzano et al., 2003; Halbesleben, & Buckley, 2004). However, as Moss (2019) suggests in focusing solely on emotional exhaustion, we may overlook the broader organisational issues that contribute to it, suggesting that a more systemic approach is necessary to address the underlying causes effectively. Variable pay systems (also known as performance-based systems) are associated with higher burnout compared to fixed salaries (Yeh et al., 2009). The job demands-control (JD-C) model proposes that employees who face heavy job demands and low control over work are more likely to experience psychological distress (Karasek, 1979). [Add more literature here with similar research questions as ours but",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "using the standard approaches without accounting for the distribution] Prior analyses of the impact of job demands and control on employee exhaustion have traditionally focused on average effects. We propose a framework allowing for heterogenous impacts, which vary depending on the level of quantiles of exhaustion. That is, how an employee responds to additional job demands or control varies depending on their level of exhaustion. This new approach is made possible by the recent development of recentered influence functions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Recentered Influence Functions (RIF)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 0,
+        "text": "We use data from an Australian nationwide employee survey which includes a total of 2,638 observations. [add more details here including Ethics approval] Data is pooled from three cross-sectional waves. The first wave was in the field between 8 and 29 December 2021, the second wave was conducted between 17 and 31 March 2022, and the third wave took place between 1 April and 11 July 2022. We applied the following checks to determine the validity of the responses: (1) Straight line responses where respondents consistently score every question strongly agree / disagree; (2) The age of the respondent minus length of service was less than 15; (3) The average duration of a PhD degree (being 4 years) minus the respondent’s age was less than 25; (4) The respondent’s working hours was above 90; (5) The age of the respondent was greater than 75; (6) The number of the respondent’s children was greater than 7; (7) The response time was less than 5 minutes. Any survey response that did not pass these checks was disqualified and deleted from the dataset. xx responses were rejected as invalid responses, leaving us with a dataset of xx valid responses, representing a response rate of x%. In addition, we restrict the sample to employees below the age of 67 who are located in Australia and we drop individuals with missing values. After applying these restrictions, the number of observations for each wave is 751, 604 and 620, respectively, or a total of 1,975 employees across all three waves.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 1,
+        "text": "Emotional exhaustion is one of the key symptoms of burnout along with mental distance, emotional impairment and cognitive impairment (Maslach and Jackson, 1981; Haar and O’Kane, 2022). Among these burnout dimensions, emotional exhaustion is the closest to more orthodox job strain variables (De Jonge et al., 1999). We measure exhaustion using three items adapted from the emotional exhaustion component of Maslach Burnout Inventory (MBI) developed by Maslach and Jackson (1981). According to Maslach et al. (2001), the MBI is the scale with the strongest psychometric properties and it is widely used in the literature (De Jonge et al., 1999; Grace and VanHeuvelen, 2019; Hao and Zhang, 2024). We construct it via simple factor analysis from the following questions rated on an 11-point Likert scale from 1 to 11: (1) I feel burned out from my work. (2) I feel used up at the end of the workday. (3) I feel emotionally drained from my work. Each item was reverse coded so that higher scores were indicating higher levels of exhaustion. The internal consistency of the exhaustion scale was high, with Cronbach’s alpha α = 0 . 90.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 2,
+        "text": "Job demands are captured via three constructs from Karasek Jr (1979) JD-C model that are widely used in the literature: work pressure (strain), cognitive demands and hassles (De Jonge et al., 1999; Elovainio et al., 2007; Oshio et al., 2015; Grace and VanHeuvelen, 2019). We use three-item scales for each construct with the items listed in Table 2.1. Higher scores indicate higher demands. Cronbach’s alpha was α = 0 . 78 for work pressure, α = 0 . 77 for cognitive demands and α = 0 . 86 for hassles. Work pressure refers to the perceived intensity and urgency of job demands, often resulting in heightened stress when individuals feel they cannot manage these demands effectively (Karasek Jr, 1979). Prior literature uses work pressure as a proxy for job demands (Bakker, 2014; Grace and VanHeuvelen, 2019) and there are also variations of work pressure, such as time pressure (Demerouti et al., 2001), quantitative demands as one",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 3,
+        "text": "of the dimensions in the Copenhagen Psychosocial Questionnaire (COPSOQ) (Kristensen et al., 2005) and work pace as one of the dimensions in the COPSOQ II (Pejtersen et al., 2010). Cognitive demands involve the mental effort required to process information, solve problems, and make decisions within the workplace, potentially leading to cognitive overload when these demands exceed an individual’s capacity. Cognitive demands are one of the dimensions in the Copenhagen Psychosocial Questionnaire versions COPSOQ (Kristensen et al., 2005) and COPSOQ II (Pejtersen et al., 2010). Hassles relate to role conflict, ambiguity and overload (Zohar, 1997). Role clarity and role conflicts are also included as scales on the COPSOQ and COPSOQ II as part of the “Interpersonal relations and leadership” domain (Kristensen et al., 2005; Pejtersen et al., 2010). [Note: terminology used in Social Science and Medicine: Work-life conflict (Grace and VanHeuvelen, 2019), irregular work hours (Grace and VanHeuvelen, 2019), heavy work pressure (Grace and VanHeuvelen, 2019), psychological (workload), physical and emotional demands (De Jonge et al., 1999). None of the SSM journal articles or the list of references on the linking document had “hassles”]",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 4,
+        "text": "Job autonomy (decision authority or decisional influence) is commonly used as a proxy for job control (Blanch, 2016; Waddimba et al., 2019; Taouk et al., 2024). Job control is captured via three items on self-determination ( α = 0 . 86) which are derived from Spreitzer (1995) and are commonly used in the literature (Mahama and Cheng, 2013; Firth et al., 2014; D’Innocenzo et al., 2016; Dust et al., 2018). The three questions are listed in Table 2.1. Self-determination refers to an individual’s sense of choice in initiating and regulating actions (Deci et al., 1989). It reflects autonomy in work behaviors, such as decisions on methods, pace, and effort (Spector, 1986). As a key component of psychological empowerment, self-determination, alongside meaning, competence, and impact, represents an active orientation to one’s work role (Spreitzer, 1995). [Note: The Social Science and Medicine journal uses decision authority or decisional influence rather than self-determination and I couldn’t see any article that uses the Spre-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 6,
+        "text": "All four variables are constructed via factor analysis from multiple questions that were asked in the survey. The factor analysis involves a novel approach whereby the factor analysis is applied to residuals from IV-type regressions to address potential measurement error. The regressions are estimated separately for every construct. Each individual variable within the construct is regressed on the other two or three variables that relate to the same construct, and then the residuals are extracted. The idea of using other measures of the same construct as IVs to reduce noise in the regression is based on Gillen et al. (2019), however our approach is novel in incorporating factor analysis into the scale construction. Table 2.1: Constructs of Key Variables",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Local Average Treatment Effect (LATE)"
         ],
         "matched_l1_methods": [
             "Empirical and Econometric Methods"
         ],
         "matched_l2_methods": [
-            "Structural & Advanced Econometrics"
+            "Regression Discontinuity Design (RDD)"
         ]
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 8,
+        "text": "Mental Strain Exhaustion (1) I feel burned out from my work. (2) I feel used up at the end of the workday. (3) I feel emotionally drained from my work. Job Demand Work pressure (1) My job requires me to work very hard. (2) I have too much work to do. (3) I never seem to have enough time to get my work done. Job Demand Cognitive demands (1) My work requires a lot of concentration. (2) My work is mentally very straining. (3) My work requires my constant attention. Job Demand Hassles (1) I have to deal with a lot of administrative hassles in my job. (2) I have many hassles to go through to get my job done. (3) I have to go through a lot of red tape to get my job done. Job Decision Latitude (Control) Decision Authority (Autonomy) (1) I have significant autonomy in determining how I do my job. (2) I can decide on my own how to go about doing my work. (3) I have considerable opportunity for independence and freedom in how I do my job.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 9,
+        "text": "Covariates include eight state and territories, age, age squared, the number of employees in the organisation, tenure, tenure squared, whether born in Australia, Aboriginal and/or",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 3,
+        "section_name": "Participants and Sample",
+        "paragraph_id": 10,
+        "text": "Torres Strait Islander origin, education (university degree), presence of a long-term health condition, impairment or disability, the number of children, whether the employee is male, and work hours.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 4,
+        "section_name": "Descriptive statistics",
+        "paragraph_id": 0,
+        "text": "Table 2.2 shows the summary statistics for all variables based on the final sample of 1,975 observations. Since the key variables are standardised, they all have a mean close to 0 and a standard deviation close to 1. Correlation matrices are shown for all key variables in Table 2.3 and for all continuous variables in Table 2.4. There does not appear to be multicollinearity as all correlations are below 55%. The highest correlation is 54% between exhaustion and work pressure. [Not sure if you wanted the correlation matrix for just the key variables or for all continuous variables so I included both versions. Correlation matrices are not ideal for categorical variables, so I haven’t included those, but when I tried those in STATA there were no high correlations either].",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 4,
+        "section_name": "Descriptive statistics",
+        "paragraph_id": 2,
+        "text": "Observations Mean SD Skewness Kurtosis Min Max Exhaustion 1975 -0.01 1.01 -0.34 2.32 -2.06 1.60 Work Pressure 1975 0.00 1.01 -0.44 2.56 -2.29 1.59 Cognitive Demands 1975 -0.01 1.00 -0.66 3.42 -3.78 1.38 Hassles 1975 0.00 1.00 -0.34 2.62 -2.24 1.85 Autonomy 1975 0.02 1.00 -0.69 3.60 -3.77 1.52 Male 1975 0.38 0.49 0.48 1.23 0.00 1.00 Age 1975 34.83 10.99 0.80 3.03 18.00 66.00 Born in Australia 1975 0.79 0.41 -1.43 3.06 0.00 1.00 University Degree 1975 0.58 0.49 -0.33 1.11 0.00 1.00 Health Condition 1975 0.14 0.34 2.13 5.53 0.00 1.00 Number of Children 1975 2.01 1.17 1.52 8.91 0.00 12.00 Employees (’000) 1975 5.11 12.84 4.63 27.74 0.00 100.00 Tenure 1975 5.97 6.04 2.17 9.75 0.00 47.00 Work Hours 1975 40.37 14.77 0.22 4.69 0.00 99.00 ACT 1975 0.01 0.11 8.54 73.97 0.00 1.00 NT 1975 0.00 0.03 31.38 985.50 0.00 1.00 QLD 1975 0.21 0.41 1.44 3.08 0.00 1.00 SA 1975 0.05 0.22 4.05 17.42 0.00 1.00 TAS 1975 0.01 0.11 9.10 83.88 0.00 1.00 VIC 1975 0.25 0.43 1.16 2.35 0.00 1.00 WA 1975 0.08 0.27 3.07 10.43 0.00 1.00 Wave 1 1975 0.38 0.49 0.49 1.24 0.00 1.00 Wave 2 1975 0.31 0.46 0.84 1.71 0.00 1.00 Wave 3 1975 0.31 0.46 0.80 1.64 0.00 1.00",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 4,
+        "section_name": "Descriptive statistics",
+        "paragraph_id": 5,
+        "text": "Work Pressure 0.54 [FORMULA] 1.00 (0.000) Cognitive Demands 0.26 [FORMULA] 0.38 [FORMULA] 1.00 (0.000) (0.000) Hassles 0.45 [FORMULA] 0.49 [FORMULA] 0.29 [FORMULA] 1.00 (0.000) (0.000) (0.000) Autonomy -0.19 [FORMULA] -0.07 [FORMULA] 0.18 [FORMULA] -0.07 [FORMULA] 1.00 (0.000) (0.002) (0.000) (0.001) The sample includes 1975 individuals. p -values in parentheses ∗ p < 0 . 10, ∗∗ p < 0 . 05, [FORMULA] p < 0 . 01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 4,
+        "section_name": "Descriptive statistics",
+        "paragraph_id": 6,
+        "text": "Table 2.4: Correlation Matrix of Continuous Variables Exhaustion Work Pressure Cognitive Demands Hassles Autonomy Age Born in Australia Children Employees (’000) Tenure Work Hours Exhaustion 1.00 Work Pressure 0.54 [FORMULA] 1.00 (0.000) Cognitive Demands 0.26 [FORMULA] 0.38 [FORMULA] 1.00 (0.000) (0.000) Hassles 0.45 [FORMULA] 0.49 [FORMULA] 0.29 [FORMULA] 1.00 (0.000) (0.000) (0.000) Autonomy -0.19 [FORMULA] -0.07 [FORMULA] 0.18 [FORMULA] -0.07 [FORMULA] 1.00 (0.000) (0.002) (0.000) (0.001) Age -0.17 [FORMULA] -0.02 0.10 [FORMULA] 0.00 0.10 [FORMULA] 1.00 (0.000) (0.500) (0.000) (0.949) (0.000) Born in Australia 0.08 [FORMULA] 0.06 [FORMULA] 0.06 ∗∗ 0.01 -0.02 -0.16 [FORMULA] 1.00 (0.000) (0.009) (0.011) (0.583) (0.330) (0.000) Number of Children -0.08 [FORMULA] 0.01 0.08 [FORMULA] 0.04 ∗ 0.09 [FORMULA] 0.46 [FORMULA] -0.05 ∗∗ 1.00 (0.000) (0.820) (0.001) (0.053) (0.000) (0.000) (0.035) Employees (’000) -0.00 0.01 0.00 -0.01 -0.00 0.04 ∗∗ -0.01 0.01 1.00 (0.951) (0.734) (0.912) (0.525) (0.974) (0.049) (0.588) (0.614) Tenure -0.07 [FORMULA] 0.01 0.07 [FORMULA] 0.06 [FORMULA] 0.11 [FORMULA] 0.52 [FORMULA] -0.03 0.27 [FORMULA] 0.16 [FORMULA] 1.00 (0.003) (0.559) (0.001) (0.006) (0.000) (0.000) (0.198) (0.000) (0.000) Work Hours 0.11 [FORMULA] 0.21 [FORMULA] 0.09 [FORMULA] 0.19 [FORMULA] 0.08 [FORMULA] 0.01 0.01 0.09 [FORMULA] -0.03 0.03 1.00 (0.000) (0.000) (0.000) (0.000) (0.001) (0.761) (0.760) (0.000) (0.151) (0.203) The sample includes 1975 individuals. p -values in parentheses ∗ p < 0 . 10, ∗∗ p < 0 . 05, [FORMULA] p < 0 . 01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 5,
+        "section_name": "Statistical analysis",
+        "paragraph_id": 0,
+        "text": "Generate unconditional quantiles for the dependent variable. All statistical analyses were performed with STATA software version MP 17. The significance level is 0.05.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "The main results are shown visually in Figure 1, while the estimated coefficients for all specifications are shown in Table 3.1. The figures show the relationship between each of the three demands and the control variables and exhaustion. The estimated coefficients and their respective confidence intervals are shown for quantiles 10 to 90 and illustrate how the relationship between those demands/control and exhaustion differs for individuals with lower levels of exhaustion compared to those with higher levels of exhaustion. The red lines indicate the average effect based on estimated coefficients from OLS regressions. [Note on formatting Figure 1: Need to change self-determination to autonomy, white background, different y scales] While experiencing work pressure and hassles increases exhaustion for individuals across all quantiles of exhaustion, these effects are greatest among individuals with lower levels of exhaustion. The effect is much lower for individuals with higher levels of exhaustion, with the effect reducing by about half for the 90th quantile relative to the 10th quantile. As shown in Table 3.2, these differences are statistically significant, as well as differences between the 10th quantile and the OLS estimate, and between the 90th quantile and the OLS estimate. This could be due to individuals disengaging as they are increasingly more exhausted and burnt out [check literature to back this up?]. A higher exposure to cognitive demands has the opposite effects for individuals with low versus high levels of exhaustion. Individuals with lower levels of exhaustion (quantiles 10, 20, 30) experience reductions in exhaustion when exposed to more cognitive demands. On the other hand, individuals who are already highly exhausted (quantiles 40 and higher)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "-.4 -.2 0 .2 .4 .6 Change in exhaustion 30 40 50 60 70 80 90 Quantile Work Pressure Demands -.4 -.2 0 .2 .4 .6 Change in exhaustion 30 40 50 60 70 80 90 Quantile Cognitive Demands",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "-.4 -.2 0 .2 .4 .6 Change in exhaustion 30 40 50 60 70 80 90 Quantile Hassles Demands -.4 -.2 0 .2 .4 .6 Change in exhaustion 30 40 50 60 70 80 90 Quantile Self-Determination Resources",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "experience increases in exhaustion when exposed to more cognitive demands. This effect more than doubles at the 90th quantile relative to the 40th quantile. As shown in Table 3.2, these differences are statistically significant, as well as differences between the 10th quantile and the OLS estimate, and between the 90th quantile and the OLS estimate. On the other hand, higher levels of autonomy reduce exhaustion for individuals across all quantiles of exhaustion, although this effect reduces for individuals who are already exhausted and becomes statistically insignificant for quantiles 70 and 90. Individuals who are already burnt out may have less capacity to benefit from autonomy [any literature?]. [Notes: change table 3.1 formatting to landscape long]",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) OLS Q10 Q20 Q30 Q40 Q50 Q60 Q70 Q80 Q90 Work Pressure 0.371** 0.539** 0.587** 0.498** 0.412** 0.365** 0.345** 0.325** 0.338** 0.278** (0.024) (0.068) (0.056) (0.043) (0.033) (0.030) (0.028) (0.028) (0.031) (0.036) Cognitive Demands 0.083** -0.134* -0.119* -0.011 0.075* 0.141** 0.186** 0.192** 0.253** 0.248** (0.021) (0.060) (0.050) (0.040) (0.031) (0.028) (0.027) (0.026) (0.029) (0.033) Hassles 0.253** 0.447** 0.465** 0.363** 0.266** 0.241** 0.222** 0.195** 0.173** 0.129** (0.024) (0.064) (0.054) (0.042) (0.032) (0.029) (0.028) (0.028) (0.032) (0.038) Autonomy -0.141** -0.317** -0.294** -0.224** -0.155** -0.111** -0.082** -0.046 -0.072* -0.059 (0.019) (0.048) (0.043) (0.035) (0.027) (0.025) (0.025) (0.026) (0.031) (0.038) Male -0.150** 0.048 -0.101 -0.178* -0.150* -0.185** -0.201** -0.232** -0.296** -0.253** (0.038) (0.095) (0.092) (0.077) (0.061) (0.056) (0.053) (0.052) (0.054) (0.059) Age -0.021 0.029 -0.026 -0.037 -0.038* -0.045** -0.029 -0.030* -0.014 -0.003 (0.011) (0.029) (0.026) (0.022) (0.017) (0.016) (0.015) (0.015) (0.016) (0.018) Age Squared 0.000 -0.001 -0.000 0.000 0.000 0.000* 0.000 0.000 0.000 -0.000 (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Born in Australia 0.054 0.119 0.044 0.075 0.042 0.019 0.057 0.044 0.050 0.111 (0.045) (0.111) (0.106) (0.089) (0.071) (0.064) (0.062) (0.062) (0.067) (0.065) University Degree -0.106** -0.178* -0.092 -0.062 -0.042 -0.053 -0.048 -0.134** -0.140* -0.188** (0.037) (0.090) (0.085) (0.072) (0.058) (0.053) (0.051) (0.052) (0.057) (0.063) Health Condition 0.070 -0.034 0.051 0.115 0.145 0.130 0.103 0.015 0.023 -0.012 (0.053) (0.119) (0.116) (0.098) (0.081) (0.075) (0.073) (0.075) (0.082) (0.089) Number of Children -0.023 0.016 -0.014 0.016 0.004 -0.025 -0.047 -0.037 -0.059* -0.064* (0.017) (0.040) (0.038) (0.034) (0.027) (0.024) (0.025) (0.023) (0.025) (0.029) Employees (’000) 0.000 -0.007 -0.005 -0.004 -0.003 -0.001 0.002 0.004* 0.007** 0.006* (0.002) (0.004) (0.003) (0.003) (0.002) (0.002) (0.002) (0.002) (0.002) (0.003) Tenure 0.014 -0.016 0.023 0.005 0.013 0.029** 0.031** 0.035** 0.025* 0.008 (0.008) (0.021) (0.019) (0.015) (0.012) (0.011) (0.010) (0.010) (0.010) (0.011) Tenure Squared -0.000 -0.000 -0.001 -0.000 -0.000 -0.001* -0.001* -0.001* -0.001* -0.000 (0.000) (0.001) (0.001) (0.001) (0.000) (0.000) (0.000) (0.000) (0.000) (0.000) Work Hours 0.000 -0.001 -0.000 -0.001 -0.001 -0.001 -0.000 0.001 0.000 0.002 (0.001) (0.003) (0.003) (0.002) (0.002) (0.002) (0.002) (0.002) (0.002) (0.002) ACT 0.004 0.084 0.254 -0.402 0.001 0.158 0.106 0.039 -0.064 -0.262 (0.122) (0.361) (0.313) (0.293) (0.225) (0.194) (0.213) (0.204) (0.216) (0.187) NT 1.235** 0.695* 1.030* 0.982* 0.984** 1.074** 1.328** 1.703** 2.387** 1.702 (0.381) (0.339) (0.500) (0.432) (0.343) (0.313) (0.281) (0.253) (0.355) (1.958) QLD 0.047 0.061 0.120 0.095 0.126 -0.002 -0.017 -0.041 -0.071 -0.026 (0.048) (0.115) (0.111) (0.093) (0.075) (0.070) (0.066) (0.066) (0.072) (0.080) SA 0.061 0.166 0.357* -0.028 -0.001 0.102 0.112 0.088 0.080 -0.262** (0.079) (0.198) (0.182) (0.163) (0.127) (0.117) (0.115) (0.120) (0.130) (0.101) TAS -0.084 0.459 -0.096 -0.084 0.008 -0.203 -0.299 -0.104 -0.365* -0.253 (0.161) (0.428) (0.434) (0.350) (0.276) (0.236) (0.196) (0.201) (0.183) (0.194) VIC 0.034 -0.077 0.110 0.020 0.005 0.009 0.088 0.034 0.019 0.028 (0.046) (0.113) (0.104) (0.088) (0.072) (0.065) (0.063) (0.063) (0.069) (0.078) WA 0.049 0.203 0.152 0.040 0.069 0.119 0.047 -0.039 -0.102 -0.119 (0.068) (0.152) (0.154) (0.133) (0.108) (0.098) (0.096) (0.097) (0.103) (0.109) Wave 2 0.033 -0.095 0.040 0.044 0.049 0.030 0.009 0.022 0.141* 0.038 (0.046) (0.109) (0.103) (0.087) (0.070) (0.065) (0.063) (0.062) (0.069) (0.079) Wave 3 -0.057 -0.106 -0.027 -0.062 -0.038 -0.106 -0.125* -0.058 -0.033 -0.100 (0.043) (0.106) (0.102) (0.086) (0.069) (0.063) (0.059) (0.060) (0.064) (0.069) Observations 1975 1975 1975 1975 1975 1975 1975 1975 1975 1975 R 2 0.400 0.209 0.252 0.244 0.245 0.253 0.261 0.237 0.238 0.165",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "Table 3.2: Tests for Differences in Coefficients: 10th vs 90th Quantile - OLS vs 10th Quantile - OLS vs 90th Quantile",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "Work Pressure F(1,1974) = 11.9 F(1,1974) = 8.9 F(1,1974) = 7.8 p = 0.001 p = 0.003 p = 0.005 Cognitive Demands F(1,1974) = 29.6 F(1,1974) = 18.4 F(1,1974) = 28.0 p = 0.000 p = 0.000 p = 0.000 Hassles F(1,1974) = 18.6 F(1,1974) = 12.9 F(1,1974) = 13.3 p = 0.000 p = 0.000 p = 0.000 Autonomy F(1,1974) = 15.8 F(1,1974) = 18.0 F(1,1974) = 5.3 p = 0.000 p = 0.000 p = 0.021",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1600,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "This section can include subsections on future research directions and limitations, theoretical and practical implications.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
     }
 ]

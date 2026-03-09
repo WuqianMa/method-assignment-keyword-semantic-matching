@@ -1,0 +1,874 @@
+[
+    {
+        "paper_id": 1300,
+        "section_id": 0,
+        "section_name": "When Growth leads to Zero-sum Conflict *",
+        "paragraph_id": 2,
+        "text": "Abstract In many settings, individuals face a tradeoff between cooperating to expand a collective good (a “collective pie”) or competing to expand the share they own of that good. We study this tradeoff as a dynamic public goods problem where the size of the collective pie (and its shares) can only be gradually changed and contributions to the pie’s growth are irreversible. Our main result is that the pie’s growth eventually halts and conflict between the agents ensues forever. In the essentially unique subgame perfect equilibrium, growth ultimately leads to a stage-game that is reminiscent of the prisoner’s dilemma. However, unlike a repeated prisoner’s dilemma, cooperation is unsustainable in our model. We also show that any initial inequality in agents’ shares decreases gradually as the pie grows, and the speed of the pie’s growth may either increase or decrease with greater initial inequality. These results are independent of the agents’ discount factors, and the inefficiency induced by conflict is unbounded. We highlight the empirical relevance of our theory to factionalism in organizations, special interest politics, and market competition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Subgame Perfect Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 0,
+        "section_name": "When Growth leads to Zero-sum Conflict *",
+        "paragraph_id": 3,
+        "text": "* ́ Alvaro Delgado-Vega: adelgadovega@uchicago.edu ; Barton E. Lee: bartonlee@ethz.ch . This paper has benefited from discussions with S. Nageeb Ali, Sandeep Baliga, Benjamin Blumenthal, Ethan Bueno de Mesquita, Peter Buisseret, Philipp Denter, Jon Eguia, Christian Ewerhart, William Fuchs, Hans Gersbach, Gabriele Gratton, ́ Angel Hern ́ ando-Veciana, Hongyi Li, Elliot Lipnowski, Antoine Loeper, Pedro P. P ́ erezVelasco, Armin Schmutzler, and Johannes Schneider. We also thank seminar and workshop participants at Ca’ Foscari University of Venice, the Stigler Affiliates Conference (Chicago Booth), and the 2 nd UC3M Micro Retreat. During part of this project, ́ A. Delgado-Vega was supported by a Postdoctoral Fellowship at the Chair of Political Economy and eDemocracy at ETH Z ̈ urich; he is grateful for his time there. B. Lee is an Affiliate Fellow at the Stigler Center at Chicago Booth.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "In many settings, individuals face a tradeoff between pursuing cooperative actions that expand a collective good or competitive actions that expand the share they own of that good. This classical tradeoff is ever present—from the internal workings of organizations to interactions between competing firms in the same industry. For example, members of an organization must choose between investing their time in expanding their organization’s resources or trying to redirect existing resources toward their preferred use ( Milgrom , 1988 ; Milgrom and Roberts , 1988 ). In an industry, firms may expand their industry’s market as a whole (e.g., via industry-wide advertising) or compete to increase their market share. Organized interest groups may exert effort toward expanding production—“society’s pie”—or try to shift a greater share of the existing pie toward their members (see, e.g., Olson , 1982 ). Understanding when and why individuals cooperate to grow a collective good or when, instead, they pursue conflict over its distribution is crucial for our understanding of the dynamics of organizations, markets, and political competition. Yet, the dynamics of growth and conflict with collective goods are potentially complicated. In these settings, individuals’ interactions are rarely one-shot; instead, individuals must repeatedly resolve this tradeoff as they interact in the same market place, organization, or economy. This gives rise to dynamic consequences: Choosing to expand one’s share today means starting with a higher share tomorrow; expanding the collective good today leads to a larger good tomorrow. Therefore, present decisions may have long-term consequences for both the evolution of the collective good’s size and its distribution. Furthermore, since individuals have long-term interests, there is scope for relational contracts to emerge whereby cooperation is sustained over time by the threat of (self-enforcing) punishment. In this paper, we study this tradeoff as a dynamic public goods problem. We focus on settings that have two features common to the literature on public goods. First, individuals face constraints imposed by institutions or technology that allow only for gradual shifts in the shares and size of the collective good ( Acharya and Ortner , 2022 ). Second, contributions to expand the collective good are irreversible ( Battaglini et al. , 2014 ; Lockwood and Thomas , 2002 ; Matthews , 2013 ). Irreversibility appears naturally in many settings. For example, useful ideas contributed by an organization’s member cannot be unlearned. A firm’s advertisement that makes a new segment of the population aware of the industry’s existence is a contribution not easily reversed. In our model, two forward-looking agents own complementary shares of a pie, and each period they simultaneously choose whether to expand the pie or expand their share",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Relational Contracts",
+            "Relational Contracts"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": [
+            "Game Theory & Mechanism Design"
+        ]
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "of it. The pie only grows if some agent contributes to it. The law of motion of the pie is additive: Each agent’s contribution adds a fixed amount to the pie and if both agents contribute to it, the pie grows by twice as much as if only one contributes. The law of motion of each agent’s share is also additive: If only one agent attempts to increase her share, it increases by a fixed amount but if both (or neither) do, there is a stalemate and the agents’ shares remain unchanged. This means that an agent, if she so chooses, can always guarantee that her share does not decrease. An agent’s incentive to expand the pie is increasing in her share of it ( ` a la Olson , 1971 ). Conversely, her incentive to expand her share is increasing in the size of the pie. Hence, an agent is more likely to expand the pie when the pie is small or her share is large. With myopic agents, a sufficiently large pie leads to perpetual conflict: Both agents fight for their share, producing a stalemate that stops growth. Yet, one may conjecture that cooperation can be sustained when agents are forward-looking and interacting repeatedly. Our main result shows that this conjecture is wrong: Growth eventually halts and conflict follows thereafter. Furthermore, the size of the pie for which conflict ensues is independent of the agents’ discount factor (and, hence, coincides with the agents’ myopic behaviors). To see why, suppose we try to sustain a path of growth via grim-trigger strategies: If any agent deviates to increase her share, she will be punished by the other agent also attempting to increase her share and growth ceasing thereafter. By the ensuing stalemate over the shares of the pie, a deviating agent will still guarantee herself the payoff that she appropriated in her deviation. The breakdown of cooperation then follows from the fact that, since the pie grows with constant returns, the total future growth of the pie is independent of its current size. However, each agent’s gain from deviating to increase her share naturally increases in the pie’s size—in turn, there exists a size of the pie for which agents deviate. 1 The fact that cooperation eventually halts has an unraveling effect. As a result, forward-looking agents are unable to grow the pie beyond what myopic agents can achieve. More generally, all dynamics in our model are unaffected by the agents’ discount factors. Our results connect inequality both to the speed and limit of growth. If agents have equal initial shares, both contribute to expand the pie and eventually stop at the same time. If they have different initial shares, the agent with the smallest share stops cooperating first. This causes the speed of growth to slow and resembles a key observation by Mancur Olson ( 1971 ) in his seminal work on collective action problems: There exists a “tendency for 1 In Section 6 , we show that this result is robust to relaxations of key assumptions, including: the possibility that the size of pie depreciates or conflict over the shares destroys part of the pie, and endowing the agents with asymmetric discount factors.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "‘exploitation’ of the great by the small.” The agent who owns a larger share keeps the pie growing while the agent with a smaller share free rides and increases her share. However, because the share of the large-share agent is decreased, this also decreases the large-share agent’s incentive to contribute to expanding the pie—eventually, leading the large-share agent to also compete over shares of the pie. Perhaps interestingly, this initial inequality leads the pie to grow to a long-run size that is larger than would otherwise be attained if the agents had equal shares. Hence, more persistent growth requires initial inequality but growth also gradually erodes inequality. In our framework, initial conditions matter. More extreme initial levels of inequality are more likely to have a persistent effect, which consists of greater long-run inequality but also a greater long-run size of the pie. However, this does not mean that extreme initial inequality is necessarily the utilitarian optimum since, as a result of the “tendency for ‘exploitation’ of the great by the small,” more unequal initial conditions translate into equilibrium paths where only one agent contributes to the collective good, implying slower growth rates. Hence, equality is the utilitarian optimum if agents are sufficiently impatient, whereas maximal inequality is the utilitarian optimum for sufficiently patient agents. Our setting connects to two classical games: The prisoner’s dilemma and the centipede game ( Rosenthal , 1981 ). When the pie is such that in equilibrium conflict ensues, the agents face a prisoner’s dilemma stage game: Each agent has a dominate strategy in the stage game to expand their share but both agents would be better off if they expanded the pie. Therefore, the dynamics of growth in this model imply that regardless of initial conditions, agents will eventually end up playing a repeated prisoner’s dilemma at perpetuity. However, unlike the folk theorems for repeated games ( Friedman , 1971 ), cooperation cannot be sustained because cooperation leads to a larger pie, which increases the attractiveness of defection and this, in turn, has an unraveling effect that makes cooperation impossible. In this sense, the logic of conflict is reminiscent of a centipede game. Yet, in our model, the unraveling argument of the centipede game applies only partially: When the pie is small, agents are able to cooperate and grow the pie. Institutions and the broader technological environment play an important role in enabling, or hindering, cooperation. Consider the example of market competition and firms’ advertising decisions mentioned earlier. The effectiveness of the firms to expand the market or their share might depend on their ability to micro-target new customers outside of the market or customers of their competitor. New technologies, access to richer data, or changes in privacy regulation may affect one or both of these. Similarly, in organizations and politics, the ability of an individual’s or interest group’s effectiveness in redirecting resources toward their own interests might depend on institutional structures, such as the",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Repeated Games"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "stringency of checks and balances. Holding all else equal, if institutions or technology are such that it becomes easier for agents to expand their share or harder to expand the pie, then cooperation becomes harder to sustain, conflict ensues earlier, and the long-run size of the pie is smaller. 2 This result provides insight into when and why demand for more stringent regulations or institutions (e.g., checks and balances) might arise. Finally, in Section 5 , we emphasize the empirical relevance of our results by focusing on three applications. First, we consider the emergence of factionalism in social movement organizations. We show that the literature in organizational behavior and sociology provide support for our underlying mechanism and that a larger pie—more organizational resources—may induce conflict in organizations. Second, we apply our theory to market competition and firms’ decisions to invest in industry-wide (“generic”) or firm-specific (“branded”) advertising. The former aims to expand market demand for the entire industry, whereas the latter aims to steal, or defend, market share from competitors. We show that our key predictions for growth and conflict are supported by a range of anecdotal and empirical evidence. Finally, we highlight how our theory is consistent with observations made by Olson ( 1982 ), which connect the existence of special interest groups (so called “distributional coalitions”) to a country’s poorer economic performance. The remainder of the paper is structured as follows. Subsection 1.1 reviews the related literature. Section 2 presents the model. Section 3 establishes our core result that growth eventually halts. Section 4 characterizes the dynamics of growth and conflict. Section 5 discusses the empirical relevance of our theory with applications to organizations, politics, and markets. Section 6 discusses some relaxations of key modeling choices. Section 7 concludes the paper. All proofs are deferred to the appendix.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 2,
+        "section_name": "Related literature",
+        "paragraph_id": 0,
+        "text": "The limits of growth have long attracted the attention of economists ( Solow , 1956 ; Swan , 1956 ). This paper presents a theory of stagnation based on a collective action problem in which we abstract away from technological explanations of stagnation by assuming constant returns to agents’ efforts to grow a collective good. Instead, stagnation arises in our model as a result of growth itself: A larger pie makes conflict over the shares of the collective good more attractive. This provides a novel explanation of when and why individuals who are united by a collective goal (e.g., individuals in organizations, producers in an industry) will fail to adapt to change—in this case, change in the form 2 Naturally, changes that make it easier for agents to expand their share might also have spillover effects that make it easier to expand the pie. So long as the spillovers are not too large, the same conclusion holds.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 2,
+        "section_name": "Related literature",
+        "paragraph_id": 1,
+        "text": "of growth and progress toward their collective goals. According to Garicano and Rayo ( 2016 ), failure in adaptation is the type of organization failure that is least understood by the literature. 3 Like many theories of stagnation in collective action problems, our theory is underscored by a commitment problem. Commitment problems arise in situations where an agent who contributes to expanding the pie today is not guaranteed to enjoy the entirety of those benefits tomorrow. This idea is reminiscent of the centipede game and the hold-up problem in contract theory ( Williamson , 1979 ; Hart and Grossman , 1986 ; Hart and Moore , 1988 ). Closer to us, Krusell and Rios-Rull ( 1996 ), Schaefer ( 1998 ), Acemoglu ( 2003 ) and Dow and Perotti ( 2013 ) study settings where an increase in the size of the pie also produces (by assumption) a redistribution of the pie. 4 In the political economy literature of public debt ( Persson and Svensson , 1989 ; Alesina and Tabellini , 1990 ) and state capacity ( Besley and Persson , 2009 ; Besley et al. , 2013 ) a similar commitment problem results from turnover in decision-making authority. In contrast to this literature, in our setting the distribution of the pie changes endogenously to the growth of the pie (since growth affects the agents’ incentives to expand their shares) and there is no turnover in decision-making authority. In the context of (dynamic) veto bargaining, a common explanation for inefficient outcomes is the status quo effect: bargaining outcomes that are achieved today can increase agents’ reservation values in the future ( Kalandrakis , 2004 ; Compte and Jehiel , 2004 ; Duggan and Kalandrakis , 2012 ; Dziuda and Loeper , 2016 ; Acharya and Ortner , 2022 ). 5 Our model also features a status quo effect in the form of “gradualism” whereby only small changes in the size of the pie and its shares can be achieved each period. However, unlike the veto bargaining literature, our agents are not endowed with veto power and, furthermore, there are no synergies in their actions. This implies that the net effect of an agent’s action is independent of the other’s action. Perhaps closer to our paper is Acharya and Ortner ( 2022 ), which studies a setting where two agents engage in veto bargaining with policies arriving stochastically and there is an exogenously-assumed (and 3 In this sense, we connect to the literature on the theory of the firm and the limits of organizational growth ( Baker et al. , 2002 ; Gibbons , 2005 ). Our limit to the organization does not result from a lack of welfare-enhancing opportunities but because, as the organization grows, agent’s incentives for conflict increase. This result also points toward the advantages of centralization since in the model, growth would not stop if one agent was guaranteed the entire share of the pie. Centralization has also been highlighted as a potential solution to collective action problems in several literatures (see, e.g., Hart and Grossman , 1986 ; Garicano and Rayo , 2016 ; Olson , 1971 , 1982 ). 4 More distant from our model, Kreps ( 1990 ) and Chassang ( 2010 ) study how rigidities in the organization’s relational contract may produce failed adaptations. 5 Offering a different perspective, Bowen, Chen and Eraslan ( 2014 ) show that the status quo effect can improve efficiency (see also, Bowen et al. , 2017 ). For a recent survey of the literature, see Eraslan, Evdokimov and Z ́apal ( 2022 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 2,
+        "section_name": "Related literature",
+        "paragraph_id": 2,
+        "text": "commonly known) Pareto frontier. Our framework poses an interesting contrast—despite the potential for unbounded growth—in equilibrium, what would appear as a Pareto frontier emerges endogenously. The key tradeoff we study is between expanding the pie or expanding one’s share of it. This tradeoff appears in Olson ( 1982 ); although he does not consider its dynamic consequences. Since Olson , economists have analyzed this tradeoff in a variety contexts but have largely approached the problem by considering static settings, the steady states of dynamical systems, or dynamic settings with myopic agents ( Hirshleifer , 1995 ; Skaperdas , 1992 ; Maxwell and Reuveny , 2005 ; Grossman and Kim , 1995 ; Gustafsson et al. , 2020 ). Gonzalez ( 2007 ) and Eggert et al. ( 2011 ) analyze this tradeoff in a dynamic setting with forward-looking agents. However, we differ in two important ways. First, their approaches do not feature history-dependence in the agent’s shares of the pie—a key focus of our theory. In this sense, the aforementioned papers study contexts without property rights, whereas we (implicitly) study a context with “weak” property rights: An agent’s benefit from the good can be reduced from one period to the next but only gradually. Assuming history-dependent shares allows us to connect asymmetries in agents’ endowments of the pie to their incentives to pursue conflict. Although our formulation differs, we speak to Hirshleifer ( 1991 )’s observations that “the initially disadvantaged group is typically rationally motivated to fight harder” and “cooperative strategies tend to be relatively more rewarding for the better-endowed side”. Second, we allow for history-dependent strategies. Eggert et al. restricts attention to Markovian equilibria. Gonzalez ’s theory features a continuum of agents but because an individual agent’s deviation is undetectable, this approach precludes the possibility of relational contracts. Our theory is a version of a dynamic public goods problem. As is common in this literature, our public good is subject to gradualism and irreversibility. Previous work has focused on why gradualism appears in bargaining outcomes or public goods contributions (see, e.g., Admati and Perry , 1991 ; Compte and Jehiel , 2004 ). Others have focused on how the irreversibility of a public good generates gradualism ( Lockwood and Thomas , 2002 ). In contrast, and similar to Acharya and Ortner ( 2022 ), we impose gradualism as a constraint, which captures frictions generated by institutions, technology, or consumer behavior. Contributions to public goods are commonly assumed to be irreversible ( Battaglini et al. , 2014 ; Lockwood and Thomas , 2002 ; Matthews , 2013 ; Marx and Matthews , 2000 ;",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Relational Contracts",
+            "Relational Contracts"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": [
+            "Game Theory & Mechanism Design"
+        ]
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 2,
+        "section_name": "Related literature",
+        "paragraph_id": 3,
+        "text": "Parihar , 2024 ). 6 In our theory, the public good (the size of the pie) is also irreversible but, in addition, we also assume that the benefit an agent derives from the public good can be gradually changed. This latter feature contrasts our approach from the aforementioned papers. Finally, our theory speaks to the emergence of zero-sum competition in markets, politics, and organizations. Recent work has focused on the role of information asymmetries in generating zero-sum competition. Bueno de Mesquita and Dziuda ( 2023 ) analyze a dynamic model of politics where the underlying prevalence of common-value issues is known to politicians but unknown to voters. Bueno de Mesquita and Dziuda show the inevitability of “partisan traps,” whereby political competition centers around zero-sum (partisan) policy issues. Politicians exploit the informational asymmetry to make voters more pessimistic about the prevalence of common-value issues and to behave as partisans— ultimately, leading to a zero-sum trap. Similarly, Ali, Mihm and Siga ( 2024 ) illustrate how uncertainty about the distribution of a policy’s zero-sum benefits may lead ex-ante Pareto efficient policies to be rejected by a majority of voters. Ash, Morelli and Van Weelden ( 2017 ) illustrate how a politician’s desire to signal her type to voters can lead her to (inefficiently) allocate resources toward divisive, zero-sum policy issues instead of common-value issues. Our theory, in contrast, features no informational asymmetry. 7 We offer a complementary perspective in which the emergence and inevitability of zero-sum competition is a product of the growth of the collective good itself.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 3,
+        "section_name": "Model",
+        "paragraph_id": 0,
+        "text": "Time is discrete and infinite, t ∈{ 1 , 2 , . . . } . There are two agents, A and B , who own shares s t and 1 − s t , respectively, of a pie π t . The (exogenous) initial shares and pie are s 0 and π 0 . The pie and each agent’s share constitute a two-dimensional state of the world ( s t , π t ) ∈ [0 , 1] × [ π 0 , ∞ ) . At the start of each period t , the agents simultaneously choose a binary action: a t A ∈ { 0 , 1 } and a t B ∈{ 0 , 1 } . These actions a t := ( a t A , a t B ) together with the previous period’s state ( s t − 1 , π t − 1 ) determine periodt state, ( s t , π t ) . By choosing a t j = 1 an agent j ∈{ A, B } increases the pie by ω > 0 , while choosing a t j = 0 is an attempt to increase her share by 6 Irreversibility is also a common assumption in environmental contexts, where the pie corresponds to the amount of resource or the level of environmental exploitation ( Harstad , 2023 ). For such contexts, it may be natural to modify our model to impose an exogenous bound on the maximum level of the pie (e.g., equal to the maximum amount of resources that could plausibly be exploited). Our results on the dynamics of growth and conflict are unchanged when such a bound is imposed (see, Remark 1 ). 7 In a different tradition, Pei ( 2023 ) has shown the impossibility of cooperation in a repeated prisoner’s dilemma if agents are sufficiently patient and have control over their publicly observable record of behavior.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 3,
+        "section_name": "Model",
+        "paragraph_id": 1,
+        "text": "κ > 0 , where κ = 2 − m > 0 for some m ∈ N . Formally, the states of the world evolve according to the law of motion:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 3,
+        "section_name": "Model",
+        "paragraph_id": 2,
+        "text": "s t = max n 0 , min \b 1 , s t − 1 + κ ( a t B − a t A ) o and π t = π t − 1 + ω ( a t A + a t B ) . The initial state of the world is ( s 0 , π 0 ) , where s 0 = lκ for some l ∈{ 1 , . . . , 2 m − 1 } and π 0 > 0 . To avoid issues of indifference, we assume π 0 is not a multiple of ω .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 3,
+        "section_name": "Model",
+        "paragraph_id": 3,
+        "text": "Payoffs. Agent A and B ’s per-period payoffs are u A ( s t , π t ) := s t π t and u B ( s t , π t ) := (1 − s t ) π t , respectively. The agents discount future payoffs at a rate of β ∈ (0 , 1) ; hence, agent j ’s payoff is P ∞ t =1 β t − 1 u j ( s t , π t ) for j ∈{ A, B } .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 3,
+        "section_name": "Model",
+        "paragraph_id": 4,
+        "text": "Equilibrium concept. Our equilibrium concept is pure-strategy Subgame Perfect equilibrium (equilibrium hereafter). A strategy for j ∈{ A, B } is a mapping a j ( s t − 1 , π t − 1 , h t − 1 ) from every feasible state ( s t − 1 , π t − 1 ) and history of past actions h t − 1 into a binary decision a t j ∈{ 0 , 1 } . We denote the agents’ strategy profile by σ = ( a A , a B ) and an equilibrium by σ ∗ = ( a ∗ A , a ∗ B ) . Given a strategy profile σ , we define agent j ’s continuation payoff from a state ( s t − 1 , π t − 1 ) = ( s, π ) with history h t − 1 as V j ( s, π | σ, h t − 1 ) := E h ∞ X t ′ = t β t ′ − t u j ( s t ′ , π t ′ ) σ, s, π, h t − 1 i , where ( s t ′ , π t ′ ) and h t ′ are determined by σ and the law of motion for every period t ′ ≥ t .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Subgame Perfect Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 0,
+        "text": "In this section, we show that there exists a limit to the growth of the pie. We begin with two auxiliary lemmas that highlight the key forces that ultimately limit growth. First, consider the payoff an agent obtains if perpetual conflict occurs: Both agents perpetually choose to increase their shares—guaranteeing that the pie never grows and each agent’s share remains fixed. Lemma 1 says that, in every equilibrium, an agent’s continuation payoff must be at least as high as her payoff from this perpetual conflict.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 1,
+        "text": "Lemma 1 (Perpetual conflict as a lower bound on payoffs.) Let the state be ( s t − 1 , π t − 1 ) = ( s, π ) with some history h t − 1 . In every equilibrium, σ ∗ , each agent’s continuation payoff is bounded",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 4,
+        "text": "Since each agent’s impact on the share is symmetric, an agent’s choice to increase her share has a defensive effect: She ensures that her share does not decrease regardless of the other agent’s action. At the same time, growth is irreversible. Therefore, an agent’s continuation payoff must not be less than maintaining her current share and the current size of the pie for every future period, which corresponds precisely to the perpetual conflict payoff. Second, consider the payoff an agent obtains from the opposite extreme: Perpetual cooperation , whereby in every period the agents choose to expand the pie. Thus, the pie grows at its maximum speed: 2 ω per period. This maximizes the sum of both agents’ continuation payoffs, which is simply the discounted sum of the size of the future pies (since the agents own complementary shares). Intuitively, in every equilibrium, this discounted sum—the “surplus” generated by the agents—is bounded above by the surplus generated by perpetual cooperation. Yet, because there are constant returns to cooperation, the surplus generated by perpetual cooperation is decreasing as a fraction of the pie’s current size. Lemma 2 formalizes these results.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 5,
+        "text": "Lemma 2 (Perpetual cooperation as an upper bound on payoffs.) Let the state be ( s t − 1 , π t − 1 ) = ( s, π ) with some history h t − 1 . In every equilibrium, σ ∗ , the sum of agents’ continuation payoffs is bounded above by the continuation payoff of perpetual cooperation:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 6,
+        "text": "V A ( s, π | σ ∗ , h t − 1 ) + V B ( s, π | σ ∗ , h t − 1 ) = ∞ X t ′ = t β t ′ − t π ∗ t ′ ≤ π 1 − β + 2 ω (1 − β ) 2 . (2)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 7,
+        "text": "Moreover, because there are constant returns to cooperation, the surplus from perpetual cooperation is finite and decreasing as a fraction the pie’s current size.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 8,
+        "text": "Lemmas 1 and 2 present two forces that act against cooperation: Agents are able to defend their existing shares of the pie and the surplus generated by perpetual cooperation is bounded and decreasing as fraction of the pie’s size. Consider, for example, a strategy profile whereby the agents perpetually cooperate, so the surplus generated by the agents is the right hand side of ( 2 ). If an agent, say agent A , instead decides to deviate and increase her share, she free rides on the other agent’s choice to expand the pie and benefits immediately from a larger share of the now larger pie: ( s + κ )( π + ω ) . By Lemma 1 , she can (at minimum) retain this same benefit in every future period. Applying the same logic",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 9,
+        "text": "to agent B , it follows that sustaining perpetual cooperation requires a sufficiently large surplus to be available:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 10,
+        "text": "V A ( s, π | σ ∗ , h t − 1 )+ V B ( s, π | σ ∗ , h t − 1 ) ≥ ( s + κ )( π + ω ) 1 − β + (1 − s + κ )( π + ω ) 1 − β = (1 + 2 κ )( π + ω ) 1 − β .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 11,
+        "text": "However, as the pie grows, even the surplus generated by perpetual cooperation—the maximum possible surplus—is insufficient: Cooperation cannot be sustained. Intuitively, when the pie is sufficiently large and because there are constant returns to cooperation, perpetual cooperation generates only an arbitrarily small surplus relative to what perpetual conflict generates. At the same time, the incentive to deviate increases as the pie grows, and eventually some agent will prefer not to cooperate. Lemma 3 formalizes the above intuition and implications. It says that if each agent has a non-unit share (i.e., s ̸ = 0 , 1 ), then growth eventually halts: For a sufficiently large pie, in every equilibrium, the agents engage in perpetual (zero-sum) conflict and the size of the pie and the agents’ shares remain fixed. 8",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 12,
+        "text": "Lemma 3 (Limited growth.) There exists ̄ π ( κ, ω, β ) such that if the state is ( s t − 1 , π t − 1 ) = ( s, π ) with π > ̄ π ( κ, ω, β ) , then, in every equilibrium, conflict ensues and growth halts for interior shares, i.e., if s / ∈{ 0 , 1 } , then ( s ∗ t ′ , π ∗ t ′ ) = ( s, π ) for every t ′ ≥ t ;",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 13,
+        "text": "We have seen that conflict ensues when the pie is sufficiently large. However, Lemma 3 and the above discussion suggest that the agents’ discount factor plays an important role in determining the limit of growth; indeed, the surplus generated by perpetual cooperation is larger when the agents are more patient. Therefore, one may expect that even if growth must eventually halt, a more patient agent can be incentivized to cooperate for larger pies through the promise of the other’s future cooperation. Proposition 1 establishes that this is not the case: The limit of growth is independent of the agents’ discount factors.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 14,
+        "text": "8 The case where an agent owns a non-interior share (i.e., s ∈{ 0 , 1 } ) is an edge case that does not arise on the equilibrium path (we show this formally in Section 4 ). For completeness, Corollary A.1 in Appendix A , states the possible equilibrium outcomes for these subgames. In some equilibria of these subgames, the pie may continue to grow; however, in every equilibrium, the agents’ shares remain fixed. It follows because, when one agent has a unit share, the other agent (who has a zero share) is indifferent between having a zero share of the current pie and having a zero share of a larger pie. Yet, this scenario never arises on the equilibrium path since an agent with non-zero share always has a strict incentive to avoid subgames where their share is zero. The possibility of growth in this edge case (and our results more generally), do not rely on the possibility that agents can have zero, or unit, shares. Our essentially unique equilibrium (to be presented in Proposition 2 ) remains unchanged if agents’ shares are bounded between s and 1 − s for some s > 0 sufficiently small.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 15,
+        "text": "Proposition 1 (The unraveling effect of limited growth.) Let the state be ( s t − 1 , π t − 1 ) = ( s, π ) such that π > ω κ s − ω and π > ω κ (1 − s ) − ω (3) and with any history h t − 1 . In every equilibrium, σ ∗ , conflict ensues and growth halts for interior shares, i.e., if s / ∈{ 0 , 1 } , then ( s ∗ t ′ , π ∗ t ′ ) = ( s, π ) for every t ′ ≥ t .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 16,
+        "text": "Proposition 3 highlights that the limit of growth depends only on the agents’ shares, s , and the extent to which they can expand their share, κ , or the pie, ω . The reason why is that the limits of growth posed in Lemma 3 have an unraveling effect in equilibrium. If agents know that cooperation is impossible tomorrow, they will only cooperate today if it is in their myopic interest. Iterating on this logic, by applying backwards induction, shows that the limit of growth unravels to the largest pie for which myopic incentives to grow the pie exist—which is a bound smaller than the one in Lemma 3 . Since this frontier is exclusively determined by myopic incentives, it is independent of agents’ discount factor. This logic is reminiscent of the centipede game, in which two agents fail to grow a common pie because each is afraid of the other appropriating it. In the centipede game, the expectation of the other agent’s selfish behavior also triggers an unraveling effect making cooperation altogether impossible. However, unlike the centipede game, in our model agents accrue payoffs continually over time—hence, temporary cooperation can offer both agents benefits—and an agent may be better off cooperating today even if she expects that in the future the other agent will selfishly deviate. These crucial differences result from the gradualism with which shares change and imply that cooperation has a greater chance of being sustained in our setting. It is interesting to note that at the point at which growth ceases, the agents’ stage game payoffs correspond to a prisoners’ dilemma : In the stage game, both agents have a dominant strategy to increase their share but the agents would be strictly better off if both expanded the pie. More generally, at any point where cooperation to expand the pie cannot occur, the stage game is a prisoners’ dilemma. Yet, unlike a repeated prisoners’ dilemma, our game is a dynamic game: Cooperation generates a larger pie, which in turn increases agents’ incentives to defect. This difference makes cooperation impossible, regardless of the agents’ discount factors. This conclusion is perhaps surprising given that our equilibrium concept is Subgame Perfect equilibrium, which potentially allows agents to sustain cooperation through relational incentives (see, e.g. Friedman , 1971 ). 9 Proposition 1 leaves open a number of questions: Can growth be achieved when the 9 Related folk theorems for dynamic games, such as those in Dutta ( 1995 ), do not apply to our setting because of the irreversibility constraint.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Dynamic Games",
+            "Subgame Perfect Equilibrium",
+            "Dynamic Games"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": [
+            "Game Theory & Mechanism Design"
+        ]
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 4,
+        "section_name": "Growth eventually halts",
+        "paragraph_id": 17,
+        "text": "pie is small? How does the size of the pie and the agents’ shares evolve in the face of limited growth? What is the relationship between the inequality of agents’ shares and the long-run size of the pie? We turn to these questions in the next section.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 0,
+        "text": "We now characterize the equilibrium dynamics of growth and conflict. These dynamics are underscored by a simple tradeoff. An agent’s marginal benefit from increasing her share is (roughly) in proportion to the size of the pie, and her marginal benefit from increasing the pie is (roughly) in proportion to the size of her share. This suggests that a small pie is more likely to incentivize the agents to expand the pie; while a large pie is more likely to incentive the agents to expand their shares—inducing perpetual zero-sum conflict. Conversely, it also suggests that, for any given size of the pie, the agent with the smallest share will have the greatest incentive to expand their share and the agent with the largest share will have the greatest incentive to expand the pie. Proposition 2 says that there exists an essentially unique equilibrium that is Markovian (history-independent); it is depicted in Figure 1 . The dynamics induced by the equilibrium have two key features that follow from the simple tradeoff described above:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 1,
+        "text": "(i). When the agents’ initial shares are not too unequal (and the initial pie is not too large), both agents initially cooperate to expand the pie. However, as the pie grows, cooperation ceases: The agent with the smaller initial share chooses to expand her share, while the agent with the larger initial share continues to expand the pie. This implies that the state evolves along a diagonal in the ( s, π ) space: The pie expands (albeit at a slower rate) and agents’ shares gradually equalize to s t = 1 2 . Once any initial inequality between the agents’ shares has been removed, perpetual zero-sum conflict ensues and growth halts with the long-run size of the pie attaining a minimal value.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 2,
+        "text": "(ii). When the agents’ initial shares are sufficiently unequal (and the pie is not too large), the agents never cooperate. The agent with the smaller share immediately chooses to expand her share, and the agent with the larger initial share expands the pie. Again, this process temporarily leads to an expanding pie and a gradually more equal distribution of shares between the agents. But once the pie has grown sufficiently, perpetual conflict ensues. However, at this point and unlike (i), the agents shares are not equalized—the initial inequality persists (although the inequality is reduced)—and the long-run size of the pie is larger than the minimal value attained in (i). Proposition 2 (Dynamics of growth and conflict.) There exists a Subgame Perfect equilibrium σ ∗ whereby actions are Markovian on and off the equilibrium path as follows: For any state ( s t − 1 , π t − 1 ) = ( s, π ) and any history h t − 1",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Subgame Perfect Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 3,
+        "text": "a ∗ A ( s, π, h t − 1 ) =    0 if π > ω κ s − ω if π < ω κ s − ω. and a ∗ B ( s, π, h t − 1 ) =    0 if π > ω κ (1 − s ) − ω if π < ω κ (1 − s ) − ω. (4)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 4,
+        "text": "Furthermore, this Subgame Perfect equilibrium is essentially unique: For any initial state ( s 0 , π 0 ) with s 0 ∈ (0 , 1) , the state evolves according to a unique equilibrium path, { ( s ∗ t , π ∗ t ) } ∞ t =0 , as described by ( 4 ). The dynamics in Proposition 2 exhibit what could be mistaken as diminishing marginal returns of actions that expand the pie or an agent’s share. In equilibrium, the amount that the pie grows by is (weakly) decreasing as the pie grows. Similarly, as an agent’s share increases she is less likely to further expand her share. Yet, in our setting there are constant returns to both actions. 10 Our results are, instead, driven by the payoff complementary between an agent’s share and the size of the pie. 10 Our results are strengthened—with growth being more limited and conflict ensuing earlier—if there were diminishing marginal returns to agents’ actions. We return to these assumptions in Section 6 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Subgame Perfect Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 5,
+        "text": "As in Proposition 1 , the equilibrium dynamics in Proposition 2 are independent of the agents’ discount factors and follow precisely the (Markovian) dynamics that would arise if the agents were myopic. In equilibrium, therefore, the agents’ dynamic concerns do not play any role. Intuitively, this feature arises via an unraveling argument. The inevitability of perpetual conflict (recall Proposition 1 ) makes it impossible for the agents to develop a relational contract that differs from their myopically preferred strategies. Our model allows for the possibility of unbounded growth of the pie. However, in some settings, it may be more natural to consider the size of the pie to be bounded by some upper limit, say ̄ π . For example, the upper bound may represent the optimal level of growth after which further growth is detrimental or the (finite) amount of resources available; alternatively, π t may map into the probability for which agents will capture some fixed prize and this probability is bounded by ̄ π = 1 . The equilibrium behavior and dynamics presented in Proposition 1 are unaffected if the maximum size of the pie is bounded. Intuitively, a bounded pie necessarily means that growth must halt—in particular, when π t = ̄ π , perpetual conflict must ensue. But then an unraveling argument (per the results presented in Section 3 ) applies. In any subgame that could lead to π t +1 = ̄ π , the agents anticipate that perpetual conflict will ensue if the pie is expanded and, in turn, resort to their myopic incentives. The remainder of the argument then follows identically to that of the benchmark model.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 5,
+        "section_name": "Dynamics of growth and conflict and its consequences",
+        "paragraph_id": 6,
+        "text": "Remark 1 (Extension with a bounded pie.) Suppose the maximum size of the pie is bounded by some (exogenous) value ̄ π ≥ 1 ; that is, the law of motion of π t is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 0,
+        "text": "We now turn to the consequences of the equilibrium dynamics for long-run outcomes and the optimal level of (in)equality. Corollary 1 summarizes the implications of the dynamics of growth and conflict (Proposition 2 ) for the relationship between initial levels of inequality and long-run outcomes. The corollary focuses on cases where the initial size of the pie is intermediate. When initial inequality of agents’ shares is low, initial conditions do not matter: In the long-run, there is perfect equality and the long-run pie attains its minimum long-run value of (approximately) ω κ 2 − ω . However, when initial inequality is high, initial conditions matter: In the long-run, inequality persists and the long-run",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 1,
+        "text": "pie is greater than ω κ 2 − ω . Further, both the long-run inequality and the long-run pie are increasing in the initial inequality. 11",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 2,
+        "text": "Corollary 1 (Initial conditions, long-run inequality, and the long-run pie.) Suppose the initial size of the pie is intermediate: ω κ (1 − 3 κ ) − ω < π 0 < ω κ 2 − ω . Only when initial inequality is large enough, the initial conditions, ( s 0 , π 0 ) , matter for long-run outcomes, ( s ∗ ∞ , π ∗ ∞ ) . In particular: (i) If s 0 − 1 < 1 2 − ( π 0 + ω ) κ ω , then initial conditions do not matter. There is long-run equality s ∞ = 1 2 , and the long-run pie is minimized, π ∗ ∞ ∈ ( ω κ 2 − ω, ω κ 2 + ω ) . (ii) Otherwise, initial conditions matter. Inequality is persistent, long-run inequality is increasing in the initial inequality, and the long-run pie is increasing in the initial inequality:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 4,
+        "text": "Although greater initial inequality is needed for a larger long-run pie, it does not follow that inequality is optimal in the utilitarian sense. This is because when the initial size of the pie is intermediate there is a tradeoff between a larger long-run pie and the speed at which it grows. Indeed, when there is little inequality, the pie develops quickly toward its minimal long-run size; when there is extreme inequality, the pie develops slowly toward its maximal long-run size. 12 Therefore, the utilitarian optimal level of inequality intuitively depends on the agents’ discount factor: when the agents are more patient, maximal inequality is optimal; when the agents are impatient, minimal inequality is optimal. Proposition 3 formalizes this result for the case where the initial size of the pie is intermediate and this tradeoff arises.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 5,
+        "text": "Proposition 3 (Utilitarian-optimal inequality.) Suppose the initial size of the pie is intermediate: ω κ (1 − 3 κ ) − ω < π 0 < ω κ 2 − κ . (i) If the agents are sufficiently impatient ( β sufficiently close to 0 ), the utilitarian-optimal initial condition features minimal inequality: s 0 = 1 2 or s 0 = 1 2 ± κ . 11 When the initial size of the pie is large, there is no growth for intermediate ranges of initial inequality— the initial conditions are the same as the long-run outcomes. When the initial size of the pie is sufficiently small, all levels of initial inequality with s 0 ∈{ κ, . . . , 1 − κ } lead to long-run equality s ∞ = 2 and a minimally-sized long-run pie π ∗ ∞ ∈ ( ω κ 2 − ω, ω κ 2 + ω ) . 12 When the initial size of the pie is large or small, this tradeoff does not arise. For a large initial pie, greater inequality generates a larger long-run pie and faster growth (since there is no growth for low levels of inequality). Thus, greater inequality is the utilitarian optimum. For a small initial pie, greater inequality does not generate a larger long-run pie and leads to slower growth—this is partly due to the coarseness of our state space. Thus, minimal inequality is the utilitarian optimum.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 6,
+        "text": "(ii) If the agents are sufficiently patient ( β sufficiently close to 1 ), the utilitarian-optimal initial condition features maximal inequality: s 0 = κ or s 0 = 1 − κ .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 6,
+        "section_name": "Inequality and the long-run size of the pie",
+        "paragraph_id": 7,
+        "text": "Part (ii) of Corollary 1 and Proposition 3 suggest that when agents are sufficiently patient, there may be an incentive for the agents to agree to a redistribution of initial shares that increases inequality—so to induce a larger long-run size of the pie and higher utilitarian payoff. For example, for a fixed initial size of the pie, the small-share agent may agree to redistribute part of their share to the high-share agent. However, in the absence of transferable utility, the small-share agent would not agree to such a redistribution plan. Intuitively, such a plan hurts the small-share agent in the short-run because they must sacrifice part of their share. Therefore, the agreement could only possibly be reached if the long-run state induced by greater inequality is beneficial to the small-share agent, but this is not the case. Greater inequality induces a long-run state that lies higher along the diagonal illustrated in Figure 1 (and per Proposition 2 ). However, moving the state to a higher point along this diagonal hurts the small-share agent: they strictly prefer lower states along this diagonal (and the high-share agent strictly prefers the opposite). Thus, there is no agreement to redistribution that could be struck.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 7,
+        "section_name": "Institutions and technology",
+        "paragraph_id": 0,
+        "text": "So far, we have taken the agents’ effectiveness to expand the pie or their share to be fixed. In this section, we explore the implications of changes in the agents’ effectiveness: ω and κ . As mentioned in the introduction, these parameters may naturally differ in each application. An agent’s incentive to expand her share compared to expanding the pie depends on the effectiveness of each action. Intuitively, as the agents become more effective at expanding their shares, they are also less willing to expand the pie, and the region for which perpetual conflict ensues becomes larger (i.e., as κ increases, the upper triangle in Figure 1 expands). In turn, the long-run size of the pie is smaller and long-run inequality is larger. The reverse holds when the agents become more effective at expanding the pie. Corollary 2 states this result.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 7,
+        "section_name": "Institutions and technology",
+        "paragraph_id": 2,
+        "text": "(i) the set of parameters that induce perpetual conflict (weakly) increases in the set-inclusion order;",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 7,
+        "section_name": "Institutions and technology",
+        "paragraph_id": 3,
+        "text": "(ii) for any initial condition, ( s 0 , π 0 ) , the long-run inequality (weakly) increases, and the long-run size of the pie (weakly) decreases.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 7,
+        "section_name": "Institutions and technology",
+        "paragraph_id": 4,
+        "text": "We can extend the logic of this result to contexts in which reducing agents’ effectiveness in expanding their share has spillover effects such that agents are also less effective at expanding the pie. For example, in the context of legislative bargaining, stronger checks and balances and constraints on legislative majorities may limit the effectiveness of agents to achieve partisan and bipartisan reforms alike ( Acharya and Ortner , 2022 ; Dziuda and Loeper , 2016 ; Gratton and Morelli , 2022 ; Lee , 2022 ). Formally, these spillovers can be analyzed by taking the agent’s effectiveness at expanding the pie to be an increasing function of their ability to expand their share: ω := H ( κ ) , where H ( κ ) > 0 and H ′ ( κ ) ≥ 0 for all κ . Intuitively, so long as the spillover effect, H ′ ( κ ) , is not too large, Corollary 2 will continue to hold. Finally, we note that Corollary 2 provides some insights into when and why agents may demand—and even agree—on reforms that affect their ability to expand their shares. For example, consider an instance where the state is such that, in equilibrium, the agents engage in perpetual conflict. In such cases, a reform that reduces their effectiveness to expand their shares may facilitate a (temporary) end of conflict and a larger pie. Such a reform constitutes a Pareto improvement so, if available, is likely to be agreed to by the agents. Applied to the context of democratic politics, this suggests that countries with a larger pie (e.g., higher levels of development and state capacity) may be more likely to demand and adopt reform that strengthen checks and balances. 13 Now, instead, consider states such that, in equilibrium, the agents are not in perpetual conflict (i.e., the size of the pie is not too large). In such cases, it is possible that reducing the agents’ abilities to expand their shares is not Pareto optimal and, hence, is less likely to be demanded by both agents. Returning again to the context of democratic politics, this suggests that countries with a smaller pie (e.g., lower levels of development and state capacity) are less likely to demand and adopt reforms that strengthen checks and balances.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 8,
+        "section_name": "Empirical relevance",
+        "paragraph_id": 0,
+        "text": "Our theory points toward a type of organizational “resource curse,” whereby the prevalence (or sudden influx) of resources produces an inefficient halt in cooperation and the emergence of zero-sum conflict. Our theory also highlights that the temptation for an agent to stop cooperating is strongest for the agent with smaller share, since she has relatively more to gain from expanding her own share of the existing pie compared to expanding the pie as whole. This highlights a subtlety of our theory: it is not the greater resources that you already own that stifles cooperation but, rather, the greater resources that can be 13 We share this feature with Karakas ( 2017 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 8,
+        "section_name": "Empirical relevance",
+        "paragraph_id": 1,
+        "text": "obtained via conflict. Our resource curse stems neither from agents being short-sighted (or subjected to turnover) nor from decreasing returns in the technology used to expand the pie. Instead, our resource curse is grounded in the simple fact that avoiding conflict becomes harder as growth increases the victor’s spoils. 14 Our organizational resource curse resonates with several applications. In the following subsections, we explore three applications: factionalism within social movement organizations, competition in markets, and distributive conflict within economies.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 9,
+        "section_name": "Factionalism in social movement organizations",
+        "paragraph_id": 0,
+        "text": "Within a social movement organization (and sometimes between social movement organizations), there is often a collective goal that unites its members, e.g., progress toward social justice or environmental goals. Nonetheless, organization scholars and sociologists widely agree that, with progress and growth, factionalism arises, leading to internal conflict over “movement resources, direction, and media attention” ( Kretschmer , 2024 ) and the “distribution of power” ( Zald and Ash , 1966 ). Indeed, in his seminal book Gamson ( 1975 ) refers to factionalism as the “nature of the beast” and Kretschmer ( 2024 ) concludes that factionalism is “probably inevitable.” As in our theory, factionalism also imposes an opportunity cost as “resources are channeled into internal disputes rather than toward pressing the [organization’s] demands” ( Balser , 1997 ). Our theory highlights that, as a social movement organization becomes more prominent and accumulates more resources and power, factionalism will arise. This is consistent with Gamson ’s and Kretschmer ’s observations that factionalism is inevitable. Further, in our theory it is the expansion of resources itself that generates factionalism and conflict. This mechanism, which runs contrary some arguments and empirical examples, is nevertheless supported by existing work. 15 First, in summarizing the literature, Kretschmer ( 2024 ) writes “evidence across a variety of movements shows us that in boom times, when movements are popular, public participation is high, and resources are flowing in, factionalism [...] within and between groups is likely to be high.” Kretschmer ( 2013 ) hints at our mechanism by asking “is factionalism more likely in prosperous economic times because there are more resources to fight over?” For evidence, Kretschmer points to Balser ’s ( 1997 ) case study of the SNCC (Student Nonviolent Coordinating Committee) in 14 A related dynamic appears in Acemoglu et al. ( 2008 ) where as the economy grows, a politician’s temptation to steal production also grows. In this electoral accountability setting, voters avoid this “resource curse” by providing relational incentives to the politician. 15 Other arguments include that organization growth often entails a more diverse body of members or that, once an organization comes close to achieving its goals, it can struggle to reorient and establish consensus for a new collective goal (see, e.g., case studies and cited literature within Balser , 1997 ; Miller , 1999 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Case Studies",
+            "Case Studies"
+        ],
+        "matched_l1_methods": [
+            "Qualitative, Descriptive, and Mixed Methods"
+        ],
+        "matched_l2_methods": [
+            "Archival Research & Case Studies"
+        ]
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 9,
+        "section_name": "Factionalism in social movement organizations",
+        "paragraph_id": 1,
+        "text": "the United States. Balser documents how the influx of new resources from the Kennedy administration in 1961 “instigated a serious conflict” between members with competing views over the organization’s direction. More systematic empirical studies also come to a similar conclusion. Soule and King ( 2008 ) study competition between social movement organizations within the same “social movement industry” (i.e., sharing a common goal). They analyze the organizational tactics adopted by protest organizations supporting peace, women’s, and environmental movements in New York State between 1960 and 1986. Contrary to their own hypothesis, they document that tactics associated with competition over resources are more likely when “resources are prevalent.” Similarly, Vermeulen ( 2013 ) analyzes collaboration and competition between Turkish organizations within different European cities from 1965 to 2000. Contrary to his own hypothesis, he concludes that an “open and supportive environment [...] increases competition and fragmentation because more resources and opportunities are available.” Although the causes of factionalism are surely multi-faceted, our mechanism appears empirically relevant across a variety of settings within and between social movement organizations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 10,
+        "section_name": "Competition in growing markets",
+        "paragraph_id": 0,
+        "text": "In market competition, firms face a tradeoff between taking actions that expand the market as a whole—benefiting all firms in the industry—and actions that expand their market share—at the expense of their competitors. For example, and as mentioned in the introduction, firms can choose between engaging in industry-wide (“generic”) advertising as opposed to firm-specific (“branded”) advertising. Industry-wide advertising aims to expand the market for the entire industry, so it is cooperative in nature, generating a collective good that benefits all firms in the industry. 16 In contrast, firm-specific advertising is competitive and primarily aims to steal, or defend, market share from competing firms in the same industry without affecting the size of the market as a whole ( Bass et al. , 2005 ; Krishnamurthy , 2000 ; Ward et al. , 1985 ). In this setting, our theory makes three key predictions that are supported by anecdotal and empirical evidence. First, we predict that firms will collectively underinvest in industry-wide advertising. Indeed, this is a key argument used by proponents of the many federal laws that require firms to fund industry-wide advertising campaigns ( Varian , 2006 ; 16 In some industries, the amount of expenditure on industry-wide advertising is large and significant. As described by Chakravarti and Janiszewski ( 2004 ), “In 2002 alone, the annual domestic expenditure on generic advertising for cheese, beef, and Florida orange juice was [FORMULA] 45 million, and [FORMULA] 26.6 million, [FORMULA] 32.4 million, respectively.”",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 10,
+        "section_name": "Competition in growing markets",
+        "paragraph_id": 1,
+        "text": "Messer et al. , 2008 ). As put by Ward ( 2006 ), “Removing potential free-riders and creating a pool of funds earmarked for generic advertising messages is precisely the intent of the national legislation for supporting commodity checkoff programs and an important objective of many federal and state marketing orders.”",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 10,
+        "section_name": "Competition in growing markets",
+        "paragraph_id": 2,
+        "text": "The claim that, absent mandatory requirements, firms underinvest in industry-wide advertising is also supported by a range of empirical and experimental studies ( Depken et al. , 2002 ; Liaukonyte et al. , 2015 ; Messer et al. , 2008 ; Tchumtchoua and Cotterill , 2010 ). Second, our theory predicts that firms are more likely to engage in industry-wide advertising when the industry’s market is relatively small but will switch to firm-specific advertising as the market grows and matures. Indeed, when federal law does not require industry-wide advertising, marketing scholars often describe industry-wide advertising as a feature of emerging markets and firm-specific advertising as a feature of mature markets ( Beard , 2010 , 2011 ; Yoo and Mandhachitara , 2003 ). Quoting a contemporary source, Beard ’s ( 2011 ) historical analysis describes the steamship industry’s strategy to engage in industry-wide advertising in the early 1900s: “It dawned upon both lines that it was work meet [i.e., suitable or fitting] for even two advertisers to educate the local public to travel more by water. The patronage was not fixed; it could be increased as the public came to understand the pleasures and the benefits of a trip by steamer (Pickett 1910, 29).” Beard explains that similar attitudes appeared in industries where there was “nearunanimous confidence in market expansion.” Yet, these cooperative behaviors eventually end. For example, in the early 1980s, the fast food industry matured and firms switched to combative and firm-specific advertising. Again quoting a contemporary source, Beard explains the switch: “fast-food marketers are dealing with slow-growth industry, where market share gains are the driving force behind any expansion (Kreisman and Mashall, 1982, 1).” Another example comes from the cigarette industry. Tremblay and Tremblay ( 2012 ) notes that between 1914 and 1940, the market was “taking off” and cigarette advertising was mostly constructive (increasing market demand for all firms). However, in the 1960s, advertising turned combative (attempting to “steal customers from another firm”). Third, our theory predicts that, as a market matures, firms with smaller market shares are more likely to engage in firm-specific advertising—free riding off the (temporarily)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 10,
+        "section_name": "Competition in growing markets",
+        "paragraph_id": 3,
+        "text": "more cooperative advertising made by large market share firms. Suggestive evidence for this prediction comes from the observation that, when federal laws mandate producers to contribute to industry-wide advertising campaigns, large firms appear content with the mandatory programs whereas small firms tend to complain ( Hamilton et al. , 2013 ; Ward , 2006 ; Zheng et al. , 2010 ). Indeed, in some cases, small firms are formally exempt from the mandatory program—in effect, allowing them to free ride on the contributions of larger firms ( Zheng et al. , 2010 , p. 752). In other cases, when voluntary industry-wide advertising programs have broken down or never existed at all, it has been observed that larger firms may nonetheless continue to fund industry-wide advertising regardless of other firms’ decisions (see, e.g., Section 6 of Krishnamurthy , 2000 , for examples from the life insurance and butter industry). Beyond being consistent with the above stylized facts, we provide an additional insight that—to the best of our knowledge—is novel to the literature. Our theory suggests that federal laws that mandate firms to contribute to industry-wide advertising may be a double-edged sword. On the one hand, and as is well-established, such mandatory programs allow for a larger expansion of markets than would otherwise be achievable. But on the other hand, these programs are likely to insulate larger firms from having their market shares eroded over time by smaller firms’ competitive and firm-specific advertising. 17 Thus, mandatory programs pose a dynamic tradeoff between efficiency (a larger market) and market concentration (greater inequality of firms’ market shares).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 11,
+        "section_name": "Distributive conflict and economic growth",
+        "paragraph_id": 0,
+        "text": "At a macroeconomic level, our theory connects to a long-running debate about the sources of economic growth. Olson ( 1982 ) describes a framework that shares many similarities with ours: Society is comprised of special interest groups (“distributional coalitions”) that can benefit their members by either “making the pie the society produces larger, so that its members would get larger slices even with the same shares as before, or alternatively by obtaining larger shares or slices of the social pie.” Olson argues that distributional coalitions are costly for economic growth (society’s pie) as they direct resources toward distributive conflict and away from efficient uses. Indeed, Olson documents that: mature societies have slower economic growth and more special interest groups than less mature societies, and these special interest groups are “overwhelmingly orientated to struggles over the distribution of income and wealth rather than to the production of additional 17 Although it has been noted in literature that these mandatory programs have distributional (and possibly unequal) consequences on small and large firms (see, e.g., Liaukonyte et al. , 2015 ; Zheng et al. , 2010 ), the focus has not been on the evolution of market shares and market concentration.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 11,
+        "section_name": "Distributive conflict and economic growth",
+        "paragraph_id": 1,
+        "text": "output.” Olson aimed to explain the “economic miracles” of Germany and Japan after World War II. Differently from us, his explanation focused on periods of economic and political stability, which—he argues—allows distributional coalitions to emerge, and not on growth per se. 18 Our theory also speaks to the dynamic competition between special interest groups. It predicts that smaller interest groups will be initially more active (and, hence, effective) in distributive conflict. Furthermore, this asymmetry will generate greater distributional conflict in the long run as larger interest groups will gradually lose incentives to expand society’s pie and, hence, will also pursue distributional conflict.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "Before concluding the paper, we return to our core result, namely, that growth eventually halts. We discuss now the role played by key assumptions in our benchmark model and explore extensions of the benchmark to illustrate the robustness of this result when certain assumptions are relaxed.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "Asymmetric discounting. Our benchmark model assumes that agents discount time in the same way. But if agents have asymmetric discount factors, our key result that growth eventually halts continues to hold. We analyze this extension formally in Appendix F . Furthermore, we show that—as in the benchmark model—the point at which growth halts is independent of either agent’s discount factor. It is straightforward to see then that all the dynamics of our benchmark model are identical in this extension. 19 Thus, whether one agent is more patient than the other has no bearing on the dynamics of growth and conflict—contrasting results, such as Rubinstein ( 1982 ), where a more patient agent is able to extract a larger share of the surplus.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "Exponential growth of pie. A key assumption of our benchmark model is that of constant returns: An agent’s decision to expand the pie contributes a fixed amount ω , regardless of the size of the pie. Constant returns implies that, as the pie grows, the relative (discounted) payoff from continually growing the pie compared to pursuing conflict is decreasing. Hence, for a large enough pie, the agents prefer conflict. Naturally, and unsurprisingly, 18 There is debate surrounding the explanatory power of Olson ’s argument (see, e.g., Coates and Heckelman , 2003 ; Weede , 1987 ; Mokyr and Nye , 2007 ; Knack , 2003 ), although recent work continues to support Olson ’s core predictions (see, e.g. Heckelman , 2007 ). 19 In particular, the same proof arguments used to characterize the dynamics of growth and conflict in the benchmark model can be applied.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "this result also holds if there are decreasing returns to the growth of the pie (for details, see Appendix G ). 20 With exponential returns, however, continual growth may be possible. We can formalize this intuition by assuming that the periodt pie is given by π t = π t − 1 (1 + r (2 − a t A − a t B )) for r > 0 . For a sufficiently small exponential growth rate r , growth will halt. However, for larger growth rates, it is possible for the agents to sustain an equilibrium with continual growth. 21 The assumption of constant (or decreasing) returns is consistent with existing work on the dynamic provision of public goods. For example, Battaglini et al. ( 2014 ) effectively assumes decreasing returns since an agent’s private consumption can be transformed into a public good contribution at a constant rate but the agents’ benefit from the public good exhibits diminishing returns. Similarly, Marx and Matthews ( 2000 ) assume agents’ benefit from the public good’s level of provision is piece-wise linear with initially positive and constant marginal returns and then, above a certain threshold, zero marginal returns. More generally, a growing body of empirical research (see, e.g., Bloom et al. , 2020 ) calls into question the exponential returns assumption that is traditionally present in growth models.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "Ability to expand one’s share as a function of the pie. Our benchmark model assumes that an agent’s ability to expand her share is independent of the size of the pie. Naturally, our result—growth eventually halts—continues to hold if an agent’s ability to expand her share increases with the size of the pie. 22 If, instead, an agent’s ability to expand her share decreases with the size of the pie, our result is robust if the rate of decrease is not too fast. Formally, we can modify the law of motion of the agents’ shares so that κ is replaced with ̃ κ ( π ) , where ̃ κ ( · ) is a positive and decreasing function of π . In Appendix H , we show that if the agent’s ability to expand their share does not decline too fast, then growth eventually halts for all (interior) distributions of shares. Formally, the condition we require is that ̃ κ ( π ) π is increasing and unbounded as π grows, e.g., ̃ κ ( π ) = √ π .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "Depreciation of the pie or destructive conflict. In some settings, it may be natural to assume that, in the absence of growth, the size of pie decreases. This may arise because 20 Formally, this would mean that an agent’s decision to expand the pie contributes an amount ̃ ω ( π ) , where ̃ ω ( · ) is a positive and decreasing function of π . 21 This result requires that the growth rate is also not too large since a sufficiently large growth rate leads to the agents’ discounted payoffs being possibly unbounded. In such cases, the one-shot deviation principle does not apply due to a violation of the “continuity at infinity” condition and, hence, proving equilibrium existence becomes intractable. 22 Formally, this would mean that, in the law of motion of s t , κ is replaced with ̃ κ ( π ) , where ̃ κ ( · ) is a positive and increasing function of π .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 12,
+        "section_name": "Discussion",
+        "paragraph_id": 6,
+        "text": "of depreciation or because of conflict being destructive. Our benchmark model can be extended to incorporate this feature by assuming that, whenever conflict ensues, the periodt pie is π t = (1 − δ ) π t − 1 , where δ ∈ (0 , 1) is the rate of depreciation (or destruction). In Appendix I , we show that if δ is not too large, growth eventually halts for all (interior) distributions of shares. This result implies that there exists an upper bound on the growth of the pie; however, in this extension, periods of growth and decline may still arise periodically.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 13,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "We proposed a dynamic theory of growth and conflict with collective goods. Our focus centers on each agent’s tradeoff between expanding a collective pie and attempting to expand her share of it. We showed that, as the pie grows, an individual’s incentives to expand her share of the pie eventually dominates her incentive to expand the pie. Ultimately, this leads the pie’s growth to halt and produces an (endogenous) upper bound on the pie’s size. This bound on the growth of the pie is unaffected by the individuals’ patience levels and persists despite the possibility of unbounded growth of the pie, the presence of constant returns of individuals’ actions to expand the pie, and the possibility of relational contracts. When the pie is not too large, growth is possible. We characterized the dynamics of growth and conflict prior to growth halting, illustrating how individuals’ incentives to expand the pie depends on their shares and the pie’s size. When the pie is small and individuals have relatively equal shares, both contribute to expanding the pie. However, when individuals have sufficiently unequal shares, as per Olson ( 1971 ), there is a “tendency for ‘exploitation’ of the great by the small.” The individual with the largest share contributes to the pie’s expansion, while the small-share individual not only free rides but also expands her own share of the pie. These dynamics connect inequality to the speed and limits of growth: Greater inequality in the shares slows down growth but leads to a larger long-run size of the pie—yet, growth also gradually reduces inequality. In evaluating the benefits and costs of inequality, our result highlights a novel tradeoff between the speed at which a collective good grows and the long-run size of such good. A novel feature of our theory is that it provides a rationale for the ubiquity of the prisoners’ dilemma. In our theory, given any initial condition, the pie and its share evolve along a path that leads to prisoners’ dilemma stage-game: Both agents would be better off expanding the pie but their (stage-game) dominant strategy is to attempt to expand their share. Furthermore, we shed light on why cooperation may be unsustainable",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Relational Contracts",
+            "Relational Contracts"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": [
+            "Game Theory & Mechanism Design"
+        ]
+    },
+    {
+        "paper_id": 1300,
+        "section_id": 13,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "even if agents are patient and repeatedly play a prisoners’ dilemma. Since cooperation generates a larger pie, it leads to greater incentives for defection in the future. Anticipating the inevitability of future defection has an unraveling effect that makes even temporary cooperation impossible. Instead, zero-sum conflict emerges over the shares of the pie. Although our theory finds support in empirical studies, its pessimistic conclusion— that growth eventually halts—gives an important role for institutions and technology. A solution to the halting of growth is that agents achieve exponential growth. However, as previously noted, a growing body of empirical research calls into question the realism of exponential growth ( Bloom et al. , 2020 ). Alternatively, institutions that make it more difficult for agents to expand their shares may facilitate greater (albeit still temporary) cooperation. Indeed, Olson ( 1982 ) provides suggestive evidence of such institutions in his cross-country assessment of economic outcomes and interest group prevalence. Similarly, in the context of market competition, the presence federal laws that mandate industry-wide advertising and their continued support on the side of producers suggest an important role for regulation. Nonetheless, as discussed in Section 6 , sustained growth requires that each agent’s effectiveness in expanding their share is not only limited but also declines rapidly as the pie grows. That is, growth requires “sophisticated” institutions (and regulation) that dynamically adjust to a changing environment. Yet, caution is also needed since institutional solutions to limit agents’ effectiveness in expanding their share may have unintended spillovers that limit agents’ effectiveness in expanding the pie—such spillovers, if large, can be self-defeating. Therefore, sophisticated institutions and regulation appear to be the most promising avenues for achieving continued growth of collective goods.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

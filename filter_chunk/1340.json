@@ -1,0 +1,1326 @@
+[
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "The year-end rush, a phenomenon that the activities or investments in an organization, either public or private, often experience a surge near the end of a year (or fiscal year), is well-recorded in the literature. For example, in the public sectors, Liebman and Mahoney (2017) provides evidence showing that US Federal governments usually experience a spending surge in procurement in the year end (see also Eichenauer, 2020). In the private sectors, Callen et al. (1996), Kinney and Trezevant (1993), Callen et al. (1996) and Shi and Kim (2002) also record year-end surge of capital investments in private sectors. Sun et al. (2021) records year-end surge in Chinese patent applications, and Shin and Kim (2002) and Park and Shin (2023) for the same regularity in South Korea.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "To be sure, the reasons behind the year-end rush (also referred to as the “fourth quarter effect” in the literature), are varied. Liebman and Mahoney (2017) attributed it to the fiscal rule that unspent budget will expire next year, which adversely provides incentives for US federal government to rush unspent budget in the end of the year. In a similar vein, Callen et al. (1996) provides evidence that the firm’s capital investment in the fourth quarter is larger than the other quarters mainly because of “use it or lose it\" concern. Shin and Kim (2002) shows that, although firms have higher fourth quarter capital investment in general, it is less sensitive to investment opportunity. Moreover, larger firms, or firms with larger cash holdings, exhibit more pronounced fourth quarter investment surge. In a different context, Sun et al. (2021) attributes year-end rush of patent applications in China to central government’s growth target policy: Local governments which fall behind the targeted growth tend to rush their patent applications in the year end, usually with low-quality innovations.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "As we can see, the literature has mostly adopted a “use-it-or-lose-it” explanation for the year-end rush or, more generally called, the fourth-quarter effect. In this paper, we propose a perhaps more general explanation for the year-end aggressiveness, based on tournament theory. A distinguished feature of tournament is that performance is based on relative, rather than absolute, evaluation (see, e.g., Lazear, 1995; Gibbons and Waldman, 1999; and Chen, 2003). Suppose a tournament consists of two stages, and the contestant’s final performance depends on his efforts in the two periods. More importantly, suppose the interim performance of each contestant at the end of the first period is publicly observed. Then one who lags behind will acts more aggressively in the second period (see, e.g., Chevalier and Ellison, 1997; Genakos and Pagliero, 2012; and Proposition 2 in Section 2). Therefore, an increase of effort in the first period has toe opposing effects. On the one hand, it increases the total performance (and the winning probability). On the other hand, it also has the adverse effect of increasing one’s probability of being the interim leader, which triggers the opponent’s more aggressive behavior in the second. Since the second period is the end period, the adverse effect is absent. This implies that, anticipating the “catching-up effect”, every contestant’s will purposely set an effort level lower in the first period than in the second, essentially because the marginal return of effort in the first period in smaller than that of the second. This consideration, in our opinion, is the rationale behind year-end rush.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "We build a canonical theoretical model of tournament with two periods and two competitors, in which the interim performances of both competitors are publicly observed at the end of the first period. We show that, (i) the competitor with lower interim performance will put in greater effort than his opponent (the catching-up effect) and, (ii) to alleviate the catching up effect, every contestant’s effort level is lower in the first period than in the second. The latter result is what we call the year-end rush phenomenon. Note that although the theory is couched in a two-period setting, the basic reasoning goes through in the multi-period setting: because of the catching-up effect, the marginal return of effort is highest in the last period.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "We empirically test these theoretical results by Chinese patent applications data, based on a distinguished feature of the Chinese political system. The political elites in China are not selected by elections, but are career bureaucrats promoted through the political hierarchy (central government/province/city/county; see Section 3 for institution background). Under the system, the Chinese government is similar to a gigantic firm with a multi-layered hierarchy in which the employees compete for promotion through the career ladder based on their performances. Furthermore, it is well-known that the promotion competition, also referred to as “career concern” in the literature (e.g., Hölmström, 1999), is a tournament in which performance is based on relative, rather than absolute, evaluation (see, e.g., Lazear, 1995; Gibbons and Waldman, 1999; and Chen, 2003). Since late 1980s, the central government has repeatedly accentuated the importance of science and technology progress and innovations, and has issued many directives to encourage patent acquisition (see Section 3). Given that promotion of bureaucrats in China is based on relative performance, and that innovation achievement is one of the top priorities of the government, it is plausible that competition of patent acquisition between the Chinese cities is also based on relative, rather than absolute performance.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "The theory then has two empirical implications. First, we should observe prevalent year-end rush if patent applications across Chinese local governments, especially the cities (see Section 3). Second, and more importantly, if we rank the cities in terms of their relative interim performance in patent applications, within the province they belong to, then there should be a positive and monotonical relationship between a city’s rank order and the extent of its year-end rush. i.e., the lower down its rank in interim performance in the province, the more aggressive its year-end patent filing. Using patent applications data at city levels in China (1985-2019), we first show that, similar to Sun et al. (2021) at the national level, year-end rush of patent applications has been prevalent at the city levels. Also, throughout more than thirty years covered by our data, the extent of a city’s year-end rush of patent application has a clear, strong, and robust positive relationship with the rank-order of its growth rate of total patents at the end of September (relative to previous September) within the province: The lower-down a city’s rank in interim performance, the greater its year-end rush. Moreover, this result is robust against different measures of performance and different definitions of rank.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "There are, however, two complications we have to address in the empirical model. First, China’s patent growth target policy, which suggests an explicit national growth rate of patent by the central government in 2001, and the provincial levels in 2005-6, fell in the period our data covers. Moreover, targeted growth policy has widely criticized for being a reason behind year-end rush (see the important paper Sun et al., 2021). How do we know that year-end rush is caused by tournament, instead of the targeted growth policy? Second, patents are filed by the inventors within the citiy, not the city itself. While political officials in the cities have the political need to surpass their competitors (and rush in the year end), the inventors in the cities do not. How do the officials align their political need with the filing behavior of the inventors? To address the first complication, we exploit two institution details of policy. First, the growth target is an absolute measure, and once a city meets the target, it stops to have pressure of rushing its patent application; while ranking is a relative measure, so that a city still feels the pressure to rush application if it finds itself falling behind others, even if target has been met. Therefore, meeting the meeting the target should cease to be related to year end rush for cities which have met the target, but rank should continue to be an cause, regardless of whether a city has met the target. Second, growth target policies were adopted by the central government in 2001, and the provinces during 2005-6. Therefore, if we observe year-end rush before there has been such policy, it cannot possibly be a result of the policy, and should be that of career concern. Our empirical results. Our data confirm both the expected predictions, and indicate that career concern is indeed the cause of year-end rush. Growth target only exacerbates it.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "To address the second complication, we hypothesize that the cities enlist the patent agency’s help, by encouraging (or, in local language, to have a cup of tea) the inventors to file innovations of low quality which they otherwise have no intention to. The cities then pay for the agency’s service or provide additional subsidies. Indeed, our data show that the proportion of patent filed by patent agencies in the last two months or a year is substantially higher than other months. Moreover, of all patents filed by patent agencies, those filed in the last two months have a lower quality than those filed by non-agencies, while in other months there is no discernable difference.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "In this case, there are at least two possible sources of the year-end-rush phenomenon. The first is the incentive of the local governments which fall behind the target near the year-end to rush applications in November and December. The second is the incentive of a city to outperform other cities in the same provinces, regardless of whether there is a growth target policy or whether a city has met the target. It is important to distinguish between the two causes for policy reason. For if it is tournament that lies behind year-end rush of patent applications (and the low quality it implies), than it is no use just to abolish growth target: As long as there is relative performance evaluation of local officials, there will be tournament that causes year-end rush. Therefore, amendments of policy to address the drawbacks of year-end rush should be focused on the alleviation of tournament (see, e.g., Rosen, 1986; Chen, 2023), rather than the details of growth target policy.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "In the baseline model, we show that (i) the rank of a city has a positive and strong monotonic relationship with the extent of its year-end rush. (ii) Consistent with the meet-the-target argument for year-end surge, year-end rush is negatively related to a city’s ITAR. Taken together, the evidences show that both growth target and tournament contribute to year-end rush. As ITAR and its rank are correlated, there is concern whether both growth target and tournament cause year-end rush, or one simply reflects the other. To distinguish their influences, we exploit two facts regarding the Chinese patent policy. First, while the central government has started to emphasize innovation in the 90s, the first formal central government document that explicit set growth target appeared in 2001, in the National 10th Five-year Patenting. It then took several years for local government to formulate their own guidelines, and the explicit target growth rates of most of the provinces appeared in 2005-2006. In other word, the effect of growth target on year-end rush should only start after 2006 for most of the cities/provinces. This implies that ITAR should have significant impact on year-end rush only after 2006, and insignificant before. On the other hand, the positive and monotonic relationship between rank and year-end rush should hold throughout the years.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "Second, the relationship between ITAR and year-end rush should be discontinuous. For cities whose ITAR falls behind target, there should be the negative relationship as mentioned above. However, for once a city passed the target threshold (or safely expect to), the relationship should be insignificant. On the other hand, if tournament causes year-end rush, the positive and monotonic relationship should preserve, regardless of whether a city’s ITAR surpasses the target. In a series of regressions, we confirm all the predictions above. These results show that what really lie behind the year-end rush phenomenon is not growth target, but the tournament between cities: The former only exacerbates it after 2005.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "To be sure, the Chinese central government was well-informed of the proliferation of low-quality patent applications, and had taken measures to emphasize quality. Since 2011, with the release of National Patent Development Strategy (2011-2020), China National Intellectual Property Administration has already emphasized the target of \"number of invention patents owned per million population\" instead of “application growth rate”, showing the intention of curbing the blind pursuit of patent application number. The Promotion Plan for the Implementation of the National Intellectual Property Strategy in 2013 and Several Opinions of the State Intellectual Property Office on Further Improving the Quality of Patent Applications released by CNIPA outline several key initiatives aimed at refining patent quality. Both documents are dedicated to enhancing the quality of patent examination and highlighting the patent quality orientation of the funding policy. The Several Opinions of the State Council on Accelerating the Building of an Intellectual Property Right Power under New Conditions in 2015 articulates that “There exist problems urgently needing researching and resolving such as mass but weak and low-quality intellectual property rights, lax protection, frequent and extensive infringement of rights, and affecting enthusiasm for innovation and entrepreneurship”, thus proposing a Patent Quality Enhancement Plan to deal with the aforementioned problems. In 2021, Notice by the China National Intellectual Property Administration of Further Strictly Regulating Patent Application Activities states that there are still some places that do not pay enough attention to the requirements of high-quality development of patents and blindly pursue the phenomenon of quantitative indicators. The notice mandates that governments at all levels should scientifically set work indicators, completely abolish subsidies for patent applications, and clean up and standardize the patent application process. Shortly thereafter, Notice by the China National Intellectual Property Administration of Thoroughly Implementing the “Blue Sky” Special Overhaul Action specifies that government agencies should continue to closely monitor irregular patent application agency practices that do not aim to protect innovation, and each region is required to submit annual summary of special remedies by the end of the year.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "But quantity of patent applications might continue to be an important criterion in performance, with several possible reasons. First, quality of a patent usually takes years to verify. Given that the turnover of government official is often before a patent’s quality is known, quality measure might provide weak incentives. Second, although performance measure can be based on the number of patents awarded, rather than filed, similar to quality, it has its own disadvantages. On the one hand, patents filed sometimes also take a considerable time to be awarded. On the other hand, using patent awards can result in other types of distortion. Therefore, quantity of patent applications, despite its obvious flaw, might continue to be important.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "Perhaps the most important policy implication of the paper’s results is that explicit growth target is not the underlying cause of low-quality patent rush. Even if the government has not set a target, the local officials still pour out applications in the year end if they find themselves lagging behind peers. As long as there is a tournament which adopts certain quantitative performance measure for innovation, then most likely we will observe the year-end rush: This is simply the rational reaction of ones who fall behind trying to catch up. To address the problem, it is more effective to geer toward how to alleviate the drawbacks of tournament, rather than focusing on the details of the patent quantity itself.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "Our argument also provides a new perspective on a much more general phenomenon usually referred to as the “fourth quarter effect”, which record surge in expenditures or investments in either the public or private sectors near the end of a fiscal or accounting year (see the discussion of literature below). In this sense, our results not only rationalize year-end patent rush, but also shed light on a much broader phenomenon in the private and public sectors alike. The general lesson is that when there is a policy from above to promote certain purpose, those affected by the policy generally “game” against it, which usually results in unexpected and adverse consequences. To borrow a phrase from Wei et al. (2024), policies which aim to promote certain social aim are usually subject to “mild government failures”. In fact, the explanation in this paper not only provides rationale for the year-end rush observed in China, but also the same regularity observed in other countries (e.g., Park and Shin, 2023).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "This paper is related to four strands of literature. First, it is related to the extensive literature that evaluates China’s innovation policies (Hu and Jefferson, 2009; Prud’homme, 2012; Li, 2012; Long and Wang, 2018; Hu et al., 2017; Lin, 2021; Wu et al., 2022; Dang and Motohashi, 2015; Dai and Wang, 2024; Eberhardt et al., 2017). Second, this paper is related to the literature that investigates how career concern frames the agent’s incentives (see, e.g., Gibbons and Waldman, 1999 and Lazear and Oyer, 2007 for both theory and empirics), and especially the tournament nature of Chinese bureaucrat (see footnote 2 for related literature). Third, this paper is related to the more general phenomenon referred to as “fourth quarter effect” in the literature, which records prevalent year-end surge in investments or spendings in both the private (e.g., Callen et al. 1996; Kinney and Trezevant, 1993; Park and Shin, 2023; Dao et al. 2009; Kim and Shin, 2002) and public (e.g., Liebman and Mahoney, 2017; Eichenauer, 2020) sectors. Finally, this paper is related to the extensive literature that provides caution against unintended effects of well-meaning polices in regulation (e.g., Chen and Tsay, 2024; Roots, 2004; Carpenter and Nguyen, 2021; Gius, 2017; Iyengar, 2008 and Sabia et al. 2021), politics (e.g., Lewis, 2015; Cortell and Peterson, 2001 and Sunstein, 1994), economics (e.g., Deaton, 2024; Bruggemann et al. 2012; Murray and Stern, 2014; Auerbach, 2003 and Murphy et al. 2018), finance (Shleifer and Vishny, 1988; Laveen and Valencia, 2013; and Flood and Garber XX) and medical care (e.g., Sharkey, 2005 and Casalino, 1999), among many other areas.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 0,
+        "text": "This section proposes a theoretical background for the empirical investigation later. The model is stylized, and our purpose is to adopt a model as simple possible that provides clear intuition that, in a twostage tournament in which interim performance is publicly revealed, (i) the contestant who has poorer interim performance will be more aggressive in the second period and, because of this, (ii) the contestant will try to alleviate the second stage’s more intense competition by withholding effort until the second stage. Therefore, output in the first stage is generally lower than in the second. We interpreted this result as year-end rush.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 1,
+        "text": "The model closely follows the literature of contest. (See XX) A tournament between two contestants consists of two stages. In each period, every contest exerts an effort. The performance of each contestant i is increasing in his effort level, but is subject to a random shock. The effort level (or patent quantity in our context) of contestant i is ; where t=1, 2 denotes period, and i=1,2 denote contestant. The cost of each unit of effort level is c > 0. The benefit of having a quantity Q is V(Q), where V>0 and V”<0. The profit for i, when quantity is Q, is then V(Q)-cQ. Therefore, if be i's profit in t period will be V().",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 2,
+        "text": "In the first period, given the value of , the performance of i is subject to a random shock , so that the performance of i at the end of period 1 (i.e., i's interim performance) is . The quantity Qi can be interpreted as the effort level in the traditional tournament or contest theory, and is the “production function” which transforms effort into output . Since we are principally concerned with relative performance, we can without loss of generality assume that . The value of c the unit cost of effort. Also in accordance with the observed performance of i is its output subject to a random noise, . The noise terms and are assumed to be identically and independently distributed, with its density function and its distribution function. The expected value of is 1. We denote as the realized value of , and . The values of interim performance, and , are observed by both contestants at the end of the first period. Based on their values, each contestant i then decides his quantity in the beginning of the second period. Similar to period 1, we can also assume that second period’s performance of i is subject to a random shock. But since the contestants are risk neutral, and that the expected value of second period performance of i is exactly , as the shock has a mean value of 1. To simplify the model, and without loss of generality, we can assume that i's performance in period 2 is exactly his choice of quantity, .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 3,
+        "text": "At the end of period 2, the effort of each contestant i in the two stages, , together with the value of the shock, , determine i’s total performance, . The total performance of each contestant then determines the winning probability of each contestant in the tournament. We assume that the probability of contestant 1 follows the following contest success function:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 4,
+        "text": "The winning probability of 2 is then . We make the following assumptions on the contest success function and utility function:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 6,
+        "text": "In Assumption 1, (i) simply assumes that one’s winning probability is increasing in his effort, and its marginal effectiveness decreases in effort. The assumptions in (ii) is the symmetry assumption, which requires that the contestants, if facing symmetric environment, have identical winning and marginal winning probabilities. The first two assumptions in (iv) are standard for the utility function. The assumption means that the contestants are “prudent” (see XX). In particular, if the utility function satisfies constant or increasing absolute or relative risk-aversion (see XX). Assumption 1 (iii) implies that when one lags behind, his marginal effort in reducing opponent’s marginal effort is greater where his effort increases. Assumption 1 (v) is to guarantee an interior solution for the optimal effort level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 7,
+        "text": "The winner receives a “reward” M. In our context, this might mean that the contestant who wins in the end of a year has a better annual performance, which translates into higher probability of promotion later. This term is the component of career concern in his utility function.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 8,
+        "text": "We are now ready to write down the objective function of each i. In period 1, i determines the value of to maximize his total payoff. At the end of period 1, and (and therefore and ) are realized. Based on the realized values of and , and , each i then decides the value of . The second period optimization problem for i is then",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 9,
+        "text": "Note that the solutions depend on the values of and . We solve for the equilibrium by backward induction. In the second period, the first-order condition of i for is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Backward Induction"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 10,
+        "text": "It is important to note that, at the first stage, the contestants are symmetric, so that the optimal solutions for and are equal. However, in the second stage, since and have different realizations, and are in general different. Since the optimal solutions for and are functions of and , and have different solutions. The first-order conditions do not necessarily imply positive value of interior condition for . Since the theory part of the paper only serves as a motivation, we abstain from going into the theoretical details, and can simply assume that an interior solution exists. However, the sufficient condition for this is that (i), (ii) is large enough, and (iii) c>M. Since is a function of the realized values of and will write it as(, ). The first-order conditions for and imply that",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 11,
+        "text": "Suppose , i.e., 1 has a higher interim performance. If , then by the concavity of V. Also, (X) implies that . Since and , it follows that , which in turn implies that ; where the first inequality is from , the first equality from symmetry, and the second inequality from the assumption that when . This is a contradiction. Therefore, when , it can’t be the case that and, therefore, it must be that . Similarly, we can show that if , then . In words, one who lags behind in interim performance will exert more effort in the second stage. We thus have the following proposition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 12,
+        "text": "Proposition 1 If i has a higher interim performance, i.e., , then his second period quantity (effort) is lower, i.e., .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 13,
+        "text": "Note that although implies >, the value of cannot be greater than by so much so that the final performance is reversed, i.e., . For example, suppose but . Proposition 1 implies that , which in turn implies . However, , a contradiction. The reason behind this is actually very intuitive: If , then i can always guarantee a greater chance to win by mimicking the value of in the second stage. In other words, since by symmetry, if and only if , which in turn guarantee that in equilibrium: one who is lucky in the first stage has greater chance to win, despite one who lags behind in interim performance will put in more effort in the second stage.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 14,
+        "text": "Proposition 1 shows that, in a tournament with two stages and the interim performances are observable, one who is lagging behind in interim performance will put in more effort in the end period. In the context of our empirical study, this implies that a city/province which lags behinds in its patent applications will file more applications in the year end.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 15,
+        "text": "Before we go into the first stage’s solution, we need certain comparative statics results from the second stage. The second-order conditions for and are",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 17,
+        "text": "Since , , and , we know that . Similarly, . This means that the greater the first-period effort of a contestant, the smaller his second stage effort.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 19,
+        "text": "Therefore, if . Assumption 1(iii) then implies that if or, equivalently, . Similarly for . Whether a contestant’s second-stage effort increases which opponent’s first stage effort depends on whether he leads or lags behind in the interim performance.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 20,
+        "text": "We are now ready to derive the first-period equilibrium. An increase in a contestant’s first period effort has two opposing effects. First, it increases his interim performance and, since it is a component of the total performance, it also increases his winning probability. However, an increase of the effort level in the first period also increases the probability that the contestant leads in the interim performance, and prompts his opponent to react more aggressively in the second period. Note that the second period effort has no such concern with the latter effect, as it is already the end period. Since the marginal return of effort is lower for the first than the second period, we would expect the effort level of the contestant to be lower in the first period than the second.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 21,
+        "text": "This reasoning, however, is subject to one qualification: The contestants start with a symmetric position in the first period, while in the second they start with different interim performances. For example, if contestant i is very lucky in the first period, in that is very large, then it is impossible for his second period effort to be greater than that of the first, as Therefore, what we can show is that, in the equilibrium, . That is, the average second period effort is greater than the first period effort level. This is exactly the year-end rush regularity we are looking for.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 22,
+        "text": "It is obvious from the symmetry between contestant 1 and 2 that the equilibrium quantity must be that . The first-order condition satisfies:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 3,
+        "section_name": "Theoretical Model",
+        "paragraph_id": 28,
+        "text": "Similarly, we can prove that , then . They are exactly the year-end rush we are looking for. This means that the average effort level of the second stage is greater than the first-stage effort level, which is the year-end rush we intend to prove. We prove both in the following lemma.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 4,
+        "section_name": "Lemma 1  and .",
+        "paragraph_id": 0,
+        "text": "Proof: As mentioned earlier, because in the equilibrium, if and only if . In this case by Assumption 1(iii), thus . Conversely, implies , thus . Therefore,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 4,
+        "section_name": "Lemma 1  and .",
+        "paragraph_id": 2,
+        "text": "When (or equivalently, ), we know that by Assumption 1(iii), and that The latter further implies by the assumptions that and . We then have and , which further implies Similar procedure can show that . QED",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 4,
+        "section_name": "Lemma 1  and .",
+        "paragraph_id": 4,
+        "text": "Proposition 2 The average equilibrium effort level in the second stage is greater than the equilibrium first-stage effort.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 4,
+        "section_name": "Lemma 1  and .",
+        "paragraph_id": 5,
+        "text": "The proposition is very intuitive. An increase of the first-stage effort level has two effects. First, it increases the total performance , which increases winning probability, helps with career concern. Second, however, it also increases the probability that i leads in the interim performance, which triggers his opponent to increase the second-stage effort. An increase of the second-stage effort, on the other hand, has only the first effect above. Therefore, the marginal benefit of the first-stage effort is less than that of the second stage, and therefore a smaller effort.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 4,
+        "section_name": "Lemma 1  and .",
+        "paragraph_id": 6,
+        "text": "We need to emphasize that this is true only for the average effort level in the second stage. One might be very lucky that the shock component is extremely large (i.e., is very large.) In that case it is impossible that i's second stage, given for surpasses already, is yet again greater than that for the first stage.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 4,
+        "section_name": "Lemma 1  and .",
+        "paragraph_id": 7,
+        "text": "We interpret the result in Proposition 2 as a year-end rush, in the sense that the contestants, when they can observe in interim performances, will tend to put in more effort in the end period. The two propositions are based on two critical assumptions, one is that there are only two periods; the other that there are only two contestants. The first might be innocuous: Even if there are more than 2 periods, only the end period is not subject to the two opposing effects of effort mentioned above. Therefore, the intuition of a year-end rush continues to hold when the number of periods is greater than 2. The second assumption is more serious. Since the contestants’ interim performances, and , are never equal, the contestants start with asymmetric position in the second stage, and asymmetric equilibrium are known to be hard to solve for the case of general number of contestants. Moreover, a more general contest success function will be more difficult to specify when number of contestants is greater than 2 , and the comparative statics results much more difficult to derive. Third, the second-stage behavior of the contestant whose interim performance falls in the middle will almost surely depend on parameters: we cannot be sure how much more one falls behind which other contestant will impel him to exert more effort than the latter. Therefore, we do not know much of our results extend to more than two contestant case.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Propositions"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 0,
+        "text": "In this section, we provide two institution backgrounds for our empirical investigation, one regarding Chinese patent policy, the other regarding the nature of promotion in the Chinese bureaucracy.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 2,
+        "text": "During the 1990s, the Chinese government has begun to view innovations as being crucial for China’s future economic development and, similar to many initiatives it considers important, had taken serious administrative steps to encourage it. The central government issued a series of policies to promote patent acquisition in the form of either tax break or subsidies. Most import for this paper, it has also suggested a target for the country’s annual growth of patents, and the local governments (provinces) would then follow with their own growth targets. In that case, patent performance is incorporated into the annual evaluation of local government officials.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 3,
+        "text": "The first directive from the central government that explicitly suggested an annual growth target of patents appeared in 2001, after the resolution of National 10th Five-year Plan for Patenting. During 2001-2005, the local governments (provinces) then followed by putting forth their own growth targets. Most of these provincial directives appeared in 2005-6, and mostly targeted a 15-20% growth rate. For instance, the target is 12% for Sichuan province (Outline of the 11th Five-Year Plan for Intellectual Property Development in Sichuan, 2006), 15% for Hainan province (Outline of the 11th Five-Year Plan for Scientific and Technology Development in Hainan, 2006), 18% for Xinjiang province (Opinions on the Intellectual Property Strategy Promotion Project in Xinjiang, 2004) and 15% for Hunan province (Outline of the 11th Five-Year Plan for Intellectual Property Development in Hunan, 2006).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 4,
+        "text": "However, before the 2001 directive, the central government has already published many documents that accentuate the importance of scientific and technological progress and intellectual properties. In 1985, at the same time that the first Chinese Patent Law came into effect, the Chinese Patent Office issued Implementing Regulations for the Reduction or Postponement of Payment by individual Applicants, the second and third paragraph of which states “Any individual who files an application for a patent and who has difficulties in paying the fees such as application fee, examination fee, re-examination fee, application maintenance fee and annual fee within three years after the patent certificate is issued, may submit a request asking for a reduction or postponement of payment. Individual applicant or patentee is subject to paying the remaining fees incompliance with the implementing regulations...The maximum percentage for the reduction or postponement of the fees is no more than 80% of the amount listed above.” This fee remission scheme lowered the threshold for patent applications and stimulated the patenting process. Article 12 of Scientific and Technological Progress Law of the People's Republic of China by NPC Standing Committee in 1993 states “The State shall establish and develop technology market to promote the commercialization of scientific and technological achievements.” The marketization requires the conversion of innovations into products or services with market value, and patent application provides the necessary legal protection and market advantages for this transformation. The Decision on Further Strengthening Intellectual Property Protection Work provided by State Council in 1994 recommends that “The controlling authorities for all science and technological development planning must take intellectual property work as an important link in the management of their plans and formulate a unified intellectual property strategy for implementation and development of the plans”, laying the foundation for the formulation of future patent work plans. Both Government Work Report 1996 and Ninth-Five Year Plan for the National Socio-Economic Development of the People's Republic of China and the Programme for the Long-Term Objectives by Objectives by 2010 shed light on the importance of “Strengthen intellectual property protection, and protect patent inventions”.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 5,
+        "text": "In addition to the central government's initiatives, local authorities had also taken proactive steps in patent protection and encouragement of patent applications before 2001. For example, Article 24 of the Regulations on the Promotion of Scientific and Technological Progress in Guangdong Province in 1995 states that \"Scientific and technological intellectual property rights can be assessed as registered capital.\" Article 25 indicates that \"A research and development organization or an individual may use the scientific and technological intellectual property rights owned by him/her as investment capital and obtain legal income.\" These provisions provide incentives for inventors and organizations to engage in innovative pursuits. The Provisions on the Implementation of the Law of the People's Republic of China on the Promotion of the Transformation of Scientific and Technological Achievements in Liaoning Province in 1997, Article 14, state that “The people's governments at all levels shall commend and reward the relevant units and individuals who have made great contributions to the transformation of scientific and technological achievements; for those who have made outstanding contributions, they shall implement heavy awards, and the costs of the awards may be borne by the treasury.” In 1999, Shanghai introduced for the first time Measures for Funding Shanghai Patent Application Fees and Agency Fees and the Implementing Rules for Shanghai Patent Application Funding. Patent subsidies are financial incentives provided by local governments, usually focusing on the funding of fees in the application process and the patent granting process, which objectively contributes to an increase in the number of patent applications.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 6,
+        "text": "Like many well-meaning government policies, China’s policies to encourage innovation also produced unintended, and even adverse, consequences, many of which criticized from various aspects (Sun et al., 2021; Hu and Jefferson, 2009; Hu et al., 2017; Eberhardt et al., 2017; Hsu et al., 2021 and Wei et al., 2024). One of the adverse consequences of growth target is that although the policy accomplished its goal by producing an enormous increase in patent applications, many of them are of low quality (XX citation). A dramatic example of this is the year-end rush of patent application recorded in the literature, which shows a clear surge of patent filings in China’s State Intellectual Property Office in November and December every year. Moreover, patents filed at year-end are of substantially lower quality. Sun et al. (2021) attributes year-end rush to the fact that local governments which expect failing the growth target around September/October rush applications with immature inventions or ones that would not have been filed had there been no growth target.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 7,
+        "text": "This explanation is plausible, but has certain discrepancy with the data. First, if we look into the data of the Chinese cities, a surprising proportion of cities has already met the target (which is generally set at 10%-15% annual growth rate) by the end of September. For example, at the end of September, around 40% of the cities have already filed more patents than previous year’s total. Given no pressure to meet target, why would the cities still rush applications with innovations of low quality? Second, in other countries where top-down target is absent, there is also surge of year-end filings (e.g., Park and Shin, 2023 for the case in South Korea). Although the difference-in-difference regression in Sun et al. (2021) identifies an increase in year-end rush after the growth target after 2001, it is evident from its Figure X that there has already been strong year-end rush well before 2001. The difference-in-difference estimation only shows that year-end rush is stringer after 2001, but cannot show that it does not exhibit year-end rush does not exist before 2001. In other words, growth target policy exacerbates year-end rush, but is not its cause.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 8,
+        "text": "Encouraging innovation has long been considered a key objective of industrial policies in many developing countries, including China, where the government plays a critical role. Two governance features embedded in China create a unique approach to policy implementation: target-setting and political tournaments. First, the government's target-setting establishes anticipated performance outcomes. Second, local government tournaments for promotions serve as an additional incentive mechanism. Both target-setting and tournaments significantly influence patenting activities, contributing to the year-end rush.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 10,
+        "text": "As a legacy of the planned economy, the government establishes various targets to guide economic and social activities in each \"Five-Year Plan\" through a top-down approach, starting with the implementation of the first \"Five-Year Plan\" in 1953. Typically, the \"Five-Year Plan\" is comprehensive, highlighting many critical targets that serve as guidelines for development over the upcoming five years. These targets include metrics such as GDP growth rates, fiscal expenditure, and more. This framework also applies to patents. The central government initially sets a national-level target, which provincial governments then adapt based on national goals and local conditions. Although these targets are not mandatory, the government treats the economic plan with seriousness (Li et al., 2019).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 11,
+        "text": "Unlike unobservable innovative outcomes such as trade secrets, patents are observable and verifiable, making them more commonly used as targets for innovation policies. Since 2001, the National Intellectual Property Administration has established the \"10th Five-Year Plan on Patent,\" which first stipulates that the annual growth rate of patent applications should reach 14% at the national level. Under this national target, most provincial targets have been clearly specified since 2006, when the “11th Five-Year Plan” was implemented, with the exception of four provinces that initially set their patent targets in 2011. Since then, provincial-level targets have been updated every five years during the 12th and 13th Five-Year Plans, specifically in 2011 and 2016 (see Table 1 in Appendix X).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 12,
+        "text": "However, target-setting varies across different provinces; the targets may be included in the Five-Year Plan or in specific documents guided by it. These targets can be defined as a growth rate over a specific period or as the number of patents per million people. We convert these different targets into an annual growth rate, which is approximately 10%-20%. In addition to overall targets, each province later specifies targets regarding inventions, the most valuable type of patent. Similarly, we convert these different targets into an annual growth rate, which is approximately 15%-25%, slightly higher than the overall patent application target (see Table 2 in Appendix X).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 13,
+        "text": "Although the patent targets are anticipatory rather than obligatory, local governments typically strive to meet them because target-setting indicates that the government is paying attention to this critical issue and may include it in evaluations of local officials’ performance. To achieve these targets, the government employs various strategies, such as subsidizing patent applications and enlisting agencies to assist with the application process.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 14,
+        "text": "The political tournament in China is a distinctive feature of the hierarchical governance system. There are five levels of government: the center, provinces, cities, counties, and townships. Provinces and cities, which lie in the middle of the hierarchy, exhibit similarities in governance compared to the more specialized counties and townships. This structure is well characterized by the M-form governance structure, which serves as the cornerstone for regional autonomy and competition (Qian and Xu, 1993). Regional competition is manifested through the tournament, a unique institutional feature in China that implements a centralized personnel management system. Since 1984, the “one-level-down” appointment system has been established, under which the central government evaluates and appoints provincial leaders, while provincial leaders evaluate and appoint city leaders (Lieberthal, 1995). In this hierarchical system, where there are fewer upper-level positions than lower-level candidates, local officials compete against their counterparts for promotions and other benefits, with relative performance playing a crucial role. Consequently, the targets set by the government one-level above become critical for evaluation and promotion.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 15,
+        "text": "Overall, there are 28 provinces and 333 cities in mainland China. However, each province encompasses a diverse number of heterogeneous cities. While Hainan has only 4 cities, Sichuan and Guangdong each have 21 cities. Furthermore, cities within the same province are heterogeneous, making the relative performance of nearby counterparts significant. For example, the bottom-ranked city is unlikely to outperform the top-ranked city in the same province but may surpass the second-bottom-ranked city because they are closer to each other.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 16,
+        "text": "Second, multiple factors, rather than a single one, determine the appointment and evaluation of city leaders, including political loyalty, experience, innovation, and economic performance. One side effect of the tournament system is that it shifts effort toward activities with targets that can be easily evaluated and verified, such as economic growth (Li and Zhou, 2005; Xu, 2011; Yao and Zhang, 2015). While economic growth is a primary concern for the upper-level government, other factors also come into play due to the multitasking nature of governmental responsibilities. The number of patent applications, which serves as a proxy for innovation performance, is considered an important factor, especially since the government began to emphasize it repeatedly following the enactment of the Patent Law in 1985. Compared to patent quality, which takes time to assess, the number of patent applications provides a verifiable measure of patenting, making it an indispensable component of government performance.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 5,
+        "section_name": "Institutional background",
+        "paragraph_id": 17,
+        "text": "Consequently, the tournament incentive has been consistently in place since the implementation of the “one-level-down” appointment system in 1984, which coincided with the enactment of the Patent Law in 1985. Meanwhile, the effects of target-setting are expected to become significant starting in 2005. This policy regime change allows us to investigate the two factors driving the year-end rush.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 6,
+        "section_name": "Data and Motivating Facts",
+        "paragraph_id": 0,
+        "text": "The data of patent applications is from China’s State Intellectual Property Office (SIPO), covering the full population of patent applications submitted to SIPO from 1985 to 2019. It contains detailed patent information, including application number, filing dates, location by city and province, technological class, patent title, assignee, inventor, and patent agency, etc. In China’s patent system, the SIPO grants three types of patents: invention patents, utility model patents, and design patents. Our data contains 26,380,261 patent applications, of which 9,218,736 are invention patents, 11,570,382 are utility model, and 5,591,143 design.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 6,
+        "section_name": "Data and Motivating Facts",
+        "paragraph_id": 1,
+        "text": "To track monthly trends in patent applications, we aggregate the data at the city-year-month level, summing the total number of patent filings for each city in each year and month. To investigate the role of career concerns on year-end patent application surges, we further aggregate the data at the city-year level. We then have 122,475 city-year-month observations and 9,267 city-year level observations across 358 cities from 31 provinces during the sample period.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 6,
+        "section_name": "Data and Motivating Facts",
+        "paragraph_id": 2,
+        "text": "Following the common practice of the literature, we use forward citations (either 3 or 5 years) of a patent to measure its quality. For example, 3-year forward citation for a patent filed on January 5, 2010 is its total number of citations before January 5, 2013. Since our patent citation data ranges from 1985 to 2016, when we are mentioning patent quality, we can only calculate citations up to 2013 for the three-year measure and up to 2011 for the five-year measure. (See (A) of Table 1 for summary statistics.)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 6,
+        "section_name": "Data and Motivating Facts",
+        "paragraph_id": 4,
+        "text": "Since the basic unit of our data is city-year, we first verify whether the regularities regarding the year-end rush in Sun et al. (2021), which uses aggregated time-series data, still persist in our city-year-month level data. Specifically, we estimate the following monthly trend regression:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 6,
+        "section_name": "Data and Motivating Facts",
+        "paragraph_id": 5,
+        "text": "where denotes the proportion of patent applications filed by city c in month m, relative to the total filed in year t. is a dummy variable which equals 1 for month m and 0 otherwise. July is taken as the reference month in the regression. and respectively represent city-fixed effects and year-fixed effects, and is the error term. (The summary statistics are in (A) of Table 1.)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 6,
+        "section_name": "Data and Motivating Facts",
+        "paragraph_id": 6,
+        "text": "The regression results are in Figure 1. There is a significant surge in patent applications in November and December. There is also a noticeable dip in the beginning of the year, specifically in January and February. This monthly trend pattern is consistent across all three types of patents, and are broadly consistent with Sun et al. (2021).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 0,
+        "text": "The literature, and in particular Sun et al. (2021), has attributed year-end rush to the government’s growth target policy. The reasoning is that cities tend to rush patent applications in November and December if they realize that they are falling behind growth targets sometime during September or October; i.e., when they find their interim performance falls behind the target. If true, there should be a negative relationship between a city's interim performance and its year-end rush.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 1,
+        "text": "As shown in Section 2, year-end surge of patent applications can also be a result of tournament, which is based on relative performance. The incentive to meet the growth target and the behavior in a tournament, therefore, have different implications. The former is an effort to meet an absolute measure of yardstick: As long as a city meet the suggested target, it achieves the target. Therefore, the city’s behavior should exhibit a discontinuity at the point when it reaches the target. Moreover, it has nothing to do with other cities’ performances. Tournament, on the other hand, is a relative comparison. In that case, a city which has met the target will still exhibit year-end rush if it finds its interim performance falling behind other cities in the same province. Therefore, alternatively, we hypothesize that cities, as units below the provincial level, face competition from other cities within the same province. If career concern drives the year-end rush, poorer relative interim performance will impel a city to file more patents in November and December. Hence, there should be a positive relationship between a city's rank order of interim performance within its province and the extent of its year-end rush.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 2,
+        "text": "We define three variables in accordance with our empirical strategy. First, the extent of year-end rush of city c in year t, , is defined as the ratio of total number of patents filed in the last two months of year t to that of the whole year. The greater its value, the greater is the extent of the city’s year-end rush. Second, in order to study the effect of target meeting, we define the “interim target achievement rate” of city c in year t, , as the ratio of the city’s total number of patent applications in the first nine months of year t to that of year t-1. The value of thus measures how far the city is behind (or ahead of) the target at the end of September. It can be viewed as a measure of interim performance regarding a city’s annual growth of patent applications. The greater its value, the easier the city expects to meet the target. We use September, instead of October, to measure ITAR because of two reasons. First, as we will argue in Section 4.4, year-end rush needs certain administrative work, and it takes time. If a city evaluates its own interim performance at the end of October, it might find it hard to immediately increase its applications during November. Second, since YER is measured for the last two months, if ITAR is calculated up to October, we might introduce a possible correlation between YER and ITAR.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 3,
+        "text": "Finally, we define the pure rank of a city, , as the rank order of city c in its within the province it belongs to. The problem of using pure rank is that the provinces have different numbers of cities. Some have as many as 21, while some have only 5. Therefore, some provinces have a city ranked, say, 10th while some provinces do not. To avoid this problem, we rank the cities by quintiles.A city is ranked i-th if it lies in the i-th quintile of rank order. The way we assign a city to a quintile in a province is as the follows. Suppose a province has z cities. Then the cities in the first quintile are those whose rank order is equal or smaller than Ceil(0.2z); where Ceil(x) is the ceiling of x, which is the smallest integer greater than x. The cities whose ranks fall between Ceil(0.4z) and Ceil(0.2z) are in the second quintile, and so on. The advantage of using quintile to rank the cities in a province is that every province has the same number of ranks (5). Accordingly, we define the rank in quintile of city c in year t, , as the rank order in quintiles of a city’s among the cities in the same province. The greater its value, the more lagging behind is the city among the province’s cities at the end of September. This variable is meant to capture a city’s relative interim performance among cities in the same province at the end of September. From Proposition 1 and the empirical literature of tournament (e.g., Genakos and Pagliero, 2012; Chevalier and Ellison, 1997), competitors falling behind in interim performance usually act more aggressively at the end of the evaluation period. Therefore, if career concern is a cause of year-end rush, then the lower down a city’s Rank in a year, the greater its year-end rush in the same year. The summary statistics of the three variables are in Panel (B) of Table 1.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 5,
+        "text": "We estimate the following baseline model to investigate the influences of ITAR and Rank in the same regression:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 6,
+        "text": "where is a dummy variable that equals 1 if the interim target achievement rate of city c in year t in the quintile of its province. Appendix Table A1 summerizes the number of cities and the average patent applications of a city in 1985 and 2019, respectively, in each province. In the table, the first four cities are municipalities which are at the same level as a province in the administrative hierarchy. The group ranked in the middle, i.e., in the third quintile, is taken as the reference group, and therefore is omitted from the baseline regression. Likewise, respectively denote city-fixed effects and year-fixed effects. As a reference, in addition to (2), we also run the same regression with ITAR taken away, in order to access how Rank alone influences YER.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 7,
+        "text": "The results of both regressions are reported in Table 2 and Figure 2. Column (a) of Table 2 and the corresponding Figure 2 show a very clear monotonically increasing relationship between YER and Rank. This provides evidence that a city’s rank in interim target achievement within its province has a strong impact on its year-end filing: The more lagging behind against peers at the end of September, the more patent applications it will file relative to the first ten months. Column (b) shows that the coefficient for ITAR is negative, and is statistically significant. This is despite that Rank is also added in the regression: Meeting target obviously is also a cause of year-end rush. What is surprising is that the increasing and monotonic relationship between Rank and YER remains robust, despite the fact that ITAR is correlated with Rank.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 8,
+        "text": "Rank order based on ITAR has the advantage that it is more comparable across cities with different sizes. As mentioned, this also raises the concern that ITAR and Rank are correlated, and the coefficients obtained in regression (2) therefore might not capture their true influences on year-end rush. As an alternative, we rank cities by the number of patent applications filed during the first nine months of the year. This has the advantage that Rank thus defined is uncorrelated to ITAR. The concern might be that there might be a large variation in the size of city within a province, so that patent applications of a large city might always be greater than a small city. In that case, for example, the patent applications of a city ranked 4th in a province by the end of September might be far fewer than one ranked 1st, and has no hope to surpass the latter even by year-end rushing. Despite this, there is competition among cities of similar size within the same province. In other words, a city rank 4th is not competing with one ranked 1st, but with ones similarly ranked (e.g., 3rd to 5th). Therefore, similar to the logic when Rank is based on ITAR, YER should still have a monotonically increasing relationship with Rank when the latter is based on number of applications, rather than ITAR.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 9,
+        "text": "We re-estimate Eq. (2) using this alternative measure of Rank. Column (c) of Table 2 and Figure 3(A) again clearly shows that YER increases monotonically with Rank, and the coefficients are statistically significant. This pattern holds not only for total number of applications, but for every type of patent, as can be seen from Columns (d)-(f) of Table 2 and Panels (B)-(D) of Figure 3. Note that in all 5 regressions results from Column (b) to (d), the coefficients for ITAR are all negative, and statistically significant. This implies that, at least before controlling for policy details, meeting the target has a strong statistical influence on the extent of year-end rush. On the other hand, results in Column (a)-(c) and Figures 2 and 3 also point out that relative performancw also has an equally strong influence.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 10,
+        "text": "As mentioned earlier, since the number of cities in each provinces has a large variate (Table X), we have refrain from using pure rank (PR) as a measure of relative interim performance. However, even if we use the PR (rather than quintile) to measure relative performance, the results are equally robust. We now rank the citeis by their ITARs within a province from 1st to 16th, using 9th as reference, and run regression (2) again. Figure XX shows a clear increasing pattern of YER with a city’s rank, i.e., the lower a city’s interim performance rank, the higher its extent of year-end rush. The influence of Rank on a city’s year-end behavior is very robut indeed.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 11,
+        "text": "As another robustness check of rank’s influence, Appendix A1 investigates the impact of rank change on year-end filings. The hypothesis is that if the interm rank of a city is worse than its year-end rank (not interim rank) of the prevous year, it will under stronger pressure to file more patents at the end of this year. Column (a) of Table A1 shows if a city’s interim performance rank has dropped relative to last year’s year-end rank, then its proportion of end-year filing is greater than cities whose ranks have not changed. Conversely, for a city’s rank in interim performance relative to last year’s year-end rank has improved, its proportion of year-end filing is lower than those whose ranks remain the same.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 12,
+        "text": "Taken in all, a city’s relative interim performance has a clear impact on its year-end filing behavior. Specifically, the lower down its rank quintile in either ITAR or total number of patents filed up to the end of September, the greater its extent of year-end filings. This is also true for rank change (relative to year-end rank in the previous year): When a city falls back in interim rank relative to year-end rank in the previous year, it tends to file more patents in the year end. All these results lend support to the importance of a city’s relative interim performance in influencing its year-end behavior. To be sure, the value of ITAR itself also has strong influence on YER. Regardless of whether Rank is incorporated in the regression, and regardless of we use Rank or changes in Rank to control for ranking’s influence, ITAR is always negatively related to year-end rush.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 7,
+        "section_name": "Identification Strategy and Baseline Model",
+        "paragraph_id": 13,
+        "text": "As placebo tests for the above results, we examine whether the rank order of cities’ target achievement rates affects patent applications in other months. Since the proportion of year-end patent applications is negatively associated with those in other months of the same year, we use the proportion of patent applications in the early months of the following year for the placebo tests. The cities' interim target achievement rates and rank order in the current year should not affect patent applications in the next year, unless the year-end rush is achieved by accelerating patent applications, i.e., moving next year's patent applications to the end of the current year. In Figure 4, the results show that the estimated coefficients on rank dummies are collectively insignificant when the proportions of patent applications in the early months of the next year are taken as the dependent variables. The placebo tests suggest that the empirical pattern identified in our baseline regression is not likely to be driven by some unobserved confounding factors or incorrect model specifications. The results also reject the notion that the year-end rush can be achieved by accelerating patent applications from the beginning of the next year to the end of the current year.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 0,
+        "text": "Our results in the baseline model have shown that both growth target and career concern contribute to year-end rush. In this section, we will argue that the underlying cause of year-end rush is the latter, and the former only exacerbates it. To see this, we make the following observations. First, although both ITAR and Rank are based on interim performance, they capture different aspects of a city’s performance and incentive. First, ITAR is an absolute measure, and is related only to a city’s own performance. Rank, on the other hand, is a relative measure, and is related to the performance of the other cities too. It may well be the case that one city has a high (or low) value of ITAR but ranks low (or high) within the province. Second, the influence of ITAR should be discontinuous: as a city meets the target, the value of ITAR should cease to influence YER. On the other hand, the influence of Rank remains, regardless of how high a city’s ITAR is. Finally, the Chinese central government suggested a growth target only after 2001 (and the province 2005-6). Therefore, the influence of ITAR on YER should be significant only after 2001. However, the central government has already accentuated the importance of patent well before 2001, we would expect the influence of Rank on YER to be significant well before the growth target policy. In the follows, we exploit these observations to make our point.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 1,
+        "text": "Specifically, we exploit two institutional details mentioned in Section 3. First, the explicit growth target for most of the Chinese provinces only appeared after 2005 (see Table A* in Appendix). Therefore, the influence of ITAR should be statistically significant only after 2005 (even before when national target were set in 2001). However, Rank, having independent impact other than the incentive to meet to target, should influence YER both before and after 2005. Second, the influence of ITAR should be discontinuous. Once a city passes the target threshold, it no longer needs to hurry with its application in the end of the year. As can be seen from Table A1 in the Appendix, most provinces set a growth target rate within 10%-15%. These targets are a threshold. If meeting the target is the cause of year-end rush, the city will ignore it when it reaches the threshold. We use 20% as a threshold in our empirical model to address the concern of the officials that a “just-make-it” growth rate might expose them to the risk of an unlucky year-end performance, they might feel comfortable only when passing the threshold by a sizable margin in September. Specifically, for a city whose applications in the first nine months are more than 1.2 times that of last year’s (i.e., whose ITARt is greater than 1.2), we expect that its year-end filings will not be significantly greater than that of other months. Therefore, YERt should be unrelated to ITARt for cities whose values of ITARt is greater than 1.2, and decreasing in ITARt for cities below 1.2. On the other hand, YER should continue to be monotonically increasing in Rank regardless of whether the value of ITAR surpasses 1.2. In the next two subsections, we explore the influence of growth target and rank separately in light of the two details. Then in Section 5.3 we run a joint regression that incorporates both ITAR and Rank in the same regression.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 4,
+        "text": "where is a dummy variable that equals one if the value of is below 1.2 and zero otherwise; is the dummy indicating years after (excluding) 2005. Other variables, including and , are identical to Eq. (2).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 5,
+        "text": "Table 4 presents the estimated results. First, consistent with the baseline model, Column (a) shows that the coefficient on ITAR is negative and statistically significant. Moreover, when we incorporate the timing of growth target (i.e., the dummy ), Column (b) shows that the coefficient for the interaction term between ITAR and is also negative and statistically significant, suggesting the effects of ITAR on YER are greater in magnitude after 2005. Note that since the coefficient of ITAR is negative, it affects year-end filings even before there has been growth target. But if growth target policy is the cause of the year-end rush, why would the cities have to rush patent application before they were asigned a growth target? Obviously, growth target is not the underlying cause. The real affecting factor should be career concern. The reason why ITAR seems to have affect YER before 2005 is that Rank affects year-end filings, and that ITAR and Rank are correlated.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 6,
+        "text": "Second, for cities whose ITAR are below 1.2 (i.e., whose interim growth rate is less than 20%), year-end rush becomes more severe: The coefficient for is negative, and that of Below positive, both statistically significant. To summarize, a city’s extent of year-end filings is negatively correlated with its interim performance, and the correlation is stronger after 2005. Although in Column (c) the coefficients for both and the triple interaction term are statistically insignificant, their signs are as expected.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 7,
+        "text": "Despite these results, interim target achievement rate does not seem to cause of year-end rush. This can be shown by two ways. In the first, we compare the pattern of year-end rush between cities whose values of ITAR pass the 1.2 threshold and those which have not. The second is to compare the same regularity between years before 2005 and those after 2006. Regarding the threshold, we plot the cumulative density distribution of the values of ITAR, one for the subsample between years 1986 and 2004, the other for 2006-2019. It shows that almost half (49.32%) of the observations pass 1.2 threshold, implying that half of the cities safely meet their growth targets (Figure 5). The proportion of cities whose values of ITAR have pass the threshold 1.2 is quite large. The distribution of year 2007-2019 slightly first-order stochastically dominates that for 1986-2004, meaning that the average growth rates of the city’s applications up to the end of September do slightly increase after 2005. But when we estimate the monthly trend model of Eq. (1) for two subsamples based on whether the city’s ITAR is greater than 1.2, the results in Figure 6 show that year-end rush is apparent in both subsamples, i.e., regardless of whether ITAR has passed the 1.2 threshold. If the year-end rush were solely driven by the pressure to meet growth targets, cities with an ITAR above 1.2 would have little incentive to rush at year-end. Figure 5 and 6, however, show that this is not the case. What they indicate is that although target growth slightly increased year-end rush after 2005, it is prevalent before 2005.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 8,
+        "text": "Second, regarding the timing of growth target policy before 2005 and after 2006, we further fit a polynomial of YER with respect to ITAR separately on both sides of the 1.2 threshold value (Figure 7). On the right side of the threshold value, YER still shows a negative association with ITAR, although the fitted curve appears much steeper on the left side than the right. There was a clear year-end rush in patent applications even before 2005. It might be instructive to discuss the results in Sun et al. (2021) relative to ours. Since they use aggregate annual data, not the city-level data, it is appropriately that it takes 2001 as the threshold of the difference-in-difference analysis, the Chinese central government set a national growth target of 14%. The regression results show an increase in year-end rush after 2001. However, a difference-in-difference analysis can only show change in year-end rush before and after 2001, but cannot provide evidence on whether there is year-end rush before 2001. In other words, the difference-in-difference result in Sun et al. (2021) has shown that year-end filings are more extensive after 2001, but this also imply that it is absent before 2001. As can be seen from Figure 7, year-end rush is serious even before the growth target policy, although the figure uses 2005 as the threshold. To compare our results with Sun et al. (2021), we aggregate our data into yearly data, and re-estimate the monthly trend equation for subsamples before and after 2001, respectively. The results in Appendix A2 clearly show that year-end rush is prevalent even before 2001, strongly suggesting that growth target policy has not been the main cause of year-end rush.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 9,
+        "text": "In summary, both pieces of evidences, one regarding threshold of growth target and the other timing of policy, show that the pressure to meet growth targets cannot solely account for the evidence on year-end rush, if at all. In the next subsection, we turn to investigating the impact of relative performance.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 11,
+        "text": "We now turn to examine whether career concern based on relative performance can accommodate the evidence that cannot be explained by the target fulfillment argument. Our identification strategy is to see whether there is any difference in the influence of Rank, first by comparing subsamples whose ITAR are greater or smaller than the 1.2 threshold, then subsamples before and after 2005.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 13,
+        "text": "As mentioned, YER should be monotonically increasing in Rank, regardless of whether a city’s value of ITAR passes the 1.2 threshold. To examine this, we regress YER on Rank dummies using two subsamples, one for cities whose ITAR are greater than 1.2, and the other less. For each subsample, we recalculated the rank order of ITAR for each city within its province. Again, we use cities ranked at 3rd in the quintel as the reference group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 14,
+        "text": "Figure 9 shows that, regardless of whether ITAR passes the threshold 1.2, the lower an ITAR rank, the more intense its year-end rush. It clearly shows that even if a city faces no pressure to meet the growth target, its year-end filings are more intensive the lower it ranks in interim performance. Our analysis suggests that the negative association between ITAR and YER reflects the competition based on relative interim performance driven by career concerns, independent of target meeting. It also suggests that the negative coefficient on ITAR in Table 4 can be driven by competition based on relative performance, rather than solely by the pressure to meet growth targets.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 16,
+        "text": "In this subsection, we investigate whether year-end filing’s dependence on rank is different before and after 2005. Since explicit growth targets were set only after 2005 for most provinces, the year-end rush before 2005 could not have been driven by this consideration. However, well before 2005, the government had emphasized innovation, and patent performance in particular. Therefore, career concerns can be related to year-end rush before 2005. To examine this prediction, we regress YER on rank dummies, using the subsamples before and after 2005, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 17,
+        "text": "Figure 10 shows that relative performance, as measured by ITAR ranking, clearly has a monotonic influence the year-end rush both before and after 2005. The estimated coefficients on the rank dummies exhibit a clear increasing trend as the rank order moves from higher to lower positions, both in the pre-2005 and post-2005 subsamples. This lends another piece of evidence that career concern is a major cause of the year-end rush in patent applications. Additionally, the gap in the year-end rush, which widens as the rankings move from the top to bottom cities, is larger for years after 2005: The introduction of growth targets since 2005 has further intensified across-city competition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 19,
+        "text": "To disentangle the role of pressure to meet growth targets and career concerns in their impacts on the year-end rush, we estimate the following regression, one using the subsamples whose value of ITAR are greater than 1.2; the other less:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 20,
+        "text": "where all variables are defined the same as in Eq. (3). Rank is recalculated for cities in the same province after splitting the samples. Cities in the 3rd quintile are the reference group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 21,
+        "text": "Columns (a) and (b) of Table 5 present the estimated results of Eq. (4) for the subsample of cities with an ITAR greater than 1.2. Column (a) clearly shows that the rank order in ITAR affects the year-end rush: the extent of year-end rush monotically increases as a city’s rank worsens. Column (b) show that, even after including ITAR and its interaction term into the regression, this pattern remains the same. However, the coefficients on ITAR and the interaction terms are now insignificant, despite being negative as expected. This indicates that the ranking of ITAR, rather than its absolute value, has a stronger explanatory power for the year-end rush. For cities which have surpassed the ITAR threshold, even if there is no pressure to meet targets, career concerns based on relative performance still lead to a year-end rush: Cities with lower rankings are more heavily involved in the year-end rush. On the other hand, the value of ITAR, if it is greater than 1.2, has no impact on YER, before or after 2005.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 8,
+        "section_name": "5. Growth Target versus Rank in Explaining the Year-End Rush",
+        "paragraph_id": 22,
+        "text": "In contrast, for cities whose values of ITAR are smaller than 1.2, and are under pressure to meet the growth targets, the value of ITAR significantly influences the year-end rush, rendering the impact of relative performance ranking insignificant, except for cities ranked lowest. Columns (c) and (d) of Table 5 present the results for the subsample of cities with an ITAR of less than 1.2. Column (3) indicates that cities with lower rankings tend to experience a more severe year-end rush. However, after including the ITAR and its interaction term, the results in Column (4) show that the estimated coefficient for Rank becomes insignificant. However, the coefficient of the interactive term,, is statistically insignificant. This seems to suggest that the growth target policy does not change the effect of ITAR. Given that ITAR is correlated with Rank, this is ore in line with the hypothesis that the latter is the main cause of YER.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 9,
+        "section_name": "The Role of the Patent Agency",
+        "paragraph_id": 0,
+        "text": "There has been a missing link in our argument so far: patents are filed by the inventors (firms, institutions, and individuals) in the cities, not by the city officials themselves. While the city officials face pressure to meet targets and performance competition from other cities, the inventors do not. For our proposed explanation to be valid, we must show that the Chinese cities can provide incentives to the inventors in the cities to facilitate the local official’s political need. How do the cities provide incentives to these otherwise unconcerned entities? In other words, how does a city align the incentives of the inventors with its political leader? We hypothesize that this is accomplished by enlisting the help of the patent agencies. The cities negotiate with the inventors (or, to use a local language, have a cup of tea with them), encouraging them to file applications for inventions they had not planned to (perhaps because of their low or pre-mature quality), with the help of the patent agency, for which the city covers its cost. If this is true, there will be two testable implications. First, the proportion of patent applications filed through the patent agency in November and December should be higher than in the other months. Second, among patents filed by the agency, those filed in November and December should have a lower quality than in the other months.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 9,
+        "section_name": "The Role of the Patent Agency",
+        "paragraph_id": 1,
+        "text": "To examine the first prediction, we estimate Eq. (1) in which the dependent variable is the proportion of total patents filed that are by the agency in each month. Figure 11 shows that December has the highest proportion of patents filed by patent agencies, a pattern consistent across all types of patents. We also fit a polynomial function for the relationship between the year-end rush and the proportion of patents filed by patent agencies in January and December. In the figure, the horizontal axis is the YER for city-years, and the vertical axis is the proportions of patents applications filed by agencies in January and December of that city that year (Figure 12), respectively. The figure shows that the greater the extent of a city’s year-end rush in that year, the greater the proportion of applications filed by patent agency in December that year. On the other hand, there is no such pattern for January. This is a clear evidence showing that patent agencies in a city are involved in the year-end rush of patent filings.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 9,
+        "section_name": "The Role of the Patent Agency",
+        "paragraph_id": 2,
+        "text": "As mentioned, there can be two potential ways to increase patent filings at the year-end. One is to file low-quality patents that otherwise would not have been filed. If this is the channel, then the average quality of patents filed at the year-end will be lower. To empirically examine this, we again estimate the monthly trend in Eq. (1), taking the dependent variable as the average number of forward citations received within three or five years after date of application. This quality measure is calculated by dividing the total number of forward citations by the total number of patent applications for each city-year-month cell. Given that the applications of utility model and design patents do not require substantive examinations and they are very rarely cited by other patents, we focus solely on the forward citations of invention patents. Figure 12 shows that patents filed in the last two months of the year are of substantial lower quality compared to those filed in other months. This holds regardless of whether citations are measured by three years or five years. The results confirm that the year-end rush is driven by the filing of low-quality innovations, a result consistent with Sun et al. (2021).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 9,
+        "section_name": "The Role of the Patent Agency",
+        "paragraph_id": 3,
+        "text": "Another potential way to increase year-end filings is to forward the applications of innovations originally intended for early next year under normal pace to the end of the current year. The deep trough observed in January and February in the monthly trend shown in Figure 1 seems to suggest this possibility. To empirically test this channel, we calculate the proportion of a city’s applications in the first two months relative to the first six months of year t, denoted as xct, and then compute the correlation between xct and YERc(t-1). The value of xct is to measure how year t’s applications in the first six months are concentrated in the first two. If the way a city engages in year-end rush in year t-1 is by advancing early next year’s patents, there should be a negative relationship between xct and YERc(t-1). It turns out that there is no significant correlation between them (if anything, the correlation coefficient is 0.043, and is not statistically significant). The placebo tests in Section 4.2.4 also reject the hypothesis that the year-end rush is due to advancing next year's early patent applications to the end of the current year. We thus conclude that the cities rush applications in the year end mainly by filing low quality innovations which probably would not have been filed if not for political reason.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 10,
+        "section_name": "Conclusions",
+        "paragraph_id": 0,
+        "text": "This paper theoretical empirically investigates the year-end rush regularity (or, more general, the fourth-quarter effect) often observed in organization. We theoretically show that this regularity is caused by the tournament feature in the organizations when interim performances are observable to contestants. Using patent applications data of Chinese cities (1985-2019), we provide evidence to show that cities which fall behind in the interim performance (in various measures) are more aggressive in the year end, in so that there is a clear and monotonic relationship between a city’s interim performance and the extent of its year-end rush behavior. The Chinese cities are ideal for our empirical investigation because the promotion of government officials through the bureaucratic hierarchy is well-known to be a tournament.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1340,
+        "section_id": 10,
+        "section_name": "Conclusions",
+        "paragraph_id": 1,
+        "text": "Our results have two important implications. First, sometimes the distortions of a policy are not caused by the policy per se, but simply because the policy’s goal itself creates a tournament between those involved, which results in “mild government failure,” to use the words in Wei et al. (2024). As long as there is competition, there emerges incentives that conflicts with a policy’s original goal. Second, our explanation also sheds light on a much general phenomenon, referred to as the “fourth-quarter effect,” which records high level of investment or expenditures in either the public or private sector near the end of a year.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

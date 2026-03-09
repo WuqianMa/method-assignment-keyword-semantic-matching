@@ -1,0 +1,1324 @@
+[
+    {
+        "paper_id": 1200,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Humans relied on hunting and gathering for 95% of the time since the origin of Homo sapiens 300,000 years ago (McDougall et al., 2005). The Neolithic Revolution, marking the shift from foraging to farming, is one of the most significant transformations in human history. Agricultural surpluses allowed for the development of non-food-producing classes, which were essential for advancements in writing, science, cities, and military technology (Diamond, 1997). The transition to agriculture preceded the rise of states worldwide (Borcan et al., 2021). It spurred the evolution of human traits such as preferences for quality over quantity and increased longevity (Galor and Moav, 2002; Galor and Moav, 2007). 1 The Neolithic Revolution had a profound influence on human history and is at the root of global inequality due to its effects on culture and institutions (Galor, 2022). Despite its importance, we still lack a full understanding of its origins, owing to its complexity and limited data. The reasons behind the Neolithic transition remain one of the most intriguing questions in human prehistory (Price and Bar-Yosef, 2011). This research explores the biogeographical origins of the Neolithic Revolution both theoretically and empirically. The model suggests that, without secure property rights, people overhunted mammals, leading to a sharp decline in hunting yields and driving the shift toward farming. It shows that some mammals were particularly vulnerable to hunting pressure due to biological traits that made them easier to catch, resulting in their extinction and facilitating the transition to agriculture. The research also addresses a key question about the Neolithic Revolution: Why did early farmers adopt agriculture, despite its higher labor demands and lack of immediate consumption benefits? While existing studies that emphasize the advantages of farming don’t fully explain this shift, the extinction theory provides a clear answer. To empirically test the theory’s predictions, I construct a measure of the loss in hunting 1 For more on the impact of the Neolithic Revolution on socioeconomic outcomes and human development, see Hibbs and Olsson (2004), Olsson and Hibbs Jr (2005), Putterman (2008), and Dickens and Lagerl ̈of (2021), among others.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "returns due to extinction, using several new datasets on mammal species. I find a robust association between the loss of hunting returns and the Neolithic transition, confirmed across various datasets and variations in both the transition and extinction. To better identify human-driven extinction and get closer to causality, I directly control for paleo-climatic factors and apply an instrumental variable approach, using plausibly exogenous biological traits that increase extinction risk. I construct a measure of lost biomass, reflecting the reduction in hunting returns, by using the predicted spatial distribution of mammal species and their extinction status. The Phylogenetic Atlas of Mammal Macroecology (PHYLACINE) database (Faurby et al., 2018) provides data on the spatial distribution of all known mammal species since the Last Interglacial. 2 For each species, the database provides a range map that estimates where they would live today if not impacted by human activities. To construct biomass, I use the wellestablished relationship between body mass and population density, 3 and I determine the extinction status of species using data from Andermann et al. (2020). This allows me to calculate how much biomass was lost due to mammal extinctions. Paleo-climatic factors are crucial for both identification and causality, so I account for them, along with other potential confounding factors. It is widely recognized that humans, climate, or both were the main drivers of mass extinction over the last 120,000 years, with other factors playing little to no role (Stuart, 2015). 4 By controlling for paleo-climatic factors, I can more confidently attribute extinction to human causes. Climate has also been viewed as an important factor in the agricultural transition (Dow et al., 2009; Ashraf and Michalopoulos, 2015; Matranga, 2024), so controlling for these factors helps reduce concerns about spurious correlations. 2 The Last Interglacial was a warm period between approximately 129,000 and 116,000 years ago, preceding the most recent glacial period (the last Ice Age). 3 Specifically, I use this relationship to estimate species abundance, which is essential for calculating biomass. The association between population density and body mass is well-documented in the field of allometry (Peters and Raelson, 1984; Damuth, 1987; Silva and Downing, 1995; Silva et al., 2001). 4 Recent studies increasingly point to human activity as the primary cause of extinction, rather than climate (Sandom et al., 2014; Faurby and Svenning, 2015; Araujo et al., 2017; Andermann et al., 2020; Lemoine et al., 2023).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Institutions and culture of local foraging groups may have influenced both extinction and the agricultural transition. To address this, I use an instrumental variable approach. The instrument replaces the actual extinction status with the predicted extinction probability, which is based on plausibly exogenous biological traits that increase extinction risk. In particular, I use species’ limb morphology and digestive systems. Limb types affect running speed and agility, leading to differences in a species’ ability to escape hunters. Digestive systems determine how much time and how often mammals need to feed, affecting their exposure to hunters. As a result, species with less efficient limb types and digestive systems are more likely to go extinct. These traits evolved long before humans appeared, making them plausibly pre-determined. To establish the impact of extinction on the Neolithic transition, I use various datasets with different units and variations that complement each other. A cross-country analysis offers a global view of the relationship between biomass loss and the timing of the transition. This analysis controls for paleo-climatic factors, continent fixed effects, and various geographical features. Both ordinary least squares (OLS) and two-stage least squares (2SLS) regressions show a strong and robust link between lost biomass and the transition. Since modern country borders are not relevant to the agricultural transition in (pre)historical times, the timing of the transition at the country level is often noisy. To address this, I supplement the analysis with data from Neolithic archaeological sites. Using information on Neolithic settlements in Europe, the Middle East, East Asia, and Southeast Asia, I create a 1 ◦ × 1 ◦ grid cell. I construct a panel data on archaeological sites at this grid cell level. The panel analysis, which controls for paleo-climatic factors, as well as cell and time fixed effects, shows a strong relationship between biomass loss and the likelihood of the transition. The 2SLS estimate reveals a strong impact, indicating a significant economic effect of the extinction. 5 5 I also conduct a cross-archaeological site analysis using 1-degree by 1-degree grid cells and find a strong positive link between lost biomass and the timing of the Neolithic transition. This result holds for both OLS and 2SLS estimates and remains robust when controlling for paleo-climatic factors and various geographical features. I present this result in the appendix.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "Finally, I conduct a panel analysis focusing solely on the variation in independent transitions to agriculture worldwide. Unlike the cross-country and archaeological-site analyses, this approach examines the impact of biomass loss on the emergence of agriculture, rather than its spread. Using data from well-established sites of pristine agricultural transitions, I create a 1 ◦ × 1 ◦ grid cell panel. Both OLS and 2SLS analyses, which control for paleo-climatic factors, as well as cell and time fixed effects, reveal a strong link between biomass loss and the likelihood of independent agricultural transitions. This research contributes to the multidisciplinary literature on the origins of agriculture. 6 The first economic study, by Smith (1975), examined the economic incentive to overhunt prey animals and linked their extinction to the agricultural transition in the Americas. Dow et al. (2009) theorize that agriculture emerged in areas that experienced an initial climatic improvement followed by a reversal. Ashraf and Michalopoulos (2015) show a hump-shaped relationship between climate volatility and the timing of the agricultural transition. Matranga (2024) show that climatic seasonality encouraged sedentary settlements, promoting the transition to agriculture. Bowles and Choi (2019) suggest that farming helped stabilize private property, which facilitated the agricultural transition. Riahi (2020) find an inverted U-shaped relationship between large mammal extinction and the likelihood of pristine agriculture. Finally, Grall et al. (2024) find a theoretical and empirical link between somatic capital and the timing of the Neolithic transition. This paper also contributes to the literature on the deep-rooted determinants of comparative development, particularly studies on biogeographical origins. Diamond (1997) highlights the role of domesticable animals and plants in the rise of agriculture, institutions, and states. Olsson and Hibbs Jr (2005) theoretically and empirically support Diamond’s hypothesis, providing evidence for the influence of biogeographical conditions. Link (2024) shows that transport mammals promoted long-distance trade and the development of social hierarchies. 6 The origins of agriculture are a widely debated topic across fields such as economics, evolutionary biology, archaeology, and anthropology (for surveys, see Weisdorf, 2005; Price and Bar-Yosef, 2011).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "This research contributes to the literature by providing strong evidence that the extinction of large herbivores led to the emergence and spread of agriculture. It develops a long-run economic growth model that links biological traits making mammals vulnerable, their extinction, and the Neolithic transition. The study introduces various datasets on mammal species. Using these datasets, I create a measure of hunting loss due to extinction and an instrumental variable for extinction, both of which are available in cross-sectional and panel analyses at various spatial scales. The rest of the paper is structured as follows. Section 2 develops the model of the transition from foraging to agriculture. Section 3 describes the datasets and the construction of key variables. Section 4 presents the empirical evidence. Section 5 offers concluding remarks. Online Appendix A provides historical background.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 2,
+        "section_name": "The Model",
+        "paragraph_id": 0,
+        "text": "This section outlines a theory explaining the shift from hunting to agriculture. It argues that the extinction of large mammals drove this transition, emphasizing the role of biological vulnerability in the rise of farming. The theory also includes Malthusian pressure, making population growth an internal factor. It provides a clear explanation for why early farmers adopted agriculture, despite the increased labor and lack of immediate food benefits. Consider an overlapping-generations economy operating over infinite discrete time, composed of multiple species of megaherbivores. Each period, the economy produces a single homogenous good using two production methods: hunting (sector h ) and agriculture (sector a ). Hunting uses land, biomass, and labor, while agriculture uses land and labor. Land supply is fixed and exogenous, while biomass is a renewable resource. Labor is allocated based on the relative productivity of the two sectors.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 3,
+        "section_name": "Production of Final Output",
+        "paragraph_id": 2,
+        "text": "where A h is the technological level, B t is the biomass stock, X h is the land used (normalized to 1), L h t is the labor force, and α ∈ (0 , 1). The focus is on megaherbivores 7 as prey, as they provided more economic value and nutrition than smaller mammals. Non-herbivores were likely too dangerous for early hunters and reasonably they were not prey mammals. 8 Thus, the biomass B t represents megaherbivore biomass. Output per hunter at time t , y h t , is:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 3,
+        "section_name": "Production of Final Output",
+        "paragraph_id": 4,
+        "text": "In the agricultural sector, land was abundant during the transition, leading to constant returns to labor. 9 The output at time t , Y a t , is:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 3,
+        "section_name": "Production of Final Output",
+        "paragraph_id": 6,
+        "text": "where A a t is the technological level, X a is the land used, and L a t is the labor force. Output per farmer, y a t , is:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 3,
+        "section_name": "Production of Final Output",
+        "paragraph_id": 7,
+        "text": "y a t = A a t X a . (4) 7 The formal definition of megaherbivores is herbivores larger than 44 kg. This threshold is standard in the definition of megafauna, which are large terrestrial mammals (Faurby and Svenning, 2015). 8 Hart (2018) provide examples of non-herbivores, such as lions, tigers, and bears, hunting humans. While most cases are modern, they suggest that prehistoric humans faced a much higher risk of being hunted by these dangerous mammals, especially since there were more such predators and humans had less advanced weapons and shelters. 9 This assumption has been widely accepted in the related literature (Weisdorf, 2005).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 3,
+        "section_name": "Production of Final Output",
+        "paragraph_id": 8,
+        "text": "When agriculture is not economically viable, there is no technological progress in that sector. However, once cultivation occurs, it starts gradually increasing through learning by doing (Dow et al., 2009). 10 Hence, growth of agricultural technology is modeled as",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 3,
+        "section_name": "Production of Final Output",
+        "paragraph_id": 10,
+        "text": "where A a t +1 = F ( A a t , L a t ) = A a t if L a t = 0, and ∂F ( A a t , L a t ) /∂L a t > 0 if L a t > 0. Thus, when agriculture is latent, its productivity remains constant. When it is active, its productivity increases, especially when more labor is employed in it.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 4,
+        "section_name": "Evolution of the Biological Stock",
+        "paragraph_id": 0,
+        "text": "In a natural equilibrium, biomass remains stable at the maximum level that the regional ecosystem can support. However, when humans hunt mammals, this reduces the overall biomass. Since biomass is a replenishable biological resource, it recovers and moves back toward its natural level after some depletion. However, if too much is lost, the system may no longer be able to replenish itself. Hence, the law of evolution of biomass is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 4,
+        "section_name": "Evolution of the Biological Stock",
+        "paragraph_id": 1,
+        "text": "B t +1 =        B t + κ ( v )( B − B t ) − A h B α t ( L h t ) 1 − α if B t > B ∗ ( v ) B t − A h B α t ( L h t ) 1 − α if B t ≤ B ∗ ( v ), (6)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 4,
+        "section_name": "Evolution of the Biological Stock",
+        "paragraph_id": 2,
+        "text": "where κ is the rate of replenishment, B is the highest level of biomass sustained in a natural equilibrium, B ∗ is the threshold below which biological resources are not self-supported, v is the degree of biological vulnerability of mammals. As long as biomass in period t , denoted as B t , remains above the biological threshold B ∗ , the biomass will recover at the natural replenishment rate κ ( v ), while simultaneously 10 Dow et al. (2009) discuss how agricultural technology improved through learning by doing. Examples include optimizing planting and harvesting times, seed spacing, weeding, fertilizing, irrigation, and selecting plant traits. In contrast, learning by doing had a much smaller role in the hunting sector. While including the evolution of hunting productivity would add complexity, it does not affect the qualitative results, so I do not model it explicitly.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 4,
+        "section_name": "Evolution of the Biological Stock",
+        "paragraph_id": 3,
+        "text": "decreasing by the amount of hunting, represented by A h B α t ( L h t ) 1 − α . Therefore, the change in biomass in the next period depends on the balance between biological recovery and the impact of hunting. However, once biomass falls below the biological threshold, the natural birth rate drops below the natural death rate (Koch and Barnosky, 2006), preventing any recovery toward the natural equilibrium. If humans continue hunting mammals, biomass will continue to decline in proportion to the hunting yield. Let J represent the set of species in the economy, where each species j ∈J has its own biological vulnerability, denoted as v j . The overall vulnerability of the economy is an aggregated measure of the vulnerabilities of all species and can be expressed v = E [ v j ] = N P j ∈J v j N j , where N j is the number of individuals of species j and N = P j ∈J N j . High vulnerability indicates biological features lowering reproductive success. 11 Consequently, the replenishment rate κ is a decreasing function of v . Furthermore, once biomass falls below the biological threshold B ∗ , it can no longer self-replenish. Therefore, economies with higher biological vulnerability are more likely to cross this critical threshold. Hence, I assume",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 0,
+        "text": "In each period t , a generation consisting of L t identical individuals joins the labor force. Each individual has a single parent, and members of generation t live for two periods. In the first period (childhood), t − 1, individuals are economically inactive. In the second period (adulthood), t , individuals are endowed with one unit of time, which they optimally allocate between child-rearing and labor force participation. The preferences of members of generation t are defined over consumption, leisure, and 11 These are, for example, longer gestation periods, longer maternal care periods, older age at sexual maturity, inefficient digestive systems, and inefficient limb morphology.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 3,
+        "text": "where c t is the consumption of an individual of generation t , l t is the leisure time, n t is the number of children, and γ, β ∈ (0 , 1). Income for a member of generation t , y t , is the amount earned by supplying labor to the sector that produces higher output per individual. Child-rearing is costly and requires a fraction p of parental income per child. Individuals spend their time on work, child-rearing, and leisure. They use the income for consumption. Thus, in the second period of life, the individual faces the budget constraint",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 6,
+        "text": "Members of generation t choose their number of children, leisure time, and their own consumption to maximize their utility function subject to the budget constraint and subsistenceconsumption constraint. Substituting (9) into (8), the optimization problem of a member of generation t is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 7,
+        "text": "max n t , l t (1 − γ ) ln y t (1 − pn t − l t ) + (1 − γ ) β ln l t + γ ln n t subject to y t (1 − pn t − l t ) ≥ ̃ c ; n t , l t ≥ 0 . (10)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 8,
+        "text": "Let ̃ y be the level of income above which the subsistence constraint is not binding; that is, ̃ y = ̃ c [1 + (1 − γ ) β ] / (1 − γ ). Define worktime as w t = 1 − pn t − l t . It follows that for",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 9,
+        "text": "( c ∗ t , n ∗ t , l ∗ t , w ∗ t ) =        \u0010 1 − γ 1+ β − γβ y t , γ p (1+ β − γβ ) , β (1 − γ ) 1+ β − γβ , 1 − γ 1+ β − γβ \u0011 if y t ≥ ̃ y \u0010 ̃ c, γ p [ γ + β (1 − γ )] \u0010 1 − ̃ c y t \u0011 , β (1 − γ ) γ + β (1 − γ ) \u0010 1 − ̃ c y t \u0011 , ̃ c y t \u0011 if y t ≤ ̃ y. (11)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 5,
+        "section_name": "Preferences and Constraints",
+        "paragraph_id": 10,
+        "text": "As long as the income of a member of generation t is below ̃ y , the subsistence consumption is binding. As y t increases (but remains below ̃ y ), the individual spends a larger fraction of income for child rearing and leisure while maintaining subsistence consumption. As a result, they work less as they earn more income. In contrast, when y t is larger than ̃ y , the number of children, leisure, and worktime are constant while an increase in income is devoted to consumption. The focus of the model is the transitional phase from foraging to agriculture, and this period is governed by the Malthusian mechanism, in which the subsistence constraint is binding and the income elasticity of demand for children is positive. Therefore, I assume",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 6,
+        "section_name": "Evolution of the Population",
+        "paragraph_id": 2,
+        "text": "where L t = L h t + L a t is the size of the population in period t . Given the optimal fertility choice, (11), and the Malthusian regime, (12), the dynamics of the population become",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 0,
+        "text": "The development of the economy is governed by the endogenous evolution of the biological stock, the size of the population, and the level of agricultural technology. Therefore, the dynamics of the economy are fully determined by the sequence { B t , L t , A a t } ∞ t =0 that satisfies (5), (6) and (14).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 2,
+        "text": "The Replacement Frontier is the geometric locus of ( B t , L t ) such that, given the latency of agriculture (that is, y h ( B t , L t ; A h ) > y a ( A a t , X a )), the fertility rate of members of generation t is at the replacement level (that is, n ( y t ) = n [ y h ( B t , L t ; A h )] = 1). Hence, using (11), the set of ( B t , L t ) on the Replacement Frontier is expressed as",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 4,
+        "text": "Let ( B LL t , L LL t ) represent the biomass and population size at time t in LL . Then, ∂n ( y t ) /∂y t > 0, ∂y h ( B t , L t ; A h ) /∂L t < 0, and (14) determine the evolution of population size, summarized in the following lemma:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 5,
+        "text": "Lemma 1 Given ( B t , L t ) , A h , and A a t such that y h ( B t , L t ; A h ) > y a ( A a t , X a ) ,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 8,
+        "text": "The Biologically Stable Frontier is the geometric locus of ( B t , L t ) such that, given the latency of agriculture, the biological resource is at the equilibrium level (that is, ∆ ≡ B t +1 − B t = 0). For B t > B ∗ , using (6), the set of ( B t , L t ) on the Biologically Stable Frontier is given by",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 10,
+        "text": "For B t ≤ B ∗ , it is given by L t = 0 or B t = 0. Let ( B BB t , L BB t ) represent the biomass and population size at time t in BB . For B t > B ∗ , it follows that:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 12,
+        "text": "Thus, the Biologically Stable Frontier for B t > B ∗ forms a strictly convex, downward-sloping curve, shifting downward as v increases. The evolution of biomass, as determined by (6), is summarized in the following lemma:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 17,
+        "text": "The Hunting-Farming Frontier is the geometric locus of ( B t , L t ) such that, given exclusive employment of the labor force in the hunting sector (that is, L t = L h t ), a member of generation t is indifferent between supplying their labor to the hunting sector and supplying it to the agricultural sector (that is, y h ( B t , L t ; A h ) = y a ( A a t , X a )). Hence, using (2) and (4), the set of ( B t , L t ) on the Hunting-Farming Frontier is given by",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 19,
+        "text": "Let ( B yy t , L yy t ) be the pair of biomass and population size at time t in yy . Taking the first derivative with respect to A a t yields",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 21,
+        "text": "Since ∂y h ( B t , L t ; A h ) /∂L t < 0, (2) and (4) determine the relative average productivity of hunting compared to agriculture, as summarized in the following lemma:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 24,
+        "text": "Lemma 3 implies the existence of a threshold level of L t , uniquely determined by each B t , beyond which agriculture becomes a more favorable mode of subsistence than hunting. It further suggests that the relationship defining this threshold is expressed by the functional form in (19). Finally, the relationship between the Replacement Frontier, the Hunting-Farming Frontier, and individual fertility is summarized in the following lemma, using (4), (15), and (19):",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 26,
+        "text": "y h ( B LL t , L LL t ; A h ) ⪌ y a ( A a t , X a ) ⇔ L yy t ⪌ L LL t ⇔ n [ y a ( A a t , X a )] ⪋ 1 . (22)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 7,
+        "section_name": "The Dynamic System",
+        "paragraph_id": 27,
+        "text": "Initially, agriculture is unproductive, not economically viable, and the population size is small. While agriculture remains latent, there is no technological improvement, so agricultural technology at time t stays at its initial level. Therefore, I assume that as long as agriculture is latent, n [ y a ( A a t , X a )] < 1.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 8,
+        "section_name": "Transition to Agriculture",
+        "paragraph_id": 0,
+        "text": "This section examines the effects of mammal extinction and biological vulnerability on the timing of the agricultural transition, building on the framework established in the previous subsections.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 8,
+        "section_name": "Transition to Agriculture",
+        "paragraph_id": 4,
+        "text": "Figure I illustrates the Replacement Frontier, the Biologically Stable Frontier, the HuntingFarming Frontier, and an economic trajectory, highlighting the role of extinction in the transition to agriculture. Since B represents the maximum sustainable biomass, it is the natural starting point. Thus, the economy begins at A = ( B 0 , L BB t ( B 0 )), where B 0 = B . As shown in Lemmas 1 and 2, starting from A , the economy moves towards the upper-left corner, with biomass declining and population growing. In panel (i), the economy reaches a steady state before hitting the extinction threshold B ∗ , avoiding mammal extinction. In panel (ii), the economy crosses this threshold at B , causing a shift. Biomass continues to decline as the population grows, eventually crossing the Replacement Frontier. With declining biomass, hunting becomes increasingly unsustainable, and the population shrinks further. The economy reaches point C , where agriculture becomes viable (Lemma 3). Initially, the population keeps declining due to low agricultural productivity while hunting persists. By point D , all available mammals are lost. Over time, learning by doing boosts agricultural productivity (5), and at point E , it surpasses the fertility threshold, enabling population growth again. 12 Ultimately, agriculture becomes the 12 Agricultural productivity could reach this level at any point between C , D , and E ; E is simply illustrative. However, mammal extinction is inevitable as hunting continues and biomass fails to recover",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 8,
+        "section_name": "Transition to Agriculture",
+        "paragraph_id": 9,
+        "text": "Figure II illustrates how mammals’ biological vulnerability affects the agricultural transition. In panel (i), an economy with low vulnerability is resilient to hunting pressure, reaching a steady state SS without extinction. In contrast, panel (ii) shows a more vulnerable economy. Due to greater sensitivity to hunting pressure, (7) and (18), the biological threshold B ∗ shifts right, and the Biologically Stable Frontier L BB t shifts downward. As a result, the economy crosses the threshold, leading to extinction. Similar to the previous subsection, some individuals switch to cultivation at point C , and over time, learning by doing makes agriculture the dominant subsistence strategy.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 9,
+        "section_name": "Testable Implications",
+        "paragraph_id": 1,
+        "text": "Proposition 1 (6). 13 Without agricultural progress, the economy would converge to a steady state with zero biomass and population.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 9,
+        "section_name": "Testable Implications",
+        "paragraph_id": 2,
+        "text": "(i) If the economy experiences significant biomass loss due to megaherbivore extinction, an agricultural transition will occur.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 9,
+        "section_name": "Testable Implications",
+        "paragraph_id": 3,
+        "text": "(ii) If the economy is characterized by high biological vulnerability, which increases the extinction risk of mammals, an agricultural transition will occur.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 9,
+        "section_name": "Testable Implications",
+        "paragraph_id": 4,
+        "text": "The biological vulnerability of mammals influences the agricultural transition solely through the risk of extinction. Therefore, in the empirical section, I utilize this theoretical linkage to implement a two-stage least squares (2SLS) regression. Proposition 2 in Online Appendix B shows that the first farmers worked longer than their foraging predecessors, consistent with archaeological and ethnographic studies (Armelagos and Cohen, 1984; Sahlins, 1972). While not a central result of this paper, this helps explain one puzzle of the Neolithic Revolution: Why did early farmers adopt agriculture despite increased labor without a rise in food production? Overhunting led to the extinction of key mammal species, reducing the returns from hunting. As a result, some individuals began cultivating crops, even though their yields were lower than what foragers had once enjoyed. In a Malthusian economy, with a positive demand for both children and leisure 14 , declining incomes forced early farmers to work harder despite no immediate increase in food availability.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 10,
+        "section_name": "Data and Variable Construction",
+        "paragraph_id": 0,
+        "text": "In this section, I present data on the timing of the Neolithic Revolution, the distribution of prehistoric mammal species, their extinction status, biological traits, and paleo-climatic characteristics. I also explain how to calculate the lost biomass due to mammal extinction. To address concerns about the endogeneity of extinction, I use an instrument that replaces actual extinction status with predicted extinction risk in the lost biomass measure. I also describe how this instrument is constructed. 14 This characteristic is derived in (11). Sahlins (1972) provides examples and illustrates the relationship between food gains and work time, supporting this argument.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 11,
+        "section_name": "Dependent Variable: The Neolithic Revolution",
+        "paragraph_id": 0,
+        "text": "Country-level data on the timing of the Neolithic Revolution come from Borcan et al. (2018), who updated and corrected the original data from Putterman and Trainor (2006). By compiling regionand country-specific archaeological studies, they provide the earliest dates when populations obtained over half of their calories from cultivated foods and domesticated animals. Figure CI shows the global distribution of years since the Neolithic Revolution. There is significant variation, with the earliest transitions in the Middle East, followed by South Asia, East Asia, and Europe. The Americas, Southeast Asia, and North Africa transitioned later, while sub-Saharan Africa and Oceania were the last to transition. While these data offer the broadest spatial coverage of the agricultural transition, they are a noisy proxy for actual timing, as the ideal unit would be at the human settlement level rather than the country level. To address this, I examine variation in the agricultural transition across archaeological sites, using data from Pinhasi et al. (2005) and Cobo et al. (2019). 15 These sources report radiocarbon dates from sites in the Middle East and Europe (Pinhasi et al., 2005) and in East and Southeast Asia (Cobo et al., 2019). Figure CII shows the spatial distribution of these sites. Although the coverage is limited, the data provide more accurate information on the timing of the agricultural transition. To capture the association between megaherbivore extinction and the emergence of agriculture rather than its diffusion, I also exploit information on independent centers of plant domestication as reported by Larson et al. (2014) (Figure CIII). Relying on genetic, molecular, and archaeological research, they provide information on places and timing of independent plant domestication. 15 Data from Pinhasi et al. (2005) have been used in previous economics studies (Ashraf and Michalopoulos, 2015; Matranga, 2024; Olsson and Paik, 2020; Dickens and Lagerl ̈of, 2021), and Grall et al. (2024) incorporate data from Cobo et al., 2019.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 0,
+        "text": "This subsection introduces a measure of lost biomass from megaherbivore extinction, applicable at various scales such as country, archaeological site, grid cell, and ethnic homeland. The measure is based on data regarding (i) the distributions of mammal species that would exist without human influence, (ii) their body mass and abundance, and (iii) their extinction status. The PHYLACINE database, compiled by Faurby et al. (2018), provides spatial distribution data for 5,831 known mammal species that have lived since the Late Pleistocene (about 130,000 years ago to present). 16 It includes detailed species characteristics like mean adult body mass, diet, and habitat. A key advantage is its predicted global maps showing where species would live without human influence. Using predicted, rather than current, distributions is important for two reasons: it allows identification of species’ prehistorical ranges to calculate biomass, and it reduces concerns about reverse causality from agriculture to mammal distribution. For extinct mammal species, I use data from Andermann et al. (2020), which provides extinction dates for each species reported in the PHYLACINE. These dates are based on a detailed literature review, using the youngest fossil evidence or last recorded sighting, and are adjusted for sampling errors like preservation bias. I manually matched species between PHYLACINE and Andermann et al. (2020), with 337 out of 352 extinct species (96%) exactly matched. For a given species, biomass is the product of average body mass and abundance. To estimate abundance, I rely on the well-established negative log-log relationship between body mass and population density (Peters and Raelson, 1984; Damuth, 1987; Silva and Downing, 1995; Silva et al., 2001). 17 To calculate population density, and therefore abundance, I apply the regression from Silva and Downing (1995): log 10 ( Population Density ) = 16 This database is used in economics by Kumagai (2021), (2024) and Link (2024). 17 This method is commonly used in paleoecology to estimate prehistoric species abundance (Byers and Ugan, 2005; Barnosky, 2008 among others).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 1,
+        "text": "− 0 . 44 log 10 ( Body Mass ) + 1 . 01. 18 Using the prehistoric distribution, average body mass, and predicted abundance of each species, I construct a measure of lost biomass due to megaherbivore extinction. For the cross-sectional analysis, the measure is calculated as follows:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 2,
+        "text": "LostBiomass i = P j ∈ MH extinct i \\ Abundance j × BodyMass j P j ∈ MH i \\ Abundance j × BodyMass j , (23)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 3,
+        "text": "where MH extinct i is the set of extinct megaherbivore species in region i , MH i is the set of both extinct and extant megaherbivore species in region i , \\ Abundance j represents the estimated number of individuals for species j , and BodyMass j is the average body mass of species j . 19 , 20 A similar measure of lost biomass for the panel-data analysis is calculated as",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 4,
+        "text": "LostBiomass i,t = P j ∈ MH extinct i,t \\ Abundance j × BodyMass j P j ∈ MH i,t \\ Abundance j × BodyMass j , (24)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 5,
+        "text": "where MH extinct i,t is the set of mammals that become extinct between time t and t − 1 in region i , and MH i,t is the set of mammals that are still extant at time t − 1 in region i . The global distribution of lost biomass due to megaherbivore extinction is depicted in Figure III. This figure also depicts regions where the independent plant cultivation occurred as reported by Larson et al. (2014). As is evident, there is large global variation in lost biomass both across and within continents. Although there are some exceptions, the figure shows visual correlation between lost biomass and the independent plant cultivation. 18 The predicted abundance could be sensitive to the choice of study from which the estimate is derived. Therefore, I assess the robustness of the results by using estimates from various studies. As demonstrated in the robustness section, the results remain consistent. 19 This study focuses on wild mammals, not domesticable ones. From an individual’s perspective, extinction acts as a demand-pull factor: the loss of hunting resources forces people to demand new food sources. In contrast, domesticable mammals serve as a supply-push factor, supplying more opportunities for farming and thus making it more likely. This distinction is especially important during the transition to farming, which is the main focus of this paper. For consistency in theory and empirics, I exclude the fourteen domesticable species identified by Diamond (1997) from MH i and MH extinct i . However, in robustness tests, I recalculate lost biomass to include these domesticable species and show that it is positively and significantly linked to the Neolithic transition. 20 Species extinct after the first Neolithic transition are excluded to reduce concerns of reverse causality.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 12,
+        "section_name": "Independent Variable: Lost Biomass",
+        "paragraph_id": 7,
+        "text": "Figure IV shows the evolution of lost biomass from megaherbivore extinction in two types of regions: those with independent agricultural transitions (bold line) and those without (dashed line). The overall pattern is similar for both. Up until around 15,000 BP, neither region experienced much biomass loss. However, since then, both have seen a significant increase in lost biomass. The figure also highlights the period between the first and last independent transitions (in grey), which coincided with a severe wave of extinctions. Although the difference is not large, biomass loss was always higher in regions with independent transitions than in those without. This measure of lost biomass is effective if it accurately reflects past hunting potential. Kumagai (2021) shows that megaherbivore biomass calculated in this way is a strong predictor of hunting dependency in ethnic groups, with a positive and significant association. In contrast, its relationship with other subsistence modes (gathering, fishing, husbandry, agriculture) is weak or negative, if any. Additionally, Table DIV, using the Ethnographic Atlas , confirms a strong negative association between lost biomass from megaherbivore extinction and hunting dependency. Thus, lost biomass is a reliable proxy for the loss of hunting resources.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 0,
+        "text": "This subsection introduces an instrumental variable for lost biomass. Several factors could produce the endogeneity of extinction. For instance, Bowles and Choi (2019) argue that some foraging settlers had private property rights, which facilitated the Neolithic Revolution. With private property rights in place, the tragedy of the commons, where prey mammals are overhunted, might have been avoided, thereby reducing biomass loss. 21 In such cases, the OLS estimate is biased downward. The model in the theoretical section predicts that biological vulnerability increases extinction risk and influences the timing of the Neolithic transition. To construct the instrument, I use two biological traits that affect vulnerability: limb morphology and digestive systems. Mammals can be classified based on foot posture into plantigrade and cursorial mammals. In plantigrade posture, the entire foot, from heel to toe, touches the ground, allowing walking on the whole foot. Cursorial mammals include both digitigrade and unguligrade species. Digitigrade mammals walk on their toes with the heel elevated, while unguligrade mammals walk on hooved tiptoes, with only the most distal phalanx touching the ground. 21 The culture of foraging societies may have influenced both the agricultural transition and extinction. For example, long-term orientation could have promoted agriculture due to its need for investment (Galor and ̈ Ozak, 2016), while less time spent on hunting might have mitigated mammal extinction.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 1,
+        "text": "It is well known that cursorial mammals run faster and more agile than plantigrade mammals. Running speed is closely linked to limb length: longer limbs enable longer strides, allowing cursorial mammals to run faster than plantigrade mammals (Garland and Janis, 1993; Christiansen, 2002; Lovegrove, 2004). Plantigrade mammals, with their shorter limbs, are slower and more vulnerable to predation (Lovegrove, 2004). Herbivores, which rely on plants for energy, use microbial fermentation to break down plant cellulose since vertebrates lack the enzymes to do so (Dehority, 1997). Herbivores are classified into three types based on their fermentation: hindgut fermenters, foregut nonruminants, and foregut ruminants. Among these, ruminants are the most efficient at extracting energy from roughage, followed by foregut non-ruminants and then hindgut fermenters (Janis, 1976; Dehority, 1997; Parra, 1978; Lundgren et al., 2021). The efficiency of the digestive system affects how much time animals spend feeding and, consequently, their exposure to hunters. Digestive efficiency depends on how long food stays in the gastrointestinal tract—longer retention allows for better fermentation and nutrient absorption. Hindgut fermenters digest food quickly, so they need to eat more frequently and spend more time feeding, which increases their risk of predation (Owen-Smith, 2002; GodoyVitorino et al., 2012). In contrast, foregut non-ruminants are more efficient because they retain food longer, allowing for better fermentation. However, they are still less efficient than foregut ruminants, which have specialized digestive systems that maximize energy extraction. Foregut ruminants spend less time feeding, reducing their risk of predation, making them the most efficient herbivores at avoiding predators (Van Soest, 1996; Janis, 1976). The Herbitraits database (Lundgren et al., 2021) provides information on limb morphology and digestive systems for all late Quaternary mammalian herbivores larger than 10 kg. Using this data, I developed two indices for limb and digestive inefficiency. The limb inefficiency index assigns a value of 0 if the species is cursorial and 1 if it is plantigrade. Similarly, the digestive inefficiency index assigns values of 1, 2, or 3 depending on whether the species is a foregut ruminant, foregut non-ruminant, or hindgut fermenter.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 2,
+        "text": "Importantly, the limb morphology and digestive systems I use in this analysis evolved long before anatomically modern humans appeared in East Africa around 300,000 years ago. Lovegrove and Haines (2004) trace the evolution of mammalian postures in Africa, showing that ancestral mammals, dating back about 100 million years, were plantigrade. Over time, some lineages evolved digitigrade limbs (around 53.8 million years ago), while unguligrade limbs developed in Perissodactyla and Cetartiodactyla around 93.2 million years ago, adaptations that persist today. Similarly, Janis (1976) outlines the evolution of digestive systems in ungulates, identifying four stages: (i) no fermentation, (ii) hindgut fermentation, (iii) foregut fermentation, and (iv) rumination. Hindgut fermentation evolved around 54 million years ago in species like horses and rhinos, while rumination appeared around 30 million years ago in species like deer and camels. These evolutionary changes predate human activity, meaning the traits I use for constructing the instrumental variable are plausibly predetermined by the time humans emerged. I construct the instrument as follows. First, I regress the actual extinction status on limb inefficiency and digestive inefficiency using the logistic model, controlling for body mass to address potential confounding. I exclude domesticable species from the sample to avoid the concern that specific limb types and digestive systems are directly linked to domestication. Table DV shows that both limb and digestive inefficiency significantly predict extinction. Second, I calculate the predicted extinction probability using the coefficients of limb and digestive inefficiency estimated in the first step. These estimated coefficients allow the instrument to be derived from variations in exogenous biological traits. Finally, I replace the set of extinct megaherbivores in the lost biomass measure (23) with the predicted extinction risk derived in the second step. Denoting the predicted extinction risk of species j as \\ 1 j ∈ Extinct , the instrumental variable for the cross-section analysis is constructed using the following formula:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 3,
+        "text": "\\ LostBiomass i = P j ∈ MH i \\ 1 j ∈ Extinct × \\ Abundance j × BodyMass j P j ∈ MH i \\ Abundance j × BodyMass j . (25)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 4,
+        "text": "The instrument for the panel is calculated using pseudo-time variation in extinction and is constructed as follows:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 5,
+        "text": "\\ LostBiomass i,t = P j ∈ MH i , 0 \\ 1 j ∈ Extinct #( T ) · h 1 − \\ 1 j ∈ Extinct #( T ) i t − 1 · \\ Biomass j P j ∈ MH i , 0 h 1 − \\ 1 j ∈ Extinct #( T ) i t − 1 · \\ Biomass j , (26)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 13,
+        "section_name": "Instrumental Variable: Predicted Probability of Extinction",
+        "paragraph_id": 6,
+        "text": "where \\ Biomass j is the product of \\ Abundance j and BodyMass j , and #( T ) represents the number of sample periods in the panel. Thus, \\ 1 j ∈ Extinct / #( T ) and 1 − \\ 1 j ∈ Extinct / #( T ) indicate the extinction risk and survival probability of species j in one period, respectively. Instead of using the set of megaherbivores in each period MH i,t , this formula uses the initial set MH i, 0 . Using MH i,t would be problematic because it is influenced by previous extinctions. In contrast, MH i, 0 remains unaffected by past extinctions, reducing concerns about the endogeneity of extinction.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 14,
+        "section_name": "Control Variables: Paleo-Climatic Characteristics",
+        "paragraph_id": 0,
+        "text": "In this study, paleo-climatic factors are key for both identification and causality. It is widely accepted that the main drivers of mass extinction were humans and/or climate, with other factors playing little to no role (Stuart, 2015). 22 Therefore, after controlling for paleo-climate, the effect of extinction can be more confidently attributed to human activity. Climatic factors are also considered key determinants of the agricultural transition (Dow et al., 2009; Ashraf and Michalopoulos, 2015; Matranga, 2024). Controlling for paleo-climate, thus, alleviates the concern that the observed relationship between extinction and the Neolithic transition is spurious. To address these issues, I use the recently developed data from Beyer et al. (2020). This database provides bias-corrected, high-resolution (0 . 5 ◦ ) global data on several climatic variables over the past 120,000 years, with a temporal resolution of 1,000-2,000 years. From 22 Recent studies increasingly support that human impact, rather than climate, was the primary cause of extinction (Sandom et al., 2014; Faurby and Svenning, 2015; Araujo et al., 2017; Andermann et al., 2020; Lemoine et al., 2023).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 14,
+        "section_name": "Control Variables: Paleo-Climatic Characteristics",
+        "paragraph_id": 1,
+        "text": "this data, I calculate the means and standard deviations of paleo-temperature and paleoprecipitation. Additionally, I calculate the mean of paleo-net primary productivity, a proxy for ecosystem productivity (Rosenzweig et al., 2012), to control for potential systematic differences in ecosystems that may have influenced megaherbivore extinction and the agricultural transition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 15,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 0,
+        "text": "This section provides empirical evidence that megaherbivore extinction positively influenced the Neolithic Revolution. I use four complementary datasets: cross-country, crossarchaeological site, archaeological site panel, and independent transition region panel. The cross-country analysis shows a global link between extinction and the agricultural transition, though the timing of the transition is measured less precisely. Archaeological site data, while covering a smaller area than country-level data, offer more detailed information on human settlements, allowing for more accurate measurement of the Neolithic transition. Both datasets include the independent agricultural transitions and its spread, highlighting the effect of extinction on the spread of agriculture. In contrast, the independent transition region panel focuses solely on areas where farming originated independently, showing a direct link between extinction and the independent transitions. In all analyses, I control for paleoclimatic factors to better isolate human-driven extinction and address potential confounding variables.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 0,
+        "text": "In this subsection, I present cross-country evidence of the association between the Neolithic Revolution and megaherbivore extinction. The findings show that the transition is specifically linked to megaherbivores, not small herbivores or non-herbivores (omnivores and carnivores). The analysis controls for a wide range of potentially confounding climatic and",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 1,
+        "text": "geographical factors, particularly paleo-climatic characteristics. To address concerns about endogeneity, 2SLS estimates are used, with the instrument constructed from biological vulnerability. Summary statistics are reported in Table DI. The effect of megaherbivore extinction on the timing of the Neolithic transition is estimated using the following specification:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 3,
+        "text": "where Y ST i represents the time elapsed since the Neolithic transition in country i , LostBiomass i is the loss of biomass due to extinction in country i , PaleoClim i is a vector of paleoclimatic controls, Geo i is a vector of geographical controls, Continent i includes continent fixed effects, and ε i is the error term. The theory predicts a positive effect of lost biomass on the time since the agricultural transition, meaning α 1 > 0. I begin by emphasizing the unique role of megaherbivores in promoting the agricultural transition. Table I shows that megaherbivore extinction is significantly and positively associated with the timing of the transition. In contrast, the extinction of small herbivores and non-herbivores shows no meaningful connection to the transition. 23 In the horse-race model with continent fixed effects (column 7), megaherbivore extinction remains positively and significantly associated with the timing of the transition. Small herbivore extinction is not significant, while non-herbivore extinction is significant, with a negative sign. This underscores the key role of megaherbivore extinction, rather than that of small herbivores or non-herbivores. Next, I examine the relationship between transition timing and megaherbivore extinction in more detail. Table II confirms a positive link between these variables. Columns 1 and 2 show a strong positive relationship using bivariate regression and regression with continent fixed effects, respectively. Columns 3 and 4 sequentially control for the means and standard deviations of paleo-temperature and paleo-precipitation, while Column 5 also includes 23 These categories are mutually exclusive sets of all mammals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 5,
+        "text": "Years elapsed since the Neolithic Revolution (1) (2) (3) (4) (5) (6) (7) OLS OLS OLS OLS OLS OLS OLS Lost biomass (herbivore > 44 kg) 0.156** 0.430[FORMULA] 0.412[FORMULA] (0.071) (0.100) (0.106) Lost biomass (herbivore < = 44 kg) -0.150[FORMULA] -0.017 0.077 (0.031) (0.053) (0.060) Lost biomass (non-herbivore) -0.395[FORMULA] -0.296[FORMULA] -0.530[FORMULA] (0.116) (0.040) (0.178) Continent FE ✓ ✓ ✓ ✓ Outcome mean 49.058 49.058 49.058 49.058 49.058 49.058 49.058 Outcome std. 23.597 23.597 23.597 23.597 23.597 23.597 23.597 Adjusted R 2 0.020 0.022 0.011 0.661 0.591 0.600 0.668 Observations 147 147 147 147 147 147 147",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 6,
+        "text": "Note: The unit of analysis is a country. Herbivores larger than 44 kg are classified as megaherbivores, while those smaller than 44 kg are classified as small herbivores. Non-herbivores consist of omnivores and carnivores. Continent fixed effects include Africa, the Americas, Asia, Europe, and Oceania. All variables are standardized. Robust standard errors are in parentheses. [FORMULA] p < 0.01, ** p < 0.05, * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 7,
+        "text": "paleo-net primary productivity. Notably, adding these controls does not change the estimated coefficient, which remains highly significant. In Column 6, I control for the distance to the nearest agricultural origin and migratory distance from Addis Ababa. The former addresses the diffusion process from neighboring regions, while the latter accounts for prehistoric interactions between mammals and humans. 24 Column 7 adds additional geographical controls—absolute latitude, caloric suitability, terrain ruggedness, island dummy, area, and the distance to the nearest waterway. These controls also leave the estimated coefficient unchanged. Finally, Column 8 presents the 2SLS estimate, which is positive, highly significant, and supported by a strong first-stage F-statistic. The 2SLS estimate suggests that a one percentage point increase in lost biomass is associated with the agricultural transition 24 The length of mammal and human coevolution may have influenced mammals’ ability to learn to avoid humans, affecting their likelihood of extinction. Similarly, humans with a longer history in an area may have been more likely to develop agriculture due to greater knowledge of the local environment.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 10,
+        "text": "Years elapsed since the Neolithic Revolution (1) (2) (3) (4) (5) (6) (7) (8) OLS OLS OLS OLS OLS OLS OLS 2SLS Lost biomass 0.153** 0.385[FORMULA] 0.404[FORMULA] 0.431[FORMULA] 0.423[FORMULA] 0.273[FORMULA] 0.309[FORMULA] 1.014[FORMULA] (0.074) (0.100) (0.094) (0.102) (0.098) (0.076) (0.098) (0.186) Paleo-temperature (mean) 0.384[FORMULA] 0.580[FORMULA] 0.594[FORMULA] 0.469[FORMULA] 0.482[FORMULA] 0.367** (0.075) (0.091) (0.086) (0.079) (0.119) (0.163) Paleo-precipitation (mean) -0.211[FORMULA] -0.101 0.027 0.066 0.079 0.269* (0.064) (0.079) (0.111) (0.084) (0.086) (0.143) Paleo-temperature (std.) 0.241[FORMULA] 0.226[FORMULA] 0.188[FORMULA] 0.185[FORMULA] 0.196[FORMULA] (0.054) (0.055) (0.050) (0.062) (0.073) Paleo-precipitation (std.) -0.177** -0.184[FORMULA] -0.106 -0.116* -0.290[FORMULA] (0.073) (0.070) (0.066) (0.068) (0.085) Paleo-net primary productivity -0.174 -0.206** -0.122 -0.183 (0.111) (0.092) (0.126) (0.159) Dist. to the closest agr. origin -0.265[FORMULA] -0.229[FORMULA] -0.035 (0.051) (0.051) (0.084) Migratory dist. from Addis Ababa -0.398** -0.405[FORMULA] -0.496** (0.154) (0.153) (0.209) Continent FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ Additional geographic controls ✓ ✓ Outcome mean 49.450 49.450 49.450 49.450 49.450 49.450 49.450 49.450 Outcome std. 23.617 23.617 23.617 23.617 23.617 23.617 23.617 23.617 First stage F 39.311 Adjusted R 2 0.018 0.669 0.736 0.765 0.767 0.847 0.852 Observations 140 140 140 140 140 140 140 140",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 16,
+        "section_name": "Cross-Country Analysis",
+        "paragraph_id": 11,
+        "text": "Note: The unit of analysis is a country. Continent fixed effects include Africa, the Americas, Asia, Europe, and Oceania. Additional geographic controls include absolute latitude, mean caloric suitability, terrain ruggedness, island dummy, area, and the distance to the closest waterway. All variables are standardized. Robust standard errors are in parentheses. [FORMULA] p < 0.01, ** p < 0.05, * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 17,
+        "section_name": "Robustness",
+        "paragraph_id": 0,
+        "text": "Estimates from Other Studies : The primary measure of lost biomass, (23), is based on the estimate from Silva and Downing (1995). One might suspect that the results are driven by this specific study. To address this, I reconstruct the lost biomass measure using estimates from other studies. Table DVI demonstrates that the results remain robust when using these different estimates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 17,
+        "section_name": "Robustness",
+        "paragraph_id": 1,
+        "text": "Recalculated Lost Biomass Including 14 Domesticable Mammals : Table DVII presents the results using recalculated lost biomass, now including the 14 domesticable mammal species. The table shows that lost biomass is strongly associated with the transition timing. Domesticable Animals, Plants, and Extinction Rate : The presence of domesticable mammals and plants facilitated an earlier transition to agriculture (Diamond, 1997; Olsson and Hibbs Jr, 2005). Riahi (2020) suggests that large mammal extinction has a humpshaped relationship with the pristine agricultural transition. Table DVIII demonstrates the robustness of the results when controlling for these variables. 25 Intermonthly Temperatuer Volatility and Climatic Seasonality : Ashraf and Michalopoulos (2015) and Matranga (2024) find that intermonthly temperature volatility and climatic seasonality influenced the transition to agriculture, respectively. Table DIX demonstrates the robustness of the results when controlling for these climate factors. 26 Spatial Correlation : The basic result is robust to standard errors using the spatial correlation proposed by Conley (1999), as shown in Tables DX.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 0,
+        "text": "This subsection explores the impact of lost biomass on the timing of the Neolithic Revolution, using panel data from archaeological sites based on the datasets of Pinhasi et al. (2005) and Cobo et al. (2019). I first create a grid of 1-degree by 1-degree cells and assign each archaeological site to a cell. Then, I calculate the transition timing for each grid cell by averaging the timings of the sites within it. Figure CIV presents the resulting grid map. This map is used to build a panel dataset that includes information on lost biomass and paleo-climate. 27 Summary statistics are provided in Table DII. 25 The OLS estimates for lost biomass, domesticable animals, and plants are all insignificant, but the estimate for lost biomass becomes highly significant in the 2SLS analysis. 26 The OLS estimate for lost biomass is insignificant when controlling for intermonthly temperature volatility and its square term, but it becomes highly significant in the 2SLS analysis. 27 To save space, I present the cross-archaeological site analysis results in the appendix. Table DXI shows a strong relationship between lost biomass and transition timing, using data from 1-degree by 1-degree grid",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 2,
+        "text": "1 i,t = α 0 + α 1 LostBiomass i,t − 1 + PaleoClim i,t − 1 β ′ + Cell i γ ′ + Time t δ ′ + ε i,t , (28)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 3,
+        "text": "where 1 i,t is a dummy variable that indicates whether agricultural transition occurs in cell i at period t , LostBiomass i,t − 1 is loss of biomass caused by megaherbivore extinction in cell i in period t − 1, PaleoClim i,t − 1 is a vector of paleo-climatic variables, including paleo-net primary productivity, for cell i in period t − 1, Cell i is cell fixed effects, Time t is time fixed effects, and ε i,t is an error term. The Neolithic transition dummy variable, 1 i,t , takes the value of 0 for all periods before the transition occurs. Once a unit in the dataset undergoes the agricultural transition, it is dropped from the panel, as further transitions are no longer possible. The analysis period spans from 21,000 BP until the transition occurs, with each time window representing 1,000 years. 28 Columns 1-4 of Table III presents a strong positive relationship between the Neolithic transition and lost biomass. All columns report OLS estimates, including both cell and time fixed effects. The estimated coefficient for lost biomass remains highly robust, even when controlling for the means of paleo-temperature and paleo-precipitation (column 2), their standard deviations (column 3), and paleo-net primary productivity (column 4). By controlling for paleo-climatic characteristics, the estimated coefficient of lost biomass is better interpreted as human-driven and causal. This is a particularly demanding specification because lost biomass equals 0 for most observations. Out of 8,356 observations, which result from the combination of cells and periods, approximately 95% show a value of 0 for lost biomass (Figure CV). Similarly, the Neolithic transition indicator exhibits limited variation, with around 94% of observations (cells × periods) taking a value of 0. As a result, controlling for both cell and time fixed effects, along with paleo-climatic variables, absorbs much of the variation in the data. Nevertheless, lost cells. 28 Paleo-climate data from Beyer et al. (2020) is available in 1,000-year intervals from 21,000 BP onward. For earlier periods, data is only available in 2,000-year intervals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 5,
+        "text": "The NR indicator (1) (2) (3) (4) (5) (6) (7) (8) OLS OLS OLS OLS OLS OLS OLS OLS Lost biomass (t-1) 0.110[FORMULA] 0.105[FORMULA] 0.106[FORMULA] 0.103[FORMULA] (0.020) (0.019) (0.019) (0.020) Lost biomass (t+1) -0.000 -0.009 -0.011 -0.011 (0.018) (0.018) (0.018) (0.018) Paleo-temperature (mean) (t-1) 0.282[FORMULA] 0.381[FORMULA] 0.605[FORMULA] 0.322[FORMULA] 0.431[FORMULA] 0.655[FORMULA] (0.075) (0.081) (0.085) (0.078) (0.083) (0.087) Paleo-precipitation (mean) (t-1) -0.578[FORMULA] -0.612[FORMULA] -0.370[FORMULA] -0.567[FORMULA] -0.601[FORMULA] -0.358[FORMULA] (0.060) (0.063) (0.070) (0.061) (0.063) (0.071) Paleo-temperature (std.) (t-1) 0.166** 0.070 0.187[FORMULA] 0.090 (0.074) (0.074) (0.071) (0.073) Paleo-precipitation (std.) (t-1) 0.125[FORMULA] 0.076 0.124** 0.075 (0.048) (0.048) (0.049) (0.049) Paleo-net primary productivity (t-1) -0.488[FORMULA] -0.491[FORMULA] (0.069) (0.069) Cell FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Time FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Outcome mean 0.060 0.060 0.060 0.060 0.059 0.059 0.059 0.059 Outcome std. 0.237 0.237 0.237 0.237 0.235 0.235 0.235 0.235 Adjusted R-Sqr. 0.299 0.313 0.314 0.321 0.289 0.304 0.305 0.312 Observations 8356 8356 8356 8356 8341 8341 8341 8341",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 6,
+        "text": "Note: The unit of analysis is a 1 ◦ × 1 ◦ grid cell. The dependent variable is a dummy that equals 1 if a grid cell undergoes an agricultural transition and 0 otherwise. The panel spans from 21,000 BP until the transition occurs, using 1,000-year time windows. All variables are standardized. Robust standard errors, clustered at the grid cell level, are reported in parentheses. [FORMULA] p < 0.01, ** p < 0.05, * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 7,
+        "text": "biomass continues to exhibit a highly significant and positive effect on the likelihood of an agricultural transition. Next, I replace the one-period lagged lost biomass with one-period ahead lost biomass in equation (28). Columns 5-8 of Table III presents the results of this placebo test. Reassuringly, the estimates are insignificant across all specifications, with magnitudes very close to 0. This placebo test provides additional evidence supporting the effect of lost biomass on the agricultural transition. Then, I perform an instrumental variable analysis. Table IV shows the results of the",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 9,
+        "text": "Panel A : second-stage The NR indicator Panel B : first-stage Lost biomass (t-1) Panel C : reduced form The NR indicator (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 2SLS 2SLS 2SLS 2SLS OLS OLS OLS OLS OLS OLS OLS OLS Lost biomass (t-1) 3.492[FORMULA] 3.433[FORMULA] 3.409[FORMULA] 3.566[FORMULA] (0.701) (0.813) (0.806) (0.796) Lost biomass (IV) (t-1) 2.405[FORMULA] 2.169[FORMULA] 2.218[FORMULA] 2.371[FORMULA] 8.398[FORMULA] 7.447[FORMULA] 7.561[FORMULA] 8.457[FORMULA] (0.494) (0.514) (0.523) (0.539) (1.325) (1.306) (1.302) (1.262) Paleo-temperature (mean) (t-1) -0.547* -0.349 -0.279 0.223[FORMULA] 0.192[FORMULA] 0.236[FORMULA] 0.218** 0.306[FORMULA] 0.561[FORMULA] (0.281) (0.282) (0.316) (0.046) (0.050) (0.053) (0.085) (0.092) (0.098) Paleo-precipitation (mean) (t-1) -0.802[FORMULA] -0.825[FORMULA] -0.718[FORMULA] 0.069** 0.065* 0.117** -0.564[FORMULA] -0.605[FORMULA] -0.302[FORMULA] (0.129) (0.139) (0.176) (0.034) (0.037) (0.045) (0.071) (0.074) (0.083) Paleo-temperature (std.) (t-1) 0.397** 0.360** -0.080 -0.102* 0.124 -0.004 (0.168) (0.178) (0.050) (0.053) (0.083) (0.084) Paleo-precipitation (std.) (t-1) 0.071 0.045 0.027 0.017 0.161[FORMULA] 0.107** (0.107) (0.113) (0.035) (0.036) (0.054) (0.052) Paleo-net primary productivity (t-1) -0.232 -0.101[FORMULA] -0.593[FORMULA] (0.146) (0.037) (0.073) Cell FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Time FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Outcome mean 0.063 0.063 0.063 0.063 0.020 0.020 0.020 0.020 0.063 0.063 0.063 0.063 Outcome std. 0.244 0.244 0.244 0.244 0.095 0.095 0.095 0.095 0.244 0.244 0.244 0.244 First stage F 23.737 17.802 17.971 19.353 Adjusted R-Sqr. 0.267 0.268 0.269 0.269 0.306 0.317 0.318 0.327 Observations 7850 7850 7850 7850 7850 7850 7850 7850 7850 7850 7850 7850",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 10,
+        "text": "Note: The unit of analysis is a 1 ◦ × 1 ◦ grid cell. The dependent variable is a dummy that equals 1 if a grid cell undergoes an agricultural transition and 0 otherwise. The panel spans from 21,000 BP until the transition occurs, using 1,000-year time windows. All variables are standardized. Robust standard errors, clustered at the grid cell level, are reported in parentheses. [FORMULA] p < 0.01, ** p < 0.05, * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 18,
+        "section_name": "Archaeological Site Panel Analysis",
+        "paragraph_id": 11,
+        "text": "2SLS analysis. The estimates from the second stage (Panel A), first stage (Panel B), and reduced form (Panel C) are all statistically significant at the 1% level and remain consistent across various specifications. The results indicate that a one percentage point increase in lost biomass raises the probability of the Neolithic transition by approximately 9.2 percentage point. These findings, based on exogenous variation in extinction and controlling for paleo-climatic factors along with cell and time fixed effects, provide strong evidence that megaherbivore extinction significantly influenced the likelihood of the Neolithic Revolution.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)",
+            "Exogenous Variation"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 19,
+        "section_name": "Robustness",
+        "paragraph_id": 0,
+        "text": "Estimates from Other Studies : The primary measure of lost biomass, (24), is based on the estimate from Silva and Downing (1995). One might suspect that the results are",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 19,
+        "section_name": "Robustness",
+        "paragraph_id": 1,
+        "text": "driven by this specific study. To address this, I reconstruct the lost biomass measure using estimates from other studies. Table DXII demonstrates that the results remain robust when using these different estimates. Recalculated Lost Biomass Including 14 Domesticable Mammals : Table DXIII presents the results using recalculated lost biomass, now including the 14 domesticable mammal species. The table shows that lagged lost biomass is strongly associated with the transition dummy, while one-period ahead lost biomass is consistently insignificant. Intermonthly Temperature Volatility and Climatic Seasonality : Ashraf and Michalopoulos (2015) and Matranga (2024) find that intermonthly temperature volatility and climatic seasonality influenced the transition to agriculture, respectively. Table DXIV demonstrates the robustness of the results when controlling for these climate factors. Spatial Correlation : Table DXV shows that the results remain robust after correcting for spatial correlation. The findings hold when clustering standard errors at x -degree by x -degree neighboring grid cells ( x = 1 . 5 , 2 , 2 . 5) and when applying the spatial correlation technique proposed by Conley (1999).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 20,
+        "section_name": "Independent Transition Grid Cell Panel Analysis",
+        "paragraph_id": 0,
+        "text": "This subsection examines the impact of lost biomass on independent agricultural transitions using 1 ◦ × 1 ◦ grid cell panel data. Larson et al. (2014) identify the well-established locations of independent plant domestication (Figure CIII). First, I divide the earth into 1 ◦ × 1 ◦ grid cells and overlay these cells on the map of independent domestication sites. I then assign the year of transition to grid cells that overlap with domestication regions. Figure CVI shows the resulting map, where darker colors represent earlier transitions, and white indicates no independent transition. Using this map, I construct the grid cell panel data. The relationship between lost biomass and independent agricultural transitions is estimated using equation (28). Since the analysis focuses solely on independent transitions, the estimated coefficient of lost biomass reflects its effect on independent transitions, not on the diffusion of agriculture.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 20,
+        "section_name": "Independent Transition Grid Cell Panel Analysis",
+        "paragraph_id": 3,
+        "text": "The independent NR indicator (1) (2) (3) (4) (5) (6) (7) (8) OLS OLS OLS OLS OLS OLS OLS OLS Lost biomass (t-1) 0.015[FORMULA] 0.016[FORMULA] 0.016[FORMULA] 0.016[FORMULA] (0.004) (0.004) (0.004) (0.004) Lost biomass (t+1) -0.019[FORMULA] -0.019[FORMULA] -0.019[FORMULA] -0.019[FORMULA] (0.002) (0.002) (0.002) (0.002) Paleo-temperature (mean) (t-1) -0.292[FORMULA] -0.281[FORMULA] -0.284[FORMULA] -0.295[FORMULA] -0.283[FORMULA] -0.287[FORMULA] (0.016) (0.016) (0.016) (0.016) (0.016) (0.016) Paleo-precipitation (mean) (t-1) 0.054[FORMULA] 0.046** 0.023 0.046** 0.036* 0.015 (0.020) (0.020) (0.019) (0.021) (0.021) (0.020) Paleo-temperature (std.) (t-1) 0.028[FORMULA] 0.031[FORMULA] 0.031[FORMULA] 0.034[FORMULA] (0.004) (0.004) (0.004) (0.004) Paleo-precipitation (std.) (t-1) 0.029[FORMULA] 0.036[FORMULA] 0.030[FORMULA] 0.037[FORMULA] (0.010) (0.010) (0.010) (0.011) Paleo-net primary productivity (t-1) 0.043[FORMULA] 0.041** (0.016) (0.017) Cell FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Time FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Outcome mean 0.002 0.002 0.002 0.002 0.002 0.002 0.002 0.002 Outcome std. 0.045 0.045 0.045 0.045 0.045 0.045 0.045 0.045 Adjusted R-Sqr. 0.027 0.028 0.028 0.028 0.024 0.025 0.025 0.025 Observations 338827 338827 338827 338827 321984 321984 321984 321984",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 20,
+        "section_name": "Independent Transition Grid Cell Panel Analysis",
+        "paragraph_id": 4,
+        "text": "Note: The unit of analysis is a 1 ◦ × 1 ◦ grid cell. The dependent variable is a dummy that equals 1 if a grid cell undergoes an independent agricultural transition and 0 otherwise. The panel spans from 21,000 BP until the transition occurs, using 1,000-year time windows. All variables are standardized. Robust standard errors, clustered at the grid cell level, are reported in parentheses. [FORMULA] p < 0.01, ** p < 0.05, * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 20,
+        "section_name": "Independent Transition Grid Cell Panel Analysis",
+        "paragraph_id": 5,
+        "text": "Columns 1-4 of Table V presents a strong positive relationship between the independent transition and lost biomass. All columns report OLS estimates, including both cell and time fixed effects. The estimated coefficient for lost biomass remains highly robust, even when controlling for the means of paleo-temperature and paleo-precipitation (column 2), their standard deviations (column 3), and paleo-net primary productivity (column 4). By controlling for paleo-climatic characteristics, the estimated coefficient of lost biomass is better interpreted as human-driven and causal.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 20,
+        "section_name": "Independent Transition Grid Cell Panel Analysis",
+        "paragraph_id": 6,
+        "text": "This is a particularly demanding specification because lost biomass equals 0 for most observations. Out of 33,827 observations, which result from the combination of cells and periods, approximately 90% show a value of 0 for lost biomass (Figure CVII). Similarly, the independent transition indicator exhibits limited variation, with around 99.8% of observations (cells × periods) taking a value of 0. As a result, controlling for both cell and time fixed effects, along with paleo-climatic variables, absorbs much of the variation in the data. Nevertheless, lost biomass continues to exhibit a highly significant and positive effect on the likelihood of an independent agricultural transition. Next, I replace the one-period lagged lost biomass with one-period ahead lost biomass in equation (28). Columns 5-8 of Table V presents the results of this placebo test, which shows significant relationship between the independent transition and one-period ahead lost biomass. However, this association is always negative, which is inconsistent with the proposed hypothesis. Then, I perform an instrumental variable analysis. Table VI shows the results of the 2SLS analysis. The estimates from the second stage (Panel A), first stage (Panel B), and reduced form (Panel C) are all statistically significant at the 1% level and remain consistent across various specifications. The results indicate that a one percentage point increase in lost biomass raises the probability of the independent transition by approximately 0.29 percentage point. This finding, based on exogenous variation in extinction and controlling for paleoclimatic factors along with cell and time fixed effects, provides strong evidence of the impact of megaherbivore extinction on the likelihood of the independent agricultural transition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)",
+            "Exogenous Variation"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 21,
+        "section_name": "Robustness",
+        "paragraph_id": 0,
+        "text": "Estimates from Other Studies : The primary measure of lost biomass, (24), is based on the estimate from Silva and Downing (1995). One might suspect that the results are driven by this specific study. To address this, I reconstruct the lost biomass measure using estimates from other studies. Table DXVI demonstrates that the results remain robust when using",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 21,
+        "section_name": "Robustness",
+        "paragraph_id": 2,
+        "text": "Panel A : second-stage The independent NR indicator Panel B : first-stage Lost biomass (t-1) Panel C : reduced form The independent NR indicator (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 2SLS 2SLS 2SLS 2SLS OLS OLS OLS OLS OLS OLS OLS OLS Lost biomass (t-1) 0.794[FORMULA] 0.693[FORMULA] 0.690[FORMULA] 0.691[FORMULA] (0.155) (0.143) (0.135) (0.136) Lost biomass (IV) (t-1) 1.735[FORMULA] 1.786[FORMULA] 1.898[FORMULA] 1.882[FORMULA] 1.378[FORMULA] 1.237[FORMULA] 1.311[FORMULA] 1.300[FORMULA] (0.215) (0.211) (0.213) (0.211) (0.230) (0.229) (0.230) (0.229) Paleo-temperature (mean) (t-1) -0.481[FORMULA] -0.487[FORMULA] -0.487[FORMULA] 0.273[FORMULA] 0.303[FORMULA] 0.296[FORMULA] -0.291[FORMULA] -0.278[FORMULA] -0.282[FORMULA] (0.046) (0.048) (0.047) (0.013) (0.014) (0.014) (0.016) (0.016) (0.016) Paleo-precipitation (mean) (t-1) 0.215[FORMULA] 0.212[FORMULA] 0.215[FORMULA] -0.234[FORMULA] -0.243[FORMULA] -0.282[FORMULA] 0.053[FORMULA] 0.044** 0.020 (0.041) (0.041) (0.044) (0.013) (0.013) (0.016) (0.020) (0.020) (0.020) Paleo-temperature (std.) (t-1) -0.018 -0.018 0.074[FORMULA] 0.079[FORMULA] 0.033[FORMULA] 0.036[FORMULA] (0.012) (0.012) (0.010) (0.010) (0.004) (0.004) Paleo-precipitation (std.) (t-1) 0.028[FORMULA] 0.027** 0.004 0.017** 0.031[FORMULA] 0.039[FORMULA] (0.011) (0.012) (0.008) (0.008) (0.010) (0.011) Paleo-net primary productivity (t-1) -0.006 0.074[FORMULA] 0.046[FORMULA] (0.019) (0.013) (0.016) Cell FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Time FE ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ Outcome mean 0.002 0.002 0.002 0.002 0.037 0.037 0.037 0.037 0.002 0.002 0.002 0.002 Outcome std. 0.046 0.046 0.046 0.046 0.144 0.144 0.144 0.144 0.046 0.046 0.046 0.046 First stage F 65.320 71.455 79.085 79.194 Adjusted R-Sqr. 0.208 0.210 0.210 0.210 0.029 0.030 0.030 0.030 Observations 322448 322448 322448 322448 322448 322448 322448 322448 322448 322448 322448 322448",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 21,
+        "section_name": "Robustness",
+        "paragraph_id": 3,
+        "text": "Note: The unit of analysis is a 1 ◦ × 1 ◦ grid cell. The dependent variable is a dummy that equals 1 if a grid cell undergoes an independent agricultural transition and 0 otherwise. The panel spans from 21,000 BP until the transition occurs, using 1,000-year time windows. All variables are standardized. Robust standard errors, clustered at the grid cell level, are reported in parentheses. [FORMULA] p < 0.01, ** p < 0.05, * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 21,
+        "section_name": "Robustness",
+        "paragraph_id": 4,
+        "text": "these different estimates. Recalculated Lost Biomass Including 14 Domesticable Mammals : Table DXVII presents the results using recalculated lost biomass, now including the 14 domesticable mammal species. The table shows that lagged lost biomass is strongly positively associated with the transition dummy, while one-period ahead lost biomass is always negative. Intermonthly Temperatuer Volatility and Climatic Seasonality : Ashraf and Michalopoulos (2015) and Matranga (2024) find that intermonthly temperature volatility and climatic seasonality influenced the transition to agriculture, respectively. Table DXVIII demonstrates the robustness of the results when controlling for these climate factors. Spatial Correlation : Table DXIX shows that the results remain robust after correcting for spatial correlation. The findings hold when clustering standard errors at x -degree by",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 21,
+        "section_name": "Robustness",
+        "paragraph_id": 5,
+        "text": "x -degree neighboring grid cells ( x = 1 . 5 , 2 , 2 . 5) and when applying the spatial correlation technique proposed by Conley (1999).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1200,
+        "section_id": 22,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 0,
+        "text": "The Neolithic Revolution was a major transformation in humanity that has shaped the wealth of nations through its influence on institutions and culture. Understanding the reasons behind this transition is one of the most important questions in prehistory and is key to understanding the world today. This research explores the impact of large-herbivore extinction on the Neolithic Revolution, both theoretically and empirically. It uses new datasets on mammal species to measure the loss of hunting opportunities caused by extinction. The research, which uses complementary datasets, controls for paleo-climatic factors, and applies an instrumental variable approach, shows a significant and robust impact of the extinction of large herbivores on the emergence and diffusion of agriculture.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

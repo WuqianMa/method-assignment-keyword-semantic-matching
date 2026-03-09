@@ -1,0 +1,712 @@
+[
+    {
+        "paper_id": 1513,
+        "section_id": 0,
+        "section_name": "Chinese-Foreigners Disputes and the Emergence of Judicial Autonomy in Historical China",
+        "paragraph_id": 0,
+        "text": "Ke Kang James Kai-sing Kung The University of Hong Kong University of Melbourne January, 2025 [Preliminary and Incomplete] Abstract This study examines the emergence and economic consequence of a modern legal system within a traditional society by investigating a specific historical context: the development of an independent judiciary in China during the early 20th century. We focus on a judicial reform initiated in 1906, which aimed to introduce a modern legal framework to resolve disputes between Chinese citizens and foreigners which had increased dramatically since 1840s. The reform was marked by a conscious establishment of an independent judiciary that was separated from the executive branch – the first time in Chinese history – resulting in the establishment of independent courts, albeit with varying degrees of success across space and over time. Using a unique dataset constructed from newspaper reports on disputes between Chinese and foreigners, we find that prefectures beset with more frequent disputes were more inclined to set up a modern court system. In addition, when compared to government departments that remained unreformed and where the executive branch continued to adjudicate disputes, the modern courts demonstrated greater efficiency in handling legal cases. Furthermore, prefectures that implemented judicial reforms typically saw accelerated economic growth relative to those that did not. Our findings highlight that the pressing need to address escalating new-formed conflicts is a key driving force for the adoption of modern legal institutions within a traditional society.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "How do institutions evolve? Institutions play a fundamental role in shaping economic development and growth. A substantial body of research indicates that countries with \"better\" institutions, particularly those that enforce property rights and contractual obligations, tend to achieve higher levels of economic growth (Jones, 1981; North, 1981; Acemoglu, Johnson, and Robinson, 2001, 2002; La Porta et al., 1998, 2008; Besley and Persson, 2011; Dell et al., 2018). These studies often view institutions as exogenous or as constructs that have been imposed by European powers through colonization. However, the genesis of effective institutions is not an automatic process. A key question remains: how are effective modern institutions initially adopted and evolved in a traditional society? To understand this evolution, it is essential to consider the role of conflict and its resolution in shaping institutional development. All societies encounter conflicts at various times, and the process of finding ways to control violence can ultimately lead to the development of new political and economic institutions that foster a more stable social structure with reduced violence (North et al., 2009). In this regard, the adoption of new institutions can be seen as a response to conflicts arising from their absence. We aim to test this hypothesis using early 20th-century China as our context. In imperial China, administrative officials executed court orders without a clear separation of powers. In 1906, the late Qing government initiated a judicial reform aimed at introducing modern legal system to handle the dramatically increasing disputes between Chinese and foreigners since the late 19th century. Our objective is to examine whether escalating new-formed conflicts – the disputes involving Chinese and foreigners – compelled China to establish independent domestic courts, marking the first separation of an independent judiciary from the executive branch in Chinese history, and to explore the economic consequences of this development. Following the Opium War (1839-1842), China was forced to open its doors to foreigners, leading to inevitable conflicts between Chinese and foreign nationals. These conflicts ranged from civil disputes, such as debt and contract issues between Chinese and foreign merchants, to criminal offenses like the abuse of violence by foreign soldiers against Chinese laborers. Analysis of early 20th-century newspaper reports revealed that criminal disputes between Chinese and foreigners comprised over 60% of all disputes. These primarily involved soldiers, police officers, laborers, and businessmen, posing significant threats to social stability. Although civil disputes accounted for only around 40%, they involved substantial trade volumes totalling 150 million silver taels, approximately 15% of China's",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "annual trade volume in the early 20th century. Consequently, it was imperative to manage these disputes effectively for the sake of social stability and economic development in China at that time. However, China’s old judicial system proved to be insufficient to handle such disputes effectively. Initially, imperial China lacked a formal court system, with local governments tasked with both administrative and judicial functions. The local officials serving as judges in this system were selected through Confucianism examinations and lacked formal legal training (Chang, 1962). Furthermore, Chinese law at the time was deficient in specific provisions for managing civil, particularly commercial disputes; the use of corporal punishment in China's criminal law system, as well as the abuse of the death penalty and summary execution were considered cruel and inhumane by foreigners. These shortcomings led Western powers to reject China's trial processes. Prior to the establishment of courts in China, the resolution of disputes relied on negotiations between consuls representing foreign nations and Chinese local governments 1 . However, these negotiations often lacked a formal trial process and were conducted via mail or telegrams between Chinese officials and foreign consuls. This lengthy process could lead to potential information asymmetry, resulting in outcomes that varied based on the individual capabilities of local officials. This, in turn, often led to inconsistent and subjective results which had complained by foreigners. What’s worse, many Western countries had used the excuse of China's backward legal system to demand and enjoy extraterritoriality, providing protection for foreigners involved in Chinese-foreigner disputes 2 . Under extraterritorial jurisdiction, disputes involving foreign nationals as defendants were to be adjudicated by foreign consuls according to their home country's laws (Feuerwerker, 1978; Xu, 2008; Ng, 2014). Consequently, the Chinese government lacked the authority to directly pass judgment on foreign criminals, leading to instances where even individuals guilty of serious crimes such as murder did not face appropriate punishment.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "1 A series of treaties between China and Western countries from 1843 stipulated that if a foreigner wishes to accuse a Chinese person, they should first report to the their home country’s consulate in China, and then negotiations will be conducted between the consul and Chinese officials. When Chinese individuals needed to file a lawsuit against foreigners, normally, they also required the assistance of local officials for delivery (Yao, 1915). 2 The earliest country to enjoy extraterritoriality was the United Kingdom. In the General Regulations under which the British Trade is to be conducted at the Five Ports of Canton, Amoy, Foochow, Ningpo, and Shanghai signed in 1843, it was stipulated that if a British person in China was convicted, they should be judged by British law and handled by the consul. Subsequently, such extraterritoriality was required by other Western countries. By other By 1918, 19 nations had secured comparable extraterritorial rights within China (Wolfgang and Shiue, 2023).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "The above factors created a dilemma for Chinese officials: dissatisfaction among foreigners with negotiation outcomes could lead to the dismissal of Chinese officials for 'mismanagement of foreign affairs', while showing excessive favouritism—whether intentional or unintentional—toward foreigners risked inciting civil unrest among Chinese farmers or labourers (the most representative example should be Boxer Rebellion in 1900, which posed a significant threat to the Qing government’s authority) (Cai, 2014). Consequently, as disputes between Chinese and foreigners escalated rapidly in early twentieth-century China, both central and local governments recognized the necessity to establish a more efficient and impartial institutional framework. Following the Boxer Rebellion, during which hundreds of foreigners were killed, Western countries also recognized the importance of properly resolving disputes between Chinese and foreigners. Consequently, they expressed a willingness to relinquish extraterritorial rights if China adopted a modern legal system 3 . Seizing this opportunity, China embarked on a top-down judicial reform in 1906. The most significant outcome of this reform was the establishment of modern courts, marking the first historical separation of the judiciary from the executive branch in China. This shift also brought about a notable transformation in the recruitment of judges, moving from the traditional keju examination system to a selection process based on professional judicial exams. Additionally, both defendants and plaintiffs were granted the right to hire lawyers for their defense, a practice that had been prohibited in imperial China. Importantly, parties dissatisfied with verdicts were provided guidance on navigating the legal process, thereby reducing reliance on diplomatic channels for resolution 4 . In this unique context, a natural experiment unfolds as the establishment of independent courts occurred sporadically and with varying degrees of success across different regions of China. Specifically, we want to examine whether prefectures with more Chinese-foreigners disputes were more likely to establish modern courts. Based on a panel dataset spanning from 1914 to 1936, covering 265 prefectures, our findings indicate that Chinese-foreigners disputes (CFD) indeed positively affect the establishment of modern courts. Specifically, a 100% increase in logged CFD led to 0.317 more courts established, a significant result considering",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "3 In 1902, during the \" Renewal of the Sino-British Commercial Navigation Treaty \", the British stated that once it was confirmed that China's legal situation, trial conditions, and other related matters met modern legal standards, Britain could give up extraterritorial rights. Subsequently, the United States and Japan also expressed similar sentiments. 4 The establishment of modern courts indeed played a role in curbing extraterritorial rights. After the presence of local courts, the modernized judicial system aligned with the West attracted foreigners to directly submit dispute cases to the court for trial. According to the judicial reports from 1930-1936 in the Republic of China, local courts in China handled about 14,000 Chinese-foreigners disputes independently.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "the mean of the outcome variable is 0.689. This finding remains robust after controlling for factors such as the number of newspapers published (as our disputes data is derived from newspaper reports), other indicators of Western influences (such as Protestantism, the number of overseas students, and treaty ports), density of genealogy as a proxy for traditional customs, domestic conflicts among warlords, and population density. Furthermore, our analysis indicates that prefectures with higher instances of CFD were assigned more qualified judges and established a stronger lawyer system. Besides, we provide additional evidence to rule out alternative interpretations of our main findings. First, we investigate the impact of domestic disputes among Chinese citizens. With the onset of China's self-strengthening initiatives in 1861, the introduction of Western technology and educational systems triggered a modernization process that disrupted the traditional social hierarchy of \" shi nong gong shang.\" This era witnessed rapid expansion in industrial and commercial sectors, leading to the emergence of new professional roles like entrepreneurs, bankers, lawyers, and journalists. Consequently, the overall litigation needs of the Chinese population, beyond those involving foreigners, likely underwent changes, prompting advancements in the legal system. To address this concern, we utilize a unique dataset of domestic lawsuits among Chinese individuals in 1934, combined with the number of courts in 1936, to explore whether conflicts among local Chinese people also influence the further establishment of courts. The results show that in comparison to CFD, the impact of domestic lawsuit is not statistically significant. Another concern is that places with a higher number of Chinese-foreigner disputes may simply have a larger foreign population, which, in turn, brought along foreign institutions and culture, potentially influencing the establishment of courts. For this concern, we examine the structure of the courts, noting that each court established separate criminal and civil divisions to handle respective cases. By aggregating the number of criminal and civil divisions within each court at the prefecture level and categorizing the disputes between Chinese and foreigners into criminal and civil categories, we observe that an increase in criminal disputes involving Chinese and foreigners led to the creation of more criminal chambers, while a rise in civil disputes led to the establishment of more civil chambers. These findings suggest that there is a direct effect of conflicts between Chinese and foreigners on the establishment of modern courts. To further validate the causal relationship between Chinese-foreigners disputes and court establishment, we employed an instrumental variable which constructed based on the spillover effects of colonialism conflicts in neighbouring countries. We noted that four main countries adjacent to China—Korea, Vietnam, India, and Burma—were all colonized during",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "our sample period. When there was a trend of anti-colonialism or nationalism movement in these adjacent country, we observe an increased influx of foreign dissenters who were defeated in the riots into China through borders. This influx often resulted in a higher number of Chinese-foreigner disputes, as these fugitives were likely to engage in violent activities as a form of revenge or just due to the lack of income. When conflicts between Chinese and these fugitives occurred in China, it often requires the joint resolution of Chinese officials, the foreigners involved, and the colonial power of the foreigners’ home country 5 . Therefore, rather than negotiations, the Chinese side prefers to solely rely on the formal judicial process of the courts for resolution. Additionally, colonial states often stationed troops in these colonized countries to maintain daily rule or suppress rebellions. Soldiers stationed at the borders also found it easier to enter China and provoke disputes. Therefore, we utilized the distance of each prefecture to its nearest colonized country, interacted with a dummy variable set to 1 if the nearest colonized country experienced an outbreak of independence movements, as the instrumental variable. This instrumental variable helps address potential endogeneity concerns, as the occurrence of independence rebellions in foreign countries was generally unrelated to the specific socioeconomic characteristics of China's prefectures. The results using this instrumental variable indicate that the effect of Chinese-foreigner disputes on court establishment remains positive and significant. Lastly, our study reveals that modern courts demonstrate greater efficiency in processing lawsuits compared to government departments that have not undergone reform. Furthermore, the establishment of modern courts in the early 20th century encouraged the formation of both domestic and foreign firms in China. This can be attributed to the significant value of securing property and political rights through the court system, especially when the government itself is a litigant (Glaeser et al., 2004). More importantly, we find that this effect persists; prefectures with a greater number of courts established before 1936 still have more law firms in 2005. Our paper makes an important contribution to the literature understanding institution formation. Although rich literature identified the significant effect of institutions on economic development, limited research studied how institutions are formed and evolve over time. La Porta et al. (1997, 1998) and Acemoglu, Johnson, and Robinson (2001, 2002) have provided",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "5 In the fourth clause of the Sino-British Treaty for the Regulation of Trade at the Ports of Tibet and India (1910), it is stipulated that in case of disputes between Indian nationals and Chinese individuals at various treaty ports, the British Consul at the nearest port and Chinese officials shall jointly investigate and discuss the matter.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "cross-country evidence on how colonies adapted institutions from European colonizers' interventions. Beck and Laeven (2006) analysed how natural resources and the historical experience of socialism influenced the nation building and growth in transition economies of Central and Eastern Europe and Central Asia. Dell and Querubini (2017) studied how military foreign intervention influenced the nation building, especially communist insurgency of Vietnam during the cold war. Our paper, the first time, empirically tested North (2009)’s theory that market institutions and rules that are more egalitarian do not appear automatically but are innovative responses to conflicts that arise because of their absence. Furthermore, our paper sheds light on how Western influences shaped the economic and political development of modern China. While the role of foreigners in China's development has been discussed in Dernberger's (1975) book chapter, subsequent empirical research has mainly focused on indirect factors such as treaty ports or foreign education brought by Western countries, and their influence on China's economic or political trajectories (Jia, 2014; Bai and Kung, 2015; Yuchtman, 2017; Kung, 2022; Kung and Wang, 2023). Our paper firstly examines how the interaction of Chinese and foreigners influenced the institutional development in China. The remainder of this paper is structured as follows. The next section introduces historical background of China’s judicial reform. Section 3 describes the dataset. Section 4 introduces the empirical specifications and reports the main results. Section 5 presents the identification. Section 6 explores the effect of judicial autonomy in early twentieth century China. Finally, Section 7 summarizes the findings and concludes the paper.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 0,
+        "text": "2.1 Traditional Judicial System of China and Its Disadvantages In imperial China, the emperor held the highest authority, holding decisive authority over legislation and serving as the supreme judge of the whole country. District magistrates were then tasked with overseeing local administrative matters, taxation management, and adjudicating lawsuits simultaneously (Chang, 1962). The situation in China followed a model of administrative supervision of the judiciary, without a distinct separation of powers. Such a system clearly exhibits numerous shortcomings. Firstly, administrative officials, when adjudicating cases, wielded combined powers of prosecution, investigation, and judgment. And their selection relied on the imperial examination system, which was rooted in",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 1,
+        "text": "Confucianism and lacked professional legal training. Consequently, their judgments often reflected personal inclinations poisoned by the Confucianism rather than rule of law (Takayanagi, 1932). Furthermore, China's traditional judicial system lacked a formal lawyer system, discouraging parties involved in lawsuits from hiring professionals for their defense (Macauley, 1994). Because traditional officials believed that lawyers would incite the public to bring lawsuits, thereby increasing their workload. Moreover, the Chinese judicial system was characterized by the frequent use of severe physical punishments during trials and the practice of collective punishment, resulting in the wrongful killing of innocent individuals. Therefore, when disputes arose between Chinese and foreigners, there was a significant lack of trust among foreigners regarding the fairness of the Chinese judicial system and the efficiency of case handling. The foreigners considered Chinese laws to be 'unreasonable' and had little faith in the 'fairness and impartiality' of Chinese officials in law enforcement (Willoughby, 1957). Thus, using the excuse of China's backward legal system, many Western countries had demanded and enjoyed extraterritoriality in China to protect the interests of foreigners involved in disputes with Chinese citizens. The first to enjoy extraterritorial rights were the British. In the General Regulations under which the British Trade is to be conducted at the Five Ports of Canton, Amoy, Foochow, Ningpo, and Shangha signed in 1843 6 , it was stipulated that \"if a British subject commits a crime in China, the individual shall be tried and punished by the Consul or other Public Functionary authorized thereto according to the Laws of Great Britain”. Subsequently, the United States, France, Japan, Russia, Germany, Italy, and other major powers successively acquired this privilege through unequal treaties and expanded its scope of application: in lawsuits between foreigners who were the defendants and Chinese individuals, the defendants may be adjudicated by their consular officials or judicial institutions established in China in accordance with their own national laws; in lawsuits between foreigners who were the plaintiff and Chinese individuals, the trials were conducted by Chinese judicial authorities, with their consular officials permitted to observe the proceedings. By 1918, nineteen nations had secured extraterritorial rights in China 7 . Disputes with citizens from these 19 countries accounted for over 80% of the Chinese-foreigners disputes in our sample period.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 2,
+        "text": "6 This is the supplementary clause of the Treaty of Nanjing (1842). 7 The 19 countries that enjoyed extraterritorial rights in China and the years they obtained this privilege are as follows: Britain (1843), the United States (1844), France (1844), Norway (1847), Sweden (1847), Russia (1851), Germany (1861), Denmark (1863), the Netherlands (1863), Spain (1864), Belgium (1865), Italy (1866); Austria (1869), Peru (1874); Brazil (1881); Portugal (1887); Japan (1896), Mexico (1899), Switzerland (1918).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 3,
+        "text": "Specifically, before the judicial system was reformed in China, if a foreigner wishes to accuse a Chinese individual, they should first report to the consulate, and the consul will inform the Chinese administrative authorities ( Treaty of Nanjing, 1843 ). The Chinese authorities then summon and adjudicate the case. However, in order to assist their own country's merchants and citizens in seeking more favorable outcomes in the dispute resolution process, Western consuls tended to seek diplomatic means to settle disputes. They often exerted pressure or actively intervened through diplomatic notes. Thus, the final judgments involving foreigners accusing Chinese were typically results from negotiations with Western consuls. Conversely, when a Chinese person wanted to sue a foreigner, the matter was generally transferred by local officials, who then engaged in negotiations with the foreign consul. The judicial institutions of Western countries in China (such as the consular courts established by various foreign powers in China, with the British and American countries having a High Court in Shanghai) have jurisdiction. However, Chinese officials have the right to observe and participate in the trial proceedings. If they find the judgment unreasonable, they can report to higher authorities and negotiate with foreign consuls. At that time, local administrative officials also served as judges, but they often lacked legal knowledge and expertise, leading them to refrain from attending consular courts. Instead, they independently investigated, sought clarification through diplomatic notes, and engaged in negotiations to achieve a resolution. Thus, we can see before local courts were available in China, the resolution of disputes between Chinese and foreigners mainly relied on negotiations between consuls representing foreign nations and the Chinese local officials. This kind of negotiation normally took a long time to process. And given that the Chinese officials and foreign consuls typically engaged in separation investigation, such a process could easily led to information asymmetry, making it challenging to achieve a fair settlement satisfied by both parties. Consequently, outcomes varied, dependent on the individual capabilities of local officials, often resulting in inconsistent and subjective results. Besides, due to the existence of extraterritorial jurisdiction, the Chinese government lacked the authority to directly pass judgment on foreign criminals, resulting in many foreigners, even those who committed murder, not receiving the appropriate punishment. Consequently, during such negotiations, the Chinese officials often found themselves in a dilemma. Mishandling of disputes between Chinese and foreigners, leading to the escalation of the situation, could result in disciplinary actions against local officials. As a result, many incidents were reported to higher authorities, further impeding the efficiency of case handling. With an increasing number of Chinese-foreign disputes in the 20th century, the burden on local governments also grew. But on the other hand, a one-sided favoritism towards",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 4,
+        "text": "foreigners would further intensify internal conflicts (such as the Boxer Rebellion), placing both central and local governments in a dilemma. From Table 1, we can see that the most prevalent criminal disputes between Chinese and foreigners were homicide (21.7%) and assault (10.6%). It is evident to find, in Column (2), that foreign soldiers or police constitute the main defendants in murder and assault cases, representing over 54% of the litigants on average. Chinese laborers are the primary plaintiffs. Their conflicts mainly manifested as soldiers or employers enjoying services but refusing to pay, and even resorting to beating or killing laborers for minor mistakes. Mishandling of this kind of cases posted threats to social stability. One example is the May Thirtieth Movement in 1925, where conflicts and demonstrations between Japanese-owned cotton mills and Chinese employees resulted in large-scale protests in over 10 cities, involving more than 1 million citizens. From Quanguo Baokan Suoyin (Chinese periodicals full text database), we find that there were hundreds of protests led by the foreign soldiers killing Chinese residents. On the other hand, theft, fraud, robbery, and kidnapping collectively account for a significant proportion of all disputes (totalling around 17.5%), and a common thread in these criminal disputes is that foreign merchants are the main plaintiffs. Chinese laborers often steal money from them, while businessmen resort to fraudulent means to secure profits. Meanwhile, bandits seek to obtain money through robbery or kidnapping. The arbitrary killing of foreigners, particularly businessmen, by Chinese bandits could lead to military interventions by foreign countries to address these issues, as seen in the Siege of International Legations. Consequently, the Chinese government faced a dilemma in satisfying both parties, as negotiations could not always be equitable. Furthermore, in civil disputes, conflicts also primarily involved with businessmen. Debts accounted for 12.1% of all disputes, while contracts constituted 9.2% of the total. Typically, Chinese businessmen were the defendants who failed to repay debts or breached contracts, with over 85% of the plaintiffs being foreign businessmen. These cases ranged from a tenant owing 3 silver yuan in rent to larger cases involving companies owing millions. Addressing each case individually through negotiation would have placed a substantial burden on the old Chinese government departments. Thus, given all mentioned above, a more impartial and efficient institution was needed. In 1899, the Japanese government's reform of its own legal system, which resulted in the withdrawal of consular jurisdiction, inspired China. Then later in 1902, the Western powers also expressed their support by offering the conditional relinquishment of extraterritoriality, urging the Qing government to initiate judicial reform in China. These prompted China to take",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 5,
+        "text": "action towards judicial reform in order to withdraw extraterritorial jurisdiction and improve the resolution of disputes between Chinese and foreigners. 2.2 Judicial Reform in Modern China The top-down reform of the judicial system officially commenced in 1906. Taking inspiration from the civil law tradition, with Japan serving as a model, a legal system was designed with the aim of establishing an independent judiciary. The most salient feature and progress of the reform is the establishment of modern courts, by setting up separate institutions to delineate judicial power from administrative power. The construction of the court system involved the implementation of a four-tier system, which included the Supreme Court as the highest judicial authority in the country, then the high courts at provincial level, local courts at prefecture level, and preliminary courts at county level. The first modern court was established in Tianjin in 1906, followed by the establishment of various levels of trial courts in Beijing in 1907, which later spread to other provinces. By 1911, approximately 179 courts had been established, with 93 at the county level, 62 at the prefecture level, and 24 at the provincial level. The regime transition between the late Qing dynasty and the Republican era, did not interrupt the process of establishing an independent judicial authority. Following the establishment of the Republic of China in 1912, many regions demonstrated their support for the new regime by actively setting up new institutions such as local councils and courts. It was claimed that around 150 additional courts were established during this time, although they were not fully functional. However, in 1914, Yuan Shikai , one of the prominent warlords of that period, restored the monarchy, leading to the abolition of grassroots courts under his order. As a result, the number of courts decreased significantly. To handle the situation, the Ministry of Justice had implemented the use of small claims courts to handle minor or straightforward disputes. The number of courts increased slightly. After Yuan Shikai's death in 1916, the establishment of modern courts gradually returned to a normal development trend, as shown in Figure 1. Considering the abnormal development of courts establishment during 1912-1914, we mainly use the sample period of 1914-1936 for our analysis. Our sample period ends in 1936 as the outbreak of the War of Resistance Against Japan (1937-1945) disrupted the pace of judicial reform. The Japanese invasion not only led to the rise of communism in China (Chen and Kung, 2023), in doing so it also aborted the nascent development of an independent legal system.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 6,
+        "text": "The funding for establishing courts primarily relied on provincial governments. Generally, the Ministry of Justice at the national level was responsible for devising the court establishment plans and overseeing their implementation. However, due to limited financial support from the central government, provincial authorities enjoyed a significant degree of autonomy. Between 1912 and 1927, if a locality wanted to establish a court, it needed to submit a budget application for approval by the provincial judicial and financial authorities. After 1927, the provincial high court formulated allocation plans of judicial funds for counties and prefectures within each province based on the actual needs of local agencies and the urgency of judicial construction throughout the province. This model reduced interference from local administrative agencies in the judgments of local courts. Although the authority to establish courts primarily rests with provincial agencies, the key criteria of “urgency” was still the presence of disputes between Chinese and foreigners at the prefecture or county level. As evidenced by Figure A1 in the appendix, which presents the working report of the Ministry of Justice in 1917, we observe that multiple courts were established in Fengtian prefecture and Fuzhou prefecture due to the prevalence of numerous lawsuits in areas where Chinese and foreigners coexisted. The establishment of modern courts was also involved with selection of professional judges based on judicial examinations. The traditional dual-role local officials who were responsible for both administrative and judicial duties were selected through Confucianism examinations and had not received any systematic legal training. But when the first court established in Tianjin, the initial personnel were chosen through an examination process based on international law system. The participants in the examinations mainly consisted of two groups: law school students who studied abroad and former judicial personnel who had previously assisted officials in handling cases. Then China began to strengthen domestic legal education, by 1909, around 30 law schools as well as specialized judge training institutes were established with 12,282 students (Liu and Yang, 1994). In 1910, the Qing government conducted the first nationwide judicial examination, followed by an additional 39 examinations during the Republic of China era. Over the course of these examinations, several thousand candidates successfully passed and qualified as judges. Another progress in the reform is the implementation of the lawyer system which was officially established at the beginning of the Republic of China. In 1911, several provinces established bar association to regulate the legal profession. The government's provisional regulations in 1912 stipulated that only registered lawyers from these bar associations were permitted to practice law and defend clients in lawsuits. This measure aimed to ensure the",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 7,
+        "text": "quality of lawyers by subjecting them to scrutiny not only in terms of their educational background but also their moral character, as both aspects were evaluated before their registration. According to annual judicial report by the Ministry of Judicial Administration of the Republic of China, by 1936, 112 prefectures had established lawyers' guilds, and there were 10,664 lawyers in total. Besides, a specific distinction was made between civil and criminal law. In 1907, the Qing government established the Law Revision Institute to specialize in the revision of civil laws and engage in investigation and compilation. It also undertook the revision of the criminal law subsequently. Correspondingly, within each court, separate criminal and civil divisions were established, and criminal and civil cases were tried separately. Also, the use of adversarial trial system was stipulated. Finally, based on the four-tier court system, two appeals were allowed before a final judgment was reached. The impact of judicial reform was significant. With the establishment of domestic courts, foreigners began to bring their cases directly to Chinese courts for trial, bypassing the need for consular involvement. Conversely, the domestic courts were also empowered to initiate lawsuits against foreigners and protect the rights of Chinese individuals, even within public concessions and overseas territories. According to the judicial reports from 1930-1936 in the Republic of China, local courts in China handled about 14,000 Chinese-foreigners disputes independently.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "Our data on disputes between Chinese and foreigners is based on newspaper reports obtained from the Quanguo Baokan Suoyin (Chinese Periodicals Full Text Database). This database includes a comprehensive collection of over 25,000 newspapers and journals published in China from 1833 to 1949. For the purpose of our study, we define Chinese-foreigners disputes (CFD) as incidents involving individuals, corporations, or group entities from China and foreign nations and can potentially be resolved or pursued through legal channels. Firstly, we conducted a random collection of 2000 news articles from the database and observed that the word \" 案 \" and \" 洋 \" (which translates to \"case\" and “foreign” in English) were frequently used in the headlines of reports related to incidents involving foreigners. Using these keywords, we performed a search to identify potential news reports on incidents between",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "Chinese and foreigners in modern newspapers, resulting in approximately 400,000 potential matches. To filter out irrelevant reports, we initially focused on the headline text and employed simple text analysis techniques. We excluded reports such as \" 政府提案 \" (government proposal) or \" 议案 \" (government bill) that were unrelated to our study. Subsequently, we manually examined the remaining reports to determine whether they involved Chineseforeigners disputes. For the identified disputes, we collected information on the location and date of the incidents, checked for duplicate reports, and gathered details about the potential plaintiffs and defendants. In total, we obtained around 20,875 reports documenting incidents between Chinese and foreigners that occurred during the period of 1872-1936. Table 1 displays the various types of disputes between Chinese and foreigners in our sample. Criminal disputes account for 61% of the cases, while civil disputes constitute 37%. The first and third columns of the table show the proportions of each type of criminal and civil disputes, respectively. The second and fourth columns present the primary identity of individuals involved in the main categories of criminal and civil disputes, respectively 8 . Among criminal disputes, the primary category mainly involves crimes committed by foreign soldiers or police against the impoverished working class in China, including homicide, assault, and rape. Another major type involves crimes committed by Chinese bandits or lower-class laborers against foreign businessmen, including theft, fraud, robbery, and kidnapping. On the other hand, civil disputes mainly revolved around debt, contract, and property issues, with a focus on disputes between merchants and companies. Figure 2 then illustrates the distribution of cumulative report numbers for each prefecture in 1936. One concern regarding this data is its limited scope, as the database may not encompass all newspapers within our sample period. To address this limitation, we conducted a robustness check using alternative data source. Specifically, we utilized the diplomatic archives of the Qing dynasty, which comprise all Chinese-foreigners disputes documented by the late Qing government before 1911, as compiled by Yao (1915), and constructed a cross-sectional level variable on Chinese-foreigners disputes in 1911. 3.2 Data on Court Establishment",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "8 we only display the most significant types by proportion in Table 1. A more detailed classification can be found in Table A1",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "Data on court establishments were sourced from multiple references. For the year 1911, we consulted the publication \" Wanqing Geji Shenpanting Yanjiu \" ( A Study of Judicial Courts at All Levels in Late Qing Dynasty ) by Li (2004), which provides a summary of the locations of courts existing by the end of 1911 and categorizes them into provincial, prefecture, or countylevel courts. For the period between 1914 and 1936, we rely on the Judicial Statistical Yearbook primarily published by the Ministry of Justice in Republic of China. These yearbooks were later compiled into the \" Minguo Shiqi Sifa Tongji Huibian \" ( Compilation of Judicial Statistics in the Republic of China ) by Tian and Tang (2013). These documents contain information on the establishment and abolition of courts, as well as the locations and levels of each court for the years 1914, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1930, 1931, 1932, 1934, and 1936. To ensure accuracy, we cross-referenced this dataset with provincial judicial gazetteers, allowing us to determine the exact number of courts in existence for each year between 1914 and 1936. Figure 3 shows the distribution of courts existed in 1936. Besides, the judicial yearbooks in the 1930s also provided details on the number of criminal or civil divisions established within each court.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "We control for some confounding variables that may be correlated with the distribution of Chinese-foreigners disputes, and we also quantify some factors that could affect the decisions regarding court establishment in the early twentieth century. Western culture . It’s possible that some prefectures established more modern courts only because they received larger influence from Western culture. To assess this, we used the duration of Protestantism (measured in years since the first missionary entered) and the number of overseas students as indicators. Data on Protestantism was obtained from Stauffer (1922), and information on overseas students was sourced from Zhou (1999). Treaty ports . We also control for treaty ports and self-initiated ports as these prefectures involved in higher trade volumes may experience more civil disputes. The establishment of courts in these areas could have been aimed at stimulating trade development. Data for this factor is from Zhang (2009). Genealogy density . On the contrary, local customs and traditions might have led people to resist the adoption of new institutions. To gauge this, we utilized the density of genealogy as a measure, as detailed in Wang (2020).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "Domestic conflicts . We also control for domestic conflicts, coded from the “ Zhongguo Xiandai Junshishi Zhuyao Zhanyibiao (Table of Major Battles in Modern Chinese Military History) ” (1967). A chaotic political situation could hinder the establishment of new systems. Additionally, wars between local warlords often depleted local finances, leaving insufficient funds available for establishing new courts. Population density . We employed population density as a proxy for local economic prosperity. The data on population density is obtained from Cao (2000; 2015). The data on population density is from Cao (2001), but it only contains population figures for 1850, 1880, 1910, and 1953. To obtain a complete dataset for our study period, we fill in the missing data using the linear interpolation method. Number of newspapers . One concern regarding our data on disputes between Chinese and foreigners is that prefectures with a greater variety of newspapers might produce more reports on such disputes. So, the effect of Chinese-foreigners disputes on court establishment could stem from the presence of more newspapers. Thus, we accounted for the number of newspapers established in each prefecture within our sample period. This data is also from the Quanguo Baokan Suoyin (Chinese Periodicals Full Text Database).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 0,
+        "text": "4.1 Panel Analysis To investigate the impact of Chinese-foreigners disputes on the establishment of modern courts, we begin our analysis with the following baseline specification:",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 2,
+        "text": "where Y it represents the number of courts in prefecture i in year t ; R it is the cumulative number of reports on Chinese-foreigners disputes from 1872 to year t (logged) ; X it indicates a set of controls, including duration of Protestantism, overseas students, treaty ports, density of genealogy, domestic conflicts, population density and the number of newspapers,; α i indicates the prefecture fixed-effects and λ t refers to year fixed-effects; ε it is an error term; we also include province-year specific effects ( δ p ∗λ t ) to deal with potential confounding factors at the provincial level.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 3,
+        "text": "The results are presented in Table 2. Column (1) includes only prefecture and fixed effects. The findings suggest that prefectures with a higher number of reports on Chineseforeigner disputes established more modern courts, with the coefficient being statistically significant at the 1% level. In Column (2), we control for several confounding factors that proxy for Western influence, including the duration of Protestantism, overseas students and treaty ports. Column (3) further includes domestic controls such as genealogy density, domestic conflicts, and population density. In Column (4), we add the number of newspapers as a control variable to address the possibility that some prefectures might report more Chinese-foreigner disputes due to a greater variety of newspapers. After accounting for all these controls, the result remains statistically significant. Specifically, a doubling of reports on Chinese-foreigner disputes during our study period corresponds to an increase of 0.249 in the number of courts established. To further ensure that our findings are not driven by the presence of newspapers, we exclude those Chinese-foreigner disputes that were repeatedly reported by a single newspaper in Column (5). The results remain significant, and the magnitude is even larger, suggesting that repeated reports only bias our results downward. We then conducted multiple robustness checks to ensure that our findings are not sensitive to the measurement of the independent variable. To assess the sensitivity of our estimates to the log transformation, we employed the inverse hyperbolic sine transformation of Chinese-foreigners reports. Column (6) of Table 2 indicates that our estimate remains robust. Another concern was the potential reverse causality problem, where the establishment of more courts might lead to more disputes between Chinese and foreigners being reported. To partially address this, we employed the cumulative number of reports in the previous year ( t-1 ) and the number of newly reported disputes in the previous year ( t-1 ) as independent variables in Column (7) and Column (8) respectively. Despite a decrease in the result observed in Column (8), the findings remain statistically significant. Furthermore, we conducted a couple of subsample analyses to ensure our results are not driven by outliers. Firstly, as a certain large number of disputes occurred in Shanghai, we excluded Shanghai from our sample. The result in Column (9) of Table 2 shows that the coefficient changed minimally. Besides, considering that prefectures with higher incidences of disputes between Chinese and foreigners might coincidentally adopt different policies regarding the establishment of courts. In Column (10), we restricted the analysis to years after 1927 as the Kuomintang successfully unified the entire country since then. Prior to that, conflicts among warlords could have resulted in inconsistent policy implementation across different regions. And the result remains significant.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 4,
+        "text": "4.2 Robustness Checks Using Cross-sectional Dataset In this section, we utilized cross-sectional data to provide robustness checks and also additional evidence on how Chinese-foreigners disputes influenced the judicial reform in China. Firstly, we aimed to demonstrate that the pattern of Chinese-foreigners disputes leading to more court establishments existed before 1911 as we argued that it was the late Qing dynasty that initiated the judicial reform while our previous analysis focused on the 1914-1936 period. To test this, we employed the number of courts in 1911 as the outcome variable for the first three columns in Panel A of Table 3, with the logged number of reports on Chinese-foreigners disputes before 1911 serving as the independent variable. In Column (1) of Table 3, we presented the OLS result without any controls, revealing a positive and significant coefficient at the 1% level. Subsequently, in Column (2), we included the same controls as in the panel regression, along with the province fixed effect. While the coefficient slightly decreased, it remained significant. Specifically, a 100% increase in the number of reports before 1911 corresponded to a 0.520 increase in courts established up to 1911. We further conducted a robustness check by constructing the independent variable using data from an alternative source – the Huayang Jiufen Panjuelu (Compilation of Sino-Foreign Litigation Cases) by Yao (1915). The result in Column (3) is even larger than the baseline, indicating that our findings were not sensitive to the choice of dataset. On the other hand, we also explored whether disputes between Chinese and foreigners influenced the subsequent selection of judges following the establishment of courts, as well as the development of the lawyer system. To do this, we utilized individual data on judges who qualified in the First National Examination for Judges in 1910. We calculated their average scores based on the prefectures to which they were assigned 9 . As indicated by the results presented in Column (4), we observed that prefectures with a higher frequency of Chineseforeigner disputes prior to 1911 tended to have judges with higher examination scores assigned to them. Due to the availability of data limited to the 1930s, we conducted an additional crosssectional analysis using the number of reports on Chinese-foreigners disputes before 1936 to examine its impact on the development of the lawyer system in 1936. As mentioned earlier, only registered lawyers within bar associations were permitted to practice in the industry. To",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 5,
+        "text": "9 Due to data limitation, we only got the information on judges for 12 provinces which includes 144 prefectures in our sample. The data is from Li (2018).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 6,
+        "text": "measure the scale of the lawyer system, we employed the number of lawyer's associations and the density of registered lawyers in each prefecture. The results are presented in the first two columns of Panel B in Table 3, indicating a positive and significant relationship between Chinese-foreigners disputes and both outcome variables. Another advantage of the cross-sectional analysis conducted in 1936 is the ability to examine whether prefectures with higher incidences of Chinese-foreigners disputes also established their first court earlier than others. In Column (3) of Panel B, we used the number of reports before 1936 (logged) as the independent variable and the establishment year of the first court in each prefecture as the outcome variable 10 . The result indicates that a doubling of reports on Chinese-foreigner disputes would lead to a first court being established 3.621 years earlier in a prefecture. Moving on to Column (4), we introduced an alternative measurement for the dependent variable based on another intriguing observation. In some areas, due to limited funds or manpower, judicial bureaus were established as independent departments within the government, staffed with dedicated personnel to conduct trials. However, the county magistrate still can participate in the search and trial process. In this scenario, we categorized legal institutions into several levels. Prefectures that never experienced any reform were coded as 0; those with established independent departments were coded as 1, and those with independent courts were coded as 2. We discovered that prefectures with a higher frequency of Chineseforeigners disputes before 1936 exhibited higher court indices in 1936.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 8,
+        "text": "In this section, our objective is to perform heterogeneous analyses to gain further insight into the economic and political factors that might facilitate the establishment of modern courts.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 10,
+        "text": "While domestic courts in China were established in the early 20th century, foreign courts had already been present in the country by the mid-19th century. Therefore, it is essential to consider the impact of these foreign courts on the adaptation of modern legal institutions in",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 11,
+        "text": "10 For those prefecture that had never established a court in our sample period, we set the establishment year as 1949.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 12,
+        "text": "China. The Treaty of Nanjing (1843), among the earliest treaties in modern China, extended extraterritorial privileges to the British, empowering the British Consular Service in China to handle legal matters concerning British residents (Wolfgang and Shiue, 2023). By 1918, 19 nations had secured comparable extraterritorial rights within China. Consequently, within foreign consulates, the respective foreign country had the authority to establish consular courts, typically with the consul himself serving as the judge, to resolve disputes between Chinese and foreigners. These treaties stipulated those foreigners, when they were defendants, fell under the legal jurisdiction of their own country, not Chinese laws. Therefore, in legal disputes involving foreigners, individuals had to seek assistance from the nearest consul. In this scenario, the presence of foreign consulates might influence the adoption of modern legal system in China. Prefectures with a foreign consulate might be less likely to establish domestic courts, given the availability of foreign courts to handle Chinese-foreigners disputes. To examine this, we explored the heterogeneous impact of consulates using a dummy variable indicating whether a prefecture had a consulate. We then interacted this dummy variable with the cumulative reports on Chinese-foreigners disputes (logged). The results presented in Column (1) of Table 4 indicate that the interaction term is not significant. This suggests that the presence of foreign consulates did not exert additional influence on the establishment of domestic courts.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 14,
+        "text": "Another critical aspect to consider is the government's involvement in the establishment of modern courts. While Chinese-foreign disputes are undoubtedly significant, they may represent just one of several factors shaping this decision. The decision to establish modern courts was likely influenced by broader considerations, including state capacity. For instance, the fiscal resources available to local governments could have played a pivotal role, given the financial burden to establish modern courts. Additionally, the government's capacity to effectively administer public affairs might have influenced the decision to establish a court, especially as a mechanism for addressing the complexities associated with Chinese-foreign disputes. Moreover, political dynamics and policy shifts, influenced by changes in regime, could have exerted significant effects. If our findings were linked to state capacity or other policy changes, the impact of Chinese-foreign disputes would likely have been more pronounced in prefectures where the government wielded greater political authority or possessed higher financial resources. Consequently, we hypothesized that the effect of Chinese-foreign disputes",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 15,
+        "text": "might vary depending on specific characteristics of each prefecture, such as its position within the political hierarchy (represented by a provincial capital dummy), tax revenue levels, and administrative efficacy. Given the absence of tax revenue data during the Republic of China period, we utilized initial tax revenue figures from 1820 sourced from Liang (2008) for each prefecture. To test these possibilities, we firstly interact the provincial capital dummy with the number of Chinese-foreigners disputes. The result in column (2) of Table 4 shows that being a provincial capital did not strengthen the effect of Chinese-foreigners disputes on court establishment. Additionally, we interacted a prefecture's tax revenue with the number of Chinese-foreigners disputes. The finding in Column (3) shows the interaction term is also not significant indicating fiscal income did not post an additional effect. This could possibly be due to that the establishment of courts was primarily sponsored by provincial governments. On the other hand, we utilized a variable sourced from Liu (1993) to assess the administrative workload of each prefecture. Liu's categorization offers a detailed breakdown of prefectural designations, encompassing classifications such as chong, fan, pi, and nan . Among them, “ fan” indicates whether a prefecture grappled with numerous and intricate government matters. We digitized this information and created a corresponding dummy variable. By interacting it with CFD, we found that in prefectures burdened with significant government affairs, modern courts were more likely to be established. And this validates our story that the establishment of modern courts was aimed to address the challenges posed by Chinese-foreigners disputes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 17,
+        "text": "Although various pieces of evidence presented in previous sections support our narrative, a major concern remains: it may not only be the litigation needs between Chinese and foreigners that have increased, but also the overall litigation needs of the Chinese populace, necessitating the establishment of modern courts due to significant societal changes in China since the 1840s. Following a series of defeats in wars against Western powers, China began seeking ways to strengthen itself. Initiated in 1861, the Self-Strengthening Movement led to the establishment of munition factories and industrial firms. By 1906, over 600 domestic firms had been established in China. The traditional legal system may have been inadequate to address the new challenges related to contract issues or property rights. Additionally, a modern educational",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 18,
+        "text": "system was introduced in China starting in the 1860s. This period witnessed the rise of a range of modern knowledge elites such as entrepreneurs, bankers, lawyers, and journalists. These modern talents, having received Western education, likely developed a stronger sense of citizenship and legal awareness, which in turn led to an increased demand for litigation. To address this concern, we utilize domestic lawsuits among Chinese individuals as a proxy of the overall litigant needs of Chinese citizens 11 . Since the data is only available for the year 1934, we conducted a cross-sectional analysis to determine whether the effect of ChineseForeigner Disputes (CFD) changed significantly after including domestic lawsuits in the regression. In Column (1) of Table 5, we observe that the cumulative number of CFDs in 1934 still has a positive and significant impact on the number of courts in 1936, while the number of domestic lawsuits is not significant in the regression. Given that this result could be due to the unavailability of cumulative data on domestic lawsuits, we also modified the data for CFD to reflect the number of new reports on CFD in 1934 in Column (2). However, the reports on CFD continue to have a significant effect, while domestic lawsuits do not impact the establishment of modern courts. Another concern is that prefectures with a higher number of Chinese-foreigners disputes might simply have a larger foreign population that introduced Western culture and institutions to China, thereby leading to the adoption of a modern legal system. The establishment of modern courts may not necessarily be a direct consequence of Chineseforeigners disputes. In this following part, our objective is to differentiate the impact of Chinese-foreigners disputes from other factors, such as the influence of Western culture. To achieve this goal, we utilize a unique dataset in 1936, sourced from the Judicial Statistical Yearbook. This dataset documented the number of specialized criminal divisions handling criminal cases and civil divisions dedicated to handling civil cases within each court. We aggregated this data at the prefecture level. Furthermore, we categorized the disputes between Chinese and foreigners in each prefecture into civil and criminal disputes. Our objective is to investigate whether the criminal disputes involving Chinese and foreigners directly contributed to the establishment of criminal divisions, while simultaneously assessing whether civil disputes between Chinese and foreigners directly influenced the establishment of civil divisions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 19,
+        "text": "11 The data is from the Judicial Statistical Yearbook, 1934. Although data for several provinces were missing, we found that prefectures with similar populations also had similar domestic litigation volumes. Therefore, we supplemented the data with information from prefectures with the most similar populations",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 4,
+        "section_name": "4. Empirical Setting",
+        "paragraph_id": 20,
+        "text": "The findings of our analyses are also presented in Table 5. Before testing the impact of different disputes on the establishment of various divisions within the court, we firstly conducted an analysis to understand how different types of disputes influenced the establishment of general courts. In column (3), we examined the effects of criminal disputes on the court establishment. Similarly, in column (4), we tested the effect of civil disputes. Our results indicate that both coefficients are statistically significant; however, the effect of criminal disputes involving Chinese and foreigners is larger and more significant. To further investigate the dominant effect, we combined both types of disputes into a single regression in column (5). Surprisingly, only criminal disputes remained significant, suggesting that their effect outweighs that of civil disputes. Moving on to column (7), we examined the impact of criminal and civil disputes on the ratio of total criminal divisions to civil divisions within a prefecture. Our findings reveal a positive relationship between criminal disputes and the ratio, while civil disputes show a negative relationship. These results suggest that prefectures with a higher prevalence of criminal disputes are more likely to establish additional criminal divisions, whereas those with more civil disputes tend to establish more civil divisions. This indicates a direct link between the nature of disputes and the establishment of specific court divisions. Additionally, two robustness checks in Columns (6) and (8) further validate our findings. The results demonstrate that the ratio of criminal to civil disputes in a prefecture does not affect the establishment of a general court but does have a positive and significant effect on the ratio between criminal and civil court divisions. This further supports our conclusions regarding the specialized response of judicial infrastructure to the types of disputes prevalent in different regions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 5,
+        "section_name": "5. Instrumental Variable Estimates",
+        "paragraph_id": 0,
+        "text": "As mentioned earlier, the establishment of courts was a complex decision. Despite our efforts to account for numerous potential confounding variables, there remains the possibility of omitted factors affecting both Chinese-foreigner disputes and court establishment. To further validate the causal relationship, we employ an instrumental variable approach. The instrument variable was constructed to measure the cost of entering each prefecture and when the foreigners would frequently enter China at the same time. The logic behind is that foreigners need to enter mainland China first before establishing contact with Chinese individuals, which may lead to conflicts. Leveraging the historical context, we observed that during our study period, the four neighbouring countries of China—Korea, Vietnam, India, and",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 5,
+        "section_name": "5. Instrumental Variable Estimates",
+        "paragraph_id": 1,
+        "text": "Burma—were all subject to colonization. And we exploit an exogenous shock that resulted in more foreigners from neighbouring countries entering China. During the 19th century, nationalism emerged as one of the most significant political and social forces in history (Horne, 2012). Especially after World War I, multiple colonized countries experienced uprisings and pursued national independence. And we found if adjacent country experienced outbreaks of the nationalism or anti-colonialism movement, there were several possible ways these events could influence Chinese-foreigners disputes in China. No matter to maintain daily rule or suppress rebellions, the colonial states often stationed troops in these colonized countries. Soldiers stationed at the borders normally found it’s easy to enter China and provoke disputes. Besides, if rebellions in neighbouring countries were supressed, the dissenters might have nowhere else to go but choose to flee to China, leading to a higher presence of foreigners in the country. These dissenters could influence disputes with Chinese individuals in two primary ways: firstly, they might resort to terrorist activities. For instance, following their exile to China (as depicted in Figure A2), Korean dissidents occasionally orchestrated acts of violence, such as targeting Japanese officials with bombs. However, these violent acts often affected Chinese civilians or other foreigners, leading to legal disputes. Secondly, even if dissenters refrained from engaging in terrorism, their presence in China, coupled with limited financial resources, could result in disputes with Chinese locals. There were documented instances of dissenters resorting to robbery or theft (as illustrated in Figure A3). When conflicts arise between Chinese individuals and these foreigners in China, it typically necessitates the collective resolution involving Chinese officials, the foreigners in question, and the colonial power of the foreigners' home country. As a result, the Chinese side tends to favor relying solely on the formal judicial process of the courts for resolution, rather than negotiations. In this way, such Chinese-foreigners disputes might advance the development of court system in China. Conversely, it's also plausible that defeated foreign troops sought refuge in China, potentially sparking conflicts upon their arrival. More specifically, we observed a notable uptick in disputes between Chinese nationals and foreigners in China following the outbreak of independence movements in neighbouring countries. Take Korea as an example, as shown in Figure 4 (a), after the March 1st Movement of 1919, which marked the a very important peak of the independence movement in Korea (Lee, 1999), disputes between Chinese and Koreans in China saw a rapid surge. Figure 4(b) further illustrates the spatial distribution of these disputes, originating from north-eastern provinces, traversing central regions such as Beijing and Tianjin, and extending to southern China. Similarly, disputes involving Vietnam, India, and Burma exhibited a sharp increase",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 5,
+        "section_name": "5. Instrumental Variable Estimates",
+        "paragraph_id": 2,
+        "text": "since 1918, coinciding with pivotal events in each respective country. The Taiyuan Rebellion in 1917 ignited Vietnam's independence movement in the aftermath of WWI. Similarly, the Amritsar Massacre in 1919, where soldiers fired upon protesting crowds, catalysed a series of movements in India. Additionally, Burma experienced a \"National Education Movement\" protesting colonial education in the following year (Li and Wang, 2008). Figure 4(c) visually depicts this surge in disputes related to these regions. Furthermore, Figure 4(d) highlights that disputes linked to Vietnam, India, and Burma predominantly concentrated in southern China, indicating a distinct regional pattern. Based on the evidence provided, the proximity to the nearest neighbouring country serves as a proxy for the degree to which a prefecture may be impacted by external events, such as the influx of exiles into China. However, the timing of such influences varied across prefectures. For instance, prefectures like Beijing were notably influenced by Korea, resulting in an increase in foreigners entering China post-1919. In contrast, prefectures like Guangzhou were more affected by Vietnam, with the influence dating back to 1917 during the Taiyuan Rebellion. Therefore, we construct our instrumental variable by calculating the interaction between the distance to the nearest colonized country and a dummy variable set to 1 after the occurrence of the independence movement in that country 12 . Our instrumental variable is unique because the timing of independence movements in adjacent countries can be considered as exogenous. The specific characteristics of Chinese prefectures had minimal influence on the uprisings in foreign countries seeking independence. However, there is a concern that distance to the adjacent country may be correlated with other omitted variables. For instance, prefectures along the border might be closer to an adjacent country and also more likely to be treaty ports at the same time. To address this concern, we conducted multiple tests to ensure the exogeneity of our instrumental variable. Table A2 demonstrates that our instrument variable is not correlated with whether a prefecture had treaty ports or railways. It also indicates no correlation with Western influences such as the duration of Protestantism, the number of newspapers, and the number of foreign firms. Additionally, the instrument variable has no direct effect on certain domestic factors like lineage density, domestic conflicts, and the number of domestic firms. 12 For prefectures represented by straight lines in Figure A4, they were more likely to be influenced by Korea. Hence, their instrumental variable is the distance to the border times a dummy variable equal to 1 after 1919. For prefectures in areas with grids in Figure A4, their nearest country is Vietnam; thus, the instrumental variable is the distance to the border times a dummy variable equal to 1 after 1917. For prefectures in the grey area in Figure A4, their nearest country is India and Burma, making the instrumental variable the distance to the border times a dummy variable equal to 1 after 1920 (India and Burma are considered as one country here because at that time they were both part of British India).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 5,
+        "section_name": "5. Instrumental Variable Estimates",
+        "paragraph_id": 3,
+        "text": "The instrumented results are reported in Table 6. Before presenting the 2SLS results, we firstly report the reduced form estimates. In column (1), the reduced form estimate is significantly negative as hypothesized, indicating that the further a prefecture was from the adjacent country since the outbreak of colonial rebellions, the fewer courts were established later. Moving to column (2), we report the 2SLS estimated result. The first-stage instrumental variable estimate is significant, and the F-statistic suggests that our instrument variable is not weak. More importantly, the second-stage result is also significant, confirming that disputes between Chinese and foreigners causally led to the establishment of independent courts in modern China. The instrumented coefficient is even larger than the baseline estimate, suggesting potential biases in the estimation due to endogenous factors. In column (3), we employ only criminal reports as the independent variable as a robustness check, considering that the influx of fugitives mostly induces criminal disputes with Chinese. The results remain significant. Columns (4) to (6) present additional robustness checks, using post-1919 as the universal timing of the outbreak of colonial conflicts in neighbouring countries, given the minor differences in the timing of outbreaks for the four countries and the general trend of anti-colonialism after WWI. Both the reduced-form and instrumented results show consistent patterns.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 6,
+        "section_name": "6. The Effect of Court Establishment on Economic Development",
+        "paragraph_id": 0,
+        "text": "In this section, we explore the impact of court establishment. As the establishment of independent court signified an advancement in China's judicial system, we hypothesized that modern courts outperformed traditional departments in handling cases. Besides, we expect prefectures with more modern courts to experience faster economic growth as the establishment of courts marked the initial separation of powers in China. Such separation of powers holds significant value in securing property and political rights, especially when the government is itself a litigant under the court system (Glaeser et al., 2004). A large literature has identified that legal institutions that excel in protecting property rights have positive effects on economic and financial development. Fortunately, we were able to access county-level data to assess whether courts outperformed traditional government departments. Judicial Statistics Yearbook in the Republic of China in 1934 provided data for counties with modern court and those that had not undergone any reforms. This data included information about the employees responsible for handling lawsuits, the number of lawsuits filed, the number of resolved cases, and the instances of",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 6,
+        "section_name": "6. The Effect of Court Establishment on Economic Development",
+        "paragraph_id": 1,
+        "text": "appeals. Based on the information, we constructed three variables to gauge the advancement and effectiveness of each county in implementing court orders. Firstly, we considered the density of legal professionals employed. We normalized the number of judges and forensic experts by the population for each county. The second variable is the efficiency rate of handling lawsuit, calculated as the number of closed lawsuits divided by number of lawsuits been filed in 1934. The last variable we analysed was appeal density, which we measured by the number of lawsuits that had been appealed and normalized it by the population. We opted to use the population as the denominator instead of the total number of lawsuits filed. This choice allowed us to assess how many people were aware of their right to appeal, thus indicating the level of awareness among the population about protecting their interests. This assessment aligns with the fundamental purpose of establishing courts: to create a just and functional system for resolving disputes.is We employed a dummy variable to indicate whether a county had established a court, using it as the independent variable. The three variables constructed earlier were utilized as outcomes, allowing us to test whether court establishment was associated with better performance. The results in Table 7, specifically in columns (1), (3), and (5), reveal that counties with modern courts tended to employ a higher number of legal professionals such as judges and forensic. Additionally, modern courts demonstrated a higher efficiency rate in processing lawsuits. Notably, among the newly received lawsuits in 1934, modern courts detected and processed a greater number of cases compared to traditional government departments. Furthermore, there was a higher awareness among the population about utilizing the appeals process to safeguard their interests. In addition to this analysis, we introduced the court index from Table 3 as an alternative explanatory variable. The findings in columns (2), (4), and (6) displayed similar patterns, reaffirming the observed trends. Finally, we examine the economic effect of the court establishment. Initially, we use the number of industrial firms as a proxy for economic development. In column (1) of Table 8, we find that prefectures with more courts in year t would establish more domestic industrial firms in year t+5 . It's important to note that the establishment of firms takes time, and we did not expect an immediate effect. Next, we sought to determine whether the presence of courts also attracted foreign investment. The result in Column (2) indeed shows a positive correlation: a higher number of courts was associated with a greater influx of foreign firms established within a 5-year period. To further validate our findings, we conducted an additional robustness check using cross-sectional analysis, employing the number of chambers of commerce and the registered",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 6,
+        "section_name": "6. The Effect of Court Establishment on Economic Development",
+        "paragraph_id": 2,
+        "text": "merchants as the outcome variables. Since more traditional merchants tended to join the chambers of their hometown, this analysis allowed us to assess whether the establishment of courts also influenced less advanced industries in China. The results in Column (3) indicated that prefectures with more courts in 1915 led to the establishment of a higher number of chambers of commerce by 1920. Additionally, the number of courts was positively associated with the number of registered merchants (logged) within these chambers, as shown in Column (4). Taken together, these results strongly suggest that the establishment of courts contributed to economic growth in early twentieth-century China. Finally, our analysis aims to investigate whether there is also a persistent effect. As outlined in Table 3, regions experiencing a higher frequency of disputes involving Chineseforeigners subsequently developed a stronger lawyer system following the establishment of modern courts. Consequently, we speculate that despite the disruptions caused by the Cultural Revolution (1966-1976), which led to the departure of many legal professionals from their roles, the resurgence of the legal sector likely occurred in the post-1980s era, fostering a flourishing legal industry. Moreover, our findings in column (5) affirm that regions with a greater number of courts in 1936 indeed exhibited a higher prevalence of private law firms by 2005.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "Our paper examines the origins and consequences of judicial autonomy in historical China. We discovered that conflicts involving foreigners in early 20 th century China gave rise to pressure for institutional solution as the existing system proved ineffective in resolving disputes between Chinese and foreigners. Consequently, prefectures with more disputes between Chinese and foreigners established more modern courts. To identify the casual relationship, we exploit an instrument variable based on the distance to foreign countries, interacting with the exogenous time periods when foreigners were more likely to enter China. The modern court then proved to be more efficient in processing lawsuits as they were typically staffed with a greater number of legal professionals such as judges and forensic experts. The court system also provides a just and functioning channel for people to appeal their needs. And not surprisingly, the court establishment was associated with faster economic development both in modern and traditional sectors.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1513,
+        "section_id": 7,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "The unique historical context of early 20th-century China offers valuable insights into the relationship between Western influence, institutional progress, and economic development in traditional societies. During our sample period, China was semi-colonized by foreign powers. While Western countries did not explicitly demand institutional reforms in China, Sino-foreign disputes unexpectedly drove innovation in China's legal system. Our study underscores that the urgent need to mitigate escalating conflicts can serve as a pivotal impetus for the adoption of modern legal institutions within a traditional societal framework.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    }
+]

@@ -1,18 +1,710 @@
 [
     {
         "paper_id": 1349,
-        "section_id": 5,
-        "section_name": "Appendix",
-        "paragraph_id": 2,
-        "text": "A.1 Stage 1: Static Mimicking Equilibrium In this section we derive Bayesian Nash equilibria of the mimic game given an arbitrary consciousness type and conditional distribution. The value of q a ff ects both mimic and biological costs but only the mimic costs a ff ect incentives to mimic. As such, we temporarily treat the mimic cost as a parameter, denoted C Mim , dropping an explicit reference to q to simplify notation. Similarly, and again temporarily, the share of cooperators ( π qt ) is denoted simply as π . We begin with an intuitive result that allows us to simplify the analysis to follow. Lemma 2. In any Bayesian Nash Equilibrium of the mimic game, all cooperators mimic with probability zero. Proof . Suppose not. Then the match success associated with a non-cooperator persona must be strictly higher than the match success associated with a cooperator persona (to cover the cooperator’s mimic cost). But this implies that non-cooperators will strictly prefer to not mimic. But then the match quality associated with the cooperator persona cannot be lower than the match quality associated with the non-cooperator persona since adopting the cooperator persona ensures a match with a cooperator. This contradicts the requirement that the cooperator persona has a strictly higher match",
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Consciousness, in the sense used here, is the existence of an inner life : the thoughts, sensations, and feelings that constitute ‘what it is like’ to be a system acting in the world. 1 For many, the motivation to study consciousness is encapsulated in David Chalmers’ observation that “There is nothing that ∗ We are grateful for comments received at various conferences and seminars, including Chicago Becker-Friedman IOG, ThReD (MIT Sloan), New York University, University of British Columbia, and University of California San Diego. † Department of Economics, Simon Fraser University. email: cbidner@sfu.ca ‡ Vancouver School of Economics, UBC. email: Patrick.Francois@ubc.ca 1 Although “consciousness” has many meanings in everyday usage, the definition we use is the standard concept used across academic disciplines and is based on Nagel ( 1974 ). Philosophers sometimes refer to it as phenomenal consciousness (Block, 1995 ), while the terms ‘subjectivity’ or a ‘first-person perspective’ are other common synonyms. The contents of consciousness are variously referred to as phenomenal experience, subjective experience, inner experience, and qualia. We formalize the concept in Section 2 .",
         "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "we know more intimately than conscious experience, but there is nothing that is harder to explain” (Chalmers, 1995 ). Among the various puzzles presented by consciousness is the question: Why do we have an inner life at all? Answering this central question is interesting in its own right, but also has the potential to make inroads into related puzzles. 2 Our goal in this paper is to provide an answer to this central question by identifying a fitness value of consciousness and to derive conditions under which it will evolve. No compelling answer currently exists, despite a recent, rapidly-growing, and multi-disciplinary revival of interest in studying consciousness (Nagel, 2012 ). The well-known challenge here is that, once initial intuitions are interrogated and dismissed, consciousness does not seem to do anything (Blackmore & Troscianko, 2018 ; Dennett, 1991 ). After all, it is easy to imagine various cognitive capabilities that would help an agent navigate a given situation, but what additional benefit could possibly arise from the agent merely knowing ‘what it is like’ in that situation? In other words, conditional on the various capacities to act in a given situation, how could it possibly help to also have a subjective experience of that situation? In the words of Fodor ( 2004 ): “As far as anybody knows, anything that our conscious minds do they could do just as well if they weren’t conscious.” Our approach identifies a fitness value of consciousness, one that respects existing arguments for its causal impotency, by looking in a new place; not the neuroanatomy of individuals, but the nature of equilibrium in social interactions and their implied evolutionary dynamics. Our first step is to formalize how consciousness can be embedded in an otherwise standard economic model. We do this in section 2 . Our approach is squarely aligned with the “what it is like” definition, allows for gradations of consciousness, ties subjective experience with behaviour, and is consistent with the above observations that consciousness seems to do nothing. In short, we encode the neurological activity underlying some behaviour in a cognitive state and map these states to one of q ∈{ 0 , 1 ,... } subjective states. The subjective state associated with a cognitive state is interpreted as the inner experience resulting from existing in that cogni2 Among many others, these puzzles include understanding the following questions. What other systems (such as non-human animals, plants, and computers) have inner lives? Will increasingly capable mechanical systems, such as those incorporating increasingly human-like AI, develop consciousness? How do conscious experiences arise from the physical world? The first and second of these questions arise from The Problem of Other Minds and the third from The Mind-Body Problem (Churchland, 2013 ), and, specifically, The Hard Problem of Consciousness (Chalmers, 1995 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "tive state. We allow the value of q to vary across agents and we refer to it as an agent’s consciousness type . Using this formulation, we proceed to analyze how consciousness could have evolved in Section 3 . In line with existing arguments for why consciousness does not do anything, our formulation rules out the possibility that subjective experience has any e ff ect on the behaviour that accompanies it. Consciousness provides an agent with information about “what it is like” to be them in various situations, but, again, this information is useless if we consider individuals in isolation. We uncover a potential role for consciousness by taking a social perspective. 3 The model features agents with a two-dimensional type–economic type and consciousness type–and is social in the sense that an agent’s output depends on their economic type and the economic type of their partner. Again, consciousness type plays no role in production. Rather, its value lies solely in attracting desirable partners. In short, di ff erences in economic type will manifest in di ff erences in inner lives. Observing the inner life of others would therefore allow desirable types to pair, enhancing their fitness. But inner lives are not observable. Instead, agents match on the basis of reports of inner lives which we call personas . Undesirable types can mimic desirable types, but incur a cost when doing so because, unlike desirable types, they need to learn what the inner life of a desirable type consists of. Importantly, higher consciousness types have richer inner lives and are therefore more costly to mimic. At each point in time, agents take the two-dimensional type distribution as given and decide whether to mimic. The Bayes-Nash equilibrium of this signaling-with-matching game then determines the equilibrium payo ff from adopting the persona of a desirable agent. This, in turn, determines the agents’ fitness levels–output net of any mimic costs and biological costs–at that date. The relative fitness levels then drive the joint evolution of economic type and consciousness type. In the long run the distribution of consciousness type is degenerate on a single value and we are primarily interested in this value. We find that consciousness can arise in the long run, under quite specific conditions, because it facilitates signaling. Higher consciousness types 3 The general idea that the origins of consciousness are social in nature is not prominent in consciousness studies, but has been recognized as a possibility – e.g. Barlow ( 1997 ), who notes similar themes in the work of Nietzsche, and more recently by Humphrey ( 2023 )) – but such work is entirely informal. Our work benefits from the standard formal tools of Economics, and, in showing that consciousness arises only under very specific conditions, we show how these tools are indispensable in reaching our conclusions.",
+        "extraction_warnings": "",
+        "tier": 2,
         "matched_keywords": [
-            "Nash Equilibrium",
-            "Bayesian Nash Equilibrium"
+            "Nash Equilibrium"
         ],
         "matched_l1_methods": [
             "Theoretical and Formal Modeling"
         ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "are more costly to mimic, which means that they are more likely to pair with a desirable type in equilibrium. This will produce a fitness gain if this additional economic payo ff compensates for the additional biological cost of higher consciousness. Whereas existing approaches to understanding consciousness largely involve interrogating the information-processing potential of neuronal hardware within individuals, our approach emphasizes the properties of equilibria in social interactions and how these interact with evolutionary dynamics. The formal model yields a number of new insights into the emergence of consciousness. A necessary feature of the economic environment is that output increases in the economic type of partners but decreases in one’s own economic type: i.e. a Prisoners’ Dilemma (e.g. tragedies of the commons and public goods problems). Moreover, we show that only certain types of Prisoners’ Dilemmas can possibly lead to non-trivial consciousness. We show that mimicking costs can’t be too small nor too large, and that any parameterization of mimic costs implies an upper bound on consciousness complexity even in the absence of biological costs. Yet, we show how the model can generate arbitrarily high consciousness levels by choosing an appropriate combination of mimic and biological costs. In deriving the co-evolution of preferences and consciousness, the model draws a novel connection between consciousness and ‘prosocial’ preferences. We know of no existing research that formalizes (phenomenal) consciousness, proposes a fitness value, and derives conditions under which it will evolve. Within Economics, there is no existing work on consciousness at all, yet our model draws from and extends research on signaling-withmatching and preference evolution. Models of signaling-with-matching involve agents taking costly actions in order to enhance their matching prospects (e.g. Cole et al. ( 1995 ), Hoppe et al. ( 2009 ), Hopkins ( 2012 ), and Bidner ( 2010 , 2014 )). In our model, the costly action is reporting on the inner life of a desirable economic type, whereby the cost of the action is the amount of mimicry required and is thus higher when mimicking higher consciousness types. The addition of second dimension of type that only a ff ects signaling costs is new, but the key di ff erence to these models is the addition of evolutionary dynamics. That is, our model allows us to endogenize the distribution of economic types. Less obviously, an evolutionary approach eliminates the perennial issue of equilibrium selection in signaling models; positive masses of each possible type means there is no freedom to support behaviour by imposing suitable “o ff -equilibrium” beliefs. Moreover, existing models in this literature assume some form of complementarity between economic types (to",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "ensure single-crossing) but our interesting results rely on this not being the case. 4 A standard model of preference evolution considers a one-dimensional type 5 and concludes that non-selfish preferences can emerge to the extent of assortative matching on types (see Robson and Samuelson ( 2011 ) or Alger ( 2023 ) for overviews). The assortativeness may arise from kin relationships (Kay et al., 2020 ), from the extent to which types are observable (Frank ( 1987 ), Dekel et al. ( 2007 )), or may be simply taken as exogenous (Alger & Weibull, 2013 ). In contrast, we consider the evolution of a two-dimensional type where the new dimension (consciousness) a ff ects incentives to mimic and therefore plays a central role in endogenously determining the extent of positive assortative matching. That is, being able to recount the details of a desirable agent’s inner life acts as a “secret handshake” of sorts. Unlike existing work (Robson ( 1990 ), Wiseman and Yilankaya ( 2001 )), mimics do not cause agents to abandon a secret handshake for another, leading to cycles, but, rather, they provide the evolutionary pressure for what amounts to a more elaborate handshake (i.e. additional conscious complexity). The paper proceeds as follows. Section 2 describes how we formalize consciousness and Section 3 develops the evolutionary model of consciousness. The main results are presented in Section 4 , where we present conditions under which consciousness emerges via natural selection. Section 5 discusses our findings and their relevance for the literature on consciousness. Section 6 concludes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "Before analyzing the evolution of consciousness we must clearly formalize what we mean by it. Our goal is to remain faithful to the standard (but entirely informal) definition, based on Nagel ( 1974 ), that emphasizes 4 We get single-crossing from the fact that mimic costs are not incurred by those who faithfully report their inner life. See Kartik ( 2009 ) for a (non-evolutionary) model of signaling with lying costs. Because our mimic costs are determined by consciousness type, our model can be seen as endogenizing lying costs in these sorts of models. 5 Heller and Mohlin ( 2019 ) consider the evolution of a two-dimensional type, where the new dimension is a capacity for deception. Although not an evolutionary model, Hopkins ( 2014 ) shows how an ability to “mentalize” (form a theory of mind) enhances the fitness of altruists in a static setting. In that context, mentalizing means getting a more precise signal about the prior actions of partners in a long term relationship, and is therefore unrelated to consciousness.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "the subjective and experiential nature of a conscious being. That is, we want our formalization to capture the idea that there is “something that it is like” to be a conscious being in particular states. Broadly speaking, our approach involves first endowing agents with cognitive states and then attaching subjective states to each. Consider a standard economic model in which an agent of economic type θ ∈ Θ faces a decision problem embedded in environment ω ∈ Ω . As usual, the economic type encapsulates the agent’s preferences over outcomes, and the environment encapsulates the map from behaviour to outcomes. The agent’s behaviour is then taken to be one that induces the mostpreferred outcome. So far so good. This general approach to understanding human behaviour has proved useful, in part, because it abstracts from the murky neurological details that constitute the agent’s decision making process. 6 Yet, we can always identify the details of a decision making process with a cognitive state . In particular, we can say that cognitive state φ ∈ Φ produces a behavioural response R ( φ ) so that the response of an agent with economic type θ to the decision problem posed in environment ω , denoted r ( θ,ω ), was produced by some cognitive state in Φ ( θ,ω ) ≡ R − 1 ( r ( θ,ω )). To be sure, this explicit consideration of cognitive states is redundant in the standard model. We introduce it only to formalize how we think about consciousness. In particular, it allows us to o ff er an objective, third person, description of behaviour. To introduce a subjective, first person, description of “what it is like” for the agent when faced with the decision problem posed in environment ω , we introduce the notions of consciousness type and subjective states . We endow agents with a consciousness type, q ∈ { 0 , 1 ,... } . When an agent of consciousness type q is in cognitive state φ , their subjective state is given by a function s q : Φ →{ 0 , 1 ,...,q } . That is, s q ( φ ) is interpreted as “what it is like”, from the agent’s point of view, to be in cognitive state φ . 7 Higher values of q are therefore interpreted as the range of inner experiences available to the agent. For instance, an agent with q = 0 is non-conscious because every cognitive state maps to the same (null) experience. Agents with q = 1 are minimally conscious because some of their cognitive states are accompanied by their single subjective experience (i.e. those in s − 1 1 (1)) whereas their other cognitive states have no experience 6 The approach essentially treats the agents of economic models as utility-maximizing algorithms, making it clear that economic modelers (at least implicitly) see consciousness as inessential for understanding behaviour. 7 The ‘Hard Problem of Consciousness’, made famous by Chalmers ( 1996 ), can be thought of as understanding the microfoundations of this map.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "attached (i.e. those in s − 1 1 (0)). If we let r ( θ,ω ) denote the response of an agent of economic type θ to the decision problem embedded in environment ω , then “what it is like” to be a ( θ,q ) type agent in environment ω is given by l θ,q ( ω ) ≡ s q ( r ( θ,ω )). The function l θ,q describes the inner life of a ( θ,q ) type agent: it reveals “what it is like” to be the agent as they traverse the various environments composing their life. Note that inner lives are expected to vary with ( θ,q ). They vary with θ because the map from environments to cognitive states varies with economic type (since di ff erent economic types behave di ff erently in at least some environments), and they vary with q because the map from cognitive states to inner experiences varies with consciousness type. Our approach to modelling consciousness has a few key features worth emphasizing. First, the notion of consciousness type allows for gradations of consciousness rather than treating it as the lights being on or o ff . Second, the notion of cognitive states connects consciousness with behaviour. More importantly, it emphasizes how variation in behaviour among agents suggests variation in inner experiences. To the economist’s understanding that di ff erent preferences can be inferred from di ff erences in behaviour we add that di ff erent preferences also can be inferred from di ff erences in inner lives. Third, our approach is consistent with the view that consciousness seems responsible for directing behaviour even though closer examination reveals that it does not. Experience and behaviour co-move in predictable ways, but this is because of an ‘omitted variable’ that causes both: the cognitive state. That is, the approach is consistent with the epiphenomenalist’s view that subjective experience itself has no e ff ect on the agent’s response to the decision problem that generated the experience. But, clearly, if we want an evolutionary theory of consciousness that is built on this formalization, then the subjective experience must have an e ff ect on some behaviour; if not in the environment responsible for the experience, then in some other. In the following section we propose that an inner life merely endows agents with information about “what it is like” to be them in various environments. This information is not inherently fitness enhancing: the value of consciousness, if any, arises only because individuals are social. Specifically, the value of information materializes, if at all, in the equilibrium of a signaling game in which reports of inner lives are (i) used to attract partners, and (ii) costly to mimic. We now turn to such a theory.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "This section lays out a formal model with which to analyze the evolution of consciousness. We begin by describing how the decisions of agents of various types translate into fitness, and then describe how fitness di ff erentials drive the evolution of types.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "3.1 Main Ingredients In broad strokes, the model features agents of various types that adopt personas in the attempt to find production partners. This results in fitness levels which then drives the evolution of types.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "3.1.1 Agents At any point in time, t ∈ R + , there is a continuum of agents. Each agent is endowed with a two-dimensional type, ( θ,q ), where θ ∈ Θ ≡{ 0 , 1 } is the economic type and q ∈{ 0 , 1 ,... } is the consciousness type . Let Π t ( θ,q ) denote the population share of ( θ,q ) types at date t , and let π qt ≡ Π t (1 ,q ) / [ Π t (0 ,q )+ Π t (1 ,q )] denote the proportion of agents with economic type θ = 1 among those with consciousness type q at time t .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "3.1.2 Production Our model is social in the sense that agents produce in pairs. We model production as a Prisoners’ Dilemma and interpret the economic type as an indicator for whether they are a cooperator ( θ = 1) or non-cooperator ( θ = 0). Given the agent’s economic type and that of their partner, ̃ θ , the agent’s output is given by u ( θ, ̃ θ ), where u (1 , 0) ≤ u (0 , 0) ≤ u (1 , 1) ≤ u (0 , 1) . (1)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "That is, an agent’s output is higher when they are paired with a cooperator, but also when they themselves are a non-cooperator. As will become clear, it is useful to define the benefit of pairing with a cooperator for type θ : δ θ ≡ u ( θ, 1) − u ( θ, 0) . (2) The prisoners’ dilemma structure implies 0 < u (1 , 1) − u (0 , 0) < min { δ 0 ,δ 1 } but it does not restrict the relative magnitudes of δ 0 and δ 1 . We refer to the",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 15,
+        "text": "case of δ 0 > δ 1 as ‘decreasing di ff erences’, the case of δ 0 < δ 1 as ‘increasing di ff erences’, and the case of δ 0 = δ 1 as ‘equal di ff erences’. In order to avoid trivial cases, we assume u (1 , 1) − u (0 , 0) > ψ 0 . (3) That is, we ignore cases where the biological cost of even the most rudimentary consciousness ( q = 1) outweighs the full gains from cooperation. Consciousness can’t possibly emerge in such cases, but purely because of biological costs. Note that, conditional on partner’s economic type, an agent’s consciousness type has no e ff ect on output. If consciousness is relevant at all, it is purely because it a ff ects who matches with whom.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 16,
+        "text": "3.1.3 Matching Agents strive to pair with desirable partners by adopting a persona . By this we mean an agent’s public projection of their inner life. This projection may be a truthful reflection of their actual inner life, or it may be an attempt to mimic the inner life of the other economic type. 8 We assume an agent’s partner is randomly selected from those who share the agent’s persona (or randomly selected from the population if no one shares the agent’s persona). We are agnostic as to the finer details of how mimicking is achieved and instead parameterize the cost of mimicry to capture various possibilities. An agent’s consciousness type a ff ects the cost of mimicking the other economic type. In particular, those with a higher consciousness type are more costly to mimic (owing to the greater richness of the mimicked inner life). The mimic cost is just some non-negative and increasing function of q : C Mim ( q ) ≡ κ 0 + κ · c ( q − 1) , (4) where c is a strictly increasing function with c (0) = 0, κ 0 ≥ 0 is the value of C Mim (1) and acts as a fixed cost, whereas κ ≥ 0 is a parameter that scales 8 To simplify the exposition, we rule out the possibility of mimicking a di ff erent consciousness type. This is innocuous under the reasonable assumption that mimicking a higher consciousness type involves a mimic cost which is at least as large as the biological cost of actually possessing that higher consciousness type. In this case, agents that would mimic a di ff erent consciousness type will never survive natural selection since they must be less fit than otherwise identical agents that are actually of the mimicked consciousness type.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 17,
+        "text": "the marginal cost of mimicking. The critical feature of this formulation is that an agent’s consciousness type q determines how costly it is for other agents to mimic them.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 18,
+        "text": "3.1.4 Payo ff s An agent’s economic payo ff is simply their output minus any mimic costs. To be more explicit, let σ ( ̃ θ | θ,q ; π qt ) denote the probability that a ( θ,q )- type adopts the persona of a ( ̃ θ,q ) type when the population proportion of cooperators among those with consciousness type q is π qt . The match quality associated with the ( ̃ θ,q ) persona is the probability that an agent with a ( ̃ θ,q ) persona pairs with a cooperator. Given σ , this match quality is therefore: p ( ̃ θ,q ; σ,π qt ) = σ ( ̃ θ | 1 ,q ; π qt ) · π qt σ ( ̃ θ | 1 ,q ; π qt ) · π qt + σ ( ̃ θ | 0 ,q ; π qt ) · (1 − π qt ) . (5) Thus, if an agent of type ( θ,q ) adopts the persona of type ( ̃ θ,q ), then their economic payo ff is their expected output net of mimic costs:",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 19,
+        "text": "v ( ̃ θ | θ,q ; σ,π qt ) ≡ p ( ̃ θ,q ; σ,π qt ) · u ( θ, 1) + (1 − p ( ̃ θ,q ; σ,π qt )) · u ( θ, 0) − I ( ̃ θ , θ ) · C Mim ( q ) , (6) where I ( ̃ θ , θ ) is an indicator for whether the agent mimics. As usual, a Nash equilibrium is a profile of strategies, σ ∗ ( ·| θ,q ; π qt ), such that X ̃ θ ∈ Θ σ ∗ ( ̃ θ | θ,q ; π qt ) · v ( ̃ θ | θ,q ; σ ∗ ,π qt ) ≥ X ̃ θ ∈ Θ σ ( ̃ θ | θ,q ; π qt ) · v ( ̃ θ | θ,q ; σ ∗ ,π qt ) (7) for all σ ( ·| θ,q ; π qt ) ∈ ∆ ( Θ ) and all ( θ,q ; π qt ). Consciousness involves a biological cost, whereby higher consciousness types incur a greater cost because they produce a greater variety of experiences. This cost is normalized to zero for non-conscious agents, q = 0, and for q ≥ 1 is given by C Bio ( q ) ≡ ψ 0 + ψ · b ( q − 1) (8) where b is a strictly increasing function with b (0) = 0, ψ 0 > 0 is the value of C Bio (1) and acts as a fixed biological cost, and ψ > 0 parameterizes the marginal biological cost.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Nash Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 20,
+        "text": "The fitness of ( θ,q )-types is their Nash equilibrium economic payo ff net of the biological costs associated with consciousness: f ( θ,q | π qt ) ≡ X ̃ θ ∈ Θ σ ∗ ( ̃ θ | θ,q ; π qt ) · v ( ̃ θ | θ,q ; σ ∗ ,π qt ) − C Bio ( q ) . (9)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Nash Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 21,
+        "text": "3.2 Dynamics Given the above main ingredients, we can assign agents a fitness level for any given distribution of types. We now describe how the distribution of types evolves over time as fitter types become more common. The conditional type distribution evolves according to standard replicator dynamics, which here implies: ̇ π qt = h f (1 ,q | π qt ) − ̄ f ( q | π qt ) i · π qt , (10) where ̄ f ( q | π qt ) is the average fitness of those with consciousness type q : ̄ f ( q | π qt ) ≡ π qt · f (1 ,q | π qt ) + (1 − π qt ) · f (0 ,q | π qt ) . (11) The long run conditional share of cooperator types, denoted π ∗ q , is a stable steady state of ( 10 ). The long run fitness associated with consciousness type q is given by: f ∗ ( q ) ≡ ̄ f ( q | π ∗ q ) . (12) Comparing long run fitness across q allows us to then derive the long run marginal distribution of consciousness types. It is natural to suppose that, in the long run, the marginal distribution of consciousness types puts all of its weight on the global maximizer of f ∗ . However, this approach is too permissive in the sense that it does not respect the ‘uphill’ nature of evolution. To illustrate, suppose it turned out that long run fitness is globally maximized at q = 2, yet non-conscious agents ( q = 0) are fitter than minimally conscious agents ( q = 1). Although q = 2 is the global maximizer, it is not clear how such agents arise given that q = 1 types are less fit than q = 0 types. If we start with unconscious agents ( q = 0), then mutations to q = 1 arise. But this mutant population will die out if they have lower fitness than the q = 0 incumbents, making it implausible that q = 2 mutants will arise. In this case, the population gets ‘stuck’ at q = 0 rather than evolving to the global maximum. More generally, consciousness will not evolve if f ∗ (0) ≥ f ∗ (1), regardless of how f ∗ behaves at q > 1.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Replicator Dynamics"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 22,
+        "text": "To capture the uphill nature of evolution, we take the long run marginal distribution of consciousness types to put all of its weight on the ‘smallest local maximizer’ of f ∗ , q ∗ ≡ min { q ∈ N 0 | f ∗ ( q ) ≥ f ∗ ( q + 1) } , (13) which we refer to as the long run consciousness level . We emphasize that our approach here is conservative: it can only make it more di ffi cult for consciousness to arise since the smallest local maximizer can never be greater than the global maximizer. We say that long run consciousness is trivial if q ∗ ≤ 1 and non-trivial otherwise. We refer to π ∗ ≡ π ∗ q ∗ as long run cooperation , and f ∗ ≡ f ∗ ( q ∗ ) as the long run fitness .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 0,
+        "text": "We describe the conditions under which non-trivial consciousness may emerge in the long run. Doing so reveals a fundamental upper bound on long run consciousness, but we show that the model can generate arbitrarily large long run consciousness. To get there, we begin with some general observations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 1,
+        "text": "4.1 Preliminary Observations We begin with some preliminary observations that will help us simplify the subsequent presentation. First, long run outcomes for non-consciousness agents–i.e. those with consciousness type q = 0–are straightforward: since they are unable to differentiate cooperators from non-cooperators, cooperators will be driven to extinction. Thus π ∗ 0 = 0 and f ∗ 0 = v ∗ 0 = u (0 , 0). This then provides the fitness level that must be exceeded if long run consciousness of some form is to evolve. Second, only non-cooperators mimic in equilibrium (see Lemma 2 ). This intuitive result allows us to focus on the incentive for non-cooperators to mimic. Third, if, for some q , the mimic cost is higher than the benefit from pairing with a cooperator–i.e. if C Mim ( q ) ≥ δ 0 –then clearly no agent of consciousness type q (or higher) mimics. The long run outcomes for such agents are also straightforward: since no agent mimics, there is perfect segregation on economic type and therefore non-cooperators will be driven to extinction. Thus C Mim ( q ) ≥ δ 0 implies π ∗ q = 0 and f ∗ q = v ∗ q = u (1 , 1).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 2,
+        "text": "For all other values of q , the Nash equilibrium of the mimicking game involves non-cooperators mimicking with a positive probability (Lemma 3 ). Equilibrium match quality lies in [ p IM ( q ) , 1], where p IM ( q ) ∈ (0 , 1] is the match quality that makes non-cooperators indi ff erent to mimicking.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Nash Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 3,
+        "text": "4.2 When does non-trivial consciousness emerge? We begin by showing that non-trivial consciousness can only arise when (i) payo ff s display decreasing di ff erences, and (ii) the fixed cost of mimicry is su ffi ciently large, but not too large. We explain how the fixed mimicry cost cannot be too large because of a fundamental upper bound. Proposition 1 (First Necessary Condition for Non-Trivial Consciousness) . Non-trivial consciousness arises only if payo ff s display decreasing di ff erences: q ∗ > 1 ⇒ u (1 , 1) − u (1 , 0) < u (0 , 1) − u (0 , 0) . (14)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 5,
+        "text": "Decreasing di ff erences is necessary for consciousness because, without it, (i) the population share of cooperators among minimally conscious agents ( q = 1) goes to either zero or one, and (ii) this implies consciousness cannot evolve further. We explain each of these in turn.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 6,
+        "text": "Without decreasing di ff erences, one economic type dies out. Without decreasing di ff erences, population dynamics are ‘self-propelling’ in the sense that a fitness advantage at some conditional distribution of economic types induces a change in this distribution which weakly increases the fitness advantage, thereby inducing further changes in the distribution, and so on until the conditional distribution of economic types hits a corner. To see this formally, note that the evolution of economic types, described by ( 10 ), can be written: ̇ π qt = ∆ ( π qt ,q ) · π qt · (1 − π qt ) . (15) where ∆ ( π qt ,q ) ≡ f (1 ,q | π qt ) − f (0 ,q | π qt ) is the fitness advantage of cooperator types over non-cooperative types. Letting p ∗ ( π qt ) denote the Nash equilibrium match quality for agents with q -consciousness at time t , the fitness of cooperators can be written: f (1 ,q | π qt ) = u (1 , 0) + p ∗ ( π qt ) · δ 1 − C Bio ( q ) , (16)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Nash Equilibrium"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 7,
+        "text": "whereas the fact that some non-cooperators mimic in equilibrium (Lemma 3 ) means that the fitness of non-cooperators is the fitness of mimickers: f (0 ,q | π qt ) = u (0 , 0) + p ∗ ( π qt ) · δ 0 − C Mim ( q ) − C Bio ( q ) . (17) Therefore, the di ff erence in fitness is: ∆ ( π qt ,q ) = p ∗ ( π qt ) · [ δ 1 − δ 0 ] + C Mim ( q ) − [ u (0 , 0) − u (1 , 0)] . (18) The value of p ∗ is weakly increasing in π qt (Lemma 3 ), and therefore the sign of the impact of π qt on ∆ ( π t ,q ) is the sign of δ 1 − δ 0 . Without decreasing di ff erences, the sign is non-negative and therefore ̇ π qt is weakly increasing in π qt . This implies there may be multiple stable steady states, but all of them are at the corners: π ∗ q ∈{ 0 , 1 } .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 8,
+        "text": "Non-trivial consciousness cannot arise if one economic type dies out. If one of the economic types dies out among the minimally conscious agents, then consciousness can’t evolve further. The reason is an application of the following principle. Lemma 1 (Coexistence Principle) . If π ∗ ̃ q ∈{ 0 , 1 } for some ̃ q ≥ 1 , then q ∗ ≤ ̃ q . This principle says that the long run coexistence of economic types among ̃ q -conscious types is a necessary condition for long run consciousness to exceed ̃ q . The proof is straightforward and instructive, so we present it here. Consider some consciousness level, ̃ q ≥ 1. If evolution results in all agents with consciousness ̃ q being non-cooperators (i.e. π ∗ ̃ q = 0), then their matching prospects are identical to the matching prospects of the non-consciousness agents. But then ̃ q -consciousness levels have a lower fitness than non-consciousness agents because of the biological costs associated with the consciousness agents. Thus, consciousness cannot evolve beyond ̃ q . Conversely, if evolution results in all ̃ q -consciousness agents being cooperators (i.e. π ∗ ̃ q = 1), then their matching prospects are the most favourable possible. But then ̃ q -consciousness agents must have a higher fitness than agents at any higher consciousness level since they have a lower biological cost. Once again, consciousness cannot evolve beyond ̃ q . Thus, without decreasing di ff erences, the population evolves to a corner and this ensures trivial long run consciousness. But this need not be true with decreasing di ff erences. In this case, the relative fitness of cooperators decreases as they become more common in the population. If an economic type has a fitness advantage over the other at some conditional",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 9,
+        "text": "distribution, then the resulting evolution of the conditional distribution will act to o ff set that fitness advantage. This opens the possibility that the long run conditional share of cooperators among the minimally conscious is interior: π ∗ 1 ∈ (0 , 1). But, even in such a case, non-trivial consciousness may not arise. For example, even if minimally conscious agents enjoy a superior match quality in the long run, this additional fitness this delivers may be insu ffi cient to o ff set the biological cost associated with minimal consciousness. Proposition 2 (Second Necessary Condition for Non-Trivial Consciousness) . Non-trivial consciousness arises only if the fixed mimicking cost, κ 0 , is neither too large nor too small: q ∗ > 1 ⇒ C ′ < κ 0 < C, (19) where C ≡ ( u (0 , 0) − u (1 , 0)) · δ 0 δ 1 , C ′ ≡ C + δ 0 − δ 1 δ 1 · ψ 0 , and C ≡ u (0 , 1) − u (1 , 1) . Proof: See Appendix .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 10,
+        "text": "The level of the mimic cost for minimally conscious agents, κ 0 , is relevant because it a ff ects the long run proportion of cooperators among them, π ∗ 1 . In particular, equation ( 18 ) shows that higher values of κ 0 raises ∆ ( π qt ,q ) and, therefore, the proportion of cooperators among minimally conscious agents, π ∗ 1 . This, in turn, raises the long run fitness of minimally conscious agents, f ∗ 1 , since such agents more readily match with cooperators. In short, the long run fitness of minimally conscious agents is increasing in κ 0 . Mimic costs can’t be too small. If the mimic cost is too small– κ 0 ≤ C ′ – then the long run fitness of minimally conscious agents is too low. Specifically, it is lower than the fitness of non-conscious agents and therefore non-trivial consciousness can’t arise. If mimic costs are particularly small– κ 0 ≤ C –then minimally conscious cooperators actually die out. This is a “Green Beard” situation: any period in which cooperators are able to profitably encounter each other is short-lived as non-cooperators move in. Cooperators will not die out for κ 0 ∈ ( C,C ′ ), yet will survive in a small enough proportion that the minimally conscious agents have a lower fitness than non-conscious agents (because of the biological costs).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 11,
+        "text": "Mimic costs can’t be too large. On the other hand, if the mimic cost is too large– κ 0 ≥ C –then non-trivial consciousness cannot evolve because cooperators come to dominate among the minimally conscious ( π ∗ 1 = 1). The",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 12,
+        "text": "coexistence principle then rules out the possibility of consciousness evolving further. The long run extinction of non-cooperators among the minimally conscious is not necessarily because κ 0 is so high as to kill o ff the incentive to mimic, condemning non-cooperators to pair with other noncooperators. Rather, minimally conscious non-cooperators die out because the high mimic cost implies a fitness disadvantage so large that it persists even as they approach extinction.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 13,
+        "text": "4.3 Human Level Consciousness? The argument that mimic costs cannot be too large suggests a larger point: long run consciousness is fundamentally bounded, in the sense that q ∗ will be finite even in the absence of biological costs. In short, the coexistence principle says that consciousness cannot evolve beyond the point at which mimic costs are su ffi ciently large to cause non-cooperators to die out. But such a point will eventually be reached at some consciousness level. In other words, the fundamental upper bound on long run consciousness, denoted ̄ q , is given by the smallest conscious level with an associated mimic cost that exceeds C : q ∗ ≤ ̄ q ≡ min { q | C Mim ( q ) ≥ C } . (20) Note that this upper bound is decreasing in the marginal mimic cost parameter, κ . We have seen that many parameter configurations lead to evolutionary paths that terminate in trivial consciousness and therefore look nothing like human level consciousness. Even if non-trivial consciousness does evolve, the existence of a fundamental upper bound suggests there is no guarantee that it will be large enough to plausibly resemble human-level consciousness. For instance, the bound implies that long run consciousness can’t be made arbitrarily large by taking the marginal biological cost, ψ , to zero. Similarly, taking the marginal mimic cost, κ , to zero will make the upper bound arbitrarily large but it will not lead to arbitrarily large consciousness. Rather, it will lead to trivial consciousness. This is because total mimic costs will become increasingly similar for all q ≥ 1, implying that agents get the same long run economic payo ff for all q ≥ 1. But biological costs are lowest, and thus fitness the highest, at q = 1. 9 Given the above observations, an important question is whether the model can generate long run consciousness large enough to resemble the 9 In Lemma 7 we show that long run consciousness is weakly decreasing in ψ and is hump-shaped in κ .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 14,
+        "text": "richness of human consciousness. While we do not have strong priors as to the complexity of human level consciousness, our next result shows this does not matter because the model can generate arbitrarily large long run consciousness if parameters are appropriately chosen. Proposition 3 (Consciousness Can Be Made Arbitrarily Large) . Assume decreasing di ff erences. For any ̃ q , there exists positive parameters ( { κ 0 ,κ } , { ψ 0 ,ψ } ) such that q ∗ ≥ ̃ q . Proof: See appendix .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 15,
+        "text": "Proposition 3 indicates that, starting from a population of non-conscious agents, any level of conscious complexity one supposes to correspond to human level consciousness, ̃ q , will be reached by evolution for some parameter configurations of this model. The fixed cost parameters ( κ 0 ,ψ 0 ) are chosen so that the necessary condition from Proposition 2 is satisfied. The value of κ is then chosen small enough that the fundamental upper bound exceeds ̃ q . Since κ > 0, the mimic cost strictly increases with q . Since ̃ q < ̄ q , the long run economic payo ff is strictly increasing in q (up to at least ̃ q ) as increasingly costly mimicking leads to increasingly superior long run match qualities. The value of ψ is then chosen small enough that biological costs are su ffi ciently negligible that long run fitness at ̃ q is higher than at any lower value of q . Finally note that, apart from decreasing di ff erences, the result is independent of the parameters of the prisoner’s dilemma game. Specifically, there are parameters under which any level of consciousness can be attained irrespective of the gains from cooperation relative to defection and the distance between cooperation and equilibrium payo ff s in the prisoner’s dilemma game.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 16,
+        "text": "4.4 Characterizing Long Run Consciousness We now move from necessary conditions to a characterization. This will allow us broader insight into the conditions under which non-trivial consciousness will emerge. Proposition 4. Under decreasing di ff erences, the di ff erence in long run economic payo ff between q -consciousness types and non-conscious types is: v ∗ q − v ∗ 0 = Φ ( q ) ≡ max { 0 , min { φ ( q ) , ∆ }} , (21)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 17,
+        "text": "where ∆ ≡ u (1 , 1) − u (0 , 0) is the gains from cooperation and φ ( q ) ≡ δ 1 δ 0 − δ 1 · h C Mim ( q ) − C i . (22)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 18,
+        "text": "Proof: See appendix . Since f ∗ q − f ∗ 1 = v ∗ q − v ∗ 1 − C Bio ( q ), we have that q ∗ is the smallest local maximizer of: F ( q ) ≡ Φ ( q ) − C Bio ( q ) . (23)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 19,
+        "text": "The necessary conditions on the mimic cost are apparent. Since F (0) = 0, the smallest local maximizer is q ∗ = 0 if F (1) ≤ 0 (this is equivalent to C Mim ( q ) ≤ C ′ ). Similarly, the smallest local maximizer is q ∗ = 1 if Φ (1) = ∆ (this is equivalent to C Mim ( q ) > C ). The fundamental upper bound is the smallest q for which Φ ( q ) = ∆ . But the characterization is useful for evaluating the e ff ect of parameters. For instance, suppose we parameterize payo ff s letting α 1 ≡ u (0 , 1) − u (1 , 1), ∆ ≡ u (1 , 1) − u (0 , 0), and α 0 ≡ u (0 , 0) − u (1 , 0). Each of these are nonnegative and decreasing di ff erences amounts to α 1 > α 0 . We can show that long run consciousness is weakly increasing in the gains from cooperation, ∆ , since this raises the level and the slope of Φ . Yet, the fundamental upper bound is una ff ected by ∆ and therefore q ∗ will not become arbitrarily large.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 20,
+        "text": "4.5 How are consciousness and cooperation related? The model describes the coevolution of consciousness type and economic type and thus says something about the relationship between consciousness and cooperation. Biologically costly consciousness survives evolutionary selection because it helps cooperators match better and reap mutual fitness gains. Consciousness and cooperation are thus symbiotically connected in our setting. This allows us to derive a necessary condition for the existence of consciousness. Corollary 1 (Economic Correlates of Consciousness) . A population’s constituents are conscious only if the population has a positive proportion of cooperator types. The model features an “if and only if” relationship between consciousness and cooperation. But the su ffi ciency is an artifact of our framework being devoid of the other mechanisms by which (non-payo ff maximizing)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 2,
+        "section_name": "Main Results",
+        "paragraph_id": 21,
+        "text": "cooperators could survive fitness based selection. So it does not follow that the presence of non-kin based cooperation necessarily implies the presence of consciousness. But the prediction that absent non-kin cooperation consciousness cannot evolve would seem to rule out consciousness in many species.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "5.1 How does our explanation avoid our critique of existing theories? We have noted existing theories of consciousness largely amount to describing some mental activity purportedly associated with consciousness and then explaining the function of that activity without explaining why consciousness per se is needed. We now elaborate on how our model avoids this criticism.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "5.1.1 Why the Properties of Consciousness? The literature on consciousness within philosophy has asked the following question. “What is the (or a) function that consciousness and consciousness alone could perform?”. The answer, which Chalmers ( 1995 ) and many others have argued, is none. For any possible function put forward as requiring consciousness, one counter-posits an alternative, more parsimonious, mechanism that bypasses the experiential component yet yields the same function. For example, one may posit that consciousness is required to deliberate on a plan of action. In principle a plan can be improved by subjecting it to scrutiny and deliberation. This begs the question of why scrutiny and deliberation require consciousness? What is it about these that require subjective first-person experiences? Whatever mental modules are applied to improve a plan, there seems nothing functionally gained by adding an experiential accompaniment to these modules. Similar reasoning can be applied to rule out consciousness arising due to any other posited functions; see Chalmers ( 2010 ) p. 16. Here, we use the model to proceed in a di ff erent direction. Instead of asking what potential useful functions require a subjective experiential accompaniment? The answer to which seems to be nothing. We instead ask: “What properties would a function that helps cooperators match by sharing subjective experienced content have to have in order for that function to be selected by evolution?” According to our theory, specific properties",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "are likely and, in some cases, essential for such a function to survive selection. We show that key features of consciousness are thus predicted by our theory, and others, though not predicted, can be understood as likely to arise under evolutionary pressure.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "Privacy Inner experiences are private; see Léon ( 1997 ). Could evolution have alternatively selected observable inner experiences? The answer is no if it evolved to facilitate cooperator matching. If agents’ inner experiences were observable, perhaps imperfectly as in Frank ( 1987 ), then there would be no payo ff benefit to the experiential component; and costly inner experiences could not survive selection pressure. If agents could directly observe the inner experiences of each other they would not need to rely on messages of such experience to match, but would know them immediately, and thereby know type as well. With type known, there would no longer be any additional fitness advantage to generating subjective first-person experiences. Whatever could be messaged to a potential partner would already be known, and mimicry would not be possible. So any metabolic costs borne of generating experience would be costs without fitness benefit, and would be selected against. Cooperation would emerge directly if type were observable, because cooperators would be known and directly rewarded. But the experiential component – that is consciousness itself – would be redundant. So, according to our model, if subjective inner experiences evolved to facilitate cooperator matching, then these must necessarily be private in nature. Publicly observable subjective experiences could not evolve.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "Type Specificity In principle, it is conceivable that we may have evolved inner experiences that bear no correspondence with economic type. Yet, for evolution to select experience for the reasons posited in our model this would again not be possible. Agents of di ff erent types must have distinct experiential labels over at least some common cognitive states. For example, a cooperator type has an inner experience of ‘cheating’ that is systematically distinct from a non-cooperator. This makes projecting an inauthentic persona (learning the inner experiences of another type so as to message consistently about them) costly (and equally so for all types). 10 Our model therefore predicts that, necessarily, subjective inner experiences vary by economic type (as there is evidence that they do in reality; see appendix section C.2 ). 10 In contrast to, for example, Kartik ( 2009 ) who assumes a distaste for deception.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "Seriality Why are humans only able to be consciously aware of a single percept at once? Though possible that this simply results from a hard physiological constraint that is itself biologically costly to overcome, this would seem unlikely since the brain is highly parallel in most other cognitive processes, and able to undertake many complex tasks of homeostasis, for example, and non-conscious processing simultaneously. In contrast, humans are strangely serial in their stream of consciousness. Many experiments have shown that we cannot simultaneously be conscious of separate objects presented to di ff erent parts of (for example) the visual field. Conscious attention flips from one object to the other in sequence, suggesting the presence of a bottleneck in conscious attention; see Dehaene ( 2014 ) pp. 27-30, for a discussion. Why didn’t nature select for the possibility of simultaneous conscious streams? Unlike the two features above, our model does not strictly predict that seriality is the only form of inner experience that could evolve, but it does suggest an explanation for why it may be so. Since conscious experiences arise to inform messages regarding type and enable matching, the existence of other bottlenecks along the line of communication would imply that bearing the metabolic cost of relieving them at the point of consciousness would create little selective benefit. Given the human messaging system only a ff ords the possibility of serial communication, (verbal messaging is constrained by, amongst other things, humans having only a single mouth and set of vocal chords) there would seem to be little fitness gain from having parallel experience streams to create conscious content. Having multiple streams would allow faster processing of, for example, imagined subjective experiences and create the content required more quickly. But this content would still meet the seriality constraint arising with communication. We can only tell others of our inner experiences one experience at a time, because we can only communicate one percept or concept at a time. So even if feasible at some metabolic cost, the addition of seriality to the human hardware of consciousness would create no fitness gain given the other constraints on communication that humans have. Such a capacity would be unlikely to survive selection.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 6,
+        "text": "Ine ff ability As has long been commented upon, experienced inner states have an ine ff able quality. The experience of, for example, tasting chocolate, or seeing a colour, cannot be perfectly described in language and communicated so that listeners can unambiguously understand the subjective experience of another.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 7,
+        "text": "The arguably most crucial features attributed to phenomenal experience are its essential subjective nature, which sometimes is taken to mean that phenomenal consciousness embodies a particular point of view, but also that some of its parts or properties seem ine ff able, private, or unavailable to cognitive and linguistic processing or communication. Kleiner ( 2020 ) In principle, there is no reason that subjective, first-person experiences could not be fully articulate, in the same way that mathematical objects can be completely described. Could we have evolved subjective experiences like that instead? Once again, the model does not strictly predict ine ff ability, but does suggest why it may have this feature. Suppose that articulate inner lives are available at some biological cost. For simplicity suppose that a highly unrealistic “articulate mutation” exists. That is, one which would allow recipients to fully articulate and fully comprehend the articulations of others’ inner experiences. We can use the model to ask whether this characteristic is likely to be valuable in matching? To contemplate this, consider an example where non-cooperators and cooperators have the following distinct subjective first-person experiences and also assume an extremely, and unrealistically simple, form of messaging distinguishes type. A cooperator type truthfully reports the following phenomenological experiences “ I see the colour red when somebody cheats me, and I similarly see the colour red when someone else is cheated.” A mimicker sees the colour red when somebody cheats them, but not when they see someone else cheated. According to the model this gives cooperators an advantage in matching which could be overcome by the mimicker, but only at the cost of acquiring the information regarding what a cooperator type subjectively “sees” when someone else is cheated. But note that the e ffi cacy of cooperator matching, and corresponding di ffi culty of noncooperators mimicking, is una ff ected by the ine ff ability of ‘red’. That is, even though it is impossible for an agent to know that what they experience as red is the same as what another agent reports as red, this does not matter. All that matters is that the subjective experience ‘see red’ accompanies two distinct cognitive states, and what needs to be understood is that these cognitive states are reported as generating an equivalent subjective experience. Adding the capacity for ‘see red’ to be fully articulable, so that one agent knew precisely what it meant for another to see red, and could be sure that they had experienced the same subjective phenomenon as the other, would not help in matching. The biological cost associated with articulate instead of ine ff able phenomenology would not be rewarded with a",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 8,
+        "text": "fitness payo ff , so any cost to adding the articulate capacity would seem to be a cost borne without a corresponding fitness payo ff . As the example makes clear, articulate subjective experiences are by no means necessary to the function of enabling matching via establishing distinct experiences. So, though ine ff able phenomenology is not a strong prediction of the model, as the previous features, privacy, type specificity and seriality were, it is certainly consistent with the model. And if this function is costly, the model suggests reasons why it would not have been selected during our evolution, and why we are endowed with only ine ff able subjective experiences.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 9,
+        "text": "Imagined Subjective Experiences Humans are able to imagine the nature of subjective experiences they will have in entirely novel, and even never-to-be-experienced situations. Our model suggests why this capacity to imagine subjective experiences may be evolutionarily helpful. Subjective first-person experiences that accompany particular objective or cognitive states are used by agents to inform the statements (how they feel) that will allow them to match and separate. But the set of potential external environments, and hence cognitive states, that humans traverse is enormous. If generating inner experiences across this set required actually being in each such cognitive state, then for an agent to know their own subjective experiences would require a large resource investment. A cost saving innovation would be the ability to concoct and discuss entirely hypothetical environments, and thereby generate both the cognitive states and their accompanying subjective inner experiences, via simulation. Being able to imagine how one would feel (one’s subjective experiences) in never experienced situations, allows agents to do just this. It allows them to furnish, and assess, detailed descriptions of their own, and others’, subjective experiences without having to bear the expense of exploring such cognitive states themselves. By allowing agents to compare subjective first-person inner experiences over a much broader range of situations than can actually be experienced, it helps agents obtain the content required to compare their cognitive state labels and to match by type. The model thus suggests reasons for why even metabolically costly ‘imagined subjective experiences’ would have survived evolutionary selection amongst humans. So, to conclude this section, for a human facility to have the function of helping cooperators match by sharing subjectively experienced content, our evolutionary model predicts that such a facility must exhibit both privacy and type-specificity as human consciousness does. Additionally,",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 10,
+        "text": "though not strictly predicted, the model provides reasons for why this facility would be serial only, why it would remain ine ff able, and why the capacity to imagine subjective experiences may survive selection.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 11,
+        "text": "5.2 What does all this say about consciousness in non-human systems? Now that we have a theory of how consciousness emerges, we can apply the theory to the question of where else consciousness is likely to exist. Consciousness requires social interaction of a particular form: a prisoners’ dilemma. Moreover, a particular case of the prisoners’ dilemma in which an increase in the probability of pairing with a cooperator benefits a non-cooperator more than a cooperator (decreasing di ff erences). It also requires hidden types and costly mimicry.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 3,
+        "section_name": "Discussion",
+        "paragraph_id": 12,
+        "text": "5.2.1 Required Social Conditions The structure of social interactions required for consciousness to emerge is non-trivial. Here we have treated this structure as a primitive – already in place – though it would seem that a more sophisticated model could have it co-evolve with the structure in place here. For example, communication is necessary to convey a common understanding of external events. Agents must be able to communicate that they are in similar cognitive states so that they can compare respective inner experiences. For humans, these descriptions can be extremely complicated because the vast number of possible inner states triggered by distinct inner experiences is huge. They need not be for lower q species. It would seem however that consciousness, in addition to being restricted to ‘social’ species, would further seem to require some level of linguistic (or other form of messaging) sophistication. We have not explored how the development of consciousness may also a ff ect the complexity of the messaging system, and how they may interact and co-evolve. This seems an interesting avenue to consider further.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 4,
+        "section_name": "Conclusions",
+        "paragraph_id": 0,
+        "text": "The evolutionary analysis we undertake yields a very di ff erent explanation (and predictions) than the non-evolutionary theories that predominate within consciousness studies. If we are accurate, then the value of consciousness has nothing to do with what is being processed in the brain",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1349,
+        "section_id": 4,
+        "section_name": "Conclusions",
+        "paragraph_id": 1,
+        "text": "(unlike Global Workspace Theories such as Dehaene ( 2014 )), nor with how it is being processed in the brain (unlike Integrated Information Theories such as Tononi et al. ( 2016 )). It emerged in social species only, as a byproduct of an evolutionary struggle to attract desirable partners. A prediction of the framework is that, necessarily, any species that has developed consciousness must also have developed a substantial proportion of agents who act like these “desirable partners”, i.e. who undertake costly (fitness reducing) actions that benefit their non-kin partners. Consciousness would thus seem to require the existence of agents with a tendency to act selflessly, prosocially or altruistically.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
         "matched_l2_methods": []
     }
 ]

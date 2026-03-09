@@ -1,12 +1,122 @@
 [
     {
         "paper_id": 1456,
-        "section_id": 3,
-        "section_name": "A worker’s reporting decision",
-        "paragraph_id": 2,
-        "text": "• Hard Garbling , in which φ (1) = 1 , but",
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Organizations’ ability to take action against harassment is limited by their ability to elicit information from relevant parties. Reporting harassment is a difficult step for individuals who have been victimized and for witnesses concerned with possible retaliation and reputational costs. This prevents organizations not only from responding to individual issues, but also from assessing the scope and nature of their harassment problem. Using a phone-based survey experiment implemented at a large Bangladeshi apparel manufacturer, we study the impact of survey methods that seek to offer plausible deniability, increase trust in the survey enumerator, and reduce the perceived likelihood of leaks, on information transmission. We also show how such reporting data can be used to inform policy-relevant questions about the nature of harassment, including: How widespread is it? What share of managers are responsible for what share of the damage? How isolated are victims? Our theoretical framework builds on a principal-agent-monitor model (Chassang and Padró i Miquel, 2019, Chassang and Zehnder, 2024). A monitor (here a worker) is asked to report harassment behavior by an agent (the worker’s manager) to a principal. The difficulty is that the manager can engage in retaliation, and workers may be concerned that reports could be leaked. Leakages may be the result of legitimate steps taken by the principal to investigate or address the issue, as well as malicious or erroneous revelation by either the principal or survey collectors. Theory predicts that steps that increase plausible deniability in the event of a leak, i.e., steps that make it harder to infer a respondent’s intended message, as well as steps that increase trust in the enumerator and reduce the perceived likelihood of leaks, can reduce the perceived risk of retaliation and increase reporting. Our field experiment investigates combinations of three treatments. First, hard garbling (HG) recorded information by automatically setting a random subset of reports as reports that harassment took place. This provides respondents with plausible deniability in the event that they file an incriminating report (Warner, 1965,",
         "extraction_warnings": "",
+        "tier": 2,
         "matched_keywords": [
+            "Hard Garbling",
+            "Local Average Treatment Effect (LATE)",
+            "Hard Garbling"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)",
+            "Survey & Conjoint Experiments"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "Ljungqvist, 1993, Blume et al., 2019, 2023, Chassang and Padró i Miquel, 2019, Chassang and Zehnder, 2024). Second, rapport building (RB) by the survey enumerator, i.e., chatting about family and hobbies in a natural but pre-specified manner beyond the minimum small talk typical in a social science survey. This may increase the respondents’ trust in the enumerator, as well as their trust in the surveyor’s commitment to follow the protocol. Third, refraining from collecting personally identifying information (Low PII), including the identity of workers’ supervisors and their production team. With all three treatments, the possible benefit of increased willingness to report comes at a cost: HG provides a noisy signal of misbehavior, which constrains the severity of organizational responses to reports; RB requires careful planning of the RB process, additional training of survey enumerators, and more time to conduct the survey; removing team-level information precludes the computation of manager-level statistics that are needed to assess policy-responses to harassment. We conducted phone-based surveys of 2,245 workers at two of the apparel producer’s plants. 1 We randomly assigned survey respondents to 9 different combinations of three treatment conditions: HG, RB, and Low PII. The status quo, or baseline treatment arm, entailed direct elicitation (DE) of respondents’ experience of harassment, no RB, and elicitation of team-level PII. We examine the effects of our survey design interventions on three pre-specified outcomes: reporting of threatening behavior, physical harassment, and sexual harassment by respondents’ direct supervisors. We find that reporting rates in the control group are low, especially for physical and sexual harassment: 9.9% of respondents report threatening behavior, 1.53% report physical harassment, and 1.78% report sexual harassment. HG increased reporting of threatening behavior by 45%, sexual harassment by 271%, and physical harassment by 290%. 2 These findings extend in a subsequent implementation of the 1 The response rate was 63%. 76% of non-response was due to our inability to reach workers by phone. 2 All respondents were assured of a strong commitment to confidentiality as part of the IRB-",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "HG treatment across around 2,900 workers in 208 factories (see Table A.12 ). We also find that low PII and RB had positive but weak effects. There is suggestive evidence of complementarity between treatment arms: combining the three treatment conditions increases reporting compared to the sum of individual effects. We conduct a pre-specified heterogeneous treatment effect (HTE) analysis by respondents’ sex. Compared to women, men’s baseline reporting rates were higher for threatening behavior and physical harassment and lower for sexual harassment. The effects of HG were substantially larger for men compared to women for threatening behavior and sexual harassment, although for the latter, we cannot reject that the effects are the same at conventional significance levels. Next, we use improved reporting data from HG treatment arms to assess the scope and nature of harassment in the apparel producer’s organization. 3 To do so, we extend results from the literature on inference from garbled reports (Warner, 1965, Blair et al., 2015) to estimate team-level statistics of reported harassment. Such statistics include: what share of managers is responsible for the bulk of the misbehavior? 4 and, how isolated are victims? The answers to these questions are crucial inputs to designing policies to address harassment. For example, if a small share of managers is responsible, the organization could investigate and fire them. In contrast, if most managers are involved, firing them all is likely impossible, and other remedial actions need to be taken. Using data from treatment arms using HG, we estimate that in this organization, 13.5% of workers reported threatening behavior, 5.7% reported physical harassment, and 7.7% reported sexual harassment. On average, seven workers per team are sampled in arms that use HG and collect PII. In this sample, we find that 72%",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "required informed consent process. (See Supplementary Materials section 1.1 for the exact wording.) It is noteworthy that reporting rates for more sensitive types of harassment are very low among control respondents even under this strong security assurance. 3 We provide testable conditions under which HG reduces the bias between relevant statistics of intended reports and statistics of actual harassment. They hold in our sample. 4 In the context that we study, harassment by managers perpetrated against workers is the primary concern. Section 2 provides more information on the context.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "of teams had at least one worker who had been threatened, 40% had at least one who had been sexually harassed, and 25% had at least one who had been physically harassed. Evidently, harassment is widespread, and a policy of firing all misbehaving supervisors is unlikely to be feasible. Conditional on a type of harassment, victims tend to be isolated, and more so for graver types of harassment. The probability of having at least two victims willing to report on the team, conditional on having at least one, is 17% for threatening behavior, 14% for physical harassment, and 8% for sexual harassment. These results shed light on the implications of setting different burdens of proof for harassment. When victims are isolated, requiring multiple victims to come forward will miss the majority of cases, and addressing harassment requires processes that can be initiated when only one victim reports. Finally, we consider several alternative mechanisms for why HG may increase reporting. We argue that the results are not driven by increased confusion under HG generating false positives and fail to find evidence of increased strategic misreporting under HG. Finally, we discuss the extent to which participants understand the effect of HG on plausible deniability, and why actually garbling reports – rather than just providing reassuring language – matters in an equilibrium monitoring setting. This paper contributes to an emerging economic literature on workplace harassment, in particular sexual harassment, and its implications for labor markets (Cheng and Hsiaw, 2020, Dahl and Knepper, 2021, Adams-Prassl et al., 2022, Folke and Rickne, 2022). We contribute evidence that lack of plausible deniability causally negatively affects the reporting of workplace harassment. Our findings suggest that estimates of labor supply and other responses to harassment may be severely biased when harassment is measured using formal complaints: it may be that reporting is most suppressed in workplaces where harassment is most problematic. In the context of developing countries, sexual harassment is considered a key barrier to women’s labor market participation (Jayachandran, 2021). 5 There is a 5 One stream of literature establishes that harassment is prevalent in public spaces and transit systems in cities ranging from Rio de Janeiro to Delhi and that it reduces women’s educational investments and labor supply (e.g., Aguilar et al. (2021), Kondylis et al. (2020), Borker (2018)).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "dearth of evidence, however, on the effects of sexual harassment in the workplace on workers’ labor supply and well-being. 6 We contribute evidence that in the context of garment production in Bangladesh – a low-skill manufacturing sector that is common to many developing countries – harassment against women by managers who are men is common, and harassment by men against subordinate men is also substantial. This research also contributes to the literature on the detection and deterrence of misbehavior in organizational settings. An important body of research in contract theory studies the possibility of side-contracting in principal-agent-monitor settings, with monitors and agents conspiring to limit information transmission to the principal (Tirole, 1986, Laffont and Martimort, 1997, 2000, Prendergast, 2000, Faure-Grimaud et al., 2003, Ortner and Chassang, 2018). A closely related literature studies circumstances in which misbehaving agents can discipline potential informants through threats of punishment (Heyes and Kapur, 2009, Bac, 2009, Makowsky and Wang, 2018). Chassang and Padró i Miquel (2019) develop a model in which misbehaving agents can commit to a retaliation strategy. They show that garbled intervention policies along the lines of HG are needed to discipline agents, and clarify how to experimentally evaluate such policies even in the hypothetical presence of malicious workers wrongfully reporting well-behaved managers. We contribute by bringing HG into a real-world organizational setting. The large experimental effect of HG on information transmission suggests that this class of mechanisms deserves further exploration in other environments where credible threats or reputational costs limit information transmission. Finally, this research contributes to a literature on garbled survey designs and on inference from garbled surveys dating back to Warner (1965). Warner (1965) proposed randomized response (RR) as a way to offer survey respondents a form of plausible deniability when answering sensitive questions. Under RR, which admits",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Randomized Response",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "6 The poor working conditions (Boudreau et al., 2022b) and extreme gender imbalances between managers and workers (Macchiavello et al., 2020) documented in Bangladesh’s garment sector suggest that garment workers have limited outside options, creating circumstances that allow harassment to run rampant.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "numerous variants, the surveyor instructs respondents to roll a dice, and answer the question truthfully or not depending on the outcome. The surveyor does not observe the respondent’s dice roll. Provided that people comply with the surveyor’s instructions, RR offers plausible deniability. 7 Ljungqvist (1993) rationalizes RR in a model where agents have some intrinsic preferences for truth-telling. The empirical literature on survey design for sensitive questions has found that RR performs better than DE, at least in single shot, large scale surveys (Rosenfeld et al., 2016). 8 An important difference between RR and HG is that under RR, the randomization is under the respondent’s control, so respondents can ignore instructions to randomly respond “Yes” if they are worried about retaliation. Because the garbling in RR relies on respondents’ compliance, we refer to mechanisms in this class as soft garbling. In our design, responses are mechanically switched at an exogenous rate, which we refer to as hard garbling. Non-compliance with soft-garbling injunctions can cause plausible deniability to unravel in equilibrium. This concern is empirically validated by Chuang et al. (2020): survey respondents often do not comply with the protocol to garble and systematically provide the least sensitive response. Chassang and Zehnder (2024) show that in contrast to RR, HG does not unravel in equilibrium. For this reason, we believe HG is better suited for ongoing use in organizations. This reflects the general point made by the literature on mediation (see Forges (1985) or more recently Goltsman et al. (2009)) that exogenous sources of randomness meaningfully expand the set of implementable outcomes compared to endogenous randomizations performed by interested agents. In addition, HG permits more confident inference than RR: the garbling rate (needed for inference from garbled reports) is known for HG, but not for RR if some participants do not comply with instructions. The remainder of the paper is organized as follows. Section 2 provides back-",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Hard Garbling",
             "Hard Garbling"
         ],
         "matched_l1_methods": [
@@ -14,6 +124,1185 @@
         ],
         "matched_l2_methods": [
             "Survey & Conjoint Experiments"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "7 The original version of RR proposed by Warner (1965) treats yes and no responses symmetrically. In our setting, the sensitive response is known a priori, so that noise can be added following non-sensitive responses only. 8 Blume et al. (2019) and Blume et al. (2023) study communication via noisy channels in the lab. They find that mechanisms like HG can improve information transmission but may fall well short of perfect reporting.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "ground on Bangladesh’s garments sector and the apparel producer we partner with. Section 3 provides a theoretical framework that clarifies incentives for information transmission, and inference from recorded reports. Section 4 presents the research design. Section 5 describes the empirical impact of treatments on reporting. Section 6 uses the garbled survey data to assess the apparel producer’s harassment problem. Section 7 discusses our findings, possible alternative interpretations of the data, as well as preliminary evidence of the external validity of treatment effects. An Online Appendix gathers tables, figures, proofs, and additional analysis.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "We conducted this research in collaboration with a large apparel producer in Bangladesh, employing upwards of 25,000 workers in roughly half a dozen factories. 9 The manufacturer’s senior leadership team sought a collaboration with our research team because it wished to improve relations with its workers and to improve workers’ well-being. To achieve this, it aimed to directly collect feedback from workers on their experiences in the workplace and relationships with their managers. It then aimed to use this feedback to inform its HR policies. For the purpose of the experiment, we agreed to survey workers at 2 of its plants. In the longer-term, the senior management team considered setting up systems for ongoing real-time reporting of issues. Ethnographic evidence and evidence from community-based surveys suggests that harassment is a long-running problem in Bangladesh’s garments sector (Siddiqi, 2003, Sumon et al., 2018, Kabeer et al., 2020). Workers’ precarious livelihoods and lack of legal recourse, as well as conservative societal norms around gender and sex, contribute to an enabling environment for abusive managers (Siddiqi, 2003). While there is reason to believe that harassment is widespread, measuring and constructing informative statistics of harassment is challenging, even in social science research",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Ethnographic Evidence",
+            "Community-Based Surveys"
+        ],
+        "matched_l1_methods": [
+            "Qualitative, Descriptive, and Mixed Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "conducted outside of the workplace. For example, in data from Kabeer et al. (2020)’s community-based survey of garment workers, 20% (11%) of workers report witnessing physical (sexual) harassment, but only 1% (0%) report experiencing it themselves. The manufacturer’s operations are representative of garment manufacturing in Bangladesh. Production is organized into cutting, sewing, and finishing sections. Some factories also have wet and dry washing sections, which add texture and fading to sewn garments. Within these sections, workers are organized into production teams or lines, with stable team assignments over time. The organizational structure is hierarchical: teams of workers are typically overseen by 2 supervisors, followed by line chiefs or team incharges, floor-supervisors and/or assistant production managers, production manager(s), and finally, the managing director. The gender balance varies considerably across production sections: cutting and wet washing sections typically exclusively employ men; sewing and finishing sections mostly employ women; and dry washing sections are mixed. In all sections, more than 90% of managers are men. In the two plants surveyed, 34-42% of workers are employed on sewing lines, 1618% are employed in finishing, and 10-14% are employed in washing. The remaining workers are employed in smaller support sections. 93% of managers are men.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 13,
+        "text": "We begin by identifying policy-relevant statistics of harassment that we are interested in estimating. Some statistics, such as the share of victimized workers, do not require collecting information about workers’ teams (i.e., their team id). Statistics associated with team-level patterns do: for instance, assessing whether victimized workers are isolated or assessing the number of managers engaging in misbehavior. As a result, computing team-level statistics requires more sensitive data collection. Harassment is not directly observable, and only statistics of reported data can be computed. Using a principal-agent-monitor framework, we show how the gap between statistics of actual harassment and their counterparts based on intended",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 14,
+        "text": "reports is affected by survey features, including garbling. We then show how to consistently estimate statistics of intended reports based on garbled reports alone.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 0,
+        "text": "Consider an organization consisting of m ∈ N teams. Each team a ∈ M ≡{ 1 , · · · , m } consists of a manager (also denoted by a ) and L workers indexed by i ∈ I ≡ { 1 , · · · , L } . Altogether, there are n ≡ m × L workers and m managers. We assume for simplicity that all harassment is performed by managers against workers under their span of control. For any manager a and worker i , we denote by h i,a = 1 the event that manager a harassed worker i , and by h i,a = 0 the event that they did not. We denote by h a ∈{ 0 , 1 } L the profile of harassment choices made by manager a . Throughout the paper, we take as given the behavior of managers, and we seek to elicit information about patterns of harassment ( h a ) a ∈ M in the organization. We are interested in four statistics that can help organizations assess policy options:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 1,
+        "text": "S V ≡ 1 n X a,i ∈ M × I h i,a , S PM ≡ 1 m X a ∈ M max i ∈ I h i,a , ∀ k ∈{ 1 , · · · , L } , S TV ≥ k ≡ 1 m X a ∈ M 1 P i ∈ I h i,a ≥ k , E 2 V | 1 V ≡ S TV ≥ 2 S TV ≥ 1 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 2,
+        "text": "Statistic S V measures the share of victimized workers. This allows decisionmakers to gauge the magnitude of the harassment problem in their organization, allowing stakeholders to prioritize the issue appropriately. Statistic S PM measures the share of problematic managers, in other words, managers who have harassed at least one person. It is a special case of statistic S TV ≥ k ,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 3,
+        "text": "which measures the share of managers who have harassed at least k workers, for k = 1 . The behavior of S TV ≥ k as k increases clarifies policy options. For example, if there exists a k large such that S TV ≥ k is small, but k × S TV ≥ k is large, then this means that a relatively small share of managers is responsible for a large amount of the damage. This means that investigating and firing repeat offenders may be a viable policy option. If instead S PM is large, but k S TV ≥ k is small for k large, then this means that many managers are involved in harassment, and it is not possible to address a significant number of cases by firing a small number of managers. Since firing many managers is likely impossible for the organization, this means that other remedial action will have to be taken, such as improved training or better monitoring. Finally, E 2 V | 1 V measures the likelihood that a manager has at least 2 victims given that they have at least one. This allows decision-makers to assess how isolated victims are. If E 2 V | 1 V is small, then victims are isolated. This implies that escrow mechanisms along the lines of Ayres and Unkovic (2012), which seek to help coordinate the reports of multiple victims, are unlikely to be helpful in such cases. In addition, rules limiting investigations to cases where multiple victims come forward would lead the organization to ignore the majority of problem cases. In contrast, if E 2 V | 1 V is close to 1, then victims are rarely isolated. This means that escrow mechanisms could be helpful, and that once someone complains, it may be possible to cross-validate reports of misbehavior, permitting more effective action.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 4,
+        "text": "Statistics of intended reports. Statistics S V , S PM and S TV ≥ k are not identifiable because they depend on actual harassment patterns that are not directly observed by the decision-maker. We will seek to approximate them using statistics of intended reports. Let S r V , S r PM , S r TV ≥ k , and E r 2 V | 1 V denote analogues of S V , S PM , S TV ≥ k , and E 2 V | 1 V computed using intended reports r i,a instead of actual harassment status h i,a . The simple model of endogenous reporting introduced in Section 3.2 lets us assess how survey design affects biases between statistics of intended reports and statistics of actual harassment. Section 3.3 shows that statistics of intended reports can be",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 6,
+        "text": "Sensitivity of statistics. These statistics differ in the sensitivity of information required to compute them. It is not necessary to know a worker’s team to compute S r V . In contrast, S r PM , S r TV ≥ k , and E r 2 V | 1 V require the respondent to associate some team identifier to their report. Otherwise, it is not possible to match the reports of different workers on the same team. For this reason, these statistics are intrinsically more sensitive than S r V .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 2,
+        "section_name": "Policy-relevant statistics of harassment",
+        "paragraph_id": 7,
+        "text": "Third-party witnesses. While harassment may be observed by workers other than the victim, this paper focuses on the reporting of one’s own harassment status. We leave the question of witnesses’ role in detecting and counter-acting harassment to future research. Getting victims to come forward strikes us as the main bottleneck, and we cannot confidently take a stand on how informed potential witnesses are. In our data (Table A.14 ), team-level measures of witnessed harassment are uncorrelated to team-level reports of own harassment. This means that information from third parties is not a good substitute for victims’ reports.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 0,
+        "text": "Because the actual harassment status h i,a of workers is typically not observed, organizations must proxy the true statistics of interest with reported harassment. One difficulty is that victims are often unwilling to come forward. This may be due to explicit or implicit threats of retaliation, concerns over one’s own reputation, or negative impacts on one’s career and private life, even if the organization takes action against the perpetrator. We consider a set-up in which worker i in team a completes a binary survey, meaning that they can submit an intended response r i,a ∈{ 0 , 1 } . In our setting, rates of reported harassment are low, and the implicit stigma associated with reports of harassment (especially of a sexual nature) is high. For this reason, we assume there",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 1,
+        "text": "are no false positives: r i,a ∈{ 0 , h i,a } . We discuss the possibility of false positives, as well as equilibrium responses to garbling by managers, in Section 7 . We argue using the framework of Chassang and Padró i Miquel (2019) that getting people to complain is a necessary first step, even if false positives become an issue. Following Chassang and Padró i Miquel (2019) and Chassang and Zehnder (2024), we consider garbled survey methods that add noise to the report sent by a worker. An intended report r ∈{ 0 , 1 } is associated with a potentially random recorded report e r distributed according to φ ( r ) ∈ ∆( { 0 , 1 } ) . Concretely, we are interested in the following survey designs: • Direct Elicitation , in which φ ( r ) = r : the recorded report matches the intended report.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 4,
+        "text": "where π ∈ (0 , 1) . Reports of harassment are always recorded, but reports of no harassment are switched to reports of harassment with probability π . For the remainder of this section, unless otherwise noted, we refer to hard garbling as “garbling.” The rationale for garbling surveys is to guarantee the worker plausible deniability in the event that their record is leaked. In particular, we assume that the worker assigns subjective probability p ∈ [0 , 1] on their recorded report e r i,a being leaked. We do not take a stance on whether leaks actually occur or not. In our experimental application, leaks of individual reports would only occur in the event of an unforeseen breach of confidentiality. However, we are interested in the use of reporting systems for ongoing monitoring in organizations. In such a context, leaks may simply correspond to the fact that some action is taken by the organization on the basis of the recorded report. For instance, the manager may be sent to a training seminar. Leaks are inevitable even under ideal governance.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Hard Garbling",
+            "Hard Garbling"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Survey & Conjoint Experiments"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 5,
+        "text": "Consistent with the model of Ljungqvist (1993), worker i ’s utility U i associated with an intended report r depends on their true harassment status and consists of direct benefits from reporting as well as potential reputational or retaliation costs",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 7,
+        "text": "Term PB is a psychological benefit from taking action such that PB (1 | 1) > 0 and for simplicity PB (1 | 0) = PB (0 | 1) = PB (0 | 0) = 0 . Respondents only derive psychological benefits from taking action against a misbehaving manager. SB is a social benefit from realized report e r as perceived by the worker, either because it triggers an investigation, or because it helps the organization design better policies. For simplicity, we assume that SB (1 | 1) > 0 , SB (1 | 0) < 0 and SB (0 | 1) = SB (0 | 0) = 0 . 10 Recorded complaints only yield social benefits if they are associated with a misbehaving manager. RC ( e r ) is a reputational or retaliation cost in case recorded report e r is leaked. We assume it takes the form RC ( e r i,a ) = − K ( prob ( r i,a = 1 | e r i,a )) where: K is a positive strictly increasing function; prob ( r i,a = 1 | e r i,a ) is the posterior belief that worker i intended to submit a complaint r i,a = 1 about manager a , conditional on recorded report e r i,a = 1 . 11 In equilibrium, a non-harassed worker always finds it optimal to submit intended report r i,a = 0 . Given harassment status h i,a = 0 , the expected payoffs from sending reports r i,a = 1 and r i,a = 0 are",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 8,
+        "text": "U i (1 | 0) = SB (1 | 0) − p × K ( prob (r i , a = 1 | e r i , a = 1)) < 0 U i (0 | 0) = π × ( SB (1 | 0) − p × K ( prob (r i , a = 1 | e r i , a = 1))) = π × U i (1 | 0) .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 9,
+        "text": "10 The assumption that SB (1 | 0) < 0 implies that arbitrarily high garbling rates are not desirable. 11 This formulation captures concerns over ex post retaliation and reputational damages.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 11,
+        "text": "U i (1 | 1) = PB (1 | 1) + SB (1 | 1) − p × K ( prob (r i , a = 1 | e r i , a = 1)) U i (0 | 1) = π × [ SB (1 | 1) − p × K ( prob (r i , a = 1 | e r i , a = 1))] .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 14,
+        "text": "where the posterior belief prob ( r i,a = 1 | e r i,a = 1) takes the form prob ( r i,a = 1 | e r i,a = 1) = 1 1 + π prob ( r i,a =0) 1 − prob ( r i,a =0) . (2)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 15,
+        "text": "Taking as given the share of null reports prob ( r i,a = 0) , it follows from ( 1 ) and ( 2 ) that increasing π increases a worker’s propensity to send report r i,a = 1 . Equation ( 2 ) captures the fact that increasing π reduces the impact of a positive recorded report e r i,a on posterior beliefs that a worker intentionally complained. In addition, coefficient (1 − π ) in ( 1 ) captures the fact that increasing π shrinks the reputational or retaliation cost savings associated with sending a null report r i,a = 0 . 12 As a result, the left-hand side of ( 1 ) exhibits single crossing in the garbling rate π : whenever its value is negative, it is increasing in π . Proposition 1 (the value of survey design) . Taking as given the behavior of managers, (i) intended reports underreport true harassment: r i,a ≤ h i,a ; (ii) equilibrium reporting weakly increases with garbling rate π ; 12 Indeed, HG increases the welfare of workers who make a report, but can decrease the welfare of workers who don’t by exposing them to retaliation with some probability. This is a design trade-off inherent to HG. This issue can be addressed by letting workers as a group weigh in on whether they wish a particular reporting scheme to be implemented. In our specific experimental setting, attrition patterns across HG and DE treatments do not suggest that HG caused a reduction in welfare among workers who chose not to complain. See Online Appendix G for further discussion.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 17,
+        "text": "We note that the impact of garbling π on reporting is an equilibrium effect. For HG to be effective in the long run, respondents as well as managers must understand that reported complaints are not necessarily associated with intended complaints.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 18,
+        "text": "Takeaways for inference. Because harassment is systematically under-reported, statistics of harassment based on intended reports of harassment rather than actual harassment will be biased. An implication Proposition 1 is that both garbling and reducing the perceived leakage probability increase the accuracy of intended reports as proxies for true harassment. We now draw implications for inference based on reported harassment.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 19,
+        "text": "Corollary 1 (measurement bias) . Measurement biases | S V − S r V | , | S PM − S r PM | , and | S TV ≥ k − S r TV ≥ k | are decreasing in garbling rate π and increasing in perceived leakage probability p .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 20,
+        "text": "More generally, for statistics that are monotonic in h i,a (resp. r i,a ), increasing garbling rate π reduces the bias between statistics based on intended reports and statistics based on actual harassment. This motivates the use of intended reports obtained for higher garbling rates π to make inferences about statistics of interest S V , S PM , and S TV ≥ k : intended reports from garbled surveys exhibit lower bias. However, we acknowledge that all instances of harassment still may not be reported. Because statistics E 2 V | 1 V and E r 2 V | 1 V are not monotonic, their case requires more nuance. We note that from a policy perspective, E r 2 V | 1 V may be at least as relevant at E 2 V | 1 V . It captures the likelihood of two or more occurrences of harassment being reported conditional on at least one being reported. This number is useful to evaluate burden of proof policies: if E r 2 V | 1 V is low, then governance processes that only escalate cases when multiple victims come forward end up ignoring a majority of the victims that choose to come forward.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 21,
+        "text": "For E 2 V | 1 V as the statistic of interest, then it is not necessarily true that increasing the garbling rate π reduces the bias | E 2 V | 1 V − E r 2 V | 1 V | . Under additional assumptions, Online Appendix B provides a data driven condition under which it is the case and shows that it holds in our setting.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 22,
+        "text": "Takeaways for survey design. Proposition 1 suggests that increasing the garbling rate π and reducing the worker’s subjective probability p of a leak can encourage reporting. We evaluate two strategies to reduce the subjective likelihood of leaks: first, we vary whether team identifiers (needed to compute team statistics) are elicited or not; second, we vary the extent of rapport built with enumerators prior to the sensitive module.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 23,
+        "text": "Alternative survey methods. Starting with the pioneering work of Warner (1965) on randomized response (RR), many indirect response methods have been developed to guarantee survey respondents plausible deniability, including the unrelated question approach (Greenberg et al., 1969), list experiments (LEs, Raghavarao and Federer (1979)), and most recently, crosswise RR methods (Blair et al., 2015). Our interest in the steady state monitoring of harassment in organizations makes us favor HG over these variants for three reasons, which we summarize here and elaborate on in Online Appendix C on design choices. Under RR and LE, the respondent is in charge of garbling their own messages. This is why we refer to those methods as soft-garbling. If one message is less sensitive than the other, respondents will have strict incentives to send the less sensitive message, and plausible deniability will vanish in equilibrium. This is consistent with the evidence from Chuang et al. (2020) or Chassang and Zehnder (2024). Under soft-garbling techniques, the actual garbling rate is an endogenous object that is not observed by the survey designer. Since the garbling rate is needed to estimate statistics of intended reports from recorded reports, this makes it more difficult to draw confident inferences. In contrast, under HG, the garbling rate is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "List Experiments",
+            "Randomized Response",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 24,
+        "text": "exogenously known, permitting confident inference. Finally, hard garbling allows the designer to deviate from i.i.d. garbling, for instance using population blocked garbling, in which the number of recorded reports mechanically assigned to 1 is fixed at the population level. When the reporting rate is very low, this improves the estimation of treatment effects that could otherwise be dwarfed by sampling error.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Hard Garbling",
+            "Hard Garbling"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Survey & Conjoint Experiments"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 25,
+        "text": "Corollary 1 argues that garbling reduces bias in the measurement of policy-relevant statistics based on intended reports. However, intended reports are not directly available to the analyst when garbling is used. We now discuss how to infer S r V , S r PM , and S r TV ≥ k from garbled reporting data. For simplicity, this section focuses on the case of i.i.d. garbling with a constant team size. Online Appendix B extends the analysis to the case of varying team size and shows that correlated garbling can improve the precision of estimates in small samples.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 26,
+        "text": "Inference from garbled reports. A key insight of Warner (1965) is that the share of workers reporting harassment S r V can be consistently estimated from garbled data, even though it depends on intended reports. The following estimator is consistent",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 28,
+        "text": "It turns out that the same is true for other statistics of intended reports, such as S e r TV ≥ k , but the precision of estimators depends on the specific garbling scheme used, and some trade-offs may have to be made. Because team-members are anonymous, for any team a , the number of intended and recorded reports r a ≡ P i ∈ I r i,a and e r a ≡ P i ∈ I e r i,a are sufficient statistics for the profile of intended and recorded reports in team a . Let μ ∈ ∆( { 0 , 1 , · · · , L } ) and e μ ∈ ∆( { 0 , 1 , · · · , L } ) respectively denote the sample distribution of number of 19",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 29,
+        "text": "team-level intended and recorded reports, ( r a ) a ∈ M and ( e r a ) a ∈ M across teams: ∀ r ∈{ 0 , 1 · · · , L } , μ ( r ) ≡ 1 m X a ∈ M 1 r a = r and e μ ( r ) ≡ 1 m X a ∈ M 1 e r a = r .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 3,
+        "section_name": "A worker’s reporting decision",
+        "paragraph_id": 32,
+        "text": "where η i,a ∈{ 0 , 1 } is a Bernoulli random variable equal to 1 with probability π . As we discuss in Online Appendix B , the correlation structure across shocks η i,a matters for power. For simplicity, we now focus on the case of i.i.d. garbling, for which shocks ( η i,a ) i ∈ I,a ∈ M are i.i.d. across i and a . Online Appendix B shows how to extend the analysis to the case of team-blocked garbling, i.e. when the number of garbled reports P i ∈ I η i,a within a team is set in advance to a fixed number ahead of running the survey. Such blocking can significantly increase power, which matters when reporting rates are low and effects hard to detect. Proposition 2 (identification) . Under i.i.d. garbling, there exists a fixed ( L +1 , L +1) matrix M such that M e μ is: (i) an unbiased estimator of the distribution of intended reports μ ; (ii) a consistent estimator of μ as the number of teams m grows large. Appendix B extends the result to correlated garbling a provides a proof. This generalization of Warner (1965) yields consistent estimators of statistics S r V , S r PM , and S r TV ≥ k since they are functions of distribution μ . Because our estimators are unbiased for a given team-size, averaging out estimators across teams yields a consistent unbiased estimate of team-population statistics even if teams have different sizes.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 4,
+        "section_name": "Experiment Design",
+        "paragraph_id": 0,
+        "text": "We surveyed workers at 2 of the apparel producer’s plants. Prior to the survey’s launch, the plants’ HR departments announced on the PA system that workers may",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 4,
+        "section_name": "Experiment Design",
+        "paragraph_id": 1,
+        "text": "be invited to participate in a survey the firm was running in collaboration with independent researchers. The BRAC Institute for Governance and Development (BIGD), a respected arm of BRAC University, conducted all data collection. We prepared a pre-analysis plan (PAP) and registered it on the AEA’s RCT registry. We overwhelmingly adhere to our PAP and acknowledge any deviations in the text. The survey process entailed 3 phone calls conducted outside of work hours. The first call introduced the survey, established a baseline level of trust, and recruited the prospective respondent. The second completed the main survey. The third, 2 weeks later, conducted a follow-up survey. The first call included the informed consent process, 13 in which we provided strong general assurances around the confidentiality of workers’ responses and informed them that participation in the survey was completely voluntary and could be stopped at any time. We informed them that only aggregated results would be shared with senior management and would inform HR policy. Workers who consented to participate were asked to suggest a time for the survey when they could find a private place where they felt comfortable talking about difficult workplace issues. All survey enumerators for the study were women. 14 The Supplementary Materials include all scripts and instruments.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 5,
+        "section_name": "Harassment Outcomes",
+        "paragraph_id": 0,
+        "text": "We were interested in measuring workers’ experience of three types of harassment: threatening behavior, physical harassment, and sexual harassment. For each type of harassment, we asked, “In the past year, has your line supervisor taken any of the following actions toward you against your will?” We then listed, for each type of harassment, the actions in the second column of Table 1 . Respondents were instructed to answer “Yes” if they had experienced any of the actions, without revealing which of",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 5,
+        "section_name": "Harassment Outcomes",
+        "paragraph_id": 1,
+        "text": "13 See section 1.1 of the Supplementary Materials for the script. 14 Budget constraints prohibited random assignment of the survey enumerator’s sex after stratifying respondents by their sex. Based on contextual knowledge and guidance from local staff, we expected that it would be more acceptable for enumerators who are women to survey men than the reverse.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 5,
+        "section_name": "Harassment Outcomes",
+        "paragraph_id": 2,
+        "text": "the specific actions they had experienced. Ex ante, we hypothesized that threatening behavior (sexual harassment) would be the least (most) sensitive to report.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 5,
+        "section_name": "Harassment Outcomes",
+        "paragraph_id": 3,
+        "text": "Table 1: Harassment definitions Type of harassment Examples of harassment actions read aloud to respondent Threatening behavior Threatened you; Told you that they will harm you if you do not agree to or fulfill their demands. Physical Hit, slapped, or punched you; Cut or stabbed you; Tripped you; Otherwise intentionally caused you physical harm. Sexual Made remarks about you in a sexual manner; Asked you to enter into a love or sexual relationship; Asked or forced you to perform sexual favors; Asked or forced you to meet outside of the factory or meet them alone in a way that made you feel uncomfortable; Touched you in a sexual manner or in a way that made you feel uncomfortable or scared; Shown you pictures of sexual activities. Notes: For each type of harassment, respondents were asked, “In the past year, has your line supervisor taken any of the following actions toward you against your will?\" Respondents were instructed to respond “Yes” if they experienced any of the actions against their will.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 0,
+        "text": "We randomly assigned survey participants to different combinations of treatment conditions. The status quo and alternative treatment conditions were as follows.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 3,
+        "text": "• Hard garbling (HG): for a yes or no question, where yes is the more sensitive answer, exogenously flip no answers to yes with probability π = 2 / 10 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Hard Garbling",
+            "Hard Garbling"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Survey & Conjoint Experiments"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 4,
+        "text": "DE is the status quo survey method and the control condition. HG is the treatment condition: it provides respondents with plausible deniability if they submit a sensitive answer. For HG, we set the flipping rate to 20% and use blocking to ensure that 2 out of every 10 consecutive reports, after ordering respondents by production team and gender, are garbled. 15 We decided upon a 20% flipping rate based on several contextual considerations, including reporting rates from prior surveys that we and other researchers had run, focus groups, and piloting, that suggested that this rate was perceived as providing material protection, and the relative ease of explaining a 1-in-5 flipping rate. Online Appendix C further explains the reasons for our HG design choices, and Online Appendix D and the Supplementary Materials provide implementation details and scripts, respectively. We explained HG as follows.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Focus Groups"
+        ],
+        "matched_l1_methods": [
+            "Qualitative, Descriptive, and Mixed Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 5,
+        "text": "“We are now going to ask you several questions about the way your manager treats you and other employees. For instance: ‘Has your manager shouted at you in the last month? Yes or No?’ Each of the questions has a Yes or No answer. Our system is set up so that it’s safe to report an issue. If you choose to respond YES (there is an issue), our system will record it as a YES for sure. Importantly, if someone responds NO, the system will sometimes record the response as YES. This means that if you respond YES, we can guarantee that you won’t be the only one saying YES. For every 5 responses from workers, at least 1 will be recorded as YES. The researchers are only interested in the total number of yes/no responses from all surveys. If you respond YES, aside from me, no one will ever be able 15 We implemented the blocked garbling ex ante, so it is not conditional on the intended response.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 6,
+        "text": "to know that this was your answer, not even the researchers. Your answers are fully protected with us.”",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 7,
+        "text": "We report the main effects of HG and our other treatments in Section 5 . It is legitimate to ask whether any potential effect of HG on responses is actually due to respondents understanding the value of plausible deniability. An alternative hypothesis is that respondents trust the assertion that “Our system is set up so that it’s safe to report an issue” but do not understand the garbling mechanism. We address this challenge in Section 7 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 9,
+        "text": "• Status quo approach: survey enumerators follow a typical research introduction script before beginning the survey and then ask the survey questions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 10,
+        "text": "• RB approach: survey enumerators allocate survey time to build rapport with the participant. RB entails chatting about family and hobbies in a natural but pre-specified manner, beyond the small talk typical in social science surveys. 16",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 11,
+        "text": "We developed our RB treatment modules by combining insights from practitioners and policy-makers conducting surveys on sensitive issues, such as sexual abuse and gender-based violence (e.g. United Nations Human Rights Office, 2011, United Nations Statistical Office, 2014, Muraglia et al., 2020) and from research focused on protocols for criminal investigations of sexual abuse allegations (e.g. Cowles, 1988, Vallano and Compo, 2011, Hershkowitz et al., 2014). For details on the development of our RB approach and our RB modules, see the paper’s Supplementary Materials . The status quo approach is the control condition. RB is the treatment condition. We conduct a shorter and a longer version of RB to test for the possibility that excessive attempts at rapport building may be counterproductive since they can reveal personal information about respondents. RB1 is the baseline rapport-building 16 During training, survey enumerators developed and practiced the RB approach using role plays. A senior research associate tested each enumerator before launch.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 12,
+        "text": "section, in which the enumerator signals that they care about the worker, getting to know the respondent, using emotional mirroring and acknowledging them. RB2 is the extended rapport-building section, in which the enumerator becomes personable with the worker, who has the chance to ask them questions. The enumerator also shares a related experience.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 14,
+        "text": "• Status quo approach: ask survey respondents questions that reveal more PII, including production section, line number, and direct supervisor.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 15,
+        "text": "• Low PII approach: limit PII requested from the survey respondent; no questions asked about production section, line number, or direct supervisor.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 16,
+        "text": "Asking questions that reveal relatively more PII is the status quo approach because surveys in organizational settings often explicitly or de facto reveal respondents’ identities. Note that identifying respondents’ teams is necessary to compute teamlevel statistics such as the number of managers involved in harassment, the number of victims associated to repeat offenders, and the degree of isolation of victims. This represents an unavoidable trade-off. 17 Table 2 summarizes the experimental treatment arms. Arm 1 is the benchmark, as it represents the status quo survey approach. Ex ante, we identified arm 7 as the most protective. This may not be the case, however, if RB, which entails asking the respondent for more information about themselves that is not recorded in the survey, erodes the benefit of not asking for respondents’ PII. We shed light on this possibility by comparing arms 3 and 4. The experimental conditions were introduced",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 17,
+        "text": "17 We sampled workers from teams using the employee lists, so respondent in the low PII condition may have inferred that we possessed some team-level identifying information; that said, we did not know workers’ supervisors, who are the subject of the harassment questions. For the rest of the paper, consistent with the intention of this treatment condition, we drop respondents in the low PII condition when estimating team-level statistics.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 18,
+        "text": "Table 2: Treatment Arms & Surveyed (Planned) sample sizes No Rapport Rapport 1 Rapport 2 TOTAL Direct elicitation PII Arm 1 Arm 2a Arm 2b 412(476) 190(225) 188(229) 790(930) Low PII Arm 3 Arm 4 197(226) 189(220) 386(446) Hard garbling PII Arm 5 Arm 6a Arm 6b 416(487) 188(225) 195(227) 799(939) Low PII Arm 7 270(305) 270(305) Total 1025(1189) 837(975) 383 (456) 2245(2620)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Hard Garbling",
+            "Hard Garbling"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": [
+            "Survey & Conjoint Experiments"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 6,
+        "section_name": "Treatment Conditions",
+        "paragraph_id": 19,
+        "text": "after respondents completed all non-harassment related survey modules. Figure A.1 displays the survey modules and location of treatment interventions. There are small variations across HG treatment arms in the realized garbling rate, as it was blocked within team but not within treatment arm. Consequently, we use each HG treatment arm’s realized garbling rate to ensure that differences in the realized garbling rate across treatment arms do not affect our estimates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 0,
+        "text": "Sampling. We conducted a stratified random selection of workers. We sampled workers from 4 types of production teams using the plants’ employee lists: sewing lines, finishing teams, dry washing teams, and wet washing teams. We chose teams with 15 or more workers because we aimed to stratify the treatment assignment by team and gender. We were left with 112 eligible teams and 5,948 eligible workers out of a workforce of 7,727 workers (77% of workers). The average size of teams in our survey is 53 workers (Table A.2 ). Within teams, we stratified workers by sex, which we identified based on name (male, female, uncertain). 18 In a small number of teams with few members of one sex, we aggregated members of this sex across teams to the",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 1,
+        "text": "18 We categorized names as male or female for 99.7% of eligible workers. Among surveyed workers, the classification error rate was 2.76% for men (11 respondents) and 1% for women (17 respondents).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 2,
+        "text": "smallest level that yielded a suitable group size. We selected 9 workers per stratum, to ensure a minimum of 1 per stratum assigned to each arm. We then sampled larger strata in proportion to their share of the overall eligible worker population. Based on power calculations, we targeted a sample size of 2,620. Because we had the plants’ employee lists, we were able to replace workers who were unreachable or who declined to participate. We attempted to recruit 3,578 workers, and we achieved a sample size of 2,245 (63% response rate). The main reason for non-response was that we were not able to reach workers by phone (76% of cases); of workers whom we reached, 96% agreed to be surveyed on a follow up call at a time convenient for them, and we were ultimately able to survey 86%. 19 Conditional on survey start, the completion rate was 100%. Workers were not aware of their treatment assignment when deciding whether to participate. We obtained workers’ phone numbers from the apparel manufacturer’s HR department, so the main cause of our inability to reach workers was likely outdated phone numbers. Online Appendix E conducts several checks of whether non-response is correlated with harassment experience or treatment status. We do not find evidence that this was the case. We did not achieve our target sample size despite our ability to replace workers because we stratified our selection by team and gender, and for some strata, we ran out of candidate replacement workers. The median (mean) team in the data has 39% (41%) of its workers surveyed. The median and mean team-level response rate to the survey was 65%. 20",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 3,
+        "text": "Assignment to Treatment Arms. The unit of randomization is a worker, stratified by plant-production team and sex whenever possible. We implemented the",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 4,
+        "text": "19 We attempted to call workers 9 times to recruit them. 20 One concern is that supervisors who engage in more harassment may have pressured workers not to participate. This would not affect the experiment’s internal validity, as selection into the sample happens before a respondent knows their treatment assignment. However this would bias downward the statistics of intended reports in Section 6 . Tests described in Online Appendix E suggest this was not the case.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 5,
+        "text": "randomization in Stata. We first randomly assigned one worker per stratum to each treatment arm because we wanted to ensure that all strata were represented in all treatment arms. For larger strata, we then randomly assigned workers to each treatment arm with probabilities of assignment that corresponded to the treatment arm’s target share of the overall sample size. We used the randtreat package by Carril (2017) to address misfits across strata. To improve balance, we proceeded along the lines suggested by Banerjee et al. (2020). We conducted 10 randomizations and selected the one that performed best in terms of balance on two covariates available to the research team: tenure, and high versus low skill status.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 7,
+        "section_name": "Sampling and Assignment to Treatment Arms",
+        "paragraph_id": 6,
+        "text": "Integrity of the experiment and baseline balance. As detailed in Online Appendix D , we implemented HG using a system of preassigned, encrypted 1-2 digit numeric codes for “Yes” and “No” intended responses. Encryption ensured that neither the enumerator nor the respondent knew whether a particular response had been garbled; relatedly, the enumerators could not influence the garbling of “no” intended responses. They did, however, need to adhere to the protocol to input the code assigned to the respondent’s intended report. Following the survey, we found that one enumerator did not adhere to this protocol. Upon further questioning, it was confirmed that the enumerator understood the data entry protocol but had not adhered to it (inputting the same code for all questions for a given respondent to save time). This enumerator conducted 53 DE and 48 HG surveys, all of which we drop. We also drop one worker under age 18 who was accidentally surveyed. As a result, the sample size is 2,143 observations for the remainder of the paper. Table A.1 in Online Appendix A presents summary statistics of our sample. Table A.2 presents team-level summary statistics for the teams represented in the survey, calculated for overall teams, including workers not sampled in the survey. Table A.3 shows balance tests for workers’ characteristics across the main treatment conditions, and Table A.4 does the same across no rapport, short rapport, and long rapport conditions. There are no statistically significant differences across treatment",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 2,
+        "text": "where r is is the intended reporting outcome of interest for individual i in stratum s . HG i , Rapport i and LowPII i are indicators for hard-garbling, rapport, and not asking for team-related identifying information. μ s are stratum fixed-effects. We present results without and with controls for individuals’ characteristics X i , which are selected using the post double selection (PDS) lasso (Belloni et al., 2014). Eligible control variables include the worker characteristics reported in Table A.1 .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 3,
+        "text": "Identification using garbled responses. For individuals in the HG arms, we observe garbled response e r i instead of intended response r i . However, following Blair et al. (2015), we note that recorded reports can be expressed as",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 5,
+        "text": "where ψ i is a mean-zero error, equal to 1 − π with probability π and equal to − π with probability 1 − π . We defined normalized recorded reports ˆ r i by ˆ r i ≡ e r i − π 1 − π = r i + 1 − r i 1 − π ψ i | {z } ≡ ξ i",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 6,
+        "text": "with π = . 2 for the HG group and π = 0 for the DE group. Normalized report ˆ r i is equal to the intended report plus a heteroskedastic error term. If r i satisfies ( 5 ), then ˆ r i satisfies a similar regression ( 5b ) with heteroskedastic, mean-zero errors (conditional on covariates). Consequently, OLS is consistent, and robust standard",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 7,
+        "text": "errors are correct. With blocked-garbling (see Online Appendix B ), error terms ψ i are negatively correlated within blocks, and uncorrelated across. We estimate the following equation, in which ξ is is now the residual, and report standard errors clustered by HG block (HG respondents) or respondent (DE respondents): 21",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 9,
+        "text": "HTE analysis by respondents’ sex. We also estimate treatment effects separately for women and for men:",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 10,
+        "text": "ˆ r is = α f HG i ∗ Female i + α m HG i ∗ Male i + β f Rapport i ∗ Female i + β m Rapport i ∗ Male i + γ f LowPII i ∗ Female i + γ m LowPII i ∗ Male i + λ Female i + μ s + θX i + ξ is (6)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 8,
+        "section_name": "The Impact of Survey Design",
+        "paragraph_id": 11,
+        "text": "Complementarity across treatments. We test for complementarity vs. substitutability across treatments by estimating the effects separately for each arm. The omitted category is 1 ( DE × PII × No RB ) i = 1 , which is treatment arm 1, the control condition. ˆ r is = α 1 1 ( DE × PII × RB 1 ) i + α 2 1 ( DE × PII × RB 2 ) i + α 3 1 ( DE × Low PII × RB 1 ) i + α 4 1 ( DE × Low PII × No RB ) i + β 1 1 ( HG × PII × No RB ) i + β 2 1 ( HG × PII × RB 1 ) i + β 3 1 ( HG × PII × RB 2 ) i + β 4 1 ( HG × Low PII × RB 1 ) i + μ s + θX i + ξ is (7)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "Main effects of survey design on reporting. Table 3 reports the main treatment effects. 22 In this and other regression tables, odd-numbered columns display",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "21 We pre-specified reporting of robust standard errors, so reporting clustered standard errors is a deviation from our PAP. Since sampling errors are negatively correlated within HG batch, this deviation is justified. See NBER Working Paper No. 31011 for results estimated using robust standard errors. For regressions that do not use intended reports, we report robust standard errors as per our PAP. 22 Table A.5 reports the main results with separate indicators for shortand long-RB conditions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "the results from the baseline specification, while even-numbered columns display the results with PDS lasso-selected controls. In the control arm, ( DE × PII × No RB ) , 9.9% of workers report experiencing threatening behavior, 1.53% report being physically harassed, and 1.78% report being sexually harassed by their supervisor. In percentage points (ppts), HG increases the reporting of threatening behavior, physical harassment, and sexual harassment, respectively, by 4.5 ppts (45.4%, p < 0.01), 4.4 ppts (290%, p < 0.01), and 4.8 ppts (271%, p < 0.01). 23 Removing questions about respondents’ supervisor (Low PII) increases the reporting of physical harassment by a marginally statistically significant 2.9 ppts (188%, p = 0.108) but has no effect on the reporting of threatening behavior or sexual harassment. Building rapport appears to have a positive effect on the reporting of threatening behavior (1.20 ppts, a 11.6% increase) and sexual harassment (1.90 ppts, a 107% increase), but it is not statistically significant. Rapport has no detectable effect on the reporting of physical harassment. Together, these results make a compelling case for the importance of plausible deniability in the design of information transmission mechanisms in organizational settings. The costs and benefits of removing team-level identifying questions are much less clear. Low PII appears to increase the reporting of physical harassment, but not of threatening behavior or sexual harassment, and it comes at the cost of not being able to calculate manager-level statistics. Finally, we cannot reject that RB has no effect on reporting. It is possible that this null result masks heterogeneous effects across respondents or that RB’s effect depends tightly on the survey design. Section 7 discusses the robustness of these findings. We show that confusion among respondents does not explain HG’s impacts on reporting. We also show that treatment status does not affect reporting behavior associated with a placebo question using DE for all arms. This suggests that respondents’ behavior reflects a real understanding of the benefits afforded by plausible deniability. We then discuss 23 The average treatment effects of HG are similar across types of harassment, but this is not the case conditional on gender (see Table 4 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "Threatening behavior Physical harassment Sexual harassment (1) (2) (3) (4) (5) (6) HG Treatment 0.0445 [FORMULA] 0.0448 [FORMULA] 0.0438 [FORMULA] 0.0451 [FORMULA] 0.0478 [FORMULA] 0.0487 [FORMULA] (0.0150) (0.0145) (0.0121) (0.0117) (0.0114) (0.0111) Rapport Treatment 0.0113 0.0140 -0.0094 -0.0082 0.0188 0.0186 (0.0202) (0.0195) (0.0200) (0.0192) (0.0183) (0.0176) Low PII Treatment 0.0102 0.0097 0.0280 0.0299 ∗ 0.0045 0.0067 (0.0245) (0.0239) (0.0184) (0.0178) (0.0203) (0.0201) Control Group Mean .0992 .0992 .0153 .0153 .0178 .0178 Yes Yes Yes Yes Yes Yes PDS lasso controls No Yes No Yes No Yes 2140 2140 2140 2140 2140 2140 Notes: This table reports OLS estimates of treatment effects on workers’ reporting. Each column in the table reports the estimated coefficient from a separate regression. The dependent variable in each column is regressed on the treatment indicator and stratification variables. Even-numbered columns also include controls selected using the PDS lasso. Standard errors clustered by HG batch (HG respondents) or respondent (DE respondents) are reported in round brackets. * p < 0.1; ** p < 0.05; [FORMULA] p < 0.01.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Stratification"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "Effects of survey design on reporting by men and women. Motivated by the possibility that the experience of harassment and the utility generated by reporting harassment are different for men and women, we estimate the main effects separately by sex in Table 4 . In our control arm, 19.12% of men report experiencing threatening behavior, 4.41% report experiencing physical harassment, and 1.47% report experiencing sexual harassment. Reporting rates among women are different: 8.0% report threats, 0.92% report physical harassment, and 1.85% report sexual harassment. We cannot disentangle whether these differences are due to differential incidences of harassment or differential reporting. HG continues to increase reporting across the board. Interestingly, the point estimates are particularly large for men, but because our sample of men is small, with the exception of threatening behavior, we cannot reject that the effects are the",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "same for men and women. The fact that the effects of HG are, if anything, more positive for men echoes recent results on intimate partner violence (IPV) in Kenya. Using list experiments, Castilla and Murphy (2023) find that roughly equal numbers of men and women are victims of IPV. In contrast, using DE, Haushofer et al. (2020) find that women report being the victim of IPV at higher rates than men. 24 The impact of removing PII appears to be weakly more positive for women, although we cannot reject that the effects for both groups are zero or the same. Table 4 suggests that the impact of rapport on men and women may be different. For threatening behavior and sexual harassment, rapport appears to have increased reporting among women and may have backfired for men. This is plausible: survey enumerators were women, and small talk with an unknown woman may have raised men’s suspicion regarding the survey. This suggests that further experimentation, and better tailoring of RB, is needed.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "List Experiments"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "Interactions among treatment conditions. We examine the possibility that the treatment conditions may substitute or complement each other using regression equation ( 7 ). Figure 1 summarizes the results, which are presented in Table A.6 . The omitted category is the control arm, DE × PII × No RB. The top 4 treatment conditions shown in Figure 1 correspond to reports elicited using DE. To a first order, removing PII and building rapport do not seem to have a large impact. There maybe an impact of extended rapport on the reporting of sexual harassment. While this individual coefficient is significant, the overall picture invites caution. Figure A.2 shows that the negative effect of RB on reporting of threatening behavior is driven by men, while its positive effect on reporting of sexual",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "24 Nontrivial numbers of men are also found to be victims of sexual harassment in other contexts. For instance, in a 2019 survey from the United States, 81% of women and 43% of men reported experiencing some form of sexual harassment and/or assault in their lifetime, with 49% and 18% reporting having been sexually touched in an unwelcome way (UC San Diego Center on Gender Equity and Health, 2019). In a study conducted in seven cities in India, 19% of men reported being victims of sexual harassment (ET Bureau, Aug 22, 2010).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 11,
+        "text": "Threatening behavior Physical harassment Sexual harassment (1) (2) (3) (4) (5) (6) HG Treatment × Female 0.0274 0.0276 ∗ 0.0405 [FORMULA] 0.0420 [FORMULA] 0.0371 [FORMULA] 0.0387 [FORMULA] (0.0171) (0.0165) (0.0132) (0.0127) (0.0133) (0.0131) HG Treatment × Male 0.1224 [FORMULA] 0.1199 [FORMULA] 0.0597 ∗ 0.0587 ∗ 0.0917 [FORMULA] 0.0928 [FORMULA] (0.0418) (0.0408) (0.0347) (0.0335) (0.0351) (0.0344) Rapport × Female 0.0193 0.0218 -0.0173 -0.0151 0.0304 0.0305 (0.0228) (0.0219) (0.0234) (0.0225) (0.0204) (0.0194) Rapport × Male -0.0233 -0.0230 0.0243 0.0204 -0.0371 -0.0360 (0.0467) (0.0449) (0.0370) (0.0360) (0.0460) (0.0459) Low PII Treatment × Female 0.0132 0.0137 0.0326 0.0343 ∗ 0.0105 0.0127 (0.0263) (0.0258) (0.0208) (0.0199) (0.0229) (0.0224) Low PII Treatment × Male -0.0067 -0.0111 0.0120 0.0140 -0.0259 -0.0245 (0.0549) (0.0532) (0.0457) (0.0455) (0.0402) (0.0392) Female -0.0900 -0.0991 -0.0211 -0.0112 0.0682 0.0886 (0.1059) (0.1020) (0.0751) (0.0750) (0.0776) (0.0745) Control Mean - Female .08 .08 .0092 .0092 .0185 .0185 Control Mean - Male .1912 .1912 .0441 .0441 .0147 .0147 p(HGxFemale - HGxMale) [0.045] [0.045] [0.614] [0.649] [0.175] [0.172] p(RapportxFemale - RapportxMale) [0.419] [0.374] [0.351] [0.414] [0.188] [0.190] p(NoPIIxFemale - NoPIIxMale) [0.735] [0.663] [0.689] [0.689] [0.421] [0.393] Yes Yes Yes Yes Yes Yes PDS lasso controls No Lasso No Lasso No Lasso 2140 2140 2140 2140 2140 2140 Notes: This table reports OLS estimates of treatment effects by gender heterogeneity on workers’ reporting. Each column in the table reports the estimated coefficient from a separate regression. The dependent variable in each column is regressed on the gender interactions of treatment variables and stratification variables. Even-numbered columns also include controls selected using the PDS lasso. Standard errors clustered by HG batch (HG respondents) or respondent (DE respondents) are reported in round brackets. * p < 0.1; ** p < 0.05; [FORMULA] p < 0.01.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Stratification"
+        ],
+        "matched_l1_methods": [
+            "Experimental Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 12,
+        "text": "harassment is driven by women. This suggests that: (1) RB does impact reporting, but its effect is subtle and varies across participants; and (2) that RB needs to be carefully tailored. The bottom 4 treatment conditions in Figure 1 correspond to reports elicited using HG, first on its own, then introducing RB and Low PII. Estimated treatment effects appear to be rising as additional trust-enhancing steps are taken. This con-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 23,
+        "text": "Notes: This figure reports coefficients from separate regressions of the outcome variable on the treatment arm indicators, strata fixed effects, and controls selected using the PDS lasso. The regression specification is equation ( 7 ). The whiskers are 95% confidence intervals estimated using robust standard errors. The omitted category is treatment arm 1, 1 ( DE × PII × No RB ) i = 1 , which is the control condition. The number in square brackets is the reporting rate for this group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 24,
+        "text": "trasts with patterns under DE, where trust-enhancing steps are not accompanied with increasing treatment effects. This suggests that there exist complementarities between HG and other steps that foster trust in the survey protocol. This is intuitive since HG can only be effective if respondents trust that protocol will be followed. This visual intuition corresponds to the fact that the point estimate for the effect of ( HG × Low PII × RB 1 ) is larger than the sum of the point estimates for ( DE × PII × RB 1 ) + ( DE × Low PII × No RB ) + ( HG × PII × No RB ) for all three harassment outcomes. We test the null hypothesis of no complementarity among HG, removing team-level identifying information, and RB in the complemen-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 25,
+        "text": "tarity test reported at the bottom of Table A.7 . Focusing on even-numbered columns, which include PDS-lasso-selected controls, the test is rejected for threatening behavior ( p =0.035) but is too imprecise to be rejected for physical and sexual harassment ( p =0.247 and p =0.256, respectively). We thus interpret this as suggestive evidence of complementarity among the design features.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 10,
+        "section_name": "Understanding Harassment",
+        "paragraph_id": 0,
+        "text": "Consistent with Proposition 1 and Corollary 1 , we use response data from garbled treatment arms to assess the scope and nature of the apparel producer’s harassment problem. This reduces bias in the measurement of statistics of true harassment. Based on intended reports, we find that low grade harassment is prevalent and that victims tend to be isolated. This contrasts with an archetypal image of serial harassers, shaped by high-profile cases, whereby a small number of individuals are responsible for the majority of misconduct. While specific to our partner organization, this finding informs our prior on likely patterns of harassment in other organizations and cautions against policy responses that exclusively target small numbers of frequent offenders or require multiple victims to initiate action. Scale of the issue and potential gains. Figure 2 illustrates the estimated share of victimized workers, computed using ( 3 ) under DE and HG. Since this statistic does not require PII, we pool data across low and high PII arms. As we have already discussed, HG considerably increases workers’ propensity to report harassment: 13.5% reported threatening behavior with HG compared to 8.7% with DE, 5.7% reported physical harassment with HG compared to 1.9% with DE, and 7.7% reported sexual harassment with HG compared to 2.8% with DE. The primary takeaway is that harassment is meaningfully more widespread than standard surveys (or the firm’s internal reporting channels) suggest. This means that addressing harassment may have a much more positive impact on overall employee",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
         ]
     },
     {
@@ -23,7 +1312,9 @@
         "paragraph_id": 2,
         "text": "Threats Physical Sexual Harassment Type Direct Elicitation Hard Garbling Notes: This figure illustrates reported harassment rates estimated using reporting with DE and HG, respectively. We compute the harassment rates using ( 3 ) under DE and HG. For both DE and HG, we pool across all treatment arms, including the RB arms and the arms in which we do not collect team-level identifying information.",
         "extraction_warnings": "",
+        "tier": 1,
         "matched_keywords": [
+            "Hard Garbling",
             "Hard Garbling"
         ],
         "matched_l1_methods": [
@@ -37,15 +1328,298 @@
         "paper_id": 1456,
         "section_id": 10,
         "section_name": "Understanding Harassment",
+        "paragraph_id": 3,
+        "text": "welfare than what previously available data would lead one to conclude. We also note that since both men and women report significant levels of harassment under HG, addressing harassment would likely benefit both groups.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 10,
+        "section_name": "Understanding Harassment",
         "paragraph_id": 4,
         "text": "Problem managers and isolated victims. We now turn to team-level characteristics of interest, S r TV ≥ k and E r 2 V | 1 V , computed by pooling garbled reporting data from treatment arms that use HG and collect PII. We estimate the distribution of number of intended reports in the sample population of teams using the unbiased consistent estimator of Propositions 2 and B.1 (Online Appendix B ). The number of workers surveyed per team in treatment arms that use HG and collect PII varies from 3 to 12, with a median and mean of 7. As such, we apply the estimator for each sampled team size in the data and average the estimates to obtain team-population statistics. Table 5 reports S r TV ≥ k for k ∈{ 1 , 2 } and E r 2 V | 1 V . The estimated share S r TV ≥ 1 of problem teams in which at least one worker reports being harassed is 72% for threatening behavior, 25% for physical harassment, and 40% for sexual harassment.",
         "extraction_warnings": "",
+        "tier": 1,
         "matched_keywords": [
-            "Propositions"
+            "Propositions",
+            "Local Average Treatment Effect (LATE)"
         ],
         "matched_l1_methods": [
             "Theoretical and Formal Modeling"
         ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 10,
+        "section_name": "Understanding Harassment",
+        "paragraph_id": 5,
+        "text": "Table 5: Estimated team-level statistics S r TV ≥ k for k ∈{ 1 , 2 } and E r 2 V | 1 V Threatening Physical Sexual Statistic Behavior Harassment Harassment S r TV ≥ 1 0.719 0.254 0.402 (0.068) (0.045) (0.053) S r TV ≥ 2 0.112 0.035 0.033 (0.038) (0.019) (0.022) E r 2 V | 1 V 0.166 0.137 0.083 (0.055) (0.076) (0.056) Notes: This table reports team-level statistics S r T V ≥ k for k ∈ 1 , 2 and E r 2 V | 1 V , estimated using pooled data from treatment arms that use HG and collect PII. The sample includes 112 teams.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 10,
+        "section_name": "Understanding Harassment",
+        "paragraph_id": 6,
+        "text": "The share of teams with at least 2 workers reporting harassment is 11% for threats, 3.5% for physical harassment, and 3.3% for sexual harassment. This confirms that the bulk of the challenge consists in dealing with fairly widespread, medium intensity harassment, rather than dealing with a fairly circumscribed group of high intensity offenders: k S TV ≥ k is not high for k large. Across all types of harassment, self-identified victims are relatively isolated: conditional on getting a report, the likelihood of getting at least another one is equal to 17% for threats, 14% for physical harassment, and 8% for sexual harassment. Figure 3 visualizes this finding; it plots the full distribution of S r TV ≥ k for each type of harassment and shows that no teams have 3 or more self-identified victims for threats or physical harassment and a small share of teams have 3 self-identified victims for sexual harassment. A caveat for this statement is that our estimate of intended reports is a lower bound to the real amount of harassment. For this reason, the finding is better stated as: victims willing to report under HG are isolated. Policy implications. Our findings suggest three policy takeaways. First, harassment is much more prevalent than filed complaints would suggest, and it affects both men and women. Second, harassment occurs at a moderate intensity but is widespread across teams. This means that firing a few bad apples cannot be the sole",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 10,
+        "section_name": "Understanding Harassment",
+        "paragraph_id": 10,
+        "text": "Notes: This figure reports the full distribution of S r T V ≥ k for each type of harassment, estimated using pooled data from treatment arms that use HG and collect PII. We estimate the statistics using the unbiased consistent estimator of Proposition 2 . The sample includes 112 teams.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 10,
+        "section_name": "Understanding Harassment",
+        "paragraph_id": 11,
+        "text": "policy option. Instead, the behavior of existing managers must be changed. Third, the extent to which victims are isolated in teams varies substantially by type of harassment. This has implications for setting different burdens of proof for harassment: when victims are more isolated, requiring multiple victims to come forward, for example, to avoid “he said, she said” situations, may miss the majority of cases. Remedying harassment likely requires having actions that can be taken in cases when only one victim comes forward. Examples include moving possible victims to different production lines, providing training to managers, or initiating an HR review.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "Summary. This paper makes two main contributions. First, we evaluate the impact of different aspects of survey design – HG, RB, and removing team level information – on respondents’ propensity to report harassment in a real-life organizational context. Our experimental results show that lack of plausible deniability causes",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "under-reporting of harassment. Limited trust in the integrity of the reporting system may also contribute, though our results suggest that the process of trust-building is highly contextual and may backfire when not well-targeted. Second, we identify policy-relevant statistics of reported harassment that con be consistently estimated using garbled reporting data. Applying these estimators to our data illustrates how they can guide policy responses to harassment. In our context, harassment appears to be widespread, a significant of managers harass workers, and victims are frequently isolated. This cautions against policy responses that target a small minority of very frequent offenders, as well as policies that require multiple victims to come forward to escalate a complaint.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "Directions for further research. Two directions for future research strike us as particularly valuable. First, what governance actions should be taken following a garbled report of harassment? Actions need to be acceptable, legitimate responses to an inherently noisy signal. In addition, they should not invite malicious false reports by workers or further retaliation by managers. For example, sending a manager to a training seminar, or initiating a more thorough yearly review, seem safer choices than firing a manager or passing them over for promotion without further evidence. Online Appendix C further discusses considerations for meaningful follow up actions. Second, along the lines of Adams-Prassl et al. (2022), Folke and Rickne (2022), and Dahl and Knepper (2021), what are the mental health and broader welfare effects of reporting harassment for workers, managers and producers? Sociological studies suggest that the act of confiding secrets can improve well-being through improving perceived coping ability and reducing the mental load associated with the secret (Slepian and Moulton-Tetlock, 2019). We resurveyed workers two weeks after the survey experiment to test whether reporting harassment improved their mental well-being and job satisfaction. We estimate a 2SLS model with the randomized assignment to the treatments as our instruments for reporting. Appendix G provides suggestive evidence that reporting improves mental well-being and job satisfaction;",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 11,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "The remainder of this section discusses alternative interpretations for our findings, and briefly describes available evidence for external validity.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 0,
+        "text": "It is legitimate to ask whether any potential effect of HG on responses reflects respondents’ value for plausible deniability or an unrelated mechanism. We investigate two alternative interpretations: (i) whether confusion in the HG condition can explain our results; and (ii) whether reassuring language in the HG script directly increased trust among respondents in the HG condition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 2,
+        "text": "One concern with our findings is that HG is a more complicated mechanism than DE. 25 This means that respondents may be confused by HG, and that confusion may be more likely under HG compared to DE. This concern is especially relevant in our context, in which the average survey respondent has 6.70 years of schooling. We were concerned about this possibility, so we included two comprehension questions in the HG module. 26 Respondents answered these prior to being asked the questions about harassment, and survey enumerators explained the correct answers. In our data, 8.8% of HG respondents answered at least 1 comprehension question incorrectly, while 4.8% answered 2 incorrectly. Women and men answer incorrectly at somewhat similar rates: 9.6% of men and 8.6% of women in HG answer at least 1 question incorrectly ( p = 0 . 685 ), while 6.9% of men and 4.3% of women answer 2 questions incorrectly ( p = 0 . 133 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 3,
+        "text": "25 Explaining HG takes more time. This increases average survey duration by 4% (Table A.8 ). 26 The questions were, “Can you please tell me whether the following statements are true or false: (a) If I respond ‘Yes,’ no one can ever know this for sure. (b) The system will record at least one out of every five workers’ responses as ‘Yes.’ ”",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 4,
+        "text": "Because reporting rates turn out to be weakly higher among confused respondents, we investigate whether asymmetric confusion among HG versus DE respondents could explain our results. We adopt a very conservative approach and reestimate our main results setting to “No” the recorded answers to harassment questions of respondents who answer any comprehension question incorrectly. 27 Panel A of Table A.9 shows that even under this conservative treatment, the effects of HG are positive, large, and statistically significant for all harassment types. Panel B shows that there is not a differential pattern of attenuation by sex, and the patterns of heterogeneity are unchanged.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 6,
+        "text": "The script explaining HG states that “our system is set up so that it’s safe to report an issue” before explaining that garbling ensure that at least 1 in 5 answers is recorded as a complaint. This raises the question of whether respondents directly trust the assertion that the system is safer without understanding why, and if this increases their willingness to report with HG. Alternatively, it is possible that respondents perceived the HG script as a signal of the research team’s general trustworthiness, and this made them more willing to report in general. We note that while HG does admit stronger security assurances, those correspond to the real-life need of explaining the point and legitimacy of an unfamiliar survey methodology to respondents. In addition, even if survey participants respond to reassurances, rather than to an actual understanding of increased plausible deniability, it is still necessary to implement a mechanism supporting these reassuring statements. Not doing so would be unethical, and most likely unsustainable in the medium run, as respondents learn that assurances are in fact empty. Even if respondents simply trust our wording in a one-shot setting, it is important for us to be able to implement the plausible deniability features we advertise. In the ongoing monitoring scenario",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 7,
+        "text": "27 Less conservative approaches would be to exclude these respondents from the analysis or to set their intended response to “no” and simulate out their recorded responses.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 8,
+        "text": "we have in mind, trust needs to be maintained and continuously earned. 28 In addition, we think it is unlikely that these assurances drive our results. First, all respondents were assured of a strong commitment to confidentiality as part of the informed consent process, but even under this very strong general security assurance, baseline reporting rates for more sensitive types of harassment are very low among DE respondents. 29 Second, the high rate of correct responses to comprehension questions suggests that respondents were attentive to the explanation of HG and comprehended the mechanics of how it works. Third, evidence from a placebo question and from enumerators’ assessments of respondents after the survey suggest this is not the case. Our survey module included a sensitive question that appeared directly following the three harassment questions and was asked using DE for all respondents. Specifically, we asked whether their supervisor had refused to forward their request for leave to their factory’s administration or required them to perform certain tasks to submit it. If the effect of HG is driven by respondents’ understanding of the benefits of plausible deniability, then responses to this question should not be affected. Table A.10 shows that the shares of HG and DE respondents reporting “Yes” to this question are indistinguishable. This suggests that HG respondents understood that the survey mechanism had changed and was less secure. Finally, enumerators answered 5 questions about respondents’ behavior during the survey; we test within-enumerator differences in perceived behavior across treatment conditions. Enumerators perceived HG respondents to be more honest, but no different from DE respondents on trust or other behaviors (Table A.11 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 9,
+        "text": "Altogether, the evidence appears to support the interpretation that respondents in HG have some comprehension of how the HG mechanism works and responding to the specific assurances of plausible deniability it provides. It is less consistent with 28 Chassang and Zehnder (2024) provide preliminary lab evidence that HG has a lasting effect on reporting, in contrast to RR, which unravels because respondents don’t comply with instructions. 29 The Supplementary Materials collect all scripts, survey instruments, and consent forms.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 12,
+        "section_name": "Do respondents value plausible deniability?",
+        "paragraph_id": 10,
+        "text": "the key mechanism being general purpose reassurances provided in the HG script and is inconsistent with increased confusion under HG. That said, we acknowledge that the evidence is limited and better understanding the mechanism through which HG is effective is a natural question for follow-up studies.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 13,
+        "section_name": "Strategic misreporting by workers",
+        "paragraph_id": 0,
+        "text": "In our conceptual framework, we assume that there are no false positives in reporting; workers either report their true harassment status or they report that they have not been harassed. As discussed in Section 3 , we think that this is an appropriate assumption for our setting, at least in the short-run. One may still be concerned that this is a strong assumption. Workers may have malicious motivations for filing false reports, such as career concerns driving them to sabotage supervisors, or more benign ones, such as other-regarding preferences driving them to report harassment they have witnessed. We explore both possibilities using our data and find no evidence in support of either, so we present and discuss these checks in Appendix F . 30 Appendix F also discusses theoretical guidance from Chassang and Padró i Miquel (2019) on issues around false positives that arise in the longer-run. One important design decision is the choice of follow up action in the event of a recorded complaint. Some actions (say sending someone to a training seminar) is less likely to damage a manager and benefit a malicious worker than others.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 14,
+        "section_name": "External validity",
+        "paragraph_id": 0,
+        "text": "One may question whether our results extend to other organizational settings. We provide some evidence from an ongoing study by Boudreau et al. (2022a). The study examines barriers to reporting harassment to a worker helpline that serves 600-700 garment factories in Bangladesh. It includes a survey of workers employed at factories that participate in the helpline. Unlike in the current study, survey participants are",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1456,
+        "section_id": 14,
+        "section_name": "External validity",
+        "paragraph_id": 2,
+        "text": "recruited through the community and are aware that the survey will only be used for research. As of December 2024, around 2,900 workers from 208 factories have been surveyed, with a small number of surveys pending. The module on workers’ experience of harassment uses the same DE and HG scripts to ask about the same types of harassment, as well as a less sensitive behavior, shouting. Table A.12 shows a similar pattern of very low reporting rates for sensitive types of harassment under DE, with large, positive, statistically significant increases under HG. The null result on reporting of shouting is consistent with the high reporting rate under DE, and the magnitude of HG’s effect increases with the sensitivity of the behavior. In this population, the effects appear to larger for men for threatening behavior, but are similar magnitudes for men and women for physical and sexual harassment.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
         "matched_l2_methods": []
     }
 ]

@@ -1,17 +1,440 @@
 [
     {
         "paper_id": 1438,
-        "section_id": 6,
-        "section_name": "Results",
-        "paragraph_id": 4,
-        "text": "In the second layer of analysis, social class data is kept in the overall category, while gender is compared across male and female categories (see Tables 4 and 5). Among primary students, males exhibit a 0.5 percentage point higher dropout rate than females across the four states. Difference-in-Differences (DiD) estimates further validate this, showing a male dropout increase of 4.45 percentage points compared to 3.26 percentage points for females, both significant at the 1% level. At the secondary level, the difference in dropout rates between males and females due to prohibition is marginal, with males experiencing a 5.99 percentage point increase and females a 5.01 percentage point increase (both p<0.01). However, similar to the overall analysis, the increase in dropout rates at the secondary level for both males and females is statistically insignificant (p>0.1).",
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Alcohol consumption imposes substantial costs on society, including increased mortality, crime, and risky health behaviors (Carpenter and Dobkin 2009, Waddell 2012, Carpenter and Dobkin 2015 in Chaudhari et al., 2024). To mitigate these adverse effects, the prohibition of alcohol has been widely adopted as a policy tool across various regions worldwide (Rorabaugh 2020, Moore & Gerstein 1981, Blocker 2006). This approach is often pursued not only to address public health concerns but also to uphold social order and moral considerations. These issues are particularly pressing in low-income countries, where the burden of alcohol-attributable diseases is significantly higher, and comprehensive national alcohol policies are scarce (WHO 2018 in Chaudhari et al. 2024). Additionally, weak institutional frameworks and inadequate law enforcement exacerbate the consequences of alcohol consumption (Grittner et al. 2012 in Chaudhari et al. 2024).",
         "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "However, the implementation of alcohol prohibition has led to both intended outcomes, such as reduced alcohol-related harm, and unintended consequences, including economic disruptions and the emergence of illicit markets (Blocker 2006, Thornton 1991, Collins et al. 1997, Livingston 2011). Economists have been particularly interested in studying the multifaceted impacts of such policies, given their profound implications on household dynamics, societal well-being, and public health systems (Miron 1998, Dar & Sahay 2015, Law & Marks 2020, Bao Giang et al. 2013). As a significant policy intervention, understanding the full breadth of its effects remains crucial for informed decision-making and policy formulation (Moore & Gerstein 1981).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Different governmental systems, whether at the central or provincial level, have approached the idea of alcohol prohibition in varied ways, reflecting diverse regulatory stances and cultural contexts (Stockwell et al. 2021, Jha 2022, Jha 2023). Alcohol prohibitions have been prominent globally, implemented for various reasons such as social reform, economic productivity, and religious adherence. In the United States, the Prohibition Era (1920–1933) sought to reduce crime and improve public morality but led to unintended consequences like organized crime, ultimately ending with its repeal. Similarly, countries like Saudi Arabia, Iran, and Afghanistan enforce strict prohibitions rooted in Islamic law to maintain religious and social order. Other nations, including Bangladesh and Malaysia, adopt a dual approach, prohibiting alcohol for Muslims while allowing consumption for non-Muslim communities. Examples include South Africa and Panama's COVID-19 prohibitions to reduce strain on healthcare systems and violence, and historical prohibitions in Finland, Iceland, and Lithuania aimed at addressing social and health issues (Ansari 2016, Blocker 2015). This variation has led to a complex and often contentious relationship with alcohol regulation, making it a significant area of academic inquiry. Over time, the tension surrounding prohibition policies has deepened, as governments balance public health objectives with economic and social considerations. The impact of alcohol consumption extends beyond health, influencing educational outcomes and societal dynamics.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "Children, as a particularly vulnerable group, experience the effects of prohibition policies through various channels. These impacts can be categorized into three main areas: children who directly consume alcohol, those living in households where alcohol use is prevalent, and those involved in illicit activities such as bootlegging. The exploitation of minors in illegal alcohol trade not only exposes them to criminal activities but also disrupts their education and adversely affects their overall life outcomes. Research shows it impairs cognitive functioning, reduces academic performance, and decreases educational attainment (Panes et al., 2023; Chabu et al. 2021, Hjarnaa et al. 2020). Studies also link increased drinking with lower high school graduation rates and long-term negative economic outcomes (Yamada et al. 1996, El Ansari et al. 2013, Balsa et al. 2011). Prohibition policies have demonstrated positive effects, with increased disposable household income and investments in children’s education, significantly improving welfare for women and children (Samanta & Narayan 2017, Rumi, 2017). As such, the evolving body of literature on alcohol prohibition presents mixed responses, highlighting both the potential benefits and the unintended consequences of these policies, thereby underscoring the need for continued research in this field.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "Alcohol ban can have unintended negative consequences and in this study what we are particularly interested in is the proliferation of illicit alcohol and bootlegging. One notable and concerning consequence of this ban is the exploitation of minors, who are often lured into bootlegging operations due to their perceived \"immunity\" under the legal framework. Anecdotal evidence and police reports reveal that children are being increasingly exploited for smuggling alcohol using innovative tactics, such as school bottles and tires, which jeopardizes their education and future prospects (Chauhan 2013, Kalra 2015). Adult offenders, facing severe penalties such as life imprisonment or hefty fines for employing minors, have strategically shifted the risk to children. When minors are apprehended, they are tried under juvenile justice laws, which often result in lighter sentences or shorter rehabilitation periods. This shift has significantly impacted the educational outcomes of these children, as many are drawn away from school to participate in these illicit activities.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "Our study identifies a distinctive relationship between the prohibition and fluctuations in dropout rates in the state of Bihar, India, both before and after the implementation of the alcohol ban. The Government of Bihar implemented Bihar Prohibition and Excise Act, 2016 aimed at reducing domestic violence and curbing the misuse of earnings by men on alcohol which was believed to impoverish households and affect women’s wellbeing (Bharati & Reddy, n.d.). Using a difference-in-differences (DiD) methodology, we analyze data from various surveys, including the National Family Health Survey (NFHS) Round 4 in 2015-16 and Round 5 in 2019-20, along with UDISE+ data. We examine the changes in educational outcomes through dropout rates associated with the alcohol prohibition. We further conduct a district-level comparison between Bihar and its bordering districts in Jharkhand, Uttar Pradesh, and West Bengal, leveraging this natural experiment to account for the multifaceted factors influencing dropout rates. Our findings reveal that the prohibition significantly increased dropout rates, but this effect disappears after a certain period, suggesting a short-term impact. This study breaks new ground by linking dropout rates to the alcohol prohibition, contributing to the growing body of prohibition research, and, to our knowledge, is the first to establish this connection.",
+        "extraction_warnings": "",
+        "tier": 2,
         "matched_keywords": [
             "Difference-in-Differences (DiD)"
         ],
         "matched_l1_methods": [
             "Empirical and Econometric Methods"
         ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "The rest of the paper is divided as follows. Part 2 discusses the literature extensively and identifies the gap we are trying to fill. In Part 3, we explain the background context, the prohibition law in a large Indian state, and the data along with methodology. Part 4 exhibits the result. We discuss our findings in Part 5 and conclude in 6.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 0,
+        "text": "Alcohol consumption and prohibition have been extensively studied in literature, with a significant body of work highlighting their multifaceted impacts on health, society, and policy across diverse socioeconomic and demographic settings. Scholars from various disciplines, including law, sociology, economics, and public policy, have contributed to understanding these complex dynamics.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 1,
+        "text": "Thomas Cargiulo (2007) highlights alcohol dependence as a major public health concern, linking it to psychiatric disorders, neurologic impairments, cardiovascular issues, liver diseases, and cancers, with heavy drinking exacerbating mortality risks and impairing cognitive and motor functions. Schmidt and Popham (1975) similarly associate chronic heavy alcohol use with elevated mortality, citing direct physiological effects like cirrhosis and specific cancers, while noting that even moderate consumption poses risks, particularly to liver and cardiovascular health. Adrian and Barry (2004) emphasize alcohol's role in excess morbidity across mental health disorders, infectious diseases, and injuries, underscoring its systemic impact. For adolescents, Clark et al. (2001) report correlations between alcohol use disorders and elevated self-reported health problems, liver enzyme abnormalities, and physical health concerns. On a global scale, Braz (2004) and the WHO report quantify alcohol's burden through disability-adjusted life years (DALYs), attributing 4% of global mortality in 2000 to alcohol consumption.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 2,
+        "text": "Alcohol consumption has also been studied for its implications on household dynamics, with a significant body of literature underscoring its multifaceted impact on family stability, economic well-being, and intergenerational outcomes. Research highlights that alcohol abuse within households often leads to increased incidences of domestic violence and familial discord. For instance, studies have shown that alcohol consumption is strongly correlated with the perpetration of intimate partner violence, where abusive behavior is frequently exacerbated by excessive alcohol intake (WHO, 2018). This pattern is further corroborated by insights from Nayak et al. (2017) who argue that alcohol-induced aggression disrupts emotional stability within families, fostering environments of fear and mistrust.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 3,
+        "text": "On the economic front, alcohol consumption within households has been linked to significant financial strain, further perpetuating cycles of poverty and deprivation. Banerjee et al. (2019) highlight that a considerable proportion of household income in low-income families is diverted toward alcohol purchases, often at the expense of essential needs such as food, education, and healthcare. This aligns with findings by Jha et al. (2021) note that alcohol-related expenditure disproportionately burdens women and children in vulnerable households, leading to nutritional deficiencies and compromised educational opportunities. Also, de Goeij et al. (2015) explore how economic crises influence alcohol-related health outcomes, identifying mechanisms like psychological distress and tighter budget constraints. They observe a gendered pattern, with harmful drinking behaviors increasing primarily among men during economic downturns.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 4,
+        "text": "Alcohol consumption is strongly associated with crime, particularly violent offenses, due to its ability to lower self-control and heighten aggression. Murdoch and Ross (2009) emphasize that alcohol is disproportionately linked to violent crimes, with heavy drinking often preceding conflicts, especially when the instigator is intoxicated. Deehan (2004) explores how situational factors and personal expectations amplify alcohol-related aggression, predominantly among young males. Martin (2001) further reveals that alcohol plays a role in nearly half of all homicides and assaults. While direct causality remains challenging to prove, these findings underscore alcohol's profound influence on violent criminal behavior.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 5,
+        "text": "Prohibition laws have been extensively studied in developed nations. In contrast, research on prohibition in developing nations remains less comprehensive and underexplored. Studies from developing countries, such as Ramanan and Singh's (2014) analysis of rural India, reveal how alcohol use contributes to chronic health issues like hypertension and diabetes, alongside strained familial and social relations. Cross-comparative analyses of rural and urban households in the Indian context reveal that alcohol consumption exacerbates gender-based financial inequities, as male members often prioritize alcohol expenditure over shared household responsibilities (De and Saha, 2024). Collectively, these studies affirm that alcohol’s impacts are pervasive and multifaceted, warranting continued attention in both developed and developing nations.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 6,
+        "text": "The vulnerability of children to the impacts of alcohol is also documented with respect to the child’s consumption of alcohol and alcohol abuse in the household thus exploring its direct and indirect consequences on health, cognitive, and academic development. Research highlights that alcohol consumption by children adversely affects memory, concentration, and motor skills, leading to diminished cognitive abilities crucial for academic success. Panes et al. (2023) emphasize that binge drinking among youth impairs brain regions responsible for memory and decision-making, resulting in long-term educational setbacks, such as higher dropout rates and expulsions. Similarly, Chabu et al. (2021) identify that alcohol-induced structural changes in the brain exacerbate deficits in impulse control and focus, further impairing academic performance.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 7,
+        "text": "Household alcohol consumption significantly disrupts the educational trajectories of children by altering family dynamics and inducing chronic stress. Parental alcohol misuse has been linked to neglect and poor monitoring, as Windle’s work illustrates, leading to adverse behaviors and compromised academic outcomes among adolescents (n.d.). A systematic review by Huq et al. connects these disruptions to long-term neurodevelopmental challenges, negatively affecting children’s behavior and ability to succeed academically (2021). Ha et al. (2024), using data from Vietnam, further demonstrate that household alcohol consumption reduces children’s schooling years and delays their educational attainment, with more pronounced effects in rural areas and on female students. These findings reveal that children are disproportionately vulnerable to the socio-environmental impacts of alcohol, which impede their cognitive, behavioral, and academic growth. While most studies investigate direct alcohol use by students or alcohol abuse by the household members, the broader impact of children being used as a means to get alcohol on children’s education remains underexplored. Together, the above-mentioned studies paint a nuanced picture of how alcohol consumption permeates household dynamics and public health outcomes, manifesting in both immediate disruptions and long-term socio-economic consequences.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 8,
+        "text": "Scholars have also focused on prohibition’s unintended consequences in terms of health, domestic violence and crime. Chakrabarti et al. (2024) found that the alcohol ban in India led to reduced frequent alcohol consumption, lower rates of overweight/obesity among men, and decreased emotional and sexual violence against women, emphasizing the positive health and safety outcomes associated with alcohol regulation. Similarly, Blocker (2006) examined the U.S. Prohibition era, revealing a steep decline in death rates from cirrhosis, alcoholic psychosis hospital admissions, and drunkenness arrests during the 1910s and early years of National Prohibition, although these rates rose again afterward. Additionally, the study by Luca et al. (2019) on alcohol regulation in India suggests that stricter alcohol regulation is negatively associated with lower mortality from road accidents, though the estimates did not reach statistical significance. These studies collectively suggest that alcohol prohibition can yield substantial public health benefits, particularly in reducing alcohol-related health issues",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 9,
+        "text": "There are some notable studies focusing on links between crime and alcohol. Barron et al. (2024) documents a significant reduction in injury-induced mortality and violent crime, particularly homicides, assaults, and rapes, following an alcohol ban in South Africa. The other significant area within the existing literature is the relationship between alcohol regulation and domestic violence, particularly concerning women and children. Studies by Markowitz & Grossman (2024) indicate that increasing beer taxes and implementing alcohol restrictions can effectively reduce violence. Research by Luca et al. (2015) supports this, showing a strong correlation between reduced alcohol consumption and improved marital relations, along with fewer domestic disputes. However, the outcomes of such prohibitions are not uniformly positive. Iyengar (2009) warns that strict enforcement of alcohol bans may inadvertently provoke frustration among alcohol-dependent individuals, potentially escalating retaliatory violence against their partners. Additionally, Kearns et al. (2015) emphasize the role of alcohol outlet density, noting that higher densities are consistently associated with elevated rates of intimate partner violence. They suggest that while reducing alcohol availability is crucial, the implementation of such measures must consider potential unintended consequences. Similarly, research by Luca et al. (2019) demonstrates a causal link between alcohol consumption and domestic violence, suggesting that stricter alcohol regulations could mitigate violent behaviors, particularly partner violence.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 10,
+        "text": "A notable gap in the scholarly accounts of alcohol’s influence in household dynamics is that on children’s education. There is little work that systematically explores how an alcohol ban may impact children's schooling, either by affecting their school attendance, performance, or dropout rates. A study by Mishra (2023) is a useful exception, in which the author focused on Bihar, India, and found that the implementation of the alcohol prohibition law resulted in increased school enrollment and improved learning abilities (we build on this study further). However, such studies are rare, and there is little existing research that comprehensively addresses the direct link between alcohol bans and educational outcomes like dropout rates in developing nations. Studies in India for instance, are also thin (but see, Jha 2023, Schess 2023). Some which exists, indicate that women prioritize human development when controlling household income (Rumi 2023, Von Braun 1988, Ranis et al. 2000). There are some newspaper reports that highlight that the prohibition led to a notable shift in household expenditure towards healthier goods, reflected in increased sales of milk, honey, and cheese. These findings suggest a positive reallocation of resources towards health and education, reinforcing the economic benefits outlined in Bihar's economic survey.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 11,
+        "text": "Bihar’s prohibition, which is the subject of our study as well, has been explored by scholars to some extent. Studies show a reduction in alcohol-induced health issues and violent crimes, with significant decreases in intimate partner violence and overall violent crime rates (Chakrabarti et al. 2024, Chaudhuri et al. 2024). Evidence from Dar and Sahay (2018) however suggests that the prohibition may have inadvertently increased property crimes due to diverted law enforcement resources and rising black-market activities. While the ban in Bihar has yielded positive social outcomes the judicial system's burden highlights the challenges of implementing such widespread reforms (Mishra, 2024). A worrying part about the ban is the growing involvement of women and children in the illicit alcohol trade (Jha, 2022).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 3,
+        "section_name": "Literature Review",
+        "paragraph_id": 12,
+        "text": "We examine and add to this literature, but linking with prohibition, an otherwise unobserved, but hugely important social variable, namely dropout rates in Bihar. There is limited evidence on the impact of alcohol prohibition on educational outcomes in developing nations. Our study aims to address this gap and advance a new dimension in the study of prohibition.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 4,
+        "section_name": "Bihar’s Prohibition of 2016",
+        "paragraph_id": 0,
+        "text": "Bihar is the third most populous state in India. As per UNICEF, home to 47 million children—comprising nearly half (46 percent) of its 104 million residents—Bihar has the highest proportion of children among Indian states, with its children making up 11% of the nation's total population. In response to the challenges faced with respect to domestic violence, deteriorating health outcomes, the Bihar government implemented a state-wide alcohol prohibition policy. It aims to curb alcohol-related issues and protect its vulnerable populations, especially children.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 4,
+        "section_name": "Bihar’s Prohibition of 2016",
+        "paragraph_id": 1,
+        "text": "Bihar's alcohol policy has undergone dramatic shifts, shaped by economic challenges and social pressures. Following the bifurcation of Bihar and Jharkhand in 2000, which left Bihar devoid of its mineral wealth, the government introduced the New Excise Policy in 2007 to generate revenue. This strategy expanded alcohol sales, raising revenues from ₹87.18 crore in 2005-06 to ₹1,777 crore in 2014-15—a staggering 1,938% increase (Ahmed 2022, MN, 2020). However, the rapid proliferation of alcohol led to societal issues, particularly in rural areas, including domestic violence and crimes against women. By 2015, women-led self-help groups protested the adverse effects of alcohol, prompting Kumar to promise prohibition as an electoral commitment (Jha 2022). This led to the enactment of the Bihar Prohibition and Excise Act, 2016, enforcing a phased prohibition on alcohol starting from April 2016. The policy sought to mitigate alcoholism's social and economic toll, including domestic violence and misuse of household income, while fostering shifts in household dynamics, rising women's autonomy, and reducing intimate partner violence (Bharati & Reddy, n.d., Dar & Sahay 2018, Chaudhari 2024, Chakrabarti et al. 2024). The ban has its unintended consequences but the literature stays silent with respect to impact on educational outcomes.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "In analyzing dropout rates across gender and social class, Uttar Pradesh exhibits the lowest dropout rate at 10%, followed by Bihar at 11.5%, and West Bengal at 13.25%. A closer examination of the distribution in terms of gender reveals that, on average, male dropout rates are higher than those of females (refer to Table 2). The disparity in dropout rates between genders is smallest in the secondary student age group and largest in the upper primary age group. The dataset used is a balanced panel, ensuring equal data representation across all 34 constituencies in terms of time period, gender, social class, and student age group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "The first layer of analysis considers the overall data on gender and social class. Regression results indicate that prohibition has a significant effect on dropout rates (see Table 3). For primary school students (classes 1-5), dropout rates increased by approximately 4 percentage points post-prohibition (p<0.01). For upper primary students (classes 6-8), the increase was 5.5 percentage points (p<0.01). In contrast, the increase in dropout rates for secondary students (classes 9-12) was only 1.5 percentage points, and this result was not statistically significant. It is noteworthy that the R-squared value across these regressions is around 0.1, indicating modest explanatory power.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "In the second layer of analysis, social class data is kept in the overall category, while gender is compared across male and female categories (see Tables 4 and 5). Among primary students, males exhibit a 0.5 percentage point higher dropout rate than females across the four states. Difference-in-Differences (DiD) estimates further validate this, showing a male dropout increase of 4.45 percentage points compared to 3.26 percentage points for females, both significant at the 1% level. At the secondary level, the difference in dropout rates between males and females due to prohibition is marginal, with males experiencing a 5.99 percentage point increase and females a 5.01 percentage point increase (both p<0.01). However, similar to the overall analysis, the increase in dropout rates at the secondary level for both males and females is statistically insignificant (p>0.1).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "The third layer of analysis examines the impact of social class on dropout rates. Using data from UDISE+, which categorizes students into General, Scheduled Caste, Scheduled Tribe, and Other Backward Castes (OBC), we pooled data for Scheduled Caste, Tribe, and OBC categories and compared it against the General category. The results indicate that the increase in dropout rates is statistically insignificant across all three student categories—primary, upper primary, and secondary (see Tables 6 and 7).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "We hypothesized that dropout rates in Bihar would increase post-prohibition compared to other states, driven by three primary factors. The first is the possibility that children themselves consume alcohol. However, this is less likely in Bihar, as the data indicates that the highest increase in dropouts occurred among primary and upper primary school children, who are too young to consume alcohol at levels that would directly affect their school attendance. Thus, this factor does not provide a strong explanation for the observed trends.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "The second factor pertains to alcohol consumption within households. In abusive households where alcohol consumption is prevalent, children might feel unsafe and seek refuge outside, potentially leading to lower dropout rates. With the prohibition, alcohol availability in such households is theoretically reduced, potentially making children feel safer. However, another possibility arises: if illicit alcohol is being purchased post-prohibition, household resources might still be diverted away from essential needs such as education and nutrition, potentially leading to higher dropout rates. This creates a complex scenario where the intended economic and social benefits of prohibition might not fully materialize in certain households.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "The third factor considers the involvement of children in alcohol distribution or bootlegging. It is plausible that primary and upper primary school children are being used for such activities, which could contribute to higher dropout rates in these groups. However, if this were the case, we would expect to see similarly high dropout rates among secondary school students, which our data does not show. This discrepancy calls for a deeper investigation into the roles and activities of children across different age groups in the context of prohibition. Literature and on field investigation on whether secondary school children are involved in bootlegging activities could provide clarity. If secondary students are indeed not involved, this could support our findings. Alternatively, if literature suggests they are typically involved, our results may challenge this assumption and highlight a need for further research.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "Our data also revealed that male students experienced higher dropout rates than females. This trend may be explained by gender norms in rural communities, where males are more likely to venture out and have greater freedom, which might expose them to higher risks of school discontinuation. Further literature review could strengthen this argument.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "Interestingly, the data did not show significant differences in dropout rates among different social classes, such as SC, ST, OBC, and general categories. It was hypothesized that marginalized communities, given their history of discrimination and deprivation, might be more vulnerable to education disruptions and possibly more likely to be involved in bootlegging activities. However, our findings suggest otherwise. This could indicate that while historical marginalization and economic struggles persist, they may not directly translate into significant differences in dropout rates under the specific conditions of alcohol prohibition. Literature exploring the intersection of alcohol-related activities and educational outcomes in marginalized communities would be valuable to contextualize these results.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "In conclusion, our findings challenge several common assumptions and underscore the need for nuanced research into the complex socio-economic dynamics of alcohol prohibition and its impact on education. Further exploration of these factors, supported by robust literature, can provide deeper insights into the unintended consequences of policy interventions like prohibition.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1438,
+        "section_id": 8,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "A key limitation of this study is the relatively small sample size, which may affect the generalizability of our findings. The sample size for all regressions is fixed at 306 observations, as this analysis is based on perfectly balanced panel data. This limitation arises from the structure of the data, which is aggregated at the district and year level, covering 34 states over nine time periods. While this ensures consistency across regressions, as each regression focuses on specific categories within social class, gender, or student age groups, the limited number of observations may constrain the ability to generalize the effects of alcohol prohibition on dropout rates to other contexts. Future research with larger and more granular datasets could provide more robust insights and enhance the applicability of these findings.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
         "matched_l2_methods": []
     }
 ]

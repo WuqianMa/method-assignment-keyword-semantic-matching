@@ -1,17 +1,665 @@
 [
     {
         "paper_id": 1469,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "This paper examines a common-pool resource, such as an irrigation system, that is asymmetric in the sense that the headender has a first mover advantage in appropriating water. The headender could fill their fields with water, leaving little for the tailender. However, irrigation system needs maintenance and the headender may leave more water for the tailender to incentivize him to participate in maintenance. Ostrom and Gardner (1993) analyzed such an asymmetric setup as a static bargaining problem where irrigators decide on appropriation and provision rules in an annual meeting. This paper takes the relational contracts approach and examines self-enforcing appropriation and provision rules, taking particular interest in when symmetric cooperation is incentive compatible. The paper starts by examining symmetric cooperation where the two parties share the water equally – despite their asymmetric positions – and contribute equally to maintenance. Symmetric cooperation is common in traditional irrigation systems where water is shared on rotation basis and households have equal maintenance obligations. I show that symmetric first best cooperation is self-enforcing when, in addition to large enough discount factor, the headender’s appropriation capacity is moderate and the maintenance of the irrigation system is costly. Both factors reduce the headender’s temptation to deviate from the relational contract. Both factors are also typical characteristics of traditional irrigation systems. If symmetric first best cooperation is not self-enforcing, the headender’s incentives can be improved by allocating her more than half of the water in the relational contract. However, this will weaken the tailender’s incentives to participate in maintenance. I solve for the largest share of water that can go to the headender without violating the tailender’s incentive compatibility constraint. The share is adjusted to headender’s appropriation capacity, so that first-best cooperation is incentive compatible as long as maintenance is sufficiently costly. Table 1 summarizes the results. FB refers to first best investments and SB to second best investments.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Relational Contracts",
+            "Relational Contracts"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": [
+            "Game Theory & Mechanism Design"
+        ]
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "High-cost c ( y ) = y 3 Low-cost c ( y ) = y 3 2 Patient δ = 0 . 7 Symmetric and asymmetric FB Symmetric SB, Asymmetric FB Impatient δ = 0 . 45 Asymmetric FB Asymmetric SB Table 1",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Briefly noting some related literature, Halonen-Akatwijuka (2024) examines incentives to cooperate in maintenance of a public good. Here I introduce appropriation of common-pool resource and how it interacts with maintenance incentives. Harstad et al. (2019) analyzes the interaction of technology and incentives to cooperate in the context of environmental treaties. Ramey and Watson (1997) and Halac (2015) examine the effect of one-off specific investment on the incentives to cooperate in an employment relationship. This paper analyzes repeated investments.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 2,
+        "section_name": "The model",
+        "paragraph_id": 0,
+        "text": "Two agents i = 1 , 2 share a common-pool resource. In the investment phase each agent makes an investment y i in the common-pool resource, e.g. maintains an irrigation system. The value of the common-pool resource is θ ( y 1 + y 2 ) , where θ > 0 . Investment costs are given by c ( y i ) = ( y i ) 1 α , where α ∈ (0 , 1) . Agent i ’s investment is observable to the other agent 1 , but the investment and the value of the common-pool resource are not verifiable. 2 In the appropriation phase the agents move sequentially. For example, agent 1 is the headender of the irrigation system and appropriates share s 1 of the water, leaving share s 2 = 1 − s 1 to agent 2, the tailender. 3 The main focus of this paper is to examine how such asymmetry in appropriation affects the incentives to cooperate. 1 The communities typically gather to maintain the common-pool resource in specific days and attendance is observable. 2 Alternatively, the common-pool resource is in a developing country with weak institutions, so that contracts contingent on the investment or the value of the resource cannot be enforced by court. 3 Similar situation can arise e.g. in a hierarchy where the boss decides on the resource allocation, while the value of resources available depends on both the boss’s and the employee’s effort.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 2,
+        "section_name": "The model",
+        "paragraph_id": 3,
+        "text": "The maximum share agent 1 can appropriate is κ 1 . For example, agent 1 has the capacity to capture κ 1 of the flowing water in the irrigation system. Assumption 1. κ 1 ∈ ( √ 5 − 1 2 , 1) .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 2,
+        "section_name": "The model",
+        "paragraph_id": 4,
+        "text": "Assumption 1 simplifies the analysis. Its role will become clear in the course of the paper. Note that √ 5 − 1 2 ≈ 0 . 62 . Joint surplus, S , equals",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 3,
+        "section_name": "One-shot game",
+        "paragraph_id": 0,
+        "text": "We can solve the one-shot game by backward induction, starting from the appropriation phase. Agent 1 maximizes her utility by appropriating the maximal κ 1 of the common-pool resource, leaving the remaining κ 2 = 1 − κ 1 to agent 2. Thus, in the investment phase the agents maximize",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Backward Induction"
+        ],
+        "matched_l1_methods": [
+            "Theoretical and Formal Modeling"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 3,
+        "section_name": "One-shot game",
+        "paragraph_id": 4,
+        "text": "According to (3) and (5), the agents underinvest relative to first best, y N i < y ∗ , due to ignoring the positive externality on the value of the common-pool resource appropriated by the other agent. In other words, the agents freeride in maintenance.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 4,
+        "section_name": "Repeated game",
+        "paragraph_id": 0,
+        "text": "The stage game of the repeated game includes a transfer phase before the investment and appropriation phases. In the transfer phase the agents can make voluntary monetary transfers to each other. In particular, if agent i has deviated in the previous period, he can pay a fine F i to agent j and renegotiate back to cooperation. The stage game is repeated infinitely and the agents have have a common discount factor of δ ∈ (0 , 1) . Note that the investments depreciate fully before the beginning of the subsequent period, e.g. the maintenance investments are washed away in monsoon rains. This paper examines the nature of cooperation in the repeated game. Cooperation is symmetric if the agents share the common-pool resource equally, s c 1 = s c 2 = 1 2 , and make equal investments, y c 1 = y c 2 , where superscript c refers to cooperation. Alternatively, cooperation can be asymmetric so that either the resource is not shared equally, s c 1 ̸ = s c 2 , or the agents do not make equal investments y c 1 ̸ = y c 2 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 0,
+        "text": "The agents form a relational contract, agreeing to make cooperative investments ( y c 1 , y c 2 ) and to share the common-pool resource according to ( s c 1 , s c 2 ) . In essence, agent 1 promises to take less than κ 1 if the common-pool resource, s c 1 < κ 1 , and both agents promise not to freeride in maintenance, y c i > y N i . Furthermore, fines ( F 1 , F 2 ) are determined for any deviation from cooperative investments or sharing. 4 The assumption this paper makes about disagreement – i.e. if agent i deviates, but does not pay F i in the transfer phase of the subsequent period – is that agent j 4 Many local commons punish absence from maintenance activities or overappropriation by fines paid to the community. Note that these fines are not externally enforced.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 1,
+        "text": "punishes i by choosing zero investment, y p = 0 , and appropriating the maximal κ j of the resource (if j = 1 ) in that period. Agent i , on the other hand, continues to behave noncooperatively for the rest of the period, investing y N i and appropriating κ i of the resource (if i = 1 ). The optimal relational contract maximizes the agents’ discounted joint surplus,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 3,
+        "text": "The payoffs are normalized by (1 − δ ) as is standard. The maximization problem is subject to the following incentive compatibility constraints (IC).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 4,
+        "text": "1. IC for y c i and s c i to be self-enforcing, denoted by IC-C. 2. IC for F i to be self-enforcing, denoted by IC-F.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 6,
+        "text": "Before defining these ICs formally, let us describe the agents’ strategies. The strategy depends on whether the agent is the first mover – and can choose how much of the common-pool resource to appropriate – or not.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 7,
+        "text": "Phase 1 ( i ) y i = y c i (and s i = s c i if i = 1 ) in t = 1 . y i = y c i (and s i = s c i if i = 1 ) in t > 1 if y j = y c j (and s j = s c j if j = 1 ) in t − 1 . ( ii ) Phase 2 starts against agent j in t if y j ̸ = y c j (or s j ̸ = s c j if j = 1 ) in t − 1 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 8,
+        "text": "Phase 2 ( iii ) If agent j pays F j to agent i in the transfer phase of t , y i = y c i (and s i = s c i if i = 1 ) in t and Phase 1 starts in t + 1 . ( iv ) If agent j does not pay F j to agent i , y i = 0 (and s i = κ i if i = 1 ) in t and Phase 2 re-starts in t + 1 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 9,
+        "text": "( v ) If agent i deviates in Phase 2 and does not choose y i = y c i (or s i = s c i if i = 1 ) as prescribed in ( iii ) , or y i = 0 (or s i = κ i if i = 1 ) as prescribed in ( iv ) , Phase 2 starts against agent i in t + 1 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 10,
+        "text": "We are now ready to define the IC’s. Agent i cooperates by investing y c i (and appropriating s c i of the resource if i = 1 ) if the following IC-C is satisfied.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 16,
+        "text": "Note that IC-C is symmetric despite the agents’ asymmetric roles. Consider first agent 1. If 1 cooperates, she chooses investment y c 1 and appropriates s c 1 of the resource, earning continuation value C i . If she deviates, she invests y N 1 and appropriates κ 1 , but can renegotiate back to cooperation by paying fine F 1 in the transfer phase of the subsequent period. For agent 2 cooperation involves choosing investment y c 2 and receiving share s c 2 if also 1 cooperates by appropriating s c 1 . Agent 2 deviates by investing y N 2 , which agent 1 observes and responds in the appropriation phase of same period by taking κ 1 of the resource, leaving κ 2 to agent 1. This explains why IC-C is symmetric for the agents. However, note that κ 2 < 1 2 < κ 1 . Equation (7) simplifies to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 18,
+        "text": "where T i is the temptation to deviate. Agent i will cooperate if the discounted value of the fine exceeds the temptation to deviate.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 23,
+        "text": "If agent i pays the fine in the transfer phase, cooperation is restored for the investment and appropriation phases of the same period. Thus, agent i earns continuation value C i from this period. If i does not pay the fine, agent j makes zero punishment investment and i receives κ i of the resource. By the one shot deviation principle cooperation resumes in the subsequent period. (11) gives an upperbound for the fine:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 24,
+        "text": "F i ≤ C i − P i 1 − δ = V i 1 − δ , (13) where V i ≡ C i − P i is the value of the relationship. Since higher fine relaxes IC-C, the maximal fine, F i = V i 1 − δ , is optimal. Substituting the maximal fine in (10), IC-C simplifies to δ ≥ T i T i + V i ≡ δ i . (14) The final incentive compatibility constraint, IC-P, is for punishment. Agent j has to sacrifice current period profits by choosing zero punishment investment, but then receives F i from agent i in the subsequent period. If j does not choose zero investment, punishment starts against j in the following period. IC-P is thus given by",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 25,
+        "text": "(1 − δ ) ˆ P j + δ [(1 − δ ) F i + C j ] ≥ (1 − δ ) ˆ D j + δ [ C j − (1 − δ ) F j ] , (15) where the punisher’s payoff ˆ P j is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 29,
+        "text": "(15) simplifies to δ ( F 1 + F 2 ) ≥ ( ˆ D j − ˆ P j ) ≡ T p j , (18) where T p j is the temptation to deviate from the punishment investment. Substituting the maximal fines in (18) obtains δ ≥ T p j T p j + V 1 + V 2 ≡ δ p j . (19)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 32,
+        "text": "max { y c 1 ,y c 2 ,s c 1 ,s c 2 } (1 − δ ) ∞ X t =1 δ t − 1 \u0002 θ ( y c 1 + y c 2 ) − c ( y c 1 ) − c ( y c 2 ) \u0003 subject to δ ≥ max [ δ 1 , δ 2 , δ p 1 , δ p 2 ] .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 5,
+        "section_name": "Relational contract",
+        "paragraph_id": 33,
+        "text": "The optimal relational contract limits agent 1’s appropriation to s c 1 < κ 1 and selects the cooperative investments ( y c 1 , y c 2 ) to maximize joint surplus subject to ICC and IC-P.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 6,
+        "section_name": "Incentives to cooperate",
+        "paragraph_id": 0,
+        "text": "To solve for optimal relational contract, let us first work out the explicit form of δ i . It follows from (8) and (9) that the temptation to deviate is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 6,
+        "section_name": "Incentives to cooperate",
+        "paragraph_id": 1,
+        "text": "T i = D i − C i = [ κ i θ ( y N i + y c j ) − c ( y N i )] − [ s c i θ ( y c 1 + y c 2 ) − c ( y c i )]",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 6,
+        "section_name": "Incentives to cooperate",
+        "paragraph_id": 10,
+        "text": "δ i = T i T i + V i = ( κ i − s c i ) κ i + (1 − α ) \u0010 κ i η j \u0011 α 1 − α − ( s c i − η i α ) κ i \u0010 η i η j \u0011 α 1 − α . (24)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 6,
+        "section_name": "Incentives to cooperate",
+        "paragraph_id": 11,
+        "text": "(24) shows how δ i depends on exogenous absorption capacity, κ i , and the productivity of the investment, α , in addition to endogenous degrees of cooperation, η i , η j , and cooperative share, s c i . Note that the first term is positive for agent 1 and negative for agent 2. By deviating, 1 takes a larger share of 2’s cooperative investment, κ 1 > s c 1 , while 2 receives a smaller share of 1’s cooperative investment by deviating, κ 2 < s c 2 , as 1 responds to 2’s freeriding by appropriating κ 1 of the resource. Note also that θ cancels out in (24) due to its proportional effect on both T i and V i . As for temptation to deviate from the punishment investment, it follows from (17) and (16) that",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 6,
+        "section_name": "Incentives to cooperate",
+        "paragraph_id": 12,
+        "text": "T p i = ˆ D i − ˆ P i = [ κ i θ ( y N 1 + y N 2 ) − c ( y N i )] − κ i θy N j = κ i θy N i − c ( y N i ) . (25)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 6,
+        "section_name": "Incentives to cooperate",
+        "paragraph_id": 13,
+        "text": "In the Appendix it is shown that δ p i = T p i T p i + V 1 + V 2 = κ i (1 − α )( κ i ) α 1 − α P 2 j =1 (1 − αη j )( η j ) α 1 − α − κ j (1 − α )( κ j ) α 1 − α . (26)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 0,
+        "text": "Let us start by analyzing symmetric cooperation. That is, the agents choose equal investments and share the resource equally. Substituting η 1 = η 2 ≡ η and s c i = 1 2 in (24) obtains δ i = 1 − (1 − ηα ) κ i + (1 − α ) \u0010 κ i η \u0011 α 1 − α . (27)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 1,
+        "text": "It is straightforward that ∂δ i ∂κ i > 0 , implying that δ 1 > δ 2 . Thus, IC-C for symmetric cooperation is not binding for agent 2. Lemma 2 provides some useful properties of agent 1’s critical discount factor δ 1 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 2,
+        "text": "Lemma 2 Suppose η 1 = η 2 = η and s c i = 1 2 . (i) limδ 1 α → 0 = 2 − 1 κ 1 > 0 . (ii) limδ 1 α → 1 = 1 − (1 − η ) κ 1 ≤ 1 . (iii) ∂δ 1 ∂α > 0 . (iv) ∂δ 1 ∂η > 0 if and only if η > κ 1 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 3,
+        "text": "All the proofs are in the Appendix. According to Lemma 2, the minimum value of δ 1 is obtained for the lowest productivity α → 0 . If δ is less than this minimum value, δ < 2 − 1 κ 1 , IC-C for symmetric cooperation cannot be satisfied. This is the case when κ 1 is relatively large as it is too tempting for agent 1 to expropriate most of the resource instead of sharing it equally. 5 While lower degree of cooperation, η , generally relaxes IC-C (Lemma 2( iv )), it has no effect in the limit at α → 0 . Thus, a necessary condition for symmetric cooperation of any degree is that κ 1 is sufficiently low, so that δ > 2 − 1 κ 1 . Cooperation incentives depend also on productivity. By Lemma 2( ii ) symmetric first best cooperation, η = 1 , is not self-enforcing for the highest productivity since limδ 1 α → 1 = 1 , while IC-C can be relaxed by lower degree of cooperation by Lemma 2( iv ). Furthermore, lower productivity reduces δ 1 according to Lemma 2( iii ). 5 Large κ 1 also reduces the value of the relationship because the fallback payoff is larger, also weakening the incentives to cooperate.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 4,
+        "text": "Let us examine why higher productivity weakens cooperation incentives, starting from the value of the relationship. Total differentiation of (21) gives",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 5,
+        "text": "dV 1 dα = h ∂c ( y N 1 ) ∂α − ∂c ( y c 1 ) ∂α i + h s c 1 θ − c ′ ( y c 1 ) i ∂y c 1 ∂α + s c 1 θ∂y c 2 ∂α − h κ 1 θ − c ′ ( y N 1 ) i ∂y N 1 ∂α (28) By (5) the last term in the square brackets equals zero and by (23) c ′ ( y c 1 ) = θη 1 . Furthermore, taking into account symmetric cooperation, y c 1 = y c 2 ≡ y c and s c 1 = 1 2 , (28) is equivalent to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 6,
+        "text": "dV 1 dα = h ∂c ( y N 1 ) ∂α − ∂c ( y c ) ∂α i + θ (1 − η ) ∂y c ∂α > 0 . (29) The term in the square brackets in positive because higher productivity reduces the cost of higher cooperative investment more than the cost of Nash investment. The second term is non-negative because higher productivity increases the cooperative investment. Therefore, the value of the relationship is increasing in α , strengthening the incentives to cooperate. Weaker incentives must then be driven by greater temptation. Total differentiation of (20) gives",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 7,
+        "text": "dT 1 dα = − h ∂c ( y N 1 ) ∂α − ∂c ( y c 1 ) ∂α i + θ ( κ 1 − s c 1 ) ∂y c 2 ∂α + h κ 1 θ − c ′ ( y N 1 ) i ∂y N 1 ∂α − h s c 1 θ − c ′ ( y c 1 ) i ∂y c 1 ∂α = − h ∂c ( y N 1 ) ∂α − ∂c ( y c ) ∂α i + θ ( κ 1 + η − 1) ∂y c ∂α > 0 (30) The first term in (30) is negative and the second term is positive since by Lemma 2( iv ) η ≥ κ 1 > 1 2 . The second term is the dominant effect. Greater productivity increases the cooperative investment, increasing agent 1’s temptation both because she can expropriate from 2’s larger investment and because she obtains a greater payoff increase from freeriding.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 8,
+        "text": "Finally, as for punishment incentives, substituting η 1 = η 2 ≡ η in (26) we obtain δ p i = κ i (1 − α )( κ i ) α 1 − α 2(1 − αη )( η ) α 1 − α − κ j (1 − α )( κ j ) α 1 − α . (31)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 9,
+        "text": "Lemma 3 explores the properties of δ p i . Lemma 3 (i) limδ p i α → 0 = κ i 1+ κ i . (ii) limδ p i α → 1 = 0 . According to Lemma 3, δ p 1 obtains its maximal value when α → 0 . If this is less than the minimal value of δ 1 , i.e. κ 1 1+ κ 1 < 2 − 1 κ 1 , agent 1’s IC-P is not binding. This is the case if κ 1 ≥ √ 5 − 1 2 ≈ 0 . 62 , which is satisfied by Assumption 1. 6 This implies that if IC-C is satisfied for agent 1, all the other IC’s are satisfied. In other words, symmetric cooperation is self-enforcing if and only δ ≥ δ 1 . By Lemma 2 δ 1 is monotonically increasing and ranges from 2 − 1 κ 1 to 1 if η = 1 . Assuming δ > 2 − 1 κ 1 , there exists a unique ˆ α ∈ (0 , 1) such that δ = δ 1 . Therefore, symmetric first best cooperation is self-enforcing if and only if α ∈ (0 , ˆ α ] . While for α ∈ (ˆ α, 1) , symmetric first best cooperation is not sustainable and the degree of cooperation has to be reduced so that IC-C just binds for agent 1. Proposition 4 spells out these conditions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 10,
+        "text": "Proposition 4 (i) For a given δ , symmetric first best cooperation, y c 1 = y c 2 = y ∗ and s c 1 = s c 2 = 1 2 , is supported in SPE if and only if κ 1 < 1 2 − δ and α ∈ (0 , ˆ α ] , where ˆ α ∈ (0 , 1) . (ii) Suppose κ 1 < 1 2 − δ . For α ∈ (ˆ α, 1) the highest self-enforcing symmetric degree of cooperation, ˆ η , with s c 1 = s c 2 = 1 2 is given by 1 − (1 − ˆ ηα ) κ 1 + (1 − α ) \u0010 κ 1 ˆ η \u0011 α 1 − α = δ,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 12,
+        "text": "According to Proposition 4, symmetric first best cooperation is self-enforcing if productivity is relatively low and agent 1’s appropriation capacity is not too high, 6 Similarly, if the maximal value of δ p 2 is less than the minimal value of δ 1 , agent 2’s IC-P is not binding either. This is the case if κ 2 1+ κ 2 = 1 − κ 1 2 − κ 1 < 2 − 1 κ 1 . The inequality is satisfied if and only if κ 1 ≥ 2 − √ 2 ≈ 0 . 59 , which holds by Assumption 1.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 13,
+        "text": "both limiting 1’s temptation to deviate. These are typical conditions in the traditional irrigation systems e.g. in Nepal and Philippines with long track record of well-functioning cooperation. Traditional irrigation systems are very costly to maintain and the headender’s absorption capacity is limited. Water is typically shared on rotation basis and households have equal maintenance obligation. Proposition 4 also shows that if productivity is high, 1’s incentives can be improved by reducing the degree of cooperation. However, a more efficient way to improve incentives is to allocate a larger share of the common-pool resource to agent 1 while maintaining the investments at first best level. It is to this asymmetric cooperation that we turn our attention in Section 4.2.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 7,
+        "section_name": "Symmetric cooperation",
+        "paragraph_id": 14,
+        "text": "Example . Suppose κ 1 = 3 4 ; α = 1 3 or 2 3 ; δ = 0 . 7 or 0 . 45 . Substituting η = 1 and κ 1 = 3 4 in (27) obtains δ 1 = 0 . 688 for α = 1 3 and δ 1 = 0 . 743 for α = 2 3 . Thus, if the agents are relatively patient, δ = 0 . 7 , symmetric first best cooperation is self-enforcing for low productivity, α = 1 3 . Symmetric cooperation is also sustainable for high productivity, α = 2 3 , if the degree of cooperation is reduced to η = 0 . 9 . However, if the agents are relatively impatient, δ = 0 . 45 , symmetric cooperation of any degree is not possible since the necessary condition requires δ > 2 3 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 8,
+        "section_name": "Asymmetric cooperation",
+        "paragraph_id": 0,
+        "text": "If symmetric first best cooperation is not sustainable, agent 1’s incentives can be improved by a sharing rule that gives her more than half of the common-pool resource, s c 1 > 1 2 . However, this will weaken agent 2’s incentives. Increasing s c 1 improves incentives for cooperate to the point where δ 1 = δ 2 . That is, ( κ 1 − s ∗ ) κ 1 +(1 − α )( κ 1 ) α 1 − α − ( s ∗ − α ) κ 1 = ( κ 2 − 1 + s ∗ ) κ 2 +(1 − α )( κ 2 ) α 1 − α − (1 − s ∗ − α ) κ 2 (32) Solving for s ∗ from (32),",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 8,
+        "section_name": "Asymmetric cooperation",
+        "paragraph_id": 2,
+        "text": "Substituting (33) back to (32), we can solve for the lowest δ 1 = δ 2 ≡ δ for first best investments that can be obtained by asymmetric sharing.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 8,
+        "section_name": "Asymmetric cooperation",
+        "paragraph_id": 6,
+        "text": "Lemma 5 shows that for any given δ there exists ̃ α ∈ (0 , 1) such that IC-C for first best investments is satisfied for both agents if and only if α ∈ (0 , ̃ α ] . This is the case for any κ 1 . With equal sharing, as shown in Proposition 4( i ), large κ 1 limits the sustainability of first best investments. When we allow agent 1’s share to be adjusted to κ 1 , IC-C can be satisfied even if 1’s appropriation capacity is high as long as productivity is not too high. However, we need to keep track of IC-P as well. (31) shows that δ p i does not depend on s c i . Accordingly, Lemma 3 is relevant also for asymmetric sharing. To guarantee that IC-P is satisfied, it is now assumed that δ ≥ κ 1 1+ κ 1 . 7 Proposition 6 Suppose δ ≥ κ 1 1+ κ 1 . With asymmetric sharing first best investments, y 1 = y 2 = y ∗ , can be supported in SPE if and only if α ∈ (0 , ̃ α ] , where ̃ α ∈ (0 , 1) .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
         "section_id": 8,
         "section_name": "Asymmetric cooperation",
         "paragraph_id": 7,
         "text": "Propositions 4 and 6 show that first best investments in common-pool resource are self-enforcing if productivity is relatively low, with some additional constraints for the headender’s absorption capacity (stricter conditions for symmetric cooperation). Halonen (2024) analyzes pure public goods and shows that also in that framework first best investments are sustainable if productivity is relatively low.",
         "extraction_warnings": "",
+        "tier": 1,
         "matched_keywords": [
             "Propositions"
         ],
         "matched_l1_methods": [
             "Theoretical and Formal Modeling"
         ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 8,
+        "section_name": "Asymmetric cooperation",
+        "paragraph_id": 8,
+        "text": "Example. Let us continue with the previous example, which showed that symmetric first best cooperation cannot be sustained if agents are impatient, δ = 0 . 45 , 7 Note that this is not a necessary condition.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1469,
+        "section_id": 8,
+        "section_name": "Asymmetric cooperation",
+        "paragraph_id": 9,
+        "text": "or productivity is high, α = 2 3 . 8 Substituting κ 1 = 3 4 and α = 1 3 in (33), the maximum share the relational contract can award to agent 1 is s ∗ = 0 . 69 , reducing the critical discount factor to δ = 0 . 18 according to (34). While if α = 2 3 , we obtain s ∗ = 0 . 60 and δ 1 = 0 . 48 . Therefore, with asymmetric sharing first best cooperation is self-enforcing even when the agents are impatient, δ = 0 . 45 , as long as productivity is low. Similarily, first best cooperation can be sustained even when productivity is high, as long as the agents are patient, δ = 0 . 7 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
         "matched_l2_methods": []
     }
 ]

@@ -33,10 +33,12 @@ def embed_texts(texts, tokenizer, model, batch_size=16):
     return np.concatenate(all_embeddings, axis=0)
 
 
-def embed_and_save_chunks(filtered_chunks_dir, output_dir, tokenizer, model):
+def embed_and_save_chunks(filtered_chunks_dir, output_dir, tokenizer, model, min_length=100):
     """
     For each filter_chunk/{paper_id}.json, embed each chunk's text field.
     Save to embedded_chunk/{paper_id}.json with text replaced by embedding.
+    Operates on ALL filtered papers (method-agnostic), not just keyword-matched ones.
+    Skips chunks shorter than min_length as a safety net.
     """
     os.makedirs(output_dir, exist_ok=True)
     chunk_files = glob.glob(os.path.join(filtered_chunks_dir, "*.json"))
@@ -49,11 +51,16 @@ def embed_and_save_chunks(filtered_chunks_dir, output_dir, tokenizer, model):
         if not chunks:
             continue
 
-        texts = [c["text"] for c in chunks]
+        # Safety net: skip very short chunks
+        valid_chunks = [c for c in chunks if len(c.get("text", "")) >= min_length]
+        if not valid_chunks:
+            continue
+
+        texts = [c["text"] for c in valid_chunks]
         embeddings = embed_texts(texts, tokenizer, model)
 
         embedded_chunks = []
-        for chunk, emb in zip(chunks, embeddings):
+        for chunk, emb in zip(valid_chunks, embeddings):
             ec = {k: v for k, v in chunk.items() if k != "text"}
             ec["embedding"] = emb.tolist()
             embedded_chunks.append(ec)

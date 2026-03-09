@@ -1,17 +1,682 @@
 [
     {
         "paper_id": 1318,
+        "section_id": 1,
+        "section_name": "Job Market Paper",
+        "paragraph_id": 1,
+        "text": "Abstract Over the past two decades, violence against land and environmental activists has been on the rise, besetting even stable democracies. Using a unique, fine-grained data set on social conflict events in Peru and exogenous variation in world mineral prices, I document a strong link between local mineral rents and violent state repression of socioenvironmental protests in a democratic institutional setting. I show that the increase in the use of excessive force cannot be explained by changes in protester behavior. Empirical findings highlight the role of local authorities: the election of a pro-mining mayor is associated with a higher prevalence of state repression and corruption in the constituency. The legal and democratic accountability of local authorities is, however, found to be limited. The reported increase in corruption does not translate into more investigations against pro-mining mayors for corruption offenses nor are reelection results of incumbents found to be negatively affected by state violence against protesters. Finally, I show that violent state repression is successful in forestalling conflict resolution agreements that acknowledge protesters’ demands.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Exogenous Variation",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 1,
+        "section_name": "Job Market Paper",
+        "paragraph_id": 2,
+        "text": "Keywords: Resource curse, mining, social conflicts, local authorities, Peru JEL Codes: D74, H7, O13, O16, P16, Q34.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 1,
+        "section_name": "Job Market Paper",
+        "paragraph_id": 3,
+        "text": "∗ I thank Sascha O. Becker, Paul A. Raschky, Thomas Ueberfuhr, Alexander Ballantyne, Ashani Amarasinghe, Lukas Wellner, the SoDa Labs PhD group, and participants of the Melbourne PolEcon/PolSci meeting, the 13th Australasian Public Choice Conference, Monash Environmental Economics Workshop, Australasian Development Economics Workshop, 10th Annual Workshop on Natural Experiments, and the Australian Conference of Economists for their helpful suggestions and comments. † Monash University, Department of Economics, 900 Dandenong Rd, Caulfield East, VIC 3145, Australia. Email: david.kreitmeir1@monash.edu .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "From March 2004 to December 2019, more than 386 anti-mining activists were injured and at least 41 killed in Peru during demonstrations against expropriation of local lands and inadequate compensation for environmental damages. 1 This violence against land and environmental defenders is not isolated to Peru: it is part of a worrying global trend of endemic violence against socioenvironmental activists besetting even stable democracies such as Peru. 2 Juxtaposing the number of land and environmental defenders killed during the 2002–2019 period with the number of civil conflict fatalities in Figure 1 , reveals the relative prevalence and severity of socioenvironmental conflicts, particularly in mineralrich and democratic countries in Latin America and Southeast Asia. This form of conflict has so far, however, received relatively little attention in the resource curse literature, which has primarily focused on armed civil conflict over the appropriation of natural resource rents, predominantly in weakly institutionalized countries (e.g. Dube and Vargas, 2013; Berman et al., 2017; S ́anchez De La Sierra, 2020). Utilizing a unique granular data set on violence against protesters during socioenvironmental conflicts in Peru and exogenous variation in monthly world mineral prices, this paper provides new empirical evidence on the causal relationship between mineral rents and violent state repression in a democratic institutional setting: a rise in local mineral rents is estimated to increase the propensity of both nonfatal and fatal violence against protesters opposing mining projects. Peru’s institutional framework provides a unique setting to shed light on the nexus between mineral rents and the suppression of socioenvironmental protests. 3 Municipality governments in Peru are highly dependent on central government transfers due to their limited ability to levy taxes, but handle more than 20% of the total national government budget and are responsible for more than 40% of public investments (Pique, 2019). Two of 1 These figures are the author’s calculations based on reports published by the Peruvian Office of the Ombudsman. 2 Peru exhibited a polity2 score (Marshall et al., 2002) of 9 (of a maximum 10 and a minimum -10) throughout the period from 2002 to 2018. In relative terms, Peru’s Polity2 score equaled that of France over this period and surpassed that of the United States from 2016 to 2019. 3 Figure A.2 in the Appendix graphs the evolution of mineral rents and number of social conflicts related to formal mining in Peru for the 2004-2019 period.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Exogenous Variation",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "the most lucrative transfers available to municipalities are based on local mining activity. According to a fixed allocation rule, the central government transfers 50% of income taxes collected from mining companies and 80% of royalties to municipal governments in mining regions. While recent studies have shown that this redistribution scheme can positively affect human capital accumulation (Ag ̈uero et al., 2021) and living standards in mining municipalities (Loayza and Rigolini, 2016), it can also create adverse incentives for local authorities to repress opposition to advance local mining projects. In this paper, I combine information on mineral production and concessions at the municipality level with social conflict events to test whether an increase in prospective mineral rents raises the propensity of violence against activists during socioenvironmental protests. My identification strategy relies on exogenous changes in world mineral prices inducing variation in prospective mineral rents accruing to local governments . I find that a rise in mineral prices increases the probability of observing protester arrests, injuries and deaths during confrontations with police forces. Leveraging the spatial and temporal granularity of the data set, I conduct the analysis at the month and municipality level, the third and lowest administrative level in Peru. By conditioning on municipality × year fixed effects, I account for time-varying and time-invariant municipality characteristics that could confound the estimated relationship such as changes to municipal government funds or economic development. I show that the estimated positive relationship between mineral rents and violence against protesters cannot be explained by behavioral changes of activists. Specifically, I show the absence of a systematic relationship between mineral prices and protester riots or violence against police officers. Moreover, benchmark estimates are robust to the exclusion of months with protester riots and across numerous sensitivity tests. Having documented how mineral rents affect state repression of socioenvironmental protests, I turn to the role of mayors who preside over municipal governments and are in charge of local security and the provision of other basic public goods. Using a continuitybased regression discontinuity design (RDD), I test whether the election of a pro-mining as opposed to an anti-mining candidate has a positive effect on the prevalence of both, police",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "violence against activists and corruption in the municipality. To do so, I collect a new data set on mayoral government plans published ahead of elections. Using natural language processing (NLP) and large language models (LLMs), I label over 9 , 000 candidates on basis of their revealed sentiment toward formal mining activities in government plans. I find empirical evidence in support of the hypothesis that the narrow election of a promining candidate positively affects police violence during their term. Further, the RDD results are indicative of political capture of the judicial process. The election of a promining candidate is estimated to increase the number of corruption incidences reported by constituents. This increase is, however, not reflected in a coincident rise of investigations against pro-mining mayors for corruption offenses in office. Rather, estimates suggest that pro-mining mayors are more effective in stalling initial investigations against them. Next, I examine how the incumbency advantage is affected by state repression during the mayor’s term to gauge democratic accountability in local elections. Using a modified RDD that compares the incumbency advantage of previous election winners vis-`a-vis runner-ups (de Benedictis-Kessner, 2018; Lewis et al., 2020), I find that reelection results of incumbents whose terms were characterized by violent state repression are indistinguishable to those of mayors whose terms were not marred by violence against protesters. Overall, the absent negative impact of state violence on the incumbency’s relative reelection performance indicates limited political accountability of mayors. In the last part of the paper, I provide some first empirical evidence on how violent state repression affects the final social conflict outcome. Since standard regression models fail to appropriately adjust for time-dependent observed confounders that are themselves affected by previous incidences of police violence, I rely on incremental interventions that shift the propensity score (Kennedy, 2019) to estimate the causal effect of state repression on the final outcome. In contrast to other dynamic causal inference methods such as marginal structural models (e.g. Blackwell, 2013; Imai and Ratkovic, 2015), this estimator is completely nonparametric and avoids strong statistical assumptions about the treatment process. Exploiting the unique information on the evolution of social conflicts over time in the data set, I show that, while violence against protesters prolongs",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Marginal Structural Models (MSM)",
+            "Natural Language Processing",
+            "Large Language Models",
+            "Large Language Models (LLMs)"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning",
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Natural Language Processing (NLP) & Text Analysis"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "the duration of the social conflict, state repression is successful—from the perspective of local authorities—in bringing social conflicts to a standstill without making costly concession to the opposition. This study relates to several strands of the literature. First, by moving the focus from armed civil and political conflict over the control of natural resource rents (s., e.g., Blair et al., 2021, for a review) to socioenvironmental conflict, the study contributes to the rich empirical literature on the nexus between natural resource abundance and conflict. Dube and Vargas (2013)’s seminal study compares the effect of positive oil price shocks and negative coffee price shocks on paramilitary attacks in Colombia, finding evidence for both a rapacity and an opportunity cost effect. Using granular data on local mining activity, Berman et al. (2017) study mineral resource fueled conflict in Africa. The central role of mineral rents in financing armed conflict is also emphasized in recent work by S ́anchez De La Sierra (2020), who finds that rebel groups in the DRC establish quasi-states around mines, and by Limodio (2022), who exploits exogenous movements in silver prices to examine the extent of terrorism finance in Pakistan. By contrast, positive price shocks to agricultural commodities have been shown to increase the opportunity cost to fighting and are negatively related to armed conflict (Bazzi and Blattman, 2014; Berman and Couttenier, 2015; McGuirk and Burke, 2020; Blair et al., 2021). This paper documents a new type of resource conflict concerned with the protection of communal lands from negative externalities of mining. It highlights the violence potential of mineral rents independent of armed rebellion or agricultural income shocks. Granular information on social conflicts and confrontations between police forces and protesters allows me, additionally, to discern whether the observed state violence is a response to changes in protester behavior or the result of strategic use of excessive force. Second, the study’s results contribute to a growing strand of the literature exploring the determinants of land and environmental conflict (Butt et al., 2019; Haslam and Ary Tanimoune, 2016; Grasse, 2022) and how institutions influence social and resourcerelated conflicts (Arellano-Yanguas, 2011; Fetzer and Marden, 2017; Sexton, 2020). In particular, it augments theoretical and empirical findings of Besley and Persson (2011)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "and Fetzer and Kyburz (2024) that cohesive political institutions discourage political violence by providing causal evidence of the relationship between mineral rents and state repression in the context of a strong democracy. My findings highlight the importance of considering decentralization and fragmented, candidate-centered local level politics when designing institutions to break the resource course. 4 More generally, the study informs previous theoretical and empirical work on extractive institutions (Acemoglu et al., 2001; Acemoglu and Robinson, 2012). Exploiting time series variation in the value of resources in a controlled institutional setting, I provide new empirical insights into how extractive institutions may persist at the local level notwithstanding democracy. Furthermore, the study speaks to theoretical work on the importance of considering the influence of powerful corporations on political institutions (Zingales, 2017) and the role of civil society in constraining an otherwise overreaching state (Acemoglu and Robinson, 2020). Third, this paper relates to the literature on the impact of natural resource windfalls on local communities and politics. Revenue sharing of resource rents across different tiers of government has been found to improve education and the standard of living in local communities (Ag ̈uero et al., 2021; Arag ́on and Rud, 2013; Loayza and Rigolini, 2016; Maldonado and Ardanaz, 2022) but has also been connected to inefficient use of public funds (Maldonado and Ardanaz, 2022), corruption (Maldonado, 2011; Baragwanath Vogel, 2021), and negative selection of candidates running for and elected into office (Brollo et al., 2013; Carreri and Dube, 2017). Asher and Novosad (2023), moreover, show that local mining booms increase criminal politicians’ likelihood of being elected and committing crimes in office. I complement these findings by providing a comprehensive analysis of the nexus between mineral rents, state repression, and local political institutions. Lastly, the paper makes a methodological contribution. It provides some first empirical evidence of how state repression impacts the final conflict outcome using the empirical framework of incremental interventions on the propensity score developed by Kennedy (2019). Incrementally shifting the probability of treatment (i.e. state violence against 4 Peru exhibited a xconst of 7 (of a maximum 7 and a minimum 1) and a polity2 score of 9 (of a maximum 10 and a minimum -10) throughout the period from 2002 to 2018 (Marshall et al., 2002), the preferred indicators of Besley and Persson (2011) to measure cohesive political institutions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "protesters) allows me to adjust for time-varying confounders affected by and affecting the treatment decision without having to impose the strong statistical assumptions on the treatment process required in marginal structural models (MSM) that have primarily been used in the literature to identify dynamic causal treatment effects in longitudinal studies (Blackwell, 2013; Imai and Ratkovic, 2015; Ladam et al., 2018; Bodory et al., 2022, among others).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Marginal Structural Models (MSM)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 4,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 0,
+        "text": "Peru has three administrative levels, with groups of municipalities ( distritos ) forming provinces ( provincias ) and groups of provinces forming regions ( departamentos ). In 2001, as part of a fiscal decentralization reform, the national government implemented a fiscal transfer scheme—the so-called canon minero —which distributes 50% of the income taxes collected from mining corporations back to local governments according to a fixed allocation rule. In particular, since the enactment of of Law No. 28327 in 2004, 10% of this amount is directly distributed to producing municipalities; 20% of the amount is shared among all municipalities in a producing province, and 40% is distributed among all municipalities in a producing region. In addition, Law No. 28258 in 2004 established that 20% of the collected mining royalties are directly transferred to the municipality(s) where the mining concession is located, 20% are distributed among municipalities in the province of the mining concession, and 40% are allocated to municipalities in the region of the concession. 5 Table B.1 in the appendix presents summary statistics for the amount of total revenues in real 2010 USD received by municipalities from either the canon minero or royalties over the period 2004 to 2020. Additionally, the total revenues are disaggregated by municipality category, i.e., whether a municipality had mining production, only concessions but no active production, or neither during the sample period. Table B.1 5 With the exception of the 10% of the canon minero and the 20% of the mining royalties directly transferred to municipalities, the exact allocation of canon transfers and royalties to municipalities is determined by social and economic characteristics in the respective municipality.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 4,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 1,
+        "text": "illustrates the favorable position of mineral-producing municipalities and the substantial financial incentives for local governments to attract mining projects. In particular, local governments are highly dependent on fiscal transfers from the central government, with the share of the canon minero accounting for approximately 29% of local governments’ budgets and as much as 70% of those of producing municipalities (Canavire-Bacarreza et al., 2012; Maldonado and Ardanaz, 2022). 6 Yet, the mayor as the municipality’s administrative authority handles the local budget of more than 20% of the total government budget. Moreover, municipalities are responsible for more than 40% of the country’s total public investment (Pique, 2019). While the use of funds received from the canon minero and royalties is tied to specified objectives, the limited impact of transfers on living standards has been connected to corruption and unproductive but politically favorable investments in local infrastructure and public employment (Maldonado, 2011; Crabtree, 2014; Maldonado, 2017). In particular, the electoral system, which grants the elected mayor 50%-plus-one seats in the municipality council independent of the election results, has been identified to severely limit political accountability in the absence of a strong civil society (Maldonado, 2011; Crabtree, 2014).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "For this study, I construct a unique data set of social conflicts related to mining projects in Peru based on reports by the Office of the Ombudsman ( Defensor ́ıa del Pueblo ), henceforth referred to as “the Ombudsman.” 7 Since April 2004, the Ombudsman has published monthly reports on social conflicts in Peru. These reports follow a fairly uniform format, which enables me to identify and track developments of individual social conflicts over time. In particular, each report entry constitutes a separate social conflict and 6 The dependence of local governments on central transfers in Peru is the result of their marginal ability to levy and collect taxes, with self-raised revenues contributing on average only 12.5% to the local budget (Aresti, 2016). 7 Other empirical studies have used Ombudsman reports for information on social conflict incidence (Arellano-Yanguas, 2011; Haslam and Ary Tanimoune, 2016; Castellares et al., 2017; Orihuela et al., 2019; Sexton, 2020, among others). However, no study has so far used the social conflict data at such fine-grained spatial and temporal resolution.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "contains the following key information: type of social conflict, location, actors, current status (active, latent, resolved or removed) and a description of recent events related to the conflict if any transpired. 8 An example entry is presented in Figure A.1 in the Appendix. I restrict the set of social conflicts for this study to conflicts concerning industrial mining. 9 Therefore, I exclude conflicts related to informal or illegal mining activities to account for fundamental differences in the characteristics of these conflicts. In particular, the latter often take place in regions with no official mining production and—by definition—involve actors more prone to using illegal means to secure mining rents. While a role of local authorities as stakeholders in these illegal operations cannot be ruled out, the concern of this study is the “visible” suppression of mining opposition by police forces. 10 Note that this set of conflicts also comprises unfulfilled promises about employment for local community members in exchange for licensing their land but excludes labor disputes about inadequate pay, dangerous working conditions. The baseline sample is, moreover, confined to social conflicts with location information at the municipality level to identify whether and how changes in local mineral rents lead to escalations in local anti-mining conflicts. The resulting data set is a panel at the conflict–month level tracking each social conflict from its start until its resolution. I complement the information on the evolution of social conflicts with data on protest activities against mining activities on basis of the description of recent events in the Ombudsman reports. In particular, I code the date or month of the protest, the location of the event, and the number of arrests, injuries, and casualties among protesters and police forces. 11 I aggregate all variables to the monthly level to match the frequency of social conflict reports and rely on binary coding of all protest measures in the empirical analysis. 8 If a conflict is inactive (latent) for an extended period of time, the Ombudsman removes the case from the register. 9 I.e. one of the primary conflict parties has to be an industrial mining entity. 10 In isolated instances, those confrontations can also feature private security guards. 11 For cases in which the exact number of injuries or arrests is not clearly specified, the number is coded as one to provide a conservative estimate. Note that this coding decision does not affect the estimates in the analysis since all dependent variables are at the extensive not intensive margin to minimize potential measurement errors.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "For the baseline analysis, I use the granular information on locations of protests and social conflicts to construct a balanced panel of social conflicts and their associated protests at the municipality–month level for the period from March 2004 to December 2019.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "I obtain data on monthly mineral production disaggregated by type of mineral at the municipality level from the Ministry of Energy and Mining (MINEM) for the period from 2002 to 2019. 12 I combine the information on mineral production with monthly world prices on minerals provided by the World Bank . The World Bank Commodity Price Data cover seven minerals that represent more than 99% of the total production value over this period. 13 All mineral prices are uniformly expressed as real USD per kilogram. Following Berman et al. (2017), I determine the main mineral in a municipality on the basis of its total production value over the period 2002–2019 evaluated at mineral prices at the start of the period 2002. As an alternative price measure, I construct a weighted price index of all minerals mined in a municipality, with weights equal to each mineral’s share in total production value in the municipality over the 2002–2019 period. In addition, I consider the presence of mining concessions in nonproducing municipalities. Data on mining claims are drawn from the SNL Mining & Metals database. This is in line with anecdotal evidence from the Ombudsman that social conflicts often break out before the production stage, when a mining concession is granted. In conjunction with royalty revenues being based on concession location rather than production value, an analysis relying exclusively on mineral production might not capture the “total” effect of changes in mineral rents on the violent suppression of activists. Figure 2 illustrates this nexus. A substantial share of the social conflicts associated with industrial mining are located in 12 Note that MINEM also provides production data for the year 2001. However, the data are available only at the regional level. For more details, see: minem.gob.pe/ estadistica.php?idSector=1&idEstadistica=12501 . 13 The minerals are iron, copper, lead, tin, zinc, gold, and silver. Price timelines for each of those minerals are presented in Figure A.6 in the Appendix. Price changes in the top 75th (90th) percentile are depicted in blue (red). Note that I collect prices at the yearly level for the remainder of minerals mined in Peru from the USGS. For more details on mineral prices, see Appendix Section A.3 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "municipalities with no mineral production during the study period. However, in many of these municipalities, mining concessions—visualized by white rectangular areas framed in black—were granted during this time. Figures A.3 and A.4 in the Appendix provide analogous images for mining royalties and canon minero distributed to each municipality during the 2002–2019 period. Since information on the selling price or projected value of concessions is not available in the SNL Mining & Metals database, I determine the main mineral for a nonproducing municipality on the basis of a simple count of each concession’s primary commodity. For the weighted price index, weights are calculated based on the primary commodity counts of each mineral. Table 1 provides descriptive statistics for the main variables of interest disaggregated by presence of mining production or concessions. The total data set comprises 1873 municipalities over 18 years; 228 municipalities had a positive production value over the 2002–2019 period, with 278 additional municipalities granting at least one mining concession. The probability of observing the violent death of an activist or use of force against activists in a municipality in a given month is between 0.01% and 0.04%. The likelihood of observing any of these events more than quadruples when I consider only municipalities with mining production. An increase in the average probability of observing protester arrests or injuries is also observed for municipalities with mining concessions granted during the study period.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "I obtain data on canon minero and mining royalty transfers from the Ministry of Economy and Finance (MEF). 14 I convert all yearly transfer payments into real USD using the official yearly exchange rate and MUV Index provided by the World Bank . Information on administrative boundaries is retrieved from the National Institute of Statistics and Information Technology (INEI). 15 14 The MEF makes the data publicly available through its Transparency Portal ( Transparencia Econ ́omica ), which can be accessed here: apps5.mineco.gob.pe/transferencias/gl/default.aspx . 15 The data can be accessed here: datosabiertos.gob.pe/dataset/resource/a43e17c8-fa37-463d-aa7e2ce2a272491b .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 6,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "Leaning on the empirical framework in Berman et al. (2017), the baseline linear probability model (LPM) takes the form:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 6,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "where A it takes on the value one if a forceful action against protesters is taken by the police force (or vice versa) in month t in municipality i and 0 otherwise. M i equals one if there has been either (i) mineral production or (ii) a mining concession being granted in municipality i during the period 2002–2019, and zero otherwise. My use of a constant mining indicator variable accounts for potential reverse causality. In particular, local opposition to a mining project could lead to a halt in production or the withdrawal of the mining concession. Holding the production indicator fixed ensures that the coefficient of interest δ is identified by exogenous movements in world mineral prices only. The inclusion of municipality × year fixed effects, γ iy , accounts for time-invariant municipality characteristics simultaneously affecting social conflict and local mining activity such as property rights enforcement or historical disenfranchisement of indigenous communities. My focusing exclusively on within-municipality–year variation, moreover, lets me control for time-varying differences across municipalities at the yearly level, in particular economic and budgetary changes in municipalities. P W it denotes the world price of the main mineral in municipality i . For municipalities with no mining production (or municipalities with no concessions), the mineral price is set to zero. For my baseline estimates, the main mineral in a municipality is the mineral with either the highest total production value (in 2002 USD prices) or the highest primary commodity count among granted concessions. I test the robustness of my results derived with the baseline price variable to my use of an alternative value-weighted price index. In particular, this price index is the value-weighted price of all minerals mined in municipality i over the 2002– 2019 period, with weights equaling the production value in producing municipalities. For nonproducing concession municipalities, the weights are determined on basis of the num-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 6,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 3,
+        "text": "ber of primary commodities of granted concessions in the municipality. Additionally, I test the sensitivity of my baseline estimates to my restricting the sample to only producing municipalities. X it is a set of potential time-varying codeterminants of social conflict that I consider in robustness checks. Given the granularity of the data and the spatial clustering of events, the standard errors are allowed to be spatially and temporally correlated. Specifically, I correct the standard errors for heteroskedasticity and autocorrelation (HAC), retaining a radius of 500 km for the spatial kernel. 16 I assume a linear decay in distance for the spacial correlation for nonzero elements in the HAC matrix. 17 Serial correlation is allowed to be “unconstrained” and can span the entire sample period. I also provide robustness results for alternative spatial radii.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 7,
+        "section_name": "Baseline Results",
+        "paragraph_id": 0,
+        "text": "Table 2 presents the results for three baseline social conflict incidents involving use of force against activists during public protests by police forces. 18 I estimate that a onepercentage-point increase in the main mineral price increases the probability of protesters’ being arrested by 0.04 percentage points, of their being injured by 0.19 percentage points, and of their being killed by 0.07 percentage points. These effects are sizable. Relative to the mean, a one-percentage-point increase in mineral prices more than doubles the probability of my observing use of excessive force. Having established a positive relationship between projected mineral rents and use of force against protesters, columns 4 and 5 test whether the observed escalation of social conflicts is indeed the result of a harsher crackdown by police forces or can be explained by more militant behavior on activists’ side provoking a reaction from police. While the conflicts under investigation are concerned with environmental and social issues related to mining activity and not the appropriation of mineral resources as considered in the civil conflict literature (Berman et al., 2017), frustrations over insufficient compensation 16 The radius of 500 km is taken as it is close to the median internal distance of 540 km. 17 In detail, the nonzero elements of the HAC spatial pattern matrix follow a Bartlett kernel (Colella et al., 2023). 18 In rare instances, private security guards are involved in the confrontations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 7,
+        "section_name": "Baseline Results",
+        "paragraph_id": 1,
+        "text": "for environmental damage or properties might surge among protesters when the expected rents for mining corporations and local authorities increase. To address this potential channel, I use information on injuries and killings of police officers during demonstrations to create a binary indicator that equals one if violence against police forces is observed and zero if otherwise. Note that this variable could also capture acts of retaliation at the hands of protesters in response to initial violence by police. The estimated effect might hence overstate the impact of changes in mineral rents on protester violence. Reassuringly, I find no evidence for an effect of mineral prices on protester violence (column 5 in Table 2 ). The estimated effect, moreover, remains quantitatively stable and insignificant if I additionally consider other forms of militant behavior such as property destruction (column 5). In summary, the baseline findings provide evidence for the hypothesis that a surge in (expected) mineral rents leads to a harsher and more violent crackdown on protesters but does not significantly affect vandalism or violence among protesters.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 3,
+        "text": "Neighborhood analysis Leaning on Berman et al. (2017), I implement a neighborhood fixed effects regression model. For this specification, I define the “control set” for each mining municipality as comprising the firstand second-degree neighboring nonmining municipalities. Each mining municipality and its neighbors form a “neighborhood group,” with the price of the main mineral in the mining municipality also assigned to its neighbors. I include neighborhood × year fixed effects to absorb any constant and timevarying codeterminants of social conflict and mining activity across neighborhoods. Any identifying variation in this model derives from the differential reaction to price shocks",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 4,
+        "text": "between mining municipalities and their inactive neighbors. Table 3 presents the estimates for the neighborhood fixed effects model. The estimated probability of observing protest suppression by police forces is significantly higher in mining municipalities, while no significant difference for protester violence and riots is visible. The results are qualitatively stable when I consider the ten nearest neighbors by distance (Table B.3 in the Appendix).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 5,
+        "text": "Time-varying covariates In Table B.4 in the Appendix, I additionally control for municipality-specific factors varying at the monthly level that have been identified in the literature to be associated with conflict probability such as agricultural commodity prices (Dube and Vargas, 2013; ? ; McGuirk and Burke, 2020) and weather conditions (Hsiang et al., 2013; Harari and Ferrara, 2018). Movements in these variables could coincide with mineral price shocks and protest incidences. First, I introduce the main crop price in a municipality as an additional control. Following the coding of the main mineral price, the former is the agricultural commodity in a municipality with the highest production value. To calculate the total production value, I combine world commodity prices from the World Bank with crop-specific agricultural land cover circa 2000 from the M3-Cropland project (Monfreda et al., 2008). 19 The effect of crop prices is estimated to be indistinguishable from zero, while mineral prices retain their positive and significant coefficient. Similarly, the coefficient of interest remains statistically and quantitatively stable with the inclusion of temperature and rainfall as controls.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 6,
+        "text": "Section B.3 in the Appendix shows that the baseline findings are robust to my considering alternative definitions and measures of (i) the municipality-specific mineral price, (ii) protest incidence, and (iii) mining activity.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 7,
+        "text": "Price index First, I investigate the robustness of the baseline results to the use of the price of all minerals mined in a municipality aggregated into a price index in lieu of 19 The M3 crops data are also used by ? , Harari and Ferrara (2018), and McGuirk and Burke (2020), among others.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 8,
+        "text": "the main mineral price. The price index is calculated as the weighted average price of all mined minerals, with the time-constant weights defined as the mineral’s share of the total production value in a municipality over the sample period. The robust coefficient estimates for the alternative price measure are presented in Table B.5 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 9,
+        "text": "Outcomes Second, I check the sensitivity of the baseline estimates to the definition of protest incidence. In column 1 of Table B.6 , I test if the likelihood of protests against mining projects overall increases. Again the estimates reveal no systemic relationship between mineral prices and protester behavior. Furthermore, estimates are robust to the the exclusion of months with protester riots (columns 2 to 5) or events with “unconfirmed” details—i.e., incidences where the number of injuries or arrests is not clearly stated (columns 6 and 7). In addition, Table B.7 in the Appendix presents estimates for the baseline specification when I use the location of the social conflict associated with a protest incident in lieu of the event location. That is, the protest incident is now coded as if it had happened in all municipalities spanned by the corresponding social conflict. While this alternative outcome definition leads to an (expected) loss of precision in the estimates, the magnitude of the effects remains quantitatively stable.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 10,
+        "text": "Production municipalities Third, I restrict the sample to municipalities with at least one year of mineral production. Municipalities with mining concessions but no production during the sample period are, hence, disregarded. Table B.8 in the Appendix shows that the focus on production municipalities results in positive but smaller and less precisely estimated coefficients; validating anecdotal evidence that social conflicts often emerge prior to the production stage when the chance to influence political and corporate decision is perceived as greater by local communities.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 12,
+        "text": "The baseline specification uses the the log of the level of the mineral price and does not consider potential temporal or spatial lags.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 13,
+        "text": "Level vs. first difference The use of price levels has evolved as the standard in the conflict literature (Berman et al., 2017, 2019) but requires that the price series be stationary. Unit root tests for each mineral-specific monthly price series (once purged from their common time components) suggest that price series are stationary, with the exception of monthly gold prices, for which the null hypothesis of the presence of a unit root marginally cannot be rejected at the 10% level (Figure B.1 ). To alleviate potential misspecification concerns, I present in Tables B.9 and B.10 in Section B.4 of the Appendix the estimates for the change in the natural logarithm of the main mineral price and the price index, respectively, from month t − 1 to t . This focus on price growth results in qualitatively similar but less precisely estimated effects.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 14,
+        "text": "Temporal and spatial lags Further, allowing for spatial spillovers increases the impact of mineral prices (Table B.11 ), whereas including temporal lags B.12 has little influence on the cumulative effect. The results align with findings on spatial lags in the civil conflict literature (Berman et al., 2017; McGuirk and Burke, 2020; Berman et al., 2019).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 16,
+        "text": "Seasonality Including month fixed effects in the baseline specification to account for potential seasonality of protests and violence leaves estimates quantitatively and qualitatively unchanged (Table B.13 in the Appendix).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 17,
+        "text": "World market share A potential concern with the proposed identification strategy is that social conflicts could impact mineral production to such an extent that they have some influence on world prices. Table B.2 in the Appendix presents in Panel A the world share of Peruvian mineral production disaggregated by mineral and year and in Panel B the corresponding maximum share among all municipalities. While Panel A confirms Peru’s position as one of the main global mineral producers, Panel B illustrates that, with the exception of tin, no municipality has a world share above 5%, making any world prices movements for those minerals plausibly exogenous. 20 To check for the 20 The San Rafael mine is located in the municipality of Antauta, in the province of Melgar, in the region of Puno.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 18,
+        "text": "possibility that local social conflicts affect world mineral pries, I drop all municipalities whose world market share ever exceeded 1% during the sample period from 2004 to 2019 for this analysis. 21 Table B.14 in the Appendix shows that the coefficients are virtually unchanged from the benchmark estimates, alleviating concerns about a potential violation of the exogeneity assumption.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 19,
+        "text": "Standard errors Next, I provide robustness results for different spatial kernels. In particular, I allow for unlimited serial correlation and spatial correlation within a radius of up to 50 km, 100 km, 250 km, 500 km, 750 km, and 1,000 km. For both dimensions, I assume a linear decay in distance. Table B.15 in the Appendix presents standard error estimates for these alternative levels of clustering. The estimates for protester arrests, injuries, and deaths retain significance at the 5% level regardless of which spatial radius is used, while the estimates for protester behavior remain indistinguishable from zero.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 8,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 20,
+        "text": "Multiple-hypothesis correction Finally, I address concerns that my baseline findings could suffer from an overrejection of the null hypotheses as a result of reuse of the identifying exogenous variation for multiple outcomes. I apply the Romano–Wolf multiple-hypothesis correction procedure, described in Romano and Wolf (2005a,b, 2016) and implemented by Clarke et al. (2020), to safeguard against false rejection of true null hypotheses. In recent work, Heath et al. (2022) show that the employed method performs well in a multitude of settings and across different dimensions. Table B.16 in the Appendix presents for each baseline outcome variable the original model p-value, the resampled p-value from 500 bootstraps, and the Romano–Wolf p-value corrected for multiple hypothesis testing. 22 The estimates for arrests, injuries, and the fatal use of force against protesters remain significant at the 10% level once multiple hypothesis testing is explicitly controlled for, while the null hypothesis of no effect of mineral rents on protester behavior cannot be rejected at common thresholds. 21 Applying the 1% threshold is equivalent to excluding municipalities in the 90th percentile of world market share among all producing municipalities. 22 A graphical illustration of the null distributions used to calculate the Romano–Wolf adjusted pvalues for each of the five baseline outcome variables is given in Figure B.2 in the Appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Exogenous Variation",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 10,
+        "section_name": "Pro-Mining Local Politicians, State Repression, and Rent",
+        "paragraph_id": 0,
+        "text": "In this section, I test the hypothesis that the election of a pro-mining as opposed to an anti-mining mayor increases state repression against protesters and corruption in the municipality.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 11,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "I combine data from various sources to build a municipality–candidate-level data set. Data on election outcomes are obtained from the National Jury of Elections (JNE) online database Infogob . This includes the list of mayoral candidates and the results of municipal elections for 2002, 2006, 2010, 2014, and 2018. In addition, I obtain information on recall referenda for these five rounds of municipal elections to determine whether a sitting mayor was recalled prior to the end of their term. Infogob also makes government plans (“ planes de gobierno ”) of candidates available for each election round, with the exception of 2010. 23 These provide unique information on the political program and ideology of mayoral candidates in the context of highly fragmented and candidate-centered local level politics in Peru (Bland and Chirinos, 2014; Artiles et al., 2021). 24 The government plans were scraped from the Infogob website and are used to assemble a novel and comprehensive data set on the (stated) stance of candidates in regards to formal mining activity. Specifically, I classify candidates into either anti-mining , pro-mining or neutral toward formal mining based on their government plans published prior to the corresponding municipal election. The applied classification procedure can be summarized in the following steps. First, I preprocess the documents to obtain the raw text and use a semiautomatically derived mining keyword list to filter out passages concerned with formal mining. All government plans that do not contain any 23 While links to government reports for elections in 2010 are provided on the government website, these links cannot be accessed, and the browser returns an error message (last accessed 20 August 2024). 24 For instance, Artiles et al. (2021) report that, of the average 7.26 candidates running for mayor in 2014, only 36.9% ran for a national party.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
         "section_id": 11,
         "section_name": "Data",
         "paragraph_id": 1,
         "text": "mining keywords are classified as “unknown.” Next, I use OpenAI’s large language model GPT-4 to answer five questions based on the passages extracted in the previous step to determine a candidate’s sentiment toward formal mining. Note that a candidate’s being classified as anti-mining does not require the candidate to oppose formal mining entirely; a focus on constraining current mining practices or on the negative environmental impacts of mining suffices. If the answers exhibit any inconsistencies, e.g., if the GPT-4 answers indicate a focus on both the positive and negative impacts of mining, I feed the text back to GPT-4 with a verification question to resolve the conflict. 25 Appendix Section A.2 provides a detailed discussion on the classification process. Data on corruption is drawn from two sources. First, I use information from the Encuesta Nacional de Hogares (ENAHO) survey on local governance carried out yearly by Peru’s national statistical agency since 2002. In particular, I make use of a consistently asked question to create a binary indicator on whether any member of the surveyed household was requested to, felt obligated to or voluntarily gave a bribe to a public official in the last 12 months, and zero otherwise. 26 Subsequently, I calculate for each year during a mayor’s term the share of respondents in a municipality that experienced a bribery episode. Second, I retrieve data on the prosecution of corruption offenses in office by mayors (e.g., abuse of power, embezzlement, collusion, etc.) from the PPEDC’s 2022 report on corruption in regional and local governments (Pacheco Palacios et al., 2022). 27 The report lists both, cases for which a former mayor has been sentenced and cases still at the investigative stage. The latter is of importance in light of the historically long judicial process associated with these crimes (Pacheco Palacios et al., 2022). The listed corruption cases are matched to elected mayors based on the accused mayor’s name and the region where the crime took place in using the procedure described in Enamorado et al. (2019) and implemented in the R package fastLink . 25 If the classification procedure returns an error at any of the stages, I resort to manual labeling of the government plan. 26 For the baseline estimates, I exclude responses recorded in first year after the election, since any bribery related instances could be related to the former or current local administration. Results are, however, robust to the inclusion of this first year. 27 In particular, I obtain information on the procedural stage of the case, the region where the (alleged) crime happened, the name of the accused, and the category of the crimes committed against public administration from Section 7 p. 209–613.",
         "extraction_warnings": "",
+        "tier": 1,
         "matched_keywords": [
-            "GPT-4"
+            "GPT-4",
+            "Local Average Treatment Effect (LATE)"
         ],
         "matched_l1_methods": [
             "Computational, Data Science, and Machine Learning"
         ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 11,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "Finally, to compare how the election E of a mayor affected violence against activists and corruption in municipality i , I compute the difference between the average yearly level of outcome Y during a mayor’s term and the level of Y in the year before the election (Marx et al., 2022):",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 11,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "where k denotes the number of years the mayor’s term lasts. 28 Focusing on the change in levels rather than the level itself, allows me to control for differences across municipalities and time periods. For more details on the variables used in the analysis, please refer to Table A.1 in the Appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 12,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "To test the hypothesis that the election of a pro-mining as opposed to an anti-mining mayor increases state repression against protesters and rent seeking, I restrict the set of elections to races with either a proor anti-mining winner and at least one anti- , respectively pro-mining opponent. I estimate the following Regression Discontinuity (RD) equation to address endogeneity concerns about unobserved variables correlated with the election of a pro-mining candidate and post-election outcomes:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 12,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "where X E , the running variable, denotes the difference between the vote share of the promining candidate and their best-ranked anti-mining opponent and T E = 1 [ X E > 0] if a pro-mining candidate wins the election. I use the the non-parametric method of Calonico et al. (2014) to estimate equation 2 and use their optimal MSE-bandwidth throughout with triangular kernel weights. Using this method, point estimates for (marginally) electing a pro-mining candidate over an anti-mining opponent ( δ 1 ) and the robust p-value 28 Note that the regular term length for a mayor is 4 years but the term may be cut short if the mayor is recalled.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 12,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 3,
+        "text": "adjusted for clustering at the regional level are reported. For the coefficient of interest, δ 1 , to be correctly identified two key assumptions have to hold: (1) there should be no manipulation around the cut-off, and (2) covariates potentially correlated with both the treatment and outcome variables should not significantly differ around the cut-off. To test for potential manipulation benefitting pro-mining candidates, I employ the density test suggested by Cattaneo et al. (2018). Figure C.1 in the Appendix reports this test and shows no discontinuous jump in the density of the running variable at cut-off (p-value = 0.464). Second, Table C.1 in the Appendix reports estimates using the same Regression Discontinuity (RD) equation as in 2 with predetermined covariates as outcomes. Reassuringly, election and municipality characteristics are found to not be significantly different on both sides of the threshold.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 13,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "We report the robust, bias-corrected estimates of δ 1 , with additional specifications that linearly adjust for predetermined covariates, in Table 4 . Figure C.2 in the Appendix provides a visual representation of the estimated relationship around the cut-off. Electing a pro-mining candidate as opposed to an anti-mining candidate has a positive effect on both, the average prevalence of violent state repression and its frequency (columns 1-4). In contrast, the narrow election of a pro-mining mayor is not associated with more protester riots (Table C.2 in the Appendix), 29 , suggesting—in line with the baseline findings—that the excessive use of force cannot be explained by changes in protester behavior. Columns 5-6 of Table 4 present estimates for the change in reported bribery instances by citizens once a pro-mining mayor took office. While the sample size is small, I find a positive and precisely estimated effect on corruption once I adjust for predetermined covariates to improve precision (Cattaneo et al., 2020). Reassuringly, the number of respondents does not vary around the cut-off (Table C.1 ), alleviating concerns about potential underreporting in bribery-related questions after a pro-mining mayor takes office due to, e.g., more non-responses out of fear of repercussions. 30 In contrast, 29 Figure C.3 in the Appendix provides a visual representation of the estimated treatment effects. 30 Herrera et al. (2007) also show that the non-response rate of the ENAHO governance module is",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 13,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "I find an insignificant negative effect of narrowly electing a pro-mining candidate on the probability that the mayor will be investigated for crimes against public administration during their tenure (columns 7-8). The apparent dichotomy between the reported increase in corruption and the probability of investigation into corruption offenses indicates political capture of the judicial process. Furthermore, Table C.3 in the Appendix shows that pro-mining mayors are more likely to face initial investigations than anti-mining mayors but are less likely to face formal charges; 31 a pattern consistent with pro-mining mayors being more effective in stalling initial investigations against them. Taken together, the RD results provide support for the notion that the estimated positive relationship between mineral rents and violent state repression in Section 2.4 is connected to rent seeking activities of local authorities.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 14,
+        "section_name": "Democratic Accountability",
+        "paragraph_id": 0,
+        "text": "In this subsection, I examine if mayors are held politically accountable for police violence during their term.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
         "matched_l2_methods": []
     },
     {
@@ -21,12 +686,353 @@
         "paragraph_id": 0,
         "text": "To test this channel, I again implement a continuity-based Regression Discontinuity Design (RDD). In secific, I comparing differences in the reelection outcomes in t + 1 of the top two candidates in the municipal election at time t ::",
         "extraction_warnings": "",
+        "tier": 1,
         "matched_keywords": [
             "Regression Discontinuity Design (RDD)"
         ],
         "matched_l1_methods": [
             "Empirical and Econometric Methods"
         ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 15,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 1,
+        "text": "Y jit +1 = δ 0 + δ 1 Incumbent jit + δ 2 Incumbent jit A jit + δ 3 A jit + δ 4 Incumbent jit X jit + δ 5 A jit X jit + δ 6 Incumbent jit A jit X jit + ε jit ,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 15,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "where j denotes a candidate running in municipality i at time t ; X jit is the running variable denoting the difference in the vote share between the winner of the municipal election i and the runner-up at time t; Y jit +1 is a measure of j ’s electoral performance in the subsequent election; Incumbent jjt = 1 [ X jit > 0] defines the individual-level treatment (winning municipal election i at time t ) and A ijt is a binary indicator equaling one if significantly lower than the overall survey non-response rate. 31 Figure C.4 in the Appendix provides a visual representation of the estimated treatment effects.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 15,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 3,
+        "text": "the elected candidate’s term was characterized by at least one incident of violent state repression, and zero otherwise. If incumbents and runner-ups are indistinguishable at the threshold except for their incumbency status, δ 1 estimates the causal effect of incumbency on subsequent electoral outcomes at the cutoff, whereas δ 2 gauges the effect of police violence on electoral outcomes. If mayors are held accountable for state violence against their constituents, the incumbency effect is expected to be smaller ( δ 2 < 0). I distinguish between unconditional and conditional effect estimates to account for selection into rerunning (De Magalhaes, 2015); a decision unlikely to be random, with only approximately 36% of incumbents running in t +1 as opposed to 54% of runners-up. First, I consider the unconditional estimate on the reelection status and vote share of the top-two candidates in period t + 1, regardless of whether they actually run in t + 1. To interpret the unconditional estimates, I assess differences in the probability of rerunning before estimating the conditional effect for the restricted sample of candidates who run again in the next election. These outcome variables are available for municipal elections in 2002, 2006, 2010, after congress banned reelection in 2015. 32 Table A.1 in the Appendix provides more details on independent and dependent variables used in this analysis. I estimate equation 3 using the non-parametric and robust regression discontinuity (RD) estimator of Calonico et al. (2014) with MSE-optimal bandwidth and triangular weights. Robust standard errors are clustered at the regional level. By construction, the symmetric structure of the estimation, with two observations per municipal election, implies that the sample is perfectly balanced for all municipality-level variables and the density of the victory margin is identical on both sides of the cutoff.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 16,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "Table 5 presents estimates of δ 1 and δ 2 from equation 3 . Two main takeaways emerge. First, and in line with previous studies of local elections in Peru and other democracies with a highly fragmented, weak party system (e.g. Klaˇsnja and Titiunik, 2017; Holland and Incio, 2019; Weaver, 2021), I find a significant incumbent disadvan32 Note that the data on police violence is incomplete for mayoral terms between 2002-2006, since information on this variable is only available from March 2004 onward.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 16,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "tage. Candidates who narrowly won in t are unconditionally less likely to win in t + 1 (column 1) and garner significantly less votes in t + 1 (column 2) than runner-ups who narrowly lost. While part of the unconditional effect can be explained by the significantly lower probability of re-entry of winners compared to runner-ups (column 3), the incumbency disadvantage persists even when conditioning on running in t + 1 (columns 4 to 6). Second, both, the unconditional and conditional incumbency disadvantage is—if anything—smaller for incumbents whose term was characterized by violent state repression. This pattern is qualitatively robust to estimating two separate RD equations for mayoral terms with and without police violence (Table D.1 ). Overall, the results suggest that local democratic institutions are ineffective in holding authorities accountable for the violent state repression of protests.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 17,
+        "section_name": "Is Violent State Repression Effective?",
+        "paragraph_id": 0,
+        "text": "In this section, I take advantage of a unique feature of the social conflict data set: each social conflict and associated events are tracked over time. This allows me to investigate whether the violent repression of social protests proves effective (from the perspective of the repressing authorities). In particular, I look at two dimensions: (i) the duration of the social conflict and (ii) the final outcome of the social conflict. For brevity, results for the first dimension are presented in Appendix Section E.2 . In summary, the survival analysis finds that violence against protesters prolongs the duration of social conflicts. Conditional on conflict duration, local authorities may nevertheless achieve their preferred outcome—the subject of study for the remainder of this section.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 18,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "The end of social conflicts can be broadly categorized into three different outcomes: (1) signing of a resolution agreement (2) “removal” of the conflict due to inactivity, and (3) right-censoring of the conflict due to the end of the study period or loss to followup. 33 A resolution agreement in the view of mining corporations and local authorities 33 Only in 4 of the 76 instances where a social conflict was right-censored, the conflict was rightcensored due to loss to follow-up, i.e. because the Peruvian Office of the Ombudsman discontinued their",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 18,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "is the “unwanted” outcome: it usually contains some form of concession to the activists such as compensation payments for the (illegal) use of communal land or damages to the environment. In contrast, the removal of a conflict requires that the social conflict has been inactive for such a prolonged period of time that the Peruvian Office of the Ombudsman views the conflict has having ended and discontinues its reporting. This outcome can, hence, be viewed as the preferred or “sought-after” one. I define the end of the conflict as the last month when the social conflict was still active. This definition allows me to account for two aspects of the data. First, the Peruvian Ombudsman does not have a fixed threshold for time of inactivity beyond which social conflicts are no longer tracked; i.e., conflicts can be removed after 8 months of inactivity or two years. Second, some social conflicts become inactive after the successful negotiation of a resolution agreement but before its signing. I combine the data on social conflicts with an extensive set of time-varying and timeinvariant conflict-specific covariates. To account for the sparsity of police violence events over the course of social conflicts, the unit of observation for the subsequent analysis is the conflict-year level. The set of time-varying controls comprises past incidents of police violence, protests and protester riots, the change in the main mineral price, canon minero and royalty payments to the municipalities where the conflict is situated, and nighttime luminosity as a proxy for economic development (e.g. Henderson et al., 2012). Time-invariant baseline covariates include affected municipality characteristics such as a binary indicator for the presence of indigenous communities or native lands, population density, river density, road density, area covered by lakes, total surface area, and mean elevation. The additional baseline covariates provide information on the characteristics of the corporate owner of the contentious mining project and encompass the market value of the majority owner as well as a binary indicator for foreign ownership. Table A.1 in the Appendix provides a comprehensive list of all variables used in this section and Table E.1 presents descriptive statistics. reporting on the conflict without explanation. The remainder of conflicts was censored due to the sample period ending in December 2019.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "In the context of social conflicts, the decision of local authorities on whether to crack down on protesters in period t to reach the sought-after conflict outcome Y is a dynamic process that takes into account past developments. Traditional regression models fail to appropriately adjust for time-dependent observed confounders that are affected by previous treatments (s. Appendix Appendix E.3 for more details). In the current setting, we additionally face the challenge of not observing the final outcome for all social conflicts. The literature has so far primarily relied on (semi-)parametric marginal structural models (MSM) to adjust for time-dependent observed confounders while avoiding posttreatment bias (e.g. Blackwell, 2013; Ladam et al., 2018). The estimation of inverse probability weights, however, makes these models highly sensitive to misspecification of the treatment assignment model. Several extensions have since been proposed to make estimates more robust to misspecification (e.g. Imai and Ratkovic, 2015; Zhou and Wodtke, 2020) but two important issues remain that are particularly relevant in the context of this study. First, an identifying assumption of MSM is that each subject in the population has a non-zero chance of receiving all possible treatment sequences. 34 This so called “positvity” assumption is unlikely to be fulfilled in the setting under investigation with police violence being observed only in 8.4% of all conflict years. 35 Second, even if positivity technically holds, with only a small fraction of the possible treatment sequences observed in the sample, propensity scores will be extreme (i.e. close to zero or one) for some conflicts, leading to unstable weight and treatment effect estimates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Marginal Structural Models (MSM)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 1,
+        "text": "Incremental causal effects To recover a causal estimand in the context of this study, I therefore rely on a non-parametric estimator based on incremental propensity scores interventions proposed by Kennedy (2019) and extended in Kim et al. (2021) that is robust to violations (or near-violations) of the positivity assumption and accommodates time-varying censoring. In contrast to other estimators such as MSM, the aim of this 34 This assumption is similar to the assumption of common support in the matching literature. 35 In detail, in only 75 of the 896 conflict-years in the sample at least one incidence of police violence against protesters is observed ( A t = 1).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Marginal Structural Models (MSM)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 2,
+        "text": "estimator is to identify the causal effect of increasing or decreasing everyone’s odds of receiving treatment rather than the effect of receiving treatment or not. More formally, the observed propensity score π t ( h t ) = P ( A t = 1 | H t , R t − 1 = 1), is multiplied by a userspecified increment parameter δ ∈ (0 , ∞ ) to obtain the intervention distribution:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 4,
+        "text": "where H t = \u0000 X t , A t − 1 \u0001 denotes all covariate X t = ( X 1 , ..., X t )) and treatment A t − 1 = ( A 1 , ..., A t − 1 ) history up to just prior to treatment at time t , and R t − 1 is a binary indicator equal to one if the conflict is still in the sample at t − 1 (is not right-censored by t − 1). Rewriting equation 4 unveils that δ has an intuitive interpretation as the odds ratio comparing the odds of q t to the odds of π t :",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 6,
+        "text": "If δ > 1 ( δ < 1) the intervention increases (decreases) the odds of receiving treatment, while the treatment process is left unchanged if δ = 1 ( q t = π t ). The causal estimand of interest is the average counterfactual outcome (across social conflicts) if the odds of treatment were multiplied by δ , i.e. ψ ( δ ) = E \u0002 Y Q ( δ ) \u0003 , where Y Q ( δ ) is the potential outcome under the treatment process ( q 1 , ..., q T ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 7,
+        "text": "Identification and Estimation Kennedy (2019) shows that the incremental effect ψ ( δ ) is correctly identified under (A1) consistency , and (A2) exchangability . 36 Consistency requires that the observed outcomes equal the corresponding potential outcomes under the observed treatment process. This assumption would be violated if, for instance, police violence in one conflict has an effect on the final outcome of another social conflict. Exchangability assumes that treatment each period is as good as random conditional on the past. In other words, exchangability demands that there are no unmeasured confounders. The extensive set of time-varying and baseline covariates in conjunction with 36 Note that the exchangability assumption is also referred to as the sequential ignorability assumption in the literature (e.g. Blackwell, 2013; Imai and Ratkovic, 2015).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 8,
+        "text": "the use of non-parametric machine learning methods that are effective in detecting nonlinearities and interactions lends credibility to the exchangability assumption (Montgomery and Olivella, 2018). In the case of right-censoring, two additional assumption have to hold (Kim et al., 2021): (A3) dropout conditional on the past is as good as random and (A4) each subject has a non-zero chance of staying in the study at the next timepoint. Assumptions that are likely to be fulfilled in the context of this study with right-censoring being—with the exception of four conflicts that were dropped from the watchlist of the Peruvian Ombudsman without explanation—the result of the investigation period ending in December 2019 due to the start of the Covid-19 pandemic in 2020. The estimation of the incremental effect ψ ( δ ) for each δ involves the following steps: 37",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 9,
+        "text": "1. Sample Splitting. Randomly split the full sample into k samples stratified by treatment. 38 For a given k (here k = 2), define testing (including all conflicts selected into split k ) and training (including all conflicts not selected into split k ) data sets. The sample splitting allows the use of double machine learning (Chernozhukov et al., 2018) which yields asymptotically normal and efficient estimators, all while placing no restrictions on the complexity of the nuisance estimators (Kennedy, 2019).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 10,
+        "text": "2. Estimate nuisance parameters. For each conflict and timepoint, regress the treatment indicator on historical variables ( A t ∼ H t ) and the indicator for not dropping out on current treatment status and past values ( R t ∼ A t + H t ) within the training data and use the fitted models to predict ˆ π t and ˆ ω t (i.e. the probability of not dropping out) in the full sample . Subsequently, the predicted values and the observed treatment process are used to build cumulative weights:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 12,
+        "text": "3. Estimate the pseudo regression functions. For each timepoint t = T , T − 1,...,1 (starting with M t +1 = Y ) regress M t +1 on treatment and the past ( M t +1 ∼ A t + H t ) 37 For brevity, I provide a stylized description of the underlying algorithm and refer for a more detailed description to Kim et al. (2021). 38 Given the sparsity of police violence in the sample, stratified sampling ensures that the training data has enough positive example for the machine algorithm to learn the model parameters.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 13,
+        "text": "within the training data set. The model output is then used to predict the outcomes m t ( H t , a t = 1) and m t ( H t , a t = 0) within the conflicts that have not dropped out at this point. Use these predicted outcomes ˆ m t together with A t , ˆ π t , R t , ˆ ω t , and δ to compute the pseudo-outcome M t for the full sample.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 14,
+        "text": "4. Estimate the incremental effect Combine the results from the steps above to compute φ = W T Y + P T t =1 W t M t for all conflicts in the testing data and let ˆ ψ k ( δ ) be its average. Repeat the steps above for the other sample splits, and obtain the final estimate for the incremental effect ˆ ψ ( δ ) by averaging ˆ ψ k ( δ ) across sample splits.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 19,
+        "section_name": "Empirical Strategy",
+        "paragraph_id": 15,
+        "text": "5. Inference. Pointwise confidence intervals for ˆ ψ ( δ ) can be constructed by using the empirical variance of the estimated influence functions φ (s. Kennedy, 2019; Kim et al., 2021). In addition, uniform confidence intervals can be obtained using a multiplier bootstrap (s. Kennedy, 2019) that allow to draw inference over the whole range of δ values.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 20,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "Figure 3 presents the incremental effect curve ˆ ψ ( δ ) reporting the estimated proportion of conflicts ending in a resolution agreement if the odds of violent state repression are multiplied by δ ∈ [0 . 1 , 3 . 0]. All nuisance functions π t , ω t and m t are estimated using the superleaner ensemble algorithm (van der Laan et al., 2007) implemented in the SuperLearner R package (Polley et al., 2024). The superleaner uses cross-validation to compare the performance of each ensemble method and returns the optimal weighted average of those models using the test data performance. 39 Specifically, I use five-fold cross-validation and an ensemble of random forest via ranger (Wright and Ziegler, 2017), extreme gradient boosting via xgboost (Chen and Guestrin, 2016), and k-nearest neighbor regression via kernelKnn (Mouselimis, 2023). 90% pointwise and uniform confidence intervals are calculated using 10 , 000 bootstrap replications. A steady pattern emerges for the relationship between the proportion of social conflicts 39 Polley and Van der Laan (2010) show that the superleaner ensemble algorithm is asymptotically as accurate as the best possible prediction algorithm in the ensemble that is tested.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation",
+            "Local Average Treatment Effect (LATE)",
+            "K-nearest Neighbor"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Machine Learning Predictors & Regularization",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 20,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "ending with an undesired resolution agreement and state repression: decreasing (increasing) the odds of police violence against protesters increases (decreases) the prevalence of resolution agreements. In particular, with no intervention on the treatment process ( δ = 1) but an intervention to remove censoring, the proportion of conflicts ending with a resolution agreement is estimated to be 59.60% (90% CI = 52.27%, 66.93%) and very close to the observed resolution prevalence of 61.06%. Decreasing the odds of police violence proportionally for all conflicts ( δ < 1) leads to a steady increase in resolution agreement prevalence. For instance, for δ = 0 . 3 the estimated proportion of resolution agreements is 69.86% (90% CI = 59.22%, 80.51%). This implies that compared to no intervention ( δ = 1), the resolution prevalence increases by 10.26% (90% CI = 3.01%, 17.52%). 40 Conversely, increasing the odds of violent state repression ( δ > 1) steadily decreases the incidence of resolution agreements. Effects for large δ are, however, imprecisely estimated, mainly due to few conflicts in the sample with multiple years of police violence. Broad confidence bands for large δ values also do not allow to reject the null hypothesis of no effect across the full δ range from 0.1 to 3.0 at conventional confidence levels (the uniform confidence band contains a horizontal line). Overall, the steady pattern uncovered in Figure 3 provides a some first empirical evidence for the effectiveness of violent state repression in reaching the social conflict outcome sought-after by local authorities.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 21,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper introduces a new data set on violent suppression of socioenvironmental advocacy against formal mining activity in Peru. Leveraging the spatial and temporal granularity of the data and exogenous changes in world mineral prices, I provide causal evidence on the positive relationship between local mineral rents and violent confrontations between protesters opposing local mining projects and police forces. Quantitatively, I estimate that a one-percentage-point increase in world prices of the main mineral mined 40 Resolution agreement incidence estimates and estimated differences compared to no intervention for additional δ values are provided in Table E.3 in the Appendix.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 21,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "in the municipality more than doubles the probability to observe use of excessive force against protesters relative to the mean. Further, I show that this escalation in social conflicts is independent of militant protester behavior such as rioting or violence against officers. These baseline results are complemented with empirical evidence from municipality elections. Using a regression discontinuity design, I find that the narrow election of a pro-mining as opposed to an anti-mining candidate increases the probability of police violence against activists. Moreover, empirical results suggest the political capture of legal and democratic institutions. In particular, I find that the election of a pro-mining candidate increases the prevalence of corruption as experienced by constituents but this expansion is not reflected in a coincident increase in investigations against pro-mining mayors for corruption offenses in office. Further, I show that mayors whose term was characterized by police violence against protesters were not punished at the ballot box in the next election, suggesting that democratic accountability is compromised in local elections in Peru. Finally, I take a first step in the direction of providing causal estimates on the efficacy of violent state repression in diffusing protest movements. Taking advantage of unique information on the full timeline of each social conflict in the data set, I show that the strategic use of violence against protesters affects the final outcome of the conflict. Formal resolution agreements, which commonly involves financial compensation for environmental damages or use of land for local communities, are estimated to become more (less) prevalent if the odds of police violence against protesters are decreased (increased). This study contributes to the emerging literature on the political economy of human rights. Its findings highlight that violence against agents of civil society constitutes an important negative externality of local mining activity that is not restricted to authoritarian regimes. Rather, it highlights the potential adverse effects of central government transfers of natural resource rents to local governments even if the use of those funds is regulated by law and free elections should ensure democratic accountability of local authorities. This study’s findings can, therefore, serve as an illustrative precedent to",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1318,
+        "section_id": 21,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "policymakers for the importance of designing redistribution schemes that internalize negative externalities and align incentives of corporations, authorities, and local community activists.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
         "matched_l2_methods": []
     }
 ]

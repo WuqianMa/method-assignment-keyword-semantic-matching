@@ -1,0 +1,1643 @@
+[
+    {
+        "paper_id": 1219,
+        "section_id": 0,
+        "section_name": "The labour market effects of cash transfers to the",
+        "paragraph_id": 2,
+        "text": "This paper considers the labour market effects of an unconditional cash transfer targeted at the unemployed in a context of extreme unemployment. Using a staggered, heterogeneityrobust difference-in-differences design applied to panel labour force survey data, we estimate the contemporaneous and dynamic effects of a new transfer introduced in South Africa, the Social Relief of Distress grant, the first labour market-linked transfer in the country’s history. We find that, on aggregate, receipt has positive effects on the probabilities of job search, trying to start a business, and employment. The latter effects are driven by effects on wage and informal sector employment. We show that employment effects are positive for the unemployed who are either actively searching for work or trying to start a business, as well as for those who are not, but they are substantially larger for the former. This indicates that the transfer both encourages and improves the efficiency of labour market activity by addressing labour market constraints, but highlights the importance of active labour market engagement for improving employment prospects through the transfer. However, these employment effects are non-linear, in that they are evident in the short-term but quickly become and remain null in the longer-term. These results suggest that cash transfers can help reduce labour market constraints but such gains need not translate into better longer-term employment prospects in high-unemployment contexts.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Staggered",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 0,
+        "section_name": "The labour market effects of cash transfers to the",
+        "paragraph_id": 3,
+        "text": "Keywords: Cash transfers; Labour market; Unemployment; South Africa; COVID-19; Social Relief of Distress grant. JEL classification: D04, D31, C54, H53, J48, J68. Declaration of interest: None.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 0,
+        "section_name": "The labour market effects of cash transfers to the",
+        "paragraph_id": 4,
+        "text": "∗ Professor of Economics and Director, Development Policy Research Unit, School of Economics, University of Cape Town, Cape Town, Western Cape, South Africa, 7701. † Junior Research Fellow, Development Policy Research Unit, School of Economics, University of Cape Town, Cape Town, Western Cape, South Africa, 7701. Corresponding author. tim.kohler@uct.ac.za .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Cash transfers are a key component of social protection systems around the world. They served as the most-widely used intervention during the COVID-19 pandemic, having reached 1.4 billion people globally ( Gentilini et al. , 2022 ; Gentilini , 2022 ). Most programmes introduced during this period were temporary, however many have persisted beyond the pandemic. While poverty alleviation is often their main goal, a well-established empirical literature provides evidence of largely positive effects on several other welfare outcomes such as education, health, and early childhood development (for instance, see reviews by Leroy et al. , 2009 ; Ranganathan & Lagarde , 2012 ; Baird et al. , 2014 ; Honorati et al. , 2015 ; García & Saavedra , 2017 ; Bastagli et al. , 2019 ; Millán et al. , 2019 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "Despite these benefits, many policymakers express concern that these programmes may create disincentives to work. In fact, these beliefs are correlated with less extensive and generous programmes ( Banerjee et al. , 2017 ). The underlying economic theory is, however, ambiguous. The standard model of labour supply predicts that when an individual receives an increase in non-labour income, they trade off the gain (more income) from working more against the cost (less leisure), and if leisure is considered a normal good, an increase in non-labour income causes them to demand more leisure and less work. 1 However, this model does not account for various market failures which the provision of transfers may help overcome. For instance, liquidity or credit constraints may prohibit an individual’s ability to search for work or to invest in capital to start or expand a business ( Rose , 2001 ; Gertler et al. , 2012 ; Ervin et al. , 2017 ; Baird et al. , 2018 ; Daidone et al. , 2019 ). Insurance constraints may reduce their willingness to engage in productive but risky activities with high potential rewards ( Hennessy , 1998 ; Serra et al. , 2006 ; Baird et al. , 2018 ; Bastagli et al. , 2019 ). The interplay of these channels means that the theoretical effect of cash transfers on work is ambiguous.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Empirically, the predictions of this model are very seldom seen. Largely, the empirical literature does not support a negative labour supply effect ( Banerjee et al. , 2017 ; Baird et al. , 2018 ; Handa et al. , 2018 ). Instead, null or positive effects are often found ( Alzúa et al. , 2013 ; Bandiera et al. , 2017 ; Salehi-Isfahani & Mostafavi-Dehzooei , 2018 ). This suggests that both the sign and magnitude of effects may be driven by two specific factors: the details of the",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "programme design and the underlying economic conditions ( Banerjee et al. , 2017 ; Millán et al. , 2019 ). This paper considers the case where both of these factors are explicitly characterised by unemployment. Involuntary unemployment is also not accounted for in the standard model, and a large extent of it has ambiguous implications. Firstly, the marginal utility of leisure may be too low for individuals to reduce their labour supply in response to increases in non-labour income ( Salehi-Isfahani & Mostafavi-Dehzooei , 2018 ). But secondly, while cash transfers may improve labour market participation, a severe scarcity of jobs means that such gains may not translate into better employment prospects ( Banerjee & Sequeira , 2023 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "We estimate the labour market effects of a new cash transfer introduced in South Africa in response to the pandemic: the Social Relief of Distress (SRD) grant. The SRD grant is an unconditional, non-contributory cash transfer of ZAR350 (US$50 in Purchasing Power Parity (PPP) terms.) per person per month, equivalent to just six percent of the median monthly wage ( Köhler & Bhorat , 2023 ). While not explicitly designed to affect labour market behaviour, the transfer is targeted at a large group of previously unreached, vulnerable individuals: unemployed working-age adults who, given the country’s extreme rate of unemployment (exceeding 30 percent under the narrow definition even prior to the pandemic), comprised over 10 million people or one quarter of the working-age population. 2 The transfer reached about this many recipients at its peak in a progressively-distributed way ( Köhler & Bhorat , 2020 ; Bhorat et al. , 2021 ; Bassier et al. , 2022 ; Turok & Visagie , 2022 ), and is distinct in South Africa’s social assistance system in that it is the first in the country’s history to make explicit use of a labour market eligibility criterion for targeting, and the first intended for working-age adults for their own consumption. 3 It has thus played an important role in addressing a long-lasting gap in the social safety net. While it was initially intended to be temporary, it has since experienced several extensions and, at the time of writing, remained in place with no clear decision on whether it would be integrated permanently into the system in either its current or an alternative design. The potential labour market effects of doing so have been hotly contested. Some argue that doing so may reduce unemployment through increases in job search and economic activity ( Orkin et al. , 2022 ), while others express concern that doing so may slow economic growth through a rise in public debt and taxation and, ultimately, increase unemployment ( Hollander et al. , 2024 ). To our knowledge, this paper is the first to provide causal evidence of the SRD grant’s effects on any outcome.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "We adopt a staggered, heterogeneity-robust difference-in-differences (DiD) design and apply it on nationally representative, individual-level household survey data collected during 2020 and 2021. We leverage a unique, temporary panel aspect of the data, a plausible proxy variable to indirectly identify recipients to overcome data limitations, and sample restrictions to avoid confounding effects from the introduction of other policies during the same period. We estimate contemporaneous and dynamic effects on three outcomes – the probabilities of job search, trying to start a business, and employment – and additionally analyse effect heterogeneity by employment type and formality. Importantly, we estimate effects during the transfer’s first year or ‘phase’, prior to a change in eligibility criteria.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Staggered"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "We find evidence of positive but heterogenous effects of SRD grant receipt on labour market outcomes. On average, receipt increases the probability of job search by 4.4 percentage points, trying to start a business by 4.0 percentage points, and employment by 6.0 percentage points. The employment effects are driven by effects on wage employment and, to a lesser extent, self-employment, which may be explained by the dominance of wage jobs in the country. We further detect positive effects on both formal and informal sector employment, with larger effects on the latter which may be due to lower barriers to entry ( Mattos & Ogura , 2009 ; Davies & Thurlow , 2010 ; Asmal et al. , 2024 ). 4 Our analysis of mechanisms suggests that these employment effects are explained by effects on labour market constraints at both the extensive and intensive margins. Receipt of the transfer appears to shift a subset of the unemployed who are not actively searching for work or trying to start a business into these activities, but to a greater extent, it improves the efficiency of these activities among those already doing so, both resulting in gains in employment prospects. This suggests that active labour market engagement is a crucial mechanism through which transfers may enable recipients to achieve better employment prospects. Together, these mechanisms are consistent with the presence of liquidity and insurance constraints well-documented in the literature ( Rose , 2001 ; Baird et al. , 2018 ; Salehi-Isfahani & Mostafavi-Dehzooei , 2018 ; Bastagli et al. , 2019 ) as well as qualitative evidence of the transfer’s labour market effects ( Plagerson et al. , 2023 ; Venter et al. , 2024 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "Importantly, however, we show that these average employment effects are only evident in the short-term and do not persist with longer periods of receipt. The “on impact” effect is relatively large at 9.6 percentage points; however, it quickly dissipates to become null and",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "remains so for at least one full year of receipt. The dynamics of other outcomes vary but yield qualitatively similar results. This suggests that the short-term labour market gains of the transfer do not translate into sustained longer-term benefits, at least with respect to the transfer’s initial design. We argue that this is likely explained by the extent and nature of unemployment in South Africa. The combination of a severe scarcity of jobs and a largely structural nature of unemployment, specifically with respect to skills mismatch ( Banerjee et al. , 2008 ; Pauw et al. , 2008 ) and unusually high barriers to entry into both the formal and informal sectors ( Kingdon & Knight , 2004 ; Banerjee et al. , 2008 ; Davies & Thurlow , 2010 ; Hausmann et al. , 2023 ; Asmal et al. , 2024 ), means that gains in a recipient’s ability to search for work or start a business due to the transfer need not translate into better employment prospects. This is strongly consistent with recent quasi-experimental evidence of another transfer in the country ( Tondini , 2022 ) as well as experimental evidence of an unconditional transport subsidy which shows that, while the subsidy increases job search by reducing search costs, the failure of jobs to materialize immediately in such a high-unemployment context leads job-seekers to look for work closer to home which, however, does not improve their employment odds since nearby jobs are also scarce ( Banerjee & Sequeira , 2023 ). Overall, our results suggest that while the SRD grant in its initial design does address some constraints to job search and starting a business, leading some recipients to gain jobs initially, the existence of other significant constraints means that such gains do not translate into better employment prospects in the longer-term.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "Our analysis makes several contributions to existing literatures and holds important policy implications. First, it contributes to the large literature on the labour market effects of cash transfers in lower income countries ( Rose , 2001 ; Serra et al. , 2006 ; Gertler et al. , 2012 ; Banerjee et al. , 2017 ; Ervin et al. , 2017 ; Salehi-Isfahani & Mostafavi-Dehzooei , 2018 ; Bastagli et al. , 2019 ). Our findings are consistent with most studies which do not support a negative labour supply effect. Notably, they provide novel evidence of such effects when a transfer is explicitly targeted at the unemployed in a high-unemployment context, showing that transfers can reduce some labour market constraints but, in such contexts, such gains need not translate into better employment prospects. Hence, our findings may hold relevance in other high-unemployment lower income countries. Second, our analysis of mechanisms is consistent with the dominant mechanisms – liquidity and insurance constraints – documented in various contexts ( Baird et al. , 2018 ). Third, our study contributes to the existing South African literature ( Bertrand et al. , 2003 ; Posel et al. ,",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "2006 ; Williams , 2007 ; Sienaert , 2008 ; Ardington et al. , 2009 ; Ranchhod , 2009 ; Eyal & Woolard , 2011b ; Leibbrandt et al. , 2013 ; d’Agostino & Scarlato , 2012 ; Tondini , 2017 ; Abel , 2019 ), and holds important policy implications for the future of the transfer in the country. In particular, our finding of a short-term, positive employment effect that does not persist into the longer-term suggests that the SRD grant may not be an appropriate policy tool to reduce the country’s extreme level of unemployment, at least in its initial design. While this does not negate the transfer’s important effects on other outcomes, such as poverty, it suggests that if improving the functioning of the labour market is the goal, alternative or additional approaches are required.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 1,
+        "text": "South Africa spends a relatively large amount on social assistance given its level of development. In recent years, social assistance expenditure has stood at 3.3 percent of Gross Domestic Product (GDP), more than double the 1.4 percent spent by the median upper-middle income country ( World Bank , 2021 ). Over 90 percent is spent on tax-financed, unconditional, non-contributory, and means-tested cash transfers. 5 These transfers – referred to as ‘social grants’ in South Africa 6 – are available to citizens, permanent residents, and refugees and, prior to the pandemic and introduction of the SRD grant, primarily targeted vulnerable children, the elderly, and the disabled. Specifically, seven transfers were available: the Child Support Grant (CSG) 7 , Older Person’s Grant (OPG) 8 , War Veterans’ Grant (WVG), Disability Grant (DG), Foster Care Grant (FCG), Care Dependency Grant (CDG), and the Grant-in-Aid (GIA). 9 All transfers are means-tested apart from the FCG. The monthly monetary values of transfers vary considerably, from ZAR510 (US[FORMULA] 300 PPP) for the OPG and DG as of 2023. 10",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 2,
+        "text": "These transfers serve as an important source of household income for a large share of the population. As of May 2023, 26 million transfers were paid to 19 million recipients ( South African Social Security Agency , 2023 ). 1112 In addition to direct receipt, many individuals also indirectly benefit. In 2022, 68 percent of the population were co-residents with transfer recipients. 13 In addition to high coverage, these transfers are relatively well-targeted to the poor, largely due to the use of means testing as a targeting device ( Woolard et al. , 2011 ; Van der Berg , 2014a , b ;",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 3,
+        "text": "World Bank , 2021 ; Gronbach et al. , 2022 ). A large empirical literature documents how this wide and progressive coverage has translated into positive, causal effects on several welfare outcomes including life satisfaction ( Alloush & Wu , 2023 ), physical and mental health ( Duflo , 2003 ; Case & Jensen , 2004 ; Eyal & Burns , 2019 ; Ohrnberger et al. , 2020a , b ), school attendance ( Williams , 2007 ), food expenditure ( d’Agostino et al. , 2018 ), and hunger ( Williams , 2007 ) to name a few. Descriptive evidence also suggests that they reduce both income poverty and, to a lesser extent, income inequality ( Case & Deaton , 2001 ; Leibbrandt et al. , 2010 ; Van der Berg et al. , 2010 ; Woolard et al. , 2011 ; Van der Berg , 2014a ). These results have led to the system becoming regarded as one of South Africa’s most important policy successes in the post-apartheid period.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 4,
+        "text": "Evidence on the labour market effects of these transfers are, however, mixed. While none are explicitly designed to affect labour market behaviour, the empirical literature reveals both positive and negative effects. Considering the OPG, targeted at the elderly, Bertrand et al. ( 2003 ) estimate a reduction in the working hours and labour force participation of prime-aged household members. However, their study has been criticised for their exclusion of non-household members ( Leibbrandt et al. , 2013 ). Ardington et al. ( 2009 ) retain them and estimate a positive employment effect, which they show is due to labour migration, consistent with both Sienaert ( 2008 ) and Posel et al. ( 2006 ). This also provides evidence of intra-household income redistribution ( Leibbrandt et al. , 2013 ). Ranchhod ( 2009 ) also finds positive employment effects among resident middle-aged and older adults. In contrast, Abel ( 2019 ) estimates that the OPG reduces employment among prime-aged adults. Considering the CSG, received by caregivers on behalf of their eligible child(ren), Eyal & Woolard ( 2011b ) estimate positive labour force participation and employment effects among recipient mothers. Williams ( 2007 ) also estimates a positive labour market participation effect, and Tondini ( 2017 ) finds a positive formal employment effect in particular. However, d’Agostino & Scarlato ( 2012 ) estimate a negative employment effect among co-residing household members, particularly women. Regarding the DG – the only transfer targeted at working-age adults for their own consumption until the SRD grant – Mitra ( 2010 ) finds no evidence of any effect on labour market behaviour, while Mitra ( 2009 ) and Mutasa ( 2012 ) estimate negative effects on participation. 14",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 6,
+        "text": "Following the first confirmed COVID-19 case in South Africa, the government declared a National State of Disaster followed by a nationwide lockdown or ‘stay-at-home’ order on 27 March 2020. This initial lockdown lasted until the end of April 2020 and was stringent by international standards ( Bhorat et al. , 2020 ; Gustaffson , 2020 ), making no allowances for non-essential activity outside the home. All schools were closed, public gatherings were prohibited, domestic and international travel were banned, a curfew was enforced, and sector-specific restrictions limited labour market activity ( Köhler et al. , 2023 ). Additionally, the sale of alcohol and tobacco was forbidden, with the latter regulation making the country one of only three in the world to do so ( Filby et al. , 2022 ). GDP and employment fell by 6 and 14 percent year-on-year, respectively, with the latter disproportionately affecting those already in precarious labour market positions ( Casale & Posel , 2021 ; Casale & Shepherd , 2022 ; Ranchhod & Daniels , 2021 ; Kohler et al. , 2022 ; Rogan & Skinner , 2022 ; Shifa et al. , 2022 ; Bassier et al. , 2023 ; Köhler et al. , 2023 ; Yu et al. , 2023 ). Thereafter, the government adopted a risk-adjusted strategy which implemented national lockdown regulations according to the severity of contagion. 15 In June 2022, all remaining pandemic-related restrictions were repealed. By May 2023 when the World Health Organisation announced that it no longer considers COVID-19 a global health emergency, South Africa had registered over 4 million confirmed cases and 100,000 deaths ( World Health Organisation , 2023 ). However, the estimated true number of the latter is 2.5 – 3 times larger ( Bradshaw et al. , 2022 ), consistent with global estimates ( Msemburi et al. , 2023 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 7,
+        "text": "In response to the pandemic and similar to the international context, the government introduced a broad policy package to provide largely cash-based relief to firms and households. Initially amounting to 10 percent of GDP, this package primarily comprised tax relief measures and a combination of existing and new social protection and labour market programmes. Support to households leveraged off the country’s pre-existing social assistance infrastructure and included an expansion at both the intensive and extensive margins. Announced on 21 April 2020, from May – October 2020 the value of every 16 existing cash transfer was increased, and a new transfer was introduced: the SRD grant of ZAR350 (US$50 PPP) per person per month, equivalent to six percent of the median monthly wage ( Köhler & Bhorat , 2023 ). The SRD grant holds particular relevance as it is the first in the country’s history to make explicit use of a labour market eligibility criterion to target a large group of previously unreached individuals – unemployed",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 9,
+        "text": "Individuals were eligible for the SRD grant if they were 18 – 59 years old, unemployed, and were neither receiving nor eligible for any other transfer, unemployment insurance benefits, or other forms of government support, and were not residing in a government-funded institution. All applications were done electronically through one of multiple platforms 19 . Payments were done electronically, through bank accounts or mobile money transfers, or physically at post offices and certain retail outlets. As previously noted, prior to the SRD grant the DG was the only transfer which a small subset of working-age adults were eligible to receive for their own consumption. This is despite the persistence of extreme, structural unemployment throughout the post-apartheid period. This lack of support for the working-aged unemployed is rooted in the assumption that, as in Latin America and elsewhere, only ‘dependent’ categories (such as the elderly, disabled, and children) are in need of social assistance support, while prime-aged, able-bodied individuals are presumed to be able to support themselves through the labour market ( Ferguson , 2015 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 10,
+        "text": "Despite initial payment delays 20 , the SRD grant’s introduction resulted in a rapid, substantial expansion of the system’s reach. As shown in Figure 1 which presents trends in the distribution of cash transfers by type from just prior to the pandemic to 2022, the SRD grant was distributed from the end of May 2020 and initially brought over four million individuals into the system, growing to six million by the end of 2020. This exceeded the growth of the whole system during the decade prior ( Baskaran et al. , 2020 ). While the transfer was initially only available until October 2020, it was soon extended until April 2021. During this period of the transfer’s ‘first phase’, one of its eligibility criteria – that it could not be held concurrently with any other cash transfer – was criticised for unfairly excluding many women. This is because women represented the majority of other cash transfer recipients – 85 percent as of December 2020 ( South African Social Security Agency , 2021 ) primarily as caregivers who received the CSG on behalf of their eligible child(ren) – and the minority of employed – 43 percent as of the last quarter of 2020 ( Casale & Shepherd , 2022 ). 21 Indeed, only 30 percent of SRD grant recipients during this period were women ( Gronbach et al. , 2022 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 14,
+        "text": "01/2020 02/2020 03/2020 04/2020 05/2020 06/2020 07/2020 08/2020 09/2020 10/2020 11/2020 12/2020 01/2021 02/2021 03/2021 04/2021 05/2021 06/2021 07/2021 08/2021 09/2021 10/2021 11/2021 12/2021 01/2022 02/2022 03/2022 CSG OAP DG Other SRD Grant type:",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 15,
+        "text": "Figure 1: Distribution of cash transfers in South Africa by type, January 2020 – March 2022 a Author’s own calculations. Source: South African Social Security Agency ( 2021 , 2022 ) b Notes: This figure shows the number of cash transfers distributed per month by transfer type. This is not equivalent to the number of recipients given that primary caregivers who receive the CSG receive it on behalf of their eligible child(ren) and some recipients receive multiple transfers simultaneously. Number of Social Relief of Distress (SRD) grants paid for, but not in, a given month shown – there can be discrepancies between the two given payment delays. CSG = Child Support Grant; OAP = Old Age Pension; DG = Disability Grant; Other includes Foster Care Grant, Care Dependency Grant, Grant-in-Aid, and War Veteran’s Grant. Vertical reference lines indicate the timing of the introduction, temporary termination, and re-introduction of the SRD grant.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 16,
+        "text": "and a wave of social unrest, the SRD grant was re-introduced for a ‘second phase’ until March 2022 but also expanded to allow unemployed caregivers to apply. This latter change had a considerable effect on both the level and gender composition of the transfer’s recipient population. As shown in Figure 1 , by the end of 2021 the transfer reached over 10 million people, with the majority now being women ( South African Social Security Agency , 2022 ). Later, the transfer experienced several additional extensions while its amount remained unchanged in nominal terms. 22 At the time of writing, it remained in place until March 2025 with no decision on whether it would be integrated permanently into the system in either its current or an alternative design. As noted earlier, the labour market effects of doing so have been hotly contested ( Orkin et al. , 2022 ; Hollander et al. , 2024 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 18,
+        "text": "Here, we synthesise the existing empirical literature on the coverage, distribution, and (simulated) effects of the SRD grant on welfare. Several studies have analysed the transfer’s coverage over time. Köhler & Bhorat ( 2020 ) show that application for and receipt of the transfer was relatively pro-poor. Turok & Visagie ( 2022 ) also highlight the transfer’s progressive distribution, showing",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 19,
+        "text": "that receipt was concentrated among individuals in households in typically lower-income areas. Van der berg et al. ( 2022 ) highlight a link between the temporary cessation of the transfer in 2021 and a rise in household hunger. Other studies have considered the notably uneven distribution of receipt by gender during the transfer’s ‘first phase’, as previously mentioned ( Köhler & Bhorat , 2020 ; Casale & Posel , 2021 ; Casale & Shepherd , 2022 ). On targeting, Bhorat & Köhler ( 2021 ) show that the transfer was relatively well-targeted to the unemployed, particularly the chronically unemployed.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 20,
+        "text": "Other studies consider the grant’s effects on welfare. Bassier et al. ( 2021 ) use pre-pandemic data to simulate how the pandemic’s negative effects on earnings and poverty are mitigated through different cash transfer interventions, including a transfer similar to the SRD grant. 23 They show that their transfer partially but significantly mitigated these negative effects. 24 Bhorat et al. ( 2021 ) conduct a similar exercise using the same data, but compare outcomes using the realised policy to alternative policy scenarios. They show that, while the chosen policy package of the SRD grant combined with a temporary increase in pre-existing transfers is less progressive than a simple, large increase to the CSG alone, it leads to a similar degree of poverty reduction. Both Bhorat et al. ( 2021 ) and Bassier et al. ( 2021 ) then stress one of the SRD grant’s key advantages is its ability to provide support to a large group of vulnerable individuals who otherwise would not have been covered.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 2,
+        "section_name": "Literature review",
+        "paragraph_id": 21,
+        "text": "Both Bhorat et al. ( 2021 ) and Bassier et al. ( 2021 ) make use of pre-pandemic data, but their results largely hold when subjected to data collected during the pandemic. Barnes et al. ( 2021 ) simulate that the pandemic would have led to a 25 percent average decline in disposable income; however, primarily due to the realised policy package including the SRD grant, the observed reduction was mitigated to 11 percent. Through another simulation, Bassier et al. ( 2022 ) estimate that, in the absence of the SRD grant, the headcount poverty rate 25 would have increased by up to 5.2 percentage points between 2020 and 2021, but with the transfer in place, this increase was mitigated to up to 3.4 percentage points. This is consistent with Bhorat & Köhler ( 2021 ) who estimate that extreme poverty would have been significantly higher in the transfer’s absence. 26 Overall, although these results should be interpreted as descriptive and approximate, together they provide suggestive evidence on the positive welfare effects of the SRD grant.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "We use nationally representative, longitudinal, individual-level household survey data from StatsSA’s Quarterly Labour Force Survey (QLFS) collected in 2020 and 2021. Conducted every quarter since 2008, the QLFS is a cross-sectional survey with a rotational panel component that contains information on a range of demographic and socioeconomic characteristics and labour market activities for individuals aged 15 years and older, and serves as South Africa’s official source of labour market statistics. A description of the survey’s sampling design is available in Statistics South Africa ( 2008 ). Importantly, as experienced by many national statistics offices around the world ( Betcherman et al. , 2020 ; Daniels et al. , 2022 ; Kugler et al. , 2023 ), at the end of March 2020 StatsSA had to temporarily suspend face-to-face data collection activities and shift to telephone interviews ( Statistics South Africa , 2020f ). 27 To facilitate this, and unlike in previous quarters, the sample that was surveyed in the first quarter of 2020 (hereafter 2020Q1) and had valid contact numbers was surveyed again for the remaining quarters of 2020 as well as 2021Q1. The result was that the cross-sectional samples from 2020Q2 to 2021Q1 included 70 – 74 percent of the 2020Q1 sample, because not all dwelling units had valid contact numbers (see Table A1 in the appendix). 28 Thereafter, from 2021Q2 the easing of pandemic-related restrictions allowed for the resumption of sample rotation and face-to-face collection of telephone numbers. Telephonic interviews remained in place until 2022Q1. ( Statistics South Africa , 2022b ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "The consequence of the above is that the QLFS changed from a primarily cross-sectional survey to an unbalanced longitudinal survey from 2020Q1 to 2021Q1 – a unique scenario in the survey’s history. This temporary aspect of the data has important implications for the scope of research that had previously been infeasible with the data, and is key to our identification strategy outlined later. Additionally, however, the fact that only a select subset of the 2020Q1 sample could be surveyed thereafter raises sample selection concerns. To address this, StatsSA adjusted the calibrated survey weights using bias adjustment factors based on respondents’ 2020Q1 data ( Statistics South Africa , 2020f ). While an explicit review of these weights had not yet been conducted at the time of writing (and would require more information than is available in the public documentation), they do appear to be appropriately computed, as indicated by Köhler et al. ( 2023 ) who provide a more comprehensive overview of",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "We use the unbalanced panel of individuals observed across five survey waves from 2020Q1 – 2021Q1. Importantly then, our study is restricted to the transfer’s initial design or ‘first phase’, described earlier. To identify the panel sample, we make use of household and person identifiers in the data as well as information on age, gender, and self-reported race 29 to ensure that we observe the same individual over time. 30 We allow for a one-year difference in age within individuals over time in either direction to account for ageing or possible measurement error. We omit all observations that exhibit an inconsistency in any of these characteristics, affecting 7.5 percent (n = 4,244) of observations. For identification reasons outlined in the next section, we restrict the sample to adults aged 18 – 59 years who did not receive any unemployment benefits or other transfers apart from the SRD grant. Table A1 in the appendix presents the varying sample sizes before and after these adjustments. From a pooled cross-sectional sample of about 255,000 observations prior to these adjustments, this procedure results in an unbalanced panel sample of approximately 52,000 observations, comprising 20,536 unique individuals of whom 60 percent are observed at least twice and up to five times. Attrition across the panel is not related to treatment status. 31",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "Despite the sample size reduction, these restrictions do not significantly affect the composition of our sample. Table A2 in the appendix presents mean estimates of several observable covariates at baseline (2020Q1) for SRD recipients and non-recipients, identified as per our approach described below, before and after the restrictions. Before the restrictions and relative to non-recipients, recipients were slightly more likely to be older and African/Black and less likely to be women, married, live in an urban area, and have a tertiary education. After the restrictions, the signs of all between-group differences are unchanged and their magnitudes are largely similar. These between-group differences in levels do not, however, threaten the validity of our identification strategy given that, in a DiD design, groups are not required to be balanced at baseline, but rather these differences should be stable or evolve in ‘parallel’ from before to after treatment ( Daw & Hatfield , 2018 ; Wing et al. , 2018 ; Roth et al. , 2023 ). This is analogous to the parallel trends assumption, which we investigate later.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Parallel Trends Assumption",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 1,
+        "text": "We adopt a DiD design to estimate the causal effects of SRD receipt. 32 Importantly, a new theoretical and empirical literature on the econometrics of DiD has developed over the last few years which highlights how many applications do not meet all requirements of the canonical setup. This is primarily due to the presence of ‘staggered’ treatment timing ( Athey & Imbens , 2018 ; de Chaisemartin & d’Haultfoeuille , 2020 , 2023 , 2024 ; Borusyak et al. , 2021 ; Callaway & Sant’Anna , 2021 ; Goodman-Bacon , 2021 ; Imai et al. , 2021 ; Sun & Abraham , 2021 ; Roth et al. , 2023 ). A canonical design with such staggered treatment yields DiD estimates which comprise both ‘clean’ comparisons (between treated and not-yetor never-treated units) as well as ‘forbidden’ comparisons (between units who are both already-treated but in varying periods). Such estimates can be severely biased and not correspond with interpretable causal parameters. This is highly relevant in this study’s context, where individuals receive the SRD grant at different points in time as opposed to all at once when it was introduced (see Figure A1 in the appendix which illustrates the staggered timing of SRD grant receipt). Fortunately, a variety of heterogeneity-robust estimators have been proposed which make exclusive use of ‘clean’ comparisons to avoid these issues. We avoid the canonical setup and adopt a staggered design using Callaway & Sant’Anna ’s ( 2021 ) semi-parametric and doubly robust DiD estimator. We describe this estimator in detail later, but first discuss how we identify SRD recipients in the QLFS data.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Staggered",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 2,
+        "text": "Unfortunately, the survey instrument does not include an item which explicitly asks about SRD grant receipt. 33 It only collects data on receipt of select other transfers 34 and only the non-employed are asked about receipt. 35 However, the survey does ask about receipt of any ‘other’ state cash transfer beyond the aforementioned. By process of elimination, this refers to the WVG, CDG, GIA, and from the end of May 2020, the SRD grant. Figure 2 presents trends in the sample size of respondents who responded affirmatively to this item from 2019Q1 – 2021Q1, accompanied by event study estimates. It is clear that in the year prior to the introduction of the SRD grant, the probability of reporting receipt of an ‘other’ transfer was unchanged, as indicated by the statistically insignificant event study estimates with magnitudes close to zero. However thereafter, the sample size and probability grew significantly, from n = 150 in the",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 11,
+        "text": "Figure 2: ‘Other’ cash transfer recipients covered in the QLFS, 2019Q1 - 2021Q1 a Author’s own calculations. Source: QLFS 2019Q1 - 2021Q1 ( Statistics South Africa , 2019a , b , c , d , 2020a , b , c , d , e ). b Notes: Panel (a) presents the number of observations of ‘Other’ cash transfer recipients as covered in the data over time. Panel (b) presents event study estimates of the probability of being an ‘Other’ transfer recipient over time relative to the immediate pre-treatment period (2020Q1). Event study estimates obtained from a linear regression using Ordinary Least Squares of a binary ‘Other’ transfer indicator on time fixed effects, weighted using sampling weights with standard errors clustered at the primary sampling unit level. By process of elimination, ‘Other’ cash transfers include the War Veterans’ Grant, the Care Dependency Grant, the Grant in Aid, and from the last month of 2020Q2 the SRD grant. Shaded areas represent 95 percent confidence intervals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 12,
+        "text": "average pre-SRD wave to n = 1 , 073 thereafter; equivalent to an eight percentage point higher probability at the end of the series. Given that, individually and collectively, the number of WVG, CDG, and GIA recipients remained constant during both the preand post-SRD periods according to administrative data (as shown in Figure 1 in the previous section), this increase in ‘other’ transfer recipients is arguably due to the variable capturing SRD grant recipients. Hence, we use this variable to indirectly identify these recipients. 36",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 13,
+        "text": "This variable may, however, be biased by contamination. That is, it would include SRD recipients in addition to any WVG, CDG, and GIA recipients present in the data. While we are not very concerned about this given the very small collective magnitude of recipients of these transfers, 37 we address this by dropping all individuals eligible for them as far as we can identify in the data in all periods. 38 Thereafter, we still observe a small number of such recipients in the data: n = 148 observations (0.3 percent of all observations) who report receipt of the ‘other’ transfer in the pre-SRD grant period. To further avoid contamination, we drop this subset of individuals including any subsequent observations of them in the panel. 39 Furthermore, recall that individuals were only eligible for the SRD grant if they were 18 – 59 years old, unemployed, and not receiving any other cash transfer or unemployment insurance benefits. Additionally and",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 14,
+        "text": "as discussed in the previous section, at the same time as the introduction of the SRD grant the values of all other pre-existing transfers were increased for six months. To avoid confounding our estimates, we restrict our sample to non-employed 40 individuals aged 18 – 59 years who were not receiving any alternative transfer or unemployment insurance benefits. This ensures that our results are not driven by the aforementioned change to pre-existing transfers. Overall then, our approach compares the temporal outcomes of (i) non-employed adults aged 18 – 59 years who neither receive unemployment insurance benefits nor any cash transfer (comprising n = 43 , 444 observations who never report receipt during the treatment period) versus (ii) non-employed adults aged 18 – 59 years who neither receive unemployment insurance benefits nor any cash transfer with the exception of the ‘other’ transfer which captures the SRD grant (comprising n = 8 , 442 observations who ever report receipt during the treatment period).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 15,
+        "text": "As previously noted, characteristic differences between recipients versus non-recipients within a period does not threaten the validity of our identification strategy. Instead, such differences should be stable or evolve in ‘parallel’ from before to after the introduction of the transfer. To examine this, we estimate the mean levels of covariates by receipt status and period and the corresponding between-group differences both within and between periods, presented in Table 1 . This is equivalent to a placebo falsification test, where the DiD model is estimated separately on covariates which theoretically should not be affected by transfer receipt. Prior to the transfer’s introduction and relative to non-recipients, recipients are of a statistically similar age but are significantly more likely to be self-reported African/Black and male – which is in line with analyses which use administrative and alternative survey data ( Casale & Shepherd , 2022 ; Gronbach et al. , 2022 ) – and less likely to be married, reside in an urban area, and have a tertiary-level education. Following the transfer’s introduction, the magnitude, sign, and statistical significance of all differences remain similar with one exception: Recipients are significantly older than non-recipients on average, however only marginally so (about half a year). It is therefore unsurprising that the between-period differences for all covariates, apart from age, are all close to zero in magnitude and statistically insignificant, as shown in column (7). 41 These estimates are in support of the parallel trends assumption and the validity of our DiD design. In our results section to follow, we also provide event study estimates which provide further support. Although the significant estimate on age may be of concern, in the next section we describe our adoption of Callaway & Sant’Anna ’s ( 2021 ) estimator which accounts for such inter-group differences.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 17,
+        "text": "Pre-SRD period Post-SRD period DiD Never received SRD Ever received SRD Diff. Never received SRD Ever received SRD Diff.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 19,
+        "text": "Age (years) 31.541 31.832 0.291 31.414 32.290 0.877[FORMULA] 0.586[FORMULA] (0.117) (0.286) (0.309) (0.134) (0.253) (0.287) (0.208) Female 0.481 0.303 -0.178[FORMULA] 0.470 0.308 -0.162[FORMULA] 0.016* (0.005) (0.012) (0.013) (0.006) (0.011) (0.012) (0.009) African/ 0.834 0.933 0.099[FORMULA] 0.828 0.930 0.102[FORMULA] 0.003 Black (0.004) (0.007) (0.009) (0.005) (0.008) (0.009) (0.006) Married 0.260 0.161 -0.098[FORMULA] 0.254 0.151 -0.103[FORMULA] -0.004 (0.004) (0.010) (0.011) (0.005) (0.008) (0.010) (0.008) Urban 0.681 0.532 -0.148[FORMULA] 0.690 0.548 -0.142[FORMULA] 0.006 (0.005) (0.014) (0.014) (0.005) (0.012) (0.013) (0.009) Tertiary 0.083 0.052 -0.031[FORMULA] 0.078 0.053 -0.025[FORMULA] 0.006 education (0.003) (0.006) (0.006) (0.003) (0.005) (0.006) (0.005) a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents estimates of mean values of observable covariates for individuals who ever or never receipt the SRD grant accompanied by difference estimates in the periods before and after the transfer was introduced. Estimates weighted using sampling weights and standard errors, presented in parentheses, are clustered at the panel (individual) level. The magnitude and statistical significance of a given difference is estimated using a t-test. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 21,
+        "text": "As described earlier, our justification for using a heterogeneity-robust DiD estimator is that SRD grant receipt is staggered, with individuals receiving the transfer not all at once but at different points in time. As shown in Figure A1 in the appendix, there are several unique treatment histories comprising receiving the transfer in a certain period, not-yet receiving it by a certain period, or never receiving it during the whole period. The intuition behind Callaway & Sant’Anna ’s ( 2021 ) semi-parametric estimator is that only individuals who had never or not-yet received the SRD grant by a given period are included in the control group. The key concept behind this approach is the ‘group-time average treatment effect’, ATT ( g, t ) , where group g indexes the time period that recipients first received the transfer and t a given time period. This is formally calculated as follows:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Staggered",
+            "Heterogeneity-Robust DiD (e.g., Callaway & Sant’Anna, Sun & Abraham)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 23,
+        "text": "where EY ( g ) t is the mean value of a given outcome for group g at time t , and E ( C ) t the mean value of the outcome for the control group C in the same period. The control group here comprises individuals who either never received the SRD grant or had not-yet received it by",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 24,
+        "text": "time t . As a robustness test, we alternatively restrict this group to those who never received it only to control for any treatment anticipation behaviour. The first term then calculates the between-group difference in outcomes at time t while the second terms does the same but at time g − 1 – the period immediately preceding the first treatment period for group g . Hence, the estimator accounts for variation in treatment timing by separately calculating the ATT for all groups across all periods. Importantly, because estimation for each group g requires pre-treatment data at time g − t , individuals who are ‘always-treated’ are automatically omitted from the sample. Another key advantage of this estimator here is that it allows us to obtain up to one year’s worth of pre-treatment estimates, despite our data only including one survey wave prior to the transfer’s introduction.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 25,
+        "text": "As opposed to the singular ATT in canonical designs, this process can result in a potentially large number of individual ATT ( g, t ) ’s to consider which may be cumbersome to report. Our study has four g ’s and four post-treatment periods resulting in 16 individual ATT ( g, t ) ’s. An attractive feature of the estimator, however, is that it can be used to construct several useful aggregations, including the aggregation of all effects in the post-treatment period for all treatment groups into a singular ATT, the group-specific aggregation which reveals how effects vary depending on when the transfer was first received, the calendar period-specific aggregation which reveals how effects vary across calendar periods, and the event study aggregation to study effect dynamics or variation by the number of times the transfer was received. This latter aggregation also allows us to obtain pre-treatment estimates to gauge the plausibility of the parallel trends assumption. In doing so, we estimate “long differences” for both the preand post-treatment coefficients to ensure that they are numerically equivalent to the dynamic two-way fixed effects (TWFE) specifications in a non-staggered setting ( Roth , 2024 ). 42 To provide a nuanced account of effects, we employ all of these aggregations, the formal derivations of which are described in Callaway & Sant’Anna ( 2021 ). 43",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Staggered",
+            "Two-Way Fixed Effects (TWFE)",
+            "Two-Way Fixed Effects (TWFE)",
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies",
+            "Panel Data and Fixed Effects"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 26,
+        "text": "We estimate effects on three primary binary outcomes in particular: the probability of job search, the probability of trying to start a business, and the probability of ever gaining employment in the post-period. 44 We also analyse effect heterogeneity by employment type (wage employment, employer, self-employment, or persons helping unpaid in their household business) and employment formality conditional on gaining employment. 45 For each variable, responses",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 28,
+        "text": "Two other attractive features of this estimator are that it does not require strongly balanced panel data, and that it allows for cases where the parallel trends assumption holds either unconditionally or conditionally, which are both relevant for our analysis here. In the latter case, researchers can flexibly incorporate covariates through alternative estimands including outcome regression (OR) adjustment using Ordinary Least Squares (OLS), inverse probability weighting (IPW) with stabilised weights, or a doubly robust (DR) estimand based on Sant’Anna & Zhao ( 2020 ). We report both unconditional and conditional estimates, and for the latter we employ the DR estimand which is attractive because it relies on less stringent modelling conditions and enjoys additional robustness against model misspecification. 46 Doing so also reduces residual variance and improves the precision of our estimates. Following the literature, we incorporate only time-varying covariates which include age, marital status, a binary urban indicator, highest level of education, and a binary indicator of whether an individual was currently attending an educational institution. We also re-estimate all conditional models using the other two alternative estimands as a robustness test.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Inverse Probability Weighting (IPW)",
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 5,
+        "section_name": "Identification strategy",
+        "paragraph_id": 29,
+        "text": "All our estimates are weighted using sampling weights while our standard errors are clustered at the panel (individual) level and estimated using a multiplicative wild bootstrap procedure with 1,000 replications.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "Table 2 presents the aggregated average treatment effect estimates for each of the three primary outcomes. The doubly robust estimates in columns (2), (4), and (6) are our preferred estimates. Overall, as shown in the top panel, we find evidence of positive, small effects of SRD grant receipt on all three outcomes. Specifically, the results suggest that SRD grant receipt increases the likelihood of job search by 4.4 percentage points, trying to start a business by 4.0 percentage points, and employment by 6.0 percentage points, all significant by at least the 5 percent level. Importantly, these effects are estimated based on an aggregation of average effects, either across all g ’s and/or t ’s. Later we reveal important heterogeneity across these dimensions. Additionally,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "the relatively larger employment effects are also suggestive of effects at the intensive margin of the other two outcome; that is, behaviour conditional on already searching or trying to start a business, which we investigate later.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "One defining feature of most labour markets during the pandemic was its heterogenous impact by gender, both inside and outside of the household. This has been well-documented globally (for instance, see Adams-Prassl et al. , 2020 ; Bundervoet et al. , 2022 ; Casarico & Lattanzio , 2022 ; Soares & Berg , 2022 ) including in South Africa (for instance, see Ranchhod & Daniels , 2021 ; Casale & Posel , 2021 ; Casale & Shepherd , 2022 ; Mosomi & Thornton , 2022 ). Such heterogeneity has been attributed to two broad mechanisms: occupational and sectoral segregation on the demand-side ( Fairlie , 2020 ; Albanesi & Kim , 2021 ; Ham , 2021 ; Kugler et al. , 2023 ) and increased caregiving responsibilities on the supply-side ( Craig & Churchill , 2021 ; Ham , 2021 ; Yueping et al. , 2021 ; Couch et al. , 2022 ). Against this backdrop, there is evidence that the labour market effects of cash transfers often vary by recipient gender ( Duflo , 2003 ; Alzúa et al. , 2013 ; Baird et al. , 2018 ). Given these two considerations, it is plausible that the effects of SRD grant receipt during the pandemic may also be gendered. Interestingly, when we re-run the above models using stratified samples of men and women, we do not find any evidence of such effect heterogeneity on trying to start a business or gaining employment. 47 However, we do find such evidence on job search: We estimate a 5.6 percentage point average effect for men, significant at the 1 percent level, but do not find any evidence of any average effect for women. 48 These results may be explained by the two broad mechanisms discussed earlier, however because they are not of primary interest in our analysis here, we do not explore them further. Instead, we emphasize that they represent an important avenue for future research, particularly for the SRD grant’s ‘second phase’ which allowed for many more women to access it.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "The aggregated group-specific estimates in panel (a) in Table 2 show that the positive employment effects were driven by effects on individuals who first received the transfer towards the end of 2020 and beginning of 2021. 49 This coincides with a period characterised by fewer and less stringent pandemic-related restrictions and greater physical mobility, and hence when the labour market participation of job-seekers and job-losers was less constrained ( Köhler et al. , 2023 ). 50 Alternatively, this effect heterogeneity may also be due to an improvement in the efficiency of the State’s administration system of the new transfer, resulting in improved consistency of payments.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 5,
+        "text": "The effects of such gains in the stability and predictability of transfers are well-documented ( de Janvry & Sadoulet , 2006 ; Bastagli et al. , 2016 ; Gennetian et al. , 2021 ). This pattern is largely consistent with the calendar period-specific estimates, presented in panel (b). A similar pattern exists for the effect estimates on job search. In contrast, the estimates on trying to start a business are relatively constant across treatment groups and calendar periods, apart from larger, positive effects for those who first received the transfer in 2020Q3, or for the 2020Q3 period overall.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "Pr(Job search) Pr(Try to start business) Pr(Employment) Uncond. Cond. (doubly robust) Uncond. Cond. (doubly robust) Uncond. Cond. (doubly robust) (1) (2) (3) (4) (5) (6)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "ATT 0.070[FORMULA] 0.044** 0.042[FORMULA] 0.040[FORMULA] 0.068[FORMULA] 0.060[FORMULA] (0.019) (0.018) (0.007) (0.007) (0.010) (0.010) Panel (a): First treatment group-specific effects Mean 0.075[FORMULA] 0.055[FORMULA] 0.035[FORMULA] 0.034[FORMULA] 0.080[FORMULA] 0.075[FORMULA] (0.017) (0.017) (0.007) (0.007) (0.010) (0.009) 2020Q2 -0.163 -0.536[FORMULA] 0.011[FORMULA] 0.012[FORMULA] 0.014 -0.382[FORMULA] (0.219) (0.139) (0.002) (0.004) (0.108) (0.104) 2020Q3 0.068** 0.030 0.080[FORMULA] 0.074[FORMULA] 0.049** 0.044** (0.032) (0.029) (0.011) (0.011) (0.019) (0.020) 2020Q4 0.068[FORMULA] 0.052** 0.019* 0.019* 0.063[FORMULA] 0.059[FORMULA] (0.024) (0.025) (0.010) (0.011) (0.012) (0.013) 2021Q1 0.094[FORMULA] 0.085** 0.026* 0.026* 0.127[FORMULA] 0.125[FORMULA] (0.032) (0.034) (0.014) (0.014) (0.020) (0.020) Panel (b): Calendar period-specific effects Mean -0.008 -0.176[FORMULA] 0.043[FORMULA] 0.041[FORMULA] 0.080** -0.085* (0.056) (0.059) (0.005) (0.005) (0.040) (0.047) 2020Q2 -0.233 -0.814[FORMULA] 0.023[FORMULA] 0.025[FORMULA] 0.103 -0.539[FORMULA] (0.212) (0.218) (0.002) (0.007) (0.152) (0.183) 2020Q3 0.057* 0.013 0.074[FORMULA] 0.069[FORMULA] 0.082[FORMULA] 0.077[FORMULA] (0.034) (0.035) (0.015) (0.014) (0.024) (0.023) 2020Q4 0.067[FORMULA] 0.029 0.038[FORMULA] 0.036[FORMULA] 0.074[FORMULA] 0.066[FORMULA] (0.021) (0.023) (0.010) (0.010) (0.012) (0.012) 2021Q1 0.078[FORMULA] 0.069[FORMULA] 0.037[FORMULA] 0.035[FORMULA] 0.060[FORMULA] 0.056[FORMULA] (0.022) (0.021) (0.009) (0.009) (0.010) (0.010)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "Observations 51,886 51,560 51,886 51,560 51,886 51,560 a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on the three outcomes of interest. Uncond. = unconditional; Cond. = conditional. All models are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator, while conditional models are estimated by additionally incorporating Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT = average treatment effect on the treated. Panel (a) presents the aggregated ATT’s across all periods for each first-treatment cohort. Panel (b) presents the aggregated ATT’s across all first-treatment cohorts for each calendar period. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 10,
+        "text": "We next examine the dynamics of these effects using Callaway & Sant’Anna ’s ( 2021 ) event study aggregation. Specifically, we examine effect heterogeneity by length of exposure or duration of receipt. Effects are estimated and scaled for each period relative to the first period of transfer receipt across all treatment cohorts; that is, regardless of when individuals first received the transfer. This allows us to examine differences in pre-treatment outcome dynamics between recipients and non-recipients, and hence the plausibility of the parallel trends assumption. Second, it allows us to analyse variation in the presence and magnitude of effects beyond the transfer’s immediate impact, and hence, whether any short-term gains eventually translate into sustained longer-term benefits ( Aizer et al. , 2016 ; Millán et al. , 2019 ) or if transfer income is experienced as a transitory or more permanent income shock ( Eyal & Woolard , 2011a ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Parallel Trends Assumption",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 11,
+        "text": "Our event study estimates are presented in Figure 3 . 51 For all outcomes, all pre-treatment estimates are statistically insignificantly different from zero, supporting the plausibility of the parallel trends assumption. Additionally, we find no evidence of any anticipation, further supporting the credibility of our design. First considering panel (c), we find that the SRD grant’s positive average employment effects, as observed previously, are driven by effects in the short-term and, importantly, do not persist with longer periods of receipt. The “on impact” (at t = 0 , or the first quarter) average effect on the probability of employment is positive and relatively large at 9.3 percentage points. With additional quarters of receipt, however, the effect quickly dissipates and becomes null. Two and three quarters of receipt yield effects of 2.8 and 0.2 percentage points, respectively, but both are statistically insignificant. Figure A2 in the appendix, which includes a fourth post-treatment period, shows that this null result holds after one full year of receipt.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 12,
+        "text": "Complementing the employment effect estimates with those of our other two primary outcomes adds nuance into understanding the transfer’s labour market effects. As shown in panel (a), we do not estimate any significant heterogeneity in effects on the probability of job search across varied durations of receipt. This does not, however, contradict our earlier finding as per Table 2 , which reports a positive, average effect. In contrast, the estimates in panel (b) suggest that receipt of the transfer increases recipients’ probability of trying to start a business both initially but also increasingly with additional periods of receipt. While we estimate the first quarter of receipt increases this probability by 3.5 percentage points, similar in magnitude to the average effect, three quarters of receipt yields an effect of over 8 percentage points. The estimates in",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 19,
+        "text": "Figure 3: Event study estimates of the dynamic labour market effects of SRD grant receipt a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: Models estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust difference-in-differences estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT’s are estimated for each period relative to the first-treatment period, across all first-treatment cohorts. Periods to SRD grant receipt indexes the length of receipt. Estimates are weighted using sampling weights. Standard errors are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. Shaded areas represent 95 percent confidence intervals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 20,
+        "text": "Figure A2 in the appendix, however, reveals a null effect – statistically insignificant and close to zero in magnitude – after one full year of receipt, similar to the employment results. Taken together, while we find some variation within the period, this analysis implies that the short-term labour market benefits of the SRD grant do not translate into sustained longer-term benefits over one year, at least during the transfer’s initial design.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 21,
+        "text": "We posit that this null, longer-term employment effect is likely explained by the extent and nature of unemployment in South Africa which limits the extent gains in a recipient’s ability to search for work or start a business translate into employment. First, considering job search, as referenced earlier the literature suggests that cash transfers can alleviate liquidity constraints which limit an individual’s ability to search for work ( Rose , 2001 ; Gertler et al. , 2012 ; Ervin et al. , 2017 ; Baird et al. , 2018 ; Daidone et al. , 2019 ), thus lowering job search costs and addressing spatial mismatches between the location of jobseekers’ households and job opportunities. This mismatch tends to be particularly large in South Africa’s context as an enduring consequence of apartheid-era policy ( Shah , 2022 ; Asmal et al. , 2024 ). Additionally, cash transfers can alleviate insurance constraints which reduce recipients’ willingness to engage in productive but risky activities, such as job search, with high potential rewards, such as employment ( Hennessy , 1998 ;",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 22,
+        "text": "Serra et al. , 2006 ; Baird et al. , 2018 ; Bastagli et al. , 2019 ). While this is consistent with our estimated job search effects and appears to translate into some recipients gaining jobs initially, it does not persist into the longer-term. This is plausibly due to both a combination of a severe scarcity of jobs as well as a largely structural nature of unemployment in the country. Job-seekers, characterised by relatively low skill levels, 52 are confronted with a labour market experiencing increasing demand for high-skilled workers due to structural shifts in the economy ( Banerjee et al. , 2008 ; Pauw et al. , 2008 ). The consequence is a significant skills mismatch and a persistently high rate of unemployment. This is strongly consistent with recent experimental evidence in the country by Banerjee & Sequeira ( 2023 ) who show that, while reductions in search costs address spatial mismatch and increase job search in initially, the failure of jobs to materialise immediately leads job-seekers to become more impatient, adjust their expectations, and look for work closer to home, which also does not improve their employment odds since nearby jobs are also scarce.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 23,
+        "text": "Second, considering starting a business, the literature on liquidity and insurance constraints is again relevant given that cash transfers can alleviate the constraints which limit an individual’s ability to invest in capital to start or expand a business or compensate for the risk that doing so entails. However, in South Africa, unusually high barriers to entry into the informal sector serve as an additional and significant constraint which the SRD grant may not be able to address, at least in its initial design. It is well-documented that the country is an international outlier regarding its relatively small informal sector ( Banerjee et al. , 2008 ; Davies & Thurlow , 2010 ; Shah , 2022 ; Köhler et al. , 2023 ; Asmal et al. , 2024 ). Just one third of workers are informally employed compared to an average of 70 percent in lowand middle-income countries and 86 percent in Africa ( International Labour Office , 2018 ). It has been argued that the size of the informal sector is not unrelated to the country’s extremely high rate of unemployment. Existing studies provide evidence that informal work is indeed preferred over unemployment, however numerous barriers to entry exist such as a high prevalence of crime and associated insecurity, inadequate government support, unavailability of infrastructure, spatial mismatch between the location of informal traders’ households and their consumers, high transport and licensing costs, and punitive regulations which restrict where informal traders can operate ( Kingdon & Knight , 2004 ; Banerjee et al. , 2008 ; Davies & Thurlow , 2010 ; Hausmann et al. , 2023 ; Asmal et al. , 2024 ). Many of these latter constraints are not common in other developing countries, leading to the argument that informal sector regulation in South Africa leans more towards urban management",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 24,
+        "text": "than small business development, which is more akin to such regulation in advanced economies ( Asmal et al. , 2024 ). Overall, our estimates suggest that the SRD grant in its initial design does address some of the aforementioned constraints to job search and starting a business – which we explore in more detail later – leading some recipients to gain jobs initially. However, the existence of other constraints means that such gains do not translate into better employment prospects in the longer-term.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 26,
+        "text": "We now further analyse the employment effects of the transfer by considering effect heterogeneity by employment type. We estimate effects on the probabilities of becoming an employee or in wage employment, an employer, self-employed, or working unpaid un a household business (henceforth referred to as an unpaid household worker), all conditional on becoming employed. Table 3 presents the relevant treatment effect estimates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 27,
+        "text": "We find that the positive average employment effect is driven by effects on wage and self employment. As shown in columns (2) and (6), SRD grant receipt increases the probability of wage employment by 4.2 percentage points and self-employment by 2.1 percentage points. The groupand calendar period-specific estimates for these outcomes in panels (a) and (b) are similar to those in Table 2 , which again highlights them as the drivers of the overall employment effects. These results may at least partially be explained by two key characteristics of South Africa’s labour market. First, it’s plausible that the SRD grant increases recipients’ ability to access wage jobs in particular simply because these account for the majority of jobs in the country, regardless of sector ( Kohler et al. , 2022 ; Yu et al. , 2023 ). Second and relatedly, large-scale unemployment reflects a scarcity of these jobs, and hence, the SRD grant may induce some recipients to opt for self-employment as an alternative which is typically characterised by lower barriers to entry ( Falco & Haywood , 2016 ; Asmal et al. , 2024 ). We do not find compelling evidence of effects on the probabilities of becoming an employer or unpaid household worker, as shown in columns (4) and (8). The estimates for both outcomes are very close to zero in magnitude and most are insignificant.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 28,
+        "text": "Figure 4 presents the event study estimates. 53 As in Figure 3 , the absence of significant pre-treatment coefficients for all outcomes yields support for the parallel trends assumption. Like the overall employment results in Figure 3 , panel (a) shows that receipt of the SRD grant",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 29,
+        "text": "Table 3: Aggregated average treatment effect estimates of SRD grant receipt, by employment type Pr(Wage employment) Pr(Employer) Pr(Self-employment) Pr(Unpaid HH employment) Uncond. Cond. (doubly robust) Uncond. Cond. (doubly robust) Uncond. Cond. (doubly robust) Uncond. Cond. (doubly robust) (1) (2) (3) (4) (5) (6) (7) (8) ATT 0.044[FORMULA] 0.042[FORMULA] 0.004 0.000 0.024[FORMULA] 0.021[FORMULA] 0.004** 0.004* (0.009) (0.008) (0.002) (0.002) (0.004) (0.004) (0.002) (0.002) Panel (a): First treatment group-specific effects Mean 0.051[FORMULA] 0.049[FORMULA] 0.004 0.002 0.029[FORMULA] 0.026[FORMULA] 0.004** 0.004* (0.009) (0.008) (0.003) (0.003) (0.005) (0.004) (0.002) (0.002) 2020Q2 0.091* 0.065* -0.024 -0.406 0.004 0.005 0.009 0.008 (0.049) (0.037) (0.132) (0.106) (0.013) (0.013) (0.014) (0.013) 2020Q3 0.027 0.027 0.006* 0.005 0.025[FORMULA] 0.020** 0.002** 0.003** (0.017) (0.018) (0.004) (0.003) (0.009) (0.010) (0.001) (0.001) 2020Q4 0.043[FORMULA] 0.040[FORMULA] 0.001 0.001 0.015[FORMULA] 0.013[FORMULA] 0.007* 0.006* (0.011) (0.011) (0.003) (0.003) (0.004) (0.004) (0.004) (0.004) 2021Q1 0.076[FORMULA] 0.075[FORMULA] 0.007 0.007 0.050[FORMULA] 0.049[FORMULA] 0.001 0.001 (0.017) (0.018) (0.006) (0.006) (0.012) (0.011) (0.003) (0.003) Panel (b): Calendar period-specific effects Mean 0.079[FORMULA] 0.059** 0.003 0.002 0.023[FORMULA] 0.021[FORMULA] 0.010 0.009 (0.028) (0.025) (0.034) (0.003) (0.009) (0.008) (0.010) (0.009) 2020Q2 0.179* 0.102 -0.003 -0.406 0.010 0.011 0.026 0.024 (0.105) (0.093) (0.134) (0.106) (0.040) (0.035) (0.040) (0.038) 2020Q3 0.050** 0.050** 0.009 0.005 0.039[FORMULA] 0.036[FORMULA] 0.004* 0.004 (0.021) (0.020) (0.006) (0.003) (0.011) (0.012) (0.002) (0.003) 2020Q4 0.052[FORMULA] 0.050[FORMULA] 0.005* 0.001 0.018[FORMULA] 0.015[FORMULA] 0.007 0.007** (0.011) (0.011) (0.003) (0.003) (0.005) (0.005) (0.003) (0.003) 2021Q1 0.035[FORMULA] 0.034[FORMULA] 0.001 0.007 0.025[FORMULA] 0.023[FORMULA] 0.002 0.002 (0.009) (0.010) (0.003) (0.006) (0.005) (0.005) (0.002) (0.002) Observations 51,886 51,560 51,886 51,560 51,886 51,560 51,886 51,560 a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on employment by type. Uncond. = unconditional; Cond. = conditional. All models are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator, while conditional models are estimated by additionally incorporating Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT = average treatment effect on the treated. Panel (a) presents the aggregated ATT’s across all periods for each first-treatment cohort. Panel (b) presents the aggregated ATT’s across all first-treatment cohorts for each calendar period. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 34,
+        "text": "Figure 4: Event study estimates of the dynamic labour market effects of SRD grant receipt, by employment type a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: Models estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust difference-in-differences estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT’s are estimated for each period relative to the first-treatment period, across all first-treatment cohorts. Periods to SRD grant receipt indexes the length of receipt. Estimates are weighted using sampling weights. Standard errors are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. Shaded areas represent 95 percent confidence intervals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 35,
+        "text": "increases the probability of wage employment, but only in the short-term. The “on impact” (at t = 0 ) average effect here is again positive and relatively large at 6.3 percentage points and significant. However, as before, with additional quarters of receipt this effect does not persist but instead quickly dissipates and becomes null. With the exception of the initial effect, the estimate is no longer significant from two quarters and up to one full year of receipt. The effect dynamics for self-employment, as shown in panel (c), are qualitatively similar, however the “on impact” effect is only half the magnitude (3.1 percentage points). This is consistent with the differences in average effect estimates in Table 3 . We again do not find any evidence of effects on the probabilities of becoming an employer or unpaid household worker.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 37,
+        "text": "We now consider effect heterogeneity by employment formality; that is, effects on the probabilities of formal or informal sector employment. Table 4 presents the relevant effect estimates. The",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 38,
+        "text": "estimates in columns (2) and (4) reveal significant effects on both formal and informal sector employment, however the magnitude of the latter is about double the size of the former (3.6 versus 1.9 percentage points, respectively). This suggests that the positive, average employment effect observed previously is primarily, but not completely, explained by effects on informal sector employment. 54 These results may at least partially be explained by the typically lower barriers to entry into informal work ( Mattos & Ogura , 2009 ; Davies & Thurlow , 2010 ; Asmal et al. , 2024 ). The distributions of groupand calendar period-specific estimates in panels (a) and (b) are again very similar to those in Table 2 , again highlighting larger effects for those who first received the transfer later in the period.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 6,
+        "section_name": "Results",
+        "paragraph_id": 39,
+        "text": "The larger informal sector employment effects suggest that the transfer may be able to play a role in diminishing the aforementioned barriers to entry into the sector ( Kingdon & Knight , 2004 ; Banerjee et al. , 2008 ; Heintz & Posel , 2008 ; Davies & Thurlow , 2010 ; Hausmann et al. , 2023 ; Asmal et al. , 2024 ). However, as before, we do not find evidence that these effects persist over time. Figure 5 presents the event study estimates for these outcomes. The absence of significant pre-treatment coefficients again lend support for the parallel trends assumption. 55 Similar to the effects on overall employment in Figure 3 and wage and self-employment in particular in Figure 4 , panels (a) and (b) show that SRD grant receipt increases the probabilities of both formal and informal sector employment in the short-term, but not thereafter. The magnitude of the “on impact” effect on formal sector employment is again smaller that of the effect on informal sector employment (3.5 versus 5.4 percentage points, respectively). As before, with additional quarters of receipt these effects disappear and remain null for up to one full year of receipt.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 0,
+        "text": "As noted previously, the transfer’s short-term employment effects can at least partially be explained by its effects on job search and trying to start a business at the extensive margin. However, the larger employment estimates are suggestive of additional mechanisms at the intensive margin; that is, behaviour related to job search or trying to start a business conditional on already doing so. Identifying such effects aids one’s understanding of any underlying mechanisms. To investigate this, we stratify the sample and re-estimate the model to examine how these employment effects vary between those who were already searching or trying to start a business and those who were not. The relevant effect estimates are presented in Table 5 and Figure 6 . The estimates",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 1,
+        "text": "Table 4: Aggregated average treatment effect estimates of SRD grant receipt, by employment formality",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 2,
+        "text": "Pr(Formal sector employment) Pr(Informal sector employment) Uncond. Cond. (doubly robust) Uncond. Cond. (doubly robust) (1) (2) (3) (4)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 3,
+        "text": "ATT 0.020[FORMULA] 0.019** 0.043[FORMULA] 0.036[FORMULA] (0.007) (0.008) (0.006) (0.007) Panel (a): First treatment group-specific effects Mean 0.024[FORMULA] 0.025[FORMULA] 0.050[FORMULA] 0.045[FORMULA] (0.007) (0.007) (0.007) (0.007) 2020Q2 -0.001 -0.008 -0.039 -0.415 (0.009) (0.008) (0.129) (0.109) 2020Q3 0.010 0.007 0.034[FORMULA] 0.033[FORMULA] (0.016) (0.017) (0.013) (0.012) 2020Q4 0.020** 0.021** 0.038[FORMULA] 0.035[FORMULA] (0.009) (0.009) (0.008) (0.009) 2021Q1 0.040[FORMULA] 0.043[FORMULA] 0.077[FORMULA] 0.075[FORMULA] (0.015) (0.015) (0.015) (0.015) Panel (b): Calendar period-specific effects Mean 0.014* 0.008 0.043 -0.105 (0.008) (0.009) (0.037) (0.047) 2020Q2 -0.013 -0.032 0.038 -0.543 (0.026) (0.019) (0.146) (0.189) 2020Q3 0.029 0.025 0.052[FORMULA] 0.051[FORMULA] (0.019) (0.019) (0.016) (0.016) 2020Q4 0.028[FORMULA] 0.025[FORMULA] 0.042[FORMULA] 0.037[FORMULA] (0.009) (0.010) (0.009) (0.009) 2021Q1 0.012 0.014* 0.041[FORMULA] 0.036[FORMULA] (0.008) (0.008) (0.008) (0.008)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 4,
+        "text": "Observations 51,886 51,560 51,886 51,560 a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on employment by formality. Uncond. = unconditional; Cond. = conditional. All models are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator, while conditional models are estimated by additionally incorporating Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT = average treatment effect on the treated. Panel (a) presents the aggregated ATT’s across all periods for each first-treatment cohort. Panel (b) presents the aggregated ATT’s across all first-treatment cohorts for each calendar period. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 5,
+        "text": "in the top panel of the table are indicative of positive, significant effects for all groups of the unemployed. However, effects are significantly larger for those already engaged in job search or trying to start a business. On average, SRD grant receipt increases the likelihood of employment by 9.5 percentage points for searchers but just 3.8 percentage points for non-searchers, and 17.3 percentage points for those trying to start a business compared to 5.4 percentage points for those who are not. This disparity is also largely evident for the estimates in both panels (a) and (b) again, with the former again suggesting that effects tend to be larger for those who first received the transfer towards the end of the series. 56 Figure 6 also reveals approximately twice",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 8,
+        "text": "Figure 5: Event study estimates of the dynamic labour market effects of SRD grant receipt, by employment formality a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: Models estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust difference-in-differences estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT’s are estimated for each period relative to the first-treatment period, across all first-treatment cohorts. Periods to SRD grant receipt indexes the length of receipt. Estimates are weighted using sampling weights. Standard errors are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. Shaded areas represent 95 percent confidence intervals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 9,
+        "text": "as large effects for those already engaged in job search and trying to start a business as their counterparts, but only initially. 57 Importantly, and as before, for all groups these effects are positive and significant in the first quarter of receipt but become null and remain so thereafter. Overall, these results suggest that the transfer has larger positive, short-term employment effects on the intensive margin; that is, among the unemployed who are already engaged in the labour market.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 10,
+        "text": "We further interrogate these larger employment effects among those already searching or trying to start a business by examining effects on outcomes related to job search or trying to start a business conditional on already doing so. We do so by exploiting eight items in the survey which asked those respondents either searching for work or trying to start a business about their related behaviour in the four weeks preceding the survey. These included waiting or registering at an employment agency or trade union; enquiring at workplaces; placing or answering advertisements; searching through advertisements or the internet; seeking assistance from relatives or friends; looking for assets or applying for a permit; waiting at the street side where casual workers are found; and seeking any financial assistance. We use this data to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 11,
+        "text": "Table 5: Aggregated average treatment effect estimates of SRD grant receipt on employment, by job search and trying to start a business status",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 12,
+        "text": "Sample: (a) By job search status (b) By business start status Searchers Non-searchers Tried to start business Did not try to start business (1) (2) (3) (4)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 13,
+        "text": "ATT 0.095[FORMULA] 0.038[FORMULA] 0.173** 0.054[FORMULA] (0.017) (0.012) (0.068) (0.010) Panel (a): First treatment group-specific effects Mean 0.110[FORMULA] 0.047[FORMULA] 0.167[FORMULA] 0.068[FORMULA] (0.017) (0.011) (0.062) (0.010) 2020Q2 -0.154 -0.077 . -0.342[FORMULA] (0.167) (0.203) . (0.102) 2020Q3 0.083** 0.024 0.225** 0.038* (0.037) (0.023) (0.102) (0.020) 2020Q4 0.076[FORMULA] 0.039[FORMULA] 0.121 0.052[FORMULA] (0.022) (0.013) (0.100) (0.011) 2021Q1 0.167[FORMULA] 0.083[FORMULA] 0.180 0.117[FORMULA] (0.032) (0.027) (0.122) (0.021) Panel (b): Calendar period-specific effects Mean -0.060 0.064** 0.214[FORMULA] -0.091** (0.070) (0.029) (0.070) (0.044) 2020Q2 -0.541* 0.126 . -0.539[FORMULA] (0.296) (0.105) . (0.173) 2020Q3 0.111[FORMULA] 0.059** 0.349[FORMULA] 0.065** (0.042) (0.028) (0.135) (0.026) 2020Q4 0.102[FORMULA] 0.039[FORMULA] 0.180** 0.059[FORMULA] (0.023) (0.013) (0.080) (0.013) 2021Q1 0.087[FORMULA] 0.030** 0.112 0.052[FORMULA] (0.019) (0.014) (0.075) (0.011)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 14,
+        "text": "Observations 16,660 34,900 1,819 49,741 a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on employment using four separate samples of the unemployed. All models are conditional and are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT = average treatment effect on the treated. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 15,
+        "text": "construct eight binary outcomes. 58 The aggregated average effect estimates of SRD grant receipt on each of these outcomes are presented in Table 6 . We find significant effects on just two outcomes: searching job advertisements and looking for assets or applying for a permit. The effect on the former is, however, twice the size of that on the latter. SRD grant receipt increases the probabilities of searching job advertisements by 5.5 percentage points and looking for assets or applying for a permit to start a business by just under 3 percentage points. The estimates for all other outcomes are insignificant and much closer to zero in magnitude. Figure A5 in the appendix presents the relevant event study estimates. While the effect on the probability",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 17,
+        "text": "-4 -3 -2 -1 0 Periods to SRD grant receipt Tried to start business Did not try to start business (b) By business start status",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 18,
+        "text": "Figure 6: Event study estimates of the dynamic effects of SRD grant receipt on employment, by job search and trying to start a business status a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: Models estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust difference-in-differences estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT’s are estimated for each period relative to the first-treatment period, across all first-treatment cohorts. Periods to SRD grant receipt indexes the length of receipt. Estimates are weighted using sampling weights. Standard errors are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. Shaded areas represent 95 percent confidence intervals.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 19,
+        "text": "of looking for assets or applying for a permit remains smaller than that on the probability of searching job advertisements, both appear to grow with a longer duration of receipt. However, most of these estimates are insignificant.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 20,
+        "text": "Taken together, these results suggest that the transfer’s positive, short-term employment effects can be explained by its effects on both extensive and intensive margin behaviour, but they appear driven by the latter. At the extensive margin, receipt of the transfer increases the likelihood of both job search and trying to start a business and, hence, enables a subset of the unemployed who are doing neither to transition into these activities, thus improving their employment prospects. At the intensive margin – that is, among those already engaged in the labour market by actively searching or trying to start a business – receipt improves the ‘efficiency’ of these two outcomes, resulting in even greater gains in employment prospects. Our analysis suggests that this is done by increasing the likelihood of at least two behaviours: searching through job advertisements or the internet, and looking for assets or applying for a permit to start a business. This is consistent with the literature on two particular mechanisms through which labour supply responds to cash transfers: liquidity and insurance constraints, as referenced",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 21,
+        "text": "Table 6: Aggregated average treatment effect estimates of SRD grant receipt on intensive margin behaviour Registered at employment agency Enquired at workplaces Placed/answered advertisements Searched advertisements (1) (2) (3) (4)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 22,
+        "text": "ATT -0.013 -0.011 -0.006 0.055** (0.023) (0.027) (0.024) (0.025) Observations 12,356 14,165 13,946 13,535",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 23,
+        "text": "Sought assistance from network Looked for assets or applied for business permit Waited at street side as casual worker Sought financial assistance",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 24,
+        "text": "ATT -0.012 0.028[FORMULA] 0.010 -0.005 (0.024) (0.007) (0.017) (0.019) Observations 14,390 11,789 11,863 11,723 a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on intensive margin behaviour, conditional on job search or trying to start a business. All models are conditional and are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. ATT = average treatment effect on the treated. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 7,
+        "section_name": "Mechanisms",
+        "paragraph_id": 25,
+        "text": "earlier. First, the transfer may help recipients overcome a liquidity constraint which prevents them from searching for work or undertaking certain investments – like acquiring a permit or an asset – that would enable them to work ( Rose , 2001 ; Banerjee et al. , 2017 ; Baird et al. , 2018 ; Salehi-Isfahani & Mostafavi-Dehzooei , 2018 ; Daidone et al. , 2019 ). Second, the transfer may serve as a form of insurance against the risk of failure and enable recipients to undertake risky activities with high potential rewards, such as starting a business or acquiring an asset ( Hennessy , 1998 ; Serra et al. , 2006 ; Baird et al. , 2018 ; Bastagli et al. , 2019 ). Both of these mechanisms are strongly consistent with qualitative evidence in South Africa that the SRD grant alleviates recipients’ job search costs and allows some to acquire work-related assets ( Plagerson et al. , 2023 ; Venter et al. , 2024 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 0,
+        "text": "We conduct several robustness tests to examine the sensitivity of our results to specificationrelated decisions. First, our estimates of effects use of a control group who comprise individuals who had not-yet received the transfer by time t as well as those who never received the transfer in the period. This then includes individuals who may anticipate receiving the transfer in",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 1,
+        "text": "later periods, which may introduce of source of bias in our estimates. Fortunately, Callaway & Sant’Anna ’s ( 2021 ) estimator allows one to control for treatment anticipation behaviour through a control group restriction. We re-estimate our overall and sub-group models but restrict the control group to only those who never received the transfer in the period. The aggregated treatment effect estimates are presented in Table 7 . We find that our main estimates above are very consistent in terms of sign, magnitude, and statistical significance to those under the more restricted control group. For every outcome, the largest magnitude of the difference between the estimates is 0.3 percentage points. This similarly holds for the standard errors, resulting in largely identical levels of significance across all estimates. Overall, these estimates suggest that our main results are not sensitive to the inclusion of ‘not-yet treated’ individuals in our control group, and hence any anticipatory behaviour.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 2,
+        "text": "We next explore the sensitivity of our results to our choice of estimand to incorporate covariates into the modelling. As described previously, our approach adopts Sant’Anna & Zhao ’s ( 2020 ) doubly robust (DR) estimand which relies on less stringent modelling conditions and additional robustness against model misspecification. We re-estimate all conditional models using these other alternative estimands – outcome regression (OR) and inverse probability weighting (IPW) – and present the results in Table 8 . Recall that the OR approach requires a correctly specified model of the outcome evolution of the control group, while the IPW approach requires a correctly specified model of the propensity score of individual i belonging in group g and that they are either in group g or an appropriate comparison group. For all outcomes, we find that our effect estimates are largely insensitive to the choice of estimand. Qualitatively, our main results hold, and only in few instances the magnitude and statistical significance of a given estimate increases. 59 Overall, these results suggest that our main estimates are largely insensitive to the choice of estimand.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Inverse Probability Weighting (IPW)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 3,
+        "text": "Finally, we consider the fact that Callaway & Sant’Anna ’s ( 2021 ) estimator assumes that treatment is an ‘absorbing state’: once an individual receives the SRD grant, they remain a recipient of it for the remainder of the panel. While we believe this to be an appropriate assumption given that it implies individuals do not “forget about their treatment experience\", as previously noted, a small subset of individuals in our sample experience non-absorbing treatment: 4 percent of all observations, or 22 percent of unique individuals who ever report receipt. This",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 4,
+        "text": "Table 7: Aggregated average treatment effect estimates of SRD grant receipt, by control group composition Main outcomes By employment type By employment formality Pr(Job search) Pr(Try to start business) Pr(Employment) Pr(Wage employment) Pr(Employer) Pr(Selfemployment) Pr(Unpaid household employment) Pr(Formal sector employment) Pr(Informal sector employment) Control group: NT + NYT 0.044** 0.040[FORMULA] 0.060[FORMULA] 0.042[FORMULA] 0.000 0.021[FORMULA] 0.004* 0.019** 0.036[FORMULA] (0.018) (0.007) (0.010) (0.008) (0.002) (0.004) (0.002) (0.008) (0.007) NT only 0.046[FORMULA] 0.038[FORMULA] 0.063[FORMULA] 0.042[FORMULA] 0.003 0.021[FORMULA] 0.004 0.021[FORMULA] 0.039[FORMULA] (0.016) (0.007) (0.010) (0.009) (0.002) (0.004) (0.002) (0.007) (0.006) a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effects of receipt of the SRD grant by varied control group compositions. All models are conditional and are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator and Sant’Anna & Zhao ’s ( 2020 ) doubly robust estimand. NT = observations never treated in the period; NYT = observations not-yet treated at the time of treatment. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 5,
+        "text": "Table 8: Aggregated average treatment effect estimates of SRD grant receipt across varied estimands Main estimand Alternative estimands Doubly robust ( Sant’Anna & Zhao , 2020 ) Outcome regression adjustment IPW with stablised weights (1) (2) (3) Panel (a): Main outcomes Pr(Job search) 0.044** 0.057[FORMULA] 0.061[FORMULA] (0.018) (0.017) (0.018) Pr(Try to start business) 0.040[FORMULA] 0.041[FORMULA] 0.041[FORMULA] (0.007) (0.007) (0.007) Pr(Employment) 0.060[FORMULA] 0.066[FORMULA] 0.067[FORMULA] (0.010) (0.010) (0.010) Panel (b): By employment type Pr(Wage employment) 0.042[FORMULA] 0.042[FORMULA] 0.043[FORMULA] (0.008) (0.009) (0.009) Pr(Employer) 0.000 0.003 0.004 (0.002) (0.002) (0.002) Pr(Self-employment) 0.021[FORMULA] 0.022[FORMULA] 0.023[FORMULA] (0.004) (0.005) (0.005) Pr(Unpaid household employment) 0.004* 0.004* 0.004* (0.002) (0.002) (0.002) Panel (c): By employment formality Pr(Formal sector employment) 0.019** 0.019** 0.020** (0.008) (0.008) (0.008) Pr(Informal sector employment) 0.036[FORMULA] 0.041[FORMULA] 0.042[FORMULA] (0.007) (0.007) (0.007) a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on the outcomes of interest across varying estimands to incorporate covariates. All models are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Inverse Probability Weighting (IPW)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 6,
+        "text": "Table 9: Aggregated average treatment effect estimates of SRD grant receipt, adjusted for non-absorbing treatment",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 7,
+        "text": "Main results Adjustment for non-absorbing treatment Regression adjustment Stratified sample (1) (2) (3) Panel (a): Main outcomes Pr(Job search) 0.044** 0.050[FORMULA] 0.046** (0.018) (0.016) (0.019) Pr(Try to start business) 0.040[FORMULA] 0.041[FORMULA] 0.040[FORMULA] (0.007) (0.007) (0.007) Pr(Employment) 0.060[FORMULA] 0.063[FORMULA] 0.063[FORMULA] (0.010) (0.010) (0.012) Panel (b): By employment type Pr(Wage employment) 0.042[FORMULA] 0.043[FORMULA] 0.040[FORMULA] (0.008) (0.009) (0.012) Pr(Employer) 0.000 0.000 0.004 (0.002) (0.002) (0.003) Pr(Self-employment) 0.021[FORMULA] 0.024[FORMULA] 0.024[FORMULA] (0.004) (0.004) (0.006) Pr(Unpaid household employment) 0.004* 0.004* 0.004* (0.002) (0.002) (0.002) Panel (c): By employment formality Pr(Formal sector employment) 0.019** 0.019** 0.018* (0.008) (0.008) (0.010) Pr(Informal sector employment) 0.036[FORMULA] 0.040[FORMULA] 0.041[FORMULA] (0.007) (0.007) (0.008) a Author’s own calculations. Source: QLFS 2020Q1 - 2021Q1 ( Statistics South Africa , 2020a , b , c , d , e ). b Notes: This table presents difference-in-differences estimates of the effect of receipt of the SRD grant on the outcomes of interest after accounting for a subset of the treated sample who experience non-absorbing treatment in the panel. All models are estimated using Callaway & Sant’Anna ’s ( 2021 ) heterogeneity-robust estimator. Observations never treated and those not-yet treated at the time of treatment used as the control group. Sampling weights employed and standard errors, presented in parentheses, are clustered at the panel (individual) level and are estimated using a multiplicative wild bootstrap procedure with 1,000 replications. [FORMULA] p < 0.01; ** p < 0.05; * p < 0.10.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 8,
+        "section_name": "Robustness tests",
+        "paragraph_id": 8,
+        "text": "is evident when examining the patterns of treatment rollout in Figure A1 in the appendix, referenced earlier. To examine the sensitivity of our results to this assumption, we adjust the specification of our models to include an additional binary control variable which identifies this subset of individuals. As an alternative, we also re-estimate the models while excluding them from the sample entirely. The relevant effect estimates are presented in Table 9 . Comparing our main estimates in column (1) to those of the alternative models in columns (2) and (3), the largest difference in coefficients is very small at just 0.006 and standard errors at just 0.003. Expectedly, due to the smaller sample, the latter tend to be marginally inflated in column (3). Hence, the levels of significance for effect estimates on given outcome are relatively constant across all models. This suggests that our main results are largely insensitive to our ‘absorbing state’ treatment assumption.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper considers the labour market effects of an unconditional cash transfer – South Africa’s Social Relief of Distress grant – in a context where both the transfer design and the underlying economic conditions are explicitly characterised by unemployment. The transfer is distinct in South Africa in that it is the first to make use of a labour market eligibility criterion for targeting, and the first intended for working-age adults for their own consumption, thus addressing a long-lasting gap in the social safety net. We apply a staggered, heterogeneity-robust differencein-differences design on nationally representative, panel labour force survey data to estimate contemporaneous and dynamic effects on three primary outcomes: the probabilities of job search, trying to start a business, and employment. To our knowledge, this study is the first to provide causal evidence of the transfer’s effects on any outcome.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Staggered"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "We show that SRD grant receipt has positive but heterogenous effects on labour market outcomes. On average, receipt increases the probability of job search by 4.4 percentage points, trying to start a business by 4.0 percentage points, and employment by 6.0 percentage points. The latter effect is driven by effects on wage and informal sector employment. Our analysis of mechanisms suggests these employment effects are explained by effects on labour market constraints at both the extensive and intensive margins, but more so the latter. Specifically, employment effects are positive for both the unemployed who are already searching for work or trying to start a business, as well as for those who are not. The transfer appears to enable this latter group to transition into these activities, while also improving the efficiency of these activities among those already doing so, both resulting in better employment prospects. However, effects are substantially (at least 2.5 times) larger for the latter group, highlighting the importance of active labour market engagement for improving employment prospects through the transfer. These findings are consistent with the presence of liquidity and insurance constraints well-documented in other contexts.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "Importantly, these employment effects are only evident in the short-term and quickly become and remain null for longer durations of receipt. This suggests that the transfer’s short-term labour market gains do not translate into sustained longer-term benefits, at least with respect to its initial design. We argue that this is due to both the extent and nature of unemployment in South Africa. Specifically, the combination of a severe scarcity of jobs and a largely structural",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 3,
+        "text": "nature of unemployment means that gains in a recipient’s ability to search for work or start a business need not translate into better longer-term employment prospects.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 4,
+        "text": "Our findings are consistent with most studies of cash transfers which do not support a negative labour supply effect, and also provide evidence of effect dynamics in a high-unemployment context which holds relevance for other lower-income countries. In particular, they have important policy implications for the future of the SRD grant in South Africa. Our finding of a short-term, positive employment effect that does not persist into the longer-term suggests that the transfer may not be an appropriate policy tool to reduce the country’s extreme level of unemployment, at least in its initial design. While this does not negate the transfer’s important simulated effects on other outcomes, such as poverty, alternative or additional approaches are required if improving the functioning of the labour market is the goal. If a transfer-based approach is pursued then, within the relevant fiscal constraints, these may include increasing the transfer’s amount, revising its targeting, or incorporating a ‘cash plus’ component that complements cash with labour market-linked support. Indeed, Baird et al. ’s ( 2018 ) review of a wide range of programs suggests that cash transfers explicitly designed to support job search or business start-up and growth tend to have larger positive effects. This aligns with our finding of stronger effects among recipients already participating in the labour market. Ultimately, the most appropriate form of labour market-linked support would need to be carefully considered, given the specific set of constraints faced by job-seekers in South Africa.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1219,
+        "section_id": 9,
+        "section_name": "Conclusion",
+        "paragraph_id": 5,
+        "text": "Finally, our analysis is not without its limitations. Much scope exists for further research. Our study is limited to the transfer’s ‘first phase’ during a period characterised by macroeconomic and policy uncertainty and prior to the transfer’s expansion in eligibility. Our analysis also only considers effects on recipients themselves and not co-residing household members who may be indirectly affected. Future research ought to consider estimating direct and indirect effects during the transfer’s second phase, which remained in place at the time of writing. For such an evaluation, our approach can easily be replicated and may only require a few marginal adjustments to account for the transfer’s change in eligiblity. 60 The transfer during this phase may be viewed as more permanent, the payments more dependable, the recipient composition more diverse, and the macroeconomic environment more stable; hence effects may differ to those presented here.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

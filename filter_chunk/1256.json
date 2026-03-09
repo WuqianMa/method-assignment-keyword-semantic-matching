@@ -1,0 +1,631 @@
+[
+    {
+        "paper_id": 1256,
+        "section_id": 0,
+        "section_name": "Absenteeism and Firm Performance: Evidence from Retail ∗",
+        "paragraph_id": 1,
+        "text": "This study examines the relationship between absenteeism and firm performance using data on 1,387 stores of a retail chain, combined with public health data, covering a 36-month period. Contrary to widespread belief, the relationship between absenteeism and sales is not monotonic. Instead, it exhibits an inverted U-shape. This indicates that reducing absenteeism does not necessarily improve firm performance. In fact, moderate absenteeism is associated with higher sales than perfect attendance. Furthermore, if actual absenteeism is lower than predicted based on the regional acute spread of respiratory disease, sales are lower than if the two align. A similar relationship is also observed with respect to measures of service quality. Endogeneity concerns are addressed using fixed effects regression and instrumental variable estimation. In conclusion, the results demonstrate that absenteeism is not generally detrimental to firm performance.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 0,
+        "section_name": "Absenteeism and Firm Performance: Evidence from Retail ∗",
+        "paragraph_id": 2,
+        "text": "∗ I am grateful to the company for the collaboration and valuable insights. I have not received any funding from the company nor do I have any financial relationship with the company. The views expressed herein are my own and do not necessarily reflect those of the company. a Max Planck Institute for Research on Collective Goods. Email: alfitian@coll.mpg.de .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "What is the relationship between absenteeism and firm performance? This question is the focus of this study. Absenteeism, the unplanned absence of employees from work, in particular due to illness, is widely regarded as a substantial burden to employers. 1 Conversely, the phenomenon of employees coming to work despite being ill, referred to as presenteeism, is likewise considered counterproductive. 2 Inevitably, the question arises as to the extent to which absenteeism is in fact detrimental to firm performance. This study uses operating metrics from a retail chain, combined with public health data on the spread of respiratory disease, to provide evidence on the impact of absenteeism on firm performance. Crucially, contrary to popular belief, absenteeism does not appear to be generally detrimental to firm performance. In fact, a moderate level of absenteeism tends to be associated with superior firm performance than perfect attendance. To date, the impact of absenteeism on firm performance has not been clearly identified. Traditionally, the gross compensation of employees during their period of absence has been used as a proxy for productivity losses due to absenteeism (see, e.g., Steers and Rhodes, 1978 ). This approach is based on the neoclassical tenet that in a competitive labor market, employees are compensated according to their marginal productivity. However, it has already been recognized that this proxy may overestimate the true impact of absenteeism on productivity, as it does not account for the possibility that productivity losses of absent employees may be offset by coworkers or temporary replacements (see, e.g., Allen, 1983 ; Koopmanschap et al., 1995 ). Conversely, employee compensation may actually underestimate the true productivity losses due to absenteeism because absent employees may adversely affect the productivity of their coworkers, particularly if work processes are highly interdependent, as in the case of teamwork (see, e.g., Pauly et al., 2002 ; Nicholson et al., 2006 ; Coles et al., 2007 ; Heywood et al., 2008 ; Zhang et al., 2017 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "1 Estimates of the costs of absenteeism to employers are typically based on simplistic back-of-the-envelope calculations and are therefore inherently rough and subject to considerable variation. For example, according to Steers and Rhodes ( 1978 ), the total annual costs of absenteeism borne by employers in the United States amount to 26 million dollars, including sick pay, replacement hiring, and lost production. More recently, the analytics and advisory firm Gallup estimated the annual productivity losses due to absenteeism resulting from impaired employee health in the United States at 84 million dollars (Witters and Liu, 2013 ). For the EU, the European Foundation for the Improvement of Living and Working Conditions estimated the total annual costs of absenteeism at an average of about 2 percent of the GDP (Edwards and Greasley, 2010 ). 2 For a review of the literature on presenteeism, see, for example, Johns ( 2010 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "Beyond this theoretical ambiguity, empirical evidence on the impact of absenteeism on firm performance is scant. Although some studies have documented an overall negative association between absenteeism and productivity, the validity and generalizability of their results are arguably limited, due in particular to a lack of suitable data. For example, measures of absenteeism and productivity are commonly derived from employment surveys (see, e.g., Allen, 1983 ; Coles et al., 2007 ; Heywood et al., 2008 ; Bankert et al., 2015 ; Zhang et al., 2017 ; Grinza and Rycx, 2020 ) or administrative data (see, e.g., Koopmanschap et al., 1995 ; Aarstad and Kvitastein, 2023 ). In an alternative approach, managers assess the impact of absenteeism on productivity in a survey (see, e.g., Nicholson et al., 2006 ). In comparison to direct measures of absenteeism and firm performance obtained from firm records, such indirectly derived measures are less precise and granular. A notable exception of a study that examines the impact of absenteeism on productivity using precise and granular data, while also addressing possible threats to identification, is Herrmann and Rockoff ( 2012 ), who find that teacher absence prior to an exam adversely affects students’ exam scores. However, it remains unclear to what extent this result generalizes to the impact of absenteeism on productivity in the workplace. Despite the seemingly straightforward negative association between absenteeism and firm performance, a number of studies, particularly in the field of occupational medicine, suggest that presenteeism results in greater productivity losses than absenteeism (see, e.g., Burton et al., 2002 ; Stewart et al., 2003 ; Goetzel et al., 2004 ; Allen et al., 2005 ; Collins et al., 2005 ; Pauly et al., 2008 ). These studies primarily use surveys in which employees self-report productivity losses due to certain health conditions. 3 Consequently, the results of these studies should be interpreted with caution. Nevertheless, they cast doubt on whether achieving perfect attendance and avoiding absenteeism altogether is beneficial to firm performance. Moreover, as presenteeism can be regarded as the exact opposite of absenteeism, the question arises as to how the apparent productivity-reducing effects of both absenteeism and presenteeism can be reconciled. Overall, the lack of conclusive evidence and the limitations of existing studies call for a comprehensive examination of the relationship between absenteeism and firm performance. To this end, this study uses detailed operating metrics from a large retail chain, in conjunction with public health data on the spread of respiratory disease. The retail chain operates supermarkets throughout Germany and employs sales assistants in its stores. The data covers 1,387 stores, with an average of about 42 employees per store.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "3 Burton et al. ( 2002 ) use employee demographics and salary data to derive measures of absenteeism, presenteeism, and productivity losses. However, they do not directly use firm data on absenteeism or productivity. Pauly et al. ( 2008 ) survey managers’ perceptions of the impact of presenteeism on productivity.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "The operating metrics of the retail chain include, in particular, the monthly gross sales of each store and their monthly absence share, which is defined as the percentage of the number of scheduled working hours that are covered by sick pay in a given month. The public health data include a normalized measure of the regional and temporal spread of respiratory disease, the practice index, which is extracted from reports published by the Robert Koch Institute, the German federal government agency for disease control and prevention. 4 The observation period is 36 months, from January 2017 to December 2019. A purely descriptive analysis of sales by level of absenteeism already suggests that the relationship between absenteeism and firm performance is not monotonic, but exhibits an inverted U-shape. This basic qualitative relationship persists even when both storeand month-specific fixed effects are included in the empirical specification to account for potential omitted variable bias due to storeor season specific influences, thereby addressing a potential source of endogeneity. This shows that lower absenteeism is not generally associated with higher sales. In particular, an absence share of about 4 percent appears to be favorable, as it tends to be associated with the highest sales. In a next step, the overall close relationship between absenteeism and the regional acute spread of respiratory disease is utilized to predict the absence share of a given store in a given month using a random forest with the practice index as the key predictor. The predicted absence share thus reflects the level of absenteeism that would be expected based solely on the regional acute spread of respiratory disease. In this respect, it can be deemed a normal level of absenteeism. Consequently, the percentage deviation of the absence share from the predicted absence share is regarded as a measure of abnormal absenteeism. It turns out that abnormally low absenteeism is associated with lower sales than a level of absenteeism that is in line with what would be expected based on the regional acute spread of respiratory disease. In fact, abnormally low absenteeism appears to be just as detrimental to sales as abnormally high absenteeism. The relationship between abnormal absenteeism and measures of service quality, which are considered as additional indicators of firm performance, likewise exhibits an inverted U-shape. Specifically, stores where the absence share is only moderately lower than predicted tend to provide the best service quality overall. Given that service quality is arguably unrelated to customer demand, this result can also be regarded as a robustness check of the apparent relationship between absenteeism and firm performance.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "4 A report from the largest German health insurance provider indicates that respiratory disease was by far the most common cause of certified incapacity for work in 2023 (Grobe and Bessel, 2024 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "In a final step, instrumental variable estimation is employed to formally address potential endogeneity due to reverse causality in particular. The practice index is used as an instrument for the absence share and the effect of absenteeism on sales is estimated using two-stage least squares. The results provide no evidence of a negative monotonic relationship between absenteeism and sales. This underlines the main finding that absenteeism is not generally detrimental to firm performance. This study differs from previous studies in that it uses extensive data derived from firm records to comprehensively examine the relationship between absenteeism and firm performance, while also addressing endogeneity concerns. This study thus contributes to a strand of the literature that uses data from within firms to examine the performance impact of other ubiquitous workplace phenomena, such as employee turnover (see, e.g., Glebbeek and Bax, 2004 ; Siebert and Zubanov, 2009 ; Kuhn and Yu, 2021 ). 5 First and foremost, this study provides a detailed account of the relationship between absenteeism and firm performance. While the precise behavioral mechanisms underlying this relationship remain beyond the scope of this study, the results are consistent with the adverse impact on productivity commonly attributed to absenteeism and presenteeism. In particular, the inefficiently low level of absenteeism when attendance is perfect, although some level of absenteeism would be expected, is consistent with the assertion that mere attendance despite illness does more harm than good. Conversely, absenteeism appears to benefit firm performance to the extent that it prevents such harmful attendance. This study has important implications for managers and policy makers responsible for designing absenteeism management strategies. In particular, the results cast doubt on whether such absenteeism management strategies should target perfect attendance at all. This is critical, given that attendance bonuses, for example, are not only costly, but their effectiveness in the workplace is also unclear (see, e.g., Alfitian et al., 2024 ). 6 In summary, this study shows that absenteeism is not generally detrimental to firm performance. Moderate absenteeism tends to be associated with better firm performance than perfect attendance. Absenteeism should therefore not be avoided altogether.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "5 In fact, the evidence presented in both Glebbeek and Bax ( 2004 ) and Siebert and Zubanov ( 2009 ), while not necessarily conclusive, does suggest that the relationship between employee turnover and firm performance is also characterised by an inverted U-shape. This further exemplifies the differentiated insights that such empirical studies can provide, particularly in light of theoretical ambiguity. 6 While Duflo et al. ( 2012 ) find that an attendance bonus is effective in reducing absenteeism among teachers in India, it remains questionable whether avoiding absenteeism altogether is a worthwhile objective.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 0,
+        "text": "This study uses two primary data sources: Operating metrics from a retail chain, notably store sales and employee absenteeism, and public health data on the spread of respiratory disease. Below is a brief overview of the setting and a description of the data.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 2,
+        "text": "The retail chain operates supermarkets throughout Germany. Store employees mainly work as sales assistants. Their primary duty is to ensure the smooth operation of the store. Typical tasks include operating the cash register, restocking shelves, checking product quality, maintaining store cleanliness, and providing customer service. Key functional areas such as purchasing, controlling and finance, marketing, human resources, and strategy are centrally managed by the retail chain. This means that operational procedures and the overall work environment are essentially uniform across all stores. Store employees are employed directly by the retail chain, either full-time, part-time, or as apprentices. They are covered by a collective bargaining agreement that standardizes their working conditions, such as pay, working hours, and vacation entitlement. Under German employment law, employees who are unable to work due to illness are generally entitled to sick pay, that is, the continued remuneration by the employer, for a period of up to six weeks. 7 In order to assert this claim, employees are obliged to inform their employer immediately of their incapacity for work and, if it lasts longer than three calendar days, to submit a medical certificate. Store employees must notify the retail chain’s head office directly, ensuring that absences are recorded centrally and accurately.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 3,
+        "text": "7 In Germany, sick pay is regulated by the Continued Remuneration Act ( Entgeltfortzahlungsgesetz ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 5,
+        "text": "The operating metrics that the retail chain records for each store include the monthly gross sales. The standardized monthly gross sales, which have a mean of 0 and a standard deviation of 1, constitute the primary outcome of this study. Another key operating metric is the monthly absence share of a store, which is the number of hours covered by sick pay in a given month as a percentage of the number of the scheduled working hours in that month. For each store, the number of employees per month, the sales area, and the number of scheduled working hours per month are also considered. 8 Information on the district and state in which a store is located complements these operating metrics. 9 Service quality measures, which are available for the majority of stores, are considered as secondary outcomes. These include the Net Promoter Score (NPS), an established metric for measuring customer loyalty. 10 Customers of a store are asked after their shopping experience to indicate on a scale from 0 to 10 how likely they would be to recommend the store to others. The NPS is then calculated as the difference between the percentage of respondents who indicated 9 or 10, that is, would be very likely to recommend the store, and the percentage of respondents who indicated 0 to 6, that is, would be unlikely to recommend the store. The NPS is therefore between -100 and 100. Typically, the retail chain records the NPS of a store in several consecutive months. Google ratings provide an additional measure of service quality. Specifically, the retail chain records—typically concurrently with the NPS—the average Google rating a store received in a given month, which ranges from 1 (worst) to 5 (best). Finally, a quality score from the internal quality management system of the retail chain serves as a further measure of service quality. Stores are regularly inspected for operator quality by internal and external auditors using standardized protocols. The dimensions of operator quality that are included in the quality score—and for which subscores are created—are customer satisfaction, mystery shopping, and quality assurance. The quality score and its subscores are generally determined annually and range from 0 to 100.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 6,
+        "text": "8 The number of scheduled working hours per month are derived from the number of actual hours worked per month and the absence share in that month, both of which are recorded by the retail chain. 9 To maintain the anonymity of the stores, the district in which a store is located is only available if there are at least three stores of the retail chain in that district. 10 The NPS was first introduced by Reichheld ( 2003 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 8,
+        "text": "The public health data on the spread of respiratory disease come from the Robert Koch Institute, the German federal government agency responsible for disease control and prevention. The indicator that is in the focus of this study is the practice index, which is determined as follows: A representative network of about 700 primary care practices reports the number of cases of acute respiratory disease and the number of patient contacts to the Robert Koch Institute on a weekly basis, providing a measure of morbidity. 11 The relative deviation of the observed morbidity from a normal level determined for each practice, averaged over all practices in a region, yields the practice index. This provides a normalized measure of the spread of respiratory disease that controls for practice-specific influences and allows for both regional and temporal comparisons. According to the Robert Koch Institute, a practice index of up to 115 is deemed normal, while values above 180 indicate a greatly increased spread, with gradations in between. The Robert Koch Institute publishes weekly reports detailing the practice index by calendar week in twelve regions representing the states of Germany. 12 An automated procedure is employed to retrieve these reports from the Web, extract the relevant data, and determine the monthly practice index in each region. Each store of the retail chain is then assigned the respective value of the practice index for each month based on the region in which it is located. The population density is used as an additional indicator potentially influencing the risk of infection associated with respiratory disease. The data come from the Federal Statistical Office of Germany. 13 Specifically, the number of inhabitants per square kilometer in a district is considered. Each store of the retail chain is assigned the respective population density value based on the district in which it is located. 14",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 9,
+        "text": "11 Specifically, cases of acute pharyngitis, bronchitis, or pneumonia with or without fever are considered. For further details on the methodology, see, for example, Uphoff ( 1998 ) and Robert Koch Institute ( 2019 ). 12 See Figure B1 in Appendix B for an excerpt from a report published by the Robert Koch Institute. For the full report, see Buda et al. ( 2020 ). All reports are publicly available. See Robert Koch Institute ( 2023 ). 13 The data are as of December 2021 and publicly available. See Statistisches Bundesamt (Destatis) ( 2022 ). 14 If the district in which a store is located is not available, the population density of the state is used.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 11,
+        "text": "The operating metrics from the retail chain are available for the period beginning January 2017. Only observations up to December 2019 are considered to avoid potentially distorting interdependencies between absenteeism and sales due to the onset of the COVID-19 pandemic in early 2020. 15 The observation period is therefore 36 months. The sample includes all stores of the retail chain in Germany that had at least ten employees and non-zero sales throughout the observation period and for which at least twelve monthly observations on absenteeism and sales are available. In total, the sample comprises 1,387 stores and 44,818 observations. On average, therefore, there are 32 monthly observations for each store. Table 1 provides summary statistics. Firstly, Table 1 documents the variation in sales within stores over time. On average, the monthly sales of a store deviate from its mean sales over time by about one-fifth of the overall standard deviation of sales. The mean monthly absence share is about 4 percent. This means that in a typical store, about 4 percent of the scheduled working hours in a typical month are not actually worked and covered by sick pay. A considerable portion of the overall variation in the absence share can be attributed to the variation within stores over time, highlighting the temporal dynamics of absenteeism. On average, a store has about 42 employees, with only little variation within stores over time. The mean sales area of a store is about 1,500 m 2 . It is constant over time, but varies considerably overall. The mean number of scheduled working hours of a store per month is about 3,700. Based on a typical 37.5-hour week, this corresponds to about 23 full-time equivalents per store. The sales area of one store and 1,324 observations of the number of scheduled working hours per month are missing, but are imputed for further analyses. 16 Table 1 also shows that the service quality measures vary within stores over time. At least one of the service quality measures is available for all stores except one. In fact, all service quality measures are available for about 87 percent of all stores. Finally, Table 1 shows that the practice index averages about 96, indicating a normal level of the spread of respiratory disease overall, albeit with considerable variation over time. The population density of the districts in which the stores are located averages about 1,200 inhabitants per square kilometer. It is constant over time, but varies considerably overall.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 12,
+        "text": "15 The first case of COVID-19 in Germany was documented in January 2020 (Robert Koch Institute, 2020 ). 16 Specifically, the imputed sales area is estimated based on a linear regression of the sales area on the mean number of employees per store, with the estimation sample including one observation per store. The imputed number of scheduled working hours per month is based on a linear regression of the number of scheduled working hours per month on the number of employees per store and indicators of the month and year, with the estimation sample including all observations.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 2,
+        "section_name": "2. Setting and Data",
+        "paragraph_id": 14,
+        "text": "Panel A: Store operating metrics Sales ( z -score) 0 . 00 1 . 00 0 . 21 1 , 387 44 , 818 Absence share 4 . 11 3 . 08 2 . 87 1 , 387 44 , 818 Employees per store 41 . 87 20 . 41 3 . 47 1 , 387 44 , 818 Sales area 1 , 595 . 93 1 , 033 . 09 0 . 00 1 , 386 44 , 806 Scheduled working hours 3 , 747 . 96 2 , 085 . 24 436 . 31 1 , 277 43 , 494 Net Promoter Score (NPS) 68 . 18 33 . 39 30 . 32 1 , 339 14 , 000 Google rating 3 . 90 1 . 25 1 . 08 1 , 300 7 , 400 Quality score 84 . 34 10 . 76 5 . 79 1 , 275 2 , 410 Customer satisfaction 80 . 89 3 . 56 1 . 06 1 , 275 2 , 409 Mystery shopping 97 . 80 1 . 10 0 . 64 1 , 275 2 , 409 Quality assurance 90 . 60 5 . 14 2 . 95 1 , 275 2 , 409 Panel B: Health and demographic indicators Practice index 96 . 37 48 . 76 48 . 52 1 , 387 44 , 818 Population density 1 , 226 . 65 1 , 312 . 13 0 . 00 1 , 387 44 , 818 Note: The table shows summary statistics of the store operating metrics as well as the health and demographic indicators. Column (1) shows the mean. Column (2) shows the overall standard deviation. Column (3) shows the within-store standard deviation. Column (4) shows the number of stores for which the respective variable is available. Column (5) shows the number of observations. Sales ( z -score) is the monthly gross sales of a store, standardized to have a mean of 0 and a standard deviation of 1. Absence share is the monthly absence share of a store, which is the number of hours covered by sick pay in a given month as a percentage of the number of scheduled working hours in that month. Employees per store is the number of employees of a store per month. Sales area is the sales area of a store in square meters. Scheduled working hours is the number of scheduled working hours of a store per month. Net Promoter Score (NPS) is a monthly measure of customer loyalty of a store. Google rating is the mean Google rating of a store per month. Quality score is a yearly measure of operator quality of a store. Customer satisfaction , Mystery shopping , and Quality assurance are yearly measures of the dimensions of operator quality for which subscores are created. Practice index is a monthly measure of the spread of respiratory disease in the region in which a store is located. Population density is the number of inhabitants per square kilometer in the district or state in which a store is located.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 1,
+        "text": "The first step is to examine the relationship between absenteeism and sales purely descriptively. Figure 1 illustrates the distribution of sales by the level of absenteeism. Specifically, the monthly absence share of all stores, rounded to the nearest integer, is used to disaggregate the corresponding sales and provide a graphical representation of their central tendency and dispersion. Notably, Figure 1 shows a non-monotonic relationship between absenteeism and sales. In particular, higher absenteeism does not appear to be generally associated with lower sales. Instead, the relationship between absenteeism and sales exhibits an inverted U-shape. This pattern is evident not only in the mean, but also in the overall distribution of sales for different levels of absenteeism. An absence share of about 5 percent tends to be associated with the highest sales. Lower levels of absenteeism, however, tend to be associated with lower sales. For example, in months with perfect attendance, sales are, on average, about two-thirds of a standard deviation lower than in months with an absence share of 5 percent. As absenteeism exceeds this level, sales tend to decline, albeit more gradually. Sales in months with perfect attendance are on par with those in months with an absence share of 14 percent. Although these descriptive results are instructive, it should be noted that they are potentially subject to endogeneity. In particular, the relationship between absenteeism and sales could in principle be driven by other—possibly unobservable—factors, such as storeor season-specific influences. For example, the inverted U-shape of the relationship between absenteeism and sales could—hypothetically—be due to an authoritarian leadership style in certain stores that urges employees to never be absent but also has a negative impact on the work atmosphere and thus on sales. Similarly, sales peaks could be due to seasonal business during the holiday season at the end of the year, while at the same time employees are increasingly absent due to the increased spread of respiratory disease at this time of year. Such storeor season-specific influences, which could potentially introduce an omitted variable bias, are addressed in the next step.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "−2 −1.5 −1 −0.5 0 0.5 1 1.5 2 2.5 Sales ( z −score) 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 Absence share (%)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "Figure 1: Distribution of Sales by Level of Absenteeism Note: The figure shows the distribution of the standardized monthly gross sales by the monthly absence share, rounded to the nearest integer. The circle markers represent the mean. The lower and upper edges of the boxes represent the first and third quartiles, respectively. The distance between these two edges represents the interquartile range. The horizontal lines inside the boxes represent the median. The lower and upper edges of the vertical lines extending from the lower and upper edges of the box represent the lowest and highest values that are at most 1.5 times the interquartile range above and below the first and third quartiles, respectively. Only observations with a rounded absence share of 20 percent or less are included. The figure is based on a total of 44,792 observations, representing 99.94 percent of all observations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 5,
+        "text": "The relationship between absenteeism and sales should be modeled to account for any unobserved heterogeneity across stores as well as seasonal influences to mitigate the potential omitted variable bias described above. The empirical specification should also accommodate a non-monotonic relationship between absenteeism and sales, as shown in Figure 1 . To this end, variants of the following equation are estimated:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "Sales ( z -score) st = α s + λ t + n Õ k = 1 β k Absence share k st + ε st , n ∈{ 1 , 2 , 3 } . (1) The dependent variable, Sales ( z -score) st , is the standardized gross sales of store s in month t . The store-specific fixed effect, α s , captures any unobserved time-invariant individual effect associated with store s . The time-specific fixed effect, λ t , captures any unobserved effect of month t that is common to all stores. Equation (1) includes a polynomial of Absence share st , the absence share of store s in month t , with varying degree n ∈{ 1 , 2 , 3 } . The coefficients of Absence share k st , the absence share of store s in month t raised to the power of k , are given by β k . Accordingly, β 1 , β 2 , and β 3 represent the coefficients of the linear, quadratic, and cubic terms of the polynomial, respectively. The idiosyncratic error term is given by ε st .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "Table 2 shows the results of estimating Equation (1) including a linear, quadratic, and cubic polynomial, respectively. Restricting Equation (1) to a linear polynomial, it appears that an increase in absenteeism is generally associated with a decrease in sales, as shown in column (1) of Table 2 . However, column (2) of Table 2 suggests that the relationship between absenteeism and sales is in fact not strictly linear. In particular, the significantly negative coefficient estimate of the quadratic term of the polynomial indicates an inverted U-shape of this relationship. Column (3) of Table 2 even suggests a non-linearity beyond a strictly quadratic relationship between absenteeism and sales.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "Table 2: The Effect of Absenteeism on Sales Dependent variable: Sales ( z -score) st (1) (2) (3) Absence share st − 0 . 000758 ∗∗ 0 . 000682 0 . 002728 [FORMULA] ( 0 . 000325 ) ( 0 . 000699 ) ( 0 . 000998 ) Absence share 2 st − 0 . 000117 ∗∗ − 0 . 000402 [FORMULA] ( 0 . 000050 ) ( 0 . 000113 ) Absence share 3 st 0 . 000009 [FORMULA] ( 0 . 000003 ) Stores 1 , 387 1 , 387 1 , 387 Observations 44 , 818 44 , 818 44 , 818 AIC − 24 , 964 − 24 , 967 − 24 , 973 R 2 (adj.) 0.965358 0.965362 0.965367 MSE Test 1.002068 1.001366 1.000748 Note: The table shows estimates of the effect of absenteeism on sales. The dependent variable, Sales ( z -score) st , is the standardized gross sales of store s in month t . Absence share st is the absence share of store s in month t . The specification underlying the estimation is Equation (1) . Storeand month-specific fixed effects are included. Standard errors clustered by store are in parentheses. The test mean squared error, MSETest , is obtained from 10-fold cross-validation. ∗∗ p < 0 . 05; [FORMULA] p < 0 . 01.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 10,
+        "text": "To determine which variant of Equation (1) best represents the relationship between absenteeism and sales, three measures are considered. The Akaike Information Criterion (AIC) and the adjusted R 2 capture how well each variant of Equation (1) fits the data, while penalizing complexity. Lower values of the AIC and higher values of the adjusted R 2 are considered preferable. The test mean squared error, obtained from 10-fold cross-validation, provides a measure of how well each variant of Equation (1) generalizes beyond the specific data used for estimation, with lower values being preferable. 17 Table 2 shows that by all three measures, the cubic polynomial variant of Equation (1) provides the best fit and is henceforth considered the preferred specification. To better illustrate the relationship between absenteeism and sales, Figure 2 shows how the sales estimated by the preferred specification differ, on average, depending on the assumed level of absenteeism. Figure 2 provides further evidence that the relationship between absenteeism and sales is characterized by an inverted U-shape, even after accounting for any storeor season-specific influences. In particular, the non-monotonicity of this relationship is evident for values of the absence share in the range of 0 to 8 percent, which account for about 89 percent of all observations. The right-hand panel of Figure 2 , which focuses on this particular range, shows that an absence share of 3.9 percent tends to be associated with the highest sales. From this level, a reduction in the absence share to perfect attendance—just as a more than two-fold increase—tends to be associated with a loss in sales of about 0.005 standard deviations. In relative terms, based on the mean estimated sales for an assumed absence share of 3.9 percent, this loss is equivalent to about a quarter of a percent. 18 Note that this effect is smaller in magnitude than the purely descriptive results in Figure 1 suggest, indicating that storeand season-specific influences are indeed relevant. Crucially, however, the basic qualitative relationship between absenteeism and sales, as characterized by the inverted U-shape, remains even after these influences are taken into account. Higher absenteeism is thus not generally associated with lower sales.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 11,
+        "text": "17 Specifically, the test mean squared error is determined as follows: The data is randomly split into ten subsets of roughly equal size, clustered by store. In each of a total of ten iterations, one of the subsets is held out as the test set, while the data from the remaining subsets are used to estimate the three variants of Equation (1) . Using the resulting coefficient estimates for each specification, sales are estimated for the observations in the test set. For each specification, the differences between the estimated and observed sales are squared and averaged over all observations in the test set. The test mean squared error for a specification is the mean of the averaged squared differences over all iterations. 18 See Figure A1(a) in Appendix A for the relative marginal effects of absenteeism on sales for different assumed levels of absenteeism. A marginal increase in absenteeism tends to have a negative effect on sales only for an absence share of 5 percent or higher, while in the case of perfect attendance, a marginal increase in absenteeism would be associated with an increase in sales of about 0.15 percent.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 14,
+        "text": "Figure 2: Absenteeism and Sales Note: The figure shows estimates of the standardized monthly gross sales for a range of values of the assumed monthly absence share. The specification underlying the estimation is the cubic polynomial variant of Equation (1) . Storeand month-specific fixed effects are included. Standard errors are clustered by store. The shaded area indicates 95 percent confidence intervals. The estimation is based on all 44,818 observations. See column (3) of Table 2 for the coefficient estimates. The right-hand panel represents a focused section of the left-hand panel, as indicated by the rectangle. The range of values considered for the assumed absence share in the right-hand and left-hand panels represents 99.92 and 89.38 percent of all observations, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 16,
+        "text": "Having established that higher absenteeism is not generally associated with lower sales, the question arises as to what level of absenteeism can be considered normal and what the consequences of abnormally high or low absenteeism are. To address this question, public health data on the spread of respiratory disease, specifically the practice index, are utilized. Figure 3 shows the evolution of the practice index and the absence share over the observation period and reveals a close temporal relationship. Absenteeism tends to peak when also the spread of respiratory is greatly increased. Conversely, the absence share tends to be below average in months when the practice index is at or below the level considered normal. This result is in itself revealing, as it suggests that respiratory disease is indeed a major reason for absenteeism. More generally, it appears that absenteeism, at least by and large, is indeed due to illness. The close relationship between absenteeism and the spread of respiratory disease is exploited to predict the absence share of a given store in a given month based on the practice index in particular. Factors that might otherwise affect absenteeism are not taken into account. The predicted absence share of a given store in a given month thus reflects the level of absenteeism that would be expected due solely to the regional acute spread of respiratory disease. It serves as a benchmark for what can be considered a normal level of absenteeism. Consequently, any divergence of the absence share from the predicted absence share at the individual observation level, whether upward or downward, can be regarded as an instance of abnormal absenteeism. This implies that absenteeism is more or less pronounced than would be expected based on the regional acute spread of respiratory disease. 19",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 17,
+        "text": "19 For example, consider a store in a given region and month where the practice index is 250 and the absence share is 5 percent. Assume that the predicted absence share would be 6 percent. This would be a case of abnormally low absenteeism, even though the actual absence share may not be considered low in absolute terms. Note that the term “abnormal” should in no way imply that reasons for absenteeism other than the spread of respiratory disease are irrelevant or even illegitimate per se. However, the spread of respiratory disease is a relevant and objectively measurable reason for absenteeism and thus provides the basis for an appropriate benchmark for absenteeism.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 19,
+        "text": "2017 2018 2019 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Practice index Absence share",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 20,
+        "text": "Figure 3: Practice Index and Absenteeism over Time Note: The figure shows the practice index and the absence share, each as a mean per month across all stores, over the observation period. The figure is based on all 44,818 observations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 21,
+        "text": "To obtain the predicted absence share, the data is randomly partitioned into a training set containing 80 percent of all observations and a test set containing the remaining 20 percent. The training set is then used to fit a random forest that predicts the absence share of a given store in a given month from the corresponding practice index, the number of employees per sales area, the number of scheduled working hours per employee, and the population density. 20 These predictors should reflect the risk of respiratory disease transmission between employees within stores. To determine the key parameters of the random forest, a random search over a wide range of parameter settings is performed with 10-fold cross-validation on the training set. 21 The random forest is then used to predict the absence share for all observations, that is, for each store in each month. The deviation of the absence share from the predicted absence share, expressed as a percentage of the absence share, serves as a measure of abnormal absenteeism. To assess the impact of abnormal absenteeism on sales, the cubic polynomial variant of Equation (1) is estimated, replacing the absence share with the measure of abnormal absenteeism. 22 Figure 4 illustrates the sales estimated in this way, depending on the assumed level of abnormal absenteeism. It shows that sales tend to be highest when the absence share and the predicted absence share coincide. That is, a level of absenteeism that matches what would be expected based on the regional acute spread of respiratory disease appears to be favorable. If the absence share is 100 percent lower than predicted, this means that none of the scheduled working hours of a given store in a given month are covered by sick pay, even though some absenteeism is expected due to the regional acute spread of respiratory disease. In this case, sales tend to be about 0.006 standard deviations—or one-third of a percent in relative terms—lower than if the absence share were as predicted. 23 Notably, this difference in sales is of the same order of magnitude as that associated with an absence share twice as high as predicted. Thus, abnormally low absenteeism appears to be just as detrimental to sales as abnormally high absenteeism.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 22,
+        "text": "20 See, for example, Breiman ( 2001 ) for a comprehensive review of the methodology. In addition to the random forest, other models were also considered, specifically simple linear regression, multiple linear regression, Lasso regression, and a regression tree. However, the random forest shows the highest prediction accuracy. See Figure A2(a) in Appendix A for a comparison of the prediction accuracy by model. 21 The random forest with the best parameter setting uses 700 trees, where each tree considers 1 feature at each split, allows a maximum depth of 14, requires at least 22 observations at each split, and at least 20 observations at a terminal node. See Figure A2(b) in Appendix A for the feature importance. 22 The cubic polynomial variant of Equation (1) is selected based on the test mean squared error obtained from 10-fold cross-validation. See column (1) of Table A1 in Appendix A for the coefficient estimates. 23 Figure A1(b) in Appendix A provides an overview of the relative marginal effects of abnormal absenteeism on sales for different assumed levels of abnormal absenteeism. For example, for an assumed deviation of the absence share from its prediction of minus 100 percent, a marginal increase in that deviation of 25 percentage points would be associated with an increase sales of about 0.18 percent.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "LASSO Regression",
+            "Cross-Validation",
+            "LASSO Regression"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Machine Learning Predictors & Regularization"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 23,
+        "text": "−0.009 −0.006 −0.003 0 0.003 0.006 Sales ( z −score) −100 −75 −50 −25 ±0 +25 +50 +75 +100 Deviation of absence share from predicted absence share (%)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 24,
+        "text": "Figure 4: Abnormal Absenteeism and Sales Note: The figure shows estimates of the standardized monthly gross sales for a range of values of the assumed percentage deviation of the absence share from the predicted absence share. The predicted absence share of a given store in a given month is obtained from a random forest including as predictors the corresponding practice index, the number of employees per sales area, the number of scheduled working hours per employee, and the population density. See Figure A2(b) in Appendix A for details. The specification underlying the estimation is a linear regression of the standardized gross sales of a given store in a given month on a cubic polynomial of the percentage deviation of the absence share of a given store in a given month from the predicted absence share of that store in that month. Storeand month-specific fixed effects are included. Standard errors are clustered by store. The estimation is based on all 44,818 observations. See column (1) of Table A1 in Appendix A for the coefficient estimates. The shaded area indicates 95 percent confidence intervals. The range of values considered for the percentage deviation of the absence share from the predicted absence share represents 91.76 percent of all observations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 26,
+        "text": "Measures of service quality, specifically the Net Promoter Score (NPS), the Google rating, and the quality score, are considered as additional indicators of firm performance. These secondary outcomes are not only relevant in their own right, but also useful as a complement to sales because they reflect firm performance largely independent of customer demand. Thus, examining the impact of abnormal absenteeism on service quality not only illuminates another crucial facet of the relationship between absenteeism and firm performance, but also serves as a robustness check of the previous results. The mean of each service quality measure over the observation period is determined for each store. The resulting cross-sectional service quality measures are then standardized so that each has a mean of 0 and a standard deviation of 1. 24 Accordingly, the mean of the deviation of the absence share from the predicted absence share over the observation period is determined for each store and considered as the cross-sectional measure of abnormal absenteeism. The effect of abnormal absenteeism on service quality is estimated by analogy with Equation (1) . In place of the fixed effects, controls are included for the number of employees, the sales area, the number of scheduled working hours, and the population density, each considered as the mean per store over time. The degree of the included polynomial of the measure of abnormal absenteeism is determined based on the test mean squared error obtained from 10-fold cross-validation. It is three for the equations with the NPS and the quality score as the dependent variables and two for the equation with the Google rating as the dependent variable. Figure 5 shows the estimated service quality measures for different assumed levels of abnormal absenteeism, revealing a non-monotonic relationship across all three measures. 25 It turns out that stores where the absence share is consistently 100 percent lower than predicted—that is, where attendance is always perfect, regardless of the regional acute spread of respiratory disease—do not appear to provide the best service quality. Instead, the stores that tend to provide the best service quality are those where the absence share is, on average, only moderately lower than predicted. 26 This suggests that there is a limit beyond which abnormally low absenteeism does not appear to be associated with improved service quality.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 27,
+        "text": "24 The reason for the purely cross-sectional approach in this case is that there is insufficient longitudinal coverage of the service quality measures for each store, as Table 1 shows. 25 See columns (2) to (4) of Table A1 in Appendix A for the underlying coefficient estimates. In addition, Table A2 in Appendix A shows estimates of the effect of abnormal absenteeism on the three individual dimension of operator quality included in the quality score. 26 Specifically, the estimated NPS, quality score, and Google rating are highest for an assumed deviation of the absence share from its prediction of minus 38, minus 36, and minus 38 percent, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 28,
+        "text": "−1.5 −1.25 −1 −0.75 −0.5 −0.25 0 0.25 0.5 0.75 −100 −50 ±0 +50 +100 −100 −50 ±0 +50 +100 −100 −50 ±0 +50 +100 Net Promoter Score Google rating Quality score",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 3,
+        "section_name": "Results",
+        "paragraph_id": 31,
+        "text": "Figure 5: Abnormal Absenteeism and Service Quality Note: The figure shows estimates of the Net Promoter Score (NPS), the Google rating, and the quality score, each as a standardized mean per store over the observation period, for a range of values of the assumed mean percentage deviation of the absence share from the predicted absence share per store over the observation period. The predicted absence share of a given store in a given month is obtained from a random forest including as predictors the corresponding practice index, the number of employees per sales area, the number of scheduled working hours per employee, and the population density. See Figure A2(b) in Appendix A for details. The specification underlying the estimation is a linear regression of the respective standardized mean service quality measure per store on a polynomial of the mean percentage deviation of the absence share from the predicted absence share per store. For the NPS, Google rating, and quality score as dependent variables, the degree of the included polynomial, determined in each case based on the test mean squared error obtained from 10-fold cross-validation, is three, two, and three, respectively. Controls for the number of employees, the sales area, the number of scheduled working hours, and the population density, each considered as the mean per store over the observation period, are included. Standard errors are clustered by store. For the NPS, Google rating, and quality score as dependent variables, the estimation is based on 1,339, 1,300, and 1,275 observations, respectively. See columns (2) through (4) of Table A1 in Appendix A for the coefficient estimates. The shaded area indicates 95 percent confidence intervals. The range of values considered for the percentage deviation of the absence share from the predicted absence share represents 99.71 percent of all observations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 4,
+        "section_name": "4. Addressing Reverse Causality",
+        "paragraph_id": 0,
+        "text": "In a final step, the key finding—the inverted U-shape of the relationship between absenteeism and firm performance—will be subjected to a further robustness check. After accounting for omitted variable bias due to storeor season-specific influences by means of including corresponding fixed effects, another potential source of endogeneity in the relationship between absenteeism and sales is addressed: reverse causality. In particular, it is conceivable that the relationship between absenteeism and firm performance, specifically sales, is not unidirectional. Not only can absenteeism affect sales, but sales can, hypothetically, affect absenteeism. For example, in months with high sales, which typically entail a higher workload, employees may be more inclined to be absent voluntarily. Conversely, lower sales may be the reason for perfect attendance, rather than its consequence. This line of reasoning, while seemingly intuitively plausible, is challenged by several pieces of evidence, which are outlined below. Firstly, it should be noted that such reverse causality would, in its purest form, imply a positive monotonic relationship between absenteeism and sales, for which there is no evidence. Moreover, it is not only perfect attendance that is associated with lower sales than moderate absenteeism. Even abnormally low absenteeism is associated with lower sales than a level of absenteeism that is in line with what would be expected based on the regional acute spread of respiratory disease. As argued above, it is conceivable that employees may be less inclined to be absent voluntarily in months with lower sales, when the workload tends to be lower anyway. However, it is unclear why this should encourage employees to come to work when they may not be fit for work. In addition, the objection of reverse causality has already been addressed in that the relationship between abnormal absenteeism and service quality likewise exhibits an inverted U-shape, although it is unclear how service quality should plausibly influence absenteeism. Taken together, the evidence at hand renders reverse causality implausible as the primary explanation for the apparent relationship between absenteeism and firm performance. Theoretically, the possibility remains that the inverted U-shape of the relationship between absenteeism and sales, in particular, is merely an artifact resulting from the positive monotonic relationship attributable to reverse causality in conjunction with an otherwise negative monotonic effect of absenteeism on sales. To address this hypothetical objection, instrumental variable estimation is employed. The aim of this approach is to identify the causal effect of absenteeism on sales, while accounting for the potential influence of reverse causality in particular. Specifically, the practice index is used as an instrument for the absence share. The effect of absenteeism on sales is estimated",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 4,
+        "section_name": "4. Addressing Reverse Causality",
+        "paragraph_id": 1,
+        "text": "using two-stage least squares. The first stage is a linear regression of the absence share on the practice index, including storeand month-specific fixed effects. The second stage is a linear regression of the standardized sales on the absence share estimated by the first stage, likewise including storeand month-specific fixed effects. 27 Thus, in determining the impact of absenteeism on sales, this approach uses only the variation in absenteeism that is attributable to the regional acute spread of respiratory disease. The effect of absenteeism on sales estimated in this way is free of endogeneity and allows a causal interpretation, provided that two conditions are met. The first condition is that the practice index is sufficiently strongly associated with the absence share, which can be tested empirically. Specifically, column (1) of Table 3 , which shows the results of estimating the first stage, indicates a significantly positive association between the practice index and the absence share. 28 The second condition is that the practice index has only an indirect effect on sales through the absence share, but no direct effect on sales or other determinants of sales. This condition cannot be tested empirically. However, it can be argued that customer demand, as a relevant determinant of sales, should not be affected by the practice index. The core business of the retail chain is food—a basic necessity—the demand for which should remain unaffected by the regional acute spread of respiratory disease. 29 Moreover, it is unclear how else the practice index could plausibly affect sales. These considerations support the assertion that the practice index only indirectly affects sales through the absence share. Column (2) of Table 3 shows the results of estimating the second stage. The coefficient estimate of the effect of the absence share estimated by the first stage is the two-stage least squares estimate of the effect of absenteeism on sales. Crucially, this coefficient estimate is positive and significantly different from zero, which is diametrically opposed to a hypothesized negative monotonic relationship between absenteeism and sales after accounting for possible reverse causality. This confirms the key finding that absenteeism is not, in general, detrimental to firm performance.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 4,
+        "section_name": "4. Addressing Reverse Causality",
+        "paragraph_id": 2,
+        "text": "27 No higher degree polynomial of the absence share estimated by the first stage is included, as the test mean squared error obtained from 10-fold cross-validation indicated a superior fit of the linear polynomial. 28 The F -statistic of the first stage is 17.28, which indicates a sufficiently strong instrument according to the general guideline based on Stock and Staiger ( 1997 ) that the F-statistic of the first stage should be at least 10. 29 For example, it could be argued that an increase in the spread of respiratory disease may result in a decline in sales, as an increased number of potential customers may be confined to their homes, unable to shop for food. Conversely, such a potential decline in sales may be offset by an increase in demand for food, as fewer people may eat out amidst an increased spread of respiratory disease. Crucially, these considerations cannot be conclusively refuted or confirmed. Therefore, as with any application of instrumental variable estimation, the results should be interpreted with particular caution regarding the underlying assumptions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 4,
+        "section_name": "4. Addressing Reverse Causality",
+        "paragraph_id": 3,
+        "text": "Table 3: The Effect of Absenteeism on Sales (Two-Stage Least Squares) Dependent variable: (1) (2) Absence share st Sales ( z -score) st Practice index st 0 . 006031 [FORMULA] ( 0 . 001451 ) Absence share st 0 . 082419 [FORMULA] ( 0 . 027692 ) Stores 1 , 387 1 , 387 Observations 44 , 818 44 , 818 Note: The table shows estimates of the effect of absenteeism on sales obtained from two-stage least squares. The dependent variable Absence share st is the absence share of store s in month t . The dependent variable Sales ( z -score) st is the standardized gross sales of store s in month t . Practice index st is the practice index, a measure of the spread of respiratory disease, in the region in which store s is located in month t . Absence share st is the absence share of store s in month t , estimated by the specification underlying the estimates shown in column (1), the first stage. The specification underlying the estimates shown in column (2) is the second stage. Both the first and second stage include storeand month-specific fixed effects. Standard errors clustered by store are in parentheses. In the second stage, standard errors were additionally adjusted to account for the variability introduced by the absence share estimated by the first stage, which was implemented using the Stata command ivreg2 by Baum et al. ( 2002 ). [FORMULA] p < 0 . 01.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs"
+        ]
+    },
+    {
+        "paper_id": 1256,
+        "section_id": 5,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This study provides clean and novel evidence on the relationship between absenteeism and firm performance. The key finding is that absenteeism is not generally detrimental to firm performance. A moderate level of absenteeism, particularly one that aligns with the level expected based on the regional acute spread of respiratory disease, is associated with superior firm performance than perfect attendance. While the precise reasons for this relationship are potentially multifaceted, it is consistent with the adverse effects commonly attributed to absenteeism and, in particular, presenteeism. For example, the dampened firm performance associated with perfect attendance may be due to the fact that employees with impaired health are more likely to disrupt supermarket operations, thereby reducing sales and adversely affecting service quality. Further research is needed to elucidate the precise behavioral mechanisms at play. Nevertheless, a clear conclusion of this study is that perfect attendance should not necessarily be the primary objective of absenteeism management strategies. Instead, the relevant drivers of absenteeism, such as the spread of respiratory disease, should be taken into account. Most importantly, absenteeism should not be avoided at all costs.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

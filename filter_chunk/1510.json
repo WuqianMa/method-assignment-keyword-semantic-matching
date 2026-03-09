@@ -1,0 +1,1171 @@
+[
+    {
+        "paper_id": 1510,
+        "section_id": 0,
+        "section_name": "The Law and Economics of Lawyers: Evidence from the Revolving Door in China’s Judicial System ∗",
+        "paragraph_id": 3,
+        "text": "Abstract This paper studies the roles of lawyers in shaping judicial and economic outcomes, exploiting the unique setting of “revolving-door” lawyers in China’s judicial system. By compiling a comprehensive dataset covering the universes of judges, lawyers, law firms, litigants, and lawsuits in China from 2014 to 2021, we identify over 14,000 judges who left their positions to practice as lawyers, accounting for 6.6% (2.6%) of all judges (lawyers) nationwide. We report three main findings. First, in otherwise identical lawsuits, these revolving-door lawyers obtain significantly more favorable court decisions for their clients. Second, leveraging withinlawyer variation in performance at home vs. away courts, we show that the advantage of revolving-door lawyers comes from both “know who” and “know how.” Third, revolving-door lawyers create countervailing forces in society — on the one hand, they present evidence and reasoning to help judges make more informed decisions; on the other hand, they use connections and strategic arguments to help their (affluent) clients, thereby biasing judicial decisions and exacerbating socio-economic inequalities. We extend the theoretical framework of Dewatripont and Tirole (1999) to quantify these trade-offs.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 0,
+        "section_name": "The Law and Economics of Lawyers: Evidence from the Revolving Door in China’s Judicial System ∗",
+        "paragraph_id": 4,
+        "text": "∗ We thank Shengmao Cao, Yun-Chien Chang, Daniel Chen, Adam Chilton, Luis Garicano, Jonah Gelbach, Chang-Tai Hsieh, Ruixue Jia, James Kung, Jin Li, Jens Ludwig, Marco Manacorda, Sultan Mehmood, Suresh Naidu, Jacopo Ponticelli, Nancy Qian, Jim Robinson, Evan Rose, Michael Song, Rachel Stern, Yongxiang Wang, Yanhui Wu, Zhuoyun Wu, Noam Yuchtman, Anthony Lee Zhang, Taisu Zhang, Xiaoxue Zhao, Luigi Zingales, and various seminar and conference participants for helpful suggestions. Zhenyu Shen, Anran Tan, Yiyuan Wang, Yifei Wu, Runren Zhou, and Jintao Zhu provided excellent research assistance. All remaining errors are our own.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 0,
+        "section_name": "The Law and Economics of Lawyers: Evidence from the Revolving Door in China’s Judicial System ∗",
+        "paragraph_id": 5,
+        "text": "“I don’t mean to toot my own horn, but if Jesus Christ lived in Chicago today, and he had come to me and he had five thousand dollars, let’s just say things would have turned out differently.\" — Billy Flynn Chicago , by Maurine Dallas Watkins",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Law is the cornerstone of modern society. Economists emphasize that an impartial and efficient judiciary is pivotal for fostering a prosperous market economy (Smith, 1937; North, 1986; Besley and Persson, 2011; Acemoglu and Robinson, 2012). Governments and international organizations also devote significant efforts to promoting judicial capacity worldwide (Stephenson, 2007; Piana, 2009). Critical elements of the legal system — such as codes and statutes, precedents, court structure, and judicial behavior — have been the focus of extensive research (Djankov et al., 2003; Chemin, 2012; Agan and Starr, 2018; Arnold et al., 2018; Dobbie et al., 2018; Doleac and Hansen, 2020; Dobbie and Yang, 2021; Ash et al., 2022; Li and Ponticelli, 2022; Mehmood, 2022; Liu et al., 2023). In contrast, surprisingly little is understood about the roles of lawyers in shaping judicial and economic outcomes, despite the perceived importance of the legal profession. While power lawyers are highly regarded in most societies, there is little consensus on whether they can consistently deliver more favorable judicial outcomes for their clients, especially in emerging legal markets. To the extent that private returns do exist from hiring power lawyers, the source of this premium also remains a topic of debate. As Mark Twain famously remarked, “ a good lawyer knows the law; a clever one takes the judge to lunch \" — power lawyer effectiveness can either stem from their superior legal acumen (i.e., “know-how”) or their extensive personal networks (i.e., “know-who”). Understanding the relative importance of these two mechanisms is crucial for evaluating the societal value of power lawyers, but empirically disentangling them presents a significant challenge. Furthermore, beyond their impact on the litigants, power lawyers can also create countervailing forces within the judicial system. On the one hand, they collect and organize evidence, prepare facts and findings, and provide legal reasoning, thus aiding judges (and juries) in making more informed decisions. On the other hand, to vigorously represent their clients, power lawyers may skew judicial outcomes by leveraging personal connections and strategically/selectively presenting evidence, facts, and legal arguments. This can not only bias judicial decisions but also exacerbate socio-economic inequality, given the positive sorting between lawyers and litigants.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "This paper presents novel empirical evidence on the judicial and economic implications of power lawyers. To deepen our understanding of their roles in society, our analysis focuses on a specific group of prominent power lawyers within China’s judicial system — the “revolving-door\" lawyers (henceforth RD lawyers), referring to former judges who resigned from their positions to practice as lawyers in private law firms. In addition to being widely regarded as some of the most influential lawyers in this emerging legal market, the existence of RD lawyers creates a unique opportunity to construct granular measures of a lawyer’s private connections — based on their colleague network prior to leaving the bench — and their innate legal expertise, based on their past performance while serving as judges. These measures of lawyer connections and ability, constructed independently from their performance as practicing lawyers, enable us to employ various research designs to explore whether and how power lawyers add value for both their clients and the broader judicial system. Specifically, by compiling a novel dataset that covers the universes of active judges, lawyers, law firms, litigants, and lawsuits in China between 2014 and 2021, we identify more than 14,000 RD lawyers over the past decade, representing 6.6% of judges and 2.6% of lawyers nationwide. For each RD lawyer, we are able to extract rich details from 144 million court judgment files about their entire professional life, including their performance and colleague network as a judge, to their transition from judge to lawyer, and to their performance, employer(s), clients, colleagues, and career trajectory as a lawyer. Descriptive patterns show that both the most and least proficient judges are more likely to become RD lawyers, who then tend to practice in more developed regions of the country. Utilizing this unique data infrastructure, we first show that, in otherwise identical commercial lawsuits — such as clear-cut loan or sales contract disputes, where every legally relevant feature can be explicitly quantified and held constant — RD lawyers still manage to deliver significantly more favorable decision outcomes for their clients (i.e., an 11-15% higher win rate). In addition to matching observable case characteristics, two alternative research designs further confirm that the RD lawyers’ higher win rates cannot be explained by their endogenous selection of lawsuits based on unobserved client or case characteristics: (a) when restricting our analysis to pre-existing clients of a law firm and exploiting variations created by the new arrival of RD lawyers to that law firm, we find similar returns for RD lawyers; (b) by instrumenting for “being represented by an RD lawyer\" using the weekly caseload of RD lawyers in the corresponding law firm upon the arrival of a new case, we obtain consistent results regarding RD lawyer effectiveness.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "The baseline finding is also not driven by powerful clients directly influencing court decisions, as evidenced by its robustness when controlling for a more demanding set of court-by-litigant fixed effects, which hold constant potential client influence. Second, to understand the relative importance of “know-how\" vs. “know-who\" in determining the premium of RD lawyers, we exploit within-lawyer variation in performance at the RD lawyer’s home court, where he used to be a judge and likely has strong connections, versus at the RD lawyer’s away court, where he was not a judge and is likely less well connected. We show that RD lawyers, especially those who hold graduate degrees in law and specialize in the same legal domains as both a judge and a lawyer, perform better than ordinary lawyers even in away courts, and this premium does not diminish as they move farther from their home courts, which is consistent with their better “know-how.\" Nevertheless, the same RD lawyer becomes substantially more effective when practicing in his home court. Importantly, this home court advantage only exists when he is arguing in front of a former colleague (as opposed to a new judge who arrived after his departure). Such within-lawyer premiums at home court highlight the importance of “know-who\" in generating lawyer value-added. Third, to understand power lawyers’ broader roles in the judicial system, we outline a theoretical framework extending Dewatripont and Tirole (1999), in which power lawyers can: (a) present solid evidence and sound reasoning to help judges make more informed decisions; and (b) use personal connections and the strategic presentation or rebuttal of evidence and reasoning to influence judges, thereby helping their (affluent) clients win. Channel (a) promotes judicial consistency and reduces decision errors, while channel (b) increases errors and variability in judicial decisions and exacerbates inequality. Through the lens of our model, we empirically examine the aggregate impact of RD lawyers on judicial outcomes. We find that channel (b) dominates channel (a) in the status quo , suggesting that RD lawyers are increasing errors and variability in judicial outcomes. Counterfactual simulations further reveal that as the share of power lawyers in society increases, judicial errors and variability initially rise but eventually decline. This non-monotonicity arises because, when power lawyers are few, they frequently face regular lawyers in court, allowing channel (b) to dominate. However, when power lawyers become the majority, they often face each other, canceling out channel (b) among themselves, while channel (a) accumulates. As a result, having a few power lawyers can be detrimental to society, but having many can ultimately be highly beneficial. Our paper relates to three strands of literature. First and foremost, we provide one of",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "the first systematic analyses of the judicial and economic implications of the legal profession. Economists have long emphasized the importance of law (Smith, 1937; North, 1986; Besley and Persson, 2011; Acemoglu and Robinson, 2012), and various components of the judicial system have been extensively studied in prior literature (Djankov et al., 2003; Chemin, 2012; Agan and Starr, 2018; Arnold et al., 2018; Dobbie et al., 2018; Doleac and Hansen, 2020; Ash et al., 2022; Li and Ponticelli, 2022; Mehmood, 2022; Liu et al., 2023). However, the law and economics of lawyers remain underexplored. 1 We contribute to the literature by both theorizing and quantifying the trade-offs associated with the legal profession. Specifically, power lawyers can leverage both their legal expertise and personal connections to benefit their clients. However, their presence—particularly when they constitute a minority within the legal profession—can increase errors and variability in judicial decisions, as well as exacerbate inequality. Second, our paper relates to the literature on informational lobbying. While classic theoretical work has shown that lobbying by different interest groups can potentially enhance welfare by generating rich information (Austen-Smith, 1987; Austen-Smith, 1995; Lohmann, 1995; Grossman and Helpman, 2001; Krishna and Morgan, 2001; Bombardini and Trebbi, 2011; Bombardini and Trebbi, 2012; Cotton, 2012), empirical evidence on this prediction remains limited and mixed (Snyder Jr, 1990; Snyder Jr, 1991; Snyder Jr, 1992; Bertrand et al., 2014). As noted by Dewatripont and Tirole (1999), the theoretical foundations for informational lobbying also apply to the judicial system, where lawyers representing different clients aim to generate information and exert influence on judges. Building on this insight, our paper provides direct evidence on the informational effects of power lawyers. On the one hand, the rich information provided by power lawyers can help reduce errors and variability in judicial outcomes. On the other hand, in cases of significant asymmetry in lawyer abilities, the zero-sum nature of litigation implies that a power lawyer can impose substantial negative externalities on the opposing party, even solely through the provision of legal information. 2 Third, our findings also speak to the literature on elite capture and resource allocation. Extensive research has explored how elite capture occurs through mechanisms such as vote 1 Recent literature on U.S. criminal lawsuits has made progress on related questions. For instance, Agan et al. (2021) show that lawyers perform worse in court-assigned cases due to various factors, and Shem-Tov (2022) document significant performance gaps between court-assigned lawyers and public defenders. Nevertheless, the role of lawyers in non-U.S. legal systems and across a broader spectrum of lawsuits, along with the underlying mechanisms, remains largely an open question. 2 Our analysis of the revolving-door phenomenon in China’s judicial system also contributes to the literature on revolving-door lobbyists (i Vidal et al., 2012; Bertrand et al., 2014), allowing us to disentangle the roles of ability and connections in determining lobbying and judicial outcomes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "buying, lobbying, patronage networks, political dynasties, and transitional experience (Bardhan and Mookherjee, 2000; Fisman, 2001; Dal Bó and Di Tella, 2003; Robinson and Torvik, 2005; Finan and Schechter, 2012; Alatas et al., 2019; Dal Bó et al., 2009; Querubin, 2012; MartinezBravo et al., 2017). Our analysis demonstrates that elite capture can also occur through the judicial system, where powerful individuals and organizations exploit legal processes to secure favorable outcomes. Even in the absence of corruption or patronage, a functioning legal market where power lawyers disproportionately serve elites effectively allows these elites to “buy justice\" at the expense of their opponents. This dynamic has the potential to distort resource allocation across society. The remainder of this paper is organized as follows. Section 2 describes the institutional background. Section 3 introduces the data and presents descriptive facts about China’s judicial system and legal industry. Section 4 discusses the value added of RD lawyers, and decomposes it into “know how\" vs. “know who.\" Section 5 outlines a theoretical framework to rationalize the reduced form findings and guide the structural analysis. Section 6 documents how RD lawyers affect ruling dispersion, and discusses the broader impacts of the legal profession through the lens of our theoretical framework. Section 7 concludes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 1,
+        "text": "As shown in Appendix Figure A.2, China’s court system operates on four levels: the Supreme People’s Court (SPC) at the national level; 32 High People’s Courts at the provincial level; 404 Intermediate People’s Courts at the prefecture level; and 3,111 Basic People’s Courts at the county/district level. By default, criminal cases are tried where the alleged crime occurred, while civil cases are handled in the defendant’s jurisdiction. 3 The court level for the first instance depends on the case’s importance. One appeal is allowed to the next higher court, up to the SPC. China’s legal system follows the civil law tradition, with some influence from the Great Qing Code. Judges rely on statutes issued by the national legislature and judicial interpretations by the SPC. There are no juries or binding precedents, giving judges significant discretion in 3 In commercial contracts, parties can pre-specify a third court for conflict resolution, but fewer than 4% of commercial lawsuits in China are tried outside the defendant’s jurisdiction.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 2,
+        "text": "deciding both factual and legal issues. 4 Ensuring consistent rulings for similar cases has been a long-standing challenge. Variability in rulings based on different lawyers or judges can foster perceptions of injustice, risking social unrest and creating uncertainty in economic activities. To address this, the SPC launched the China Judgment Online (CJO) in 2014, requiring courts to disclose judgments in real-time. This initiative aims to introduce common-law-style consistency into a civil law system. Details of the CJO database are provided in Section 3.1.1. While China’s legal profession has seen significant progress (Zhang and Ginsburg, 2019), public concern persists over the influence of social ties on judicial outcomes. A common perception holds that procedural rigor is often a facade and that personal connections with judges are decisive, with social ties permeating legal processes (Ng and He, 2017). Notably, this phenomenon is not unique to China. In Europe, the revolving door between the Court of Justice of the European Union and the European Commission raises concerns about the Commission’s influence through internal connections (Zhang, 2016). In the U.S., attorneys who clerked for Supreme Court justices are more likely to secure favorable votes from their former justices, likely due to personalized insights (Black and Owens, 2021). Similarly, in Florida, medical malpractice plaintiffs are 2% more likely to win if their attorney attended the same law school as the assigned judge (Liu and Zhang, 2020). Despite this background, the quantitative comparison between a lawyer’s “know-who\" and “know-how,\" and their broader impact on the judicial system beyond the client, remains insufficiently explored.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 4,
+        "text": "Judges in China play a crucial role in trials, acting as chief investigators to gather evidence, apply the law, and make final rulings. In less complex cases, a single judge presides, while high-stakes cases involve a panel of three judges. Due to heavy caseloads, one judge in the panel, known as the \"responsible judge,\" oversees most of the trial process and drafts the decision, making them key in shaping the final ruling. As a result, the effectiveness of China’s judiciary depends heavily on the quality and incentives of local judges. To become a judge in China today, one must first obtain a bachelor’s degree in law and pass the civil service exam, qualifying them to work as a court clerk. After 3-5 years as a court clerk, 4 For instance, contract law allows judges to adjust liquidated damages if they deem them disproportionate to the actual damages incurred, which is itself a factual matter for the court to determine.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 5,
+        "text": "they must pass both the national judicial exam and the judge quota exam to be appointed as a judge. Many highly capable, young judges follow this path. While these judges are well-educated and hold significant power in deciding cases, they are poorly compensated. For example, based on a salary sheet from a local court in China in 2013 (see Appendix Figure A.6a), the average judge earned roughly 3,500 RMB (roughly 500 USD) per month. In contrast, as shown in Appendix Figure A.6b, the average lawyer in relatively developed provinces of China earned 4-5 times more than judges in 2013, despite having a significantly lower entry barrier. To become a lawyer, one only needs a law degree and to pass the national judicial exam, which is part of the requirements for becoming a judge.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 7,
+        "text": "Given the reversal of entry barriers and economic compensation between judges and lawyers, it is not surprising that some judges have transitioned to practicing law in private firms, creating a \"revolving door\" (RD) phenomenon in China’s judicial system. RD lawyers are influential in judicial decisions and offer a neat setting in which their legal capability and personal connections can be measured independently of their later performance as lawyers. This allows us to separate the roles of \"know who\" and \"know how\" in determining lawyer value-added. While our analysis focuses on RD lawyers, we expect the qualitative findings to apply to most high-power lawyers. Based on extensive field interviews with judges, lawyers, and law firms, we make four key observations about RD lawyers. First, many were previously viewed as “key judicial personnel,\" suggesting positive selection into the RD lawyer role. Second, consistent with this, many are highly sought after in the labor market and are often offered partnerships at major law firms. 5 Third, many ordinary lawyers view RD lawyers negatively, believing that the playing field is tilted in their favor. Finally, China’s “judge quota reform\" since 2016, which removed judges with insufficient legal backgrounds, led to a more than 30% reduction in the active judge count, pushing many lower-ability judges to become RD lawyers, potentially inducing negative selection. RD lawyers are well known to central regulators, who introduced strict regulations in 2001 to address this issue. Specifically, quitting judges face a “two-year bar\" and a “home court prohibition\": they cannot practice law for two years and can only practice in courts where they had no prior judgeship. However, based on our interviews with judges and lawyers, these 5 Some senior litigating lawyers advise law students to work as full-time or part-time law clerks before becoming lawyers, believing that court experience provides better training and helps build valuable personal connections.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 2,
+        "section_name": "Background",
+        "paragraph_id": 8,
+        "text": "rules were not strictly enforced until 2021, when the SPC sent inspection teams to target the revolving-door phenomenon.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 3,
+        "section_name": "Data, Descriptive Facts, and Empirical Strategy",
+        "paragraph_id": 0,
+        "text": "In this section, we discuss our data and key variable definition (Section 3.1), outline simple descriptive patterns (Section 3.2), and introduce the baseline empirical strategies (Section 3.3).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "In 2013, the Supreme People’s Court launched China Judgment Online (CJO) to improve judicial transparency and provide (non-binding) precedents for judges. It required local courts at all levels to publish both current and historical judicial decisions. Courts must disclose contemporary judgments within seven days, except in special cases such as those involving national security or juvenile delinquency. Screenshots of the CJO website and a sample judgment are provided in Supplementary Figure A.3. We collected the full set of court decisions in China from 2014 to 2021 via CJO, totaling over 144 million judgment files, including more than 86 million civil lawsuits and 11 million criminal lawsuits. 6 For each file, we extracted details such as the court, trial and ruling dates, judge(s), clerks, parties involved, case facts, trial summary, plaintiff’s claims, court rulings, and judicial reasoning. For civil lawsuits, we also collected data on court fee obligations, dispute types, and specific case characteristics. For example, in loan contract disputes, we extracted information on loan amounts, interest rates, repayment duration, overdue charges, and more. For criminal lawsuits, we gathered details such as the defendant’s age, gender, education, ethnicity, crime type (485 categories), confession, surrender, victim’s forgiveness, crime history, and crime details. A key variable in our analysis is each party’s win rate in a lawsuit. In civil litigation, court fees are typically borne by the losing party, so the division of these fees between the plaintiff and defendant reflects the extent to which each party wins or loses in a lawsuit, from the perspective of the court. 7 Following standard literature, we calculate the win rate using each party’s share of 6 We include all verdicts for cases tried between 2014 and 2021 and released on China Judgment Online before August 2022. 7 For example, if the plaintiff wins completely, they pay 0% of the court fees, while a 50-50 split implies equal success for both sides.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "the opposing side’s court fee obligation: WinRate j = CourtFee i CourtFee i + CourtFee j . The CJO files are widely regarded as highly reliable, as manipulating these public records would require collusion between the plaintiff, defendant, and local court. Moreover, commercial banks extensively use information from these files in their credit rating processes. China’s recent adoption of an open justice system further enhances transparency, with civil cases live-streamed at plaintiffs’ requests (Cai et al., 2022). Given that millions of trial recordings are publicly accessible online, systematic manipulation of court judgment files is highly improbable. In Appendix 3.1.1, we discuss and examine potential concerns regarding the CJO data in greater detail.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "Our firm-level data comes from Tianyancha , a platform providing access to China’s business registration records. These records are licensed by the National Enterprise Credit Information Publicity System and managed by the State Administration for Industry and Commerce (SAIC). Appendix Figure A.4 shows a Tianyancha webpage screenshot used to collect business registration information. Covering over 75 million entries (including firm branches) as of 2021, the dataset spans four decades of registrations. For each firm, it includes details on location, ownership type, legal representatives, shareholders and their holdings, executives, registered capital, industry code, year of establishment, and historical updates to these items.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "China’s Ministry of Education mandates that all graduate dissertations be published on the China National Knowledge Infrastructure (CNKI). By scraping CNKI, we identify which judges attended graduate school.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "In this section, we document key empirical patterns about RD lawyers using the data described above.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 10,
+        "text": "From each court verdict publicized by the CJO, we extract the identities of the judges, lawyers, law firms, and litigants involved. The dataset of over 140 million documents enables us to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 11,
+        "text": "compile a comprehensive list of active participants in China’s legal profession over the past decade: (a) 217,192 judges with complete case records and career paths; (b) 542,269 lawyers with full case/client representation records and employment histories; (c) 36,593 law firms with affiliated lawyers and case/client data; and (d) over 5 million firm litigants linked to their business registration details. Figure A.8a shows a sharp increase in active lawyers in China during our sample period, rising from about 300,000 to 540,000. This growth is largely driven by China’s rapid economic expansion, the increasing complexity of business transactions, and an evolving legal framework shaped by the country’s global integration. Lawyers are more concentrated in provinces with larger populations and higher GDP. Reflecting the rise in lawyer numbers, the number of law firms in China has also grown significantly over the past decade, from about 23,000 to 37,000. These firms served over 5 million corporate and 26 million individual litigants in our data. By 2021, the average firm employed about nine lawyers, though firm sizes vary widely. Appendix Figure Appendix Figure A.5 shows this heterogeneity: most firms have fewer than 50 lawyers, while a small fraction exceeds 200. Panel (b) highlights the connections between local branches and their parent firms, revealing that major firms in first-tier cities extend their reach nationwide. Notably, 6.3% of parent firms control 23.2% of local branches and employ 38.0% of all lawyers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 13,
+        "text": "To identify RD lawyers, we match “disappearing judges” (judges who stopped presiding over cases during our sample period) with “emerging lawyers” (attorneys who began representing cases within six months of a judge with the same Chinese first and last names leaving their position). To minimize errors from common names, we exclude the top 1,000 most frequent names in China. 8 This process identifies 14,249 RD lawyers, forming our baseline sample. We also create alternative samples using different time windows and name-frequency thresholds, which slightly alter sample size but leave our main findings unchanged. To adopt a more conservative approach to identifying RD lawyers, we also construct a more restrictive sample that requires judge-to-lawyer transitions, initially identified using Chinese names, to be verified by at least one external source, such as a Baidu Baike entry (China’s 8 Based on the official name registry from the Ministry of Public Security, the 1,000th most common name accounts for 0.00035% of the population.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 14,
+        "text": "Wikipedia equivalent), law firm websites, or official legal association sites. Appendix Figure A.8 illustrates this process with an example: the CJO data shows that Fu Qinbin transitioned from a prefectural intermediate court to a law firm, a move corroborated by both his Baidu Baike page and his bio on the law firm’s website. This restriction reduces our baseline sample by nearly half, but the main findings remain robust, indicating that matching based on uncommon names alone already provides a reliable foundation for the analysis.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 16,
+        "text": "Figure 1 illustrates the time trend and spatial distribution of RD lawyers. Panel (a) shows rapid growth after 2016, coinciding with the judge quota reform, which prompted many lower-ability judges to transition to private law practice. The trend slowed after 2021, when SPC inspection teams began enforcing stricter regulations on the “judicial revolving door,” indicating that government policies against the practice have become more effective. Panel (b) shows that judges in wealthier regions, particularly the eastern coastal areas, are more likely to transition to RD lawyers, likely due to better outside opportunities. Panel (c) further reveals that RD lawyers tend to move from less developed western regions to wealthier eastern ones, reflecting the higher concentration of lucrative cases and prominent clients in the latter. This migration is consistent with the interest of large law firms in hiring former judges, who can bring clients from their previous jurisdictions or help firms expand into new markets.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 18,
+        "text": "Our fieldwork suggests that RD lawyer selection involves both positive and negative factors. Higher-ability judges are more likely to transition due to better outside options, like partner offers from major law firms. Conversely, the 2016 judge quota reform pushed lower-ability judges out of local courts, leaving them with few options other than practicing law. To examine selection patterns, we construct two proxies for judge ability. First, for judges handling civil cases, we count the number of \"high-stakes cases\" (i.e., cases with a claimed monetary stake above the 95th percentile in that jurisdiction). Since remanding or retrial of such cases is seen as a failure, the most capable judges are typically assigned to them. Second, for all judges, we calculate the frequency of appeals, which is likely negatively correlated with the quality of their decisions. Figure 2 visualizes the selection patterns into RD lawyers. Both measures of judge ability",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 19,
+        "text": "show a clear bimodal pattern: highand low-ability judges are more likely to quit, while averageability judges tend to stay. This confirms our field observations of both positive and negative selection. Motivated by this finding, we examine in later empirical analyses whether highvs. low-ability judges differ in their legal practices once they transition to lawyering, specifically in their specialization in \"know how\" vs. \"know who.\"",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Field Observation",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Qualitative, Descriptive, and Mixed Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 22,
+        "text": "Our baseline analysis matches identical lawsuits based on observable case characteristics. Below, we describe the procedure for matching commercial lawsuits, which forms the baseline sample for this paper. More details and examples are provided in Appendix Appendix A.2. 9 To validate our baseline findings, we also implement alternative \"selection on unobservables\" designs, explained in Sections 4.1.1 and 4.1.2. Given the complexity of commercial disputes, matching similar lawsuits based solely on observable characteristics is typically challenging. However, based on our analysis of legal codes and extensive discussions with judges, lawyers, and legal scholars, we identify two simple and well-defined types of contract-related lawsuits — loan contract disputes (for non-repayment) and sales contract disputes (for non-payment) — where all relevant features are observable and disclosed in court judgments, allowing us to credibly match identical lawsuits. These two case types account for 45% of all commercial disputes in China and are ideal for our analysis, as they can be fully defined by clear, quantitative features. We briefly describe the matching procedure below and provide further details in Appendix A.2. To compare identical cases, we use the most conservative matching method, based on five comprehensive features: i) causes of action, ii) party identities, iii) plaintiff’s claims, iv) facts determined by the judge, and v) legal provisions cited. For instance, in loan contract disputes, the identity of the parties includes individuals, enterprises, and financial institutions (e.g., banks). The facts determined by the judge cover contract terms such as loan principal, interest, unpaid amounts, guarantees, liquidated damages, and their amounts. Plaintiff’s claims and the legal provisions cited define the scope of the case. For example, we only match cases where plaintiffs seek repayment of loan principal and interest; 9 While not the focus of this paper, we also discuss matching criminal lawsuits in Appendix A.5 as complementary evidence.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Oster Bounds (Selection on Unobservables)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 23,
+        "text": "cases requesting both principal and penalty interest are considered distinct. Likewise, only cases citing the same legal provisions are matched. With these features matched, two non-repayment cases are legally \"identical,\" with no other factors for the judge to consider. 10 In Appendix Figure A.9, we show examples of matched loan and sales contract disputes, demonstrating that our matching procedure creates tight \"identical case\" groups, within which lawsuits differ minimally. To quantify the similarity of matched cases, Appendix Table A.3 presents balance tests across various dimensions for lawsuits within each case group, with and without RD lawyer representation. The results indicate that RD lawyer representation does not predict case characteristics, confirming the high comparability of cases within each group. Even in highly similar cases, judges retain significant discretion in their decisions, as the law includes both explicit \"rules\" and flexible \"standards\" that allow for interpretation (Kaplow, 2013). For example, in loan cases, judges can adjust interest rates and repayment schedules based on perceived fairness, and in sales contract cases, they can modify damages or penalties for non-performance, even if liquidated damages are specified in the contract.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 25,
+        "text": "In our baseline econometric strategy, we exploit variations in lawyer representation within matched groups of similar lawsuits to isolate confounding case characteristics and causally attribute differences in judicial outcomes to the lawyers. The key assumption is that these matched loan and sales contract disputes do not differ systematically in unobservable ways, regardless of lawyer representation. Given the simplicity of these two types of contract disputes, it is unlikely that any unobservable case features significantly affect judicial decisions, supporting the validity of our identifying assumption. Even if such features exist, if power lawyers tend to handle cases that are more complex in unobservable ways, our baseline strategy would compare “hard cases handled by power lawyers” to “simple cases handled by non-power lawyers,” potentially underestimating the effectiveness of power lawyers. Nevertheless, we address concerns about selection based on unobservable case characteristics in two key ways. First, following Xiao et al. (2021), we use cutting-edge NLP models to evaluate 10 In a similar vein, in sales contract disputes, the judge’s facts include goods type, contract price, liquidated damages, breach, and loss amounts, among others. Plaintiff’s claims and legal provisions cited help narrow the case scope. While some sales disputes can be more complex than loan cases, matching by legal provisions excludes uncommon or complex cases. If a judge cites an unusual provision, the case is excluded, as it likely involves a rare legal issue.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 26,
+        "text": "case similarity. If omitted characteristics are partially captured by these models, the NLP-based similarity measure allows us to test whether RD and non-RD lawyers systematically select cases based on unobserved features within matched identical case groups. As shown in Appendix Table A.9, textual similarity remains consistent across three comparisons: (a) two cases without RD lawyers, (b) two cases with RD lawyers, and (c) one case with and one without RD lawyers. These findings indicate that, for the simple contract disputes we analyze, NLP models do not detect additional case features relevant to selection beyond those used in our matching. Moreover, as discussed in greater detail in Section 4.1.2, we implement two alternative research designs to directly address concerns about case selection.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 27,
+        "text": "Event Study Design We examine how the arrival of RD lawyers at a law firm impacts judicial outcomes for the firm’s pre-existing clients. Since most clients rely on a single law firm for all their lawsuits, and future RD lawyer arrivals are unlikely to influence the types of disputes a client chooses to get involved in in the current period, this alternative strategy controls for potential confounding effects of case selection based on unobservables, enabling us to isolate the impact of access to RD lawyers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 4,
+        "section_name": "Data",
+        "paragraph_id": 28,
+        "text": "Instrumental Variable Design We construct a novel measure of each RD lawyer’s caseload in the week a new case arrives at their law firm, using the universe of verdicts, and apply this as an instrumental variable (IV) for whether the case is handled by an RD lawyer. By leveraging variation in RD lawyer representation driven solely by caseload distribution, this IV approach addresses endogeneity concerns arising from selection on unobserved case characteristics.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 0,
+        "text": "This section presents the reduced-form analysis of how power lawyers serve their clients. Using matched similar cases, we examine the impacts of RD lawyers on judicial outcomes. We address alternative explanations, such as \"selection on unobservable case characteristics\" and \"direct client influence,\" through additional research designs, including event study and instrumental variable approaches. Finally, we explore the sources of the RD lawyer premium by separating the \"know who\" effect from the \"know how\" effect.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 2,
+        "text": "To understand the role of power lawyers, we begin with a simple question: Do high-profile lawyers, such as revolving-door lawyers, achieve significantly more favorable judicial outcomes for their clients in otherwise identical lawsuits compared to ordinary lawyers? In our baseline strategy, to answer this question, we compare, within each group of nearly identical loan/sales contract disputes, the court decisions for cases with and without RD lawyers. Specifically, we estimate the following econometric model:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 4,
+        "text": "where Y ijgtc represents court decision for litigant i , in lawsuit j that belongs to (identical) case group g , tried in court c , in year t ; RevolvingDoor ij equals 1 if the litigant i is represented by RD lawyer in case j , and 0 otherwise; ω g is (identical) case group FE, γ c is court FE, and σ t is year FE. The standard errors are two-way clustered at the court and case-group levels. Intuitively, we are trying to compare the rulings for two otherwise identical lawsuits, being tried in the same court, in the same year, where one case is represented by an RD lawyer while the other by an ordinary lawyer. Table 1 Panel A reports the main findings. Conditional on all case characteristics being essentially identical, being represented by an RD lawyer, instead of an ordinary lawyer, increases the client’s rate of winning by an additional 11-15% relative to the baseline average. This substantial return to hiring RD lawyers is present for both the plaintiffs and the defendants, in both loan contract disputes and sales contract disputes. If we focus on the key claim regarding monetary damage (i.e., repayment (payment) request for loan (sales) contract disputes), and discount all the future (re)payments to their net present values, our estimates imply that RD lawyers can help the plaintiffs recover an additional 8.4% of monetary damages and help the defendants avoid 6.9% more in liabilities. These estimates, while large, likely understate the effectiveness of RD lawyers. We focus on simple, clear-cut cases, which leave little room for lawyers to influence judicial decisions compared to more complex commercial lawsuits excluded from the sample. Anecdotally, in the simple loan/sales disputes we study, power lawyers often influence outcomes through personal connections (\"know who\") or by citing favorable precedents or discretionary legal standards (\"know how\"). However, the simplicity of these cases limits the scope for actions like new evidence",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 5,
+        "text": "discovery or witness coaching. In more complex cases, power lawyers likely exert even greater influence. 11",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 7,
+        "text": "One potential concern is that clients who hire RD lawyers may be wealthier and more powerful, allowing them to independently exert their own influence on judicial decisions, which could confound the estimated effectiveness of RD lawyers. To address this, Table 1 Panel B controls for court-by-litigant fixed effects, isolating the impact of RD lawyers from the influence of powerful clients. Intuitively, when a business client has numerous similar loan/sales contract disputes in the same court, the RD lawyer in the partnering law firm may not have the capacity to handle all of them, leading some cases to be handled by non-RD lawyers from the same law firm. 12 As shown, the point estimates barely change compared to the baseline results, indicating that even for the same litigant in the same court, being represented by RD lawyers still provides a significant premium in judicial outcomes. This suggests that the baseline results are driven by differences in lawyer effectiveness, rather than client influence.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 9,
+        "text": "Given our focus on clear-cut contract disputes that can be quantitatively matched based on welldefined observable features, the potential selection of cases by RD lawyers based on unobserved characteristics is unlikely to drive our baseline findings. It is important to emphasize that our baseline strategy does not rely on the assumption of no differential selection of cases by different lawyers. Instead, our design only requires a \"common support\" of lawsuits between RD and non-RD lawyers. In other words, while RD and non-RD lawyers may handle different types of cases on average (in terms of both observable and unobservable characteristics), as long as a subset of identical cases are handled by both, we can use these overlapping cases to estimate the \"local average treatment effect\" of RD lawyers. In practice, high-profile lawyers, like RD ones, might be less enthusiastic about simple cases like loan/sales contract disputes. However, when serving affluent clients, they often accept such 11 Additionally, while not the primary focus of this paper, the RD lawyer premium extends to criminal lawsuits. As shown in Appendix Table A.4, for similar criminal cases, RD lawyer representation reduces sentences by 2 months (6% reduction), lowers the likelihood of lifetime imprisonment by 0.4 percentage points (10% reduction), and decreases the probability of the death penalty by 0.2 percentage points (14% reduction). Across various levels of crime severity, we observe substantial benefits from RD lawyer representation. 12 For example, a regional bank or P2P company would frequently file, within the same local court, a large amount of highly similar loan contract lawsuits against different individual borrowers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 10,
+        "text": "less lucrative cases to handle more lucrative ones from the same clients. This passive reception of smaller cases by RD lawyers creates the common support necessary for identification, and helps alleviate concerns that RD lawyers selectively choose loan/sales contract disputes based on unobservable case characteristics.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 11,
+        "text": "Alternative Research Design: Event Study Nevertheless, we further address the potential threat of unobservables by exploiting an alternative source of variation. Specifically, we focus on pre-existing clients who have always worked with the same law firm and examine how their case outcomes change after the firm hires an RD lawyer. This comparison mitigates lawyer selection concerns by relying on the \"passive\" reception of RD lawyers by clients and cases, rather than the \"active\" seeking of clients by RD lawyers. As shown in Figure 3, while this alternative specification differs conceptually from the baseline approach, our key findings remain unchanged. As long as pre-existing clients are not altering their economic or legal behavior based on the expectation of future RD lawyer hires, \"case selection based on unobservables\" cannot explain the findings from this event study. This suggests that our baseline results likely reflect lawyer effectiveness rather than case selection.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 12,
+        "text": "Alternative Research Design: Instrumental Variable We also use an instrumental variable (IV) approach to address concerns about endogenous case selection. By leveraging the duration of each lawsuit from the universe of court judgment files, we construct a comprehensive measure of each lawyer’s weekly caseload. We then instrument for \"whether a case is handled by an RD lawyer\" using \"the weekly caseload of RD lawyers in the corresponding law firm upon the case’s arrival,\" isolating variations in lawyer representation driven purely by RD lawyer availability, rather than endogenous case selection. As shown in Table 2, the IV strongly predicts case assignment in the first stage (F-stat ≥ 115), and the instrumented \"RD lawyer representation\" leads to a 10-20% increase in win rates in the second stage, further confirming our baseline results both qualitatively and quantitatively. Taken together, we find the consistency across various research designs reassuring that the higher win rates of RD lawyers are driven by their effectiveness, rather than endogenous case selection.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 14,
+        "text": "The CJO is required to disclose the full universe of court verdicts, but disputes settled outside of court are not captured in this data. In China’s judicial system, the settlement rate is around 20%, which is lower than the U.S. rate of approximately 50%. As explained above, as long as there is a common support of identical unsettled cases being handled by both RD and non-RD lawyers, we can estimate the RD lawyer premium in trial. Therefore, the existence of settled cases outside our sample does not necessarily undermine the internal validity of our baseline analysis. Furthermore, to the extent that more favorable (expected) trial outcomes lead to higher bargaining power in the settlement process, omitting settled cases may understate the overall returns to hiring RD lawyers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 16,
+        "text": "In this section, we explore where the premium of RD lawyers comes from. We find both “know how\" and “know who\" to be at work. While the quantitative estimates would be specific to the Chinese RD lawyers that we focus on, qualitatively, it is plausible that all high-powered lawyers more generally embody some combination of “know how\" and “know who.\"",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 18,
+        "text": "As shown in Table 3 Panel A, within each identical case cluster, RD lawyers perform significantly better than others even in away courts, where they did not serve as judges and therefore are unlikely to have substantial social connections. Importantly, this effect does not diminish as we move farther away from their home court (i.e., to a different province or a different region). Since social connections are likely negatively correlated with geographic distance, this stable pattern aligns with the presence of a \"know how\" effect — high-powered lawyers, such as RD lawyers, can deliver better outcomes in any court partly due to their superior legal knowledge and skills. To better understand these results, we construct two proxies for an RD lawyer’s professional knowledge. First, using administrative records of judges’ and lawyers’ dissertations, we determine whether an RD lawyer holds a graduate degree in law. Second, by comparing an RD lawyer’s fields of specialization as a judge versus as a lawyer, we assess whether they practice in their area of legal expertise. As reported in Table 3 Panel B, RD lawyers with graduate degrees in law and those practicing in their fields of expertise are the most effective in away courts, delivering better",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 19,
+        "text": "outcomes for their clients. This evidence further supports the presence of a \"know how\" effect. Moreover, if RD lawyers achieve more favorable outcomes through their superior legal knowledge — such as identifying and presenting relevant precedents in a loan contract dispute — a judge might incorporate this information and adjust not only their ruling in the current case but also in future comparable cases. 13 For instance, if a judge is persuaded by a precedent introduced by an RD lawyer, they might continue referencing that precedent in future trials, even when the lawyers involved have no personal connection to the judge. Motivated by this hypothesis, Table 4 examines whether a judge’s first encounter with an RD lawyer influences their rulings in subsequent cases of a similar nature. Our estimates confirm that RD lawyers have a lasting impact on judicial decisions, even in cases where only ordinary lawyers are involved, further supporting the role of \"know how\" in RD lawyer effectiveness.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 21,
+        "text": "We investigate the presence of \"know who\" by comparing the performance of the same RD lawyers in home versus away courts, holding the level of \"know how\" constant while varying \"know who.\" Specifically, in Panel A of Table 5, we focus on the sample of RD lawyers, control for a demanding set of lawyer fixed effects, and find that the same RD lawyer is significantly (32–39%) more effective when handling cases in their home jurisdiction, where they previously served as a judge. These findings suggest that personal connections can be an important part of lawyer value added. A potential alternative interpretation of this \"home court advantage\" is that it might reflect \"local know how,\" such as familiarity with local culture and dialects that enhance effectiveness in that court, rather than \"know who,\" namely personal connections with the assigned judge. However, as shown in Panels B and C of Table 5, this \"local know how\" hypothesis is inconsistent with two sets of additional findings. First, when RD lawyers return to their home courts but argue in front of a new judge (i.e., someone who arrived after their departure), they do not perform better than they do in away courts. Second, when RD lawyers practice in a court within the same province but a different prefecture, they do not outperform their performance in courts located in other provinces. Both findings suggest that knowing the specific judge, rather than possessing location-specific knowledge or familiarity with the local dialect, is the key to unlocking the \"home court advantage,\" thereby supporting the existence of a significant \"know who\" effect. 13 In contrast, a \"know who\" effect would be specific to the case represented by the RD lawyer.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 5,
+        "section_name": "Private Returns to Power Lawyers",
+        "paragraph_id": 23,
+        "text": "Motivated by the \"bimodal\" pattern of selection into RD lawyers discussed in Section 3.2.4, we delve deeper into the heterogeneous impacts of RD lawyers, focusing on ability measures constructed from their performances as judges. While it’s intuitive that the \"know how\" channel might be predominantly driven by high-ability RD lawyers — those who handled important cases and received few appeals as judges — the source of \"know who\" is arguably more ambiguous. On one hand, human capital (know how) and social capital (know who) could be complements, meaning that high-ability RD lawyers excel in both; on the other hand, they could be substitutes, meaning that RD lawyers with less legal knowledge might rely more on their personal connections to influence judicial outcomes. As shown in Table 6, our findings reveal that RD lawyers who demonstrated high ability as judges are the primary drivers of both the \"know how\" and \"know who\" effects, suggesting complementarities, rather than substitutabilities, between these two sources of lawyer effectiveness. These complementarities highlight the challenges in regulating the judicial revolving door — one cannot systematically eliminate patronage without sacrificing some legal expertise.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 0,
+        "text": "To conceptualize the reduced-form results on how lawyers serve their clients, we lay out a framework that builds heavily on the work of Dewatripont and Tirole (1999). To highlight the distinctive role of lawyers and the rising legal industry, we extend Dewatripont and Tirole (1999) by introducing heterogeneity in lawyer capability and social connections, which in turn guides our structural analysis of the broader judicial and economic impacts of lawyers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 1,
+        "text": "Full Information Benchmark Following the approach of Dewatripont and Tirole (1999), we posit that a lawsuit necessitates information pertinent to both the defendant (A) and the plaintiff (B). We assume that the “favorable information” (truth) θ A and θ B , which are beneficial to parties A and B respectively, are randomly distributed. Intuitively, such information can take various forms, such as evidence, witness, decisions for similar cases in the past, legal terms most relevant to the case, etc. In a scenario where judges have unrestricted access to and accurate interpretation of all information – a full information benchmark – lawyers become redundant. Under this framework,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 2,
+        "text": "θ A equals − 1 (favorable for A) with probability of α , and 0 with probability of 1 − α . Similarly, θ B equals 1 (favorable for B) with probability α , and 0 with probability 1 − α 14 . Judges can then simply sum the realized information θ = θ A + θ B to make their decisions, which are based on θ taking values of 1, 0, or -1. Each case can be summarized by the realization of its θ . It is evident from this model that the probability of the defendant (A) being the sole party with favorable information is Prob ( θ = − 1) = α (1 − α ). Likewise, the likelihood of the plaintiff (B) exclusively possessing favorable information is Prob ( θ = 1) = α (1 − α ). When both parties have favorable information, then the judge has sufficient information to rule that neither side wins or loses, i.e., Prob ( θ = 0) = α 2 . However, in situations where neither party has favorable information, the judge faces a decisional impasse and chooses to randomize between − 1 and 1 for a winner with probability 1 2 . We make this assumption to highlight the idea that lacking information can cause dispersion of outcomes for otherwise identical cases. In the full information benchmark, we can show that:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 3,
+        "text": "Proposition 1 The winning probability of party A and party B is both 1 2 (1 + α )(1 − α ) , where the variance of outcome is 1 − α 2 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 4,
+        "text": "The variability of case outcome in the full information benchmark reflects the fundamental uncertainty of the presence of favorable information for both parties.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 5,
+        "text": "Lawyers as Information Collector and Interpreter We now introduce the role of lawyers, referred to as “advocates\" in Dewatripont and Tirole (1999), into our framework. Each party in a lawsuit has the option to engage these advocates for the purpose of gathering and interpreting information that supports their “favorable cause.\" The likelihood of successfully making this favorable argument is quantified as φα , where φ represents the probability of the lawyer effectively finding and presenting the information, and α is the probability that the favorable information indeed exists for their client. 15 It’s important to note that 0 < φ < 1, indicating varying degrees of capability by different lawyers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 6,
+        "text": "Proposition 2 When both parties of the case were represented by lawyers of capability φ , the winning probability of either party is 1 2 (1+ αφ )(1 − αφ ) , where the variance of outcome is 1 − α 2 φ 2 . 14 We start with this symmetric setup for analytical clarity. In the later quantitative analysis, we allow the fudamental case strength to differe across the plaintiff and defendant, i.e. α A ̸ = α B 15 For example, φ can be the probability that this lawyer finds a precedent that resembles the current case in hand, while α is the probability that the precedent received a ruling that would be desirable for this lawyer’s client.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 8,
+        "text": "Prob ( θ = − 1) = [ φα |{z} A successful ( φ (1 − α ) + (1 − φ )) | {z } B unsuccessful + ( φ (1 − α ) + (1 − φ ))( φ (1 − α ) + (1 − φ )) | {z } Both unsuccessful / 2]",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 10,
+        "text": "The variation of the outcome 1 − α 2 φ 2 gives the intuition when φ gets larger, the variation of the legal outcome converges to full information benchmark 1 − α 2 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 11,
+        "text": "Heterogeneous Lawyer Capability We now introduce asymmetry in the lawyers’ capabilities. In particular, we assume that for any “power lawyer”, her φ H > φ . In addition, we assume when facing a power lawyer, the ability of regular lawyer to present justified evidence will deteriorate at a rate of δ ∈ (0 , 1), due to power lawyer’s better persuasion power. If the power lawyer works for party A and a regular lawyer for party B , we have",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 17,
+        "text": "This is probably not surprising, since the power lawyer now helps tilt the winning towards party A . However, more interestingly, below we show that the variation of judicial decision outcomes is also affected by the composition of lawyers involved.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 18,
+        "text": "Proposition 3 Compare one-sided power lawyer (power lawyer for A) with two regular lawyer case, it has lower variation in case outcome when information erosion is low ( δ → 0 ) and higher variation in case outcome when information advantage is low ( φ H → φ ) . However, this variability is always greater than that in cases where both parties have power lawyers representing them.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 22,
+        "text": "(1 − α 2 φ H φ (1 − δ )) − (1 − α 2 φ 2 ) − α 2 ( φ (1 − δ ) − φ H ) 2 = α 2 [ φ 2 − φ 2 H − φ 2 (1 − δ ) 2 + φ H φ (1 − δ )]",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 23,
+        "text": "The power lawyer plays a dual role in this asymmetric situation. First, they excel at collecting, interpreting, and presenting information, enabling judges to make more informed decisions. As demonstrated above, when φ H > φ , the variability in case outcomes with only one power lawyer involved is unequivocally lower than the variance observed when both parties are represented by regular lawyers, provided there is no information erosion ( δ = 0). Conversely, if the power lawyer’s success is primarily due to their ability to counter the rival lawyer’s arguments—represented by δ > 0 and φ H = φ —then case outcomes become more variable, as they rely on a diminished information environment. In both scenarios, the power lawyer systematically increases their client’s chances of winning. However, these outcomes have significantly different implications for the broader information environment when compared to the full-information benchmark. Using similar intuition, we can obtain the second part of Proposition 3, if both sides of the case were represented by power lawyers, the “information erosion effect” is avoided while the information advantage dominates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 24,
+        "text": "[1 − ( α ) 2 φ H φ (1 − δ )] − ( φ (1 − δ ) − φ H ) 2 α 2 | {z } one-sided power lawyer − [1 − ( αφ H ) 2 ] | {z } both power lawyers = [ φ H φ (1 − δ ) − ( φ (1 − δ )) 2 ] α 2 > 0",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 25,
+        "text": "Lawyers’ Social Connections Powerful lawyers can influence legal outcomes not only through their professional capabilities but also by leveraging their social connections. As explained in Section 2, this scenario is especially pertinent in China’s judicial system. To capture this, we further assume that powerful lawyers, by virtue of their connections, have a probability of γ ∈ (0 , 1) of winning a lawsuit for their clients regardless of information environment.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 28,
+        "text": "Proposition 4 The social connections possessed by power lawyers further elevate their clients’ chances of winning.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 6,
+        "section_name": "Model",
+        "paragraph_id": 29,
+        "text": "In this case, it is straight-forward to show the one-sided power lawyer would further strengthen the winning rate for party A:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 0,
+        "text": "In summary, our theoretical framework underscores the vital role of lawyers in information collection, interpretation, and advocacy within the judicial process. A power lawyer consistently achieves a higher winning rate against regular lawyers due to their ability (“knowhow”) to effectively advocate for their client while simultaneously countering opposing arguments. Interestingly, this ability to counter may offset the informational advantage of the power lawyer, contributing to more variations in judicial outcomes and widening gap from full information benchmark. If some of these lawyers also have social connections (“know-whom\"), as is the case according to our reduced form analysis, it will exacerbate their advantage but further weaken the information environment of judicial decisions. We next describe how the lawyers are allocated to legal cases such that we can assess the societal impact of the rise of power lawyers.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 1,
+        "text": "Lawyer Allocation We assume a large mass of firms of heterogeneous scale z . The probability of a business conflict, such as in lending and sales contract, occurs with probability λ ( z, z ′ ) for a pair of firms of scale z and z ′ . The outcome of the legal case is determined by the type of lawyers representing each firm – with power lawyer denoted by H and the regular lawyer denoted by L . The choice probability of each type of lawyer in the whole population of firms is denoted by p H ( z ) and p L ( z ). The winning side of the legal case obtains a transfer of τ ( z, z ′ ) from the losing side. Firms decide which type of lawyer to hire as their legal representative before any business",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 2,
+        "text": "conflicts occur. A power lawyer charges a higher fixed fee ( w H ) compared with a regular lawyer ( w L ). There is an IID type I extreme value shock impacting the choice of the firms. We use the notation ξ W ij to denote a firm’s winning probability when it hires a lawyer of type i with its rival’s lawyer of type j , i, j ∈{ H, L } . We can similarly define the losing probability ξ L ij . 16 The expected payoff of hiring a power lawyer legal representative is",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 3,
+        "text": "u H ( z ) = Z z ′ p H ( z ′ )[ ξ W HH ( τ ( z, z ′ )) + ξ L HH ( − τ ( z, z ′ ))] + p L ( z ′ )[ ξ W HL ( τ ( z, z ′ )) + ξ L HL ( − τ ( z, z ′ ))] dμ ( z ′ | z ) = Z z ′ τ ( z, z ′ ) h p H ( z ′ )( ξ W HH − ξ L HH ) + p L ( z ′ )( ξ W HL − ξ L HL ) i dμ ( z ′ | z )",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 4,
+        "text": "where μ ( z ′ | z ) is the conditional density of size for the potential rival firm. Similarly, the expected payoff of hiring a regular lawyer legal representative is",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 5,
+        "text": "u L ( z ) = Z z ′ τ ( z, z ′ ) h p H ( z ′ )( ξ W LH − ξ L LH ) + p L ( z ′ )( ξ W LL − ξ L LL ) i dμ ( z ′ | z )",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 7,
+        "text": "u H ( z ) − u L ( z ) = Z z ′ [ p H ( z ′ )( ξ W HH − ξ L HH ) − p L ( z ′ )( ξ W LL − ξ L LL ) + p L ( z ′ )( ξ W HL − ξ L HL ) − p H ( z ′ )( ξ W LH − ξ L LH )] τ ( z, z ′ ) dμ ( z ′ | z ) (2)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 8,
+        "text": "Given the symmetry of our judicial setup, we have ξ W HL = ξ L LH , ξ W LH = ξ L HL , ξ W HH = ξ L HH , ξ W LL = ξ L LL and can simplify the above 17 :",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 9,
+        "text": "u H ( z ) − u L ( z ) = Z z ′ τ ( z, z ′ ) dμ ( z ′ | z ) | {z } τ ( z ) ( ξ W HL − ξ W LH ) = τ ( z )( ξ W HL − ξ W LH )",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 10,
+        "text": "Taking into account the chance of having a business legal conflict λ ( z ) = R z ′ λ ( z, z ′ ) dμ ( z ), the probability of choosing a power lawyer for firm of type z is simply",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 11,
+        "text": "p H ( z ; ̃ w ) = exp [ λ ( z ) τ ( z )( ξ W HL − ξ W LH ) − ̃ w ] 1 + exp [ λ ( z ) τ ( z )( ξ W HL − ξ W LH ) − ̃ w ]",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 12,
+        "text": "which ̃ w = w H − w L is the wage premium of hiring a power lawyer legal counsel. In addition, 16 We do not impose ξ L = 1 − ξ H since we allowed the case to have a draw in our model of jurisdiction. 17 In our quantitative section 6, we allow the fundamental case strength to differ from plaintiff and defendant and use the general setup in equation 2.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 7,
+        "section_name": "Discussion",
+        "paragraph_id": 17,
+        "text": "If the short-run relative supply of high type lawyer is inelastic at S H , the wage premium ̃ w is determined by D H ( ̃ w ) = S H .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 8,
+        "section_name": "Societal Impacts of Power Lawyers",
+        "paragraph_id": 0,
+        "text": "As outlined in Section 5, the role of high-powered lawyers in society can be seen from two distinct perspectives. Firstly, a high-powered lawyer can articulate the factual and legal underpinnings of a case more effectively. This aids judges in making well-informed decisions. For example, a skilled lawyer can uncover judicial decisions for similar cases in the past, reducing decision randomness and leading to more consistent rulings in similar cases. In the language of our model, when both sides of the case were represented by power lawyers and φ H → 1, proposition 2 shows that the variance of outcomes for “identical cases” converges to the full information benchmark 1 − α 2 . However, zooming out from the lawyer-client relationship, the societal impacts of powerful lawyers are more ambiguous. Lawyers aim to benefit their clients, not the judges. Therefore, an imbalance in lawyer power can systematically skew judicial decisions in favor of the more powerful lawyer’s client. Proposition 3 illustrates this, showing how a power lawyer can tilt the winning probability by ( φ − φ H ) α , in addition to the information benefit reflected in 1 − α 2 φ H φ . This ambiguity might stem from the power lawyer’s expertise in handling information (reflected in φ H ). However, Proposition 4 reveals that social connections, or “know who,\" can also skew judicial decisions without adding informational value. Consequently, the level of power asymmetry between lawyers, and the extent to which such asymmetry is driven by social connections ( γ ) versus professional capability ( φ H ), are key in determining the potential biases that can be created by power lawyers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 9,
+        "section_name": "Identification",
+        "paragraph_id": 0,
+        "text": "The central concept of model identification involves leveraging both the first-order and secondorder moments of judicial outcomes, particularly for nearly identical cases. As demonstrated in Section 4.1, RD lawyers exhibit a systematically higher probability of winning in otherwise identical cases. This phenomenon is a function of the parameters φ H , φ , and γ , as illustrated by the equation:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 9,
+        "section_name": "Identification",
+        "paragraph_id": 2,
+        "text": "Furthermore, as discussed in Proposition 2, the variability in judicial decision outcomes for a class of identical cases is also revealing. For instance, the variance in decision outcomes for identical cases represented by either two regular lawyers or two power lawyers is 1 − α 2 φ 2 and 1 − α 2 φ 2 H , respectively. This difference notably isolates the ’capability’ factor ( φ H − φ ) due to symmetry. Using Proposition 4, we can express the variability of legal outcomes in cases represented by one power lawyer as: (1 − α 2 φ H φ ) − ( E [ θ ]) 2",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 9,
+        "section_name": "Identification",
+        "paragraph_id": 3,
+        "text": "These moments form the foundation of identifying the influence of lawyer power in judicial processes, conditional on the same case type (represented by α ). Figure 4 visualizes our identification argument in a reduced form way, by dividing the cases into three categories based on lawyer representations: (a) RD lawyer vs. RD lawyer; (b) RD lawyer vs. non-RD lawyer or non-RD lawyer vs. RD lawyer; and (c) non-RD lawyer vs. non-RD lawyer. In category (a), compared to (c), the difference is driven by the information advantage from φ H . In contrast, when comparing category (b) to (c), there exists both better information and also a systematic bias in winning rate γ . Each horizontal line is a group of identical cases, and is divided into three segments corresponding to the three categories above. The darkness of each line segment reflects how large the dispersion in rulings is for the corresponding cases. As we can see, as we move from (a) to (b) to (c), the average color keeps getting darker, indicating increases in dispersion (each pairwise comparison is statistically significant at the 1% level, as shown in Appendix Table A.7). This is consistent with our model prediction in Proposition 3. Also note that if γ were dominant,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 9,
+        "section_name": "Identification",
+        "paragraph_id": 4,
+        "text": "we would have the dispersion in column (b) reduced even lower than that in column (a) – the observed ordering is not consistent with this extreme case and provides indicative evidence that φ H and γ both play a quantitatively important role. This echoes our reduced-form evidence presented in section 4.2. We next proceed to structurally estimate all of these parameters to match both our reduced-form estimates and the second-order moments.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 10,
+        "section_name": "Estimation",
+        "paragraph_id": 0,
+        "text": "Method of Simulated Moments There are five parameters to be estimated. These include φ and φ H , representing the capability of regular and RD lawyer, respectively; γ > 1 2 representing RD lawyer’s social connection effect; and μ α and σ α representing the mean and variance of α across case clusters.Our parameter set is thus defined as Θ = { φ, φ H , γ, μ α , σ α } . We have 368 clusters of cases in total. For each cluster of nearly identical cases, we put them into four categories c = 1 , .., 4, where 1) both sides represented by power lawyers, 2) both sides represented by regular lawyers, 3) only plaintiff represented by power lawyers, 4) only defendant represented by power lawyers. For each case cluster i and category, we then calculate the sample analog of the mean winning rate m ic and variance wining rate v ic . Together, we define moment vector M = { m ic , v ic } , c = 1 , .., 4 , i = 1 .., 368, which contains 8 elements for each cluster i . For a given set of parameters Θ, we use S = 500 simulations to calculate the model moments ˆ M (Θ). We then search for the parameters that minimizes the distance between the model simulated moments, ˆ M (Θ) and the empirical moments, M ,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 10,
+        "section_name": "Estimation",
+        "paragraph_id": 3,
+        "text": "Estimation Results Table 7 reports the value of our structural parameters. We find that, consistent with our reduced-form results, the power lawyers have a higher likelihood φ H = 0 . 658 in collecting and articulating favorable information than a regular lawyer with φ = 0 . 403. This difference is quite substantial, indicating an increase of likelihood of almost a third. In addition, we also find that γ = 0 . 582, which is 8% higher than a fair coin flip. Again, consistent with our reduced-form, the dispersion of case outcomes gives a consistent message that while power lawyer could influence judicial outcome via their connections γ > 0 . 5, its quantitative magnitude 0 . 582",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 10,
+        "section_name": "Estimation",
+        "paragraph_id": 5,
+        "text": "Information-Bias Tradeoff Using the model estimates, we can systematically compare the changes in the average winning rate of a plaintiff as well as the reduction of variance in judicial outcomes. Consider moving from a case where both sides were regular lawyers to a case where one side were represented by power lawyer. In this case, the power lawyer could sway the winning rate by about 13%, however, the dispersion of the winning rate also goes down by 0 . 15. Half of the decline in this reduction reflects the better ability of power lawyer to search for evidences and articulate the reasons – the channel of better information. The rest is a mechanical reduction in the variation of outcomes since one side can consistently win with better odds due to both high ability and connections. In addition to creating a tradeoff between information and bias, to the extent that RD lawyers may sort into serving richer and more powerful clients, they generate another layer of tradeoff by enabling these socio-economically more advanced groups to “buy justice.\" To quantify this equity implication, we therefore investigate the matching between RD lawyers and clients. As shown in Table 8, in criminal lawsuits, individuals with high socioeconomic status are 200% more likely to afford RD lawyers, and individuals who attended junior college or above were 80% more likely to afford RD lawyers. In commercial lawsuits, firms with above-median registered capital amounts are 150% more likely to be represented by RD lawyers. Given that these rich individuals and big corporations are likely already among the advantaged groups in society, the fact that they are being disproportionately served by power lawyers could systematically exacerbate socio-economic inequalities. While our current model does not include this sorting process, we plan to extend our framework to incorporate this for future empirical and counterfactual policy analysis.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 11,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "In this paper, we study the roles of lawyers in shaping judicial and economic outcomes, by investigating the unique group of revolving-door (RD) lawyers in China, who quit their judgeship to practice as lawyers. Compiling comprehensive administrative data on the universes of judges, lawyers, law firms, litigants, and lawsuits in China from 2014 to 2021, we are able to identify each RD lawyer, and construct credible measures of their legal expertise, personal connections, and performances both as judges and as lawyers. Based on this data infrastructure, we document",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 11,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "a series of new descriptive patterns about China’s legal profession, and present three sets of empirical results. First, we show that, for otherwise identical lawsuits, such as well-defined contract disputes with quantitatively matched contractual terms, being represented by an RD lawyer delivers significantly more desirable judicial outcomes to their clients, which likely reflects a lower bound for power lawyer premium. Using two alternative empirical strategies — an event study design exploiting the new arrival of RD lawyers at law firms, and an instrumental variable approach exploiting the weekly caseload of RD lawyers, we demonstrate that this effect cannot be explained by the endogenous selection of cases based on unobservable characteristics. This effect also remains even after controlling for court-by-litigant fixed effects, indicating that it is not driven by powerful clients directly exerting influence in court, but indeed comes from the influence of lawyer representation. Second, our evidence suggests that the premium of RD lawyers comes from both “know how\" and “know who.\" We find that RD lawyers perform better even at away courts where they did not serve as judges and do not have much connection, and this premium is stronger among those who hold graduate degrees in law or specialize in the same legal domain as judges and lawyers, pointing to the role of legal knowledge in generating lawyer premium. Nevertheless, these RD lawyers further become substantially more effective when going back to their home courts to argue in front of their former colleagues, suggesting that personal connections also play important roles in shaping lawyer value added. Third, guided by a conceptual framework that extends Dewatripont and Tirole (1999), we empirically examine the tradeoffs presented by RD lawyers. By comparing otherwise identical cases represented by two RD lawyers vs. those represented by two non-RD lawyers, we show that ruling dispersion is lower in the former group, highlighting the higher quality information presented by good lawyers. In contrast, when an RD lawyer faces a non-RD lawyer, ruling dispersion increases compared to when identical cases are represented by two non-RD lawyers, suggesting that biases arising from asymmetric lawyer influences dominate the improvements in information quality in this setting. Furthermore, we show that RD lawyers disproportionately serve rich individuals and big corporations, so the information biases they create would also systematically exacerbate socio-economic inequalities. Through the lens of our model, we simulate various policy counterfactuals aimed at reducing the biases generated by powerful lawyers. Taken together, our paper provides among the first systematic empirical evidence on how",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1510,
+        "section_id": 11,
+        "section_name": "Conclusion",
+        "paragraph_id": 2,
+        "text": "lawyers affect justice and inequality through both their legal knowledge and personal connections, and sheds broader light on the operations of the legal profession, an important yet underresearched modern service sector. An interesting question is, in the second-best world, whether the legal profession would alleviate or exacerbate other existing economic distortions. Answering this question is beyond the scope of the current paper, but we consider it a promising direction for future research.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

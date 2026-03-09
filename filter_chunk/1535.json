@@ -1,0 +1,1245 @@
+[
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Group identities are a fundamental determinant of voting behavior, social preferences, and conflict ( Alesina and Glaeser , 2004 , Bonomi et al. , 2021 ). In the United States, racial identities have been central to cultural and political conflicts, and continue to influence the contemporary political debate. What explains the geography of racial preferences in the US? In this paper, we investigate the role of the Civil War, a critical juncture in the history of race relations, yet one whose implications on political identities and racial conflict have received little attention. 1 During the Civil War, more than three million Americans fought over the abolition of slavery. The war led to the Emancipation Proclamation and the ratification of civil rights for Black Americans, redefining the country’s racial landscape. In their defeat, white Southerners in former Confederate states developed a social identity centered around the war’s heritage ( Blight , 2001 ; Cox , 2019 ). Over the next generations, fighting continued in defense of segregationist policies and hierarchical racial norms. Confederate imagery often accompanied these fights, suggesting a role for the war’s collective memory in sustaining and legitimizing discriminatory racial norms. 2 Today, public display of confederate imagery continues to fuel an intense political debate ( Forman , 1991 ; Coski , 2006 ; Domby , 2020 ; Cox , 2021 ). 3",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "1 Existing quantitative research has sought to explain the geography of racial identities and conflict by focusing on the role of slavery ( Acharya et al. , 2016 ), migration ( Calderon et al. , 2019 ; Giuliano and Tabellini , 2020 ; Bazzi et al. , 2023a , b ), and the media ( Ang , 2023 ; Esposito et al. , 2023 ; Ottinger and Winkler , 2022 ). The Civil War’s role in shaping race relations has largely been the focus of historians’ qualitative analyses ( Blight , 2001 ; Cox , 2019 ). Quantitative studies on the war have examined its effects on leadership and incentives to fight ( Costa and Kahn , 2003 ; Hall et al. , 2019 ; Dippel and Heblich , 2021 ), as well as the war’s political ( Weaver , 2022 ), and economic and social consequences ( Engerman , 1966 ; Goldin and Lewis , 1975 ; Ransom and Sutch , 1975 , 2001 ; Feigenbaum et al. , 2022 ; Dupraz and Ferrara , 2021 ), focusing largely on the North. 2 For example, the Dixiecrat Party, a segregationist political party that arose in 1948, chose the Confederate flag as its symbol ( Lemmon , 1951 ). 3 For evidence of the importance of discriminatory institutions for Black Americans’ long-run",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "A defining feature of the American Civil War is the magnitude of human loss, particularly in the South. In the Confederate Army, composed of 1.1 million young white men, over 300,000 soldiers lost their lives, and a larger number were injured and traumatized by the brutality of the war experience ( Hacker , 2011 ). While most Southern towns were far from the battleground, the mass of fallen soldiers and the intensity of the battle experience deeply affected Southern communities ( Faust , 2009 ). 4 We argue that these experiences played a key role in determining the geography of racial politics and violence across the South. In the aftermath of the war, white Southern communities blamed Northerners and newly emancipated Black Americans for their suffering. Many veterans bonded over their shared traumatic experiences and continued fighting for the maintenance of racial hierarchies both in the ballots and through terrorist groups like the Ku Klux Klan (KKK). The families of the fallen gathered in cemeteries to celebrate their relatives and portray them as honorable men who fought for a just cause. 5 Subsequent generations fueled this myth and reinforced the connection between Confederate heritage and racial segregation by funding memorial groups and erecting monuments of Confederate heroes ( Blight , 2001 ). To capture this phenomenon, we study the effect of communities’ exposure to the war, through the battle experience of their soldiers , on the geography of racial politics and violence in the US South. While the Civil War represents one of the key events in US history, the lack of comprehensive information on the Confederate army has prevented the quantitative study of its effects in the South. 6 We overcome this limitation using an untapped source of archival material that includes over one hundred million digitized documents from muster rolls, enlistment records, payrolls, hospital registers, and Union prison camps documents. 7 With these documents, we identify the universe of soldiers enlisted in",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "economic outcomes see Sacerdote ( 2005 ); Althoff and Reichardt ( 2022 ). 4 Only 7 percent of the Southern population lived within 5 km of any Civil War battle. If we restrict our attention to large battles (involving at least 10,000 Confederate soldiers), this figure reduces to 3 percent. These calculations are based on original data described in Appendix A.1 . 5 This narrative is often referred to as the Lost Cause, first coined in 1866. The narrative claims that the primary cause of the Civil War was not slavery, and asserts, rather, that the Confederate States fought for a just and heroic cause to defend the Southern way of life against Northern aggression. 6 The most notable quantitative analysis of the Confederate army is Hall et al. ( 2019 ). The authors use digitized State rosters from the National Archive’s Compiled Records to study the determinants of volunteering. However, as described by the authors, “these rosters contain a limited set of information about soldiers.” No information about soldiers’ battle participation is reported, and soldiers’ residences are only available at the state level, making this database unsuited to the analysis of the local effect of the Civil War. 7 These documents have been digitized and made public by Fold3, a company that archives and distributes military data. See Appendix A.1 for the data description.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "the Confederate army. We obtain information on 1,087,906 soldiers, including their enlistment regiment and the battles they fought. Using these documents, we are able to allocate 637,943 of these soldiers to 5,772 towns based on their likely residence before the war. 8 To measure a community’s exposure to the Civil War through its soldiers’ battle experience, we calculate the proportion of soldiers in a given town who fought in each battle. We then compute the average battle participation for each town weighted by the share of Confederate casualties in each battle. This weighted average quantifies the town’s exposure to the war by considering both the participation of its soldiers in different battles and the intensity of these battles. This measure (henceforth battle exposure ) captures the intensity of the war experienced by the average soldier in each town. Our empirical strategy compares changes in outcomes before and after the war between towns with different battle exposure. To guarantee that our measure captures only the randomness of war instead of town characteristics that could be related to the politics of race, we proceed as follows. First, we only consider large battles (over 10,000 Confederate soldiers), where the risk-taking behavior of soldiers from a few towns is unlikely to drive the overall number of casualties. Second, we restrict our attention to towns in the Confederacy and battles that occurred after the 16th of April of 1862, when the conscription order was issued. 9 , 10 By doing this, we avoid the possibility that individual soldiers’ characteristics determine selection into our sample. Finally, we only use information on soldiers’ first unit of enlistment to eliminate the possibility that our results are affected by strategic decisions to reassign soldiers to regiments based on their combat performance. Our main specification exploits residual variation in battle exposure after conditioning on factors that determine regiments’ battle experience that may also be correlated with the outcomes of interest. Because regiments were raised at the state level, we control for state by year fixed effects. Further, because most battles were fought in the Eastern Theater, 11 and the distance of soldiers’ residences to battles influenced",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "8 Figure A.1 shows the map of all towns and Figure A.2 shows the distribution of soldiers’ residence. In A.1 we describe how we use the digitized documents to build our dataset. 9 Alabama, Arkansas, Florida, Georgia, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, Texas, and Virginia formed the Confederacy. Some white citizens in Delaware, Maryland, Kentucky, Missouri, and West Virginia (known as Border states) enlisted in the Confederate army, but these states never instituted conscription. 10 After the 16th of April of 1862, conscription required that all white men aged between 18 and 35 living in the Confederacy enlist in the army. Before that date, the Confederate army was composed only of volunteers. Exemptions were made for strategic sectors and individuals owning 20 or more slaves. See Section A.3 for the full list of exemptions. 11 The Eastern Theater is defined by operations conducted in Virginia, West Virginia, Maryland,",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "their chances of participation, we control for the share of soldiers in each town sent to the Eastern Theater, as well as each town’s average distance to battles, both multiplied by year fixed effects. 12 Additionally, because differences in pre-conscription volunteer rates across towns could influence the allocation of soldiers to battles, we control for the share of volunteers in each town times year fixed effects. 13 Finally, while most local communities in the South experienced no or limited physical damage, a few battles took place in Southern towns. Because the local population might have been involved in the town’s defense and because these towns could have characteristics that made them strategically relevant, we condition on direct exposure to war battles. 14 Our empirical strategy is a generalized difference-in-differences (DiD) comparing, before and after the Civil War, towns with different battle exposure, conditioning on the above-described covariates. Under the assumption that, conditional on these controls, trends in outcomes would have been the same across towns with different battle exposure in the absence of war, we identify the causal effect of battle exposure on the outcomes of interest. In support of the parallel trends assumption, we show that after conditioning on these covariates, battle exposure is independent, both in levels and changes, of a large set of observables reflecting economic, political, and demographic conditions measured before the war. Turning to outcomes, we start by studying the effects on presidential elections, focusing on the vote share for the Democratic party between 1840 and 1944, when the Black population was disenfranchised either because of slavery or discriminatory laws (i.e., Jim Crow laws), and the Democratic party supported racially discriminatory policies (e.g., slavery, segregation, and disenfranchisement). 15 We find that a one standard deviation increase in battle exposure leads to 4.6 additional percentage points in favor of the Democratic party. In a town with an average battle exposure",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "Pennsylvania, the District of Columbia, and North Carolina. 12 The battles in our sample are depicted in Figure A.5 13 In Section 2.1 , we describe how soldiers were selected to participate in battles. We show that town characteristics do not predict battle participation, except for distance to battle and the share of volunteers. 14 We also explicitly control for Sherman’s March, where Union Army General Sherman marched through Georgia in 1864 directly targeting local capital stock ( Feigenbaum et al. , 2022 ). 15 During slavery, Black people were not allowed to vote. After the Civil War, until the 1964 Civil Rights Act, Southern States restricted Black citizens’ access to the ballot, effectively disenfranchising the Black population. The only exceptions are the 1872 and 1876 elections when Union troops enforced Black citizens’ right to vote. For this reason, we exclude these two elections from our baseline specification. Starting with the 1948 election, parties began converging on their position on racial issues ( Kuziemko and Washington , 2018 ). We, therefore, stop our baseline analysis at the 1944 election. More information on the political history of the South can be found in Section 2.2 .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 8,
+        "text": "compared to a counterfactual town not exposed to the war, the Democratic party vote share is 9.4 percentage points higher. Importantly, the effect of battle exposure does not change when controlling for the share of enslaved in 1860 times year fixed effects, a key determinant of political preferences throughout the twentieth century ( Acharya et al. , 2016 ). This result shows that support for segregation caused by the Civil War is orthogonal to anti-Black sentiments rooted in the historical dependence on slavery. When inspecting the dynamic of the effect in an event study framework, we see no differences in trends before the war and an immediate and large jump in the first election after the war (1868), which persists throughout the whole period of analysis. While our study focuses on the period when the Democratic Party unequivocally supported segregation (until 1944), we also investigate the dynamics during the 1948-1964 period, when the Democratic Party started opening towards the Civil Rights movement and Black citizens were still disenfranchised. In line with the defection of racially conservative white voters from the Democratic party ( Kuziemko and Washington , 2018 ), we find that, during this period, the effects become smaller and statistically insignificant. To provide additional evidence that battle exposure boosted support for racially discriminatory policies, we show its effect on two additional political outcomes. First, the vote share in favor of the Dixiecrat Party, a segregationist political party that arose during the 1948 Philadelphia nomination convention of the Democratic Party in response to Truman’s initiative to desegregate the Armed Forces in the same year ( Lemmon , 1951 ). 16 Second, Congress members’ roll-call votes on 523 laws that we identify as concerning racial issues. Estimates based on these outcomes provide a consistent picture indicating a strong effect of battle exposure on political support for segregation among communities most affected by the Civil War. We then turn to the analysis of one of the most dreadful aspects of racial hate in the United States: anti-Black violence. We build a new dataset on lynchings from 1865 to 1965. We integrate original data collected from historical newspapers with existing data from Tolnay and Beck ( 1995 ) and Bailey and Tolnay ( 2015 ), building the most complete dataset on lynchings to date. 17 We find that lynchings are 20 percent more likely in towns with an additional standard deviation of battle exposure. Again, we find that controlling for the share of the enslaved population before the war does",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 9,
+        "text": "16 July 26, 1948, the Democratic president Harry Truman issued the Executive Order 9981 ordering the desegregation of the armed forces. 17 We collect information between 1865 and 1881 combining automated search and manual verification from local newspapers in Chronicling America and Newspapers.com. We identify an additional 392 lynchings between 1865 and 1881. Section A.5 provides additional details.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 10,
+        "text": "not offset our estimates. To explain these results, we advance the hypothesis that battle exposure led to the formation of a social identity that revolved around the war’s heritage, a Confederate culture that sustained segregationist racial norms and violence against Black Americans. To investigate this hypothesis, we first analyze what aspects of the battle experience shaped communities’ internalization of this cultural and political tradition comparing towns that suffered similar casualties but whose soldiers fought in battles with different characteristics. We find that a large part of the effect is driven by the largest and most well-known battles, such as Gettysburg, that stand out for their symbolic meaning and are part of the collective memory. We also find that, although the Union Army deployed Black soldiers only on a few occasions, most of the effect is driven by these battles. This indicates that direct combat against Black Americans facilitated their identification as the enemy among white Confederates. These findings suggest the importance of cultural channels while ruling out the possibility that the effects are solely driven by the number of casualties. Next, we explore the process of memorialization, a key step in the construction of collective identities ( Anderson , 2020 ; Zubrzycki and Wo ́zny , 2020 ). We begin by studying the role of cemeteries, where civilians in the home communities of fallen soldiers gathered to celebrate their relatives’ sacrifices. We find that the effect is larger in towns with Confederate cemeteries. Next, we study the use of distinctively Confederate names to capture communities’ cultural attachment to the war. We show that battle exposure led to an immediate increase in the number of newly-born white males named after Confederate leaders. These results indicate the importance of publicly recognized traumatic events and their memorialization for the emergence of group identity. We bolster the interpretation that the war’s effect is driven by enhanced social identity and cultural attachment to the Confederacy by studying the role of alternative mechanisms, such as the demographic or economic effects of the war. First, we show that the effect is not due to changes in the relative size of the Black population induced by the war ( Blumer , 1958 ; Blalock , 1967 ), and it is not complementary with the size of the enslaved population before the War ( Acharya et al. , 2018 ). This analysis also discards the possibility that demographic changes might have led to an increase in the perceived political threat ( Soule , 1992 ; Testa and Williams , 2023 ) and further supports our results. Second, we show that migration is not driving our results, indicating that family transmission and local socialization, rather than selective migration, are the key channels of transmission. Third, we analyze the direct effect",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 11,
+        "text": "of the war on economic outcomes. Our findings indicate an increase in income per capita for the white population. Moreover, we find that controlling for changes in economic conditions does not affect our estimates. These results suggest that the war’s effect is not due to an increase in economic competition between the Black and white populations ( Raper , 2017 ; Tolnay and Beck , 1992 ; Christian , 2017 ). Lastly, we analyze the role of the slave-owning elite. We find that the effect of battle exposure is independent of the size of the ex-slaveowning community and the presence of large planters, one of the key factors that shaped support for slavery in the antebellum period ( Masera and Rosenberg , 2021 ). We then turn to the analysis of channels of transmission over time. We find that battle exposure increased the presence of organizations whose goal is the preservation and diffusion of Confederate memory, such as the Daughters of the Confederacy ( Cox , 2019 ) and white supremacist terrorist organizations such as the Ku Klux Klan ( Davis , 2023 ). These associations actively promoted the construction of Confederate soldiers’ memorials fostering a social environment conducive to the transmission of racially discriminatory social norms. These results show a strong cultural attachment to the Confederacy and indicate the importance of transmission channels. Finally, we investigate the present-day legacy of the war. We find that today, communities more exposed to battles during the Civil War have a larger number of hate crimes against Black Americans, are more likely to host white supremacist rallies, and have more police killings of Black people. These results indicate that the war’s heritage is still entrenched in local communities, shaping identity politics and racial conflict to this day. This paper contributes to several strands of the literature. First, our analysis elucidates new aspects of the origins and geography of anti-Black attitudes and behavior in the US South. A large literature has sought to explain variation in support for segregation and violence against Black Americans. Previous works have emphasized different aspects of the theory of racial threat ( Blumer , 1958 ; Blalock , 1967 ), including labor market competition ( Raper , 2017 ; Beck and Tolnay , 1992 ; Tolnay et al. , 1992 ; Christian , 2017 ), group size ( Acharya et al. , 2018 ), political threat ( Soule , 1992 ; Hagen et al. , 2013 ; Logan , 2023 ; Testa and Williams , 2023 ) and its propagation through the media ( Ang , 2023 ; Esposito et al. , 2023 ; Ottinger and Winkler , 2022 ), migration ( Calderon et al. , 2019 ; Giuliano and Tabellini , 2020 ; Bazzi et al. , 2023a , b ), and segregation ( Cook et al. , 2018 ). We contribute to this literature by providing the first analysis of the effect of the Civil War on the support for segregation and anti-Black",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 12,
+        "text": "violence. 18 Moreover, the present-day effects of the war experience on hate crimes, police killings, and white supremacist political engagement also connect us to the literature seeking to understand contemporary identity politics ( Noury and Roland , 2020 ; Gennaioli and Tabellini , 2023 ). Our results shed new light on the historical origins of racial norms and identity politics in the US South. Second, our results contribute to a growing literature studying the cultural and political consequences of war ( Dell and Querubin , 2018 ; Tur-Prats and Valencia Caicedo , 2020 ; Acemoglu et al. , 2022 ; Koenig , 2023 ; Carozzi et al. , 2023 ; Cag ́e et al. , 2023 ; Grosjean et al. , 2023 ; De Juan et al. , 2024 ). In this literature, we are closest to the papers studying the US Civil War. While this literature has focused on leadership and incentives to fight ( Costa and Kahn , 2003 ; Hall et al. , 2019 ; Dippel and Heblich , 2021 ), as well as the war’s economic ( Engerman , 1966 ; Goldin and Lewis , 1975 ; Ransom and Sutch , 1975 , 2001 ; Feigenbaum et al. , 2022 ), social ( Dupraz and Ferrara , 2021 ) and health ( Costa et al. , 2018 ) consequences, overwhelmingly in the North, we focus on an unexplored aspect of the war: its role in determining racial politics and violence. Finally, our analysis shows that the war’s effects persist within communities for many generations through the development of memorial organizations, monuments, and within-family values transmission. These results more broadly connect us to the literature analyzing the long-term legacy of historical events and the persistence of cultural traits and discrimination ( Bisin and Verdier , 2001 ; Nunn and Wantchekon , 2011 ; Voigtl ̈ander and Voth , 2012 ; Becker and Pascali , 2019 ). While recent contributions have provided evidence of horizontal and vertical transmission through interpersonal socialization and migration ( Miho et al. , 2023 ; Bazzi et al. , 2023a ), our analysis highlights the role of symbols and grassroots organizations in shaping the dynamic of cultural transmission and contributes to a growing interdisciplinary literature on norm dynamics and collective memory ( Fouka and Voth , 2023 ; Zubrzycki and Wo ́zny , 2020 ; Gelfand et al. , 2024 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 0,
+        "text": "The decades before the Civil War were characterized by political tensions over the future of slavery, which had been abolished in most of the Union but was still legal 18 These results also connect us to the large literature on ethnic conflict and violence against minorities. See, for example, Blattman and Miguel ( 2010 ); Caselli and Coleman ( 2013 ); Jha ( 2013 ); Grosfeld et al. ( 2020 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 1,
+        "text": "in 15 Southern states. In 1860, the election of the Republican presidential nominee, Abraham Lincoln, precipitated a sectional crisis, leading 11 Southern states to secede. The move was motivated by the perceived threat among the Southern planter elite that the Lincoln administration posed to the future of slavery. The Georgia Secession Convention’s concluding remarks clarify this point: “The people of Georgia [...] refuse to commit their own to the rulers whom the North offers us. Why? Because by their declared principles and policy they have outlawed $ 3,000,000,000 of our property.” ( Smith , 1861 ). Between December 1860 and February 1861, South Carolina, Mississippi, Florida, Alabama, Georgia, Louisiana, and Texas seceded from the Union to form the Confederate States of America. On April 12th, 1861 the Battle of Fort Sumter marked the starting point of the Civil War and induced Virginia, Arkansas, Tennessee, and North Carolina to secede and join the Confederacy. 19 The war involved 3.3 million soldiers and led to an estimated 750,000 fatalities ( Hacker , 2011 ), making it one of the most traumatic events in the country’s history.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 2,
+        "text": "Recruitment and Military Organization. In the war’s early months, the Confederacy relied on a few professional soldiers and an initial wave of volunteers. On 6 March 1861, the Provisional Congress allowed the Confederate President, Jefferson Davis, to accept 100,000 volunteers for one year. Unsuccessful attempts to make volunteers reenlist for an additional year led the Confederate Congress to pass the First Conscription Act in April 1862, enlisting all white men aged 18 to 35 for three years. The Act was amended in September of the same year, raising the maximum age to 45 years and, in 1864, to 50. 20 Recruitment was organized at the state level. The smallest unit in the Confederate army, the company, consisted of 100 men recruited from the same or neighboring towns ( Shaw , 1962 ). Ten companies from the same state formed a regiment. We use digitized military records to create a database on the universe of Confederate soldiers. We obtain information on 1,087,906 soldiers, including their enlistment regiment and the battles they fought. We allocate 637,943 soldiers to 5,772 towns based on their residence before the war. This new data can depict all regiments’ geographical origin and war history. Figure A.3 shows, as an example, the recruitment",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 3,
+        "text": "19 The border states of Delaware, Maryland, Kentucky, Missouri, and the newly formed state of West Virginia, while slave states, did not secede. In these states, the population enlisted both in the Union and the Confederate Army. The remaining 20 States formed the Union. 20 Large slaveowners (above 20 slaves) were exempted from service. Other exemptions existed for strategic sectors, including railroad and river workers, civil officials, telegraph operators, miners, pharmacists, teachers, ministers, textile factory workers, and hospital attendants.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 4,
+        "text": "pool of the 11th and 12th infantry of North Carolina. This figure shows that soldiers from neighboring towns could be assigned to different regiments. Because regiments constituted the basic maneuver unit of the Civil War, soldiers’ regiment assignment had important consequences for their war experience. For example, in September 1862, the 12th infantry of North Carolina was operating north of Richmond, where the Union attack led to the most deadly day of the war in the Battle of Antietam. Instead, in the same period, the 11th was sent East of Richmond to defend the Virginia coast, where the Union army eventually gave up on its offensive. To systematically investigate the geographic proximity of members of the same regiments, we measure regiments’ geographic concentration using a Herfindahl–Hirschman index. This index assesses the diversity of soldiers’ city origins within regiments. Figure A.4 indicates significant geographic fragmentation across the sample, with the average regiment having an HHI index of 0.07. 21",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 5,
+        "text": "Casualties. The war’s largest and most deadly battles were fought in the Eastern Theater, as shown in Figure A.5 , which depicts the 65 largest battles of the war. Together, these battles account for about 70 percent the overall casualties in the Confederacy. Casualties were almost entirely restricted to soldiers as most Southern communities were not directly involved in the war, experiencing no or limited physical damage. 22 However, these communities were not spared from the trauma of the war experience. A large number of soldiers never returned, and when they did, they carried with them physical and psychological wounds. Because of the lack of medical knowledge, injuries often led to amputations and long-term disabilities ( Dean Jr , 1991 ). The best estimates suggest that 27 percent of Confederate soldiers died as a direct consequence of the war ( Hacker , 2011 ) and an even larger share was wounded.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 6,
+        "text": "Soldiers’ Battle Participation. Decisions that determined soldiers’ participation in battles were the result of consultations between generals, state governors, and the Department of War ( Duncan , 1938 ). Given the rudimentary transportation system in the US South, the location of the towns of origin was a major determinant of soldiers’ deployment. As shown in Figure A.6 , towns’ distance to battle predicts soldiers’ participation. However, distance cannot perfectly predict battle participation due to the extreme diversity in the geographic origin of soldiers involved in each battle. For",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 7,
+        "text": "21 HHI ranges from 0 to 1 where 1 implies that the regiment was recruited from a single city. 22 Notable exceptions include Sherman’s March through Georgia in 1864, which directly targeted local infrastructure, but did not target the local population ( Feigenbaum et al. , 2022 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 3,
+        "section_name": "The Civil War and Battle Participation",
+        "paragraph_id": 8,
+        "text": "example, if we focus on the 65 largest battles of the war, on average, over 2,000 towns contributed soldiers. The average distance from enlistment towns to the battlefield is 700 km, and the average battle catchment area was 1,292,669 square km wide, about 1.85 times larger than Texas. The other key regimental characteristic known to officers, and possibly used in deployment decisions, was volunteer status: whether a regiment was originally formed by volunteers or conscripts. 23 To understand the extent to which this information and other town characteristics were used in military decisions, in Table A.1 , we study the determinants of soldiers’ battle participation. We find that towns with more volunteers are exposed to more battles even after conscription. However, no other town characteristics predict soldiers’ battle participation. 24",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 4,
+        "section_name": "Emancipation, Reconstruction, and the Jim Crow Laws",
+        "paragraph_id": 0,
+        "text": "On January 1st, 1863, President Lincoln passed the Emancipation Proclamation that freed all enslaved people within the Confederacy. Two years later, the 13 th Amendment was passed by Congress, abolishing slavery in all states and territories. The surrender of Confederate General Robert E. Lee later that year on April 9, 1865, signified the end of the Civil War and the beginning of Reconstruction , a period characterized by the reintegration of the former Confederate states to the Union and the design of a post-slavery society. Plans for a radical and progressive transformation of racial relations were undermined by the assassination of President Lincoln on April 14, 1865, less than a week after the end of the war, and the inauguration of Andrew Johnson, who held a more accommodating stance towards the ex-Confederate States. Johnson proclaimed a general amnesty towards former Confederates, vetoed legislation intended to help newly freed Black Americans (Civil Rights Act), and resisted Congress’ eventually successful attempts to pass the 14 th Amendment granting citizenship to all Black Americans ( Foner , 1982 ). This first phase of Reconstruction, known as Presidential Reconstruction, ended with the election of President Ulysses S. Grant in 1868. Under Grant’s presidency, Congress passed decidedly more progressive policies, including the 15 th amendment establishing the right to vote for Black Americans, and actively enforced Black cit23 Volunteer regiments usually changed their name after conscription was instituted but retained all or part of the volunteers. 10 percent of all Confederate regiments continued to be fully soldiered by volunteers. 24 We construct the volunteering rate at the town level following the procedure described in Appendix A.1",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 4,
+        "section_name": "Emancipation, Reconstruction, and the Jim Crow Laws",
+        "paragraph_id": 1,
+        "text": "izens’ rights through the use of the military and the construction of local branches of the Freedmen’s Bureau, the federal agency devoted to the relief of freedmen and refugees. In the years 1870-71, President Grant enacted the Enforcement Acts, criminal codes that protected African Americans’ right to vote, hold office, serve on juries, and enforced equality before the law. Among these, the Ku Klux Klan Act of April 1871 made private acts of violence and offenses against individuals’ political rights punishable under federal law and enforceable by federal troops. However, the rise of the Liberal Republican Party, a third party running on a conciliatory platform, undermined Republicans’ commitment to this most radical form of Reconstruction. To resolve the political impasse caused by the contested 1876 presidential election, radical Republicans struck a deal with the Democratic Party, marking the demise of Reconstruction. In return, the Democratic party ceased their filibuster preventing the certification of the electoral outcomes. The agreement, known as the Compromise of 1877, led to the removal of the Union troops and the unraveling of the civil liberties granted to Black Americans during Reconstruction. By the mid-1890s, most Southern States had introduced Jim Crow laws enforcing racial segregation in most aspects of society. These laws were upheld by the 1896 ruling on Plessy v. Ferguson , in which the Supreme Court laid out its “separate but equal” legal doctrine on segregation. The Jim Crow era institutionalized economic, social, and political discrimination toward Black Americans until Brown vs. Board of Education in 1954 and eventually the Civil Rights Act of 1964. 25",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 5,
+        "section_name": "Support for Racial Segregation and Anti-Black Violence",
+        "paragraph_id": 0,
+        "text": "To measure political support for segregation, we obtain data on presidential election returns from ICPSR ( 1999 ) for 1840 to 1964 (summary in Table A.4 ). Our main variable of interest is the vote share in favor of the Democratic Party, which we interpret as the white population’s support for racial discrimination. When an explicitly white segregationist third-party candidate emerges (e.g. the Dixiecrats), we also examine support for these parties. Our focus on the Democratic Party vote share and the period of our study is justified by the party’s position on race relations during this time. Before the Civil War, the Democratic Party championed the defense of slavery and led the secessionist movement. Following the war, the party platform centered on racial segregation",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 5,
+        "section_name": "Support for Racial Segregation and Anti-Black Violence",
+        "paragraph_id": 1,
+        "text": "25 For evidence of the importance of discriminatory institutions for Black Americans’ long-run economic outcomes see Sacerdote ( 2005 ); Althoff and Reichardt ( 2022 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 5,
+        "section_name": "Support for Racial Segregation and Anti-Black Violence",
+        "paragraph_id": 2,
+        "text": "through the enforcement of the Black Codes and Jim Crow laws. 26 However, beginning with the 1948 Presidential election, the Democratic Party famously started to lose the support of Southern racially conservative whites over their change in position on Black Americans’ civil rights ( Kuziemko and Washington , 2018 ). 27 We conclude our analysis with the 1964 election. Before this election, Black voters were disenfranchised, either through the institution of slavery in the antebellum period, or through de facto discrimination during the Jim Crow era. After the ratification of the Civil Rights Act in 1964, federal protections guaranteed Black voters some level of enfranchisement. 28 Therefore, the Democratic Party vote share between 1840 and 1944 reflects white voters’ racially conservative attitudes. Elections between 1948 and 1964 still provide some information on racial conservatism but should be interpreted with some caution. We complement this information with data on Congressmen’s support for segregationist bills. For the years before the Civil War (i.e. pre-1861), we incorporate information on voting in the House of Representatives on issues related to slavery ( Masera and Rosenberg , 2021 ). The data report representatives’ voting behavior in favor or against slavery for the 225 votes held on slavery between 1840 and 1860. After the Civil War (i.e., post-1865), we measure support for segregation using the Congressional Roll-Call Votes Database ( Lewis et al. , 2019 ). We code a total of 298 votes regarding racial discrimination between 1867 and 1964. The variable is equal to one if the vote favors slavery/segregation or opposes abolition/integration, and is zero otherwise. More details on the coding are reported in Appendix A.4 . Finally, we study physical violence against Black Americans. While several efforts exist to quantify the number of lynchings in the post-war period, there is no unique dataset that encompasses all years and States (see Cook , 2012 and Bailey and Tolnay , 2015 ). To overcome this issue, we build a new dataset on lynchings by combining",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 5,
+        "section_name": "Support for Racial Segregation and Anti-Black Violence",
+        "paragraph_id": 3,
+        "text": "26 Several papers show the association between racial attitudes and the Democratic Party in the South. Masera and Rosenberg ( 2021 ) shows that Southern Democratic congressmen were more likely to vote in support of slavery than their Whig counterparts before the War. Fryer and Levitt ( 2012 ) shows the correlation between the Ku Klux Klan membership and the Democratic Party among whites in the South in the 1920s. Kuziemko and Washington ( 2018 ) shows the association between racially conservative attitudes and support for the Democratic Party. 27 The beginning of this period is marked by the 1948 Democratic National Convention in which a dispute over civil rights prompted a faction of southern delegates to stage a walkout. The States’ Rights Democratic Party (“Dixiecrats”) was formed soon thereafter, led by Strom Thurmond. 28 In the sample of our analysis, the only elections with some level of enfranchisement of Black voters are the 1872 and 1876 elections. Black voters in these elections were enfranchised to some degree through the enforcement of newly passed voting rights granted by the federal policies of Radical Reconstruction. These were quickly dismantled after the 1876 election and the start of the Jim Crow era.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 5,
+        "section_name": "Support for Racial Segregation and Anti-Black Violence",
+        "paragraph_id": 4,
+        "text": "various sources and filling the gaps with original data gathered from historical newspapers. The procedure is detailed in Appendix A.5 . Figure A.7 shows an example of information from local newspapers. Figure A.8 shows the trend in lynchings over time. Figure A.9 shows the spatial distribution of lynchings.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 6,
+        "section_name": "Civil War Heritage and Confederate Culture",
+        "paragraph_id": 0,
+        "text": "The Civil War’s memory and its mythization played a crucial role in the political symbology that sustained racial segregation as a national doctrine since the end of Reconstruction. In the aftermath of the war, a uniquely Confederate version of the war’s meaning, rooted in resistance to Reconstruction and white supremacy, developed in the South. Confederate soldiers were portrayed as honorable men who fought for their freedom, a tradition that came to be known as the Lost Cause ( Blight , 2001 ). The impulse towards this interpretation started in the cemeteries that remained, during the Reconstruction years, the public site of memorialization. Obelisks and stone pyramids appeared as markers of the recent past and a celebration of its heroes. Veterans’ organizations materialized around the ritual of Memorial Day, which in several Southern states converged on June 3, Jefferson Davis’ (the president of the Confederacy) birthday. By the early 1870s, a group of ex-Confederate officers in Virginia had forged a coalition of memorial groups that quickly took over the creation of the Lost Cause tradition. One of the key myths propagated by this tradition is summed up by former Confederate general Bradley T. Johnson, a popular Confederate memorial speaker: “The great crime of the century,” he concluded, “was the emancipation of the Negroes.” 29 Since the early days of memorial activities, these groups were committed to writing and controlling the history of the war and its aftermath, and to using this narrative to uphold white supremacist policies in the ballot. Since the fall of Reconstruction, this narrative no longer merely explained the war’s defeat but celebrated the South’s victory against emancipation. Pollard, the white supremacist newspaper editor who gave the name to the Lost Cause tradition, wrote that “To the extent of securing the supremacy of the white man and the traditional liberties of the country . . . she [the South] really triumphs in the true cause of the war.” 30 Confederacy symbols remained throughout US history charged with political meanings winking to a “better” past of racial purity and white supremacy. The Confederate",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 6,
+        "section_name": "Civil War Heritage and Confederate Culture",
+        "paragraph_id": 1,
+        "text": "29 From In Memoriam Sempiternam, a commemorative book produced by the Confederate Memorial Literary Society (Richmond: Confederate Museum, 1896), cited in Blight ( 2001 ) p. 258. 30 Cited in Blight ( 2001 ) p. 260, originally in Pollard, The Lost Cause Regained, 1868.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 6,
+        "section_name": "Civil War Heritage and Confederate Culture",
+        "paragraph_id": 2,
+        "text": "flag was used as a party symbol by the white supremacist Dixiecrats, founded in 1948. Consistently exhibited by the Ku Klux Klan, it is today used in white supremacist rallies. Continuous display of the Confederate Flag on the grounds of the South Carolina State Capitol led the NAACP to call for a boycott of the State of South Carolina from the year 2000 until July 10, 2015, when the flag was permanently removed from the Capitol grounds. 31 Today, it is considered a white supremacist and hate symbol by associations monitoring hate groups such as the Southern Poverty Law Center and the Anti-Defamation League. 32",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 7,
+        "section_name": "Empirical Framework",
+        "paragraph_id": 0,
+        "text": "Assessing the effect of towns’ battle exposure on anti-Black political preferences and attitudes presents several challenges. For example, a regression that compares towns with different casualty rates might be biased if soldiers who are more ideologically committed to the war are more likely to take risks and are wounded or die in battle. To address this and other potential sources of selection, our strategy exploits variation in towns’ battle exposure together with controls that capture the geographic patterns of conscription and war strategies. The following sections present the measure of battle exposure and the empirical specification.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 8,
+        "section_name": "Battle Exposure",
+        "paragraph_id": 0,
+        "text": "We construct our measure of battle exposure in several steps. First, we define the town-level exposure to each battle as the share of soldiers from a given town i who fought in battle b ( E i,b ). The term P B b =1 E i,b is equal to the expected number of battles fought by the average soldier in town i . Next, we measure the share of Confederate soldiers who died or were wounded in each battle ( C b ). We then compute each town’s battle exposure ( BE i ) by multiplying the town’s exposure to battle b by the share of Confederate dead or wounded in the battle and sum over all battles:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 8,
+        "section_name": "Battle Exposure",
+        "paragraph_id": 1,
+        "text": "BE i = B X b =1 C b ∗ E i,b (1) This measure captures the intensity of the war experience for the average soldier in a town. To mitigate the possibility that the characteristics of a few towns determine 31 https://naacp.org/resources/naacp-ends-its-boycott-state-south-carolina 32 https://www.adl.org/resources/hate-symbol/confederate-flag and https://www.splcenter.org/fighting-hate/extremist-files/ideology/neo-confederate.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 8,
+        "section_name": "Battle Exposure",
+        "paragraph_id": 2,
+        "text": "the battle’s outcome, we focus on large battles where the behavior of soldiers from a few towns is unlikely to drive the overall number of casualties ( C b ). We define large battles as battles involving more than 10,000 Confederate soldiers. 33 Furthermore, to avoid the possibility that individuals self-select into the army, therefore mechanically increasing BE due to exposure to a larger number of battles, we limit our attention to battles that occurred after conscription was instituted (April 16, 1862). 34 After imposing these restrictions, we obtain a measure of BE based on 65 battles listed in Table A.2 and displayed in Figure A.5 . Casualties from these battles together account for about 70 percent of the overall number of Confederate deaths. Finally, notice that because E i,b is the share of soldiers from town i who fought in battle b , differences in BE i are not driven by differences in the number of soldiers or exemption rates at the local level. Panel (a) of Figure 1 plots the raw spatial variation in BE i . Panel (c) of Figure 1 plots the raw distribution of BE i .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 9,
+        "section_name": "Identification Strategy",
+        "paragraph_id": 1,
+        "text": "y i,t = α i + δ t + βBE i × PostWar t + θ X i,t + ε i,t (2) where y i,t are outcomes capturing preferences for segregation and other anti-Black attitudes and behaviors in town i and year t . 35 We control for town and year fixed effects, respectively ( α i and δ t ) and time-varying covariates ( X i,t ). The main variable of interest, BE i × PostWar t , represents battle exposure in town i interacted with an indicator function taking value one after 1865. We normalize BE i to have mean zero and standard deviation one, such that the coefficient β captures the change in outcome y in town i induced by a one standard deviation increase in battle exposure. Finally, ε i,t is a random error term, capturing all omitted factors, which we allow to be heteroskedastic and correlated across time by clustering at the town level. In Appendix B , we allow for spatial autocorrelation of the error term within 50 and 200 km.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 9,
+        "section_name": "Identification Strategy",
+        "paragraph_id": 2,
+        "text": "33 In section 5.1 , we present estimates using an alternative threshold. 34 In section 4.3 , we present estimates using only battles that occurred after June 1862 to allow for some delay in the conscription process. 35 When the outcome is reported only at a higher level of aggregation (county or congressional district), we assign the outcome to our sample of towns using census maps ( Manson , 2020 ). In Appendix A.2 , we discuss the procedure and the advantages of measuring town-level battle exposure, even when the outcomes are at a higher level of aggregation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 9,
+        "section_name": "Identification Strategy",
+        "paragraph_id": 3,
+        "text": "When the outcomes of interest are not observable before the Civil War, we estimate the following specification:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 9,
+        "section_name": "Identification Strategy",
+        "paragraph_id": 4,
+        "text": "y i,t = δ t + γBE i + θ X i,t + ε i,t (3) where y i,t represents post-war variables and γ captures the difference in the outcomes between towns that differ by one standard deviation in BE i . We include year fixed effects ( δ t ) and time-varying covariates ( X i,t ). While our measure of BE i is arguably independent of differences in casualty rates due to soldiers’ ability to select themselves into specific battles, it is still possible that local characteristics determine military strategic considerations that correlate both with higher battle exposure and our outcomes of interest. As discussed in Section 2.1 , most battles were fought in the Eastern Theater and soldiers’ recruitment location influenced their participation in battles. These two facts result in battle exposure’s geographic patterns depicted in Panel (a) of Figure 1 . To eliminate this potential source of bias, we control for the share of soldiers in each town sent to the Eastern Theater and the towns’ average distance to battles, both multiplied by year fixed effects. Furthermore, as discussed in Section 2.1 , regiments originally formed by volunteers were deployed in more battles. Because a town’s volunteer rate may be correlated with our outcomes of interest, we control for the town’s share of volunteers times year fixed effects. Additionally, because regiments were organized at the state level, our analysis only exploits within-state variation by controlling for state by year fixed effects. Finally, while most of the South remained far from the battleground, a few battles were fought in Southern towns where the local population may have been involved in the defense efforts. This is problematic if battles occur in strategic locations with characteristics that correlate with outcomes. To account for this issue, we include an indicator function if the town is within 10 km from a battle or from the Sherman’s March path. 36 Panel (b) of Figure 1 shows the distribution of BE i after including these controls, clearly indicating that accounting for these patterns substantially reduces geographic clustering. Panel (d) of Figure 1 shows the distribution of battle exposure after controlling for the covariates. Under the assumption that, after conditioning on the aforementioned controls, trends in outcomes would have been the same across towns with a different BE i in the absence of war, the parameter β identifies the causal effect of battle exposure on the outcome y . In support of the parallel trends assumption, in Table 1 , we show that after",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Parallel Trends Assumption",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 9,
+        "section_name": "Identification Strategy",
+        "paragraph_id": 6,
+        "text": "conditioning on these controls, BE i is independent, in trends and levels, of a large set of pre-war variables potentially correlated with changes in the outcomes of interests. In addition to standard political, socio-economic, and geographic variables, we show that BE i is independent of the share of the enslaved population in 1860, the share of the free Black population in 1860, voting behavior in support of the Democratic Party, and Congressional votes in support of slavery in the years before the Civil War. Table 1 shows an economically and statistically negligible relationship between key local socio-economic characteristics and our treatment, providing evidence of the identification assumption. Additionally, in Figure 2 , we report coefficients β t from the following event-study specification:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 9,
+        "section_name": "Identification Strategy",
+        "paragraph_id": 7,
+        "text": "y i,t = α i + δ t + 1964 X t =1840 ,t ̸ =1860 β t 1 Year = t BE i + θ t X i + ε i,t (4) where y i,t is the vote share in favor of the Democratic party. Figure 2 provides a graphical representation of the absence of pre-trends in our main outcomes of interest. We also provide a formal sensitivity check of the pre-trends assumption following Rambachan and Roth ( 2023 ). Figure B.12 shows that the value for which the effect stops being statistically significant implies pre-trends with an implausibly large deviation from linearity. Since all cities are treated simultaneously, our data structure implies a static panel without a staggered treatment roll-out. In this setting negative weight estimations that might lead to spurious results are unlikely to be a concern ( De Chaisemartin and d’Haultfoeuille , 2020 ). Nevertheless, in Table B.8 , we show that the results are similar when using robust estimation methods. Finally, to validate our measure, we show that BE i determines changes in young white male demographics after the war. First, we use war records to estimate the effect of battle exposure on the share of casualties and deaths among soldiers. 37 Table B.10 indicates that an additional standard deviation in battle exposure increases the share of casualties (deaths) by 4.7 percent (2.4 percent). Second, we further validate our measure using Census information. We estimate Equation 3 between 1850 and 1870 and report results in Table B.11 . Our estimates indicate that with each standard deviation increase in BE i , immediately after the war there is a 6.3 percentage point decline in white males of military age (between 15 and 44 years) relative to the total population. Consistent changes are also observed when studying the ratio of young 37 This information is available only for a subset of soldiers.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Staggered"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 0,
+        "text": "We study the impact of battle exposure on the politics of segregation. First, we analyze popular support for segregation by looking at the results of presidential elections. We then study elected politicians’ behavior by analyzing roll-call votes on race-related issues in the House of Representatives.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 2,
+        "text": "Results in Table 2 show the estimates of equation 2 , where the outcome of interest is the Democratic vote share in presidential elections. Column (1) shows our baseline specification using only elections between 1840 and 1944. As described in Section 2.2 , we interpret the outcome as reflecting white support for racial segregation for two main reasons. First, Black voters were effectively disenfranchised during this period, either by law or because of Jim Crow restrictions. 38 Second, the Democratic party openly sustained segregation during this time. The results show a large, positive, and significant effect of battle exposure. A one standard deviation increase in battle exposure increased the post-war democratic vote share by 4.5 percentage points. In a town with an average battle exposure compared to a counterfactual town not exposed to the war, the Democratic party vote share is 9.4 percentage points higher. To quantify the size of the effect, we focus on the last election in the estimating sample, the 1944 presidential election, which happened almost 80 years after the end of the Civil War. In this election, 3.8 million people from towns in our sample voted. When comparing to a counterfactual scenario with no war, our estimates in column (1) imply an extra 360,000 voters for the Democratic party. In column (2), we expand the elections in our sample to include those between 1948 and 1964. As described in Section 2.2 , during this period, the Democratic party “lost the South” because of its change on segregation. As expected, the effects are smaller but still significant. In columns (3) and (4), we show that our results",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 3,
+        "text": "38 Elections held in 1872 and 1876 are excluded because, in those elections, Black citizens could exercise their right to vote thanks to the protection of the Freedemen’s Bureau and the Union troops.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 4,
+        "text": "are robust to changes in the measurement of battle exposure. First, in column (3), we measure battle intensity restricting attention to Confederate soldiers’ death rate. Because deaths are more precisely recorded this allows us to reduce measurement error. In column (4), we only include defensive battles. This restriction is based on the assumption that the ability of generals to select who participates in defensive battles is lower than for offensive ones. This specification, therefore, minimizes the possibility that generals’ decisions could bias our results. The magnitude of the result is stable when using these alternative measures. Finally, in column (5), we control for the share enslaved in 1860 times PostWar t . As expected, given that battle exposure and the measures capturing past reliance on slave labor are uncorrelated, the estimate of the effect of battle exposure on voting is unchanged. Column (5) confirms the results found in previous research showing that places historically more dependent on slave labor had higher support for the Democratic Party after the Civil War ( Acharya et al. , 2018 ). The results show that a one-standard deviation increase in battle exposure leads to an additional 4.3 percentage points in the Democratic vote share and that a one standard deviation increase in percent enslaved corresponds to an additional 7 percentage points in the Democratic party vote share. Overall, these results highlight the importance of both the legacy of slavery and the Civil War for our understanding of the politics of race in the Jim Crow era. Places dependent on slave labor and affected by the Civil War are distinct, but for different reasons, evolved along similar trajectories in the vote share for the Democratic party. In Figure 2 , we explore the dynamic effects of battle exposure on the Democratic vote share by estimating the event study in Equation 4 . The results show no preexisting trends before the start of the war when comparing towns with different battle exposure. This provides evidence indicating that the parallel trends assumption is satisfied. The event study shows an immediate increase in the vote share for the Democratic party in towns with higher battle exposure after the war. In the 1868 elections, held just 3 years after the end of the war, one additional standard deviation in battle exposure increased the vote share for the Democratic party by 5.2 percentage points. 39 In the two subsequent elections (1872 and 1876), we still observe a significant effect of battle exposure on support for the Democratic party, but the point estimates are smaller. This is consistent with the fact that Black men were allowed to vote in those elections.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Parallel Trends Assumption",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 5,
+        "text": "39 Mississippi, Texas, and Virginia only rejoined the Union after the election of 1868, so their citizens did not vote in this election.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 6,
+        "text": "Results during the first part of the Jim Crow era (1880-1944) show a large, stable, and statistically significant effect of battle exposure on the Democratic vote share. Point estimates are close to zero starting with the 1948 elections until the end of the Jim Crow era. This trend is explained by the Democratic Party’s opening on racial equality. In response to this change, pro-segregation Southern Democrats supported the Dixiecrats in the 1948 election as shown in Figure 2 . A standard deviation rise in battle exposure increases the vote share for the Dixiecrats by 5.2 percentage points. This effect is particularly large given that, in our sample, the Dixiecrats received 20 percent of the vote. These results highlight that towns that experienced higher battle exposure did not become Democratic party loyalists but rather voted for the party’s position on racial issues. As soon as the position changed, voters shifted their support to the new pro-segregation party.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 11,
+        "section_name": "Political Support for Segregation",
+        "paragraph_id": 8,
+        "text": "To further establish that battle exposure affected white preferences for segregation and not simply partisanship, we study roll-call votes in the House of Representatives from 1840 to 1964. We focus on laws related to racial issues such as slavery, segregation, and civil rights. Table 3 shows the results of estimating equation 2 , where the outcome is a binary variable equal to 1 if the representative votes in favor of slavery/segregation or opposes abolition/integration, and is zero otherwise. All estimates in Table 3 show a positive, robust, and significant effect of battle exposure on the probability that a representative votes in support of racially conservative legislation after the war. The point estimate in column (1) implies that an additional standard deviation increase in battle exposure raises the probability of a racially conservative vote by 2.8 percentage points. In addition, limiting the BE measure to deaths (column 2) and defensive battles (column 3) does not alter our main findings. Moreover, we find again in column (4) that dependence on slave labor affects the outcome but does not perturb our main effect and is smaller in magnitude.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 12,
+        "section_name": "Violence Against Black Americans",
+        "paragraph_id": 0,
+        "text": "In this section, we study lynchings, the most violent expression of anti-Black behavior. Given the lack of comprehensive lynching data before the Civil War, we can not estimate a DiD. Instead, we estimate Equation 3 . Results are displayed in Table 4 . In the first 4 columns, we focus only on lynchings that can be geolocated at the town level. The outcome is a binary variable equal to 100 if, in that year and town, a Black",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 12,
+        "section_name": "Violence Against Black Americans",
+        "paragraph_id": 1,
+        "text": "person was lynched. 40 We observe large effects of battle exposure on lynching. A one standard deviation increase in battle exposure raises the probability of a lynching in a given town and year by 0.21 percentage points. This is a 21 percent increase with respect to the average lynching rate. The results are similar when using other measures of battle exposure. Column (4) shows that the effects of slavery are larger but that the main effect of battle exposure on lynching remains stable. In columns (5) to (8), we also include lynchings that are identifiable at the county level. With this data, we can construct per capita lynching rates using countylevel information on population. Overall, these results confirm the positive effect of battle exposure on lynching. An additional one standard deviation in battle exposure increases lynching rates by 0.031 per 100,000 people.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 13,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 0,
+        "text": "In Tables B.5 , B.6 and B.7 , we show that all results are robust to changes in specification and definition of the treatment and outcomes. First, we show that results are similar if we do not weight by the size of the town. Second, we estimate unweighted regression focusing on towns with more than 20 soldiers to guarantee that results are not driven by a few small towns. Again, the results in this subsample are similar. Additionally, we change the definition of the sample and the outcomes. When the outcome is the vote share for the Democratic party in presidential elections, we show that results are robust to only focusing on competitive elections (i.e., where the votes were not all captured by one party). When exploring the effect on roll-call votes in Congress, we show that the results are robust to dropping abstentions or giving a value of 0.5 to the outcome if the representative abstained. In the case of lynching, we explore the intensive margin by having as an outcome the inverse hyperbolic sine of the number of lynchings in a town and county. For both geographies, we see more lynchings in places with greater battle exposure. In Table B.8 , we present results using specifications that are robust to forbidden comparisons arising from two-way fixed effect models ( De Chaisemartin and d’Haultfoeuille , 2020 ). Finally, in Table B.9 we show that inference is robust to alternative clustering strategies allowing for spatial autocorrelation of the error term within 50 and 200 km. 41",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 13,
+        "section_name": "Robustness Checks",
+        "paragraph_id": 1,
+        "text": "40 Estimates in Table B.7 , which uses the inverse hyperbolic sine of total lynchings, show that the effects of battle exposure are on the intensive margin. 41 We only present results robust to spatial autocorrelation for the Democrat Vote share and lynchings because estimates in the case of segregation laws are computationally too demanding given the large number of observations.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 14,
+        "section_name": "Mechanisms",
+        "paragraph_id": 0,
+        "text": "Our interpretation of the relationship between Civil War battle exposure and racial hate revolves around the idea that the war experience engendered the development of a Confederate culture based on the war’s heritage. We argue that battle exposure led to the formation of a social identity centered on the sacrifices of war and opposition to the enemy, often identified as Black Americans, whose enslavement was so central to the war motives. Communities more heavily exposed to battles developed a stronger commitment to the interpretation of the war as a just and noble cause, to celebrate white supremacy, and to resist Reconstruction efforts. This shared Confederate identity sustained persistent segregationist racial norms and violence against Black Americans through the memorialization of the war over generations. This section provides evidence consistent with this interpretation and against several alternative hypotheses.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 1,
+        "text": "We begin by investigating what aspects of the battle experience shaped communities’ internalization of this cultural and political tradition. First, collective identities emerge around chosen heroic and traumatic events ( Volkan , 2001 ; Cag ́e et al. , 2023 ). In the case of the Civil War, the largest and most well-known battles, such as Gettysburg, stand out for their symbolic meaning. As a consequence, communities’ participation in large and celebrated battles might have contributed more to the emergence of Confederate values. To investigate this hypothesis, we decompose our measure of battle exposure into exposure to the largest battles ( BE: Largest Battles ) and exposure to the remaining battles ( BE: Remaining Battles ). 42 In column (1) of Table 5 , we find that all of the effect is driven by the largest battles. We then measure each battle’s cultural footprint by looking at how many times they are mentioned in books using Google Books Ngram. With this measure of battle popularity, we decompose battle exposure into exposure to the most famous battles ( BE: Most Famous Battles )",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 2,
+        "text": "42 BE: Largest Battles is computed using equation 1 restricting battles to those involving more than 40,000 Confederate soldiers (17 battles). BE: Remaining Battles is computed including the 48 remaining battles that involved more than 10,000 Confederate soldiers (but less than 40,000). The threshold for the number of Confederate soldiers has been chosen so that BE: Largest Battles accounts for half of the baseline measure of battle exposure.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 3,
+        "text": "and exposure to the remaining battles ( BE: Less Famous Battles ). 43 In column (2) of Table 5 , we find that the effect is entirely driven by the most famous battles. Second, we investigate an important aspect of the war that enhanced the sense of hostility towards Black Americans: their presence in combat. We decompose the town-level battle exposure measure into battles in which only white soldiers participated ( BE: Only White Soldiers ) and battles that saw the participation of Black soldiers on the Union side ( BE: Black Soldiers ). 44 Battles with Black soldiers account for 20 percent of our baseline measure of battle exposure. However, column (2) shows that these battles drive most of the result, with a point estimate three times larger than the baseline effect. These results show that communities exposed to battles with similar casualties, but that differ in other dimensions – namely exposure to symbolic battles and combat against Black soldiers – experienced significantly different outcomes. These findings highlight the significance of cultural channels while ruling out the possibility that the war’s effects are fully determined by changes in demographics. 45",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 5,
+        "text": "Outside the battlefield, civilians in the home communities of fallen soldiers gathered in cemeteries to celebrate their relatives’ sacrifices. We argue that these first memorial sites played a crucial role in the emergence of a Confederate culture, exposing individuals to the experience of collective grief and celebratory speeches, and fostering in-group identity. We collect information on Confederate cemeteries from Cooper ( 1904 ). In Table C.12 , we show that, as expected, towns with more battle exposure are 45 percentage points more likely to have a Confederate cemetery within a 25km distance. Column (4) of Table 5 shows that these first memorial sites played an important role in shaping political behavior. The presence of a Confederate cemetery within a 25km distance increases the effect of battle exposure by 76 percent. Overall, Table 5 shows that memorial sites, shared experiences of publicly known traumatic",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 6,
+        "text": "43 In Appendix A.7 , we explain how we measure battles’ popularity using Google Books Ngram. In Table A.2 , we list the popularity of each battle using this method. BE: Most Famous Battles is computed using equation 1 restricting battles to the most popular 12 battles. BE: Less Famous Battles is computed including the remaining battles. The threshold of popularity has been chosen so that BE: Most Famous Battles accounts for half of the baseline measure of battle exposure. While large battles tend also to be famous there is no perfect overlap between the two measures. 44 BE: Black Soldiers is computed using equation 1 restricting battles to those involving Black soldiers on the Union side. BE: Only White Soldiers is computed including the remaining battles that involved more than 10,000 Confederate soldiers. Battles involving Black soldiers are displayed in Table A.2 45 See Section 5.2 for further analysis on the role of demographic changes.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 7,
+        "text": "events, and combat exposure to the perceived enemy were key to the emergence of a Confederate culture.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 15,
+        "section_name": "Group Identity and Confederate Culture",
+        "paragraph_id": 9,
+        "text": "Finally, we study naming patterns by focusing on distinctively Confederate names to capture individuals’ attachment to the Confederate identity. 46 Using the completecount Census records, we measure the prevalence of distinctively Confederate names among cohorts of white southern males born between 1840 and 1900. We identify distinctively Confederate names by focusing on the names of generals, the vice-president, and the president of the Confederacy. We determine names that reflect an attachment to the Confederate identity by inspecting their popularity over time and selecting only names that spike in correspondence with the beginning of the Civil War. See the procedure described in Appendix A.6 . 47 Panel (a) Figure 3 shows that the share of white males born each year named with a distinctively Confederate name increased fivefold in 1861, the first year of the war, and remained high in the following decades. To study how these patterns relate to battle exposure, in Panel (b) we present an event study of the effect of battle exposure on the local share of white male newborns with distinctively Confederate names. Starting in 1863, the use of distinctively Confederate names increased more in towns with higher battle exposure. This pattern continued until 1870. The effect is largest in 1865 when an additional standard deviation of battle exposure increased the share of Confederate names by 0.34 percentage points, more than twice the pre-war sample average. This pattern shows an immediate emergence of a cultural attachment to Confederate heroes among communities highly exposed to battles.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 0,
+        "text": "In the following sections, we explore alternative mechanisms that could have impacted racial politics and violence after the Civil War, including the role of the slave-owning elite, as well as the demographic and economic consequences of battle exposure.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 1,
+        "text": "46 There is a broad consensus among social scientists that naming decisions reflect individuals’ sense of collective identities ( Lieberson , 2000 ; Varnum and Kitayama , 2011 ; Fouka , 2019 ; Bazzi et al. , 2020 ). 47 A similar approach is used by Bazzi et al. ( 2023b ) who define a child’s first name as belonging to a Confederate leader when containing all of its distinctive constituent parts.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 3,
+        "text": "In the aftermath of the war, Black emancipation decreased planters’ ability to coerce labor, raising production costs. To solve the problem of labor shortages, former slaveowners imposed restrictions to labor mobility ( Naidu , 2010 ) and pursued paternalistic strategies offering Black employees defense against white violence ( Alston and Ferrie , 1999 ). Critical to these strategies was the actual threat of white violence in the form of lynching. One natural hypothesis is, therefore, that the planter elite leveraged the war trauma to promote the formation of a coercive apparatus. We investigate this hypothesis by studying the heterogeneous effect by the size of the slaveowning elite. Table D.15 shows that the effect is the same in counties with or without an enlsaved population in 1860. Moreover, Figures D.15 and D.16 show the effect of battle exposure on the Democratic vote share by quartile of the share of slaveowners in 1860 and conditional on the share of enslaved population. We find that where slaveowners are more than 50 percent of the white population, the effect of battle exposure is not statistically different from zero (Figure D.15 ). These findings indicate that in counties with widespread interests in the slave economy, battle exposure had a limited additional effect. The results vary little depending on the share of slaveowners with more than 50 slaves (Figure D.16 ), suggesting a negligible role of the planter elite in leveraging the traumatic experience of war for political purposes.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 5,
+        "text": "Because battle exposure reduced the white male population, these changes affected the Southern demographic structure (as shown in Table B.11 ). As a consequence, changes in the racial composition might have increased concerns among white southerners about their economic and political control of the Black minority, as suggested by the theory of the racial threat ( Blumer , 1958 ; Blalock , 1967 ; Acharya et al. , 2018 ). To investigate this possibility, in Table D.13 column (1), we study the effects of battle exposure on the Black population. We find that a one standard deviation increase in battle exposure led to a 1.4 (1.8) percentage point rise in the short (long) run Black population share. While it is plausible that a relative increase in the Black population affected pro-segregationist sentiments, we show that this seems to play a marginal role in explaining the main effect. First, we find that when controlling for the Black population share, the effect of battle exposure on the Democratic vote share is not statistically different from the unconditional effect (see column (1) in Table D.14 ). This is consistent with results in Table 2 , where column (5) shows that",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 6,
+        "text": "the relationship between battle exposure and changes in the Democratic vote share does not change when the share of slaves in 1860 is included in the regression. To further ascertain the role of the Black population in explaining our results, we estimate the heterogeneous effect of battle exposure by quartiles of the Black population share in 1860. Column (1) in Table D.15 shows that the effect does not change when we focus on the counties in the bottom quartile of the slave distribution in 1860. These results indicate that the effect of battle exposure on Democratic vote share operates through channels other than racial composition and discredits the hypothesis that the observed results are due to the political threat represented by the size of the newly enfranchised Black population ( Soule , 1992 ; Hagen et al. , 2013 ; Logan , 2023 ; Testa and Williams , 2023 ). Another potential effect of battle exposure on towns’ demographic composition is migration. 48 We explore this effect for white and Black males and find that, for white males, there is no effect in the short run and an increase in in-migration in the long run (column (2) of D.13 ). For Black males, we find that, if anything, in-migration is lower in the short-run (column (3) of D.13 ). Moreover, as shown in columns (2) and (3) of Table D.14 , the main results are statistically indistinguishable after controlling for migration patterns.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 8,
+        "text": "An alternative hypothesis is that the war might have affected racial politics through its effect on the labor market, where an increase in labor market competition between Black and white laborers might have precipitated an increase in racial resentment ( Raper , 2017 ; Beck and Tolnay , 1992 ; Tolnay et al. , 1992 ; Tolnay and Beck , 1995 ). Results in columns (4) to (7) of Table D.13 indicate that towns with greater battle exposure experienced an increase in manufacturing, an increase in the long-run white occupational score, a slight increase in the relative occupational score between Black and white men, and a reduction in long-run farm values. Each of these results is in line with the expected effects of a large casualty shock to the white male population, which would make white labor relatively scarce. Overall, however, this suggests an increase in living standards for the white population and casts doubts over an interpretation 48 We estimate the immigration of white men using linked Census samples from 1850 to 1940. We classify a person as an immigrant if their county in the previous census decade is different from the current census decade. Linked census samples are not accurate for Black males, especially in 1850 and 1860, which would only capture free Black men. Therefore, we measure Black male immigration using full-count census data from 1870 to 1940. We classify a person as an immigrant if they were born in a different state than the state in which they were enumerated in the current census decade. County of birth is not available.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 9,
+        "text": "that the main effect is driven by economic competition. Indeed, statistical tests reported in Table D.14 show that controlling for these outcomes does not alter the main effect of battle exposure.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 16,
+        "section_name": "Alternative Mechanisms",
+        "paragraph_id": 11,
+        "text": "Finally, we consider two military-political war outcomes that could have affected racial resentment. First, we examine the location of refugee camps for the formerly enslaved, which comprised communities of people escaping slavery within Union lines ( Cooper , 2017 ; Ramos-Toro , 2021 ). Second, we explore federal military camps established by the Union Army during the Reconstruction period, whose purpose was to enforce federal Reconstruction policies. In both cases, the main effect does not change with these additional controls (columns (8) and (9) of Table D.14 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 17,
+        "section_name": "Transmission of Confederate Culture",
+        "paragraph_id": 1,
+        "text": "Essential to the perpetuation of Confederate political and social norms were the memorial organizations founded by Confederate veterans’ sons and daughters. The most prominent of these associations was the United Daughters of the Confederacy (UDC), a hereditary association for female descendants of Confederate soldiers, founded in 1894. This association advocated for the integration of the Lost Cause into the official historical narrative by promoting the adoption of pro-Southern history textbooks, lobbying legislatures and Congress for the reburial of Confederate dead, raising money for college scholarships awarded to descendants of Confederate veterans, and organizing and financing Confederate monuments ( Cox , 2019 ). We geocode the location of UDC chapters from 1897 to 1925 by digitizing the organization’s “Minutes of the Annual Meeting”. For each town in our sample, we identify whether there is a UDC chapter and measure the average number of members. Figure A.10 shows the geographic distribution of UDC chapters. In Column (1) of Table 6 , we show that towns with one standard deviation greater battle exposure had 30 percent more members of the UDC in their local chapters. Differences in the size of the UDC’s local branches should reflect different abilities to lobby local governments and mobilize the population to build Confederate memorials ( Chamberlain and Yanus , 2021 ). Between 1865 and 2020, over 1,500 Confederate monuments and memorials were erected in the US South, with a peak in 1910 (see Figure A.10 ). These include",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 17,
+        "section_name": "Transmission of Confederate Culture",
+        "paragraph_id": 2,
+        "text": "dedications of roads, schools, courthouses, buildings, holidays, and most commonly, public statues ( Henderson et al. , 2021 ). The event of monument unveiling took on a significance equal to, if not greater than, Memorial Day ( Blight , 2001 ). The first of these monuments was a standing statue of Stonewall Jackson, unveiled in Richmond, Virginia, on October 26, 1875, in front of nearly 50,000 people gathered for the celebration. The realization of these monuments required large investments and political leverage, capturing the complex strategies that characterized the organizational effort of memorial organizations. A telling example is the story of the Robert E. Lee Monument on Monument Avenue in Richmond, Virginia. After Lee’s death in 1870, memorial organizations in the Richmond area began fundraising and organizing efforts. A Lee Monument Association was founded to raise money for the monument. It took twenty years of activities to eventually cover the $ 77,500 cost of the massive monument that was finally erected in 1890 ( Owley and Phelps , 2020 ). The monument stood for more than a century until it was removed on September 8, 2021. The symbolic meaning of the celebration of Confederate heroes became a powerful mechanism of transmission of the Lost Cause narrative. We collect information on Confederate memorials from a list compiled by the Southern Poverty Law Center (SPLC)’s “Whose Heritage?” database. For each town in our sample, we identify whether there is a Confederate monument. Column (2) in Table 6 shows that one additional standard deviation in battle exposure increases the probability of having a Confederate monument by 12.4 percentage points.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 17,
+        "section_name": "Transmission of Confederate Culture",
+        "paragraph_id": 4,
+        "text": "The KKK was founded immediately after the Civil War by six Confederate Veterans and, in the next few years, opened chapters across the former Confederacy. They operated as a network of local terrorist groups, targeting newly freedmen and suspected Republicans (regardless of race) supporting the radical Reconstruction efforts ( Foner , 1982 ). In 1870, after the federal grand jury categorized the KKK as a terrorist organization, hundreds of Klan members were prosecuted, leading to the organization’s disintegration. However, in 1915, the KKK was reborn with chapters opening across the nation. While the objective of white supremacy remained the same, their methods became more sophisticated. The second Klan not only used violence to control the Black population but also infiltrated the government and bureaucracy. At its peak in 1924, the KKK had 4-6 million members, including lawmakers, judges, and police officers ( Bullard , 1998 ). The presence and actions of these terrorist organizations polarized local communities and perpetuated racial conflict. Moreover, the visible",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 17,
+        "section_name": "Transmission of Confederate Culture",
+        "paragraph_id": 5,
+        "text": "presence of the KKK represented a powerful display of symbology in itself, recalling Confederate elements and other symbols of white supremacy. The effects of their actions persisted even after their demise through their influence on the local administration, including school boards, judges, politicians, and public employees ( Bullard , 1998 ). We obtain information on the location of the second KKK chapters from 1915–40 from the Virginia Commonwealth Library’s Klan Map Project (see Figure A.9 ). Column (3) in Table 6 reports the effect of battle exposure on the probability of observing a KKK chapter in a given town between 1915 and 1940. We take the presence of a chapter as an indication that the KKK captured the local institutions and enforced racial segregation facilitating the transmission of racist social norms. We find that a standard deviation increase in battle exposure raises the likelihood that a town has a KKK chapter by 6.4 percentage points. The magnitude of the effect is 82 percent of the average probability of having a KKK chapter per town.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 17,
+        "section_name": "Transmission of Confederate Culture",
+        "paragraph_id": 7,
+        "text": "Finally, we investigate the prevalence of Confederate names among individuals living in towns more or less exposed to the Civil War. In our previous analysis ( 5.1.3 ), we documented the emergence of Confederate names among white males born during the war. Here, we study their prevalence over time. Even though battle exposure increased the number of newborns with Confederate names only for a few years after the Civil War, the prevalence of these names within communities might have persisted over time, possibly affecting the horizontal transmission of Confederate values. Using the complete-count Census records, we measure the share of white Southern males with distinctively Confederate names in each census year between 1840 and 1900. In Column (4) of Table 6 , we show that battle exposure had a substantial and statistically significant effect on the share of white males with Confederate names. In an event study framework (Figure C.14 ) we show that the effects are observable in the first census after the war (1870) and are present for many decades, fading away only in 1910. Overall, Table 6 shows that battle exposure had a strong and lasting effect on the transmission across generations of a culture that celebrates and memorializes Confederate soldiers as war heroes fighting for a just cause. The war memorialization effectively sustained a culture of discrimination against Black Americans and promoted physical and political violence through lynchings and segregation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 18,
+        "section_name": "Long-term Effects: The Legacy of the Civil War",
+        "paragraph_id": 0,
+        "text": "In the last section of the paper, we ask whether the war’s heritage still affects racial conflict today. To measure contemporary white supremacy and violence against Black Americans, we use the prevalence of police killings of Black people, white supremacist rallies, and anti-Black hate crimes.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 19,
+        "section_name": "Police Killings of Black People",
+        "paragraph_id": 0,
+        "text": "First, we look at the relationship between public institutions and the Black population. We focus on the police, an institution at the center of the debate on institutional racism. Because public institutions carry inertia, we may still observe a racial bias within these institutions today. To explore this hypothesis, we study police killings of Black people, an issue that has come under great scrutiny in the last decade and, in certain instances, directly results from institutional racial bias ( Masera , 2021 ; Hoekstra and Sloan , 2022 ). We incorporate data on police killings that are recorded by the Mapping Police Violence Database (MPVD2000-2018). We use information on the victims’ race and event location to measure the number of police killings of a Black person. We match data on police killings from 2000 to 2018 to our sample of towns by constructing a variable equal to 1 if, in a given year, a police killing of a Black person occurred within 25 km. In total, there are 1,510 killings of a Black person in our sample. In column (1) of Table 7 , we estimate a large and precise relationship between battle exposure and the probability that a police killing occurred within 25 km. An additional standard deviation in battle exposure increases the probability that a town has a police killing by 6.7 percentage points. In column (2), we show the results are robust to controlling for the share of enslaved people in 1860. This control both captures the well-known legacy of slavery and predicts the contemporary share of Black inhabitants. By controlling for this measure, we mitigate the worries that the police killings of Black people only reflect the proportion of the Black population. An important caveat to interpreting these results as evidence of institutional discrimination is that police killings of Black people may also be driven by differences in crime rates and police resources, which we do not control for.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 20,
+        "section_name": "White Supremacist Rallies",
+        "paragraph_id": 0,
+        "text": "Second, we study the long-run persistence of white supremacist organizations by looking at white supremacist rallies that were held between 2020-2023. White supremacist rallies are from the armed conflict location and event dataset (ACLED) ( Raleigh et al. , 2010 ). Since 2020 ACLED has collected information on political protests and violent events in the United States. We combine this information with a list of U.S.- based white supremacist groups provided yearly by the Southern Poverty Law Center (SPLC), a non-profit organization monitoring extreme-right activists in the United States. We code a white supremacist rally as any event involving a white supremacist group identified by the SPLC and measure the likelihood that a white supremacist rally occurred between 2020 and 2023 within a 25 km radius of each town in our sample. In total, there have been 121 white supremacist rallies in this period. As we showed in Table 6 , towns with larger battle exposure had substantially more KKK chapters during the second wave of the KKK between 1915 and 1940. After that, the KKK and other white supremacist organizations lost their widespread support, but in more recent years, similar organizations have reemerged. We study these organizations in columns (3) and (4) of Table 7 . The results show that an additional standard deviation in battle exposure increases the probability that a town had a white supremacist rally within 25 km by 6.7 percentage points.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 21,
+        "section_name": "Hate Crime",
+        "paragraph_id": 0,
+        "text": "Finally, we study extreme actions by private citizens by looking at hate crimes towards Black people. Information on hate crimes has been gathered by the F.B.I. through the Uniform Crime Reporting Program Data Series since 1990. Hate crimes are defined as crimes that manifest evidence of prejudice based on race, religion, sexual orientation, or ethnicity. We focus on crimes motivated by racial considerations and measure the number of Black hate crimes per 100,000 residents in each county from 1992 to 2018. 49 We find large and significant effects of battle exposure on hate crimes. An additional standard deviation increase in battle exposure raises the hate crime rate against Black people by 0.062 per 100,000 people. While these results should be interpreted with caution given the distance in time separating the Civil War from contemporary events, Table 7 presents suggestive evidence that the war’s heritage still affects racial conflict today.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 22,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "Our study sheds new light on the geography of racial hate in the US South by exploring the role of the Civil War. We show that communities that experienced greater battle exposure developed a stronger attachment to a Confederate identity centered on the war’s heritage, causing an increase in the support for segregationist racial norms and violence against Black Americans. We find that exposure to battles with similar casualties but that differ in other dimensions —namely exposure to symbolic battles and combat against Black soldiers— drives the main effects. These results, in combination with the increase in the prevalence of distinctively Confederate names in communities with higher battle exposure, indicate the significance of cultural channels in explaining the findings. Moreover, our results highlight the importance of civilians’ experiences in the home communities of fallen soldiers. We argue that cemeteries, where citizens gathered to celebrate their relatives’ sacrifice, became the first sites of memorialization. These played a crucial role in the emergence of a Confederate culture exposing individuals to the experience of collective grief, celebratory speeches, and fostering in-group identity. Our findings rule out interpretations of the war’s effects determined by demographic and economic changes. Importantly, we find that the Civil War exacerbated racial conflict, spreading it outside regions traditionally associated with slavery. The effect of the Civil War does not depend on the size of the local Black population, nor is it complementary to the presence of large ex-slaveowners in the post-war period. The effects of the war on racial hate persisted for generations. Our results indicate that persistence is due to the creation of memorial organizations and symbols that acted as drivers of socialization. The presence of Confederate statues, KKK and UDC chapters, and the naming of children after Confederate heroes indicate the importance of both within-family and community-wide transmission. Today, the war’s heritage and its symbology remain entrenched in local communities, continuing to shape identity politics and racial conflict.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 4,
+        "text": "Figure in panel (a) displays the raw variation in each town’s battle exposure. Figure (b) displays the variation in battle exposure after controlling for the share of volunteers, state fixed effects, the share of soldiers who fought in the eastern theater, the average distance to a battle, whether the town is within 10km of a large battle, and whether the town is within 10km of the Sherman March. Darker colors indicate higher battle exposure. Panel (c) and (d) show the histogram of the unconditional and conditional variations, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 6,
+        "text": "1844 1852 1860 1868 1876 1884 1892 1900 1908 1916 1924 1932 1940 1948 1956 1964 Year Democrat Share Other Segregationist Parties",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 7,
+        "text": "The figure displays coefficients from an event study where 1860 is the excluded year. Coefficients correspond to the effect of a one standard deviation increase in battle exposure on the Democratic vote share in Presidential elections. The effect on the vote share for the Dixiecrats in 1948 is displayed in red. The gray bars indicate elections in which Black voters were enfranchised – the elections of 1872 and 1876. Elections to the right of the vertical gray line occurred after the political realignment of the Democratic Party along racial lines.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 10,
+        "text": "Percent Enslaved 35.58 0.25 0.22 (2.73) (0.32) Slave Crops Suitability 0.77 0.05 . (0.04) Share Free Black 1.52 -0.20 0.07 (0.23) (0.05) Democrat Vote Share 57.55 -2.49 -0.10 (1.80) (0.37) Pro-Slavery Vote 71.17 -0.41 0.73 (2.51) (1.44) Distance to Railroads 0.55 0.03 . (0.05) Latitude 34.50 0.04 . (0.12) Longitude -84.58 -0.33 . (0.25) White Sex-Ratio 95.06 0.22 0.35 (0.44) (0.30) Ln of Population 9.57 0.09 0.02 ⋆ (0.06) (0.01) Literacy Rate White 23.87 1.40 -0.55 (1.03) (0.38) Share Born Abroad 2.76 0.65 0.01 (0.44) (0.11) Occupational Score White 8.29 0.05 -0.40 [FORMULA] (0.44) (0.11) Ln White Skilled Laborers 7.24 0.18 ⋆ -0.00 (0.10) (0.04) Ln Black Skilled Laborers 3.00 -0.03 -0.02 (0.15) (0.07) Value of Real Estate 512.37 -24.31 -25.84 ⋆ (39.56) (14.66) * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. The unit of observation is a town. The sample restricted to states in the former Confederacy before the war. Each number in columns (2) and (3) represents the coefficient from a regression of the variable on battle exposure (normalized to mean zero, standard deviation one). All estimates are weighted by the number of enlisted solidiers from a given town and include state fixed effects, whether the town is within 10km of a battle, whether the town is within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the average distance to a battle and the share of volunteers. In column (3) these controls are interacted with a year fixed effect. Column (3) also includes a town fixed effect. Column (2) standard errors are corrected for spatial autocorrelation with a 100km bandwidth. Column (3) clusters standard errors by town. 37",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 13,
+        "text": "Post Civil War × BE 4.546 [FORMULA] 3.615 [FORMULA] 4.202 [FORMULA] 4.148 [FORMULA] 4.262 [FORMULA] (1.258) (1.230) (1.215) (1.453) (1.166) Post Civil War × % Enslaved (1860) 7.036 [FORMULA] (0.692)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 14,
+        "text": "Observations 91276 111454 91276 91276 91276 Sample Baseline 1840-1964 Baseline Baseline Baseline BE Measure Baseline Baseline Death Defensive Baseline Outcome Average 66.11 63.94 66.11 66.11 66.11 Y( BE ) - Y(0) 9.353 7.437 8.998 8.139 8.362 * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. OLS estimates. The unit of observation is a town-presidential election year. The baseline sample starts with the 1840 and ends with the 1944 election. Radical Reconstruction years (1872 and 1876) are excluded. Post Civil War is a dummy equal to one for years after 1865. BE and % Enslaved (1860) are normalized to mean zero, standard deviation one. The outcome is the vote share for the Democratic presidential candidate. The sample is restricted to states in the former Confederacy. All regressions control for town and year fixed effects. We also control for state fixed effects, and whether the town is within 10km of a battle, within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the average distance to a battle, and the share of volunteers, each interacted with year fixed effects. All regressions are weighted by the number of enlisted soldiers from each town. Standard errors clustered at the town level are reported in parentheses.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 17,
+        "text": "Post Civil War × BE 0.028 [FORMULA] 0.031 [FORMULA] 0.029 [FORMULA] 0.029 [FORMULA] (0.007) (0.007) (0.007) (0.007) Post Civil War × % Enslaved (1860) 0.012 [FORMULA] (0.004)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 18,
+        "text": "Observations 969370 969370 969370 969370 BE Measure Baseline Death Defensive Baseline Outcome Average 0.600 0.600 0.600 0.600 Y( BE ) - Y(0) 0.060 0.068 0.059 0.060 * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. OLS estimates. The unit of observation is a town-roll call vote for years 1840 to 1964. Radical Reconstruction is excluded (1869-1876). Post Civil War is a dummy equal to one for years after 1865. BE and % Enslaved (1860) are normalized to mean zero, standard deviation one. The outcome is a binary variable equal to one if the representative voted in support of slavery / racial segregation. The sample is restricted to states in the former Confederacy. All regressions control for town and year fixed effects. We also control for state fixed effects, and whether the town is within 10km of a battle, within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the average distance to a battle, and the share of volunteers, each interacted with year fixed effects. All regressions are weighted by the number of enlisted soldiers from each town. Standard errors clustered at the town level are reported in parentheses.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 20,
+        "text": "Town Level Outcome County Level Outcome 100*1(Lynching) Per capita Lynching (1) (2) (3) (4) (5) (6) (7) (8)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 21,
+        "text": "BE 0.211** 0.194** 0.192* 0.206* 0.031** 0.033[FORMULA] 0.023* 0.030** (0.102) (0.098) (0.100) (0.108) (0.013) (0.012) (0.013) (0.013) % Enslaved (1860) 0.372[FORMULA] 0.076[FORMULA] (0.074) (0.011) Observations 401039 401039 401039 401039 401039 401039 401039 401039 BE Measure Baseline Death Defensive Baseline Baseline Death Defensive Baseline Outcome Average 0.983 0.983 0.983 0.983 0.236 0.236 0.236 0.236 Y( BE ) - Y(0) 0.433 0.414 0.377 0.424 0.064 0.070 0.045 0.062 * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. OLS estimates. The unit of observation is a town each year from 1865 to 1964. The sample is restricted to states in the former Confederacy. In columns (1)-(4) the outcome is measured at the town level using a combination of self-collected data and information from the Monroe Work Today (MWT) collection, which takes value 100 when a lynching occurred in that town-year and zero otherwise. In columns (5)-(8) the outcome is the number of lynchings per 100,000 people, measured at the county level using a combination of self-collected data and the Bailey-Tolnay-Beck (BTB) inventory. All regressions control for town and year fixed effects. We also control for state fixed effects, and whether the town is within 10km of a battle, within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the average distance to a battle, and the share of volunteers, each interacted with year fixed effects. All regressions are weighted by the number of soldiers enlisted from each town. Standard errors clustered at the town level are reported in parentheses. BE and % Enslaved (1860) are normalized to mean zero, standard deviation one.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 23,
+        "text": "Battle Experience Memorialization Democrat Share (1) Democrat Share (2) Democrat Share (3) Democrat Share (4) BE: Largest Battles 10.064 [FORMULA] (2.634) BE: Other Battles 0.127 (2.031) BE: Most Famous Battles 10.446 [FORMULA] (2.653) BE: Less Famous Battles 3.443 (2.361) BE: Black Soldiers 17.920 [FORMULA] (5.274) BE: Only White Soldiers 2.145 (1.590) Post Civil War × BE 3.860 [FORMULA] (1.355) Post Civil War × BE × Cemetery 2.963 [FORMULA] (1.101) Observations 91280 91280 91280 91280 Outcome Average 66.110 66.110 66.110 66.110 * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. OLS estimates. The unit of observation is a town - presidential election year. The sample starts with the 1840 and ends with the 1944 election. Radical Reconstruction years (1872 and 1876) are excluded. The outcome is the share of votes for the democratic party. BE: Largest Battles and BE: Other Battles represent, respectively, battle exposure for the largest 17 battles and for the remaining 48 battles. BE: Most Famous Battles and BE: Less Famous Battles represent, respectively, battle exposure for the most famous 12 battles and for the remaining 53 battles. BE: Black Soldiers and BE: Only White Soldiers represent, respectively, BE computed from battles in which Black soldiers fought in the Union Army and battles in which only white soldiers fought. Cemetery is a dummy equal to one if the town had a Confederate cemetery within 25 km. The sample is restricted to states in the former Confederacy. All regressions control for town and year fixed effects. We also control for state fixed effects, and whether the town is within 10km of a battle, within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the average distance to a battle, and the share of volunteers, each interacted with year fixed effects. Standard errors are clustered at the town level. All regressions are weighted by the number of enlisted soldiers from each town.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 26,
+        "text": "1840 1845 1850 1855 1860 1865 1870 1875 1880 1885 1890 1895 1900 Year Share Births with Confederate Names",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 29,
+        "text": "1840 1845 1850 1855 1860 1865 1870 1875 1880 1885 1890 1895 1900 Year Share Births with Confederate Names",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 31,
+        "text": "Panel (a) displays the share of white males with distinctively Confederate names born each year. Figure (b) displays the effect of battle exposure on the share of white males with distinctively Confederate names born each year.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 34,
+        "text": "BE 0.299 ∗ 0.124 [FORMULA] 0.064 ∗∗ (0.160) (0.030) (0.026) Post Civil War × BE 0.031 [FORMULA] (0.012)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 35,
+        "text": "Observations 4051 4051 4051 19843 Outcome Geography Town Town Town County Outcome Average 44.740 0.390 0.080 0.460 Y( BE ) - Y(0) 0.614 0.255 0.131 0.064 * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. OLS estimates. In columns (1)-(3), the unit of observation is a town and the outcomes are measured at the town level. In column (1) the outcome is the inverse hyperbolic sine of the average yearly number of members of the United Daughters of the Confederacy from 1897 to 1925 in each town. In column (2) the outcome is a binary variable equal to one if a town has a Confederate monument. In column (3) the outcome is a binary variable equal to one if the town ever had a KKK chapter. In column (4) the unit of observation is a town in each year from 1850 to 1900 and the outcome is measured at the county level. BE is normalized to mean zero, standard deviation one. The sample is restricted to states in the former Confederacy. All regressions control for whether the town is within 10km of a battle, within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the share of volunteers, the average distance to a battle and state fixed effects. In Column (4) we interact these controls with year fixed effects and include town fixed effects. In columns (1)-(3) standard errors corrected for spatial autocorrelation with a 100km bandwidth are reported in parentheses. In column (4) standard errors clustered at the town level are reported in parentheses. All regressions are weighted by the number of enlisted soldiers from each town.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 37,
+        "text": "1(Police Killing) 1(White Supremacy Rally) Per Capita Hate Crimes (1) (2) (3) (4) (5) (6) BE 0.067 [FORMULA] 0.067 [FORMULA] 0.067 ∗ 0.067 ∗ 0.062 ∗∗ 0.061 ∗∗ (0.012) (0.012) (0.038) (0.037) (0.028) (0.028) % Enslaved (1860) -0.026 ∗∗ -0.037 ∗ 0.035 ∗∗ (0.012) (0.019) (0.014)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1535,
+        "section_id": 23,
+        "section_name": "Tables and Figures",
+        "paragraph_id": 38,
+        "text": "Observations 76969 76969 4051 4051 109377 109377 Years 2000-2018 2000-2018 2020-2023 2020-2023 1992-2018 1992-2018 Outcome Geography Town Town Town Town County County Outcome Average 0.160 0.160 0.170 0.170 0.260 0.260 Y( BE ) - Y(0) 0.137 0.138 0.137 0.138 0.127 0.126 * p < 0.10, ** p < 0.05, [FORMULA] p < 0.01. OLS estimates. In columns (1) and (2), the unit of observation is a town in each year from 2000 to 2018. The outcome is a binary variable equal to one if a Black person was killed by police within a 25 km buffer of the town that year. In columns (3) and (4) the unit of observation is a cross-section of towns. The outcome is a binary variable equal to one if a white supremacist rally occurred within a 25 km buffer of the town during the period 2020 to June 2023. In columns (5) and 6), the unit of observation is a town in each year from 1992 to 2018. The outcome is the number of hate crimes against Black people per 100,000 people, measured at the county level. BE and % Enslaved (1860) normalized to mean zero, standard deviation one. The sample is restricted to states in the former Confederacy. All regressions control for whether the town is within 10km of a battle, within 10km of the Sherman March, the share of soldiers who fought in the eastern theater, the average distance to a battle, state fixed effects and the share of volunteers. Columns (1),(2),(5) and (6) we interact these controls with year fixed effects and standard errors are clustered at the town level. In columns (3) and (4) standard errors corrected for spatial autocorrelation with a 100km bandwidth are reported in parentheses. All regressions are weighted by the number of enlisted soldiers from each town.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

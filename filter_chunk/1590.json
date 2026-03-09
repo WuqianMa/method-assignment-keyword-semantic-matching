@@ -1,0 +1,1031 @@
+[
+    {
+        "paper_id": 1590,
+        "section_id": 2,
+        "section_name": "Mateusz Stalinski §",
+        "paragraph_id": 0,
+        "text": "Abstract Rising political polarization heightens concerns about politicization of regulatory agencies, prompting a reassessment of the trade-off between accountability and independence. Perceived out-group partisan oversight can erode trust in regulation and impact key markets like food and medicine—a dynamic we investigate empirically. First, we demonstrate the salience of the president-regulatory agency link in US media using TV transcript data. Second, in a pre-registered field experiment with 5,566 individuals, we test the channel using a case where both the Trump and Biden EPAs endorsed antibiotic spraying on citrus crops. This enabled us to randomize the partisanship of the administration, holding the scientific arguments constant. Out-group administration reduces support for spraying by 26%, lowers trust in the EPA’s evaluation, and raises donations to an opposing NGO by 15%. We find no effect on willingness to pay for citrus products on average, measured in an obfuscated follow-up. However, we document significant differences in effects for habitual and occasional consumers. Taken together, there is a cost to increasing executive dependence of agencies—it reduces out-party supporters’ trust and influences economic behavior, though distrust may not lower demand.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 2,
+        "section_name": "Mateusz Stalinski §",
+        "paragraph_id": 1,
+        "text": "JEL Classification: D12, D83, P16, Q11, Q13, Q18, Z18 Keywords: political polarization, civil service, trust in regulation, trust in science, food policy, partisan identity, consumer demand",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 2,
+        "section_name": "Mateusz Stalinski §",
+        "paragraph_id": 2,
+        "text": "∗ We would like to thank Luca Braghieri, Nathan Canen, Francesco Capozza, Jon Eguia, Helios Herrera, Benjamin Marx, Matthew Ridley, Devesh Rustagi, Lena Song, Alisa Tazhitdinova, Egon Tripodi, Noam Yuchtman, and numerous seminar and conference participants for helpful comments. This study was approved by the Humanities and Social Sciences Research Ethics Committee at the University of Warwick and the Behavioral Institutional Review Board at the University of Florida. The experiment was registered in the AEA Registry for randomized control trials under trial number AEARCTR-0013344. The study was partially funded with the Archer Early Career Seed Grant awarded by the University of Florida. † University of Warwick, christopher.burnitt@warwick.ac.uk . ‡ University of Florida and JILAEE, jgars87@ufl.edu . § University of Warwick and CAGE, mateusz.stalinski@warwick.ac.uk .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Political polarization in the US has been rising since the 1980s ( Iyengar et al. , 2019 ; Boxell et al. , 2022 ), intensifying concerns about the politicization of regulatory agencies. 1 These agencies are intended to rely on scientific and technical expertise to regulate key markets—such as medicine and food, with the latter worth $ 833 billion annually in the US alone. 2 However, growing perceptions of politicization may undermine their credibility, reduce public trust in regulation, and affect both demand for regulated goods and take-up of socially beneficial products, such as vaccines. 3 This paper presents novel field experimental evidence on how citizens’ perceptions of agency partisanship affect trust in expert regulation and downstream economic decisionmaking. Partisan distrust may extend to both independent and executive agencies, as presidential administrations are frequently associated with regulators in media coverage—–a connection we document empirically using TV transcript data. Our inquiry contributes to the broad debate on agency design: should we prioritize independence and meritocracy of regulatory bodies at the expense of electoral accountability? Or should legitimacy through increased executive oversight be accepted, despite the risk of political capture? Re-examining this tradeoff is especially pressing in light of Republican efforts to dismantle civil service protections under the Pendleton Act and increase oversight over agency spending, which would further erode agency independence and heighten perceived politicization. 4 To that end, we experimentally address the following research questions. First, we ask how does the political affiliation of the president, either in-group (from one’s preferred party) or out-group, influence trust in agencies and their regulations. Second, we study the consequences for economic decisions. We measure the impact of out-group administration on the support 1 We refer to regulatory agencies broadly to include independent regulatory agencies and commissions (e.g. SEC), independent executive agencies (e.g. EPA), and other executive agencies and departments that enact and enforce regulations (e.g. FDA). In practice, the degree of independence varies both across and within these broad categories, depending on factors such as appointment rules, budgetary authority, qualification requirements, regulatory powers, and institutional tradition. For further discussion, see Verkuil ( 1988 ); Datla and Revesz ( 2012 ); Breger and Edles ( 2015 ); Selin ( 2015 ). 2 https://www.statista.com/outlook/cmo/food/united-states , accessed 2024-07-17. 3 The current polarized environment makes studying the impact of political signals on trust in regulation particularly important. In fact, a key component of affective polarization is distrusting out-party supporters ( Iyengar et al. , 2019 ), even if they hold expertise on a given topic ( Alabrese et al. , 2024 ). 4 On proposed measures to strip employment protections from civil servants, see: https://www.nbcnews. com/politics/2024-election/trump-schedule-f-executive-order-stop-civil-servantsgovernment-rcna128003 , accessed 2024-07-17. On spending oversight, see Executive Order 14125, which gives the Office of Management and Budget (OMB) more powers in overseeing agency spending.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "for expert regulations and donations to NGOs that oppose them. Moreover, we quantify the effects on demand for regulated goods. Answering these questions speaks to the trade-off between independence and accountability of regulatory agencies by testing whether, and to what extent, their perceived dependence on the executive undermines trust among out-party supporters. With people inevitably living much of their lives under out-group administrations, understanding the economic consequences of this distrust is crucial. To tackle these questions, we designed an information provision field experiment about citrus greening, a disease decimating citrus crops. We exploit a unique opportunity presented by an Environmental Protection Agency (EPA) policy that was issued during the Trump administration and subsequently challenged in court during the Biden administration—in both cases the EPA defended the safety of spraying crops with antibiotics to fight the disease and relied on the same scientific evidence to argue that direct and indirect risks to consumers are minimal (Section 2.4 ). This allowed us to randomize the apparent partisanship of the EPA while holding the scientific arguments constant . We recruited a sample of N=5,566 US Democrats via Prolific, 5 a platform that allows researchers to find participants with specific characteristics. 6 Upon collecting demographic data, including baseline levels of orange juice consumption, all participants received information about citrus greening and antibiotic spraying of citrus crops. Subsequently, we randomized them into one of three experimental groups: (1) Biden treatment (40% chance), (2) Trump treatment (40% chance), or (3) Control (20% chance). In the two treatment groups, participants learned about potential risks that were flagged by opponents of the antibiotic spraying. This was followed by the EPA’s justification for the policy, including excerpts of scientific evidence used by the EPA to argue that the practice was safe. Participants in the Control group did not learn about the opponents’ or the EPA’s stance. In the Trump group, we stated that “the EPA under the administration of President Donald Trump provided arguments and scientific evidence supporting the position that antibiotic spraying of citrus crops poses little risk and meets the regulatory and safety standards.” The Biden treatment was identical to the Trump one, except that we replaced all mentions of Trump with Biden. In both groups, we displayed a photo of the respective president—we 5 We elected to conduct the study with a sample of Democrats rather than Republicans due to their much higher availability on Prolific. According to our power calculation, we needed about 5,500 individuals who complete the first survey to achieve the desired minimum detectable effect—in the range of 0.09-0.1 SD—for our main outcome. It would have been impossible to recruit so many Republican participants on Prolific. 6 Prolific offers high data quality relative to competitors e.g., CloudResearch, Dynata ( Peer et al. , 2022 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "randomized whether it was a photo of the president shaking hands with the EPA’s head or the president’s portrait. 7 Including a photo with a caption is a natural addition to the text—when regulation is presented in the news, it is accompanied by photos (websites) or video footage (TV). We also presented a list of specific arguments made by the EPA’s scientists. Crucially, the arguments did not vary by treatment. Thus, we achieved our goal of exogenously varying the apparent political affiliation of the EPA, holding all else constant. After the intervention, we elicited support for the antibiotic spraying of citrus crops and willingness to donate to the United States Public Interest Research Group (USPIRG), a nonpartisan, non-profit organization advocating against the antibiotic spraying. 8 We also collected secondary outcomes, including an index of trust in the EPA’s scientific evaluation. 9 Three days after the initial survey, we invited participants to an obfuscated follow-up study to elicit treatment effects on demand for citrus products. The survey focused on grocery store preferences, a topic very different from the subject matter of the original survey. The two surveys used consent forms and domains from different institutions, adhering to the state-ofthe-art recommendations for obfuscation ( Haaland et al. , 2023 ). Following decoy questions, we offered participants a chance to bid for a product-specific Amazon gift card for one of the goods mentioned in the survey—orange juice. 10 We used a multiple price list, with participants being asked to make choices between the fixed value product-specific gift card ( [FORMULA] 1 bonus payment with USPIRG in any way they wanted. 9 Other secondary outcomes include an incentivized measure of beliefs about partisan support for the regulation. We also elicited planned consumption of orange juice (for a random subsample of 15% of respondents), and inquired about determinants of the plan (internalities vs. externalities). See Section 4 for the results. 10 To further enhance the obfuscation, participants were told that they will be asked to bid for a randomly assigned product from the set of products previously mentioned in the survey. We did indeed randomize the assigned product—either orange juice or shampoo, though the latter option had only 1% probability. 11 We tested that participants understood the relevant instructions using a comprehension question. 96% correctly indicated that they cannot use the gift card for products other than orange juice. 12 https://www.emarketer.com/chart/248275/ , accessed: 2024-10-04.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "the gift cards convenient to participants. 13 We now discuss the results of the paper. The out-group presidential administration reduces support for the EPA’s antibiotic spraying policy by 26% (p < 0.001). Specifically, 28.6% of individuals in the Biden group prefer spraying to remain legal compared to 21.1% in the Trump group. Our pre-registered index of support, based on agreement with four statements, exhibits the same pattern (p < 0.001). In addition, the treatment affects trust in the EPA’s evaluation. Although both groups were shown identical scientific evidence used by the EPA to conclude that the antibiotic spraying is safe, the trust index was significantly higher in the Biden group than in the Trump group (p < 0.001). Despite the role of regulatory agencies (such as the EPA) as providers of merit-based expertise, support for and trust in their regulations is strongly affected by the president’s political affiliation, with whom they are formally linked by institutional design. With agencies regulating critical products such as vaccines and food, this poses potential health risks, and raises concerns about broader consequences of a possible rolling back of the Pendleton Act and other measures strengthening the executive dependence (e.g., increased powers of the OMB over agency spending.). The second set of results explores whether distrust translates into economic behavior. The out-group presidential administration increases donations to a nonpartisan NGO opposing antibiotic spraying by 15% (p < 0.001). Specifically, Democrats in the Trump group donated 39.4% of their bonus to USPIRG, compared to 34.3% in the Biden group. Moreover, an EppsSingleton test rejects the null that donation distributions are identical (p < 0.001). These findings show that the perception of partisan oversight, and thus the choice to have political oversight of regulators at all, can shape economic decisions. Importantly, this is not simply a measure of in-group favoritism. We emphasized to participants that USPIRG is nonpartisan, science-focused, and unaffiliated with any political campaign. Finally, we discuss treatment effects on the WTP for orange juice Amazon gift cards, measured in the follow-up survey. Despite having power to detect effects as small as 0.09-0.1 SD, we find no overall effect of the out-group presidential administration on the WTP. The differences across groups are not significant, with an [FORMULA] 1.69 in the Trump group, [FORMULA] 1.64 in the Control. Due to potential demand heterogeneity for habitual vs. occasional consumers, we preregistered analysis by pre-treatment orange juice consumption. 14 Demand responses differ: 13 Amazon Prime users do not have to pay the delivery costs of Prime-eligible items. Many citrus products covered by our custom gift cards were Prime-eligible. 14 Consumers that frequently purchase orange juice may be less sensitive to potential individual risks asso-",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "while the effects of out-group vs. in-group presidential administration for the low consumption bin ( − 5.2%) and the high bin (13.8%) are insignificant, the difference is significant (p=0.084), indicating heterogeneous effects. We observe a similar pattern for Trump vs. Control. Consistent with these results, we observe increases in USPIRG donations in the Trump treatment relative to the Biden group by 26.3% (p < 0.001), 13.7% (p=0.02), and 6.0% (p=0.36) for the low, medium, and high consumption bins, respectively. Frequent consumers are less responsive, while marginal ones are more reactive. Together, the results suggest that the perception of partisan oversight has the potential to affect economic outcomes. However, distrust in regulation may not translate into reduced demand, on average. This is notable given that food safety is particularly fear-inducing, according to Pew Research Center data 15 and research studies (e.g., Hwang et al. , 2005 ; Lusk et al. , 2006 ; Dahlhausen et al. , 2018 ). We conduct several robustness checks. First, the take-up of the follow-up survey was high at 88%, with no evidence of differential attrition—either across all groups or between Biden and Trump conditions—and no observable imbalances among follow-up respondents. Second, to test whether the EPA is perceived as unusually politicized, we cross-randomized whether the information intervention named the EPA or referred to the “relevant regulatory agency.” 16 We find no evidence of heterogeneous treatment effects (Biden vs. Trump) based on this wording. One may also worry whether participants believed the spraying continues until today. To address this, we highlighted in the survey that streptomycin spraying was permitted to continue as of December 2023. As a result, almost 90% of participants indicated that the spraying is ongoing. Lastly, we report robustness of our results to re-weighting observations to match Democrat-identifying Americans on age, race, gender and education. Our results on how the administration in power affects trust and support for regulation issued by formally meritocratic and science-driven agencies naturally lead to the question of whether news reporting makes the executive oversight salient. To address this, we analyze TV news transcript data using GDELT Television Archive from 2009 to 2024. The data is organized into 15-second intervals. For each interval mentioning a regulation by an agency, we check whether it also mentions the president. Combining the intervals at the agency-stationciated with antibiotics for several reasons including habit formation, subjective risk perceptions, status quo bias, or loyalty. 15 According to Pew Research Center’s data, 80% of Americans believe that meat from animals given antibiotics or hormones poses health risks (32% say that it poses a great risk). The proportions are almost the same for fruits and vegetables grown with pesticides. The survey is available at https://www.pewresearch.or g/internet/2018/11/19/public-perspectives-on-food-risks/ , accessed: 2024-10-06. 16 Given the regulation’s focus on antibiotics, participants were unlikely to expect the EPA to be responsible, as opposed to the FDA or CDC.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "show-date level, we find that in 37% of cases where the regulation is mentioned, a presidential administration is also named—40% for executive agencies and 34% for independent agencies. Since we require both to be mentioned within just 15 seconds, these are very high proportions. 17 We conclude that the association between the president and the agencies in media reporting on regulation is generally salient. Our work relates to three strands of literature. First, we contribute to research on the economic consequences of political polarization ( Iyengar et al. , 2019 ) and cultural divergence ( Bertrand and Kamenica , 2023 ). Using a novel experimental design, we assess the economic costs of perceived politicization of expert agencies, addressing a gap in studies on political signals and economic outcomes, which neglect regulators. Prior work focuses on political signaling by job applicants and sellers ( Gift and Gift , 2015 ; McConnell et al. , 2018 ), and on consumer responses to companyand product-level cues, with mixed evidence ( Liaukonyt ̇e et al. , 2023 ; Schoenmueller et al. , 2023 ; Liaukonyte et al. , 2024 ; Hou and Poliquin , 2024 ; Conway and Boxell , 2024 ); Bursztyn et al. ( 2022 ) highlight politicization in healthcare policy adoption. Unlike those contexts—where political signaling is a choice or easy substitution is feasible—partisan signals from expert agencies are unavoidable, and consumers struggle to substitute away from regulations that apply to entire markets or essential goods. 18 Our empirical results offer four insights: we document the salience of presidential oversight over agencies in the media; show that perceived politicization can affect economic outcomes (NGO donations); highlight that partisan distrust in regulation does not always shift demand for the relevant product; and strengthen the case for studying polarization trends and mitigation strategies ( Levy , 2021 ; Boxell et al. , 2022 ; Draca and Schwarz , 2024 ; Kashner and Stalinski , 2024 ; Braghieri et al. , 2024 ; Robinson and Tazhitdinova , 2024 ). Our paper also adds to the nascent literature on determinants of trust ( Fehr , 2009 ) in institutions, a vital topic given its deterioration over time ( Dustmann et al. , 2017 ; Davies et al. , 2021 ) and its welfare consequences ( Gollwitzer et al. , 2020 ; Bursztyn et al. , 2023 ). Through our focus on agencies, we specifically add to the literature on trust in government and civil service ( Acemoglu et al. , 2020 ; Durante et al. , 2021 ; Martinez-Bravo and Sanz , 2023 ). Our paper is timely given rising politicization of the civil service and expected overturning 17 The share was even greater for the EPA (53%), the agency relevant to the experiment. The proportion remained fairly stable in the last 15 years, with a peak during Trump’s presidency. The shares do not depend on political leaning of the TV station, with Fox, CNN, and MSNBC data showing similar patterns. 18 Firms can refrain from political references, and consumers can switch to alternative products; job seekers can omit political cues from CVs, and employers may reject applicants who signal incongruent partisanship. Expert agencies differ—partisan signals are unavoidable as the president has nominal oversight over them.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 3,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "of Pendleton Act protections. The results are also related to recent work on trust in science ( Alabrese et al. , 2024 ). We show the impact of perceived out-group political oversight on trust in scientific evaluation in a natural and highly consequential context of expert agencies. More broadly, we contribute to the question of the optimal design of regulatory agencies, specifically the trade-off between independence and accountability. We add to the growing research on the topic ( Koop and Hanretty , 2018 ; Del Angel and Richardson , 2022 ; Schram and Ule , 2024 ) by quantifying how the perceived dependence on the executive undermines trust among out-party supporters, and what are the downstream economic consequences. Lastly, we make a methodological contribution to the literature on measuring interventions’ effects on demand (e.g., Hainmueller et al. , 2015 ; Allcott et al. , 2022 ). To our knowledge, we are the first to apply product-specific Amazon gift cards to estimate the willingness to pay for a good. The anonymous distribution makes our method suitable for measuring the WTP for products in large-scale online studies. We also demonstrate how to practically combine product-specific gift cards with solutions reducing experimenter demand effects ( Haaland et al. , 2023 ), thus aiding future research efforts relying on the new approach.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 0,
+        "text": "To motivate our study of the impact of out-group vs. in-group partisan oversight on trust in regulatory agencies, support for their regulations, and related economic decisions, we first consider how perceptions about this partisan oversight might arise in the real world. Specifically, we explore one possible source of this perception—that news reporting makes the oversight salient. We construct measures of news coverage of US agencies using data from the GDELT Television Archive. The archive contains transcripts of major US and international broadcast news networks organized into 15 second intervals. The intervals are derived from raw closed captions from the Television News Archive, with coverage starting in 2009. We restrict our analysis to Fox News, CNN, and MSNBC, which have complete coverage from 2009 to 2024. Using the GDELT 2.0 TV API, we conduct keyword searches for all intervals that contain the name and/or acronym of the following agencies: (1) independent executive agencies, (2) independent regulatory agencies, (3) executive departments, and (4) agencies under executive",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 2,
+        "text": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Year Regulation No Regulation (a) EPA 0 .1 .2 .3 .4 .5 .6 .7 .8 .9 Share that mention president",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 3,
+        "text": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Year Regulation No Regulation (b) Top 20 agencies",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 4,
+        "text": "Figure 1: Trends in TV discussions of US agencies Note: We use the GDELT Television Archive dataset of transcripts of shows on three US news networks (Fox News, CNN, MSNBC) organized into 15-second intervals. For each interval mentioning a regulation by an agency, we check whether it also mentions the presidential administration. Combining the intervals at the agency-station-show-date level, we report the likelihood that where regulation is mentioned, the presidential administration is also named (solid line). We also report the likelihood that the administration is named during segments where an agency is mentioned but no regulation is discussed (dashed line). Panel A shows the likelihood over time for regulation by the Environmental Protection Agency. Panel B demonstrates the same variable for the top twenty agencies with the highest number of mentions throughout the sample period.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 5,
+        "text": "departments. 19 For each snippet, the query returns the text from the interval, the station name, show name, and date that the show was aired. Because each snippet only contains the text of 15 second intervals, we combine snippets into news segments at the agency-stationshow-date level. Using the interval text, we construct two binary measures of whether a segment contains a reference to: (1) new or existing regulations and (2) the current or previous presidential administrations. Limiting the sample to the top twenty agencies with the highest number of mentions, we identify 456,051 snippets and 167,765 segments in total. Among these segments, 33,260 contain a reference to a new or existing regulation and 52,681 contain a reference to the current or previous presidential administrations. We show that in 37% of cases where a regulation is mentioned, a presidential administration is also named. The proportion is 40% for executive agencies and 34% for independent agencies. Since we require both to be mentioned within just 15 seconds, these are very high proportions. The share for the EPA, the agency relevant to the experiment, is even higher at 53%. The results by individual agency are reported in column (1) of Table 1 . For completeness, column (2) reports the likelihood that the administration is mentioned during segments where an agency is mentioned but no regulation is discussed. Furthermore, Figure 1 shows the likelihood of mentioning the presidential administration when reporting on regulation over time (solid line). The likelihood remained fairly stable in the last 15 years, with a peak during Trump’s 19 We exclude the Department of Defense along with its sub-agencies and service branches.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 6,
+        "text": "first presidency. In the online appendix, we also demonstrate that the trends do not depend on the political leaning of the TV station, with Fox News, CNN, and MSNBC data showing similar patterns. Taking all of the results together, we find that the association between the president and expert regulators in media reporting is considerably salient. Table 1: Presidential Administration and Expert Regulation in News",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 7,
+        "text": "Regulation No regulation N President (%) N President (%) Independent agencies 18024 33808 Federal Reserve 11857 12267 Environmental Protection Agency 3474 53 7237 Securities And Exchange Commission 682 3781 Federal Election Commission 329 2787 Federal Communications Commission 863 2224 Federal Trade Commission 290 1750 Small Business Administration 95 1675 Consumer Financial Protection Bureau 181 47 801 Federal Deposit Insurance Corporation 225 716 Social Security Administration 46 570 Executive agencies 15236 98787 Centers For Disease Control 3301 49 22571 Department Of Homeland Security 2136 60 20294 Internal Revenue Service 1676 52 16779 Food And Drug Administration 5019 11253 Health And Human Services 1396 53 11845 Alcohol Tobacco And Firearms 394 45 5525 Department Of Education 478 3897 Department Of Transportation 343 2795 Department Of Agriculture 251 2455 Department Of Labor 242 1373 All agencies 33260 132595",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 5,
+        "section_name": "Media Reporting",
+        "paragraph_id": 8,
+        "text": "Note: We use the GDELT Television Archive dataset of transcripts of shows on three US news networks (Fox News, CNN, MSNBC) organized into 15-second intervals. For each interval mentioning a regulation by an agency, we check whether it also mentions the presidential administration. Combining the intervals at the agency-station-show-date level, we report the likelihood that where regulation is mentioned, the presidential administration is also named. We report these likelihoods in column (2) for 20 federal agencies with the highest number of mentions on MSNBC, CNN, and Fox News throughout the sample period. Separately, we report the likelihood that the administration is named during segments where an agency is mentioned but no regulation is discussed. The results are in column (4).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 6,
+        "section_name": "Citrus Greening Disease",
+        "paragraph_id": 0,
+        "text": "The food industry worldwide is worth an estimated US [FORMULA] 833.8 billion in the US alone. 21 Of this, citrus production in the US accounts for around $ 2.5 billion, being primarily based in California, Florida, Texas and Arizona ( USDA , 2023 ). Pests and diseases remain a constant threat to the food industry. In five of the world’s key crops, plant pest and disease outbreaks result in average yield losses between 17.2% and 30.0%, with 20 https://www.statista.com/outlook/cmo/food/worldwide , accessed 2024-08-02. 21 https://www.statista.com/outlook/cmo/food/united-states , accessed 2024-08-02.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 6,
+        "section_name": "Citrus Greening Disease",
+        "paragraph_id": 1,
+        "text": "range estimates as high as 41.1% ( Savary et al. , 2019 ). Huanglongbing (HLB), also known as citrus greening disease, is a bacterial infection transmitted by the Asian citrus psyllid. It is an incurable disease which causes citrus trees to produce bitter fruit of poor quality and in most cases kills the tree within a few years of infection. 22 The Florida citrus industry has been greatly impacted by HLB since it was first observed in 2005. 23 Since its arrival, citrus production in Florida has decreased by 90% through to the 2022-23 season ( USDA , 2024 ). Li et al. ( 2020 ) estimate that between 2015 and 2020, HLB generated over $ 1 billion in losses p.a. and 5,000 jobs lost each year. Since the disease is spread by a mobile transmission vector (insects), HLB poses a threat to the citrus industry in other citrus-growing states, being detected in parts of both California and Texas. 24",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 7,
+        "section_name": "Antibiotic Spraying",
+        "paragraph_id": 0,
+        "text": "In response, the citrus industry searched for ways to manage HLB. Streptomycin, an antibiotic used to treat some bacterial infections in humans, was proposed as a possible treatment. Foliar sprays had been shown to reduce the adverse effects of the disease by increasing fruit size and reducing fruit dropping, though they were not capable of curing the disease. 25 Between 2016 and 2021, the Environmental Protection Agency (EPA), which regulates pesticide usage, issued several emergency approvals to use foliar streptomycin sprays to mitigate the effects of HLB pending a thorough review of its use. On January 12, 2021, the EPA issued its final registration decision for the spraying of streptomycin on citrus crops. 26 In the associated report (henceforth, the EPA’s report), the EPA considered the environmental impact of the proposal, including what happens to the streptomycin after it is sprayed, and how it can affect plants and animals. It held that the proposed usage carried similar risks to existing approved agricultural applications of streptomycin. The report also considered the possible impacts on human health. While there was no direct concern of toxicity (with streptomycin being used for decades as a human antibiotic drug), the EPA addressed the concern that the spraying could contribute to antibiotic resistance in bacteria. Greater reliance on streptomycin could enable selection on strepto22 https://www.aphis.usda.gov/plant-pests-diseases/citrus-diseases/citrus-greening-and-asian-citrus-psyll id , accessed 2024-08-02. 23 https://aglab.ars.usda.gov/learn-and-explore/citrus-greening-portal , accessed 2024-08-02. 24 https://www.aphis.usda.gov/plant-pests-diseases/citrus-diseases/citrus-greening-and-asian-citrus-psyll id , accessed 2024-08-02. 25 https://www.regulations.gov/document/EPA-HQ-OPP-2016-0067-0010 , accessed 2024-08-02 26 https://www.regulations.gov/document/EPA-HQ-OPP-2016-0067-0229 , accessed 2024-08-02.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 7,
+        "section_name": "Antibiotic Spraying",
+        "paragraph_id": 1,
+        "text": "mycin resistance in bacteria that cause diseases in humans. Ultimately, the EPA labeled this risk as “medium”. Weighed against the potential benefits in treating HLB, which has only one alternative treatment—oxytetracycline—the EPA decided to permit foliar spraying of streptomycin. The approval was for a limited period of seven years to reassess the impact on antibiotic resistance and mitigation, and included a requirement for monitoring the development of antibiotic resistance. The EPA’s policy allowing streptomycin spraying on citrus, a practice that is unlawful in the European Union 27 and Brazil, 28 met opposition within the US. On March 25, 2021, a coalition of public interest groups launched a legal challenge against the final registration decision. The challenge petitioned the court to review and set aside the EPA’s decision for failing to comply with the Endangered Species Act and Federal Insecticide, Fungicide, and Rodenticide Act. In response, the EPA submitted their respondent’s brief, outlining the legal defense of the decision. In particular, the brief made extensive reference to the EPA’s report, and the scientific evidence and evaluations which formed the basis of the final registration decision, in order to defend the decision.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 8,
+        "section_name": "Suitability for Experiment",
+        "paragraph_id": 0,
+        "text": "The particular circumstances of the EPA’s decision to allow streptomycin spraying on citrus crops makes it ideal for studying the impact of the perceived partisan oversight of expert agencies on trust and consumer behavior. First, the circumstances of this policy mean that we are able to generate a truthful information provision treatment in which we hold the science supporting the policy constant, while varying only the identity of the presidential administration overseeing the EPA when those scientific statements are supported. Specifically, our treatment draws heavily on statements made in the EPA’s respondent brief to the legal challenge. 29 The legal challenge began in March 2021 during the Biden administration. It made several references to the EPA’s report 30 and the scientific claims therein, for the purpose of defending the decision. The report itself, which initially made the scientific claims, was published on 27 Streptomycin has never received approval for use as a pesticide under the EU’s pesticide regulation Reg. (EC) No 1107/2009. https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/activ e-substances/details/1175 , accessed 2024-08-02. 28 https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/agrotoxicos/monografias/monografias-e xcluidas-por-letra , accessed 2024-08-02. Listed as E15 – Estreptomicina. 29 A copy of the brief is available on the website of one of the complainants: https://www.nrdc.org/sites/d efault/files/72-epa-brief-corrected-citrus-20221027.pdf , accessed 2024-11-17. 30 https://www.regulations.gov/document/EPA-HQ-OPP-2016-0067-0229 , accessed 2024-11-17.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 8,
+        "section_name": "Suitability for Experiment",
+        "paragraph_id": 1,
+        "text": "January 12, 2021, towards the end of Trump’s presidency. Thus, we consider that the EPA under both administrations supported these scientific claims that appear in the respondent’s brief and make direct reference to the EPA’s report. Second, the spraying policy is not well-known. When asked “Before taking this survey, how familiar were you with the following issues?” on a scale from 0 (“Never heard of the issue”) to 100 (“Very familiar”), our participants’ average response was 14.89 for “Citrus greening disease” and 15.25 for “Antibiotic spraying to fight citrus greening”. This benefits our experimental design as it decreases the probability that prior information attenuates the effect of our information treatment. The third factor contributing to the suitability of this setting for our experiment is that consumers care a lot about the presence of antibiotics in food production. Compared to other controversial food technologies, pesticides and antibiotics ranked highest in terms of consumer concerns based on representative survey data ( Hwang et al. , 2005 ). Hypothetical stated-choice and second-price auction experiments reveal a high willingness to pay for foods produced without antibiotics ( Dahlhausen et al. , 2018 ; Bernard and Bernard , 2009 ), with the results replicated in a field experiment ( Lusk et al. , 2006 ). Therefore, changes in trust regarding the health effects of crops treated with antibiotics have considerable potential to shift demand for the underlying good, and thus provide us a strong opportunity to measure any market impacts caused by perceived partisan oversight of regulators. Taken together, these factors allowed us to generate a strong and truthful information treatment in which we hold the EPA’s scientific claims constant while varying the partisanship of the presidential administration.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 9,
+        "section_name": "Experiment Design",
+        "paragraph_id": 0,
+        "text": "Our experiment consists of two surveys. During survey 1 (Section 3.1 ), we conduct an information intervention about spraying antibiotics to combat citrus greening. In particular, we provide scientific arguments about the safety of spraying, which were held constant across our two treatment conditions. Crucially, we randomize the partisanship of the presidential administration (in-group vs. out-group) during which the EPA supported the arguments. We also measure several outcomes, including support for the spraying, trust in EPA’s evaluation of its safety, and donations to an NGO opposing the practice. Second, in the obfuscated followup survey (Section 3.2 ), we elicit treatment effects on demand for citrus products. Figure 2",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 10,
+        "section_name": "Survey 1",
+        "paragraph_id": 0,
+        "text": "We recruited a sample of Democrats from Prolific—an online survey and experiment platform. 31 To screen for Democrats, we relied on Prolific’s pre-screener questions, which ask “In general, what is your political affiliation?”, recruiting only those who responded “Democrat”, where the remaining alternatives were “Republican”, “Independent”, “None”, and “Other”. We validate the pre-screener within survey 1. Recruitment began on April 15, 2024 with the first respondents taking survey 1 on this day. In order to achieve our pre-registered target sample size of 5,470, recruitment continued for one month, with the final participant taking survey 1 on May 15, 2024.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 10,
+        "section_name": "Survey 1",
+        "paragraph_id": 1,
+        "text": "Survey 1 was conducted online using Qualtrics. Following the consent procedure, participants answered a series of demographics questions. Among these questions there was an attention check. Respondents who failed this check were excluded from the remainder of the survey.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 0,
+        "text": "Subsequently, we introduced ourselves as non-partisan researchers interested in public policy issues. We then provided a brief introduction to the issue of citrus greening disease. Specifically, we explained the effects of the disease on the Florida citrus industry, and that large quantities of streptomycin, a medically useful antibiotic, had been sprayed on citrus trees in the United States. We ensured that the respondents understood this information by asking several comprehension questions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 1,
+        "text": "Group assignment We then randomly allocated the participants into one of three groups. These groups are Control (20% of sample), Biden (40%) and Trump (40%). When assigning groups, we stratified the sample on whether they ever consume orange juice or not, 32 to reduce imbalances on this dimension. 31 See Peer et al. ( 2022 ) for a discussion of data quality from Prolific. 32 Specifically, we classify a participant as a ‘never-consumer’ of orange juice if they answer “Never” when asked how often in the past month did they (i) buy orange juice, and (ii) consume orange juice, and if thirdly they select “Orange juice” when asked “In general, are there any of these products that you never consume?” We then stratify on whether respondents are classified as never-consumers vs. sometimes-consumers.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 9,
+        "text": "Policy support, donation, beliefs about partisan support Policy support, donation, trust, beliefs about partisan support 40% 40% Demographics",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 11,
+        "text": "Implement choice for randomized x Implement choice for randomized x Implement choice for randomized x x ∈ {0.5, 1,..., 8} Demographic and grocery store brand questions (decoy) Demographic and grocery store brand questions (decoy) Demographic and grocery store brand questions (decoy)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 13,
+        "text": "Figure 2: Study Flow Notes: The figure provides an overview of the study flow. It shows the order of information blocks (rounded rectangles), outcome questions (ovals), and demographic and decoy questions (hexagons). It indicates that, following background information on HLB and the policy, participants are randomly assigned to one of three experiment conditions: Control, Biden, and Trump. The Biden group were presented with arguments against the policy, and then informed about the EPA’s defense during the Biden administration. For the Trump group, Biden was replaced by Trump; for the Control group, this information is not presented at all. The figure also shows the division between the two surveys with obfuscation taking place between them, indicated by dotted lines.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 14,
+        "text": "Arguments against spraying For the two treatment groups (Trump and Biden), we provided additional information about the arguments against the use of streptomycin spraying on citrus crops. We did this to minimize experimenter demand which might arise if we only provided the arguments supporting the spraying. Specifically, we explained that streptomycin is",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 15,
+        "text": "not permitted on crops in the European Union and Brazil; that agricultural use of antibiotics may contribute to the prevalence of antibiotic-resistant pathogens; and that direct exposure to antibiotics may affect an individual’s health.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 16,
+        "text": "Treatment screen 1 The Trump and Biden groups were then shown two screens which provided further information about the EPA’s introduction of, and justification for, the spraying. On the first screen, respondents in the Trump group were told that the decision to authorize streptomycin spraying “was supported by the administration of President Donald Trump” and that “the EPA under the administration of President Donald Trump” provided scientific evidence that the risks of the policy met the required standards. For the Biden group, “Donald Trump” was replaced by “Joe Biden”. Respondents were also informed about a legal challenge to the policy and that (despite the challenge) streptomycin spraying was permitted to continue as of December 2023. Apart from the two passages above, the body of the text was identical between the Trump and Biden groups.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 17,
+        "text": "Treatment screen 2 The second treatment screen contained text that was again identical between the two groups. It provided five statements “backed by scientists from the EPA in favor of streptomycin spraying”. These points contained quotes from the EPA’s respondent’s brief from the legal challenge (in turn referring to statements made in the EPA’s report supporting the decision to allow streptomycin spraying) stating that there were no risks of concern to human health and the environment, and that it is unlikely that agricultural use of streptomycin has caused any of the existing streptomycin resistance in clinical settings.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 18,
+        "text": "Cross-randomization The treatment screens were accompanied by a captioned photo of the respective president. We cross-randomized whether this was their official White House portrait, or a photo of them shaking hands with their corresponding Administrator of the EPA. While the latter is a more realistic representation of what might accompany information in the real world (e.g., in a news article), it also makes salient other differences between the administrations beyond the party and president, such as the demographic composition of the administration. Cross-randomizing allows us to determine whether this drives the results. We also cross-randomized whether the EPA is mentioned explicitly, or is instead referred to as “the relevant regulatory agency”. We do this to address concerns that the EPA may be perceived as being at the extreme of politicized governmental agencies. Anonymizing the EPA",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 19,
+        "text": "allows us to see if the treatment effect differs when respondents can only infer the identity of the agency based on the information. 33",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 20,
+        "text": "Final information screen Prior to the outcomes section, all groups (including the Control group) were given information about citrus production in the United States. The information was provided alongside a map highlighting California, Arizona, Texas and Florida, the states which account for almost all commercial citrus production in the country.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 22,
+        "text": "A total of 5,566 individuals passed our initial attention check and were assigned a treatment group. Of these, 5,496 (98.7%) completed the information provision sections and the targeted 5,470 (98.3%) completed all outcome questions. Overall, we had 1,103 out of 1,111 (99.3%) assigned to the Control group complete all questions; 2,180 out of 2,223 (98.1%) assigned to the Biden group completed all questions; and 2,187 out of 2,232 (98.0%) assigned to the Trump group completed all questions. For each outcome discussed below, we use the full sample of individuals that answered the associated questions, even if they did not complete all other outcome questions. In the online appendix, we present the balance on covariates across the three experimental groups. We report that for the included variables there are no differences between the three groups at the 5% significance level, and only two out of fifteen that are marginally significant at the 10% significance level (the proportion of female respondents and the proportion that have completed a four year college degree). To validate the pre-screener question used in recruitment, we asked respondents the extent of their agreement with the statements (i) “I support the Democratic Party for Congress”, and (ii) “I will vote for Donald Trump if he is on the ticket in the 2024 presidential elections.” They were asked to provide their agreement on a scale from 0 to 100, with 0 indicating “Strongly disagree” and 100 indicating “Strongly agree”. The results suggest that the sample is strongly Democrat, with the average Congressional support equal to 87.5 out of 100, and the average support for Trump equal to 5.2 out of 100. 33 Other agencies that respondents might infer as the relevant agency include the United States Department of Agriculture and the Food and Drug Administration.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 23,
+        "text": "The final section of the survey asked questions relating to the outcomes of interest. We preregistered two primary outcomes for survey 1. The first is the proportion of a bonus payment donated to United States Public Interest Research Group (USPIRG). All participants were offered a bonus of [FORMULA] 0 to [FORMULA] 0.01) to USPIRG. On this screen, we described USPIRG as a nonpartisan, non-profit organization that has been advocating for public health, safety and well-being for 40 years. We stated that USPIRG “advocates against streptomycin spraying on citrus crops” since they were a co-petitioner in the legal challenge to the policy. This makes clear to respondents that the donation is not simply a campaign donation that ends up in partisan hands, but rather indicates their desire to outlaw the spraying via supporting an NGO at real economic cost to themselves. The second primary outcome from survey 1 is a policy support index based on agreement with the following four statements about the authorization to spray streptomycin on citrus crops: (i) “The policy is safe as it is endorsed by the relevant government agency,” (ii) “The policy has negative consequences on people’s health,” (iii) “I think that antibiotic spraying of citrus crops should be outlawed,” and (iv) “I support the policy as it helps protect the economy with no major risks involved.” 34 Answers were provided on a scale from 0 (“Strongly disagree”) to 100 (“Strongly agree”). We constructed the index by first standardizing the scores within each statement, and multiplying by − 1 for statements that indicate disagreement with the regulation. The index is the sum of these four standardized, sign-adjusted scores. The order in which these two primary outcome questions were displayed was cross-randomized. 35 We also pre-registered three secondary outcomes for survey 1. The first outcome was a trust index, constructed in the same way as the policy index but using the following four statements: (i) “I trust the EPA which determined that the policy is safe,” (ii) “The arguments provided by the opponents of the policy were convincing.”, (iii) “The scientific evaluation conducted by the EPA was thorough and I trust it,” and (iv) “The opponents of the policy are scaremongering.” Recall that whether the EPA was explicitly named or was instead replaced by “the relevant regulatory agency” was randomized. Second, we asked respondents what percentage of Republicans, and of Democrats, support the spraying of citrus crops. We 34 The statements were shown in a randomized order, along with an attention check question. 35 Specifically, we randomized the order of the donation question on the one hand, and a block containing two screens—first the regulation support questions and second the trust questions (described below).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 11,
+        "section_name": "Background",
+        "paragraph_id": 24,
+        "text": "incentivized this question by offering a bonus of $ 0.25 per question if their answer was within 3 percentage points of the “true value” which we took from prior pilot surveys. Third, for a subsample of respondents (15%), we asked a question on planned consumption of citrus products in the upcoming month. Specifically, we asked the likelihood that they purchase orangeor citrus-based products, on a scale from 0 (“Very unlikely”) to 100 (“Very likely”). We also asked this subsample the extent to which their answer to the planned consumption question was affected by concerns about the direct health consequences of consuming citrus or contributing to antibiotic resistance (internality vs. externality).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 12,
+        "section_name": "Survey 2",
+        "paragraph_id": 0,
+        "text": "For survey 2, we used Prolific to recruit individuals who took survey 1, completed all the information and treatment screens, and who at least sometimes consume orange juice. 36 This left us with a pool of 4,581 respondents. Eligible respondents were first invited to take survey 2 on the third day after the day they took survey 1, so that the first responses to survey 2 were collected on April 18, 2024. The invitation remained open for 15 days, hence no responses were collected after June 1.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 12,
+        "section_name": "Survey 2",
+        "paragraph_id": 2,
+        "text": "Out of the 4,581 eligible respondents, ultimately 4,025 (87.9%) started survey 2, with 4,000 (87.3%) completing the primary outcome questions. By treatment group, we had 820 out of 925 (88.6%) eligible from the Control group complete the outcome questions; 1,577 out of 1,822 (86.6%) for the Biden group; and 1,603 out of 1,834 (87.4%) for the Trump group. The differences in attrition rates between the three groups are not statistically significant (p=0.280). In the online appendix, we report the balance of covariates between treatment groups among those who started survey 2. We observe no evidence of imbalance among those who took up survey 2 at the 5% significance level. Only one is significant at the 10% level ( ≥ 4 Years College). 36 We exclude never-consumers to avoid floor effects, which would make downward treatment effects in WTP difficult to measure when the initial level of WTP is close to 0. The classification of never-consumers is the same as we use to stratify the treatment group allocation. This sample restriction was pre-registered.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 12,
+        "section_name": "Survey 2",
+        "paragraph_id": 3,
+        "text": "Much of the design of survey 2 is focused on achieving obfuscation so that treatment groups are not differentially affected by experimenter demand. Beginning from the advertisement that appeared on Prolific to recruit participants to the study, survey 2 was framed as a grocery store marketing survey, with a casual and engaging tone, and used the University of Florida (UF) logo. The Qualtrics URL that appeared while respondents take survey 2 maintained the UF association, beginning with “https://uffred.qualtrics.com...”. By comparison, survey 1 was labeled as a public policy issues survey, was more formal and fact-oriented, and the URL was associated with the University of Warwick (UW): “https://warwick.co1.qualtrics.com...”. In survey 2, we used a UF Institutional Review Board consent form, while in survey 1 we used the equivalent from UW. At all stages, and in particular in the consent forms, we took steps to ensure that we remain truthful, and that only the essential information was omitted. In addition to distinguishing the institution associated with the research, we took measures within the body of survey 2 to obfuscate its association with survey 1. First, despite collecting demographics in survey 1, we again asked basic demographic questions in survey 2, as respondents would expect to see. This involved asking some questions again (e.g., age) but in different ways (10 year bands c.f. exact age in years), and asking additional questions that might be relevant to a grocery store marketing survey. For instance, we asked about entertainment and news media consumption, where respondents are likely exposed to advertising. We then asked a series of decoy questions about preferred brands, advertisement recall, and brand recognition. There were 8 decoy questions in total, with up to 5 sub-questions each. Amongst these was an additional attention check question.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 12,
+        "section_name": "Survey 2",
+        "paragraph_id": 4,
+        "text": "The primary pre-registered outcome of survey 2 is the respondent’s WTP for an $ 8 productspecific digital gift card for orange juice. We told respondents that the gift cards were for purchases from Amazon.com, valid for 12 months, and would be provided via a link immediately (if they are to receive one). We emphasized that they would not need to share any PIIs (such as email address) with us, and that it could be applied directly to their Amazon account. We informed respondents that the gift cards could only be used on the selected type of product. To maintain obfuscation, we informed respondents that the specific product was randomly drawn from the products in the previous section. Specifically, it was Tropicana orange juice with probability 0.99 and Pantene shampoo with probability 0.01, but respondents",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 12,
+        "section_name": "Survey 2",
+        "paragraph_id": 5,
+        "text": "were not informed of these probabilities. We also told participants that, in the event that the specific product is not available, similar products can be purchased (in the case of orange juice, they will have a selection of other citrus-based juices and drinks). The exact list of products made available through the gift card is controlled by the researcher, with eligible products specified by their Amazon Standard Identification Number (ASIN). To elicit the WTP for the gift card, we used a multiple price list (MPL) approach, which involved many binary comparisons between the gift card and a varying cash bonus (to be paid through Prolific). Prior to these binary comparisons, we told respondents that after answering the series of questions, a cash value from { 0 . 50 , 1 . 00 , ..., 8 . 00 } would be randomly selected with equal probability. If their answers indicated that they prefer the gift card, they would receive the gift card, otherwise they would receive the randomly drawn cash amount. We implemented a basic algorithm that allowed us to determine the participant’s WTP to a level of precision of [FORMULA] 7.50, we asked them for the specific cash bonus that would make them equally happy as receiving the gift card. If their value is below [FORMULA] 0 or the gift card, however this last question is not incentivized, since they will never be offered a cash bonus of [FORMULA] 7.50, capped at $ 8. We checked that respondents understood the essential aspects of the gift card and the multiple price list task using comprehension questions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 13,
+        "section_name": "Sample Representativeness",
+        "paragraph_id": 0,
+        "text": "Our target population for recruitment was self-identifying Democrats. While we were able to filter participants on this dimension, our resulting sample was not necessarily representative of the broader population of Democrats. Table 2 compares key demographics for the sample of participants who completed survey 1 with values representative of the population of Democrats, taken from the American Trends Panel Wave 117 (Pew Research Center). To account for the differences, we also present our main results using sample reweighting as a robustness check. Specifically, we generated weights using raking (proportional fitting) to match the representative marginal distributions on key demographic categories, 38 after 37 In doing so, we assume monotonicity in the underlying preferences, i.e., if they prefer [FORMULA] y > x to the gift card. We also assume their WTP is non-negative since there is free disposal. 38 Specifically: age categories (18–29, 30–49, 50–64, 65+ as available in the American Trends Panel data),",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 13,
+        "section_name": "Sample Representativeness",
+        "paragraph_id": 2,
+        "text": "Sample Pew Age 40.322 46.868 Black 0.190 0.214 White 0.664 0.595 Asian 0.114 0.067 Hispanic 0.091 0.195 Female 0.604 0.575 High School 0.995 0.935 Four Year Degree 0.618 0.407",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 13,
+        "section_name": "Sample Representativeness",
+        "paragraph_id": 3,
+        "text": "Notes: The table presents the means of demographic variables for the sample of participants who were assigned a treatment group, and with representative values calculated from the Pew Research Center’s American Trends Panel, Wave 177 (2022). We report the following covariates in order: (1) age, in years ( Age ), (2) a dummy equal to one if they are black/African American ( Black ), (3) a dummy equal to one if they are white/European American ( White ), (4) a dummy equal to one if they are Asian/Asian American ( Asian ), (5) a dummy equal to one if they are Hispanic or Latino ( Hispanic ), (6) a dummy equal to one if a person is female and zero otherwise ( Female ), (7) a dummy equal to one if a person has completed high school ( High School ), (8) a dummy equal to one if they have completed a 4 year degree or a post-graduate degree ( ≥ 4 Years College ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 13,
+        "section_name": "Sample Representativeness",
+        "paragraph_id": 4,
+        "text": "dropping individuals who did not complete survey 1. This provided a single representative sample for all survey 1 questions except for planned consumption, which was only shown to a subset of respondents. For this outcome, we repeated the process among that subset. 39 For the follow-up survey, our target population was self-identifying Democrats who consume orange juice at least sometimes. To generate appropriate weights, we calculated representative marginal distributions for demographics from our own sample of orange juice consumers using the previously calculated weights.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 14,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "Sections 4.1 and 4.2 discuss the results of the experiment outlined in Section 3 , focusing on outcomes from survey 1 and survey 2 respectively. Section 4.3 describes additional heterogeneity analysis. Lastly, Section 4.4 provides supporting results and robustness checks.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 0,
+        "text": "Figure 3 summarizes the main results of survey 1. In Figure 3a , we report the mean percentage of donations to USPIRG, an organization that opposes the policy of streptomycin spraying on citrus crops, by treatment group. We find that gender (male, female, non-binary/other), race/ethnicity (White, Black, Asian, Hispanic) and education (completed high school, completed 4 year college degree or more). 39 Note: we omitted the high school completion dimension due to lack of observations in this subsample.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 3,
+        "text": "Trump Administration Biden Administration Control (a) Donations 0 .2 .4 .6 .8 Cumulative Probability",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 8,
+        "text": "Trump Administration Biden Administration Control (c) Policy Support Index Figure 3: Main Outcomes Survey 1 Notes: Panel A depicts mean percentage of the bonus payment donated to United States Public Interest Research Group (USPIRG), an organization that opposes the streptomycin spraying policy, by treatment group. We also present the 95% confidence intervals for the means. The Biden group were presented with arguments against the policy, and then informed about the EPA’s defense under the Biden administration. For the Trump group, Biden was replaced by Trump; for the Control group, this information is not presented at all. We report the p-values for pairwise regressions of the proportion of the bonus payment donated to USPIRG on a dummy equal to one if a person was assigned to one treatment group instead of the other. In all cases, p-values were computed using robust standard errors. Panel B depicts the empirical cumulative distribution functions of the percentage of the bonus payment donated to USPIRG for the Trump and Biden groups. We report the p-value for the Epps–Singleton characteristic function test of equality of two distributions (denoted ES). Panel C depicts the mean policy support index, calculated as the sum of the sign-adjusted standardized scores to four policy support questions, by treatment group. We also present the 95% confidence intervals for the means. We report the p-values for pairwise regressions of the policy support index on a dummy equal to one if a person was assigned to one treatment group instead of the other. In all cases, p-values were computed using robust standard errors. The figure is based on a sample of N=5,492 individuals who completed the donation task (1,107 for Control, 2,188 for Biden and 2,197 for Trump), and a sample of N=5,489 who completed the policy support questions (1,107 for Control, 2,187 for Biden and 2,195 for Trump). The order in which the donation and policy questions appeared for respondents was cross-randomized with equal probability.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 9,
+        "text": "out-group presidential administration has a significant effect on opposition to the regulation as measured by donations to USPIRG. Learning about the EPA’s support during Trump’s administration instead of Biden’s administration increases donations by 15% (p < 0.001) among Democrats. Importantly, the donations carry a real opportunity cost. Hence, the result showcases that the perception of partisan oversight has potential to affect economic decision making. Further, Figure 3b shows the empirical distributions of donations for the Trump and Biden groups. We observe that the empirical distribution of donations for the Trump group",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 10,
+        "text": "dominates that of the Biden group in the first-order sense. At every level of donation, the empirical probability of donating an amount equal or higher than that level is greater for the Trump group than for the Biden group. We reject the null hypothesis that the two distributions are equal at the 1% significance level using the Epps-Singleton characteristic function test ( Goerg and Kaiser , 2009 ), which yields a p-value of 0.0003. Finally, Figure 3c reports the mean value of the policy support index by treatment group. In line with the donation results, we find that learning about the EPA’s support of the policy under Trump’s administration negatively and significantly affects support for the regulation as measured by our index. Unlike the donation outcome, we also find that learning about the EPA’s support under Biden’s administration (along with arguments in opposition to the policy) has a net negative effect on support relative to the Control. We discuss these results in more detail below. Taking together the results on regulation support and NGO donations, we document risks associated with both rising affective polarization, manifesting as distrust towards out-party institutions and experts, and further politicization of the civil service in light of the likely roll-back of Pendleton Act protections and stronger scrutiny by the OMB over agency spending. Expert agencies regulate key markets, including food and medicine, and the consequences of partisan opposition to vital regulation in these areas can have long-lasting welfare consequences, especially in healthcare contexts. All of these considerations impact the debate on the optimal design of regulatory agencies within the system of government. High costs of perceived politicization of the agencies in the current polarized environment tilts the balance between their accountability and independence in favor of more independence.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 12,
+        "text": "We now look at the donation outcome in more detail. We report that, for the group that was provided information of the EPA’s support of streptomycin spraying under Trump’s administration, the proportion of the bonuses donated to USPIRG was 39.44%. For the group informed about the EPA’s support while under Biden’s administration, this was 34.29%. The difference when provided information regarding oversight by Trump (the out-group president for Democrats) relative to Biden, while holding the scientific rationale of the policy constant, was 5.14 pp (p < 0.001), or 0.13 SD. This is equivalent to a relative increase of 15.0% in the proportion of the bonus donated to USPIRG. Since the bonus from which participants could donate was equal to $ 1, this is equal to an average increase of 5.14 cents. Given that this is an",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 13,
+        "text": "incentivized outcome, the results indicate that participants are willing to give up real resources to oppose the policy when the agency’s scientific defense comes during an out-group administration compared to an in-group administration, even though the content of that defense is identical. In contrast to the policy support outcome, we find no evidence of an effect of perceived in-group oversight (combined with discussion of opposition arguments) relative to the Control for donations (p=0.751). This suggests that while those in the Biden group report lower support for the policy, the in-group oversight largely counters the salience of health concerns once outcomes are incentivized. Panel A of Table 4 reports results from regression analysis for treatment effects on the donation outcome, using pairwise group comparisons. Columns (4)–(6) show that the estimates are largely unchanged in magnitude and significance when adding controls. The results remain significant when representative sample weights are also used (columns (7)–(9)).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 15,
+        "text": "For the Trump group, the average of the policy support index was -0.934, while for the Biden group, it was 0.272. This equates to a difference of -1.21 (p < 0.001), or -0.36 SD. This result reinforces that Democrats form very different positions on a science-based policy when learning that the scientific evidence was provided during the out-group administration instead of the in-group administration, even when it is the same evidence coming from the same regulatory agency. Panel B of Table 4 shows the associated regression results. Again, the magnitude and significance of the estimates are robust to controlling for age, sex and strata fixed effects, and additionally when using representative sample weighting. The policy support index is generated from the answers to four individual questions. Figure 4 reports the coefficients for the Trump treatment relative to the Biden treatment for each of these component questions. Note that the outcome values have been normalized to have mean 0 and standard deviation 1, but have not had their signs adjusted. For each question, those in the Trump group express less support for the policy on average compared to the Biden group. The component-wise estimates are all similar in magnitude, suggesting no particular question is driving the overall index result. Using the question “I think that antibiotic spraying of citrus crops should be outlawed” specifically, we can quantify the change in support for the policy by taking an answer below 50 to mean they support the policy (i.e., they do not agree that it should be outlawed). We",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 16,
+        "text": "find that 28.62% of those in the Biden group support the spraying, while for the Trump group it is only 21.09%. That is, out-group oversight results in a 26.31% decrease in the level of support for the regulation relative to in-group oversight.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 18,
+        "text": "In addition to the above results on regulation support, Table 3 summarizes the results on trust in the EPA’s evaluation for the Trump and Biden groups. The average value of the trust index for the Trump group was -0.55, while for the Biden group it was 0.56. The difference is -1.11 (p < 0.001), equivalent to -0.37 SD. This finding provides a strong motivation for our channel of interest—the perception of out-group partisan oversight of the civil service reduces trust in expert regulators. The result is robust to including controls and using representative sample weights. Table 3: Trust Index",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 19,
+        "text": "(1) (2) (3) Trust Trust Trust Trump -1.108 [FORMULA] -1.111 [FORMULA] -1.205 [FORMULA] (0.0888) (0.0847) (0.161) Constant 0.555 [FORMULA] 1.774 [FORMULA] 1.656 [FORMULA] (0.0637) (0.207) (0.452) Observations 4380 4380 4348 Controls No Yes Yes Reweighted No No Yes p-value (Treatment) < 0.0001 < 0.0001 < 0.0001 Mean dep. var. 0.0000 0.0000 -0.0633",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 20,
+        "text": "Notes: The table reports regression results with the trust index as the dependent variable. The sample is restricted to those who were assigned to either the Trump or Biden groups. The Biden group were presented with arguments against the policy, and then informed about the EPA’s defense under the Biden administration. For the Trump group, Biden was replaced by Trump. The Control group were not asked the trust questions. In column (1) we regress the dependent variable on a dummy equal to one if the individual was assigned to the Trump group. column (2) presents the same specification as column (1) but with the addition of controls. The following controls were included: age, number of adults (over 18) in the household capped at 10, number of children in the household capped at 10, a measure of a person’s relative importance of universalist vs. communal values based on an abridged Moral Foundations Questionnaire and calculated according to Enke ( 2020 ), fixed effects for gender categories (male, female, non-binary, other and refused answer), a dummy equal to one if they are white/European American, a dummy equal to one if they are black/African American, a dummy equal to one if they are Hispanic or Latino, a dummy equal to one if they are Asian/Asian American, a dummy equal to one if a person has not undertaken at least some college study, a dummy equal to one if they have completed a 4 year degree or a post-graduate degree, a dummy equal to one if they have a religion or belief, and strata fixed effects. Column (3) presents the same specification as column (2), but uses the representative sample weights and excluding from the sample anyone who did not complete all the outcome questions in survey 1. Robust standard errors are in parentheses. * significant at 10%; ** significant at 5%; [FORMULA] significant at 1%.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 22,
+        "text": "We also analyze a number of other secondary outcomes elicited in survey 1. First, we report significant treatment effects on the beliefs that participants hold about Republican and",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 23,
+        "text": "Democrat support for the antibiotic spraying, where accuracy of beliefs was incentivized. Figure 5 presents the results. The respondents anticipate support to be higher for in-group partisans (with respect to the administration in power when the EPA supported the scientific analysis) and lower for out-group partisans. Specifically, the Biden group believes that 52% of Democrats support the policy on average, while the Trump group believes just 34% of Democrats support the spraying—they expect other Democrats to share their negative response to the regulation. Similarly, respondents in the Trump group believe 77% of Republicans support the spraying, while the estimate is 64% for the Biden group. Together, this shows a strong perception among respondents that support for expert regulations is polarized by perceived partisan oversight. We also asked a random subsample of 15% of participants about their plans to consume citrus in the following month. We report no significant difference between the Trump and Biden groups (p=0.386), while the reported probability of consumption for the Control group was significantly higher than both Trump and Biden groups by 7.13 (p=0.034) and 9.54 (p=0.005) respectively. Table 5 provides further regression results with the magnitudes of treatment vs. Control effects remaining consistent in direction after controlling for covariates and further using representative sample weights, though the estimates are noisy. The null difference between Biden and Trump groups remains across specifications. While these results should be interpreted cautiously due to the reduced power in our subsample, they suggest that the reduction in trust generated by out-group (vs. in-group) oversight of the EPA may not translate into changes in demand, even though making health concerns salient does have a significant negative effect on the consumption plan. The latter finding showcases that there is room for finding the impact of distrust due to perceived partisan oversight of regulatory agencies on product demand. Interestingly, when asked about factors driving their consumption plan, a Trump-Biden split re-emerges. We asked the same subsample of respondents the extent to which they agree with the statements “I am concerned about the health effects of directly consuming citrus products” and “I am concerned about contributing to antibiotic resistance in bacteria” when considering whether to consume citrus, on a scale of 0 (“Strongly disagree”) to 100 (“Strongly agree”). Those in the Trump treatment group claim to be more concerned about both their own health with mean agreement 7.84 points higher than for the Biden group (p=0.002) and also more concerned about contributing to antibiotic resistance by 8.28 points (p < 0.001). This effect is easily detected with the smaller subsample. The results suggest that while",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 15,
+        "section_name": "Survey 1 Main Results",
+        "paragraph_id": 24,
+        "text": "respondents may not be inclined to actually change their demand for citrus, they ex-post rationalize their planned consumption differently, showing differential awareness of the risks. This is in line with the overall pattern of results that we find—distrust has real impacts but may not translate into market demand.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 16,
+        "section_name": "Follow-up Survey Main Results",
+        "paragraph_id": 0,
+        "text": "In Table 6 , we report the mean willingness to pay (WTP) for a digital Amazon gift card that could only be redeemed for citrus juice products like orange juice, by treatment group. Despite being powered to detect effects as small as 0.09-0.1 SD, we find no significant overall effect of out-group presidential administration on the WTP for the gift card, whether comparing to in-group oversight (p=0.211) or the Control group (p=0.545). However, we do find evidence of heterogeneity along the (pre-registered) dimension of baseline consumption of orange juice, with more negative effects for those with lower baseline consumption. This heterogeneity is particularly strong among those who took the follow-up soon after the first survey. We discuss these results in more detail below.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 16,
+        "section_name": "Follow-up Survey Main Results",
+        "paragraph_id": 2,
+        "text": "We find no evidence of an overall effect of out-group presidential oversight of the EPA when it defended the antibiotic spraying policy on the WTP for citrus products. Specifically, Table 6 shows that the average WTP for an [FORMULA] 1.69 for the Trump group, [FORMULA] 1.64 for the Control group. Although the Trump group is the highest, the mean is not statistically different from the Biden (p=0.211) or Control (p=0.545) groups. The 95% confidence interval for the Trump vs. Biden effect excludes negative effects larger than 4.7 cents. Similar to the donations outcome, there is no net effect of in-group presidential administration plus opposition arguments compared to the Control (p=0.663). The null effects are robust to including covariates (columns (4)–(6)) and to further using representative sample weights (columns (7)–(9)). Anticipating that habitual consumers may be less likely to change their demand in response to our intervention, we pre-registered to test heterogeneity of the WTP with respect to baseline consumption of orange juice. Among those who answered the WTP questions, 31.75% were low consumers, 43.67% were medium consumers, and 24.58% were high consumers. 40 Figure 40 Following the pre-registration, participants who indicated in survey 1 that they never consume orange juice (overall and in the past month) were excluded from the follow-up survey. For participants who took the",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 16,
+        "section_name": "Follow-up Survey Main Results",
+        "paragraph_id": 3,
+        "text": "7 presents the net treatment effect of out-group presidential administration on the WTP relative to the Biden treatment ( 7a ) and the Control ( 7b ) by consumption bin. Associated regression results are reported in Table 7 . We do not find significant treatment effects within consumption bins, however, the effect of out-group oversight on WTP for occasional consumers is significantly different than for frequent consumers by $ 0.32 (p=0.084). This result is robust to controlling for a number of covariates (column (4) of Table 7 ). Medium consumers place roughly in between the high and low level consumers, although the difference relative to occasional consumers is not statistically significant (p=0.261). Pooling medium and high consumers together also results in statistically significant heterogeneous effects compared with the low consumers (column (6) of Table 7 ). While it is useful to look at this pooled comparison, we caution the reader that this particular comparison was not pre-registered. Figure 7b demonstrates a similar pattern when comparing the effect of the Trump treatment to the Control. However, we do not detect significant pair-wise heterogeneity across the consumption bins except when we pool medium and high consumers compared to the low consumption group (Table 7 ). Taken together, our heterogeneity results indicate that the information intervention is sufficiently strong to impact demand—as people with different past consumption react differentially to treatment—suggesting that the overall null result is not simply due to insufficient strength of the intervention. This is in line with our expectations, as the existing evidence suggests that people are very responsive to concerns about food safety, particularly marginal consumers (e.g., Lusk et al. , 2006 ; Dahlhausen et al. , 2018 ). We note, however, that conceptually the net effect of the treatments on frequent consumers’ demand does not necessarily have to be weaker than for marginal consumers. While several factors may decrease their willingness to substitute away from orange juice based on an information signal, including habit formation and status-quo bias, higher exposure to perceived health risks is a possible counter-force. In the online appendix, we present the treatment effects by baseline consumption, restricting the sample to those who took the follow-up on the first possible day (3 days after survey 1). This accounts for 63% of people who took the follow-up. This subset is of interest because the information from survey 1 is most fresh in their minds. This group is also of interest as there was a risk that following the first survey, participants may have purchased orange juice follow-up survey, we classified those who did not consume orange juice in the past month as low consumers, those who answered “Once or twice a month” or “Once a week” were categorized as medium , and those who answered “A few times a week” or “Every day” were categorized as high .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 16,
+        "section_name": "Follow-up Survey Main Results",
+        "paragraph_id": 4,
+        "text": "due to its salience, thus dampening their demand in the follow-up. While we endeavored to address this by making participants aware that the Amazon voucher was valid for 12 months, rather than being required to be used immediately, the early-uptake subset are least likely to have been affected by this since they had less opportunity to purchase orange juice. We report that for this subset of respondents, the out-group vs. in-group effect remains heterogeneous between frequent and occasional consumers (p=0.027). Likewise, in comparison to the Control group, we report a corresponding result with the difference in the net effect for frequent and occasional consumers significant at the 10% level (p=0.082). Note that we do not formally test whether this subgroup exhibits differential heterogeneity by baseline consumption but rather test for heterogeneity within this subgroup, given our limited power and the fact that this would be a triple interaction term.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 17,
+        "section_name": "Additional Heterogeneity Analysis",
+        "paragraph_id": 0,
+        "text": "In addition to the heterogeneity of the WTP by baseline consumption discussed above, we also explore treatment effects by past consumption for (1) our other economic decision outcome (NGO donations) and (2) trust in the EPA’s evaluation. Figure 8 presents the mean donations to USPIRG by treatment group, separately for each level of baseline consumption (excluding the never-consumers who were not invited to the follow-up due to their zero demand for citrus products). For the low consumption bin, out-group partisan oversight leads to a 7.9 pp increase in the share of the bonus donated by respondents compared to in-group partisan oversight (p < 0.001). This large increase of 26% indicates that occasional consumers are very responsive to perceived out-group oversight when making other economic decisions related to the regulation. Within the medium baseline consumer group, the effect is 4.9 pp or a relative magnitude of 13.7%; within high consumers, it is just 2.4 pp or a relative magnitude of 6%. We do not, however, observe a similar trend in the point estimates for the impact of outgroup (vs. in-group) partisan oversight on trust in the EPA by baseline consumption. In the online appendix, we present the mean of the trust index by treatment group and by baseline consumption level. We demonstrate that the effect is statistically significant but of similar magnitude for each consumption bin. To reinforce this, Table 8 reports the interaction terms of the primary outcomes (including trust) along several different dimensions of heterogeneity, including baseline consumption of orange juice. Column (3) of Table 8 shows that there are no statistically significant differences in the effect across consumption bins. Thus, our",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 17,
+        "section_name": "Additional Heterogeneity Analysis",
+        "paragraph_id": 1,
+        "text": "channel of trust in the EPA appears similarly active irrespective of frequency of orange juice consumption, despite the fact that economic decisions (the WTP for orange juice), exhibit heterogeneity in this dimension. Lastly, Table 8 reports additional angles of heterogeneity that we specified in our preregistration. We find that moral universalism is a descriptive moderator for the treatment effect on regulation support and trust, with more universalist individuals having stronger negative effects of the out-group presidential administration. We also report that gender is a moderator for NGO donations, with higher donations in the Trump group driven mostly by women.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 18,
+        "section_name": "Robustness",
+        "paragraph_id": 0,
+        "text": "We consider a number of robustness checks to support the findings from our experiment. First, as discussed in Section 3.2.2 , we find no differential attrition both during survey 1 and in between the two surveys. Furthermore, we report no significant imbalances across treatment groups after accounting for dropout between the surveys. Second, throughout Section 4 , we have highlighted that our results are substantially robust to reweighting observations to make them representative of the target population, self-identifying Democrats in the US. The weights were generated to match the population’s marginal distribution on the key demographic dimensions of age, gender, race and education. One concern is that the EPA might be perceived as more politicized than other agencies, and hence not be representative of the trust effect that would occur in relation to other agencies. In the survey, we mitigated this by cross-randomizing whether the EPA was explicitly mentioned, or instead referred to generically as a regulatory agency. As the context surrounded food, medicines and diseases, the EPA is an unlikely candidate for this generic agency; the Food and Drug Administration or the Center for Disease Control and prevention are far more likely candidates to have responsibility. The heterogeneity results in Table 8 indicate no significant differences in treatment effect when mentioning the EPA explicitly, vs. referring to it generically as a regulatory agency, for any of our main outcomes. Moreover, we do not find heterogeneous treatment effects by the type of photo used in the information intervention (president with the EPA’s head or president alone) on support for the regulation, trust levels, or NGO donations—the key outcomes for which we report an overall treatment effect. Another concern is that some participants may think that spraying does not continue at",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 18,
+        "section_name": "Robustness",
+        "paragraph_id": 1,
+        "text": "the time they took the survey. This may be particularly important for the Trump group, due to the Trump administration preceding Biden. To address this, we highlighted in the survey text that streptomycin spraying was permitted to continue as of December 2023, which was not long before the survey took place and was considerably beyond the end of the Trump administration. When asked if spraying continues “until this day”, almost 90% of respondents answered affirmatively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 19,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "Independent and executive regulatory agencies constitute a critical yet slightly peculiar element of the system of government. On one hand, their role is to enact regulations based on merit rather than political influence with legislation such as the Pendleton Act strengthening their independence. On the other hand, the agencies face varying degrees of oversight by the partisan executive and legislative branches, which may involve appointments of agency heads by the president and scrutiny over agency spending. These considerations, together with the salience of the president-regulatory agency link in media reporting, might lead to the perception of politicization of the regulatory agencies. In this paper, we experimentally explore how political signals (partisanship of the presidential administration) affect trust in agency regulation and explore downstream effects on economic decision-making. Importantly, our context is economically important with large and socially critical markets regulated by the agencies (such as food and medicine). In a preregistered experiment with over 5,000 participants, we exploit an alignment in the way that the EPA during the Trump and Biden administrations defended the safety of spraying citrus crops with antibiotics to randomize the partisanship of the administration, holding the scientific arguments constant. We measure the treatments’ impact on support for the regulation, trust in EPA’s evaluation, as well as economic outcomes—donations to an NGO opposing the regulation and demand for citrus products. As a result, our paper provides novel evidence on the costs of perceived agency politicization, contributing to the growing debate on the design of regulatory agencies in the context of the trade-off between their independence and electoral accountability. Our results contribute to the literature by offering three main lessons. First, we use TV transcript data to document that news channels make the association between presidential administration and expert agencies salient when reporting on regulation. This corroborates",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1590,
+        "section_id": 19,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "the relevance of perceived partisan influence over the agencies as a channel affecting economic decisions. Second, we experimentally demonstrate that having an out-group presidential administration during the time of regulation significantly reduces support for regulation and trust in the agency’s scientific analysis. This outcome may have disastrous consequences in many contexts, including regulations pertaining to vaccinations, where politicization may increase vaccine hesitancy. Lastly, our third lesson is that perceived agency politicization has potential to affect economic outcomes. We demonstrate its impact on non-partisan donation behavior. However, we offer a caveat—the induced distrust in regulation may not translate into changes in demand for regulated products. While we do not directly vary political polarization in our study, our results speak to economic consequences of the phenomenon. Rising affective polarization exacerbates trust issues in relation to individuals from the out-party. This may extend to experts and scientists employed by agencies associated with the out-party. We support this conjecture by demonstrating negative effects of the out-group administration on trust in science supplied by the EPA at a specific point in time. Given the high cost of perceived politicization of agencies that we already document, we warn about the consequences of further curtailing agency independence or of a continued rise in affective polarization, involving higher distrust in individuals associated with the out-party.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    }
+]

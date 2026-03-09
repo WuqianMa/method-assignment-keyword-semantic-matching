@@ -1,0 +1,527 @@
+[
+    {
+        "paper_id": 1255,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Firms’ production efficiency heavily depends on how information is transmitted within the firm. Business-relevant information may arrive at the firm through lower divisions or the leadership, but a much larger set of employees generally needs it to accomplish their tasks. Ineffective information sharing within the firm may create delays, errors, and lower revenues. 1 Hierarchies affect information flows by determining the allocation of formal decision rights and allowing for different roles in the management of information. A large theoretical literature has studied optimal organisational structures that minimise communication frictions, particularly on possibly different incentives across the communicating parties or exogenous constraints like cognitive limitations. What happens in practice? Due to the lack of data on firms’ internal communication, empirical evidence has been scarce, as discussed by Impink, Prat, and Sadun ( 2020 ). This paper aims to partly fill this gap by analysing information flows in the Enron corporation, a very large energy company. I built a unique dataset that merges Enron’s emails with employees’ roles and hierarchical relations, manually extracted from email attachments. Using large language models and text mining tools, I classify work-related emails based on whether they provide information, request information, or delegate tasks and based on their degree of specialisation. I find that information was mostly acquired from subordinates and transmitted up the hierarchy, suggesting that superiors retained decision rights. In addition, the information provided to superiors had higher precision compared to that provided to subordinates, implying that centralisation of decision-making did not imply lower communication quality. These facts support an incentive-theory-based view of within-firm communication. However, the intensity of information provision to subordinates and its quality increased right after the resignation of CEO JeffSkilling. This result suggests more complex knowledge at higher levels of the hierarchy, as predicted by theories of knowledge-based hierarchies ( Garicano 2000 ). The Enron Corporation was a large American energy company which suddenly fell into bankruptcy in December 2001. The case created a scandal and originated an investigation by the Federal Energy Regulatory Commission, which then released emails from the company to the public in an attempt to clarify the case. The email data formed the Enron Corpus, which, to my knowledge, is the only legally public database of emails of a large corporation. 2 In this paper, I use the version of the Corpus elaborated by Agarwal et al. ( 2012 ) for email bodies. I then used the raw version of the Corpus to extract email attachments that contained information on the hierarchy, mostly divisions’ hierarchical trees sent following organisational changes. The merge of email text data with information on the hierarchical position of email 1 Sandvik, Saouma, Seegert, and Stanton ( 2020 ) show that better information flows increase productivity. 2 The Enron Corpus has been extensively studied in Computer Science and Computational Linguistics, e.g. Klimt and Yang ( 2004 ); Bekkerman, McCallum, and Huang ( 2004 ); McCallum, Wang, and CorradaEmmanuel ( 2007 ); Agarwal et al. ( 2012 ). In other fields, the use of the corpus is scarce. An exception is Aven ( 2015 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Large Language Models",
+            "Local Average Treatment Effect (LATE)",
+            "Large Language Models (LLMs)"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning",
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Natural Language Processing (NLP) & Text Analysis",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "senders led to a panel dataset of 1557 employees and 3 years (1999-2001). This final dataset excludes non-work related emails, and those sent by employees in administrative roles, which are not exactly comparable to the others. 3 To capture employees’ hierarchical level, I use two alternative measures. First, I compute the hierarchical distance from Kenneth Lay, who held the position of CEO for the majority of the time. The measure of distance corresponds to the number of superiors the employee has to get to Lay and is available only for individuals whose hierarchical position can be traced to him. Second, I group employees’ roles into categories from the most managerial to the most specialised. These measures vary over time for some individuals because of organisational changes or promotions, which create additional variation. I then compute textual measures to capture the degree of language specialisation at individual and email levels. The individual measure of specialisation captures how diverse and broad an employee’s language is and relies on the words used in all employee’s emails. I adapt the Herfindahl–Hirschman index (HHI) to the context of language to capture the degree of language concentration around a few words. The measure takes higher values if the employee uses a few words very frequently, and vice-versa is low if the employee uses a larger set of words with homogeneous frequency. Concerning email-level specialisation, I consider two measures. First, I rely on large language models and use OpenAI’s GPT 3.5 algorithm to classify emails on a scale from 1 (very broad) to 5 (very technical). 4 Second, I compute the average number of words’ meanings for each email, as appearing in the English dictionary. I interpret these measures as proxies for quality, as more technical content is generally more precise and informative than broader content. Finally, I identify the nature of emails’ content by classifying it into three categories: provides information , requests information , and requests some service or delegate tasks . I achieve that using LLMs again. Who acquires information in firms, and how does information move across the hierarchy? One strand of the literature relies on contract theory and studies cases where the superior and the subordinate do not share the same incentives. Aghion and Tirole ( 1997 ) suggests that informed subordinates communicate information to their superior (who retains decision rights) if communication costs are low and incentives close enough. Nevertheless, the superior may prefer to delegate decision rights to the subordinate to incentivise effort in information acquisition. On the contrary, they predict less communication if their objectives are too different. Indeed, in this case, superiors want to retain decision rights to prevent subordinates from making decisions that are not favourable to them. At the same time, subordinates may not want to communicate their information for similar reasons. Dessein ( 2002 ) shows that if incentives are relatively close, superiors may prefer to delegate decision rights to subordinates to avoid the risk of noisy communication. These models assume that subordinates are free to leave the firm and cannot be perfectly controlled. As a consequence, holding information gives them contractual 3 Assistants and secretaries support the work of other employees by definition of their role. Their communication depends more strictly on their labour contract rather than the organisational design. 4 The use of LLMs for classification is becoming more common with the improved quality of the algorithms. For example, Arold, Ash, MacLeod, and Naidu ( 2024 ) use LLMs to determine whether certain worker rights clauses are more pro-workers than others.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Large Language Models",
+            "Local Average Treatment Effect (LATE)",
+            "Large Language Models (LLMs)"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Natural Language Processing (NLP) & Text Analysis",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "power. However, superiors can implement career incentives or other devices to make subordinates’ preferences closer to theirs. A second strand of the literature builds on team theory, assuming that subordinates and superiors share the same incentives. This literature focuses on other frictions, namely cognitive boundaries that either prevent employees from dealing with all possible problems ( Garicano 2000 ) or limit language capabilities, such that the set of signals is smaller than the set of events that an employee may want to communicate ( Cr ́emer, Garicano, and Prat 2007 ). The former paper suggests that hierarchies allow for the specialisation of knowledge so that subordinates mostly deal with routine problems while superiors take care of rare and complex issues. The latter paper instead derives conditions for which subordinates adopt precise languages specific to their division, preventing them from communicating with other divisions. In these cases, superiors may act as translators by learning each division’s language and transmitting information across them. I find that in Enron, vertical communication mostly moved information up the hierarchy. First, emails directed to subordinates are more likely to request information than emails directed to superiors, which tend instead to provide information. This fact is consistent across hierarchical levels overall. Delegation is relatively less frequent and more likely to happen towards subordinates. Second, messages from subordinates to superiors are more precise than in the opposite direction, particularly regarding the provision of information. In light of the theory, this evidence suggests that, even if information was mostly acquired from lower hierarchical levels, superiors retained decision rights, and incentive problems were not strong enough to prevent or make communication too noisy. Many reasons may explain the relatively scarce delegation. Possibly, superiors were already sufficiently informed and did not rely only on subordinates’ information. Their decision-making was then sufficiently correct, even with noisy communication. Alternatively, contractual agreements and incentive designs successfully aligned subordinates’ incentives to those of superiors, and the latter did not internalise communication costs. Finally, experimental evidence may suggest that superiors had a preference to retain decision rights even if that was not efficient or in their best interest ( Fehr, Holger, and Wilkening 2013 ). Although this evidence suggests stronger bargaining power and decision-making at higher ranks, additional results show that superiors gained more important roles in providing information to subordinates in moments of instability. I carried out an event study on the sudden resignation of the CEO, JeffSkilling, which led to large media attention and increased uncertainty, particularly at lower hierarchical levels of the company, which were likely unaware of Skilling’s intention. I show that right after the resignation, conditional on writing to subordinates, superiors were much more likely to provide information rather than request it. This finding supports the theory on knowledge-based hierarchies ( Garicano 2000 , Garicano and Wu 2012 ), which suggests that higher roles in the hierarchy tend to deal with more complex and rare events. In a less stable environment, superiors are more likely to acquire information and support decisions taken by lower ranks. This interpretation is supported by the fact that information provided to subordinates became more precise after the resignation.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "Finally, I provide supportive evidence that higher-ranked employees communicate on a wider range of topics, possibly allowing for synergies across specialised divisions. Indeed, higher hierarchical levels have a more diverse and less specialised language when providing information. This paper complements the existing empirical evidence on vertical communication across the hierarchy. 5 Liberti and Mian ( 2009 ) provide evidence of another environment (a financial institution) where lower-ranked employees were in charge of collecting information and communicating it, whereas upper-ranks retained decision rights. However, they only observe communication for loan-approval decisions. Josephs, Peng, and Crawford ( 2024 ) find a similar pattern using email data from Microsoft. They show that communication tends to be directed towards superiors rather than subordinates. Their analysis relies on email frequencies only, so they cannot discriminate between emails that ask for information and emails that provide it. 6 Reitzig and Maciejovsky ( 2015 ) study subordinates’ incentives to provide information to superiors and find evidence that 1) the longer the sequence of superiors above a middle manager, the less likely she would be willing to provide information up the hierarchy, and 2) subordinates are less likely to provide information to superiors if they believe to not have full control over the outcome. Espinosa and Stanton ( 2023 ) find a reduction in communication to superiors once subordinates receive training, which they interpret as a reduction in the requests for help. Finally, Hinds and Kiesler ( 1995 ) provides empirical evidence that employees with technical tasks are more likely to communicate laterally (i.e. horizontally) compared to less technical roles. This paper contributes as well to the empirical literature on decision-making in firms ( Joseph and Gaba 2020 ). Indeed, information flows bring information to decisionmakers, who tend to be at the top of the hierarchy under centralisation and at the organisation’s periphery under decentralisation. Bloom, Garicano, Sadun, and Van Reenen ( 2014 ) show that adopting technologies that reduce communication costs leads to more decentralisation, whereas adopting information technologies that support productivity leads to more decentralisation. Liberti ( 2018 ) show that delegating decision rights creates incentives to acquire and use soft information, whereas Katayama, Meagher, and Wait ( 2018 ) report survey evidence that decision-making is often shared across the hierarchy. Finally, the paper contributes to the study of the effect of uncertainty on firms’ internal communication. Srivastava ( 2015 ) shows that at times of ambiguity, workers decrease communication with formal connections but increase it with their informal network. Impink, Prat, and Sadun ( 2024 ) also study the effect of CEO turnovers and show that communication first drops and later recovers mostly due to increased vertical communication. Finally, Vuori and Huy ( 2016 ) interviewed Nokia’s employees during market challenges and found that middle managers were less likely to communicate negative information to superiors. 5 Malenko ( 2024 ) and Joseph and Gaba ( 2020 ) provide a more general literature review of theoretical and empirical research on communication in organisations. 6 To my knowledge, Srivastava, Goldberg, Manian, and Potts ( 2018 ) is the only previous work that looks at email content, rather than email frequencies only. However, they focus on a different question and study how changes in employees’ cultural fit with the firm are associated with career progressions.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "The rest of this paper is organised as follows: section 2 provides details about the Enron Corporation, section 3 describes the collection and construction of the data, section 4 presents the empirical evidence, section 5 discusses the interpretation of the results in light of theoretical frameworks, and section 6 concludes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 2,
+        "section_name": "The Enron Corporation",
+        "paragraph_id": 0,
+        "text": "The Enron Corporation used to be an energy company based in Houston, Texas (United States). It was founded in 1985 after the merger of Houston Natural Gas and Omahabased Inter North. Kenneth Lay, CEO of Houston Natural Gas, became CEO and Chairman of Enron. Between February 12 th , 2001 and August 14 th , 2001, Kenneth Lay left the CEO role to Jeffrey Skilling while preserving the role of Chairman. He then took back the CEO role until the company’s bankruptcy, on December 2 nd , 2001. Initially, Enron was a traditional energy company that owned the second-largest pipeline network in the United States. It later expanded by offering financial products, in particular in the energy market, and online trading. Enron’s stated revenue grew massively, with a total net income of [FORMULA] 584 million in 1996. 7 In 2000 Enron got ranked 22 nd in the Fortune’s 100 best companies. Nevertheless, Enron incurred important losses in 2001, which led to bankruptcy. Figure 1 reports the evolution of the stock price, which describes the rise and fall of Enron’s value.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 2,
+        "section_name": "The Enron Corporation",
+        "paragraph_id": 2,
+        "text": "Oct 2000 Apr Jul Oct 2001 Apr Jul Oct 2002 0 20 40 60 80 Enron Stock Price Closed (ENRNQ) Enron Skilling Resigns",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 2,
+        "section_name": "The Enron Corporation",
+        "paragraph_id": 5,
+        "text": "Daily Enron’s stock price closed (left axis) compared to S&P Energy Sector Index (right axis). Although variations are correlated, it is possible to see how Enron’s stock price fell until the bankruptcy, in December 2001. The resignation of CEO JeffSkilling corresponds to a substantial jump in the stock market valuation. Figure 1: Enron Stock Price and Energy Sector Index",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "This paper uses data constructed out of the Enron email corpus, originally made publicly accessible by the Federal Energy Regulatory Commission (FERC) after the Enron Corporation filed for bankruptcy. 8 The original dataset contained 1,361,403 emails from 158 mailboxes belonging to 149 employees of the company ( Yeh and Harnly 2006 ). 9 From the Enron corpus, I extract and merge email text data and information on senders’ hierarchical roles and positions. The email text data I use is the one processed and analysed by Agarwal et al. ( 2012 ) (AOHR hereafter), which includes 276,279 emails. I then extract information about employees’ roles, divisions, and positions in the hierarchy from emails’ bodies and attachments. Indeed, several emails reported organizational announcements or promotions, which included the list of the affected employees and their respective new roles, and attachments with the new organizational charts, which I digitized manually. 10 I assume 8 https://www.cs.cmu.edu/ ./enron/ . 9 Researchers have been cleaning this dataset, erasing sensitive and personal information. As a consequence, the version available nowadays is significantly smaller. Klimt and Yang ( 2004 ) report 619,446 emails in their version. Yeh and Harnly ( 2006 ) report that their cleaned dataset included 269,257 emails. 10 Emails attachments are available in the complete version of the dataset, originally downloaded from http://www.edrm.net/resources/data-sets/edrm-enron-email-data-set . To recover the latter, I used string matching on the attachments’ content, subject title, and file name. This procedure led to the selection of more than 400 .pdf or .ppt format files, which I screened and digitised manually. Figures 7",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "employees had the role specified in the email up to the email date. Some employees appeared in multiple documents, creating some time variation through promotions and changes in the hierarchical structure. The merge of the email bodies with senders’ hierarchical positions led to a (sparse) panel dataset with 128,291 emails sent by 1557 individuals. Following additional cleaning, as later described, the data include 82,173 emails sent by 1130 distinct employees between September 1999 to June 2002. 11 132 of those employees are owners of mailboxes published by the FERC and, as a consequence, have a larger weight in the sample. Indeed, they have sent 68.65% of emails in the dataset, and have received 43.55% of them. Although the list includes most of the top management, the roles of mailbox owners are quite diverse. 12",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "3.1 Selection of Informative Emails To focus on communication that is relevant for production, I identify emails that involve the transmission of work-related information or that delegate tasks. To accomplish this categorization, the paper exploits large language models and their ability to summarize text. In particular, I prompt OpenAI’s GPT 3.5 Turbo algorithm to assign one of the following categories to each email: 1) provides information ; 2) requests information ; 3) requests some service or delegate tasks ; 4) provides acknowledgement ; 5) is nonwork related ; 6) is not meaningful . I then retain only emails assigned to the first three categories. 13",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Large Language Models",
+            "Local Average Treatment Effect (LATE)",
+            "Large Language Models (LLMs)"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Natural Language Processing (NLP) & Text Analysis",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "3.2 Selection of Hierarchy-Relevant Employees Employees in administrative assistant roles differ from other workers as they are specifically hired to support the work of particular, generally high-ranked individuals. This fact has two main consequences. First, their communication patterns are more deterministically induced by their roles, suggesting a more mechanical relationship between their roles and the characteristics of the emails they send. Second, their location in the hierarchy structure is not comparable to other roles. For example, an administrative assistant to the CEO directly responds to the highest-ranked employee, but this is not comparable to a division director who also responds to the CEO. For these reasons, I exclude from the analysis emails sent by roles such as Administrative Assistant, Senior Administrative Assistant, or Administrative Coordinator. and 8 in the appendix provide, respectively, an example email containing an organizational announcement and an example of an attachment with the hierarchical tree for a specific division. 11 The merge of the hierarchy data and the email data relied on matching the employee names appearing in the organisational charts with the email senders’ names extracted by AOHR. The (probably automatic) extraction of the latter sometimes led to the identification of multiple names for the same sender. I have allocated the emails of those senders to all employees with the corresponding names. As a result, the same email may appear multiple times in the panel dataset. 12 Table 3 in the appendix provides the list of roles for the 132 employees whose mailbox is part of the corpora. 13 Section A.1 in the appendix provides details on the implementation of the categorisation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 4,
+        "text": "3.3 Text-based Measures of Language Specialisations A more specialised language, in the spirit of Cr ́emer et al. ( 2007 ), is a language that uses mostly precise and technical words which refer to events faced frequently. In a context where a division focuses on a specific field and set of problems, we can expect that the specialised language would often use a relatively small set of words and rarely other words.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "3.3.1 Individual-level measure To measure the employees’ overall degree of language specialisation, I adapted the Herfindahl-Hirschman Index (HHI) to the context of language. 14 This index was originally developed to measure market concentration as a function of firms’ market shares. By replacing market shares with words’ relative frequency in an employee’s language, the index captures the degree to which the employee uses predominantly certain words rather than using all words with the same probability. In practice, let W i be the set of words w used in all emails sent by employee i . Let also f w be the frequency of word w in W i , and V i be the set of unique words in W i . The degree of language specialisation for employee i is then:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "where # W is the cardinality of W . To ensure that different declinations of the same word are not considered different words, I extract and use only word roots using the Porter Stemmer . The advantage of this measure is its simplicity and interpretability. Nevertheless, it depends on the sample size, as a larger sample leads to a larger vocabulary V . Indeed, it has been shown that there exists a concave relationship between the number of words observed in the sample and the vocabulary size. 15 It follows that, by observing different sample sizes for each employee, the measure may not be comparable across them as relative word frequencies depend on the vocabulary size ( Baayen 2001 , Sampson 2001 ). To address this concern, I compute relative word frequencies using the Good-Turing correction ( Good 1953 ) with the method described by Gale and Sampson ( 1995 ). 16",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "3.3.2 Message-level measures The degree of language specialisation of a specific email captures how technical the terms used are. Technical terms differ from general ones as they are more likely to have specific 14 McCannon, Hall, and Zhou ( 2023 ) use a similar approach to identify topic concentration in teachers’ contracts. Hoberg and Phillips ( 2018 ) use instead the average cosine similarity across word pairs. 15 The intuition is that when the sample of words is small, increasing the sample size would like to add new words. On the contrary, when the sample is large, increasing the sample is likely to add words already included in the vocabulary. 16 Details on the method used are in section A.2 in the appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cosine Similarity"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 9,
+        "text": "meanings and unique interpretations. It follows that more specialised messages are also clearer and more informative. To capture such specialisation, I adopt two approaches which do not rely on word frequencies, as is the case for the HHI index. Indeed, with short texts, usually the case for emails, statistical measures based on word frequencies are less informative due to the small number of words and produce little variation. The first method categorises emails using a large language model (LLM), in particular OpenAI’s GPT 3.5 Turbo. To achieve that, I prompt the algorithm to categorise every email by degree of language specialization from 1 to 5 where 1 is a very broad language and 5 is a very technical language . 17 The second method instead measures directly the number of possible meanings that the terms appearing in the text can have. More precisely, I browse an English dictionary and count the possible meanings for every term in the email (excluding stopwords - uninformative terms). I then take the average across words, obtaining the average number of meanings of the words in the message. I consider these measures proxies for quality. Indeed, more technical content is more precise and informative than broader messages.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 10,
+        "text": "3.4 Identification of Hierarchical Levels Hierarchical levels allow to rank employees based on the advancement of their career. Higher hierarchical levels identify roles with more managerial tasks and larger responsibilities. On the contrary, lower levels represent more specialised and technical roles, up to entry-level roles. In this paper, I construct hierarchical levels using two approaches, one based on role names and one based on employees’ hierarchical distance from Kenneth Lay, arguably the company’s most prominent employee. The role-based method groups and orders roles by common sense. It led to the identification of 6 groups: the first includes President , Chairman , and C-Suit roles; the second includes top-management roles such as Vice President and Senior Director ; the third includes higher-management roles such as Director and General Counsel ; the fourth includes lower-management roles such as Manager , Senior Counsel , and Supervisor ; the fifth includes advanced technical roles such as Analyst , Specialist , Counsel , and Attorney ; finally the sixth includes entry-level roles such as Staff , Associate , Clerk , and Consultant . 18 The advantage of this method is that role names are directly informative of the degree of managerial responsibilities and provide a reliable way to categorise employees based on the generality of the tasks they are involved with. The drawback is that role names do not necessarily map to a specific degree of importance and influence within the company. For instance, a Senior Director in the North-America division may respond directly to the top management, while a Senior Director of a subsidiary may have very limited contact with the CEO. The second approach to categorise hierarchical levels addresses this issue and relies on employees’ hierarchical distance from Kenneth Lay, who kept the CEO role for the majority of Enron’s existence. Under this method, I identify 7 levels, where level 1 corresponds 17 Details of the procedure and example emails with labels are in section A.1 of the appendix. 18 Table 2 in the appendix reports the full list of role names assigned to each hierarchical level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 11,
+        "text": "to employees who directly respond to Kenneth Lay, level 2 identifies employees whose superior responds to Kenneth Lay, and so on. It is relevant to note that statistics change based on the method used because 1) the two methods capture slightly different information, and 2) the resulting hierarchical level depends on data availability. The role-based category is missing for employees for whom I do not observe their roles. Similarly, The distance-base measure relies on being able to trace the employee’s hierarchy up to Lay. Hierarchical levels are not necessarily fixed across time for each employee. Indeed, they may change if employees change roles or move across the hierarchy (because of promotions or organisational changes).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 0,
+        "text": "4.1 Vertical Communication Descriptive statistics suggest that vertical communication was meant to move information up the hierarchy or delegate tasks. Figure 2 reports the share of emails that provide information, request information, or delegate tasks, out of all emails directed to a certain hierarchical level relative to the sender. 19 Two facts emerge from the figure. First, emails directed to superiors are more likely to provide, rather than request, information compared to those directed to subordinates. Indeed, if the superior of the superior of the sender is in the recipient list, about 67% of emails provide information. This number drops to about 42% if the recipient list includes the subordinate of the subordinate of the sender. On the contrary, the share of emails requesting information follows a reversed pattern, with emails directed to subordinates being less likely to request information than emails sent to superiors. 20 . Second, emails are more likely to delegate tasks if they are sent to subordinates. These facts suggest that vertical communication mostly moved information towards superiors or delegated tasks towards subordinates. They support the hypothesis that subordinates were in charge of information acquisition, whereas superiors held decision rights ex-ante.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 1,
+        "text": "4.2 Message Specialisation Employees write more precise messages when they provide information. Although this is consistent across the hierarchical direction of the email, there is heterogeneity, with emails being more precise when directed to superiors than when directed to subordinates. Figure 3 reports the average message specialisation of emails by content and hierarchical direction. The upper panel uses the LLM-based measure of specialisation, where email’ 19 Note that an email directed to a certain hierarchical level implies that at least one of the recipients is at the specified hierarchical level. It does not exclude that the recipient list also includes employees at other levels. 20 This fact is particularly strong for top-ranked employees, but overall holds at different hierarchical levels, as shown in figure 9 in the appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 4,
+        "text": "Share of emails that provide information (i.e. provides ), request information (i.e. requests ), or delegate tasks (i.e. delegates ), conditional on the recipient(s) including the superior of the superior of the sender ( writes down +2 ), the superior of the sender ( writes down +1 ), someone in the same hierarchical level of the sender ( writes cohort ), the subordinate of the sender ( writes down -1 ), or the subordinate of the subordinate of the sender ( writes down -2 ). Figure 2: Shares of Emails by Content",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 5,
+        "text": "language is rated from 1 to 5, where 1 corresponds to “very broad” and 5 “very technical”. The lower panel presents statistics where message specialisation is measured as the average number of meanings that the words used have in an English dictionary. 21 In both panels, statistics show that messages use more technical language when they are directed to superiors compared to when they are sent to subordinates. This pattern is consistent for providing and requesting information but particularly marked for providing information. A more technical language is a language that is less likely to confuse or be misunderstood. In other words, messages written to superiors are more precise and clear than those written to subordinates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 6,
+        "text": "4.3 The Effect of JeffSkilling’s Resignation on Vertical Communication CEO turnovers may create uncertainty for the firm’s employees for several reasons, including changes in firm strategy, new organisational changes, and more volatile capital markets. Such changes may impact intra-firm information flows and communication, as studied by Impink et al. ( 2024 ). 21 Note that, according to the latter measure, a larger number identifies broader language, which is the opposite compared to the LLM’s categorisation. To help the readability of the graph, the y-axis of the right panel is reversed.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 8,
+        "text": "writes down -2 writes down -1 writes cohort writes up +1 writes up +2 8.5 9.0 9.5 10.0 10.5 11.0 Avg. Num. of Word Definitions provides requests delegates",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 9,
+        "text": "Average message-level degree of language specialisation measured with LLM’s categorisation (above) or with the average number of words’ meaning (below, inverted y-axis to simplify the interpretation). Averages are for given content type, conditional on the recipient(s) including the superior of the superior of the sender ( writes down +2 ), the superior of the sender ( writes down +1 ), someone in the same hierarchical level of the sender ( writes cohort ), the subordinate of the sender ( writes down -1 ), or the subordinate of the subordinate of the sender ( writes down -2 ). Figure 3: Message-Level Degree of Language Specialisation",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 10,
+        "text": "This section studies the sudden resignation of JeffSkilling from the CEO role, focusing in particular on the communication behaviour of superiors towards their subordinates. For the analysis, I consider only emails where at least one recipient is a subordinate of the sender, and I exclude emails sent by either JeffSkilling or Ken Lay, who took over as CEO. In addition, I constrain the sample to 4 months, 2 months before and 2 months after Skilling’s resignation. I estimate the following model:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 11,
+        "text": "C i = α j ( i ) + β t ( i ) − ̄ t + ε i , where i indexes emails, j ( i ) the sender of email i , and t ( i ) the week when the email i was sent. I define ̄ t the week which includes the date of the resignation of Skilling (i.e. August 14th, 2001), so that time fixed effects are indexed relative to the resignation week. The { ˆ α j } estimates capture sender fixed effect. The dependent variable C i represents an indicator variable for the content of the email i , where the content can be the provision of information, the request of information, or the delegation of tasks. In particular, I estimate models where the dependent variable is either C p i or C r i , with the former being",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 12,
+        "text": "-8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 Weeks from Resignation Provides Information to Subordinate",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 13,
+        "text": "-8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 Weeks from Resignation Requests Information from Subordinate",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 15,
+        "text": "-8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 Weeks from Resignation Language Specialisation Providing Information to Subordinate",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 17,
+        "text": "a dummy equal to one if the email provides information and the latter being a dummy equal to one if the email requests information. Figure 4 reports estimates of the week fixed effects ( { ˆ β t } ) with C p i (left panel) or C r i (right panel) as dependent variable. It is possible to see that in the week right after the resignation emails written to subordinates are statistically more likely to provide information and less likely to request it. 22 Figure 5 provides estimates for the same model but with message specialisation as the dependent variable, and the sample is constrained to only emails that provide information. Whereas the instantaneous effect is less evident, it shows that the provision of information to subordinates increases in precision in the weeks following the resignation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 18,
+        "text": "4.4 Language Specialisation Higher-ranked employees use broader languages compared to lower-ranked employees when they provide information. Nevertheless, the degree of language specialisation when 22 Note that, from previous results, emails directed to subordinates tend to ask for information rather than provide it, implying a reverse on the general trend.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 19,
+        "text": "requesting information or delegating tasks is more homogeneous across hierarchical levels. Figure 6 reports each hierarchical level’s average employee-level language specialisation, measured through the HHI-based formula. The left graph uses the distance-based hierarchical levels, while the right graph uses the role-based measure.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 22,
+        "text": "1 2 3 4 5 6 Hierarchical Level by Role Provides Information Requests Information Delegate Tasks Average Language Specialisation (HHI) by Hierarchical Level",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 4,
+        "section_name": "Empirical Evidence",
+        "paragraph_id": 23,
+        "text": "Average employee-level language specialisation by hierarchical level. The language specialisation for emails that provide information is measured with the HHI formula (eq. 1 ) where the set of all words considered (W) is the set of all words appearing in employee’s emails that provide information. Similarly, the measure for the other types of content limits the set of words to those used in emails with that content. Figure 6: Individual-level Degree of language Specialisation",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 5,
+        "section_name": "Conceptual frameworks",
+        "paragraph_id": 0,
+        "text": "Alternative theories of within-firm communication have focused on different rationales for the transmission of information across the hierarchy, deriving possibly contrasting implications. In this paper, I discuss two approaches developed in Organizational Economics. The first builds on incentive theory and focuses on the optimal design of incentive contracts. The second, based on team theory ( Marschak and Radner 1972 ), abstracts from incentive problems and focuses on constraints on communication that are exogenous to the communicating parties. The literature on incentive theory, which largely builds on the work by Crawford and Sobel ( 1982 ), discusses environments where a principal retains decision rights but does not hold the relevant information for the decisions, which is instead collected by an agent . In this context, the principal either requests the agent to communicate their information, or delegate them the decision rights. The outcome depends on how much information the principal already has and how much the agent and principal’s preferences differ. If",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 5,
+        "section_name": "Conceptual frameworks",
+        "paragraph_id": 1,
+        "text": "the agent has sufficiently close preferences to the principal, delegation may be optimal because it incentivises the agent to collect better information ( Aghion and Tirole 1997 ) or because it prevents noisy communication ( Dessein 2002 ). Otherwise, communication occurs, but possibly partially, as the agents do not expect the principal to choose their preferred action and are not incentivised to put in effort. Through the lenses of this literature, firms’ hierarchies allow the allocation of decision rights and the creation of optimal incentives to acquire and communicate information. On the contrary, the team theoretic literature assumes that employees’ incentives are perfectly aligned, meaning that employees share the same preferences and objectives. However, limited cognitive abilities induce costs in information acquisition, information processing, and communication. In this setting, hierarchies allow for the specialisation of knowledge across the organisation, so that not everyone needs to learn and process all the information. In this way, the firm can reduce costs in information acquisition but increase communication costs, as decision-makers need to seek information from others. Starting from this trade-off, Bolton and Dewatripont ( 1994 ) find that an optimal organization would involve subordinates processing specialised information and communicating it to their superior. The latter would take the decision (by integrating information from other subordinates as well) or add additional information and communicate up as well to their superior. Superiors delegate decisions to subordinates if they are overloaded. To reach these results, a crucial aspect is that decision-making requires multiple pieces of specialised information. Consequently, centralising decisions at higher hierarchical levels reduces communication costs, as employees only need to communicate their information to a single person. Garicano ( 2000 ) and Garicano and Wu ( 2012 ) focus on the same specialisation-communication trade-off, but reach different conclusions as they think of specialisation in terms of type of problems. Therefore, in their framework, employees know how to solve only specific problems and need to seek help otherwise. Communication is then meant to reach the person with the relevant knowledge, rather than aggregate knowledge from multiple people, and communication costs are higher if the problems that require communication occur more frequently. In this context, they find optimal an organisation of the firm through knowledge-based hierarchies , where lowerranked employees, who take care of production, know necessary to address routine tasks and simple problems. On the contrary, knowledge related to more exceptional and complex issues resides at higher hierarchical levels. It follows that vertical communication involves either asking for help from superiors or providing solutions to subordinates. Cr ́emer et al. ( 2007 ) study the specialisation-communication trade-offfrom a language perspective. Because of language limitations, employees can communicate a small set of problems very precisely, or a larger set more vaguely. If divisions adopt a language more specialised to the specific set of problems they face, they reduce communication costs internally but increase costs when communicating with other divisions. In this context, higher roles in the hierarchy may adopt the role of translators by learning different specialised languages and transferring information across divisions. In this way, the paper shows how hierarchies can facilitate information flows and predicts that higherranked employees use richer language. However, it does not directly imply the direction",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1255,
+        "section_id": 6,
+        "section_name": "Discussion and Conclusion",
+        "paragraph_id": 0,
+        "text": "Firms continuously face the challenge of defining their internal organisations and hierarchical structure. One key reason why such decisions are pivotal for firms’ success is that they affect information flows and communication, heavily affecting, as a consequence, the efficiency of production. The importance of such decisions grows with the firm size, as large firms need to address more severe communication frictions. This paper provides evidence on how information flows occur in a large multinational company and identifies critical aspects. First, vertical communication was mostly meant to provide information to superiors and ask for information from subordinates. Delegation was less frequent and generally implemented by superiors towards subordinates. These facts suggest that Enron kept decision-making centralised at higher-ranked employees even though subordinates were generally in charge of information acquisition. In addition, the provision of information was of higher quality when directed to superiors rather than subordinates. Under the incentive theory view, these facts suggest that subordinates were sufficiently aligned with their superiors’ preferences, and communication costs were relatively low. They also suggest that bargaining power was mostly in the hands of higher-ranked employees, and holding information was insufficient to give power to subordinates. Enron’s renowned corporate culture, which imposed intense competition among employees, may have played a role in aligning subordinates’ incentives with superiors. 24 Alternatively, these facts align with Bolton and Dewatripont ( 1994 )’ theory that predicts the centralisation of decision-making to avoid multiple transfers of the same piece of information. However, the theory is not consistent with a lower-quality provision of information to subordinates. The second piece of evidence shows that superiors’ communication with subordinates shifted to providing information right after Skilling’s resignation. This result suggests that higher-ranked employees would still have easier and better access to complex information necessary to deal with uncertain environments. This aligns with Garicano ( 2000 )’s theory of knowledge hierarchies. Overall, the paper shows that organisational theories are complementary in explaining the real-world dynamics of within-firm communication. It identifies two key roles of hierarchies in information flows. On the one hand, they are fundamental tools for allocating decision rights across the firm and creating incentives for communication. On the other hand, they allow employees to specialise in the acquisition and management of different knowledge, so as to minimise information acquisition costs. 23 Dessein and Santos ( 2006 ) also study the specialisation-communication trade-offin a team theoretic framework. In their model, organisations decide workers’ specialisation (i.e. how many tasks to assign them) and how much they should adapt to local information rather than keep a pre-specified plan. More task specialisation requires more communication if workers adapt their tasks to local knowledge but not if workers follow a perfectly predictable pre-specified plan. The paper does not derive direct implications for vertical communication. 24 For example, employees ranked last in superiors’ performance reviews were dismissed.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

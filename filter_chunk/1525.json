@@ -1,0 +1,1140 @@
+[
+    {
+        "paper_id": 1525,
+        "section_id": 1,
+        "section_name": "Evidence from Russian Wikipedias",
+        "paragraph_id": 0,
+        "text": "Vladimir Avetian 1 , Ruben Durante 2 , Ulrich Matter 3,5 , and Ekaterina Zhuravskaya 4 1 University Paris-Dauphine - PSL 2 National University of Singapore 3 Bern University of Applied Sciences 4 Paris School of Economics 5 University of St.Gallen",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 1,
+        "section_name": "Evidence from Russian Wikipedias",
+        "paragraph_id": 2,
+        "text": "Dictators use censorship and propaganda to shape public opinion. As censored content is unobserved and propaganda can be subtle, uncovering the priorities of dictators is difficult. We address this challenge by comparing two online encyclopedias in Russian: Wikipedia, a crowdsourced platform with independent editors, and Ruwiki, a Russian platform created by cloning Wikipedia and selectively editing content to serve the regime’s objectives. Patterns of editing activity suggest that, unlike Wikipedia, Ruwiki is edited by professionals rather than by volunteers. Ruwiki has far fewer contributors who make more edits per person and are active primarily on working days and during working hours. Regarding content, the main differences between the two encyclopedias concern three broad topics: (1) Russia’s foreign policy, (2) Russia’s domestic politics, and (3) culture. Ruwiki portrays the country as a liberator rather than an invader in both current and past conflicts. It censors pages about the opposition and domestic human rights violations while promoting a benign view of the current political elites. On the cultural dimension, Ruwiki censors articles about LGBTQIA+, sex, and pornography and promotes traditional gender roles, emphasizing the role of Russia as a defender of traditional values in contrast to the perceived Western moral decline.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Authoritarian regimes seek to control the information citizens have access to through censorship (blocking unwelcome content) and propaganda (promoting favorable narratives). Such efforts can permeate all information domains, from news and popular culture to school textbooks and even encyclopedias. A crucial question that remains open is what types of information dictators prioritize when it comes to censorship and propaganda. Answering this question is challenging since censored content is typically hidden from view, and detecting propaganda is difficult due to limited fact-checking opportunities and the high cost of verification. To shed light on this question, we study the case of competing online encyclopedias – Wikipedia and Ruwiki – in Russia, where the information environment is tightly controlled by the regime. Wikipedia is the world’s largest online encyclopedia and consistently ranks among the most popular websites in many countries, including Russia. Wikipedia is free and volunteer-contributed, with independent editors ensuring content accuracy. After several unsuccessful attempts by Russian contributors to alter Wikipedia entries in Russian to fit the regime’s views, the entire Russian-language content was cloned in April 2023 to a new platform, Ruwiki.ru. Entries were then selectively deleted and edited. In mid-January 2024 Ruwiki became publicly available (although the editing process has since continued). 1 This case provides an ideal setting to compare potentially manipulated content with a largely unbiased source and understand how information is controlled under an authoritarian regime. In the first part of our analysis, we compare the organization and functioning of Ruwiki and Russian Wikipedia (henceforth simply Wikipedia). In particular, we examine differences in the content generation process, most notably concerning the number of active contributors and the concentration and timing of edits. Our results indicate several inter-",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "1 Although Ruwiki’s visitor numbers remain extremely low compared to Wikipedia, it is plausible that the regime could eventually ban Wikipedia from redirecting traffic to Ruwiki including through government-controlled search engines. 2",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "esting patterns. First, Ruwiki has a much smaller community of contributors compared to Wikipedia, with fewer contributors making significantly more edits per person. These edits are highly concentrated: the Herfindahl index is 0.14 for Ruwiki versus 0.03 for Wikipedia, and the top 4 contributors account for 46% of edits on Ruwiki compared to 26% on Wikipedia. Furthermore, some of Ruwiki’s top contributors exhibit a clear proregime slant. The two platforms also differ considerably with regard to the timing of edits. Ruwiki edits are more concentrated on weekdays, with noticeable declines during weekends and holidays, resembling a 9-to-5 work schedule. In contrast, Wikipedia sees more activity during weekends and holidays, as well as evenings, a pattern that is more in line with a volunteer-driven, spare-time effort.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "The second part of our analysis investigates what types of information are more likely to be censored or promoted on Ruwiki compared to Wikipedia. To this end, we analyze which entries were deleted or edited on Ruwiki from the time of the initial “fork” to date. We first identify what content features increased the likelihood of an entry being completely removed. Deletions are relatively rare, affecting only around 1,000 articles out of nearly two million on Russian Wikipedia as of the time of the fork. For each entry, we consider the text of the title and of the official categories assigned to it by Wikipedia. We then estimate a series of Lasso regressions to identify which unigrams or bigrams are associated with a higher probability of deletion. The topics most frequently targeted for deletion are: (i) pornography, (ii) LGBTQI+ issues, (iii) Ukraine and the Russian invasion, (iv) political activists, and (v) entries marked as problematic or controversial in the original Wikipedia version.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "LASSO Regression",
+            "LASSO Regression"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning",
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Machine Learning Predictors & Regularization"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "Finally, we explore which pages underwent edits, either through text deletion or addition. These interventions are far more common than outright deletion, affecting between 50,000 and 100,000 entries. Pages most likely to be edited relate to LGBTQI+ issues, the War in Ukraine, Western sanctions, and the annexation of Crimea and other territories 3",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "to Russia. Additionally, entries about certain Russian historical figures, members of the Soviet Union’s Communist Party, and Putin’s United Russia Party are likely to be edited. Taken together, our preliminary findings suggest a nuanced, somewhat surprising strategy in Russian propaganda. On the one hand, there is an effort to remove independent information about the Russian invasion of Ukraine and the political opposition, while promoting a favorable image of the Russian political elite. On the other hand, there is a push to promote traditional values in contrast to the perceived moral corruption of the West. Further analysis will focus on quantifying how propaganda impacts various areas, such as history, philosophy, literature, and religion. Additionally, harnessing the power of LLMs, we will examine the tone of editorial changes to shed light on what narratives and worldviews propaganda seeks to promote or suppress.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Large Language Models (LLMs)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Natural Language Processing (NLP) & Text Analysis"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 3,
+        "section_name": "Data and context",
+        "paragraph_id": 0,
+        "text": "Over the past decade, there have been consistent attempts to create clones of Russian Wikipedia. However, only a few projects have progressed beyond the planning stage, such as Runiversalis and Znanie. The landscape shifted dramatically following Russia’s invasion of Ukraine, which was extensively covered in Russian Wikipedia. This coverage spurred the development of alternative platforms, with Ruwiki emerging as the most prominent among them. Ruwiki was founded by Vladimir Medeyko, the former head of the Russian chapter of MediaWiki, the non-profit organization that hosts Wikipedia. Medeyko lost his position after announcing the creation of Ruwiki. The foundation of Ruwiki consists of 1.9 million pages forked from Russian Wikipedia on May 1, 2023. Since then, the content has been edited and reviewed by a group of contributors and administrators reportedly controlled by the Russian government. In August 2023, Ruwiki opened its platform for public editing. However, administrative roles remain assigned by 4",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 3,
+        "section_name": "Data and context",
+        "paragraph_id": 3,
+        "text": "To investigate how Ruwiki’s editors are modifying the original Wikipedia in Russian knowledge base, we have run a large-scale collection of Ruwiki’s (and, prior to the fork, Wikipedia in Russian’s) edit logs. To this end, we exploit a technical particularity in how the entire Wikipedia in Russian was copied (“forked”) by the initiators behind Ruwiki: Ruwiki has copied not only the webpages containing the Wikipedia in Russian articles at the time of the fork but also the entire technical/data infrastructure behind the official Wikipedia in Russian at the time, including the “backend” with the raw Wikipedia articles in Wikitext format (WikiMedia’s markdown format), the entire article revisions histories, and the application programming interface (API) to query the articles’ revisions histories. Importantly, this backend infrastructure has not been changed in any relevant way by Ruwiki and was, at least for the duration of our data collection efforts, fully functional and publicly reachable. 2 This allowed us to collect the full raw article revisions–technically the version of an article right after each edit–performed by the editors of Ruwiki. 3 The resulting database thus consists of article versions from the official Wikipedia in Russian, before they were copied to Ruwiki, as well as versions of the same articles after they were copied and altered by Ruwiki editors. In addition, this approach allowed us to systematically extract metadata for each of the edits, such as the timestamp of the edit and the username of the contributor performing the edit. Overall, we have collected over 10.7 million revision entries on 1,729,647 articles.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 3,
+        "section_name": "Data and context",
+        "paragraph_id": 4,
+        "text": "2 Note that, unlike the official Wikipedia in Russian (and any other official Wikipedia versions), Ruwiki never offered official download pages for their data. These official download pages (listed under https://dumps.wikimedia.org/ ) are usually the most accessible source of a Wikipedia site’s full article and edit logs data and are frequently used in academic research on Wikipedia. 3 In essence, we use a web crawling procedure that first fetches the unique identifiers of articles stored on Wikipedia in Russian/Ruwiki, and then collects all of the edit logs of each of these articles between the beginning of 2022 and the day of the crawl. Our procedure is highly scalable such that the entire Ruwiki history can be crawled within less than a day. See A.A1 in the Online Appendix for details on the crawling procedure. 5",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 3,
+        "section_name": "Data and context",
+        "paragraph_id": 6,
+        "text": "The collected edit logs also contain observations that are irrelevant to some of our analyses. This involves, for example, articles that are incomplete or ambiguous in format, as well as edit logs that do not contain the full article after the edit. To ensure data quality and relevance, we applied several filters to the crawled raw data to extract our main dataset: articles had to be of relevant length (content longer than 10 characters, i.e., not only consisting of a title), contain at least one heading, and include category tags. The latter is relevant as we build on these categories in some of our analyses. 4 After these filtering steps, we are left with 9.8 million article revision entries on a total of 1,563,203 articles. These preparatory steps not only allowed us to compile a dataset of relevant article versions before and after the editing by Ruwiki editors, it also provided us with the basis to detect whether an article had been completely removed from Ruwiki after it was forked. We use a simple procedure to detect articles deleted in Ruwiki. This is possible thanks to the transparency of the original Wikipedia project, which includes a complete dump containing all edits ever made on the platform, along with every version of each article. Specifically, we identify the set of articles that existed in the Russian version of Wikipedia prior to the fork date, May 1, 2023. We then match these articles by their IDs, which are consistently defined for all articles on the official Wikipedia in Russian and on Ruwiki. 5 Our analysis focuses exclusively on nontechnical articles, excluding those that describe Wikipedia’s structure rather than the actual content of the encyclopedia. Finally, we define articles as “deleted” if they were present on Russian Wikipedia before the fork but are not present on Ruwiki. To validate this set, we query Ruwiki for each of these articles to double-check their absence. This step helps mitigate false positives that can arise due",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 3,
+        "section_name": "Data and context",
+        "paragraph_id": 7,
+        "text": "4 The lack of any category fields is also a clear indication that an article is incomplete/faulty. 5 For exceptional cases where an article was deleted on Ruwiki and later re-created with a new ID — one that does not correspond to the original Wikipedia article ID — we perform additional matching by article names. 6",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 0,
+        "text": "We begin our analysis by examining the activity patterns of contributors to Wikipedia in Russian and Ruwiki over time. Our objective is to determine whether Ruwiki, unlike Wikipedia in Russian, exhibits editing patterns more consistent with a smaller, coordinated group of professional editors rather than a broad-based, volunteer-driven community. Figure 1 displays the monthly number of active contributors—those who make at least one edit in a given month—on both platforms. The figure shows that Wikipedia in Russian has a large and relatively stable contributor base, commonly exceeding several thousand active users per month. Second, Ruwiki, not surprisingly, starts from a much lower base right after the fork in May 2023 and remains at a consistently smaller scale. This divergence suggests that Ruwiki does not cultivate a wide range of casual volunteer editors (and, that not many switched from Wikipedia in Russian to Ruwiki); rather, its contributor pool appears more restricted and potentially more specialized. Turning to the intensity of contributions, Figure 2 plots the average number of edits per active contributor monthly. Before May 2023, Wikipedia in Russian displays a fairly stable pattern with contributors averaging on the order of 40–60 edits per month. After the fork, the average activity on Ruwiki surpasses that benchmark, frequently exceeding 70 edits per contributor per month. This contrast underscores how, despite having fewer total contributors, Ruwiki exhibits disproportionately high editing intensity, suggesting that a rather small group of editors is responsible for a lot of of content changes. Figure 3 further highlights these differences by depicting the distribution of the number of edits per user after May 2023. The top panel (in red) shows Ruwiki’s user base, while the bottom panel (in blue) shows that of Wikipedia in Russian. Both histograms 7",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 2,
+        "text": "2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Time in months Number of active contributors Platform Wikipedia in Russian Ruwiki Active contributors per month",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 3,
+        "text": "Figure 1. : Active Contributors per Month on Wikipedia in Russian and Ruwiki. This figure displays the number of active contributors per month on Wikipedia in Russian and Ruwiki from January 2014 onwards. An active contributor is defined as a distinct user (by username or IP address) who made at least one edit in a given month. The vertical dashed line marks the initiation of Ruwiki (fork of Wikipedia in Russian) in May 2023. Data for Wikipedia in Russian is represented by open blue circles, while data for Ruwiki (starting from May 2023) is shown with filled red circles. Data were obtained from Ruwiki edit logs (via the Ruwiki API) and the official Wikipedia in Russian dump.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 4,
+        "text": "rely on a logarithmic scale for both the number of edits (on the horizontal axis) and the number of users (on the vertical axis). Whereas Wikipedia in Russian has a broad mass of users contributing fewer than 100 edits each, Ruwiki shows a higher concentration of heavy editors (e.g., more than 1,000 edits). This pattern suggests the existence of a small but intense group of contributors on Ruwiki who may be directing content in a more centralized, professionally managed fashion.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 5,
+        "text": "A direct way to distinguish between volunteer-driven and potentially professionalized editing is to examine when edits occur. Figure 4 displays the total number of edits aggregated by day of the week for the top 100 contributors (excluding bots) since May 2023. In the upper panel (Ruwiki), editing is distinctly more common on weekdays (especially Wednesday and Friday), while weekend activity (Saturday and Sunday) is comparatively 8",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 7,
+        "text": "2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 Time in months Number of edits per active contributor Platform Ruwiki Wikipedia in Russian Number of edits per active contributor per month",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 8,
+        "text": "Figure 2. : Average Number of Edits per Active Contributor per Month on Wikipedia in Russian and Ruwiki. This figure displays the average number of edits per active contributor per month on Wikipedia in Russian and Ruwiki from January 2014 onwards. An active contributor is defined as a distinct user (by username or IP address) who made at least one edit in a given month, excluding clearly identified bot accounts (users with ’bot’ in their username). The vertical dashed line marks the initiation of Ruwiki (fork of Wikipedia in Russian) in May 2023. Data for Wikipedia in Russian is represented by open blue circles, while data for Ruwiki (starting from May 2023) is shown with filled red circles. Data were obtained from Ruwiki edit logs (via the Ruwiki API) and the official Wikipedia in Russian dump.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 9,
+        "text": "low. In the lower panel (Wikipedia in Russian), editing activity is more evenly distributed, with weekend levels rather higher than an average weekday. This contrast aligns with the view that Ruwiki’s top editors follow a weekday-dominated ‘work schedule,” whereas the volunteer base on Wikipedia in Russian continues to produce content across all days. Finally, to explore editing behavior around an especially prominent holiday period, Figure 5 examines the daily total number of edits around the Russian New Year holidays. The top panel (in red) displays Ruwiki’s editing volume, while the bottom panel (in blue) shows Wikipedia in Russian. The vertical dashed lines indicate January 1 (New Year’s Day) and January 8 (the day after Orthodox Christmas). As the figure illustrates, Ruwiki experiences a pronounced dip in editing during the holiday intervals, followed by sharp 9",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 14,
+        "text": "Source Ruwiki Wikipedia in Russian Bots have been removed from this analysis Histogram of number of edits per user after the initiation of ruwiki.ru",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 15,
+        "text": "Figure 3. : Distribution of Number of edits per user on Wikipedia in Russian and Ruwiki after 1st May 2023. This figure presents histograms of the number of edits per user on Ruwiki (upper panel, red) Wikipedia in Russian (lower panel, blue) from May 2023 onwards, focusing on pages that are common to both platforms. Edits done by clearly identified bot accounts (users with ’bot’ in their username) were excluded from the counts. The horizontal axis displays the number of edits per user on a logarithmic scale, and the horizontal axis shows the count of users on a logarithmic scale. Data were obtained from Ruwiki edit logs (via the Ruwiki API) and the official Wikipedia in Russian dump.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 16,
+        "text": "bursts immediately afterward. By contrast, Wikipedia in Russian exhibits a more moderate holiday pattern, with less extreme fluctuations in daily edits. These observations reinforce the notion that editing on Ruwiki follows a more “worklike” rhythm, conforming closely to official holiday schedules. The broader volunteer base of Wikipedia in Russian, on the other hand, appears to spread activity more evenly throughout the holiday period. Figure 6 underscores the same point by illustrating editing behavior for a 24-hour day. The red bars (left axis) depict Ruwiki, while the blue bars (right axis, scaled by a fac10",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 21,
+        "text": "Mon Tue Wed Thu Fri Sat Sun Day of the week Total number of edits Total number of edits per day of the week",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 22,
+        "text": "Figure 4. : Total number of edits per day of the week by top contributors on Wikipedia in Russian and Ruwiki. The figure displays the total number of edits per day of the week made by the top 100 contributors (excluding bots) on Wikipedia in Russian and Ruwiki from May 2023 onwards. The top contributors are identified based on their activity on the Russian Wikipedia after the initiation of Ruwiki (fork of Wikipedia in Russian) in May 2023. Edits are aggregated over the period up to the latest common date available in both datasets, with timestamps converted to Moscow time. The bars represent the total number of edits for each day of the week, and the error bars indicate jackknife confidence intervals calculated by systematically excluding each contributor from the analysis. Data for Ruwiki is shown in red in the upper panel and data for Wikipedia in Russian is shown in blue in the lower panel. Data were obtained from Ruwiki edit logs (via the Ruwiki API) and the official Wikipedia in Russian dump.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 26,
+        "text": "Date Number of edits (Daily total number of edits; all users; excluding bots) Distribution of edits over days around Russian New Year Holidays",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 27,
+        "text": "Figure 5. : Daily total number of edits on Ruwiki (red) and Wikipedia in Russian (blue) around the Russian New Year holidays. Vertical lines indicate New Year and Jan 8 (the day after Orthodox Christmas).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 28,
+        "text": "tor of 0.2 for clarity) represent Wikipedia in Russian. We observe a pronounced spike in Ruwiki edits during typical daytime working hours (approximately 10:00 to 18:00 Moscow time). Activity diminishes significantly overnight, consistent with professional work schedules. By contrast, Wikipedia in Russian shows a less pronounced drop during the late evening and night hours, suggesting greater participation from non-professional or volunteer contributors, who may edit at varied hours.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 31,
+        "text": "00:00 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00 16:00 17:00 18:00 19:00 20:00 21:00 22:00 23:00 Hour of the day (Moscow Time) Total number of edits (Ruwiki) Total number of edits (Wikipedia in Russian) Platform Ruwiki Wikipedia in Russian Comparison between Wikipedia and Ruwiki top contributors (excluding bots) Total no. of edits per hour of the day",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 32,
+        "text": "Figure 6. : Total number of edits per hour of the day by top contributors on Ruwiki and Wikipedia in Russian. This figure displays the total number of edits per hour of the day made by the top 100 contributors (excluding bots) on Ruwiki and Wikipedia in Russian from May 2023 onwards. The top contributors are identified based on their activity on the Russian Wikipedia after the initiation of Ruwiki in May 2023. Edits are aggregated up to the latest common date available in both datasets, with timestamps converted to Moscow time. The bars represent the total number of edits for each hour, with data for Ruwiki shown in red and data for Wikipedia in Russian shown in blue. To facilitate comparison between the platforms, the total number of edits for Wikipedia in Russian has been scaled down by a factor of 0.2, and a secondary horizontal axis is provided on the right. Error bars indicate jackknife confidence intervals calculated by systematically excluding each contributor from the analysis. Data were obtained from Ruwiki edit logs (via the Ruwiki API) and the official Wikipedia in Russian dump.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 34,
+        "text": "analyzing the effect of day-of-week on (i) the probability of making at least one edit, and (ii) the total size of edits (in bytes). Both specifications include user fixed effects and cluster standard errors at the user level. Figure 7 shows that the probability of editing is strongly associated with weekdays on Ruwiki, with significant drops on weekends and official Russian holidays (relative to Monday). In contrast, the day-of-week coefficients for the top 100 contributors on Wikipedia in Russian are considerably smaller, indicating less of a weekday-weekend difference. This pattern reinforces the notion that Ruwiki participants follow a more “professional” schedule. Figure 8 extends the analysis by focusing on the total size of edits per contributor. Again, we see evidence of a professionalized pattern on Ruwiki: total editing volume per user falls appreciably on weekends, while editing on Wikipedia in Russian is comparatively resilient. Taken together, these two sets of regression results confirm that Ruwiki’s editing structure aligns more closely with professional or quasi-professional content management. The patterns across these figures consistently point toward a structured and professionally managed approach to content creation on Ruwiki. While Wikipedia in Russian continues to benefit from the engagement of thousands of distinct contributors, Ruwiki’s editing dynamics are dominated by a smaller number of highly active participants, many of whom appear to operate on conventional weekday schedules. These findings align with our broader contention that Ruwiki was set up as a platform to shape and control the narrative under centralized oversight, rather than serving as an open, community-driven alternative to Wikipedia in Russian.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 35,
+        "text": "Tue Wed Thu Fri Sat Sun Holiday Day indicator Coefficient estimate Platform Ruwiki Wikipedia in Russian (Relative to ordinary Mondays, excluding bots) Effect of day of the week on the probability of editing an article page",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 36,
+        "text": "Figure 7. : Effect of day of the week on the probability of editing an article page by top contributors on Ruwiki and Wikipedia in Russian. This figure presents coefficient estimates from regressions analyzing the effect of day of the week on the probability that a contributor edits an article page on Ruwiki and Wikipedia in Russian from May 2023 onwards. The sample includes the top 100 contributors (excluding bots) identified based on their activity on the Russian Wikipedia after the initiation of Ruwiki in May 2023. The dependent variable is a binary indicator of whether a user made at least one edit on a given day. Independent variables are day-type indicators for Tuesday through Sunday and official Russian holidays, with Monday serving as the reference category. The regressions include user fixed effects. The coefficients represent the change in the probability of editing relative to an ordinary Monday. Error bars indicate 95% confidence intervals based on standard errors clustered at the user level. Data are aggregated up to the latest common date available in both datasets, with timestamps converted to Moscow time.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 37,
+        "text": "Tue Wed Thu Fri Sat Sun Holiday Day indicator Coefficient estimate Platform Ruwiki Wikipedia in Russian (Relative to ordinary Mondays, excluding bots) Effect of day of the week on the total size of edits per user",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 4,
+        "section_name": "Analysis of contributors and editing activity",
+        "paragraph_id": 38,
+        "text": "Figure 8. : Effect of day of the week on total size of edits per user on Ruwiki and Wikipedia in Russian. The figure shows coefficient estimates from regressions analyzing the effect of day of the week on the total size of edits per user on Wikipedia in Russian and Ruwiki from May 2023 onwards. The sample includes contributors (excluding bots) who made edits during this period. The dependent variable is the total size of edits (in bytes) made by a user on a given day. Independent variables are day-type indicators for Tuesday through Sunday and official Russian holidays, with Monday serving as the reference category. The regressions include user fixed effects. The coefficients represent the change in the total size of edits per user relative to an ordinary Monday. Error bars indicate 95% confidence intervals based on standard errors clustered at the user level. Data are aggregated up to the latest common date available in both datasets, with timestamps converted to Moscow time.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 0,
+        "text": "To identify articles deleted by Ruwiki editors, we leverage the transparency of the original Wikipedia project, which provides a complete record of edits and version of the articles. Using this, we isolate articles that were present on Russian Wikipedia before the fork date but are no longer found on Ruwiki. This process includes matching by article IDs and by names, to account for potential re-creations or renaming. By means of this manual verification, we have identified a total of 2,385 Wikipedia in Russian articles that have been permanently deleted from Ruwiki. We then manually label each of the articles to get a first descriptive account of what type of article content was targeted. The labels are manually defined by grouping articles with a clear, shared subject that could plausibly explain their deletion. Approximately 6% of articles remain unclassified under this procedure. While this approach relies on the subjective judgment of a human labeler, it provides an illustrative overview of recurring themes among the deleted articles. More objective, data-driven methods are introduced in subsequent sections.Table 1 presents an overview of the resulting categorization.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 2,
+        "text": "To better understand what factors drove Ruwiki editors to straight-out delete certain articles, we employ a logistic lasso regression framework aimed at identifying article content that predicts deletion. Building on our list of deleted pages, we prepare a dataset comprising both deleted articles (treatment group) and existing articles (control group). To capture different aspects of the articles’s content, we construct four distinct input variants: (i) official Wikipedia in Russian categories, (ii) terms occurring in these categories, (iii) terms occurring in the article title, and (iv) title plus category terms. As the selection of the control group (articles still existing on Ruwiki) is conceptually not clear, we base our analysis on a bootstrap procedure in which we re-sample a con17",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "LASSO Regression",
+            "Logistic Lasso",
+            "LASSO Regression"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning",
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Machine Learning Predictors & Regularization"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 3,
+        "text": "Category N % Pornography 1 , 367 57 . 31 Ukraine 416 17 . 43 War in Ukraine 376 15 . 76 - 40 1 . 67 LGBTQ+ 148 6 . 20 Political regime in Russia 70 2.93 - 16 0 . 67 Freedom of speech 14 0 . 58 Navalny 14 0 . 58 Human rights 8 0 . 33 Radical organizations 7 0 . 29 Propaganda 6 0 . 25 Opposition 5 0 . 21 Sexuality 36 1 . 50 Drugs and addiction 22 0 . 92 Controversial history 9 0 . 37 Obscene language 8 0 . 33 Wikipedia 8 0 . 33 Chechnya 6 0 . 25 War crimes 6 0 . 25 Religion 5 0 . 21 Feminism 3 0 . 12 Suicide 2 0 . 08 Other 279 11.66 - 149 6 . 24 Wiki: Proposed deletion 56 2 . 34 Disambiguation pages 51 2 . 13 Private company 7 0 . 29 Wiki: Citing issues 5 0 . 21 Wiki: Part of larger article 5 0 . 21 Wiki: Original research 3 0 . 12 Wiki: Style issues 3 0 . 12 Total: 2,385 observations Table 1—: Frequency of subjects among deleted pages, based on a manual labelling process.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 4,
+        "text": "trol group of similar size to the treatment group from the population of existing articles. This approach ensures a balanced dataset for the regression analysis and addresses un18",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 5,
+        "text": "certainty regarding the appropriate control group. For the term-based input variants, we generate unigrams, bigrams, and trigrams (n-grams) from the preprocessed text and construct a DTM. We remove infrequently occurring terms by setting a sparsity threshold of 99.5%, and exclude common terms that appear in many articles (e.g., ”статьи” [articles], ”списки” [lists], ”год” [year]) to focus on more informative features.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "N-grams"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 7,
+        "text": "We employ a logistic regression model with an l 1 (lasso) penalty to perform variable selection and estimate the effect of the text features and category names on the probability of article deletion. The model is specified as:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 8,
+        "text": "Pr ( y i = 1 | x i ) = exp ( β 0 + x ′ i β ) 1 + exp ( β 0 + x ′ i β ) , where y i is a binary indicator equal to 1 if article i is deleted and 0 otherwise, x i is the vector of features for article i , β 0 is the intercept, and β is the vector of coefficients. The feature vector x i consists of either binary indicators (for the categories input variant) or term frequencies (for the term-based input variants). 6 Based on this specification, we run a bootstrap procedure with B = 100 iterations. In each iteration, we first randomly sample 5,000 control articles and include all available deleted articles. We then fit the logistic lasso model for each bootstrap sample. This approach allows us to identify features that are consistently predictive of article deletion across different control group samples. From each bootstrap iteration, we keep the nonzero coefficients. Nonzero coefficients correspond to text features (or categories) that are selected as predictive of article deletion. The sign of the coefficient indicates the direction of the effect: In the case of category indicators, a positive coefficient implies that",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Logistic Lasso"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 9,
+        "text": "6 The lasso penalty term is given by λ ∥ β ∥ 1 , where λ is the penalty parameter controlling the degree of shrinkage. We use the approach suggested by (Matt Taddy 2017), implemented in the cv.gamlr function from the gamlr package in R to run the logistic ‘gamma lasso’ regression with cross-validation as a means to select λ . Specifically, we use a 10-fold cross-validation and select the model with the minimum average out-of-sample deviance. 19",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Cross-Validation"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 10,
+        "text": "Category Terms Title and Category Terms Term ̄ˆ β j Term ̄ˆ β j pornography (порнография) 5.76 pornography (порнография) 4.31 sexual (сексуальный) 3.32 fight (бой) 3.61 LGBT (лгбт) 2.51 Populated (населенный) 3.05 activist (активист) 2.20 Russian (российский) 2.66 invasion (вторжение) 1.31 Ukraine (украина) 2.66 public (общественный) 1.11 Russia (россия) 1.55 caution (осторожность) 1.10 Point (пункт) 1.30 Donetsk (донецкий) 1.04 war (война) 1.02 Donetsk Region (донецкий область) 1.02 invasion (вторжение) 0.50 Russian (российско) 0.99 invasion Russia (вторжение россия) 0.44 Table 2—: Top 15 Terms with the largest average coefficients in lasso logistic regressions predicting article deletion. This table reports the top 15 terms with the largest average coefficients from LASSO logistic regression models predicting the deletion of Wikipedia pages. Two input variants are presented: “Category Terms,” which utilizes terms extracted from article categories, and “Title and Category Terms,” which incorporates terms from both article titles and the article’s official Wikipedia in Russian categories. The coefficients represent the average effect of the presence of each term on the log odds of page deletion, calculated over multiple bootstrap samples in which the non-deleted articles were re-sampled from a large set of Wikipedia in Russian articles. Terms are displayed in Russian with English translations in parentheses.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 5,
+        "section_name": "Analysis of Ruwiki article deletions",
+        "paragraph_id": 11,
+        "text": "belonging to the category increases the probability of deletion, while a negative coefficient implies the opposite. In the case of term frequency variables, a positive coefficient implies that higher frequencies of the term are associated with an increased probability of deletion, while a negative coefficient suggests that higher frequencies of the term decrease the probability of deletion. The magnitude of the coefficient reflects the strength of the association. At the end of the bootstrap procedure, we collect the coefficients from all iterations and compute the average coefficient values as coefficient estimates and the corresponding standard deviation as the coefficient’s bootstrap standard errors. In addition, we calculate the occurrence percentage of each text feature (or category)— the proportion of bootstrap iterations in which the text feature was selected and only further consider terms that have occurred in 5% of the bootstrap iterations. We then interpret the remaining text features and categories as important predictors of article deletion.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 0,
+        "text": "To analyze the textual changes done by Ruwiki editors, we compare two versions of each article: the latest version just before the fork (the latest version before May 1, 2023), and the latest version after May 1, 2023. 7",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 2,
+        "text": "For each article, we extract the Wikitext content at both time points. Wikitext is Wikipedia’s markup language that includes not only the textual content but also formatting instructions, templates, and other metadata. All data contained in Wikipedia articles is typically stored in this format before it is rendered as web pages. The great advantage of analyzing the data at this level/in this format is that our analyses are not affected by formatting differences in rendered article web pages (HTML files) between the original Wikipedia in Russian and the rather differently structured Ruwiki websites. For both versions of each article, we extract the main text (headers and paragraphs) and remove any Wikitext or HTML formatting syntax. 8 To identify and highlight the differences between the two versions of each article, we utilize a text comparison algorithm to detect additions and deletions at the word level. 9 The highlighted comparisons are then saved as HTML files. Figure 12 shows examples of such a file based on comparing the main text of the pre-Ruwiki version of the articles on",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 3,
+        "text": "7 Our latest collection of all edits on Ruwiki was done on 26th August 2024. Thus, we can consider all edits on Ruwiki that were already stored in Ruwiki’s edits backend up until this date. 8 See Section A.A2 in the Online Appendix for a detailed account of how the raw Wikitext data is processed. 9 Specifically, we employ the SequenceMatcher class in Python’s difflib library. The SequenceMatcher algorithm operates by comparing sequences—such as lists of words or characters—to identify matching blocks and discrepancies. It begins by finding the longest contiguous matching subsequence between the two input sequences. Once this is established, the algorithm recursively applies the same process to the preceding and succeeding segments of the sequences that are not part of the matching block. This method effectively isolates insertions, deletions, and substitutions. In our implementation, we tokenized the texts into lists of words and fed them into the SequenceMatcher . The algorithm generated a series of opcodes that describe how to transform the first sequence into the second. Each opcode specifies a particular action—such as equal , delete , insert , or replace —along with the indices of the affected elements in both sequences. We used these opcodes to construct an HTML representation of the edited text where deletions from the original text are wrapped in red-highlighted spans and insertions in the new text are wrapped in green-highlighted spans. This visual differentiation allows for an intuitive examination/manual validation of the specific changes made between the two versions of each article. 21",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 4,
+        "text": "LGBT, the Katyn Massacre, and the Donbas with the Ruwiki version of the same article after substantive editing by Ruwiki editors. The left panel shows the original file and the right panel a browser-based translation to English. Importantly, apart from allowing us to identify what textual changes have been made to a particular article, this procedure also helps us filter out articles with edits that did not affect the main text of an article, but other components such as tables, images, references, and links. Overall, we identify 134,060 articles with edits affecting the main text in this way. On average, an article in this set has a main text length of about 700 words (median article length: 315) prior to editing by Ruwiki editors. 10 Of the 134,060 articles edited by Ruwiki editors, in 63,599 cases the editors deleted part of the main text, in 125,786 of the cases the editors added new text, and in 55,325 cases, there were both additions and deletions.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 6,
+        "text": "Out of the 134,060 articles edited by Ruwiki editors, we select a subset of “heavily edited” articles with either at least 10% of their original text length deleted, at least 10% of their original text length added, or 15% of their original text size either added or deleted on Ruwiki and that have a main text length of over 100 words. The resulting subset consists of 28,118 articles. 11 Finally, we transform the highlighted textual differences found in these articles into a structured dataset by extracting individual additions and deletions from the HTML diff files. In this dataset, each row consists of an edit for a given Wikipedia article. Text segments that were present in the later version but not in the earlier one are stored in the additions column of this dataset, and text segments that were present in the earlier version but",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 7,
+        "text": "10 B3 in the Online Appendix shows the size distribution of these articles before Ruwiki editing in terms of number of characters (panel A) as well as number of words (panel B). 11 13,583 of those articles had some deletions by Ruwiki editors, 27,217 of those articles had some additions, and 12,682 had both deletions and additions. 22",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 8,
+        "text": "Observance of the rights and freedoms of Russian citizens belonging to the LGBT (homosexual, bisexual and transgender people) is considered in the West a pressing problem in modern Russia. The invisibility and infringement of representatives The propaganda of same-sex relations in Russia is prohibited by law. Most Russian lawyers and human rights activists believe that LGBT representatives in Russia are perceived as a normal phenomenon. This is associated with manifestations of aggression, intolerance and political repression against LGBT in Russia. want special rights for themselves. (a) LGBT (ЛГБТ)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 9,
+        "text": "The Katyn massacre ( sometimes also shortened to Katyn - the Katyn crime) was a war crime, mass murder, mass execution of Polish citizens, mainly captured officers of the Polish army, carried out in the spring of 1940 , prisoners of war and civilians, committed in the Katyn forest in the Smolensk region. To this day, the question of who was guilty of this crime remains the subject of scholarly and public debate. According to the first point of view, based on the investigation of the German occupation authorities in 1943. The executions were carried out and according to Soviet documents declassified in 1992 by decision of a special \"troika\" on the order of Boris Yeltsin, responsibility for the execution is assigned to the NKVD of the USSR in accordance with the resolution of the Politburo of the Central Committee of the All-Union Communist Party (Bolsheviks) of March 5, 1940; executed . According to the second point of view, which was held by the Soviet side of the prosecution at the International Military Tribunal in Nuremberg, the shooting was carried out by Nazi Germany. (b) Katyn (Катынь)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 10,
+        "text": "War on Armed conflict in Donbass , or armed conflict in Donbass (Civil war in Ukraine) - military actions on the territory of Donetsk and Luhansk regions of Ukraine, which began in April 2014 and preceded the full-scale Russian invasion of Ukraine in February military actions in Ukraine since February 2022. It is part of the Russia-Ukraine war . The hostilities were conducted between the Ukrainian armed forces, other security agencies and irregular volunteer formations on one side and pro-Russian armed volunteer formations of the self-proclaimed Donetsk People's Republic (DPR) and Luhansk People's Republic (LPR) . In early 2023, the ECtHR ruled that the territories of eastern Ukraine controlled by the so-called DPR and LPR were under de facto Russian control. The Russian military had been present in these territories since at least April 2014, including a full-scale Russian army presence since August 2014. (c) Donbas (Донбасс)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 11,
+        "text": "Figure 9. : Examples of article diff visualizations for various topics. Each subfigure shows a translated excerpt of detected additions (highlighted in green) and deletions (highlighted in red) in the main text of the articles. The differences are based on comparing the last version of the Wikipedia article in Russian before copying to Ruwiki and the version of the same article on Ruwiki after editing by the Ruwiki editors.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 12,
+        "text": "removed in the later one are stored in the deletions column. A replacement/modification of existing content is thus reflected in a row containing both the text removed (in the deletions column) and the text added (in the additions column) as part of the modification. We then use this dataset to quantify the edits by calculating the number of additions and deletions per article, the total words and characters added or removed, and the overall extent of changes to each article’s content. Table 3 presents descriptive statistics of the absolute extent of editing in terms of the number of edits (additions/deletions) and the number of words involved.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 13,
+        "text": "N Mean Median SD Min Max Total no. of edits: 334,201 11.89 4.00 30.48 1 852 ... thereof additions: 192,588 6.85 3.00 14.89 0 411 ... thereof deletions: 141,613 5.04 0.00 15.96 0 441 Total number of words in edits: 8,888,592 316.12 118.00 779.51 4 22,696 ... thereof words added: 5,382,090 191.41 93.00 374.41 0 10,572 ... thereof words deleted: 3,506,502 124.71 0.00 584.51 0 22,284 Table 3—: This table presents descriptive statistics of Ruwiki article edits based on a dataset of 28,118 heavily edited articles. The statistics are calculated at the article level, aggregating the edits per article. “Total no. of edits” refers to the total number of individual edits made across all articles. “... thereof additions” and “... thereof deletions” indicate the number of edits that involved adding or deleting text, respectively. “Total number of words in edits” refers to the cumulative number of words affected by the edits, along with their breakdowns into additions and deletions. The statistics provided include the total count (N), mean, median, standard deviation (SD), minimum (Min), and maximum (Max) values across all 28,118 articles.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 14,
+        "text": "Table 4 shows statistics of the size of additions and deletions relative to the size of the article’s main text previous to the editing by Ruwiki editors (in terms of number of words). Figure 10 present histograms showing the distribution of words added and deleted as a percentage of initial article text length. The horizontal axes show the percentage of text added/deleted (Panels A and B on a logarithmic (base 10) scale and Panels C and D on a linear scale). The vertical axes indicate the number of cases (frequency) falling into 24",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 15,
+        "text": "Mean Median SD Min Max Share words added: 44.41% 30.30% 70.18% 0.00% 4584.35% Share words deleted: 12.03% 0.00% 22.68% 0.00% 100.00% Table 4—: This table presents descriptive statistics of Ruwiki article edits based on the dataset of 28,118 heavily edited articles. The statistics are calculated at the article level, aggregating the edits per article. The statistics provided include the mean, median, standard deviation (SD), minimum (Min), and maximum (Max) number words relative to the article’s no. of words previous to the changes made by Ruwiki editors.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 16,
+        "text": "the corresponding bin (see B4 in the Online Appendix for the histograms based on the fraction of articles instead of the frequency of articles on the vertical scale).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 18,
+        "text": "To further understand which type of content is more likely to be censored or promoted on Ruwiki, we analyze the textual content of edits to identify linguistic factors that predict whether a text segment is added or deleted. Based on our collection of text differences (diffs) for heavily edited articles, we construct a dataset at the level of individual diffs with a column containing the raw text contained in the diff, and another column indicating the origin of the diff (the article ID) and an additional column labeling the diff as either an addition or a deletion. To reduce lexical variability and focus on substantive content, we then lemmatize the text segments using the MyStem lemmatizer (Ilya Segalovich 2003), convert all text to lowercase, and remove punctuation, numbers, and stopwords in both Russian and English (Wikipedia in Russian Articles can also contain English phrases). Finally, we generate bigrams and trigrams from the cleaned text. We employ a Logit Lasso regression to model the probability that a given text segment is an addition or a deletion based on the terms (unigrams, bigrams, or trigrams) occurring in them. The Lasso (Least Absolute Shrinkage and Selection Operator) method introduces an L 1 regularization penalty to the logistic regression, which promotes sparsity 25",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "LASSO Regression",
+            "LASSO Regression"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Machine Learning Predictors & Regularization"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 19,
+        "text": "0.1 1.0 10.0 100.0 1 000.0 Words Added (% of Initial Text, log 10 scale) Frequency Words Added in % of Initial Text A",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 20,
+        "text": "0.01 0.10 1.00 10.00 100.00 Words Deleted (% of Initial Text, log 10 scale) Frequency Words Deleted in % of Initial Text B",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 24,
+        "text": "Figure 10. : Distribution of words added and deleted as a percentage of initial article text length. This figure presents histograms of the percentage of words added or deleted relative to the initial number of words in heavily edited articles. Panel A displays the distribution of relative word additions, and Panel B shows the distribution of relative word deletions, both with logarithmic (base 10) scales on the horizontal and vertical axes. Panels C and D present the same distributions with the horizontal axes on a linear scale. Only articles with non-zero word additions or deletions are included in the respective panels.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 25,
+        "text": "in the model coefficients. Specifically, the logistic regression model with lasso penalty (formalized as the combined objective function) is:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 27,
+        "text": "where y i represents the binary response variable, indicating whether a given text segment is an addition ( y i = 1 ) or a deletion ( y i = 0 ). The predicted probability that the i -th text segment is an addition is denoted by p i = 1 1 + e − X ⊤ i β , where X i is the vector of predictor variables, comprising the lemmatized n -gram features for that observation. The regression coefficients are represented by β , which measure the influence of each n -gram on the probability of a segment being added. The L 1 regularization parameter, λ , controls the strength of the penalty applied to the coefficients, promoting sparsity in the model by shrinking some coefficients to exactly zero. Ten-fold cross-validation is used to select the optimal value of the regularization parameter λ that minimizes the out-of-sample prediction error. We run the logit lasso regression separately for the different article categories. Figure ?? shows the terms with the ten largest and ten smallest estimated coefficient values for lasso regressions based on bigrams and trigrams in the categories history/politics, culture/media/entertainment/, and geography.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "LASSO Regression",
+            "Cross-Validation",
+            "LASSO Regression"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Machine Learning Predictors & Regularization"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 28,
+        "text": "Figure 11. : Top-10 largest and smallest coefficients for terms predictive of addition or deletion of text segments in articles related to history and/or politics (Panel a) and geography (Panel b). The horizontal bars indicate the estimated logit lasso coefficient values (scale on the horizontal axes). Labels refer to the corresponding term (bigram or trigram) indicators. Terms predictive of text segments being added by Ruwiki editors are shown in green, and terms predictive of text segments being deleted by Ruwiki editors are shown in red.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 6,
+        "section_name": "Analysis of Ruwiki article edits",
+        "paragraph_id": 29,
+        "text": "Figure 12. : Top-10 largest and smallest coefficients for terms predictive of addition or deletion of text segments in articles related to culture, media, and/or entertainment (Panel a), law and order (Panel b). The horizontal bars indicate the estimated logit lasso coefficient values (scale on the horizontal axes). Labels refer to the corresponding term (bigram or trigram) indicators. Terms predictive of text segments being added by Ruwiki editors are shown in green, and terms predictive of text segments being deleted by Ruwiki editors are shown in red.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 0,
+        "text": "To further illustrate how edits by Ruwiki contributors affected content, we turn our attention to the specific domain of history. This focus offers two key advantages. First, history—particularly of the 20th and 21st centuries—is a highly sensitive subject in which the regime has a vested interest in promoting specific narratives. Second, content on Wikipedia and Ruwiki can be systematically compared to a well-defined benchmark: official school textbooks. Indeed, as many commentators have pointed out (BBC Russian, 2023; Deutsche Welle, 2023; Foreign Policy, 2023), the Russian regime has systematically used school textbooks to influence the perception of younger generations, and to advance narratives about Russian and international history that align with its political agenda. Our goal is to test to what extent history-related Wikipedia entries that were heavily edited by Ruwiki contributors became semantically more similar to official school textbooks. We focus on eight official textbooks aimed at high school students in grades 9 to 11. These books focus on modern and contemporary history (i.e., 19th century to present day), with four dedicated to Russian history, and four to international history. Each textbook is scanned and digitized using OCR technology. Every page of each book is then converted into a numeric embedding 12 . We then apply a similar procedure to the subset of heavily edited entries identified as history-related. For each page, we consider the latest version available on Wikipedia before the fork and the latest version available on Ruwiki after the fork which incorporates all the edits by Ruwiki contributors. Longer entries are split into smaller segments to ensure that their length does not exceed the maximum token limit for embedding generation. The same text-embedding-3-large model is then used to create embeddings for",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 1,
+        "text": "12 Embeddings are structured, high-dimensional vector representations of text that capture semantic relationships between words and sentences. To generate the embeddings we use OpenAI’s text-embedding-3-large model, which produces 3,072-dimensional vectors capturing nuanced semantic relationships. 30",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 2,
+        "text": "all page segments from both the preand the post-edit versions. We use the embeddings space to measure the semantic distance between Wikipedia/Ruwiki entries and textbooks’ individual pages (or group of pages).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 3,
+        "text": "To measure the distance between Wikipedia/Ruwiki entries and textbooks we use two alternative approaches. First, we measure the similarity between each entry and the textbook page closest to it in the embedding space. This ensures that we compare each entry - both preand post-edits - to the page that covers the same (or the most closely related) topic. One limitation of this approach is that the resulting measure can be noisy since the content of a single entry may be covered in multiple textbook pages. To alleviate this concern, we also compare each entry to a group of pages covering the same topic. To this end, we exploit the fact that each textbook is organized in sections and chapters. 13 Specifically, we first identify for each chapter the centroid of all its pages in the embedding space. We then compute, for each entry, the distance to the closest chapter’s centroid separately for the the pre-edits version and for the post-edits version. This two procedures provide quantitative measures of how the editorial changes by Ruwiki contributors affect the similarity between each entry and the relevant parts of the textbook.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 4,
+        "text": "Figure 13 presents histograms of the Euclidean distance of each entry’s embedding and the closest textbook page (left panel) and to the closest chapter’s centroid (right panel). The figure overlays the distributions for entry versions before editing (labeled “Wikipedia in Russian”) and after editing (labeled “Ruwiki”). Both distributions display substantial overlap, which indicates that the preand the post-edits versions are generally similarly close to the textbook.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 5,
+        "text": "To gauge how the edits by Ruwiki contributors affect the semantic position of historyrelated Wikipedia entries relative to textbook, in Table 5 we present the results of a series of regressions. The dependent variable is the normalized Euclidean distance of each",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 7,
+        "text": "0.8 1.0 1.2 Minimum Eucledian Distance to Textbook Pages Frequency Article Version Ruwiki Wikipedia in Russian",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 8,
+        "text": "0.8 1.0 1.2 Minimum Eucledian Distance to Textbook Chapters Frequency Article Version Ruwiki Wikipedia in Russian",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 9,
+        "text": "Figure 13. : The figure shows histograms of Euclidean distances between Wikipedia article embeddings and Russian history textbooks in semantic space. The panel on the left shows the minimal distance between each article version and its closest textbook page, the panel on the right shows the minimal distance between each article version and its closest textbook chapter, defined as the centroid of the embeddings of its pages. The “Wikipedia in Russian” distribution (blue) represents the distances before changes by Ruwiki editors, while the “Ruwiki” distribution (red) represents those after edits.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 10,
+        "text": "entry version to the closest textbook page (top panel) or to the closest chapter’s centroid (bottom). We normalize to ensure that the coefficients reflect changes in units of standard deviations, thus making the interpretation of the magnitude easier. 14 We account for entrylevel fixed effects to control for any time-invariant, article-specific characteristics, thus isolating the effect of the editorial intervention on the article’s semantic distance to the textbook baseline. Standard errors are clustered at the entry level. The results in the two panels deliver a similar message. Looking at the full sample (column 1), we see that the coefficient on the post-edit dummy ( Edited by Ruwiki ) is negative and highly significant. This indicate that the editorial changes by Ruwiki contributors made the entries more similar to the content of the textbooks. The following columns report results separetely for different subsamples of entries. We see that the effect is larger for entries that were originally farther away from the textbooks (above-median baseline",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 11,
+        "text": "14 We normalize the distance column in our dataset by subtracting the distance mean of the full sample and dividing the difference by the distance standard deviation of the full sample. 32",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 12,
+        "text": "distance, column 3) than for those that were closer (column 2). Similarly, it is larger for entries associated solely to the history category (column 4) than for entries associated with multiple categories (column 5). Overall, these findings indicate that edits by Ruwiki contributors made history-related entries more consistent with the official narrative promoted by the regime in school textbooks.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1525,
+        "section_id": 7,
+        "section_name": "Ruwiki edits and semantic shifts in historical narratives",
+        "paragraph_id": 13,
+        "text": "Dependent variable: Panel A: Minimum Euclidean Distance to Textbook Pages Full Sample Below Median Dist. Above Median Dist. History Only History & Others History Only Above Median (1) (2) (3) (4) (5) (6) Edited by Ruwiki − 0.018 [FORMULA] − 0.019 [FORMULA] − 0.027 [FORMULA] − 0.039 [FORMULA] − 0.016 [FORMULA] − 0.037 [FORMULA] (0.004) (0.006) (0.004) (0.011) (0.004) (0.012) Mean Dependent Variable 0 − 0 . 672 0.707 0.089 − 0 . 008 0.654 R 2 0.972 0.937 0.927 0.966 0.972 0.918 Within R 2 0.003 0.002 0.013 0.015 0.002 0.024 Observations 12,514 6,820 6,658 1,082 11,432 618 Panel B: Minimum Euclidean Distance to Textbook Chapters Full Sample Below Median Dist. Above Median Dist. History Only History & Others History Only Above Median (1) (2) (3) (4) (5) (6) Edited by Ruwiki − 0.010 [FORMULA] 0.005 − 0.023 [FORMULA] − 0.026 ∗∗ − 0.008 ∗∗ − 0.042 [FORMULA] (0.004) (0.006) (0.004) (0.012) (0.004) (0.014) Mean Dependent Variable 0 -0.681 0.676 0.039 -0.004 0.56 R 2 0.95 0.871 0.881 0.936 0.951 0.832 Within R 2 0 0 0.004 0.003 0 0.008 Observations 19,678 10,818 10,978 1,628 18,050 974 Table 5—: Results from fixed-effects regressions examining the standardized Euclidean distance of Wikipedia articles. In Panel A , the dependent variable is the minimum Euclidean distance between each Wikipedia article’s embedding (before or after editing by Ruwiki editors) and the nearest textbook page . Observations for which the nearest textbook page (before vs. after editing) is not the same are excluded from this panel. In Panel B , the dependent variable is the minimum Euclidean distance between each Wikipedia article’s embedding (before or after editing by Ruwiki editors) and the nearest textbook chapter, defined as the centroid of the embeddings of its pages . Observations for which the nearest textbook chapter (before vs. after editing) is not the same are excluded from this panel. All dependent variables have been normalized, and article fixed effects are included in every model. The Edited by Ruwiki coefficient captures the change in semantic proximity following changes by Ruwiki editors, where a negative value indicates movement closer to the history textbook centroid. Due to the normalization, the coefficients reflect the change in the dependent variable in units of standard deviations (of the dependent variable, in the full sample). Different columns represent various subsamples: the full sample, articles split by their initial proximity to the nearest page/centroid (below or above the median distance), articles focusing solely on the history domain, those categorized as history plus other topics, and a subset of history-only articles initially positioned farther from the nearest page/centroid. Standard errors (in parentheses) are robust and clustered at the article level. 34",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

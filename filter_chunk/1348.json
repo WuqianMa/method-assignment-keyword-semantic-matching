@@ -1,0 +1,794 @@
+[
+    {
+        "paper_id": 1348,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Social media has transformed political dynamics ( Zhuravskaya, Petrova and Enikolopov , 2020 ). Over the past two decades, it has been rapidly adopted by both politicians and their constituents ( Petrova, Sen and Yildirim , 2021 ), leading to radical changes in political communication. Despite its ubiquity, our understanding of the effects of social media, and the mechanisms through which its adoption affects electoral outcomes, remains incomplete. One particularly understudied aspect of the adoption of social media is the use of moral language by political leaders. Social media is an important avenue through which moral values are diffused, and moral content receives a disproportionate amount of online engagement and attention ( Brady et al. , 2017 ). Furthermore, moral values are an important correlate of voting behaviour and policy preferences ( Enke , 2020 ; Enke et al. , Forthcoming ; Enke , Forthcoming ). Together, these patterns suggest that the use of moral language online may be an important factor in shaping contemporary political communication and electoral outcomes. Our paper studies these issues in the context of U.S. congressional elections from 2010 to 2018 , a period of rapid adoption of social media as a political communication tool. To do so, we collected a new dataset of over 3 , 000 congressional candidates’ Twitter accounts, including over 13 million tweets. The United States is an ideal setting in which to study these issues with four specific features worth highlighting. First, the U.S. is a large democracy in which elections are common, with both data being widely available and sample sizes being large enough for statistical inference. Second, concerns regarding political polarization, partisan animosity, and the erosion of democratic norms are particularly pronounced in the U.S. Third, we leverage the particular context of U.S. primary constests to identify our effects of interest (more details on this below). Finally, a large component of previous academic work on social media, moral values, and politics has a U.S. focus, allowing us to directly address and contribute to this literature. Our data allows us to present new stylized facts about the use of social media as a political communication tool. Our focus is on Twitter, given its wide adoption and common use by politicians. We document its rapid adoption over the past fifteen years: while only a handful of congressional candidates used Twitter in the 2008 election, by 2018 between sixty and seventy percent of U.S. congressional candidates had a Twitter account (Figure 1 ). Similarly, public engagement with political content (as measured by likes and retweets) rose significantly during this period. We use a series of event study fixed-effects regressions to document how Twitter use varies across the electoral cycle. Our analysis reveals patterns consistent with the use",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "of Twitter being an important political campaigning tool. The number of tweets increases substantially before elections, drops immediately after elections, and drops disproportionately when candidates lose (both the primary and the general elections). Furthermore, we observe very similar temporal dynamics for public engagement (and for the number of moral tweets). We show that moral language plays an important role in online political communication. Following previous work, we use simple keyword definitions of moral content to analyze the text in our dataset of social media posts. Around 40 percent of these U.S. congressional candidates’ tweets contain moral content. Furthermore, over the period of study, the use of moral language on social media by politicians has significantly increased. Our paper then presents evidence consistent with the idea that moral rhetoric on social media is an important factor in shaping political outcomes. We show that moral content on social media is positively and strongly associated with both positive engagement (as measured by likes and retweets), and electoral returns. Conditional on having a Twitter account, those that use moral language on their posts perform significantly better in both primary and general elections. Close primary elections provide quasi-random variation on the traits of the candidates who go on to represent their parties in the general election. Using a regression discontinuity design which exploits this variation, we show that Twitter use leads to an increase in general election vote shares. On average, Twitter use increases vote shares by around 6 percentage points. Furthermore, we show that this effect is largely driven by candidates who tend to use moral language in their social media posts. The estimated increase in vote shares due to Twitter use is approximately 14 percentage points for candidates who used social media with above median moral intensity, as measured by the share of posts with moral content. Our paper builds on recent work on the role of moral values in U.S. politics, which documents the importance of this dimension for political outcomes, economic choices, and policy preferences ( Enke , 2020 ; Enke, Rodriguez-Padilla and Zimmermann , 2022 ; Enke, Rodríguez-Padilla and Zimmermann , 2023 ; Enke , Forthcoming ; Enke et al. , Forthcoming ). We contribute to this research agenda through the construction of a large dataset concerning the use of moral language by U.S. congressional candidates from social media posts. We further assess the relationship between moral language and candidates’ electoral results, and show that moral rhetoric is associated with electoral returns. A closely related paper dealing with moral values in politics is Manacorda, Tabellini and Tesei ( 2022 ). This paper shows that access to mobile Internet fueled the support for",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "nationalistic parties and communal ideas. 1 We complement Manacorda, Tabellini and Tesei ( 2022 ) by relating moral language to electoral prospects. The focus on the link between morality and electoral outcomes also complements recent work in Gennaro and Ash ( 2022 , 2023 ), which focus on the use of emotional language in the U.S. Congress. Insofar we analyze how politicians use a specific social media platform (Twitter), we relate to the recent and growing literature that studies the role of social media in political settings (see Zhuravskaya, Petrova and Enikolopov , 2020 for an excellent review). 2 Among these works, we are particularly close to those that study the relationship between social media, politicians’ campaigning strategies or, more in general, behavior. For instance, Bessone et al. ( 2022 ) finds that politicians increase their use of social media when their constituencies become more active on these platforms. In addition, this increase substitutes for other, more traditional ways to engage with the constituencies. Petrova, Sen and Yildirim ( 2021 ), instead, shows that politicians can use social media to improve their recognition among voters and attract more donations. We contribute to this literature by documenting how the use of social media affects parliamentary elections and by further investigating how this effect depends on the use of a language that emphasizes moral values. 3 An extensive literature in economics and political science studies electoral campaigns (see Jacobson , 2015 for a review). Our work highlights the relevance of the moral cleavage in campaigns. The rise of new political cleavages (often made up by a combination 1 Manacorda and Tesei ( 2020 ), instead, shows how access to mobile Internet affects protest movements. 2 This literature highlights the impact of social media on voters’ participation ( Rotesi et al. , 2019 , Bond et al. , 2012 ), electoral outcomes ( Fujiwara, Müller and Schwarz , 2023 ), political accountability ( King, Pan and Roberts , 2017 , Barberá et al. , 2019 ), the quality of voters’ information ( Munger et al. , 2022 ), news diffusion ( Ershov and Morales , 2024 ), policy preferences ( Conzo r ⃝ et al. , 2023 ), protests and civil uprisings ( Acemoglu, Hassan and Tahoun , 2018 , Larson et al. , 2019 , Enikolopov, Makarin and Petrova , 2020 , González , 2020 ), online dissent ( Morales , 2020 ), and xenophobic or hateful attitudes ( Bursztyn, Egorov and Fiorin , 2020 , Müller and Schwarz , 2021 ), among others. Social media have also been associated with the formation of echo-chambers ( Bakshy, Messing and Adamic , 2015 ; Barberá , 2015 ; Halberstam and Knight , 2016 ) and with an increase in polarization ( Levy , 2021 ; Allcott et al. , 2020 ). Other papers suggest that the impact of social media on polarization is less severe. For instance, field experiments find that polarization does not decrease significantly after a reduction in the exposure to like-minded individuals ( Nyhan et al. , 2023 ), nor when one eliminates the exposure to reshared news ( Guess, Nyhan and Reifler , 2020 ). In a similar vein, Boxell, Gentzkow and Shapiro ( 2017 ) finds no positive correlation between polarization and the use of social media, and Guess ( 2021 ) documents that media diets are severly biased only for a minority of online users. 3 Other media affect elections too. Strömberg ( 2015 ) provides a review of the literature on the role of media in politics. More recently, Le Pennec and Pons ( 2023 ) shows that campaigns shape voters belief and that media play a role in this process. Grosjean, Masera and Yousaf ( 2023 ) provides evidence that electoral rallies can lead to racial discrimination, while Enikolopov, Petrova and Zhuravskaya ( 2011 ) documents how propaganda by government-controlled media hurts electoral fairness. Researchers have also shown that television reduces voters’ turnout ( Gentzkow , 2006 ), affects electoral results in advanced democracies ( DellaVigna and Kaplan , 2007 ), and can have long-lasting effects on voters’ political preferences ( Durante, Pinotti and Tesei , 2019 ). Finally, Esposito et al. ( 2023 ) shows that movies can also shape voters’ attitudes.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "of identity, anti-globalist sentiment, populism, and attitudes toward civil rights) has recently received scholarly attention both from a theoretical and from an empirical point of view (see, among others, Shayo , 2009 , Buisseret and Van Weelden , 2020 , Grossman and Helpman , 2021 , Bonomi, Gennaioli and Tabellini , 2021 , Balart, Casas and Troumpounis , 2022 , Di Tella et al. , 2023 , Guriev and Papaioannou , 2022 , and the references therein). Our paper contributes to the extensive literature on electoral campaigns in two respects. First, it documents how the adoption of a novel campaigning tool can pay off in elections and how this payoff evolves over time. Second, it provides district-level evidence concerning the effectiveness of campaigning strategies based on a specific cleavage. Section 2 describes the contextual background of the U.S. House of Representatives and its electoral institutions. Section 3 discusses the details about the collection of the Twitter data, the measurement of moral language, and presents descriptive statistics. Section 4 outlines our empirical approaches and presents the main results. Section 5 concludes and provides directions for future research.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 2,
+        "section_name": "Institutional framework",
+        "paragraph_id": 0,
+        "text": "Our analysis focuses on politicians running for the United States House of Representatives (HoR). The HoR is the lowest chamber of the United States Congress and it has 435 voting members. These members are elected every two years. The election takes place on the Tuesday following the first Monday in November. Each member of the HoR represents one congressional district. Congressional districts are determined every ten years based on the census. The United States Constitution ( Constitution , 2020 ) sets three requirements to become a member of the HoR: the person must be at least twenty-five years old, must have been a U.S. citizen for the last seven years, and must reside in the state that they represents. 4 Federal legislation further requires candidates for the HoR to file a petition with the Federal Election Commission (FEC) within 15 days of making campaign expenditures above $ 5 , 000 . The FEC cannot prevent any candidate who fills this petititon from running for office. The U.S. does not have federal laws that regulate access to the HoR’s ballot. Each state can set its own requirements ( Ballotpedia , 2020 ). These requirements usually consist of filing a petition with a minimum number of signatures and of paying a registration fee to the FEC. Candidates that comply with ballot access regulations can decide to be listed 4 The residency is required to take office but not to run for office. The same candidate can then run for office in different states within the same election year (see, for instance, Allan Levene ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 2,
+        "section_name": "Institutional framework",
+        "paragraph_id": 1,
+        "text": "on the ballot as independent, or they can seek the nomination from a state-recognised political party. 5 The two main U.S. parties are the Democratic party and the Republican party. These parties use partisan primary elections to select the candidate for the general election. States regulate primary elections. The National Conference of State Legislatures ( NCSL , 2020 ) classifies primary elections into seven categories based on their openness to voters unaffiliated to a political party: closed, partially closed, partially open, open to unaffiliated voters, top two and top four. The datasets in Pettigrew, Owen and Wanless ( 2014 ) and Miller and Camberg ( 2020 ) adopt a similar classification. Parties can also nominate candidates to the general elections without going through a primary election. Uncontested primaries are also a common even: in the period 2008 - 2018 , 53 % of primaries features only one candidate. The date of primary elections vary from one electoral year to the other and from state to state. Figure A 1 represents the electoral cycle.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 0,
+        "text": "US Congressional Elections We use primary election data from Pettigrew, Owen and Wanless ( 2014 ) and Miller and Camberg ( 2020 ) and general election data from MIT ( 2020 ). Our period of study is centered on the emergence of social media, using races from 2010 to 2018 (the last election year for which we have both primary and general election returns). Indeed, we gather twitter data starting from races happening in 2008 , but in 2008 Twitter use was arguably low and is therefore excluded from our period of study (see Figure 1 ). It is important to note that while the primary and general election datasets share some candidates, they are not perfectly nested. Specifically, both datasets capture primary election winners, but only the primary dataset includes primary election losers. Furthermore, in the United States candidates may appear on the general election ticket without undergoing a partisan primary, for instance, if they are directly nominated by the party. During the years 2010 - 2018 , there are 6 , 943 unique candidates running in congressional elections, among which 2 , 213 ( 31 %) candidates appear in both the primary and general datasets, 1 , 198 ( 17 %) are exclusive to the general election dataset and 3 , 041 ( 43 %) are only in the primary dataset. We exclude general election write-in candidates, those without any party affiliation, and those affiliated with parties that fielded fewer than 100 candidates from 2008 - 2018 . 5 In some states, candidates can also run as write-in candidates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 2,
+        "text": "Notes: This graph illustrates the patterns of Twitter usage over time, with data accessed through the Academic Research Track. I It displays the monthly number of tweets posted by any congressional candidate (left axis) and the percentage of congressional primary candidates who had at least one Twitter account in each election (right axis). To mitigate the impact of seasonal variations during the election period, a 5 -month moving average has been applied. Figure A 7 in the Appendix provides a detailed breakdown of Twitter adoption rates for both primary and general elections.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 3,
+        "text": "Table 1 : Candidates’ characteristics N Mean Sd Min Max Electoral characteristics : Ever run in primary election 6 , 943 0 . 76 0 . 43 0 Ever run in general election 6 , 943 0 . 49 0 . 50 0 Republican when first run 6 , 943 0 . 43 0 . 49 0 Democrat when first run 6 , 943 0 . 38 0 . 48 0 Female 6 , 943 0 . 16 0 . 37 0 Ever won primary in observed time span 5 , 254 0 . 41 0 . 49 0 Vote share when first observed in primary 4 , 750 0 . 41 0 . 35 0 . 00 1 . 00 Won primary when first observed 4 , 750 0 . 38 0 . 48 0 Number of times run in primary 4 , 750 1 . 52 1 . 14 Number of times won primary 4 , 750 0 . 77 1 . 32 0 Ever won general 3 , 411 0 . 23 0 . 42 0 Vote share when first observed in general 2 , 738 0 . 35 0 . 22 0 . 00 1 . 00 Won general when first observed 2 , 738 0 . 26 0 . 44 0 Number of times run in general 2 , 738 1 . 89 1 . 67 Number of times won general 2 , 738 0 . 88 1 . 72 0",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 4,
+        "text": "Metrics of twitter use: Number of tweets 3 , 279 3 , 916 . 44 11 , 578 . 14 377 , 840 Number of tweets restricted 2 , 595 4 , 939 . 88 12 , 820 . 99 100 377 , 840 Average engagement per tweet 2 , 595 4 . 88 2 . 29 0 . 00 10 . 17",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 5,
+        "text": "Ideology and twitter metrics, Democrats: Ideology DW Nominate Score 256 - 0 . 34 0 . 14 - 0 . 69 0 . 35 Ideology Campaign Finance Score 1 , 602 - 1 . 09 0 . 69 - 4 . 33 2 . 38 Universalism from tweets 1 , 209 0 . 20 0 . 54 - 2 . 47 3 . 71 Simplified universalism from tweets 1 , 209 0 . 10 0 . 68 - 3 . 78 3 . 15 Share of moral tweets 1 , 209 0 . 32 0 . 14 0 . 02 0 . 75 Share universal tweets 1 , 209 0 . 16 0 . 09 0 . 00 0 . 50 Share communal tweets 1 , 209 0 . 22 0 . 11 0 . 00 0 . 64 Average enegagement per tweet 1 , 209 5 . 36 2 . 24 0 . 00 10 . 17",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 6,
+        "text": "Ideology and twitter metrics, Republicans: Ideology DW Nominate Score 302 0 . 48 0 . 16 - 0 . 26 0 . 99 Ideology Campaign Finance Score 1 , 699 1 . 15 0 . 71 - 2 . 50 4 . 31 Universalism from tweets 1 , 105 - 0 . 09 0 . 49 - 1 . 85 3 . 74 Simplified universalism from tweets 1 , 105 - 0 . 13 0 . 67 - 3 . 19 4 . 60 Share of moral tweets 1 , 105 0 . 28 0 . 12 0 . 02 0 . 73 Share universal tweets 1 , 105 0 . 12 0 . 07 0 . 00 0 . 49 Share communal tweets 1 , 105 0 . 20 0 . 10 0 . 01 0 . 53 Average enegagement per tweet 1 , 105 4 . 08 2 . 25 0 . 00 9 . 88 Notes: Summary statistics for congressional candidates running for the U.S. House in the years 2010 - 2018 . Metrics of Twitter use are created using the history of candidates’ tweets, which we accessed thanks to the Academic Research Track in 2023 . Uncontested elections are coded with a vote share of 1 ( Miller and Camberg , 2020 ; MIT , 2020 ). Additional descriptive statistics on candidates’ characteristics are shown in Appendix C .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 9,
+        "text": "Notes: Weekly fixed effects event-study estimates. Each coefficient shall be interpreted as a variation with respect to the average prior to the fourth week before the primary date. Coefficients represents fixed effects estimates of seven-day bins before and after election dates. The only exception is the gap coefficient, which is calculated using bins of varying length to accommodate the different intervals between primary and general election dates across state-elections. For additional details, refer to section E .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 4,
+        "section_name": "3 . 1 US Congressional Elections",
+        "paragraph_id": 10,
+        "text": "Table 1 (top panel) shows summary statistics for the candidates in our sample. Fortythree percent of candidates run for the first time in the Republican primary or were listed as Republican in the general election, while 38 % were Democrats. The remaining 22 % were either Independent, Green or Libertarian candidates when they first run for congressional office. On average, 16 percent of the candidates are female and they run 1 . 52 times in the primaries and 1 . 82 times in the general election.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 5,
+        "section_name": "3 . 2 Twitter data",
+        "paragraph_id": 0,
+        "text": "Twitter data To explore how candidates’ social media activity affects electoral outcomes, we assembled a unique dataset comprising tweets published by congressional candidates appearing in our election dataset. This new dataset was collected using the Twitter Academic Research Track API. The dataset consists of more than 13 million tweets published by 4 , 395 different candidates and 5 , 990 handles from the opening of the platform to the suspension of the Twitter API in April 2023 . 6 Appendix A describes the data collection in detail. Figure 1 plots the monthly number of tweets published by candidates over time and the share of candidates with a Twitter account in each of the six election years for which 6 Some candidates have more than one Twitter account. Table A 2 and Figure A 6 show the distribution of the number accounts for the 4 , 395 candidates that have at least one account open.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 5,
+        "section_name": "3 . 2 Twitter data",
+        "paragraph_id": 1,
+        "text": "we gather data. Democrats and Republicans exhibit similar adoption rates and usage patterns in the early years of Twitter, but the number of tweets among Democrats start increasing at a faster rate after November 2013 . Twitter adoption rates among both parties flattened over time (Republican adoption even decreased between 2014 and 2016 ). We analyze candidates’ use of social media throughout the electoral cycle using a weekly fixed effects event-study design with two event dates: the date of the primary election and the date of the general election. Details on the estimation of these regressions are discussed in Appendix E . Figure 2 shows changes in the number of tweets published across candidate categories (all winners, only primary winners, primary losers), with respect to the period prior to the fourth week before the primary. While both winners and losers increase the volume of their tweets as the primary week gets closer, candidates that win their primary remain much more active after the week of the primary. As the general election date gets closer, primary winners increase their activity, but those who win the general election remain significantly more active in the post election period. This pattern is consistent for both Republican and Democratic candidates. Importantly, these dynamics highlight that social media is an important campaigning tool which is actively used by candidates running for office. We view these descriptive results as key to understanding the supply of political social media content. We use measures of post engagement as a proxy for the demand of social media. We define engagement = log ( likes + retweets + 1 ) . 7 Consistent with the patterns on overall Twitter adoption by politicians, Figure A 4 shows all tweets in our dataset and it reveals how wide use of the platform occured earlier for Democrats. In particular, engagement is consistently higher for Democratic candidates up until the end of the Trump presidency. Figure 3 reveals changes in social media engagement throughout the election cycle. Most notably, tweets published by candidates who go on to win the general election generate systematically more engagement than tweets published by those who eventually lose. Moreover, as candidates drop out of election races, engagement tends to return to pre-election cycle levels. Consistent with the view of Twitter being a democratic-leaning platform during the period of study ( Fujiwara, Müller and Schwarz , 2023 ), the relative increase in pre-election engagement for tweets by Democrats is larger than that for Republicans.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 5,
+        "section_name": "3 . 2 Twitter data",
+        "paragraph_id": 2,
+        "text": "7 Social media engagement metrics have been shown to correlate with traditional public opinion polls ( Morales , 2021 ; Krakowski, Morales and Sandu , 2022 ). Since social media engagement metrics are highly skewed we apply a log( 1 +Y) transformation to these outcome variables as in Cagé, Hervé and Viaud ( 2020 ) and Morales ( 2021 ). However, we acknowledge that there are important limitations to this approach ( Chen and Roth , 2023 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 5,
+        "section_name": "3 . 2 Twitter data",
+        "paragraph_id": 3,
+        "text": "Table 2 : Tweets’ summary statistics Variable Obs Mean Std. Dev. Min Max P 25 P 75 Moral dummy (Enke, 2020 ) 13415138 . 433 . 495 0 0 Moral dummy (full dictionary) 13415138 . 508 . 5 0 0 Universal dummy 13415138 . 229 . 42 0 0 0 Communal dummy 13415138 . 297 . 457 0 0 Universal share of text 13414690 . 012 . 027 0 0 0 Communal share of text 13414690 . 018 . 035 0 0 . 031 # Shares (retweets) 13415138 689 . 197 9405 . 815 0 3042393 # Likes 13415138 183 . 231 2848 . 734 0 1505824 0 # Replies 13415138 18 . 259 307 . 431 0 91529 0 # Quotes 13415138 4 . 039 82 . 295 0 56535 0 0 Tweet Length (chars) 13415138 139 . 595 62 . 885 0 388 105 143 Tweet Contains Link 13415138 . 609 . 488 0 0 Tweet Contains @ 13415138 . 568 . 495 0 0 Tweet Contains Hashtag 13415138 . 321 . 467 0 0 Tweet is Retweet 13415138 . 386 . 487 0 0 Notes: Summary statistics for candidates’ Tweets. Tweets were collected using the Academic Research Track of the Twitter API, see section 3 . 2 for additional details.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 6,
+        "section_name": "3 . 3 Measurement of morality using Twitter data",
+        "paragraph_id": 0,
+        "text": "Measurement of morality using Twitter data Moral values are individuals’ fundamental beliefs about what is right and what is wrong ( Haidt , 2007 ). We measure candidates’ morality applying dictionary methods to their tweets. In particular, we measure how frequently candidates use moral language on social media, as well as the type of morality which can be inferred from their posts. One important dimension of morality is the extent to which individuals care about the well-being of those close them, such as their families and local communities, relative to the well-being of others who may not be part of their own close groups. This cleavage between communal and universal morality is also strongly associated with political ideology, suggesting that liberals and conservatives rely on different sets of moral foundations ( Graham, Haidt and Nosek , 2009 ; Enke, Rodríguez-Padilla and Zimmermann , 2023 ). In particular, progressive individuals tend to give a higher importance to universalistic rather than communal values. The Moral Foundations Dictionary (MFD) is a hierarchical dictionary that can be used to infer latent candidate’s moral types from text (Figure A 8 shows the structure of the dictionary). The MFD is composed by two main sections, each one containing either universal or communal words. 8 We use the same MFD used by Enke ( 2020 ), which con8 Note that certain words could be in both sections of the dictionary.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Dictionary Methods",
+            "Local Average Treatment Effect (LATE)",
+            "Dictionary Methods"
+        ],
+        "matched_l1_methods": [
+            "Computational, Data Science, and Machine Learning"
+        ],
+        "matched_l2_methods": [
+            "Natural Language Processing (NLP) & Text Analysis",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 6,
+        "section_name": "3 . 3 Measurement of morality using Twitter data",
+        "paragraph_id": 2,
+        "text": "(a) Democrats (b) Republicans Notes: Weekly fixed effects event-study estimates. Each coefficient shall be interpreted as a variation with respect to the average prior to the fourth week before the primary date. Coefficients represents fixed effects estimates of seven-day bins before and after election dates. The only exception is the gap coefficient, which is calculated using bins of varying length to accommodate the different intervals between primary and general election dates across state-elections. For additional details, refer to section E .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 6,
+        "section_name": "3 . 3 Measurement of morality using Twitter data",
+        "paragraph_id": 3,
+        "text": "tains 215 words. 9 The intuition that motivates the use of a dictionary to infer candidates’ latent morality is simple: there are words which are a good fit for the transmission of specific moral values. We measure moral values with a simple scoring exercise on the text corpus ( Enke , 2020 ). We begin by generating a dummy indicating whether a tweet contains any of the words in the MFD, separately for each of the universal and communal sections. For each candidate we then compute the share of tweets with at least one word in each section of the dictionary, and the overall share of moral tweets. 10 Table 1 (bottom panel) reports summary statistics. On average, around 40 percent of tweets contain at least one moral 9 The original MFD developed by psychologists contains more than 2000 words. A different subset of the MFD is used by Hackenburg, Brady and Tsakiris ( 2023 ) to analyze the language spoken on social media by presidential primary candidates. Hackenburg, Brady and Tsakiris ( 2023 ) fine-tune their morality dictionary based on their corpus. We adopt a more neutral approach and use the same dictionary as Enke ( 2020 ), without tailoring the dictionary to our corpus of tweets. All the results discussed are similar when using the dictionary in Hackenburg, Brady and Tsakiris ( 2023 ). 10 We also build the same measures concatenating all the tweets published by a single candidate, which allows us to infer the share of universal, communal and overall moral words as a share of all words. The two measures are highly correlated and the results are robust to using the alternative measure. Furthermore, we explore candidates’ morality by constructing an index of relative importance of universalistic versus communal values. Positive values of the index indicate greater relative importance of universalistic beliefs, which are typically associated with the left of the ideological spectrum. Consistent with previous work, Ideology and Universalism are negatively correlated (see Figure A 9 ): candidates on the right of the ideological spectrum tend to be less universal, while left-leaning candidates tend to be more universal.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 6,
+        "section_name": "3 . 3 Measurement of morality using Twitter data",
+        "paragraph_id": 4,
+        "text": "word, a fact which underscores that moral content is prevalent and important in online political communication. Additional details on the measurement of moral values are discussed in Appendix D. 3 . Figure 4 shows the evolution of tweets’ moral content over time. The figure reports the monthly share of communal and universal tweets (i.e. the share of tweets with at least one word in each section of the MFD). Three patterns stand out. First, the share of tweets with moral content has increased substantially over the last decade. Second, Democrats post systematically more moral content than Republicans. Third, Republicans use relatively more communal language compared to Democrats (see also Figure A 2 ). Figure 5 shows the changes in the number of tweets containing at least one word of the moral foundations dictionary Enke ( 2020 ) across the election cycle. We observe the supply of moral tweets increases as general election dates get closer. Furthermore, candidates who go on to win these election, on average tweet more moral content. Interestingly, no differential changes in the use of universal or communal words are visible across Democrats and Republicans (see also Figure A 11 and A 10 ), which hints to the fact that within parties moral intensity may be more important than moral types in predicting election results. In contrast to the previous literature, which has focused on the universal versus communal distinction among politicians’ moral types, this paper builds on the idea that moral language on social media can lead to electoral returns, regardless of the type of morality emphasized. Hence, while we report descriptive statistics for moral types throughout the paper with the specific aim of empirically validating the conceptual framework of our analysis, our main focus remains on moral intensity , as proxied by the share of tweets with at least one word in the MFD.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 7,
+        "section_name": "3 . 4 Other data sources",
+        "paragraph_id": 0,
+        "text": "Other data sources We recover candidate-level imputed ideology and campaign contributions from Bonica ( 2014 ). 11 We plan to further augment our dataset by recovering candidates’ demographics, previous political experience and education from their Ballotpedia profile. We scraped the HTML pages associated to each candidate and we are in the process of extracting the relevant information.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 7,
+        "section_name": "3 . 4 Other data sources",
+        "paragraph_id": 3,
+        "text": "Notes: This graph illustrates the patterns of Twitter usage over time, focusing on the monthly share of tweets that contain at least one universal or communal word from the dictionary referenced in Enke ( 2020 ). To reduce the impact of seasonal fluctuations during election periods and to enhance the visualization of the upward trend, a 5 -month moving average has been applied.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 7,
+        "section_name": "3 . 4 Other data sources",
+        "paragraph_id": 6,
+        "text": "Notes: Weekly fixed effects event-study estimates. Each coefficient shall be interpreted as a variation with respect to the average prior to the fourth week before the primary date. Coefficients represents fixed effects estimates of seven-day bins before and after election dates. The only exception is the gap coefficient, which is calculated using bins of varying length to accommodate the different intervals between primary and general election dates across state-elections. For additional details, refer to section E .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 8,
+        "section_name": "Empirical Analysis",
+        "paragraph_id": 0,
+        "text": "We explore the relationship between politicians’ social media use - and the moral language they employ - through two separate sets of empirical exercises. First, we use a series of fixed effects regressions exploring the relationship between social media use and electoral outcomes. Second, we exploit a close elections politicians’ characteristics regression discontinuity design (PCRD). We outline each in turn below.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Close Elections"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 1,
+        "text": "In this section we explore the relationship between the use of moral language on social media (as defined above) and electoral outcomes. Our sample includes only congressional candidates with Twitter accounts. More specifically, we estimate the following equation on a candidate-level dataset:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 3,
+        "text": "where VoteShare c is the vote share obtained by candidate c when they first run for office (in the period 2008 - 2018 ). We include time-invariant ideology (Ideology c ) imputed from campaign finance scores from Bonica ( 2014 ) as a baseline control. Our main regressor of interest, ShareMoral c , is the time-invariant share of tweets by candidate c with at least one word in the MFD. In addition, we include fixed effects for Party × State ( Λ ps ) and for Party × Year ( Γ py ), where p , s , y indicate respectively the party, state and year in which candidate c run for office for the first time. In alternative specifications we replace the share of moral tweets by type: with the share of both communal and universal tweets separately. Table 3 : Social media moral language and election results",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 4,
+        "text": "Primary vote share General vote share ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) ( 9 ) ( 10 ) ( 11 ) ( 12 ) All All Dem Dem Rep Rep All All Dem Dem Rep Rep Candidate ideology (CFscore) - 0 . 010 - 0 . 008 0 . 020 0 . 019 - 0 . 040 ∗∗ - 0 . 037 ∗∗ 0 . 053 [FORMULA] 0 . 052 [FORMULA] 0 . 121 [FORMULA] 0 . 118 [FORMULA] - 0 . 060 ∗∗ - 0 . 057 ∗∗ ( 0 . 012 ) ( 0 . 012 ) ( 0 . 017 ) ( 0 . 017 ) ( 0 . 017 ) ( 0 . 017 ) ( 0 . 012 ) ( 0 . 012 ) ( 0 . 019 ) ( 0 . 018 ) ( 0 . 023 ) ( 0 . 022 ) Share of moral tweets 0 . 426 [FORMULA] 0 . 463 [FORMULA] 0 . 376 [FORMULA] 0 . 391 [FORMULA] 0 . 398 [FORMULA] 0 . 303 [FORMULA] ( 0 . 053 ) ( 0 . 079 ) ( 0 . 076 ) ( 0 . 035 ) ( 0 . 049 ) ( 0 . 045 ) Share of universal tweets 0 . 441 [FORMULA] 0 . 527 [FORMULA] 0 . 337 [FORMULA] 0 . 467 [FORMULA] 0 . 454 [FORMULA] 0 . 356 [FORMULA] ( 0 . 088 ) ( 0 . 120 ) ( 0 . 123 ) ( 0 . 059 ) ( 0 . 084 ) ( 0 . 084 ) Share of communal tweets 0 . 232 [FORMULA] 0 . 194 ∗ 0 . 252 ∗∗ 0 . 133 [FORMULA] 0 . 144 ∗∗ 0 . 116 ∗ ( 0 . 072 ) ( 0 . 112 ) ( 0 . 097 ) ( 0 . 043 ) ( 0 . 060 ) ( 0 . 060 ) N 2257 2257 1146 1146 1111 1111 1300 1300 695 695 605 605 N-clusters (districts) 427 427 392 392 377 377 425 425 376 376 359 359 Party-state FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Party-year FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes R-sq 0 . 205 0 . 209 0 . 185 0 . 191 0 . 204 0 . 205 0 . 354 0 . 369 0 . 455 0 . 469 0 . 363 0 . 370",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 5,
+        "text": "Notes: Each observation in these regressions represents a candidate who ran for congress between 2010 and 2018 . Candidates are paired with the election outcomes they achieved in their first congressional race within the analyzed period. CFScore ideology is the estimated ideology based on the campaign contributions ( Bonica , 2014 ). The share of moral tweets are estimated using the archive that we accessed via the Academic Research Track. In the regressions estimated separately for Democrats and Republicans, party-state and party-year fixed effects collapse to state and year fixed effects. Standard errors clustered at the candidate level, significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 6,
+        "text": "Table 3 shows the estimates of equation 1 . The use of moral language on Twitter is highly and statistically significantly correlated with electoral outcomes. An increase in the share of moral tweets of ten percent is associated with an increase in vote shares of around 4 percent, and this is true in both primary (column 1 ) and general elections (column 7 ). Furthermore, language use of both moral types (universal and communal) is associated with electoral results, but Democrats benefit relatively more from universal moral language. Our results provide new evidence consistent with the ideas in Enke ( 2020 ) and Graham, Haidt and Nosek ( 2009 ), but we show that social media may be one",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 7,
+        "text": "particularly effective way to transmit moral values, and that its use is correlated with electoral outcomes even for local congressional candidates. 12",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 9,
+        "text": "Previous work documents that political candidates opening a Twitter account benefit from increased campaign contributions, and that this boost in financial returns is concentrated among non-incumbents ( Petrova, Sen and Yildirim , 2021 ). Analogously, we use our data to study whether Twitter use by candidates is associated with electoral returns, and whether this relationship is heterogeneous by incumbency status. We estimate the following baseline model:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 10,
+        "text": "VoteShare cr = α + β Twitter cr + δ Twitter cr · Incumbent cr + γ Incumbent cr + Λ ps ( cr ) + Γ py ( cr ) + ε cr ( 2 )",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 11,
+        "text": "where VoteShare cr is the vote share obtained by candidate c in congressional race r . Twitter cr is a dummy variable indicating whether the candidate c had a Twitter account opened as of the date of congressional race r , and Incumbent cr indicates c ’s incumbency status in race r . We also include Party × State ( Λ ps ) and Party × Year ( Γ py ) fixed effects (which are a function of r because races are uniquely nested into states and years). Note also that Party × State and Party × Year fixed effects collapse to state and year fixed effects in the regressions run exclusively on partisan primary races. Table 4 shows the results of estimates of equation 2 . The use of Twitter by candidates is associated with a vote share premium of 5 to 7 percentage points, in both primaries and general elections. Moreover, returns to Twitter for incumbents are on average lower than for non-incumbents (row 3 ). This relationship is also heterogeneous along partisan lines: the relationship between Twitter and vote shares is not significantly lower for Democratic incumbents comparable to non-incumbents. However, the relationship between Twitter use and vote shares is statistically and economically smaller for Republican incumbents relative to non-incumbents. To understand whether the use of moral language on Twitter is important to these dynamics, we estimate equation 2 on split samples of candidate-race combinations. In particular, we categorize Twitter users depending on their moral language on the platform: above or below median as a share of all tweets. Non-Twitter candidates remain as the baseline group in both samples. In other words, we compare candidate-race combi12 This evidence is also consistent with recent evidence of a correlation between universalism and democratic vote shares at the congressional district level ( Enke et al. , Forthcoming )",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 13,
+        "text": "Primaries General ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) ( 9 ) ( 10 ) ( 11 ) ( 12 ) All All Dem Dem Rep Rep All All Dem Dem Rep Rep Twitter 0 . 057 [FORMULA] 0 . 064 [FORMULA] 0 . 063 [FORMULA] 0 . 066 [FORMULA] 0 . 052 [FORMULA] 0 . 061 [FORMULA] 0 . 053 [FORMULA] 0 . 070 [FORMULA] 0 . 056 [FORMULA] 0 . 062 [FORMULA] 0 . 049 [FORMULA] 0 . 078 [FORMULA] ( 0 . 008 ) ( 0 . 008 ) ( 0 . 012 ) ( 0 . 013 ) ( 0 . 010 ) ( 0 . 011 ) ( 0 . 005 ) ( 0 . 005 ) ( 0 . 007 ) ( 0 . 007 ) ( 0 . 008 ) ( 0 . 009 ) Incumbent 0 . 485 [FORMULA] 0 . 514 [FORMULA] 0 . 453 [FORMULA] 0 . 469 [FORMULA] 0 . 509 [FORMULA] 0 . 555 [FORMULA] 0 . 236 [FORMULA] 0 . 283 [FORMULA] 0 . 240 [FORMULA] 0 . 258 [FORMULA] 0 . 231 [FORMULA] 0 . 306 [FORMULA] ( 0 . 008 ) ( 0 . 012 ) ( 0 . 012 ) ( 0 . 019 ) ( 0 . 011 ) ( 0 . 016 ) ( 0 . 006 ) ( 0 . 011 ) ( 0 . 009 ) ( 0 . 017 ) ( 0 . 008 ) ( 0 . 014 ) Twitter · Incumbent - 0 . 041 [FORMULA] - 0 . 023 - 0 . 062 [FORMULA] - 0 . 062 [FORMULA] - 0 . 023 - 0 . 099 [FORMULA] ( 0 . 015 ) ( 0 . 022 ) ( 0 . 019 ) ( 0 . 012 ) ( 0 . 018 ) ( 0 . 016 ) N 7444 7444 3385 3385 4059 4059 4175 4175 2098 2098 2077 2077 N-clusters (candidates) 5243 5243 2482 2482 2803 2803 2439 2439 1318 1318 1125 1125 Party-Year FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Party-State FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Dep. Var. Mean . 486 . 486 . 531 . 531 . 448 . 448 . 5 . 5 . 502 . 502 . 498 . 498 R-sq 0 . 486 0 . 486 0 . 415 0 . 415 0 . 538 0 . 539 0 . 619 0 . 623 0 . 626 0 . 627 0 . 612 0 . 623 Notes: Each observation in these regressions corresponds to a unique candidate-race combination, covering all primary and general U.S. House elections from 2010 to 2018 . The outcome is the vote share obtained in these elections. The Twitter dummy is assigned a value of one if a candidate had an active Twitter account by the election date, determined using data from the archive accessed via the Academic Research Track. Standard errors are clustered at the candidate level, Significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 14,
+        "text": "nations where candidates have Twitter and use it with high/low moral intensity, against candidate-race combinations in which candidates did not use Twitter. Tables 5 and 6 show the results of this heterogeneity analysis. We find that using Twitter with a high moral intensity is associated with electoral returns which are much larger than those from using Twitter with a low moral intensity. This is true for both Democrats and Republicans, and for both primary (Table 5 ) and general elections (Table 6 ). This difference in vote shares is starkest in general elections, where Twitter use for high moral intesity candidates is associated with an increased vote share of around 10 percentage points, but less than 2 percentage points for candidates with below median share of moral tweets. Heterogeneous results on the sample where the candidates with an open Twitter account use it with a high (low) universal or communal intensity are shown in Appendix Tables A 4 , A 5 , A 6 and A 7 . The results are similar to those described above. Interestingly, no differential effect along the use of specific communal or universal words is detected across parties, suggesting that moral intensity drives returns to using social media more than moral types .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 16,
+        "text": "High moral intensity Low moral intensity ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) ( 9 ) ( 10 ) ( 11 ) ( 12 ) All All Dem Dem Rep Rep All All Dem Dem Rep Rep Twitter 0 . 091 [FORMULA] 0 . 110 [FORMULA] 0 . 092 [FORMULA] 0 . 114 [FORMULA] 0 . 090 [FORMULA] 0 . 107 [FORMULA] 0 . 029 [FORMULA] 0 . 032 [FORMULA] 0 . 034 [FORMULA] 0 . 037 [FORMULA] 0 . 024 ∗∗ 0 . 027 [FORMULA] ( 0 . 009 ) ( 0 . 010 ) ( 0 . 009 ) ( 0 . 011 ) ( 0 . 009 ) ( 0 . 010 ) ( 0 . 010 ) ( 0 . 010 ) ( 0 . 009 ) ( 0 . 010 ) ( 0 . 010 ) ( 0 . 010 ) Incumbent 0 . 462 [FORMULA] 0 . 510 [FORMULA] 0 . 462 [FORMULA] 0 . 509 [FORMULA] 0 . 462 [FORMULA] 0 . 509 [FORMULA] 0 . 498 [FORMULA] 0 . 508 [FORMULA] 0 . 497 [FORMULA] 0 . 508 [FORMULA] 0 . 498 [FORMULA] 0 . 508 [FORMULA] ( 0 . 009 ) ( 0 . 013 ) ( 0 . 009 ) ( 0 . 013 ) ( 0 . 009 ) ( 0 . 013 ) ( 0 . 013 ) ( 0 . 014 ) ( 0 . 012 ) ( 0 . 014 ) ( 0 . 013 ) ( 0 . 014 ) Twitter · Incumbent - 0 . 076 [FORMULA] - 0 . 080 [FORMULA] - 0 . 074 [FORMULA] - 0 . 032 - 0 . 030 - 0 . 045 ( 0 . 016 ) ( 0 . 016 ) ( 0 . 016 ) ( 0 . 027 ) ( 0 . 024 ) ( 0 . 032 ) N 5949 5949 5750 5750 6114 6114 5305 5305 5504 5504 5140 5140 N-clusters (candidates) 4144 4144 4024 4024 4237 4237 4326 4326 4446 4446 4233 4233 Party-Year FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Party-State FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Dep. Var. Mean . 5 . 5 . 497 . 497 . 502 . 502 . 408 . 408 . 414 . 414 . 402 . 402 R-sq 0 . 516 0 . 518 0 . 515 0 . 516 0 . 518 0 . 519 0 . 392 0 . 392 0 . 401 0 . 402 0 . 381 0 . 381 Notes: Each observation in these regressions corresponds to a unique candidate-race combination, covering all primary U.S. House races from 2010 to 2018 . The outcome is the vote share obtained in these elections. Candidate-race combinations are categorized as having high or low moral intensity based on whether the candidate’s share of moral tweets is above or below the sample median. The Twitter dummy is assigned a value of one if a candidate had an active Twitter account by the election date, determined using data from the archive accessed via the Academic Research Track. Standard errors are clustered at the candidate level, significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 9,
+        "section_name": "4 . 1 Fixed effects",
+        "paragraph_id": 18,
+        "text": "High moral intensity Low moral intensity ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) ( 9 ) ( 10 ) ( 11 ) ( 12 ) All All Dem Dem Rep Rep All All Dem Dem Rep Rep Twitter 0 . 090 [FORMULA] 0 . 127 [FORMULA] 0 . 094 [FORMULA] 0 . 135 [FORMULA] 0 . 086 [FORMULA] 0 . 121 [FORMULA] 0 . 006 0 . 012 ∗∗ 0 . 009 0 . 016 [FORMULA] 0 . 002 0 . 006 ( 0 . 007 ) ( 0 . 007 ) ( 0 . 007 ) ( 0 . 007 ) ( 0 . 007 ) ( 0 . 007 ) ( 0 . 006 ) ( 0 . 006 ) ( 0 . 006 ) ( 0 . 005 ) ( 0 . 006 ) ( 0 . 006 ) Incumbent 0 . 207 [FORMULA] 0 . 280 [FORMULA] 0 . 205 [FORMULA] 0 . 280 [FORMULA] 0 . 208 [FORMULA] 0 . 281 [FORMULA] 0 . 277 [FORMULA] 0 . 287 [FORMULA] 0 . 272 [FORMULA] 0 . 286 [FORMULA] 0 . 280 [FORMULA] 0 . 287 [FORMULA] ( 0 . 007 ) ( 0 . 011 ) ( 0 . 007 ) ( 0 . 011 ) ( 0 . 007 ) ( 0 . 011 ) ( 0 . 010 ) ( 0 . 012 ) ( 0 . 010 ) ( 0 . 012 ) ( 0 . 011 ) ( 0 . 012 ) Twitter · Incumbent - 0 . 107 [FORMULA] - 0 . 114 [FORMULA] - 0 . 105 [FORMULA] - 0 . 030 - 0 . 035 ∗∗ - 0 . 025 ( 0 . 013 ) ( 0 . 013 ) ( 0 . 012 ) ( 0 . 019 ) ( 0 . 017 ) ( 0 . 022 ) N 3405 3405 3266 3266 3522 3522 2113 2113 2252 2252 1995 1995 N-clusters (candidates) 1890 1890 1812 1812 1944 1944 1673 1673 1751 1751 1618 1618 Party-Year FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Party-State FE Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Dep. Var. Mean . 521 . 521 . 522 . 522 . 521 . 521 . 406 . 406 . 412 . 412 . 4 . 4 R-sq 0 . 624 0 . 637 0 . 628 0 . 643 0 . 620 0 . 632 0 . 623 0 . 624 0 . 626 0 . 628 0 . 622 0 . 623 Notes: Each observation in these regressions corresponds to a unique candidate-race combination, covering all general election U.S. House races from 2010 to 2018 . The outcome is the vote share obtained in these elections. Candidate-race combinations are categorized as having high or low moral intensity based on whether the candidate’s share of moral tweets is above or below the sample median. The Twitter dummy is assigned a value of one if a candidate had an active Twitter account by the election date, determined using data from the archive accessed via the Academic Research Track. Standard errors are clustered at the candidate level, significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 0,
+        "text": "Regression discontinuity design One limitation of the estimates reported above is that the results could be driven by selection bias: candidates who use Twitter are likely inherently different to those who do not, and these underlying differences could drive the observed gaps in vote shares. To minimize these selection biases, we use a politician characteristic regression discontinuity design (PCRD) exploiting close elections. The analysis provides additional evidence on the extent to which politicians’ social media use increases vote shares, and whether the use of moral language on social media is an important variable moderating this effect. The PCRD research design is particularly suitable to estimate the effect of a specific candidates’ feature on downstream outcomes associated with the politician itself or their opposing candidate. 13 Election systems that are bipartisan and elect representatives through single-member plurality voting are specifically fit for this empirical design, because primary winners face a singular opponent candidate in the general elections. More precisely, we use quasi-random variation inherent in close U.S. House partisan primaries, to study electoral outcomes in the general election. Primary close elections provide variation in the type of winning politicians who go on to represent their party in the general election, where politician type in our setting is defined over their use of social media. We define politicians’ Type ∈{ 0, 1 } as an indicator of whether the candidate had activated a Twitter account prior to running in the primary election. Primary winners of type 1 (with an active twitter account) and 0 (without an active twitter account) in district d receive the vote share V 1,0 d ∈ [ 0, 1 ] , of the votes cast between the top two candidates that differ in their type. Races where the top two candidates are of the same type are excluded because they do not provide exogenous variation in the type of winning politician. We then define the district-level primary-specific running variable ∆ pd as the difference between the vote share obtained by the primary candidate of type 1 (with Twitter) and the vote share obtained by the primary candidate of type 0 (without Twitter) in the partisan primary p ∈ D , R (Democratic or Republican) of district d :",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Exogenous Variation",
+            "Close Elections"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 1,
+        "text": "∆ pd = V 1 pd − V 0 pd ∈ [ − 1, 1 ] ( 3 ) Districts with primary winners who had an active Twitter account will therefore have a positive running variable, while districts in which winners did not have an active twitter account will have a negative running variable. We can then write treatment status as a deterministic function of the running variable: 13 See for instance Hall ( 2015 ) and Di Tella et al. ( 2023 ) for similar empirical applications.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 2,
+        "text": "Twitter pd : ( if ∆ pd > 0 0 if ∆ pd ≤ 0 ( 4 ) We use this sharp RD design (see Figure A 14 ) to estimate the local average treatment effect (LATE) around the artificial zero cutoff using the following model:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 3,
+        "text": "VoteShare pd = β 0 + β 1 · Twitter pd + β 3 Twitter pd · f ( ∆ pd ) + f ( ∆ pd ) + ε pd ( 5 ) We estimate f ( ∆ pd ) as a linear function of the running variable, and estimate it separately at each side of the cutoff, indicated by the interaction with Twitter pd ( Cattaneo, Idrobo and Titiunik , 2019 ). Our parameter of interest, β 1 , captures the estimated return to having a Twitter account for candidates who compete in close primary elections in the subsequent general elections. We also analyze alternative outcomes: a dummy for whether the candidate is elected, the vote share obtained by the opponent, and a dummy for whether the opponent is elected.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 4,
+        "text": "Baseline results Figure 6 shows the data underlying our regression discontinuity empirical design. The sample includes primary elections in which the top two candidates differed in their type (have an active Twitter account) and relates the difference between their vote shares ( ∆ pd , in the x-axis) to the subsequent vote share for their parties in the general election. We compare districts in which the Twitter candidate barely won their primary election (to the right of the cutoff) to districts in which the Twitter candidate barely lost (to the left of the cutoff). The jump at the discontinuity measures our LATE, parameter β 1 above. Table 7 shows our baseline RD estimates. Twitter use by politicians increases general election vote shares by an estimated 6 percentage points (column 1 ). This estimate is remarkably close to the estimate from our fixed effects regression above. 14 Moreover, Twitter use increases the probablity of being elected into office by 22 percentage points (column 3 ). Having Twitter is also detrimental for the opponent in the general election, as it lowers the opponents’ vote share by around 7 percentage points and their election probability by 19 percentage points. Though the results with controls (even-numbered columns) are not statistically different from these baseline results, one important note of caution is that the magnitude of the estimated effects is lower with controls (and our 14 That the estimates from both empirical approaches yield similar results could suggest that selection bias is small in our fixed effects regressions above, but because the RD sample is specific to close elections with top two candidates of different types, this LATE may also differ more broadly from the ATE (which we do not observe).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Close Elections",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 5,
+        "text": "results are particularly sensitive to incumbency status). 15 Figure 6 : Twitter user vote margin and general election results",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 6,
+        "text": "Notes: Sample includes all primary races in which one of the candidates has a Twitter account. Each data point represents one observation. A linear fit is separately estimated on each side of the margin of victory discontinuity, 95 percent confidence intervals are shown.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 9,
+        "text": "Vote Share Elected Opp. Vote Share Opp. Elected ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) Twitter 0 . 060 ∗ 0 . 038 0 . 225 ∗ 0 . 162 ∗ - 0 . 068 ∗ - 0 . 048 ∗ - 0 . 193 ∗∗ - 0 . 164 ∗ ( 0 . 036 ) ( 0 . 030 ) ( 0 . 126 ) ( 0 . 097 ) ( 0 . 039 ) ( 0 . 027 ) ( 0 . 081 ) ( 0 . 094 ) Rob Std Error 0 . 042 0 . 034 0 . 146 0 . 113 0 . 045 0 . 032 0 . 108 0 . 110 Robust 95 % CI [-. 021 ; . 142 ] [-. 035 ; . 098 ] [-. 039 ; . 532 ] [-. 062 ; . 381 ] [-. 168 ; . 01 ] [-. 115 ; . 009 ] [-. 426 ; -. 004 ] [-. 38 ; . 053 ] Dep. Var Mean . 534 . 534 . 577 . 577 . 458 . 458 . 447 . 447 Controls No Yes No Yes No Yes No Yes Effective N 237 262 208 253 228 335 152 251 Eff. N Left 102 109 92 107 98 123 70 105 Eff. N Right 135 153 116 146 130 212 82 146 Order LPoly (p) 0 Order Bias (q) BW LPoly (h) 0 . 211 0 . 232 0 . 188 0 . 220 0 . 212 0 . 315 0 . 126 0 . 231 BW Bias (b) 0 . 316 0 . 367 0 . 295 0 . 336 0 . 331 0 . 489 0 . 251 0 . 348 Notes: RDD estimates with triangular weighting kernel and optimal bandwidth from MSERD procedure ( Cattaneo, Idrobo and Titiunik , 2019 ). The running variable is as the difference between the vote share obtained by the primary candidate with Twitter and the vote share obtained by the primary candidate without Twitter. Controls include incumbent, year and party dummies (fixed effects). Standard errors are clustered at the district level, significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 11,
+        "text": "To study heterogeneous effects of Twitter use based on the use of moral language, we split primary winners with Twitter by the share of moral tweets that they publish, using the sample median share as threshold (as in our previous exercises). Our sample is split along this margin for winners only, and we compare their vote shares with primary elections in which the candidate with Twitter lost the election. The idea is illustrated in Figure 7 , which shows the same underlying data as our baseline RD regression, but splits winners depending on their moral language on social media. The figure reveals that candidates which use Twitter with above median moral intensity perform better in the general election. The gap in votes is consistent along the range of margin of victory (consistent with our previous results). Most importantly, we observe that this gap is also apparent at the margin of victory discontinuity (at zero): parties in which candidates with Twitter who frequently used moral language narrowly won the primary do significantly better in the general election, relative to when candidates with Twitter lost the primary. In contrast, we do not observe an increase in vote shares for parties in which the winning candidate used Twitter with low relative intensity, compared to those in which the primary winner did not use Twitter. These results are formally shown in Tables 8 and 9 . The estimates reveal that Twitter use with high moral intensity is associated with an increase in vote shares of 14 percentage points and in the probability of being elected of 47 percentage points (Table 8 ). Similarly, opposing candidates do worse when facing a candidate who uses Twitter with high moral intensity. In contrast, parties in which candidates used Twitter with low moral intensity do not perform statistically better than parties in which Twitter candidates lost in the primaries (Table 9 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 13,
+        "text": "Notes: Sample includes all primary races in which one of the candidates has a Twitter account. Each data point represents one observation and 95 percent confidence intervals are shown. A linear fit is estimated on the left side of the margin of victory discontinuity, meaning for primary winners without Twitter. Two linear fits are estimated separately on the right of the cutoff, distinguishing primary winner with Twitter based on their share of moral tweets with respect to the sample median.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 14,
+        "text": "Table 8 : Twitter use by candidates and electoral outcomes, candidates with Twitter use with high moral intensity",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 15,
+        "text": "Vote Share Elected Opp. Vote Share Opp. Elected ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) Twitter 0 . 184 [FORMULA] 0 . 165 [FORMULA] 0 . 636 [FORMULA] 0 . 552 [FORMULA] - 0 . 159 [FORMULA] - 0 . 159 [FORMULA] - 0 . 638 [FORMULA] - 0 . 531 [FORMULA] ( 0 . 049 ) ( 0 . 042 ) ( 0 . 167 ) ( 0 . 134 ) ( 0 . 053 ) ( 0 . 052 ) ( 0 . 166 ) ( 0 . 129 ) Rob Std Error 0 . 058 0 . 050 0 . 196 0 . 161 0 . 063 0 . 064 0 . 195 0 . 155 Robust 95 % CI [. 074 ; . 303 ] [. 077 ; . 274 ] [. 298 ; 1 . 067 ] [. 239 ; . 869 ] [-. 297 ; -. 049 ] [-. 298 ; -. 046 ] [- 1 . 072 ; -. 307 ] [-. 842 ; -. 233 ] Dep. Var Mean . 534 . 534 . 577 . 577 . 458 . 458 . 447 . 447 Controls No Yes No Yes No Yes No Yes Effective N 158 218 134 171 165 165 130 165 Eff. N Left 109 138 94 117 115 115 93 115 Eff. N Right 80 Order LPoly. (p) Order Bias (q) BW LPoly (h) 0 . 230 0 . 339 0 . 193 0 . 249 0 . 265 0 . 270 0 . 200 0 . 271 BW Bias (b) 0 . 360 0 . 518 0 . 313 0 . 387 0 . 432 0 . 436 0 . 328 0 . 422 Notes: RDD estimates with triangular weighting kernel and optimal bandwidth from MSERD procedure ( Cattaneo, Idrobo and Titiunik , 2019 ). A race is classified as high moral intensity if the share of moral tweets is above the sample median. The running variable is as the difference between the vote share obtained by the primary candidate with Twitter and the vote share obtained by the primary candidate without Twitter. Controls include incumbent, year and party dummies (fixed effects). Standard errors are clustered at the district level, significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 16,
+        "text": "Table 9 : Twitter use by candidates and electoral outcomes, candidates with Twitter use with low moral intensity",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 17,
+        "text": "Vote Share Elected Opp. Vote Share Opp. Elected ( 1 ) ( 2 ) ( 3 ) ( 4 ) ( 5 ) ( 6 ) ( 7 ) ( 8 ) Twitter 0 . 018 0 . 002 0 . 110 0 . 047 - 0 . 033 - 0 . 013 - 0 . 116 - 0 . 051 ( 0 . 035 ) ( 0 . 025 ) ( 0 . 127 ) ( 0 . 084 ) ( 0 . 038 ) ( 0 . 025 ) ( 0 . 126 ) ( 0 . 082 ) Rob Std Error 0 . 040 0 . 028 0 . 143 0 . 095 0 . 044 0 . 028 0 . 142 0 . 093 Robust 95 % CI [-. 054 ; . 104 ] [-. 053 ; . 055 ] [-. 134 ; . 424 ] [-. 126 ; . 246 ] [-. 129 ; . 044 ] [-. 069 ; . 041 ] [-. 43 ; . 127 ] [-. 243 ; . 122 ] Dep. Var Mean . 534 . 534 . 577 . 577 . 458 . 458 . 447 . 447 Controls No Yes No Yes No Yes No Yes Effective N 197 227 165 208 199 253 162 206 Eff. N Left 103 116 89 107 102 119 86 105 Eff. N Right 94 111 76 101 97 134 76 101 Order LPoly. (p) Order Bias (q) BW LPoly (h) 0 . 213 0 . 244 0 . 182 0 . 221 0 . 218 0 . 284 0 . 184 0 . 227 BW Bias (b) 0 . 320 0 . 376 0 . 304 0 . 347 0 . 334 0 . 436 0 . 308 0 . 354 Notes: RDD estimates with triangular weighting kernel and optimal bandwidth from MSERD procedure ( Cattaneo, Idrobo and Titiunik , 2019 ). A race is classified as low moral intensity if the share of moral tweets is below the sample median. The running variable is as the difference between the vote share obtained by the primary candidate with Twitter and the vote share obtained by the primary candidate without Twitter. Controls include incumbent, year and party dummies (fixed effects). Standard errors are clustered at the district level, significance levels indicated *p < 0 . 10 , ** p < 0 . 05 , [FORMULA] p < 0 . 01 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 10,
+        "section_name": "4 . 2 Regression discontinuity design",
+        "paragraph_id": 18,
+        "text": "RD designs rely on the assumption of no manipulation of the margin of victory around the cutoff ( McCrary , 2008 ). Evidence about the plausibility of the identifying assumption is shown in Figure A 15 . Table A 10 (top panel) provides evidence on continuity in predetermined district level variables. Twitter use as a characteristic of the winning politician, which determines the treatment, might also be associated with other traits of the politician. As a result, the estimated LATE becomes a compound treatment effect ( Marshall , 2022 ). Moreover, by focusing solely on tight elections, we are implicitly conditioning the treatment on a candidate’s vote share. This share could potentially be influenced by the variable determining the candidate’s type, leading to what Marshall ( 2022 ) defines as compensating differential . To study this potential shortcoming, we first analyze candidate-level covariates to identify discontinuities. This approach aids in characterizing the inherent compensating differentials. For example, factors like incumbency status, gender, age, past political experience, and education level may jump discontinuously at the artificial cutoff, leading to compound estimates. Analyzing candidates’ characteristics helps to understand the direction of the compensating differential and will clarify whether β 1 is as an upper or lower bound of the treatment effect of Twitter use. Table A 10 (bottom panel) provides evidence on continuity in candidate level traits. Table A 8 shows descriptive statistics for all contested primaries, and Table A 9 shows the same for those used in our RD estimation sample, where the top two candidates differ in their type . Both tables demonstrate that the measures in our RD sample and the overall population of contested primaries are notably similar. We further analyze the robustness of our analysis to the exclusion of observations near the cutoff (donuts hole approach) and to the use of placebo cutoff, concluding that our estimates are relatively stable to these validity checks (Figure A 18 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 11,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This paper explores the relationship between social media, moral rhetoric, and political behavior, contributing to our understanding of contemporary political communication. By leveraging a new dataset comprising tweets from U.S. congressional candidates, we examine how politicians’ use of Twitter can influence electoral outcomes, and the role moral language plays in these dynamics. We document that social media use by politicians has increased substantially over the last decade, and at the same time, the use of moral rhetoric by politicians has also risen.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1348,
+        "section_id": 11,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "Exploring the electoral cycle dynamics of Twitter use by politicians, we provide evidence that social media is an important campaigning tool, and that moral rhetoric is associated with increased electoral returns. Using a series of fixed-effects regressions, and a regression discontinuity design exploiting close primary elections, we provide empirical evidence that social media use increases electoral performance. Furthermore, this effect is particularly pronounced for those who employ moral rhetoric with above-median intensity. Candidates who incorporate moral language into their social media posts see significant electoral returns. Social media has been shown to have consequential political effects. Our findings reiterate the idea that moral content on social media is highly correlated with online engagement, highlighting its potential as a powerful tool for garnering online attention. The natural tendency of moral language to achieve high engagement suggests that its use can be a key factor in these broader trends. As such, our paper links our evolving understanding of the relationship between social media and politics to emerging research on the intersection of moral values and political behavior - underlining the relevance of morality for online political communication.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    }
+]

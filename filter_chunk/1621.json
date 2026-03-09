@@ -1,0 +1,999 @@
+[
+    {
+        "paper_id": 1621,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "The legacy of colonization continues to impact former colonies long after empires have dissolved. This influence is evident in various aspects, including institutions (Acemoglu et al., 2001), growth (Bertocchi and Canova, 2002; Besley and Burgess, 2000), fertility (Dupas et al., 2023), health (Salem, 2022; Lowes and Montero, 2021) and human capital (Cag ́e and Rueda, 2016; Huillery, 2009). Decolonization brought profound changes and challenges not only to former colonies but also to the colonial powers themselves, with repercussions that included migration from former colonies and debates over the legacy of colonialism (Cogneau et al., 2024; Cogneau, 2023; Cogneau et al., 2021). The end of colonial rule also spurred large-scale return migrations, such as the repatriation of Indische Nederlanders from Indonesia or the arrival of the retornados in Portugal following the decolonization of its African territories. These populations faced challenges integrating into the mainland after their lives had been uprooted. Yet, relatively little research has been conducted on the electoral impact of these returning migrants. In this paper, I study the political impact of the repatriation of the French Algerians of European descent (sometimes referred to as pieds-noirs ) on the regions they settled in, both in the short and the long term. 1,2 Algeria became independent on July 3, 1962, after more than 100 years under French rule. 3 Consequently, about 600,000 French from Algeria fled to mainland France that year, leading to a 1.28% increase in the mainland population and a 1.71% increase in the electorate. Following their repatriation after the war, French Algerians showed significantly higher support for the far right—characterized by strong nationalism and xenophobia—compared to the general population (IFOP, 2014; Comtat, 2009). On one side, Historian Benjamin Stora argues that these tendencies were partly rooted in the colonial status of Algeria. According to Stora, as settlers in a colony, the French Algerians enjoyed a privileged position over the Algerians, who were denied basic rights and freedoms. This led to a sense of superiority among the French Algerians, who came to see themselves as the rightful rulers of Algeria (Stora, 1999). On the other side, the trauma of the war and the repatriation further contributed to the repatriates’ embrace of far-right political parties and movements. Stora (1999) and Comtat (2009) have shown that the French far-right pandered to the French Algerian electorate, fueling their resentment of the mainstream political parties for renouncing to French Algeria and their animosity towards Algerian immigrants. Cefal`a (2022) finds that far-right 1 In French, the term pieds-noirs translates to ‘black feet’. Though its origins remain uncertain, historians suggest that the term initially referred to the indigenous Algerian population as a derogatory expression. In rural areas, many Algerians walked barefoot, resulting in dirty feet. Over time, this term is believed to have been adopted in mainland France to describe French citizens from Algeria, labeling them as second-class citizens. 2 I define the repatriates from Algeria as the French who were living in Algeria as of January 1, 1962, and migrated from Algeria to France due to the Algerian independence (i.e., between 1962 and 1968). In this paper, I will refer to the ‘French from Algeria’ or ‘French Algerians’. I defined them as the French (from mainland France, other European states, or Sephardic Jews) who settled in Algeria from 1830 to 1961 and their descendants born in Algeria. The French Algerians should not be confused with Algerian immigrants in France. 3 French President Charles De Gaulle pronounced Algeria an independent country on 3 July. Algerian leaders declared Independence Day on 5 July.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "parties increased their vote shares through pork barreling to the repatriates. However, it remains uncertain whether these political gains were primarily driven by the far-right party’s pandering efforts or by the repatriates’ own preferences (i.e., the supply versus demand effects). In this paper, I leverage highly granular voting data at the municipal level, allowing me to capture the preferences of repatriates within electoral districts by keeping the political supply, i.e., the candidates, constant. 4 Doing this enables me to establish how the political preferences of the repatriates durably changed electoral preferences in France. I assemble a large dataset consisting of the 1968 French census and electoral data from 1945 until 2022 (Cag ́e and Piketty, 2023). The 1968 census is the only French administrative dataset that allow me to identify the repatriates from Algeria. I merged census and electoral data at the municipality level. Thus, I analyze a sample of 34,400 municipalities grouped within 1,609 districts over 77 years. 5 This dataset covers 31 parliamentary and presidential elections, enabling analysis of the full dynamic impact of the repatriation shock on the voting shares for the far right, right, center, left, and far left. 6 I exploit the uneven distribution of the repatriates from Algeria across municipalities and preshock electoral data (1945-1958) to estimate their impact on voting outcomes. I rely on generalized difference-in-differences with a continuous treatment, i.e., the share of repatriates from Algeria in municipality m , to identify the causal effect of the repatriation on voting outcomes. Additionally, I incorporate election-district fixed effects to assess the impact of the repatriation shock within districts. My identifying assumption is that, in the absence of repatriation, municipalities that received varying numbers of repatriates would have experienced the same changes in far-right voting as municipalities that did not receive any repatriates. This assumption would be violated if repatriates systematically moved to cities where the share of far-right votes was on the rise compared to the rest of France. I demonstrate that repatriates did not settle in municipalities that had previously experienced an increase in far-right or right-wing voting. I also show that, within districts, repatriates did not settle in municipalities with higher far-right vote shares in 1956. Furthermore, there is no correlation between the share of repatriates and the vote shares for nationalist parties in 1919 and 1936 (specifically, Action Fran ̧caise and Francisme ). Lastly, I find no evidence that repatriates settled in areas with a higher per capita number of Nazi collaborators during World War II (Cag ́e et al., 2023). My results indicate that, in the short term, municipalities with higher proportions of repatriates experienced a significant increase in far-right voting, driven by the repatriates themselves. The far right was the only political party supporting French Algeria until the Algerian independence. Several 4 A municipality ( commune in French) is an administrative unit that typically includes a single town, village, or city. With an average population of 1,850, it is smaller than a US census tract, which usually contains around 4,000 residents. While US census tracts rarely exceed a population of 10,000, many French municipalities have populations larger than this number. 5 I refer to cantons as districts, while circonscriptions ́electorales will be referred to as constituencies. Each constituency is composed of districts, which themselves are composed of municipalities. 6 Over the years, the French far right has been represented by various parties, including the Union de D ́efense des Commer ̧cants et Artisans (1956–1958), the Alliance R ́epublicaine pour les Libert ́es et le Progr`es (1965–1969), and the Front National (now Rassemblement National , from 1973 on). See Parties Classification in Appendix I.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "prominent far-right figures were involved in the Algerian War, including Jean-Louis Tixier-Vignancour, the far-right presidential candidate in 1965. As a lawyer, he defended members of the Organisation Arm ́ee Secr`ete (OAS), a paramilitary group that used violence to oppose Algerian independence. His 1965 campaign director, Jean-Marie Le Pen, served in the French military during the Algerian War and faced allegations of involvement in the torture of Algerian nationalists. After the repatriation, the farright appealed to repatriates by, among other things, advocating for financial compensation for their lost property. Additionally, some repatriates voted for the far right in the 1965 presidential election as a rejection of the right-wing incumbent, Charles de Gaulle, whom they blamed for ‘abandoning’ French Algeria. The far right’s strong support for their cause and resentment toward mainstream parties spurred repatriates’ alignment with them in the 1960s. In the short term, an increase in the repatriate population in municipality m also led to a significant decline in support for left-wing parties, which had backed Algerian independence. The connection between repatriates and the far right declined from the late 1960s to the early 1980s as the political focus on repatriates’ concerns diminished, especially after the compensation laws were enacted in the 1970s. However, in the 1980s, my results show a resurgence a resurgence in the farright among places that received repatriates. It paralleled the growing prominence of immigration as a political issue in France and the political rise of the Front National , founded by Jean-Marie Le Pen, along with former members of the OAS and the Waffen SS. I use data from the ‘Pieds-Noirs 2002’ survey to show that French Algerians were more concerned about immigration than other voters (Comtat, 2009). I implement a series of tests to rule out other potential drivers of short and long-term far-right voting. Hunt (1992) and Edo (2020) show that in the short term, the repatriation shock led to an increase in native unemployment. Yet, unemployment was not a political point for the far right at the time. In line with this, I show that unemployment did not positively impact far-right vote shares in 1956 and 1958, i.e., before the repatriation shock. In the long term, my results are not explained by subsequent migration and unemployment shocks in municipalities where repatriates settled in 1968. To deal with potential bias arising from self-selection into location after repatriation, I use the 1954 distribution of French Algerians in mainland France as an instrument for the 1968 settlement (as in Edo, 2020). The instrumental variable estimation yields coefficient estimates that align with my main findings in the short and medium term. I also show that internal migration resettlement was negligible and does not confound the long-term persistence results. As the influence of the repatriation shock has diminished over time, questions arise about the political legacy of the repatriates. To explore this, I analyze the 2022 presidential and parliamentary elections, focusing on two far-right candidates and parties, one of which has a stronger anti-immigration stance. I find that, in both elections, the share of votes for the more anti-immigrant party/candidate—relative to the total far-right vote—increases significantly with the intensity of the repatriation",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "shock. Finally, I use the Trajectory and Origin Surveys (TeO and TeO2) from 2008-09 and 2019-2020 to study the political opinions of the repatriates’ children. These surveys offer unique individual-level data on second-generation repatriates. I find that, on average, the offspring of repatriates are less likely to identify with left-wing political views than other mainland natives. The effect is more pronounced among individuals whose parents were both repatriates. I find further evidence suggesting that the repatriates passed down their political views to their children, particularly regarding immigration. Second-generation repatriates oppose opening up immigration to France more strongly than children of mainland natives. However, they do not exhibit more conservative stances on other matters like gay rights and gender equality, underscoring the significance of immigration in shaping their voting preferences. This paper contributes to the broader literature on migration and politics. Previous studies have focused on how immigration influences the voting preferences of native populations (e.g., Halla et al., 2017; Dustmann et al., 2019; Edo et al., 2019; Steinmayr, 2021). However, I add to the more recent literature on how migrants bring their preferences to the host community. Whereas earlier work has addressed migrants’ influence on norms (e.g., Miho et al., 2024) and public policy (e.g., Chevalier et al., 2024), I study the electoral impact of the migrants’ voting preferences. This paper studies forced migrants in contrast to analyses of voluntary migrants (e.g., Calderon et al., 2021; Bazzi et al., 2023). Furthermore, I examine a broader, indiscriminate group of people affected by mass repatriation, unlike studies focusing on individuals who were specifically displaced due to their political activism (e.g., Ochsner and Roesel, 2020; Dippel and Heblich, 2021). In related research, Lang and Schneider (2023) and Menon (2022) examine the political impact of the German expellees from the Eastern Territories who settled in West Germany after World War II. Lang and Schneider (2023) employ a spatial regression discontinuity design to analyze regions along the border between American and French occupation zones in post-war Germany. In contrast to my findings, their study reveals a weaker nationalist backlash against recent immigration in American-occupied areas, where expellees were allowed to resettle, compared to French-occupied areas, where resettlement was prohibited. Unlike Lang and Schneider (2023), which focuses on regions with differing post-war institutional structures, I study areas where institutional structures remained the same over time and space. Meanwhile, Menon (2022) finds a sustained increase in far-right voting in West German communities that received expellees. While Menon (2022) only considers post-war electoral outcomes, my study also includes pre-shock data, providing a more comprehensive evaluation of shifts in far-right voting behavior. Additionally, this paper extends the analysis to the descendants of repatriates, providing suggestive evidence of the intergenerational transmission of political preferences (e.g., Dohmen et al., 2012; Lupu and Peisakhin, 2017). Studying the political impact of the repatriation shock at the d ́epartement level, Cefal`a (2022) finds higher far-right vote shares in high-inflow d ́epartements in the short-term (from 1962 to 1974) and long-term",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Regression Discontinuity Design (RDD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "(from 1982 to 2012). These results align with my findings. While Cefal`a (2022) emphasizes supply-side effects—specifically, how far-right parties catered to repatriates—this paper focuses on demand-side effects, examining the impact of repatriates’ voting preferences. Because my data is at the municipal level, I am able to incorporate election-district fixed effects in my analysis. This approach offers two key advantages: first, by holding the far-right supply constant within districts, I can accurately measure the impact of the repatriates’ preferences on vote shares. Second, examining within-district variation helps mitigate potential self-selection biases that could arise at more aggregated levels. I present evidence that immigration concerns played a crucial role in driving repatriates’ far-right voting, shedding light on Cefal ́a’s findings regarding the long-term effects of the repatriation shock on far-right support. My findings help explain how the far right maintained its appeal within the repatriate community, even after the most extensive compensation laws for repatriates were enacted in the 1970s (see Table C5). 7 Finally, analyzing the opinions of repatriates’ children reveals heterogeneity within the community based on parental education level. I find that right-leaning tendencies and anti-immigration views are not driven by children of either lowor highly-educated parents; instead, these opinions are predominantly concentrated among those with parents of middle-level education. I also contribute to the literature on the factors driving far-right voting, including economic insecurity and marginalization (e.g., Malgouyres, 2017; Colantone and Stanig, 2018; Autor et al., 2020; Colantone and Stanig, 2019; Dehdari, 2022), terrorism (e.g., Berrebi and Klor, 2008; Getmansky and Zeitzoff, 2014; Sabet et al., 2023), cultural attitudes and identity (e.g., Inglehart and Norris, 2016; Bonomi et al., 2021), and education (Gethin et al., 2022). However, this study examines the enduring patterns of far-right voting brought by a community of forced migrants. As such, this paper highlights that regional responses to immigration often vary based on historical factors, especially the political preferences of residents in those areas (Cantoni et al., 2019; Schindler and Westcott, 2021). It also provides additional evidence on the persistent impact of political conflict on political preferences and how it can be reactivated by political cleavages (Fouka and Voth, 2023). Similar to Ochsner and Roesel (2024), I find that shared traumas can reignite far-right voting. I further link the experience of displacement in the decolonization context with the preference for the far right. Others have used this specific migration shock to analyze other outcomes. Hunt (1992) and Edo (2020) have investigated its impact on the labor market outcomes of the natives and found a positive effect on native unemployment in the short term. I provide complementary evidence on the economic integration of the repatriates contributing to the existing, multidisciplinary literature on repatriates from Algeria (e.g., Baillet, 1975a,b; Couto, 2013, 2014; Veugelers et al., 2015). I supplement those studies by quantifying the political impact of the repatriates in the regions that welcomed them. More generally, this study is part of the literature on the consequences of forced migration (see Becker and 7 The two most comprehensive compensation laws were passed in 1970 and 1978. In 1970, Val ́ery Giscard d’Estaing served as Finance Minister under conservative president Georges Pompidou. In 1978, he was serving as the center-right president himself.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "Ferrara (2019) and Becker (2022) for a review). The paper is structured as follows. Section 2 explains the historical background. In Section 3, I describe who the repatriates were and how they integrated into the mainland economy. Section 4 describes the data and presents the empirical framework. Sections 5 and 6 include the results and robustness tests in the short-term and the long-term, respectively. 7 provides additional robustness tests. In Section 8, I further study the political legacy of the repatriates. I conclude in Section 9.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 1,
+        "text": "The French colonization of Algeria in the 19th century created a society of juxtaposed communities, with the European colonizers and the Algerian people living largely separate lives. The colonial society fostered institutional racism, and the Algerian population was denied the full rights of French citizenship (Stora, 1991). The Algerian War of Independence was formally initiated on November 1, 1954, when Algerian nationalists from the National Liberation Front (FLN) launched attacks on military and civilian sites across Algeria. The French government in Paris grew increasingly vulnerable as the conflict endured, prompting a government change. In 1958, Charles de Gaulle assumed the French presidency to resolve the Algerian conflict. Initially advocating for maintaining Algeria as part of France, de Gaulle’s stance eventually shifted due to mounting national and international pressures. In 1959, he announced his intention to submit the question of self-determination for Algerians to a referendum. On January 8, 1961, the referendum on the self-determination of Algeria was held, with 75% of the voters approving it. Many French Algerians, integral to the colonial system and its perpetuation, felt the referendum’s results were a betrayal. In response, the Organisation de l’Arm ́ee Secr`ete (OAS), a far-right terrorist organization, was created. To prevent Algeria’s independence from French colonial rule, the OAS carried out terrorist attacks mainly in Algeria and mainland France. Convinced that the OAS was best able to ensure their protection, the French from Algeria largely backed the organization. The ‘PiedsNoirs 2002’ survey indicates that 70% of the polled French Algerians supported the OAS (Comtat, 2009). 8 Despite the OAS’s efforts, the ́ Evian Accords were signed on March 18, 1962, officially ending the Algerian War. On July 3, 1962, Charles de Gaulle declared the independence of Algeria. 8 The ‘Pieds-Noirs 2002’ survey - PACTE / CIDSP (UMR 5194) - is a self-administered survey launched in 2002. It was carried out among 6,000 Algerians of European descent born in Algeria before 1962 and living in Is`ere, Alpes-Maritimes, and H ́erault. The contact details of the persons were obtained by drawing lots from the electoral rolls showing the place of birth of those registered. The questionnaire focuses on the political behavior of the French Algerians in Algeria and France since 1962, their professional paths, and their memory.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 2,
+        "text": "The end of the war and the independence of Algeria led to a massive and sudden out-migration of the French population. Of the 1,024,000 French Algerians living in Algeria in 1960, only 91,276 lived in Algeria in 1965 (Scioldo-Z ̈urcher, 2010). The majority of the French from Algeria sought refuge in France. 9 Figure 1: Inflows of French of European descent from Algeria to mainland France by Year of Arrival",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 3,
+        "text": "Sources: 1962 and 1968 censuses. Notes: The columns of the graph show the inflows of French of European descent from Algeria to France between 1954 and 1968 (see values on the left y-axis). The number of migrants between 1954 and 1961 is calculated from the 1962 census. The number of migrants between 1962 and 1968 is calculated from the 1968 census. The red line represents the share of French from Algeria in the mainland population (see values on the right y-axis). The French from Algeria are defined as French citizens of European descent living in Algeria at the time of the last census (i.e., the 1954 census for those between 1954 and 1961 and the 1962 census for those between 1962 and 1968) and in mainland France in the subsequent census. The French from Algeria also included those who migrated before 1954. In that case, the French from Algeria are defined as French citizens of European descent born in Algeria. 10",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 4,
+        "text": "Figure 1 shows the migrant inflows of French of European descent from Algeria to mainland France from 1954 until 1968. In the 1968 Census, 1,103,153 individuals indicated living in Algeria on January 1, 1962. Of those migrants from Algeria, 926,000 had French nationality in 1968. 884,206 (85.49%) were French Algerians of European descent, while 41,794 (4.51%) were French Algerians of North African descent (indigenous Algerians). Finally, 157,803 (17.04%) declared having Algerian 9 Few went to Spain (est. 50,000), Canada (est. 12,000), Israel (est. 10,000), or Argentina (est. 1,500) (Palacio, 1968). 10 The census only records the year migration between Algeria and mainland France between censuses. Hence, the 1962 census only indicates the year of migration if the individual moved after the 1954 census. I cannot identify French citizens born outside of Algeria who might have lived there before 1954.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 5,
+        "text": "nationality. 11 It has been estimated that 15% of the French Algerian repatriates were Jewish (Guillon, 1974). However, since French administrative data does not include information on religion, it is impossible to specifically identify Jewish repatriates using the available census data. I estimate that around 581,723 French of European descent arrived from Algeria between March and December 1962 using the 1968 Census supplementary data. The repatriates largely arrived in southern France, with Marseille being the principal port of entry. The government had estimated the number of repatriates to be around 400,000 over four years (Esclangon-Morin, 2007). Taken by surprise by the massive influx of repatriates, public authorities were unable to prevent their concentration in southern France. Figure 2: Distribution of repatriates from Algeria in 1968",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 6,
+        "text": "Sources: 1962 and 1968 censuses. Notes: The map presents the share of repatriates defined as the number of repatriates from Algeria, i.e., French living in Algeria as of January 1, 1962, divided by the number of French voters in municipality m in 1962. The unity of observations is at the municipality level.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 7,
+        "text": "In 1968, 68.34% of repatriates from Algeria lived in 7 southern regions, accounting for 27.37% of the total population. 12 Figure 2 shows the concentration of French Algerian repatriates in the southern regions and around Paris and Lyon. Several factors contributed to the repatriates’ settlement in the South of France. Some initially planned to return to Algeria once the unrest subsided, which led 11 Within the Algerian immigrants (with and without the French nationality) were the harkis , i.e., indigenous Algerians who fought on the side of France during the war and faced persecution in Algeria. They did not receive benefits upon arrival since the government wanted to avoid their massive resettlement in France. Since many settled in France clandestinely, the number of harkis who fled persecution is difficult to estimate precisely. Th ́enault (2008, p.86) estimates that approximately 60,000 harkis and their families migrated to France after 1962. Even though they are now considered repatriates, I will exclude them from my analysis to focus on a more homogeneous group. Furthermore, I want to avoid the confusion between the political reaction to migrants (i.e., racism against the harkis ) and the political behavior brought by migrants. 12 Provence-Alpes-Cˆote d’Azur, Corse, Languedoc-Roussillon, Midi-Pyr ́en ́ees, Aquitaine, Rhˆones-Alpes and PoitouCharente.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 8,
+        "text": "them to remain in the Mediterranean region. The climate and lifestyle closely resembled Algeria’s, and many had family connections to these areas (Guillon, 1974). The measures implemented by the government at the time to prevent the concentration of the repatriates in the south mostly failed (Esclangon-Morin, 2007). 13",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 10,
+        "text": "Historians and political scientists shed light on the special relationship between the French far right and the French Algerian repatriates (e.g., Stora, 1999; Comtat, 2009). Yet, the relationship between the two is neither automatic nor straightforward. The affinity of a part of the repatriate community towards the far right can be explained through two main channels: their relationship with the Algerians and their resentment towards French politicians. Before the War Using pre-Algeria War electoral data and interviews with French Algerian repatriates, Comtat (2009) argues that political opinions and behaviors were not homogeneous in Algeria. The left-wing parties were popular at certain times in Algeria. 14 The ‘Pieds-Noirs 2002’ survey indicates that around 52% of the French Algerian repatriates in the sample were leaning right before the Algerian War, 21% were leaning left, and 4% were leaning far-right (see Figure 3). 15 Table 1 presents the 1951 election results for the French mainland and Algeria separately. 16 It shows that the population of European descent in Algeria leaned more to the right (+7.69pp) and the center (+5.01pp) than the mainland population before the war. Stora (1999) argues that the colonial system in Algeria may have played a role in the formation of racism. Under this system, French Algerians experienced racial domination, which led to the propagation of negative stereotypes about Algerians. Europeans were seen as superior to the indigenous population and were granted significant economic, social, and political privileges. While the connection between the French Algerians and the far right in Algeria before the Algerian War was not as strong as it became after the conflict, the colonial system in Algeria laid the groundwork for the rise of the far right within the repatriates’ community after the war. During and after the War The war disrupted traditional political alignments (Stora, 1999; Comtat, 2017). The French from Algeria were first supportive of De Gaulle, who they saw as a defender of French Algeria. Feeling betrayed by him following his renouncement to French Algeria, they turned to the far right. As discussed in Section 2.1, most French Algerians supported the OAS, a 13 The details of the government incentives are described in Appendix B. 14 French Algerians (of European descent) elected 4 (out of 10) left-wing MPs as a national left-wing coalition (the Front Populaire ) came to power in 1936 (Marynower, 2014). 15 The ‘Pieds-Noirs 2002’ survey took place 48 years after the beginning of the Algeria War in 1954. One should consider the possibility that some French Algerians might have had a revisionist memory, considering their age, the time lapsed, and the events during and after the war. 16 At the time, there were two electoral colleges in Algeria. One was made of the French from Algeria of European descent, and the other was made of French from Algeria of Arabic descent. Since Algeria was fully integrated into France as a d ́epartement , all were considered French. The results presented here are those for the former college. French from Algeria of Arabic descent were allowed to vote in mainland France without separate electoral colleges.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 12,
+        "text": "Source: ‘Pieds-Noirs 2002’ survey (Comtat, 2009, p. 69). Notes: The ‘Pieds-Noirs 2002’ survey - PACTE/CIDSP (UMR 5194) - is a self-administered survey launched in 2002. It was carried out among 6,000 French of European descent born in Algeria before 1962 and living in Is`ere, Alpes-Maritimes, and H ́erault. The contact details of the persons were obtained by drawing lots from the electoral rolls showing the place of birth of those registered. The questionnaire focuses on the political behavior of the French Algerians in Algeria and France since 1962, their professional paths, and their memory. Hence, the survey includes repatriates and French Algerians who migrated before 1962. The French children from Algeria might be born in Algeria or in mainland France. Gaullism is a French political stance based on the thoughts and actions of Charles de Gaulle. It is aligned with the right on the political spectrum.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 15,
+        "text": "Far left 5,056,605 27.05% 77,609 21.03% Left 3,219,470 17.23% 37,726 10.30% Center 4,207,967 22.51% 100.819 27.52% Right 6,118,757 32.74% 148,142 40.43% Others 87,346 0.47% 2,103 0.57% Source: ́ Elections legislatives du 17 juin 1951 , Minist`ere de l’Int ́erieur. Notes: no far-right political party took part in the elections that year. See Table C1 for more details on the parties and their classification.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 16,
+        "text": "far-right terrorist group established to maintain French control over Algeria. For many French from Algeria, the far right was the only political group that stood by them during and after the crisis. In the 1960s, far-right candidates strongly supported the amnesty of crimes committed during the Algerian War and financial compensation for their property lost in Algeria. In the 1965 presidential election, the far-right candidate was Jean-Louis Tixier-Vignacour, a supporter of French Algeria and fervent critic of president De Gaulle. Though the far right’s rhetoric might have attracted a large",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 17,
+        "text": "share of the community, another share was not. 17 Yet, the repatriates’ experience of colonialism and decolonization created a legacy of political and cultural alienation that has made them susceptible to the appeal of the far right. Comtat (2009) gathered some qualitative evidence of the repatriate’s resentment of mainstream parties.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 18,
+        "text": "’At the start, they were mostly protest votes, for sure, when you have a trauma, it doesn’t go away just like that!... In relation to the Algerian War! In relation to what happened with those politicians!... We weren’t punishing the person, we were punishing the party, the idea, we were punishing everything, really! All of that, without taking sides, neither right nor left!’ 18 Male, 70 years old, retired from the semi-public sector, from Algiers, Alpes-Maritimes. (Comtat, 2009)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 19,
+        "text": "’De Gaulle, that, I could never forget what he did... especially since they [the Gaullists of the RPR] still claim to follow de Gaulle. For me, it’s the same, it’s the same family.’ 19 Female, 59 years old, administrative officer in the National Education, from Algiers, Is`ere. (Comtat, 2009)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 20,
+        "text": "‘It’s partly because of them that we lost Algeria, because of the socialists, the communists!... In 54-55, in Montpellier, the socialists and communists were marching... They called us ‘colonialists’... It wasn’t true! I had Arab friends... I know I’m not a socialist... It’s true that they... along with the communists, they did a lot of harm to Algeria... They pushed for independence... They didn’t support us! Mitterrand... we lost a lot because of him, we lost Algeria!’ 20 Male, 65 years old, retired municipal employee, from Algiers, H ́erault. (Comtat, 2009)",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 21,
+        "text": "Circumstantially, the Front National took over a local branch of the Cercle National des Rapatri ́es , a repatriate organization, in 1987. The long-term preference for the far right in the repatriate community has been documented through surveys. A 2002 exit polls survey found that 30% of French from Algeria voted for far-right candidates in the first round of the presidential election, i.e., around 10 points over the national far-right vote share. Table H2 presents the voting intentions for the first round of the 2012 presidential elections. 21.5% of French repatriates from Algeria expressed an intention 17 Esclangon-Morin (2007) notes that the center coalitions had the most repatriates (fifteen) on their lists in the 1965 municipal elections. 18 ‘C’ ́etaient pour la plupart, au d ́epart, des votes sanctions, il est certain, quand on a un traumatisme, il ne s’ ́evacue pas comme ̧ca !... Par rapport `a la guerre d’Alg ́erie ! Par rapport `a ce qui s’est pass ́e avec ces hommes politiques !... On ne sanctionnait pas l’homme, on sanctionnait le parti, l’id ́ee, on sanctionnait tout, quoi ! Tout ̧ca, sans parti pris, ni droite, ni gauche !’ 19 ‘De Gaulle, ̧ca, je pourrais jamais oublier ce qu’il a fait... surtout qu’ils [les gaullistes du RPR] se r ́eclament toujours de de Gaulle. Pour moi c’est pareil, c’est la mˆeme famille.’ 20 ‘C’est un peu par rapport `a eux qu’on a perdu l’Alg ́erie, par les socialistes, les communistes !... En 54-55, `a Montpellier, les socialistes, les communistes, ils d ́efilaient... On nous traitait de “colonialistes”... C’ ́etait faux ! Moi, j’avais des copains arabes... Je sais que je suis pas socialiste... C’est vrai qu’eux... entre les communistes, ils ont fait beaucoup de mal `a l’Alg ́erie... Ils ont pouss ́e pour l’ind ́ependance... Ils ne nous ont pas soutenus ! Mitterrand... on a perdu beaucoup par rapport `a lui, on a perdu l’Alg ́erie !’",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 22,
+        "text": "to vote for Marine Le Pen, the far-right candidate, in the presidential elections, compared to 14% of non-French Algerian voters over the age of 50. The French from Algeria display a stronger preference for right-wing candidates overall, with a 10.5pp increase compared to non-French from Algeria. Descendants of French from Algeria appear slightly more inclined to vote for the far-right candidate and less inclined to vote for the moderate left than individuals with no French Algerian ancestry (+2pp and -3pp, respectively).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 24,
+        "text": "The French far right’s ideology throughout the 20th century consistently centered on nationalism and xenophobia, even as the movement evolved. In 1899, the nationalist and monarchist movement Action Fran ̧caise emerged, advocating for the restoration of the monarchy while espousing anti-republican, anti-democratic, and anti-Semitic views. Later, in 1933, the Franciste movement appeared, drawing inspiration from Italian Fascism and promoting an authoritarian, nationalist, and anti-communist state. During World War II, the French far-right actively collaborated with the Nazis, both within the Vichy regime and independently. 21 Notable figures such as Jacques Doriot and Marcel D ́eat formed collaborationist parties that actively supported the Nazi occupation and adopted fascist ideologies. In the aftermath of the war, its extensive collaboration with the Nazi regime led to widespread discreditation of the far-right movement (Marcus, 2000; Shields, 2007). The Algerian War served as a catalyst for the resurgence of nationalism in France (Cohen, 1980). This far-right revival was initially facilitated by the Poujadist movement, led by Pierre Poujade. Founded in 1954 as the Union de D ́efense des Commer ̧cants et Artisans (UDCA), it began as a grassroots movement of small shopkeepers opposing government inspectors. Over time, Poujade redirected its focus towards defending French Algeria (Marcus, 2000). Although Poujadism eventually faded, it had served as a crucial platform for nationalists to consolidate their efforts. Several far-right figures with connections to the Nazi-collaborationist Vichy regime became active in the pro-Algeria far-right movement. Among them were Jacques Isorni, who had served as Marshal P ́etain’s lawyer; Pierre Bousquet, a former member of the Waffen SS Charlemagne Division; and Jean-Louis Tixier-Vignancour, a former Under-Secretary of State for Information in Vichy France. In 1965, Tixier-Vignancour ran for president with Jean-Marie Le Pen, a former Poujadist deputy and paratrooper in the Algerian War, serving as his campaign director. Seven years later, Le Pen founded his own far-right party, the Front National (FN). Although the FN initially struggled to gain substantial electoral support, the party experienced a breakthrough in the 1980s (see Table C2). From then on, the FN gradually grew in popularity. The party’s discourse on immigration encompassed xenophobic and discriminatory rhetoric. In 2011, Marine Le Pen, daughter of Jean-Marie Le Pen, 21 The Vichy regime was the authoritarian government that ruled France from 1940 to 1944 after the country’s defeat by Nazi Germany in World War II. Led by Marshal Philippe P ́etain, it collaborated with the Nazis, implementing policies that included deporting Jews and suppressing resistance efforts.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 2,
+        "section_name": "Historical background",
+        "paragraph_id": 25,
+        "text": "assumed the party leadership, aiming to rebrand the FN into a mainstream political entity by toning down its xenophobic image. This strategy proved successful, as evidenced by Marine Le Pen’s presence in the second round of the presidential elections against Emmanuel Macron in 2017 and 2022. However, she ultimately was defeated in both instances losing 66.1% to 33.9% in 2017 and 58.55% to 41.45% in 2022.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 3,
+        "section_name": "The economic integration of the repatriates",
+        "paragraph_id": 0,
+        "text": "As the repatriates arrived in mainland France, they faced considerable challenges to integrating economically. Table C3 compares the French Algerian repatriates and natives in the 1968 Census. The French Algerian repatriates were, on average, four years younger than the natives. Moreover, they were more educated than natives, i.e., 11.89% of the repatriates had a high school diploma or more (5.77pp more than natives). They were also more likely to be in university at age 18 or more. 9.45% of the repatriates were working in higher managerial and intellectual positions. Only 23.03% of the repatriates compared to 31.54% of mainland natives were blue-collar workers. The colonial economy had little developed industry. The French from Algeria worked in the tertiary sector, such as office workers, civil servants, salespeople, small business owners, artisans or traders, etc. (Esclangon-Morin, 2007). The repatriates were overrepresented in the public sector, with 28.79% of the repatriates working in public administration (19.30pp more than the natives). They were also more likely to be unemployed (+1.38pp) and out of the labor force (+4.94pp) six years after their arrival. I use the data from the Permanent Demographic Sample ( ́ Echantillon D ́emographique Permanent or EDP) to look at the economic integration of the repatriates from Algeria in the short and medium term. The EDP is a large-scale socio-demographic panel established with census data to study the birth rate, mortality, relationships, and geographical migrations within the national perimeter. Since it contains the 1968 census data, the EDP is a unique data set that allows one to identify repatriates directly and follow them from census to census. I can identify 6,194 French individuals living in Algeria as of January 1, 1962. In Table C4, I estimate the unemployment gap between repatriates and natives, controlling for education level, birth year, gender, and region. Despite government efforts to ease the repatriates’ integration into the labor market, they faced higher unemployment risks in the 1990s. This challenges earlier studies that depicted their economic integration as a success (Baillet, 1975a; Rowley, 1990). 22 Nevertheless, my results align with the findings of Couto (2014). Similarly, Bauer et al. (2013) finds that expellees from the Eastern Territories after WWII were more likely to be unemployed 25 years after they arrived in West Germany. My findings shed light on the similarities between the repatriates and the expellees. The repatriates’ fragile attachment to the labor market might have further fed their resentment. 22 The government created a list of job vacancies where repatriates were given priority (Hunt, 1992).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "I use data from the 1968 French census to identify French Algerian repatriates. The 1968 census is a unique dataset that distinguishes French from Algeria from indigenous Algerians living in Algeria in 1962 and were French as of 1968. I define the repatriates from Algeria as the French who were living in Algeria as of January 1, 1962, and in mainland France in 1968 (as explained in Section 2.2, I exclude the harkis from my analysis). The data for the 1968 census have been provided by the French Statistical Office (INSEE) and the Secure Access Data Center (CASD). I merge the census data with electoral data at the municipality level (Cag ́e and Piketty, 2023), covering elections from 1945 to 2022. I also add data on 1961 municipality indicators (Cag ́e and Piketty, 2023), including the number of French voters, the proportion of foreign residents, the percentage of high school graduates among those aged 25 and older, the proportion of farmers, workers, and unemployed individuals, as well as the percentile ranking of municipality size. Using this combined dataset, I calculate the share of repatriates at the municipality level, defined as AlgRepShare m :",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "The numerator captures the number of repatriates from Algeria in municipality m in 1968, while the denominator represents the number of voters in 1961—prior to the repatriation shock—ensuring that the measure reflects the impact of the repatriation on the existing electorate. 23 My final dataset includes 34,400 municipalities and spans 31 elections from 1945 to 2022.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "First, I estimate the following specification to estimate the overall effect of the repatriation shock on political outcomes:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "V oteShare me is the vote shares for candidates from a given political group (Far right, Right, Center, Left, and Far left) in municipality m in district d in the first round of election e . 24 The results are conditional on having a candidate for one of the political groups in the constituency of municipality 23 The results remain unchanged when using the number of individuals with French nationality as the denominator. 24 The classifications of parties and candidates into political groups are presented in the appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "m in election e . 25 There were no far-right candidates in the elections held in 1945, January and November of 1946, 1951, 1969, and 1981 (refer to Table C2). Additionally, no far-left candidates participated in the 1965 presidential election. X m, 1961 includes the proportion of foreign individuals, the proportion of high school graduates among those aged 25 and older, the proportion of farmers, workers, and unemployed individuals, and the percentile ranking of municipality size in 1961. I include election-district fixed effects ( φ de ) to control for unobserved shocks at the district level. This ensures that within each district, municipalities share the same candidate. 26 Thus, I measure the demand-side effect—specifically, the influence stemming from the voters themselves—on voting in the municipalities that received repatriates. I also control for municipality fixed effects ( λ m ) to exploit time-invariant variation across municipalities. Throughout the analysis, I cluster standard errors at the electoral district level to explicitly account for any potential correlation in the error terms within the electoral district over time. Second, I also estimate β e to observe the evolution of the impact of the repatriation shock on vote shares:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "V oteShare me = J X j ̸ =1958 β e ( AlgRepShare m · 1 e = j ) + J X j ̸ =1958 γ e ( X m, 1961 · 1 e = j ) + λ m + φ de + ε me",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "In specifications (2) and (3), I rely on generalized difference-in-differences with a continuous treatment, i.e., the share of repatriates from Algeria in municipality m , to identify β and β e . Callaway et al. (2024) show that in cases where the treatment is continuous and not binary, one requires a ‘strong’ parallel trends assumption. 27 Here, the strong parallel trends assumption means that changes in voting behaviors in municipalities with low shares of repatriates provide a good counterfactual for the changes in voting behaviors that would have happened in municipalities with high shares of repatriates. I provide evidence in line with the identification assumption by showing that after controlling for X m, 1961 and district-election fixed municipalities with different shares of repatriates had similar levels and trends in various observables that may affect voting behavior. Columns (2) and (3) in Table 2 present estimated coefficients from regressions of various pre-shock variables on the 1968 share of 25 This analysis focuses on the intensive margin—that is, the vote share achieved—rather than the extensive margin, which concerns whether a candidate is present at all. Although the decision to field a candidate could also be influenced by the repatriation shock, the actual choice to run a candidate is also determined by the existing political supply in the electoral district. In particular, for marginal parties, the presence of a candidate in a constituency not only reflects the demand of the voter but also the availability of potential candidates. 26 An electoral constituency encompasses multiple districts; in other words, constituencies for legislative elections are made up of districts. 27 In the case of a DiD with continuous treatment, the Two-Way Fixed Effect estimator ( β T W F E ) equals the weighted average of the ACRT ( d | d ), i.e., the average causal response on the treatment group for a particular treatment dose group j who took dose j , plus another positively-weighted average of ‘selection bias’ terms coming from heterogeneous treatment effects across dose groups. The assumption of ‘strong’ parallel trends can eliminate selection bias.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Parallel Trends Assumption"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Difference-in-Differences (DiD) & Event Studies"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 10,
+        "text": "(6) Levels Trends Mean Within regions Within districts Mean Within regions Within districts Observations Observations Political outcomes Voting shares for the ... ... far right (1956) 13.94 0.065** -0.000 -9.76 -0.024 0.006 26,907 (0.0309) (0.0098) 24,922 (0.0389) (0.0156) ... right (1956) 24.42 -0.150** 0.001 16.00 0.146 0.040 27,476 (0.0738) (0.0098) 39,416 (0.1142) (0.0557) ... Action Fran ̧caise (1919) 1.60 0.006 0.003 31,967 (0.0043) (0.0032) ... Francisme (1936) 1.32 0.004 0.003 32,433 (0.0025) (0.0023) Ratio of collaborators (1944) 0.09 0.000 0.000 33,129 (0.0004) (0.0003) Other municipal indicators Relative to the national average Average income (1961) 80.83 0.202** -0.091** 247.4 0.229 0.577* 34,725 (0.0834) (0.0449) 69,450 (0.8934) (0.3388) Real estate capital per capita (1961) 84.33 0.245** -0.068 2.97 0.021 0.004 34,500 (0.1112) (0.0641) 69,000 (0.0282) (0.0094) Percentile rank of homeownership rate (1961) 78.16 -0.026 -0.035 0.33 0.019 0.005 34,700 (0.0567) (0.0680) 69,400 (0.0134) (0.0140) Share of higher-level professionals (1961) 0.64 -0.001 -0.001 34,709 (0.0023) (0.0023) Share of middle-level professionals (1961) 3.24 0.001 0.011 34,709 (0.0072) (0.0081) Share of employees (1961) 9.19 0.017 -0.009 34,709 (0.0132) (0.0119) Share of refractory priests (1791) 44.80 0.237[FORMULA] 0.023 29,452 (0.0763) (0.0146) Notes: The table presents the estimated coefficients from regressing municipal indicators as well as the change in these indicators on the 1968 share of repatriates ( AlgRepShare m ). The year indicated in parentheses next to each indicator represents the measurement year for the level regressions. For the trend regressions, the vote share changes are calculated between 1956 and 1958 for the far-right and between 1945 and 1958 for the right-wing, as these years are the furthest available from 1961. Changes in municipal indicators are measured between 1956 and 1961. The share of higher-level professionals includes individuals in roles such as senior managers, doctors, professors, lawyers, and other advanced intellectual professions. These roles align with the French category ‘ cadres et professions intellectuelles sup ́erieures ’, which encompasses highly skilled and managerial positions across various sectors. The share of mid-level professionals includes individuals in roles such as middle managers, technicians, school teachers, and nurses. These roles correspond to the French category ‘ professions interm ́ediaires ’, representing occupations that require a combination of technical skills and supervisory responsibilities but are below the senior management level. ‘Refractory priests’ refers to clergy who refused to pledge allegiance to the Civil Constitution of the Clergy during the French Revolution, which aimed to bring the Church under state control. I use this as an indicator of religious adherence. Columns (3) and (5) include region fixed effects, while Columns (3) and (6) incorporate electoral fixed effects. The regressions control for X m, 1961 , which includes the proportion of foreign residents, the proportion of high school graduates among individuals aged 25 and older, the proportions of farmers, workers, and unemployed individuals, and the percentile rank of municipality size in 1961. [FORMULA] , **, and * denote significance at the 1 percent, 5 percent, and 10 percent level, respectively. Standard errors are clustered at the district level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 11,
+        "text": "repatriates. First, I assess pre-shock political outcomes, including vote shares for far-right and rightwing candidates in 1956, for Francisme in 1936, for Action Fran ̧caise in 1919 and the ratio of Nazi collaborators during World War II (Cag ́e et al., 2023). 28 Notably, many Nazi collaborators later aligned with the pro-Algeria far-right, contributing to its revival in the 1970s (see section 2.4). The analysis reveals that the 1968 repatriate share is not significantly related to either Nazi collaboration or nationalist voting patterns before 1956. This suggests that municipalities receiving repatriates were not inherently predisposed toward right-wing extremism. However, in 1956, municipalities that welcomed repatriates were more likely to vote for far-right parties and less likely to support right-wing parties than other municipalities in the same region. However, this pattern disappears when comparing municipalities within the same district. Next, I regress other municipal 28 Collaboration in France during World War II refers to the cooperation between the Vichy regime and Nazi Germany following the occupation of France in 1940.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 5,
+        "section_name": "Data",
+        "paragraph_id": 12,
+        "text": "indicators on the 1968 share of repatriates. Within regions, the 1968 repatriate share correlates with real estate capital, average income, and the share of refractory priests, a proxy for religiousness. 29 However, these correlations mostly disappear when controlling for district fixed effects, except for the relationship between the 1968 repatriate share and average income at the municipal level. I further analyze the correlation between the 1968 share of repatriates and both political and economic trends before the repatriation shock. To begin, I examine whether the repatriates’ settlement was linked to pre-shock political trends by analyzing changes in right-wing vote shares from 1945 to 1958 and changes in far-right vote shares from 1956 to 1958 (since no far-right candidates ran before 1956). Column (6) shows that a 1pp increase in the 1968 repatriate share corresponds to a 0.006pp rise in far-right vote share between 1956 and 1958—a small change, given that the far-right vote share dropped by an average of 9.76pp during this period. At the district level, the repatriate share is not significantly associated with changes in right-wing voting. In addition, I assess the impact of the 1968 repatriate share on changes in municipal indicators between 1956 and 1961. The results suggest no significant correlation, except for a rise in average income relative to the national average, which I later control for in my main specification. This adjustment does not alter the primary findings. 30",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "Table 3 presents the estimates for β from specification (2), focusing on elections held between 1945 and 1969. These estimates aim to capture the short-term effects of the repatriation shock. The coefficients in Column (1) show the average effect of the repatriation shock on voting outcomes over that period. The coefficient in Column (1) shows an expected 0.18pp increase in the far-right vote shares resulting from an increase of the share of repatriates by 1pp. I argue that the effect observed is not a reaction from pre-existing natives to the repatriates but rather due to the voting of the repatriates themselves. As explained in Section 2.3, not only were the French Algerians slightly more conservative than the mainland voters, but the far right campaigned in the repatriates’ favor in the 1960s. It criticized the decision of the French government to leave Algeria and supported financial reparations for the repatriates. Hence, the far right was widely recognized as promoting the political demands of the repatriates. During the 1965 presidential election campaign, Tixier-Vignancour, a former lawyer for the OAS and an ardent defender of French Algeria campaigned against De Gaulle (the sitting president and conservative candidate). In this election, a vote for the far right was also a vote of opposition to De Gaulle. A repatriate interviewed by Emmanuelle Comtat reported: ‘Of course, all the repatriates voted against de Gaulle! That’s for sure, absolutely! Yes! A 29 ‘Refractory priests’ refers to clergy who refused to pledge allegiance to the Civil Constitution of the Clergy during the French Revolution, which aimed to bring the Church under state control. 30 See Table F5 in the Appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "Vote shares VARIABLES Far right Right Center Left Far left AlgRepShare m · 1 e ≥ 1965 0.180[FORMULA] -0.013 0.020 -0.057** -0.026 (0.0523) (0.0171) (0.0126) (0.0252) (0.0167) Observations 76,291 255,852 290,147 239,132 252,811 Number of municipalities 30,066 34,497 34,547 34,543 34,544 Notes: The table presents the estimated β from specification (2) for both parliamentary and presidential elections between 1945 and 1969. The coefficient β represents the expected change in V oteShare me , measured in percentage points (pp), for every 1pp increase in AlgRepShare m . I control for the proportion of foreign individuals, the proportion of high school graduates among those aged 25 and older, the proportion of farmers, workers, and unemployed individuals, and the percentile ranking of municipality size in 1961. I also control for election-district fixed effects and municipality fixed effects. The number of observations varies, as the outcome depends on the presence of a candidate from a specific political orientation in each election. [FORMULA] , **, and * denote significance at the 1 percent, 5 percent, and 10 percent level, respectively. The standard errors are clustered at the district level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "guy who throws you out, you’re not going to vote for him, right?’ 31 (Comtat, 2009). The impact of the repatriation shock on left-leaning parties is non-negligible. As explained in Section 2.3, the repatriates held the left-leaning parties responsible for the loss of French Algeria. As one repatriate said: ‘The pieds-noirs also harbored a lot of resentment towards the far-left parties, which did everything to make us leave Algeria.’ 32 (Comtat, 2009). Subsequently, left-leaning parties were not particularly supportive of the repatriates. In the summer of 1962, as two-thirds of the French Algerian repatriates arrived in Marseille, the city’s socialist mayor, Gaston Defferre, famously declared, “Have them readapt elsewhere” ( “Qu’ils aillent se r ́eadapter ailleurs” ). This statement captured the sentiment of many mainland natives who viewed the repatriates as opportunistic settlers. The mainland population did not always welcome the repatriates with open arms. According to a Sofres survey, 53% of the French population thought that the French Algerian repatriates did not do what it took to integrate into French society in September 1962. Table D1 presents the opinions on government aid to the repatriates by political affiliation. 26% and 23% of the far-left and left-wing voters thought that the State had spent too much money on the resettlement of repatriates. Compared to only 19% and 13% of far-right and right-leaning voters. 33 Regarding financial reparation for the repatriates, 14%, and 9% of the far-right and right-wing voters thought the State should compensate all of them for their lost assets. On the other side of the political scale, 48% and 43% of the far-left and left-wing voters believed the French government should only compensate the most disadvantaged repatriates. Only 17% of the far-right voters thought so. Natives who were critical of the repatriates 31 ‘C’est sˆur que tous les rapatri ́es ont vot ́e contre de Gaulle ! C ̧a, c’est sˆur et certain, ah oui ! Un type qui vous fout dehors, on va pas voter pour lui, hein !’ 32 ‘Les pieds-noirs en voulaient aussi beaucoup `a des partis... aux partis d’extrˆeme gauche, qui ont tout fait pour qu’on quitte l’Alg ́erie.’ 33 Those statistics are from a Sofres survey carried out between May 6 and May 14, 1970 with a national sample of 1,000 people - men and women - aged 21 and over.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 6,
+        "text": "In the following section, I explore alternative explanations of the short-term positive effect of the repatriation shock on far-right vote shares. Natives’ unemployment and potential far-right voting Hunt (1992) and Edo (2020) found that the repatriation shock increased unemployment in the receiving areas. 34 This rise in unemployment could have caused the observed increase in far-right voting, i.e., unemployed natives might have voted for the far right. I use the 1954 and 1962 census data to determine whether the far-right rhetoric might have attracted unemployed voters. 35 I regress the share of far-right votes on the unemployment rate in 1954 and 1962. Table D2 shows that unemployment was not positively correlated with far-right vote shares in the pre-shock years. Finally, since the far right supported the repatriates, the short-term increase in natives’ unemployment caused by the repatriation shock is difficult to link with the short-term rise in far-right voting in high-inflow districts. Inand outmigration The identification strategy presented in Section 4.2 may not satisfy the stable unit treatment value assumption (SUTVA). The SUTVA implies that the potential outcomes for each municipality m are unrelated to the treatment status of other municipalities. Concretely, the repatriation shock could have impacted low-inflow districts in ways that would bias the above estimates. Individuals politically opposing the repatriates could have moved away from receiving to non-receiving municipalities, or individuals that were politically close to the repatriates moved from the non-receiving to receiving municipalities. Thus, I investigate the impact of the repatriation shock on natives’ migration pattern and estimate the specification model following Peri and Sparber (2011) and Edo (2020):",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "Natives m, 1968 − Natives m, 1962 Population m, 1962 = α 0 + α 1 Repatriates m, 1968 Population m, 1962 + ε e",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "I define natives as individuals born in mainland France. I only consider individuals who were French citizens and were born before 1944, both for the repatriates and for the natives. Thus, I intend to measure the impact of the repatriation shock on the inand outmigration of likely voters. I divide the number of repatriates by population in municipality m in 1962 to avoid an artificial correlation between the dependent and independent variables. Natives 1968 corresponds to the number of pre34 Hunt (1992) studied the impact of the repatriates on the natives’ labor outcomes in 1968 and found that the 1962 migration shock increased unemployment and reduced the natives’ wages. Yet, Hunt could not differentiate natives and repatriates in her wage data. A more recent paper by Edo (2020) uses wage survey data for 1962, 1969, and 1972 to measure the impact of the repatriates on natives’ wages and unemployment. He doesn’t find a significant effect of the repatriates on pre-existing natives’ wages during the 1962 - 1976 period. However, the results hide two opposite effects: the shock-induced wage reduction (1962 - 1968) was followed by a wage increase (1968 - 1976). 35 Unemployment was not a primary political concern at the time. Unemployed individuals are not identified in the electoral surveys in the 1950s and the 1960s (specifically the post-election surveys of 1958 and 1962).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 7,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "existing natives (i.e., natives living in mainland France in 1962) that lived in municipality m in 1968. Estimates in Table F1 indicate an inmigration of natives to districts with a larger share of repatriates. 36 I find that for every 100 incoming repatriates, there were 125 incoming natives. I also find that for every 100 incoming repatriates, 9 pre-existing French from Algeria migrated into the district. 37 I identify the individuals who migrated between 1962 and 1968 using the 25% sample of the 1968 census (see Table F2). The 1968 census allows me to find families and identify mainland-born children and partners of French born in Algeria. I find that French Algerians and French Algerian family members were 14.6pp and 12.7pp more likely to move between 1962 and 1968 than other mainlandborn natives. They also settled in districts that had, on average, higher shares of repatriates than the ones natives settled in (Table F2, Column (2)). Table F2, Columns (3) and (4) also show that the family of French Algerians had more children and were more likely to have had children between 1962 and 1968. It appears that French Algerians already living in France before 1962 moved to regions with higher shares of repatriates to reunite with their community. If this was the case, my results might be upwardly biased. Therefore, I extend the specification by incorporating the change in the share of French Algerians residing in mainland France before 1962 within municipality m between 1962 and 1968. The results, displayed in Table F3, show that this addition does not affect the findings presented in Table 3. Furthermore, I demonstrate that repatriates often settled in areas where natives also migrated between 1962 and 1968. If these incoming natives were more right-wing, it could create an upward bias in my estimates. To account for this, I include the change in the share of natives living in municipality m over the same period. The estimates, shown in Table F4, confirm that this adjustment also does not affect the main results.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "Table 3 presents the estimates for β from specification (2), using data from elections held between 1945 and 2022. These estimates aim to capture the long-term effects of the repatriation shock. A 1pp increase in the share of repatriates led to an average 0.05pp increase in the vote shares for the far right in the 1965 - 2022 period. This is accompanied by a 0.02pp increase in the voting share for the center party. Although the effect is not statistically significant, an increase in the share of repatriates resulted in lower vote shares for left and far-left parties. Figure 4 presents the estimates β e from specification (3). Specifically, it shows the estimated 36 Note that Hunt (1992) and Edo (2020) did not find any significant natives inor out-migration as a result of the repatriation shock. However, they looked at bigger geographical entities, i.e., d ́epartements and r ́egions respectively. Furthermore, they restrict their sample to individuals in the labor force. 37 Pre-existing French from Algeria are French of European descent born in Algeria and living in mainland France as of January 1, 1962.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "Vote shares VARIABLES Far right Right Center Left Far left AlgRepShare m · 1 e ≥ 1965 0.053[FORMULA] -0.014 0.018* -0.020 -0.019 (0.0139) (0.0139) (0.0104) (0.0163) (0.0130) Observations 686,394 975,181 1,037,825 907,522 991,877 Number of municipalities 34,451 34,522 34,572 34,572 34,572 Notes: The table presents the estimated β from specification (2) for both parliamentary and presidential elections between 1945 and 2022. β is the expected percentage point (pp) change in V oteShare me , when AlgRepShare m increases by 1pp. I use the definition of AlgRepShare m from equation (1). I control for the proportion of foreign individuals, the proportion of high school graduates among those aged 25 and older, the proportion of farmers, workers, and unemployed individuals, and the percentile ranking of municipality size in 1961. I also control for election-district fixed effects and municipality fixed effects. [FORMULA] , **, and * denote significance at the 1 percent, 5 percent, and 10 percent level, respectively. The standard errors are clustered at the district level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "impact of the repatriation shock on the vote shares for the far-right, right-wing, and centrist parties. 38 After the surge in far-right voting in 1965 and 1967, the relationship between the repatriation shock and far-right voting weakens from the late 1960s until the early 1980s. Although a 1pp increase in the share of repatriates resulted in an average increase of 0.03pp in Jean-Marie Le Pen’s vote share in 1974, the coefficient is much smaller than in 1965 and 1967. This reduced impact may be due to the limited public recognition of the newly formed Front National (FN) and its leader, J.-M. Le Pen, who received only 0.75% of the vote in the 1974 presidential election. Furthermore, no significant effect of the repatriation shock on far-right voting is observed in parliamentary elections during this period, likely due to the limited number of FN candidates in these elections (see Table C2). The increase in support for center parties shown in Tables 3 and 4 can be traced to elections from 1968 to 1981, when the far right was underrepresented. Notably, the 1968 share of repatriates in a municipality led to increased center-party voting in the 1969 and 1981 presidential elections, both of which lacked a far-right candidate. The effect was the strongest in the 1969 presidential election. In this case, the center appeared to be a reasonable alternative for repatriates reluctant to support either the left or the right. Furthermore, in the 1974 and 1981 presidential elections, the center candidate was Val ́ery Giscard d’Estaing, who had a strong connection to repatriate interests. He was pivotal in passing two major compensation laws for repatriates, enacted in 1970 and 1978—first as Finance Minister under President Georges Pompidou and later as president. However, once Giscard d’Estaing exited the political stage, the support for center parties among repatriates diminished. As France entered difficult economic times, the far right gained in popularity. Figure 4 shows that in 1988, a 1pp increase in the repatriate share led to a 0.09pp rise in the vote shares for J.-M. Le Pen in the presidential election. This increase aligns with the rise of anti-immigration rhetoric 38 Figure 5 shows the estimated impact of the repatriation shock on the vote shares for the far-right, left-wing, and far-left presidential candidates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "Notes: The graph presents the point estimates β e in the specification (3). The figure shows the estimated impact of the repatriation shock on the vote shares for the far-right, right-wing, and centrist parties. Presidential election years are highlighted in bold. β e is the expected percentage point (pp) change in V oteShare me in election e , when AlgRepShare m increases by 1pp. The 1958 parliamentary election serves as the baseline. I use the definition of AlgRepShare m from equation (1). The graph displays the 95% confidence intervals for the estimates. I control for the proportion of foreign individuals, the proportion of high school graduates among those aged 25 and older, the proportion of farmers, workers, and unemployed individuals, and the percentile ranking of municipality size in 1961. I also control for election-district fixed effects and municipality fixed effects. The far-right voting impact estimation is based on 686,208 observations from 34,399 municipalities. The right-wing voting impact estimation is based on 974,555 observations from 34,400 municipalities. The centrist voting impact estimation is based on 1,036,984 observations from 34,400 municipalities. The standard errors are clustered at the municipality level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "by the FN, which became a prominent feature of the far-right during the 1980s. Notably, J.M. Le Pen’s 1974 manifesto for the presidential election did not mention the word ‘immigration’ once. 39 In 1993, his manifesto contained the word immigration/immigrants 8 times, the word foreigners 5 times, and undocumented immigrants twice (see Table E1). Stora (1999) and Comtat (2009) argue that the far right’s fierce anti-immigrant rhetoric solidified its connection with a segment of the repatriate community that harbored strong resentment toward Algerian immigrants. Figure E2 shows that the French Algerians were not only preoccupied mainly with criminality and immigration but also seemed more concerned by those issues (especially immigration) than the rest of the voters. 40 In Figure 4, 39 His campaign focused primarily on fighting communism and strikes, opposing abortion rights, and protecting the pension system. 40 Excerpts from interviews with repatriates on their far-right voting conducted by E. Comtat are included in Appendix E.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 10,
+        "text": "one can see a clear drop in far-right voting in 2007. It was accompanied by a steady rise in rightwing voting between 1997 to 2007. This could be partly due to the conservative party’s strategy to compete with the far right on their territory: immigration. Nicolas Sarkozy, Interior Minister and 2007 presidential candidate, campaigned with a hardline position on immigration. 41 Though the impact of the repatriation shock has been weakening over time, in recent years, there has been a strong relationship between the repatriation shock and far-right voting in parliamentary elections. 42 Table G2 highlights that far-right voters systematically vote at a lower rate than other voters in parliamentary elections. However, the French from Algeria vote significantly more often than the natives (see Table G1 in the Appendix). This is further suggestive evidence that voters from the repatriates’ community might drive the effect observed in parliamentary elections in Figure 4. Finally, Figure 5 illustrates a persistent negative impact of the repatriation shock on far-left vote shares up to 2012. This coincides with the first time Jean-Luc M ́elanchon was a candidate in the presidential election. 43 The decline in left-wing voting is only a short-term phenomenon, with the repatriation’s impact on left-wing voting becoming negligible in later periods.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 12,
+        "text": "My results indicate a long-term impact of the repatriation shock on far-right voting. In this section, I eliminate other potential factors influencing far-right voting. Subsequent migration and unemployment shocks I use the census data from 1945 until 2022 to replace the 1961 share of foreigners with the share of foreigners in municipality m in election e in specification (2). I further interact the ShareForeign me with 1 e ≥ 1965 to account for the impact of migration after the repatriation shock. Similarly, I also replace the 1961 unemployment rate with the unemployment rate in municipality m in election e . Finally, I control for both post-shock migration and unemployment. The estimated coefficients are presented in Table F6. The average effect observed in Table 4 stays unchanged when accounting for subsequent shocks. I also account for subsequent shocks in specification (3). Figure F2 shows the estimates β e in the specification including Unemployement me and Unemployement me · 1 election = e . Figure F3 presents the estimates β e in the specification including ShareForeign me and ShareForeign me · 1 election = e . Finally, the estimated coefficients in Figure F4 result from a specification accounting for subsequent migration and 41 Speaking at a conservative party conference in 2006, he said ‘if there are people who are not comfortable in France, they should feel free to leave a country which they do not love’ . This contained echoes of the slogan first used by Le Pen in the 1980s, ‘Love France or leave it’ (Marthaler, 2008). The results presented in Figure E1 in the Appendix appeared to validate Sarkozy’s decision to target the far-right electorate. 42 The election of the president is always followed by the election of the parliament. In general, the party that won the presidential election wins more than 50% of the seats in parliament as voters prefer giving the government the power to implement its ideas. 43 Jean-Luc M ́elanchon co-founded and served as the primary candidate for the Front de Gauche (Left Front), a coalition of left-wing parties in France established in 2009. The Front de Gauche sought to unite the alternative left as an opposition to the Socialist Party and the traditional right. Although I have classified M ́elenchon and his subsequent party, La France Insoumise , as far-left based on the Front de Gauche’s initial stance, they could also be categorized within the broader left-wing spectrum.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 17,
+        "text": "Notes: The graph presents the point estimates β e in the specification (3). The figure shows the estimated impact of the repatriation shock on the vote shares for the far-right, left-wing, and far-left parties. Presidential election years are highlighted in bold. β e is the expected percentage point (pp) change in V oteShare me in election e , when AlgRepShare m increases by 1pp. The 1958 parliamentary election serves as the baseline. I use the definition of AlgRepShare m from equation (1). The graph displays the 95% confidence intervals for the estimates. I control for the proportion of foreign individuals, the proportion of high school graduates among those aged 25 and older, the proportion of farmers, workers, and unemployed individuals, and the percentile ranking of municipality size in 1961. I also control for election-district fixed effects and municipality fixed effects. The far-right voting impact estimation is based on 686,208 observations from 34,399 municipalities. The left-wing voting impact estimation is based on 906,800 observations from 34,400 municipalities. The far-left voting impact estimation is based on 991,044 observations from 34,400 municipalities. The standard errors are clustered at the district level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 18,
+        "text": "unemployment shocks. The estimates in Figures F2, F3 and F4 indicate that the results observed in Section 6.1 cannot be explained by a reaction to subsequent migration to and/or unemployment in municipalities where the repatriates settled in 1968. Movement of the repatriates after 1968 The claim that the rise in far-right voting stems from the repatriates’ community depends on the distribution of repatriates across electoral districts remaining relatively stable over time. Using the EDP, I can estimate the number of repatriates at the electoral district level after 1968. 44 Figure F8 shows the estimated share of repatriated voters, overall potential voters, from 1968 until 2017. As expected, the share of repatriates decreases over time but remains relatively high in southern France, suggesting they tended to remain in their initial settlement 44 The EDP is a small sample drawn from the census, and I do not have enough observations to estimate the repatriates’ locations at a more detailed level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 9,
+        "section_name": "Results",
+        "paragraph_id": 19,
+        "text": "areas. Other French Algerians I show in Section 5.2 that the repatriation shock was accompanied by the in-migration of French Algerians who arrived before 1962 and their family in municipalities where the repatriates settled. Figure F1 shows that including them in the specification does not reduce the effect shown in Figure 4. Similarly to the results presented in Section 5.2, including French Algerians who arrived before the shock do not impact the main results. Leave-one-out Figure F9 shows that the results presented in Section 6.1 are robust to leaving each one of eight broadly defined regions out. I exclude the possibility of the results being driven by one region specifically.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 10,
+        "section_name": "Further robustness tests",
+        "paragraph_id": 0,
+        "text": "The 1968 settlement of repatriates Despite the government’s incentives aimed at discouraging settlement in southern d ́epartements , the repatriates had a relatively unrestricted choice when deciding where to settle in mainland France (see Section 2.2). 45 Consequently, the long-term political trends observed in Section 6.1 could be influenced by unobserved factors that lead to varying political outcomes across municipalities. Although Table 2 shows no significant voting trends correlated with the 1968 share of repatriates before 1962, I leverage the 1962 census to estimate the historical distribution of the French from Algeria in 1954. I calculate the proportion of French Algerians living in municipality m in 1954 as follows:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 10,
+        "section_name": "Further robustness tests",
+        "paragraph_id": 2,
+        "text": "I use PropFrenchAlgerian m, 1954 as an instrument for the 1968 share of repatriates in municipality m (Edo, 2020). The key identifying assumption is that, once I control for other factors, the local conditions that influenced the settlement of the French from Algeria in 1954 are unrelated to changes in voting behavior after 1962. The historical distribution of immigrants is a good predictor of subsequent inflows because established networks make it easier for newcomers to settle (Bartel, 1989; LaLonde and Topel, 1991). Furthermore, I show no significant changes in vote shares correlated with the proportion of French Algerians living in municipality m in 1954. Table F7 demonstrates no significant increase in far-right or right-wing voting in the municipalities where French Algerians lived in 1954. The first stage of the Two-Stage Least Squares regression confirms that the instrument is not weak, with a Kleibergen-Paap F statistic of 19.97. Table F8 shows the results for specification (2) in the short term. The coefficients are larger and more significant in the short term, potentially reflecting how pre-existing French Algerians aligned their voting behavior with that of the repatriates following the repatriation shock. In specification (3), I use PropFrenchAlgerian m, 1954 as an instrument for 45 See Appendix B for an exact description of the government measures.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 10,
+        "section_name": "Further robustness tests",
+        "paragraph_id": 3,
+        "text": "AlgRepShare m with both variables interacted with elections dummies. Figure F5 shows that the IV estimation further provides larger estimates. The trend is similar to my main results. Yet, the coefficients become insignificant after 2002. Heterogeneous impact of the repatriation shock Callaway et al. (2024) establishes that, even under the strong parallel trends, the estimates ( β in equation 2 and β e in equation 3) do not amount to the average of Average Causal Response (ACR) parameters weighted by the population distribution of the dose. For declining distributions like is the case here (see Figure C1), Callaway et al. (2024) find that the TWFE estimate puts less weight on the most common doses below the mean, and more weight on the rarer doses above the mean. Thus, I take the logarithm of the independent variable AlgRepShare m . As a result, the shock variable is normally distributed (see Figure F6). All the municipalities for which AlgRepShare m = 0 are excluded from the estimation, resulting in the exclusion of 22,879 municipalities. The results using Log ( AlgRepShare m ) are presented in Tables F9 and F10 as well as Figure F7. The coefficients are significant until 2002. After that year, the impact of the shock becomes insignificant. In the 2017 and 2022 presidential elections, the repatriation shock even shows a negative effect on far-right vote shares. This pattern aligns with the trend observed in the IV estimates in Figure F5.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Two-Way Fixed Effects (TWFE)",
+            "Two-Way Fixed Effects (TWFE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Panel Data and Fixed Effects"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 0,
+        "text": "Over time, the impact of the repatriation shock on far-right voting has weakened. Robustness checks indicate that, after 2007, this effect becomes negligible. As the repatriate population naturally declines, questions remain about its lasting political legacy.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 2,
+        "text": "The growing presence of the far right over the past decade offers valuable data for analyzing the factors driving repatriates’ support for far-right parties. In the 2022 presidential election, far-right pundit ́ Eric Zemmour, a far-right pundit nostalgic of Nazi Collaboration and himself the son of French Algerians, directly competed with Marine Le Pen for votes. 46 While Le Pen focused her campaign on social issues such as inflation and its effect on the purchasing power of French citizens, Zemmour entered the race with a platform centered on strict immigration policies, the role of Islam in France, and national identity. To examine this further, I conducted a cross-sectional analysis of vote shares for both Zemmour and Le Pen. Table E2-(i) shows that an increase in the proportion of repatriates did not result in higher vote shares for Marine Le Pen (see Column (4)). Yet, a 1pp increase in the share of repatriates in 1968 in municipality m corresponds to an estimated 0.014pp increase in ́Eric Zemmour’s vote share (Column (3) in Table E2-(i). Zemmour’s French Algerian background 46 ́Eric Zemmour’s parents were Arabic-speaking Berber Jews from Algeria, who moved to metropolitan France in 1952, before the Algerian War. He was born in 1958.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 3,
+        "text": "may have contributed to his appeal among repatriates. Following his loss in the presidential race, he founded a new far-right party, Reconquˆete . No significant relationship is observed between the repatriation shock and Reconquˆete ’s vote share in the parliamentary elections. Yet, in both the presidential and parliamentary elections, the share of votes for ́ Eric Zemmour/ Reconquˆete as a portion of the combined vote for Zemmour/ Reconquˆete and Le Pen/ Rassemblement National (previously Front National ) increases significantly with the repatriation shock (+0.041pp and +0.065pp, respectively). This suggests that the stronger support for Reconquˆete in municipalities where repatriates settled is not solely due to Zemmour’s heritage. The regression coefficients are also larger when using electoral district fixed effects instead of district fixed effects, indicating possible local spillover effects.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 5,
+        "text": "While the French Algerians represented around 1.8% of the French electorate (800,000 voters) in 2012, Fourquet and Pratviel (2012) estimated that their descendants constituted 5.2% of the electorate, i.e., 2.3 million voters. In this section, I show suggestive evidence of the transmission of the dislike for the left and anti-immigration opinions from the repatriates to their children. The absence of data on the political preferences of one’s parents does not allow me to show the direct transmission of political preferences between the repatriates and their offspring. Nevertheless, previous literature has shown strong correlations between parents and their children’s attitudes (e.g., Dohmen et al., 2012). Moreover, the literature on trauma suggests that it is transmitted across generations (Lupu and Peisakhin, 2017). First, I provide summary statistics on the voting intentions of the French Algerians and their children for the 2012 presidential election (see Table H2). In line with the results presented in Section 6.1, the share of French Algerians who said they intended to vote for the far-right candidate was 7.5pp higher than the share of natives (aged more than 50) who planned to do the same. Furthermore, 20% of the descendants of French from Algeria intended to vote for the far-right candidate (+2pp in comparison to individuals without French Algerian ancestry) in the presidential election, whereas 28% of the descendants of French from Algeria intended to for the left-wing candidate (-3pp compared to other voters). Table H2 highlights a potential mechanism of diffusion of political preferences from the repatriates to their children. Yet, the table only presents means at the national level. Second, I use the Trajectory and Origin Surveys (TeO and TeO2) to compare the political opinions of the children of French Algerians to the opinions of similar children of natives. The TeO surveys are unique datasets in two crucial aspects: they identify second-generation repatriates in the sample and provide information on the interviewees’ political opinions. More specifically, the interviewees were asked to position themselves on the following political scale:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 7,
+        "text": "Furthermore, the TeO2 (2019-20) survey provides additional information on the interviewee’s opinions on immigration (information that was not provided in the first TeO survey). Indeed, during the interview, respondents were asked to provide their level of disagreement with the following statements:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 15,
+        "text": "I can identify 798 individuals with at least one parent being an Algerian repatriate of European descent. I compare the children of repatriates to children of natives, i.e., individuals born in mainland France without a migration background. 47 I use the answer to the question on political opinions to generate four dummies ( Right i , Center i , Left i , and Neither left nor right i ). Responses of ‘Very right’ and ‘Rather right’ are aggregated into ‘Right’, while responses of ‘Very left’ and ‘Rather left’ are combined into ‘Left’. Finally, I generate four dummy variables based on whether survey participants agreed or not with the statements presented above ( Immig i , GayRights i , Gender i , and Abortion i ). 48 Table H1 shows the results of t-tests comparing the characteristics of both children of repatriates and children of natives. They are, on average, 2.5 years older than their native counterparts. Both groups exhibit similar levels of labor force participation and unemployment. Similar to their parents, the children of repatriates are more likely to have at least a high school diploma at the time of the interview. Finally, they live in households with a monthly income that exceeds that of native children households by 641EUR, on average. 20.89% of the repatriates’ children considered themselves to be 47 Unfortunately, I cannot analyze the Algerian repatriates’ political position as I can only identify 43 of them in the Teo and TeO2 samples. 48 I exclude those who did not answer the question.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 16,
+        "text": "Table 5: Political differences between children of repatriates from Algeria and children of mainland natives",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 19,
+        "text": "Observations 5,829 5,829 5,829 5,829 Mean 0.240 0.126 0.297 0.337 Adjusted R 2 0.046 0.021 0.041 0.079 Source: Trajectory and Origin Surveys (TeO and TeO2). Notes: The table shows the estimated coefficients β from specification (6). In addition to the standard p-values, I calculated p-values corrected for testing multiple hypotheses simultaneously, following Romano and Wolf (2005). While the corrected p-values are somewhat larger, the overall conclusion from the analysis remains unchanged. I control for the age, education level, socio-professional category, employment status, and region of birth of the interviewee, as well as the education level and socioprofessional category of their parents. The TeO surveys have a clustered survey design. The sample comprises persons residing in a municipality in the master sample and identified in the annual census survey. Throughout the analysis, I account for a potential dependence of observations within the same sampling units by clustering at the year-municipality level. Since sampling districts are very small, there are several hundred clusters. I also calculate the bias-adjusted β using the method by Oster (2019) to account for a possible omitted bias. The results can be found in Table H3. The bias-adjusted estimators presented in Columns (3) and (4) remain large. The coefficients presented in Column (1) indicate that the estimators for the right presented in Table 5 are biased upwards. However, my conclusions remain unchanged. [FORMULA] , **, and * denote significance at the 1 percent, 5 percent, and 10 percent level, respectively. .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 20,
+        "text": "‘rather left’, while 24.55% of the children of natives do so. A larger share of the repatriates’ children considers themselves to be ‘rather right’, i.e., 4.79pp more than their counterparts without migration backgrounds. Finally, the data suggest that, on average, repatriates’ children oppose opening up immigration to France more than natives’ children (+4.77pp). I investigate the difference in political opinions between the children of repatriates and those of natives using the following specification:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 22,
+        "text": "with y i representing the political opinions of individual i in the Te0 Survey. RepatriateChild i is a dummy for whether at least one parent of the individual was a repatriate born in Algeria. 49 I control for a wide range of economic and social characteristics. X indiv i represents dummies for age, education, socio-professional category, employment status, and region of birth. X par i contains information on parents’ education and their socio-professional category. TeO 2 i is a dummy for the second TeO survey. 49 The survey does not provide information on the place of residence as of January 1, 1962, as in the census. However, I have information on the country of birth and the parents’ nationalities.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 23,
+        "text": "Table 5 presents the estimated coefficients β from specification (6). On average, the children of repatriates are 6.5pp less inclined to describe themselves as either rather left or very left-leaning (Column (3)). On average, children of repatriates are 3.7pp more likely to define themselves as ‘neither left nor right-wing’ (Column (4)). They are also 3pp more inclined to describe themselves as either rather right or very right-leaning (Column (1)), though the coefficient is not statistically significant. Since individuals tend to vote following their expressed political opinions (see Table H1), my findings suggest that the children of repatriates are less likely to vote for left parties than their native counterparts without migration backgrounds. Table H4 offers additional insights that differentiate between offspring born to couples where both parents are repatriates and those born to a repatriate and another native parent. In Column (3), it becomes evident that children with both parents as repatriates exhibit a more pronounced right-leaning inclination. They are also 8.8pp less inclined to identify as left-leaning. This suggests a potential correlation between repatriates who wed within their community and a higher likelihood of right-leaning political orientations. Additionally, I examine how parental education shapes the political preferences of children of repatriates, providing insight into their socio-economic background. As shown in Table H6, the effects appear to be primarily driven by those with parents of middle education levels. Children with low-educated parents are more likely to lean left and less likely to lean right. In contrast, those with highly educated parents are more likely to position themselves in the political center. These findings imply that resentment may be strongest among middle-educated repatriates, who may feel they lost social status upon relocating from Algeria to France. Finally, I use an alternative control group and compare the children of repatriates to children of immigrants from Spain, Italy, or Portugal (see Table H5). This comparison reveals that children of repatriates are 5.3pp more likely to identify as somewhat or strongly right-leaning. To uncover the reasons behind the right-leaning voting tendencies among children of repatriates, I turn to the second TeO survey (TeO2), which provides insights into the views of these children on immigration and other conservative issues. Table 6-(i) shows that, on average, repatriates’ children oppose opening up immigration to France more than similar natives’ children (+4.6pp). In Table 6- (ii), I compare the opinions of right-leaning children of repatriates and natives. Again, the children of repatriates are more likely to oppose higher immigration to France (+9.6pp). While Table 6 indicates that the children of repatriates are more likely to hold anti-abortion views compared to children of natives, there is no apparent evidence of them having more pronounced conservative opinions regarding gay rights and gender equality. In Table H7, I also examine the impact of parental education on the opinions of the children of repatriates. Consistent with my previous findings, I observe that children of both lowand high-educated parents are not significantly more likely to oppose immigration. Instead, the effect is concentrated among those with middle-educated parents, as shown in Table H6. Based on the results in Tables 6 and H6, anti-immigrant sentiment plays a key role in explaining the right-wing orientation of repatriates’ children.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 25,
+        "text": "VARIABLES Opposes opening up immigration Opposes gay rights Opposes gender equality Opposes abortion",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 11,
+        "section_name": "The political legacy of the repatriation",
+        "paragraph_id": 26,
+        "text": "(i) Full sample RepatriateChild i 0.046* -0.013 0.008 0.023* (0.024) (0.016) (0.017) (0.012) Observations 3,482 3,566 3,645 3,614 Mean 0.627 0.158 0.137 0.071 Adjusted R 2 0.090 0.046 0.014 0.046 (ii) Right-leaning individuals RepatriateChild i 0.096** 0.004 -0.057 0.032 (0.044) (0.047) (0.037) (0.028) Observations 713 711 721 718 Mean 0.853 0.269 0.144 0.084 Adjusted R 2 0.032 0.057 0.011 0.067 Source: Trajectory and Origin Survey 2 (TeO2). Notes: The table shows the estimated coefficients β from specification (6). In addition to the standard p-values, I calculated p-values corrected for testing multiple hypotheses simultaneously, following Romano and Wolf (2005). While the corrected p-values are somewhat larger, the overall conclusion from the analysis remains unchanged. I control for the age, education level, socio-professional category, employment status, and region of birth of the interviewee, as well as the education level and socio-professional category of their parents. The TeO survey has a clustered survey design. The sample comprises persons residing in a municipality in the master sample and identified in the annual census survey. Throughout the analysis, I account for a potential dependence of observations within the same sampling units by clustering the standard errors accordingly. Since sampling districts are very small, there are several hundred clusters. [FORMULA] , **, and * denote significance at the 1 percent, 5 percent, and 10 percent level, respectively. .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 12,
+        "section_name": "Conclusion",
+        "paragraph_id": 0,
+        "text": "This article studies the political impact of repatriates from Algeria on receiving areas in France. I use the sudden arrival of the repatriates to compare preand post-shock political outcomes at the municipality level. An increase in the share of repatriates in 1968 led to a persistent increase in farright vote shares. Initially, the repatriates’ alignment with the far right was motivated by trauma and support for their cause, but later, it was fueled by anti-immigration sentiments. In the last 20 years, the impact of the repatriation shock on far-right vote shares has decreased locally. Yet, I find suggestive evidence that the repatriates’ political preferences have been transmitted to their children. I show that children of repatriates are less likely to position themselves on the left of the political scale, suggesting that the dislike for the left could have been transmitted between generations. I also find that the repatriates’ children oppose immigration more strongly than other children of natives. This aligns with the repatriates from Algeria reacting positively to anti-immigration political messaging and is significant in the context of immigration debates and policies in France. As far-right populists are gaining popularity in developed economies, understanding the roots of farright voting has become crucial to designing policies addressing individuals’ fears and dissatisfaction. Like many European neighbors, France has seen its main far-right party, the Rassemblement National",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1621,
+        "section_id": 12,
+        "section_name": "Conclusion",
+        "paragraph_id": 1,
+        "text": "(previously Front National ), grow from a fringe movement to a mainstream party in the last fifty years. First, this paper highlights the heterogeneity of political experiences and preferences across communities. When investigating the drivers of far-right voting, the persistent preferences of voters must be taken into account. Second, this paper explains current voting behaviors. As of 2012, the repatriates’ community represented 3.2 million potential voters in the presidential election (Fourquet and Pratviel, 2012). Politicians are aware of the political power that this community holds. Sixty years after the repatriation, they continue to address their preferences and concerns.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

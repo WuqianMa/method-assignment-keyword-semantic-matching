@@ -1,0 +1,1047 @@
+[
+    {
+        "paper_id": 1182,
+        "section_id": 1,
+        "section_name": "Colonial India",
+        "paragraph_id": 1,
+        "text": "Abstract Religious groups sometimes resist welfare-enhancing interventions, impacting human capital. Can resistance to secular education arise when rulers sharing religious identity with a group are deposed by foreign powers? Focusing on colonial India, we analyze the impact of shared religious identity between deposed local rulers and religious groups on literacy. Muslim literacy is lower where British authorities replaced a Muslim ruler, and Hindu literacy is lower when the ousted ruler was Hindu. Addressing OVB, we use literacy differences, complemented by an IV approach. Our results show that the effect of shared religious identity on literacy rates depended on the historical ties between deposed rulers and their subjects: in districts where ousted rulers had historical connections to their co-religionists, there was greater resistance to education introduced by the colonizers. JEL Codes: I20, I28, J24, N35, P16, Z12. Keywords: Religion, Culture, Education, Secularization.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 1,
+        "section_name": "Colonial India",
+        "paragraph_id": 2,
+        "text": "* Arya (Corresponding Author): Department of Economics, Ashoka University, Email: yatish.arya@ashoka.edu.in ; Chaudhary: Warwick Business School, Gillmore Centre for Financial Technology, UK, Email: amit.chaudhary.3@warwick.ac.uk . We are grateful to Robert Akerlof, Manuel Bagues, Sascha Becker, Stephen Broadberry, James Fenske, Bishnupriya Gupta, Sharun Mukand, Thijs Ven Rens, Mohamed Saleh, Zaki Wahhaj, and seminar participants at the CAGE-AMES (Warwick), OWL workshop in Economics History (LSE), 7 th Asian Historical Economics Conference (Bangkok), Winter School 2022 (DSE), and the 17 th Annual Conference on Economic Growth and Development (ISI) for their insightful comments. We also thank Latika Chaudhary for sharing some of her digitized data and Shagnik Deb Roy for his excellent research assistance. A special thanks to Anisha Garg for her research assistance and insightful comments.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "Human capital is a key driver of economic progress ( Becker , 1975 ; Becker and Woessmann , 2009 ; Becker et al. , 2020 ). However, some ethnic and religious groups resist adopting modern institutions that promote human capital ( Cantoni and Yuchtman , 2013 ; Lowes and Montero , 2021 ; Martinez-Bravo and Stegmann , 2022 ). For example, Lewis ( 2003 ) highlights the decline of Islamic civilization in the Middle East, attributing it to resistance against adopting education and sciences from their western political rivals. In this study, we examine how religious groups under foreign political rule respond to the introduction of modern education by occupying powers. In particular, we investigate how shared religious identity with a deposed local ruler affects the literacy outcomes of a religious group during colonial rule. This shared identity can significantly influence educational achievements. On one hand, the group associated with the ruler might have enjoyed economic advantages under his reign, enabling them to capitalize on new opportunities provided by the foreign rulers ( Grewal , 2018 ). On the other hand, sharing religious identity with the ousted ruler can also negatively affect literacy. Colonizers may discriminate against groups aligned with the deposed ruler, fearing potential rebellions or threats to their authority ( Metcalf and Metcalf , 2006 ). Simultaneously, these communities might resist educational initiatives introduced by the colonizers as an act of protest against ousting of their local ruler in an effort to preserve their cultural identity ( Belmekki , 2007 ). We explore this question in the context of India’s colonization, where two major religious communities, Hindus and Muslims, coexisted before British rule. During colonization, the British deposed many local rulers, primarily belonging to Hindu and Muslim religions. 1 We construct a novel dataset that links the religion of deposed rulers, sourced from the Imperial Gazetteer of India ( Hunter , 1908 ), with district-level literacy outcomes for Hindus and Muslims using census data from 1881, 1911, and 1921. Our analysis demonstrates that districts with a deposed Muslim ruler exhibit a 1.79 percentage point (p.p.) lower literacy rate among Muslims, while regions with a de1 Other rulers, such as those from Sikhism, are also present in our sample. We discuss this in greater detail in section 2 .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "posed Hindu ruler experience a 1.33 p.p. lower literacy rate among Hindus. Given that the average literacy in colonial India is slightly less than 7%, the magnitudes of these coefficients are non-trivial. These findings remain robust after controlling for various factors, including demographics (population shares, caste, household size), geographic characteristics (coastal areas, latitude, longitude), and local development indicators (occupational classes, port cities, urbanization, and the presence of cities in a district). Despite our inclusion of numerous controls, potential bias from omitted variables remains a concern. For instance, school quality could correlate with our independent variable, influencing the results. To address this, we use the difference in literacy rates between the two religious communities as our dependent variable. This reduces the impact of district-level factors that would similarly affect both groups, such as public expenditure on education and infrastructure, and our results remain robust. However, without pre-colonial census data on literacy in India, bias could persist, particularly if state patronage was distributed along religious lines, as suggested historically ( Khan , 2000 ). Such patronage could have enabled the religious group associated with the ruler to benefit from new educational opportunities under British rule, leading to under-bias in our OLS estimates. To address these concerns, we adopt an instrumental variable (IV) approach. We leverage the spatial progression of the Maratha Hindu rebellion, specifically the distance from the birthplace of Shivaji (a rebel Hindu king), to capture exogenous variation in the religion of deposed rulers. Regions closer to Shivaji’s birthplace were more likely to be conquered by the Marathas , making this IV highly relevant for the religion of the deposed ruler. The key identification assumption is that the distance from Shivaji’s birthplace is uncorrelated with omitted variables that could affect literacy differences between the two religious communities in a district. We test the validity of this assumption through robustness checks in Section 4.2 . 2 Our IV estimates are higher than the OLS estimates, suggesting that the OLS results were under-biased. Exploring the underlying mechanisms, we find that districts where rulers had his2 Falsification tests based on Nunn and Wantchekon ( 2011 ) and other robustness checks for our IV are provided in Section 4.2 .",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Exogenous Variation",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "torical ties with the local population are the ones where sharing religious identity with deposed rulers negatively impacted literacy. Using individual district histories from the Imperial Gazetteer ( Hunter , 1908 ), we construct an indicator variable, following Chaudhary and Rubin ( 2016 ), to capture whether the ruler or his family had historical connections to the local population. While these historical ties alone do not independently affect the literacy gap between Hindus and Muslims, their interaction with the ruler’s religious identity proves highly statistically significant. In this case, the religious identity of the deposed ruler has no direct effect on its own. These results align with historians’ arguments that resistance to things considered British was driven less by generalized religious conflict and more by the nobility and peasantry, protesting the loss of feudal privileges ( Husain , 2013 ). The findings suggest that historical ties between local rulers and their co-religionist subjects fueled resistance to secular education introduced by the British when these rulers were removed from power. If the above argument is correct, then one can argue that had British not deposed these rulers, resistance to British education would likely not have occurred. To explore this further, we examine literacy outcomes in the Princely states—where rulers were not deposed but remained under indirect British rule. We analyze how literacy correlates with the religion of the rulers in these regions. The results show lower Hindu literacy in princely states ruled by Muslim kings, while no negative effect is observed for Muslims under Muslim kings. This supports the hypothesis that if local rulers were not deposed, their co-religionist subjects would not have resisted the secular education offered in the public schools. 3 We also consider other plausible mechanisms that could explain the above results. For instance, Metcalf and Metcalf ( 2006 ) argues that the British deliberately excluded the old Muslim aristocracy from higher government positions as a form of discrimination against a community that had previously held political power. Such exclusion could reduce incentives for Muslims to pursue education, contributing to lower educational outcomes. However, our analysis of British bureaucracy employment records shows that 3 It is worth noting that these results for princely states align with the idea that the pre-colonial economic position of Muslims and Hindus was stronger under their respective kings, as royal patronage often followed religious lines in pre-colonial India.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "the difference in employment rates between Hindus and Muslims is not higher (or lower) in regions where the deposed ruler was Muslim (or Hindu). These findings suggest that discrimination in government employment is not a significant factor contributing to the observed differences in education outcomes between religious communities. 4 We also consider other possibilities like majority-minority dynamics ( Bezin et al. , 2024 ), and role of religious institutions ( Chaudhary and Rubin , 2011 ). We acknowledge that our findings should be interpreted with caution due to data limitations, particularly the lack of census-level data on pre-colonial literacy and economic outcomes. Despite these challenges, historical and anthropological evidence supports our findings, that suggests OLS results are under-biased. Based on this, we highlight four significant findings from our study: First, we observe lower literacy levels among religious groups in British-ruled districts where they shared a religious identity with a deposed ruler. Second, the negative effect on literacy is most pronounced in districts where rulers had historical ties with their subjects. Third, in regions where the British did not depose local rulers, we find no evidence of lower literacy outcomes among religious groups under their respective rulers. Finally, the employment rates of these religious communities in the British administration do not support the hypothesis of discrimination against the religious community that previously held political power.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "Contribution to Literature: To the best of our knowledge, this paper provides the first empirical evidence of the adverse impact on literacy outcomes for groups sharing a religious identity with deposed local rulers under colonial rule. Furthermore, we demonstrate that historical ties between rulers and their co-religionist subjects play a key role in driving this negative effect. This novel contribution underscores how pre-colonial religious affiliations and historical ties interacted with the colonization process to influence 4 While the British may not have discriminated at the employment level against the community of a deposed ruler, they might have provided fewer educational opportunities in terms of school provision and education spending. However, this does not seem to be the case. Given that education spending was determined at the province level in British India ( Chaudhary and Garg , 2015 ), we include province fixed effects in our regression equations, and still find robust results. Moreover, historical evidence suggests that the British ensured that communities lagging in school enrollment (usually Muslims) were eligible for scholarships and reduced fees in public schools (Progress of Education in India, Quinquennial Reviews, 1897–1927, ( Cotton , 1898 )).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 2,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "human capital outcomes. By examining these dynamics, our study adds to the growing literature on the role of pre-colonial factors in shaping long-term development trajectories ( Gennaioli and Rainer , 2007 ; Michalopoulos and Papaioannou , 2013 ; Lowes et al. , 2017 ; Dell et al. , 2018 ; Dincecco et al. , 2021 ). Our paper also contributes to the literature on religion and modernity, building on studies such as Carvalho ( 2013 ), Binzel and Carvalho ( 2017 ), and Bazzi et al. ( 2019 ). While these works explore religious resurgence in modern contexts, there is limited empirical evidence on resistance to modernity based on religious identity and historical ties. Our findings support the hypothesis that Islamic resistance to modern education was tied to the loss of political power, as argued by Lewis ( 2003 ) and Masselos ( 1996 ). We also find similar resistance among Hindus when their rulers were deposed, providing the first empirical evidence of this phenomenon. Additionally, our work adds to the literature on resistance to Western interventions by populations who stand to benefit from them. Previous studies, such as Lowes and Montero ( 2021 ) and Martinez-Bravo and Stegmann ( 2022 ), have explored resistance to medical interventions, while Cantoni and Yuchtman ( 2013 ) and Sakalli ( 2019 ) analyzed resistance to secular education reforms in China and Turkey respectively. We extend this literature by providing empirical evidence consistent with the hypothesis that resistance to Western education in colonial India was driven by opposition to foreign rule ( Masselos , 1996 ; Khan , 1989 ), particularly when it involved the removal of local rulers ( Husain , 2013 ). This finding reveals the complex interplay between colonial education policies and long-term educational inequalities among religious groups. Finally, our study makes a significant contribution to the literature on religion and human capital formation, building on works by Becker and Woessmann ( 2009 ), Saleh ( 2018 ), Cantoni et al. ( 2018 ), Squicciarini ( 2020 ), Bazzi et al. ( 2023 ), and Alesina et al. ( 2023 ). Unlike these studies, which focus on specific religious practices and competition, we emphasize the role of religion as an identity. We show that sharing a religious identity with deposed rulers can negatively affect human capital outcomes, highlighting the importance of religious identity as a determinant of human capital formation. 5 5 This expands the literature on identity and economic outcomes, see Akerlof and Kranton ( 2000 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 3,
+        "section_name": "Background and Data",
+        "paragraph_id": 0,
+        "text": "In this section, we present a concise overview of the historical context and the state of education in India before the 1881 census. First, we outline the political landscape of pre-colonial India, including the British annexation of various kingdoms, and describe the prevailing literacy levels among the population before the introduction of British education policies. Next, we briefly discuss the education reforms implemented by the British following 1854. Finally, we outline the data sources used in the analysis, detailing how they were compiled.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 0,
+        "text": "The Mughal Empire, established in 1526, ruled over a vast region that includes presentday India, Pakistan, and Bangladesh, covering approximately four million square kilometers at its peak ( Turchin et al. , 2006 ). The Mughal dynasty, which adhered to Islam, imbued the empire with a distinct Islamic identity ( Dale , 2009 ). Our analysis focuses on districts within colonial India that were part of the Mughal Empire as of 1707, the year it reached its zenith under Emperor Aurangzeb (Figure A1 ). 6 After Aurangzeb’s death in 1707, the empire rapidly declined, giving rise to numerous smaller states ruled by both Hindu and Muslim kings. In 1757, the British East India Company, initially a trading organization, began its territorial annexations in India ( Metcalf and Metcalf , 2006 ). The Company deposed local rulers and expanded its control, a process that culminated in 1857 after the Indian Mutiny (the First War of Independence), which resulted in the British government taking direct control of the annexed territories. 7 During this transformative period in the Indian subcontinent, substantial economic and social changes occurred, reshaping the political and social hierarchy. Nawab Abdul Lateef, a prominent Muslim educator in colonial Bengal, keenly observed the impact 6 We exclude districts outside the former Mughal Empire from our primary sample, as these areas differ significantly in their precolonial history and demographics. However, our main results remain robust even when these districts are included. See Section B.1 for these results. 7 Only four districts in our main sample were annexed after 1857.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 1,
+        "text": "on his religious community. In 1885, reflecting on his tenure as District Magistrate, he eloquently expressed his observations:",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 2,
+        "text": "The Mahomedans saw themselves left behind in the race of life by their Hindu fellowsubjects, over whom they had not only exercised political power before the British regime, but also, not long before, and even under the British, had maintained a social ascendancy. 8",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 4,
+        "text": "Mahomedan youth kept themselves aloof from the English schools and the new knowledge. This was attributed to the natural pride and the great bigotry of the Mahomedans. The imputation was not wholly unmerited, yet it was not the whole truth. The pride was somewhat a matter of course. It was the obvious effect of history, but no effort was made to soften it. The British government, in the consciousness of irresistible might, felt itself under no obligation to conciliate prejudice. The Mahomedan bigotry, such as it was, was not inherently worse than that of other communities.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 5,
+        "text": "Lateef’s observations offer valuable insights. First, he notes that Muslims, in regions where they held political power before the British overthrew them, enjoyed a form of social ascendancy over Hindus. Second, his observations suggest that Muslims resisted English schools and Western knowledge primarily as a response to losing their historical status as the dominant political and social force. Third, Lateef acknowledges that this resistance was not unique to Muslims but could be a broader reaction among any community deprived of political and social power. Thus, his analysis implies that other religious communities would likely exhibit similar behavior when faced with comparable circumstances. The fact that Muslims had social ascendancy over Hindus where they held political power is hardly surprising. As in Europe, rulers often granted important positions and economic benefits to people of their own religion in medieval India ( Khan , 2000 ; Grzymala-Busse , 2019 ). Losing such patronage might explain the resistance offered by religious groups associated with deposed rulers to British influences. Other historians, 8 Taken from Firdous ( 2015 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 6,
+        "text": "such as Aziz ( 1967 ), Khan ( 1989 ), and Masselos ( 1996 ), have also linked the Muslim community’s resistance to modern education introduced by the British in India to the resentment stemming from the British displacing Muslims as the ruling power. Masselos ( 1996 ) suggests that Muslims, living in a state of nostalgia, clung to memories of their past glories. He writes:",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 7,
+        "text": "It was argued that psychologically they (Muslims) had not recovered from their loss of power when they were supplanted as rulers of the subcontinent by the British and that they lived in the past, in a nostalgic world of former glories. 9",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 8,
+        "text": "While historians extensively discuss Muslim resistance, limited research exists on Hindu resistance in this context. 10 However, when we studied histories of individual districts in the Imperial Gazetteer, we found instances where Hindu peasantry challenged the British when the ruler deposed was Hindu. For instance, the Hindu Raja of Shishgarh , had managed to keep Siswan , an area in Bareilly throughout Ruhela Afghan (Muslim) and Awadh (Muslim) rule around his kingdom. But the British annexed his kingdom in 1850. Husain ( 2013 ) notes that the Hindu peasantry ‘were ready and willing to join their feudal superiors in any attempt to recover their lost position.’ Thus, our paper empirically tests the hypothesis that both Muslims and Hindus resisted Western education due to the loss of political power, filling a gap in the literature and supporting Lateef’s observation. Another important observation that we made while reading Imperial Gazetteer ( Hunter , 1908 ) was that historical ties of rulers with their subjects were much amicable and stronger when they had strong connections to the local population. For instance, consider the Maratha-Rajput dynamic in the late 18 th and early 19 th century in India. Marathas were popular around their capital cities among Hindus because taxes were low, and state patronage was generous. However, as Marathas expanded northward, they subdued Rajput kings. The local population was heavily taxed, and Marathas were unpopular. Sometimes rulers lacked historical ties with their co-religionists for other reasons as 9 See, Page 119 in Masselos ( 1996 ). 10 Some mention how Hindus were disinclined toward Western education linked to Christian missionaries ( Majumdar , 1951 ).",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 4,
+        "section_name": "Historical Background",
+        "paragraph_id": 9,
+        "text": "well. For instance, Banda district was ruled by Ali Bahadur , who was an illegitimate son of Peshwa Baji Rao (a Hindu Maratha ruler) with a Muslim princess. Thus, he was never considered legitimate by either his Muslim or Hindu subjects. Therefore, as in Chaudhary and Rubin ( 2016 ), we use such detailed history from the Imperial Gazetteer to mark historical ties of the rulers with their subjects to study its impact on literacy in a district.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 5,
+        "section_name": "Direct and Indirect British Rule",
+        "paragraph_id": 0,
+        "text": "The British Empire’s control over the Indian subcontinent, beginning in 1757, extended for nearly two centuries. By the mid-19th century, the British had established political dominance over modern-day India, Pakistan, Bangladesh, and Burma, dividing the territories into ”British India” and ”Princely states” (Figure 1 ). Princely states, ruled by hereditary kings, accounted for around 45% of the area and 23% of the population of British India by 1911, with significant variation in size, autonomy, and governance. British policy towards these states evolved through distinct phases: ”ring fence” (1765-1818), ”subordinate isolation” (1818-1858), and ”non-annexation with the right of intervention” (1858-1947) ( Iyer , 2010 ). Initially, the British maintained a buffer against rival empires by not directly controlling native states. After defeating the Marathas in 1818, the East India Company reduced these states’ external autonomy while allowing some internal self-governance. Annexation peaked under Lord Dalhousie (1848-1856), but following the 1857 Mutiny, the British Crown took over from the Company, ending further annexations. As Iyer ( 2010 ) argues, the revolt led to a significant policy shift. To avoid alienating native rulers, the British allowed princely states to retain power, intervening only when necessary. Consequently, most princely states survived until Indian independence in 1947. For this paper, it is crucial to highlight that the colonial education system in the princely states was modelled after the British-administered territories, but local rulers were responsible to implement it ( Chaudhary and Garg , 2015 ). Before examining British educational reforms, we first discuss the state of education in India before the introduc-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 5,
+        "section_name": "Direct and Indirect British Rule",
+        "paragraph_id": 3,
+        "text": "Figure 1—British Territories Notes: This map illustrates the territories annexed by the British and the Princely States in Colonial India. Areas in Blue represent British territories. Those in pink comprise of Princely States, tribal areas, and French and Portuguese territories.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 6,
+        "section_name": "State of Education in the early nineteenth century",
+        "paragraph_id": 0,
+        "text": "Before the British introduced state schooling in colonial India, two types of schools were prevalent: local primary schools and religious schools ( Chaudhary and Rubin , 2011 ). Local schools provided basic education in the vernacular to village boys, while religious schools served the elite, focusing on higher studies within specific religious commu-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 6,
+        "section_name": "State of Education in the early nineteenth century",
+        "paragraph_id": 1,
+        "text": "nities. 11 However, evidence suggests that these local schools had limited success in expanding literacy among the broader population. The earliest systematic surveys on literacy, conducted by Francis Buchanan in the early 19th century, offer a glimpse into literacy levels ( Martin , 1838 ). Another key source is Adam’s Reports, which documented vernacular education in Bengal and Bihar from 1835 to 1838 ( Adam , 1835 , 1836 , 1838 ). These reports provide the first disaggregated data on literacy by religious group in India. Both surveys highlight the poor state of education at the time. Buchanan’s findings (Table A1 ) show literacy rates below 1% in eastern India, indicating low literacy levels in the early 19 th century. Similarly, Adam’s Reports (Table A2 ) from the 1830s reveal that Hindus had higher enrollment in British-run schools compared to Muslims, a pattern consistent with the region’s history of Muslim rule. Although limited in scope, these sources shed light on the lack of widespread education prior to the British government’s reforms. After assuming control from the East India Company in 1857, the British introduced significant changes based on the recommendations in Wood’s Despatch (1854). 12 We discuss more about the Woods’ Despatch and British education policy in India after 1857 in the next sub-section.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 7,
+        "section_name": "Education under the British rule",
+        "paragraph_id": 0,
+        "text": "Before the British introduced state-run education in colonial India, mass schooling was not a priority ( Chaudhary , 2015 ). Initially, the British focused on promoting elite education in English to create a small class of Indians who could assist in administering the colony ( Chaudhary and Garg , 2015 ). However, after the 1857 Revolt, the Crown government adopted the recommendations of Wood’s Despatch (1854), which advocated expanding vernacular primary education for the rural masses. Under this policy, education consisted of government, local board, and private schools, with some private institutions receiving public subsidies (private-aided schools). 13 By 11 For more on the indigenous school system, see: Adam ( 1835 ) and Chaudhary and Rubin ( 2011 ). 12 For more on Wood’s Despatch, see https://babel.hathitrust.org/cgi/pt?id=hvd.32044105337398&vie w=plaintext&seq=655&q1=bengal 20language . 13 See, Progress of Education, Quinquennial Reviews (volumes 1897–1927), discussed in Ghosh ( 2000 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 7,
+        "section_name": "Education under the British rule",
+        "paragraph_id": 1,
+        "text": "the 1860s, a dual system emerged where publicly financed schools coexisted with privately managed ones, both adhering to government education standards ( Chaudhary , 2015 ). Many indigenous religious schools disappeared, while others converted to secularaided schools if they aligned with British policies. However, provinces had autonomy in framing grant eligibility rules. Public spending on education, which accounted for 50-60% of total funding by the 1940s, was uneven across provinces, leading to regional disparities. Local land taxes contributed significantly to this spending, though these taxes were uniform within provinces. Provincial grants further supplemented district budgets, limiting financial differences within districts. However, districts with higher concentrations of upper-caste Brahmans or Christians had more schools due to missionary efforts, influencing educational opportunities in these areas ( Chaudhary and Garg , 2015 ). Despite increased enrollment and spending, literacy gains were modest. By 1931, less than 10% of the population was literate, with public education expenditure remaining below 1% of per capita GDP until independence in 1947 ( Chaudhary and Garg , 2015 ). The British refrained from implementing free or compulsory education, preferring private fees to align household incentives with educational goals ( Chaudhary , 2015 ). Religious and regional disparities persisted. Hindus generally had higher literacy rates than Muslims, though Muslims in western and central regions, such as those annexed from the Marathas, showed better literacy rates. British efforts to reduce educational gaps, such as scholarships for Muslim students in Bengal, improved enrollment but could not fully address regional disparities. 14 In the Princely States, government involvement in public services, including education, was minimal until the mid-19th century. Frequent conflicts – either between states or with the East India Company – meant a significant portion of state budgets was directed toward warfare, leaving limited funds for public goods like education ( Roy , 2011 ). The establishment of schools, railways, and other services typically followed the example set by British India ( Chaudhary and Rubin , 2016 ). However, the extent to which these initiatives were implemented largely depended on individual rulers, as they controlled 14 For details on the documents referenced, see Chaudhary and Rubin ( 2011 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 7,
+        "section_name": "Education under the British rule",
+        "paragraph_id": 2,
+        "text": "public resources and determined spending priorities. Yet, in the context of the paper, it is important to keep in mind that the educational system in the Princely States was modeled after the system in British India.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 7,
+        "section_name": "Education under the British rule",
+        "paragraph_id": 3,
+        "text": "Hindu Muslim Other Figure 2—Religion of Final Ruler removed by British (1757-1857) Notes: This map illustrates the distribution of rulers by their religion across Colonial India directly ruled by the British. Green squares represent territories annexed by the British where the last ruler was Muslim. Orange circles depict those annexed territories where the last ruler was Hindu. Grey triangles denote the ones where the last ruler belonged to religions other than Muslim and Hindu.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 8,
+        "section_name": "Data",
+        "paragraph_id": 0,
+        "text": "To construct our dataset, we utilized multiple sources and techniques. First, we relied on the historical atlas by Schwartzberg ( 1978 ) to map the boundaries of the Mughal Empire and aligned these with district boundaries of British India using the Indian Census maps",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 8,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "from Singh and Banthia ( 2004 ). This spatial overlay enabled us to accurately match the extent of the Mughal Empire with later district boundaries. We also created a novel dataset using the Imperial Gazette ( Hunter , 1908 ) to gather information on the religion, dynasty, and year of annexation of deposed rulers (1757–1871). The Imperial Gazette is a comprehensive reference, spanning 26 volumes, detailing socio-economic and historical data of Indian provinces, districts, and towns. We manually extracted the names of rulers and their annexation dates, cross-verifying with other sources like Majumdar ( 1951 ) and Iyer ( 2010 ) for accuracy. Figure 2 shows the district-level religion of deposed rulers in directly ruled British territories, while Table A3 lists the religious affiliations of rulers in districts annexed by the British. Among the districts used from the 1911 census, 96 had deposed Muslim rulers, 53 had deposed Hindu rulers, and 39 had deposed rulers of a different religion or where the deposed ruler’s religion was uncertain due to the complex political climate of the time. 15 We also used the Imperial Gazetteer to code whether the rulers had historical ties with the local population, drawing from the approach of Chaudhary and Rubin ( 2016 ). Approximately 49% of districts in our main sample had rulers with historical ties to the local population, while 26% did not. For the remaining districts, there was insufficient information to determine these ties (see Table A3 ). We only coded rulers based on clear historical evidence, which could introduce a bias as larger districts tend to be better documented, leading smaller ones to be classified as uncertain. However, we performed robustness checks to minimize the possibility of such bias. For the Princely States, we analyzed 117 states for which religion-specific literacy data are reported in the 1931 census, covering nearly 80% of the population and 68% of the area of the Princely States. 16 Using the Imperial Gazette, we determined the religion of rulers in these states, which predominantly adhered to Hinduism, Islam, and Sikhism. We collected data on Indian employment in the British government by digitizing the 1871 civil list, motivated by arguments from historians like Metcalf and Metcalf ( 2006 ) 15 We ensure robustness by excluding districts with uncertain ruler religion in robustness checks. 16 Though India had around 600 Princely States, the census only reports data for larger ones, excluding states in the North-West Frontier Province.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 8,
+        "section_name": "Data",
+        "paragraph_id": 2,
+        "text": "and Ahmad ( 1991 ), who suggested that Muslims were excluded from key administrative roles. The civil lists recorded significant administrative positions, such as district collector/judge at the highest rank, down to Naib Tehsildar or assistant superintendent ( Mcilvenna , 2019 ). 17 We used provincial civil lists from nine British provinces (185 districts) to identify district-level civil servants, categorizing names as Indian or European. Indian names were further classified as Hindu or Muslim to create a dataset on the religious composition of civil servants. Our dataset includes district-level data from the Indian censuses of 1881, 1911, and 1921, covering provinces such as Assam, Bengal, Bihar and Orissa, Bombay, Central Province, Madras, Punjab, and United Province. 18 These censuses provided data on literacy, population, religious affiliation, caste, occupations, and geographical indicators, such as latitude and longitude. For Princely States, we used Hindu and Muslim literacy data from the 1931 census, selected due to its more comprehensive religion-specific literacy reporting compared to earlier censuses. In our analysis, we adhered to the census definition of literacy, considering individuals literate if they could read or write in any language. We excluded individuals classified as ”under instruction” or still learning. The census disaggregated literacy rates for Hindus and Muslims, allowing us to analyze and compare their literacy levels across districts. Table A4 provides summary statistics for 1911 and 1921, showing that average Hindu and Muslim literacy rates were 7% and 6%, respectively, with significant district-level variation. The Hindu-Muslim literacy gap ranged from -17% to 21%, with a high standard deviation of 7%. Muslims comprised an average of 25% of district populations, with Hindus accounting for around 70%. 19 When controlling for Muslim population share in regressions, we retained 370 observations due to missing data in some districts. We also utilized the city list provided by the Indian census and matched the cities 17 The civil lists specifically note the significant administrative roles held by civil servants, which required loyalty towards the crown, and were prestigious enough to receive direct attention of the British. We focus on these as British might discriminate based on religion in these jobs. 18 We excluded large urban centers like Bombay, Calcutta, and Madras due to their differences from rural districts. 19 For the year 1881, the summary statistics of the variables can be found in Table A5 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 8,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "with their corresponding districts in our dataset. To obtain district-level information, we gathered GIS centroids from Donaldson ( 2018 ). We included a list of major medieval port cities from Jha ( 2013 ) to examine their impact on educational outcomes.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 9,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 0,
+        "text": "In this section, we explore how sharing a religious identity with a deposed ruler may influence literacy outcomes of a group under foreign occupation. We analyze various mechanisms and their associated predictions to shed light on the reasons behind this impact. First, we examine the proposition put forward by district magistrate and prominent educator Nawab Abdul Lateef in 1885, which suggests that religious groups resisted British state-run schools and Western knowledge as a response to losing political power to the British. If this argument holds, we would expect lower literacy rates among Muslims in regions where Islamic rulers had directly lost power to the British, compared to regions where they did not hold political authority at the time of colonization. Furthermore, Hindus should also exhibit lower literacy rates in regions where Hindu rulers directly surrendered power to the British, compared to regions where they did not hold political authority during British occupation. However, the argument put forth by Lateef and other historians like Aziz ( 1967 ), Khan ( 1989 ), and Masselos ( 1996 ), assumes a homogeneous religious identity and a favorable association with the deposed ruler. If a religious group demonstrates greater internal divisions or lacks a strong relationship with the ruler, resistance to British occupation may be less pronounced. For Hindus, the caste system contributed to greater fragmentation ( Deshpande , 2010 ), with some castes, like the Mahars , even supporting the British, as in the Battle of Koregaon ( Geppert and M ̈uller , 2015 ). This suggests that the effect of deposed rulers on literacy outcomes might be less significant for Hindus than for the more unified Muslim community. Lateef also observed that Muslims fared better than Hindus in regions where they held political power before British rule. Similarly, Khan ( 2000 ) noted that state patron-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 9,
+        "section_name": "Conceptual Framework",
+        "paragraph_id": 1,
+        "text": "age often aligned with religious lines in medieval India. If the ruler’s religious group enjoyed precolonial advantages, they would be better positioned to benefit from opportunities like modern education. Therefore, without controlling for these advantages, OLS estimates of the literacy gap based on the deposed ruler’s religion could be under-biased, leading to the expectation that IV estimates would exceed OLS estimates. The argument that co-religionists resisted British-led secular education due to the removal of rulers sharing their religion underscores the significance of strong ties between the population and deposed rulers. Using district histories, we coded whether rulers or their families had historical ties to the local population. Resistance to Western education is expected to be stronger in regions where rulers shared such ties compared to those without. The argument above also predicts that if British colonizers and local rulers reached an amicable settlement, the religious group associated with the local ruler would not resist Western education. In Princely states, local rulers were not deposed but instead held responsibilities for local administration and revenue collection on behalf of the British ( Iyer , 2010 ). Hence in Princely states, literacy rates should not be lower for co-religionists of rulers in such regions. Another possibility is that a religious group might not embrace British-led secular education if they don’t receive sufficient returns from it. Metcalf and Metcalf ( 2006 ) suggests that the British discriminated against communities that previously held political power, limiting their opportunities for state employment. This discrimination would likely be reflected in both literacy rates and state employment records. Similarly, if there were high fatality rates among literate elites due to British offensives against subjects supporting the deposed ruler, then this would result in lower literacy rates for co-religionists of the ruling class. If these elites were hiding due to rebellion, they might be under-counted in literacy data, artificially lowering literacy rates for their group. It is important to note that in such cases, these groups would also be underrepresented in state employment statistics. 20 In the next two sections, we use multiple novel 20 Even if some Muslims resist education due to their dislike of the British colonizers who overthrew their king, those who do pursue education may still secure government jobs, provided the British do not discriminate against them. Thus, the hypothesis proposed by Lewis ( 2003 ) and Aziz ( 1967 ) remains valid,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 10,
+        "section_name": "Main Results",
+        "paragraph_id": 0,
+        "text": "Our primary research question examines whether sharing a religious identity with a deposed local ruler impacts the literacy outcomes of a religious group under colonial rule. The historical context of Colonial India provides a rich environment for this inquiry, as Hindus and Muslims lived under rulers of both religions. In British India, where the British governed directly, both religious communities experienced varying treatment across districts. In certain areas, their religious identity coincided with that of the deposed ruler, while in others, it did not. By applying linear regression techniques, we can assess how this shared identity influenced literacy rates. In our analysis, we first focus solely on districts under direct British rule (i.e, where rulers were deposed), with data on Princely states (where rulers were not deposed) considered later in section 4.3 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 0,
+        "text": "Initially, we employ ordinary least squares regressions with an array of district-level controls to estimate equations 1 and 2 , which are presented as follows: Muslim Literacy it = α 1 + β 1 Deposed Ruler: Muslim i + γ ′ 1 X it + ε it (1) Hindu Literacy it = α 2 + β 2 Deposed Ruler: Hindu i + γ ′ 2 X it + μ it (2)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 1,
+        "text": "where Muslim and Hindu literacy is given for each district i in time t (1881, 1911, and 1921). The variable ’Deposed Ruler: Muslim’ in equation 1 is a time-invariant dummy that takes the value 1 if the deposed ruler is Muslim, 0 otherwise. The variable ’Deposed Ruler: Hindu’ in equation 2 is again a time-invariant dummy that takes the value 1 if the deposed ruler is Hindu, 0 otherwise. X it is the set of control variables for district i in time t . The demographic controls in our study encompass various factors, such as the population shares of different religions, population shares of different castes, logarithm of population density and average household size. Additionally, as geographic even if Muslims are well-represented in government jobs in districts where the deposed ruler was Muslim.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 2,
+        "text": "controls, we have included a coastal district indicator dummy, latitude, and longitude of the district centroid. To further mitigate bias, we have also included a set of economic controls, namely occupation classes (industry, agriculture, services), a dummy variable for a district that contains a city (as defined by the census), a medieval port dummy, and a logarithmic share of the urban population.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 3,
+        "text": "Table 1—Association between Religion of Deposed Ruler being Muslim and Muslim Literacy in Colonial India Muslim Literacy Rate (1) (2) (3) (4) Deposed Ruler: Muslim − 0.0121 ∗∗ − 0.0216 [FORMULA] − 0.0213 [FORMULA] − 0.0179 ∗∗ (0.00534) (0.00543) (0.00717) (0.00767) Year Fixed Effects YES YES YES YES Geographic Controls NO YES YES YES Demographic Controls NO NO YES YES Economic Controls NO NO NO YES Observations 546 546 370 370 Notes: This table presents the effect of the deposition of the Muslim ruler on Muslim literacy in a district annexed by the British. The sample consists of all the districts in Colonial India which were a part of the Mughal Empire as of 1707. The explanatory variable, Muslim Deposed Ruler, is an indicator variable taking value one when the religion of the last ruler of the territory annexed by the British is Muslim and zero otherwise. Fixed effects are for the years 1881, 1911, and 1921. Geographic controls include latitude and longitude for each district and a coastal dummy. Demographic controls include population shares of different religions and castes, average household size, and logarithm of population density. Economic controls include shares of different occupation classes (industry, agriculture, et al.), a census city dummy, a Medieval port dummy, and a logarithmic share of the urban population. Standard errors are clustered at the district level. [FORMULA] , ∗∗ , and ∗ indicate significance at 1, 5, and 10 percent critical levels, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 4,
+        "text": "The first column of Table 1 shows a negative relationship between Muslim literacy and the religion of the deposed ruler being Muslim. Muslim literacy is 1.2 p.p. lower in a district where the deposed ruler was Muslim compared to a district where the deposed ruler was non-Muslim. It is statistically significant, even without any controls. Moving to the second column of Table 1 , we introduce geographic controls. Strikingly, the coefficient of interest, capturing the impact of the ruler’s religious identity, becomes more pronounced after accounting for geographic factors. This suggests that Muslim rulers had governed regions with comparatively higher literacy levels during the British",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 5,
+        "text": "colonial period. The presence of a sizable Muslim population may be linked to the sorting of Muslims into economically disadvantaged districts ( Chaudhary and Rubin , 2011 ). To address this, we introduce population share controls for Muslims. Chaudhary and Garg ( 2015 ) argue that districts with higher concentrations of upper-caste Brahmans or Christians had more schools due to missionary effort, so we control for their share in the population (as well as other religions). Furthermore, occupation, often delineated along religious lines, is included as a control. This adjustment is informed by Jha ( 2013 ), who also underscores the presence of prosperous Muslim populations in port cities. Thus, we control for port cities. Caste distribution within a district is another control variable, given its potential influence on literacy. The results after adding these demographic and economic controls are reported in columns 3 and 4. The number of observations in these columns decreases because we do not have these controls for the year 1881. Column 4 of Table 1 shows that the coefficient associated with the religion of the deposed ruler is still negative and statistically significant. Muslim literacy decreased by 1.79 percentage points. This reduction is substantial, considering that the mean Muslim literacy rate in 1911 stood at 6%. Consequently, the literacy rate among Muslims in districts ruled by Muslim rulers is markedly lower (over 30% less) than those governed by non-Muslim rulers during the colonial period. The first column of Table 2 reports the coefficient for the religion of the deposed ruler from equation 2 , without controls. There is a negative relationship between Hindu literacy and the religion of the deposed ruler being Hindu. The coefficient is − 2.7 p.p. and is statistically significant. Column 4 of Table 2 incorporate geographic, demographic and economic controls. We still have a negative association with the religion of the deposed ruler in the years 1911 and 1921, but with a smaller coefficient than the one associated with Muslims rulers for Muslim subjects in Table 1 . As outlined in Section 3 , the impact of deposing the ruler might be mitigated if the religious community of the deposed rulers is characterized by within-group fragmentation. Notably, this fragmentation is considered to be more pronounced within the Hindu community compared to Mus-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 6,
+        "text": "lims due to inter-caste divisions. 21 Given the unavailability of literacy data at the caste level, we are constrained to keep our analysis at the religion level. However, our analysis aligns with the conceptual framework, revealing a diminished effect of the deposed ruler’s religion on Hindu literacy levels.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 7,
+        "text": "Table 2—Association between Religion of Deposed Ruler being Hindu and Hindu Literacy in Colonial India Hindu Literacy Rate (1) (2) (3) (4) Deposed Ruler: Hindu − 0.0270 [FORMULA] − 0.0331 [FORMULA] − 0.0118 ∗∗ − 0.0133 [FORMULA] (0.00484) (0.00466) (0.00507) (0.00490) Year Fixed Effects YES YES YES YES Geographic Controls NO YES YES YES Demographic Controls NO NO YES YES Economic Controls NO NO NO YES Observations 555 555 370 370 Notes: This table presents the effect of the deposition of the Hindu ruler on Hindu literacy in a district annexed by the British. The sample consists of all the districts in Colonial India which were a part of the Mughal Empire as of 1707. The explanatory variable, Hindu Deposed Ruler, is an indicator variable taking value one when the religion of the last ruler of the territory annexed by the British is Hindu and zero otherwise. Fixed effects are for the years 1881, 1911, and 1921. Geographic controls include latitude and longitude for each district and a coastal dummy. Demographic controls include population shares of different religions and castes, average household size, and logarithm of population density. Economic controls include shares of different occupation classes (industry, agriculture, et al.), a census city dummy, a Medieval port dummy, and a logarithmic share of the urban population. Standard errors are clustered at the district level. [FORMULA] , ∗∗ , and ∗ indicate significance at 1, 5, and 10 percent critical levels, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 8,
+        "text": "Despite our efforts to account for numerous factors, certain variables, such as school quality, may have been omitted, potentially influencing literacy rates. To address concerns about bias from such omissions, we present results using a specification that directly estimates the literacy disparity between Hindus and Muslims at the district level. Assuming these omitted variables similarly affect both religious groups, they should not 21 Many Hindu Communities fought against Peshwa rulers who were high caste Maratha rulers. Particularly, the low caste Mahars supported the British against them. See, pages 39-52 in Geppert and M ̈uller ( 2015 ).",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 11,
+        "section_name": "Base Results",
+        "paragraph_id": 9,
+        "text": "significantly impact the literacy gap. This approach helps control for unaccounted geographic, demographic, and economic variables within districts, including differences in government spending on state-run schools and other public infrastructure at the district level. In the literacy gap specification, we regress the difference between Hindu literacy and Muslim literacy in a district on a binary variable representing the religion of the deposed ruler (Deposed Ruler: Muslim, in Panel A ). We again observe a positive literacy gap (Table 3 ), consistent with our previous findings. The Hindu-Muslim literacy gap increases by three-fourths of the sample average (column 2) in regions with a Muslim ruler. To further validate our findings, we altered the dummy variable Panel B . In this case, the dummy takes a value of 1 if the ruler was Hindu. Once again, our results remained robust and maintain statistical significance. 22 Importantly, the expenditure on education under the British differed substantially at the Province level ( Chaudhary and Garg , 2015 ). To deal with this, we introduce province fixed effects in column 3 in both the panels.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 12,
+        "section_name": "Analysis",
+        "paragraph_id": 0,
+        "text": "While the literacy gap specification aims to address factors affecting both communities similarly, it may not fully capture persistent disparities rooted in historical differences tied to the religion of the deposed ruler. Historical evidence suggests that royal patronage in medieval India often followed religious lines ( Khan , 2000 ), and Lateef noted that political dominance also led to social ascendancy before British annexation. If true, the community sharing its religion with the deposed ruler could have been better positioned to access the new education policies introduced by the British. Consequently, 22 One might argue that rather than running two separate introductory regressions, we should run and report a single parsimonious regression with the Hindu-Muslim educational gap as the dependent variable and both variables (‘Deposed Ruler: Muslim’ and ‘Deposed Ruler: Hindu’) as the independent variables. The reason for running separate regressions is that the two independent variables of interest and highly correlated. Given that almost all rulers in India were either Hindu or Muslim, these variables are almost perfectly collinear and thus the problem of multicollinearity arises. Nonetheless, we run this alternative specification as a robustness check (see: Table A24 ). The coefficient associated with Deposed Hindu ruler remains statistically significant and negatively associated with Hindu-Muslim literacy on the right-hand side.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 12,
+        "section_name": "Analysis",
+        "paragraph_id": 1,
+        "text": "Table 3—Literacy Gap OLS Estimates Hindu Lit Rate − Muslim Lit Rate (1) (2) (3) Panel A : Deposed Ruler: Muslim 0.0132 0.0183 ∗∗ 0.0183 ∗∗ (0.00882) (0.00751) (0.00826) Panel B : Deposed Ruler: Hindu − 0.0580 [FORMULA] − 0.0272 [FORMULA] − 0.0252 [FORMULA] (0.00737) (0.00727) (0.00732) Year Fixed Effects YES YES YES Geographic Controls NO YES YES Demographic Controls NO YES YES Economic Controls NO YES YES Province Fixed Effects NO NO YES Observations 546 370 370 Notes: This table presents the effect of the deposition of the Muslim (Hindu) ruler on the literacy gap between the two religions in a district annexed by the British to account for potential omitted variable bias. The sample consists of all the districts in Colonial India which were a part of the Mughal Empire as of 1707. The explanatory variable, Muslim (Hindu) Deposed Ruler, is an indicator variable taking value one when the religion of the last ruler of the territory annexed by the British is Muslim (Hindu) and zero otherwise. Fixed effects are for the years 1881, 1911, and 1921. Geographic controls include latitude and longitude for each district and a coastal dummy. Demographic controls include population shares of different religions and castes, average household size, and logarithm of population density. Economic controls include shares of different occupation classes (industry, agriculture, et al.), a census city dummy, a Medieval port dummy, and a logarithmic share of the urban population. Standard errors are clustered at the district level. [FORMULA] , ∗∗ , and ∗ indicate significance at 1, 5, and 10 percent critical levels, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 12,
+        "section_name": "Analysis",
+        "paragraph_id": 2,
+        "text": "ordinary least squares (OLS) estimates assessing the impact of a Muslim ruler on the Hindu-Muslim literacy gap might be biased downward. To better account for these complexities, we employ an instrumental variable (IV) regression approach. Our instrumental variable leverages the concentric diffusion pattern of the Hindu ( Maratha ) empire, which emanated from the birthplace of Shivaji . Shivaji , a Hindu king who rebelliously challenged the Mughal Empire, came to symbolize the Maratha Hindu identity. Born in 1630 in Junnar , a location in southwest India, Shivaji’s legacy is described by Majumdar, Datta, and Raychaudhuri ( 1958 ) as follows: “The Maratha nation he built up defied the Mughal Empire during and after Aurangzeb’s reign and remained",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 12,
+        "section_name": "Analysis",
+        "paragraph_id": 3,
+        "text": "a dominant power in India during the 18 th century. The Maratha power also competed with the English for supremacy in India till it was finally crushed in the time of Lord Hastings.” As distance is a crucial determinant of an army’s ability to invade a region ( Dincecco et al. , 2021 ), we take distance from Junnar as an instrument for the religion of the deposed ruler. Since the area around Junnar – the birthplace of Shivaji – became the core of the Maratha empire, the places closer to it were more likely to be invaded by the Hindu Maratha kings. Thus these places were more likely to have a Hindu king at the time of annexation by the British. It is important to note that Junnar is located in the district of Poona . Table A6 ranks Poona across various socio-economic variables during the period under study. The district does not appear to be an outlier in most characteristics. For example, Poona ranks at the 63 rd percentile in population size and the 55 th percentile in real income. Additionally, historical records from the Imperial Gazetteer indicate that, before the rise of the Marathas post-1707, Poona was not considered a place of particular significance. 23 We construct a measure of distance using pre-industrial era measures of distance and transportation costs based on Ozak ( 2018 ). 24 As, in our OLS regressions, we control for the same geographic, demographic and economic controls. Table 4 presents our IV results. We see in column 1 of Table 4 that our instrument strongly correlates with the religion of the deposed ruler. Along expected lines, the distance is positively related to the deposed ruler being Muslim. The Kleibergen-Paap Wald F-statistic of the instrument from the first stage is 36.74 (reported in column 2 of Table 4 ) which indicates a relatively low propensity for bias at the second stage. Column 2 reports the IV estimates of the coefficient associated with the deposed ruler being Muslim on the literacy gap between Hindus and Muslims in a particular district. The coefficient is positive and qualitatively in the same direction as the OLS estimate, but the positive effect is larger for the IV 23 Influential literature in economics has shown that distance from places of limited historical importance is uncorrelated with determinants of educational outcomes, for instance, see Becker and Woessmann ( 2009 ) which uses the distance from Wittenberg as an instrument to estimate the effect of Protestantism on educational outcomes. 24 We lose one district when we constrict distance using Ozak ( 2018 ) in eastern Bengal because it is an island district.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 12,
+        "section_name": "Analysis",
+        "paragraph_id": 4,
+        "text": "estimate. This suggests that the OLS estimates are under-biased consistent with the historical evidence that since royal patronage went along religious lines in Medieval India, the rulers religious community was at an advantageous position to avail education under the British. However, differences between OLS and IV estimates can also arise due to the fact that IV estimates the Local Average Treatment Effect (LATE), while OLS estimates the Average Treatment Effect (ATE). In our case, as explored in the next section, the effect of sharing religious identity with the deposed ruler on literacy is heterogeneous in our population. Specifically, the historical ties between the ruling class and the local population play a crucial role. Therefore, we interpret our IV estimates as reflecting LATE. The use of distance from Junnar as an instrument variable is inspired by two influential papers in the literature – Becker and Woessmann ( 2009 ) and Dincecco et al. ( 2021 ). When considering distance from Junnar we find it uncorrelated with the proportion of Muslims, Hindus, or Christians in a district, as well with population density, or the share of people employed in agriculture or industry (Table A7 ). 25 However, it is correlated with trade and commerce levels due to Junnar’s proximity to the western coast, a key outlet for Arabian Sea trade. Therefore, we control for these variables in our IV regression. Additionally, we conduct falsification tests, similar to those by Nunn and Wantchekon ( 2011 ), to address concerns that Junnar’s proximity to India’s coastline might affect the results. 26",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 0,
+        "text": "R.1: Distance from Coastal Cities : One possible objection to distance to Junnar as an instrument is that Junnar is located close to the south-west coast of India, and coastal regions are usually associated with better economic outcomes for Muslims than Hindus. Hindus avoided sea voyages due 25 Household size is significant at 10% but it is not significant if we consider the fact that we are multiple hypothesis testing here. 26 The distance is also correlated to fractions of Brahmins in a district, perhaps because Maratha rulers were patrons of Brahmins. Thus, we control for fraction of Brahmins (along with other socio-economic groups) in our regression.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 1,
+        "text": "Table 4—Literacy Gap IV Estimates Muslim Ruler Literacy Gap Hindu Ruler Literacy Gap (1 st Stage) (2SLS) (1 st Stage) (2SLS) Least Cost Distance 0.0277 [FORMULA] − 0.0330 [FORMULA] (0.00457) (0.00493) Deposed Ruler: Muslim 0.0853 [FORMULA] (0.0194) Deposed Ruler: Hindu − 0.0717 [FORMULA] (0.0147) Year Fixed Effects YES YES YES YES Geographic Controls YES YES YES YES Demographic Controls YES YES YES YES Economic Control YES YES YES YES Observations 368 368 368 368 Kleibergen-Paap Wald F-Stat 36.744 44.771 Notes: This table presents the results of instrumenting the religion of the deposed ruler with distance from Junnar and the effect of this IV on the literacy gap between the two religions in a district annexed by the British to account for potential omitted variable bias. The sample consists of all the districts in Colonial India which were a part of the Mughal Empire as of 1707. The explanatory variable, Muslim (Hindu) Deposed Ruler, is an indicator variable taking value one when the religion of the last ruler of the territory annexed by the British is Muslim (Hindu) and zero otherwise. The IV, distance from Junnar , is a least cost distance measure calculated following Ozak ( 2018 ). Fixed effects are for the years 1881, 1911, and 1921. Geographic controls include latitude and longitude for each district and a coastal dummy. Demographic controls include population shares of different religions and castes, average household size, and logarithm of population density. Economic controls include shares of different occupation classes (industry, agriculture, et al.), a census city dummy, a Medieval port dummy, and a logarithmic share of the urban population. Standard errors are clustered at the district level. [FORMULA] , ∗∗ , and ∗ indicate significance at 1, 5, and 10 percent critical levels, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Two-Stage Least Squares (2SLS)",
+            "Two-Stage Least Squares (2SLS)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Instrumental Variables (IV) & Shift-Share Designs",
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 2,
+        "text": "to religious reasons giving Muslims comparative advantage over them in overseas trade ( Jha , 2013 ) contributing to better outcomes for them compared to Hindus. While we have controlled for port cities and coastal-districts in our regression, a general proximity to sea might be conflating our results. To deal with this issue we conduct falsification tests along the lines of Nunn and Wantchekon ( 2011 ). Our IV strategy rests on the assumption that the religion of the deposed ruler is the only channel through which historical distance from Junnar affects the literacy rates of Hindus and Muslims. If this assumption is correct, then any relationship between distance from the coast and literacy gap between communities should not exist, once distance from Junnar is taken into account. Tables A8 and A9 presents the regression results between the minimum distance of a district centroid from the im-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 3,
+        "text": "portant port cities in seventeenth century India and the literacy gap between Hindus and Muslims in that particular district. 27 Column 1 of Table A8 reports the association between minimum distance from the west coast and literacy gap in an Indian district. We find a strong positive relationship between the shortest distance from western coast and literacy gap (Hindu Literacy Rate − Muslim Literacy Rate) in that particular district. There can be two possible reasons for this result. First, given that Junnar is located close to the south-west coast of India, places farther from the west coast are also farther away from Junnar , and therefore exhibit higher levels of literacy gap between Hindus and Muslims, in line with our IV strategy. However, this relationship can also be driven by Muslims doing better because of their involvement in overseas trade. To see if Muslims are always doing better near coastal regions, we check how distance from the east coast of India is correlated to the literacy gap. Column 1 of Table A9 shows that Muslims are not doing better closer to the east coast. In fact, the coefficient associated with distance to the east coast is negative, though small and statistically insignificant. Hence, a simple proximity to sea routes is unlikely to explain better Muslims and worse outcomes for Hindus. Moreover, when we control for distance from Junnar in both the regressions discussed above, the effect on the literacy gap of distance from both the west coast and the east coast ceases to be significant and coefficients are more than 10 times smaller than the ones associated with distance to Junnar (Column 3 of Tables A8 and A9 respectively). Hence, these results suggest that our instrument works not because it is correlated with the distance to the coast but because it is correlated with religion of the deposed ruler.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)",
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 4,
+        "text": "R.2: Spatial Correlation : A concern raised in recent discourse on the persistence literature has identified standard errors of persistence as a threat to causal interpretation ( Kelly , 2019 ). Voth ( 2021 ) demonstrated that state/province FEs on top of latitude-longitude as control variables could address this spatial correlation problem. We already control for latitude and lon27 These ports are based on the discussion in Jha ( 2013 ). We also incorporate other important ports established by the British. A complete list of ports is provided in Table A11 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 5,
+        "text": "gitude in our regression above. We also add province fixed effects in Table A10 , and find that our coefficients remain robust and are still statistically significant.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 6,
+        "text": "R.3: Historical Land Trade : Since we know that sea-trade in the medieval times affected Hindus and Muslims differently, there might be spillovers to land-based trade as well. Based on Dincecco et al. ( 2021 ), we exclude districts that contained a major historical trade route and Silk Road site. 28 The IV results remain robust (see Appendix Table A13 ). Thus, districts that were historically important to even land-trade do not drive the IV findings. Alternatively, Table A14 in the Appendix indicates that the IV results are robust to the inclusion of these historical trade districts as controls.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 13,
+        "section_name": "Robustness",
+        "paragraph_id": 7,
+        "text": "R.4: Alternative Distance Measures : To show that the specific construction of our instrument does not drive our IV results, we implement two alternatives to measure the distance between Junnar and a district centroid: ruggedness based on Ozak ( 2018 ) and geodesic distance as used by Becker and Woessmann ( 2009 ). Tables A15 and A16 in the appendix show that these alternative measures of computing cost distance yield results similar to the main IV results.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Instrumental Variables (IV)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 0,
+        "text": "Husain ( 2013 ) argues that co-religionists often resisted British rule due to the loss of feudal privileges they had under their local rulers. These historical ties fostered a sense of “natural pride” among subjects, leading them to avoid British-led state schools, as also noted by Nawab Abdul Lateef in 1885. Fortunately, the detailed district histories in the Imperial Gazetteer document the historical ties between rulers and their subjects. We use this information to test whether these ties led religious groups to resist state schooling, resulting in lower literacy rates. We constructed a dummy variable for rulers’ historical ties, based on Chaudhary and Rubin ( 2016 ). This variable is coded as 1 if the ruler or their family held strong 28 The complete list is available in Table A12 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 1,
+        "text": "historical connections with the local population, and 0 if perceived as an occupying force. Districts with uncertain connections were excluded from our main regression, resulting in a sample of 275 districts—approximately 75% of the main sample. Table A3 and Figure A2 display the distribution of this variable, with about 49% of districts having rulers with historical ties and 26% without. The regression equations that we estimate takes Literacy difference between Hindus and Muslims in a given district i at time t , as the dependent variable (Lit diff it ) as the dependent variable, with the religion of the deposed ruler, ruler’s historical ties (RHT i ) and their interaction in a district i as the main variables of interest. We also include the same set of controls as before. Lit diff it − = α 1 + β 1 Deposed Ruler: Muslim i + β 2 RHT i + β 3 Deposed Ruler: Muslim × RHT i + γ ′ 1 X it + ε it (3)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 2,
+        "text": "Lit diff it − = α 1 + β 1 Deposed Ruler: Hindu i + β 2 RHT i + β 3 Deposed Ruler: Hindu × RHT i + γ ′ 1 X it + ε it (4) The outcomes are shown in Table 5 . Column 1 presents the results for our subset of districts where historical ties received a binary value. Although the deposed ruler’s religion has the same effect as seen in Table 3 , the table indicates that the ruler’s historical ties do not independently affect the literacy gap. However, a significant pattern emerges when we examine the districts where rulers shared religious identity and had strong historical ties with the population. The results suggest that the negative effects of the deposed ruler’s religion on literacy are concentrated in districts where rulers shared a strong connection with their subjects. Column 3, which includes province fixed effects, shows that the interaction between the religion of the deposed ruler and historical ties is positive and significant for Muslim rulers. Similarly, this interaction is negative and significant for Hindu rulers. These findings suggest that the resistance to Western education, and consequently lower literacy rates, can be linked to the strong historical ties between co-religionist subjects and their rulers. A potential concern with our findings is that about 25% of the sample is excluded,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 3,
+        "text": "Table 5—Literacy Gap: Sharing Religious Identity and Historical Ties with the Ruler Hindu Lit Rate − Muslim Lit Rate (1) (2) (3) Panel A : Deposed Ruler: Muslim 0.0178 ∗ − 0.0021 0.0043 (0.01037) (0.01452) (0.01195) Ruler’s Historical Ties (RHT) − 0.0020 − 0.0108 − 0.0112 ∗ (0.00513) (0.00738) (0.00630) Deposed Ruler: Muslim × RHT 0.0192 0.0251 ∗∗ (0.01434) (0.01116) Panel B : Deposed Ruler: Hindu − 0.0219 [FORMULA] 0.0057 − 0.0093 (0.00718) (0.00993) (0.00800) Ruler’s Historical Ties (RHT) 0.0003 0.0120 0.0101 (0.00472) (0.00807) (0.00619) Deposed Ruler: Hindu × RHT − 0.0416 [FORMULA] − 0.0280 ∗∗ (0.01355) (0.01136) Year Fixed Effects YES YES YES Geographic Controls YES YES YES Demographic Controls YES YES YES Economic Controls YES YES YES Province Fixed Effects YES NO YES Observations 275 275 275 Notes: This table presents the effect of the deposition of the Muslim (Hindu) ruler on the literacy gap between the two religions in a district annexed by the British to account for historical ties between the rulers’ and their co-religionist subjects. The sample consists of all the districts in Colonial India which were a part of the Mughal Empire as of 1707. The explanatory variable, Muslim (Hindu) Deposed Ruler, is an indicator variable taking value one when the religion of the last ruler of the territory annexed by the British is Muslim (Hindu) and zero otherwise. Fixed effects are for the years 1881, 1911, and 1921. Geographic controls include latitude and longitude for each district and a coastal dummy. Demographic controls include population shares of different religions and castes, average household size, and logarithm of population density. Economic controls include shares of different occupation classes (industry, agriculture, et al.), a census city dummy, a Medieval port dummy, and a logarithmic share of the urban population. Standard errors are clustered at the district level. [FORMULA] , ∗∗ , and ∗ indicate significance at 1, 5, and 10 percent critical levels, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 4,
+        "text": "and this omission may not be random. Since we used district-level histories from the Imperial Gazetteer to determine whether rulers had historical ties with the local population, and more detailed district histories are available for larger districts, smaller districts in our sample might be underrepresented. To address this issue, we conducted a sim-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 5,
+        "text": "ulation exercise, where we randomly assigned the uncertain districts a binary indicator for historical ties. If the omissions are random, we would expect the t-statistic from the simulations to follow a single-peaked, approximately bell-shaped distribution. Figures A3 and A4 illustrate the distribution of the t-statistics for the interaction term from 1000 such simulations. The distribution is single-peaked and appears to be bell-shaped around a tstatistic of 2, indicating that the omitted districts were not systematically correlated with the interaction term. Moreover, the interaction term remained positive in nearly all simulations, with the coefficient being significant at the 5% level around 75% of the time. These results suggests that the omissions do not significantly bias our results.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 7,
+        "text": "The previous results align with the hypothesis that co-religionist subjects resisted secular education in state schools, leading to lower literacy rates for their religious group in British India, as they resented the political power loss suffered by rulers with whom they shared historical ties. If this hypothesis holds, we would expect co-religionist subjects not to resist education in cases where their local rulers were not removed from power. This would indicate that the resistance was tied to the political displacement of rulers rather than a general opposition to education. To explore this, we employ a quasi-experimental approach by examining the literacy outcomes of Hindus and Muslims in regions where their rulers were not deposed by the British during colonization. The British ruled India in two distinct ways, as outlined by Iyer ( 2010 ). First, through direct rule, where administration was under the GovernorGeneral of the East India Company until 1857 and later under the Viceroy of India, who answered to the British Parliament. Second, through indirect rule, where local rulers, in Princely states, administered the population and collected taxes on behalf of the British. These Princely states remained independent until 1947, largely due to the British policy shift after the 1857 Mutiny. Chaudhary and Rubin ( 2016 ) note that education policy in Princely states was modeled on British policy in directly ruled districts, although its implementation varied. By examining literacy outcomes in these indirectly ruled",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 8,
+        "text": "regions, we create a counterfactual scenario, offering insight into the potential literacy outcomes of our primary treated and control groups had their rulers not been deposed. We use the 1931 census data for 117 Princely states for our analysis. We find that Muslims ruled 18 of the 117 states. We go on to estimate the following regression equations: Muslim Literacy i = α 1 + β 1 Muslim Ruler i + γ ′ 1 X i + ε i (5) Hindu Literacy i = α 2 + β 2 Muslim Ruler i + γ ′ 2 X i + μ i (6)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 14,
+        "section_name": "Channel: Historical ties of rulers with local population",
+        "paragraph_id": 9,
+        "text": "The study of religion-specific literacy patterns in the Princely states of India reveal intriguing patterns. Table A17 reports these results. We observe lower levels of Hindu literacy in Princely states governed by Muslim kings, suggesting that Hindu’s were not not doing well under Muslim kings as compared to non-Muslim kings who were mostly Hindus. Moreover, we do not observe any negative effect on Muslim literacy under Muslim kings. These results provide compelling evidence consistent with the idea that only when local rulers were deposed, their religious community resisted education and experienced lower literacy outcomes under colonial rule. 29",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 0,
+        "text": "In this section, we consider alternative explanations for our results, focusing first on the hypothesis proposed by Metcalf and Metcalf ( 2006 ) that British authorities discriminated against the religious group associated with the deposed rulers in administrative appointments. The British administrative system in India had a distinct colonial structure. Lord Hastings laid the foundation of a centralized executive administration with the establishment of the role of the ”Collector,” who oversaw district governance ( Metcalf and Metcalf , 2006 ). The Collector’s primary responsibility was tax collection, with performance largely evaluated by the consistency in meeting tax targets. Beyond this, 29 This evidence from Princely states and historical documents is consistent with the historical fact that royal/state patronage in medieval times (and even under Princely states) in India usually went along religious lines ( Khan , 2000 ). These results also challenge the notion that pre-colonial economic and literacy conditions for Muslims (Hindus) under Muslim (Hindus) rulers were inherently worse.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 1,
+        "text": "the Collector functioned as a magistrate, managed police forces, and often served judicial duties. This pivotal role answered to senior British officials and directed a team of both Indian and European subordinates. The system developed further in 1854 when appointments by Company directors were replaced with a competitive examination process, forming what became known as the Indian Civil Services (ICS). Thus, access to this critical administrative body was contingent on passing a rigorous exam, opening participation to both native Indians and Europeans. However, if the British selectively denied roles of authority to members of religious groups affiliated with deposed rulers, this likely reduced incentives for those groups to pursue education, diminishing literacy rates over time. A related concern might be that in their effort to depose Muslim (Hindu) rulers, British colonial forces could have been targeting literate elites who supported the rulers (or the literate elites could have been taking up arms to resist the colonial forces). If the British offensives led to higher fatalities among literate elites, this could lead to lower literacy rates for Muslims (Hindus). Similarly if the literate elites went into hiding in rural areas or forests in resistance or rebellion after a Muslim (Hindu) ruler was deposed, this could lead to systematic under-counting of literate Muslims (Hindus) in the Census, artificially depressing the literacy rate. If the British discriminated against the religious community of the deposed ruler or if literate elites from that community had either perished or gone into hiding, we would expect these patterns to be reflected not only in literacy rates but also in employment levels in public sector jobs. Specifically, Muslim communities should exhibit lower employment levels in government or state positions in regions where a Muslim ruler was deposed, while Hindu communities should show similarly reduced employment in regions where the British had deposed a Hindu ruler. This similar trend in both literacy and employment data would strengthen the argument that British administrative practices and targeting of educated elites in deposed communities negatively impacted both educational and economic outcomes for those groups. To assess whether employment outcomes mirrored literacy outcomes in regions with deposed rulers, we compiled a novel dataset by digitizing the civil lists of employees",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 2,
+        "text": "working for the British Government across various districts in 1871, using the Quarterly Indian Civil List (October 1871). This dataset centers on civil service jobs, which, as historians like Metcalf and Metcalf ( 2006 ) and Ahmad ( 1991 ) argue, were pivotal to British administration in India. 30 We then estimated the following regression equations:",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 3,
+        "text": "Hindu Emp i − Muslim Emp i = α 1 + β 1 Deposed Ruler: Muslim i + γ ′ 1 X i + ε i (7) Hindu Emp i − Muslim Emp i = α 1 + β 1 Deposed Ruler: Hindu i + γ ′ 1 X i + ε i (8)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 4,
+        "text": "where Muslim Emp i is the number of Muslims employed in the civil list in district i divided by the population of Muslims in the district. Hindu Emp i is defined analogously. X i is a vector of controls at the district level. The findings in Tables 6 reveal no evidence of a negative effect on employment in the civil service for a community based on the religion of the deposed ruler. On the contrary, without any controls, the employment difference between Hindus and Muslims is positively associated with Hindu ruler, suggesting an overrepresentation of co-religionists of the former rulers in these regions (Column 1, Panel B). However, this association diminishes, becoming small and statistically insignificant when controls are applied (Column 2). Nonetheless, the results strongly suggest no systemic British discrimination against the previous ruling class. These results further imply that literate elites from the deposed rulers’ religious communities were not systematically eliminated or forced into hiding; rather, they were able to secure civil service roles if they were literate, willing, and successful in passing the ICS exam. Additionally, incorporating this employment data into our analysis does not alter the coefficients or their significance levels of our main results as shown in Table A18 . Another explanation for the literacy gap could be limited schooling access for the deposed ruler’s community rather than employment discrimination. Since education budgets were set provincially, the British might have reduced funding in provinces with stronger resistance. Including province fixed effects addresses this concern. Addition30 For detailed information on the data collection process, please refer to Sub-section 2 . We chose the year 1871 because this is the first year for which Civil lists are available for all the states included in the 1881 census. Classification of civil servants as Hindu, Muslim, or other was based on name identification.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 5,
+        "text": "Table 6—Employment as per Civil Lists (1871) Hindu Emp − Muslim Emp (1) (2) (3) Panel A : Deposed Ruler: Muslim − 0.0058 − 0.0547 0.0436 (0.03446) (0.03779) (0.04497) Panel B : Deposed Ruler: Hindu 0.1011 [FORMULA] 0.0658 − 0.0118 (0.03719) (0.04299) (0.04749) Geographic Controls NO YES YES Demographic Controls NO YES YES Economic Controls NO YES YES Province Fixed Effects NO NO YES Observations 169 165 165 Notes: This table presents the effect of the deposition of the Muslim (Hindu) ruler on the employment gap in public sector employment between the two religions in a district annexed by the British. The sample consists of all the districts in Colonial India which were a part of the Mughal Empire as of 1707. The explanatory variable, Muslim (Hindu) Deposed Ruler, is an indicator variable taking value one when the religion of the last ruler of the territory annexed by the British is Muslim (Hindu) and zero otherwise. Fixed effects are for the years 1881, 1911, and 1921. Geographic controls include latitude and longitude for each district and a coastal dummy. Demographic controls include population shares of different religions and castes, average household size, and logarithm of population density. Economic controls include shares of different occupation classes (industry, agriculture, et al.), a census city dummy, a Medieval port dummy, and a logarithmic share of the urban population. Standard errors are clustered at the district level. [FORMULA] , ∗∗ , and ∗ indicate significance at 1, 5, and 10 percent critical levels, respectively.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 6,
+        "text": "ally, although educational spending could vary at the district board level, our identification strategy, which focuses on literacy and employment differences at the district level, effectively neutralizes any district-level variation in education funding as a possible driver of our results. This approach ensures that the observed effects are not merely attributable to variation in district-specific educational investment. 31 Bezin et al. ( 2024 ) suggest that majority/minority group dynamics can affect educa31 Historical records on British education policy, including the Quinquennial Reviews of the Progress of Education in India (1897–1927), show no evidence of British discrimination against religious groups sharing the deposed ruler’s faith ( Cotton , 1898 ). Instead, they indicate that the British encouraged educational enrollment among underrepresented communities through scholarships, reduced fees, and the establishment of new schools",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 7,
+        "text": "tional demand for religious groups. Although we control for the population shares of various religious groups in all our regressions, the relationship may not be linear. To address this, we conduct a robustness check by introducing a dummy variable for districts with a Muslim majority and interacting it with the religion of the deposed ruler. Our main findings remain robust to these adjustments (Table A19 ). Additionally, we test whether our results are driven by districts where the Muslim population is an extreme minority. To do this, we re-estimate our models after excluding districts with Muslim population shares under 1%, 2%, and 3%. As shown in Table A20 , our results are unaffected, reinforcing that our findings are not driven by a few low-Muslim population districts. 32 Another potential explanation for the lower literacy rates among a religious community in the region of a deposed ruler lies in the presence of strong religious institutions tied to that religion. These institutions might discourage secular education, leading to reduced literacy rates within that group. Chaudhary and Rubin ( 2011 ) posits that the length of rule can reflect the strength of religious institutions, finding a negative correlation between years of Muslim rule and Muslim literacy rates. To test for the influence of religious institutions linked to the deposed ruler’s religion, we control for this by adding the year of annexation to our list of controls. Later annexation years indicate a longer period of rule under the local ruler, following the approach by Chaudhary and Rubin ( 2011 ). Even with this control, the coefficient on the religion of the deposed ruler remains negative and statistically significant (Table A21 ). One might also be concern about the robustness of our results if the local administrators and the population encouraged to convert to Christianity. Particularly, Once Muslim (Hindu) rulers are deposed, if the literate elites converted to Christianity to preserve access to power, this would lower the average literacy rate among those who remained Muslim (Hindu). Similarly, missionary schools might enroll students from the ruler’s religious community only if they converted. This could lead to a lower average literacy rate among that group not enrolled in Christian schools. 32 Similar tests for Hindus are not possible, as Hindus are a majority in over 95% of districts historically ruled by Hindus, and there are no districts in our sample where the Hindu population is below 1%, 2%, or 3%.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 15,
+        "section_name": "Alternative mechanisms and robustness checks",
+        "paragraph_id": 8,
+        "text": "First, it is important to note that though missionary schools were important in spreading education in India ( Chaudhary , 2015 ), there was never heavy religious conversion in India during colonial rule. The mean of the fraction of christian population in a district in India in 1911 was about 1.2%. Moreover, we have controlled for the fraction of christian population in all our regressions. In Table A22 we also interact this fraction with the religion of our deposed ruler. Our results remain robust to this specification. To further ensure robustness, we addressed potential limitations in classifying the religion of district ruler, given the frequent shifts in political control in pre-colonial India after 1707. In some regions, it was challenging to classify certain districts under the political control of either a Hindu or Muslim king before British colonization, and there were instances where rulers adhered to religions outside these two, such as Sikh rulers in Punjab. To verify that these districts do not bias our main results, we excluded them from the analysis. Table A23 presents these findings, which remain consistent even after removing districts with rulers from ”other” religions, underscoring the robustness of our results.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 16,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 0,
+        "text": "Citizens often strongly identify with their state, showing a willingness to make economic sacrifices to support their government. Evidence consistent with this phenomenon was observed in a study by Fouka and Voth ( 2023 ) during the Greek sovereign debt crisis, where German car sales in Greece declined following a political conflict between the German and Greek governments. Similarly, a 2020 survey in India reported that many citizens claimed to reduce their use of Chinese products following border tensions with China. 33 In the pre-modern era, when citizens were considered subjects, this identification often aligned with the religious identity and strong ties between rulers and subjects. Our research demonstrates that when local rulers were deposed in colonial India, there was a detrimental impact on literacy rates among those who shared religious and his33 For the full story please see https://economictimes.indiatimes.com/news/defence/a-year-after-ind ia-china-faceoff-in-china-43-indians-stopped-buying-chinese-products-localcircles-survey/articleshow/ 83522565.cms .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1182,
+        "section_id": 16,
+        "section_name": "Concluding Remarks",
+        "paragraph_id": 1,
+        "text": "torical ties with the rulers. Our findings are noteworthy because they are consistent with an hypothesis prominently discussed in the context of both India and the Middle east that Muslims resisted secular education in response to the loss of their historical dominance to Western powers ( Ahmad , 1991 ; Lewis , 2003 ). Interestingly, our analysis reveals that Hindus also resisted Western education when they experienced similar political displacement. This underscores the role of pre-colonial historical ties between rulers and their co-religionist subjects in shaping the long-term growth trajectories of these groups. While our study is rooted in a historical context, our study’s implications have relevance to contemporary issues. For instance, the connection between anti-Western sentiment in the Muslim world and military interventions in Muslim countries has been discussed in Military reports by West Point. 34 Our findings suggest that policymakers must consider how interventions garner trust and support from local regimes and populations to avoid unintended negative consequences. Even well-intentioned interventions aimed at improving welfare can backfire if they do not build local trust and support.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

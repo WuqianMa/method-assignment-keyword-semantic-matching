@@ -1,0 +1,994 @@
+[
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 0,
+        "text": "The argument over centralization versus decentralization as primary forms of governance has garnered much attention, both from the academics and the policy makers. Central to settling the question of ideal governance structures is the decentralization theorem set forward by Oates ( 1972 ). Oates asserted that substantial differences among regions are conducive to decentralization, while broader externalities among the regions advocate for centralization. Boffa, Piolatto, and Ponzetto ( 2016 ), on the other hand, provide a theoretical analysis on the issue of accountability in relation to governance, arguing that centralization furthers accountability",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 1,
+        "text": "by consolidating voter information on policy preferences as long as, similarly, regions do not demonstrate excessive heterogeneity. Treisman ( 2007 ) further clarifies that the decentralization referenced in these discussions is representative of political decentralization and delegation - the process where local representatives are elected to make relevant policy decisions on behalf of their constituents. Rondinelli ( 1981 ) notes that other forms of administrative decentralization, on the other hand, pertain to deconcentration and local administration which is the additional bureaucratic layers within the central government’s organizational structure. These geographically extended branches of the central government, in turn, are appointed by and held accountable to the central government. We echo Treisman’s definition of political decentralization within this paper. Various studies point out to efficacy of decentralization in different contexts. Galiani, Gertler, and Schargrodsky ( 2008 ) found that decentralization of school administration in Argentina improved average test scores, though it offered no direct benefits to the region’s poorer segments. Similarly, Faguet ( 2004 ) presented empirical evidence that decentralization measures in Bolivia were reactive to local preferences and needs. It might, however, not be a suitable comparison with centralization due to the increased funding simultaneously with decentralization. For example, half of the newly decentralized regions hadn’t received any funding before the policy changes took effect. Furthermore, Bardhan and Mookherjee ( 2006 ) questioned the robustness of Faguet’s assertions, citing allocation issues towards impoverished communities in West Bengal’s decentralization efforts. Considerable interest has been attributed to the connection between decentralization and overall political patterns. O’neill ( 2003 ) carries out a theoretical and empirical examination on the impact of decentralization efforts, taking into account local and national support levels for the ruling faction. Their findings suggest that decentralization tends to be favored by regimes where the president’s party is strong on a sub-national level but weak nationally. On the other hand, it is an open question whether the constituents prefer one form or another and hold the government accountable for these decisions. In this study, our objective is to provide an overall development perspective on the issue of centralization vs decentralization using a set of sweeping local governance reforms formulated and enacted between December 2012 and March 2014 in Turkey. Similar to China’s experiment as described by Bo ( 2020 ), the Turkish government decided to alter local governance hierarchies. The following major changes have been implemented.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 2,
+        "text": "• Broadening the jurisdiction of existing local municipal governments, large-scale bodies referred to as mega-municipalities.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 3,
+        "text": "• Establishing mega-municipalities in provinces where the population is above a threshold which was inherited from a similar 2004 legislation. The decision processes for those provinces that did not make it to the threshold (regular provinces) remained virtually identical.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 4,
+        "text": "• Removing the partial fiscal and political autonomy of rural neighborhoods in new and existing mega-municipalitie; thereby, reducing the count of highly decentralized regions by approximately 75%.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 5,
+        "text": "In the preamble of “Legislation no: 6360” ( 2012 ), the lawmakers attribute inefficient use of public resources to multiple local administrations with poor planning and coordination. They argue that this fragmentation inhibits the realization of economies of scale, thereby leading to insufficient delivery of key public services. Lawmakers repeatedly emphasize the need for local governments of optimal scale and suggest transitioning towards stronger, broader, and more numerous mega-municipalities to lower public services’ unit costs. This approach is reminiscent of Oates ( 1972 )’s argument favoring centralization in the presence of signficant externalities among sub-units. Local academics approached the government’s plan with mixed feelings. Kele ̧s ( 2013 ), for instance, noted scepticism, highlighting that extending existing mega-munitipalities’ resource dilution, sometimes up to 4-5 times their current territorial jurisdiction, is likely to cripple public good provision. On the other hand, C ̧alcalı ( 2014 ) presents a more positive perspective, highlighting the potential for rural areas to access urban public services. Isolation of the effect of centralization within the framework of these legislative changes is an important task. One might argue that the introduction of mega-municipalities can be thought of indeed a form of decentralization in the context of the strength of central government vis-a-vis overal local governance. We can bypass these debates by considering an analysis of the aforementioned rural neighborhoods, whose functional and fiscal autonomy was highly pronounced before the changes, and completely eliminated afterwards. Addressing the optimality of governance structures requires the determination of what metrics we would be benchmarking against. As remarked previously, we would like to understand the effect of centralization of local governance on overall economic development. As we work with high granularity units for which we do not have adminstrative or survey based development indicators, we will infer these development levels from recognized indicators like nighttime lights (Hodler and Raschky ( 2014 )). We specifically address our queries by utilizing high-quality, high-frequency nighttime light composites, courtesy of NASA’s latest satellites equipped with state of the art sensors. Our search for causal estimates of the effect of centralization on economic development is",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 6,
+        "text": "built on an analogous framework to Dube, Lester, and Reich ( 2010 ) where we use only those neighborhoods that are within a close distance of contiguous border areas. In a difference in differences framework, we consider new and existing mega-municipalities separately, and focus on the border segments of these areas that is neighboring to a regular municipality. As a result, we get a control group in regular provinces that did not receive the treatment of being centralized for the new (and existing) mega-municipality neighborhoods that did. The legislation’s institutional aspects, which enforce uniform application to provinces above a specific population threshold. Furthermore, our dataset allows us to focus on the peripheries of varying types of affected regions, drawing comparisons to the peripheries of unaffected neighboring regions. Given that these peripheral regions were comparable pre-legislation, we can establish a credible control-treatment group relationship. We first provide an in depth analysis of how centralized decision-making, in the context of the autonomy-stripped border neighborhoods of the new mega-municipalities, compares against their decentralized counterparts on the other side of the border. We next extend the analysis to the existing mega-municipalities whose areal reach is expanded. We investigate these two cases separately because existence of inherited local political hierarchies is likely to influence the results, as the existing experience and know-how can tip the results one way or another. In terms of political accountability and overall voter preferences for centralization, it is possible to indirectly measure voters’ experiences by looking at their voting patterns for the enforcers of the new system, namely AKP governments. Our main results show that, between 2012 and 2019, rural neighborhoods in new megamunicipalities radiate on average 9% more nighttime light compared to a control group composed of bordering rural neighborhoods that have not been subjected to the centralizing legislation. We show that this result cannot be purely explained by minor changes to the tax transfers favoring new mega-municipalities. The results also indicate that being part of the treatment group increases population change from 2011 to 2018 by more than 6%. For existing megamunicipalities, a similar exercise fails to detect discernible changes at any interval length. On the other hand, population dynamics are similar to new mega-municipalities. Our results can provide an angle to the question of whether the new policy has had a positive reception among the public. Noting that it was then Prime Minister Erdogan’s party AKP which enacted these changes, looking at AKP’s vote share prior to the changes and comparing it to another election after a sufficiently spaced apart period gives us the ability to gauge public sentiment. The analysis shows no differences between new mega-municipalities and their neighbors in terms of voting for AKP between 2011 and 2018 general parliamentary",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 1,
+        "section_name": "Introduction",
+        "paragraph_id": 7,
+        "text": "elections. This happens despite clear and economically significant improvements on development indicators. On the other hand, existing mega-municipalities’ rural neighborhoods’ AKP votes are on average 2.5% less than their regular neighbors. These two observations taken together point towards dissatisfaction among the electorate and expression of this through democratic accountability channels. These findings are supported Ko ̧c ( 2019 ) in a small scale survey of local leaders critical of expansion of one of the existing mega-municipalities. Highlighting the technical aspects, our analyses point out to the value and significance of enhanced, high-resolution temporal and spatial datasets of nighttime lights. Agriculture is the predominant activity in the rural communities we’re examining. Given that the warmer months typically spur economic activity in these regions, our study sheds light on the more pronounced effects of mega-municipality status during these more productive seasons as compared to the less active months, a conclusion made possible thanks to the availability of NASA’s monthly (and daily) nighttime light radiances. The organization of the paper is as follows. In the next section, we lay down the institutional framework and discuss legislative and financial changes. Next, we provide in depth information about the datasets we are using. This is followed by a discussion of our empirical approach. The subsequent section presents our findings, with a focus on the newly established megamunicipalities. Finally, we conclude the paper with future directions for research.",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 0,
+        "text": "This section will be concerned with providing an overview of Turkish administrative, political, and fiscal hierarchies, while emphasizing the territorial and functional changes brought about by the “Legislation no: 6360” ( 2012 ). Following a brief overview, this section will provide before-after snapshots of local decision making structures and comprehensive financial transfers to local administrations. Following Treisman ( 2007 )’s distinction, administrative and political decentralization give rise to different concepts of geogragraphic classification of public administration.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 2,
+        "text": "Turkey is organized into 81 provinces for the purposes of both administrative delegation and local governance. Provinces are geographically connected disjoint territorial divisions of the country. Figure ( 1(a) ) highlights these provincial boundaries. A second level of geographic classification is the subdivision of provinces into what we call as sub-provinces (ilce) ( 11(a) ). Finally, as shown in Figure( 11(b) ) neighborhood and village boundaries form the lowest level",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 6,
+        "text": "The central government needs to delegate aspects of decision making to local offices. In line with the geographic divisions, governors are appointed by the executive branch at both the provincial and subprovincial levels to oversee and organize centrally assumed functions at the local level. Among the functions delegated to a governor is the management of public safety by heading provincial branch of the central police force. Similarly, lieutenant governor offices perform tasks assigned to them by the central government at the sub-province level.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 8,
+        "text": "Our paper is mostly concerned with the role of elected offices. Different types of governmental levels are installed for these levels. Mega municipalities are local government organizations, and correspondingly areas, that perform responsibilities as outlined by the relevant law 1 in provinces where they are deemed necessary. Starting in 2006, the parliament, with the proposal from the central government, had the ability to ratify creation of a megamunicipal structure in provincial regions with populations more than 750,000. Prior to 2012, the closest example of a new mega-municipality was in 2000, which gave rise to creation of Sakarya mega-municipality. Mega municipal governments are autonomous institutions that are composed of two entities for which there are local elections every 5 years. Mayoral offices are the executive parts of these governments, and the legislative body is the mega municipal council, which is composed of members appointed by district councils by a complex calculation mostly based on population levels. Mega municipalities, in cooperation with the second tier local district governments, are assigned various tasks in their jurisdictions such as",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 12,
+        "text": "• providing a range of public functions ranging from public parks to entertainment and other social projects,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 13,
+        "text": "• maintaining other major public infrastructure framework, such as distribution of clean water. 1. “Legislation no: 5216” ( 2004 )",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 14,
+        "text": "A district will be defined as a local governance unit inside a subregion of a sub-province within both mega and regular provinces. The local governments of these districts are composed of strong executive mayors along with a district councils which are both elected directly by the local residents. Neighborhoods are the smallest units within the districts. They elect neighborhood administrators the scope of whose responsibilities are limited. These administrators typically act as a liaison between local community and higher order local governments and local branches of the central government. Villages are rural, typically sparsely populated local communities in which the major economic activity is agriculture. These units are locally autonomous in their administrative structure in that they are not part of the local governance hierarchy. They elect village headman, who, along with the village council which consists of a handful of elected members of the community, attend to the public needs of the village. Their role as a liaison to the central government is more pronounced as they are the only intermediaries in case the local community would need services that are not viable with the village resources. Apart from the local governmental units outlined above, a Provincial Special Administration is a hybrid administrative structure with the chief executive post being the governor appointed who is appointed by the central government. Its legislative council is elected in local elections by the local residents. It functions as a complementary local body such that the areas that are not covered by the municipalities would receive public services such as waste management, road building and environmental services.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 16,
+        "text": "Before the 2013 legislation, there were 16 mega municipalities, and “Legislation no: 6360” ( 2012 ) added 14 new mega municipalities. The criteria for adding these additional mega municipalities has been the adoption of a population threshold of 750,000 which was grandfathered from a 2006 legislation. Map 2 shows the distribution of mega municipalities after the induction of the legislation. Another important change for the mega municipalities has been the territorial boundaries of the existing and newly created entities. Prior to this legislation, a relatively narrow area (based on a population within a distance criteria) around the urban center has been designated as the territorial limits of the megamunicipality jurisdiction. In the new format, these limits have been expanded to match the provincial boundaries. Figure 3 shows the extent of representative megamunicipalities before and after the changes. In the top panel, we have Trabzon, which is a",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 18,
+        "text": "newly designated mega-municipality, in the middle we have Yozgat, whose municipal structure remained intact, and the bottom panel features Konya, an existing mega-municipality, whose municipal extent increased tremendously in 2013.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 23,
+        "text": "Maps in Figure 4 shows the rural vs urban divide for the examples above, with classification based on pre 2012 structure. Urban subdivisions are called neighborhoods and the rural areas were deemed villages. We will be relying on villages whose autonomy have been reduced as they were amalgamated to the municipal structure. So for this figure, Trabzon and Konya’s rural villages have become neighborhoods whereas Yozgat’s neighborhood/village divide has been kept the same as before.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 28,
+        "text": "Given their rural characteristics, village communities have less need for the urban governance structures typically required in high-density populations environments. Early Turkish Republic laws, like “Legislation no: 442” ( 1924 ), establish the autonomous structure of these villages. These communities bear a minimal tax burden, and most public services are undertaken by community members. In circumstances where external resources are required, Provincial Special Administrations step in to provide necessary services. With the rollout of the centralization efforts after 2012, villages have been transformed into neighborhoods, and their broad autonomy was taken away.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 30,
+        "text": "Our analysis of the recentralization policy requires an in depth understanding of the finances of the parties involved. As Bardhan and Mookherjee ( 2006 ) notes on Faguet ( 2004 )’s analysis of 1994 Bolivia decentralization reforms that twice as much funds were allocated to the decentralized entities compared to the pre-reforem levels, we should be wary of confounding factors while assessing the returns to a policy decision. When comparing transfers in different periods, we will aggregate them by their mega municipal status. The reason is two-fold; first, the transfer formulas have a complex structure because there are multiple local government levels, which we believe that our analysis should be abstracted from. Second, we employ an overall development approach when comparing the effects of recentralization, and regardless of the details on who spends what, it is the overall amount of funds that goes into regional development. Local government incomes are sourced in two modes as shown in table ( 14 ). The first one is based on the total overall taxes collected by the central government. A 6.5% of these tax proceeds is allocated for transfers to local governments. Moreover, part of the funding for mega municipalities is based on tax proceeds within the boundaries of these mega municipalities. 2013 legislation saw a change of 5% to 6% in this department. How the tax transfers are distributed among local administrations can broadly be seen in table ( 15 ). A 30% of funds allocated for the mega municipal districts are sent to the relevant mega municipalities. As the mega municipalities have grown in number, population, and area, the lawmakers appear to have taken this growth into account to some degree. This was reflected in a shift of tax shares from districts in regular municipalities and Provincial Special Administrations to mega municipal districts. Table ( 16 ) shows aggregate tax transfers to different types of provinces, i.e. it shows a tabulation of the sum of tax shares. Finally, table ( 17 ) summarizes our US dollar value of the transfers calculated based on budget tables from the Ministry of Finance and Treasury. The table additionally indicates the adult",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 31,
+        "text": "population numbers 2 . It should be noted that the table is organized in a way to reflect the post 2013 status of these municipalities. So, the numbers observed for new mega municipalities prior to 2013 are actually numbers corresponding to these mega municipalities from a time when they were not mega municipalities. The progression for average population and transfers show the large impact of of the legislation after 2014. Existing mega municipalities expanded to contain around 25% more people, whereas 1/5 of total population moved from regular municipality to the new mega municipality status. There are two main takeaways from the tax transfers summarized in Figure ( 5 ). First, looking at per capita tax transfers, the existing mega municipalities seem to have fewer funds allocated to them by about 15% after the introduction of the boundary changes. On the other hand, new megamunicipalities saw about 10% increase in the total tax funds that flow into their local budgets. These figures compares to relatively flat incomes for the regular provinces.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 33,
+        "text": "The numerical data provided doesn’t fully encapsulate the financial dynamics of a local government office. In the context of mega-municipalities, their budgets encompass a variety of income sources that significantly surpass the value of transfers. These sources include revenue from public transportation systems, water and natural gas supply, rental incomes, and various other establishments. To illustrate the scale of these incomes, the Istanbul Mega-municipality 2. As the legislation took effect on March 2014, the numbers for year 2014 are weighted averages over time.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 2,
+        "section_name": "Institutional Framework",
+        "paragraph_id": 34,
+        "text": "managed a budget of approximately USD 11 billion in 2018 3 . In contrast, the tax transfers from the central government amounted to USD 3 billion for the same period 4 . In general, the implementation of the new law seems to have varied impacts on tax transfers from the central government. The per capita transfers from the central government to a megamunicipality are slightly higher (around USD 30) than those to a regular municipality. However, as the new mega-municipalities have taken on additional responsibilities previously dispersed among other private and public enterprises, the disparity in transfers is less noticeable.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 1,
+        "text": "Our empirical approach require us to have exact knowledge of geographic boundaries of the neighborhoods/villages. To this end, The Geographic Information Systems subdivision of Turkish Environmental and Forestry Ministry has a web page dedicated to providing maps of various scales 5 . We compiled information on the neighborhood/village boundaries from this webpage.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 3,
+        "text": "Part of our analysis will be concerned how the centralizing policies might have impacted the electoral prospects of the policy makers. Turkish Higher Authority on Elections (YSK) and its local branches are responsible for running the elections. YSK is an independent public entity and election results are made available shortly following the elections on the YSK website from where we source our data. These results are available for all the elections at the ballot box level starting in 2009 6 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 5,
+        "text": "Satellite data regarding nighttime luminosity levels have been used in lieu of economic development as it is typical that subnational data of this sort is unavailable and/or unreliable. Henderson, Storeygard, and Weil ( 2012 ) was among to first to realize that comparative development could be analyzed with satellite data from National Oceanic and Atmospheric Assocciation (NOAA). Similarly, Hodler and Raschky ( 2014 ) look at political favoritism in favor of leader birth regions using these nighttime lights. 3. Istanbul-Metropolitan-Municipality ( 2018b ) 4. Istanbul-Metropolitan-Municipality ( 2018a ) 5. Turkish Environmental and Ministry ( 2020 ) 6. Our datasets correspond to 4 general, 2 presidential, 3 local elections and 2 referenda.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 6,
+        "text": "As we are interested in a comprehensive impact of centralizing policies, in an ideal world, we would like to have data on every person’s (or every village’s) income that involves a generous range centered around the legislation period. This would help us provide compelling answers to questions regarding treatment effects and pretrends. Since we do not have access to these data at reasonable granularity, we turn to the nighttime lights as remarked. Apart from DMSP-OLS sensors, new satellites have been employed to provide a clearer picture of the lights reflected off of Earth’s surface. Among these, NASA’s Suomi-NPP and JPSS satellites are equipped with a Visible Infrared Imaging Radiometer Suite (VIIRS) which features a day/night band sensor (DNB). Compared to DMSP-OLS, there are several desirable properties of VIIRS for the purposes of our research as summarized in table 1 . Data availability will yield important consequences for our approach to analysis. DMSP-OLS ends around the time the mega-municipality legislation was enacted whereas VIIRS data does not extend sufficiently back before the legislation. For this reason, we will employ a hybrid approach for the analysis section. VIIRS data will help us understand the differences in lights right before the legislation and several years later. On the other hand, DMSP-OLS data will help us conclude whether the regions that we are interested in and use for control-treatment understanding had pre-trends that were differing leading up to the legislation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 7,
+        "text": "Table 1: Comparison of DMSP-OLS and VIIRS Attribute DMSP-OLS VIIRS Data Availability 1992-2013 2012-present Nighttime Overpass Time Around 19:30 UTC Around 01:30 UTC Spatial Resolution 2.7 km 0.750 km Minimum Detectable Signal 4 × 10 − 5 W m − 2 . sr − 1 3 × 10 − 5 W m − 2 . sr − 1 Noise Floor ∼ 5 × 10 − 6 W m − 2 . sr − 1 ∼ 5 × 10 − 7 W m − 2 . sr − 1 Radiometric Quantization 0-63 0-65535 Calibration None On-board solar diffuser Saturation, Stray Light Artifacts Substantial Saturation, Uncorrectable Stray Lights No Saturation, Corrected",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 8,
+        "text": "Other benefits to using the VIIRS based night lights data is the spatial and temporal resolution as well as data quality. Even though the rasters are produced at ∼ 1km resolution, DMSP-OLS composites are based on a sensor that has ∼ 2.7km resolution at nadir. Moreover, as has been widely documented, DMSP-OLS suffers from saturation problems, which is emergent even for moderately lit areas. VIIRS does not suffer from saturation, while providing pixels at measurement sensitivity levels as much as 10-fold 7 . 7. “Night Lights 2012 - The Black Marble” ( 2012 )",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 9,
+        "text": "Table 2 point to different temporal resolution by provider for VIIRS composites. NASA 8 provides composites ranging from daily through yearly products using processing techniques to remove lunar and snow effects. NASA composites will be the backbone of our analysis. Another popular set of composites is provided by the Payne Institute at Colorado School of Mines 9 .",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 10,
+        "text": "Table 2: VIIRS Products and Properties Product Name Properties VNP46A1 Daily – At Sensor Radiance VNP46A2 Daily - Lunar & Snow correction VNP46A3 Monthly – Based on VNP46A2 VNP46A4 Yearly – Based on VNP46A2 NOAA VIIRS V1 Monthly Monthly – Based on VNP46A1 NOAA VIIRS V1 Yearly Yearly – Based on NOAA VIIRS V1 Monthly",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 3,
+        "section_name": "Data",
+        "paragraph_id": 11,
+        "text": "One of the issues that we will need to understand is how the monthly and yearly composites are produced. NASA states that VIIRS composites use the highest quality lunar & snow corrected images for the corresponding period. It is reported that snowy conditions give rise to up to an 80% of higher radiation values. NASA composites are provided for different snow conditions and to overcome potential issues, we only include composites that take into account snow free observations. Another concern is in regards to the treatment of cloudy days. VIIRS composites (DMSPOLS likewise) are produced using cloud free days. There are two issues associated with removing cloudy days. First, for each pixel in the analysis, there is a risk of mismatch of which days have been removed from observations. For the regions of interest to us, this might create substantial additional noise. Moreover, Turkey’s location in the northern hemisphere results in a particular distribution of cloudy days throughout the year. Namely, warmer months from May through September have a much smaller number of cloudy days. Figure ( 6 compiled from Anderson ( 2021 ) shows this trend. These two concerns lead us to conclude that one can improve on the yearly composites that take into account yearly high quality observations would be averaging over the months throughout the year. This would have a better temporal control for the choice of ”best” pixels by making sure that comparable samples are taken for each month. In what follows in the analysis section, we will use the yearly averages of monthly VNP46A3 data for our baseline models. Subsequently, we will also check robustness of our findings to different temporal specifications of different night light composites. 8. Rom ́an et al. ( 2021 ) 9. Elvidge et al. ( 2021 )",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 0,
+        "text": "We are mainly interested in shedding light on whether centralization bring better regional development, which will be proxied by nighttime lights. It is clear that the global assignment to the treatment and control groups, i.e. being part of the mega-municipality legislation or not, is not randomized. This is due to the fact that villages in mega-municipal regions are inherently different than the others. One of the reasons for this difference is that the law stipulates that high population provinces are eligible for mega-municipal legislation, and this in turn suggests that provinces with stronger urban cores will be mega-municipalities. However, this would imply that villages around these urban cores are different than those of the regular provinces. Our identification strategy builds on the idea that contiguous villages on either side of the provinces are similar to each other and therefore, the treatment assignment around the border is as good as random. We will also perform a pre-trend analysis to establish the similarities. Consider figure 7 . In this map, we focus only on those villages that are at a close proximity to borders that has a new mega-municipality to one side of the border and a regular, untreated, municipality on the other side.(An identical map is produced for the existing mega-municipalities in 8 ) These borders form the basis of this natural experiment. For this specification, we do not",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 1,
+        "text": "include any other border segments as we are interested in how centralizing policies perform in reference to decentralized decisions. By close proximity, we mean to include neighboring villages at the MEGA NEW-REGULAR borders and neighbors of these neighboring villages located within the relevant provinces. The benefits to including these additional neighbors is that, first, it allows us to consider a larger number of data points; hence, improving the precision of our estimates. Second, as long as we maintain the similarity between these second level units prior to the legislation, there is less interference between observations that are further away from each other, thereby better highlighting the impact of mega-municipalization.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 5,
+        "text": "in status of mega-municipality in a plausibly long time interval. To this end, we estimate the following benchmark relationship. For this benchmark, we observe two years, one right before the legislation, and another one in the future.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 7,
+        "text": "where i denotes each unit of observation and b corresponds to the border segment that village i belongs to. Moreover,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 8,
+        "text": "• ∆ln( Lgt ) i is the difference between average light measurements between two years chosen before and after the enactment of mega-municipality legislation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 9,
+        "text": "• MEGA i is a dummy variable denoting whether village i belongs to the mega-municipality treatment group.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 11,
+        "text": "This is equivalent to restricting the sample into the only two periods considered as well as using border area villages as explained above and using the following model.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 13,
+        "text": "Our construction of this model ensures first that unobserved individual heterogeneity is accounted for using the village fixed effects. Moreover, time fixed effects, in other words time trends in the data is controlled flexibly in a way to take into account the possibility of varying trends for different border segments.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 14,
+        "text": "Choosing the right standard error structure is a critical subject in empirical research. In an influential paper, Bertrand, Duflo, and Mullainathan ( 2004 ) paper notes that serial correlation in panel data results in a very dramatic rate of overrejection of null hypothesis which are actually true. Our baseline model that considers only two periods corresponds to one of the effective solutions to the serial correlation issue as suggested by the authors. On the other hand, there are different sources of error correlation within our data. Here, we will focus on the two most significant of these. First, the errors within provinces are not uncorrelated to each other. This is most easily seen by the observation that for those villages turned neighborhoods within a given municipality receive a great deal of their infrastructure",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 15,
+        "text": "investment through the same decision channels at mega-municipal governments. In this regard, one would expect a degree of positive correlation among the outcome for these villages for which we would need clustering at the province level. The other important clustering consideration pertains to the spatial structure within the dataset. Namely, at its most abstracted form, errors around a given border segment are correlated with each other. As in Dube, Lester, and Reich ( 2010 ), the presence of villages that are contiguous to multiple border segments, as well as spatial correlation structure give rise to the necessity of clustering errors at the border segment level. We will use the framework offered by Cameron, Gelbach, and Miller ( 2011 ) for two way clustering that posits that the variance covariance structure would be equivalent to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 17,
+        "text": "We will take advantage of the popular STATA package reghdfe by Correia ( 2019 ) for estimating our models. To check the plausibility of our results, we will take advantage of an experiment similar to that of Bertrand, Duflo, and Mullainathan ( 2004 ) whose details will be laid down in the appendix.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 4,
+        "section_name": "Methodology Empirical Approach",
+        "paragraph_id": 18,
+        "text": "Solon, Haider, and Wooldridge ( 2015 ) provide reasons for when weighting is warranted in causal analysis and they typically recommend to be cautious about this and report weighted and unweighted estimates whenever possible. In line with this observation, we will present our results with specifications for the population weights, squared population weights and unweighted estimates.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 0,
+        "text": "This section is concerned with providing an in depth analysis of the application of the empirical framework. We start by laying down the results for our benchmark scenario. Then, we proceed towards robustness of our results with different specifications. Moreover, we enrich the discussion by considering the features of our modeling choices. The first part of the analysis pertains to the new mega-municipalities and we will discuss existing mega-municipalities afterwards. We conclude the section with an analysis of the electoral analysis.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 2,
+        "text": "Our first set of results is summarized in table 3 where we only consider the new mega-municipalities and their regular neighbors. All columns include fixed effects for the border segments. Morevoer, two way clustering for provinces and border segments are considered. Observations are weighted with the square root of the population size. Boxplot metrics are used to identify outliers. Outliers are not removed, but their values are adjusted to the extreme values of the boxplot metrics. These assumptions will be revisited later in the paper.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 3,
+        "text": "Table 3: Main Results DEPENDENT VARIABLE Change in Light Change in Pop ∆ Lgt 2019 2012 ∆ Lgt 2019 2012 ∆ Lgt 2019 2012 ∆ Pop 2018 2011 (1) (2) (3) (4) MEGA 0.086 [FORMULA] 0.086 [FORMULA] 0.090 [FORMULA] 0.061 [FORMULA] (0.027) (0.026) (0.026) (0.016) ∆ Pop 2018 2011 0.125 [FORMULA] 0.085 ∗ (0.042) (0.048) MEGA#∆ Pop 2018 2011 0.069 (0.068)",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 4,
+        "text": "FE: BNDRY BNDRY BNDRY BNDRY Cluster: PROV+BNDRY PROV+BNDRY PROV+BNDRY PROV+BNDRY Observations 1,971 1,927 1,927 1,927 R 2 0.242 0.254 0.255 0.254 Adjusted R 2 0.229 0.240 0.240 0.240 Note: Regressions for the new mega-municipalities. ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 5,
+        "text": "First column of this table presents the baseline case where we run the equation 1 for the change in light intensity change from 2012 to 2019. Light averages refer to per year, per area average light pixel value of the monthly composites 10 . Formally, the change in light intesity is equal to",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 7,
+        "text": "Taking logarithms allow us to present the results in terms of elasticities. Addition of a constant term (0.1 in this case) is standard in the literature in that it attenuates the effect of noise in light measurements. This main specification shows that incomparison to 2012 levels, in 2019, villages that have been part of a newly minted mega-municipality radiate on average about 8.6% more night light compared to those that remained part of a regular municipality. Moreover, this estimate is 10. This monthly dataset corresponds to VNP46A3 in NASA’s black marble portfolio.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 8,
+        "text": "highly significant at 0.01% levels. Next, we try to understand to what extent the differential effect on the change in light intensity is related to the changes in population dynamics. To this end, we include ∆ Pop 2018 2011 which is the difference in natural logarithms of adult population within the indicated period. To be more precise, this involves the number of people who voted in elections in the years indicated. Voting eligibility in a given location is purely based on the registered home address being in that location, at the village/neighborhood level. Focusing on the voting population allows us to focus on the actual people in an area as opposed to possibly outdated registrations. As turnout in Turkey revolves around a robust 85% level, this metric is a reasonable summary of population dynamics. In the second column of table 3 , we show that including the population change as a predictor for the light change does not seem to have an immediate effect on either the estimate for the effect of being a mega-municipality or its significance. This specification also asserts that the population change is highly correlated with the change in light, measuring a significant elasticity of 0.125 of changes in the light intensity with respect to the changes in population. One might rightly imagine that, as Angrist and Pischke ( 2009 ) note, population change is not a good control because it can be considered as an outcome variable. Nonetheless, the 3rd specification in table 3 allows for interaction of the population change with the change in mega-municipal status. The effect of being a mega-municipality appears to be robust to this specification. Finally, we consider the population change as an outcome variable of being a mega-municipality. The results are striking. Villages that are part of the mega-municipalities retain around 6% more population compared to their neighbors in regular provinces. This happens in a period of shrinking population 11 in these villages due to ageing population, along with migration to more urban areas in search of better jobs, education opportunities etc. Contrasting the story of a new distribution of tax transfers to the new mega municipalities as summarized in Chart 5 , we find it reasonable to argue that these vast differences in highly consequential migration patterns cannot be attributed to about USD30 12 difference in tax transfers from the central government to the provinces.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 9,
+        "text": "We next ask the question of the evolution of the effects of being a mega-municipality over time. To this end, we extend the static framework introduced in the previous subsection ( 6.1 ) and use 11. In terms of absolute numbers, the population of interest in the sample goes down in total by -2.65% for villages in new mega-municipalities and -8.3% for regular provinces. 12. Normalized to the purchasing power of US Dollars in 2010. These figures amount to less than 1% in yearly GDP per capita terms.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 10,
+        "text": "the specification from equation 2 . Therefore, we run a fixed effect regression of the logarithm of the light intensity on the mega-municipality status for the whole sample period. Additionally, to control for the overall time trends, we employ a flexible approach by including border segment - year dummies such that we allow for differing trends for different border regions. These results are summarized in graph",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 12,
+        "text": "The coefficient estimates in this graph correspond to the estimated effect of being a megamunicipality with respect to the base year 2012. The black line denotes the progression of the coefficient estimates, while the blue ribbons highlight the 95% confidence intervals. There are several takeaways from this picture. First, there appears to be an adjustment period, but the effects become pronounced fairly quickly. The coefficient becomes significant and positive by year 2016, around 3 years after the legislation enactment and 2 years after the mega-municipal offices become active. By 2019 and onwards, the coefficients are significant at 1% levels. This framework also allows us to see what happens during the period after 2019, in particular when COVID-19’s repurcussions could be felt. The year 2020 is associated with a wider confidence interval, possibly pointing out to the overall disruptions due to factors such as lockdowns and travel restrictions which prevented people from crossing provincial borders between December 2019 and June 2020. Furthermore, the coefficient on mega-municipality status appear to stabilize at a rate around 8-9%.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 13,
+        "text": "Our next query is concerned with the seasonal behavior of the coefficient estimates. The units that we are working with are rural villages whose main source of economic activity is farm-",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 14,
+        "text": "ing. Moreover, as noted previously, the NASA VIIRS monthly dataset (VNP46A3) we are working with removes observations from cloudy days while creating composites. Therefore, warmer and/or less cloudy seasons and colder and/or cloudy seasons are likely to yield different coefficient estimates and standard errors.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 15,
+        "text": "Table 4: Seasonal Structure of Light Intensity Changes DEPENDENT VARIABLE Change in Light SUMMER WINTER APRIL NOVEMBER (1) (2) (3) (4) MEGA 0.092 [FORMULA] 0.074 ∗∗ 0.107 ∗∗ 0.064 ∗ (0.033) (0.031) (0.043) (0.035) FE: BNDRY BNDRY BNDRY BNDRY Cluster: PROV+BNDRY PROV+BNDRY PROV+BNDRY PROV+BNDRY Observations 1,971 1,971 1,971 1,971 R 2 0.261 0.249 0.208 0.373 Adjusted R 2 0.247 0.236 0.194 0.362 Note: OLS results for new mega-municipalities ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 16,
+        "text": "Table 4 provides insights into the seasonality of the light intensity changes vis-a-vis megamunicipal status. The first two columns of this table shows the coefficient estimates for the comparison of two different seasons of 2019 vs 2012. Summer corresponds to the average of the April-September period, and winter stands for October-March after the summer period. We can observe that the differential impact of mega-municipality status is i) stronger for the summer period, and ii) has a higher statistical significance, more precise for the same period compared to winter estimates. These differences provide support for the previous arguments regarding higher activity during the warmer months, and the light intensity differential is felt most during these active periods. April and November comparisons focusing on a single month on the same table shows a similar pattern, and the confidence intervals are wider as there are lesser observations per pixel compared to a longer inteval.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 19,
+        "text": "Graphs in 10 provides a picture of the progression of the coefficient estimates with a breakdown into warmer and colder months compared to the same seasons from 2012 (extending towards 2013 March). We can observe that the overall trends are similar (and naturally similar to the yearly averages of monthly data), whereas the winter estimates are consistently lower and typically less precise.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 21,
+        "text": "Our previous results are based on averaging monthly luminosity values obtained from NASA’s Black Marble suite. There are alternative annual composites, and here we will review the two most prevalant versions. The first one is NASA’s own VNP46A4 yearly composite provided by Rom ́an et al. ( 2021 ). This yearly composite is based on the daily processed night time light radiation values. The information regarding the compositing technique is limited, but Wang et al. ( 2022 ) note that these composites are created by taking the best images observed throughout the year. The second set of yearly composites is provided Elvidge et al. ( 2021 ) at the Earth Observatory Group of the Payne Institute at Colorado School of Mines.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 24,
+        "text": "The graphs in 11 provides a picture of the progression of luminosity differential for megamunicipalities. What is immediate from these images is that, compared to the yearly averages of monthly data, the confidence intervals are relatively wider. For example, estimates from the NASA composite start to become significant at %95 levels by 2019, whereas our yearly averaging achieves this by only 2016. VNL estimates provide a similar picture to NASA’s yearly composites, while the coefficient estimates are dampened. Our collection of VNL images stop by 2019.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 25,
+        "text": "An important consideration in difference in difference methods is to ensure that units of interest to be compared would have similar trends prior to the period that is being analyzed. Since we are working with VIIRS nighttime light radiances as the main outcome variable, we would ideally like to have observations prior to the enactment of legislation sufficiently spaced apart temporarily. However, the data collection by the NASA satellites start around January 2012.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 26,
+        "text": "Table 5: Pre-Trend Analysis DEPENDENT VARIABLE: Change in Light Change in Pop ∆ LgtOLS 2011 2007 ∆ Pop 2011 2009 (1) (2) transitionr m v n -0.074 0.009 (0.134) (0.013) FE: BNDRY BNDRY Cluster: PROV+BNDRY PROV+BNDRY Observations 1,971 1,971 R 2 0.153 0.073 Adjusted R 2 0.138 0.056 Note: ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 27,
+        "text": "We address this drawback by looking at an alternative measure of night lights, namely the DMSP-OLS sensor data from National Oceanic and Atmospheric Association, which runs from 1992 through 2013. To this end, we first apply the same framework of looking at log light differences with respect to the mega-municipality status after 2012. The first column of table 5 shows that there is no significant relationship between being a mega-municipality later and the percentage change in nighttime lights from 2007 through 2011. It also does not point out to a positive separation in terms of the point estimate. We should note that due to inherent data quality concerns for the OLS datasets, the statistical power of these tests might not be very high. Nonetheless, we fail to find discernible differences for this period corresponding this dataset. The next step when working with the DMSP-OLS data is to look at the dynamic estimation of the megamunicipality coefficient. We run 2 that uses fixed effects and border segment-year dummies for the DMSP-OLS dataset from 2001 through 2013 where we use 2011 as the base year. The graph in 12 shows that the confidence intervals for each of the coefficient is quite wide and includes zero in all cases. Therefore, we do not find a compelling evidence of pretrends using DMSP-OLS dataset, especially within 5 years of the legislation. Another takeaway from this graph is that there is a clear pattern of narrower standard errors from 2006 to 2007 and from 2009 to 2010 onwards. This is indeed a reflection of the adoption of the newer satellites with better sensors in each of these periods.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 29,
+        "text": "A final observation regarding the analysis of pre-trends is given in the second column of 5 . Here, we look at the population change from 2009 to 2011 in log terms. The reasoning is that, as one of the major determinants of light intensity is the population, a differential nonzero population trend between mega-municipal-to-be and regular units would be an evidence for incompatibility of using these units as controls for each other. However, unlike the very strong population change differences we find after the legislation, we do not find any evidence of diverging pre-trends in the population. One should note that for practical reasons, mostly related to data availability, we focus on only the period that covered 2 years prior to the legislation.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 30,
+        "text": "In this subsection, we would like to understand the role of clustering. What we have done so far in terms of clustering was to two-way cluster based on the province level and the border segment. We find the province level clustering necessary because of the expected error correlations due to being part of the same mega-municipality, or for regular municipalities, due to central government organizations at the province level. In table 6 we present two alternative clustering specifications. In column 1, we consider only clustering based on the province levels and column 2 shows robust standard errors without any clustering. We see that, as expected, clustering on fewer group levels increase the estimate precision to a great extent. This comes at a cost of misspecification of the error structure and this issue is discussed in Appendix 8.3 in further detail, where we find that our two-way clustering approach offers much stronger validity.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 31,
+        "text": "Table 6: Alternative Clustering of Errors DEPENDENT VARIABLE: Change in Light PROV Clustering No Clustering (1) (2) transitionr m v n 0.086 [FORMULA] 0.086 [FORMULA] (0.019) (0.016) FE: BNDRY BNDRY Cluster: PROV NONE Observations 1,971 1,971 R 2 0.242 0.242 Adjusted R 2 0.229 0.229 Note: ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 33,
+        "text": "We had several choices regarding data processing and sample weighting throughout the paper. Table 7 considers alternatives to our choices. First, our main results are built on excluding data that has very low levels of nighttime lights in 2012. The reason we did not use these low intensity areas was to focus on economically active regions and minimize the possible noise due to potentially abrupt jumps due to idiosyncratic factors and low intensity areas are more prone to having these jumps. This filtering got rid of about 10% of the villages in our dataset. Column 1, which includes all observations regardless of initial nighttime light levels, and the results are identical.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Difference-in-Differences (DiD)"
+        ],
+        "matched_l1_methods": [
+            "Empirical and Econometric Methods"
+        ],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 34,
+        "text": "Table 7: Robustness to Alternative Data Processing and Weighting DEPENDENT VARIABLE: Change in Light No Threshold log( lgt + 0) No Outlier Det. No Weights Pop Weights (1) (2) (3) (4) (5) MEGA 0.087 [FORMULA] 0.087 [FORMULA] 0.087 [FORMULA] 0.083 [FORMULA] 0.087 [FORMULA] (0.028) (0.029) (0.029) (0.028) (0.029) FE: BNDRY BNDRY BNDRY BNDRY BNDRY Cluster: PROV+BNDRY PROV+BNDRY PROV+BNDRY PROV+BNDRY PROV+BNDRY Observations 2,250 1,971 1,971 1,971 1,971 R 2 0.236 0.239 0.235 0.237 0.251 Adjusted R 2 0.224 0.225 0.221 0.223 0.237 Note: ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 35,
+        "text": "We next relax the typical approach of adding constants to the light averages. It appears that this was adopted to deal with the impurities and zero cells in DMSP-OLS datasets. In column 2, we set the added constant equal to 0. The results show that the finer resolution and lower noise levels in VIIRS datasets appear to capture details without intricate operations prior to using the data. Another concern was whether and how outliers should be dealt with. Throughout the paper,",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 36,
+        "text": "we used boxplot metrics 13 to manage abrupt changes from one period to another. So far, the outliers have been trimmed down to the boundaries of the boxplot metrics rather than removal. Column 3 shows that when no adjustment is made regarding the outliers, the results for 2019 are identical. Finally, in columns 4 and 5, we consider alternative weighting of the sample instead of weighting by the square root of the 2011 population. We prefer this weighting structure because it balances between giving importance to all observations and taking into account the importance of more highly populated villages in navigating the coefficient estimates. Moreover, less populous villages are likely to yield added noise between measurement periods. On the other hand Solon, Haider, and Wooldridge ( 2015 ) provide arguments for and (mainly) against weighting samples and suggest providing results with alternative weights. Column 4 shows that there are minor differences when we remove weights, and column 5 shows virtually identical results when the weighting function is equal to the population size. These results signify the robustness of our results to alternative weighting approaches.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [
+            "Local Average Treatment Effect (LATE)"
+        ],
+        "matched_l1_methods": [],
+        "matched_l2_methods": [
+            "Regression Discontinuity Design (RDD)"
+        ]
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 38,
+        "text": "This section replicates the main results for the existing mega-municipalities. We approach these units separately because since there are already established mega-municipal mechanisms, the behavior of the local governments might be different. For example, these governments might apply preferential treatment towards areas where they had already been active. Table 8 paints a different picture compared to existing municipalities in table 3 . It appears that we do not capture a significant relationship between the nighttime light changes in the 2012-2019 period for these rural neighborhoods. Moreover, even if the significance could be established, the point estimates are very close to zero, indicating limited, if any, economic upside to being part of an existing mega-municipality. While the night lights do not paint a very positive picture, the population changes appear to favor centralized regions. A 5% population retention, a number similar to new megamunicipalities, is observed at high statistical significance. Moreover, these results are supported by the pre-trend analysis in the appendix (Table 12 ) along with other tables replicated similar to new mega-municipalities. 14 . 13. Barbato et al. ( 2011 ) 14. Appendix Tables: Seasonal analysis: Table 10 , Clustering analysis: Table 13 , Robustness: Table 11",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 39,
+        "text": "Table 8: Main Results - Existing Mega-Municipalities DEPENDENT VARIABLE Change in Light Change in Pop ∆ Lgt 2019 2012 ∆ Lgt 2019 2012 ∆ Lgt 2019 2012 ∆ Pop 2018 2011 (1) (2) (3) (4) MEGA 0.026 0.024 0.025 0.052 [FORMULA] (0.041) (0.040) (0.040) (0.015) ∆ Pop 2018 2011 0.108 ∗∗ 0.097 (0.053) (0.072) MEGA# ∆ Pop 2018 2011 0.023 (0.086) FE: BNDRY BNDRY BNDRY BNDRY Cluster: PROV+BNDRY PROV+BNDRY PROV+BNDRY PROV+BNDRY Observations 2,764 2,726 2,726 2,726 R 2 0.138 0.141 0.141 0.098 Adjusted R 2 0.122 0.124 0.124 0.080 Note: ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 41,
+        "text": "We next turn our attention to the public sentiment and democratic accountability mechanisms in an attempt to gauge general electorates opinions regarding stripped off municipal autonomy due to centralization. Ko ̧c ( 2019 ) notes the overall dissatisfaction among the people of the Mugla province, which is a new mega-municipality. In their analysis of the area-wise largest province, Konya, whose mega-municipal extent increases almost 9-fold, Tuncer and Bakirci ( 2020 ) survey the residents who have mixed feelings. The respondents are content with the new services such as trash removal and bus services to and from the city center. On the other hand, they vocalize criticism in issues such as difficulty in getting building permits in the slow, costly, and sophisticated bureaucracy of the mega-municipal affairs. We consider voting behavior by the constituents of these rural neighborhoods and try to get a glimpse of whether they reflect any discontent on the ballot box. Since AKP initiated these reforms, and as they have been in power throughout the whole sample period and further, we check AKP’s vote share difference in parliamentary elections from 2011 (before the legislation) to 2018 (before the second local elections but sufficiently after the formation of mega-municipalities). Table 9 summarizes our findings. For the new mega-municipalities, we do not find any evidence of a change in voter behavior for AKP, at least on average terms. On the other hand, the electorate in the existing mega-municipalities’ peripheral villages reduce their votes cast for AKP by around 2.5% points. This corresponds roughly to 5% of all AKP voters from 2011. This result suggests that voters in these centralized regions are visibly upset at AKP and reflect this in their voting patterns. Next, we dissect these regions further into mega-municipalities",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 42,
+        "text": "where AKP mega-mayoral candidates won in 2014, and the opposition won. Setting aside the imbalances in favor of AKP for the mayoral races, the estimates suggest that when the mayor is an AKP member, the constituents punish AKP in the parliamentary races. In opposition held regions, we do not find any evidence for such behavior. One possible explanation is that the voters in opposition held areas are unable to identify whether it is AKP or the non-AKP mega-mayoral offices who is to blame for their dissatisfaction.",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 5,
+        "section_name": "Results",
+        "paragraph_id": 43,
+        "text": "Table 9: Centralization and Democratic Accountability: Electoral Responses to AKP DEPENDENT VARIABLE: AKP 2011 AKP Parliamentary Vote Share Change 2011-2018 New Existing Existing (1) (2) (3) MEGA NEW 0.007 (0.018) MEGA OLD -0.024 [FORMULA] (0.007) AKP × MEGA OLD -0.027 [FORMULA] (0.007) NON-AKP × MEGA OLD -0.009 (0.016) FE: BNDRY BNDRY BNDRY Cluster: PROV+BNDRY PROV+BNDRY PROV+BNDRY Observations 1,927 2,726 2,726 R 2 0.118 0.146 0.146 Adjusted R 2 0.102 0.129 0.129 Note: ∗ p < 0.1; ∗∗ p < 0.05; [FORMULA] p < 0.01",
+        "extraction_warnings": "",
+        "tier": 1,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    },
+    {
+        "paper_id": 1408,
+        "section_id": 6,
+        "section_name": "Conclusions and Further Planning",
+        "paragraph_id": 0,
+        "text": "In this paper, we were concerned with providing an analysis of centralization efforts in Turkey from an overall development and accountability perspective. Our results show for favorable patterns of development for region for which the centralization experiment is novel. We were able to show that rural populations, in the face of a declining trend, have been better retained as centralization is introduced. Moreover, it appears that the democratic accountability mechanisms are working well and the voters in centralized regions are more critical of AKP compared to their neighbors. Our results can be extended in various dimensions. First, it would be an interesting exercise to see if centralization allows the political parties to facilitate favoritism. Our workhorse model have not been able to provide a definitive answer for this due to relatively limited set of areas that has been observed. Another relevant factor to consider is distance to the city centers. So far, we have not taken this into account and we believe that it may be an important predictor",
+        "extraction_warnings": "",
+        "tier": 2,
+        "matched_keywords": [],
+        "matched_l1_methods": [],
+        "matched_l2_methods": []
+    }
+]

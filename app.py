@@ -9,6 +9,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @st.cache_data
 def load_filter_chunks():
+    """Load filtered chunks from filter_chunk/ (all papers, method-agnostic)."""
     chunks_dir = os.path.join(BASE_DIR, "filter_chunk")
     data = {}
     for fpath in sorted(glob.glob(os.path.join(chunks_dir, "*.json"))):
@@ -64,11 +65,14 @@ def load_semantic_raw():
 
 @st.cache_data
 def load_l2_to_l1_map():
-    """Load L2 -> L1 mapping from predefine/l2_methods.json."""
     fpath = os.path.join(BASE_DIR, "predefine", "l2_methods.json")
     with open(fpath, "r", encoding="utf-8") as f:
         l2_methods = json.load(f)
     return {m["method_name"]: m["level_1_label"] for m in l2_methods}
+
+
+TIER_COLORS = {1: "#16a34a", 2: "#ca8a04"}
+TIER_LABELS = {1: "Tier 1", 2: "Tier 2"}
 
 
 def render_notebooklm(row):
@@ -106,7 +110,7 @@ def render_keyword_labels(row):
     l2_list = [m.strip() for m in l2.split("; ")] if l2 else []
 
     if not l1_list:
-        st.caption("None")
+        st.caption("No keyword matches")
         return
 
     for l1_name in l1_list:
@@ -116,7 +120,6 @@ def render_keyword_labels(row):
             f'L1: {l1_name}</span>',
             unsafe_allow_html=True,
         )
-        # Show L2 methods under this L1
         child_l2 = [m for m in l2_list if _l2_belongs_to_l1(m, l1_name)]
         for l2_name in child_l2:
             st.markdown(
@@ -126,7 +129,6 @@ def render_keyword_labels(row):
                 unsafe_allow_html=True,
             )
 
-    # Show any L2 not matched to an L1 (fallback)
     orphan_l2 = [m for m in l2_list if not any(_l2_belongs_to_l1(m, l1n) for l1n in l1_list)]
     for l2_name in orphan_l2:
         st.markdown(
@@ -142,7 +144,6 @@ def render_semantic_labels(semantic_data, l1_thresh, l2_thresh, l2_to_l1):
         st.caption("No semantic matches")
         return
 
-    # Filter L1 by threshold
     active_l1 = []
     for name, sim_str in semantic_data.get("l1", []):
         try:
@@ -152,7 +153,6 @@ def render_semantic_labels(semantic_data, l1_thresh, l2_thresh, l2_to_l1):
         if sim >= l1_thresh:
             active_l1.append((name, sim))
 
-    # Filter L2 by threshold
     active_l2 = []
     for name, sim_str in semantic_data.get("l2", []):
         try:
@@ -166,7 +166,6 @@ def render_semantic_labels(semantic_data, l1_thresh, l2_thresh, l2_to_l1):
         st.caption("None above threshold")
         return
 
-    # Group L2 under L1
     for l1_name, l1_sim in active_l1:
         st.markdown(
             f'<span style="background-color:#f97316;color:white;padding:2px 8px;'
@@ -183,7 +182,6 @@ def render_semantic_labels(semantic_data, l1_thresh, l2_thresh, l2_to_l1):
                 unsafe_allow_html=True,
             )
 
-    # Orphan L2s (shouldn't happen but just in case)
     shown_l1_names = {n for n, _ in active_l1}
     orphans = [(n, s) for n, s in active_l2 if l2_to_l1.get(n) not in shown_l1_names]
     for l2_name, l2_sim in orphans:
@@ -195,7 +193,6 @@ def render_semantic_labels(semantic_data, l1_thresh, l2_thresh, l2_to_l1):
         )
 
 
-# Global L2->L1 map loaded once, used by keyword label rendering
 _L2_TO_L1 = None
 
 
@@ -215,7 +212,6 @@ def go_next(max_idx):
 
 
 def on_select(paper_ids):
-    """Sync paper_idx when selectbox changes."""
     selected_pid = st.session_state._pid_select
     st.session_state.paper_idx = paper_ids.index(selected_pid)
 
@@ -257,7 +253,6 @@ def main():
         with col_next:
             st.button("Next", on_click=go_next, args=(len(paper_ids) - 1,), use_container_width=True)
 
-        # Selectbox synced via callback
         st.selectbox(
             "Paper ID",
             paper_ids,
@@ -269,8 +264,19 @@ def main():
 
         st.divider()
         st.header("Semantic Thresholds")
-        l1_thresh = st.slider("L1 Similarity Threshold", 0.0, 1.0, 0.85, 0.01)
-        l2_thresh = st.slider("L2 Similarity Threshold", 0.0, 1.0, 0.85, 0.01)
+        st.caption("Override z-score filtering for display")
+        l1_thresh = st.slider("L1 Similarity Threshold", 0.0, 1.0, 0.0, 0.01,
+                              help="Show L1 methods with similarity above this value (0 = show all z-score assigned)")
+        l2_thresh = st.slider("L2 Similarity Threshold", 0.0, 1.0, 0.0, 0.01,
+                              help="Show L2 methods with similarity above this value (0 = show all z-score assigned)")
+
+        st.divider()
+        st.header("Stats")
+        n_with_kw = sum(1 for pid in paper_ids if keyword_data.get(pid, {}).get("l1_method", ""))
+        n_with_sem = sum(1 for pid in paper_ids if semantic_raw.get(pid, {}).get("l1", []))
+        st.metric("Total papers", len(paper_ids))
+        st.metric("With keyword matches", n_with_kw)
+        st.metric("With semantic matches", n_with_sem)
 
     current_pid = paper_ids[st.session_state.paper_idx]
 
@@ -279,38 +285,51 @@ def main():
     st.markdown(f"### Paper {current_pid}: {meta.get('title', 'Unknown')}")
     st.markdown(f"**Author:** {meta.get('author', 'N/A')} | **University:** {meta.get('university', 'N/A')}")
 
-    # --- Filtered Chunks (ABOVE matching area) ---
+    # --- Filtered Chunks ---
     st.divider()
     st.subheader("Filtered Chunks")
     chunks = filter_chunks.get(current_pid, [])
-    for i, chunk in enumerate(chunks):
-        section = chunk.get("section_name", "Unknown")
-        text = chunk.get("text", "")
-        keywords = chunk.get("matched_keywords", [])
-        l1 = chunk.get("matched_l1_methods", [])
-        l2 = chunk.get("matched_l2_methods", [])
 
-        with st.expander(f"Section: {section} | Paragraph {chunk.get('paragraph_id', i)}", expanded=True):
-            highlighted = text
-            for kw in sorted(keywords, key=len, reverse=True):
-                highlighted = highlighted.replace(kw, f"**:orange[{kw}]**")
-            st.markdown(highlighted)
+    if not chunks:
+        st.caption("No chunks passed filtering for this paper.")
+    else:
+        for i, chunk in enumerate(chunks):
+            section = chunk.get("section_name", "Unknown")
+            text = chunk.get("text", "")
+            keywords = chunk.get("matched_keywords", [])
+            l1 = chunk.get("matched_l1_methods", [])
+            l2 = chunk.get("matched_l2_methods", [])
+            tier = chunk.get("tier", 1)
 
-            tag_html = ""
-            for m in l1:
-                tag_html += (
-                    f'<span style="background-color:#3b82f6;color:white;padding:1px 6px;'
-                    f'border-radius:3px;margin:1px;font-size:0.75em">L1: {m}</span> '
+            tier_color = TIER_COLORS.get(tier, "#6b7280")
+            tier_label = TIER_LABELS.get(tier, f"Tier {tier}")
+
+            with st.expander(
+                f"[{tier_label}] Section: {section} | Paragraph {chunk.get('paragraph_id', i)}",
+                expanded=True,
+            ):
+                highlighted = text
+                for kw in sorted(keywords, key=len, reverse=True):
+                    highlighted = highlighted.replace(kw, f"**:orange[{kw}]**")
+                st.markdown(highlighted)
+
+                tag_html = (
+                    f'<span style="background-color:{tier_color};color:white;padding:1px 6px;'
+                    f'border-radius:3px;margin:1px;font-size:0.75em">{tier_label}</span> '
                 )
-            for m in l2:
-                tag_html += (
-                    f'<span style="background-color:#22c55e;color:white;padding:1px 6px;'
-                    f'border-radius:3px;margin:1px;font-size:0.75em">L2: {m}</span> '
-                )
-            if tag_html:
+                for m in l1:
+                    tag_html += (
+                        f'<span style="background-color:#3b82f6;color:white;padding:1px 6px;'
+                        f'border-radius:3px;margin:1px;font-size:0.75em">L1: {m}</span> '
+                    )
+                for m in l2:
+                    tag_html += (
+                        f'<span style="background-color:#22c55e;color:white;padding:1px 6px;'
+                        f'border-radius:3px;margin:1px;font-size:0.75em">L2: {m}</span> '
+                    )
                 st.markdown(tag_html, unsafe_allow_html=True)
 
-    # --- Method Assignments (BELOW chunks) ---
+    # --- Method Assignments ---
     st.divider()
     st.subheader("Method Assignments")
 
