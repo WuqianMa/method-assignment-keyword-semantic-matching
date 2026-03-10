@@ -415,46 +415,42 @@ function escapeHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ── Auto-load from server ──
 async function autoLoad() {
+  // Check if we are running on a real web server (like GitHub Pages) 
+  // or just opening the file locally (file:// protocol)
+  if (window.location.protocol === 'file:') {
+    console.log("Running locally via file://. Please use the manual folder pickers.");
+    return; 
+  }
+
   try {
-    const res = await fetch('/api/files');
+    const res = await fetch('./manifest.json');
     if (!res.ok) return;
-    const { clean, raw } = await res.json();
+    const manifest = await res.json();
 
-    // Load clean files
-    const cleanResults = await Promise.all(
-      clean.map(async name => {
-        try {
-          const r = await fetch(`/api/file/clean/${name}`);
-          return [name, await r.json()];
-        } catch { return null; }
-      })
-    );
-    cleanResults.forEach(item => { if (item) state.cleanFiles[item[0]] = item[1]; });
+    // Load Clean files
+    for (const name of manifest.clean) {
+      const fileRes = await fetch(`./output/${name}`);
+      if (fileRes.ok) state.cleanFiles[name] = await fileRes.json();
+    }
 
-    // Load raw files
-    const rawResults = await Promise.all(
-      raw.map(async name => {
-        try {
-          const r = await fetch(`/api/file/raw/${name}`);
-          return [name, await r.json()];
-        } catch { return null; }
-      })
-    );
-    rawResults.forEach(item => { if (item) state.rawFiles[item[0]] = item[1]; });
+    // Load Raw files
+    for (const name of manifest.raw) {
+      const fileRes = await fetch(`./middle/raw/${name}`);
+      if (fileRes.ok) state.rawFiles[name] = await fileRes.json();
+    }
 
     if (Object.keys(state.cleanFiles).length > 0) {
       renderSidebar();
       selectFile(Object.keys(state.cleanFiles).sort()[0]);
     }
-    console.log(`Auto-loaded ${clean.length} clean, ${raw.length} raw files`);
-  } catch {
-    // Not served from serve.py – manual folder pickers still work
+  } catch (err) {
+    console.log("Automatic load failed (likely no manifest.json).", err);
   }
 }
 
 autoLoad();
+ 
 </script>
 </body>
 </html>
